@@ -1,0 +1,230 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Facility",
+  "description": "Schema for mining and processing facility data",
+  "type": "object",
+  "required": ["facility_id", "name", "country_iso3", "types", "verification"],
+  "properties": {
+    "facility_id": {
+      "type": "string",
+      "pattern": "^[a-z]{3}-[a-z0-9-]+-fac$",
+      "description": "Unique facility identifier in format: iso3-slug-fac"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Primary facility name"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Alternative names for the facility"
+    },
+    "country_iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 3166-1 alpha-3 country code"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": ["number", "null"],
+          "minimum": -90,
+          "maximum": 90,
+          "description": "Latitude in decimal degrees"
+        },
+        "lon": {
+          "type": ["number", "null"],
+          "minimum": -180,
+          "maximum": 180,
+          "description": "Longitude in decimal degrees"
+        },
+        "precision": {
+          "type": "string",
+          "enum": ["exact", "site", "approximate", "region", "unknown"],
+          "description": "Accuracy of geographic coordinates"
+        }
+      },
+      "required": ["precision"]
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["mine", "smelter", "refinery", "concentrator", "plant", "mill", "heap_leach", "tailings", "exploration", "development"]
+      },
+      "minItems": 1,
+      "description": "Facility operation types"
+    },
+    "commodities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metal": {
+            "type": "string",
+            "description": "Normalized metal/commodity name"
+          },
+          "primary": {
+            "type": "boolean",
+            "description": "Whether this is the primary commodity"
+          }
+        },
+        "required": ["metal", "primary"]
+      },
+      "description": "Metals and commodities produced"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["operating", "planned", "construction", "care_and_maintenance", "closed", "suspended", "unknown"],
+      "description": "Current operational status"
+    },
+    "owner_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company_id": {
+            "type": "string",
+            "pattern": "^cmp-[a-z0-9-]+$",
+            "description": "Canonical company identifier"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["owner", "joint_venture", "minority_owner"],
+            "description": "Ownership role"
+          },
+          "percentage": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Ownership percentage"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Confidence score for this link"
+          }
+        },
+        "required": ["company_id", "role"]
+      },
+      "description": "Ownership information"
+    },
+    "operator_link": {
+      "type": ["object", "null"],
+      "properties": {
+        "company_id": {
+          "type": "string",
+          "pattern": "^cmp-[a-z0-9-]+$",
+          "description": "Canonical company identifier"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score for this link"
+        }
+      },
+      "required": ["company_id"],
+      "description": "Operating company information"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stream": {
+            "type": "string",
+            "description": "Product stream name"
+          },
+          "capacity": {
+            "type": ["number", "null"],
+            "description": "Production capacity"
+          },
+          "unit": {
+            "type": ["string", "null"],
+            "description": "Unit of measurement"
+          },
+          "year": {
+            "type": ["integer", "null"],
+            "description": "Year of capacity data"
+          }
+        },
+        "required": ["stream"]
+      },
+      "description": "Production streams and capacity"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["mines_csv", "gemini_research", "wikipedia", "linkedin", "lei", "manual", "web"],
+            "description": "Source type"
+          },
+          "id": {
+            "type": "string",
+            "description": "Source identifier"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Source URL"
+          },
+          "row": {
+            "type": "integer",
+            "description": "CSV row number (for mines_csv type)"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date of source data"
+          }
+        },
+        "required": ["type"],
+        "anyOf": [
+          {"required": ["id"]},
+          {"required": ["url"]},
+          {"required": ["row"]}
+        ]
+      },
+      "description": "Data sources and references"
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["csv_imported", "llm_suggested", "llm_verified", "human_verified", "conflicting"],
+          "description": "Verification status"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall confidence score"
+        },
+        "last_checked": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last verification timestamp"
+        },
+        "checked_by": {
+          "type": "string",
+          "description": "Entity or system that performed verification"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional verification notes"
+        }
+      },
+      "required": ["status", "confidence", "last_checked"]
+    }
+  }
+}
