@@ -1,0 +1,55 @@
+{
+  "facility_id": "deu-hamburg-pb-refinery-fac",
+  "name": "Hamburg Pb Refinery",
+  "aliases": [
+    "Hamburg Pb Refinery",
+    "Hamburg Pb Smelter",
+    "Hamburg smelter",
+    "Hamburg Refinery",
+    "Hamburg Smelter"
+  ],
+  "country_iso3": "DEU",
+  "location": {
+    "lat": 53.52,
+    "lon": 10.034,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8002
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.394244",
+    "checked_by": "migration_script"
+  }
+}

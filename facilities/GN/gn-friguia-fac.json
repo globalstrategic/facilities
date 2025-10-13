@@ -1,0 +1,45 @@
+{
+  "facility_id": "gn-friguia-fac",
+  "name": "Friguia",
+  "aliases": [
+    "Friguia",
+    "Friguia refinery",
+    "Friguia Refinery"
+  ],
+  "country_iso3": "GN",
+  "location": {
+    "lat": 10.387,
+    "lon": -13.579,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "alumina",
+      "primary": true
+    },
+    {
+      "metal": "bauxite",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2845
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.987474",
+    "checked_by": "migration_script"
+  }
+}

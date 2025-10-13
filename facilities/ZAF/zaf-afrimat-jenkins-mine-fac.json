@@ -1,0 +1,47 @@
+{
+  "facility_id": "zaf-afrimat-jenkins-mine-fac",
+  "name": "Afrimat Jenkins Mine",
+  "aliases": [
+    "Afrimat Jenkins Mine",
+    "Jenkins"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -27.921,
+    "lon": 23.017,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    },
+    {
+      "metal": "phosphate",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7778
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.334289",
+    "checked_by": "migration_script"
+  }
+}

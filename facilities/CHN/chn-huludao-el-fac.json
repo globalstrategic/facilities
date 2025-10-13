@@ -1,0 +1,62 @@
+{
+  "facility_id": "chn-huludao-el-fac",
+  "name": "Huludao (EL)",
+  "aliases": [
+    "Huludao (EL)",
+    "Huludao (ISF)",
+    "Huludao (VR)",
+    "Shengxin",
+    "Huludao Smelter",
+    "Huludao Refinery",
+    "Huludao (EL)",
+    "Huludao (ISF)",
+    "Huludao (VR)",
+    "Shengxin",
+    "Huludao Smelter",
+    "Huludao Refinery"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 40.726,
+    "lon": 120.929,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8029
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.394417",
+    "checked_by": "migration_script"
+  }
+}

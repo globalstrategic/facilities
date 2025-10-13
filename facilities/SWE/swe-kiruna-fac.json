@@ -1,0 +1,48 @@
+{
+  "facility_id": "swe-kiruna-fac",
+  "name": "Kiruna",
+  "aliases": [
+    "Kiruna",
+    "LKAB Kirrunavarra Mine",
+    "Northern Division"
+  ],
+  "country_iso3": "SWE",
+  "location": {
+    "lat": 67.841,
+    "lon": 20.181,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    },
+    {
+      "metal": "lanthanum",
+      "primary": false
+    },
+    {
+      "metal": "phosphate",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 3008
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.027450",
+    "checked_by": "migration_script"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "kor-onsan-pb-refinery-fac",
+  "name": "Onsan Pb Refinery",
+  "aliases": [
+    "Onsan Zn",
+    "Onsan (RLE)",
+    "Onsan Pb Refinery",
+    "Onsan Pb Smelter"
+  ],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": 35.166,
+    "lon": 128.667,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2080
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.475983",
+    "checked_by": "migration_script"
+  }
+}

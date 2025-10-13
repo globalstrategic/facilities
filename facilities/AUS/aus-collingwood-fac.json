@@ -1,0 +1,42 @@
+{
+  "facility_id": "aus-collingwood-fac",
+  "name": "Collingwood",
+  "aliases": [
+    "Collingwood"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -15.763,
+    "lon": 145.23,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2735
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.966894",
+    "checked_by": "migration_script"
+  }
+}

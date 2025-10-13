@@ -1,0 +1,47 @@
+{
+  "facility_id": "arg-veladero-fac",
+  "name": "Veladero",
+  "aliases": [
+    "Veladero",
+    "Veladero"
+  ],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -29.373,
+    "lon": -69.952,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 3482
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.052989",
+    "checked_by": "migration_script"
+  }
+}

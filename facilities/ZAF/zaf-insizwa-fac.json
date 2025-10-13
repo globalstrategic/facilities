@@ -1,0 +1,44 @@
+{
+  "facility_id": "zaf-insizwa-fac",
+  "name": "Insizwa",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -30.946,
+    "lon": 29.302,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    },
+    {
+      "metal": "platinum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2532
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.2,
+    "last_checked": "2025-10-12T19:43:43.863433",
+    "checked_by": "migration_script"
+  }
+}

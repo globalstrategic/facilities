@@ -1,0 +1,64 @@
+{
+  "facility_id": "kz-balkhash-smelter-fac",
+  "name": "Balkhash Smelter",
+  "aliases": [
+    "Balkhash Smelter",
+    "Balkhash Refinery",
+    "Balkhash Smelter",
+    "Balkhash Concentrator",
+    "Balkhash Smelter",
+    "Balkhash Refinery"
+  ],
+  "country_iso3": "KZ",
+  "location": {
+    "lat": 46.832,
+    "lon": 74.946,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2603
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.906684",
+    "checked_by": "migration_script"
+  }
+}

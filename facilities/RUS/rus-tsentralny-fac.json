@@ -1,0 +1,40 @@
+{
+  "facility_id": "rus-tsentralny-fac",
+  "name": "Tsentralny",
+  "aliases": [],
+  "country_iso3": "RUS",
+  "location": {
+    "lat": 69.415,
+    "lon": 30.504,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 1236
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.2,
+    "last_checked": "2025-10-12T19:43:42.687536",
+    "checked_by": "migration_script"
+  }
+}

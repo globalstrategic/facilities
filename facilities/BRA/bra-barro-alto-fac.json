@@ -1,0 +1,50 @@
+{
+  "facility_id": "bra-barro-alto-fac",
+  "name": "Barro Alto",
+  "aliases": [
+    "Barro Alto",
+    "Barro Alto Smelter",
+    "Barro Alto Refinery"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -15.078,
+    "lon": -48.945,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2610
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.906732",
+    "checked_by": "migration_script"
+  }
+}

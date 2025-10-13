@@ -1,0 +1,40 @@
+{
+  "facility_id": "aus-townsville-fac",
+  "name": "Townsville",
+  "aliases": [
+    "Townsville",
+    "SMC Refinery"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -19.33,
+    "lon": 146.89,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8313
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.455900",
+    "checked_by": "migration_script"
+  }
+}

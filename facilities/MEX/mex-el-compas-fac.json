@@ -1,0 +1,43 @@
+{
+  "facility_id": "mex-el-compas-fac",
+  "name": "El Compas",
+  "aliases": [
+    "El Compas",
+    "El Compas"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 22.727,
+    "lon": -102.595,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7944
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.393690",
+    "checked_by": "migration_script"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "facility_id": "usa-alpine-mine-fac",
+  "name": "Alpine Mine",
+  "aliases": [
+    "Alpine Mine",
+    "Alpine Mine"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.025,
+    "lon": -119.232,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "silver",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "barium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 996
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.2,
+    "last_checked": "2025-10-12T19:43:42.684794",
+    "checked_by": "migration_script"
+  }
+}

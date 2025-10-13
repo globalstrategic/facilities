@@ -1,0 +1,51 @@
+{
+  "facility_id": "chn-erlihe-fac",
+  "name": "Erlihe",
+  "aliases": [
+    "Erlihe",
+    "Bafangshan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 33.95,
+    "lon": 106.825,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7954
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.393763",
+    "checked_by": "migration_script"
+  }
+}

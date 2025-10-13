@@ -1,0 +1,46 @@
+{
+  "facility_id": "jpn-chigirishima-pb-refinery-fac",
+  "name": "Chigirishima Pb Refinery",
+  "aliases": [
+    "Chigirishima Pb Refinery",
+    "Chigirishima Pb Smelter",
+    "Chigirishima Refinery",
+    "Chigirishima Smelter"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 34.298,
+    "lon": 132.903,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7901
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.373474",
+    "checked_by": "migration_script"
+  }
+}

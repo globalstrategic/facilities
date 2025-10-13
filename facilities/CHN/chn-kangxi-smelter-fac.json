@@ -1,0 +1,59 @@
+{
+  "facility_id": "chn-kangxi-smelter-fac",
+  "name": "Kangxi smelter",
+  "aliases": [
+    "Kangxi smelter",
+    "Guixi Smelter",
+    "Hukou Smelter",
+    "Hukou Refinery",
+    "Jiangxi Rijia Smelter"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 28.334,
+    "lon": 117.228,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8068
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.394737",
+    "checked_by": "migration_script"
+  }
+}

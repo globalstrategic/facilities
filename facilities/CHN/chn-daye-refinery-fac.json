@@ -1,0 +1,57 @@
+{
+  "facility_id": "chn-daye-refinery-fac",
+  "name": "Daye refinery",
+  "aliases": [
+    "Daye Iron Mine and Complex",
+    "Daye Nonferrous Metals Tonglushan Mine",
+    "Daye refinery",
+    "Daye smelter",
+    "Sanxin",
+    "Tonglvshan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 30.081,
+    "lon": 114.939,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "iron ore",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 2103
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.476124",
+    "checked_by": "migration_script"
+  }
+}

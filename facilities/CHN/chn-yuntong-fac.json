@@ -1,0 +1,57 @@
+{
+  "facility_id": "chn-yuntong-fac",
+  "name": "Yuntong",
+  "aliases": [
+    "Yuntong",
+    "Yunnan",
+    "Kunming (Yunnan) Refinery",
+    "Kunming (Yunnan) Smelter",
+    "Kunming, Yunnan Refinery",
+    "Chifeng Smelter",
+    "Kunming Refinery",
+    "Yunnan Yuntong Refinery"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 25.097,
+    "lon": 102.678,
+    "precision": "site"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8373
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.456309",
+    "checked_by": "migration_script"
+  }
+}

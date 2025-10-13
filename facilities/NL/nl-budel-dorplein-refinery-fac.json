@@ -1,0 +1,51 @@
+{
+  "facility_id": "nl-budel-dorplein-refinery-fac",
+  "name": "Budel Dorplein Refinery",
+  "aliases": [
+    "Budel Dorplein Refinery",
+    "Budel"
+  ],
+  "country_iso3": "NL",
+  "location": {
+    "lat": 51.238,
+    "lon": 5.602,
+    "precision": "site"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8488
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.472377",
+    "checked_by": "migration_script"
+  }
+}

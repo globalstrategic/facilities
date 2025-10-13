@@ -1,0 +1,47 @@
+{
+  "facility_id": "aus-yellow-taxi-fac",
+  "name": "Yellow Taxi",
+  "aliases": [
+    "Yellow Taxi",
+    "Central Murchison"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -27.492,
+    "lon": 117.831,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 1839
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-12T19:43:43.363120",
+    "checked_by": "migration_script"
+  }
+}

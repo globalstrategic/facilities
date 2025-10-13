@@ -1,0 +1,45 @@
+{
+  "facility_id": "aus-worsley-fac",
+  "name": "Worsley",
+  "aliases": [
+    "Worsley",
+    "Worsley",
+    "Worsley Refinery"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -33.239,
+    "lon": 116.071,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "alumina",
+      "primary": true
+    },
+    {
+      "metal": "bauxite",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 3513
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.074017",
+    "checked_by": "migration_script"
+  }
+}

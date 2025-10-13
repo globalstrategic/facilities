@@ -1,0 +1,51 @@
+{
+  "facility_id": "chn-anhui-tongguan-chizhou-smelter-fac",
+  "name": "Anhui Tongguan Chizhou Smelter",
+  "aliases": [
+    "Anhui",
+    "Chizhou Smelter",
+    "Chizhou Refinery",
+    "Anhui Tongguan Chizhou Smelter"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 30.697,
+    "lon": 117.522,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7825
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.354217",
+    "checked_by": "migration_script"
+  }
+}

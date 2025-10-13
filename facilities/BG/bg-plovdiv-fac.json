@@ -1,0 +1,47 @@
+{
+  "facility_id": "bg-plovdiv-fac",
+  "name": "Plovdiv",
+  "aliases": [
+    "Plovdiv",
+    "Plovdiv Pb Refinery",
+    "Plovdiv Pb Smelter",
+    "Plovdiv (Dimitri Blagoev) Refinery",
+    "Plovdiv Smelter"
+  ],
+  "country_iso3": "BG",
+  "location": {
+    "lat": 42.062,
+    "lon": 24.814,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8213
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.435475",
+    "checked_by": "migration_script"
+  }
+}

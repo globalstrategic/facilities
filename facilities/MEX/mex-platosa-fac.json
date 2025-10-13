@@ -1,0 +1,51 @@
+{
+  "facility_id": "mex-platosa-fac",
+  "name": "Platosa",
+  "aliases": [
+    "Platosa",
+    "La Platosa/Saltierra"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 25.929,
+    "lon": -103.664,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "silver",
+      "primary": true
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8212
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.435468",
+    "checked_by": "migration_script"
+  }
+}

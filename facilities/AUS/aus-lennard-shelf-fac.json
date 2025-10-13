@@ -1,0 +1,47 @@
+{
+  "facility_id": "aus-lennard-shelf-fac",
+  "name": "Lennard Shelf",
+  "aliases": [
+    "Lennard Shelf",
+    "Pillara"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -18.319,
+    "lon": 125.778,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 3061
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.027992",
+    "checked_by": "migration_script"
+  }
+}

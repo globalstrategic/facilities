@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-gold-bar-fac",
+  "name": "Gold Bar",
+  "aliases": [
+    "Gold Bar",
+    "Benmark",
+    "Gold Bar Mine",
+    "Gold Bar South"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 39.77,
+    "lon": -116.327,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 7982
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.393942",
+    "checked_by": "migration_script"
+  }
+}

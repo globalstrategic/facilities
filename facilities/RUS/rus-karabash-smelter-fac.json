@@ -1,0 +1,45 @@
+{
+  "facility_id": "rus-karabash-smelter-fac",
+  "name": "Karabash smelter",
+  "aliases": [
+    "Karabash smelter",
+    "Karabashsky",
+    "Karabash Smelter"
+  ],
+  "country_iso3": "RUS",
+  "location": {
+    "lat": 55.468,
+    "lon": 60.206,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8070
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.394750",
+    "checked_by": "migration_script"
+  }
+}
