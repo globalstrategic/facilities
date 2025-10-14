@@ -49,7 +49,7 @@ logger = logging.getLogger(__name__)
 
 # Paths
 ROOT = pathlib.Path(__file__).parent.parent
-FACILITIES_DIR = ROOT / "config" / "facilities"
+FACILITIES_DIR = ROOT / "facilities"
 SUPPLY_DIR = ROOT / "config" / "supply"
 RESEARCH_RAW_DIR = ROOT / "output" / "research_raw"
 RESEARCH_EVIDENCE_DIR = ROOT / "output" / "research_evidence"

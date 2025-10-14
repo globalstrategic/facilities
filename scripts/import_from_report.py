@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 
 # Paths
 ROOT = pathlib.Path(__file__).parent.parent
-FACILITIES_DIR = ROOT / "facilities"  # Direct facilities/ not config/facilities/
+FACILITIES_DIR = ROOT / "facilities"
 IMPORT_LOGS_DIR = ROOT / "output" / "import_logs"
 
 # Create directories
@@ -579,25 +579,34 @@ def main():
         epilog="""
 Examples:
   # Basic usage - save report to file first
+  python import_from_report.py report.txt --country DZA
+
+  # With optional source name
   python import_from_report.py report.txt --country DZA --source "Algeria Report 2025"
 
   # Quick save and import
   cat > report.txt
   [Paste text, Ctrl+D]
-  python import_from_report.py report.txt --country AFG --source "Afghanistan Report"
+  python import_from_report.py report.txt --country AFG
 
   # From stdin (pipe)
-  pbpaste | python import_from_report.py --country DZA --source "Report"
+  pbpaste | python import_from_report.py --country DZA
         """
     )
     parser.add_argument("input_file", help="Input report file (required)")
     parser.add_argument("--country", required=True, help="Country ISO3 code (e.g., DZA, AFG)")
-    parser.add_argument("--source", required=True, help="Source name for citation")
+    parser.add_argument("--source", help="Source name for citation (optional, auto-generated if not provided)")
 
     args = parser.parse_args()
 
     # Find actual country code used in repo (handles DZA->DZ, etc)
     country_iso3 = find_country_code(args.country)
+
+    # Auto-generate source name if not provided
+    if not args.source:
+        source_name = f"Research Import {country_iso3} {datetime.now().strftime('%Y-%m-%d')}"
+    else:
+        source_name = args.source
 
     # Read input file
     if args.input_file == '-':
@@ -624,7 +633,7 @@ Examples:
             logger.warning(f"Report is only {len(report_text)} characters - this seems small. Did the paste work correctly?")
 
     # Process
-    result = process_report(report_text, country_iso3, args.source)
+    result = process_report(report_text, country_iso3, source_name)
 
     if 'error' in result:
         print(f"\nError: {result['error']}")
@@ -638,7 +647,7 @@ Examples:
         logger.warning("No new facilities to write (all may be duplicates)")
 
     # Write report
-    report = write_report(result, country_iso3, args.source)
+    report = write_report(result, country_iso3, source_name)
 
     # Print summary
     print("\n" + "="*60)

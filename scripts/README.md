@@ -8,38 +8,48 @@ Import facilities from deep research reports in two simple steps:
 
 ```bash
 # Step 1: Save your report to a file
-cat > algeria_report.txt
+cat > report.txt
 [Paste your full report text, then press Ctrl+D]
 
 # Step 2: Import
-python import_from_report.py algeria_report.txt --country DZA --source "Algeria Mining Report 2025"
+python import_from_report.py report.txt --country DZA
 ```
+
+**That's it!** The script will:
+- Auto-detect the correct country code (DZA → DZ)
+- Extract facility tables from your report
+- Check for duplicates against existing facilities
+- Generate properly formatted JSON files
 
 **Alternative methods:**
 
 ```bash
 # If report is already saved
-python import_from_report.py report.txt --country AFG --source "Afghanistan Mineral Report"
+python import_from_report.py report.txt --country AFG
+
+# With optional custom source name
+python import_from_report.py report.txt --country DZA --source "Algeria Mining Report 2025"
 
 # From clipboard (Mac)
 pbpaste > report.txt
-python import_from_report.py report.txt --country DZA --source "Report Name"
+python import_from_report.py report.txt --country DZA
 
 # From clipboard (Linux with xclip)
 xclip -o > report.txt
-python import_from_report.py report.txt --country DZA --source "Report Name"
+python import_from_report.py report.txt --country AFG
 
 # From stdin pipe
-pbpaste | python import_from_report.py - --country DZA --source "Report Name"
+pbpaste | python import_from_report.py - --country DZA
 ```
 
 ### What it does
 
-1. Automatically extracts facility tables from markdown text
-2. Normalizes metals, facility types, and operational status
-3. **Checks for duplicates** by name, location, and aliases
-4. Generates schema-compliant JSON files
-5. Creates detailed import report
+1. **Auto-detects country code** - use DZA or DZ, both work
+2. **Extracts facility tables** from markdown text (supports both `|` and tab-separated)
+3. **Normalizes** metals, facility types, and operational status
+4. **Checks for duplicates** by name, location, and aliases
+5. **Generates** schema-compliant JSON files
+6. **Creates** detailed import report with statistics
 
 ### Output
 
@@ -96,10 +106,13 @@ Won't create duplicates if:
 
 ### Input Format
 
-The script automatically extracts markdown tables with these columns (flexible column names):
+The script automatically extracts tables from your report text. Supports both:
+- **Pipe-separated tables**: `| Name | Location | ... |`
+- **Tab-separated tables**: `Name\tLocation\t...` (like from Excel/Sheets)
 
+**Column names** (flexible - script normalizes these):
 - **Site/Mine Name** (required) - Facility name
-- **Latitude, Longitude** (recommended) - Decimal coordinates
+- **Latitude, Longitude** OR **Coordinates (Lat, Lon)** (recommended) - Decimal coordinates
 - **Primary Commodity** - Main metal/mineral
 - **Other Commodities** - Secondary metals/minerals
 - **Asset Type** - Mine, Smelter, Plant, etc.
@@ -148,7 +161,7 @@ Results: 6 passed, 0 failed
   ```bash
   cat > report.txt
   [Paste, Ctrl+D]
-  python import_from_report.py report.txt --country DZA --source "Report"
+  python import_from_report.py report.txt --country DZA
   ```
 - Or use clipboard directly: `pbpaste > report.txt` (Mac) or `xclip -o > report.txt` (Linux)
 
@@ -156,7 +169,7 @@ Results: 6 passed, 0 failed
 - Terminal paste has limits (typically 4-16KB)
 - **Solution:** Save your report in a text editor first, then:
   ```bash
-  python import_from_report.py /path/to/report.txt --country DZA --source "Report"
+  python import_from_report.py /path/to/report.txt --country DZA
   ```
 - Or use clipboard: `pbpaste > report.txt` bypasses terminal paste limits
 
