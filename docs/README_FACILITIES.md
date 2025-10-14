@@ -14,7 +14,7 @@ python scripts/migrate_facilities.py
 cat output/migration_logs/migration_report_*.json
 
 # 3. View sample facility data
-cat config/facilities/USA/usa-stillwater-east-fac.json
+cat facilities/USA/usa-stillwater-east-fac.json
 
 # 4. Check metal-specific facilities
 cat config/supply/platinum/facilities.index.json
@@ -134,7 +134,7 @@ python scripts/migrate_facilities.py
 # - Parse 8,508 facilities from Mines.csv
 # - Normalize countries → ISO3 codes
 # - Standardize metal names
-# - Create facility JSONs in config/facilities/
+# - Create facility JSONs in facilities/
 # - Generate per-metal indexes
 # - Create mapping files
 ```
@@ -175,7 +175,7 @@ with open('config/supply/platinum/facilities.index.json') as f:
 # Get facility details
 for facility_id in index['facilities']:
     country = facility_id.split('-')[0].upper()
-    with open(f'config/facilities/{country}/{facility_id}.json') as f:
+    with open(f'facilities/{country}/{facility_id}.json') as f:
         facility = json.load(f)
         print(f"{facility['name']}: {facility['country_iso3']}")
 ```
@@ -188,7 +188,7 @@ from pathlib import Path
 
 def find_facilities_by_company(company_id):
     facilities = []
-    for facility_file in Path('config/facilities').glob('**/*.json'):
+    for facility_file in Path('facilities').glob('**/*.json'):
         with open(facility_file) as f:
             facility = json.load(f)
             # Check owners
@@ -237,13 +237,13 @@ Current migration results:
 # Load, modify, save
 import json
 
-with open('config/facilities/USA/usa-stillwater-east-fac.json') as f:
+with open('facilities/USA/usa-stillwater-east-fac.json') as f:
     facility = json.load(f)
 
 facility['status'] = 'operating'
 facility['verification']['status'] = 'human_verified'
 
-with open('config/facilities/USA/usa-stillwater-east-fac.json', 'w') as f:
+with open('facilities/USA/usa-stillwater-east-fac.json', 'w') as f:
     json.dump(facility, f, indent=2)
 ```
 
@@ -258,7 +258,7 @@ with open('schemas/facility.schema.json') as f:
     schema = json.load(f)
 
 # Validate facility
-with open('config/facilities/USA/usa-stillwater-east-fac.json') as f:
+with open('facilities/USA/usa-stillwater-east-fac.json') as f:
     facility = json.load(f)
 
 jsonschema.validate(facility, schema)  # Raises exception if invalid

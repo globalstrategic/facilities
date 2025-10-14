@@ -41,7 +41,7 @@ python scripts/deep_research_integration.py \
 
 ```
 1. Existing Facilities           2. Research Prompt
-   config/facilities/     →      Generate prompt with
+   facilities/            →      Generate prompt with
    [country]/[id].json           existing facility data
            ↓                              ↓
                                  3. Gemini Deep Research
@@ -170,7 +170,7 @@ python scripts/deep_research_integration.py \
     --metal aluminum
 
 # Step 6: Verify updates
-cat config/facilities/CAN/can-kitimat-smelter-fac.json | jq .
+cat facilities/CAN/can-kitimat-smelter-fac.json | jq .
 ```
 
 ### Example 2: Batch Processing Multiple Countries
@@ -237,14 +237,14 @@ Always ask Gemini to provide:
 
 ```bash
 # Check facilities with high confidence
-find config/facilities -name "*.json" -exec grep -l '"confidence": 0.9' {} \;
+find facilities -name "*.json" -exec grep -l '"confidence": 0.9' {} \;
 
 # Find facilities still needing research
-find config/facilities -name "*.json" -exec grep -l '"status": "unknown"' {} \;
+find facilities -name "*.json" -exec grep -l '"status": "unknown"' {} \;
 
 # Count facilities by status
 for status in operating closed suspended; do
-  echo "$status: $(grep -r "\"status\": \"$status\"" config/facilities | wc -l)"
+  echo "$status: $(grep -r "\"status\": \"$status\"" facilities | wc -l)"
 done
 ```
 
@@ -257,7 +257,7 @@ done
 import json
 from pathlib import Path
 
-facilities_dir = Path("config/facilities")
+facilities_dir = Path("facilities")
 stats = {
     "total": 0,
     "with_status": 0,
@@ -291,7 +291,7 @@ print(f"With products: {stats['with_products']} ({100*stats['with_products']/sta
 
 ```bash
 # Check modification times
-find config/facilities -name "*.json" -mtime -1 | head -20
+find facilities -name "*.json" -mtime -1 | head -20
 
 # View update log
 tail -50 deep_research_integration.log
@@ -324,7 +324,7 @@ tail -50 deep_research_integration.log
 ## Output Files
 
 ### Updated Facilities
-- **Location**: `config/facilities/[country]/[facility-id].json`
+- **Location**: `facilities/[country]/[facility-id].json`
 - **Content**: Enhanced facility data with research results
 
 ### Raw Research Archive
@@ -369,7 +369,7 @@ Update only facilities that need research:
 
 ```bash
 # Find facilities without operators
-for file in $(grep -l '"operator_link": null' config/facilities/**/*.json); do
+for file in $(grep -l '"operator_link": null' facilities/**/*.json); do
   facility_id=$(basename $file .json)
   echo "Needs operator: $facility_id"
 done

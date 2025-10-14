@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Migrate 8,508 facilities from `Mines.csv` to a structured JSON format in `config/facilities/`, with per-metal indexes and integration with entityidentity for company resolution.
+Migrate 8,508 facilities from `Mines.csv` to a structured JSON format in `facilities/`, with per-metal indexes and integration with entityidentity for company resolution.
 
 ## Current State
 
