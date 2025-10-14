@@ -480,18 +480,19 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Interactive mode (paste report)
-  python import_from_report.py --country DZA --source "Algeria Report 2025"
-  [Paste text, then Ctrl+D]
+  # Basic usage - save report to file first
+  python import_from_report.py report.txt --country DZA --source "Algeria Report 2025"
 
-  # From file
+  # Quick save and import
+  cat > report.txt
+  [Paste text, Ctrl+D]
   python import_from_report.py report.txt --country AFG --source "Afghanistan Report"
 
-  # From stdin
-  cat report.txt | python import_from_report.py --country DZA --source "Algeria Report"
+  # From stdin (pipe)
+  pbpaste | python import_from_report.py --country DZA --source "Report"
         """
     )
-    parser.add_argument("input_file", nargs='?', help="Input file (optional, will read from stdin if not provided)")
+    parser.add_argument("input_file", help="Input report file (required)")
     parser.add_argument("--country", required=True, help="Country ISO3 code (e.g., DZA, AFG)")
     parser.add_argument("--source", required=True, help="Source name for citation")
 
@@ -499,23 +500,29 @@ Examples:
 
     country_iso3 = args.country.upper()
 
-    # Read input
-    if args.input_file:
+    # Read input file
+    if args.input_file == '-':
+        # Read from stdin if file is '-'
+        logger.info("Reading from stdin...")
+        report_text = sys.stdin.read()
+        if not report_text.strip():
+            print("Error: No input provided on stdin")
+            return 1
+    else:
         input_path = pathlib.Path(args.input_file)
         if not input_path.exists():
             print(f"Error: File not found: {input_path}")
+            print(f"\nTip: Save your report to a file first:")
+            print(f"  cat > {args.input_file}")
+            print(f"  [Paste text, then press Ctrl+D]")
             return 1
         with open(input_path, 'r', encoding='utf-8') as f:
             report_text = f.read()
-        logger.info(f"Read report from {input_path}")
-    else:
-        if sys.stdin.isatty():
-            print("Paste your report text below, then press Ctrl+D (Cmd+D on Mac) when done:")
-            print("-" * 60)
-        report_text = sys.stdin.read()
-        if not report_text.strip():
-            print("Error: No input provided")
-            return 1
+        logger.info(f"Read report from {input_path} ({len(report_text)} chars)")
+
+        # Warn if report seems very small (likely incomplete)
+        if len(report_text) < 1000:
+            logger.warning(f"Report is only {len(report_text)} characters - this seems small. Did the paste work correctly?")
 
     # Process
     result = process_report(report_text, country_iso3, args.source)

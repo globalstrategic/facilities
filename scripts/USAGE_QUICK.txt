@@ -1,0 +1,89 @@
+╔════════════════════════════════════════════════════════════════╗
+║  IMPORT RESEARCH REPORTS - QUICK REFERENCE                     ║
+╚════════════════════════════════════════════════════════════════╝
+
+RECOMMENDED METHOD (works for large reports)
+────────────────────────────────────────────────────────────────
+Step 1: Save report to file
+  $ cat > algeria_report.txt
+  [Paste your report, then press Ctrl+D]
+
+Step 2: Import
+  $ python import_from_report.py algeria_report.txt \
+      --country DZA \
+      --source "Algeria Mining Report 2025"
+
+ALTERNATIVE: Use clipboard directly (Mac)
+────────────────────────────────────────────────────────────────
+  $ pbpaste > report.txt
+  $ python import_from_report.py report.txt \
+      --country DZA \
+      --source "Report Name"
+
+ALTERNATIVE: Use clipboard directly (Linux)
+────────────────────────────────────────────────────────────────
+  $ xclip -o > report.txt
+  $ python import_from_report.py report.txt \
+      --country DZA \
+      --source "Report Name"
+
+ALTERNATIVE: Pipe from clipboard
+────────────────────────────────────────────────────────────────
+  $ pbpaste | python import_from_report.py - \
+      --country DZA \
+      --source "Report Name"
+
+WHY FILE-BASED?
+────────────────────────────────────────────────────────────────
+✓ No terminal paste limits (handles any size report)
+✓ More reliable (no Ctrl+D issues)
+✓ Can verify file before import: wc -l report.txt
+✓ Can reuse file if import fails
+
+COUNTRY CODES
+────────────────────────────────────────────────────────────────
+Algeria: DZA        Australia: AUS      Chile: CHL
+Afghanistan: AFG    Canada: CAN         Peru: PER
+USA: USA            China: CHN          Brazil: BRA
+Russia: RUS         South Africa: ZAF   India: IND
+
+WHAT IT DOES
+────────────────────────────────────────────────────────────────
+✓ Extracts facility tables from your report
+✓ Normalizes metals, types, status
+✓ Checks for duplicates (won't create duplicates!)
+✓ Creates JSON files in config/facilities/{COUNTRY}/
+✓ Shows summary with duplicate info
+
+OUTPUT EXAMPLE
+────────────────────────────────────────────────────────────────
+INFO: Found 1 facility tables
+INFO: Loaded 1234 existing facilities
+INFO: Found 48 new facilities, skipped 3 duplicates
+
+IMPORT COMPLETE
+Country: DZA
+New facilities: 48
+Duplicates skipped: 3
+Files written: 48
+
+VERIFY RESULTS
+────────────────────────────────────────────────────────────────
+  $ ls -la ../config/facilities/DZA/
+  $ cat ../config/facilities/DZA/dza-gara-djebilet-fac.json
+
+TROUBLESHOOTING
+────────────────────────────────────────────────────────────────
+No tables found?
+  → Check report has markdown tables with | separators
+  → Verify full report was saved: wc -l report.txt
+
+Paste was cut off?
+  → Save in text editor first, then run import
+  → Or use: pbpaste > report.txt
+
+Test duplicate detection:
+  $ python test_dedup.py
+
+See full docs:
+  $ cat README.md
