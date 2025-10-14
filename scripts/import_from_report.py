@@ -86,7 +86,7 @@ def slugify(text: str) -> str:
 
 
 def extract_markdown_tables(text: str) -> List[Dict]:
-    """Extract all markdown tables from text."""
+    """Extract all markdown tables from text (supports both | and tab-separated)."""
     tables = []
     lines = text.split('\n')
 
@@ -94,9 +94,9 @@ def extract_markdown_tables(text: str) -> List[Dict]:
     while i < len(lines):
         line = lines[i].strip()
 
+        # Check for pipe-separated tables
         if '|' in line and line.count('|') >= 2:
             table_lines = []
-
             while i < len(lines):
                 line = lines[i].strip()
                 if '|' in line and line.count('|') >= 2:
@@ -112,7 +112,46 @@ def extract_markdown_tables(text: str) -> List[Dict]:
                     break
 
             if len(table_lines) >= 2:
-                table = parse_markdown_table(table_lines)
+                table = parse_markdown_table(table_lines, separator='|')
+                if table and is_facility_table(table):
+                    tables.append(table)
+
+        # Check for tab-separated tables
+        elif '\t' in line and line.count('\t') >= 2:
+            table_lines = []
+            # Collect all tab lines - stop when we see a clear section break
+            consecutive_non_tab = 0
+            while i < len(lines):
+                line = lines[i]  # Don't strip - tabs matter
+                if '\t' in line and line.count('\t') >= 2:
+                    table_lines.append(line)
+                    consecutive_non_tab = 0
+                    i += 1
+                else:
+                    # Line without tabs - could be multi-line notes or end of table
+                    # Check if this looks like a section header (capitalized, not just notes)
+                    line_stripped = line.strip()
+                    is_header = (line_stripped and
+                                len(line_stripped) > 10 and
+                                line_stripped[0].isupper() and
+                                not line_stripped.startswith('Historic') and
+                                not line_stripped.startswith('One of') and
+                                not line_stripped.startswith('Part of') and
+                                not line_stripped.startswith('A ') and
+                                ':' not in line_stripped)
+
+                    if is_header and consecutive_non_tab >= 1:
+                        # Looks like a new section starting, stop table
+                        break
+
+                    consecutive_non_tab += 1
+                    i += 1
+                    # If we see many lines without tabs, assume table ended
+                    if consecutive_non_tab >= 5:
+                        break
+
+            if len(table_lines) >= 2:
+                table = parse_markdown_table(table_lines, separator='\t')
                 if table and is_facility_table(table):
                     tables.append(table)
         else:
@@ -121,33 +160,51 @@ def extract_markdown_tables(text: str) -> List[Dict]:
     return tables
 
 
-def parse_markdown_table(lines: List[str]) -> Optional[Dict]:
-    """Parse markdown table from lines."""
-    def split_row(line):
+def parse_markdown_table(lines: List[str], separator: str = '|') -> Optional[Dict]:
+    """Parse markdown table from lines (supports | or tab separator)."""
+    def split_row(line, sep):
         line = line.strip()
-        if line.startswith('|'):
-            line = line[1:]
-        if line.endswith('|'):
-            line = line[:-1]
-        return [cell.strip() for cell in line.split('|')]
+        if sep == '|':
+            # Remove leading/trailing pipes
+            if line.startswith('|'):
+                line = line[1:]
+            if line.endswith('|'):
+                line = line[:-1]
+        return [cell.strip() for cell in line.split(sep)]
 
     if len(lines) < 2:
         return None
 
-    headers = split_row(lines[0])
+    # First line is headers
+    headers = split_row(lines[0], separator)
 
-    # Skip separator line(s)
+    # For pipe tables, skip separator line (---|----|---)
+    # For tab tables, no separator line needed
     separator_idx = 1
-    while separator_idx < len(lines) and re.match(r'^[\s|:-]+$', lines[separator_idx]):
-        separator_idx += 1
+    if separator == '|':
+        while separator_idx < len(lines) and re.match(r'^[\s|:-]+$', lines[separator_idx]):
+            separator_idx += 1
+    # For tab-separated, start immediately at line 1 (no separator row)
 
     rows = []
     for line in lines[separator_idx:]:
-        if line.strip() and not re.match(r'^[\s|:-]+$', line):
-            row_data = split_row(line)
-            while len(row_data) < len(headers):
-                row_data.append('')
-            rows.append(dict(zip(headers, row_data)))
+        # Skip empty lines and separator lines
+        if not line.strip():
+            continue
+        if separator == '|' and re.match(r'^[\s|:-]+$', line):
+            continue
+
+        # Must have the separator to be a valid row
+        if separator not in line:
+            continue
+
+        row_data = split_row(line, separator)
+        # Pad row if needed
+        while len(row_data) < len(headers):
+            row_data.append('')
+        # Truncate if too long
+        row_data = row_data[:len(headers)]
+        rows.append(dict(zip(headers, row_data)))
 
     return {'headers': headers, 'rows': rows}
 
@@ -313,7 +370,8 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
 
     if not tables:
         logger.error("No facility tables found in report")
-        logger.error("Check that your report contains markdown tables with | separators")
+        logger.error("Check that your report contains tables with | or tab separators")
+        logger.error("Tables must have headers like: Name, Location, Commodity, etc.")
         return {"error": "No tables found", "facilities": []}
 
     # Load existing facilities
@@ -348,14 +406,28 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                 # Generate facility ID
                 facility_id = f"{country_iso3.lower()}-{slugify(name)}-fac"
 
-                # Parse coordinates
+                # Parse coordinates - handle both separate lat/lon and combined format
                 lat, lon = None, None
                 try:
-                    if row.get('lat'):
+                    # Try separate lat/lon fields first
+                    if row.get('lat') and row.get('lat').strip() and row.get('lat').strip() != '-':
                         lat = float(row['lat'].strip())
-                    if row.get('lon'):
+                    if row.get('lon') and row.get('lon').strip() and row.get('lon').strip() != '-':
                         lon = float(row['lon'].strip())
-                except ValueError:
+
+                    # If no lat/lon, try combined "Coordinates" field
+                    if not lat and not lon:
+                        coords = row.get('Coordinates (Lat, Lon)', '').strip()
+                        if coords and coords != '-' and coords.lower() != 'not specified':
+                            # Format: "35.849, 7.118" or similar
+                            parts = [p.strip() for p in coords.replace(',', ' ').split()]
+                            if len(parts) >= 2:
+                                try:
+                                    lat = float(parts[0])
+                                    lon = float(parts[1])
+                                except (ValueError, IndexError):
+                                    pass
+                except (ValueError, AttributeError):
                     pass
 
                 # Check for duplicate
