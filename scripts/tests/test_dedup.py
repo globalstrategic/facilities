@@ -7,8 +7,8 @@ import json
 import pathlib
 import sys
 
-# Add the import script to path
-sys.path.insert(0, str(pathlib.Path(__file__).parent))
+# Add the import script to path (parent of parent since we're in tests/)
+sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 
 from import_from_report import check_duplicate, slugify
 

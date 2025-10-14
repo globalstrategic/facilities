@@ -1,10 +1,25 @@
 # Facilities Scripts
 
-Scripts for managing the facilities database.
+Unified CLI for managing the facilities database.
 
-## Quick Start: Import Research Reports
+## Quick Start
 
-Import facilities from deep research reports in two simple steps:
+All operations now use a single `facilities.py` CLI:
+
+```bash
+# Import facilities from research reports
+python facilities.py import report.txt --country DZ
+
+# Enrich with Gemini Deep Research
+python facilities.py research --generate-prompt --country ZAF --metal platinum
+
+# Run tests
+python facilities.py test
+```
+
+## Import Research Reports
+
+Import facilities from text reports in two simple steps:
 
 ```bash
 # Step 1: Save your report to a file
@@ -12,7 +27,7 @@ cat > report.txt
 [Paste your full report text, then press Ctrl+D]
 
 # Step 2: Import
-python import_from_report.py report.txt --country DZA
+python facilities.py import report.txt --country DZ
 ```
 
 **That's it!** The script will:
@@ -25,21 +40,18 @@ python import_from_report.py report.txt --country DZA
 
 ```bash
 # If report is already saved
-python import_from_report.py report.txt --country AFG
+python facilities.py import report.txt --country AF
 
 # With optional custom source name
-python import_from_report.py report.txt --country DZA --source "Algeria Mining Report 2025"
+python facilities.py import report.txt --country DZ --source "Algeria Mining Report 2025"
 
 # From clipboard (Mac)
 pbpaste > report.txt
-python import_from_report.py report.txt --country DZA
+python facilities.py import report.txt --country DZ
 
 # From clipboard (Linux with xclip)
 xclip -o > report.txt
-python import_from_report.py report.txt --country AFG
-
-# From stdin pipe
-pbpaste | python import_from_report.py - --country DZA
+python facilities.py import report.txt --country AF
 ```
 
 ### What it does
@@ -129,29 +141,50 @@ The script automatically extracts tables from your report text. Supports both:
 
 **Status:** `Operational` → `operating`, `In Development` → `construction`, `Proposed` → `planned`
 
-## Other Scripts
+## Deep Research Integration
 
-### migrate_facilities.py
-
-Original migration script for importing from `Mines.csv` to structured JSON format.
+Enrich facilities with Gemini Deep Research data:
 
 ```bash
-python migrate_facilities.py
+# Generate research prompt
+python facilities.py research --generate-prompt --country ZAF --metal platinum --limit 50
+
+# Process research output
+python facilities.py research --process output.json --country ZAF --metal platinum
+
+# Batch processing
+python facilities.py research --batch research_batch.jsonl
 ```
 
-### test_dedup.py
+See `../docs/DEEP_RESEARCH_WORKFLOW.md` for detailed workflow.
 
-Test suite for duplicate detection logic.
+## Testing
+
+Run test suites to verify functionality:
 
 ```bash
-python test_dedup.py
+# Run all tests
+python facilities.py test
+
+# Run specific test suite
+python facilities.py test --suite dedup
+python facilities.py test --suite migration
 ```
 
-Expected output:
+## Directory Structure
+
 ```
-============================================================
-Results: 6 passed, 0 failed
-============================================================
+scripts/
+├── facilities.py              # Unified CLI (main entry point)
+├── import_from_report.py      # Import implementation
+├── deep_research_integration.py  # Research integration implementation
+├── migration/                 # CSV import/export (for future use)
+│   ├── migrate_facilities.py
+│   └── pre_migration_validation.py
+├── tests/                     # Test suites
+│   ├── test_dedup.py
+│   └── test_migration_dry_run.py
+└── README.md
 ```
 
 ## Troubleshooting
@@ -161,7 +194,7 @@ Results: 6 passed, 0 failed
   ```bash
   cat > report.txt
   [Paste, Ctrl+D]
-  python import_from_report.py report.txt --country DZA
+  python facilities.py import report.txt --country DZ
   ```
 - Or use clipboard directly: `pbpaste > report.txt` (Mac) or `xclip -o > report.txt` (Linux)
 
@@ -169,7 +202,7 @@ Results: 6 passed, 0 failed
 - Terminal paste has limits (typically 4-16KB)
 - **Solution:** Save your report in a text editor first, then:
   ```bash
-  python import_from_report.py /path/to/report.txt --country DZA
+  python facilities.py import /path/to/report.txt --country DZ
   ```
 - Or use clipboard: `pbpaste > report.txt` bypasses terminal paste limits
 
