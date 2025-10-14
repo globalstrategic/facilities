@@ -43,33 +43,33 @@ pbpaste | python import_from_report.py - --country DZA --source "Report Name"
 
 ### Output
 
-Files created in: `../config/facilities/{COUNTRY}/`
+Files created in: `../facilities/{COUNTRY}/`
 
-Example: `../config/facilities/DZA/dza-gara-djebilet-fac.json`
+Example: `../facilities/DZ/dz-gara-djebilet-fac.json`
 
 Import report: `../output/import_logs/import_report_{COUNTRY}_{timestamp}.json`
 
 ### Example output
 
 ```
-INFO: Processing report for DZA...
+INFO: Found existing directory 'DZ' for input 'DZA'
+INFO: Processing report for DZ...
 INFO: Found 1 facility tables
-INFO: Loaded 1234 existing facilities for duplicate detection
-INFO: Found 48 new facilities, skipped 3 duplicates
+INFO: Loaded 22 existing facilities for duplicate detection
+INFO: Found 41 new facilities
 
 ============================================================
 IMPORT COMPLETE
 ============================================================
-Country: DZA
-New facilities: 48
-Duplicates skipped: 3
-Files written: 48
+Country: DZ
+Source: Algeria Mining Report 2025
+New facilities: 41
+Duplicates skipped: 1
+Files written: 41
 ============================================================
 
-Duplicates found:
-  - 'Gara Djebilet Mine' (exists as dza-gara-djebilet-fac)
-  - 'El-Hadjar Steel Complex' (exists as dza-el-hadjar-steel-fac)
-  - 'Ouenza Mine' (exists as dza-ouenza-mine-fac)
+Duplicates found (skipped 1 existing facilities):
+  - 'El Abed Oued Zaunder Mines' (exists as dz-el-abed-oued-zaunder-mines-fac)
 ```
 
 ### Duplicate Detection
@@ -84,16 +84,15 @@ Won't create duplicates if:
 
 ### Country Codes
 
-Use ISO 3166-1 alpha-3 codes:
+**The script auto-detects existing country directories.** You can use any ISO code (2 or 3 letter) and it will find the correct directory:
 
-| Country | Code | Country | Code |
-|---------|------|---------|------|
-| Algeria | DZA | South Africa | ZAF |
-| Afghanistan | AFG | Chile | CHL |
-| Australia | AUS | Peru | PER |
-| Canada | CAN | Brazil | BRA |
-| China | CHN | India | IND |
-| USA | USA | Russia | RUS |
+- `DZA` → `DZ` (Algeria)
+- `AFG` → `AF` (Afghanistan)
+- `USA` → `USA` (United States)
+- `ARG` → `ARG` (Argentina)
+- `AUS` → `AUS` (Australia)
+
+**No need to check existing directories** - just use any valid ISO code and the script handles the rest.
 
 ### Input Format
 

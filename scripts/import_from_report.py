@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 
 # Paths
 ROOT = pathlib.Path(__file__).parent.parent
-FACILITIES_DIR = ROOT / "config" / "facilities"
+FACILITIES_DIR = ROOT / "facilities"  # Direct facilities/ not config/facilities/
 IMPORT_LOGS_DIR = ROOT / "output" / "import_logs"
 
 # Create directories
@@ -252,6 +252,32 @@ def normalize_headers(headers: List[str]) -> List[str]:
             normalized.append(h)
 
     return normalized
+
+
+def find_country_code(country_input: str) -> str:
+    """Find the actual country code used in the repository.
+
+    Checks if a directory exists for this country (tries both as-is, upper, and variations).
+    Returns the actual directory name if found, otherwise returns input.
+    """
+    # Try exact match first
+    if (FACILITIES_DIR / country_input).exists():
+        return country_input
+
+    # Try uppercase
+    upper = country_input.upper()
+    if (FACILITIES_DIR / upper).exists():
+        return upper
+
+    # For common conversions (DZA->DZ, USA->US, etc), try truncated version
+    if len(country_input) == 3:
+        short = country_input[:2].upper()
+        if (FACILITIES_DIR / short).exists():
+            logger.info(f"Found existing directory '{short}' for input '{country_input}'")
+            return short
+
+    # No existing directory found, use input as-is
+    return country_input.upper()
 
 
 def load_existing_facilities(country_iso3: str) -> Dict[str, Dict]:
@@ -570,7 +596,8 @@ Examples:
 
     args = parser.parse_args()
 
-    country_iso3 = args.country.upper()
+    # Find actual country code used in repo (handles DZA->DZ, etc)
+    country_iso3 = find_country_code(args.country)
 
     # Read input file
     if args.input_file == '-':
