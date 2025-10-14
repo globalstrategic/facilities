@@ -195,16 +195,19 @@ def sync_command(args):
 
 
 def resolve_command(args):
-    """Test entity resolution."""
+    """Test entity resolution using entityidentity directly."""
     if args.entity_type == 'country':
-        # Resolve country
+        # Resolve country using entityidentity
         try:
-            from utils.country_detection import validate_country_code
-            import pycountry
+            sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity import country_identifier
         except ImportError as e:
-            print(f"Error: Could not import country detection utilities: {e}", file=sys.stderr)
+            print(f"Error: Could not import entityidentity: {e}", file=sys.stderr)
             print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
-            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            print("  Option 1: Clone entityidentity repo to parent directory", file=sys.stderr)
+            print("    git clone https://github.com/globalstrategic/entityidentity.git ../entityidentity", file=sys.stderr)
+            print("  Option 2: Install as package", file=sys.stderr)
+            print("    pip install git+https://github.com/globalstrategic/entityidentity.git", file=sys.stderr)
             return 1
 
         country_name = args.name
@@ -212,56 +215,93 @@ def resolve_command(args):
         print("-" * 60)
 
         try:
-            iso3 = validate_country_code(country_name)
-            country = pycountry.countries.get(alpha_3=iso3)
-            iso2 = country.alpha_2
+            # country_identifier returns ISO2 code as string
+            iso2 = country_identifier(country_name)
 
-            print(f"  Result: SUCCESS")
-            print(f"  Country: {country.name}")
-            print(f"  ISO2: {iso2}")
-            print(f"  ISO3: {iso3}")
-            print(f"  Official name: {getattr(country, 'official_name', 'N/A')}")
+            if iso2:
+                print(f"  Result: SUCCESS")
+                print(f"  ISO2: {iso2}")
 
-        except ValueError as e:
+                # Get additional info from pycountry if available
+                try:
+                    import pycountry
+                    country = pycountry.countries.get(alpha_2=iso2)
+                    if country:
+                        print(f"  ISO3: {country.alpha_3}")
+                        print(f"  Country name: {country.name}")
+                        if hasattr(country, 'official_name'):
+                            print(f"  Official name: {country.official_name}")
+                except ImportError:
+                    pass  # pycountry not available, just show ISO2
+            else:
+                print(f"  Result: FAILED")
+                print(f"  Could not resolve country: {country_name}")
+                return 1
+
+        except Exception as e:
             print(f"  Result: FAILED")
             print(f"  Error: {e}")
+            import traceback
+            traceback.print_exc()
             return 1
 
     elif args.entity_type == 'metal':
-        # Resolve metal
+        # Resolve metal using entityidentity
         try:
-            from utils.metal_normalizer import normalize_commodity, get_metal_info
+            sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity import metal_identifier
         except ImportError as e:
-            print(f"Error: Could not import metal normalization utilities: {e}", file=sys.stderr)
+            print(f"Error: Could not import entityidentity: {e}", file=sys.stderr)
             print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
-            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            print("  Option 1: Clone entityidentity repo to parent directory", file=sys.stderr)
+            print("    git clone https://github.com/globalstrategic/entityidentity.git ../entityidentity", file=sys.stderr)
+            print("  Option 2: Install as package", file=sys.stderr)
+            print("    pip install git+https://github.com/globalstrategic/entityidentity.git", file=sys.stderr)
             return 1
 
         metal_name = args.name
         print(f"Resolving metal: {metal_name}")
         print("-" * 60)
 
-        result = normalize_commodity(metal_name)
-        print(f"  Normalized name: {result['metal']}")
-        print(f"  Chemical formula: {result.get('chemical_formula', 'N/A')}")
-        print(f"  Category: {result.get('category', 'unknown')}")
+        try:
+            result = metal_identifier(metal_name)
 
-        # Try to get additional info
-        info = get_metal_info(metal_name)
-        if info:
-            print(f"\nAdditional information:")
-            for key, value in info.items():
-                if key not in ['name', 'symbol', 'category']:
-                    print(f"  {key}: {value}")
+            if result:
+                print(f"  Result: SUCCESS")
+                print(f"  Normalized name: {result.get('name', 'N/A')}")
+                print(f"  Symbol: {result.get('symbol', 'N/A')}")
+                print(f"  Chemical formula: {result.get('formula', 'N/A')}")
+                print(f"  Category: {result.get('category', 'unknown')}")
+
+                # Show additional fields if present
+                if result.get('atomic_number'):
+                    print(f"  Atomic number: {result['atomic_number']}")
+                if result.get('aliases'):
+                    print(f"  Aliases: {', '.join(result['aliases'])}")
+            else:
+                print(f"  Result: FAILED")
+                print(f"  Could not resolve metal: {metal_name}")
+                return 1
+
+        except Exception as e:
+            print(f"  Result: FAILED")
+            print(f"  Error: {e}")
+            import traceback
+            traceback.print_exc()
+            return 1
 
     elif args.entity_type == 'company':
-        # Resolve company
+        # Resolve company using entityidentity
         try:
-            from utils.company_resolver import FacilityCompanyResolver
+            sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity.companies import EnhancedCompanyMatcher
         except ImportError as e:
-            print(f"Error: Could not import company resolver: {e}", file=sys.stderr)
+            print(f"Error: Could not import entityidentity: {e}", file=sys.stderr)
             print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
-            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            print("  Option 1: Clone entityidentity repo to parent directory", file=sys.stderr)
+            print("    git clone https://github.com/globalstrategic/entityidentity.git ../entityidentity", file=sys.stderr)
+            print("  Option 2: Install as package", file=sys.stderr)
+            print("    pip install git+https://github.com/globalstrategic/entityidentity.git", file=sys.stderr)
             return 1
 
         company_name = args.name
@@ -273,21 +313,18 @@ def resolve_command(args):
         print("-" * 60)
 
         try:
-            resolver = FacilityCompanyResolver()
-            result = resolver.resolve_operator(company_name, country_hint=country_hint)
+            matcher = EnhancedCompanyMatcher()
+            results = matcher.match_best(company_name, limit=1, min_score=70)
 
-            if result:
+            if results and len(results) > 0:
+                best = results[0]
                 print(f"  Result: SUCCESS")
-                print(f"  Company ID: {result['company_id']}")
-                print(f"  Company name: {result['company_name']}")
-                print(f"  Confidence: {result['confidence']:.3f}")
-                print(f"  Match explanation: {result['match_explanation']}")
-
-                # Show cache stats
-                stats = resolver.get_cache_stats()
-                print(f"\nResolver statistics:")
-                print(f"  Cache size: {stats['cache_size']}")
-                print(f"  Database size: {stats.get('database_size', 'Not loaded')}")
+                print(f"  Company name: {best.get('original_name', best.get('brief_name', 'N/A'))}")
+                print(f"  Canonical name: {best.get('canonical_name', 'N/A')}")
+                print(f"  LEI: {best.get('lei', 'N/A')}")
+                print(f"  Match score: {best.get('score', 0)}/100")
+                print(f"  Country: {best.get('country', 'N/A')}")
+                print(f"  Category: {best.get('category', 'N/A')}")
             else:
                 print(f"  Result: NO MATCH FOUND")
                 print(f"  No company match found above minimum threshold (70)")

@@ -5,6 +5,8 @@ Deep Research Integration Pipeline for Facility Enrichment
 This script handles the integration of Gemini Deep Research data into the facility JSON files.
 It supports both batch processing and incremental updates, maintaining data lineage and verification status.
 
+Uses entityidentity library directly for company resolution via EnhancedCompanyMatcher.
+
 Usage:
     # Process research data for a specific country/metal
     python deep_research_integration.py --country USA --metal platinum --file research_output.json
@@ -14,6 +16,10 @@ Usage:
 
     # Generate prompts for Deep Research
     python deep_research_integration.py --generate-prompt --country ZAF --metal gold
+
+Requirements:
+    - entityidentity library (https://github.com/globalstrategic/entityidentity)
+    - Clone to parent directory or install as package
 """
 
 import json
@@ -30,7 +36,7 @@ import re
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
 
 try:
-    from entityidentity import company_identifier, match_company
+    from entityidentity.companies import EnhancedCompanyMatcher
     ENTITYIDENTITY_AVAILABLE = True
 except ImportError:
     print("Warning: entityidentity not available. Company resolution will be limited.")
@@ -61,12 +67,24 @@ for dir_path in [RESEARCH_RAW_DIR, RESEARCH_EVIDENCE_DIR, PROMPTS_DIR]:
 
 
 class DeepResearchIntegrator:
-    """Handles integration of Deep Research data into facility files."""
+    """Handles integration of Deep Research data into facility files.
+
+    Uses entityidentity's EnhancedCompanyMatcher for company resolution.
+    """
 
     def __init__(self):
         self.stats = defaultdict(int)
         self.company_cache = {}
         self.updates_log = []
+
+        # Initialize company matcher if entityidentity available
+        self.company_matcher = None
+        if ENTITYIDENTITY_AVAILABLE:
+            try:
+                self.company_matcher = EnhancedCompanyMatcher()
+                logger.info("EnhancedCompanyMatcher initialized")
+            except Exception as e:
+                logger.warning(f"Could not initialize EnhancedCompanyMatcher: {e}")
 
     def slugify(self, text: str) -> str:
         """Convert text to URL-safe slug."""
@@ -109,7 +127,7 @@ class DeepResearchIntegrator:
         logger.info(f"Updated facility: {facility_id}")
 
     def resolve_company(self, company_name: str, country: Optional[str] = None) -> Dict:
-        """Resolve company name to canonical ID."""
+        """Resolve company name to canonical ID using EnhancedCompanyMatcher."""
         cache_key = (company_name, country)
         if cache_key in self.company_cache:
             return self.company_cache[cache_key]
@@ -120,21 +138,28 @@ class DeepResearchIntegrator:
             'confidence': 0.5
         }
 
-        if ENTITYIDENTITY_AVAILABLE:
+        if self.company_matcher:
             try:
-                canonical = company_identifier(company_name, country)
-                if canonical:
-                    company_data = match_company(company_name, country)
-                    if company_data:
-                        result = {
-                            'company_id': f"cmp-{self.slugify(canonical)}",
-                            'name': company_data.get('name', company_name),
-                            'canonical': canonical,
-                            'country': company_data.get('country'),
-                            'lei': company_data.get('lei'),
-                            'confidence': 0.85
-                        }
-                        logger.debug(f"Resolved '{company_name}' to '{result['company_id']}'")
+                results = self.company_matcher.match_best(
+                    company_name,
+                    limit=1,
+                    min_score=70
+                )
+                if results and len(results) > 0:
+                    best = results[0]
+                    lei = best.get('lei', '')
+                    company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or f"cmp-{self.slugify(company_name)}")
+                    confidence = best.get('score', 70) / 100.0
+                    resolved_name = best.get('original_name', best.get('brief_name', company_name))
+
+                    result = {
+                        'company_id': company_id,
+                        'name': resolved_name,
+                        'country': best.get('country'),
+                        'lei': lei if lei else None,
+                        'confidence': round(confidence, 3)
+                    }
+                    logger.debug(f"Resolved '{company_name}' to '{result['company_id']}' (score: {best.get('score')})")
             except Exception as e:
                 logger.debug(f"Could not resolve company '{company_name}': {e}")
 

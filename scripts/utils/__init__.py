@@ -1,84 +1,32 @@
+"""Utilities for the facilities database.
+
+This package provides utility functions for:
+- Ownership parsing for joint ventures
+- Facility synchronization with entityidentity parquet format
+- Schema migration tools
+
+For entity resolution (countries, metals, companies), use entityidentity directly:
+    from entityidentity import country_identifier, metal_identifier
+    from entityidentity.companies import EnhancedCompanyMatcher
 """
-Utility modules for facility data processing.
 
-This package provides entity resolution utilities for:
-- Country detection and normalization
-- Metal/commodity normalization
-- Company resolution
-- Facility matching (planned)
-- Facility synchronization with entityidentity
-"""
-
-# Import facility_sync first (no entityidentity dependency)
-from .facility_sync import (
-    FacilitySyncManager,
-    iso2_to_iso3,
-    iso3_to_iso2,
-)
-
-__all__ = [
-    # Facility synchronization (always available)
-    "FacilitySyncManager",
-    "iso2_to_iso3",
-    "iso3_to_iso2",
-]
-
-# Try to import entityidentity-dependent modules
+# Ownership parsing
 try:
-    from .country_detection import (
-        detect_country_from_facility,
-        validate_country_code,
-    )
+    from .ownership_parser import parse_ownership
+    __all__ = ['parse_ownership']
+except ImportError:
+    __all__ = []
 
-    __all__.extend([
-        "detect_country_from_facility",
-        "validate_country_code",
-    ])
+# Facility sync (optional - requires pandas)
+try:
+    from .facility_sync import FacilitySyncManager, iso2_to_iso3, iso3_to_iso2
+    __all__.extend(['FacilitySyncManager', 'iso2_to_iso3', 'iso3_to_iso2'])
 except ImportError:
     pass
 
-# Try to import metal normalizer
+# Schema migration (optional)
 try:
-    from .metal_normalizer import (
-        normalize_commodity,
-        normalize_commodities,
-        get_metal_info,
-        is_valid_metal,
-    )
-
-    __all__.extend([
-        "normalize_commodity",
-        "normalize_commodities",
-        "get_metal_info",
-        "is_valid_metal",
-    ])
-except ImportError:
-    pass
-
-# Try to import company resolver
-try:
-    from .company_resolver import (
-        FacilityCompanyResolver,
-        haversine_distance,
-    )
-
-    __all__.extend([
-        "FacilityCompanyResolver",
-        "haversine_distance",
-    ])
-except ImportError:
-    pass
-
-# Try to import facility matcher
-try:
-    from .facility_matcher import (
-        FacilityMatcher,
-        haversine_vectorized,
-    )
-
-    __all__.extend([
-        "FacilityMatcher",
-        "haversine_vectorized",
-    ])
+    from .migrate_schema import migrate_facility, migrate_all_facilities
+    __all__.extend(['migrate_facility', 'migrate_all_facilities'])
 except ImportError:
     pass

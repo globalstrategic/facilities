@@ -3,11 +3,11 @@
 Enhanced one-command facility import from research reports with entity resolution.
 
 This enhanced version extends the original import pipeline with optional entity
-resolution capabilities from the entityidentity library, providing:
-- Metal/commodity normalization with chemical formulas
-- Company name resolution with canonical IDs
-- Enhanced duplicate detection with multiple strategies
-- Auto-detection of country codes from facility data
+resolution using the entityidentity library directly, providing:
+- Metal/commodity normalization with chemical formulas via metal_identifier()
+- Company name resolution with canonical IDs via EnhancedCompanyMatcher
+- Ownership parsing via facilities-specific ownership_parser utility
+- Graceful fallback to basic mode if entityidentity is unavailable
 
 The enhanced features are opt-in via the --enhanced flag, maintaining full
 backward compatibility with the original import_from_report.py pipeline.
@@ -24,6 +24,10 @@ Usage:
 
     # From stdin (pipe)
     cat report.txt | python import_from_report_enhanced.py --country AFG --enhanced
+
+Requirements for enhanced mode:
+    - entityidentity library (https://github.com/globalstrategic/entityidentity)
+    - Clone to parent directory or install as package
 """
 
 import re
@@ -347,7 +351,7 @@ def parse_commodities(primary: str, other: str, enhanced: bool = False) -> List[
     Args:
         primary: Primary commodity string
         other: Other commodities string
-        enhanced: If True, use metal_normalizer for enhanced resolution
+        enhanced: If True, use entityidentity metal_identifier for enhanced resolution
 
     Returns:
         List of commodity dictionaries with metal, primary flag, and optionally
@@ -356,25 +360,34 @@ def parse_commodities(primary: str, other: str, enhanced: bool = False) -> List[
     commodities = []
     seen = set()
 
-    # Import enhanced metal normalizer if available
-    metal_normalizer = None
+    # Import enhanced metal identifier if available
+    metal_identifier_func = None
     if enhanced:
         try:
-            from scripts.utils.metal_normalizer import normalize_commodity
-            metal_normalizer = normalize_commodity
-            logger.debug("Using enhanced metal normalization")
+            sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity import metal_identifier
+            metal_identifier_func = metal_identifier
+            logger.debug("Using enhanced metal identification from entityidentity")
         except ImportError as e:
-            logger.warning(f"Could not import metal_normalizer, using fallback: {e}")
+            logger.warning(f"Could not import entityidentity metal_identifier, using fallback: {e}")
 
     def normalize_commodity_entry(metal_str: str) -> Dict:
         """Normalize a single commodity entry."""
-        if metal_normalizer:
-            # Enhanced normalization with chemical formula
-            normalized = metal_normalizer(metal_str)
-            return normalized
-        else:
-            # Fallback to basic normalization
-            return {"metal": normalize_metal(metal_str), "chemical_formula": None, "category": "unknown"}
+        if metal_identifier_func:
+            # Enhanced normalization with entityidentity
+            try:
+                result = metal_identifier_func(metal_str)
+                if result:
+                    return {
+                        "metal": result.get('name', metal_str.lower()),
+                        "chemical_formula": result.get('formula'),
+                        "category": result.get('category', 'unknown')
+                    }
+            except Exception as e:
+                logger.debug(f"Metal identifier failed for '{metal_str}': {e}")
+
+        # Fallback to basic normalization
+        return {"metal": normalize_metal(metal_str), "chemical_formula": None, "category": "unknown"}
 
     if primary:
         for metal in re.split(r'[,;]', primary):
@@ -457,29 +470,32 @@ def process_report(report_text: str, country_iso3: str, source_name: str, enhanc
         logger.info("Enhanced mode enabled - using entity resolution")
 
     # Initialize entity resolvers if enhanced mode
-    company_resolver = None
-    facility_matcher = None
+    company_matcher = None
+    ownership_parser_func = None
 
     if enhanced:
-        # Import company resolver
+        # Import EnhancedCompanyMatcher from entityidentity
         try:
-            from scripts.utils.company_resolver import FacilityCompanyResolver
-            company_resolver = FacilityCompanyResolver()
-            logger.info("Company resolver initialized")
+            sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity.companies import EnhancedCompanyMatcher
+            company_matcher = EnhancedCompanyMatcher()
+            logger.info("EnhancedCompanyMatcher initialized from entityidentity")
         except ImportError as e:
-            logger.warning(f"Could not import company_resolver: {e}")
+            logger.warning(f"Could not import EnhancedCompanyMatcher: {e}")
+            logger.warning("Enhanced company resolution disabled")
         except Exception as e:
-            logger.error(f"Error initializing company resolver: {e}")
+            logger.error(f"Error initializing EnhancedCompanyMatcher: {e}")
 
-        # Import facility matcher (may not exist yet)
+        # Import ownership parser (facilities-specific utility)
         try:
-            from scripts.utils.facility_matcher import FacilityMatcher
-            facility_matcher = FacilityMatcher()
-            logger.info("Facility matcher initialized")
-        except ImportError:
-            logger.warning("FacilityMatcher not available (not yet implemented)")
+            sys.path.insert(0, str(pathlib.Path(__file__).parent))
+            from utils.ownership_parser import parse_ownership
+            ownership_parser_func = parse_ownership
+            logger.info("Ownership parser loaded")
+        except ImportError as e:
+            logger.warning(f"Could not import ownership_parser: {e}")
         except Exception as e:
-            logger.error(f"Error initializing facility matcher: {e}")
+            logger.error(f"Error loading ownership parser: {e}")
 
     # Extract tables
     logger.info("Extracting facility tables from report...")
@@ -506,7 +522,6 @@ def process_report(report_text: str, country_iso3: str, source_name: str, enhanc
     if enhanced:
         stats['enhanced_metal_resolutions'] = 0
         stats['enhanced_company_resolutions'] = 0
-        stats['enhanced_duplicate_checks'] = 0
         stats['confidence_boosts'] = 0
 
     row_num = 0
@@ -555,30 +570,7 @@ def process_report(report_text: str, country_iso3: str, source_name: str, enhanc
                 except (ValueError, AttributeError):
                     pass
 
-                # Check for duplicate
-                if enhanced and facility_matcher:
-                    # Use enhanced duplicate detection
-                    try:
-                        duplicates_found = facility_matcher.find_duplicates(
-                            {"name": name, "location": {"lat": lat, "lon": lon}},
-                            existing
-                        )
-                        if duplicates_found:
-                            existing_id = duplicates_found[0]['facility_id']
-                            logger.info(f"  Enhanced duplicate: '{name}' matches {existing_id}")
-                            duplicates.append({
-                                "row": row_num,
-                                "name": name,
-                                "existing_id": existing_id
-                            })
-                            stats['duplicates_skipped'] += 1
-                            stats['enhanced_duplicate_checks'] += 1
-                            continue
-                    except Exception as e:
-                        logger.warning(f"Enhanced duplicate check failed, using fallback: {e}")
-                        # Fall through to standard check
-
-                # Standard duplicate check (fallback or when not enhanced)
+                # Check for duplicate (standard check - facility matcher moved to entityidentity)
                 existing_id = check_duplicate(facility_id, name, lat, lon, existing)
                 if existing_id:
                     logger.info(f"  Duplicate: '{name}' already exists as {existing_id}")
@@ -609,32 +601,39 @@ def process_report(report_text: str, country_iso3: str, source_name: str, enhanc
                 else:
                     notes = None
 
-                # Enhanced operator resolution
+                # Enhanced operator resolution using EntityIdentity
                 operator_link = None
                 base_confidence = 0.75
 
-                if enhanced and company_resolver and row.get('operator'):
+                if enhanced and company_matcher and row.get('operator'):
                     operator_str = row.get('operator', '').strip()
                     if operator_str and operator_str != '-':
                         try:
-                            resolved_operator = company_resolver.resolve_operator(
+                            # Use EnhancedCompanyMatcher directly
+                            results = company_matcher.match_best(
                                 operator_str,
-                                country_hint=country_iso3,
-                                facility_coords=(lat, lon) if (lat and lon) else None
+                                limit=1,
+                                min_score=70
                             )
-                            if resolved_operator:
+                            if results and len(results) > 0:
+                                best_match = results[0]
+                                lei = best_match.get('lei', '')
+                                company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or "cmp-unknown")
+                                confidence = best_match.get('score', 70) / 100.0
+                                company_name = best_match.get('original_name', best_match.get('brief_name', operator_str))
+
                                 operator_link = {
-                                    "company_id": resolved_operator['company_id'],
-                                    "company_name": resolved_operator['company_name'],
+                                    "company_id": company_id,
+                                    "company_name": company_name,
                                     "role": "operator",
-                                    "confidence": resolved_operator['confidence']
+                                    "confidence": round(confidence, 3)
                                 }
                                 stats['enhanced_company_resolutions'] += 1
 
                                 # Boost facility confidence if operator resolved
                                 base_confidence = min(0.85, base_confidence + 0.1)
                                 stats['confidence_boosts'] += 1
-                                logger.info(f"  Operator resolved: {operator_str} -> {resolved_operator['company_name']}")
+                                logger.info(f"  Operator resolved: {operator_str} -> {company_name}")
                         except Exception as e:
                             logger.warning(f"Error resolving operator '{operator_str}': {e}")
 
@@ -762,18 +761,20 @@ Enhanced mode features:
         """
     )
     parser.add_argument("input_file", help="Input report file (required)")
-    parser.add_argument("--country", required=True, help="Country ISO3 code (e.g., DZA, AFG)")
+    parser.add_argument("--country", help="Country ISO3 code (optional - will auto-detect if not provided, e.g., DZA, AFG)")
     parser.add_argument("--source", help="Source name for citation (optional, auto-generated if not provided)")
     parser.add_argument("--enhanced", action="store_true", help="Enable entity resolution (metal normalization, company matching)")
 
     args = parser.parse_args()
 
     # Find actual country code used in repo (handles DZA->DZ, etc)
-    country_iso3 = find_country_code(args.country)
+    # If no country provided, it will be auto-detected in process_report_enhanced
+    country_iso3 = find_country_code(args.country) if args.country else None
 
     # Auto-generate source name if not provided
     if not args.source:
-        source_name = f"Research Import {country_iso3} {datetime.now().strftime('%Y-%m-%d')}"
+        country_part = country_iso3 if country_iso3 else "Unknown"
+        source_name = f"Research Import {country_part} {datetime.now().strftime('%Y-%m-%d')}"
     else:
         source_name = args.source
 
