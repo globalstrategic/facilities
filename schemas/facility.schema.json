@@ -1,10 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Facility",
-  "description": "Schema for mining and processing facility data",
+  "description": "Schema for mining and processing facility data. Enhanced with EntityIdentity integration for improved company resolution, metal normalization, and facility cross-referencing. See docs/ENTITYIDENTITY_INTEGRATION_PLAN.md for details.",
+  "version": "2.0.0",
+  "lastUpdated": "2025-10-14",
   "type": "object",
   "required": ["facility_id", "name", "country_iso3", "types", "verification"],
   "properties": {
+    "ei_facility_id": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9_]+$",
+      "description": "EntityIdentity facility ID for cross-referencing with entityidentity database (e.g., 'mimosa_52f2f3d6')"
+    },
     "facility_id": {
       "type": "string",
       "pattern": "^[a-z]{3}-[a-z0-9-]+-fac$",
@@ -71,11 +78,21 @@
           "primary": {
             "type": "boolean",
             "description": "Whether this is the primary commodity"
+          },
+          "chemical_formula": {
+            "type": ["string", "null"],
+            "pattern": "^[A-Z][a-z]?[0-9]*([A-Z][a-z]?[0-9]*)*$",
+            "description": "Chemical formula or symbol (e.g., 'Cu', 'Fe2O3', 'PGM'). Pattern allows basic chemical formulas."
+          },
+          "category": {
+            "type": ["string", "null"],
+            "enum": ["base_metal", "precious_metal", "rare_earth", "industrial_mineral", "energy", "construction", "fertilizer", "unknown", null],
+            "description": "Metal category classification for grouping and analysis"
           }
         },
         "required": ["metal", "primary"]
       },
-      "description": "Metals and commodities produced"
+      "description": "Metals and commodities produced. Enhanced with chemical formulas and categories via entityidentity integration."
     },
     "status": {
       "type": "string",

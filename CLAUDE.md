@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is the **Global Mining & Metals Facilities Database** - a comprehensive database of mining, smelting, refining, and processing facilities worldwide. The system manages 8,443+ facilities across 129 countries with structured JSON data, entity resolution, and LLM-powered research integration.
+This is the **Global Mining & Metals Facilities Database** - a comprehensive database of mining, smelting, refining, and processing facilities worldwide. The system manages 8,606 facilities across 129 countries with structured JSON data, entity resolution, and LLM-powered research integration.
 
 **Key Features:**
 - Structured facility data organized by ISO3 country codes
 - JSON Schema validation for data quality
 - Duplicate detection and deduplication pipeline
 - Integration with Gemini Deep Research for facility enrichment
-- Company/country/metal entity resolution (via entityidentity library)
+- Company entity resolution during research enrichment (via entityidentity library)
 
 ## Common Development Commands
 
@@ -74,9 +74,9 @@ export GOOGLE_MAPS_API_KEY="your-key"  # For geocoding features
 ```
 facilities/
 ├── USA/                              # ISO3 country directories
-│   └── usa-stillwater-east-fac.json
+│   └── usa-east-boulder-fac.json
 ├── ZAF/
-│   └── zaf-rustenburg-karee-fac.json
+│   └── zaf-afrimat-demaneng-mine-fac.json
 └── DZ/
     └── dz-gara-djebilet-mine-fac.json
 ```
@@ -103,11 +103,13 @@ facilities/
 The import pipeline (`scripts/import_from_report.py`) extracts facilities from text reports:
 
 1. **Text Parsing**: Extracts markdown tables from research reports
-2. **Normalization**: Standardizes metals, facility types, and operational status
-3. **Country Detection**: Auto-detects correct ISO codes (handles both ISO2 and ISO3)
+2. **Normalization**: Standardizes metals (e.g., "Cu" → "copper"), facility types, and operational status
+3. **Country Detection**: Auto-detects correct ISO codes (handles both ISO2 and ISO3 input)
 4. **Duplicate Detection**: Checks by name, location (~1km radius), and aliases
 5. **JSON Generation**: Creates schema-compliant facility files
-6. **Logging**: Detailed import reports in `output/import_logs/`
+6. **Logging**: Detailed import reports with statistics in `output/import_logs/`
+
+**Note:** The import pipeline does NOT use entityidentity - it uses simple text normalization. Entity resolution is only applied during the Deep Research enrichment phase.
 
 **Duplicate Detection Logic:**
 - Exact facility ID match
@@ -122,16 +124,21 @@ Integration with Gemini Deep Research for facility enrichment (`scripts/deep_res
 1. **Prompt Generation**: Creates research prompts with existing facility data
 2. **Manual Research**: User submits to Gemini and gets structured JSON back
 3. **Result Processing**: Merges research data with existing facilities
-4. **Company Resolution**: Links companies using entityidentity
+4. **Company Resolution**: Links companies using entityidentity library (this is the ONLY place entityidentity is used)
 5. **Verification Updates**: Changes status from `csv_imported` to `llm_suggested`
 6. **Audit Trail**: Preserves raw research in `output/research_raw/`
 
+**Important:** The entityidentity library is located in a separate repository and must be in PYTHONPATH (e.g., `export PYTHONPATH="../entityidentity:$PYTHONPATH"`)
+
 ### Entity Resolution
 
-The system integrates with the `entityidentity` library (separate repo) for:
+The system integrates with the `entityidentity` library (separate repo) **only during Deep Research enrichment** for:
 - **Company Resolution**: Canonical company IDs, LEI codes, Wikidata QIDs
-- **Country Normalization**: ISO code standardization with fuzzy matching
-- **Metal Standardization**: Chemical formulas, alloys, compound resolution
+
+The import pipeline uses **simple text-based normalization** (not entityidentity) for:
+- **Country Detection**: Maps ISO2/ISO3 codes to existing directories using pycountry
+- **Metal Normalization**: Hardcoded mappings (e.g., "Cu" → "copper", "REE" → "rare earths")
+- **Facility Type Standardization**: Pattern matching (e.g., "Open Pit Mine" → "mine")
 
 ## Key Implementation Details
 
@@ -274,9 +281,12 @@ python scripts/facilities.py test --suite dedup
 
 ## Notes for Future Instances
 
-- The system uses a **two-directory country code structure** - some countries use ISO2 (DZ), others use ISO3 (USA). The import script auto-detects the correct directory.
+- The CLI is **NOT installed as a package** - run it directly with `python scripts/facilities.py` (the setup.py references "talloy" which is legacy code)
+- The system uses a **mixed country code structure** - some countries use ISO2 (DZ, AF), others use ISO3 (USA, ARG, AUS, ZAF). The import script auto-detects the correct directory.
 - **Country code validation** happens via pycountry library, not hardcoded lists
-- **Metal normalization** is partially implemented - some metals use full names ("copper"), others use compounds ("lithium carbonate")
-- The `entityidentity` library is in a separate repo and must be in PYTHONPATH or installed separately
+- **Metal normalization** uses hardcoded mappings in import_from_report.py - NOT entityidentity
+- The `entityidentity` library is ONLY used in deep_research_integration.py for company resolution during enrichment
+- entityidentity is in a separate repo and must be in PYTHONPATH: `export PYTHONPATH="../entityidentity:$PYTHONPATH"`
 - Import logs are **never** deleted - they serve as permanent audit trail
-- The system creates **automatic backups** before updating existing facilities
+- The system creates **automatic backups** (with `.backup_[timestamp].json` extension) before updating existing facilities
+- Current facility count: **8,606 facilities** as of the last migration

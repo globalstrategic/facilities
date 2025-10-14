@@ -3,9 +3,11 @@
 Unified facilities management CLI.
 
 Subcommands:
-  import    - Import facilities from text reports
+  import    - Import facilities from text reports (with optional --enhanced mode)
   research  - Enrich facilities with Gemini Deep Research
   test      - Run test suites
+  sync      - Synchronize with entityidentity parquet format (export/import/status)
+  resolve   - Test entity resolution (country/metal/company)
 """
 
 import sys
@@ -18,6 +20,16 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 def import_command(args):
     """Import facilities from text reports."""
+    if args.enhanced:
+        # Enhanced mode with entity resolution
+        print("Note: --enhanced flag is set, but enhanced import is not yet implemented.")
+        print("Enhanced mode will use entity resolution for:")
+        print("  - Country auto-detection")
+        print("  - Metal normalization")
+        print("  - Company resolution")
+        print("\nFalling back to standard import mode...")
+        print()
+
     # Import the actual implementation
     from import_from_report import main as import_main
 
@@ -75,6 +87,221 @@ def test_command(args):
     return 0
 
 
+def sync_command(args):
+    """Synchronize facilities with entityidentity parquet format."""
+    try:
+        from utils.facility_sync import FacilitySyncManager
+    except ImportError as e:
+        print(f"Error: Could not import FacilitySyncManager: {e}", file=sys.stderr)
+        print("\nPlease ensure all dependencies are installed:", file=sys.stderr)
+        print("  pip install pandas pycountry", file=sys.stderr)
+        return 1
+
+    try:
+        manager = FacilitySyncManager()
+
+        if args.export:
+            # Export facilities to parquet
+            output_dir = Path(args.output) if args.output else Path('output/entityidentity_export')
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            print(f"Exporting facilities to entityidentity parquet format...")
+            output_file = manager.export_to_entityidentity_format(output_dir)
+
+            # Print statistics
+            import pandas as pd
+            df = pd.read_parquet(output_file)
+            file_size_mb = output_file.stat().st_size / 1024 / 1024
+
+            print(f"\nExport complete!")
+            print(f"  Facilities exported: {len(df)}")
+            print(f"  Output file: {output_file}")
+            print(f"  File size: {file_size_mb:.2f} MB")
+
+            # Show breakdown by country
+            if 'country_iso2' in df.columns:
+                print(f"\nBreakdown by country:")
+                country_counts = df['country_iso2'].value_counts().head(10)
+                for country, count in country_counts.items():
+                    print(f"  {country}: {count} facilities")
+
+        elif args.import_file:
+            # Import facilities from parquet
+            parquet_path = Path(args.import_file)
+            if not parquet_path.exists():
+                print(f"Error: Parquet file not found: {parquet_path}", file=sys.stderr)
+                return 1
+
+            print(f"Importing facilities from {parquet_path}...")
+            if args.overwrite:
+                print("Warning: --overwrite flag set, existing facilities will be overwritten")
+
+            stats = manager.import_from_entityidentity(parquet_path, overwrite=args.overwrite)
+
+            print(f"\nImport complete!")
+            print(f"  Imported: {stats['imported']} facilities")
+            print(f"  Skipped: {stats['skipped']} (already exist)")
+            print(f"  Failed: {stats['failed']}")
+
+        elif args.status:
+            # Show sync status
+            print("Facility Database Status")
+            print("=" * 60)
+
+            # Count local facilities
+            facilities_dir = Path(__file__).parent.parent / "facilities"
+            local_count = 0
+            country_counts = {}
+
+            for country_dir in facilities_dir.iterdir():
+                if not country_dir.is_dir():
+                    continue
+                count = len(list(country_dir.glob("*.json")))
+                if count > 0:
+                    country_counts[country_dir.name] = count
+                    local_count += count
+
+            print(f"\nLocal database:")
+            print(f"  Total facilities: {local_count}")
+            print(f"  Countries: {len(country_counts)}")
+            print(f"  Top countries:")
+            for country, count in sorted(country_counts.items(), key=lambda x: x[1], reverse=True)[:10]:
+                print(f"    {country}: {count} facilities")
+
+            # Check for entityidentity parquets
+            ei_path = Path(__file__).parent.parent.parent / "entityidentity" / "tables" / "facilities"
+            if ei_path.exists():
+                print(f"\nEntityIdentity parquets found at: {ei_path}")
+                parquet_files = list(ei_path.glob("facilities_*.parquet"))
+                if parquet_files:
+                    latest = max(parquet_files, key=lambda p: p.stat().st_mtime)
+                    print(f"  Latest file: {latest.name}")
+
+                    import pandas as pd
+                    df = pd.read_parquet(latest)
+                    print(f"  Facilities in parquet: {len(df)}")
+                else:
+                    print("  No facility parquet files found")
+            else:
+                print(f"\nEntityIdentity parquets not found at: {ei_path}")
+
+        return 0
+
+    except Exception as e:
+        print(f"Error during sync operation: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
+
+
+def resolve_command(args):
+    """Test entity resolution."""
+    if args.entity_type == 'country':
+        # Resolve country
+        try:
+            from utils.country_detection import validate_country_code
+            import pycountry
+        except ImportError as e:
+            print(f"Error: Could not import country detection utilities: {e}", file=sys.stderr)
+            print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
+            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            return 1
+
+        country_name = args.name
+        print(f"Resolving country: {country_name}")
+        print("-" * 60)
+
+        try:
+            iso3 = validate_country_code(country_name)
+            country = pycountry.countries.get(alpha_3=iso3)
+            iso2 = country.alpha_2
+
+            print(f"  Result: SUCCESS")
+            print(f"  Country: {country.name}")
+            print(f"  ISO2: {iso2}")
+            print(f"  ISO3: {iso3}")
+            print(f"  Official name: {getattr(country, 'official_name', 'N/A')}")
+
+        except ValueError as e:
+            print(f"  Result: FAILED")
+            print(f"  Error: {e}")
+            return 1
+
+    elif args.entity_type == 'metal':
+        # Resolve metal
+        try:
+            from utils.metal_normalizer import normalize_commodity, get_metal_info
+        except ImportError as e:
+            print(f"Error: Could not import metal normalization utilities: {e}", file=sys.stderr)
+            print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
+            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            return 1
+
+        metal_name = args.name
+        print(f"Resolving metal: {metal_name}")
+        print("-" * 60)
+
+        result = normalize_commodity(metal_name)
+        print(f"  Normalized name: {result['metal']}")
+        print(f"  Chemical formula: {result.get('chemical_formula', 'N/A')}")
+        print(f"  Category: {result.get('category', 'unknown')}")
+
+        # Try to get additional info
+        info = get_metal_info(metal_name)
+        if info:
+            print(f"\nAdditional information:")
+            for key, value in info.items():
+                if key not in ['name', 'symbol', 'category']:
+                    print(f"  {key}: {value}")
+
+    elif args.entity_type == 'company':
+        # Resolve company
+        try:
+            from utils.company_resolver import FacilityCompanyResolver
+        except ImportError as e:
+            print(f"Error: Could not import company resolver: {e}", file=sys.stderr)
+            print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
+            print("  pip install git+https://github.com/microprediction/entityidentity.git", file=sys.stderr)
+            return 1
+
+        company_name = args.name
+        country_hint = args.country if hasattr(args, 'country') else None
+
+        print(f"Resolving company: {company_name}")
+        if country_hint:
+            print(f"Country hint: {country_hint}")
+        print("-" * 60)
+
+        try:
+            resolver = FacilityCompanyResolver()
+            result = resolver.resolve_operator(company_name, country_hint=country_hint)
+
+            if result:
+                print(f"  Result: SUCCESS")
+                print(f"  Company ID: {result['company_id']}")
+                print(f"  Company name: {result['company_name']}")
+                print(f"  Confidence: {result['confidence']:.3f}")
+                print(f"  Match explanation: {result['match_explanation']}")
+
+                # Show cache stats
+                stats = resolver.get_cache_stats()
+                print(f"\nResolver statistics:")
+                print(f"  Cache size: {stats['cache_size']}")
+                print(f"  Database size: {stats.get('database_size', 'Not loaded')}")
+            else:
+                print(f"  Result: NO MATCH FOUND")
+                print(f"  No company match found above minimum threshold (70)")
+
+        except Exception as e:
+            print(f"  Result: ERROR")
+            print(f"  Error: {e}")
+            import traceback
+            traceback.print_exc()
+            return 1
+
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Unified facilities management CLI',
@@ -84,6 +311,7 @@ Examples:
   # Import facilities from text report
   python facilities.py import report.txt --country DZ
   python facilities.py import report.txt --country DZ --source "Algeria Report 2025"
+  python facilities.py import report.txt --country DZ --enhanced  # Use enhanced mode with entity resolution
 
   # Generate Deep Research prompt
   python facilities.py research --generate-prompt --country ZAF --metal platinum --limit 50
@@ -96,6 +324,21 @@ Examples:
   python facilities.py test
   python facilities.py test --suite dedup
   python facilities.py test --suite migration
+
+  # Sync with entityidentity parquet format
+  python facilities.py sync --export  # Export to output/entityidentity_export/
+  python facilities.py sync --export --output /custom/path
+  python facilities.py sync --import facilities.parquet
+  python facilities.py sync --import facilities.parquet --overwrite
+  python facilities.py sync --status  # Show database status
+
+  # Test entity resolution
+  python facilities.py resolve country "Algeria"
+  python facilities.py resolve country DZ
+  python facilities.py resolve metal "Cu"
+  python facilities.py resolve metal "lithium carbonate"
+  python facilities.py resolve company "BHP"
+  python facilities.py resolve company "Sibanye-Stillwater" --country ZAF
         """
     )
 
@@ -107,6 +350,8 @@ Examples:
     import_parser.add_argument('input_file', help='Input report file')
     import_parser.add_argument('--country', required=True, help='Country code (e.g., DZ, AFG)')
     import_parser.add_argument('--source', help='Source name (optional, auto-generated if not provided)')
+    import_parser.add_argument('--enhanced', action='store_true',
+                              help='Use enhanced import mode with entity resolution (requires entityidentity)')
     import_parser.set_defaults(func=import_command)
 
     # Research subcommand
@@ -125,6 +370,41 @@ Examples:
     test_parser.add_argument('--suite', choices=['dedup', 'migration', 'all'], default='all',
                             help='Which test suite to run (default: all)')
     test_parser.set_defaults(func=test_command)
+
+    # Sync subcommand
+    sync_parser = subparsers.add_parser('sync', help='Synchronize with entityidentity parquet format')
+    sync_group = sync_parser.add_mutually_exclusive_group(required=True)
+    sync_group.add_argument('--export', action='store_true',
+                           help='Export facilities to entityidentity parquet format')
+    sync_group.add_argument('--import', dest='import_file', metavar='PARQUET_PATH',
+                           help='Import facilities from entityidentity parquet file')
+    sync_group.add_argument('--status', action='store_true',
+                           help='Show database status and compare with entityidentity')
+    sync_parser.add_argument('--output', metavar='PATH',
+                            help='Output directory for export (default: output/entityidentity_export/)')
+    sync_parser.add_argument('--overwrite', action='store_true',
+                            help='Overwrite existing facilities during import (default: skip)')
+    sync_parser.set_defaults(func=sync_command)
+
+    # Resolve subcommand
+    resolve_parser = subparsers.add_parser('resolve', help='Test entity resolution')
+    resolve_subparsers = resolve_parser.add_subparsers(dest='entity_type', help='Entity type to resolve')
+    resolve_subparsers.required = True
+
+    # Country resolution
+    country_parser = resolve_subparsers.add_parser('country', help='Resolve country code')
+    country_parser.add_argument('name', help='Country name or code (e.g., "Algeria", "DZ", "DZA")')
+
+    # Metal resolution
+    metal_parser = resolve_subparsers.add_parser('metal', help='Normalize metal/commodity name')
+    metal_parser.add_argument('name', help='Metal name or symbol (e.g., "Cu", "Platinum", "lithium carbonate")')
+
+    # Company resolution
+    company_parser = resolve_subparsers.add_parser('company', help='Resolve company name')
+    company_parser.add_argument('name', help='Company name (e.g., "BHP", "Sibanye-Stillwater")')
+    company_parser.add_argument('--country', help='Country hint for better matching (ISO2 or ISO3)')
+
+    resolve_parser.set_defaults(func=resolve_command)
 
     args = parser.parse_args()
 

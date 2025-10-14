@@ -1,0 +1,78 @@
+{
+  "facility_id": "usa-stillwater-east-fac",
+  "name": "Stillwater East Mine",
+  "aliases": [
+    "East Boulder Mine",
+    "East Boulder"
+  ],
+  "country_iso3": "USA",
+  "ei_facility_id": "stillwater_east_52f2f3d6",
+  "location": {
+    "lat": 45.4,
+    "lon": -109.9,
+    "precision": "exact"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "platinum",
+      "primary": true,
+      "chemical_formula": "Pt",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "palladium",
+      "primary": false,
+      "chemical_formula": "Pd",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "rhodium",
+      "primary": false,
+      "chemical_formula": "Rh",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "owner_links": [
+    {
+      "company_id": "cmp-sibanye-stillwater",
+      "role": "owner",
+      "percentage": 100,
+      "confidence": 0.95
+    }
+  ],
+  "operator_link": {
+    "company_id": "cmp-sibanye-stillwater",
+    "confidence": 0.95
+  },
+  "products": [
+    {
+      "stream": "PGM concentrate",
+      "capacity": 500000,
+      "unit": "oz/year",
+      "year": 2024
+    }
+  ],
+  "sources": [
+    {
+      "type": "lei",
+      "id": "LEI123456789",
+      "date": "2025-10-14T12:00:00Z"
+    },
+    {
+      "type": "web",
+      "url": "https://www.sibanyestillwater.com/business/americas/stillwater/",
+      "date": "2025-10-14T12:00:00Z"
+    }
+  ],
+  "verification": {
+    "status": "llm_verified",
+    "confidence": 0.95,
+    "last_checked": "2025-10-14T12:00:00Z",
+    "checked_by": "entityidentity_integration",
+    "notes": "Verified via EntityIdentity company matcher with high confidence. Chemical formulas and categories added via metal normalization."
+  }
+}
