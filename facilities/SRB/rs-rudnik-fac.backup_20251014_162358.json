@@ -1,0 +1,46 @@
+{
+  "facility_id": "srb-rudnik-fac",
+  "name": "Rudnik",
+  "aliases": [
+    "Rudnik"
+  ],
+  "country_iso3": "SRB",
+  "location": {
+    "lat": 44.133,
+    "lon": 20.474,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8507
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-12T19:43:44.472604",
+    "checked_by": "migration_script"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "facility_id": "ncl-mount-isa-copper-fac",
+  "name": "Mount Isa Copper",
+  "aliases": [
+    "Mount Isa Lead/Zinc",
+    "Ernest Henry and Mount Isa",
+    "Mount Isa Copper",
+    "Mount Isa Pb Refinery",
+    "Mount Isa Pb Smelter",
+    "Mount Isa smelter",
+    "Mount Isa Zinc",
+    "Mt Isa Copper",
+    "Mt Isa Smelter",
+    "Mt Isa SX EW",
+    "Mt Isa Zinc",
+    "Mount Isa Pb"
+  ],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": -20.725,
+    "lon": 139.481,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "uranium",
+      "primary": false
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 1600
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:43.358192",
+    "checked_by": "migration_script"
+  }
+}

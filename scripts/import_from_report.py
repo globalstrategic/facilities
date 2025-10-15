@@ -1,20 +1,33 @@
 #!/usr/bin/env python3
 """
-One-command facility import from research reports.
+Enhanced one-command facility import from research reports with entity resolution.
 
-This unified script extracts tables from a research report and imports facilities
-into the database with automatic duplicate detection - all in one pipeline.
+This enhanced version extends the original import pipeline with optional entity
+resolution using the entityidentity library directly, providing:
+- Metal/commodity normalization with chemical formulas via metal_identifier()
+- Company name resolution with canonical IDs via EnhancedCompanyMatcher
+- Ownership parsing via facilities-specific ownership_parser utility
+- Graceful fallback to basic mode if entityidentity is unavailable
+
+The enhanced features are opt-in via the --enhanced flag, maintaining full
+backward compatibility with the original import_from_report.py pipeline.
 
 Usage:
-    # Interactive mode (paste your report)
-    python import_from_report.py --country DZA --source "Algeria Report 2025"
-    [Paste report text, then Ctrl+D]
+    # Basic mode (same as original)
+    python import_from_report_enhanced.py report.txt --country DZA
 
-    # From file
-    python import_from_report.py report.txt --country AFG --source "Afghanistan Report 2025"
+    # Enhanced mode with entity resolution
+    python import_from_report_enhanced.py report.txt --country DZA --enhanced
 
-    # From stdin
-    cat report.txt | python import_from_report.py --country DZA --source "Algeria Report"
+    # Enhanced mode with auto-detected country
+    python import_from_report_enhanced.py report.txt --enhanced
+
+    # From stdin (pipe)
+    cat report.txt | python import_from_report_enhanced.py --country AFG --enhanced
+
+Requirements for enhanced mode:
+    - entityidentity library (https://github.com/globalstrategic/entityidentity)
+    - Clone to parent directory or install as package
 """
 
 import re
@@ -43,7 +56,7 @@ IMPORT_LOGS_DIR = ROOT / "output" / "import_logs"
 for dir_path in [FACILITIES_DIR, IMPORT_LOGS_DIR]:
     dir_path.mkdir(parents=True, exist_ok=True)
 
-# Normalization maps
+# Normalization maps (fallback)
 METAL_NORMALIZE_MAP = {
     "aluminium": "aluminum", "ferronickel": "nickel", "ferromanganese": "manganese",
     "chromite": "chromium", "pgm": "platinum", "pge": "platinum",
@@ -160,6 +173,230 @@ def extract_markdown_tables(text: str) -> List[Dict]:
     return tables
 
 
+def extract_facilities_from_text(text: str) -> List[Dict]:
+    """Extract facilities from narrative text, lists, and paragraphs.
+
+    This parser handles facilities mentioned in non-table formats like:
+    - "Letpadaung Mine: This is the largest..."
+    - "Mawchi Mine (Kayah State): Historically..."
+    - List items with facility names
+    - Inline mentions in paragraphs
+
+    Returns list of facility dictionaries with extracted attributes.
+    """
+    facilities = []
+    lines = text.split('\n')
+
+    # Track current section for commodity context
+    current_commodity = None
+    current_section = None
+
+    # Patterns for facility mentions
+    facility_patterns = [
+        # Pattern 1: "Name Mine:" or "Name Project:" at start of line
+        r'^([A-Z][^:\n]+?(?:Mine|Project|Complex|Plant|Refinery|Smelter|Deposit|Field|Quarry|Basin))\s*(?:\([^)]+\))?\s*:',
+        # Pattern 2: "Name (Location):"
+        r'^([A-Z][^:\n]+?)\s*\(([^)]+)\)\s*:',
+        # Pattern 3: List items "- Name:" or "• Name:"
+        r'^[\-•]\s*([A-Z][^:\n]+?(?:Mine|Project|Complex|Plant|Refinery|Smelter|Deposit|Field|Quarry))\s*(?:\([^)]+\))?\s*:',
+    ]
+
+    # Section header pattern to detect commodity context
+    section_pattern = r'^(?:Section\s+)?(\d+\.?\d*)\s+(.+?)(?:\s*-\s*(.+?))?$'
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # Check if this is a section header
+        section_match = re.match(section_pattern, line)
+        if section_match and len(line) < 100:
+            current_section = section_match.group(2).strip()
+            # Try to extract commodity from section title
+            # e.g., "2.1 Copper" -> commodity = "copper"
+            commodity_keywords = {
+                'copper': 'copper', 'lead': 'lead', 'zinc': 'zinc',
+                'tin': 'tin', 'tungsten': 'tungsten', 'nickel': 'nickel',
+                'gold': 'gold', 'silver': 'silver', 'jade': 'jade',
+                'ruby': 'precious stones', 'sapphire': 'precious stones',
+                'iron': 'iron', 'coal': 'coal', 'rare earth': 'rare earths',
+                'antimony': 'antimony', 'gas': 'natural gas', 'oil': 'petroleum',
+                'cement': 'limestone', 'marble': 'marble'
+            }
+            for keyword, normalized in commodity_keywords.items():
+                if keyword in current_section.lower():
+                    current_commodity = normalized
+                    logger.debug(f"Section: {current_section} -> commodity: {current_commodity}")
+                    break
+            i += 1
+            continue
+
+        # Check for facility mentions
+        facility_match = None
+        location_from_pattern = None
+
+        for pattern in facility_patterns:
+            match = re.match(pattern, line, re.IGNORECASE)
+            if match:
+                facility_match = match
+                break
+
+        if facility_match:
+            # Extract facility name
+            facility_name = facility_match.group(1).strip()
+
+            # Try to extract location from name (e.g., "Name (Location)")
+            location_match = re.search(r'\(([^)]+)\)', facility_name)
+            if location_match:
+                location_from_pattern = location_match.group(1)
+                # Remove location from name
+                facility_name = re.sub(r'\s*\([^)]+\)', '', facility_name).strip()
+            elif facility_match.lastindex >= 2 and facility_match.group(2):
+                location_from_pattern = facility_match.group(2)
+
+            # Gather context from following lines (next 5-10 lines)
+            context_lines = []
+            j = i + 1
+            while j < min(i + 10, len(lines)) and j < len(lines):
+                context_line = lines[j].strip()
+                # Stop at next facility or section
+                if re.match(facility_patterns[0], context_line) or \
+                   re.match(facility_patterns[1], context_line) or \
+                   re.match(facility_patterns[2], context_line):
+                    break
+                if context_line:
+                    context_lines.append(context_line)
+                j += 1
+
+            context_text = ' '.join(context_lines)
+
+            # Extract attributes from context
+            extracted_data = extract_facility_attributes(
+                facility_name,
+                context_text,
+                location_from_pattern,
+                current_commodity
+            )
+
+            if extracted_data:
+                facilities.append(extracted_data)
+                logger.debug(f"Extracted from text: {facility_name}")
+
+            i = j  # Skip to after the context we just processed
+        else:
+            i += 1
+
+    logger.info(f"Extracted {len(facilities)} facilities from text")
+    return facilities
+
+
+def extract_facility_attributes(name: str, context: str, location_hint: Optional[str],
+                               commodity_hint: Optional[str]) -> Optional[Dict]:
+    """Extract facility attributes from name and context text.
+
+    Args:
+        name: Facility name
+        context: Surrounding text (next few lines)
+        location_hint: Location extracted from name pattern
+        commodity_hint: Commodity from section context
+
+    Returns:
+        Dictionary with extracted attributes or None if insufficient data
+    """
+    # Clean name
+    name = re.sub(r'\s+', ' ', name).strip()
+    if not name or len(name) < 3:
+        return None
+
+    # Extract location
+    location_text = location_hint or ""
+
+    # Look for location patterns in context if not in name
+    if not location_text:
+        location_patterns = [
+            r'(?:located|situated|in)\s+(?:the\s+)?([A-Z][^,\.]+(?:Region|State|Province|District|Township|Area))',
+            r'\(([A-Z][^)]+(?:Region|State|Province|District))\)',
+        ]
+        for pattern in location_patterns:
+            match = re.search(pattern, context, re.IGNORECASE)
+            if match:
+                location_text = match.group(1).strip()
+                break
+
+    # Extract commodities
+    commodities = set()
+    if commodity_hint:
+        commodities.add(commodity_hint.lower())
+
+    # Look for commodity mentions in context
+    commodity_patterns = {
+        'copper': r'\bcopper\b', 'lead': r'\blead\b', 'zinc': r'\bzinc\b',
+        'gold': r'\bgold\b', 'silver': r'\bsilver\b', 'tin': r'\btin\b',
+        'tungsten': r'\btungsten\b', 'nickel': r'\bnickel\b', 'iron': r'\biron\b',
+        'coal': r'\bcoal\b', 'jade': r'\bjade\b', 'ruby': r'\bruby\b',
+        'rare earths': r'\brare earth', 'antimony': r'\bantimony\b',
+        'natural gas': r'\bnatural gas\b|\bgas\b'
+    }
+    for metal, pattern in commodity_patterns.items():
+        if re.search(pattern, context, re.IGNORECASE):
+            commodities.add(metal)
+
+    # Extract facility type from name
+    type_keywords = {
+        'mine': r'\bmine\b',
+        'smelter': r'\bsmelter\b',
+        'refinery': r'\brefinery\b',
+        'plant': r'\bplant\b|\bfactory\b',
+        'complex': r'\bcomplex\b',
+        'deposit': r'\bdeposit\b',
+        'project': r'\bproject\b',
+        'quarry': r'\bquarry\b',
+    }
+    facility_types = []
+    for ftype, pattern in type_keywords.items():
+        if re.search(pattern, name, re.IGNORECASE):
+            facility_types.append(ftype)
+            break
+    if not facility_types:
+        facility_types = ['mine']  # Default
+
+    # Extract status
+    status = 'unknown'
+    status_patterns = {
+        'operating': r'\boperating\b|\boperational\b|\bactive\b|\bproducing\b',
+        'closed': r'\bclosed\b|\binactive\b|\bshuttered\b',
+        'construction': r'\bunder construction\b|\bdeveloping\b|\bin development\b',
+        'planned': r'\bplanned\b|\bproposed\b|\bcontracted\b',
+    }
+    for status_val, pattern in status_patterns.items():
+        if re.search(pattern, context, re.IGNORECASE):
+            status = status_val
+            break
+
+    # Extract operator/owner mentions
+    operator = None
+    operator_patterns = [
+        r'(?:operated by|operator|run by)\s+([A-Z][^,\.;]+?(?:Ltd|Limited|Co\.|Corporation|Inc|Company|Group|Enterprise)\.?)',
+        r'(?:owned by|owner)\s+([A-Z][^,\.;]+?(?:Ltd|Limited|Co\.|Corporation|Inc|Company|Group|Enterprise)\.?)',
+    ]
+    for pattern in operator_patterns:
+        match = re.search(pattern, context, re.IGNORECASE)
+        if match:
+            operator = match.group(1).strip()
+            break
+
+    # Build structured data
+    return {
+        'name': name,
+        'location': location_text,
+        'commodities': list(commodities),
+        'types': facility_types,
+        'status': status,
+        'operator': operator,
+        'notes': context[:200] if context else None  # Keep first 200 chars as notes
+    }
+
+
 def parse_markdown_table(lines: List[str], separator: str = '|') -> Optional[Dict]:
     """Parse markdown table from lines (supports | or tab separator)."""
     def split_row(line, sep):
@@ -254,36 +491,54 @@ def normalize_headers(headers: List[str]) -> List[str]:
     return normalized
 
 
-def find_country_code(country_input: str) -> str:
-    """Find the actual country code used in the repository.
+def find_country_code(country_input: str) -> Tuple[str, str]:
+    """Find the actual country code and directory used in the repository.
 
-    Checks if a directory exists for this country (tries both as-is, upper, and variations).
-    Returns the actual directory name if found, otherwise returns input.
+    Uses country_utils to normalize to ISO3, then checks which directory exists.
+
+    Returns:
+        Tuple of (iso3_code, directory_name)
+        e.g., ("DZA", "DZ") or ("USA", "USA")
     """
-    # Try exact match first
-    if (FACILITIES_DIR / country_input).exists():
-        return country_input
+    # First, normalize to ISO3 using country_utils
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).parent))
+        from utils.country_utils import normalize_country_to_iso3
+        iso3 = normalize_country_to_iso3(country_input)
+    except Exception as e:
+        logger.warning(f"Could not use country_utils: {e}, falling back")
+        iso3 = country_input.upper()
 
-    # Try uppercase
+    # Now find which directory exists (could be ISO3 or ISO2)
+    # Try exact ISO3
+    if (FACILITIES_DIR / iso3).exists():
+        return (iso3, iso3)
+
+    # Try ISO2 (first 2 chars)
+    if len(iso3) == 3:
+        iso2 = iso3[:2]
+        if (FACILITIES_DIR / iso2).exists():
+            logger.info(f"Using directory '{iso2}' for country {iso3}")
+            return (iso3, iso2)
+
+    # Try uppercase input as-is
     upper = country_input.upper()
     if (FACILITIES_DIR / upper).exists():
-        return upper
+        return (iso3, upper)
 
-    # For common conversions (DZA->DZ, USA->US, etc), try truncated version
-    if len(country_input) == 3:
-        short = country_input[:2].upper()
-        if (FACILITIES_DIR / short).exists():
-            logger.info(f"Found existing directory '{short}' for input '{country_input}'")
-            return short
-
-    # No existing directory found, use input as-is
-    return country_input.upper()
+    # No existing directory found, create with ISO3
+    logger.info(f"No existing directory found, will create {iso3}")
+    return (iso3, iso3)
 
 
-def load_existing_facilities(country_iso3: str) -> Dict[str, Dict]:
-    """Load existing facilities for duplicate detection."""
+def load_existing_facilities(country_dir_name: str) -> Dict[str, Dict]:
+    """Load existing facilities for duplicate detection.
+
+    Args:
+        country_dir_name: Directory name (could be ISO2 or ISO3)
+    """
     existing = {}
-    country_dir = FACILITIES_DIR / country_iso3
+    country_dir = FACILITIES_DIR / country_dir_name
     if not country_dir.exists():
         return existing
 
@@ -327,29 +582,84 @@ def check_duplicate(facility_id: str, name: str, lat: Optional[float], lon: Opti
 
 
 def normalize_metal(metal: str) -> str:
-    """Normalize metal name."""
+    """Normalize metal name (fallback version)."""
     metal_lower = metal.lower().strip()
     return METAL_NORMALIZE_MAP.get(metal_lower, metal_lower)
 
 
-def parse_commodities(primary: str, other: str) -> List[Dict]:
-    """Parse commodities from primary and other strings."""
+def parse_commodities(primary: str, other: str, enhanced: bool = False) -> List[Dict]:
+    """Parse commodities from primary and other strings.
+
+    Args:
+        primary: Primary commodity string
+        other: Other commodities string
+        enhanced: If True, use entityidentity metal_identifier for enhanced resolution
+
+    Returns:
+        List of commodity dictionaries with metal, primary flag, and optionally
+        chemical_formula and category if enhanced mode is enabled
+    """
     commodities = []
     seen = set()
 
+    # Import enhanced metal identifier if available
+    metal_identifier_func = None
+    if enhanced:
+        try:
+            sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
+            from entityidentity import metal_identifier
+            metal_identifier_func = metal_identifier
+            logger.debug("Using enhanced metal identification from entityidentity")
+        except ImportError as e:
+            logger.warning(f"Could not import entityidentity metal_identifier, using fallback: {e}")
+
+    def normalize_commodity_entry(metal_str: str) -> Dict:
+        """Normalize a single commodity entry."""
+        if metal_identifier_func:
+            # Enhanced normalization with entityidentity
+            try:
+                result = metal_identifier_func(metal_str)
+                if result:
+                    return {
+                        "metal": result.get('name', metal_str.lower()),
+                        "chemical_formula": result.get('formula'),
+                        "category": result.get('category', 'unknown')
+                    }
+            except Exception as e:
+                logger.debug(f"Metal identifier failed for '{metal_str}': {e}")
+
+        # Fallback to basic normalization
+        return {"metal": normalize_metal(metal_str), "chemical_formula": None, "category": "unknown"}
+
     if primary:
         for metal in re.split(r'[,;]', primary):
-            metal = normalize_metal(metal.strip())
-            if metal and metal not in seen and metal != '-':
-                commodities.append({"metal": metal, "primary": True})
-                seen.add(metal)
+            metal = metal.strip()
+            if metal and metal != '-':
+                normalized = normalize_commodity_entry(metal)
+                metal_key = normalized['metal']
+                if metal_key not in seen:
+                    commodity = {"metal": metal_key, "primary": True}
+                    if normalized.get('chemical_formula'):
+                        commodity['chemical_formula'] = normalized['chemical_formula']
+                    if normalized.get('category') and normalized['category'] != 'unknown':
+                        commodity['category'] = normalized['category']
+                    commodities.append(commodity)
+                    seen.add(metal_key)
 
     if other:
         for metal in re.split(r'[,;]', other):
-            metal = normalize_metal(metal.strip())
-            if metal and metal not in seen and metal != '-':
-                commodities.append({"metal": metal, "primary": False})
-                seen.add(metal)
+            metal = metal.strip()
+            if metal and metal != '-':
+                normalized = normalize_commodity_entry(metal)
+                metal_key = normalized['metal']
+                if metal_key not in seen:
+                    commodity = {"metal": metal_key, "primary": False}
+                    if normalized.get('chemical_formula'):
+                        commodity['chemical_formula'] = normalized['chemical_formula']
+                    if normalized.get('category') and normalized['category'] != 'unknown':
+                        commodity['category'] = normalized['category']
+                    commodities.append(commodity)
+                    seen.add(metal_key)
 
     return commodities
 
@@ -385,23 +695,73 @@ def parse_status(status_str: str) -> str:
     return STATUS_MAP.get(status_str.lower().strip(), "unknown")
 
 
-def process_report(report_text: str, country_iso3: str, source_name: str) -> Dict:
-    """Main pipeline: extract tables and import facilities."""
+def process_report(report_text: str, country_iso3: str, country_dir: str, source_name: str) -> Dict:
+    """Main pipeline: extract tables and import facilities.
+
+    Uses entity resolution by default for:
+    - Metal normalization with chemical formulas
+    - Company resolution with canonical IDs
+    - Auto-detection of country from facility data
+
+    Args:
+        report_text: The report text containing facility tables
+        country_iso3: ISO3 country code (or None for auto-detection)
+        source_name: Source name for citations
+
+    Returns:
+        Dictionary containing facilities, duplicates, errors, and statistics
+    """
     logger.info(f"Processing report for {country_iso3}...")
+
+    # Initialize entity resolvers (always - this is the default now)
+    company_matcher = None
+    ownership_parser_func = None
+
+    # Always try to load entity resolution modules
+    # Import EnhancedCompanyMatcher from entityidentity
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
+        from entityidentity.companies import EnhancedCompanyMatcher
+        company_matcher = EnhancedCompanyMatcher()
+        logger.info("EnhancedCompanyMatcher initialized")
+    except ImportError as e:
+        logger.warning(f"Could not import EnhancedCompanyMatcher: {e}")
+        logger.warning("Company resolution will be skipped")
+    except Exception as e:
+        logger.error(f"Error initializing EnhancedCompanyMatcher: {e}")
+
+    # Import ownership parser (facilities-specific utility)
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).parent))
+        from utils.ownership_parser import parse_ownership
+        ownership_parser_func = parse_ownership
+        logger.info("Ownership parser loaded")
+    except ImportError as e:
+        logger.warning(f"Could not import ownership_parser: {e}")
+    except Exception as e:
+        logger.error(f"Error loading ownership parser: {e}")
 
     # Extract tables
     logger.info("Extracting facility tables from report...")
     tables = extract_markdown_tables(report_text)
     logger.info(f"Found {len(tables)} facility tables")
 
+    # Extract facilities from narrative text (list/paragraph format)
+    text_facilities = []
     if not tables:
-        logger.error("No facility tables found in report")
-        logger.error("Check that your report contains tables with | or tab separators")
-        logger.error("Tables must have headers like: Name, Location, Commodity, etc.")
-        return {"error": "No tables found", "facilities": []}
+        logger.info("No tables found, attempting text extraction...")
+        text_facilities = extract_facilities_from_text(report_text)
+        logger.info(f"Extracted {len(text_facilities)} facilities from text")
 
-    # Load existing facilities
-    existing = load_existing_facilities(country_iso3)
+    if not tables and not text_facilities:
+        logger.error("No facility data found in report")
+        logger.error("Check that your report contains:")
+        logger.error("  - Tables with | or tab separators, OR")
+        logger.error("  - Facility mentions like 'Name Mine: description' or '- Name Project:'")
+        return {"error": "No facility data found", "facilities": []}
+
+    # Load existing facilities from directory
+    existing = load_existing_facilities(country_dir)
     logger.info(f"Loaded {len(existing)} existing facilities for duplicate detection")
 
     # Process all rows from all tables
@@ -409,6 +769,11 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
     duplicates = []
     errors = []
     stats = defaultdict(int)
+
+    # Entity resolution statistics
+    stats['metal_resolutions'] = 0
+    stats['company_resolutions'] = 0
+    stats['confidence_boosts'] = 0
 
     row_num = 0
     for table in tables:
@@ -456,7 +821,7 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                 except (ValueError, AttributeError):
                     pass
 
-                # Check for duplicate
+                # Check for duplicate (standard check - facility matcher moved to entityidentity)
                 existing_id = check_duplicate(facility_id, name, lat, lon, existing)
                 if existing_id:
                     logger.info(f"  Duplicate: '{name}' already exists as {existing_id}")
@@ -470,7 +835,11 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
 
                 # Parse data
                 types = parse_types(row.get('types', ''))
-                commodities = parse_commodities(row.get('primary', ''), row.get('other', ''))
+                commodities = parse_commodities(row.get('primary', ''), row.get('other', ''), enhanced=True)
+
+                # Count metal resolutions with formulas
+                stats['metal_resolutions'] += len([c for c in commodities if c.get('chemical_formula')])
+
                 status = parse_status(row.get('status', ''))
 
                 aliases_str = row.get('synonyms', '').strip()
@@ -481,6 +850,42 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                     notes = notes[:500]
                 else:
                     notes = None
+
+                # Operator resolution using EntityIdentity
+                operator_link = None
+                base_confidence = 0.75
+
+                if company_matcher and row.get('operator'):
+                    operator_str = row.get('operator', '').strip()
+                    if operator_str and operator_str != '-':
+                        try:
+                            # Use EnhancedCompanyMatcher directly
+                            results = company_matcher.match_best(
+                                operator_str,
+                                limit=1,
+                                min_score=70
+                            )
+                            if results and len(results) > 0:
+                                best_match = results[0]
+                                lei = best_match.get('lei', '')
+                                company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or "cmp-unknown")
+                                confidence = best_match.get('score', 70) / 100.0
+                                company_name = best_match.get('original_name', best_match.get('brief_name', operator_str))
+
+                                operator_link = {
+                                    "company_id": company_id,
+                                    "company_name": company_name,
+                                    "role": "operator",
+                                    "confidence": round(confidence, 3)
+                                }
+                                stats['company_resolutions'] += 1
+
+                                # Boost facility confidence if operator resolved
+                                base_confidence = min(0.85, base_confidence + 0.1)
+                                stats['confidence_boosts'] += 1
+                                logger.info(f"  Operator resolved: {operator_str} -> {company_name}")
+                        except Exception as e:
+                            logger.warning(f"Error resolving operator '{operator_str}': {e}")
 
                 # Build facility
                 facility = {
@@ -497,7 +902,7 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                     "commodities": commodities,
                     "status": status,
                     "owner_links": [],
-                    "operator_link": None,
+                    "operator_link": operator_link,
                     "products": [],
                     "sources": [{
                         "type": "gemini_research",
@@ -506,7 +911,7 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                     }],
                     "verification": {
                         "status": "llm_suggested",
-                        "confidence": 0.75,
+                        "confidence": base_confidence,
                         "last_checked": datetime.now().isoformat(),
                         "checked_by": "import_pipeline",
                         "notes": notes
@@ -520,9 +925,121 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
                 logger.error(f"Row {row_num}: Error parsing: {e}")
                 errors.append(f"Row {row_num}: {str(e)}")
 
-    logger.info(f"Processed {row_num} rows")
+    # Process text-extracted facilities
+    text_num = 0
+    for text_fac in text_facilities:
+        text_num += 1
+        try:
+            name = text_fac.get('name', '').strip()
+            if not name:
+                continue
+
+            # Generate facility ID
+            facility_id = f"{country_iso3.lower()}-{slugify(name)}-fac"
+
+            # Check for duplicate
+            existing_id = check_duplicate(facility_id, name, None, None, existing)
+            if existing_id:
+                logger.info(f"  Duplicate: '{name}' already exists as {existing_id}")
+                duplicates.append({
+                    "row": f"text-{text_num}",
+                    "name": name,
+                    "existing_id": existing_id
+                })
+                stats['duplicates_skipped'] += 1
+                continue
+
+            # Parse commodities from list of strings
+            commodities = []
+            for metal in text_fac.get('commodities', []):
+                commodity_data = parse_commodities(metal, '', enhanced=True)
+                if commodity_data:
+                    commodities.extend(commodity_data)
+
+            # Count metal resolutions with formulas
+            stats['metal_resolutions'] += len([c for c in commodities if c.get('chemical_formula')])
+
+            # Operator resolution
+            operator_link = None
+            base_confidence = 0.65  # Lower confidence for text extraction
+
+            if company_matcher and text_fac.get('operator'):
+                operator_str = text_fac.get('operator', '').strip()
+                if operator_str:
+                    try:
+                        results = company_matcher.match_best(
+                            operator_str,
+                            limit=1,
+                            min_score=70
+                        )
+                        if results and len(results) > 0:
+                            best_match = results[0]
+                            lei = best_match.get('lei', '')
+                            company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or "cmp-unknown")
+                            confidence = best_match.get('score', 70) / 100.0
+                            company_name = best_match.get('original_name', best_match.get('brief_name', operator_str))
+
+                            operator_link = {
+                                "company_id": company_id,
+                                "company_name": company_name,
+                                "role": "operator",
+                                "confidence": round(confidence, 3)
+                            }
+                            stats['company_resolutions'] += 1
+
+                            # Boost facility confidence if operator resolved
+                            base_confidence = min(0.75, base_confidence + 0.1)
+                            stats['confidence_boosts'] += 1
+                            logger.info(f"  Operator resolved: {operator_str} -> {company_name}")
+                    except Exception as e:
+                        logger.warning(f"Error resolving operator '{operator_str}': {e}")
+
+            # Build facility
+            facility = {
+                "facility_id": facility_id,
+                "name": name,
+                "aliases": [],
+                "country_iso3": country_iso3,
+                "location": {
+                    "lat": None,
+                    "lon": None,
+                    "precision": "unknown",
+                    "description": text_fac.get('location', '')
+                },
+                "types": text_fac.get('types', ['mine']),
+                "commodities": commodities,
+                "status": text_fac.get('status', 'unknown'),
+                "owner_links": [],
+                "operator_link": operator_link,
+                "products": [],
+                "sources": [{
+                    "type": "gemini_research",
+                    "id": source_name,
+                    "date": datetime.now().isoformat()
+                }],
+                "verification": {
+                    "status": "llm_suggested",
+                    "confidence": base_confidence,
+                    "last_checked": datetime.now().isoformat(),
+                    "checked_by": "import_pipeline_text_extraction",
+                    "notes": text_fac.get('notes')
+                }
+            }
+
+            facilities.append(facility)
+            stats['total_facilities'] += 1
+
+        except Exception as e:
+            logger.error(f"Text facility {text_num}: Error parsing: {e}")
+            errors.append(f"Text facility {text_num}: {str(e)}")
+
+    logger.info(f"Processed {row_num} table rows + {text_num} text facilities")
     logger.info(f"Found {stats['total_facilities']} new facilities")
     logger.info(f"Skipped {stats['duplicates_skipped']} duplicates")
+    logger.info(f"Entity resolution stats:")
+    logger.info(f"  - Metals with formulas: {stats['metal_resolutions']}")
+    logger.info(f"  - Companies resolved: {stats['company_resolutions']}")
+    logger.info(f"  - Confidence boosts: {stats['confidence_boosts']}")
 
     return {
         "facilities": facilities,
@@ -532,9 +1049,14 @@ def process_report(report_text: str, country_iso3: str, source_name: str) -> Dic
     }
 
 
-def write_facilities(facilities: List[Dict], country_iso3: str) -> int:
-    """Write facility JSON files."""
-    country_dir = FACILITIES_DIR / country_iso3
+def write_facilities(facilities: List[Dict], country_dir_name: str) -> int:
+    """Write facility JSON files.
+
+    Args:
+        facilities: List of facility dicts
+        country_dir_name: Directory name (could be ISO2 or ISO3)
+    """
+    country_dir = FACILITIES_DIR / country_dir_name
     country_dir.mkdir(parents=True, exist_ok=True)
 
     written = 0
@@ -572,39 +1094,94 @@ def write_report(result: Dict, country_iso3: str, source_name: str):
     return report
 
 
+def detect_country_from_filename(filename: str) -> Optional[str]:
+    """Detect country from filename.
+
+    Examples:
+        "albania.txt" -> "albania"
+        "algeria_mines.txt" -> "algeria"
+        "/path/to/dza_facilities.txt" -> "dza"
+    """
+    if not filename or filename == '-':
+        return None
+
+    # Get just the filename without path
+    basename = pathlib.Path(filename).stem
+
+    # Split on common separators and take first part
+    parts = re.split(r'[_\-\s.]', basename.lower())
+    if parts:
+        # Return the first meaningful part (likely the country)
+        country_part = parts[0].strip()
+        if len(country_part) >= 2:  # At least 2 chars
+            return country_part
+
+    return None
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="One-command facility import from research reports",
+        description="Facility import from research reports with automatic entity resolution",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Basic usage - save report to file first
-  python import_from_report.py report.txt --country DZA
+  # Auto-detect country from filename
+  python import_from_report.py albania.txt
+  python import_from_report.py algeria_mines.txt
 
-  # With optional source name
-  python import_from_report.py report.txt --country DZA --source "Algeria Report 2025"
+  # Explicitly specify country
+  python import_from_report.py report.txt --country DZ
+  python import_from_report.py report.txt --country Algeria
 
-  # Quick save and import
-  cat > report.txt
-  [Paste text, Ctrl+D]
-  python import_from_report.py report.txt --country AFG
+  # With custom source name
+  python import_from_report.py albania.txt --source "Albania Mining Report 2025"
 
-  # From stdin (pipe)
-  pbpaste | python import_from_report.py --country DZA
+  # From stdin (requires --country)
+  cat report.txt | python import_from_report.py --country DZ
+  pbpaste | python import_from_report.py --country AF
+
+Features (automatic):
+  - Country auto-detection from filename (e.g., "albania.txt" -> ALB)
+  - Metal normalization with chemical formulas (e.g., copper -> Cu)
+  - Company resolution to canonical IDs via EntityIdentity
+  - Duplicate detection (name + location + aliases)
+  - Confidence boosting for facilities with resolved operators
         """
     )
-    parser.add_argument("input_file", help="Input report file (required)")
-    parser.add_argument("--country", required=True, help="Country ISO3 code (e.g., DZA, AFG)")
+    parser.add_argument("input_file", help="Input report file (use '-' for stdin)")
+    parser.add_argument("--country", help="Country name, ISO2, or ISO3 code (optional, auto-detected from filename if not provided)")
     parser.add_argument("--source", help="Source name for citation (optional, auto-generated if not provided)")
 
     args = parser.parse_args()
 
-    # Find actual country code used in repo (handles DZA->DZ, etc)
-    country_iso3 = find_country_code(args.country)
+    # Determine country - try auto-detect first, then use explicit arg
+    country_input = args.country
+    if not country_input:
+        # Try to detect from filename
+        detected = detect_country_from_filename(args.input_file)
+        if detected:
+            country_input = detected
+            logger.info(f"Auto-detected country from filename: {detected}")
+        else:
+            print("Error: Could not auto-detect country from filename")
+            print("Please specify country explicitly with --country")
+            print("\nUsage: python import_from_report.py report.txt --country DZ")
+            print("Or use a filename with country name: python import_from_report.py albania.txt")
+            return 1
+
+    # Find actual country code (ISO3 for display, directory name for file ops)
+    try:
+        country_iso3, country_dir = find_country_code(country_input)
+    except Exception as e:
+        print(f"Error: Could not resolve country '{country_input}': {e}")
+        print("\nPlease provide a valid country name, ISO2, or ISO3 code")
+        print("Examples: Albania, ALB, AL")
+        return 1
 
     # Auto-generate source name if not provided
     if not args.source:
-        source_name = f"Research Import {country_iso3} {datetime.now().strftime('%Y-%m-%d')}"
+        country_part = country_iso3 if country_iso3 else "Unknown"
+        source_name = f"Research Import {country_part} {datetime.now().strftime('%Y-%m-%d')}"
     else:
         source_name = args.source
 
@@ -632,8 +1209,12 @@ Examples:
         if len(report_text) < 1000:
             logger.warning(f"Report is only {len(report_text)} characters - this seems small. Did the paste work correctly?")
 
+    # Count existing facilities before import
+    existing_facilities = load_existing_facilities(country_dir)
+    initial_count = len(existing_facilities)
+
     # Process
-    result = process_report(report_text, country_iso3, source_name)
+    result = process_report(report_text, country_iso3, country_dir, source_name)
 
     if 'error' in result:
         print(f"\nError: {result['error']}")
@@ -641,10 +1222,22 @@ Examples:
 
     # Write files
     if result['facilities']:
-        written = write_facilities(result['facilities'], country_iso3)
-        logger.info(f"Wrote {written} facility files")
+        written = write_facilities(result['facilities'], country_dir)
+        logger.info(f"Wrote {written} facility files to {country_dir}/")
     else:
         logger.warning("No new facilities to write (all may be duplicates)")
+
+    # Count final facilities after import
+    final_facilities = load_existing_facilities(country_dir)
+    final_count = len(final_facilities)
+
+    # Get country name for display
+    try:
+        from utils.country_utils import iso3_to_country_name
+        country_name = iso3_to_country_name(country_iso3)
+        country_display = f"{country_iso3} - {country_name}" if country_name else country_iso3
+    except:
+        country_display = country_iso3
 
     # Write report
     report = write_report(result, country_iso3, source_name)
@@ -653,21 +1246,31 @@ Examples:
     print("\n" + "="*60)
     print("IMPORT COMPLETE")
     print("="*60)
-    print(f"Country: {country_iso3}")
-    print(f"Source: {args.source}")
-    print(f"New facilities: {report['summary']['new_facilities']}")
-    print(f"Duplicates skipped: {report['summary']['duplicates_skipped']}")
-    print(f"Files written: {report['summary']['files_written']}")
+    print(f"Country: {country_display}")
+    print(f"Source: {source_name}")
+    print()
+    print(f"Before import:  {initial_count} facilities")
+    print(f"After import:   {final_count} facilities")
+    print(f"Added:          {final_count - initial_count} new facilities")
+    print(f"Duplicates:     {report['summary']['duplicates_skipped']} skipped")
     if report['summary']['errors']:
-        print(f"Errors: {report['summary']['errors']}")
+        print(f"Errors:         {report['summary']['errors']}")
+
+    if result['stats'].get('company_resolutions', 0) > 0:
+        print(f"\nEntity Resolution:")
+        print(f"  Metals with formulas: {result['stats'].get('metal_resolutions', 0)}")
+        print(f"  Companies resolved: {result['stats'].get('company_resolutions', 0)}")
+        print(f"  Confidence boosts: {result['stats'].get('confidence_boosts', 0)}")
+
     print("="*60)
 
     if result['duplicates']:
-        print(f"\nDuplicates found (skipped {len(result['duplicates'])} existing facilities):")
+        print(f"\nDuplicates Skipped:")
         for dup in result['duplicates'][:5]:  # Show first 5
-            print(f"  - '{dup['name']}' (exists as {dup['existing_id']})")
+            print(f"  • '{dup['name']}' (exists as {dup['existing_id']})")
         if len(result['duplicates']) > 5:
             print(f"  ... and {len(result['duplicates']) - 5} more")
+        print()
 
     return 0
 

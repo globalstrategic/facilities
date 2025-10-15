@@ -1,0 +1,49 @@
+{
+  "facility_id": "pol-trzebionka-mine-fac",
+  "name": "Trzebionka Mine",
+  "aliases": [
+    "Trzebionka Mine",
+    "Trzebinia",
+    "Trzebinia Primary Smelter"
+  ],
+  "country_iso3": "POL",
+  "location": {
+    "lat": 50.163,
+    "lon": 19.469,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "aluminum",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 1329
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-12T19:43:42.798277",
+    "checked_by": "migration_script"
+  }
+}

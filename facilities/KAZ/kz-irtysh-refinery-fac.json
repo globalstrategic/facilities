@@ -1,0 +1,40 @@
+{
+  "facility_id": "kaz-irtysh-refinery-fac",
+  "name": "Irtysh refinery",
+  "aliases": [
+    "Irtysh refinery",
+    "Irtysh smelter"
+  ],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": 50.1,
+    "lon": 82.317,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 8040
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.85,
+    "last_checked": "2025-10-12T19:43:44.394521",
+    "checked_by": "migration_script"
+  }
+}

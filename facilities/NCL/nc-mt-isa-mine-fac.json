@@ -1,0 +1,52 @@
+{
+  "facility_id": "ncl-mt-isa-mine-fac",
+  "name": "Mt. Isa Mine",
+  "aliases": [],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": -22.57,
+    "lon": 144.547,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "tungsten",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "mines_csv",
+      "row": 1622
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.2,
+    "last_checked": "2025-10-12T19:43:43.359203",
+    "checked_by": "migration_script"
+  }
+}
