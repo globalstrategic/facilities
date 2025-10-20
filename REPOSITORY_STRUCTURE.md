@@ -961,8 +961,31 @@ The system is designed for:
 - **Maintainability**: Clear separation of concerns, extensive docs
 - **Integration**: Compatible with EntityIdentity and external systems
 
+---
+
+## ⚠️ Code Quality Note
+
+The repository contains **~435 lines of duplicate functionality** across multiple scripts. See **[DUPLICATE_FUNCTIONALITY_ANALYSIS.md](DUPLICATE_FUNCTIONALITY_ANALYSIS.md)** for:
+- Detailed analysis of duplicated code
+- Refactoring recommendations
+- Estimated effort and timeline
+
+**Key duplications**:
+- Country normalization (3 implementations)
+- Company resolution (2 approaches)
+- Text utilities (slugify)
+- Metal normalization
+- Facility I/O operations
+
+**Recommended action**: Phase 1 refactoring would consolidate country normalization and company resolution, eliminating ~100 lines of duplicate code in 4-6 hours.
+
+---
+
+## Documentation
+
 For detailed usage, see:
 - **[README_FACILITIES.md](docs/README_FACILITIES.md)** - Primary documentation
 - **[ENTITYIDENTITY_INTEGRATION_PLAN.md](docs/ENTITYIDENTITY_INTEGRATION_PLAN.md)** - Integration architecture
 - **[SCHEMA_CHANGES_V2.md](docs/SCHEMA_CHANGES_V2.md)** - Schema documentation
+- **[DUPLICATE_FUNCTIONALITY_ANALYSIS.md](DUPLICATE_FUNCTIONALITY_ANALYSIS.md)** - Code duplication analysis
 - **[CLAUDE.md](CLAUDE.md)** - Development instructions for Claude Code

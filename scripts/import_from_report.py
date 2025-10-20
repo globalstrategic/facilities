@@ -1,33 +1,36 @@
 #!/usr/bin/env python3
 """
-Enhanced one-command facility import from research reports with entity resolution.
+Facility import from CSV/reports with Phase 2 company resolution pattern.
 
-This enhanced version extends the original import pipeline with optional entity
-resolution using the entityidentity library directly, providing:
-- Metal/commodity normalization with chemical formulas via metal_identifier()
-- Company name resolution with canonical IDs via EnhancedCompanyMatcher
-- Ownership parsing via facilities-specific ownership_parser utility
-- Graceful fallback to basic mode if entityidentity is unavailable
+Phase 1 (This Script):
+- Extract facility data from CSV files or markdown tables
+- Normalize metals with chemical formulas via metal_identifier()
+- Extract company mentions (NO resolution yet)
+- Parse "Group Names" column to detect companies vs aliases
+- Support per-row country detection (for Mines.csv)
+- Write facility JSONs with company_mentions[] array
 
-The enhanced features are opt-in via the --enhanced flag, maintaining full
-backward compatibility with the original import_from_report.py pipeline.
+Phase 2 (enrich_companies.py):
+- Resolve company mentions to canonical IDs using CompanyResolver
+- Apply quality gates (auto_accept / review / pending)
+- Write relationships to facility_company_relationships.parquet
 
 Usage:
-    # Basic mode (same as original)
-    python import_from_report_enhanced.py report.txt --country DZA
+    # Import from Mines.csv with per-row countries
+    python import_from_report.py gt/Mines.csv --source "Mines.csv Initial Load"
 
-    # Enhanced mode with entity resolution
-    python import_from_report_enhanced.py report.txt --country DZA --enhanced
+    # Import with explicit country
+    python import_from_report.py report.txt --country DZA
 
-    # Enhanced mode with auto-detected country
-    python import_from_report_enhanced.py report.txt --enhanced
+    # Auto-detect country from filename
+    python import_from_report.py algeria_report.txt
 
-    # From stdin (pipe)
-    cat report.txt | python import_from_report_enhanced.py --country AFG --enhanced
+    # From stdin (requires --country)
+    cat report.txt | python import_from_report.py --country DZA
 
-Requirements for enhanced mode:
-    - entityidentity library (https://github.com/globalstrategic/entityidentity)
-    - Clone to parent directory or install as package
+Requirements:
+    - entityidentity library for metal_identifier()
+    - scripts.utils.country_utils for country normalization
 """
 
 import re
@@ -459,6 +462,57 @@ def is_facility_table(table: Dict) -> bool:
     return matches >= 3
 
 
+def parse_group_names(group_names_str: str, source_name: str) -> Tuple[List[str], List[Dict]]:
+    """Parse Group Names column from Mines.csv into aliases and company mentions.
+
+    The Group Names column contains semicolon-separated values that are a mix of:
+    - Simple aliases (e.g., "Marmato", "Zona Baja")
+    - Company names (e.g., "Omai Gold Mines Ltd.")
+
+    Args:
+        group_names_str: Semicolon-separated string from Group Names column
+        source_name: Source name for company_mentions provenance
+
+    Returns:
+        Tuple of (aliases_list, company_mentions_list)
+    """
+    if not group_names_str or group_names_str.strip() in ('', '-'):
+        return ([], [])
+
+    aliases = []
+    company_mentions = []
+
+    # Split by semicolon
+    parts = [p.strip() for p in group_names_str.split(';') if p.strip()]
+
+    # Company indicators
+    company_patterns = [
+        r'\b(Ltd|Limited|LLC|Inc|Incorporated|Corp|Corporation|Co\.|Company|Group|Enterprise|Holdings|PLC|S\.A\.|GmbH|AG)\b',
+        r'\b(Mining|Mines|Resources|Minerals|Metals|Industries|Energy)\b.*\b(Ltd|Limited|Inc|Corporation|Co\.|Company)\b'
+    ]
+
+    for part in parts:
+        # Check if this looks like a company name
+        is_company = any(re.search(pattern, part, re.IGNORECASE) for pattern in company_patterns)
+
+        if is_company:
+            # This is a company - add to company_mentions
+            company_mentions.append({
+                "name": part,
+                "role": "owner",  # Default to owner since Group Names typically indicates ownership
+                "source": source_name,
+                "confidence": 0.60,  # Lower confidence - needs Phase 2 resolution
+                "first_seen": datetime.now().isoformat(),
+                "evidence": f"Extracted from Group Names column: {group_names_str}"
+            })
+        else:
+            # This is an alias
+            if part and part != '-':
+                aliases.append(part)
+
+    return (aliases, company_mentions)
+
+
 def normalize_headers(headers: List[str]) -> List[str]:
     """Normalize header names to standard schema."""
     normalized = []
@@ -467,6 +521,8 @@ def normalize_headers(headers: List[str]) -> List[str]:
 
         if any(x in h_lower for x in ['site', 'mine name', 'facility name', 'asset name']):
             normalized.append('name')
+        elif 'group name' in h_lower:  # Map "Group Names" from Mines.csv
+            normalized.append('group_names')
         elif 'synonym' in h_lower or 'alias' in h_lower:
             normalized.append('synonyms')
         elif 'latitude' in h_lower or h_lower == 'lat':
@@ -481,6 +537,10 @@ def normalize_headers(headers: List[str]) -> List[str]:
             normalized.append('types')
         elif 'status' in h_lower or 'operational' in h_lower:
             normalized.append('status')
+        elif 'confidence factor' in h_lower:  # Map confidence from Mines.csv
+            normalized.append('confidence_factor')
+        elif 'country' in h_lower or 'region' in h_lower:  # Map country column
+            normalized.append('country')
         elif 'operator' in h_lower or 'stakeholder' in h_lower:
             normalized.append('operator')
         elif 'note' in h_lower:
@@ -713,33 +773,8 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
     """
     logger.info(f"Processing report for {country_iso3}...")
 
-    # Initialize entity resolvers (always - this is the default now)
-    company_matcher = None
-    ownership_parser_func = None
-
-    # Always try to load entity resolution modules
-    # Import EnhancedCompanyMatcher from entityidentity
-    try:
-        sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent / 'entityidentity'))
-        from entityidentity.companies import EnhancedCompanyMatcher
-        company_matcher = EnhancedCompanyMatcher()
-        logger.info("EnhancedCompanyMatcher initialized")
-    except ImportError as e:
-        logger.warning(f"Could not import EnhancedCompanyMatcher: {e}")
-        logger.warning("Company resolution will be skipped")
-    except Exception as e:
-        logger.error(f"Error initializing EnhancedCompanyMatcher: {e}")
-
-    # Import ownership parser (facilities-specific utility)
-    try:
-        sys.path.insert(0, str(pathlib.Path(__file__).parent))
-        from utils.ownership_parser import parse_ownership
-        ownership_parser_func = parse_ownership
-        logger.info("Ownership parser loaded")
-    except ImportError as e:
-        logger.warning(f"Could not import ownership_parser: {e}")
-    except Exception as e:
-        logger.error(f"Error loading ownership parser: {e}")
+    # Phase 2 design: No company resolution during import
+    # Company mentions are extracted, resolution happens in enrich_companies.py
 
     # Extract tables
     logger.info("Extracting facility tables from report...")
@@ -772,8 +807,7 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
 
     # Entity resolution statistics
     stats['metal_resolutions'] = 0
-    stats['company_resolutions'] = 0
-    stats['confidence_boosts'] = 0
+    stats['company_mentions_extracted'] = 0
 
     row_num = 0
     for table in tables:
@@ -794,8 +828,29 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 if not name or name == '-':
                     continue
 
-                # Generate facility ID
-                facility_id = f"{country_iso3.lower()}-{slugify(name)}-fac"
+                # Handle per-row country (for Mines.csv with "Country or Region" column)
+                row_country_iso3 = country_iso3  # default from function parameter
+                row_country_dir = country_dir    # default from function parameter
+
+                if row.get('country'):  # If row has country column
+                    try:
+                        from utils.country_utils import normalize_country_to_iso3
+                        row_country_name = row.get('country', '').strip()
+                        if row_country_name and row_country_name != '-':
+                            row_country_iso3 = normalize_country_to_iso3(row_country_name)
+                            # Determine directory for this country
+                            row_country_dir = row_country_iso3
+                            if not (FACILITIES_DIR / row_country_iso3).exists():
+                                # Try ISO2
+                                if len(row_country_iso3) == 3:
+                                    iso2 = row_country_iso3[:2]
+                                    if (FACILITIES_DIR / iso2).exists():
+                                        row_country_dir = iso2
+                    except Exception as e:
+                        logger.warning(f"Could not normalize country '{row.get('country')}': {e}")
+
+                # Generate facility ID using detected country
+                facility_id = f"{row_country_iso3.lower()}-{slugify(name)}-fac"
 
                 # Parse coordinates - handle both separate lat/lon and combined format
                 lat, lon = None, None
@@ -821,8 +876,15 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 except (ValueError, AttributeError):
                     pass
 
+                # Load existing facilities for this country if needed
+                if row.get('country') and row_country_dir != country_dir:
+                    # Load existing for this country
+                    row_existing = load_existing_facilities(row_country_dir)
+                else:
+                    row_existing = existing
+
                 # Check for duplicate (standard check - facility matcher moved to entityidentity)
-                existing_id = check_duplicate(facility_id, name, lat, lon, existing)
+                existing_id = check_duplicate(facility_id, name, lat, lon, row_existing)
                 if existing_id:
                     logger.info(f"  Duplicate: '{name}' already exists as {existing_id}")
                     duplicates.append({
@@ -842,8 +904,21 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
 
                 status = parse_status(row.get('status', ''))
 
-                aliases_str = row.get('synonyms', '').strip()
-                aliases = [a.strip() for a in aliases_str.split(',') if a.strip() and a.strip() != '-']
+                # Parse aliases and company mentions from Group Names (Mines.csv specific)
+                group_names_str = row.get('group_names', '').strip()
+                aliases_from_synonyms = row.get('synonyms', '').strip()
+
+                # Combine aliases from both sources
+                aliases = []
+                company_mentions = []
+
+                if group_names_str and group_names_str != '-':
+                    group_aliases, group_companies = parse_group_names(group_names_str, source_name)
+                    aliases.extend(group_aliases)
+                    company_mentions.extend(group_companies)
+
+                if aliases_from_synonyms and aliases_from_synonyms != '-':
+                    aliases.extend([a.strip() for a in aliases_from_synonyms.split(',') if a.strip()])
 
                 notes = row.get('notes', '').strip()
                 if notes and notes != '-':
@@ -851,48 +926,27 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 else:
                     notes = None
 
-                # Operator resolution using EntityIdentity
-                operator_link = None
-                base_confidence = 0.75
+                # Map confidence_factor from Mines.csv to verification
+                confidence_factor = row.get('confidence_factor', '').strip()
+                confidence_map = {
+                    'very high': (0.90, 'csv_imported'),
+                    'high': (0.80, 'csv_imported'),
+                    'moderate': (0.65, 'csv_imported'),
+                    'low': (0.45, 'csv_imported'),
+                    'very low': (0.30, 'csv_imported')
+                }
+                base_confidence, verification_status = confidence_map.get(
+                    confidence_factor.lower(),
+                    (0.50, 'csv_imported')  # default
+                )
 
-                if company_matcher and row.get('operator'):
-                    operator_str = row.get('operator', '').strip()
-                    if operator_str and operator_str != '-':
-                        try:
-                            # Use EnhancedCompanyMatcher directly
-                            results = company_matcher.match_best(
-                                operator_str,
-                                limit=1,
-                                min_score=70
-                            )
-                            if results and len(results) > 0:
-                                best_match = results[0]
-                                lei = best_match.get('lei', '')
-                                company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or "cmp-unknown")
-                                confidence = best_match.get('score', 70) / 100.0
-                                company_name = best_match.get('original_name', best_match.get('brief_name', operator_str))
-
-                                operator_link = {
-                                    "company_id": company_id,
-                                    "company_name": company_name,
-                                    "role": "operator",
-                                    "confidence": round(confidence, 3)
-                                }
-                                stats['company_resolutions'] += 1
-
-                                # Boost facility confidence if operator resolved
-                                base_confidence = min(0.85, base_confidence + 0.1)
-                                stats['confidence_boosts'] += 1
-                                logger.info(f"  Operator resolved: {operator_str} -> {company_name}")
-                        except Exception as e:
-                            logger.warning(f"Error resolving operator '{operator_str}': {e}")
-
-                # Build facility
+                # Build facility (Phase 2 pattern - NO operator_link/owner_links)
                 facility = {
                     "facility_id": facility_id,
                     "name": name,
                     "aliases": aliases,
-                    "country_iso3": country_iso3,
+                    "country_iso3": row_country_iso3,  # Use per-row country
+                    "country_dir": row_country_dir,    # Store for writing
                     "location": {
                         "lat": lat,
                         "lon": lon,
@@ -901,22 +955,24 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                     "types": types,
                     "commodities": commodities,
                     "status": status,
-                    "owner_links": [],
-                    "operator_link": operator_link,
+                    "company_mentions": company_mentions,  # Phase 2: mentions only
                     "products": [],
                     "sources": [{
-                        "type": "gemini_research",
+                        "type": "csv_import",
                         "id": source_name,
                         "date": datetime.now().isoformat()
                     }],
                     "verification": {
-                        "status": "llm_suggested",
+                        "status": verification_status,
                         "confidence": base_confidence,
                         "last_checked": datetime.now().isoformat(),
                         "checked_by": "import_pipeline",
                         "notes": notes
                     }
                 }
+
+                # Track company mentions stats
+                stats['company_mentions_extracted'] += len(company_mentions)
 
                 facilities.append(facility)
                 stats['total_facilities'] += 1
@@ -959,42 +1015,24 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
             # Count metal resolutions with formulas
             stats['metal_resolutions'] += len([c for c in commodities if c.get('chemical_formula')])
 
-            # Operator resolution
-            operator_link = None
+            # Extract company mentions (Phase 2 pattern - no resolution yet)
+            company_mentions = []
             base_confidence = 0.65  # Lower confidence for text extraction
 
-            if company_matcher and text_fac.get('operator'):
+            if text_fac.get('operator'):
                 operator_str = text_fac.get('operator', '').strip()
                 if operator_str:
-                    try:
-                        results = company_matcher.match_best(
-                            operator_str,
-                            limit=1,
-                            min_score=70
-                        )
-                        if results and len(results) > 0:
-                            best_match = results[0]
-                            lei = best_match.get('lei', '')
-                            company_id = f"cmp-{lei}" if lei and not lei.startswith('cmp-') else (lei or "cmp-unknown")
-                            confidence = best_match.get('score', 70) / 100.0
-                            company_name = best_match.get('original_name', best_match.get('brief_name', operator_str))
+                    company_mentions.append({
+                        "name": operator_str,
+                        "role": "operator",
+                        "source": source_name,
+                        "confidence": 0.60,
+                        "first_seen": datetime.now().isoformat(),
+                        "evidence": "Extracted from text"
+                    })
+                    stats['company_mentions_extracted'] += 1
 
-                            operator_link = {
-                                "company_id": company_id,
-                                "company_name": company_name,
-                                "role": "operator",
-                                "confidence": round(confidence, 3)
-                            }
-                            stats['company_resolutions'] += 1
-
-                            # Boost facility confidence if operator resolved
-                            base_confidence = min(0.75, base_confidence + 0.1)
-                            stats['confidence_boosts'] += 1
-                            logger.info(f"  Operator resolved: {operator_str} -> {company_name}")
-                    except Exception as e:
-                        logger.warning(f"Error resolving operator '{operator_str}': {e}")
-
-            # Build facility
+            # Build facility (Phase 2 pattern - NO operator_link/owner_links)
             facility = {
                 "facility_id": facility_id,
                 "name": name,
@@ -1009,11 +1047,10 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 "types": text_fac.get('types', ['mine']),
                 "commodities": commodities,
                 "status": text_fac.get('status', 'unknown'),
-                "owner_links": [],
-                "operator_link": operator_link,
+                "company_mentions": company_mentions,  # Phase 2: mentions only
                 "products": [],
                 "sources": [{
-                    "type": "gemini_research",
+                    "type": "text_extraction",
                     "id": source_name,
                     "date": datetime.now().isoformat()
                 }],
@@ -1038,8 +1075,8 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
     logger.info(f"Skipped {stats['duplicates_skipped']} duplicates")
     logger.info(f"Entity resolution stats:")
     logger.info(f"  - Metals with formulas: {stats['metal_resolutions']}")
-    logger.info(f"  - Companies resolved: {stats['company_resolutions']}")
-    logger.info(f"  - Confidence boosts: {stats['confidence_boosts']}")
+    logger.info(f"  - Company mentions extracted: {stats['company_mentions_extracted']}")
+    logger.info(f"  (Run enrich_companies.py for Phase 2 resolution)")
 
     return {
         "facilities": facilities,
@@ -1053,18 +1090,33 @@ def write_facilities(facilities: List[Dict], country_dir_name: str) -> int:
     """Write facility JSON files.
 
     Args:
-        facilities: List of facility dicts
-        country_dir_name: Directory name (could be ISO2 or ISO3)
+        facilities: List of facility dicts (may have per-row country_dir)
+        country_dir_name: Default directory name (could be ISO2 or ISO3)
     """
-    country_dir = FACILITIES_DIR / country_dir_name
-    country_dir.mkdir(parents=True, exist_ok=True)
-
     written = 0
+    written_by_country = defaultdict(int)
+
     for facility in facilities:
+        # Check if facility has its own country_dir (per-row country case)
+        if 'country_dir' in facility:
+            dir_name = facility.pop('country_dir')  # Remove temp field before writing
+        else:
+            dir_name = country_dir_name
+
+        country_dir = FACILITIES_DIR / dir_name
+        country_dir.mkdir(parents=True, exist_ok=True)
+
         facility_file = country_dir / f"{facility['facility_id']}.json"
         with open(facility_file, 'w', encoding='utf-8') as f:
             json.dump(facility, f, ensure_ascii=False, indent=2)
         written += 1
+        written_by_country[dir_name] += 1
+
+    # Log per-country stats if multiple countries
+    if len(written_by_country) > 1:
+        logger.info(f"Wrote facilities to {len(written_by_country)} countries:")
+        for country, count in sorted(written_by_country.items(), key=lambda x: -x[1])[:10]:
+            logger.info(f"  {country}: {count} facilities")
 
     return written
 
@@ -1256,11 +1308,11 @@ Features (automatic):
     if report['summary']['errors']:
         print(f"Errors:         {report['summary']['errors']}")
 
-    if result['stats'].get('company_resolutions', 0) > 0:
-        print(f"\nEntity Resolution:")
+    if result['stats'].get('company_mentions_extracted', 0) > 0:
+        print(f"\nPhase 1 Extraction:")
         print(f"  Metals with formulas: {result['stats'].get('metal_resolutions', 0)}")
-        print(f"  Companies resolved: {result['stats'].get('company_resolutions', 0)}")
-        print(f"  Confidence boosts: {result['stats'].get('confidence_boosts', 0)}")
+        print(f"  Company mentions extracted: {result['stats'].get('company_mentions_extracted', 0)}")
+        print(f"\nNext: Run 'python scripts/enrich_companies.py' for Phase 2 resolution")
 
     print("="*60)
 
