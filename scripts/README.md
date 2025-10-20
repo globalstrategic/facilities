@@ -141,6 +141,37 @@ The script automatically extracts tables from your report text. Supports both:
 
 **Status:** `Operational` → `operating`, `In Development` → `construction`, `Proposed` → `planned`
 
+## Company Enrichment (Phase 2)
+
+After importing facilities, enrich them with resolved company links:
+
+```bash
+# Enrich all facilities
+python enrich_companies.py
+
+# Enrich specific country
+python enrich_companies.py --country IND
+
+# Preview without saving
+python enrich_companies.py --dry-run
+
+# Set confidence threshold
+python enrich_companies.py --min-confidence 0.75
+```
+
+**What it does:**
+- Batch resolves company mentions to canonical company IDs
+- Uses quality gates (auto_accept / review / pending)
+- Writes relationships to `../tables/facilities/facility_company_relationships.parquet`
+- Does NOT modify facility JSONs (relationships stored separately)
+
+**Workflow:**
+1. Import facilities (Phase 1) - extracts company mentions
+2. Run enrichment (Phase 2) - resolves mentions to canonical IDs
+3. Review pending items if needed
+
+See `../docs/ENTITYIDENTITY_INTEGRATION_PLAN.md` for architecture details.
+
 ## Deep Research Integration
 
 Enrich facilities with Gemini Deep Research data:
@@ -158,6 +189,25 @@ python facilities.py research --batch research_batch.jsonl
 
 See `../docs/DEEP_RESEARCH_WORKFLOW.md` for detailed workflow.
 
+## Utility Scripts
+
+Additional maintenance and verification tools:
+
+```bash
+# Run data quality checks
+python audit_facilities.py
+
+# Backfill company mentions from CSV sources
+python backfill_mentions.py --country IND
+
+# Verify backfill results
+python verify_backfill.py
+
+# Export/import facilities to parquet format
+python facilities.py sync --export
+python facilities.py sync --import facilities.parquet
+```
+
 ## Testing
 
 Run test suites to verify functionality:
@@ -168,22 +218,35 @@ python facilities.py test
 
 # Run specific test suite
 python facilities.py test --suite dedup
-python facilities.py test --suite migration
+python facilities.py test --suite schema
 ```
 
 ## Directory Structure
 
 ```
 scripts/
-├── facilities.py              # Unified CLI (main entry point)
-├── import_from_report.py      # Import implementation
-├── deep_research_integration.py  # Research integration implementation
-├── migration/                 # CSV import/export (for future use)
-│   ├── migrate_facilities.py
-│   └── pre_migration_validation.py
-├── tests/                     # Test suites
+├── facilities.py                    # Unified CLI (main entry point)
+├── import_from_report.py            # Phase 1: Import with entity resolution
+├── enrich_companies.py              # Phase 2: Batch company enrichment
+├── deep_research_integration.py     # Gemini Deep Research integration
+├── audit_facilities.py              # Data quality checks
+├── backfill_mentions.py             # Extract company_mentions from facilities
+├── verify_backfill.py               # Verify backfill results
+├── legacy/                          # Archived one-time migration scripts
+│   ├── full_migration.py            # Legacy CSV → JSON migration
+│   └── migrate_legacy_fields.py     # Schema field migration
+├── tests/                           # Test suites
 │   ├── test_dedup.py
-│   └── test_migration_dry_run.py
+│   ├── test_import_enhanced.py
+│   ├── test_facility_sync.py
+│   └── test_schema.py
+├── utils/                           # Shared utilities
+│   ├── company_resolver.py          # CompanyResolver with quality gates
+│   ├── id_utils.py                  # Canonical ID mapping
+│   ├── country_utils.py             # Country code normalization
+│   ├── ownership_parser.py          # Ownership percentage parsing
+│   ├── facility_sync.py             # Parquet export/import
+│   └── paths.py                     # Shared path configuration
 └── README.md
 ```
 
