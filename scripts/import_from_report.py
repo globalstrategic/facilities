@@ -38,6 +38,7 @@ import json
 import sys
 import argparse
 import pathlib
+import csv
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
@@ -99,6 +100,38 @@ def slugify(text: str) -> str:
     text = re.sub(r'\([^)]*\)', '', text)  # Remove parentheticals
     text = re.sub(r'[^a-z0-9]+', '-', text)
     return text.strip('-')
+
+
+def parse_csv_file(text: str) -> Optional[Dict]:
+    """Parse CSV text into table format.
+
+    Returns:
+        Dictionary with 'headers' and 'rows' keys, or None if not valid CSV
+    """
+    try:
+        # Try to parse as CSV
+        lines = text.strip().split('\n')
+        if not lines:
+            return None
+
+        # Use csv.DictReader to handle proper CSV parsing
+        reader = csv.DictReader(lines)
+        rows = list(reader)
+
+        if not rows:
+            return None
+
+        # Get headers from the first row keys
+        headers = list(rows[0].keys())
+
+        # Convert to the format expected by the rest of the pipeline
+        return {
+            'headers': headers,
+            'rows': rows
+        }
+    except Exception as e:
+        logger.debug(f"Failed to parse as CSV: {e}")
+        return None
 
 
 def extract_markdown_tables(text: str) -> List[Dict]:
@@ -776,10 +809,17 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
     # Phase 2 design: No company resolution during import
     # Company mentions are extracted, resolution happens in enrich_companies.py
 
-    # Extract tables
-    logger.info("Extracting facility tables from report...")
-    tables = extract_markdown_tables(report_text)
-    logger.info(f"Found {len(tables)} facility tables")
+    # Try CSV parsing first
+    tables = []
+    csv_table = parse_csv_file(report_text)
+    if csv_table and is_facility_table(csv_table):
+        tables = [csv_table]
+        logger.info(f"Parsed as CSV file with {len(csv_table['rows'])} rows")
+    else:
+        # Extract markdown/tab tables
+        logger.info("Extracting facility tables from report...")
+        tables = extract_markdown_tables(report_text)
+        logger.info(f"Found {len(tables)} facility tables")
 
     # Extract facilities from narrative text (list/paragraph format)
     text_facilities = []
@@ -1215,20 +1255,30 @@ Features (automatic):
             country_input = detected
             logger.info(f"Auto-detected country from filename: {detected}")
         else:
-            print("Error: Could not auto-detect country from filename")
-            print("Please specify country explicitly with --country")
-            print("\nUsage: python import_from_report.py report.txt --country DZ")
-            print("Or use a filename with country name: python import_from_report.py albania.txt")
-            return 1
+            # Check if file might have per-row countries (like Mines.csv)
+            if args.input_file.lower().endswith('.csv'):
+                logger.info("CSV file detected, will use per-row country detection if available")
+                country_input = "MULTI"  # Marker for multi-country files
+            else:
+                print("Error: Could not auto-detect country from filename")
+                print("Please specify country explicitly with --country")
+                print("\nUsage: python import_from_report.py report.txt --country DZ")
+                print("Or use a filename with country name: python import_from_report.py albania.txt")
+                return 1
 
     # Find actual country code (ISO3 for display, directory name for file ops)
-    try:
-        country_iso3, country_dir = find_country_code(country_input)
-    except Exception as e:
-        print(f"Error: Could not resolve country '{country_input}': {e}")
-        print("\nPlease provide a valid country name, ISO2, or ISO3 code")
-        print("Examples: Albania, ALB, AL")
-        return 1
+    # Special case: MULTI means per-row countries (skip validation)
+    if country_input == "MULTI":
+        country_iso3 = "MULTI"
+        country_dir = "MULTI"  # Will be overridden per-row
+    else:
+        try:
+            country_iso3, country_dir = find_country_code(country_input)
+        except Exception as e:
+            print(f"Error: Could not resolve country '{country_input}': {e}")
+            print("\nPlease provide a valid country name, ISO2, or ISO3 code")
+            print("Examples: Albania, ALB, AL")
+            return 1
 
     # Auto-generate source name if not provided
     if not args.source:
@@ -1262,8 +1312,13 @@ Features (automatic):
             logger.warning(f"Report is only {len(report_text)} characters - this seems small. Did the paste work correctly?")
 
     # Count existing facilities before import
-    existing_facilities = load_existing_facilities(country_dir)
-    initial_count = len(existing_facilities)
+    if country_dir != "MULTI":
+        existing_facilities = load_existing_facilities(country_dir)
+        initial_count = len(existing_facilities)
+    else:
+        # Multi-country file, can't count initial facilities easily
+        existing_facilities = {}
+        initial_count = 0
 
     # Process
     result = process_report(report_text, country_iso3, country_dir, source_name)
@@ -1280,16 +1335,23 @@ Features (automatic):
         logger.warning("No new facilities to write (all may be duplicates)")
 
     # Count final facilities after import
-    final_facilities = load_existing_facilities(country_dir)
-    final_count = len(final_facilities)
+    if country_dir != "MULTI":
+        final_facilities = load_existing_facilities(country_dir)
+        final_count = len(final_facilities)
+    else:
+        # Multi-country file, count from result
+        final_count = initial_count + len(result['facilities'])
 
     # Get country name for display
-    try:
-        from utils.country_utils import iso3_to_country_name
-        country_name = iso3_to_country_name(country_iso3)
-        country_display = f"{country_iso3} - {country_name}" if country_name else country_iso3
-    except:
-        country_display = country_iso3
+    if country_iso3 == "MULTI":
+        country_display = "Multiple Countries (per-row detection)"
+    else:
+        try:
+            from utils.country_utils import iso3_to_country_name
+            country_name = iso3_to_country_name(country_iso3)
+            country_display = f"{country_iso3} - {country_name}" if country_name else country_iso3
+        except:
+            country_display = country_iso3
 
     # Write report
     report = write_report(result, country_iso3, source_name)
