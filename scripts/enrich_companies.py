@@ -1,24 +1,26 @@
 #!/usr/bin/env python3
 """
-Enrich existing facilities with company links using entityidentity.
+Enrich existing facilities with company links using CompanyResolver.
 
-Uses EnhancedCompanyMatcher from entityidentity to resolve operator and owner
-company names found in facility data (notes, sources, or manual fields).
+Phase 2: Uses unified CompanyResolver for batch resolution with quality gates.
+Reads company_mentions from facilities and writes relationships to parquet.
 
 Usage:
     python enrich_companies.py                      # Enrich all facilities
     python enrich_companies.py --country AFG        # Enrich specific country
     python enrich_companies.py --dry-run            # Preview without saving
-    python enrich_companies.py --min-score 80       # Set matching threshold
+    python enrich_companies.py --min-confidence 0.75  # Set confidence threshold
 """
 
 import json
 import argparse
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from datetime import datetime
 import logging
+import pandas as pd
+import uuid
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -27,108 +29,164 @@ logger = logging.getLogger(__name__)
 # Paths
 ROOT = Path(__file__).parent.parent
 FACILITIES_DIR = ROOT / "facilities"
+OUTPUT_DIR = ROOT / "output"
 
-# Add entityidentity to path
+# Add scripts utils to path
+sys.path.insert(0, str(ROOT / "scripts"))
+
+# Phase 2: Import unified utilities
+try:
+    from utils.company_resolver import CompanyResolver
+    from utils.id_utils import to_canonical, load_alias_map
+    from utils.paths import relationships_path
+    RESOLVER_AVAILABLE = True
+except ImportError as e:
+    logger.error(f"Could not import CompanyResolver utilities: {e}")
+    RESOLVER_AVAILABLE = False
+
+# Get canonical relationships path
+RELATIONSHIPS_FILE = relationships_path() if RESOLVER_AVAILABLE else ROOT / "tables" / "facilities" / "facility_company_relationships.parquet"
+
+# Add entityidentity to path (for PendingCompanyTracker)
 sys.path.insert(0, str(ROOT.parent / 'entityidentity'))
 
 try:
-    from entityidentity.companies import EnhancedCompanyMatcher
-    ENTITYIDENTITY_AVAILABLE = True
+    from entityidentity.companies.pending_tracker import PendingCompanyTracker
+    PENDING_TRACKER_AVAILABLE = True
 except ImportError as e:
-    logger.error(f"Could not import entityidentity: {e}")
-    logger.error("Make sure entityidentity is in the parent directory or installed")
-    ENTITYIDENTITY_AVAILABLE = False
+    logger.warning(f"Could not import PendingCompanyTracker: {e}")
+    PENDING_TRACKER_AVAILABLE = False
 
 
 class CompanyEnricher:
-    """Enrich facilities with company links using entityidentity."""
+    """Enrich facilities with company links using CompanyResolver (Phase 2)."""
 
-    def __init__(self, min_score: int = 70, dry_run: bool = False):
+    def __init__(self, min_confidence: float = 0.75, dry_run: bool = False):
         """
-        Initialize enricher.
+        Initialize enricher with Phase 2 utilities.
 
         Args:
-            min_score: Minimum matching score (0-100)
+            min_confidence: Minimum confidence for auto-accept (0.0-1.0)
             dry_run: If True, don't save changes
         """
-        self.min_score = min_score
+        self.min_confidence = min_confidence
         self.dry_run = dry_run
         self.stats = {
             'total_facilities': 0,
-            'needs_enrichment': 0,
-            'operators_found': 0,
-            'owners_found': 0,
-            'updated': 0,
+            'facilities_with_mentions': 0,
+            'mentions_processed': 0,
+            'auto_accepted': 0,
+            'review_queue': 0,
+            'pending': 0,
+            'relationships_written': 0,
             'failed': 0
         }
+        self.relationships = []  # Accumulated relationships for parquet
 
-        if not ENTITYIDENTITY_AVAILABLE:
-            raise RuntimeError("entityidentity not available")
+        if not RESOLVER_AVAILABLE:
+            raise RuntimeError("CompanyResolver not available - check imports")
 
-        # Initialize company matcher
-        self.matcher = EnhancedCompanyMatcher()
-        logger.info("EnhancedCompanyMatcher initialized")
+        # Phase 2: Initialize CompanyResolver with strict profile
+        config_path = ROOT / "config" / "gate_config.json"
+        self.resolver = CompanyResolver.from_config(str(config_path), profile="strict")
+        logger.info("CompanyResolver initialized (profile=strict)")
 
-    def extract_company_names(self, facility: Dict) -> Dict[str, List[str]]:
+        # Load alias map for canonical IDs
+        alias_map_path = ROOT / "config" / "company_aliases.json"
+        self.alias_map = load_alias_map(str(alias_map_path)) if alias_map_path.exists() else {}
+        logger.info(f"Loaded {len(self.alias_map)} company aliases")
+
+        # Initialize PendingCompanyTracker (optional)
+        self.pending_tracker = None
+        if PENDING_TRACKER_AVAILABLE:
+            try:
+                self.pending_tracker = PendingCompanyTracker()
+                logger.info("PendingCompanyTracker initialized")
+            except Exception as e:
+                logger.warning(f"Could not initialize PendingCompanyTracker: {e}")
+
+    def extract_mentions(self, facility: Dict) -> List[Dict]:
         """
-        Extract potential company names from facility data.
+        Extract company mentions from facility (Phase 2).
 
-        Returns dict with 'operators' and 'owners' lists.
+        Returns list of mention dicts suitable for resolver.resolve_mentions().
+        Handles operator, owner, and unknown roles (defaults unknown→operator).
         """
-        candidates = {'operators': [], 'owners': []}
+        mentions = []
 
-        # Check verification notes for company mentions
-        notes = facility.get('verification', {}).get('notes', '')
-        if notes:
-            # Look for patterns like "operated by Company Name"
-            # This is a simple heuristic - can be improved
-            pass
+        # Extract from company_mentions array
+        for mention in facility.get('company_mentions', []):
+            role = mention.get('role', '')
 
-        # Check if there's already an operator_link with company_name but no ID
-        operator = facility.get('operator_link')
-        if operator and operator.get('company_name') and not operator.get('company_id'):
-            candidates['operators'].append(operator['company_name'])
+            # Handle unknown role by defaulting to operator (common for CSV imports)
+            if role == 'unknown':
+                role = 'operator'
 
-        # Check owner_links
-        for owner in facility.get('owner_links', []):
-            if owner.get('company_name') and not owner.get('company_id'):
-                candidates['owners'].append(owner['company_name'])
+            # Only handle operator and owner roles (skip other types like contractor, customer, etc.)
+            if role not in ['operator', 'owner', 'majority_owner', 'minority_owner']:
+                continue
 
-        return candidates
+            # Skip mentions without names
+            name = mention.get('name', '').strip()
+            if not name:
+                continue
 
-    def match_company(self, company_name: str) -> Optional[Dict]:
+            # Build mention dict for resolver
+            mentions.append({
+                'name': name,
+                'role': role,
+                'lei': mention.get('lei'),
+                'percentage': mention.get('percentage'),
+                'confidence': mention.get('confidence'),
+                'first_seen': mention.get('first_seen'),
+                'source': mention.get('source', 'unknown'),
+                'evidence': mention.get('evidence'),
+                'country_hint': mention.get('country_hint'),
+                'registry': mention.get('registry'),  # Pass through for registry-first resolution
+                'company_id': mention.get('company_id')  # Pass through for pre-resolved mentions
+            })
+
+        return mentions
+
+    def match_company(self, company_name: str, facility_id: Optional[str] = None,
+                     country_hint: Optional[str] = None, role: Optional[str] = None) -> Optional[Dict]:
         """
-        Match company name using entityidentity.
+        [DEPRECATED] Phase 2: Use resolver.resolve_name() or batch resolve_mentions().
 
-        Returns company info dict or None if no good match.
+        Kept for backward compatibility. Delegates to CompanyResolver.
         """
+        logger.warning(f"[DEPRECATED] match_company() called for '{company_name}'. "
+                      f"Use resolver.resolve_mentions() for batch resolution")
+
         try:
-            results = self.matcher.match_best(
+            result = self.resolver.resolve_name(
                 company_name,
-                limit=1,
-                min_score=self.min_score
+                role=role,
+                country_hint=country_hint,
+                facility=None,
+                lei=None
             )
 
-            if results and len(results) > 0:
-                best_match = results[0]
-                lei = best_match.get('lei', '')
-
-                # Format company_id
-                if lei and not lei.startswith('cmp-'):
-                    company_id = f"cmp-{lei}"
-                else:
-                    company_id = lei or "cmp-unknown"
-
-                confidence = best_match.get('score', 0) / 100.0
-                canonical_name = best_match.get('original_name',
-                                              best_match.get('brief_name', company_name))
+            if result and result.get('company_id'):
+                # Canonicalize ID
+                canonical_id = to_canonical(result['company_id'], self.alias_map)
 
                 return {
-                    'company_id': company_id,
-                    'company_name': canonical_name,
-                    'confidence': round(confidence, 3),
+                    'company_id': canonical_id,
+                    'company_name': result.get('company_name', company_name),
+                    'confidence': round(result['confidence'], 3),
                     'matched_from': company_name
                 }
+            else:
+                # No match - track in pending
+                if self.pending_tracker:
+                    self.pending_tracker.add_pending_company(
+                        company_name=company_name,
+                        facility_id=facility_id,
+                        country_hint=country_hint,
+                        role=role,
+                        notes="First seen during company enrichment"
+                    )
 
         except Exception as e:
             logger.warning(f"Error matching company '{company_name}': {e}")
@@ -137,94 +195,114 @@ class CompanyEnricher:
 
     def enrich_facility(self, facility: Dict, file_path: Path) -> bool:
         """
-        Enrich a single facility with company links.
+        Enrich a single facility using Phase 2 batch resolution.
 
-        Returns True if facility was updated.
+        Extracts company_mentions, resolves in batch, writes relationships to parquet.
+        Does NOT modify facility JSON (no operator_link/owner_links writes).
+
+        Returns True if relationships were created.
         """
         facility_id = facility.get('facility_id')
-        updated = False
 
-        # Check if already has operator and owners
-        has_operator = bool(facility.get('operator_link'))
-        has_owners = bool(facility.get('owner_links'))
+        # Extract mentions from facility
+        mentions = self.extract_mentions(facility)
 
-        if has_operator and has_owners:
-            # Already enriched
+        if not mentions:
+            # No mentions to process
             return False
 
-        self.stats['needs_enrichment'] += 1
+        self.stats['facilities_with_mentions'] += 1
+        self.stats['mentions_processed'] += len(mentions)
 
-        # Extract candidate company names
-        candidates = self.extract_company_names(facility)
+        logger.info(f"\n{facility_id}: Processing {len(mentions)} mentions")
 
-        # Match operators
-        if not has_operator and candidates['operators']:
-            for company_name in candidates['operators']:
-                match = self.match_company(company_name)
-                if match:
-                    facility['operator_link'] = {
-                        'company_id': match['company_id'],
-                        'company_name': match['company_name'],
-                        'role': 'operator',
-                        'confidence': match['confidence']
-                    }
-                    logger.info(f"  Operator: {company_name} → {match['company_name']}")
-                    self.stats['operators_found'] += 1
-                    updated = True
-                    break  # Only use first match
+        # Batch resolve mentions using CompanyResolver (strict profile)
+        try:
+            accepted, review, pending = self.resolver.resolve_mentions(
+                mentions,
+                facility=facility
+            )
+        except Exception as e:
+            logger.error(f"Error resolving mentions for {facility_id}: {e}")
+            self.stats['failed'] += 1
+            return False
 
-        # Match owners
-        if not has_owners and candidates['owners']:
-            owner_links = []
-            for company_name in candidates['owners']:
-                match = self.match_company(company_name)
-                if match:
-                    owner_links.append({
-                        'company_id': match['company_id'],
-                        'company_name': match['company_name'],
-                        'role': 'owner',
-                        'percentage': None,  # Unknown from data
-                        'confidence': match['confidence']
-                    })
-                    logger.info(f"  Owner: {company_name} → {match['company_name']}")
-                    self.stats['owners_found'] += 1
+        # Log results
+        logger.info(f"  Accepted: {len(accepted)}, Review: {len(review)}, Pending: {len(pending)}")
 
-            if owner_links:
-                facility['owner_links'] = owner_links
-                updated = True
+        # Process accepted relationships
+        for item in accepted:
+            resolution = item['resolution']
+            mention = item
 
-        # Update verification if changed
-        if updated:
-            verification = facility.get('verification', {})
-            verification['last_checked'] = datetime.now().isoformat()
-            verification['checked_by'] = 'company_enrichment'
+            # Canonicalize company_id
+            company_id = to_canonical(resolution['company_id'], self.alias_map)
 
-            # Boost confidence if we found companies
-            old_confidence = verification.get('confidence', 0.5)
-            verification['confidence'] = min(0.95, old_confidence + 0.1)
+            # Create relationship record
+            relationship = {
+                'relationship_id': item.get('relationship_id'),
+                'facility_id': facility_id,
+                'company_id': company_id,
+                'company_name': resolution['company_name'],
+                'role': mention['role'],
+                'confidence': resolution['confidence'],
+                'base_confidence': resolution.get('base_confidence'),
+                'match_method': 'resolver',
+                'provenance': mention.get('source', 'unknown'),
+                'evidence': mention.get('evidence'),
+                'percentage': mention.get('percentage'),
+                'gate': resolution['gate'],  # Top-level gate field for filtering
+                'gates_applied': {
+                    'gate': resolution['gate'],
+                    'penalties': resolution.get('penalties_applied', [])
+                },
+                'created_at': datetime.now()  # Keep as datetime for parquet compatibility
+            }
 
-            facility['verification'] = verification
+            self.relationships.append(relationship)
+            self.stats['auto_accepted'] += 1
+            self.stats['relationships_written'] += 1
 
-            # Save facility
-            if not self.dry_run:
-                # Create backup
-                backup_file = file_path.with_suffix(
-                    f'.backup_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+            logger.info(f"  ✓ Accepted: {mention['name']} → {resolution['company_name']} "
+                       f"(conf={resolution['confidence']:.3f}, gate={resolution['gate']})")
+
+        # Process review queue
+        for item in review:
+            resolution = item['resolution']
+            mention = item
+
+            # Log for review pack (could write to review queue file)
+            logger.info(f"  ⚠️  Review: {mention['name']} → {resolution['company_name']} "
+                       f"(conf={resolution['confidence']:.3f}, gate={resolution['gate']})")
+
+            self.stats['review_queue'] += 1
+
+            # Could write to review pack here:
+            # review_pack = {
+            #     'facility_id': facility_id,
+            #     'mention': mention,
+            #     'resolution': resolution,
+            #     'candidates': resolution.get('candidates', [])
+            # }
+
+        # Process pending (track unresolved companies)
+        for item in pending:
+            mention = item
+            name = mention.get('name', 'unknown')
+
+            if self.pending_tracker:
+                self.pending_tracker.add_pending_company(
+                    company_name=name,
+                    facility_id=facility_id,
+                    country_hint=mention.get('country_hint') or facility.get('country_iso3'),
+                    role=mention.get('role'),
+                    notes="No match found during enrichment"
                 )
-                with open(backup_file, 'w') as f:
-                    # Write original before changes
-                    pass  # Backup already exists from reading
 
-                # Write updated facility
-                with open(file_path, 'w') as f:
-                    json.dump(facility, f, ensure_ascii=False, indent=2)
+            logger.info(f"  ⊘ Pending: {name} (no match)")
+            self.stats['pending'] += 1
 
-                self.stats['updated'] += 1
-                logger.info(f"✓ Updated: {facility_id}")
-            else:
-                logger.info(f"[DRY RUN] Would update: {facility_id}")
-
-        return updated
+        return len(accepted) > 0
 
     def enrich_country(self, country_code: str):
         """Enrich all facilities in a country."""
@@ -262,37 +340,92 @@ class CompanyEnricher:
         for country_dir in country_dirs:
             self.enrich_country(country_dir.name)
 
+    def save_relationships(self):
+        """Save accumulated relationships to parquet file."""
+        if not self.relationships:
+            logger.info("No relationships to save")
+            return
+
+        if self.dry_run:
+            logger.info(f"[DRY RUN] Would save {len(self.relationships)} relationships to {RELATIONSHIPS_FILE}")
+            return
+
+        # Ensure parent directory exists
+        RELATIONSHIPS_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+        # Convert to DataFrame
+        df = pd.DataFrame(self.relationships)
+
+        # Load existing relationships if file exists
+        if RELATIONSHIPS_FILE.exists():
+            try:
+                existing_df = pd.read_parquet(RELATIONSHIPS_FILE)
+                # Append new relationships
+                df = pd.concat([existing_df, df], ignore_index=True)
+                logger.info(f"Appended {len(self.relationships)} relationships to existing {len(existing_df)} records")
+            except Exception as e:
+                logger.warning(f"Could not load existing relationships: {e}")
+
+        # Save to parquet
+        df.to_parquet(RELATIONSHIPS_FILE, index=False)
+        logger.info(f"✓ Saved {len(df)} total relationships to {RELATIONSHIPS_FILE}")
+
+        # Also save as CSV for easy inspection
+        csv_file = RELATIONSHIPS_FILE.with_suffix('.csv')
+        df.to_csv(csv_file, index=False)
+        logger.info(f"✓ Saved CSV to {csv_file}")
+
     def print_summary(self):
         """Print enrichment summary."""
         print("\n" + "="*60)
-        print("COMPANY ENRICHMENT SUMMARY")
+        print("COMPANY ENRICHMENT SUMMARY (Phase 2)")
         print("="*60)
-        print(f"Total facilities:       {self.stats['total_facilities']}")
-        print(f"Needed enrichment:      {self.stats['needs_enrichment']}")
-        print(f"Operators found:        {self.stats['operators_found']}")
-        print(f"Owners found:           {self.stats['owners_found']}")
-        print(f"Facilities updated:     {self.stats['updated']}")
-        print(f"Failed:                 {self.stats['failed']}")
+        print(f"Total facilities:           {self.stats['total_facilities']}")
+        print(f"Facilities with mentions:   {self.stats['facilities_with_mentions']}")
+        print(f"Mentions processed:         {self.stats['mentions_processed']}")
+        print()
+        print(f"Auto-accepted:              {self.stats['auto_accepted']}")
+        print(f"Review queue:               {self.stats['review_queue']}")
+        print(f"Pending:                    {self.stats['pending']}")
+        print()
+        print(f"Relationships written:      {self.stats['relationships_written']}")
+        print(f"Failed:                     {self.stats['failed']}")
         print("="*60)
+
+        # Add pending companies summary
+        if self.pending_tracker:
+            try:
+                summary = self.pending_tracker.get_summary_stats()
+                print("\nPENDING COMPANIES")
+                print("-"*60)
+                print(f"Total pending:              {summary['total_pending']}")
+                print(f"By status:                  {summary['by_status']}")
+                print(f"Avg frequency:              {summary['avg_frequency']}")
+                if summary['most_mentioned_company']:
+                    print(f"Most mentioned:             {summary['most_mentioned_company']} ({summary['max_frequency']}x)")
+            except Exception as e:
+                logger.debug(f"Could not get pending companies summary: {e}")
 
         if self.dry_run:
             print("\n[DRY RUN] No changes were saved")
+        else:
+            print(f"\nRelationships saved to: {RELATIONSHIPS_FILE}")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Enrich facilities with company links using entityidentity",
+        description="Enrich facilities with company links using CompanyResolver (Phase 2)",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument(
         '--country',
-        help='Enrich specific country (e.g., AFG, USA)'
+        help='Enrich specific country (e.g., ZAF, AUS, IDN)'
     )
     parser.add_argument(
-        '--min-score',
-        type=int,
-        default=70,
-        help='Minimum matching score 0-100 (default: 70)'
+        '--min-confidence',
+        type=float,
+        default=0.75,
+        help='Minimum confidence for relationships (0.0-1.0, default: 0.75)'
     )
     parser.add_argument(
         '--dry-run',
@@ -302,15 +435,16 @@ def main():
 
     args = parser.parse_args()
 
-    if not ENTITYIDENTITY_AVAILABLE:
-        print("ERROR: entityidentity not available")
-        print("\nMake sure entityidentity is installed or in parent directory:")
-        print("  cd /path/to/GSMC")
-        print("  git clone https://github.com/globalstrategic/entityidentity")
+    if not RESOLVER_AVAILABLE:
+        print("ERROR: CompanyResolver not available")
+        print("\nMake sure Phase 2 utilities are set up:")
+        print("  - scripts/utils/company_resolver.py")
+        print("  - scripts/utils/id_utils.py")
+        print("  - config/gate_config.json")
         return 1
 
     # Run enrichment
-    enricher = CompanyEnricher(min_score=args.min_score, dry_run=args.dry_run)
+    enricher = CompanyEnricher(min_confidence=args.min_confidence, dry_run=args.dry_run)
 
     try:
         if args.country:
@@ -318,6 +452,10 @@ def main():
         else:
             enricher.enrich_all()
 
+        # Save relationships to parquet
+        enricher.save_relationships()
+
+        # Print summary
         enricher.print_summary()
         return 0
 
