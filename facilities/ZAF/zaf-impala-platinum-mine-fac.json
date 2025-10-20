@@ -1,0 +1,54 @@
+{
+  "facility_id": "zaf-impala-platinum-mine-fac",
+  "name": "Impala Platinum Mine (Rustenburg)",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -25.554,
+    "lon": 27.194,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": true
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:29.316010"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T17:16:29.316015",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
