@@ -14,8 +14,6 @@ import argparse
 import json
 import os
 from pathlib import Path
-from datetime import datetime
-import shutil
 from typing import List, Dict, Tuple
 
 
@@ -63,11 +61,7 @@ def migrate_facility(facility_path: Path, dry_run: bool = False) -> Dict:
     modified = ('operator_link' in original_keys or 'owner_links' in original_keys)
 
     if modified and not dry_run:
-        # Backup original
-        backup_path = facility_path.with_suffix(f'.backup_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json')
-        shutil.copy2(facility_path, backup_path)
-
-        # Write cleaned version
+        # Write cleaned version (no backup needed - use git revert if needed)
         with open(facility_path, 'w') as f:
             json.dump(data, f, indent=2)
 
@@ -227,8 +221,8 @@ This was a DRY-RUN. To apply changes:
             print(f"""
 ✅ Migration complete:
    - Modified {files_with_legacy} files
-   - Created {files_with_legacy} backup files
    - All legacy fields removed
+   - Use 'git revert' if you need to undo changes
 
 Next: Update pre-commit hook to prevent re-introduction
 """)
