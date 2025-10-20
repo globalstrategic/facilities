@@ -2,7 +2,7 @@
   "facility_id": "zaf-nkomati-fac",
   "name": "Nkomati",
   "aliases": [
-    "Nkomati"
+    "Nkomati Mine"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -19,7 +19,15 @@
       "primary": true
     },
     {
-      "metal": "Copper",
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
       "primary": false
     },
     {
@@ -31,15 +39,7 @@
       "primary": false
     },
     {
-      "metal": "Palladium",
-      "primary": false
-    },
-    {
-      "metal": "Platinum",
-      "primary": false
-    },
-    {
-      "metal": "Rhodium",
+      "metal": "Copper",
       "primary": false
     }
   ],
@@ -51,6 +51,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:29:45.146118"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.451086"
     }
   ],
   "verification": {
@@ -58,6 +63,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:29:45.146123",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-nkomati-mine-fac"
   }
 }

@@ -2,7 +2,7 @@
   "facility_id": "zaf-marula-fac",
   "name": "Marula",
   "aliases": [
-    "Marula",
+    "Marula Platinum Mine",
     "Twickenham"
   ],
   "country_iso3": "ZAF",
@@ -18,6 +18,10 @@
     {
       "metal": "Platinum",
       "primary": true
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
     },
     {
       "metal": "Gold",
@@ -40,10 +44,6 @@
       "primary": false
     },
     {
-      "metal": "Rhodium",
-      "primary": false
-    },
-    {
       "metal": "Ruthenium",
       "primary": false
     }
@@ -56,6 +56,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:29:45.846468"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:31.110743"
     }
   ],
   "verification": {
@@ -63,6 +68,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:29:45.846475",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-marula-platinum-mine-fac"
   }
 }

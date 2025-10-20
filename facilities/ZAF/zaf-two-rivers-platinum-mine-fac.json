@@ -1,7 +1,11 @@
 {
   "facility_id": "zaf-two-rivers-platinum-mine-fac",
   "name": "Two Rivers Platinum Mine",
-  "aliases": [],
+  "aliases": [
+    "Two Rivers",
+    "Two Rivers Mine",
+    "Tweefontein"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -24.893,
@@ -41,6 +45,16 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:31.060633"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:14.511249"
+    },
+    {
+      "type": "text_extraction",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:03:43.744529"
     }
   ],
   "verification": {
@@ -48,6 +62,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T17:16:31.060637",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-two-rivers-fac, zaf-two-rivers-mine-fac"
   }
 }

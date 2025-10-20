@@ -2,7 +2,7 @@
   "facility_id": "zaf-east-daggafontein-fac",
   "name": "East Daggafontein",
   "aliases": [
-    "East Daggafontein"
+    "East Daggafontein Mine"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -19,10 +19,6 @@
       "primary": true
     },
     {
-      "metal": "Osmium",
-      "primary": false
-    },
-    {
       "metal": "Palladium",
       "primary": false
     },
@@ -32,6 +28,10 @@
     },
     {
       "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Osmium",
       "primary": false
     }
   ],
@@ -43,6 +43,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:29:47.103439"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:29.390591"
     }
   ],
   "verification": {
@@ -50,6 +55,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:29:47.103444",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-east-daggafontein-mine-fac"
   }
 }

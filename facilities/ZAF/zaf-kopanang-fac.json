@@ -2,8 +2,7 @@
   "facility_id": "zaf-kopanang-fac",
   "name": "Kopanang",
   "aliases": [
-    "Kopanang",
-    "Kopanang",
+    "Kopanang Gold Mine",
     "Vaal River South"
   ],
   "country_iso3": "ZAF",
@@ -21,6 +20,10 @@
       "primary": true
     },
     {
+      "metal": "Uranium",
+      "primary": false
+    },
+    {
       "metal": "Silver",
       "primary": false
     }
@@ -33,6 +36,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:29.444559"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:31.198787"
     }
   ],
   "verification": {
@@ -40,6 +48,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:29.444566",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-kopanang-gold-mine-fac"
   }
 }

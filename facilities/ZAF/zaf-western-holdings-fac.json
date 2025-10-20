@@ -2,8 +2,9 @@
   "facility_id": "zaf-western-holdings-fac",
   "name": "Western Holdings",
   "aliases": [
-    "Western Holdingsfreegold North",
-    "Eland"
+    "Eland",
+    "Western Holdings; Freegold North; Eland",
+    "Western Holdingsfreegold North"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -45,14 +46,6 @@
       "confidence": 0.6,
       "first_seen": "2025-10-20T15:27:16.842596",
       "evidence": "Extracted from Group Names column: Western Holdingsfreegold North;Western Holdings;Eland;Western Holdings"
-    },
-    {
-      "name": "Western Holdings",
-      "role": "owner",
-      "source": "Mines.csv Run 1",
-      "confidence": 0.6,
-      "first_seen": "2025-10-20T15:27:16.842604",
-      "evidence": "Extracted from Group Names column: Western Holdingsfreegold North;Western Holdings;Eland;Western Holdings"
     }
   ],
   "products": [],
@@ -61,6 +54,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:16.842608"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:24.738359"
     }
   ],
   "verification": {
@@ -68,6 +66,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:16.842609",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-western-holdings-freegold-north-eland-fac"
   }
 }

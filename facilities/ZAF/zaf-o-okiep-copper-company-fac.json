@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-o-okiep-copper-company-fac",
   "name": "O'Okiep Copper Company",
-  "aliases": [],
+  "aliases": [
+    "O'Okiep Copper Company Limited"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -29.663,
@@ -25,6 +27,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:28.189673"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:17.265206"
     }
   ],
   "verification": {
@@ -32,6 +39,6 @@
     "confidence": 0.3,
     "last_checked": "2025-10-20T17:16:28.189680",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-o-okiep-copper-company-limited-fac"
   }
 }

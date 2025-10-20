@@ -2,10 +2,10 @@
   "facility_id": "zaf-black-wattle-coal-mine-fac",
   "name": "Black Wattle Coal Mine",
   "aliases": [
-    "Black Wattle Coal Mine",
-    "Vaalbank Coal Mine",
     "Black Wattle Colliery",
-    "Polmaise"
+    "Black Wattle Colliery; Vaalbank Coal Mine",
+    "Polmaise",
+    "Vaalbank Coal Mine"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -37,6 +37,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:28:02.364804"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.348016"
     }
   ],
   "verification": {
@@ -44,6 +49,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T16:26:30.811449",
     "checked_by": "import_pipeline",
-    "notes": "Company mentions extracted from narrative research"
+    "notes": "Company mentions extracted from narrative research; Merged from: zaf-black-wattle-colliery-vaalbank-coal-mine-fac"
   }
 }

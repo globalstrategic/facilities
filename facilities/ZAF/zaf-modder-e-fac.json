@@ -2,8 +2,8 @@
   "facility_id": "zaf-modder-e-fac",
   "name": "Modder E",
   "aliases": [
-    "Modder E",
-    "Dagga"
+    "Dagga",
+    "Modder East; Dagga"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -22,6 +22,10 @@
     {
       "metal": "Platinum",
       "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": true
     }
   ],
   "status": "unknown",
@@ -32,6 +36,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.951575"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:29.679198"
     }
   ],
   "verification": {
@@ -39,6 +48,6 @@
     "confidence": 0.3,
     "last_checked": "2025-10-20T15:27:15.951580",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-modder-east-dagga-fac"
   }
 }

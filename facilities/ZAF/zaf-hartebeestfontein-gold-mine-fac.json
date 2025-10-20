@@ -2,8 +2,8 @@
   "facility_id": "zaf-hartebeestfontein-gold-mine-fac",
   "name": "Hartebeestfontein Gold Mine",
   "aliases": [
-    "Hartebeestfontein Gold Mine",
     "Hartebeestfontein",
+    "Hartebeestfontein Gold Mine; Mine Waste Solutions",
     "Mine Waste Solutions",
     "Stilfontein"
   ],
@@ -22,15 +22,15 @@
       "primary": true
     },
     {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
       "metal": "Platinum",
       "primary": false
     },
     {
       "metal": "Rhodium",
-      "primary": false
-    },
-    {
-      "metal": "Silver",
       "primary": false
     },
     {
@@ -46,6 +46,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:16.579030"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.325504"
     }
   ],
   "verification": {
@@ -53,6 +58,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:16.579036",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-hartebeestfontein-gold-mine-mine-waste-solutions-fac"
   }
 }

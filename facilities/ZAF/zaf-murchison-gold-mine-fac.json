@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-murchison-gold-mine-fac",
   "name": "Murchison Gold Mine",
-  "aliases": [],
+  "aliases": [
+    "Murchison"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -23.8901,
@@ -25,6 +27,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:31.133163"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:13.759592"
     }
   ],
   "verification": {
@@ -32,6 +39,6 @@
     "confidence": 0.45,
     "last_checked": "2025-10-20T17:16:31.133166",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-murchison-fac"
   }
 }

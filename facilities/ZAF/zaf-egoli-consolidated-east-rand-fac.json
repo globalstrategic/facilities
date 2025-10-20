@@ -2,8 +2,8 @@
   "facility_id": "zaf-egoli-consolidated-east-rand-fac",
   "name": "Egoli Consolidated East Rand",
   "aliases": [
-    "Egoli Consolidated East Rand",
-    "Brakpan"
+    "Brakpan",
+    "Egoli Consolidated East Rand; Brakpan"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -40,6 +40,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.825439"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:27.205888"
     }
   ],
   "verification": {
@@ -47,6 +52,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:15.825445",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-egoli-consolidated-east-rand-brakpan-fac"
   }
 }

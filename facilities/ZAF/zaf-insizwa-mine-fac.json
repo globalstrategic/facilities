@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-insizwa-mine-fac",
   "name": "Insizwa Mine",
-  "aliases": [],
+  "aliases": [
+    "Insizwa"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -30.946,
@@ -13,7 +15,7 @@
   ],
   "commodities": [
     {
-      "metal": "Nickel",
+      "metal": "Gold",
       "primary": true
     },
     {
@@ -21,8 +23,8 @@
       "primary": false
     },
     {
-      "metal": "Gold",
-      "primary": false
+      "metal": "Nickel",
+      "primary": true
     }
   ],
   "status": "unknown",
@@ -33,6 +35,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:25.275689"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:17.314302"
     }
   ],
   "verification": {
@@ -40,6 +47,6 @@
     "confidence": 0.3,
     "last_checked": "2025-10-20T17:16:25.275695",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-insizwa-fac"
   }
 }

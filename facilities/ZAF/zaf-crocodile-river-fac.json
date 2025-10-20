@@ -2,8 +2,8 @@
   "facility_id": "zaf-crocodile-river-fac",
   "name": "Crocodile River",
   "aliases": [
-    "Crocodile River",
     "Barplats Refinery",
+    "Crocodile River Mine; Barplats Refinery",
     "Zandfontein UG2 TSF"
   ],
   "country_iso3": "ZAF",
@@ -37,19 +37,19 @@
       "primary": false
     },
     {
-      "metal": "Rhodium",
-      "primary": false
-    },
-    {
-      "metal": "rubidium",
-      "primary": false
-    },
-    {
       "metal": "Ruthenium",
       "primary": false
     },
     {
       "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "rubidium",
       "primary": false
     }
   ],
@@ -61,6 +61,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:29:44.757512"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:28.399695"
     }
   ],
   "verification": {
@@ -68,6 +73,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:29:44.757518",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-crocodile-river-mine-barplats-refinery-fac"
   }
 }

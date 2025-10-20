@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-st-helena-gold-mine-fac",
   "name": "St. Helena Gold Mine",
-  "aliases": [],
+  "aliases": [
+    "St. Helena Mines"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -28.03,
@@ -17,6 +19,10 @@
       "primary": true
     },
     {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
       "metal": "Uranium",
       "primary": false
     }
@@ -29,6 +35,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:25.047029"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.922040"
     }
   ],
   "verification": {
@@ -36,6 +47,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T17:16:25.047034",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-st-helena-mines-fac"
   }
 }

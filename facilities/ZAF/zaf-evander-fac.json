@@ -2,14 +2,12 @@
   "facility_id": "zaf-evander-fac",
   "name": "Evander",
   "aliases": [
-    "Kinross",
+    "Bracken",
     "Bracken Mines",
-    "Bracken",
-    "Winkelhaak",
-    "Evander",
-    "Bracken",
-    "Evander",
-    "Kinross Plant"
+    "Evander Operations (incl. Kinross, Bracken, Winkelhaak)",
+    "Kinross",
+    "Kinross Plant",
+    "Winkelhaak"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -38,6 +36,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:16.539936"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:28.744742"
     }
   ],
   "verification": {
@@ -45,6 +48,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:16.539941",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-evander-operations-fac"
   }
 }

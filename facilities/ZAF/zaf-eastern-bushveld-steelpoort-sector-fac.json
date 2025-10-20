@@ -2,12 +2,12 @@
   "facility_id": "zaf-eastern-bushveld-steelpoort-sector-fac",
   "name": "Eastern Bushveld: Steelpoort Sector",
   "aliases": [
-    "Eastern Bushveld: Steelpoort Sector",
-    "Lavino Grootboom",
-    "Ug2 Chromite Layer (Eastern Bushveld)",
+    "Eastern Bushveld: Steelpoort Sector; Tubatse Plant",
     "Grootboom Chrome Mine",
+    "Lavino",
+    "Lavino Grootboom",
     "Tubatse Plant",
-    "Lavino"
+    "Ug2 Chromite Layer (Eastern Bushveld)"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -29,11 +29,11 @@
       "primary": false
     },
     {
-      "metal": "Ferrochrome",
+      "metal": "Platinum",
       "primary": false
     },
     {
-      "metal": "Platinum",
+      "metal": "Ferrochrome",
       "primary": false
     }
   ],
@@ -45,6 +45,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:14.318447"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.291088"
     }
   ],
   "verification": {
@@ -52,6 +57,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:14.318457",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-eastern-bushveld-steelpoort-sector-tubatse-plant-fac"
   }
 }

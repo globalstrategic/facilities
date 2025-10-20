@@ -2,8 +2,8 @@
   "facility_id": "zaf-doornfontein-fac",
   "name": "Doornfontein",
   "aliases": [
-    "Doornfontein",
-    "Blyvooruitzicht"
+    "Blyvooruitzicht",
+    "Doornfontein; Blyvooruitzicht"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -36,6 +36,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:16.339360"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:24.508552"
     }
   ],
   "verification": {
@@ -43,6 +48,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:16.339366",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-doornfontein-blyvooruitzicht-fac"
   }
 }

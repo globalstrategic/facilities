@@ -2,9 +2,9 @@
   "facility_id": "zaf-randfontein-estates-fac",
   "name": "Randfontein Estates",
   "aliases": [
-    "Randfontein Estates",
     "Lindum Reefs",
-    "Randfontein Est."
+    "Randfontein Est.",
+    "Randfontein Estates Gold Mine"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -21,6 +21,10 @@
       "primary": true
     },
     {
+      "metal": "Uranium",
+      "primary": false
+    },
+    {
       "metal": "Platinum",
       "primary": false
     }
@@ -33,6 +37,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.381261"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:27.278583"
     }
   ],
   "verification": {
@@ -40,6 +49,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:15.381265",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-randfontein-estates-gold-mine-fac"
   }
 }

@@ -2,8 +2,8 @@
   "facility_id": "zaf-randfontein-mine-cooke-section-fac",
   "name": "Randfontein Mine Cooke Section",
   "aliases": [
-    "Randfontein Mine Cooke Section",
     "Cooke",
+    "Cooke Operations",
     "Cooke Uranium"
   ],
   "country_iso3": "ZAF",
@@ -21,6 +21,10 @@
       "primary": true
     },
     {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
       "metal": "Uranium",
       "primary": false
     }
@@ -33,6 +37,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.924868"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:24.832955"
     }
   ],
   "verification": {
@@ -40,6 +49,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:15.924873",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-cooke-fac, zaf-cooke-operations-fac"
   }
 }

@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-atok-mine-fac",
   "name": "Atok Mine (Bokoni)",
-  "aliases": [],
+  "aliases": [
+    "Atok"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -24.263,
@@ -15,6 +17,10 @@
     {
       "metal": "Platinum",
       "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": true
     }
   ],
   "status": "unknown",
@@ -25,6 +31,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:30.000214"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:13.938469"
     }
   ],
   "verification": {
@@ -32,6 +43,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T17:16:30.000219",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-atok-fac"
   }
 }

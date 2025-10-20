@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-driehoekspan-mine-fac",
   "name": "Driehoekspan Mine",
-  "aliases": [],
+  "aliases": [
+    "Afrimat Driehoekspan Mine"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -28.141,
@@ -26,6 +28,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:25.020223"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:27.996596"
     }
   ],
   "verification": {
@@ -33,6 +40,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T17:16:25.020228",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-afrimat-driehoekspan-mine-fac"
   }
 }

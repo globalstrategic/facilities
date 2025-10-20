@@ -85,10 +85,16 @@ TYPE_MAP = {
 
 STATUS_MAP = {
     "operational": "operating", "operating": "operating", "active": "operating",
+    "operational (old)": "operating",  # South Africa report format
     "in development": "construction", "under construction": "construction",
+    "executable": "construction",  # South Africa report format
     "proposed": "planned", "planned": "planned", "contracted": "planned",
-    "closed": "closed", "inactive": "closed", "suspended": "suspended",
-    "stalled": "suspended", "relaunching": "planned", "undeveloped": "planned"
+    "feasibility": "planned", "pre-feasibility": "planned", "bankable": "planned",  # Study phases
+    "closed": "closed", "inactive": "closed", "completed": "closed",
+    "suspended": "suspended", "stalled": "suspended",
+    "care and maintenance": "suspended",  # South Africa report format
+    "dormant": "suspended", "dormant (l/r)": "suspended",  # License relinquished
+    "cancelled": "closed", "grassroots": "planned"  # Exploration phase
 }
 
 
@@ -186,15 +192,17 @@ def extract_concatenated_table(text: str) -> Optional[Dict]:
 
     # Create regex pattern to split entries
     # Pattern: (NamePart)(Status)(Commodity)
+    # Note: The table can be either concatenated OR newline-separated
     # Build combined pattern for status|commodity
     status_pattern = '|'.join(re.escape(s) for s in sorted(status_keywords, key=len, reverse=True))
     commodity_pattern = '|'.join(re.escape(c) for c in sorted(commodity_keywords, key=len, reverse=True))
 
-    # Pattern to match: (Name)(Status)(Commodity)
-    entry_pattern = f'(.+?)({status_pattern})({commodity_pattern})'
+    # Pattern to match: (Name)(Status)(Commodity) with optional whitespace/newlines
+    # Use \s* to match across newlines
+    entry_pattern = f'(.+?)\\s*({status_pattern})\\s*({commodity_pattern})'
 
     rows = []
-    matches = list(re.finditer(entry_pattern, table_content))
+    matches = list(re.finditer(entry_pattern, table_content, re.DOTALL))
 
     logger.info(f"Found {len(matches)} facility entries in concatenated table")
 
@@ -206,6 +214,9 @@ def extract_concatenated_table(text: str) -> Optional[Dict]:
         # Skip if name is too short (likely parsing error)
         if len(name) < 3:
             continue
+
+        # Clean up name: remove excess newlines and whitespace
+        name = re.sub(r'\s+', ' ', name).strip()
 
         rows.append({
             'Name': name,
@@ -432,6 +443,27 @@ def extract_facility_attributes(name: str, context: str, location_hint: Optional
     if not name or len(name) < 3:
         return None
 
+    # Blacklist: Filter out non-facility entities
+    blacklist_patterns = [
+        # Government agencies and organizations
+        r'\b(?:department|ministry|council|agency|commission|authority|bureau|administration)\b',
+        r'\b(?:government|federal|national|state|provincial)\s+(?:of|for)\b',
+        # Generic/abstract terms (not specific facilities)
+        r'^(?:platinum group metals?|precious metals?|base metals?|rare earths?|commodities?)$',
+        r'^(?:gold|copper|iron|coal|diamonds?)$',  # Just commodity names
+        # Corporate/business entities (not facilities)
+        r'\b(?:corporation|company|enterprises?|holdings?|ltd|inc|plc|limited)\b',
+        r'\b(?:services?|solutions?|consulting|investments?)\b',
+        # Generic categories
+        r'^(?:the\s+)?(?:mining|minerals?|resources?)\s+(?:industry|sector)$',
+    ]
+
+    name_lower = name.lower()
+    for pattern in blacklist_patterns:
+        if re.search(pattern, name_lower, re.IGNORECASE):
+            logger.debug(f"Filtered out non-facility: '{name}' (matched pattern: {pattern})")
+            return None
+
     # Extract location
     location_text = location_hint or ""
 
@@ -575,6 +607,11 @@ def is_facility_table(table: Dict) -> bool:
     if not table or 'headers' not in table:
         return False
 
+    # Require at least 2 columns for a valid facility table
+    # Single-column tables are likely mis-parsed concatenated formats
+    if len(table['headers']) < 2:
+        return False
+
     headers_lower = [h.lower() for h in table['headers']]
     indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
                  'latitude', 'longitude', 'commodity', 'metal', 'operator']
@@ -640,7 +677,7 @@ def normalize_headers(headers: List[str]) -> List[str]:
     for h in headers:
         h_lower = h.lower().strip()
 
-        if any(x in h_lower for x in ['site', 'mine name', 'facility name', 'asset name']):
+        if any(x in h_lower for x in ['site', 'mine name', 'facility name', 'asset name']) or h_lower == 'name':
             normalized.append('name')
         elif 'group name' in h_lower:  # Map "Group Names" from Mines.csv
             normalized.append('group_names')
@@ -740,27 +777,91 @@ def load_existing_facilities(country_dir_name: str) -> Dict[str, Dict]:
 
 def check_duplicate(facility_id: str, name: str, lat: Optional[float], lon: Optional[float],
                    existing: Dict[str, Dict]) -> Optional[str]:
-    """Check if facility already exists. Returns existing ID if duplicate."""
+    """Check if facility already exists. Returns existing ID if duplicate.
+
+    Strategy:
+    1. Exact ID match
+    2. Coordinate-based matching (primary - within 0.5 degrees ~55km)
+    3. Exact name match
+    4. Fuzzy name match (>85% similarity)
+    5. Alias match
+    """
+    from difflib import SequenceMatcher
+
     # Exact ID match
     if facility_id in existing:
         return facility_id
 
-    # Name + location match
+    # PRIORITY 1: Coordinate-based matching (most reliable)
+    # Check if new facility has coords
+    if lat is not None and lon is not None:
+        for existing_id, existing_fac in existing.items():
+            existing_lat = existing_fac['location'].get('lat')
+            existing_lon = existing_fac['location'].get('lon')
+
+            if existing_lat is not None and existing_lon is not None:
+                lat_diff = abs(lat - existing_lat)
+                lon_diff = abs(lon - existing_lon)
+
+                name_lower = name.lower()
+                existing_name_lower = existing_fac['name'].lower()
+                name_similarity = SequenceMatcher(None, name_lower, existing_name_lower).ratio()
+
+                # Check if one name contains the other (for "Two Rivers" vs "Two Rivers Platinum Mine")
+                shorter = name_lower if len(name_lower) < len(existing_name_lower) else existing_name_lower
+                longer = existing_name_lower if len(name_lower) < len(existing_name_lower) else name_lower
+                contains_match = shorter in longer
+
+                # Two-tier matching:
+                # Tier 1: Very close coords (0.01 deg ~1km) + moderate name match (>0.6 OR contains)
+                # Tier 2: Close coords (0.1 deg ~11km) + high name match (>0.85 OR contains)
+                tier1_match = (lat_diff < 0.01 and lon_diff < 0.01) and (name_similarity > 0.6 or contains_match)
+                tier2_match = (lat_diff < 0.1 and lon_diff < 0.1) and (name_similarity > 0.85 or contains_match)
+
+                if tier1_match or tier2_match:
+                    logger.debug(f"Coordinate match: '{name}' ~= '{existing_fac['name']}' "
+                               f"(coords: Δlat={lat_diff:.3f},Δlon={lon_diff:.3f}, similarity: {name_similarity:.2f}, contains: {contains_match})")
+                    return existing_id
+
+    # PRIORITY 2: Exact name match
+    name_lower = name.lower()
     for existing_id, existing_fac in existing.items():
-        # Name match
-        if name.lower() == existing_fac['name'].lower():
-            # Check location if both have coords
+        existing_name_lower = existing_fac['name'].lower()
+
+        if name_lower == existing_name_lower:
+            # Exact name match - check coords if available
             if lat and lon and existing_fac['location'].get('lat') and existing_fac['location'].get('lon'):
                 lat_diff = abs(lat - existing_fac['location']['lat'])
                 lon_diff = abs(lon - existing_fac['location']['lon'])
                 if lat_diff < 0.01 and lon_diff < 0.01:  # Within ~1km
                     return existing_id
             else:
-                # No coords to compare, assume duplicate by name
+                # No coords to compare, assume duplicate by exact name
                 return existing_id
 
-        # Check aliases
-        if name.lower() in [a.lower() for a in existing_fac.get('aliases', [])]:
+    # PRIORITY 3: Fuzzy name match (>85% similarity OR high word overlap)
+    for existing_id, existing_fac in existing.items():
+        existing_name_lower = existing_fac['name'].lower()
+        name_similarity = SequenceMatcher(None, name_lower, existing_name_lower).ratio()
+
+        # Also check word overlap (e.g., "two rivers mine" vs "two rivers platinum mine")
+        words1 = set(name_lower.split())
+        words2 = set(existing_name_lower.split())
+        if words1 and words2:
+            word_overlap = len(words1 & words2) / min(len(words1), len(words2))
+        else:
+            word_overlap = 0
+
+        # Match if high similarity OR very high word overlap (>0.8 means 80%+ words match)
+        if name_similarity > 0.85 or word_overlap > 0.8:
+            logger.debug(f"Fuzzy name match: '{name}' ~= '{existing_fac['name']}' "
+                       f"(similarity: {name_similarity:.2f}, word_overlap: {word_overlap:.2f})")
+            return existing_id
+
+    # PRIORITY 4: Alias match
+    for existing_id, existing_fac in existing.items():
+        if name_lower in [a.lower() for a in existing_fac.get('aliases', [])]:
+            logger.debug(f"Alias match: '{name}' in aliases of '{existing_fac['name']}'")
             return existing_id
 
     return None

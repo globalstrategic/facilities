@@ -2,16 +2,15 @@
   "facility_id": "zaf-west-rand-consolidated-mine-fac",
   "name": "West Rand Consolidated Mine",
   "aliases": [
-    "West Rand Consolidated Mine",
-    "West Rand Consolidated Mine",
-    "North Plant",
-    "West Rand Consol.",
-    "West Witswatersrand",
-    "West Rand",
-    "West Wits",
-    "Mogale Smelter",
     "Krugersdorp Plant",
-    "Palmiet Plant"
+    "Mogale Smelter",
+    "North Plant",
+    "Palmiet Plant",
+    "West Rand",
+    "West Rand Consol.",
+    "West Rand Consolidated Mine; West Wits",
+    "West Wits",
+    "West Witswatersrand"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -52,6 +51,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.331939"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:29.174208"
     }
   ],
   "verification": {
@@ -59,6 +63,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:15.331945",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-west-rand-consolidated-mine-west-wits-fac"
   }
 }

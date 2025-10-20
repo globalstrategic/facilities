@@ -2,7 +2,7 @@
   "facility_id": "zaf-vaal-reefs-fac",
   "name": "Vaal Reefs",
   "aliases": [
-    "Vaal Reefs",
+    "Vaal Reefs Gold Mine",
     "Vaal River Surface"
   ],
   "country_iso3": "ZAF",
@@ -20,11 +20,11 @@
       "primary": true
     },
     {
-      "metal": "Uranium",
+      "metal": "Silver",
       "primary": false
     },
     {
-      "metal": "Silver",
+      "metal": "Uranium",
       "primary": false
     }
   ],
@@ -36,6 +36,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:16.635657"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.808091"
     }
   ],
   "verification": {
@@ -43,6 +48,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:16.635663",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-vaal-reefs-gold-mine-fac"
   }
 }

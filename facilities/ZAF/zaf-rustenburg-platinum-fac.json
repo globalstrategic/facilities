@@ -2,19 +2,14 @@
   "facility_id": "zaf-rustenburg-platinum-fac",
   "name": "Rustenburg Platinum",
   "aliases": [
-    "Rustenburg Platinum",
-    "Rustenburg Mine",
-    "Platinum Mile",
-    "Rustenburg",
-    "Platinum Mile",
-    "Rustenburg",
-    "Platinum Mile",
-    "Rustenburg Smelter",
-    "Waterval Smelter",
-    "Rustenburg Refinery",
     "Bokamoso Pellet Plant",
+    "Platinum Mile",
+    "Rustenburg",
+    "Rustenburg Mine",
+    "Rustenburg Platinum Mines Complex",
+    "Rustenburg Refinery",
     "Rustenburg Smelter",
-    "Rustenburg Smelter"
+    "Waterval Smelter"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -29,6 +24,10 @@
     {
       "metal": "Platinum",
       "primary": true
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
     },
     {
       "metal": "Cobalt",
@@ -59,10 +58,6 @@
       "primary": false
     },
     {
-      "metal": "Rhodium",
-      "primary": false
-    },
-    {
       "metal": "Ruthenium",
       "primary": false
     },
@@ -88,6 +83,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:14.876476"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:31.437398"
     }
   ],
   "verification": {
@@ -95,6 +95,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:14.876482",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-rustenburg-platinum-mines-complex-fac"
   }
 }

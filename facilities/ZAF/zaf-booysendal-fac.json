@@ -2,8 +2,8 @@
   "facility_id": "zaf-booysendal-fac",
   "name": "Booysendal",
   "aliases": [
-    "Booysendal",
-    "Booysendal North"
+    "Booysendal North",
+    "Booysendal Platinum Mine"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -18,10 +18,6 @@
     {
       "metal": "Platinum",
       "primary": true
-    },
-    {
-      "metal": "Rhodium",
-      "primary": false
     },
     {
       "metal": "Iridium",
@@ -46,6 +42,10 @@
     {
       "metal": "Ruthenium",
       "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
     }
   ],
   "status": "unknown",
@@ -56,6 +56,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:29:30.320774"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.129871"
     }
   ],
   "verification": {
@@ -63,6 +68,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:29:30.320779",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-booysendal-platinum-mine-fac"
   }
 }

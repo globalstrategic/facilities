@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-spitzkop-fac",
   "name": "Spitzkop",
-  "aliases": [],
+  "aliases": [
+    "Spitzkop Colliery"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -26.358,
@@ -25,6 +27,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:39.045400"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:25.449591"
     }
   ],
   "verification": {
@@ -32,6 +39,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:39.045405",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-spitzkop-colliery-fac"
   }
 }

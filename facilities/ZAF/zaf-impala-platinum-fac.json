@@ -2,12 +2,12 @@
   "facility_id": "zaf-impala-platinum-fac",
   "name": "Impala Platinum",
   "aliases": [
-    "Rustenburg Impala Sector: Merensky Reef",
-    "Impala Platinum",
-    "Impala Platinum Co.",
-    "Impala Mines",
     "Impala Lease",
-    "Impala Smelter"
+    "Impala Mines",
+    "Impala Platinum Co.",
+    "Impala Platinum Mine (Rustenburg)",
+    "Impala Smelter",
+    "Rustenburg Impala Sector: Merensky Reef"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -24,6 +24,10 @@
       "primary": true
     },
     {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
       "metal": "Gold",
       "primary": false
     },
@@ -32,15 +36,11 @@
       "primary": false
     },
     {
-      "metal": "Palladium",
-      "primary": false
-    },
-    {
       "metal": "Cobalt",
       "primary": false
     },
     {
-      "metal": "Rhodium",
+      "metal": "Palladium",
       "primary": false
     }
   ],
@@ -52,6 +52,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:14.778431"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:29.316010"
     }
   ],
   "verification": {
@@ -59,6 +64,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:14.778437",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-impala-platinum-mine-fac"
   }
 }

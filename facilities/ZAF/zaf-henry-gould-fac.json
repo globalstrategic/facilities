@@ -2,15 +2,15 @@
   "facility_id": "zaf-henry-gould-fac",
   "name": "Henry Gould",
   "aliases": [
-    "Rustenburg Brits Sector: Merensky Reef",
-    "Mooinooi",
+    "Buffelsfontein Smelter",
     "Henry Gould Chrome Mine",
-    "Henry Gould",
-    "Sylvania Dumps",
-    "Phoenix",
-    "Samancor Western",
+    "Henry Gould Chrome Mine; Mooinooi",
     "Lesedi",
-    "Buffelsfontein Smelter"
+    "Mooinooi",
+    "Phoenix",
+    "Rustenburg Brits Sector: Merensky Reef",
+    "Samancor Western",
+    "Sylvania Dumps"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -26,10 +26,6 @@
     {
       "metal": "chromium",
       "primary": true
-    },
-    {
-      "metal": "Ferrochrome",
-      "primary": false
     },
     {
       "metal": "Gold",
@@ -50,6 +46,10 @@
     {
       "metal": "Ruthenium",
       "primary": false
+    },
+    {
+      "metal": "Ferrochrome",
+      "primary": false
     }
   ],
   "status": "unknown",
@@ -60,6 +60,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.053764"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.196052"
     }
   ],
   "verification": {
@@ -67,6 +72,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:15.053771",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-henry-gould-chrome-mine-mooinooi-fac"
   }
 }

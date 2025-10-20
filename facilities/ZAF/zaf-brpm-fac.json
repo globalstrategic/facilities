@@ -2,11 +2,10 @@
   "facility_id": "zaf-brpm-fac",
   "name": "BRPM",
   "aliases": [
-    "BRPM",
-    "BRPM",
-    "Impala Bafokeng",
+    "BRPM (Bafokeng Rasimone Platinum Mine); Boshoek",
     "Boshoek",
-    "Boshoek Smelter"
+    "Boshoek Smelter",
+    "Impala Bafokeng"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -21,6 +20,10 @@
     {
       "metal": "Platinum",
       "primary": true
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
     },
     {
       "metal": "Copper",
@@ -47,10 +50,6 @@
       "primary": false
     },
     {
-      "metal": "Rhodium",
-      "primary": false
-    },
-    {
       "metal": "Ruthenium",
       "primary": false
     }
@@ -63,6 +62,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:20.783770"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:27.907162"
     }
   ],
   "verification": {
@@ -70,6 +74,6 @@
     "confidence": 0.8,
     "last_checked": "2025-10-20T15:27:20.783781",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-brpm-boshoek-fac"
   }
 }

@@ -1,7 +1,10 @@
 {
   "facility_id": "zaf-messina-development-co-fac",
   "name": "Messina (Transvaal) Development Co.",
-  "aliases": [],
+  "aliases": [
+    "Messina",
+    "Messina Transvaal Development Co., Ltd."
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -22.33,
@@ -25,6 +28,11 @@
       "type": "csv_import",
       "id": "Research Import ZAF 2025-10-20",
       "date": "2025-10-20T17:16:28.146445"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:13.645875"
     }
   ],
   "verification": {
@@ -32,6 +40,6 @@
     "confidence": 0.3,
     "last_checked": "2025-10-20T17:16:28.146451",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-messina-transvaal-development-co-ltd-fac, zaf-messina-fac"
   }
 }

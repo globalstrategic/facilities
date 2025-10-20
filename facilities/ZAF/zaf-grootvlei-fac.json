@@ -2,12 +2,12 @@
   "facility_id": "zaf-grootvlei-fac",
   "name": "Grootvlei",
   "aliases": [
-    "Grootvlei",
-    "Springszn",
-    "Modder East",
     "Geduld",
+    "Grootvlei; Springs Refinery; Impala Refinery",
     "Impala Refinery",
-    "Springs Refinery"
+    "Modder East",
+    "Springs Refinery",
+    "Springszn"
   ],
   "country_iso3": "ZAF",
   "location": {
@@ -20,7 +20,7 @@
   ],
   "commodities": [
     {
-      "metal": "Gold",
+      "metal": "Platinum",
       "primary": true
     },
     {
@@ -40,16 +40,16 @@
       "primary": false
     },
     {
-      "metal": "Platinum",
-      "primary": false
-    },
-    {
       "metal": "Rhodium",
       "primary": false
     },
     {
       "metal": "Silver",
       "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": true
     }
   ],
   "status": "unknown",
@@ -60,6 +60,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:15.658294"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:28.104311"
     }
   ],
   "verification": {
@@ -67,6 +72,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T15:27:15.658301",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Merged from: zaf-grootvlei-springs-refinery-impala-refinery-fac"
   }
 }

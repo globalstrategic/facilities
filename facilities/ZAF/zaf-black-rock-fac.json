@@ -1,7 +1,9 @@
 {
   "facility_id": "zaf-black-rock-fac",
   "name": "Black Rock",
-  "aliases": [],
+  "aliases": [
+    "Black Rock Mine"
+  ],
   "country_iso3": "ZAF",
   "location": {
     "lat": -27.133,
@@ -32,6 +34,11 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:27:20.104417"
+    },
+    {
+      "type": "csv_import",
+      "id": "Research Import ZAF 2025-10-20",
+      "date": "2025-10-20T17:16:30.153641"
     }
   ],
   "verification": {
@@ -39,6 +46,6 @@
     "confidence": 0.65,
     "last_checked": "2025-10-20T16:26:30.810654",
     "checked_by": "import_pipeline",
-    "notes": "Company mentions extracted from narrative research"
+    "notes": "Company mentions extracted from narrative research; Merged from: zaf-black-rock-mine-fac"
   }
 }
