@@ -134,6 +134,94 @@ def parse_csv_file(text: str) -> Optional[Dict]:
         return None
 
 
+def extract_concatenated_table(text: str) -> Optional[Dict]:
+    """Extract table where entries are concatenated without separators.
+
+    Example format from South Africa report:
+    Mine/Project NameStatusPrimary Commodity
+    Acid Mine Drainage - Long Term Solution (Amdlts)OperationalIndustrialAcorn Coal ProjectDormant (L/R)Coal...
+
+    Returns a dict with 'headers' and 'rows' keys if successful.
+    """
+    # Look for the specific table header pattern
+    header_match = re.search(r'Mine/Project Name\s*Status\s*Primary Commodity', text)
+    if not header_match:
+        return None
+
+    # Find the end of the table (before next major section)
+    table_start = header_match.end()
+    end_patterns = [
+        r'Sector Analysis',
+        r'Corporate Portfolio',
+        r'Concluding Analysis',
+        r'\n\n[A-Z][a-z]+\s+[A-Z][a-z]+.*:',  # Section headers like "The Pillars of..."
+    ]
+
+    table_end = len(text)
+    for pattern in end_patterns:
+        match = re.search(pattern, text[table_start:])
+        if match:
+            table_end = table_start + match.start()
+            break
+
+    table_content = text[table_start:table_end].strip()
+    if not table_content:
+        return None
+
+    # Status keywords that help identify boundaries
+    status_keywords = [
+        'Operational', 'Dormant (L/R)', 'Completed', 'Pre-Feasibility', 'Grassroots',
+        'Operational (Old)', 'Cancelled', 'Executable', 'Care and Maintenance',
+        'Feasibility', 'Closed', 'Bankable', 'Cancelled - Pre-Feasibility',
+        'Cancelled - Grassroots', 'Cancelled - Feasibility', 'Cancelled - Executable'
+    ]
+
+    # Commodity keywords
+    commodity_keywords = [
+        'Industrial', 'Coal', 'Gold', 'PGM', 'Diamonds', 'Copper', 'Iron Ore',
+        'Manganese', 'Nickel', 'Chrome', 'Uranium', 'Vanadium', 'Zinc', 'Lead',
+        'Phosphate', 'Fluorspar', 'Rare Earths', 'Emeralds', 'Ilmenite', 'Rutile',
+        'Tin', 'Silica'
+    ]
+
+    # Create regex pattern to split entries
+    # Pattern: (NamePart)(Status)(Commodity)
+    # Build combined pattern for status|commodity
+    status_pattern = '|'.join(re.escape(s) for s in sorted(status_keywords, key=len, reverse=True))
+    commodity_pattern = '|'.join(re.escape(c) for c in sorted(commodity_keywords, key=len, reverse=True))
+
+    # Pattern to match: (Name)(Status)(Commodity)
+    entry_pattern = f'(.+?)({status_pattern})({commodity_pattern})'
+
+    rows = []
+    matches = list(re.finditer(entry_pattern, table_content))
+
+    logger.info(f"Found {len(matches)} facility entries in concatenated table")
+
+    for match in matches:
+        name = match.group(1).strip()
+        status = match.group(2).strip()
+        commodity = match.group(3).strip()
+
+        # Skip if name is too short (likely parsing error)
+        if len(name) < 3:
+            continue
+
+        rows.append({
+            'Name': name,
+            'Status': status,
+            'Primary Commodity': commodity
+        })
+
+    if not rows:
+        return None
+
+    return {
+        'headers': ['Name', 'Status', 'Primary Commodity'],
+        'rows': rows
+    }
+
+
 def extract_markdown_tables(text: str) -> List[Dict]:
     """Extract all markdown tables from text (supports both | and tab-separated)."""
     tables = []
@@ -636,6 +724,10 @@ def load_existing_facilities(country_dir_name: str) -> Dict[str, Dict]:
         return existing
 
     for facility_file in country_dir.glob("*.json"):
+        # Skip backup files
+        if '.backup_' in facility_file.name:
+            continue
+
         try:
             with open(facility_file, 'r') as f:
                 facility = json.load(f)
@@ -820,6 +912,14 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
         logger.info("Extracting facility tables from report...")
         tables = extract_markdown_tables(report_text)
         logger.info(f"Found {len(tables)} facility tables")
+
+    # Try concatenated table format (South Africa style) if no standard tables found
+    if not tables:
+        logger.info("No standard tables found, trying concatenated table format...")
+        concat_table = extract_concatenated_table(report_text)
+        if concat_table:
+            tables = [concat_table]
+            logger.info(f"Extracted concatenated table with {len(concat_table['rows'])} rows")
 
     # Extract facilities from narrative text (list/paragraph format)
     text_facilities = []
