@@ -1,0 +1,65 @@
+{
+  "facility_id": "bih-vares-lead-and-zinc-mine-fac",
+  "name": "Vares Lead and Zinc Mine",
+  "aliases": [
+    "Vares Lead and Zinc Mine",
+    "Vares"
+  ],
+  "country_iso3": "BIH",
+  "location": {
+    "lat": 44.159,
+    "lon": 18.34,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:46.364709"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:46.364714",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

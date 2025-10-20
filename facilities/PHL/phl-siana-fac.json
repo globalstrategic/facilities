@@ -1,0 +1,48 @@
+{
+  "facility_id": "phl-siana-fac",
+  "name": "Siana",
+  "aliases": [
+    "Siana",
+    "Siana"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 9.538,
+    "lon": 125.574,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:38.312801"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:38.312808",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "facility_id": "usa-pend-oreille-fac",
+  "name": "Pend Oreille",
+  "aliases": [
+    "Washington Claim",
+    "Pend Oreille Mine",
+    "Metaline District",
+    "Pend Oreille",
+    "Pend Oreille",
+    "Pend Oreille"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 48.883,
+    "lon": -117.361,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:42.559097"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:42.559104",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

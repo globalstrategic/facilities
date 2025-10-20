@@ -1,0 +1,51 @@
+{
+  "facility_id": "chn-huayi-wuyi-coal-mine-fac",
+  "name": "Huayi Wuyi Coal Mine",
+  "aliases": [
+    "Huayi Wuyi Coal Mine",
+    "Kangwei Nanshan Coal Mine",
+    "Qinxin Xinda Coal Mine",
+    "Kangwei"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 36.544,
+    "lon": 112.151,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Shanxi Kangwei Group Mengziyu Coal Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:28:27.767143",
+      "evidence": "Extracted from Group Names column: Huayi Wuyi Coal Mine;Kangwei Nanshan Coal Mine;Qinxin Xinda Coal Mine;Shanxi Kangwei Group Mengziyu Coal Mine;Kangwei"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:27.767154"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:28:27.767155",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

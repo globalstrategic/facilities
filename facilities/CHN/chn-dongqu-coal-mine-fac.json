@@ -1,0 +1,53 @@
+{
+  "facility_id": "chn-dongqu-coal-mine-fac",
+  "name": "Dongqu Coal Mine",
+  "aliases": [
+    "Dongqu Coal Mine",
+    "Xiqu Coal Mine",
+    "Jinxing",
+    "Xinfeng",
+    "Xiqu",
+    "Dongqu"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 37.915,
+    "lon": 112.174,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Gujiao Fanshigou Coal and Coke Co., Ltd. Fushigou Coal Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:58.152735",
+      "evidence": "Extracted from Group Names column: Dongqu Coal Mine;Xiqu Coal Mine;Gujiao Fanshigou Coal and Coke Co., Ltd. Fushigou Coal Mine;Jinxing;Xinfeng;Xiqu;Dongqu"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:58.152751"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:58.152752",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

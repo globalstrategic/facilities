@@ -1,0 +1,70 @@
+{
+  "facility_id": "chn-jinchang-smelter-fac",
+  "name": "Jinchang smelter",
+  "aliases": [
+    "Jinchang smelter",
+    "Jinchuan Mine",
+    "Jinchuan Smelter",
+    "Jinchuan Refinery",
+    "Jinchuan Fangchenggang Smelter",
+    "Jinchuan Fangchenggang Refinery",
+    "Jinchang Refinery"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 38.504,
+    "lon": 102.2,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.279209"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:35.279217",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

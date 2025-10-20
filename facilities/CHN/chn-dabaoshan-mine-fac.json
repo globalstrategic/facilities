@@ -1,0 +1,53 @@
+{
+  "facility_id": "chn-dabaoshan-mine-fac",
+  "name": "Dabaoshan Mine",
+  "aliases": [
+    "Dabaoshan Mine",
+    "Dabaoshan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 24.561,
+    "lon": 113.717,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:24.564601"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:24.564608",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

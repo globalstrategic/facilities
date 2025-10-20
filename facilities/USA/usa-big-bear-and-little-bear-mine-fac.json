@@ -1,0 +1,58 @@
+{
+  "facility_id": "usa-big-bear-and-little-bear-mine-fac",
+  "name": "Big Bear and Little Bear Mine",
+  "aliases": [
+    "Big Bear and Little Bear Mine",
+    "Cargo Mine",
+    "Blossom Mine",
+    "Madre and Padre Mines",
+    "American Girl Mine",
+    "American Girl Mine",
+    "American Girl"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 32.847,
+    "lon": -114.789,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Butterfly Group of Mines",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:29.079515",
+      "evidence": "Extracted from Group Names column: Big Bear and Little Bear Mine;Cargo Mine;Blossom Mine;Madre and Padre Mines;American Girl Mine;American Girl Mine;Butterfly Group of Mines;American Girl"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.079524"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:29.079525",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "facility_id": "usa-bunker-hill-fac",
+  "name": "Bunker Hill",
+  "aliases": [
+    "Bunker Chance Mine",
+    "Bunker Hill",
+    "West Silver Valley",
+    "Sunshine Refinery",
+    "Bunker Hill"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 47.522,
+    "lon": -116.136,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Yreka United Group Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:41.295052",
+      "evidence": "Extracted from Group Names column: Yreka United Group Mine;Bunker Chance Mine;Bunker Hill;West Silver Valley;Sunshine Refinery;Bunker Hill"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:41.295070"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:41.295071",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

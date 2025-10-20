@@ -1,0 +1,62 @@
+{
+  "facility_id": "chn-tonghua-iron-and-steel-group-laoniugou-mine-fac",
+  "name": "Tonghua Iron and Steel Group Laoniugou Mine",
+  "aliases": [
+    "Jiapigou",
+    "Sandaocha"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 42.875,
+    "lon": 127.472,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Tonghua Iron and Steel Group Laoniugou Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:18.954841",
+      "evidence": "Extracted from Group Names column: Tonghua Iron and Steel Group Laoniugou Mine;Jiapigou;Sandaocha"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:18.954855"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:18.954856",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

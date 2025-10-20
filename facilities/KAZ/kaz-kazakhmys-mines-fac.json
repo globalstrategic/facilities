@@ -1,0 +1,49 @@
+{
+  "facility_id": "kaz-kazakhmys-mines-fac",
+  "name": "Kazakhmys Mines",
+  "aliases": [
+    "Kazakhmys Mines"
+  ],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": 47.799,
+    "lon": 67.4,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Dzhezkazgan Group of Mines",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:02.593643",
+      "evidence": "Extracted from Group Names column: Dzhezkazgan Group of Mines;Kazakhmys Mines"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:02.593661"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:02.593663",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

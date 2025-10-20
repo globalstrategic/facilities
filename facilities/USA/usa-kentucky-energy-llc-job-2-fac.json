@@ -1,0 +1,48 @@
+{
+  "facility_id": "usa-kentucky-energy-llc-job-2-fac",
+  "name": "Kentucky Energy LLC Job #2",
+  "aliases": [
+    "Gibraltar"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 38.025,
+    "lon": -82.972,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Kentucky Energy LLC Job #2",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:11.285704",
+      "evidence": "Extracted from Group Names column: Kentucky Energy LLC Job #2;Gibraltar"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:11.285716"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:11.285718",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

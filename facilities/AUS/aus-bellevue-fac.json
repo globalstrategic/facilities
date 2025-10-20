@@ -1,0 +1,49 @@
+{
+  "facility_id": "aus-bellevue-fac",
+  "name": "Bellevue",
+  "aliases": [
+    "Bellevue",
+    "Lawlers Tailings Project",
+    "Bellevue"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -27.641,
+    "lon": 120.555,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:53.615162"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:53.615169",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

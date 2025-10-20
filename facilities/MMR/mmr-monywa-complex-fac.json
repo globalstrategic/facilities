@@ -1,0 +1,59 @@
+{
+  "facility_id": "mmr-monywa-complex-fac",
+  "name": "Monywa Complex",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": 22.116,
+    "lon": 95.167,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Myanmar Wanbao Mining Copper Ltd",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    },
+    {
+      "name": "the Chinese state-affiliated Wanbao Mining Ltd.",
+      "role": "owner",
+      "percentage": 30.0,
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    },
+    {
+      "name": "and the state's No. 1 Mining Enterprise",
+      "role": "owner",
+      "percentage": 51.0,
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:06.757878"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T16:06:58.082350",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "usa-ruby-gulch-mine-fac",
+  "name": "Ruby Gulch Mine",
+  "aliases": [
+    "Ruby Gulch Mine",
+    "Zortman Landusky",
+    "Zortman"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 47.934,
+    "lon": -108.559,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ruby Gulch Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:41.443502",
+      "evidence": "Extracted from Group Names column: Ruby Gulch Mine;Ruby Gulch Group;Zortman Landusky;Zortman"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:41.443517"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:41.443520",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

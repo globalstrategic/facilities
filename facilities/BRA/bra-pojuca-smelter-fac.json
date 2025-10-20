@@ -1,0 +1,44 @@
+{
+  "facility_id": "bra-pojuca-smelter-fac",
+  "name": "Pojuca Smelter",
+  "aliases": [
+    "Pojuca Smelter",
+    "Pojuca Cr"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -12.4,
+    "lon": -38.344,
+    "precision": "site"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Ferrochrome",
+      "primary": true
+    },
+    {
+      "metal": "chromium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:47.420715"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:29:47.420725",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

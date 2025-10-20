@@ -1,0 +1,55 @@
+{
+  "facility_id": "per-antamina-fac",
+  "name": "Antamina",
+  "aliases": [
+    "Rosita De Oro, Mina",
+    "Antamina Mine",
+    "Antamina",
+    "Antamina",
+    "Antamina"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -9.548,
+    "lon": -77.055,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:13.294886"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:13.294898",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

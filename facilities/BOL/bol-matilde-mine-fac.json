@@ -1,0 +1,41 @@
+{
+  "facility_id": "bol-matilde-mine-fac",
+  "name": "Matilde Mine",
+  "aliases": [],
+  "country_iso3": "BOL",
+  "location": {
+    "lat": -15.764,
+    "lon": -68.933,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:17.156778"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:17.156781",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "facility_id": "jpn-annaka-fac",
+  "name": "Annaka",
+  "aliases": [
+    "Annaka",
+    "Annaka",
+    "Annaka Refinery"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 36.33,
+    "lon": 138.91,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:04.907611"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:04.907622",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

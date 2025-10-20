@@ -1,0 +1,49 @@
+{
+  "facility_id": "bra-onca-puma-fac",
+  "name": "Onca Puma",
+  "aliases": [
+    "Onca Puma",
+    "Onca Puma",
+    "Onca Puma Refinery",
+    "Onca Puma Smelter"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -6.574,
+    "lon": -51.093,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:34.137133"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:34.137138",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

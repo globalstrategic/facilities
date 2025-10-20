@@ -1,0 +1,65 @@
+{
+  "facility_id": "usa-mount-royal-mine-fac",
+  "name": "Mount Royal Mine",
+  "aliases": [
+    "Mount Royal Mine",
+    "Imperial"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 32.817,
+    "lon": -108.98,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Jim Crow Imperial Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:29.051619",
+      "evidence": "Extracted from Group Names column: Mount Royal Mine;Jim Crow Imperial Group;Jim Crow Imperial Group;Imperial"
+    },
+    {
+      "name": "Jim Crow Imperial Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:29.051628",
+      "evidence": "Extracted from Group Names column: Mount Royal Mine;Jim Crow Imperial Group;Jim Crow Imperial Group;Imperial"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.051633"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:29.051634",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

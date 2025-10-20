@@ -1,0 +1,51 @@
+{
+  "facility_id": "fra-dunkirk-steel-plant-fac",
+  "name": "Dunkirk steel plant",
+  "aliases": [
+    "Dunkirk steel plant",
+    "Dunkerque",
+    "Dunkirk Smelter"
+  ],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": 51.038,
+    "lon": 2.299,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "steel plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe-C"
+    },
+    {
+      "metal": "Ferromanganese",
+      "primary": false
+    },
+    {
+      "metal": "silicomanganese",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:23.693864"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:23.693871",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

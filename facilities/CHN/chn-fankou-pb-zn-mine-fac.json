@@ -1,0 +1,57 @@
+{
+  "facility_id": "chn-fankou-pb-zn-mine-fac",
+  "name": "Fankou Pb/Zn Mine",
+  "aliases": [
+    "Fankou Pb/Zn Mine",
+    "Fankou"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 25.098,
+    "lon": 113.6,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:06.260561"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:06.260573",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

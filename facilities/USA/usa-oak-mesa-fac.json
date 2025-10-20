@@ -1,0 +1,44 @@
+{
+  "facility_id": "usa-oak-mesa-fac",
+  "name": "Oak Mesa",
+  "aliases": [
+    "Oak Mesa",
+    "Little Florence"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.657,
+    "lon": -120.309,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:32.751936"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:32.751940",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

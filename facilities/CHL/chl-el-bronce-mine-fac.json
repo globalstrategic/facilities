@@ -1,0 +1,48 @@
+{
+  "facility_id": "chl-el-bronce-mine-fac",
+  "name": "El Bronce Mine",
+  "aliases": [
+    "El Bronce Mine",
+    "El Bronce de Petorca"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -32.185,
+    "lon": -70.94,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:24.128681"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:24.128686",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "facility_id": "mex-campo-morado-fac",
+  "name": "Campo Morado",
+  "aliases": [
+    "Campo Morado"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 18.201,
+    "lon": -100.157,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:30.766998"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:30.767004",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

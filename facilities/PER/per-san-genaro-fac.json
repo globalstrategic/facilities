@@ -1,0 +1,52 @@
+{
+  "facility_id": "per-san-genaro-fac",
+  "name": "San Genaro",
+  "aliases": [
+    "San Genaro",
+    "San Genaro"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -13.194,
+    "lon": -75.149,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:25.613931"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:25.613941",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

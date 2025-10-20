@@ -1,0 +1,48 @@
+{
+  "facility_id": "per-raura-fac",
+  "name": "Raura",
+  "aliases": [
+    "Raura",
+    "Minas Raura De Cajatambo Zinc Lead Deposit 6"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -10.648,
+    "lon": -76.733,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:14.244100"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:14.244107",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

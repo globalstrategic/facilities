@@ -50,9 +50,9 @@ cat report.txt | python scripts/import_from_report.py --country DZ
 # Main CLI entry point (scripts/facilities.py)
 python scripts/facilities.py <command> [options]
 
-# Import facilities
+# Import facilities (via CLI wrapper)
 python scripts/facilities.py import report.txt --country DZ
-python scripts/facilities.py import report.txt --country DZ --enhanced
+# Note: For advanced features, use import_from_report.py directly
 
 # Sync with EntityIdentity parquet format
 python scripts/facilities.py sync --export                    # Export to parquet
@@ -105,6 +105,11 @@ facilities/
 │   ├── deep_research_integration.py     # Gemini Deep Research integration
 │   ├── backfill_mentions.py             # Extract company_mentions from facilities
 │   ├── audit_facilities.py              # Data quality checks
+│   ├── verify_backfill.py               # Verify backfill results
+│   │
+│   ├── legacy/                          # Archived one-time migration scripts
+│   │   ├── full_migration.py            # Legacy CSV → JSON migration
+│   │   └── migrate_legacy_fields.py     # Schema field migration
 │   │
 │   └── utils/                           # Entity resolution utilities
 │       ├── company_resolver.py          # CompanyResolver with quality gates
@@ -132,11 +137,9 @@ facilities/
 │   ├── research_raw/                    # Gemini Deep Research outputs
 │   └── entityidentity_export/           # Parquet exports
 │
-├── config/                              # Configuration files
-│   ├── gate_config.json                 # Quality gate thresholds for CompanyResolver
-│   └── company_aliases.json             # Canonical company ID mappings
-│
-└── migration/                           # Legacy migration artifacts
+└── config/                              # Configuration files
+    ├── gate_config.json                 # Quality gate thresholds for CompanyResolver
+    └── company_aliases.json             # Canonical company ID mappings
 ```
 
 ### Key Architectural Patterns
@@ -406,17 +409,19 @@ needs_review = df[df['gate'] == 'review']
 
 ### 7. Testing Patterns
 
-**Location:** Tests should go in root `tests/` directory (currently no tests directory exists)
+**Location:** Tests are in `scripts/tests/` directory
 
-**Run tests with pytest:**
+**Run tests via CLI:**
 ```bash
-pytest -v --cov --color=yes
+python scripts/facilities.py test              # Run all tests
+python scripts/facilities.py test --suite dedup  # Run dedup tests only
 ```
 
-**Test markers available:**
-- `@pytest.mark.slow` - Slow tests
-- `@pytest.mark.integration` - Integration tests
-- `@pytest.mark.unit` - Unit tests
+**Run tests with pytest directly:**
+```bash
+pytest scripts/tests/ -v
+pytest scripts/tests/test_import_enhanced.py -v
+```
 
 ## Common Workflows
 
@@ -608,12 +613,193 @@ Current database (as of 2025-10-20):
 - **Parquet export**: 8,606 facilities in <5s
 - **Memory usage**: ~150MB (with all resolvers loaded)
 
+## Scripts Reference
+
+### Production Scripts
+
+#### 1. import_from_report.py (1,393 lines)
+**Main import pipeline with Phase 1 extraction**
+
+```bash
+# Standard import with auto entity resolution
+python scripts/import_from_report.py report.txt --country DZ
+
+# Auto-detect country from filename
+python scripts/import_from_report.py albania.txt
+
+# Multi-country CSV (per-row detection)
+python scripts/import_from_report.py gt/Mines.csv --source "Mines Database"
+
+# From stdin
+cat report.txt | python scripts/import_from_report.py --country DZ
+```
+
+**What it does:**
+- Parses CSV, markdown tables, and text formats
+- Extracts company mentions (Phase 1) - NO resolution yet
+- Metal normalization with chemical formulas via `metal_identifier()`
+- Per-row country detection for multi-country CSVs
+- Duplicate detection (name + location matching)
+- Writes facility JSONs with `company_mentions[]` array
+
+**Output:** Facility JSONs ready for Phase 2 enrichment
+
+---
+
+#### 2. enrich_companies.py (470 lines)
+**Phase 2 company resolution and relationship creation**
+
+```bash
+# Enrich all facilities
+python scripts/enrich_companies.py
+
+# Enrich specific country
+python scripts/enrich_companies.py --country IND
+
+# Preview without saving
+python scripts/enrich_companies.py --dry-run
+
+# Set confidence threshold
+python scripts/enrich_companies.py --min-confidence 0.75
+```
+
+**What it does:**
+- Batch company resolution using `CompanyResolver`
+- Quality gates (auto_accept / review / pending)
+- Writes relationships to `facility_company_relationships.parquet`
+- Does NOT modify facility JSONs (Phase 2 design)
+
+**Output:** `tables/facilities/facility_company_relationships.parquet`
+
+---
+
+#### 3. deep_research_integration.py (606 lines)
+**Gemini Deep Research integration**
+
+```bash
+# Generate research prompt
+python scripts/deep_research_integration.py \
+    --generate-prompt --country ZAF --metal platinum --limit 50
+
+# Process research output
+python scripts/deep_research_integration.py \
+    --process research_output.json --country ZAF --metal platinum
+
+# Batch processing
+python scripts/deep_research_integration.py \
+    --batch research_batch.jsonl
+```
+
+**What it does:**
+- Generates research prompts from facility data
+- Processes Gemini research outputs (JSON/JSONL)
+- Resolves companies using `CompanyResolver`
+- Updates facility JSONs with status, owners, operators, products
+
+**Output:** Updated facility JSONs + raw research backups
+
+---
+
+#### 4. facilities.py (456 lines)
+**Unified CLI wrapper**
+
+```bash
+# Import (simple wrapper)
+python scripts/facilities.py import report.txt --country DZ
+
+# Test entity resolution
+python scripts/facilities.py resolve country "Algeria"
+python scripts/facilities.py resolve metal "Cu"
+python scripts/facilities.py resolve company "BHP"
+
+# Sync/export
+python scripts/facilities.py sync --export
+python scripts/facilities.py sync --status
+
+# Research
+python scripts/facilities.py research --generate-prompt --country ZAF --metal platinum
+
+# Tests
+python scripts/facilities.py test
+```
+
+**Note:** Limited compared to calling scripts directly. For advanced features, use scripts directly.
+
+---
+
+### Utility Scripts
+
+#### 5. audit_facilities.py (312 lines)
+Data quality checks and reporting
+
+```bash
+python scripts/audit_facilities.py
+```
+
+---
+
+#### 6. backfill_mentions.py (440 lines)
+Extract `company_mentions[]` from existing facilities (useful for migrating old facilities to Phase 2 format)
+
+```bash
+python scripts/backfill_mentions.py --country IND
+```
+
+---
+
+#### 7. verify_backfill.py (185 lines)
+Verify backfill results
+
+```bash
+python scripts/verify_backfill.py
+```
+
+---
+
+### Utility Modules (scripts/utils/)
+
+- **company_resolver.py**: `CompanyResolver` with quality gates
+- **id_utils.py**: Canonical ID mapping
+- **paths.py**: Shared path configuration
+- **country_utils.py**: Country code normalization
+- **ownership_parser.py**: Parse ownership percentages
+- **facility_sync.py**: Parquet export/import
+
+---
+
+### Complete Workflow Example
+
+```bash
+# Step 1: Import facilities (Phase 1 - Extraction)
+python scripts/import_from_report.py albania_report.txt
+
+# Step 2: Enrich with companies (Phase 2 - Resolution)
+python scripts/enrich_companies.py --country ALB
+
+# Step 3: (Optional) Deep research enrichment
+python scripts/deep_research_integration.py \
+    --generate-prompt --country ALB --metal chromium
+
+# Copy prompt to Gemini Deep Research, then process results
+python scripts/deep_research_integration.py \
+    --process gemini_output.json --country ALB
+
+# Step 4: Audit data quality
+python scripts/audit_facilities.py
+
+# Step 5: Export to parquet
+python scripts/facilities.py sync --export
+```
+
+---
+
 ## Related Documentation
 
 - **[README_FACILITIES.md](docs/README_FACILITIES.md)**: Primary documentation with examples
 - **[ENTITYIDENTITY_INTEGRATION_PLAN.md](docs/ENTITYIDENTITY_INTEGRATION_PLAN.md)**: Complete integration architecture
 - **[SCHEMA_CHANGES_V2.md](docs/SCHEMA_CHANGES_V2.md)**: Schema v2.0.0 documentation
 - **[DEEP_RESEARCH_WORKFLOW.md](docs/DEEP_RESEARCH_WORKFLOW.md)**: Gemini Deep Research integration
+- **[SCRIPT_AUDIT.md](SCRIPT_AUDIT.md)**: Scripts audit and duplication analysis
 
 ## Support
 
@@ -622,3 +808,4 @@ For questions or issues:
 2. Review facility schema: `schemas/facility.schema.json`
 3. Check import logs: `output/import_logs/`
 4. Examine example facilities in `facilities/*/`
+5. Review scripts audit: `SCRIPT_AUDIT.md`

@@ -1,0 +1,57 @@
+{
+  "facility_id": "per-el-porvenir-fac",
+  "name": "El Porvenir",
+  "aliases": [
+    "Evita No. 1, Mina",
+    "El Porvenir Mine",
+    "Milpo 1",
+    "Atacocha",
+    "El Porvenir (Peru)",
+    "El Porvenir",
+    "Atacocha"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -10.6,
+    "lon": -76.21,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:14.209451"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:14.209459",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

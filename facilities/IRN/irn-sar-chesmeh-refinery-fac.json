@@ -1,0 +1,56 @@
+{
+  "facility_id": "irn-sar-chesmeh-refinery-fac",
+  "name": "Sar Chesmeh refinery",
+  "aliases": [
+    "Sar Chesmeh refinery",
+    "Sar Chesmeh smelter",
+    "Sarcheshmeh",
+    "Sarcheshmeh",
+    "Sar Cheshmeh SX EW"
+  ],
+  "country_iso3": "IRN",
+  "location": {
+    "lat": 29.951,
+    "lon": 55.865,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Rhenium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:41.084914"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:41.084918",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

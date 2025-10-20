@@ -1,0 +1,60 @@
+{
+  "facility_id": "aus-olympic-dam-fac",
+  "name": "Olympic Dam",
+  "aliases": [
+    "Olympic Dam",
+    "Olympic Dam",
+    "Olympic Dam (Roxby Downs) refinery",
+    "Olympic Dam (Roxby Downs) smelter",
+    "Olympic Dam",
+    "Olympic Dam Refinery",
+    "Olympic Dam Smelter",
+    "Olympic Dam SX EW"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.444,
+    "lon": 136.872,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lanthanum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:54.443716"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:54.443724",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

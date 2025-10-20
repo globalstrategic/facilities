@@ -1,0 +1,52 @@
+{
+  "facility_id": "sle-sierra-rutile-fac",
+  "name": "Sierra Rutile",
+  "aliases": [
+    "Sierra Rutile"
+  ],
+  "country_iso3": "SLE",
+  "location": {
+    "lat": 7.668,
+    "lon": -12.295,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "heavy mineral sands",
+      "primary": true
+    },
+    {
+      "metal": "ilmenite",
+      "primary": false
+    },
+    {
+      "metal": "titanium",
+      "primary": false
+    },
+    {
+      "metal": "zircon",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:46.743550"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:46.743555",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

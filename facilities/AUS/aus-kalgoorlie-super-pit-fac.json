@@ -1,0 +1,48 @@
+{
+  "facility_id": "aus-kalgoorlie-super-pit-fac",
+  "name": "Kalgoorlie Super Pit",
+  "aliases": [
+    "Kalgoorlie Super Pit"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.831,
+    "lon": 121.398,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Resources Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:59.694759",
+      "evidence": "Extracted from Group Names column: Resources Group;Kalgoorlie Super Pit"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:59.694771"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:59.694772",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

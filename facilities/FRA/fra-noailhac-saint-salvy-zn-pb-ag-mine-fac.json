@@ -1,0 +1,53 @@
+{
+  "facility_id": "fra-noailhac-saint-salvy-zn-pb-ag-mine-fac",
+  "name": "Noailhac Saint Salvy Zn, Pb, Ag Mine",
+  "aliases": [
+    "Saint Salvy Tarn",
+    "Noailhac Saint Salvy"
+  ],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": 43.644,
+    "lon": 2.396,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Noailhac Saint Salvy Zn, Pb, Ag Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:46.576370",
+      "evidence": "Extracted from Group Names column: Noailhac Saint Salvy Zn, Pb, Ag Mine;Saint Salvy Tarn;Noailhac Saint Salvy"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:46.576384"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:46.576386",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

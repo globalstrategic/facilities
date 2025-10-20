@@ -1,0 +1,53 @@
+{
+  "facility_id": "fin-kemi-mine-fac",
+  "name": "Kemi Mine",
+  "aliases": [
+    "Kemi Mine",
+    "Kemi Mine",
+    "Kemi"
+  ],
+  "country_iso3": "FIN",
+  "location": {
+    "lat": 65.783,
+    "lon": 24.714,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "chromium",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:43.041247"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:43.041253",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

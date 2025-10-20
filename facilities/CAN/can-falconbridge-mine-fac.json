@@ -1,0 +1,68 @@
+{
+  "facility_id": "can-falconbridge-mine-fac",
+  "name": "Falconbridge Mine",
+  "aliases": [
+    "Falconbridge Mine",
+    "East Falconbridge",
+    "Falconbridge Mine",
+    "Sudbury Smelter"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 46.579,
+    "lon": -80.802,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "East Mine, Falconbridge Limited",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:40.681831",
+      "evidence": "Extracted from Group Names column: Falconbridge Mine;East Falconbridge;Falconbridge Mine;East Mine, Falconbridge Limited;Falconbridge Nickel Mine, Falconbridge Inc. Canada;Sudbury Smelter"
+    },
+    {
+      "name": "Falconbridge Nickel Mine, Falconbridge Inc. Canada",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:40.681838",
+      "evidence": "Extracted from Group Names column: Falconbridge Mine;East Falconbridge;Falconbridge Mine;East Mine, Falconbridge Limited;Falconbridge Nickel Mine, Falconbridge Inc. Canada;Sudbury Smelter"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:40.681843"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:40.681844",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

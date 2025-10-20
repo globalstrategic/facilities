@@ -1,0 +1,61 @@
+{
+  "facility_id": "nam-tsumeb-mine-fac",
+  "name": "Tsumeb Mine",
+  "aliases": [
+    "Tsumeb Mine",
+    "Tsumeb",
+    "Tsumeb smelter",
+    "Mertens",
+    "Tsumeb Smelter"
+  ],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": -19.247,
+    "lon": 18.018,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:12.975920"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:12.975928",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

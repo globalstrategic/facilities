@@ -1,0 +1,52 @@
+{
+  "facility_id": "can-cryderman-mine-fac",
+  "name": "Cryderman Mine",
+  "aliases": [
+    "Cryderman Mine",
+    "North Manchester"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 46.608,
+    "lon": -80.692,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:40.739505"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:40.739509",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

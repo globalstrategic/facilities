@@ -1,0 +1,47 @@
+{
+  "facility_id": "can-keno-hill-fac",
+  "name": "Keno Hill",
+  "aliases": [
+    "Keno Hill"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 63.908,
+    "lon": -135.328,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:36.006260"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:36.006267",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

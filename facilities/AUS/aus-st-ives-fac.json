@@ -1,0 +1,66 @@
+{
+  "facility_id": "aus-st-ives-fac",
+  "name": "St Ives",
+  "aliases": [
+    "Kambalda Gold Operations Wmc",
+    "Victoria Defiance Mine",
+    "Neptune",
+    "Redback",
+    "St Ives",
+    "St Ives",
+    "Invincible St Ives"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -31.314,
+    "lon": 121.755,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Foster Mine (St. Ives Deposit Group)",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:55.068579",
+      "evidence": "Extracted from Group Names column: Kambalda Gold Operations Wmc;Victoria Defiance Mine;Neptune;Redback;St Ives;St Ives;Foster Mine (St. Ives Deposit Group);Jan Mine (St. Ives Deposit Group);Invincible St Ives"
+    },
+    {
+      "name": "Jan Mine (St. Ives Deposit Group)",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:55.068589",
+      "evidence": "Extracted from Group Names column: Kambalda Gold Operations Wmc;Victoria Defiance Mine;Neptune;Redback;St Ives;St Ives;Foster Mine (St. Ives Deposit Group);Jan Mine (St. Ives Deposit Group);Invincible St Ives"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:55.068594"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:55.068595",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "facility_id": "jpn-kosaka-pb-refinery-fac",
+  "name": "Kosaka Pb Refinery",
+  "aliases": [
+    "Kosaka Pb Refinery",
+    "Kosaka Pb Smelter",
+    "Kosaka Smelter",
+    "Kosaka Smelter",
+    "Kosaka Refinery",
+    "Kazuno Refinery"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 40.334,
+    "lon": 140.748,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Indium",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Kosaka Zn Cu Pb Ag Au Pyr Mines",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:04.056633",
+      "evidence": "Extracted from Group Names column: Kosaka Zn Cu Pb Ag Au Pyr Mines;Kosaka Pb Refinery;Kosaka Pb Smelter;Kosaka Smelter;Kosaka Smelter;Kosaka Refinery;Kazuno Refinery"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:04.056657"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:04.056658",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

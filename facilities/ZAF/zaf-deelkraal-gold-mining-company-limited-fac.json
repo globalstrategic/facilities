@@ -1,0 +1,52 @@
+{
+  "facility_id": "zaf-deelkraal-gold-mining-company-limited-fac",
+  "name": "Deelkraal Gold Mining Company Limited",
+  "aliases": [
+    "Deelkraal"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.463,
+    "lon": 27.326,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Deelkraal Gold Mining Company Limited",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:16.427381",
+      "evidence": "Extracted from Group Names column: Deelkraal Gold Mining Company Limited;Deelkraal"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.427391"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:27:16.427393",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

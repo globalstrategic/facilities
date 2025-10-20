@@ -1,0 +1,51 @@
+{
+  "facility_id": "usa-d-2-beechfork-coal-mine-fac",
+  "name": "D 2 Beechfork Coal Mine",
+  "aliases": [
+    "D 2 Beechfork Coal Mine",
+    "D 3 Oldhouse",
+    "Raptor",
+    "Bledsoe"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 36.979,
+    "lon": -83.402,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "W and F Contract Augering Inc",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:28:24.846704",
+      "evidence": "Extracted from Group Names column: D 2 Beechfork Coal Mine;D 3 Oldhouse;Raptor;W and F Contract Augering Inc;Bledsoe"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:24.846713"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:28:24.846714",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

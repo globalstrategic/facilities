@@ -1,0 +1,45 @@
+{
+  "facility_id": "ven-fmo-cerro-bolivar-mine-fac",
+  "name": "FMO Cerro Bolivar Mine",
+  "aliases": [
+    "FMO Cerro Bolivar Mine",
+    "Cerro Bolivar (La Parida)"
+  ],
+  "country_iso3": "VEN",
+  "location": {
+    "lat": 7.456,
+    "lon": -63.386,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "titanium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:21.938196"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:21.938201",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

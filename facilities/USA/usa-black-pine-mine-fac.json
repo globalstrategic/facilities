@@ -1,0 +1,57 @@
+{
+  "facility_id": "usa-black-pine-mine-fac",
+  "name": "Black Pine Mine",
+  "aliases": [
+    "Black Pine Mine",
+    "Black Pine District",
+    "Black Pine Mine"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 46.448,
+    "lon": -113.37,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:40.407369"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:40.407375",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

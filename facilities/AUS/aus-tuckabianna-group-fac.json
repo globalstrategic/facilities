@@ -1,0 +1,48 @@
+{
+  "facility_id": "aus-tuckabianna-group-fac",
+  "name": "Tuckabianna Group",
+  "aliases": [
+    "Tuckabianna"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -27.487,
+    "lon": 118.117,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Tuckabianna Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:53.561276",
+      "evidence": "Extracted from Group Names column: Tuckabianna Group;Tuckabianna"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:53.561288"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:53.561289",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

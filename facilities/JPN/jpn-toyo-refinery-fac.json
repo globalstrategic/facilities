@@ -1,0 +1,47 @@
+{
+  "facility_id": "jpn-toyo-refinery-fac",
+  "name": "Toyo refinery",
+  "aliases": [
+    "Toyo refinery",
+    "Toyo smelter",
+    "Toyo Smelter",
+    "Toyo Refinery"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 33.95,
+    "lon": 133.232,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:42.336413"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:42.336423",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

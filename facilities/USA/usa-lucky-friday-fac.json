@@ -1,0 +1,68 @@
+{
+  "facility_id": "usa-lucky-friday-fac",
+  "name": "Lucky Friday",
+  "aliases": [
+    "Atlas Mine",
+    "Vindicator",
+    "Hunter Snowstorm Lode",
+    "Silver Shaft",
+    "Gold Hunter Mine",
+    "National Project",
+    "Morning Mine",
+    "Lucky Friday",
+    "Lucky Friday"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 47.477,
+    "lon": -115.776,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Pilot Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:41.166449",
+      "evidence": "Extracted from Group Names column: Atlas Mine;Vindicator;Hunter Snowstorm Lode;Silver Shaft;Gold Hunter Mine;National Project;Morning Mine;Pilot Group;Lucky Friday;Lucky Friday"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:41.166460"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:41.166461",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

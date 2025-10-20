@@ -1,0 +1,52 @@
+{
+  "facility_id": "bol-tatasi-fac",
+  "name": "Tatasi",
+  "aliases": [
+    "Tatasi",
+    "Tatasi Portugalete Mine"
+  ],
+  "country_iso3": "BOL",
+  "location": {
+    "lat": -21.167,
+    "lon": -66.133,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:45.018622"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:29:45.018629",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

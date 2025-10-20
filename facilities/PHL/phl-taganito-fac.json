@@ -1,0 +1,64 @@
+{
+  "facility_id": "phl-taganito-fac",
+  "name": "Taganito",
+  "aliases": [
+    "Taganito",
+    "Taganito HPAL",
+    "Taganito",
+    "Taganito HPAL Plant"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 9.532,
+    "lon": 125.818,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "chormite",
+      "primary": false
+    },
+    {
+      "metal": "scandium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Taganito HPAL Nickel Corporation",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:39.553292",
+      "evidence": "Extracted from Group Names column: Taganito;Taganito HPAL Nickel Corporation;Taganito HPAL;Taganito;Taganito HPAL Plant"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:39.553303"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:39.553305",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

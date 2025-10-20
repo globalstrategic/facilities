@@ -1,0 +1,48 @@
+{
+  "facility_id": "ncl-group-pentecoast-mine-fac",
+  "name": "Group Pentecoast Mine",
+  "aliases": [
+    "Montegnat Mines"
+  ],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": -21.36,
+    "lon": 165.4,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Group Pentecoast Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:52.716681",
+      "evidence": "Extracted from Group Names column: Group Pentecoast Mine;Montegnat Mines"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:52.716690"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:52.716691",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

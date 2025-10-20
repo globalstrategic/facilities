@@ -1,0 +1,62 @@
+{
+  "facility_id": "zwe-trojan-fac",
+  "name": "Trojan",
+  "aliases": [
+    "Trojan",
+    "Trojan",
+    "Bindura Smelter",
+    "Bindura Refinery",
+    "Trojan",
+    "Freda and Rebecca",
+    "Trojan Mine"
+  ],
+  "country_iso3": "ZWE",
+  "location": {
+    "lat": -17.332,
+    "lon": 31.287,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Bindura Nickel Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:42.419344",
+      "evidence": "Extracted from Group Names column: Trojan;Trojan;Bindura Smelter;Bindura Refinery;Trojan;Freda and Rebecca;Trojan Mine;Bindura Nickel Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:42.419353"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:42.419354",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

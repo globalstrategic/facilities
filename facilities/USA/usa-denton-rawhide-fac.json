@@ -1,0 +1,50 @@
+{
+  "facility_id": "usa-denton-rawhide-fac",
+  "name": "Denton Rawhide",
+  "aliases": [
+    "Rawhide Deposit",
+    "Rawhide Denton/Rawhide",
+    "Rawhide",
+    "Denton Rawhide"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 39.013,
+    "lon": -118.389,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:34.898232"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:34.898237",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

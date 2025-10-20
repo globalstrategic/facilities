@@ -1,0 +1,42 @@
+{
+  "facility_id": "bra-ouro-preto-refinery-fac",
+  "name": "Ouro Preto refinery",
+  "aliases": [
+    "Ouro Preto refinery",
+    "Ouro Preto Smelter",
+    "Ouro Preto Refinery"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -20.399,
+    "lon": -43.52,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "alumina",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:39.032402"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:39.032408",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

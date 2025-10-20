@@ -1,0 +1,48 @@
+{
+  "facility_id": "aus-finniss-fac",
+  "name": "Finniss",
+  "aliases": [
+    "Finniss",
+    "Bynoe"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -12.662,
+    "lon": 130.772,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:32.977076"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:32.977084",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "facility_id": "aus-tomago-fac",
+  "name": "Tomago",
+  "aliases": [
+    "Tomago",
+    "Tomago Smelter",
+    "Tomago Residue Plant",
+    "Tomago"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -32.826,
+    "lon": 151.723,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "aluminum",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Selenium",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:40.155868"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:40.155874",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

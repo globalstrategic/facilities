@@ -1,0 +1,52 @@
+{
+  "facility_id": "usa-victorio-group-fac",
+  "name": "Victorio Group",
+  "aliases": [
+    "Victorio District"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 32.183,
+    "lon": -108.09,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Victorio Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:28.592119",
+      "evidence": "Extracted from Group Names column: Victorio Group;Victorio District"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:28.592137"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:28.592139",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

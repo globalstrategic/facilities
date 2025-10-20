@@ -1,0 +1,42 @@
+{
+  "facility_id": "ind-vizag-fac",
+  "name": "Vizag",
+  "aliases": [
+    "Vizag",
+    "Vizag Smelter",
+    "Vishkhapatnam Refinery"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 17.697,
+    "lon": 83.222,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:41.262044"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:41.262050",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

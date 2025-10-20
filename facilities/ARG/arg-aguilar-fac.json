@@ -1,0 +1,44 @@
+{
+  "facility_id": "arg-aguilar-fac",
+  "name": "Aguilar",
+  "aliases": [
+    "Rincon Mine",
+    "Aguilar"
+  ],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -23.22,
+    "lon": -65.689,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:21.985417"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:21.985422",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

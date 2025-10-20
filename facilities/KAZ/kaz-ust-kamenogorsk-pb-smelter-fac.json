@@ -1,0 +1,103 @@
+{
+  "facility_id": "kaz-ust-kamenogorsk-pb-smelter-fac",
+  "name": "Ust Kamenogorsk Pb Smelter",
+  "aliases": [
+    "Irtysh Mine",
+    "Kazzinc",
+    "East Region",
+    "Ust Kamenogorsk Pb Refinery",
+    "Ust Kamenogorsk Pb Smelter",
+    "Ust Kamenogorsk smelter",
+    "Ust Kamenogorsk",
+    "Ulba",
+    "Ust Kamenogorsk Zinc Refinery",
+    "Ust Kamenogorsk Lead Smelter",
+    "Ust Kamenogorsk Copper Smelter",
+    "Irtysh Refinery",
+    "Ust Kamenogorsk Copper Refinery",
+    "Ust Kamenogorsk Smelter",
+    "Ust Kamenogorsk Refinery"
+  ],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": 49.983,
+    "lon": 82.611,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Lanthanum",
+      "primary": false
+    },
+    {
+      "metal": "beryllium",
+      "primary": false
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "sulphuric acid",
+      "primary": false
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ust Kamenogorsk Au Ag Refinery",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:02.208190",
+      "evidence": "Extracted from Group Names column: Irtysh Mine;Kazzinc;East Region;Ust Kamenogorsk Pb Refinery;Ust Kamenogorsk Pb Smelter;Ust Kamenogorsk smelter;Ust Kamenogorsk;Ulba;Ust Kamenogorsk Zinc Refinery;Ust Kamenogorsk Lead Smelter;Ust Kamenogorsk Au Ag Refinery;Ust Kamenogorsk Copper Smelter;Irtysh Refinery;Ust Kamenogorsk Copper Refinery;Ust Kamenogorsk Smelter;Ust Kamenogorsk Refinery"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:02.208209"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:02.208211",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

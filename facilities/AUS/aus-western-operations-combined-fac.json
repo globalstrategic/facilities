@@ -1,0 +1,48 @@
+{
+  "facility_id": "aus-western-operations-combined-fac",
+  "name": "Western Operations Combined",
+  "aliases": [
+    "Western Operations Combined",
+    "Credo"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.503,
+    "lon": 121.289,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:54.500843"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:54.500850",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

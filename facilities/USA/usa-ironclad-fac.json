@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-ironclad-fac",
+  "name": "Ironclad",
+  "aliases": [
+    "Ironclad",
+    "Montezuma Mine"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.695,
+    "lon": -108.026,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Rico Argentine Mining Company",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:32.832582",
+      "evidence": "Extracted from Group Names column: Ironclad;Montezuma Mine;Rico Argentine Mining Company"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:32.832587"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:32.832589",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

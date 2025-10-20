@@ -1,0 +1,52 @@
+{
+  "facility_id": "zaf-s-a-lands-fac",
+  "name": "S. A. Lands",
+  "aliases": [
+    "S. A. Lands",
+    "South African Land"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.306,
+    "lon": 28.357,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.129020"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:16.129024",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "facility_id": "nic-la-libertad-fac",
+  "name": "La Libertad",
+  "aliases": [
+    "La Libertad",
+    "La Libertad Area"
+  ],
+  "country_iso3": "NIC",
+  "location": {
+    "lat": 12.238,
+    "lon": -85.19,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "La Libertad Au Ag Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:36.601537",
+      "evidence": "Extracted from Group Names column: La Libertad;La Libertad Area; La Libertad Au Ag Mine"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:36.601575"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:36.601576",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

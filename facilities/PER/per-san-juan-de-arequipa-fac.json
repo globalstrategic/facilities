@@ -1,0 +1,49 @@
+{
+  "facility_id": "per-san-juan-de-arequipa-fac",
+  "name": "San Juan de Arequipa",
+  "aliases": [
+    "San Juan de Arequipa",
+    "San Juan de Chorunga",
+    "San Juan"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -15.9,
+    "lon": -73.05,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:25.646146"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:25.646155",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

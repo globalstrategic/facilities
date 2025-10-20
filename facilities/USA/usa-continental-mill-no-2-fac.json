@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-continental-mill-no-2-fac",
+  "name": "Continental Mill No 2",
+  "aliases": [
+    "Continental Mill No 2",
+    "Continental Surface",
+    "Continental Mill No 1",
+    "Continental Underground",
+    "Cobre Magnetite Stockpile",
+    "Cobre SX EW"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 32.85,
+    "lon": -108.088,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.105304"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:29.105312",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

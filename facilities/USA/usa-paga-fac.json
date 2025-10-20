@@ -1,0 +1,50 @@
+{
+  "facility_id": "usa-paga-fac",
+  "name": "Paga",
+  "aliases": [
+    "Paga",
+    "New Riverside Barite",
+    "Cain Mining Bartow Operations"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 34.153,
+    "lon": -84.783,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "baryte",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Chemical Products Corp Furnace",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:30.137939",
+      "evidence": "Extracted from Group Names column: Paga;Chemical Products Corp Furnace;New Riverside Barite;Cain Mining Bartow Operations"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:30.137952"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:30.137954",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "facility_id": "mex-tizapa-fac",
+  "name": "Tizapa",
+  "aliases": [
+    "Tizapa",
+    "Tizapa"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 19.038,
+    "lon": -100.232,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:42.153621"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:42.153627",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

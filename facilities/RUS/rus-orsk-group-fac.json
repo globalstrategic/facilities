@@ -1,0 +1,54 @@
+{
+  "facility_id": "rus-orsk-group-fac",
+  "name": "Orsk Group",
+  "aliases": [
+    "Elenovskiy",
+    "Orsk"
+  ],
+  "country_iso3": "RUS",
+  "location": {
+    "lat": 51.25,
+    "lon": 58.489,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Orsk Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:44.823619",
+      "evidence": "Extracted from Group Names column: Orsk Group;Elenovskiy;Orsk"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:44.823637"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:44.823638",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

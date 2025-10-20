@@ -1,0 +1,49 @@
+{
+  "facility_id": "zwe-cam-and-motor-fac",
+  "name": "Cam and Motor",
+  "aliases": [
+    "Cam and Motor",
+    "Cam and Motor",
+    "Empress Refinery"
+  ],
+  "country_iso3": "ZWE",
+  "location": {
+    "lat": -18.322,
+    "lon": 29.977,
+    "precision": "site"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:12.621347"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:12.621357",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

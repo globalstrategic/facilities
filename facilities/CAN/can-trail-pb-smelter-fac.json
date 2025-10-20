@@ -1,0 +1,75 @@
+{
+  "facility_id": "can-trail-pb-smelter-fac",
+  "name": "Trail Pb Smelter",
+  "aliases": [
+    "Trail Zn Smt/Ref",
+    "Trail Operations",
+    "Trail (DL)",
+    "Trail (RLE)",
+    "Trail Pb Refinery",
+    "Trail Pb Smelter",
+    "Trail Refinery",
+    "Trail Smelter"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 49.101,
+    "lon": -117.717,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Indium",
+      "primary": false
+    },
+    {
+      "metal": "Germanium",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "ammonium sulfate",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:42.709213"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:42.709219",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

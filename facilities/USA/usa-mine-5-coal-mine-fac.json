@@ -1,0 +1,59 @@
+{
+  "facility_id": "usa-mine-5-coal-mine-fac",
+  "name": "Mine 5 Coal Mine",
+  "aliases": [
+    "Mine 5 Coal Mine",
+    "OAM 40 Coal Mine",
+    "Bryants Store Mine",
+    "Fawn Branch"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 36.771,
+    "lon": -83.934,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Remcoal Inc. #1 Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:28:34.152989",
+      "evidence": "Extracted from Group Names column: Mine 5 Coal Mine;OAM 40 Coal Mine;Bryants Store Mine;Remcoal Inc. #1 Mine;Fawn Branch;Remcoal Inc. #1"
+    },
+    {
+      "name": "Remcoal Inc. #1",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:28:34.153001",
+      "evidence": "Extracted from Group Names column: Mine 5 Coal Mine;OAM 40 Coal Mine;Bryants Store Mine;Remcoal Inc. #1 Mine;Fawn Branch;Remcoal Inc. #1"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:34.153004"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:28:34.153005",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

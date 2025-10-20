@@ -1,0 +1,49 @@
+{
+  "facility_id": "ind-eastern-coalfields-limited-fac",
+  "name": "Eastern Coalfields Limited",
+  "aliases": [
+    "Ardhagram Coal Mine",
+    "Parasea Belbaid Coal Mine"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 23.596,
+    "lon": 87.1,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Eastern Coalfields Limited",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:23.936097",
+      "evidence": "Extracted from Group Names column: Eastern Coalfields Limited;Ardhagram Coal Mine;Parasea Belbaid Coal Mine"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:23.936114"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:23.936115",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

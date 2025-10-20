@@ -1,0 +1,69 @@
+{
+  "facility_id": "mex-torreon-fac",
+  "name": "Torreon",
+  "aliases": [
+    "Torreon",
+    "Torreon Pb Refinery",
+    "Torreon Pb Smelter",
+    "Met Mex Refinery",
+    "Torreon Refinery",
+    "Torreon Smelter",
+    "Torreon Refinery",
+    "Torreon Lead Penoles",
+    "Torreon Zinc Penoles"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 25.526,
+    "lon": -103.443,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Bismuth",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:42.284063"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:42.284070",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

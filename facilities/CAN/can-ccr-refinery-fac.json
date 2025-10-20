@@ -1,0 +1,60 @@
+{
+  "facility_id": "can-ccr-refinery-fac",
+  "name": "CCR refinery",
+  "aliases": [
+    "CCR refinery",
+    "CCR Refinery"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 45.627,
+    "lon": -73.506,
+    "precision": "site"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Selenium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:31.010261"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:31.010269",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

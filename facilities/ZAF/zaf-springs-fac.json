@@ -1,0 +1,48 @@
+{
+  "facility_id": "zaf-springs-fac",
+  "name": "Springs",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.28,
+    "lon": 28.424,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "The company",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.008952"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T16:26:30.800333",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

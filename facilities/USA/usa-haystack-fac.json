@@ -1,0 +1,48 @@
+{
+  "facility_id": "usa-haystack-fac",
+  "name": "Haystack",
+  "aliases": [
+    "Haystack"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 41.413,
+    "lon": -110.676,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Haystack Coal Company",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:26.791003",
+      "evidence": "Extracted from Group Names column: Haystack;Haystack Coal Company"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:26.791008"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:26.791009",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

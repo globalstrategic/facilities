@@ -1,0 +1,45 @@
+{
+  "facility_id": "zaf-meyerton-metalloys-smelter-fac",
+  "name": "Meyerton Metalloys Smelter",
+  "aliases": [
+    "Meyerton Metalloys Smelter",
+    "Meyerton Refinery"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.576,
+    "lon": 27.991,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Ferromanganese",
+      "primary": true
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:31.683992"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:31.683997",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

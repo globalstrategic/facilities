@@ -1,0 +1,56 @@
+{
+  "facility_id": "zaf-venterspost-fac",
+  "name": "Venterspost",
+  "aliases": [
+    "Venterspost",
+    "Venterspost Mine"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.288,
+    "lon": 27.668,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.047626"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:16.047631",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

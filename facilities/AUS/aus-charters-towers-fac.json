@@ -1,0 +1,53 @@
+{
+  "facility_id": "aus-charters-towers-fac",
+  "name": "Charters Towers",
+  "aliases": [
+    "Charters Towers",
+    "Sunburst Tailings",
+    "Brillant Day Dawn"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -20.078,
+    "lon": 146.27,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:52.130110"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:52.130115",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

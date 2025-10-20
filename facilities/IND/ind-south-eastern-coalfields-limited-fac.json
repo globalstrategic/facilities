@@ -1,0 +1,50 @@
+{
+  "facility_id": "ind-south-eastern-coalfields-limited-fac",
+  "name": "South Eastern Coalfields Limited",
+  "aliases": [
+    "Chirimiri Coal Mine",
+    "NCPH Coal Mine",
+    "Bartunga Hill Coal Mine"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 23.183,
+    "lon": 82.34,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "South Eastern Coalfields Limited",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:38.831396",
+      "evidence": "Extracted from Group Names column: South Eastern Coalfields Limited;Chirimiri Coal Mine;NCPH Coal Mine;Bartunga Hill Coal Mine"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:38.831412"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:38.831413",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "facility_id": "ind-zawar-fac",
+  "name": "Zawar",
+  "aliases": [
+    "Balaria",
+    "Zawar",
+    "Zawar"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 24.364,
+    "lon": 73.723,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Zawar Group Pb Zn Mines",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:06.498452",
+      "evidence": "Extracted from Group Names column: Balaria;Zawar Group Pb Zn Mines;Zawar;Zawar;Zawar Group"
+    },
+    {
+      "name": "Zawar Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:06.498464",
+      "evidence": "Extracted from Group Names column: Balaria;Zawar Group Pb Zn Mines;Zawar;Zawar;Zawar Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:06.498467"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:06.498469",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

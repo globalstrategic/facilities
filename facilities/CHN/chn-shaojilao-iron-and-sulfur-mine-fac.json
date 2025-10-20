@@ -1,0 +1,67 @@
+{
+  "facility_id": "chn-shaojilao-iron-and-sulfur-mine-fac",
+  "name": "Shaojilao Iron and Sulfur Mine",
+  "aliases": [
+    "Shaojilao Iron and Sulfur Mine",
+    "Shizishan",
+    "Xinqiao"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 30.928,
+    "lon": 117.991,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Tongling Chemical Group Xinqiao Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:21.201286",
+      "evidence": "Extracted from Group Names column: Shaojilao Iron and Sulfur Mine;Tongling Chemical Group Xinqiao Mine;Shizishan;Xinqiao"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:21.201297"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:21.201298",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

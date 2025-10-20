@@ -1,0 +1,50 @@
+{
+  "facility_id": "usa-taylor-fac",
+  "name": "Taylor",
+  "aliases": [
+    "Taylor",
+    "Taylor Deposit",
+    "Taylor Concentrator"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 39.082,
+    "lon": -114.685,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:34.951388"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:34.951393",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

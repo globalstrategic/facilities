@@ -1,0 +1,47 @@
+{
+  "facility_id": "can-louvicourt-fac",
+  "name": "Louvicourt",
+  "aliases": [
+    "Louvicourt"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 48.098,
+    "lon": -77.516,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:41.595852"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:41.595859",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

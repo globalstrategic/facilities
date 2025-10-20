@@ -1,0 +1,50 @@
+{
+  "facility_id": "aus-cairn-hill-fac",
+  "name": "Cairn Hill",
+  "aliases": [
+    "Cairn Hill",
+    "Cu River Mining Cairn Hill Mine",
+    "Cairn Hill"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -29.298,
+    "lon": 135.119,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:21.174082"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:21.174088",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

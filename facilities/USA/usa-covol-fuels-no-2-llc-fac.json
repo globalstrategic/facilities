@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-covol-fuels-no-2-llc-fac",
+  "name": "Covol Fuels No. 2, LLC",
+  "aliases": [
+    "Paradise Mine",
+    "Charolais No 2"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.28,
+    "lon": -87.216,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Covol Fuels No. 2, LLC",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:08.647936",
+      "evidence": "Extracted from Group Names column: Covol Fuels No. 2, LLC;Paradise Mine;Charolais No 2"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:08.647953"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:08.647954",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

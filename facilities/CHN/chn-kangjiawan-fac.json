@@ -1,0 +1,79 @@
+{
+  "facility_id": "chn-kangjiawan-fac",
+  "name": "Kangjiawan",
+  "aliases": [
+    "Kangjiawan",
+    "Shuikoushan refinery",
+    "Shuikoushan smelter",
+    "Kanjiawan",
+    "Shuikoushan",
+    "Pingbao",
+    "Laoyachao",
+    "Longwangshan",
+    "Yagongtang",
+    "Changsha Smelter",
+    "Songbai Smelter",
+    "Shuikoushan Smelter",
+    "Shuikoushan Refinery",
+    "Hengyang Shuikoushan Refinery",
+    "Shuikoushan Refinery",
+    "Shuikoushan Refinery",
+    "Hengyang Shuikoushan Smelter",
+    "Changning Smelter",
+    "Changning Refinery",
+    "Shuikoushan Smelter"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 26.57,
+    "lon": 112.592,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Hunan Shuikoushan Group Smelter",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:35.716247",
+      "evidence": "Extracted from Group Names column: Kangjiawan;Shuikoushan refinery;Shuikoushan smelter;Kanjiawan;Shuikoushan;Pingbao;Laoyachao;Longwangshan;Yagongtang;Changsha Smelter;Songbai Smelter;Hunan Shuikoushan Group Smelter;Shuikoushan Smelter;Shuikoushan Refinery;Hengyang Shuikoushan Refinery;Shuikoushan Refinery;Shuikoushan Refinery;Hengyang Shuikoushan Smelter;Changning Smelter;Changning Refinery;Shuikoushan Smelter"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.716270"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:35.716271",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

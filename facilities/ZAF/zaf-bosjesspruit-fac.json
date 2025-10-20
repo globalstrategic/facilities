@@ -1,0 +1,44 @@
+{
+  "facility_id": "zaf-bosjesspruit-fac",
+  "name": "Bosjesspruit",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.711,
+    "lon": 29.173,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Sasol",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:20.427297"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T16:26:30.815642",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "facility_id": "jpn-takehara-fac",
+  "name": "Takehara",
+  "aliases": [
+    "Takehara",
+    "Takehara Refinery",
+    "Takehara Smelter",
+    "Takehara Refinery"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 34.336,
+    "lon": 132.913,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:05.387234"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:05.387238",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

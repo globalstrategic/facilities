@@ -1,0 +1,57 @@
+{
+  "facility_id": "ind-kmscl-jambunathanahall-mine-fac",
+  "name": "KMSCL Jambunathanahall Mine",
+  "aliases": [
+    "KMSCL Jambunathanahall Mine",
+    "GGB Jambunatha Mine",
+    "PVS Pathikonda Mine",
+    "HN Premkumar Kallahalli Mine",
+    "Auro Minerals RKDR Mine",
+    "RBSSN Sankalapuram Mine",
+    "PB Setty Karadikolla Suresh Mine",
+    "Hospet",
+    "Pathikonda"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 15.225,
+    "lon": 76.427,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "KMMI Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:22.797049",
+      "evidence": "Extracted from Group Names column: KMSCL Jambunathanahall Mine;GGB Jambunatha Mine;PVS Pathikonda Mine;HN Premkumar Kallahalli Mine;Auro Minerals RKDR Mine;RBSSN Sankalapuram Mine;PB Setty Karadikolla Suresh Mine;Hospet;Pathikonda;KMMI Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:22.797057"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:22.797058",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

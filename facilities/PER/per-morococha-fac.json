@@ -1,0 +1,61 @@
+{
+  "facility_id": "per-morococha-fac",
+  "name": "Morococha",
+  "aliases": [
+    "Morococha",
+    "Morococha"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -11.582,
+    "lon": -76.178,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Tungsten",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Casapalca Gubbins Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:14.941458",
+      "evidence": "Extracted from Group Names column: Morococha;Casapalca Gubbins Group;Morococha"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:14.941470"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:14.941471",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

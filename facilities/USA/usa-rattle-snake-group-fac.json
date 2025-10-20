@@ -1,0 +1,62 @@
+{
+  "facility_id": "usa-rattle-snake-group-fac",
+  "name": "Rattle Snake Group",
+  "aliases": [
+    "Monte Carlo",
+    "Herkimer Mine",
+    "Bunker Hill Mine",
+    "Golden Spector",
+    "Deadwood",
+    "Gibraltor",
+    "Poker Flat Drift Prospect",
+    "Tennessee",
+    "Carleton",
+    "Pennsylvania",
+    "Rennissance",
+    "Sunnyside Mine",
+    "Bruckerman",
+    "Scott",
+    "Sol Wood"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 39.686,
+    "lon": -120.828,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Rattle Snake Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:35.713660",
+      "evidence": "Extracted from Group Names column: Rattle Snake Group;Monte Carlo;Herkimer Mine;Bunker Hill Mine;Golden Spector;Deadwood;Gibraltor;Poker Flat Drift Prospect;Tennessee;Carleton;Pennsylvania;Rennissance;Sunnyside Mine;Bruckerman;Scott;Sol Wood"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:35.713689"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:35.713690",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

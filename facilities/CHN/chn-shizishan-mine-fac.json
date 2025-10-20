@@ -1,0 +1,52 @@
+{
+  "facility_id": "chn-shizishan-mine-fac",
+  "name": "Shizishan Mine",
+  "aliases": [
+    "Shizishan Mine",
+    "Hucun",
+    "Dongguashan",
+    "Datuanshan",
+    "Tianebaodanshan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 30.908,
+    "lon": 117.887,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:19.685418"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:19.685423",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

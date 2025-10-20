@@ -1,0 +1,48 @@
+{
+  "facility_id": "usa-coal-loaders-inc-fac",
+  "name": "Coal Loaders, Inc.",
+  "aliases": [
+    "Penn View"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.459,
+    "lon": -79.137,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Coal Loaders, Inc.",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:08.343287",
+      "evidence": "Extracted from Group Names column: Coal Loaders, Inc.;Penn View"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:08.343299"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:08.343301",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

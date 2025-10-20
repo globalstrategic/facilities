@@ -1,0 +1,44 @@
+{
+  "facility_id": "usa-jewett-mine-fac",
+  "name": "Jewett Mine",
+  "aliases": [
+    "Jewett Mine",
+    "May Queen Mine"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 42.408,
+    "lon": -123.275,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:38.478399"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:38.478407",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

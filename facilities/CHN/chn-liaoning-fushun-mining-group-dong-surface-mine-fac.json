@@ -1,0 +1,51 @@
+{
+  "facility_id": "chn-liaoning-fushun-mining-group-dong-surface-mine-fac",
+  "name": "Liaoning Fushun Mining Group Dong Surface Mine",
+  "aliases": [
+    "Fushun Zinc Mine",
+    "Liaoning Xilutian Surface Coal Mine",
+    "Xilutian",
+    "Dongxing"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 41.84,
+    "lon": 123.887,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Liaoning Fushun Mining Group Dong Surface Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:03.664611",
+      "evidence": "Extracted from Group Names column: Fushun Zinc Mine;Liaoning Fushun Mining Group Dong Surface Mine;Liaoning Xilutian Surface Coal Mine;Xilutian;Dongxing"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:03.664624"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:03.664625",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

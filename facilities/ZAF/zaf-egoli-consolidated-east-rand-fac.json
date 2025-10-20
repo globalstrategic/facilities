@@ -1,0 +1,52 @@
+{
+  "facility_id": "zaf-egoli-consolidated-east-rand-fac",
+  "name": "Egoli Consolidated East Rand",
+  "aliases": [
+    "Egoli Consolidated East Rand",
+    "Brakpan"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.225,
+    "lon": 28.367,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:15.825439"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:15.825445",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

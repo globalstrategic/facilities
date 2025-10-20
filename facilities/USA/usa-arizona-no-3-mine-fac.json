@@ -1,0 +1,87 @@
+{
+  "facility_id": "usa-arizona-no-3-mine-fac",
+  "name": "Arizona No. 3 Mine",
+  "aliases": [
+    "Arizona No. 3 Mine",
+    "Alpha Mine",
+    "Vivienne Mine",
+    "Olivette Mine",
+    "Annete Mine",
+    "Silver Helmet Mine",
+    "Whitcomb Mine",
+    "Pima District",
+    "South San Xavier Mine",
+    "San Xavier Mine Shaft",
+    "San Xavier Extension Mine",
+    "Vulcan Mine",
+    "Plumed Knight Mine",
+    "Pima Open Pit Mine",
+    "Mission Complex",
+    "Mission Mine",
+    "Mission Mill",
+    "Mission Complex",
+    "Mission",
+    "Whitcomb"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 31.971,
+    "lon": -111.089,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Paymaster Mine Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:28.484321",
+      "evidence": "Extracted from Group Names column: Arizona No. 3 Mine;Paymaster Mine Group;Alpha Mine;Vivienne Mine;Olivette Mine;Annete Mine;Silver Helmet Mine;Whitcomb Mine;Pima District;South San Xavier Mine;San Xavier Mine Shaft;San Xavier Extension Mine;Vulcan Mine;Plumed Knight Mine;Pima Open Pit Mine;Mission Complex;Mission Mine;Mission Mill;Mission Complex;Mission;Whitcomb"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:28.484366"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:28.484367",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

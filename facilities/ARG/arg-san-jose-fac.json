@@ -1,0 +1,48 @@
+{
+  "facility_id": "arg-san-jose-fac",
+  "name": "San Jose",
+  "aliases": [
+    "San Jose",
+    "San Jose"
+  ],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -46.667,
+    "lon": -70.298,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:40.759383"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:40.759390",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

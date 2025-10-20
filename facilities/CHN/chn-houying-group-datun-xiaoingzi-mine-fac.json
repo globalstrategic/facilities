@@ -1,0 +1,49 @@
+{
+  "facility_id": "chn-houying-group-datun-xiaoingzi-mine-fac",
+  "name": "Houying Group Datun Xiaoingzi Mine",
+  "aliases": [
+    "Qianshan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 40.986,
+    "lon": 122.962,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Houying Group Datun Xiaoingzi Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:19.234440",
+      "evidence": "Extracted from Group Names column: Houying Group Datun Xiaoingzi Mine;Qianshan"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:19.234453"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:19.234455",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "facility_id": "usa-scott-lead-prospect-fac",
+  "name": "Scott Lead Prospect",
+  "aliases": [
+    "Scott Lead Prospect",
+    "Black Rock Basin"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 33.681,
+    "lon": -112.984,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.780870"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:29.780877",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

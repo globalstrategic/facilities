@@ -1,0 +1,68 @@
+{
+  "facility_id": "jpn-saganoseki-refinery-fac",
+  "name": "Saganoseki refinery",
+  "aliases": [
+    "Saganoseki refinery",
+    "Saganoseki smelter",
+    "Saganoseki Smelter",
+    "Saganoseki Refinery",
+    "Saganoseki Smelter"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 33.252,
+    "lon": 131.874,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:40.506528"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:40.506536",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

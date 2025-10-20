@@ -1,0 +1,44 @@
+{
+  "facility_id": "fin-keliber-fac",
+  "name": "Keliber",
+  "aliases": [
+    "Keliber"
+  ],
+  "country_iso3": "FIN",
+  "location": {
+    "lat": 63.563,
+    "lon": 23.789,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.951300"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:35.951305",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

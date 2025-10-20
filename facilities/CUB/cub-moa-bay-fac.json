@@ -1,0 +1,46 @@
+{
+  "facility_id": "cub-moa-bay-fac",
+  "name": "Moa Bay",
+  "aliases": [
+    "Moa Bay",
+    "Moa Project",
+    "Moa Bay District"
+  ],
+  "country_iso3": "CUB",
+  "location": {
+    "lat": 20.61,
+    "lon": -74.931,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:45.419176"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:45.419179",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

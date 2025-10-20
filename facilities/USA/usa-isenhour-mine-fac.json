@@ -1,0 +1,64 @@
+{
+  "facility_id": "usa-isenhour-mine-fac",
+  "name": "Isenhour Mine",
+  "aliases": [
+    "Isenhour Mine",
+    "Troutman Mine",
+    "Union Copper Mine",
+    "Honeycutt Shaft",
+    "Old Field Diggings",
+    "Bat Shaft",
+    "Barnhardt Shaft",
+    "Miller Shaft",
+    "Randolph Shaft"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 35.506,
+    "lon": -80.35,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Southern Copper Company Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:31.557008",
+      "evidence": "Extracted from Group Names column: Isenhour Mine;Troutman Mine;Union Copper Mine;Honeycutt Shaft;Old Field Diggings;Bat Shaft;Southern Copper Company Mine;Barnhardt Shaft;Miller Shaft;Randolph Shaft"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:31.557022"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:31.557023",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

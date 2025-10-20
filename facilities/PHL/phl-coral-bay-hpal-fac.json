@@ -1,0 +1,59 @@
+{
+  "facility_id": "phl-coral-bay-hpal-fac",
+  "name": "Coral Bay HPAL",
+  "aliases": [
+    "Rio Tuba Mine",
+    "Rio Tuba",
+    "Coral Bay HPAL",
+    "Coral Bay HPAL Plant"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 8.565,
+    "lon": 117.421,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "chromium",
+      "primary": false
+    },
+    {
+      "metal": "scandium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Coral Bay Nickel Corporation",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:50.685043",
+      "evidence": "Extracted from Group Names column: Rio Tuba Mine;Coral Bay Nickel Corporation;Rio Tuba;Coral Bay HPAL;Coral Bay HPAL Plant"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:50.685058"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:50.685059",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

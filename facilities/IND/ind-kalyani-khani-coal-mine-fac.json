@@ -1,0 +1,50 @@
+{
+  "facility_id": "ind-kalyani-khani-coal-mine-fac",
+  "name": "Kalyani Khani Coal Mine",
+  "aliases": [
+    "Kalyani Khani Coal Mine",
+    "KK 5 Incline",
+    "RK 1 A"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 18.995,
+    "lon": 79.477,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "KK 1 Inc Coal Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:51.205798",
+      "evidence": "Extracted from Group Names column: Kalyani Khani Coal Mine;KK 1 Inc Coal Mine;KK 5 Incline;RK 1 A"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:51.205810"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:51.205812",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

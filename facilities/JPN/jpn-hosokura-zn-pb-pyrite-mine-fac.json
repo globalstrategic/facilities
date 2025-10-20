@@ -1,0 +1,56 @@
+{
+  "facility_id": "jpn-hosokura-zn-pb-pyrite-mine-fac",
+  "name": "Hosokura Zn Pb Pyrite Mine",
+  "aliases": [
+    "Hosokurazn",
+    "Hosokura Refinery",
+    "Hosokura Smelter",
+    "Hosokura"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 38.802,
+    "lon": 140.897,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:04.458496"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:27:04.458504",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

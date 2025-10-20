@@ -1,0 +1,45 @@
+{
+  "facility_id": "chn-kunming-refinery-fac",
+  "name": "Kunming refinery",
+  "aliases": [
+    "Kunming refinery",
+    "Kunming smelter"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 25.04,
+    "lon": 102.72,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:36.343682"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:36.343686",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

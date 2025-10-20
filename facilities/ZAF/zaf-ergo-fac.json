@@ -1,0 +1,61 @@
+{
+  "facility_id": "zaf-ergo-fac",
+  "name": "Ergo",
+  "aliases": [
+    "Joint Metallurgical Scheme",
+    "Ergo Division Ergo",
+    "Ergo",
+    "Ergo",
+    "Brakpan Smelter",
+    "Brakpan Refinery"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.275,
+    "lon": 28.378,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "South African Land and Exploration Company",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:15.982172",
+      "evidence": "Extracted from Group Names column: South African Land and Exploration Company;Joint Metallurgical Scheme;Ergo Division Ergo;Ergo;Ergo;Brakpan Smelter;Brakpan Refinery"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:15.982189"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:15.982190",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

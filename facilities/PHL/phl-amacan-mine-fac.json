@@ -1,0 +1,41 @@
+{
+  "facility_id": "phl-amacan-mine-fac",
+  "name": "Amacan Mine",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 11.074,
+    "lon": 122.986,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:50.526635"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:50.526640",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

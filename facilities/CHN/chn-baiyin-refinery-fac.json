@@ -1,0 +1,55 @@
+{
+  "facility_id": "chn-baiyin-refinery-fac",
+  "name": "Baiyin Refinery",
+  "aliases": [
+    "Baiyin Copper Mine",
+    "Baiyin Flash",
+    "Baiyin No 3",
+    "Baiyin Northwest Pb and Zn",
+    "Baiyin refinery",
+    "Baiyin Side Blown",
+    "North West Smelter",
+    "Baiyin Smelter",
+    "Baiyin Refinery"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 36.555,
+    "lon": 104.209,
+    "precision": "site"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:04.800766"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:04.800772",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

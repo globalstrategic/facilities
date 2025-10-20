@@ -1,0 +1,48 @@
+{
+  "facility_id": "can-fort-site-fac",
+  "name": "Fort Site",
+  "aliases": [
+    "Fort Site",
+    "Fort Saskatchewan Refinery"
+  ],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 53.72,
+    "lon": -113.188,
+    "precision": "site"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "fertilizedr",
+      "primary": false
+    },
+    {
+      "metal": "sulphuric acid",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:24.931166"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:24.931170",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

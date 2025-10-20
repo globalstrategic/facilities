@@ -1,0 +1,48 @@
+{
+  "facility_id": "aus-lorena-fac",
+  "name": "LORENA",
+  "aliases": [
+    "LORENA",
+    "Lorena"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -20.719,
+    "lon": 140.649,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:57.246449"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:57.246454",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

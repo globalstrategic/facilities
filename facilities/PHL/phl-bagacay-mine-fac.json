@@ -1,0 +1,44 @@
+{
+  "facility_id": "phl-bagacay-mine-fac",
+  "name": "Bagacay Mine",
+  "aliases": [
+    "Bagacay Mine",
+    "Bagacay"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 11.78,
+    "lon": 125.159,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:50.499100"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:50.499106",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

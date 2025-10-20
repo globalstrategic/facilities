@@ -1,0 +1,48 @@
+{
+  "facility_id": "usa-bully-hill-fac",
+  "name": "Bully Hill",
+  "aliases": [
+    "Bully Hill"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.799,
+    "lon": -122.205,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Michigan Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:37.506430",
+      "evidence": "Extracted from Group Names column: Bully Hill;Michigan Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:37.506436"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:37.506437",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

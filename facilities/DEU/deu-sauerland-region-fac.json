@@ -1,0 +1,41 @@
+{
+  "facility_id": "deu-sauerland-region-fac",
+  "name": "Sauerland Region",
+  "aliases": [],
+  "country_iso3": "DEU",
+  "location": {
+    "lat": 51.166,
+    "lon": 7.752,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:44.933719"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:44.933727",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

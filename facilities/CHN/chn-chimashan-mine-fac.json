@@ -1,0 +1,53 @@
+{
+  "facility_id": "chn-chimashan-mine-fac",
+  "name": "Chimashan Mine",
+  "aliases": [
+    "Chimashan Mine",
+    "Chimashan"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 29.998,
+    "lon": 115.093,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:19.209579"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:19.209589",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

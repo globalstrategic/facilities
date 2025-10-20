@@ -1,0 +1,57 @@
+{
+  "facility_id": "fin-pyh-salmi-fac",
+  "name": "PyhÃ¤salmi",
+  "aliases": [
+    "PyhÃ¤salmi",
+    "Pyhasalmi"
+  ],
+  "country_iso3": "FIN",
+  "location": {
+    "lat": 63.66,
+    "lon": 26.043,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "pyrite",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:36.165969"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:36.165974",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

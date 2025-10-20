@@ -1,0 +1,50 @@
+{
+  "facility_id": "usa-bell-corp-mine-fac",
+  "name": "Bell Corp Mine",
+  "aliases": [
+    "Kuperavage Tuscarora Coal Mine",
+    "Brockton Strip",
+    "Mary D Strip"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.755,
+    "lon": -76.057,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Bell Corp Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:28:32.186082",
+      "evidence": "Extracted from Group Names column: Bell Corp Mine;Kuperavage Tuscarora Coal Mine;Brockton Strip;Mary D Strip"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:32.186102"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:28:32.186104",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

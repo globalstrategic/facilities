@@ -1,0 +1,44 @@
+{
+  "facility_id": "chn-shaoguan-fac",
+  "name": "Shaoguan",
+  "aliases": [
+    "Shaoguan Smelter",
+    "Shaoguan Refinery"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 24.718,
+    "lon": 113.576,
+    "precision": "site"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:41.307198"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:41.307204",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "facility_id": "ncl-koniambo-fac",
+  "name": "Koniambo",
+  "aliases": [
+    "Koniambo"
+  ],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": -20.974,
+    "lon": 164.793,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:45.731088"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:45.731092",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

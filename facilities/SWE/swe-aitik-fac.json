@@ -1,0 +1,49 @@
+{
+  "facility_id": "swe-aitik-fac",
+  "name": "Aitik",
+  "aliases": [
+    "Aitik",
+    "Aitik"
+  ],
+  "country_iso3": "SWE",
+  "location": {
+    "lat": 67.076,
+    "lon": 20.958,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:17.593765"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:17.593770",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

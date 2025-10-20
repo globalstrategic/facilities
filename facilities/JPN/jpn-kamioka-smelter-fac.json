@@ -1,0 +1,51 @@
+{
+  "facility_id": "jpn-kamioka-smelter-fac",
+  "name": "Kamioka Smelter",
+  "aliases": [
+    "Kamioka Zn Pb Mines",
+    "Kamioka",
+    "Kamioka",
+    "Kamioka Refinery",
+    "Kamioka Smelter"
+  ],
+  "country_iso3": "JPN",
+  "location": {
+    "lat": 36.348,
+    "lon": 137.3,
+    "precision": "site"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:04.877544"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:04.877553",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

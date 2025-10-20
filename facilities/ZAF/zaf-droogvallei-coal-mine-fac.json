@@ -1,0 +1,47 @@
+{
+  "facility_id": "zaf-droogvallei-coal-mine-fac",
+  "name": "Droogvallei Coal Mine",
+  "aliases": [
+    "Droogvallei Coal Mine",
+    "Eastside Colliery"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.103,
+    "lon": 30.155,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Exxaro",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:05.992881"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T16:26:30.781794",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

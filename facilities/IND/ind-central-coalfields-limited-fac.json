@@ -1,0 +1,50 @@
+{
+  "facility_id": "ind-central-coalfields-limited-fac",
+  "name": "Central Coalfields Limited",
+  "aliases": [
+    "Govindpur Coal Mine",
+    "Govindur",
+    "Sawang"
+  ],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 23.801,
+    "lon": 85.863,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "metallurgical coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Central Coalfields Limited",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:21.648268",
+      "evidence": "Extracted from Group Names column: Central Coalfields Limited;Govindpur Coal Mine;Govindur;Sawang"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:21.648278"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:21.648280",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

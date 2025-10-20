@@ -1,0 +1,58 @@
+{
+  "facility_id": "mmr-heinda-mine-fac",
+  "name": "Heinda Mine",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": 14.034,
+    "lon": 98.212,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Myanmar Pongpipat Co",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    },
+    {
+      "name": "Thai investors",
+      "role": "owner",
+      "percentage": 65.0,
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    },
+    {
+      "name": "and the state's No. 2 Mining Enterprise",
+      "role": "owner",
+      "percentage": 35.0,
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:07.868873"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T16:06:58.077171",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

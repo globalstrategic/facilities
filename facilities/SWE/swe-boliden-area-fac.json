@@ -1,0 +1,62 @@
+{
+  "facility_id": "swe-boliden-area-fac",
+  "name": "Boliden Area",
+  "aliases": [
+    "Boliden Operations",
+    "Boliden Area",
+    "Boliden Area",
+    "The Boliden Area"
+  ],
+  "country_iso3": "SWE",
+  "location": {
+    "lat": 64.878,
+    "lon": 20.346,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Tellurium",
+      "primary": false
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:43.160126"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:43.160133",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

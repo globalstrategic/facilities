@@ -1,0 +1,43 @@
+{
+  "facility_id": "per-chapi-fac",
+  "name": "Chapi",
+  "aliases": [
+    "Chapi"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -16.777,
+    "lon": -71.355,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:45.571553"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:29:45.571557",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "facility_id": "usa-bobtail-mine-fac",
+  "name": "Bobtail Mine",
+  "aliases": [
+    "Bobtail Mine",
+    "Wegman",
+    "Golden Queen",
+    "Soledad Mountain Project",
+    "Gum Tree Mine",
+    "Whitmore Mine",
+    "Victory",
+    "Pride of Mojave",
+    "Yellow Dog Mine",
+    "Standard Hill",
+    "Soledad Mountain"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 34.998,
+    "lon": -118.18,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Elephant Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:30.960650",
+      "evidence": "Extracted from Group Names column: Bobtail Mine;Elephant Group;Wegman;Golden Queen;Soledad Mountain Project;Gum Tree Mine;Whitmore Mine;Victory;Standard Group;Pride of Mojave;Yellow Dog Mine;Standard Hill;Soledad Mountain"
+    },
+    {
+      "name": "Standard Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:30.960669",
+      "evidence": "Extracted from Group Names column: Bobtail Mine;Elephant Group;Wegman;Golden Queen;Soledad Mountain Project;Gum Tree Mine;Whitmore Mine;Victory;Standard Group;Pride of Mojave;Yellow Dog Mine;Standard Hill;Soledad Mountain"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:30.960680"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:30.960681",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

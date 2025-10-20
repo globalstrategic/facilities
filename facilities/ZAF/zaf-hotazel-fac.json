@@ -1,0 +1,46 @@
+{
+  "facility_id": "zaf-hotazel-fac",
+  "name": "Hotazel",
+  "aliases": [
+    "Hotazel"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -27.206,
+    "lon": 22.971,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "HMM",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:47.039728"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T16:26:30.791603",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

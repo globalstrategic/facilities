@@ -1,0 +1,52 @@
+{
+  "facility_id": "mex-juanicipio-fac",
+  "name": "Juanicipio",
+  "aliases": [
+    "Juanicipio",
+    "Juanicipio"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 23.131,
+    "lon": -102.952,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.517116"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:35.517124",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "facility_id": "phl-pasar-refinery-fac",
+  "name": "Pasar refinery",
+  "aliases": [
+    "Pasar refinery",
+    "Pasar smelter",
+    "PASAR Smelter",
+    "PASAR Refinery"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 10.898,
+    "lon": 124.434,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:39.243020"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:39.243025",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

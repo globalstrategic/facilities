@@ -1,0 +1,53 @@
+{
+  "facility_id": "chn-pingshanhou-iron-mine-fac",
+  "name": "Pingshanhou Iron Mine",
+  "aliases": [
+    "Pingshanhou Iron Mine",
+    "Shilashan Iron Mine",
+    "Taipingcun Iron Mine",
+    "Sinosteel Xiaoyanzhuang Iron Mine",
+    "Jinxitai"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 34.864,
+    "lon": 117.763,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Jinan Iron and Steel Group Shimen Zoumaling Iron Mine",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:29:16.777990",
+      "evidence": "Extracted from Group Names column: Pingshanhou Iron Mine;Jinan Iron and Steel Group Shimen Zoumaling Iron Mine;Shilashan Iron Mine;Taipingcun Iron Mine;Sinosteel Xiaoyanzhuang Iron Mine;Jinxitai"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:16.778007"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:29:16.778009",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

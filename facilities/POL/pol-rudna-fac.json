@@ -1,0 +1,48 @@
+{
+  "facility_id": "pol-rudna-fac",
+  "name": "Rudna",
+  "aliases": [
+    "Rudna",
+    "Rudna"
+  ],
+  "country_iso3": "POL",
+  "location": {
+    "lat": 51.502,
+    "lon": 16.105,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:36.910160"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:36.910166",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

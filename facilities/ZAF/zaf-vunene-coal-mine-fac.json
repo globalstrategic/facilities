@@ -1,0 +1,44 @@
+{
+  "facility_id": "zaf-vunene-coal-mine-fac",
+  "name": "Vunene Coal Mine",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.578,
+    "lon": 30.102,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Exxaro",
+      "role": "operator",
+      "confidence": 0.6,
+      "source": "narrative_extraction"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:01.593804"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T16:26:30.796551",
+    "checked_by": "import_pipeline",
+    "notes": "Company mentions extracted from narrative research"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-gilt-edge-mine-fac",
+  "name": "Gilt Edge Mine",
+  "aliases": [
+    "Gilt Edge Mine",
+    "Lead District",
+    "Gilt Edge"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 44.332,
+    "lon": -103.682,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:38.921896"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-20T15:26:38.921903",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

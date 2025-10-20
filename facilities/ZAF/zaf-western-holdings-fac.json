@@ -1,0 +1,73 @@
+{
+  "facility_id": "zaf-western-holdings-fac",
+  "name": "Western Holdings",
+  "aliases": [
+    "Western Holdingsfreegold North",
+    "Eland"
+  ],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -27.965,
+    "lon": 26.681,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Western Holdings",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:16.842596",
+      "evidence": "Extracted from Group Names column: Western Holdingsfreegold North;Western Holdings;Eland;Western Holdings"
+    },
+    {
+      "name": "Western Holdings",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:27:16.842604",
+      "evidence": "Extracted from Group Names column: Western Holdingsfreegold North;Western Holdings;Eland;Western Holdings"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.842608"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:16.842609",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

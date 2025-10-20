@@ -1,0 +1,48 @@
+{
+  "facility_id": "nic-hemco-fac",
+  "name": "Hemco",
+  "aliases": [
+    "Hemco"
+  ],
+  "country_iso3": "NIC",
+  "location": {
+    "lat": 14.027,
+    "lon": -84.586,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Neptune Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:25.985145",
+      "evidence": "Extracted from Group Names column: Neptune Group;Hemco"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:25.985153"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:25.985155",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "facility_id": "usa-hornet-mine-fac",
+  "name": "Hornet Mine",
+  "aliases": [
+    "Hornet Mine",
+    "Busy Bee",
+    "Hard Tack",
+    "United Copper",
+    "Stowell"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.691,
+    "lon": -122.515,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "King Copper Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:37.310535",
+      "evidence": "Extracted from Group Names column: Hornet Mine;Busy Bee;Hard Tack;King Copper Group;United Copper;Stowell"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:37.310547"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:37.310549",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

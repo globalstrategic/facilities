@@ -1,0 +1,81 @@
+{
+  "facility_id": "usa-new-dominion-mine-fac",
+  "name": "New Dominion Mine",
+  "aliases": [
+    "Ireland Mine",
+    "Stonewall Mine",
+    "Maggie Vein",
+    "Josh Billings Claims",
+    "Darius Mine",
+    "New Dominion Mine",
+    "Iron King and Red Oxide Mine",
+    "Pontiac Mine",
+    "Berkley Mine",
+    "Globe Manganese Mine",
+    "Ramboz Mine",
+    "Last Chance Mine",
+    "Four Bagger Mine",
+    "Irene Vein, Old Doughboy"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 33.437,
+    "lon": -110.768,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "L and V Group",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:29.698267",
+      "evidence": "Extracted from Group Names column: L and V Group;Ireland Mine;Stonewall Mine;Maggie Vein;Josh Billings Claims;Darius Mine;New Dominion Mine;Iron King and Red Oxide Mine;Pontiac Mine;Berkley Mine;Globe Manganese Mine;Ramboz Mine;Bracco Group Prospect;Last Chance Mine;Four Bagger Mine;Irene Vein, Old Doughboy"
+    },
+    {
+      "name": "Bracco Group Prospect",
+      "role": "owner",
+      "source": "Mines.csv Run 1",
+      "confidence": 0.6,
+      "first_seen": "2025-10-20T15:26:29.698296",
+      "evidence": "Extracted from Group Names column: L and V Group;Ireland Mine;Stonewall Mine;Maggie Vein;Josh Billings Claims;Darius Mine;New Dominion Mine;Iron King and Red Oxide Mine;Pontiac Mine;Berkley Mine;Globe Manganese Mine;Ramboz Mine;Bracco Group Prospect;Last Chance Mine;Four Bagger Mine;Irene Vein, Old Doughboy"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.698308"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-10-20T15:26:29.698309",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

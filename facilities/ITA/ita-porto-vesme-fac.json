@@ -1,0 +1,78 @@
+{
+  "facility_id": "ita-porto-vesme-fac",
+  "name": "Porto Vesme",
+  "aliases": [
+    "Porto Vesme Isf",
+    "Eurallumina",
+    "Monte Sinni Mine at Nuraxi Figus",
+    "Porto Vesme",
+    "Portovesme Pb Refinery",
+    "Portovesme Pb Smelter",
+    "Carbosulcis",
+    "Carbosulcis",
+    "Eurallumina Refinery",
+    "Portovesme Smelter",
+    "Portovesme Refinery",
+    "Portovesme Smelter",
+    "San Gavino Smelter",
+    "San Gavino Refinery",
+    "Portovesme Plant"
+  ],
+  "country_iso3": "ITA",
+  "location": {
+    "lat": 39.21,
+    "lon": 8.41,
+    "precision": "site"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "alumina",
+      "primary": false
+    },
+    {
+      "metal": "aluminum",
+      "primary": false
+    },
+    {
+      "metal": "bauxite",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:48.542661"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:26:48.542669",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

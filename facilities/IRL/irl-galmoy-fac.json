@@ -1,0 +1,44 @@
+{
+  "facility_id": "irl-galmoy-fac",
+  "name": "Galmoy",
+  "aliases": [
+    "Galmoy",
+    "Galmoy"
+  ],
+  "country_iso3": "IRL",
+  "location": {
+    "lat": 52.804,
+    "lon": -7.598,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:25.220550"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-20T15:27:25.220555",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
