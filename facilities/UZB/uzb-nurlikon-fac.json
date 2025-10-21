@@ -1,0 +1,45 @@
+{
+  "facility_id": "uzb-nurlikon-fac",
+  "name": "Nurlikon",
+  "aliases": [],
+  "country_iso3": "UZB",
+  "location": {
+    "lat": 40.919,
+    "lon": 69.633,
+    "precision": "site"
+  },
+  "types": [
+    "deposit (exploration)"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import UZB 2025-10-21",
+      "date": "2025-10-21T11:38:36.361231"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T11:38:36.361237",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
