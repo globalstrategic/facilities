@@ -27,7 +27,7 @@ from pathlib import Path
 # Add utils to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from utils.geocoding_v2 import AdvancedGeocoder, GeocodingResult
+from utils.geocoding import AdvancedGeocoder, GeocodingResult
 
 # Test cases (Kazakhstan uranium JVs)
 TEST_CASES = [
