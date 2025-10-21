@@ -128,7 +128,8 @@ def parse_csv_file(text: str) -> Optional[Dict]:
             return None
 
         # Get headers from the first row keys
-        headers = list(rows[0].keys())
+        # Filter out None values (from unnamed CSV columns)
+        headers = [h for h in rows[0].keys() if h is not None]
 
         # Convert to the format expected by the rest of the pipeline
         return {
@@ -612,7 +613,8 @@ def is_facility_table(table: Dict) -> bool:
     if len(table['headers']) < 2:
         return False
 
-    headers_lower = [h.lower() for h in table['headers']]
+    # Filter out None values and convert to lowercase
+    headers_lower = [h.lower() for h in table['headers'] if h is not None]
     indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
                  'latitude', 'longitude', 'commodity', 'metal', 'operator']
 
@@ -675,6 +677,9 @@ def normalize_headers(headers: List[str]) -> List[str]:
     """Normalize header names to standard schema."""
     normalized = []
     for h in headers:
+        # Skip None values (from unnamed CSV columns)
+        if h is None:
+            continue
         h_lower = h.lower().strip()
 
         if any(x in h_lower for x in ['site', 'mine name', 'mine/project name', 'project name', 'facility name', 'asset name']) or h_lower == 'name':
