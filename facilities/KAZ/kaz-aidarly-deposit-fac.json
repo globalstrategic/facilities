@@ -1,0 +1,41 @@
+{
+  "facility_id": "kaz-aidarly-deposit-fac",
+  "name": "Aidarly Deposit",
+  "aliases": [],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Kazakhstan Deep Research Report 2025",
+      "date": "2025-10-21T09:03:06.924700"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T09:03:06.924706",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

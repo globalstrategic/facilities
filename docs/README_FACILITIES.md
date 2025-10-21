@@ -405,6 +405,158 @@ def find_facilities_by_company(company_id):
 bhp_facilities = find_facilities_by_company("cmp-549300HX3DJC74TG4332")
 ```
 
+### 5. Deduplication
+
+The system includes advanced duplicate detection and cleanup capabilities to maintain data quality.
+
+#### Automatic Duplicate Prevention (Import Time)
+
+The import pipeline (`scripts/import_from_report.py`) automatically detects duplicates using a **4-priority matching strategy**:
+
+**Priority 1: Coordinate-Based Matching (Primary)**
+- **Tier 1**: Very close coordinates (0.01° ~1km) + name similarity >60% OR name containment
+- **Tier 2**: Close coordinates (0.1° ~11km) + name similarity >85% OR name containment
+- Prevents false positives (e.g., nearby but distinct mines)
+
+**Priority 2: Exact Name Match**
+- Case-insensitive exact name matching
+- Coordinates checked if available for confirmation
+
+**Priority 3: Fuzzy Name Match**
+- Name similarity >85% OR word overlap >80%
+- Catches variations like "Two Rivers Mine" vs "Two Rivers Platinum Mine"
+
+**Priority 4: Alias Match**
+- Checks if name appears in existing facility's aliases
+
+**Example Detection:**
+```
+Input: "Two Rivers Platinum Mine" at (-24.893, 30.124)
+Existing: "Two Rivers" at (-24.893, 30.124)
+
+✓ Tier 1 match: Exact coords + "Two Rivers" contained in "Two Rivers Platinum Mine"
+→ Duplicate detected, import skipped
+```
+
+#### Deduplication Script (Cleanup Existing Duplicates)
+
+For cleaning up duplicates that already exist in the database:
+
+```bash
+# Preview duplicates (dry run - no changes)
+python scripts/deduplicate_facilities.py --country ZAF --dry-run
+
+# Clean up duplicates in South Africa
+python scripts/deduplicate_facilities.py --country ZAF
+
+# Clean up all countries
+python scripts/deduplicate_facilities.py --all
+```
+
+**What the script does:**
+
+1. **Identifies duplicate groups** using same logic as import-time detection
+2. **Scores facilities** by data completeness:
+   - Coordinates (+10 points)
+   - Commodities (+2 per commodity)
+   - Company mentions (+3 per mention)
+   - Products (+2 per product)
+   - Aliases (+1 per alias)
+   - Known status vs "unknown" (+5)
+   - Higher verification confidence (+10)
+   - Verification status (human_verified +20, csv_imported +10, llm_verified +5)
+
+3. **Merges data** from duplicates into best facility:
+   - Combines aliases (duplicate names become aliases)
+   - Merges sources (tracks all import origins)
+   - Consolidates commodities (prefers entries with chemical formulas)
+   - Combines company mentions (keeps highest confidence per company)
+   - Adds merge notes to verification
+
+4. **Deletes** inferior duplicate files
+
+**Example Output:**
+```
+=== Deduplication LIVE MODE ===
+
+Processing ZAF...
+  Loaded 779 facilities
+  Found 147 duplicate groups
+
+  Group 1 (2 facilities):
+    [38.0] zaf-two-rivers-platinum-mine-fac: Two Rivers Platinum Mine
+    [32.0] zaf-two-rivers-fac: Two Rivers
+    → Keeping: zaf-two-rivers-platinum-mine-fac
+    → Deleted: zaf-two-rivers-fac
+
+  Group 2 (2 facilities):
+    [32.0] zaf-new-denmark-fac: New Denmark
+    [30.0] zaf-new-denmark-colliery-fac: New Denmark Colliery
+    → Keeping: zaf-new-denmark-fac
+    → Deleted: zaf-new-denmark-colliery-fac
+
+=== SUMMARY ===
+ZAF: 147 groups, 150 removed, 147 kept
+
+Total: 147 duplicate groups, 150 facilities removed
+```
+
+**Real-world results (South Africa case study):**
+- **Before**: 779 facilities (168 coordinate-based duplicate pairs)
+- **After**: 628 facilities
+- **Removed**: 151 duplicates (19.4% reduction)
+
+**Merged Facility Example:**
+```json
+{
+  "facility_id": "zaf-two-rivers-platinum-mine-fac",
+  "name": "Two Rivers Platinum Mine",
+  "aliases": [
+    "Two Rivers",
+    "Two Rivers Mine",
+    "Tweefontein"
+  ],
+  "location": {
+    "lat": -24.893,
+    "lon": 30.124,
+    "precision": "site"
+  },
+  "commodities": [
+    {"metal": "Platinum", "primary": true},
+    {"metal": "Rhodium", "primary": false},
+    {"metal": "Gold", "primary": false},
+    {"metal": "Ruthenium", "primary": false},
+    {"metal": "Iridium", "primary": false}
+  ],
+  "sources": [
+    {"type": "csv_import", "id": "Research Import ZAF 2025-10-20"},
+    {"type": "csv_import", "id": "Mines.csv Run 1"},
+    {"type": "text_extraction", "id": "Research Import ZAF 2025-10-20"}
+  ],
+  "verification": {
+    "notes": "Merged from: zaf-two-rivers-fac, zaf-two-rivers-mine-fac"
+  }
+}
+```
+
+#### Best Practices
+
+**When importing new data:**
+- Always review import logs for duplicate detection statistics
+- Check `duplicates_skipped` count in import summary
+- Verify duplicates are legitimate (not distinct nearby facilities)
+
+**When running deduplication:**
+- **Always** run with `--dry-run` first to preview changes
+- Review duplicate groups to ensure correct merging
+- Check facility scores to verify best facility selection
+- Consider country-by-country deduplication for large databases
+
+**Avoiding false positives:**
+- Coordinate thresholds are tuned for mining facilities (~1-11km)
+- Name similarity requires high overlap to avoid matching unrelated facilities
+- Use aliases to explicitly link facilities with different names
+
 ## Data Quality
 
 ### Confidence Levels

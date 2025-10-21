@@ -1,0 +1,50 @@
+{
+  "facility_id": "tkm-kentau-plant-fac",
+  "name": "Kentau Plant",
+  "aliases": [],
+  "country_iso3": "TKM",
+  "location": {
+    "lat": 43.534,
+    "lon": 68.516,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "baryte",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Kazakhstan Deep Research Report 2025",
+      "date": "2025-10-21T09:03:08.213659"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T09:03:08.213670",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

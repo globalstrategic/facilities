@@ -20,6 +20,7 @@ import argparse
 import csv
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional
 
@@ -254,23 +255,132 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None) -> in
     return len(facilities)
 
 
+def export_all_to_csv(output_file: Optional[str] = None) -> int:
+    """
+    Export all facilities from all countries to a single Mines.csv file.
+
+    Args:
+        output_file: Output CSV path (defaults to gt/Mines_{timestamp}.csv)
+
+    Returns:
+        Number of facilities exported
+    """
+    base_dir = Path(__file__).parent.parent / "facilities"
+
+    if not base_dir.exists():
+        print(f"Error: Facilities directory not found: {base_dir}")
+        return 0
+
+    # Set output file with timestamp
+    if not output_file:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        gt_dir = Path(__file__).parent.parent / "gt"
+        gt_dir.mkdir(exist_ok=True)
+        output_file = gt_dir / f"Mines_{timestamp}.csv"
+
+    output_path = Path(output_file)
+
+    # Collect all facilities from all country directories
+    all_facilities = []
+    country_counts = {}
+
+    print("Scanning all country directories...")
+
+    for country_dir in sorted(base_dir.iterdir()):
+        if not country_dir.is_dir():
+            continue
+
+        # Try to resolve country name
+        dir_name = country_dir.name
+        iso3 = normalize_country_to_iso3(dir_name)
+
+        if not iso3:
+            print(f"Warning: Could not resolve country for directory '{dir_name}'", file=sys.stderr)
+            country_name = dir_name  # Use directory name as fallback
+        else:
+            country_name = iso3_to_country_name(iso3)
+
+        # Load facilities from this country
+        facility_count = 0
+        for json_file in country_dir.glob("*.json"):
+            try:
+                with open(json_file) as f:
+                    facility = json.load(f)
+                    # Store country name with facility for later use
+                    facility['_export_country_name'] = country_name
+                    all_facilities.append(facility)
+                    facility_count += 1
+            except Exception as e:
+                print(f"Warning: Error loading {json_file}: {e}", file=sys.stderr)
+
+        if facility_count > 0:
+            country_counts[country_name] = facility_count
+            print(f"  {country_name}: {facility_count} facilities")
+
+    if not all_facilities:
+        print("No facilities found in any country directory")
+        return 0
+
+    # Write CSV
+    fieldnames = [
+        "Confidence Factor",
+        "Mine Name",
+        "Companies",
+        "Latitude",
+        "Longitude",
+        "Asset Type",
+        "Country or Region",
+        "Primary Commodity",
+        "Secondary Commodity",
+        "Other Commodities",
+    ]
+
+    print(f"\nWriting to {output_path}...")
+
+    with open(output_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for facility in all_facilities:
+            country_name = facility.pop('_export_country_name', 'Unknown')
+            row = facility_to_csv_row(facility, country_name)
+            writer.writerow(row)
+
+    print(f"\n✓ Exported {len(all_facilities)} facilities from {len(country_counts)} countries to {output_path}")
+    print(f"  File size: {output_path.stat().st_size / 1024:.1f} KB")
+
+    return len(all_facilities)
+
+
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Export facilities from a country to Mines.csv format"
+        description="Export facilities to Mines.csv format"
     )
     parser.add_argument(
         "country",
-        help="Country name or ISO3 code (e.g., 'Algeria' or 'DZA')"
+        nargs="?",
+        help="Country name or ISO3 code (e.g., 'Algeria' or 'DZA'). Omit with --all to export all countries."
     )
     parser.add_argument(
         "-o", "--output",
-        help="Output CSV file (default: {ISO3}_mines.csv)"
+        help="Output CSV file (default: {ISO3}_mines.csv for country, gt/Mines_{timestamp}.csv for --all)"
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Export all facilities from all countries to a timestamped Mines.csv in gt/"
     )
 
     args = parser.parse_args()
 
-    count = export_country_to_csv(args.country, args.output)
+    # Check if --all flag is used
+    if args.all:
+        count = export_all_to_csv(args.output)
+    elif args.country:
+        count = export_country_to_csv(args.country, args.output)
+    else:
+        parser.error("Either provide a country name or use --all flag")
 
     if count == 0:
         sys.exit(1)
