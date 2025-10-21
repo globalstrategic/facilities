@@ -1,0 +1,54 @@
+{
+  "facility_id": "tjk-dzhizhikrutskoye-deposit-fac",
+  "name": "Dzhizhikrutskoye Deposit",
+  "aliases": [],
+  "country_iso3": "TJK",
+  "location": {
+    "lat": 39.1609,
+    "lon": 68.8154,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "antimony",
+      "primary": true
+    },
+    {
+      "metal": "mercury",
+      "primary": false
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Anzob Mining and Processing Plant",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.169810",
+      "evidence": "Extracted from operator column: Anzob Mining and Processing Plant"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.169851"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-21T14:34:23.169853",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

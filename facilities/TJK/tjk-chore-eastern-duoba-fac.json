@@ -1,0 +1,58 @@
+{
+  "facility_id": "tjk-chore-eastern-duoba-fac",
+  "name": "Chore & Eastern Duoba",
+  "aliases": [],
+  "country_iso3": "TJK",
+  "location": {
+    "lat": 39.1609,
+    "lon": 68.8154,
+    "precision": "site"
+  },
+  "types": [
+    "deposits"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    },
+    {
+      "metal": "antimony",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Unknown",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.250226",
+      "evidence": "Extracted from operator column: Unknown"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.250241"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.45,
+    "last_checked": "2025-10-21T14:34:23.250243",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
