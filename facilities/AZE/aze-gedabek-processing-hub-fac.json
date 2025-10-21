@@ -1,0 +1,45 @@
+{
+  "facility_id": "aze-gedabek-processing-hub-fac",
+  "name": "Gedabek Processing Hub",
+  "aliases": [],
+  "country_iso3": "AZE",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T09:23:43.006922"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T09:23:43.006930",
+    "checked_by": "import_pipeline",
+    "notes": "Centralized hub with Agitation Leaching, Flotation, SART, and Heap Leach facilities."
+  }
+}

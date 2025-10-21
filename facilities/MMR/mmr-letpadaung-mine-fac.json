@@ -1,0 +1,63 @@
+{
+  "facility_id": "mmr-letpadaung-mine-fac",
+  "name": "Letpadaung Mine",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown",
+    "description": "Myanmar include the Bawdwin Mine in Shan State"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": true
+    },
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": true
+    }
+  ],
+  "status": "planned",
+  "company_mentions": [
+    {
+      "name": "Myanmar Yang Tse Copper Ltd.",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.6,
+      "first_seen": "2025-10-21T09:24:04.637527",
+      "evidence": "Extracted from text"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "text_extraction",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T09:24:04.637539"
+    }
+  ],
+  "verification": {
+    "status": "llm_suggested",
+    "confidence": 0.65,
+    "last_checked": "2025-10-21T09:24:04.637540",
+    "checked_by": "import_pipeline_text_extraction",
+    "notes": "Sabetaung & Kyisintaung (S&K) Mines: These are older mines within the complex, previously operated by a Canadian firm, Ivanhoe Mines, before its divestment. They are now operated by Myanmar Yang Tse C"
+  }
+}
