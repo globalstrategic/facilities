@@ -776,7 +776,7 @@ def load_existing_facilities(country_dir_name: str) -> Dict[str, Dict]:
 
 
 def check_duplicate(facility_id: str, name: str, lat: Optional[float], lon: Optional[float],
-                   existing: Dict[str, Dict]) -> Optional[str]:
+                   existing: Dict[str, Dict], aliases: List[str] = None) -> Optional[str]:
     """Check if facility already exists. Returns existing ID if duplicate.
 
     Strategy:
@@ -784,8 +784,18 @@ def check_duplicate(facility_id: str, name: str, lat: Optional[float], lon: Opti
     2. Coordinate-based matching (primary - within 0.5 degrees ~55km)
     3. Exact name match
     4. Fuzzy name match (>85% similarity)
-    5. Alias match
+    5. Bidirectional alias match (new name in existing aliases, OR existing name/aliases in new aliases)
+
+    Args:
+        facility_id: ID of new facility
+        name: Name of new facility
+        lat: Latitude of new facility
+        lon: Longitude of new facility
+        existing: Dict of existing facilities
+        aliases: List of aliases for new facility (for bidirectional checking)
     """
+    if aliases is None:
+        aliases = []
     from difflib import SequenceMatcher
 
     # Exact ID match
@@ -858,10 +868,28 @@ def check_duplicate(facility_id: str, name: str, lat: Optional[float], lon: Opti
                        f"(similarity: {name_similarity:.2f}, word_overlap: {word_overlap:.2f})")
             return existing_id
 
-    # PRIORITY 4: Alias match
+    # PRIORITY 4: Bidirectional Alias match
+    # Check if new facility name or aliases match existing facility names or aliases
+    aliases_lower = [a.lower() for a in aliases]
+
     for existing_id, existing_fac in existing.items():
-        if name_lower in [a.lower() for a in existing_fac.get('aliases', [])]:
-            logger.debug(f"Alias match: '{name}' in aliases of '{existing_fac['name']}'")
+        existing_name_lower = existing_fac['name'].lower()
+        existing_aliases_lower = [a.lower() for a in existing_fac.get('aliases', [])]
+
+        # Case 1: New facility name matches existing facility's alias
+        if name_lower in existing_aliases_lower:
+            logger.debug(f"Alias match: new name '{name}' found in aliases of '{existing_fac['name']}'")
+            return existing_id
+
+        # Case 2: New facility alias matches existing facility's name
+        if existing_name_lower in aliases_lower:
+            logger.debug(f"Alias match: existing name '{existing_fac['name']}' found in new aliases {aliases}")
+            return existing_id
+
+        # Case 3: New facility alias matches existing facility's alias
+        matching_aliases = set(aliases_lower) & set(existing_aliases_lower)
+        if matching_aliases:
+            logger.debug(f"Alias match: shared aliases {matching_aliases} between '{name}' and '{existing_fac['name']}'")
             return existing_id
 
     return None
@@ -1077,10 +1105,37 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                     row[norm_header] = value
 
             try:
-                # Extract name
-                name = row.get('name', '').strip()
-                if not name or name == '-':
+                # Extract name and aliases from parentheticals
+                raw_name = row.get('name', '').strip()
+                if not raw_name or raw_name == '-':
                     continue
+
+                # Extract parenthetical aliases (e.g., "Bakuta (Boguty)" -> name="Bakuta", aliases=["Boguty"])
+                # But skip if parenthetical is clearly not an alias (Gov't, Ltd, dates, etc.)
+                import re
+                parenthetical_aliases = []
+                name = raw_name
+
+                # Match parentheticals like (Boguty), (Osukuru), etc.
+                parenthetical_pattern = r'\s*\(([^)]+)\)\s*'
+                matches = re.findall(parenthetical_pattern, raw_name)
+
+                for match in matches:
+                    # Skip if it's a company suffix, government marker, or date
+                    skip_patterns = [
+                        r'\b(ltd|llc|inc|corp|plc|gmbh|ag|sa|llp|jv)\b',  # Company suffixes
+                        r"\bgov[\'']?t\b",  # Government
+                        r'\d{4}',  # Years
+                        r'\bredevelopment\b|\bcare\b|\bmaintenance\b',  # Status markers
+                    ]
+
+                    if not any(re.search(p, match, re.IGNORECASE) for p in skip_patterns):
+                        # This looks like a real alias
+                        parenthetical_aliases.append(match.strip())
+
+                # Remove parentheticals from name
+                name = re.sub(parenthetical_pattern, ' ', raw_name).strip()
+                name = re.sub(r'\s+', ' ', name)  # Normalize whitespace
 
                 # Handle per-row country (for Mines.csv with "Country or Region" column)
                 row_country_iso3 = country_iso3  # default from function parameter
@@ -1130,6 +1185,36 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 except (ValueError, AttributeError):
                     pass
 
+                # Parse aliases BEFORE duplicate check (needed for bidirectional matching)
+                group_names_str = row.get('group_names', '').strip()
+                aliases_from_synonyms = row.get('synonyms', '').strip()
+                alternative_names_str = row.get('Alternative Names / Group', '').strip()
+
+                # Build initial aliases list (before duplicate check)
+                aliases = []
+
+                # Add parenthetical aliases extracted from name
+                aliases.extend(parenthetical_aliases)
+
+                # Parse Group Names for aliases (Mines.csv specific)
+                if group_names_str and group_names_str != '-':
+                    group_aliases, _ = parse_group_names(group_names_str, source_name)
+                    aliases.extend(group_aliases)
+
+                # Parse synonyms
+                if aliases_from_synonyms and aliases_from_synonyms != '-':
+                    aliases.extend([a.strip() for a in aliases_from_synonyms.split(',') if a.strip()])
+
+                # Parse Alternative Names column (semicolon or comma-separated)
+                if alternative_names_str and alternative_names_str != '-':
+                    alt_names = re.split(r'[;,]', alternative_names_str)
+                    for alt in alt_names:
+                        alt = alt.strip()
+                        if alt and alt != '-':
+                            # Skip if it looks like a company name
+                            if not re.search(r'\b(Ltd|LLC|Inc|Corp|PLC|GmbH|AG|S\.A\.|Company|Group)\b', alt, re.IGNORECASE):
+                                aliases.append(alt)
+
                 # Load existing facilities for this country if needed
                 if row.get('country') and row_country_dir != country_dir:
                     # Load existing for this country
@@ -1137,8 +1222,8 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 else:
                     row_existing = existing
 
-                # Check for duplicate (standard check - facility matcher moved to entityidentity)
-                existing_id = check_duplicate(facility_id, name, lat, lon, row_existing)
+                # Check for duplicate WITH aliases for bidirectional matching
+                existing_id = check_duplicate(facility_id, name, lat, lon, row_existing, aliases)
                 if existing_id:
                     logger.info(f"  Duplicate: '{name}' already exists as {existing_id}")
                     duplicates.append({
@@ -1158,18 +1243,13 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
 
                 status = parse_status(row.get('status', ''))
 
-                # Parse aliases and company mentions from Group Names (Mines.csv specific)
-                group_names_str = row.get('group_names', '').strip()
-                aliases_from_synonyms = row.get('synonyms', '').strip()
+                # Parse company mentions
                 operator_str = row.get('operator', '').strip()
-
-                # Combine aliases from both sources
-                aliases = []
                 company_mentions = []
 
+                # Re-parse Group Names for company mentions (aliases already extracted above)
                 if group_names_str and group_names_str != '-':
-                    group_aliases, group_companies = parse_group_names(group_names_str, source_name)
-                    aliases.extend(group_aliases)
+                    _, group_companies = parse_group_names(group_names_str, source_name)
                     company_mentions.extend(group_companies)
 
                 # Extract company mentions from operator column (Uganda table format)
@@ -1189,8 +1269,7 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                                 "evidence": f"Extracted from operator column: {operator_str}"
                             })
 
-                if aliases_from_synonyms and aliases_from_synonyms != '-':
-                    aliases.extend([a.strip() for a in aliases_from_synonyms.split(',') if a.strip()])
+                # Aliases were already parsed before duplicate check - no need to parse again
 
                 notes = row.get('notes', '').strip()
                 if notes and notes != '-':
