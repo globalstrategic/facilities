@@ -1,0 +1,1038 @@
+# Facilities Database
+
+**Global mining and processing facilities database** - 8,455 facilities across 129 countries
+
+**Version**: 2.0.1 (Deduplication Complete)
+**Last Updated**: 2025-10-21
+**Package Name**: `talloy`
+
+---
+
+## Table of Contents
+
+1. [Quick Start](#quick-start)
+2. [Architecture](#architecture)
+3. [Data Model](#data-model)
+4. [EntityIdentity Integration](#entityidentity-integration)
+5. [Import Workflows](#import-workflows)
+6. [Deduplication](#deduplication)
+7. [Company Resolution](#company-resolution)
+8. [Deep Research Integration](#deep-research-integration)
+9. [Querying Facilities](#querying-facilities)
+10. [Schema Reference](#schema-reference)
+11. [CLI Commands](#cli-commands)
+12. [Data Quality](#data-quality)
+13. [Statistics](#statistics)
+14. [Troubleshooting](#troubleshooting)
+15. [Version History](#version-history)
+
+---
+
+## Quick Start
+
+```bash
+# View database status
+python scripts/facilities.py sync --status
+
+# Test entity resolution
+python scripts/facilities.py resolve country "Algeria"
+python scripts/facilities.py resolve metal "Cu"
+python scripts/facilities.py resolve company "BHP"
+
+# Import facilities with entity resolution
+python scripts/import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
+
+# Clean up duplicates
+python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/deduplicate_facilities.py --country ZAF
+
+# Export to parquet format
+python scripts/facilities.py sync --export
+```
+
+---
+
+## Architecture
+
+```
+facilities/
+├── facilities/                   # 8,455 facility JSONs by ISO3 country
+│   ├── USA/ (1,623 facilities)
+│   ├── CHN/ (1,837 facilities)
+│   ├── ZAF/ (628 facilities - deduplicated)
+│   ├── AUS/ (578 facilities)
+│   └── ... (125 more countries)
+│
+├── scripts/
+│   ├── facilities.py                    # Unified CLI with subcommands
+│   ├── import_from_report.py            # Main import pipeline (with entity resolution)
+│   ├── deduplicate_facilities.py        # Batch deduplication utility
+│   ├── enrich_companies.py              # Phase 2: Company enrichment
+│   ├── deep_research_integration.py     # Gemini Deep Research integration
+│   │
+│   ├── utils/                           # Entity resolution utilities
+│   │   ├── company_resolver.py          # CompanyResolver with quality gates
+│   │   ├── deduplication.py             # Shared deduplication logic
+│   │   ├── id_utils.py                  # Canonical ID mapping
+│   │   ├── paths.py                     # Shared path configuration
+│   │   ├── country_utils.py             # Country code normalization
+│   │   ├── ownership_parser.py          # Parse ownership percentages
+│   │   └── facility_sync.py             # Parquet export/import
+│   │
+│   └── tests/                           # Comprehensive test suite
+│
+├── schemas/
+│   └── facility.schema.json             # JSON Schema v2.0.0
+│
+├── tables/                              # Parquet output (Phase 2)
+│   └── facilities/
+│       └── facility_company_relationships.parquet
+│
+├── config/
+│   ├── gate_config.json                 # Quality gate thresholds
+│   └── company_aliases.json             # Canonical company ID mappings
+│
+└── output/                              # Generated outputs (gitignored)
+    ├── import_logs/                     # Import reports with statistics
+    ├── research_raw/                    # Gemini Deep Research outputs
+    └── entityidentity_export/           # Parquet exports
+```
+
+---
+
+## Data Model
+
+### Facility JSON Structure (Schema v2.0.0)
+
+```json
+{
+  "facility_id": "zaf-rustenburg-karee-fac",
+  "name": "Karee Mine",
+  "aliases": ["Karee", "Rustenburg Karee"],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -25.666,
+    "lon": 27.202,
+    "precision": "site"
+  },
+  "types": ["mine", "concentrator"],
+  "commodities": [
+    {
+      "metal": "platinum",
+      "primary": true,
+      "chemical_formula": "Pt",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Sibanye-Stillwater",
+      "role": "operator",
+      "confidence": 0.85,
+      "source": "gemini_research"
+    }
+  ],
+  "owner_links": [],
+  "operator_link": null,
+  "products": [],
+  "sources": [
+    {
+      "type": "gemini_research",
+      "id": "South Africa Platinum Study 2025",
+      "date": "2025-10-14T00:00:00"
+    }
+  ],
+  "verification": {
+    "status": "llm_suggested",
+    "confidence": 0.75,
+    "last_checked": "2025-10-14T10:00:00",
+    "checked_by": "import_pipeline",
+    "notes": "Enhanced with company resolution"
+  }
+}
+```
+
+### Key Schema Features
+
+**Facility Identification:**
+- `facility_id`: Pattern `{iso3}-{slug}-fac` (e.g., `usa-stillwater-east-fac`)
+- `name`: Primary facility name
+- `aliases`: Alternative names and variations
+- `country_iso3`: ISO3 country code (e.g., "USA", "ZAF", "DZA")
+
+**Location:**
+- `lat`, `lon`: Geographic coordinates
+- `precision`: "exact", "site", "approximate", "region"
+
+**Commodities (Enhanced in v2.0):**
+- `metal`: Normalized metal name
+- `primary`: Boolean indicating primary commodity
+- `chemical_formula`: Chemical formula (e.g., "Cu", "Fe2O3") - NEW in v2.0
+- `category`: Metal classification - NEW in v2.0
+  - `base_metal`, `precious_metal`, `rare_earth`, `industrial_mineral`, `energy`, `construction`, `fertilizer`
+
+**Company Data (Two-Phase Resolution):**
+- **Phase 1**: `company_mentions[]` - Raw company mentions from sources
+- **Phase 2**: `owner_links[]`, `operator_link` - Resolved canonical company IDs
+
+**Verification:**
+- `status`: `csv_imported`, `llm_suggested`, `llm_verified`, `human_verified`, `conflicting`
+- `confidence`: 0.0-1.0 score
+- `last_checked`: ISO timestamp
+- `checked_by`: Source of verification
+- `notes`: Additional context or merge history
+
+---
+
+## EntityIdentity Integration
+
+The system leverages the **entityidentity library** for comprehensive entity resolution.
+
+### 1. Country Resolution
+
+Auto-detect and normalize country codes:
+
+```python
+from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
+
+iso3 = normalize_country_to_iso3("Algeria")  # → "DZA"
+name = iso3_to_country_name("DZA")          # → "Algeria"
+```
+
+**CLI Usage:**
+```bash
+python scripts/facilities.py resolve country "Algeria"
+# Result: DZ / DZA / People's Democratic Republic of Algeria
+```
+
+### 2. Metal Normalization
+
+Standardize commodity names with chemical formulas:
+
+```python
+from entityidentity import metal_identifier
+
+result = metal_identifier("Cu")
+# Returns: {
+#   "name": "Copper",
+#   "symbol": "Cu",
+#   "category": "base_metal"
+# }
+```
+
+**CLI Usage:**
+```bash
+python scripts/facilities.py resolve metal "Cu"
+python scripts/facilities.py resolve metal "lithium carbonate"
+```
+
+**Coverage**: 95%+ of common metals, alloys, and compounds
+
+### 3. Company Resolution (Two-Phase Architecture)
+
+**Phase 1: Extraction** (import_from_report.py)
+- Extract company mentions from source data
+- Store in `company_mentions[]` array with role, source, confidence
+- Does NOT resolve to canonical IDs yet
+
+**Phase 2: Resolution** (enrich_companies.py)
+- Batch process all facilities with `company_mentions`
+- Use `CompanyResolver` with quality gates (strict/moderate/permissive profiles)
+- Write resolved relationships to `facility_company_relationships.parquet`
+
+```python
+from scripts.utils.company_resolver import CompanyResolver
+
+resolver = CompanyResolver.from_config("config/gate_config.json", profile="strict")
+
+# Batch resolve mentions
+mentions = [
+    {"name": "BHP", "role": "operator", "lei": None},
+    {"name": "Rio Tinto", "role": "owner", "percentage": 60.0}
+]
+
+accepted, review, pending = resolver.resolve_mentions(mentions, facility=facility_dict)
+```
+
+**Database**: 3,687+ companies with LEI codes and Wikidata links
+
+**Quality Gates:**
+- `auto_accept`: High confidence (≥0.80), write immediately
+- `review`: Medium confidence (0.60-0.80), needs human review
+- `pending`: No match found, track for later
+
+### 4. Facility Synchronization
+
+Export/import parquet format for EntityIdentity integration:
+
+```bash
+# Export all facilities
+python scripts/facilities.py sync --export
+
+# Import from EntityIdentity
+python scripts/facilities.py sync --import facilities.parquet
+
+# Check database status
+python scripts/facilities.py sync --status
+```
+
+---
+
+## Import Workflows
+
+### Standard Import (with automatic entity resolution)
+
+```bash
+# Import from text report
+python scripts/import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
+
+# Auto-detect country from filename
+python scripts/import_from_report.py albania.txt
+
+# Multi-country CSV (per-row detection)
+python scripts/import_from_report.py Mines.csv --source "Mines Database"
+
+# From stdin
+cat report.txt | python scripts/import_from_report.py --country DZ
+```
+
+**Features:**
+- Automatic duplicate prevention (4-priority matching)
+- Metal normalization with chemical formulas
+- Company mention extraction (Phase 1)
+- Per-row country detection for multi-country CSVs
+- Confidence boosting for resolved entities
+
+**Import Statistics:**
+```
+IMPORT COMPLETE
+============================================================
+Country: DZ
+Source: Algeria Report 2025
+New facilities: 42
+Duplicates skipped: 3
+Files written: 42
+
+Entity Resolution Stats:
+  Metals with formulas: 84 (100%)
+  Companies mentioned: 28
+  Confidence boosts: 28
+============================================================
+```
+
+### Import Pipeline Flow
+
+```
+TEXT INPUT (markdown tables, CSV, stdin)
+  ↓
+TABLE EXTRACTION (extract_markdown_tables)
+  ↓
+ENTITY RESOLUTION (automatic)
+  ├─ Country auto-detection
+  ├─ Metal normalization with formulas
+  └─ Company mention extraction (Phase 1, NOT resolution yet)
+  ↓
+FACILITY CREATION
+  ↓
+DUPLICATE DETECTION (4-priority matching)
+  ↓
+VALIDATION (schema validation, confidence scoring)
+  ↓
+OUTPUT
+  ├─ Facility JSON files
+  ├─ Import log with statistics
+  └─ company_mentions ready for Phase 2 enrichment
+```
+
+---
+
+## Deduplication
+
+The system includes both **automatic duplicate prevention** (during import) and **manual batch cleanup** (for existing data).
+
+### Automatic Duplicate Prevention (Import Time)
+
+**Built into import pipeline** - Runs automatically on every import
+
+The import pipeline automatically detects duplicates using a **4-priority matching strategy**:
+
+#### Priority 1: Coordinate-Based Matching (Primary)
+
+**Two-tier system for precision:**
+
+- **Tier 1**: Very close coordinates (0.01° ~1km)
+  - Requires: Name similarity >60% OR shorter name contained in longer name
+  - Use case: Exact same location with slight name variations
+  - Example: "Two Rivers" vs "Two Rivers Platinum Mine" at identical coords
+
+- **Tier 2**: Close coordinates (0.1° ~11km)
+  - Requires: Name similarity >85% OR shorter name contained in longer name
+  - Use case: Nearly identical mines with very similar names
+  - Prevents false positives from nearby but distinct facilities
+
+#### Priority 2: Exact Name Match
+- Case-insensitive exact name matching
+- Coordinates checked if available for confirmation
+
+#### Priority 3: Fuzzy Name Match
+- Name similarity >85% OR word overlap >80%
+- Catches variations like "Two Rivers Mine" vs "Two Rivers Platinum Mine"
+
+**Word overlap calculation:**
+```python
+words1 = set(name_lower.split())
+words2 = set(existing_name_lower.split())
+word_overlap = len(words1 & words2) / min(len(words1), len(words2))
+
+# Match if high similarity OR high word overlap
+if name_similarity > 0.85 or word_overlap > 0.8:
+    # Duplicate detected
+```
+
+#### Priority 4: Alias Match
+- Checks if name appears in existing facility's aliases
+
+**Example Detection:**
+```
+Input: "Two Rivers Platinum Mine" at (-24.893, 30.124)
+Existing: "Two Rivers" at (-24.893, 30.124)
+
+✓ Tier 1 match: Exact coords + "Two Rivers" contained in "Two Rivers Platinum Mine"
+→ Duplicate detected, import skipped
+```
+
+### Manual Batch Cleanup (Existing Duplicates)
+
+**Standalone utility script** - For one-time or periodic cleanup
+
+**When to use**: After upgrading to improved detection, or periodically to catch edge cases.
+
+```bash
+# ALWAYS run dry-run first to preview changes
+python scripts/deduplicate_facilities.py --country ZAF --dry-run
+
+# Clean up duplicates in South Africa
+python scripts/deduplicate_facilities.py --country ZAF
+
+# Clean up all countries (use with caution)
+python scripts/deduplicate_facilities.py --all
+```
+
+**What the script does:**
+
+1. **Identifies duplicate groups** using same 4-priority logic as import
+2. **Scores facilities** by data completeness:
+   - Coordinates (+10 points)
+   - Commodities (+2 per commodity)
+   - Company mentions (+3 per mention)
+   - Products (+2 per product)
+   - Aliases (+1 per alias)
+   - Known status vs "unknown" (+5)
+   - Higher verification confidence (+10)
+   - Verification status (human_verified +20, csv_imported +10, llm_verified +5)
+
+3. **Merges data** from duplicates into best facility:
+   - Combines aliases (duplicate names become aliases)
+   - Merges sources (tracks all import origins)
+   - Consolidates commodities (prefers entries with chemical formulas)
+   - Combines company mentions (keeps highest confidence per company)
+   - Adds merge notes to verification
+
+4. **Deletes** inferior duplicate files
+
+**Example Output:**
+```
+=== Deduplication LIVE MODE ===
+
+Processing ZAF...
+  Loaded 779 facilities
+  Found 147 duplicate groups
+
+  Group 1 (2 facilities):
+    [38.0] zaf-two-rivers-platinum-mine-fac: Two Rivers Platinum Mine
+    [32.0] zaf-two-rivers-fac: Two Rivers
+    → Keeping: zaf-two-rivers-platinum-mine-fac
+    → Deleted: zaf-two-rivers-fac
+
+  Group 2 (2 facilities):
+    [32.0] zaf-new-denmark-fac: New Denmark
+    [30.0] zaf-new-denmark-colliery-fac: New Denmark Colliery
+    → Keeping: zaf-new-denmark-fac
+    → Deleted: zaf-new-denmark-colliery-fac
+
+=== SUMMARY ===
+ZAF: 147 groups, 151 removed, 147 kept
+
+Total: 147 duplicate groups, 151 facilities removed
+```
+
+**Real-world results (South Africa case study):**
+- **Before**: 779 facilities (168 coordinate-based duplicate pairs)
+- **After**: 628 facilities
+- **Removed**: 151 duplicates (19.4% reduction)
+
+**Merged Facility Example:**
+```json
+{
+  "facility_id": "zaf-two-rivers-platinum-mine-fac",
+  "name": "Two Rivers Platinum Mine",
+  "aliases": [
+    "Two Rivers",
+    "Two Rivers Mine",
+    "Tweefontein"
+  ],
+  "sources": [
+    {"type": "csv_import", "id": "Research Import ZAF 2025-10-20"},
+    {"type": "csv_import", "id": "Mines.csv Run 1"},
+    {"type": "text_extraction", "id": "Research Import ZAF 2025-10-20"}
+  ],
+  "verification": {
+    "notes": "Merged from: zaf-two-rivers-fac, zaf-two-rivers-mine-fac"
+  }
+}
+```
+
+### Best Practices
+
+**When importing new data:**
+- Always review import logs for duplicate detection statistics
+- Check `duplicates_skipped` count in import summary
+- Verify duplicates are legitimate (not distinct nearby facilities)
+
+**When running deduplication:**
+- **Always** run with `--dry-run` first to preview changes
+- Review duplicate groups to ensure correct merging
+- Check facility scores to verify best facility selection
+- Consider country-by-country deduplication for large databases
+
+**Avoiding false positives:**
+- Coordinate thresholds are tuned for mining facilities (~1-11km)
+- Name similarity requires high overlap to avoid matching unrelated facilities
+- Use aliases to explicitly link facilities with different names
+
+---
+
+## Company Resolution
+
+### Phase 1: Company Mention Extraction (During Import)
+
+Company mentions are automatically extracted during import and stored in the `company_mentions[]` array:
+
+```json
+{
+  "company_mentions": [
+    {
+      "name": "BHP",
+      "role": "operator",
+      "confidence": 0.85,
+      "source": "csv_import"
+    },
+    {
+      "name": "Rio Tinto",
+      "role": "owner",
+      "percentage": 60.0,
+      "confidence": 0.90,
+      "source": "gemini_research"
+    }
+  ]
+}
+```
+
+**Roles:**
+- `operator`: Company operating the facility
+- `owner`: Company with ownership stake
+- `majority_owner`: Owner with >50% stake
+- `minority_owner`: Owner with <50% stake
+
+### Phase 2: Batch Company Resolution
+
+Resolve company mentions to canonical IDs using `CompanyResolver`:
+
+```bash
+# Enrich all facilities with company links
+python scripts/enrich_companies.py
+
+# Enrich specific country
+python scripts/enrich_companies.py --country IND
+
+# Preview without saving
+python scripts/enrich_companies.py --dry-run
+
+# Set confidence threshold
+python scripts/enrich_companies.py --min-confidence 0.75
+```
+
+**What happens:**
+1. Extracts company mentions from facilities
+2. Batch resolves using `CompanyResolver` with quality gates
+3. Writes relationships to `tables/facilities/facility_company_relationships.parquet`
+4. Does NOT modify facility JSONs (Phase 2 design)
+
+**Output: facility_company_relationships.parquet**
+
+```python
+import pandas as pd
+
+df = pd.read_parquet("tables/facilities/facility_company_relationships.parquet")
+
+# Columns:
+# - relationship_id: Unique UUID
+# - facility_id: Links to facility JSON
+# - company_id: Canonical company ID
+# - role: operator, owner, majority_owner, minority_owner
+# - confidence: 0.0-1.0 score
+# - gate: auto_accept, review, pending
+# - provenance: Source of the mention
+# - evidence: Supporting evidence text
+# - gates_applied: Dict with penalties applied
+```
+
+**Quality Gates:**
+
+Configured in `config/gate_config.json`:
+
+- **strict**: High precision, lower recall (min_confidence 0.80)
+- **moderate**: Balanced (min_confidence 0.70)
+- **permissive**: High recall, lower precision (min_confidence 0.60)
+
+**Penalties applied:**
+- Country mismatch: -0.15
+- No registry ID (LEI/Wikidata): -0.10
+- Name length difference >20 chars: -0.10
+
+---
+
+## Deep Research Integration
+
+Enrich facilities using Gemini Deep Research or other LLM-based research tools.
+
+### Workflow
+
+#### 1. Generate Research Prompt
+
+```bash
+python scripts/deep_research_integration.py \
+    --generate-prompt \
+    --country ZAF \
+    --metal platinum \
+    --limit 50
+
+# Output: output/research_prompts/prompt_platinum_ZAF_[timestamp].txt
+```
+
+#### 2. Submit to Gemini Deep Research
+
+Copy the generated prompt and submit to Gemini Deep Research. Request JSON output.
+
+#### 3. Process Research Results
+
+```bash
+# Process single research output
+python scripts/deep_research_integration.py \
+    --process research_output.json \
+    --country ZAF \
+    --metal platinum
+
+# Process batch results (JSONL)
+python scripts/deep_research_integration.py \
+    --batch research_batch.jsonl
+```
+
+### Research Data Format
+
+```json
+[
+  {
+    "facility_id": "zaf-rustenburg-karee-fac",
+    "name": "Karee Mine",
+    "status": "operating",
+    "owners": [
+      {
+        "name": "Impala Platinum Holdings",
+        "percentage": 74.0,
+        "role": "owner",
+        "confidence": 0.95
+      }
+    ],
+    "operator": {
+      "name": "Impala Platinum",
+      "confidence": 0.95
+    },
+    "products": [
+      {
+        "stream": "PGM concentrate",
+        "capacity": 250000,
+        "unit": "oz 6E",
+        "year": 2024
+      }
+    ],
+    "sources": [
+      {
+        "type": "web",
+        "url": "https://www.implats.co.za/operations",
+        "date": "2024-10-01"
+      }
+    ],
+    "confidence": 0.9,
+    "notes": "Part of Impala Rustenburg complex"
+  }
+]
+```
+
+### Features
+
+- **Company resolution**: Automatically resolves company names to canonical IDs
+- **Data preservation**: Original facility data backed up before updates
+- **Audit trail**: All raw research outputs saved in `output/research_raw/`
+- **Verification updates**: Confidence scores calculated based on source quality
+
+---
+
+## Querying Facilities
+
+### By Country
+
+```python
+import json
+from pathlib import Path
+
+# Load all facilities in South Africa
+for facility_file in Path('facilities/ZAF').glob('*.json'):
+    with open(facility_file) as f:
+        facility = json.load(f)
+        print(f"{facility['name']}: {facility['status']}")
+```
+
+### By Metal
+
+```python
+def find_facilities_by_metal(metal_name):
+    facilities = []
+    for facility_file in Path('facilities').glob('**/*.json'):
+        with open(facility_file) as f:
+            facility = json.load(f)
+            for commodity in facility.get('commodities', []):
+                if commodity['metal'].lower() == metal_name.lower():
+                    facilities.append(facility)
+                    break
+    return facilities
+
+platinum_facilities = find_facilities_by_metal("platinum")
+print(f"Found {len(platinum_facilities)} platinum facilities")
+```
+
+### By Company (Phase 2 - requires parquet relationships)
+
+```python
+import pandas as pd
+
+# Load relationships
+df = pd.read_parquet("tables/facilities/facility_company_relationships.parquet")
+
+# Find all BHP facilities
+bhp_facilities = df[df['company_id'] == 'cmp-549300HX3DJC74TG4332']
+
+# Get facility details
+for _, rel in bhp_facilities.iterrows():
+    facility_file = Path(f"facilities/{rel['facility_id'].split('-')[0].upper()}/{rel['facility_id']}.json")
+    with open(facility_file) as f:
+        facility = json.load(f)
+        print(f"{facility['name']}: {rel['role']}")
+```
+
+---
+
+## Schema Reference
+
+### Full Schema v2.0.0
+
+See `schemas/facility.schema.json` for complete JSON Schema validation rules.
+
+**Required Fields:**
+- `facility_id` (pattern: `^[a-z]{3}-[a-z0-9-]+-fac$`)
+- `name`
+- `country_iso3` (pattern: `^[A-Z]{3}$`)
+- `location` (with lat/lon or null)
+- `types` (array, non-empty)
+- `commodities` (array)
+- `status` (enum)
+- `sources` (array, non-empty)
+- `verification` (object with required status, confidence, last_checked, checked_by)
+
+**Optional Fields (v2.0+):**
+- `ei_facility_id`: EntityIdentity facility ID
+- `chemical_formula`: In commodities (pattern: `^[A-Z][a-z]?[0-9]*([A-Z][a-z]?[0-9]*)*$`)
+- `category`: In commodities (enum of metal categories)
+- `company_mentions`: Array of raw company mentions (Phase 1)
+- `owner_links`, `operator_link`: Resolved company links (Phase 2)
+
+**Validation:**
+```bash
+# Validate all facilities
+pytest scripts/tests/test_schema.py -v
+
+# Validate single facility
+python -c "
+import json
+import jsonschema
+
+with open('schemas/facility.schema.json') as f:
+    schema = json.load(f)
+
+with open('facilities/USA/usa-stillwater-east-fac.json') as f:
+    facility = json.load(f)
+
+jsonschema.validate(facility, schema)
+print('✓ Valid')
+"
+```
+
+---
+
+## CLI Commands
+
+### Import Commands
+
+```bash
+# Standard import
+python scripts/import_from_report.py report.txt --country DZ
+
+# With custom source
+python scripts/import_from_report.py report.txt --country AFG --source "Afghanistan Minerals Report 2025"
+
+# Auto-detect country
+python scripts/import_from_report.py albania.txt
+```
+
+### Deduplication Commands
+
+```bash
+# Preview duplicates (dry run)
+python scripts/deduplicate_facilities.py --country ZAF --dry-run
+
+# Clean up duplicates
+python scripts/deduplicate_facilities.py --country ZAF
+
+# All countries
+python scripts/deduplicate_facilities.py --all
+```
+
+### Company Enrichment Commands
+
+```bash
+# Enrich all facilities
+python scripts/enrich_companies.py
+
+# Specific country
+python scripts/enrich_companies.py --country IND
+
+# Dry run
+python scripts/enrich_companies.py --dry-run
+```
+
+### Sync Commands
+
+```bash
+# Export to parquet
+python scripts/facilities.py sync --export
+python scripts/facilities.py sync --export --output /custom/path
+
+# Import from parquet
+python scripts/facilities.py sync --import facilities.parquet
+
+# Database status
+python scripts/facilities.py sync --status
+```
+
+### Resolve Commands
+
+```bash
+# Test country resolution
+python scripts/facilities.py resolve country "Algeria"
+
+# Test metal normalization
+python scripts/facilities.py resolve metal "Cu"
+
+# Test company resolution
+python scripts/facilities.py resolve company "BHP"
+```
+
+### Research Commands
+
+```bash
+# Generate research prompt
+python scripts/facilities.py research --generate-prompt --country ZAF --metal platinum
+
+# Process research results
+python scripts/facilities.py research --process output.json --country ZAF
+```
+
+### Test Commands
+
+```bash
+# Run all tests
+python scripts/facilities.py test
+
+# Run specific test suite
+python scripts/facilities.py test --suite dedup
+```
+
+---
+
+## Data Quality
+
+### Confidence Levels
+
+- **0.95**: Very High - Human verified with multiple sources
+- **0.85**: High - EntityIdentity match or reliable source
+- **0.75**: Moderate-High - LLM research with entity resolution
+- **0.65**: Moderate - CSV import with good data quality
+- **0.40**: Low - Partial data or uncertain matching
+- **0.20**: Very Low - Minimal data, needs research
+
+### Verification Status
+
+- `csv_imported`: Initial import from source data
+- `llm_suggested`: Enhanced by AI research (Gemini/GPT)
+- `llm_verified`: Cross-referenced by multiple LLM sources
+- `human_verified`: Manually reviewed and confirmed
+- `conflicting`: Contradictory information found
+
+### Confidence Boosting
+
+Enhanced import automatically boosts confidence when:
+- Company operator is successfully resolved: +0.10
+- Multiple commodities with chemical formulas: +0.05
+- Coordinates with site-level precision: +0.05
+
+### Data Quality Checks
+
+```bash
+# Find facilities without status
+grep -r '"status": "unknown"' facilities/
+
+# Count facilities by status
+for status in operating closed suspended; do
+  echo "$status: $(grep -r "\"status\": \"$status\"" facilities | wc -l)"
+done
+
+# Find facilities without coordinates
+grep -r '"lat": null' facilities/ | wc -l
+
+# Check facilities with low confidence
+find facilities -name "*.json" -exec grep -l '"confidence": 0\.[0-4]' {} \;
+```
+
+---
+
+## Statistics
+
+**Current Database (2025-10-21):**
+- **Total Facilities**: ~8,455 (after ZAF deduplication)
+- **Countries**: 129 (ISO3 codes)
+- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (578), IDN (461), IND (424)
+- **Metals/Commodities**: 50+ types
+- **With Coordinates**: 99.3% (8,400+ facilities)
+- **Operating Facilities**: ~45%
+- **Average Confidence**: 0.641
+
+**Growth:**
+- **2025-10-10**: 8,500 facilities (v1.0.0)
+- **2025-10-20**: 8,606 facilities (v2.0.0)
+- **2025-10-21**: 8,455 facilities (v2.0.1 - post deduplication)
+
+**Deduplication Impact:**
+- South Africa: 779 → 628 facilities (151 removed, 19.4% reduction)
+- 147 duplicate groups resolved
+- Full data preservation via merging
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+1. **EntityIdentity not found**
+   ```bash
+   # Ensure entityidentity is in PYTHONPATH
+   export PYTHONPATH="/Users/willb/Github/GSMC/entityidentity:$PYTHONPATH"
+
+   # Or install it
+   pip install git+https://github.com/microprediction/entityidentity.git
+   ```
+
+2. **Country not resolved**
+   - Use `resolve country` command to test
+   - Check that country name is spelled correctly
+   - Try ISO2 or ISO3 code directly
+
+3. **Company resolution failed**
+   - Company may not be in EntityIdentity database (3,687 companies)
+   - Try variations of company name
+   - Check if company has LEI code
+   - Add to manual mappings if needed
+
+4. **Duplicate facilities not detected**
+   - Check if coordinates are within thresholds (0.01° or 0.1°)
+   - Verify name similarity meets requirements (>60% or >85%)
+   - Ensure word overlap is sufficient (>80%)
+   - Run deduplication script with --dry-run to preview
+
+5. **Schema validation fails**
+   - Check that all required fields are present
+   - Verify `chemical_formula` pattern (if provided)
+   - Verify `category` enum values
+   - Run: `pytest scripts/tests/test_schema.py`
+
+6. **Import hangs or is slow**
+   - EntityIdentity loads ~50MB parquet on first use
+   - Company resolution caches results (subsequent imports faster)
+   - Disable entity resolution if speed is critical
+
+---
+
+## Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for complete version history.
+
+### Recent Releases
+
+**v2.0.1 (2025-10-21): Deduplication System**
+- Comprehensive duplicate detection and cleanup
+- 4-priority matching strategy (coordinate-based, exact name, fuzzy name, alias)
+- Two-tier coordinate matching (0.01°/0.1° thresholds)
+- Word overlap matching (80% threshold)
+- Facility scoring system for intelligent merge selection
+- Full data preservation during merge
+- South Africa cleaned: 779 → 628 facilities (19.4% reduction)
+
+**v2.0.0 (2025-10-20): EntityIdentity Integration**
+- Company resolution with quality gates
+- Metal normalization with chemical formulas
+- Country auto-detection
+- Facility matching with multi-strategy duplicate detection
+- Two-phase company resolution pattern
+- Schema v2.0.0 with new fields
+
+**v1.0.0 (2025-10-10): Initial Release**
+- 8,500+ facilities across 129 countries
+- JSON-based storage structure
+- CSV import pipeline
+- Basic duplicate detection
+- Facility schema v1.0.0
+
+---
+
+## Support
+
+For questions or issues:
+1. Check this README for comprehensive documentation
+2. Review [CLAUDE.md](CLAUDE.md) for developer guidance
+3. Check [CHANGELOG.md](CHANGELOG.md) for recent changes
+4. Review facility schema: `schemas/facility.schema.json`
+5. Check import logs in `output/import_logs/`
+
+---
+
+**Database Status**: Production-ready | **Facilities**: 8,455 | **Countries**: 129 | **Schema**: v2.0.1

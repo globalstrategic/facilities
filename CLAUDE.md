@@ -87,6 +87,10 @@ python scripts/enrich_companies.py --min-confidence 0.75  # Set confidence thres
 
 ### Deduplication
 
+**Automatic (during import)**: The import pipeline automatically prevents duplicates using `check_duplicate()` in `import_from_report.py`.
+
+**Manual (batch cleanup)**: For cleaning up existing duplicates:
+
 ```bash
 # Preview duplicates (dry run - recommended first step)
 python scripts/deduplicate_facilities.py --country ZAF --dry-run
@@ -103,6 +107,7 @@ python scripts/deduplicate_facilities.py --all
 # - Merges aliases, sources, commodities, company mentions
 # - Deletes inferior duplicates
 # - Tracks merge history in verification notes
+# - Standalone utility script for batch cleanup only
 ```
 
 ## Code Architecture
@@ -933,8 +938,10 @@ python scripts/deep_research_integration.py \
 
 ---
 
-#### 4. deduplicate_facilities.py (NEW - 320 lines)
-**Cleanup existing duplicate facilities**
+#### 4. deduplicate_facilities.py (NEW - 342 lines)
+**Batch cleanup utility for existing duplicates**
+
+**Purpose**: Standalone utility for one-time or periodic batch cleanup of duplicates. NOT part of automatic import workflow.
 
 ```bash
 # Preview duplicates (dry run - always do this first)
@@ -948,20 +955,15 @@ python scripts/deduplicate_facilities.py --all
 ```
 
 **What it does:**
-- Identifies duplicate groups using 4-priority matching strategy:
-  - Priority 1: Coordinate-based (two-tier: 0.01°/0.1° with name similarity)
-  - Priority 2: Exact name match
-  - Priority 3: Fuzzy name match (85% similarity OR 80% word overlap)
-  - Priority 4: Alias match
-- Scores facilities by data completeness (coords, commodities, companies, etc.)
-- Selects best facility to keep (highest score)
-- Merges data from duplicates:
-  - Aliases: All duplicate names become aliases
-  - Sources: All import sources combined
-  - Commodities: Best version per commodity (prefer with formulas)
-  - Company mentions: Highest confidence per company
-  - Verification notes: Tracks merge history
+- Finds duplicate groups using same 4-priority logic as import
+- Scores facilities by data completeness
+- Merges data from duplicates into best facility
 - Deletes inferior duplicate files
+- **Use case**: Clean up duplicates that existed before improved detection was added
+
+**vs. Automatic Detection:**
+- `import_from_report.py` - Prevents duplicates during import (automatic)
+- `deduplicate_facilities.py` - Cleans up existing duplicates (manual, one-time)
 
 **Output:**
 - Modified facilities with merged data
@@ -970,12 +972,12 @@ python scripts/deduplicate_facilities.py --all
 
 **Performance:**
 - South Africa: 779 → 628 facilities (151 removed, 19.4% reduction)
-- Typical: 10-20% reduction depending on data quality
+- Typical: 10-20% reduction on first run, minimal thereafter
 
 **Safety:**
 - Always use `--dry-run` first
-- Country-by-country recommended for large databases
-- Full merge history tracked in verification notes
+- Country-by-country recommended
+- Full merge history in verification notes
 - Deleted files recoverable from git
 
 ---

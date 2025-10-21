@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
 """
-Deduplicate existing facilities based on coordinate proximity and name similarity.
+Batch deduplication utility for existing facilities.
 
-This script finds and merges duplicate facilities that slipped through the import
-process. It uses the same logic as the improved check_duplicate() function:
-- Coordinates within 0.5 degrees (~55km)
-- Name similarity >50% OR shorter name contained in longer name
+This script finds and merges duplicate facilities using shared deduplication logic
+from scripts.utils.deduplication. Use this for batch cleanup of existing data.
 
-The script will:
-1. Identify duplicate groups
-2. Select the "best" facility to keep (most complete data)
-3. Merge aliases and sources from duplicates
-4. Delete duplicate files
-5. Generate a report
+For automatic deduplication during import, see scripts/import_from_report.py which
+uses the same underlying logic.
 
 Usage:
-    # Dry run (no changes)
+    # Dry run (no changes) - always do this first
     python scripts/deduplicate_facilities.py --country ZAF --dry-run
 
     # Actually deduplicate
@@ -28,10 +22,18 @@ Usage:
 import json
 import argparse
 from pathlib import Path
-from typing import List, Dict, Set, Tuple
-from collections import defaultdict
-from difflib import SequenceMatcher
+from typing import List, Dict
 import logging
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from scripts.utils.deduplication import (
+    find_duplicate_groups,
+    select_best_facility,
+    merge_facilities
+)
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
