@@ -1,6 +1,6 @@
 {
-  "facility_id": "uga-rwemeriro-fac",
-  "name": "Rwemeriro",
+  "facility_id": "uga-nyamuliro-mine-fac",
+  "name": "Nyamuliro Mine (Bjordal)",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
@@ -9,14 +9,20 @@
     "precision": "unknown"
   },
   "types": [
-    "exploration prospect"
+    "mine (care & maintenance)"
   ],
   "commodities": [
     {
-      "metal": "Lithium",
+      "metal": "Tungsten",
       "primary": true,
-      "chemical_formula": "Li",
-      "category": "battery_material"
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Bismuth",
+      "primary": false,
+      "chemical_formula": "Bi",
+      "category": "specialty_metal"
     },
     {
       "metal": "Neodymium-Praseodymium",
@@ -28,12 +34,12 @@
   "status": "unknown",
   "company_mentions": [
     {
-      "name": "Unclear",
+      "name": "KI3R Minerals Ltd.",
       "role": "operator",
       "source": "Uganda Deep Research 2025",
       "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.926935",
-      "evidence": "Extracted from operator column: Unclear"
+      "first_seen": "2025-10-21T12:59:38.621863",
+      "evidence": "Extracted from operator column: KI3R Minerals Ltd."
     }
   ],
   "products": [],
@@ -41,13 +47,13 @@
     {
       "type": "csv_import",
       "id": "Uganda Deep Research 2025",
-      "date": "2025-10-21T12:59:38.926947"
+      "date": "2025-10-21T12:59:38.621872"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:38.926948",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T12:59:38.621873",
     "checked_by": "import_pipeline",
     "notes": null
   }

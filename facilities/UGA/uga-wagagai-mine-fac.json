@@ -1,22 +1,22 @@
 {
-  "facility_id": "uga-rwemeriro-fac",
-  "name": "Rwemeriro",
+  "facility_id": "uga-wagagai-mine-fac",
+  "name": "Wagagai Mine",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 0.4958,
+    "lon": 34.133,
+    "precision": "site"
   },
   "types": [
-    "exploration prospect"
+    "mine"
   ],
   "commodities": [
     {
-      "metal": "Lithium",
+      "metal": "Gold",
       "primary": true,
-      "chemical_formula": "Li",
-      "category": "battery_material"
+      "chemical_formula": "Au",
+      "category": "precious_metal"
     },
     {
       "metal": "Neodymium-Praseodymium",
@@ -25,15 +25,15 @@
       "category": "rare_earth_element"
     }
   ],
-  "status": "unknown",
+  "status": "operating",
   "company_mentions": [
     {
-      "name": "Unclear",
+      "name": "Wagagai Mining Ltd.",
       "role": "operator",
       "source": "Uganda Deep Research 2025",
       "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.926935",
-      "evidence": "Extracted from operator column: Unclear"
+      "first_seen": "2025-10-21T12:59:38.554037",
+      "evidence": "Extracted from operator column: Wagagai Mining (U) Ltd. (Liaoning Hongda Group)"
     }
   ],
   "products": [],
@@ -41,13 +41,13 @@
     {
       "type": "csv_import",
       "id": "Uganda Deep Research 2025",
-      "date": "2025-10-21T12:59:38.926947"
+      "date": "2025-10-21T12:59:38.554045"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:38.926948",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T12:59:38.554046",
     "checked_by": "import_pipeline",
     "notes": null
   }

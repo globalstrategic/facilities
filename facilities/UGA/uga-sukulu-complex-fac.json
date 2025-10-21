@@ -1,0 +1,60 @@
+{
+  "facility_id": "uga-sukulu-complex-fac",
+  "name": "Sukulu Complex (Osukuru)",
+  "aliases": [],
+  "country_iso3": "UGA",
+  "location": {
+    "lat": 0.6236,
+    "lon": 34.1536,
+    "precision": "site"
+  },
+  "types": [
+    "mine/industrial complex"
+  ],
+  "commodities": [
+    {
+      "metal": "Niobium",
+      "primary": true,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Guangzhou Dongsong Energy Group",
+      "role": "operator",
+      "source": "Uganda Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T12:59:38.586581",
+      "evidence": "Extracted from operator column: Guangzhou Dongsong Energy Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:38.586589"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T12:59:38.586590",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

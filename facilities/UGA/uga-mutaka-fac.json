@@ -4,33 +4,50 @@
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": -0.665,
-    "lon": 30.101,
-    "precision": "site"
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
   },
   "types": [
-    "mine"
+    "exploration prospect"
   ],
   "commodities": [
     {
       "metal": "Lithium",
-      "primary": true
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    {
+      "name": "Unclear",
+      "role": "operator",
+      "source": "Uganda Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T12:59:39.003791",
+      "evidence": "Extracted from operator column: Unclear"
+    }
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
-      "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:27:10.551221"
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:39.003799"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:27:10.551226",
+    "last_checked": "2025-10-21T12:59:39.003800",
     "checked_by": "import_pipeline",
     "notes": null
   }

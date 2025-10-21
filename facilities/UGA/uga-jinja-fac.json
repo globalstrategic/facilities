@@ -1,6 +1,6 @@
 {
   "facility_id": "uga-jinja-fac",
-  "name": "Jinja",
+  "name": "Jinja (Copper Smelter)",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
@@ -9,28 +9,45 @@
     "precision": "site"
   },
   "types": [
-    "mine"
+    "plant"
   ],
   "commodities": [
     {
       "metal": "Copper",
-      "primary": true
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Kilembe Mines Ltd.",
+      "role": "operator",
+      "source": "Uganda Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T12:59:39.040476",
+      "evidence": "Extracted from operator column: Kilembe Mines Ltd. (historical)"
+    }
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
-      "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:27:10.527919"
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:39.040486"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:27:10.527924",
+    "last_checked": "2025-10-21T12:59:39.040488",
     "checked_by": "import_pipeline",
     "notes": null
   }

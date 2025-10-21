@@ -677,7 +677,7 @@ def normalize_headers(headers: List[str]) -> List[str]:
     for h in headers:
         h_lower = h.lower().strip()
 
-        if any(x in h_lower for x in ['site', 'mine name', 'facility name', 'asset name']) or h_lower == 'name':
+        if any(x in h_lower for x in ['site', 'mine name', 'mine/project name', 'project name', 'facility name', 'asset name']) or h_lower == 'name':
             normalized.append('name')
         elif 'group name' in h_lower:  # Map "Group Names" from Mines.csv
             normalized.append('group_names')
@@ -687,19 +687,19 @@ def normalize_headers(headers: List[str]) -> List[str]:
             normalized.append('lat')
         elif 'longitude' in h_lower or h_lower == 'lon':
             normalized.append('lon')
-        elif 'primary commodity' in h_lower:
+        elif 'primary commodity' in h_lower or h_lower == 'primary commodity':
             normalized.append('primary')
-        elif 'other commodities' in h_lower or 'secondary commodity' in h_lower:
+        elif 'secondary commodities' in h_lower or 'secondary commodity' in h_lower or 'other commodities' in h_lower:
             normalized.append('other')
         elif 'asset type' in h_lower or 'facility type' in h_lower:
             normalized.append('types')
-        elif 'status' in h_lower or 'operational' in h_lower:
+        elif 'operational status' in h_lower or 'status' in h_lower:
             normalized.append('status')
         elif 'confidence factor' in h_lower:  # Map confidence from Mines.csv
             normalized.append('confidence_factor')
-        elif 'country' in h_lower or 'region' in h_lower:  # Map country column
+        elif 'country' in h_lower or ('region' in h_lower and 'country' in h_lower):  # Map country column
             normalized.append('country')
-        elif 'operator' in h_lower or 'stakeholder' in h_lower:
+        elif 'operating company' in h_lower or 'operator' in h_lower or 'stakeholder' in h_lower:
             normalized.append('operator')
         elif 'note' in h_lower:
             normalized.append('notes')
@@ -1060,8 +1060,21 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
             # Map to normalized headers
             row = {}
             for i, (orig_header, norm_header) in enumerate(zip(table['headers'], headers)):
-                if i < len(row_data):
-                    row[norm_header] = list(row_data.values())[i]
+                value = row_data.get(orig_header, '')
+                # For commodity columns that map to 'other', collect ALL values from both Secondary and Other columns
+                if norm_header == 'other':
+                    # Combine all "other" commodity columns
+                    if 'other' not in row:
+                        row['other'] = value
+                    else:
+                        existing_val = row['other'].strip()
+                        new_val = value.strip() if value else ''
+                        if existing_val and new_val and new_val != '-':
+                            row['other'] = f"{existing_val}, {new_val}"
+                        elif new_val and new_val != '-':
+                            row['other'] = new_val
+                else:
+                    row[norm_header] = value
 
             try:
                 # Extract name
@@ -1148,6 +1161,7 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 # Parse aliases and company mentions from Group Names (Mines.csv specific)
                 group_names_str = row.get('group_names', '').strip()
                 aliases_from_synonyms = row.get('synonyms', '').strip()
+                operator_str = row.get('operator', '').strip()
 
                 # Combine aliases from both sources
                 aliases = []
@@ -1157,6 +1171,23 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                     group_aliases, group_companies = parse_group_names(group_names_str, source_name)
                     aliases.extend(group_aliases)
                     company_mentions.extend(group_companies)
+
+                # Extract company mentions from operator column (Uganda table format)
+                if operator_str and operator_str != '-':
+                    # Split by / or ; for multiple operators
+                    operators = [op.strip() for op in re.split(r'[/;]', operator_str) if op.strip()]
+                    for operator_name in operators:
+                        # Clean parentheticals like "(Gov't)"
+                        clean_name = re.sub(r'\s*\([^)]*\)', '', operator_name).strip()
+                        if clean_name:
+                            company_mentions.append({
+                                "name": clean_name,
+                                "role": "operator",
+                                "source": source_name,
+                                "confidence": 0.70,  # Moderate confidence - from structured table
+                                "first_seen": datetime.now().isoformat(),
+                                "evidence": f"Extracted from operator column: {operator_str}"
+                            })
 
                 if aliases_from_synonyms and aliases_from_synonyms != '-':
                     aliases.extend([a.strip() for a in aliases_from_synonyms.split(',') if a.strip()])

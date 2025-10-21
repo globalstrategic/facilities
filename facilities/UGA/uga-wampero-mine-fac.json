@@ -1,26 +1,20 @@
 {
-  "facility_id": "uga-gamba-hill-nampeyo-fac",
-  "name": "Gamba Hill Nampeyo",
+  "facility_id": "uga-wampero-mine-fac",
+  "name": "Wampero Mine",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": 0.585,
-    "lon": 32.918,
+    "lat": 0.5,
+    "lon": 32.1667,
     "precision": "site"
   },
   "types": [
-    "exploration prospect"
+    "mine"
   ],
   "commodities": [
     {
-      "metal": "Lithium",
-      "primary": true,
-      "chemical_formula": "Li",
-      "category": "battery_material"
-    },
-    {
       "metal": "Tantalum",
-      "primary": false,
+      "primary": true,
       "chemical_formula": "Ta",
       "category": "specialty_metal"
     },
@@ -31,21 +25,25 @@
       "category": "specialty_metal"
     },
     {
-      "metal": "Bismuth",
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
       "primary": false,
-      "chemical_formula": "Bi",
-      "category": "specialty_metal"
+      "chemical_formula": "Li",
+      "category": "battery_material"
     }
   ],
-  "status": "unknown",
+  "status": "operating",
   "company_mentions": [
     {
-      "name": "Unclear",
+      "name": "3T Mining Ltd.",
       "role": "operator",
       "source": "Uganda Deep Research 2025",
       "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.967011",
-      "evidence": "Extracted from operator column: Unclear"
+      "first_seen": "2025-10-21T12:59:38.775131",
+      "evidence": "Extracted from operator column: 3T Mining Ltd."
     }
   ],
   "products": [],
@@ -53,13 +51,13 @@
     {
       "type": "csv_import",
       "id": "Uganda Deep Research 2025",
-      "date": "2025-10-21T12:59:38.967020"
+      "date": "2025-10-21T12:59:38.775140"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:38.967021",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T12:59:38.775142",
     "checked_by": "import_pipeline",
     "notes": null
   }

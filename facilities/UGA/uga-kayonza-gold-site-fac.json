@@ -1,6 +1,6 @@
 {
-  "facility_id": "uga-rwemeriro-fac",
-  "name": "Rwemeriro",
+  "facility_id": "uga-kayonza-gold-site-fac",
+  "name": "Kayonza Gold Site",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
@@ -9,14 +9,14 @@
     "precision": "unknown"
   },
   "types": [
-    "exploration prospect"
+    "asm hub"
   ],
   "commodities": [
     {
-      "metal": "Lithium",
+      "metal": "Gold",
       "primary": true,
-      "chemical_formula": "Li",
-      "category": "battery_material"
+      "chemical_formula": "Au",
+      "category": "precious_metal"
     },
     {
       "metal": "Neodymium-Praseodymium",
@@ -25,15 +25,15 @@
       "category": "rare_earth_element"
     }
   ],
-  "status": "unknown",
+  "status": "operating",
   "company_mentions": [
     {
-      "name": "Unclear",
+      "name": "Kayonza-Kitumbi Miners Association",
       "role": "operator",
       "source": "Uganda Deep Research 2025",
       "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.926935",
-      "evidence": "Extracted from operator column: Unclear"
+      "first_seen": "2025-10-21T12:59:38.813013",
+      "evidence": "Extracted from operator column: Kayonza-Kitumbi Miners Association (ASM)"
     }
   ],
   "products": [],
@@ -41,13 +41,13 @@
     {
       "type": "csv_import",
       "id": "Uganda Deep Research 2025",
-      "date": "2025-10-21T12:59:38.926947"
+      "date": "2025-10-21T12:59:38.813021"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:38.926948",
+    "confidence": 0.45,
+    "last_checked": "2025-10-21T12:59:38.813023",
     "checked_by": "import_pipeline",
     "notes": null
   }

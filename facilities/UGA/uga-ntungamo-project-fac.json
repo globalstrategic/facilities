@@ -1,6 +1,6 @@
 {
-  "facility_id": "uga-rwemeriro-fac",
-  "name": "Rwemeriro",
+  "facility_id": "uga-ntungamo-project-fac",
+  "name": "Ntungamo Project",
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
@@ -19,6 +19,16 @@
       "category": "battery_material"
     },
     {
+      "metal": "Tantalum",
+      "primary": false,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "beryllium",
+      "primary": false
+    },
+    {
       "metal": "Neodymium-Praseodymium",
       "primary": false,
       "chemical_formula": "(Nd,Pr)2O3",
@@ -28,12 +38,20 @@
   "status": "unknown",
   "company_mentions": [
     {
-      "name": "Unclear",
+      "name": "Javelin Minerals",
       "role": "operator",
       "source": "Uganda Deep Research 2025",
       "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.926935",
-      "evidence": "Extracted from operator column: Unclear"
+      "first_seen": "2025-10-21T12:59:38.855535",
+      "evidence": "Extracted from operator column: Javelin Minerals / Gecko Minerals Uganda"
+    },
+    {
+      "name": "Gecko Minerals Uganda",
+      "role": "operator",
+      "source": "Uganda Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T12:59:38.855547",
+      "evidence": "Extracted from operator column: Javelin Minerals / Gecko Minerals Uganda"
     }
   ],
   "products": [],
@@ -41,13 +59,13 @@
     {
       "type": "csv_import",
       "id": "Uganda Deep Research 2025",
-      "date": "2025-10-21T12:59:38.926947"
+      "date": "2025-10-21T12:59:38.855550"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:38.926948",
+    "confidence": 0.45,
+    "last_checked": "2025-10-21T12:59:38.855551",
     "checked_by": "import_pipeline",
     "notes": null
   }
