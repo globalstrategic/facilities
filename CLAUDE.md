@@ -4,10 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This repository manages a global database of **8,606 mining and processing facilities** across **129 countries**, featuring structured JSON-based architecture with comprehensive entity resolution, company linking, and research pipeline integration powered by the **EntityIdentity library**.
+This repository manages a global database of **9,058 mining and processing facilities** across **129 countries**, featuring structured JSON-based architecture with comprehensive entity resolution, company linking, geocoding, and research pipeline integration powered by the **EntityIdentity library**.
 
 **Package Name**: `talloy` (per setup.py)
-**Version**: 2.0.0 (EntityIdentity Integration Complete)
+**Version**: 2.1.0 (Geocoding & Backfill System)
 
 ## Common Development Commands
 
@@ -844,18 +844,20 @@ python -c "from entityidentity import country_identifier; print(country_identifi
 
 Current database (as of 2025-10-21):
 
-- **Total Facilities**: ~8,455 (after ZAF deduplication)
+- **Total Facilities**: 9,058
 - **Countries**: 129 (ISO3 codes)
-- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628 deduplicated), AUS (578), IDN (461), IND (424)
+- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (613), IDN (461), IND (424)
 - **Metals/Commodities**: 50+ types
-- **With Coordinates**: 99.3% (8,400+ facilities)
+- **With Coordinates**: ~99% (8,970+ facilities)
 - **Operating Facilities**: ~45%
-- **Average Confidence**: 0.641
+- **Average Confidence**: 0.64
 
-**Recent Improvements:**
+**Recent Improvements (v2.1.0):**
+- **Geocoding System**: Multi-strategy automated geocoding (15-25% success rate)
+- **Backfill System**: Unified enrichment for coordinates, companies, metals
+- **Deep Research Import**: Added 298 facilities from 12 countries
 - **Duplicate Detection**: 4-priority matching system (coordinate + name based)
-- **ZAF Deduplication**: Reduced from 779 → 628 facilities (19.4% reduction, 151 duplicates removed)
-- **Merge Quality**: 147 facility groups merged with full data preservation
+- **ZAF Deduplication**: Reduced from 779 → 628 facilities (19.4% reduction)
 
 ## Known Issues & Gotchas
 
@@ -1191,11 +1193,8 @@ python scripts/facilities.py sync --export
 
 ## Related Documentation
 
-- **[README.md](README.md)**: Complete all-in-one documentation
-
-
-
-- **[SCRIPT_AUDIT.md](SCRIPT_AUDIT.md)**: Scripts audit and duplication analysis
+- **[README.md](README.md)**: Complete all-in-one documentation (includes geocoding guide in Section 8)
+- **[CHANGELOG.md](CHANGELOG.md)**: Version history and release notes
 
 ## Support
 
@@ -1204,4 +1203,4 @@ For questions or issues:
 2. Review facility schema: `schemas/facility.schema.json`
 3. Check import logs: `output/import_logs/`
 4. Examine example facilities in `facilities/*/`
-5. Review scripts audit: `SCRIPT_AUDIT.md`
+5. Check CHANGELOG.md for recent changes

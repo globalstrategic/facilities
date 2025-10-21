@@ -1265,6 +1265,13 @@ See [CHANGELOG.md](CHANGELOG.md) for complete version history.
 
 ---
 
+## Additional Resources
+
+- **Installation**: `pip install geopy` for geocoding support
+- **Geocoding Guide**: See [Section 8](#geocoding-and-data-enrichment-new---v21) for complete geocoding documentation
+- **API Rate Limits**: Nominatim is rate-limited to 1 req/sec (automatic handling built-in)
+- **Industrial Zones**: Pre-configured UAE zones (ICAD, Jebel Ali, FOIZ, etc.) - extensible in `scripts/utils/geocoding.py`
+
 ## Support
 
 For questions or issues:

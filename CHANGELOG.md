@@ -23,10 +23,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **Database Growth**: 8,752 → 9,058 facilities
-- **Documentation**: Consolidated BACKFILL_GUIDE.md into README.md, CLAUDE.md, and CHANGELOG.md
+- **Documentation Consolidation**: Merged BACKFILL_GUIDE.md into README.md, CLAUDE.md, and CHANGELOG.md
+  - README.md: Complete geocoding guide in Section 8
+  - CLAUDE.md: Added backfill section with usage patterns and scripts reference
+  - CHANGELOG.md: Added v2.1.0 release notes with geocoding features
 - **Import Pipeline**: Enhanced geocoding during import for facilities without coordinates
-- **README.md**: Added comprehensive geocoding and backfill documentation (Section 8)
-- **CLAUDE.md**: Added backfill.py and geocode_facilities.py to scripts reference
 
 ### Fixed
 - Removed malformed facilities (table footnotes parsed as facility names)
@@ -78,6 +79,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Removed: `config/` directory
   - Quality gates now hardcoded in `scripts/utils/company_resolver.py`
   - Optional config file override still supported but not required
+- **Experimental scripts removed**: Cleaned up unused utilities
+  - Removed: `scripts/parse_narrative_operators.py` (experimental, not integrated)
+  - Removed: `scripts/extract_companies_from_narrative.py` (experimental, not integrated)
 - Previously deleted (earlier in v2.0.1):
   - `REPOSITORY_STRUCTURE.md` (→ CLAUDE.md)
   - `DUPLICATE_FUNCTIONALITY_ANALYSIS.md` (superseded)
@@ -206,6 +210,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Deprecations
+
+### 2.1.0
+- **BACKFILL_GUIDE.md** - Content consolidated into README.md (Section 8), CLAUDE.md (Backfill section), and CHANGELOG.md (v2.1.0 notes)
 
 ### 2.0.1
 - **All documentation consolidated into 3 files**:
