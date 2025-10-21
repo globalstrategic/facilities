@@ -14,6 +14,10 @@ with columns:
 - Primary Commodity
 - Secondary Commodity
 - Other Commodities
+
+Can filter by:
+- Country (single or all)
+- Metal/commodity (using EntityIdentity normalization)
 """
 
 import argparse
@@ -28,6 +32,67 @@ from typing import List, Dict, Optional
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
+
+# Try to import metal_identifier from entityidentity
+try:
+    from entityidentity import metal_identifier
+    METAL_IDENTIFIER_AVAILABLE = True
+except ImportError:
+    METAL_IDENTIFIER_AVAILABLE = False
+    print("Warning: metal_identifier not available (entityidentity library)", file=sys.stderr)
+
+
+def normalize_metal(metal_name: str) -> Optional[str]:
+    """
+    Normalize metal name using EntityIdentity.
+
+    Returns canonical metal name or None if not available.
+    """
+    if not METAL_IDENTIFIER_AVAILABLE:
+        return metal_name.lower()
+
+    try:
+        result = metal_identifier(metal_name)
+        if result and result.get('valid'):
+            # Return the normalized name or formula
+            return result.get('name', metal_name).lower()
+    except Exception:
+        pass
+
+    return metal_name.lower()
+
+
+def facility_has_metal(facility: Dict, target_metal: str) -> bool:
+    """
+    Check if facility produces the target metal.
+
+    Uses metal_identifier to match different forms (e.g., "copper", "Cu", "Copper ore").
+    """
+    commodities = facility.get("commodities", [])
+    if not commodities:
+        return False
+
+    # Normalize target metal
+    normalized_target = normalize_metal(target_metal)
+    if not normalized_target:
+        return False
+
+    # Check each commodity
+    for comm in commodities:
+        metal = comm.get("metal")
+        if not metal:
+            continue
+
+        # Normalize facility metal
+        normalized_facility_metal = normalize_metal(metal)
+
+        # Match
+        if normalized_facility_metal and normalized_target in normalized_facility_metal:
+            return True
+        if normalized_facility_metal and normalized_facility_metal in normalized_target:
+            return True
+
+    return False
 
 
 def get_confidence_label(confidence: float) -> str:
@@ -175,13 +240,14 @@ def facility_to_csv_row(facility: Dict, country_name: str) -> Dict[str, str]:
     }
 
 
-def export_country_to_csv(country: str, output_file: Optional[str] = None) -> int:
+def export_country_to_csv(country: str, output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
     """
     Export all facilities from a country to Mines.csv format.
 
     Args:
         country: Country name or ISO3 code
-        output_file: Output CSV path (defaults to {iso3}_mines.csv)
+        output_file: Output CSV path (defaults to {iso3}_mines.csv or {iso3}_{metal}_mines.csv)
+        metal: Optional metal filter (e.g., "copper", "Cu", "lithium")
 
     Returns:
         Number of facilities exported
@@ -217,17 +283,27 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None) -> in
         try:
             with open(json_file) as f:
                 facility = json.load(f)
+
+                # Apply metal filter if specified
+                if metal and not facility_has_metal(facility, metal):
+                    continue
+
                 facilities.append(facility)
         except Exception as e:
             print(f"Warning: Error loading {json_file}: {e}", file=sys.stderr)
 
     if not facilities:
-        print(f"No facilities found in {country_dir}")
+        metal_msg = f" producing {metal}" if metal else ""
+        print(f"No facilities{metal_msg} found in {country_dir}")
         return 0
 
     # Set output file
     if not output_file:
-        output_file = f"{iso3}_mines.csv"
+        if metal:
+            metal_slug = normalize_metal(metal) or metal
+            output_file = f"{iso3}_{metal_slug}_mines.csv"
+        else:
+            output_file = f"{iso3}_mines.csv"
 
     # Write CSV
     fieldnames = [
@@ -255,12 +331,13 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None) -> in
     return len(facilities)
 
 
-def export_all_to_csv(output_file: Optional[str] = None) -> int:
+def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
     """
     Export all facilities from all countries to a single Mines.csv file.
 
     Args:
-        output_file: Output CSV path (defaults to gt/Mines_{timestamp}.csv)
+        output_file: Output CSV path (defaults to gt/Mines_{timestamp}.csv or gt/{metal}_Mines_{timestamp}.csv)
+        metal: Optional metal filter (e.g., "copper", "Cu", "lithium")
 
     Returns:
         Number of facilities exported
@@ -276,7 +353,12 @@ def export_all_to_csv(output_file: Optional[str] = None) -> int:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         gt_dir = Path(__file__).parent.parent / "gt"
         gt_dir.mkdir(exist_ok=True)
-        output_file = gt_dir / f"Mines_{timestamp}.csv"
+
+        if metal:
+            metal_slug = normalize_metal(metal) or metal
+            output_file = gt_dir / f"{metal_slug}_Mines_{timestamp}.csv"
+        else:
+            output_file = gt_dir / f"Mines_{timestamp}.csv"
 
     output_path = Path(output_file)
 
@@ -306,6 +388,11 @@ def export_all_to_csv(output_file: Optional[str] = None) -> int:
             try:
                 with open(json_file) as f:
                     facility = json.load(f)
+
+                    # Apply metal filter if specified
+                    if metal and not facility_has_metal(facility, metal):
+                        continue
+
                     # Store country name with facility for later use
                     facility['_export_country_name'] = country_name
                     all_facilities.append(facility)
@@ -355,12 +442,18 @@ def export_all_to_csv(output_file: Optional[str] = None) -> int:
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Export facilities to Mines.csv format"
+        description="Export facilities to Mines.csv format",
+        epilog="Examples:\n"
+               "  %(prog)s Chile\n"
+               "  %(prog)s --all\n"
+               "  %(prog)s Chile --metal copper\n"
+               "  %(prog)s --all --metal lithium -o lithium_mines.csv",
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument(
         "country",
         nargs="?",
-        help="Country name or ISO3 code (e.g., 'Algeria' or 'DZA'). Omit with --all to export all countries."
+        help="Country name or ISO3 code (e.g., 'Chile' or 'CHL'). Omit with --all to export all countries."
     )
     parser.add_argument(
         "-o", "--output",
@@ -371,14 +464,18 @@ def main():
         action="store_true",
         help="Export all facilities from all countries to a timestamped Mines.csv in gt/"
     )
+    parser.add_argument(
+        "--metal",
+        help="Filter by metal/commodity (e.g., 'copper', 'Cu', 'lithium', 'REE'). Uses EntityIdentity normalization."
+    )
 
     args = parser.parse_args()
 
     # Check if --all flag is used
     if args.all:
-        count = export_all_to_csv(args.output)
+        count = export_all_to_csv(args.output, metal=args.metal)
     elif args.country:
-        count = export_country_to_csv(args.country, args.output)
+        count = export_country_to_csv(args.country, args.output, metal=args.metal)
     else:
         parser.error("Either provide a country name or use --all flag")
 
