@@ -1328,6 +1328,10 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 facilities.append(facility)
                 stats['total_facilities'] += 1
 
+                # Add newly created facility to existing dict for intra-import duplicate detection
+                # This allows later rows in the same import to detect duplicates with earlier rows
+                existing[facility_id] = facility
+
             except Exception as e:
                 logger.error(f"Row {row_num}: Error parsing: {e}")
                 errors.append(f"Row {row_num}: {str(e)}")
