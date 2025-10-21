@@ -1,0 +1,46 @@
+{
+  "facility_id": "sau-al-baitha-mine-fac",
+  "name": "Al Baitha Mine",
+  "aliases": [],
+  "country_iso3": "SAU",
+  "location": {
+    "lat": 27.5,
+    "lon": 43.25,
+    "precision": "site"
+  },
+  "types": [
+    "operational mine (open pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "bauxite",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ma'aden, Alcoa Corp, Alumina Ltd",
+      "role": "operator",
+      "source": "Research Import SAU 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T18:09:18.834485",
+      "evidence": "Extracted from operator column: Ma'aden, Alcoa Corp, Alumina Ltd"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SAU 2025-10-21",
+      "date": "2025-10-21T18:09:18.834499"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T18:09:18.834502",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

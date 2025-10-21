@@ -1,0 +1,50 @@
+{
+  "facility_id": "sau-al-hajar-mine-fac",
+  "name": "Al Hajar Mine",
+  "aliases": [],
+  "country_iso3": "SAU",
+  "location": {
+    "lat": 19.983,
+    "lon": 42.012,
+    "precision": "site"
+  },
+  "types": [
+    "mine (status unclear \\- closed/exploration)"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ma'aden Gold and Base Metals Company",
+      "role": "operator",
+      "source": "Research Import SAU 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T18:09:18.805097",
+      "evidence": "Extracted from operator column: Ma'aden Gold and Base Metals Company (Ma'aden)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SAU 2025-10-21",
+      "date": "2025-10-21T18:09:18.805116"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T18:09:18.805118",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
