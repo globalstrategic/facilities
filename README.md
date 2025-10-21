@@ -50,8 +50,8 @@ python scripts/backfill.py metals --all  # Add chemical formulas
 python scripts/backfill.py all --country ARE --interactive  # Do everything
 
 # Clean up duplicates
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF
 
 # Export to parquet format
 python scripts/facilities.py sync --export
@@ -73,13 +73,18 @@ facilities/
 ├── scripts/
 │   ├── facilities.py                    # Unified CLI with subcommands
 │   ├── import_from_report.py            # Main import pipeline (with entity resolution)
-│   ├── backfill.py                      # Unified backfill system (geocoding, companies, metals)
-│   ├── geocode_facilities.py            # Standalone geocoding utility
-│   ├── deduplicate_facilities.py        # Batch deduplication utility
+│   ├── backfill.py                      # Unified backfill system (geocoding, companies, metals, mentions)
 │   ├── enrich_companies.py              # Phase 2: Company enrichment
 │   ├── deep_research_integration.py     # Gemini Deep Research integration
 │   │
-│   ├── utils/                           # Entity resolution utilities
+│   ├── tools/                           # Standalone utility tools
+│   │   ├── audit_facilities.py          # Data quality checks
+│   │   ├── deduplicate_facilities.py    # Batch deduplication utility
+│   │   ├── verify_backfill.py           # Verify backfill results
+│   │   ├── geocode_facilities.py        # Standalone geocoding utility
+│   │   └── legacy/                      # Archived one-time migration scripts
+│   │
+│   ├── utils/                           # Entity resolution utilities (library modules)
 │   │   ├── geocoding.py                 # Multi-strategy geocoding service
 │   │   ├── company_resolver.py          # CompanyResolver with quality gates
 │   │   ├── deduplication.py             # Shared deduplication logic
@@ -417,13 +422,13 @@ Existing: "Two Rivers" at (-24.893, 30.124)
 
 ```bash
 # ALWAYS run dry-run first to preview changes
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
 
 # Clean up duplicates in South Africa
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF
 
 # Clean up all countries (use with caution)
-python scripts/deduplicate_facilities.py --all
+python scripts/tools/deduplicate_facilities.py --all
 ```
 
 **What the script does:**
@@ -646,10 +651,10 @@ python scripts/backfill.py geocode --country ARE
 python scripts/backfill.py geocode --country ARE --interactive
 
 # Standalone geocoding utility
-python scripts/geocode_facilities.py --country ARE --dry-run
+python scripts/tools/geocode_facilities.py --country ARE --dry-run
 
 # Geocode single facility
-python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+python scripts/tools/geocode_facilities.py --facility-id are-union-cement-company-fac
 ```
 
 #### Geocoding Output
@@ -756,7 +761,7 @@ INDUSTRIAL_ZONES = {
 pip install geopy
 
 # Test geocoding
-python scripts/geocode_facilities.py --country ARE --dry-run
+python scripts/tools/geocode_facilities.py --country ARE --dry-run
 ```
 
 ---
@@ -976,13 +981,13 @@ python scripts/import_from_report.py albania.txt
 
 ```bash
 # Preview duplicates (dry run)
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
 
 # Clean up duplicates
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF
 
 # All countries
-python scripts/deduplicate_facilities.py --all
+python scripts/tools/deduplicate_facilities.py --all
 ```
 
 ### Backfill Commands (NEW - v2.1)
@@ -1024,19 +1029,19 @@ python scripts/backfill.py all --country ARE --dry-run
 
 ```bash
 # Geocode all facilities in a country
-python scripts/geocode_facilities.py --country ARE
+python scripts/tools/geocode_facilities.py --country ARE
 
 # Interactive mode (prompts for failures)
-python scripts/geocode_facilities.py --country ARE --interactive
+python scripts/tools/geocode_facilities.py --country ARE --interactive
 
 # Dry run
-python scripts/geocode_facilities.py --country ARE --dry-run
+python scripts/tools/geocode_facilities.py --country ARE --dry-run
 
 # Geocode single facility
-python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+python scripts/tools/geocode_facilities.py --facility-id are-union-cement-company-fac
 
 # Offline mode (no API calls, industrial zones only)
-python scripts/geocode_facilities.py --country ARE --no-nominatim
+python scripts/tools/geocode_facilities.py --country ARE --no-nominatim
 ```
 
 **Geocoding strategies** (automatic fallback):

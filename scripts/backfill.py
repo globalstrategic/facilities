@@ -6,6 +6,7 @@ Backfills missing or incomplete data:
 - Geocoding: Add coordinates to facilities
 - Companies: Resolve company_mentions to canonical IDs
 - Metals: Add chemical formulas and categories to commodities
+- Mentions: Extract company_mentions from Mines.csv
 
 Usage:
     # Backfill geocoding
@@ -20,6 +21,10 @@ Usage:
     python scripts/backfill.py metals --country CHN
     python scripts/backfill.py metals --all
 
+    # Extract company mentions from Mines.csv
+    python scripts/backfill.py mentions --country BRA
+    python scripts/backfill.py mentions --all --force
+
     # Backfill everything
     python scripts/backfill.py all --country ARE --interactive
 
@@ -31,11 +36,13 @@ Usage:
 """
 
 import argparse
+import csv
 import json
 import sys
 from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Optional, Tuple
+from collections import defaultdict
 import logging
 
 # Setup logging
@@ -73,6 +80,7 @@ except ImportError:
 # Paths
 ROOT = Path(__file__).parent.parent
 FACILITIES_DIR = ROOT / "facilities"
+CSV_PATH = ROOT / "gt" / "Mines.csv"
 
 
 class BackfillStats:
@@ -402,6 +410,192 @@ def backfill_metals(
     return stats
 
 
+def load_mines_csv() -> Dict[int, Dict]:
+    """Load Mines.csv indexed by row number."""
+    csv_data = {}
+
+    if not CSV_PATH.exists():
+        logger.error(f"Mines.csv not found at {CSV_PATH}")
+        return csv_data
+
+    with open(CSV_PATH, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+
+        # Row numbers start at 2 (after header)
+        for idx, row in enumerate(reader, start=2):
+            csv_data[idx] = row
+
+    logger.info(f"Loaded {len(csv_data)} rows from Mines.csv")
+    return csv_data
+
+
+def parse_group_names(group_names: str) -> List[str]:
+    """
+    Parse semicolon-separated company names from Group Names field.
+
+    Returns list of unique, cleaned company names.
+    """
+    if not group_names or not group_names.strip():
+        return []
+
+    # Split on semicolon
+    names = [n.strip() for n in group_names.split(';') if n.strip()]
+
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_names = []
+    for name in names:
+        # Normalize for deduplication (case-insensitive)
+        name_lower = name.lower()
+        if name_lower not in seen:
+            seen.add(name_lower)
+            unique_names.append(name)
+
+    return unique_names
+
+
+def get_csv_row_from_facility(facility: Dict) -> Optional[int]:
+    """Extract CSV row number from facility sources."""
+    for source in facility.get('sources', []):
+        if source.get('type') == 'mines_csv':
+            return source.get('row')
+    return None
+
+
+def create_company_mention(name: str, csv_row: int, import_timestamp: str) -> Dict:
+    """
+    Create a company_mentions entry from CSV Group Name.
+
+    Structure follows the schema expected by enrich_companies.py:
+    - name: company name
+    - role: 'unknown' (will be mapped to operator during enrichment)
+    - source: provenance information
+    - confidence: 0.5 (moderate - needs resolution)
+    - first_seen: when it was originally imported
+    """
+    return {
+        "name": name,
+        "role": "unknown",  # Will be converted to 'operator' by enrich_companies.py
+        "source": f"mines_csv_row_{csv_row}",
+        "confidence": 0.5,
+        "first_seen": import_timestamp,
+        "evidence": "Extracted from Mines.csv 'Group Names' field during backfill"
+    }
+
+
+def backfill_mentions_for_facility(
+    facility: Dict,
+    csv_data: Dict[int, Dict],
+    force: bool = False,
+    empty_only: bool = True
+) -> Tuple[bool, int, str]:
+    """
+    Backfill company_mentions for a single facility from Mines.csv.
+
+    Returns:
+        (modified, mentions_added, status_message)
+    """
+    facility_id = facility.get('facility_id', '???')
+
+    # Check if facility already has mentions
+    existing_mentions = facility.get('company_mentions', [])
+
+    if existing_mentions and empty_only and not force:
+        return False, 0, f"Already has {len(existing_mentions)} mentions (skipped)"
+
+    # Get CSV row
+    csv_row = get_csv_row_from_facility(facility)
+    if not csv_row:
+        return False, 0, "No mines_csv source found"
+
+    # Look up row in CSV
+    if csv_row not in csv_data:
+        return False, 0, f"CSV row {csv_row} not found"
+
+    # Extract Group Names
+    group_names_raw = csv_data[csv_row].get('Group Names', '').strip()
+    if not group_names_raw:
+        return False, 0, f"No Group Names in CSV row {csv_row}"
+
+    # Parse company names
+    company_names = parse_group_names(group_names_raw)
+    if not company_names:
+        return False, 0, "No valid company names parsed"
+
+    # Get original import timestamp from verification
+    import_timestamp = facility.get('verification', {}).get('last_checked', datetime.now().isoformat())
+
+    # Create company_mentions entries
+    new_mentions = [
+        create_company_mention(name, csv_row, import_timestamp)
+        for name in company_names
+    ]
+
+    # Merge with existing mentions if force mode
+    if force and existing_mentions:
+        # Deduplicate by name (case-insensitive)
+        existing_names = {m['name'].lower() for m in existing_mentions}
+        new_mentions = [m for m in new_mentions if m['name'].lower() not in existing_names]
+
+        if not new_mentions:
+            return False, 0, "All mentions already exist"
+
+        final_mentions = existing_mentions + new_mentions
+    else:
+        final_mentions = new_mentions
+
+    # Apply changes
+    facility['company_mentions'] = final_mentions
+
+    return True, len(new_mentions), f"Added {len(new_mentions)} mentions from CSV"
+
+
+def backfill_mentions(
+    facilities: List[Dict],
+    csv_data: Dict[int, Dict],
+    force: bool = False,
+    empty_only: bool = True,
+    dry_run: bool = False
+) -> BackfillStats:
+    """Backfill company_mentions from Mines.csv Group Names field."""
+    stats = BackfillStats()
+    stats.total = len(facilities)
+
+    logger.info("Backfilling company mentions from Mines.csv")
+
+    if not csv_data:
+        logger.error("No CSV data loaded - cannot backfill mentions")
+        return stats
+
+    # Process each facility
+    for i, facility in enumerate(facilities):
+        facility_id = facility['facility_id']
+
+        modified, mentions_added, status = backfill_mentions_for_facility(
+            facility,
+            csv_data,
+            force=force,
+            empty_only=empty_only
+        )
+
+        if modified:
+            # Update verification
+            if 'verification' not in facility:
+                facility['verification'] = {}
+            facility['verification']['last_checked'] = datetime.now().isoformat()
+
+            save_facility(facility, dry_run=dry_run)
+
+            action = "Would add" if dry_run else "Added"
+            logger.info(f"  ✓ {action} {mentions_added} mentions: {facility['name']}")
+            stats.add_result(facility_id, "updated", f"{mentions_added} mentions added")
+        else:
+            logger.debug(f"  → Skipped: {facility['name']} - {status}")
+            stats.add_result(facility_id, "skipped", status)
+
+    return stats
+
+
 def backfill_all(
     facilities: List[Dict],
     country_iso3: str,
@@ -470,6 +664,14 @@ def main():
     metals_parser.add_argument('--all', action='store_true', help='Process all countries')
     metals_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
 
+    # Mentions subcommand
+    mentions_parser = subparsers.add_parser('mentions', help='Extract company mentions from Mines.csv')
+    mentions_parser.add_argument('--country', help='Country ISO3 code')
+    mentions_parser.add_argument('--countries', help='Comma-separated country codes')
+    mentions_parser.add_argument('--all', action='store_true', help='Process all countries')
+    mentions_parser.add_argument('--force', action='store_true', help='Add mentions even if facility already has some')
+    mentions_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+
     # All subcommand
     all_parser = subparsers.add_parser('all', help='Run all backfill operations')
     all_parser.add_argument('--country', help='Country ISO3 code')
@@ -505,6 +707,14 @@ def main():
     if not normalized_countries:
         logger.error("No valid countries to process")
         return 1
+
+    # Load CSV data if needed for mentions command
+    csv_data = {}
+    if args.command == 'mentions':
+        csv_data = load_mines_csv()
+        if not csv_data:
+            logger.error("Failed to load Mines.csv - cannot backfill mentions")
+            return 1
 
     # Process each country
     all_stats = {}
@@ -546,6 +756,16 @@ def main():
                 dry_run=args.dry_run
             )
             all_stats[country_iso3] = {'metals': stats}
+
+        elif args.command == 'mentions':
+            stats = backfill_mentions(
+                facilities,
+                csv_data,
+                force=args.force,
+                empty_only=not args.force,
+                dry_run=args.dry_run
+            )
+            all_stats[country_iso3] = {'mentions': stats}
 
         elif args.command == 'all':
             stats = backfill_all(

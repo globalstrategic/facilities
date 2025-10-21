@@ -36,8 +36,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Add utils to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 try:
     from utils.geocoding import geocode_facility, GeocodingResult
@@ -47,7 +47,7 @@ except ImportError as e:
     sys.exit(1)
 
 # Paths
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 FACILITIES_DIR = ROOT / "facilities"
 
 

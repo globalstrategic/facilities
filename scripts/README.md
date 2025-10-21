@@ -198,7 +198,7 @@ Additional maintenance and verification tools:
 python audit_facilities.py
 
 # Backfill company mentions from CSV sources
-python backfill_mentions.py --country IND
+python backfill.py mentions --country IND
 
 # Verify backfill results
 python verify_backfill.py
@@ -227,26 +227,33 @@ python facilities.py test --suite schema
 scripts/
 ├── facilities.py                    # Unified CLI (main entry point)
 ├── import_from_report.py            # Phase 1: Import with entity resolution
+├── backfill.py                      # Unified backfill system (geocoding, companies, metals, mentions)
 ├── enrich_companies.py              # Phase 2: Batch company enrichment
 ├── deep_research_integration.py     # Gemini Deep Research integration
-├── audit_facilities.py              # Data quality checks
-├── backfill_mentions.py             # Extract company_mentions from facilities
-├── verify_backfill.py               # Verify backfill results
-├── legacy/                          # Archived one-time migration scripts
-│   ├── full_migration.py            # Legacy CSV → JSON migration
-│   └── migrate_legacy_fields.py     # Schema field migration
+│
+├── tools/                           # Standalone utility tools
+│   ├── audit_facilities.py          # Data quality checks
+│   ├── deduplicate_facilities.py    # Batch deduplication utility
+│   ├── verify_backfill.py           # Verify backfill results
+│   ├── geocode_facilities.py        # Standalone geocoding utility
+│   └── legacy/                      # Archived one-time migration scripts
+│       ├── full_migration.py        # Legacy CSV → JSON migration
+│       └── migrate_legacy_fields.py # Schema field migration
+│
 ├── tests/                           # Test suites
 │   ├── test_dedup.py
 │   ├── test_import_enhanced.py
 │   ├── test_facility_sync.py
 │   └── test_schema.py
-├── utils/                           # Shared utilities
+│
+├── utils/                           # Shared utilities (library modules)
 │   ├── company_resolver.py          # CompanyResolver with quality gates
 │   ├── id_utils.py                  # Canonical ID mapping
 │   ├── country_utils.py             # Country code normalization
 │   ├── ownership_parser.py          # Ownership percentage parsing
 │   ├── facility_sync.py             # Parquet export/import
 │   └── paths.py                     # Shared path configuration
+│
 └── README.md
 ```
 

@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Nominatim (OpenStreetMap) API integration with 1 req/sec rate limiting
   - Interactive prompting for manual geocoding when automated methods fail
   - `scripts/backfill.py` - Unified enrichment system with subcommands (geocode, companies, metals, all)
-  - `scripts/geocode_facilities.py` - Standalone geocoding utility
+  - `scripts/tools/geocode_facilities.py` - Standalone geocoding utility
   - `scripts/utils/geocoding.py` - Multi-strategy geocoding service
   - Batch processing support for multiple countries
   - Dry-run mode for all backfill operations
@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 4-priority matching strategy (coordinate-based, exact name, fuzzy name, alias)
   - Two-tier coordinate matching (0.01°/0.1° thresholds)
   - Word overlap matching (80% threshold) for name variations
-  - `scripts/deduplicate_facilities.py` for batch cleanup
+  - `scripts/tools/deduplicate_facilities.py` for batch cleanup
   - Facility scoring system for intelligent merge selection
   - Full data preservation during merge (aliases, sources, commodities, company mentions)
   - `scripts/utils/deduplication.py` shared logic module

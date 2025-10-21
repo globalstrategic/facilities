@@ -170,7 +170,7 @@ def main():
     # Interpretation
     if global_stats['with_mentions'] == 0:
         print("⚠️  WARNING: No facilities have company_mentions!")
-        print("   Run: python scripts/backfill_mentions.py")
+        print("   Run: python scripts/backfill.py mentions --all")
     elif global_stats['with_mentions'] < global_stats['total'] * 0.4:
         print(f"⚠️  Coverage is low ({global_stats['with_mentions']/global_stats['total']*100:.1f}%)")
         print("   Expected: ~48.8% after backfill")

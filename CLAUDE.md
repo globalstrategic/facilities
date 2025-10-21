@@ -132,13 +132,13 @@ python scripts/backfill.py all --country ARE --dry-run
 
 ```bash
 # Preview duplicates (dry run - recommended first step)
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
 
 # Clean up duplicates in a specific country
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF
 
 # Clean up all countries
-python scripts/deduplicate_facilities.py --all
+python scripts/tools/deduplicate_facilities.py --all
 
 # What it does:
 # - Finds coordinate-based duplicates (two-tier matching: 0.01°/0.1° with name similarity)
@@ -165,16 +165,18 @@ facilities/
 ├── scripts/             # Core import and management scripts
 │   ├── facilities.py                    # Unified CLI with subcommands
 │   ├── import_from_report.py            # Main import pipeline (with entity resolution)
-│   ├── deduplicate_facilities.py        # Deduplication script (NEW)
+│   ├── backfill.py                      # Unified backfill system (geocoding, companies, metals, mentions)
 │   ├── enrich_companies.py              # Phase 2: Batch company enrichment
 │   ├── deep_research_integration.py     # Gemini Deep Research integration
-│   ├── backfill_mentions.py             # Extract company_mentions from facilities
-│   ├── audit_facilities.py              # Data quality checks
-│   ├── verify_backfill.py               # Verify backfill results
 │   │
-│   ├── legacy/                          # Archived one-time migration scripts
-│   │   ├── full_migration.py            # Legacy CSV → JSON migration
-│   │   └── migrate_legacy_fields.py     # Schema field migration
+│   ├── tools/                           # Standalone utility tools
+│   │   ├── audit_facilities.py          # Data quality checks
+│   │   ├── deduplicate_facilities.py    # Batch deduplication utility
+│   │   ├── verify_backfill.py           # Verify backfill results
+│   │   ├── geocode_facilities.py        # Standalone geocoding utility
+│   │   └── legacy/                      # Archived one-time migration scripts
+│   │       ├── full_migration.py        # Legacy CSV → JSON migration
+│   │       └── migrate_legacy_fields.py # Schema field migration
 │   │
 │   └── utils/                           # Entity resolution utilities
 │       ├── company_resolver.py          # CompanyResolver with quality gates
@@ -603,7 +605,7 @@ pytest scripts/tests/test_import_enhanced.py -v
 
 1. Ensure facilities have `company_mentions[]` arrays (use backfill script if needed):
    ```bash
-   python scripts/backfill_mentions.py --country IND
+   python scripts/backfill.py mentions --country IND
    ```
 
 2. Run company enrichment:
@@ -629,7 +631,7 @@ Complete workflow for cleaning up duplicate facilities:
 **Always start with a dry run to review what will be changed:**
 
 ```bash
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
 ```
 
 **Review the output:**
@@ -658,7 +660,7 @@ ZAF: 147 groups, 0 removed, 147 kept (DRY RUN)
 **Once satisfied with preview, run without --dry-run:**
 
 ```bash
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF
 ```
 
 **What happens:**
@@ -721,10 +723,10 @@ cat facilities/ZAF/zaf-two-rivers-platinum-mine-fac.json
 **If you want to process all countries:**
 ```bash
 # Preview all countries
-python scripts/deduplicate_facilities.py --all --dry-run
+python scripts/tools/deduplicate_facilities.py --all --dry-run
 
 # Process all countries (use with caution!)
-python scripts/deduplicate_facilities.py --all
+python scripts/tools/deduplicate_facilities.py --all
 ```
 
 #### Expected Results by Country
@@ -784,7 +786,7 @@ python scripts/facilities.py sync --import facilities.parquet --overwrite
 
 ```bash
 # Run audit checks
-python scripts/audit_facilities.py
+python scripts/tools/audit_facilities.py
 
 # Find facilities without coordinates
 grep -r '"lat": null' facilities/ | wc -l
@@ -932,7 +934,7 @@ cat report.txt | python scripts/import_from_report.py --country DZ
 
 ---
 
-#### 2. backfill.py (NEW - v2.1 - 550 lines)
+#### 2. backfill.py (NEW - v2.1 - 795 lines)
 **Unified backfill system for enriching existing facilities**
 
 ```bash
@@ -945,6 +947,10 @@ python scripts/backfill.py companies --country IND --profile moderate
 
 # Backfill metal normalization (add formulas/categories)
 python scripts/backfill.py metals --all
+
+# Extract company mentions from Mines.csv
+python scripts/backfill.py mentions --country BRA
+python scripts/backfill.py mentions --all --force
 
 # Backfill everything at once
 python scripts/backfill.py all --country ARE --interactive
@@ -960,7 +966,8 @@ python scripts/backfill.py all --country ARE --dry-run
 - **geocode**: Adds missing coordinates using industrial zone DB + Nominatim API
 - **companies**: Resolves `company_mentions[]` to canonical IDs with quality gates
 - **metals**: Adds chemical formulas and categories to commodities via `metal_identifier()`
-- **all**: Runs all three enrichment operations in sequence
+- **mentions**: Extracts company mentions from Mines.csv "Group Names" field
+- **all**: Runs all enrichment operations in sequence
 
 **Features:**
 - Multi-strategy geocoding (industrial zones → Nominatim → interactive)
@@ -979,19 +986,19 @@ python scripts/backfill.py all --country ARE --dry-run
 
 ```bash
 # Geocode all facilities in a country
-python scripts/geocode_facilities.py --country ARE
+python scripts/tools/geocode_facilities.py --country ARE
 
 # Interactive mode (prompts for failures)
-python scripts/geocode_facilities.py --country ARE --interactive
+python scripts/tools/geocode_facilities.py --country ARE --interactive
 
 # Dry run
-python scripts/geocode_facilities.py --country ARE --dry-run
+python scripts/tools/geocode_facilities.py --country ARE --dry-run
 
 # Geocode single facility
-python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+python scripts/tools/geocode_facilities.py --facility-id are-union-cement-company-fac
 
 # Offline mode (industrial zones only)
-python scripts/geocode_facilities.py --country ARE --no-nominatim
+python scripts/tools/geocode_facilities.py --country ARE --no-nominatim
 ```
 
 **What it does:**
@@ -1066,13 +1073,13 @@ python scripts/deep_research_integration.py \
 
 ```bash
 # Preview duplicates (dry run - always do this first)
-python scripts/deduplicate_facilities.py --country ZAF --dry-run
+python scripts/tools/deduplicate_facilities.py --country ZAF --dry-run
 
 # Clean up duplicates in South Africa
-python scripts/deduplicate_facilities.py --country ZAF
+python scripts/tools/deduplicate_facilities.py --country ZAF
 
 # Clean up all countries (use with caution)
-python scripts/deduplicate_facilities.py --all
+python scripts/tools/deduplicate_facilities.py --all
 ```
 
 **What it does:**
@@ -1136,25 +1143,16 @@ python scripts/facilities.py test
 Data quality checks and reporting
 
 ```bash
-python scripts/audit_facilities.py
+python scripts/tools/audit_facilities.py
 ```
 
 ---
 
-#### 6. backfill_mentions.py (440 lines)
-Extract `company_mentions[]` from existing facilities (useful for migrating old facilities to Phase 2 format)
-
-```bash
-python scripts/backfill_mentions.py --country IND
-```
-
----
-
-#### 7. verify_backfill.py (185 lines)
+#### 6. verify_backfill.py (185 lines)
 Verify backfill results
 
 ```bash
-python scripts/verify_backfill.py
+python scripts/tools/verify_backfill.py
 ```
 
 ---
@@ -1190,7 +1188,7 @@ python scripts/deep_research_integration.py \
     --process gemini_output.json --country ALB
 
 # Step 4: Audit data quality
-python scripts/audit_facilities.py
+python scripts/tools/audit_facilities.py
 
 # Step 5: Export to parquet
 python scripts/facilities.py sync --export
