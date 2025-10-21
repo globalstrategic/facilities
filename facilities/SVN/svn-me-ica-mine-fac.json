@@ -1,0 +1,80 @@
+{
+  "facility_id": "svn-me-ica-mine-fac",
+  "name": "Mežica Mine",
+  "aliases": [
+    "Podzemlje Pece"
+  ],
+  "country_iso3": "SVN",
+  "location": {
+    "lat": 46.51306,
+    "lon": 14.85528,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "molybdenum",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Brunner-Kompoš",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.178758",
+      "evidence": "Extracted from operator column: Brunner-Kompoš (Hist.); Bleiberger Bergwerks Union (Hist.); Central European Mines Ltd. (Hist.); Yugoslav State (Hist.)"
+    },
+    {
+      "name": "Bleiberger Bergwerks Union",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.179210",
+      "evidence": "Extracted from operator column: Brunner-Kompoš (Hist.); Bleiberger Bergwerks Union (Hist.); Central European Mines Ltd. (Hist.); Yugoslav State (Hist.)"
+    },
+    {
+      "name": "Central European Mines Ltd.",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.179218",
+      "evidence": "Extracted from operator column: Brunner-Kompoš (Hist.); Bleiberger Bergwerks Union (Hist.); Central European Mines Ltd. (Hist.); Yugoslav State (Hist.)"
+    },
+    {
+      "name": "Yugoslav State",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.179221",
+      "evidence": "Extracted from operator column: Brunner-Kompoš (Hist.); Bleiberger Bergwerks Union (Hist.); Central European Mines Ltd. (Hist.); Yugoslav State (Hist.)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import METALLURGICAL 2025-10-21",
+      "date": "2025-10-21T17:19:41.179228"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T17:19:41.179230",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

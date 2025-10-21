@@ -1,0 +1,68 @@
+{
+  "facility_id": "svn-savske-jame-mines-fac",
+  "name": "Savske jame Mines",
+  "aliases": [
+    "Reichenberg"
+  ],
+  "country_iso3": "SVN",
+  "location": {
+    "lat": 46.47104,
+    "lon": 14.06158,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Bucelleni family",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.187719",
+      "evidence": "Extracted from operator column: Bucelleni family (Hist.); Ruard family (Hist.); KID company (Hist.)"
+    },
+    {
+      "name": "Ruard family",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.187728",
+      "evidence": "Extracted from operator column: Bucelleni family (Hist.); Ruard family (Hist.); KID company (Hist.)"
+    },
+    {
+      "name": "KID company",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.187732",
+      "evidence": "Extracted from operator column: Bucelleni family (Hist.); Ruard family (Hist.); KID company (Hist.)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import METALLURGICAL 2025-10-21",
+      "date": "2025-10-21T17:19:41.187736"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T17:19:41.187738",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
