@@ -8,6 +8,7 @@ setup(
         "pandas>=1.3.0",
         "requests>=2.26.0",
         "openai>=1.0.0",
+        "pycountry>=22.0.0",
     ],
     dependency_links=[
         "git+https://github.com/microprediction/goodgleif.git#egg=goodgleif",
