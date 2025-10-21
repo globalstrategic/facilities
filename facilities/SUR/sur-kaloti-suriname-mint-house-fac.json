@@ -1,0 +1,50 @@
+{
+  "facility_id": "sur-kaloti-suriname-mint-house-fac",
+  "name": "Kaloti Suriname Mint House",
+  "aliases": [],
+  "country_iso3": "SUR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Government of Suriname, Kaloti Jewellery Group, private investors",
+      "role": "operator",
+      "source": "Research Import SUR 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:45:37.363854",
+      "evidence": "Extracted from operator column: Government of Suriname, Kaloti Jewellery Group, private investors"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SUR 2025-10-21",
+      "date": "2025-10-21T17:45:37.363882"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T17:45:37.363886",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
