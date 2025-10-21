@@ -42,24 +42,51 @@ except ImportError:
     print("Warning: metal_identifier not available (entityidentity library)", file=sys.stderr)
 
 
-def normalize_metal(metal_name: str) -> Optional[str]:
+def normalize_metal(metal_name: str) -> Optional[Dict]:
     """
     Normalize metal name using EntityIdentity.
 
-    Returns canonical metal name or None if not available.
+    Returns dict with normalized name and category info, or None if not available.
     """
     if not METAL_IDENTIFIER_AVAILABLE:
-        return metal_name.lower()
+        return {
+            'name': metal_name.lower(),
+            'category': None,
+            'category_bucket': None
+        }
 
     try:
         result = metal_identifier(metal_name)
         if result and result.get('valid'):
-            # Return the normalized name or formula
-            return result.get('name', metal_name).lower()
+            return {
+                'name': result.get('name', metal_name).lower(),
+                'category': result.get('category'),
+                'category_bucket': result.get('category_bucket'),
+                'symbol': result.get('symbol')
+            }
     except Exception:
         pass
 
-    return metal_name.lower()
+    return {
+        'name': metal_name.lower(),
+        'category': None,
+        'category_bucket': None
+    }
+
+
+# Rare earth elements list
+REE_ELEMENTS = [
+    'scandium', 'yttrium', 'lanthanum', 'cerium', 'praseodymium', 'neodymium',
+    'promethium', 'samarium', 'europium', 'gadolinium', 'terbium', 'dysprosium',
+    'holmium', 'erbium', 'thulium', 'ytterbium', 'lutetium',
+    'neodymium-praseodymium', 'didymium'  # Common REE mixtures
+]
+
+
+def is_ree_search(metal_name: str) -> bool:
+    """Check if search term is for rare earths generally."""
+    metal_lower = metal_name.lower()
+    return any(term in metal_lower for term in ['rare earth', 'ree', 'rare-earth'])
 
 
 def facility_has_metal(facility: Dict, target_metal: str) -> bool:
@@ -67,15 +94,21 @@ def facility_has_metal(facility: Dict, target_metal: str) -> bool:
     Check if facility produces the target metal.
 
     Uses metal_identifier to match different forms (e.g., "copper", "Cu", "Copper ore").
+    Special handling for rare earths: searching "rare earth" or "REE" matches all REE elements.
     """
     commodities = facility.get("commodities", [])
     if not commodities:
         return False
 
+    # Check if this is a general REE search
+    is_ree_query = is_ree_search(target_metal)
+
     # Normalize target metal
-    normalized_target = normalize_metal(target_metal)
-    if not normalized_target:
+    target_info = normalize_metal(target_metal)
+    if not target_info:
         return False
+
+    normalized_target = target_info['name']
 
     # Check each commodity
     for comm in commodities:
@@ -83,14 +116,41 @@ def facility_has_metal(facility: Dict, target_metal: str) -> bool:
         if not metal:
             continue
 
-        # Normalize facility metal
-        normalized_facility_metal = normalize_metal(metal)
+        metal_lower = metal.lower()
 
-        # Match
-        if normalized_facility_metal and normalized_target in normalized_facility_metal:
+        # For REE queries, match any REE element OR "rare earth" in commodity name
+        if is_ree_query:
+            # Direct match on "rare earth" in commodity name
+            if 'rare earth' in metal_lower or 'ree' in metal_lower:
+                return True
+            # Check if commodity is a specific REE element
+            if any(ree in metal_lower for ree in REE_ELEMENTS):
+                return True
+            # Check category via EntityIdentity
+            if METAL_IDENTIFIER_AVAILABLE:
+                metal_info = normalize_metal(metal)
+                if metal_info and metal_info.get('category_bucket') == 'ree':
+                    return True
+
+        # Regular metal matching
+        normalized_facility_metal = normalize_metal(metal)
+        if not normalized_facility_metal:
+            continue
+
+        facility_metal_name = normalized_facility_metal['name']
+
+        # Name matching (substring in both directions)
+        if normalized_target in facility_metal_name:
             return True
-        if normalized_facility_metal and normalized_facility_metal in normalized_target:
+        if facility_metal_name in normalized_target:
             return True
+
+        # Symbol matching if available
+        if METAL_IDENTIFIER_AVAILABLE:
+            target_symbol = target_info.get('symbol')
+            facility_symbol = normalized_facility_metal.get('symbol')
+            if target_symbol and facility_symbol and target_symbol == facility_symbol:
+                return True
 
     return False
 
@@ -300,7 +360,9 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
     # Set output file
     if not output_file:
         if metal:
-            metal_slug = normalize_metal(metal) or metal
+            metal_info = normalize_metal(metal)
+            metal_slug = metal_info['name'] if metal_info else metal
+            metal_slug = metal_slug.replace(' ', '_')
             output_file = f"{iso3}_{metal_slug}_mines.csv"
         else:
             output_file = f"{iso3}_mines.csv"
@@ -355,7 +417,9 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
         gt_dir.mkdir(exist_ok=True)
 
         if metal:
-            metal_slug = normalize_metal(metal) or metal
+            metal_info = normalize_metal(metal)
+            metal_slug = metal_info['name'] if metal_info else metal
+            metal_slug = metal_slug.replace(' ', '_')
             output_file = gt_dir / f"{metal_slug}_Mines_{timestamp}.csv"
         else:
             output_file = gt_dir / f"Mines_{timestamp}.csv"

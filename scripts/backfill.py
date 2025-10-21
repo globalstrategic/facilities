@@ -12,10 +12,12 @@ Usage:
     # Backfill geocoding
     python scripts/backfill.py geocode --country ARE
     python scripts/backfill.py geocode --country ARE --interactive
+    python scripts/backfill.py geocode --all --dry-run
 
     # Backfill company resolution
     python scripts/backfill.py companies --country IND
     python scripts/backfill.py companies --country IND --profile strict
+    python scripts/backfill.py companies --all --profile moderate
 
     # Backfill metal normalization
     python scripts/backfill.py metals --country CHN
@@ -27,6 +29,7 @@ Usage:
 
     # Backfill everything
     python scripts/backfill.py all --country ARE --interactive
+    python scripts/backfill.py all --all --dry-run
 
     # Batch mode (multiple countries)
     python scripts/backfill.py geocode --countries ARE,IND,CHN
@@ -647,6 +650,7 @@ def main():
     geocode_parser = subparsers.add_parser('geocode', help='Backfill coordinates')
     geocode_parser.add_argument('--country', help='Country ISO3 code')
     geocode_parser.add_argument('--countries', help='Comma-separated country codes')
+    geocode_parser.add_argument('--all', action='store_true', help='Process all countries')
     geocode_parser.add_argument('--interactive', action='store_true', help='Interactive prompting')
     geocode_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
 
@@ -654,6 +658,7 @@ def main():
     companies_parser = subparsers.add_parser('companies', help='Backfill company resolution')
     companies_parser.add_argument('--country', help='Country ISO3 code')
     companies_parser.add_argument('--countries', help='Comma-separated country codes')
+    companies_parser.add_argument('--all', action='store_true', help='Process all countries')
     companies_parser.add_argument('--profile', default='moderate', choices=['strict', 'moderate', 'permissive'])
     companies_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
 
@@ -676,6 +681,7 @@ def main():
     all_parser = subparsers.add_parser('all', help='Run all backfill operations')
     all_parser.add_argument('--country', help='Country ISO3 code')
     all_parser.add_argument('--countries', help='Comma-separated country codes')
+    all_parser.add_argument('--all', action='store_true', help='Process all countries')
     all_parser.add_argument('--interactive', action='store_true', help='Interactive prompting')
     all_parser.add_argument('--profile', default='moderate', choices=['strict', 'moderate', 'permissive'])
     all_parser.add_argument('--dry-run', action='store_true', help='Preview changes')

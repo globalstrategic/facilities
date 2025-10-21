@@ -1,0 +1,39 @@
+{
+  "facility_id": "ukr-sadove-deposit-fac",
+  "name": "Sadove Deposit",
+  "aliases": [],
+  "country_iso3": "UKR",
+  "location": {
+    "lat": 50.343,
+    "lon": 31.544,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import UKR 2025-10-21",
+      "date": "2025-10-21T12:44:23.718536"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.45,
+    "last_checked": "2025-10-21T12:44:23.718544",
+    "checked_by": "import_pipeline",
+    "notes": "Sandstone-type deposit suitable for ISL. 48"
+  }
+}

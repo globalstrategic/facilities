@@ -94,9 +94,15 @@ pip install geopy
 # Backfill everything for a country
 python scripts/backfill.py all --country ARE --interactive
 
+# Backfill everything for ALL countries (use with caution!)
+python scripts/backfill.py all --all --dry-run  # Preview first
+python scripts/backfill.py all --all            # Run for real
+
 # Or run operations individually
 python scripts/backfill.py geocode --country ARE --interactive
+python scripts/backfill.py geocode --all --dry-run  # All countries
 python scripts/backfill.py companies --country IND --profile moderate
+python scripts/backfill.py companies --all --profile moderate
 python scripts/backfill.py metals --all
 
 # Batch processing (multiple countries)
