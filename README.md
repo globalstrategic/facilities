@@ -1,8 +1,8 @@
 # Facilities Database
 
-**Global mining and processing facilities database** - 8,455 facilities across 129 countries
+**Global mining and processing facilities database** - 9,058 facilities across 129 countries
 
-**Version**: 2.0.1 (Deduplication Complete)
+**Version**: 2.1.0 (Geocoding & Backfill System)
 **Last Updated**: 2025-10-21
 **Package Name**: `talloy`
 
@@ -17,14 +17,15 @@
 5. [Import Workflows](#import-workflows)
 6. [Deduplication](#deduplication)
 7. [Company Resolution](#company-resolution)
-8. [Deep Research Integration](#deep-research-integration)
-9. [Querying Facilities](#querying-facilities)
-10. [Schema Reference](#schema-reference)
-11. [CLI Commands](#cli-commands)
-12. [Data Quality](#data-quality)
-13. [Statistics](#statistics)
-14. [Troubleshooting](#troubleshooting)
-15. [Version History](#version-history)
+8. [Geocoding and Data Enrichment](#geocoding-and-data-enrichment-new---v21) **NEW**
+9. [Deep Research Integration](#deep-research-integration)
+10. [Querying Facilities](#querying-facilities)
+11. [Schema Reference](#schema-reference)
+12. [CLI Commands](#cli-commands)
+13. [Data Quality](#data-quality)
+14. [Statistics](#statistics)
+15. [Troubleshooting](#troubleshooting)
+16. [Version History](#version-history)
 
 ---
 
@@ -41,6 +42,12 @@ python scripts/facilities.py resolve company "BHP"
 
 # Import facilities with entity resolution
 python scripts/import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
+
+# Enrich existing facilities (NEW in v2.1)
+python scripts/backfill.py geocode --country ARE  # Add coordinates
+python scripts/backfill.py companies --country IND  # Resolve companies
+python scripts/backfill.py metals --all  # Add chemical formulas
+python scripts/backfill.py all --country ARE --interactive  # Do everything
 
 # Clean up duplicates
 python scripts/deduplicate_facilities.py --country ZAF --dry-run
@@ -66,11 +73,14 @@ facilities/
 ├── scripts/
 │   ├── facilities.py                    # Unified CLI with subcommands
 │   ├── import_from_report.py            # Main import pipeline (with entity resolution)
+│   ├── backfill.py                      # Unified backfill system (geocoding, companies, metals)
+│   ├── geocode_facilities.py            # Standalone geocoding utility
 │   ├── deduplicate_facilities.py        # Batch deduplication utility
 │   ├── enrich_companies.py              # Phase 2: Company enrichment
 │   ├── deep_research_integration.py     # Gemini Deep Research integration
 │   │
 │   ├── utils/                           # Entity resolution utilities
+│   │   ├── geocoding.py                 # Multi-strategy geocoding service
 │   │   ├── company_resolver.py          # CompanyResolver with quality gates
 │   │   ├── deduplication.py             # Shared deduplication logic
 │   │   ├── id_utils.py                  # Canonical ID mapping
@@ -87,10 +97,6 @@ facilities/
 ├── tables/                              # Parquet output (Phase 2)
 │   └── facilities/
 │       └── facility_company_relationships.parquet
-│
-├── config/
-│   ├── gate_config.json                 # Quality gate thresholds
-│   └── company_aliases.json             # Canonical company ID mappings
 │
 └── output/                              # Generated outputs (gitignored)
     ├── import_logs/                     # Import reports with statistics
@@ -244,7 +250,8 @@ python scripts/facilities.py resolve metal "lithium carbonate"
 ```python
 from scripts.utils.company_resolver import CompanyResolver
 
-resolver = CompanyResolver.from_config("config/gate_config.json", profile="strict")
+# Use hardcoded defaults with strict profile
+resolver = CompanyResolver.from_config(profile="strict")
 
 # Batch resolve mentions
 mentions = [
@@ -590,11 +597,171 @@ df = pd.read_parquet("tables/facilities/facility_company_relationships.parquet")
 
 **Quality Gates:**
 
-Configured in `config/gate_config.json`:
+Hardcoded in `scripts/utils/company_resolver.py` (can be overridden via config file if needed):
 
 - **strict**: High precision, lower recall (min_confidence 0.80)
 - **moderate**: Balanced (min_confidence 0.70)
 - **permissive**: High recall, lower precision (min_confidence 0.60)
+
+**Penalties applied:**
+- Country mismatch: -0.15
+- No registry ID (LEI/Wikidata): -0.10
+- Name length difference >20 chars: -0.10
+
+---
+
+## Geocoding and Data Enrichment (NEW - v2.1)
+
+### Automated Geocoding System
+
+The geocoding system automatically adds missing coordinates to facilities using multiple fallback strategies.
+
+#### Geocoding Strategies (in order)
+
+1. **Industrial Zone Database** - Pre-mapped coordinates for known zones
+   - UAE: ICAD I/II/III, Musaffah, Jebel Ali, FOIZ, Hamriyah
+   - Extensible: Add more zones in `scripts/utils/geocoding.py`
+
+2. **Nominatim API** (OpenStreetMap) - Free geocoding service
+   - Rate-limited to 1 request/second
+   - Searches by city name or facility name
+   - Returns precision level (site/city/region/country)
+
+3. **Location Extraction** - Auto-detects cities/regions from facility names
+   - Example: "Sharjah Cement Factory" → searches "Sharjah, ARE"
+   - Example: "Jebel Ali Smelter" → matches industrial zone
+
+4. **Interactive Prompting** - Manual input when automated methods fail
+   - Option 1: Enter coordinates directly
+   - Option 2: Enter city/location (will geocode)
+   - Option 3: Skip
+
+#### Usage Examples
+
+```bash
+# Backfill geocoding for a country
+python scripts/backfill.py geocode --country ARE
+
+# Interactive mode (prompts for failures)
+python scripts/backfill.py geocode --country ARE --interactive
+
+# Standalone geocoding utility
+python scripts/geocode_facilities.py --country ARE --dry-run
+
+# Geocode single facility
+python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+```
+
+#### Geocoding Output
+
+```json
+{
+  "location": {
+    "lat": 25.297,
+    "lon": 55.618,
+    "precision": "site"
+  },
+  "verification": {
+    "last_checked": "2025-10-21T09:30:00",
+    "notes": "Geocoded via nominatim (confidence: 0.70)"
+  }
+}
+```
+
+**Precision levels:**
+- `site`: Exact facility location
+- `city`: City-level coordinates
+- `region`: Regional/industrial zone
+- `country`: Country-level (low quality)
+- `unknown`: No coordinates available
+
+### Unified Backfill System
+
+The backfill system enriches existing facilities with missing data:
+
+```bash
+# Backfill geocoding (coordinates)
+python scripts/backfill.py geocode --country ARE
+
+# Backfill companies (resolve company_mentions to canonical IDs)
+python scripts/backfill.py companies --country IND --profile moderate
+
+# Backfill metals (add chemical formulas and categories)
+python scripts/backfill.py metals --all
+
+# Backfill everything
+python scripts/backfill.py all --country ARE --interactive
+
+# Batch processing (multiple countries)
+python scripts/backfill.py geocode --countries ARE,IND,CHN
+
+# Dry run (preview without saving)
+python scripts/backfill.py all --country ARE --dry-run
+```
+
+**Backfill Operations:**
+
+| Operation | What it does | Example |
+|-----------|--------------|---------|
+| `geocode` | Adds missing coordinates | `"lat": null` → `"lat": 25.297` |
+| `companies` | Resolves company mentions | `company_mentions[]` → `operator_link`, `owner_links[]` |
+| `metals` | Adds chemical formulas | `"metal": "copper"` → `"chemical_formula": "Cu"` |
+| `all` | Runs all three operations | Complete enrichment pipeline |
+
+**Statistics Tracking:**
+
+Each backfill operation provides detailed statistics:
+```
+============================================================
+BACKFILL SUMMARY: geocoding
+============================================================
+Total facilities: 35
+Processed: 31
+Updated: 5
+Skipped: 0
+Failed: 26
+Success rate: 16.1%
+============================================================
+```
+
+### Industrial Zones Database
+
+Pre-configured coordinates for common industrial zones:
+
+**UAE:**
+- ICAD I: 24.338, 54.524 (Abu Dhabi)
+- ICAD II: 24.315, 54.495 (Abu Dhabi)
+- ICAD III: 24.303, 54.462 (Abu Dhabi)
+- Musaffah: 24.353, 54.504 (Abu Dhabi)
+- Jebel Ali: 24.986, 55.048 (Dubai)
+- FOIZ: 25.111, 56.342 (Fujairah)
+- Hamriyah: 25.434, 55.528 (Sharjah)
+
+**Add more zones** in `scripts/utils/geocoding.py`:
+```python
+INDUSTRIAL_ZONES = {
+    "zone_name": {
+        "lat": 24.338,
+        "lon": 54.524,
+        "city": "City Name",
+        "country": "ARE"
+    }
+}
+```
+
+### Installation
+
+```bash
+# Install geocoding dependencies
+pip install geopy
+
+# Test geocoding
+python scripts/geocode_facilities.py --country ARE --dry-run
+```
+
+---
+
+## Deep Research Integration
 
 **Penalties applied:**
 - Country mismatch: -0.15
@@ -818,6 +985,66 @@ python scripts/deduplicate_facilities.py --country ZAF
 python scripts/deduplicate_facilities.py --all
 ```
 
+### Backfill Commands (NEW - v2.1)
+
+**Unified system for enriching existing facilities:**
+
+```bash
+# Backfill geocoding (add coordinates)
+python scripts/backfill.py geocode --country ARE
+python scripts/backfill.py geocode --country ARE --interactive
+
+# Backfill company resolution
+python scripts/backfill.py companies --country IND
+python scripts/backfill.py companies --country IND --profile strict
+
+# Backfill metal normalization (add formulas/categories)
+python scripts/backfill.py metals --country CHN
+python scripts/backfill.py metals --all
+
+# Backfill everything at once
+python scripts/backfill.py all --country ARE --interactive
+
+# Batch processing (multiple countries)
+python scripts/backfill.py geocode --countries ARE,IND,CHN
+
+# Dry run (preview changes)
+python scripts/backfill.py all --country ARE --dry-run
+```
+
+**What each backfill does:**
+- **geocode**: Adds missing coordinates using industrial zone DB + Nominatim API
+- **companies**: Resolves `company_mentions[]` to canonical company IDs with quality gates
+- **metals**: Adds chemical formulas and categories to commodities
+- **all**: Runs all three enrichment operations in sequence
+
+### Geocoding Commands (NEW - v2.1)
+
+**Standalone geocoding utility:**
+
+```bash
+# Geocode all facilities in a country
+python scripts/geocode_facilities.py --country ARE
+
+# Interactive mode (prompts for failures)
+python scripts/geocode_facilities.py --country ARE --interactive
+
+# Dry run
+python scripts/geocode_facilities.py --country ARE --dry-run
+
+# Geocode single facility
+python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+
+# Offline mode (no API calls, industrial zones only)
+python scripts/geocode_facilities.py --country ARE --no-nominatim
+```
+
+**Geocoding strategies** (automatic fallback):
+1. Industrial zone database lookup
+2. Nominatim (OpenStreetMap) API with city
+3. Nominatim with facility name
+4. Interactive prompting (if `--interactive` enabled)
+
 ### Company Enrichment Commands
 
 ```bash
@@ -929,17 +1156,19 @@ find facilities -name "*.json" -exec grep -l '"confidence": 0\.[0-4]' {} \;
 ## Statistics
 
 **Current Database (2025-10-21):**
-- **Total Facilities**: ~8,455 (after ZAF deduplication)
+- **Total Facilities**: 9,058
 - **Countries**: 129 (ISO3 codes)
-- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (578), IDN (461), IND (424)
+- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (613), IDN (461), IND (424)
 - **Metals/Commodities**: 50+ types
-- **With Coordinates**: 99.3% (8,400+ facilities)
+- **With Coordinates**: ~99% (8,970+ facilities)
 - **Operating Facilities**: ~45%
-- **Average Confidence**: 0.641
+- **Average Confidence**: 0.64
 
-**Growth:**
+**Recent Growth:**
 - **2025-10-10**: 8,500 facilities (v1.0.0)
-- **2025-10-20**: 8,606 facilities (v2.0.0)
+- **2025-10-20**: 8,606 facilities (v2.0.0 - EntityIdentity Integration)
+- **2025-10-21**: 8,752 facilities (v2.0.1 - Deduplication)
+- **2025-10-21**: 9,058 facilities (v2.1.0 - Deep Research Import + Geocoding)
 - **2025-10-21**: 8,455 facilities (v2.0.1 - post deduplication)
 
 **Deduplication Impact:**
@@ -998,6 +1227,18 @@ See [CHANGELOG.md](CHANGELOG.md) for complete version history.
 
 ### Recent Releases
 
+**v2.1.0 (2025-10-21): Geocoding & Backfill System**
+- **NEW**: Unified backfill system (`scripts/backfill.py`)
+- **NEW**: Automated geocoding with multiple strategies
+- **NEW**: Industrial zones database (UAE zones pre-configured)
+- **NEW**: Nominatim (OpenStreetMap) API integration
+- **NEW**: Interactive prompting for manual geocoding
+- **NEW**: Batch processing support (multiple countries)
+- Deep research import: Added 298 new facilities from 12 countries
+- Database growth: 8,752 → 9,058 facilities
+- Fixed malformed facilities (removed table footnotes, typos)
+- Geocoded 6 UAE facilities automatically
+
 **v2.0.1 (2025-10-21): Deduplication System**
 - Comprehensive duplicate detection and cleanup
 - 4-priority matching strategy (coordinate-based, exact name, fuzzy name, alias)
@@ -1035,4 +1276,4 @@ For questions or issues:
 
 ---
 
-**Database Status**: Production-ready | **Facilities**: 8,455 | **Countries**: 129 | **Schema**: v2.0.1
+**Database Status**: Production-ready | **Facilities**: 9,058 | **Countries**: 129 | **Schema**: v2.1.0

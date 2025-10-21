@@ -112,6 +112,29 @@ class FacilityCompanyResolver:
         >>> owners = resolver.resolve_owners("Anglo American 50%, Impala 50%")
     """
 
+    # Default quality gate configuration
+    DEFAULT_GATES = {
+        "auto_accept_threshold": 0.90,
+        "review_min_threshold": 0.75,
+        "prefer_registry_boost": 0.05,
+        "dual_source_boost": 0.03,
+        "parent_match_boost": 0.02,
+        "profiles": {
+            "strict": {
+                "auto_accept_threshold": 0.90,
+                "review_min_threshold": 0.80
+            },
+            "moderate": {
+                "auto_accept_threshold": 0.85,
+                "review_min_threshold": 0.70
+            },
+            "permissive": {
+                "auto_accept_threshold": 0.80,
+                "review_min_threshold": 0.60
+            }
+        }
+    }
+
     def __init__(self, config: Optional[Dict] = None):
         """Initialize the company resolver.
 
@@ -119,21 +142,22 @@ class FacilityCompanyResolver:
         The company database is loaded lazily on first use.
 
         Args:
-            config: Optional configuration dict with gate thresholds
+            config: Optional configuration dict with gate thresholds.
+                   If not provided, uses DEFAULT_GATES.
         """
-        self.config = config or {}
+        self.config = config or self.DEFAULT_GATES.copy()
         logger.info("Initializing FacilityCompanyResolver")
         self.matcher = EnhancedCompanyMatcher()
         self._cache: Dict[Tuple, Optional[Dict]] = {}
         logger.info("Company resolver ready (database will load on first use)")
 
     @classmethod
-    def from_config(cls, config_path: str, profile: str = "strict"):
-        """Create resolver from config file.
+    def from_config(cls, config_path: str = None, profile: str = "strict"):
+        """Create resolver from config file or use defaults with profile.
 
         Args:
-            config_path: Path to gate_config.json
-            profile: Profile name (strict, moderate, permissive)
+            config_path: Optional path to gate_config.json (if None, uses DEFAULT_GATES)
+            profile: Profile name (strict, moderate, permissive) - default: strict
 
         Returns:
             Initialized FacilityCompanyResolver instance
@@ -141,12 +165,18 @@ class FacilityCompanyResolver:
         import json
         from pathlib import Path
 
-        config_file = Path(config_path)
-        if config_file.exists():
-            with open(config_file) as f:
-                config = json.load(f)
-        else:
-            config = {}
+        # Start with default config
+        config = cls.DEFAULT_GATES.copy()
+
+        # Override with file config if provided
+        if config_path:
+            config_file = Path(config_path)
+            if config_file.exists():
+                with open(config_file) as f:
+                    file_config = json.load(f)
+                    config.update(file_config)
+            else:
+                logger.warning(f"Config file not found: {config_path}, using defaults")
 
         # Apply profile overrides if specified
         if profile and 'profiles' in config and profile in config['profiles']:

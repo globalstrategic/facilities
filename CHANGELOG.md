@@ -5,6 +5,34 @@ All notable changes to the Facilities Database project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2025-10-21
+
+### Added
+- **Geocoding & Backfill System**: Comprehensive data enrichment tools
+  - Multi-strategy geocoding: Industrial zones → Nominatim API → Interactive prompting
+  - Industrial zones database (UAE zones pre-configured: ICAD I/II/III, Musaffah, Jebel Ali, FOIZ, Hamriyah)
+  - Nominatim (OpenStreetMap) API integration with 1 req/sec rate limiting
+  - Interactive prompting for manual geocoding when automated methods fail
+  - `scripts/backfill.py` - Unified enrichment system with subcommands (geocode, companies, metals, all)
+  - `scripts/geocode_facilities.py` - Standalone geocoding utility
+  - `scripts/utils/geocoding.py` - Multi-strategy geocoding service
+  - Batch processing support for multiple countries
+  - Dry-run mode for all backfill operations
+  - Statistics tracking for each enrichment operation
+  - Deep research import: Added 298 new facilities from 12 countries
+
+### Changed
+- **Database Growth**: 8,752 → 9,058 facilities
+- **Documentation**: Consolidated BACKFILL_GUIDE.md into README.md, CLAUDE.md, and CHANGELOG.md
+- **Import Pipeline**: Enhanced geocoding during import for facilities without coordinates
+- **README.md**: Added comprehensive geocoding and backfill documentation (Section 8)
+- **CLAUDE.md**: Added backfill.py and geocode_facilities.py to scripts reference
+
+### Fixed
+- Removed malformed facilities (table footnotes parsed as facility names)
+- Fixed typo in UAE facility commodity name ("wire rod)" → "wire rod")
+- Geocoded 6 UAE facilities automatically (16.1% success rate with automated strategies)
+
 ## [2.0.1] - 2025-10-21
 
 ### Added
@@ -15,18 +43,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `scripts/deduplicate_facilities.py` for batch cleanup
   - Facility scoring system for intelligent merge selection
   - Full data preservation during merge (aliases, sources, commodities, company mentions)
+  - `scripts/utils/deduplication.py` shared logic module
 
 ### Changed
 - **Import Pipeline** (`scripts/import_from_report.py`):
   - Enhanced duplicate detection with coordinate-first matching
   - Added name containment and word overlap checks
   - Improved handling of facilities with missing coordinates
-- **Documentation**:
-  - Consolidated 16 markdown files → 9 active documentation files
-  - Updated CLAUDE.md with comprehensive deduplication section
-  - Updated docs/README_FACILITIES.md with deduplication workflows
-  - Created CHANGELOG.md for version history
-  - Created docs/INDEX.md for navigation
+- **Documentation** (Major consolidation):
+  - All documentation consolidated into 3 files: README.md, CLAUDE.md, CHANGELOG.md
+  - Removed docs/ directory entirely
+  - README.md: Comprehensive 1,000+ line all-in-one guide
+    - Includes: Quick Start, Architecture, Data Model, EntityIdentity Integration
+    - Includes: Import Workflows, Deduplication, Company Resolution, Deep Research
+    - Includes: Querying, Schema Reference, CLI Commands, Data Quality, Statistics
+  - CLAUDE.md: Developer-focused guide with code patterns and workflows
+  - CHANGELOG.md: Version history (this file)
 
 ### Fixed
 - **South Africa Duplicates**: Cleaned up 151 duplicate facilities (779 → 628, 19.4% reduction)
@@ -36,12 +68,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 147 total duplicate groups resolved
 
 ### Removed
-- Deleted redundant documentation:
-  - `REPOSITORY_STRUCTURE.md` (content merged into CLAUDE.md)
-  - `DUPLICATE_FUNCTIONALITY_ANALYSIS.md` (superseded by implementation)
-  - `SCRIPT_AUDIT.md` (superseded by CLAUDE.md Scripts Reference)
-  - `docs/FACILITIES_MIGRATION_PLAN.md` (completed migration)
-  - `docs/ENTITY_IDENTITY_INTEGRATION.md` (superseded by comprehensive plan)
+- **Documentation consolidation**: Deleted entire docs/ directory
+  - All content consolidated into README.md
+  - Removed: `docs/README_FACILITIES.md` (→ README.md)
+  - Removed: `docs/ENTITYIDENTITY_INTEGRATION_PLAN.md` (→ README.md)
+  - Removed: `docs/SCHEMA_CHANGES_V2.md` (→ README.md)
+  - Removed: `docs/DEEP_RESEARCH_WORKFLOW.md` (→ README.md)
+- **Config directory deleted**: Hardcoded defaults in code
+  - Removed: `config/` directory
+  - Quality gates now hardcoded in `scripts/utils/company_resolver.py`
+  - Optional config file override still supported but not required
+- Previously deleted (earlier in v2.0.1):
+  - `REPOSITORY_STRUCTURE.md` (→ CLAUDE.md)
+  - `DUPLICATE_FUNCTIONALITY_ANALYSIS.md` (superseded)
+  - `SCRIPT_AUDIT.md` (→ CLAUDE.md)
+  - `docs/INDEX.md` (→ README.md)
 
 ## [2.0.0] - 2025-10-20
 
@@ -131,6 +172,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
+- **2.1.0** (2025-10-21): Geocoding & backfill system, deep research import, 9,058 facilities
 - **2.0.1** (2025-10-21): Deduplication system, documentation consolidation
 - **2.0.0** (2025-10-20): EntityIdentity integration, two-phase company resolution, schema v2.0
 - **1.8.0** (2025-10-14): Deep research integration, schema documentation
@@ -140,6 +182,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Migration Notes
+
+### 2.0.1 → 2.1.0
+- No schema changes
+- Install geocoding dependencies: `pip install geopy`
+- Optionally backfill missing coordinates: `python scripts/backfill.py geocode --country <ISO3>`
+- Review deprecated BACKFILL_GUIDE.md (content now in README.md Section 8)
 
 ### 2.0.0 → 2.0.1
 - No schema changes
@@ -160,12 +208,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Deprecations
 
 ### 2.0.1
-- **Documentation files** (deleted):
-  - `REPOSITORY_STRUCTURE.md` - Use CLAUDE.md
-  - `DUPLICATE_FUNCTIONALITY_ANALYSIS.md` - See this CHANGELOG
-  - `SCRIPT_AUDIT.md` - See CLAUDE.md Scripts Reference section
-  - `docs/FACILITIES_MIGRATION_PLAN.md` - Migration completed
-  - `docs/ENTITY_IDENTITY_INTEGRATION.md` - See ENTITYIDENTITY_INTEGRATION_PLAN.md
+- **All documentation consolidated into 3 files**:
+  - **README.md** - Complete all-in-one documentation (was docs/README_FACILITIES.md + 3 other docs)
+  - **CLAUDE.md** - Developer guide (was CLAUDE.md + merged deprecated docs)
+  - **CHANGELOG.md** - Version history (this file)
+- **Deleted docs/ directory entirely** - All content merged into README.md
+- **Deleted redundant docs** - REPOSITORY_STRUCTURE.md, DUPLICATE_FUNCTIONALITY_ANALYSIS.md, SCRIPT_AUDIT.md
 
 ### 2.0.0
 - **`import_from_report_enhanced.py`**: Merged into `import_from_report.py`
@@ -176,10 +224,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Known Issues
 
-### Current (2.0.1)
+### Current (2.1.0)
+- Low automated geocoding success rate (10-20%) - use interactive mode or add industrial zones
 - Some countries still have potential duplicates (run deduplication)
 - Directory naming inconsistency (mix of ISO2/ISO3) - harmless but could be standardized
-- ~0.7% of facilities still missing coordinates
+- ~1% of facilities still missing coordinates (down from ~0.7% after backfill)
 
 ### Resolved in 2.0.1
 - ✅ South Africa duplicates (151 removed)
@@ -191,16 +240,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Statistics
 
 ### Current Database (2025-10-21)
-- **Total Facilities**: ~8,455 (after ZAF deduplication)
+- **Total Facilities**: 9,058
 - **Countries**: 129 (ISO3 codes)
-- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (578), IDN (461), IND (424)
-- **With Coordinates**: 99.3%
-- **Average Confidence**: 0.641
+- **Top Countries**: CHN (1,837), USA (1,623), ZAF (628), AUS (613), IDN (461), IND (424)
+- **With Coordinates**: ~99% (8,970+ facilities)
+- **Average Confidence**: 0.64
 
 ### Growth
 - **2025-10-10**: 8,500 facilities (v1.0.0)
 - **2025-10-20**: 8,606 facilities (v2.0.0)
-- **2025-10-21**: 8,455 facilities (v2.0.1 - post deduplication)
+- **2025-10-21 (morning)**: 8,455 facilities (v2.0.1 - post deduplication)
+- **2025-10-21 (afternoon)**: 8,752 facilities (deep research import)
+- **2025-10-21 (final)**: 9,058 facilities (v2.1.0 - geocoding & backfill)
 
 ---
 
@@ -214,7 +265,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Links
 
-- [Primary Documentation](docs/README_FACILITIES.md)
-- [Developer Guide](CLAUDE.md)
-- [EntityIdentity Integration Plan](docs/ENTITYIDENTITY_INTEGRATION_PLAN.md)
-- [Schema Documentation](docs/SCHEMA_CHANGES_V2.md)
+- [Complete Documentation](README.md) - All-in-one guide with everything you need
+- [Developer Guide](CLAUDE.md) - Code patterns and workflows for contributors
+- [Version History](CHANGELOG.md) - This file

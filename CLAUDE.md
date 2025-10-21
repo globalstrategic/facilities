@@ -85,6 +85,45 @@ python scripts/enrich_companies.py --min-confidence 0.75  # Set confidence thres
 # Outputs written to: tables/facilities/facility_company_relationships.parquet
 ```
 
+### Backfill & Enrichment (NEW - v2.1)
+
+```bash
+# Install geocoding dependencies
+pip install geopy
+
+# Backfill everything for a country
+python scripts/backfill.py all --country ARE --interactive
+
+# Or run operations individually
+python scripts/backfill.py geocode --country ARE --interactive
+python scripts/backfill.py companies --country IND --profile moderate
+python scripts/backfill.py metals --all
+
+# Batch processing (multiple countries)
+python scripts/backfill.py geocode --countries ARE,IND,CHN
+
+# Dry run (preview changes)
+python scripts/backfill.py all --country ARE --dry-run
+```
+
+**What each operation does:**
+- **geocode**: Adds missing coordinates using industrial zones → Nominatim API → interactive prompting
+- **companies**: Resolves `company_mentions[]` to canonical company IDs (Phase 2)
+- **metals**: Adds chemical formulas and categories to commodities
+- **all**: Runs all three operations in sequence
+
+**Geocoding strategies:**
+1. Industrial zone database (UAE zones pre-configured)
+2. Nominatim API (OpenStreetMap) with rate limiting
+3. Location extraction from facility names
+4. Interactive prompting (if `--interactive` flag enabled)
+
+**Success rates:**
+- Industrial zones: ~5-10%
+- Nominatim API: ~10-15%
+- Total automated: ~15-25%
+- Remaining: Need interactive mode or better data
+
 ### Deduplication
 
 **Automatic (during import)**: The import pipeline automatically prevents duplicates using `check_duplicate()` in `import_from_report.py`.
@@ -152,20 +191,20 @@ facilities/
 │   └── facilities/
 │       └── facility_company_relationships.parquet  # Canonical relationships
 │
-├── docs/                                # Comprehensive documentation
-│   ├── README_FACILITIES.md             # Primary documentation
-│   ├── ENTITYIDENTITY_INTEGRATION_PLAN.md  # Integration architecture
-│   ├── SCHEMA_CHANGES_V2.md             # Schema v2.0 documentation
-│   └── DEEP_RESEARCH_WORKFLOW.md        # Research enrichment guide
+├── README.md                            # Complete documentation (all-in-one)
+├── CLAUDE.md                            # Developer guide (this file)
+├── CHANGELOG.md                         # Version history and release notes
+
+
 │
 ├── output/                              # Generated outputs (gitignored)
 │   ├── import_logs/                     # Import reports with statistics
 │   ├── research_raw/                    # Gemini Deep Research outputs
 │   └── entityidentity_export/           # Parquet exports
 │
-└── config/                              # Configuration files
-    ├── gate_config.json                 # Quality gate thresholds for CompanyResolver
-    └── company_aliases.json             # Canonical company ID mappings
+
+ for CompanyResolver
+
 ```
 
 ### Key Architectural Patterns
@@ -343,7 +382,7 @@ name = iso3_to_country_name("DZA")          # → "Algeria"
 from scripts.utils.company_resolver import CompanyResolver
 
 # Initialize with config profile (strict, moderate, permissive)
-resolver = CompanyResolver.from_config("config/gate_config.json", profile="strict")
+resolver = CompanyResolver.from_config(profile="strict")
 
 # Batch resolve mentions
 mentions = [
@@ -361,7 +400,7 @@ accepted, review, pending = resolver.resolve_mentions(mentions, facility=facilit
 **Key points:**
 - Always use batch `resolve_mentions()` instead of single `resolve_name()`
 - Quality gates determine auto-accept vs review vs pending
-- Canonical IDs from `config/company_aliases.json`
+- Canonical IDs resolved via EntityIdentity
 - Relationships written to parquet, NOT facility JSON
 
 ### 3. Facility ID Generation
@@ -761,7 +800,7 @@ done
 
 ### Quality Gates for Company Resolution
 
-Configured in `config/gate_config.json`:
+Hardcoded in `scripts/utils/company_resolver.py`:
 
 **Profiles:**
 - **strict**: High precision, lower recall (min_confidence 0.80)
@@ -884,7 +923,80 @@ cat report.txt | python scripts/import_from_report.py --country DZ
 
 ---
 
-#### 2. enrich_companies.py (470 lines)
+#### 2. backfill.py (NEW - v2.1 - 550 lines)
+**Unified backfill system for enriching existing facilities**
+
+```bash
+# Backfill geocoding (add coordinates)
+python scripts/backfill.py geocode --country ARE
+python scripts/backfill.py geocode --country ARE --interactive
+
+# Backfill company resolution
+python scripts/backfill.py companies --country IND --profile moderate
+
+# Backfill metal normalization (add formulas/categories)
+python scripts/backfill.py metals --all
+
+# Backfill everything at once
+python scripts/backfill.py all --country ARE --interactive
+
+# Batch processing (multiple countries)
+python scripts/backfill.py geocode --countries ARE,IND,CHN
+
+# Dry run
+python scripts/backfill.py all --country ARE --dry-run
+```
+
+**What it does:**
+- **geocode**: Adds missing coordinates using industrial zone DB + Nominatim API
+- **companies**: Resolves `company_mentions[]` to canonical IDs with quality gates
+- **metals**: Adds chemical formulas and categories to commodities via `metal_identifier()`
+- **all**: Runs all three enrichment operations in sequence
+
+**Features:**
+- Multi-strategy geocoding (industrial zones → Nominatim → interactive)
+- Batch processing support (single/multiple countries)
+- Detailed statistics tracking for each operation
+- Dry-run mode for safe preview
+- Preserves existing data (only adds missing fields)
+- Updates `verification.last_checked` and `verification.notes`
+
+**Output:** Updated facility JSONs with enriched data
+
+---
+
+#### 3. geocode_facilities.py (NEW - v2.1 - 268 lines)
+**Standalone geocoding utility**
+
+```bash
+# Geocode all facilities in a country
+python scripts/geocode_facilities.py --country ARE
+
+# Interactive mode (prompts for failures)
+python scripts/geocode_facilities.py --country ARE --interactive
+
+# Dry run
+python scripts/geocode_facilities.py --country ARE --dry-run
+
+# Geocode single facility
+python scripts/geocode_facilities.py --facility-id are-union-cement-company-fac
+
+# Offline mode (industrial zones only)
+python scripts/geocode_facilities.py --country ARE --no-nominatim
+```
+
+**What it does:**
+- Geocodes facilities with missing coordinates
+- Uses `scripts/utils/geocoding.py` service
+- Multiple fallback strategies (zones → Nominatim → interactive)
+- Updates facility JSONs with coordinates and precision
+- Tracks geocoding source and confidence
+
+**Output:** Updated facility JSONs with coordinates
+
+---
+
+#### 4. enrich_companies.py (470 lines)
 **Phase 2 company resolution and relationship creation**
 
 ```bash
@@ -911,7 +1023,7 @@ python scripts/enrich_companies.py --min-confidence 0.75
 
 ---
 
-#### 3. deep_research_integration.py (606 lines)
+#### 5. deep_research_integration.py (606 lines)
 **Gemini Deep Research integration**
 
 ```bash
@@ -938,7 +1050,7 @@ python scripts/deep_research_integration.py \
 
 ---
 
-#### 4. deduplicate_facilities.py (NEW - 342 lines)
+#### 6. deduplicate_facilities.py (342 lines)
 **Batch cleanup utility for existing duplicates**
 
 **Purpose**: Standalone utility for one-time or periodic batch cleanup of duplicates. NOT part of automatic import workflow.
@@ -1040,7 +1152,9 @@ python scripts/verify_backfill.py
 
 ### Utility Modules (scripts/utils/)
 
+- **geocoding.py** (NEW - v2.1): Multi-strategy geocoding service with industrial zones
 - **company_resolver.py**: `CompanyResolver` with quality gates
+- **deduplication.py**: Shared deduplication logic (4-priority matching)
 - **id_utils.py**: Canonical ID mapping
 - **paths.py**: Shared path configuration
 - **country_utils.py**: Country code normalization
@@ -1055,8 +1169,8 @@ python scripts/verify_backfill.py
 # Step 1: Import facilities (Phase 1 - Extraction)
 python scripts/import_from_report.py albania_report.txt
 
-# Step 2: Enrich with companies (Phase 2 - Resolution)
-python scripts/enrich_companies.py --country ALB
+# Step 2: Backfill enrichment (NEW - v2.1)
+python scripts/backfill.py all --country ALB --interactive
 
 # Step 3: (Optional) Deep research enrichment
 python scripts/deep_research_integration.py \
@@ -1077,16 +1191,16 @@ python scripts/facilities.py sync --export
 
 ## Related Documentation
 
-- **[README_FACILITIES.md](docs/README_FACILITIES.md)**: Primary documentation with examples
-- **[ENTITYIDENTITY_INTEGRATION_PLAN.md](docs/ENTITYIDENTITY_INTEGRATION_PLAN.md)**: Complete integration architecture
-- **[SCHEMA_CHANGES_V2.md](docs/SCHEMA_CHANGES_V2.md)**: Schema v2.0.0 documentation
-- **[DEEP_RESEARCH_WORKFLOW.md](docs/DEEP_RESEARCH_WORKFLOW.md)**: Gemini Deep Research integration
+- **[README.md](README.md)**: Complete all-in-one documentation
+
+
+
 - **[SCRIPT_AUDIT.md](SCRIPT_AUDIT.md)**: Scripts audit and duplication analysis
 
 ## Support
 
 For questions or issues:
-1. Check this documentation and the docs/ directory
+1. Check README.md for comprehensive documentation
 2. Review facility schema: `schemas/facility.schema.json`
 3. Check import logs: `output/import_logs/`
 4. Examine example facilities in `facilities/*/`

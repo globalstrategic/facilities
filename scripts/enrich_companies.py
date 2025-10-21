@@ -86,14 +86,12 @@ class CompanyEnricher:
         if not RESOLVER_AVAILABLE:
             raise RuntimeError("CompanyResolver not available - check imports")
 
-        # Phase 2: Initialize CompanyResolver with strict profile
-        config_path = ROOT / "config" / "gate_config.json"
-        self.resolver = CompanyResolver.from_config(str(config_path), profile="strict")
-        logger.info("CompanyResolver initialized (profile=strict)")
+        # Phase 2: Initialize CompanyResolver with strict profile (uses hardcoded defaults)
+        self.resolver = CompanyResolver.from_config(profile="strict")
+        logger.info("CompanyResolver initialized (profile=strict, using default gates)")
 
-        # Load alias map for canonical IDs
-        alias_map_path = ROOT / "config" / "company_aliases.json"
-        self.alias_map = load_alias_map(str(alias_map_path)) if alias_map_path.exists() else {}
+        # Alias map for canonical IDs (currently not used, placeholder for future)
+        self.alias_map = {}
         logger.info(f"Loaded {len(self.alias_map)} company aliases")
 
         # Initialize PendingCompanyTracker (optional)
@@ -440,7 +438,7 @@ def main():
         print("\nMake sure Phase 2 utilities are set up:")
         print("  - scripts/utils/company_resolver.py")
         print("  - scripts/utils/id_utils.py")
-        print("  - config/gate_config.json")
+        print("  - EntityIdentity library (pip install entityidentity)")
         return 1
 
     # Run enrichment
