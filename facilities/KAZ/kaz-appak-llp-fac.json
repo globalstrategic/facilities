@@ -1,0 +1,64 @@
+{
+  "facility_id": "kaz-appak-llp-fac",
+  "name": "APPAK LLP",
+  "aliases": [],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "APPAK LLP (Kazatomprom",
+      "role": "operator",
+      "source": "Kazakhstan Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:13:13.050406",
+      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
+    },
+    {
+      "name": "Sumitomo",
+      "role": "operator",
+      "source": "Kazakhstan Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:13:13.050422",
+      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
+    },
+    {
+      "name": "Kansai Electric)",
+      "role": "operator",
+      "source": "Kazakhstan Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:13:13.050425",
+      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Kazakhstan Deep Research 2025",
+      "date": "2025-10-21T13:13:13.050428"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:13:13.050429",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "facility_id": "usa-tennessee-mines-fac",
+  "name": "Tennessee Mines",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Germanium",
+      "primary": false,
+      "chemical_formula": "Ge",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Nyrstar",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:34.957476",
+      "evidence": "Extracted from operator column: Nyrstar / Trafigura"
+    },
+    {
+      "name": "Trafigura",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:34.957487",
+      "evidence": "Extracted from operator column: Nyrstar / Trafigura"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:34.957490"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:34.957492",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "facility_id": "usa-no-primary-mines-fac",
+  "name": "*No Primary Mines*",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Byproduct",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:34.926068",
+      "evidence": "Extracted from operator column: Byproduct/Prospective"
+    },
+    {
+      "name": "Prospective",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:34.926082",
+      "evidence": "Extracted from operator column: Byproduct/Prospective"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:34.926086"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:34.926087",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

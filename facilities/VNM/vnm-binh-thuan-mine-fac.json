@@ -1,0 +1,48 @@
+{
+  "facility_id": "vnm-binh-thuan-mine-fac",
+  "name": "**Binh Thuan Mine**",
+  "aliases": [],
+  "country_iso3": "VNM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Not Specified",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:38.098142",
+      "evidence": "Extracted from operator column: Not Specified"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:38.098148"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:38.098149",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

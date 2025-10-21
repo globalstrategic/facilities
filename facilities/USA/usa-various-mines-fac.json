@@ -1,0 +1,48 @@
+{
+  "facility_id": "usa-various-mines-fac",
+  "name": "*Various Mines*",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Vanadium",
+      "primary": false,
+      "chemical_formula": "V",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Various",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:34.898834",
+      "evidence": "Extracted from operator column: Various"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:34.898844"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:34.898846",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

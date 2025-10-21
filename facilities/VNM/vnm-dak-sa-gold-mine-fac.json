@@ -1,0 +1,48 @@
+{
+  "facility_id": "vnm-dak-sa-gold-mine-fac",
+  "name": "**Dak Sa Gold Mine**",
+  "aliases": [],
+  "country_iso3": "VNM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Phuoc Son Gold Company Ltd.",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:38.127907",
+      "evidence": "Extracted from operator column: Phuoc Son Gold Company Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:38.127910"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:38.127911",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

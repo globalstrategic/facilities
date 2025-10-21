@@ -1,0 +1,56 @@
+{
+  "facility_id": "kaz-katco-jv-fac",
+  "name": "KATCO JV",
+  "aliases": [],
+  "country_iso3": "KAZ",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "KATCO LLP JV (Orano",
+      "role": "operator",
+      "source": "Kazakhstan Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:13:13.088470",
+      "evidence": "Extracted from operator column: KATCO LLP JV (Orano / Kazatomprom)"
+    },
+    {
+      "name": "Kazatomprom)",
+      "role": "operator",
+      "source": "Kazakhstan Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:13:13.088476",
+      "evidence": "Extracted from operator column: KATCO LLP JV (Orano / Kazatomprom)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Kazakhstan Deep Research 2025",
+      "date": "2025-10-21T13:13:13.088479"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:13:13.088480",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "facility_id": "vnm-dong-pao-mine-fac",
+  "name": "**Dong Pao Mine**",
+  "aliases": [],
+  "country_iso3": "VNM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "rare earths",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Lai Chau Rare Earth JSC",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:38.057736",
+      "evidence": "Extracted from operator column: Lai Chau Rare Earth JSC (Vimico) / Hung Hai Group / Trident Global Holdings"
+    },
+    {
+      "name": "Hung Hai Group",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:38.057745",
+      "evidence": "Extracted from operator column: Lai Chau Rare Earth JSC (Vimico) / Hung Hai Group / Trident Global Holdings"
+    },
+    {
+      "name": "Trident Global Holdings",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:38.057747",
+      "evidence": "Extracted from operator column: Lai Chau Rare Earth JSC (Vimico) / Hung Hai Group / Trident Global Holdings"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:38.057749"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T13:04:38.057751",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

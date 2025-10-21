@@ -1,0 +1,56 @@
+{
+  "facility_id": "tza-mkuju-river-fac",
+  "name": "Mkuju River",
+  "aliases": [],
+  "country_iso3": "TZA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project-development"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Mantra Tanzania (Uranium One",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:30.379199",
+      "evidence": "Extracted from operator column: Mantra Tanzania (Uranium One / Rosatom)"
+    },
+    {
+      "name": "Rosatom)",
+      "role": "operator",
+      "source": "Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T13:04:30.379206",
+      "evidence": "Extracted from operator column: Mantra Tanzania (Uranium One / Rosatom)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T13:04:30.379208"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T13:04:30.379209",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
