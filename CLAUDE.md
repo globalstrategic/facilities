@@ -884,6 +884,13 @@ Current database (as of 2025-10-21):
    - Query parquet to get facility-company links
    - Don't modify facility JSONs for company links (Phase 2 design)
 
+6. **EntityIdentity API changes** (Fixed in v2.1.1):
+   - EntityIdentity changed `metal_identifier()` return key from `'formula'` to `'chemical_formula'`
+   - **Fix**: Use `result.get('chemical_formula')` in `scripts/import_from_report.py:911`
+   - Symptom: "Metals with formulas: 0" despite entityidentity being installed
+   - Test: Import should show "Metals with formulas: N" where N > 0 for data with metals
+   - Verified with neodymium test: 100% success (33/33 facilities enriched with Nd formulas)
+
 ## Performance Characteristics
 
 - **Import**: ~50 facilities/second (standard), ~10 facilities/second (with entity resolution)

@@ -1191,7 +1191,13 @@ find facilities -name "*.json" -exec grep -l '"confidence": 0\.[0-4]' {} \;
    pip install git+https://github.com/microprediction/entityidentity.git
    ```
 
-2. **Country not resolved**
+2. **Metal formulas not being extracted** (Fixed in v2.1.1)
+   - If you see "Metals with formulas: 0" despite having entityidentity installed
+   - Check that `import_from_report.py` uses `result.get('chemical_formula')` not `result.get('formula')`
+   - EntityIdentity API updated to use 'chemical_formula' key (was 'formula' in earlier versions)
+   - Expected output: Each metal commodity should have `"chemical_formula": "Nd"` and `"category": "rare_earth_element"`
+
+3. **Country not resolved**
    - Use `resolve country` command to test
    - Check that country name is spelled correctly
    - Try ISO2 or ISO3 code directly

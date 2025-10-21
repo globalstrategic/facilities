@@ -5,6 +5,24 @@ All notable changes to the Facilities Database project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] - 2025-10-21
+
+### Fixed
+- **EntityIdentity Integration**: Fixed metal formula field mapping in `scripts/import_from_report.py:911`
+  - Changed `result.get('formula')` to `result.get('chemical_formula')` to match updated entityidentity API
+  - Metal normalization now successfully extracts chemical formulas and categories
+  - Tested with neodymium facilities: 100% success rate (33/33 facilities got "Nd" formula and "rare_earth_element" category)
+  - Resolved issue where metal resolutions were showing 0 despite entityidentity being available
+
+### Tested
+- **Import Pipeline Validation**: Comprehensive test with 36 neodymium/REE facilities
+  - ✅ Duplicate detection: 100% accurate (3/3 caught: Bayan Obo, Mountain Pass, Steenkampskraal)
+  - ✅ Country assignment: 100% accurate (33 facilities sorted into 21 countries)
+  - ✅ Metal formulas: 34 commodities enriched with chemical formulas via entityidentity
+  - ✅ Status mapping: Correctly assigned operating/suspended/unknown states
+  - ✅ CSV parsing: Multi-column tables with semicolon-separated commodities
+  - Test data: `data/neodymium_converted.csv` (36 global REE facilities)
+
 ## [2.1.0] - 2025-10-21
 
 ### Added

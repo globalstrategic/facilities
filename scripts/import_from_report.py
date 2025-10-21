@@ -908,7 +908,7 @@ def parse_commodities(primary: str, other: str, enhanced: bool = False) -> List[
                 if result:
                     return {
                         "metal": result.get('name', metal_str.lower()),
-                        "chemical_formula": result.get('formula'),
+                        "chemical_formula": result.get('chemical_formula'),
                         "category": result.get('category', 'unknown')
                     }
             except Exception as e:
