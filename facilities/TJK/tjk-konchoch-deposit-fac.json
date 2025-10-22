@@ -1,0 +1,58 @@
+{
+  "facility_id": "tjk-konchoch-deposit-fac",
+  "name": "Konchoch Deposit",
+  "aliases": [],
+  "country_iso3": "TJK",
+  "location": {
+    "lat": 39.1609,
+    "lon": 68.8154,
+    "precision": "site"
+  },
+  "types": [
+    "mine/deposit (development)"
+  ],
+  "commodities": [
+    {
+      "metal": "antimony",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "TALCO Gold",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.073542",
+      "evidence": "Extracted from operator column: TALCO Gold (TALCO & Tibet Huayu Mining Co. JV)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.073578"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T14:34:23.073582",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

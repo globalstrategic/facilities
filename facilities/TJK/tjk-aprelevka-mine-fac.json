@@ -1,0 +1,54 @@
+{
+  "facility_id": "tjk-aprelevka-mine-fac",
+  "name": "Aprelevka Mine",
+  "aliases": [],
+  "country_iso3": "TJK",
+  "location": {
+    "lat": 40.4908,
+    "lon": 70.0572,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "JV Aprelevka",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.089357",
+      "evidence": "Extracted from operator column: JV Aprelevka (Gulf Int'l Minerals 49%, Gov. of Tajikistan 51%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.089396"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T14:34:23.089400",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -389,7 +389,7 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
             row = facility_to_csv_row(facility, country_name)
             writer.writerow(row)
 
-    print(f"✓ Exported {len(facilities)} facilities to {output_file}")
+    print(f"[OK] Exported {len(facilities)} facilities to {output_file}")
     return len(facilities)
 
 
@@ -497,7 +497,7 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
             row = facility_to_csv_row(facility, country_name)
             writer.writerow(row)
 
-    print(f"\n✓ Exported {len(all_facilities)} facilities from {len(country_counts)} countries to {output_path}")
+    print(f"\n[OK] Exported {len(all_facilities)} facilities from {len(country_counts)} countries to {output_path}")
     print(f"  File size: {output_path.stat().st_size / 1024:.1f} KB")
 
     return len(all_facilities)

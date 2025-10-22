@@ -1,0 +1,50 @@
+{
+  "facility_id": "svn-irovski-vrh-mine-fac",
+  "name": "Žirovski Vrh Mine",
+  "aliases": [],
+  "country_iso3": "SVN",
+  "location": {
+    "lat": 46.08306,
+    "lon": 14.16111,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Žirovski Vrh Mine Company",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.185669",
+      "evidence": "Extracted from operator column: Žirovski Vrh Mine Company (State-owned) (Hist.)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import METALLURGICAL 2025-10-21",
+      "date": "2025-10-21T17:19:41.185681"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T17:19:41.185684",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

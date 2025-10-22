@@ -1,0 +1,54 @@
+{
+  "facility_id": "sau-khnaiguiyah-project-fac",
+  "name": "Khnaiguiyah Project",
+  "aliases": [],
+  "country_iso3": "SAU",
+  "location": {
+    "lat": 24.25,
+    "lon": 45.083,
+    "precision": "site"
+  },
+  "types": [
+    "development project"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ajlan & Bros Holding Co. & Moxico Resources PLC Consortium",
+      "role": "operator",
+      "source": "Research Import SAU 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T18:09:18.822141",
+      "evidence": "Extracted from operator column: Ajlan & Bros Holding Co. & Moxico Resources PLC Consortium"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SAU 2025-10-21",
+      "date": "2025-10-21T18:09:18.822153"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T18:09:18.822156",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

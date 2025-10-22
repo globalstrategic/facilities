@@ -613,6 +613,7 @@ def is_facility_table(table: Dict) -> bool:
     if len(table['headers']) < 2:
         return False
 
+
     # Filter out None values and convert to lowercase
     headers_lower = [h.lower() for h in table['headers'] if h is not None]
     indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',

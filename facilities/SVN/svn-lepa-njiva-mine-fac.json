@@ -1,0 +1,50 @@
+{
+  "facility_id": "svn-lepa-njiva-mine-fac",
+  "name": "Lepa Njiva Mine",
+  "aliases": [],
+  "country_iso3": "SVN",
+  "location": {
+    "lat": 46.36667,
+    "lon": 14.98306,
+    "precision": "site"
+  },
+  "types": [
+    "occurrence/mine"
+  ],
+  "commodities": [
+    {
+      "metal": "antimony",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Unknown historical operators",
+      "role": "operator",
+      "source": "Research Import METALLURGICAL 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T17:19:41.192431",
+      "evidence": "Extracted from operator column: Unknown historical operators"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import METALLURGICAL 2025-10-21",
+      "date": "2025-10-21T17:19:41.192453"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-21T17:19:41.192457",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

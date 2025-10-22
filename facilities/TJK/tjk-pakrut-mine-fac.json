@@ -1,0 +1,54 @@
+{
+  "facility_id": "tjk-pakrut-mine-fac",
+  "name": "Pakrut Mine",
+  "aliases": [],
+  "country_iso3": "TJK",
+  "location": {
+    "lat": 38.861,
+    "lon": 71.2761,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "LLC Pakrut",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.041711",
+      "evidence": "Extracted from operator column: LLC Pakrut (China Nonferrous Gold Ltd. 100%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.041724"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T14:34:23.041726",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

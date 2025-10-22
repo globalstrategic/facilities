@@ -1,0 +1,46 @@
+{
+  "facility_id": "sau-cobalt-refinery-project-fac",
+  "name": "Cobalt Refinery Project",
+  "aliases": [],
+  "country_iso3": "SAU",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant (planned)"
+  ],
+  "commodities": [
+    {
+      "metal": "cobalt sulfate",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Eurasian Resources Group & Thara Future Investment Company",
+      "role": "operator",
+      "source": "Research Import SAU 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T18:09:18.838736",
+      "evidence": "Extracted from operator column: Eurasian Resources Group (ERG) & Thara Future Investment Company"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SAU 2025-10-21",
+      "date": "2025-10-21T18:09:18.838747"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-21T18:09:18.838751",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

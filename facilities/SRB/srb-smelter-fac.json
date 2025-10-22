@@ -1,0 +1,41 @@
+{
+  "facility_id": "srb-smelter-fac",
+  "name": "Smelter",
+  "aliases": [],
+  "country_iso3": "SRB",
+  "location": {
+    "lat": 44.077222,
+    "lon": 22.110833,
+    "precision": "site"
+  },
+  "types": [
+    "smelter & refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "steel",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SERBIAN 2025-10-21",
+      "date": "2025-10-21T17:52:17.175388"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-21T17:52:17.175399",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
