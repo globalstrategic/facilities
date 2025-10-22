@@ -59,11 +59,26 @@ logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent))
 
 try:
-    from utils.geocoding import geocode_facility, GeocodingResult
+    from utils.geocoding import AdvancedGeocoder, GeocodingResult
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
+
+# Initialize global geocoder (reused across facilities)
+_GEOCODER = None
+
+def get_geocoder():
+    """Get or create global geocoder instance."""
+    global _GEOCODER
+    if _GEOCODER is None:
+        _GEOCODER = AdvancedGeocoder(
+            use_overpass=True,
+            use_wikidata=True,
+            use_nominatim=True,
+            cache_results=True
+        )
+    return _GEOCODER
 
 # Try to import optional dependencies
 try:
@@ -192,16 +207,22 @@ def backfill_geocoding(
         return stats
 
     # Geocode each facility
+    geocoder = get_geocoder()
+
     for i, facility in enumerate(to_geocode):
         facility_id = facility['facility_id']
         logger.info(f"[{i+1}/{len(to_geocode)}] {facility['name']}")
 
-        result = geocode_facility(
+        # Extract commodities and aliases for better matching
+        commodities = [c.get('metal') for c in facility.get('commodities', []) if c.get('metal')]
+        aliases = facility.get('aliases', [])
+
+        result = geocoder.geocode_facility(
             facility_name=facility['name'],
             country_iso3=country_iso3,
-            country_name=country_name,
-            interactive=interactive,
-            use_nominatim=True
+            commodities=commodities,
+            aliases=aliases,
+            min_confidence=0.5  # Moderate threshold for backfill
         )
 
         if result.lat is not None and result.lon is not None:
