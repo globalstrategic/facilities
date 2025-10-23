@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-adlay-mining-project-fac",
+  "name": "Adlay Mining Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 9.35,
+    "lon": 125.95,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "iron",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "CTP Construction and Mining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.001379",
+      "evidence": "Extracted from operator column: CTP Construction and Mining Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.001412"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.001418",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

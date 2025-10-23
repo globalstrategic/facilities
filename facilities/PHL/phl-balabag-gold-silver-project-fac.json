@@ -1,0 +1,50 @@
+{
+  "facility_id": "phl-balabag-gold-silver-project-fac",
+  "name": "Balabag Gold-Silver Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 7.8,
+    "lon": 123.117,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine & processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "TVI Resource Development, Inc.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.098312",
+      "evidence": "Extracted from operator column: TVI Resource Development (Phils.), Inc."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.098349"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.098352",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

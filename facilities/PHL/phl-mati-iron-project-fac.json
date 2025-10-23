@@ -1,0 +1,46 @@
+{
+  "facility_id": "phl-mati-iron-project-fac",
+  "name": "Mati Iron Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 6.95,
+    "lon": 126.317,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Genluiching Mining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.221396",
+      "evidence": "Extracted from operator column: Genluiching Mining Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.221424"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:54:07.221430",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

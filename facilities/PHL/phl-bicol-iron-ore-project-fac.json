@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-bicol-iron-ore-project-fac",
+  "name": "Bicol Iron Ore Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 14.283,
+    "lon": 122.917,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Skaff Group",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.232053",
+      "evidence": "Extracted from operator column: Skaff Group / Heirs of Fonacier"
+    },
+    {
+      "name": "Heirs of Fonacier",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.232079",
+      "evidence": "Extracted from operator column: Skaff Group / Heirs of Fonacier"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.232089"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:54:07.232093",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
