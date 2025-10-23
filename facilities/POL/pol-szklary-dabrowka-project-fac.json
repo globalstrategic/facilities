@@ -1,0 +1,54 @@
+{
+  "facility_id": "pol-szklary-dabrowka-project-fac",
+  "name": "Szklary / Dabrowka Project",
+  "aliases": [],
+  "country_iso3": "POL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration project"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel (prospective)",
+      "primary": true
+    },
+    {
+      "metal": "zinc (prospective)",
+      "primary": false
+    },
+    {
+      "metal": "lead (prospective)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ferrite Resources Polska",
+      "role": "operator",
+      "source": "Research Import POLISH 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:42:42.717559",
+      "evidence": "Extracted from operator column: Ferrite Resources Polska"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import POLISH 2025-10-23",
+      "date": "2025-10-23T17:42:42.717585"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:42:42.717591",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

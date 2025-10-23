@@ -1,0 +1,46 @@
+{
+  "facility_id": "pol-arcelormittal-krak-w-fac",
+  "name": "ArcelorMittal Kraków",
+  "aliases": [],
+  "country_iso3": "POL",
+  "location": {
+    "lat": 50.08333,
+    "lon": 20.06667,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "steel (flat products)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "ArcelorMittal Poland",
+      "role": "operator",
+      "source": "Research Import POLISH 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:42:42.614134",
+      "evidence": "Extracted from operator column: ArcelorMittal Poland"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import POLISH 2025-10-23",
+      "date": "2025-10-23T17:42:42.614160"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:42:42.614164",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
