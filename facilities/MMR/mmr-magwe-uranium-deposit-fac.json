@@ -1,0 +1,56 @@
+{
+  "facility_id": "mmr-magwe-uranium-deposit-fac",
+  "name": "Magwe Uranium Deposit",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ministry of Energy",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.826358",
+      "evidence": "Extracted from operator column: Ministry of Energy / No. 2 Mining Enterprise"
+    },
+    {
+      "name": "No. 2 Mining Enterprise",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.826368",
+      "evidence": "Extracted from operator column: Ministry of Energy / No. 2 Mining Enterprise"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.826374"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.45,
+    "last_checked": "2025-10-24T06:31:39.826375",
+    "checked_by": "import_pipeline",
+    "notes": "Identified as the country's highest-grade uranium deposit, but no evidence of active mining. 55"
+  }
+}

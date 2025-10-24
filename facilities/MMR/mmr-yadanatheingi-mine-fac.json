@@ -1,0 +1,60 @@
+{
+  "facility_id": "mmr-yadanatheingi-mine-fac",
+  "name": "Yadanatheingi Mine",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": 22.576,
+    "lon": 96.498,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true,
+      "chemical_formula": "Pb",
+      "category": "base_metal"
+    },
+    {
+      "metal": "Silver",
+      "primary": false,
+      "chemical_formula": "Ag",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Zinc",
+      "primary": false,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "No. 1 Mining Enterprise",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.791834",
+      "evidence": "Extracted from operator column: No. 1 Mining Enterprise"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.791846"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-24T06:31:39.791848",
+    "checked_by": "import_pipeline",
+    "notes": "State-owned underground mine, smaller than Bawdwin but historically significant. 2"
+  }
+}

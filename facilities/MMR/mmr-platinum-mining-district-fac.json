@@ -1,0 +1,64 @@
+{
+  "facility_id": "mmr-platinum-mining-district-fac",
+  "name": "Platinum Mining District",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mining district"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": true,
+      "chemical_formula": "Pt",
+      "category": "platinum_group_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Sai Laung Hein Co.",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.812785",
+      "evidence": "Extracted from operator column: Sai Laung Hein Co.; Sann Baramee Co.; Wanna Thein Than Co."
+    },
+    {
+      "name": "Sann Baramee Co.",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.812791",
+      "evidence": "Extracted from operator column: Sai Laung Hein Co.; Sann Baramee Co.; Wanna Thein Than Co."
+    },
+    {
+      "name": "Wanna Thein Than Co.",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.812793",
+      "evidence": "Extracted from operator column: Sai Laung Hein Co.; Sann Baramee Co.; Wanna Thein Than Co."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.812795"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-24T06:31:39.812796",
+    "checked_by": "import_pipeline",
+    "notes": "Opaque operations run by local companies, linked to environmental and social harms. 38"
+  }
+}

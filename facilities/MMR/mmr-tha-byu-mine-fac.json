@@ -1,0 +1,48 @@
+{
+  "facility_id": "mmr-tha-byu-mine-fac",
+  "name": "Tha Byu Mine",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine / deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Antimony",
+      "primary": true,
+      "chemical_formula": "Sb",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Tha Byu Mining Co. Ltd.",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.798488",
+      "evidence": "Extracted from operator column: Tha Byu Mining Co. Ltd. (Star Sapphire Group)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.798523"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-24T06:31:39.798525",
+    "checked_by": "import_pipeline",
+    "notes": "One of Myanmar's most significant named antimony deposits. 11"
+  }
+}

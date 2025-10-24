@@ -1,0 +1,48 @@
+{
+  "facility_id": "mmr-kyisintaung-copper-mine-fac",
+  "name": "Kyisintaung Copper Mine",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": 22.13,
+    "lon": 95.033,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Wanbao Mining Co Ltd",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.770621",
+      "evidence": "Extracted from operator column: Wanbao Mining Co Ltd"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.770633"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-24T06:31:39.770635",
+    "checked_by": "import_pipeline",
+    "notes": "Part of the Monywa complex operated by Wanbao Mining in partnership with military-controlled entities. 8"
+  }
+}

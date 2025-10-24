@@ -1,0 +1,64 @@
+{
+  "facility_id": "mmr-unregulated-gold-mining-district-fac",
+  "name": "Unregulated Gold Mining District",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mining district"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Chinese operators",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.805605",
+      "evidence": "Extracted from operator column: Chinese operators; Lahu militia; UWSA"
+    },
+    {
+      "name": "Lahu militia",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.805613",
+      "evidence": "Extracted from operator column: Chinese operators; Lahu militia; UWSA"
+    },
+    {
+      "name": "UWSA",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.805615",
+      "evidence": "Extracted from operator column: Chinese operators; Lahu militia; UWSA"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.805618"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-24T06:31:39.805619",
+    "checked_by": "import_pipeline",
+    "notes": "Widespread, destructive gold mining using cyanide, controlled by local militias and EAOs. 18"
+  }
+}

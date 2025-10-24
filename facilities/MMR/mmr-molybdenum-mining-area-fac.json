@@ -1,0 +1,56 @@
+{
+  "facility_id": "mmr-molybdenum-mining-area-fac",
+  "name": "Molybdenum Mining Area",
+  "aliases": [],
+  "country_iso3": "MMR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mining district"
+  ],
+  "commodities": [
+    {
+      "metal": "Molybdenum",
+      "primary": true,
+      "chemical_formula": "Mo",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Chinese operators",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.819516",
+      "evidence": "Extracted from operator column: Chinese operators (CPI, CDT); New Democratic Army-Kachin (NDA-K)"
+    },
+    {
+      "name": "New Democratic Army-Kachin",
+      "role": "operator",
+      "source": "Research Import MMR 2025-10-24",
+      "confidence": 0.7,
+      "first_seen": "2025-10-24T06:31:39.819525",
+      "evidence": "Extracted from operator column: Chinese operators (CPI, CDT); New Democratic Army-Kachin (NDA-K)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MMR 2025-10-24",
+      "date": "2025-10-24T06:31:39.819528"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-24T06:31:39.819533",
+    "checked_by": "import_pipeline",
+    "notes": "Illicit molybdenum mining linked to Chinese hydropower projects and controlled by a junta-aligned militia. 25"
+  }
+}
