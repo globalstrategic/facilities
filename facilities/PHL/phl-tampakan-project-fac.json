@@ -1,0 +1,50 @@
+{
+  "facility_id": "phl-tampakan-project-fac",
+  "name": "Tampakan Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 6.475,
+    "lon": 125.05,
+    "precision": "site"
+  },
+  "types": [
+    "mine (proposed open-pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Sagittarius Mines, Inc.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.130872",
+      "evidence": "Extracted from operator column: Sagittarius Mines, Inc. (SMI)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.130921"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:54:07.130927",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-loreto-project-fac",
+  "name": "Loreto Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 10.35,
+    "lon": 125.617,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "iron",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Century Peak Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.020123",
+      "evidence": "Extracted from operator column: Century Peak Corp. (CPC)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.020202"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.020217",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-ipilan-mine-fac",
+  "name": "Ipilan Mine",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 8.8,
+    "lon": 117.783,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "iron",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ipilan Nickel Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.047112",
+      "evidence": "Extracted from operator column: Ipilan Nickel Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.047151"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:54:07.047157",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

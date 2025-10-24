@@ -1,0 +1,62 @@
+{
+  "facility_id": "pol-tarnowskie-g-ry-mine-fac",
+  "name": "Tarnowskie Góry Mine",
+  "aliases": [],
+  "country_iso3": "POL",
+  "location": {
+    "lat": 50.445,
+    "lon": 18.85639,
+    "precision": "site"
+  },
+  "types": [
+    "historical mine/tourist site"
+  ],
+  "commodities": [
+    {
+      "metal": "lead (historical)",
+      "primary": true
+    },
+    {
+      "metal": "silver (historical)",
+      "primary": false
+    },
+    {
+      "metal": "zinc (historical)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "N",
+      "role": "operator",
+      "source": "Research Import POLISH 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:42:42.699158",
+      "evidence": "Extracted from operator column: N/A"
+    },
+    {
+      "name": "A",
+      "role": "operator",
+      "source": "Research Import POLISH 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:42:42.699179",
+      "evidence": "Extracted from operator column: N/A"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import POLISH 2025-10-23",
+      "date": "2025-10-23T17:42:42.699190"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:42:42.699194",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

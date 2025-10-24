@@ -1,0 +1,54 @@
+{
+  "facility_id": "pol-g-og-w-copper-smelter-refinery-fac",
+  "name": "Głogów Copper Smelter & Refinery",
+  "aliases": [],
+  "country_iso3": "POL",
+  "location": {
+    "lat": 51.68333,
+    "lon": 16.1,
+    "precision": "site"
+  },
+  "types": [
+    "metallurgical plant"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "KGHM Polska Miedź S.A.",
+      "role": "operator",
+      "source": "Research Import POLISH 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:42:42.555874",
+      "evidence": "Extracted from operator column: KGHM Polska Miedź S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import POLISH 2025-10-23",
+      "date": "2025-10-23T17:42:42.555946"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:42:42.555950",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-libjo-project-fac",
+  "name": "Libjo Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 10.267,
+    "lon": 125.55,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "iron",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Libjo Mining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.029823",
+      "evidence": "Extracted from operator column: Libjo Mining Corp. (LMC)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.029873"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.029880",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

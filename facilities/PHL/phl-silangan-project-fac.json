@@ -1,0 +1,64 @@
+{
+  "facility_id": "phl-silangan-project-fac",
+  "name": "Silangan Project",
+  "aliases": [
+    "Boyongan & Bayugo"
+  ],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 9.666,
+    "lon": 125.589,
+    "precision": "site"
+  },
+  "types": [
+    "mine (underground)"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Silangan Mindanao Mining Co., Inc.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.147219",
+      "evidence": "Extracted from operator column: Silangan Mindanao Mining Co., Inc. / Philex Mining Corp."
+    },
+    {
+      "name": "Philex Mining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.147250",
+      "evidence": "Extracted from operator column: Silangan Mindanao Mining Co., Inc. / Philex Mining Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.147261"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-23T17:54:07.147266",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "facility_id": "phl-co-o-mine-fac",
+  "name": "Co-O Mine",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 8.4,
+    "lon": 126.083,
+    "precision": "site"
+  },
+  "types": [
+    "underground mine & processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Philsaga Mining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.068190",
+      "evidence": "Extracted from operator column: Philsaga Mining Corp. / Mindanao Mineral Processing & Refining Corp."
+    },
+    {
+      "name": "Mindanao Mineral Processing & Refining Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.068225",
+      "evidence": "Extracted from operator column: Philsaga Mining Corp. / Mindanao Mineral Processing & Refining Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.068235"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.068238",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

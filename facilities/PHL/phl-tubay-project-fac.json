@@ -1,0 +1,54 @@
+{
+  "facility_id": "phl-tubay-project-fac",
+  "name": "Tubay Project",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 9.167,
+    "lon": 125.533,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "iron",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "SR Metals, Inc.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.013642",
+      "evidence": "Extracted from operator column: SR Metals, Inc. (SRMI)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.013678"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.013684",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

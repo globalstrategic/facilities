@@ -1,0 +1,62 @@
+{
+  "facility_id": "phl-carmen-copper-mine-fac",
+  "name": "Carmen Copper Mine",
+  "aliases": [],
+  "country_iso3": "PHL",
+  "location": {
+    "lat": 10.336,
+    "lon": 123.728,
+    "precision": "site"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Carmen Copper Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.113639",
+      "evidence": "Extracted from operator column: Carmen Copper Corp. / Atlas Consolidated Mining and Development Corp."
+    },
+    {
+      "name": "Atlas Consolidated Mining and Development Corp.",
+      "role": "operator",
+      "source": "Research Import PHL 2025-10-23",
+      "confidence": 0.7,
+      "first_seen": "2025-10-23T17:54:07.113678",
+      "evidence": "Extracted from operator column: Carmen Copper Corp. / Atlas Consolidated Mining and Development Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PHL 2025-10-23",
+      "date": "2025-10-23T17:54:07.113695"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-23T17:54:07.113703",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
