@@ -616,11 +616,15 @@ def is_facility_table(table: Dict) -> bool:
 
     # Filter out None values and convert to lowercase
     headers_lower = [h.lower() for h in table['headers'] if h is not None]
-    indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
-                 'latitude', 'longitude', 'commodity', 'metal', 'operator']
 
-    matches = sum(1 for ind in indicators if any(ind in h for h in headers_lower))
-    return matches >= 3
+    # Include plural forms and variations
+    indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
+                 'latitude', 'longitude', 'commodity', 'commodities', 'metal', 'metals',
+                 'operator', 'owner', 'location', 'province', 'region']
+
+    # Count total indicator matches across all headers (allows multiple per header)
+    total_matches = sum(1 for h in headers_lower for ind in indicators if ind in h)
+    return total_matches >= 3
 
 
 def parse_group_names(group_names_str: str, source_name: str) -> Tuple[List[str], List[Dict]]:
