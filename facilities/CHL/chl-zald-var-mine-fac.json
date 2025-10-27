@@ -1,0 +1,49 @@
+{
+  "facility_id": "chl-zald-var-mine-fac",
+  "name": "Zaldívar Mine",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit mine",
+    "leaching plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Antofagasta Minerals, Barrick Gold",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.406338",
+      "evidence": "Extracted from operator column: Antofagasta Minerals (50%), Barrick Gold (50%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.406348"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.406350",
+    "checked_by": "import_pipeline",
+    "notes": "Antofagasta is the operator.28"
+  }
+}

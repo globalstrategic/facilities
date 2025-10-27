@@ -1,0 +1,49 @@
+{
+  "facility_id": "chl-collahuasi-mine-fac",
+  "name": "Collahuasi Mine",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit mine",
+    "concentrator"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper Concentrate",
+      "primary": true,
+      "chemical_formula": "CuFeS2",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Anglo American, Glencore, JCR",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.413802",
+      "evidence": "Extracted from operator column: Anglo American (44%), Glencore (44%), JCR (12%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.413805"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.413806",
+    "checked_by": "import_pipeline",
+    "notes": "One of the world's largest copper mines.24"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "facility_id": "chl-penco-module-project-fac",
+  "name": "Penco Module Project",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration project"
+  ],
+  "commodities": [
+    {
+      "metal": "heavy rare earth oxides (dysprosium",
+      "primary": true
+    },
+    {
+      "metal": "Terbium",
+      "primary": true,
+      "chemical_formula": "Tb",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Aclara Resources",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.525995",
+      "evidence": "Extracted from operator column: Aclara Resources"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.526002"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.526003",
+    "checked_by": "import_pipeline",
+    "notes": "Ionic clay deposit targeting critical magnet metals.73"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "civ-atex-lithium-coltan-project-fac",
+  "name": "**Atex Lithium-Coltan Project**",
+  "aliases": [],
+  "country_iso3": "CIV",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project-exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Firering PLC",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:36.040742",
+      "evidence": "Extracted from operator column: Firering PLC (Atex Mining Resources)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:36.040745"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:21:36.040746",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

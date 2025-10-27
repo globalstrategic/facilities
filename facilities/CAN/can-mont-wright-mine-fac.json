@@ -1,0 +1,48 @@
+{
+  "facility_id": "can-mont-wright-mine-fac",
+  "name": "Mont-Wright Mine",
+  "aliases": [],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 52.758,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine & plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "ArcelorMittal",
+      "role": "operator",
+      "source": "Research Import CAN 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:01.455185",
+      "evidence": "Extracted from operator column: ArcelorMittal"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAN 2025-10-27",
+      "date": "2025-10-27T13:22:01.455189"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:01.455190",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "facility_id": "chl-nueva-victoria-iris-fac",
+  "name": "Nueva Victoria / Iris",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "caliche mining",
+    "leaching plant"
+  ],
+  "commodities": [
+    {
+      "metal": "iodine",
+      "primary": true
+    },
+    {
+      "metal": "sodium nitrate",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "SQM",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.478206",
+      "evidence": "Extracted from operator column: SQM"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.478214"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.478215",
+    "checked_by": "import_pipeline",
+    "notes": "One of the world's largest iodine production facilities.63"
+  }
+}
