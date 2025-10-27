@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This repository manages a global database of **9,058 mining and processing facilities** across **129 countries**, featuring structured JSON-based architecture with comprehensive entity resolution, company linking, geocoding, and research pipeline integration powered by the **EntityIdentity library**.
 
 **Package Name**: `talloy` (per setup.py)
-**Version**: 2.1.0 (Geocoding & Backfill System)
+**Version**: 2.1.1 (Enhanced Table Detection)
 
 ## Common Development Commands
 
@@ -31,17 +31,27 @@ pytest -v --cov
 ### Import Facilities
 
 ```bash
-# Standard import (basic normalization)
-python scripts/import_from_report.py report.txt --country DZ
+# From markdown files with tables (pipe-separated)
+python scripts/import_from_report.py report.md --source "Country Research 2025"
+
+# From CSV files
+python scripts/import_from_report.py facilities.csv --country DZ --source "Data Import"
 
 # Auto-detect country from filename
-python scripts/import_from_report.py albania.txt
+python scripts/import_from_report.py bulgaria.txt
+python scripts/import_from_report.py albania_mines.csv
 
-# Enhanced import with entity resolution (default now)
+# Enhanced import with entity resolution (default)
 python scripts/import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
 
 # From stdin
 cat report.txt | python scripts/import_from_report.py --country DZ
+
+# Supported formats:
+# - Markdown tables (pipe-separated: | header | header |)
+# - CSV files (comma-separated)
+# - Tab-separated tables
+# - Narrative text with facility mentions
 ```
 
 ### Unified CLI
@@ -317,14 +327,25 @@ The system integrates with the **EntityIdentity library** (separate repo at `../
 #### 4. Import Pipeline Flow
 
 ```
-TEXT INPUT (markdown tables, CSV, stdin)
+TEXT INPUT (markdown tables, CSV, tab-separated, stdin)
   ↓
-TABLE EXTRACTION (extract_markdown_tables)
+TABLE EXTRACTION (extract_markdown_tables, parse_csv_file)
+  ├─ Markdown tables: pipe-separated (| ... |)
+  ├─ CSV: comma-separated with headers
+  ├─ Tab-separated: TSV format
+  └─ Enhanced validation: plural forms, location indicators
+  ↓
+TABLE VALIDATION (is_facility_table - v2.1.1)
+  ├─ Checks for 3+ indicator keywords in headers
+  ├─ Recognizes: facility, mine, name, operator, owner
+  ├─ Recognizes: commodity/commodities, metal/metals (plurals)
+  ├─ Recognizes: location, province, region, site
+  └─ Allows multiple indicators per header (counts all)
   ↓
 ENTITY RESOLUTION (automatic)
-  ├─ Country auto-detection
-  ├─ Metal normalization with formulas
-  └─ Company mention extraction (NOT resolution yet)
+  ├─ Country auto-detection from filename or content
+  ├─ Metal normalization with chemical formulas
+  └─ Company mention extraction (Phase 1)
   ↓
 FACILITY CREATION
   ↓
