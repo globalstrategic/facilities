@@ -1,0 +1,56 @@
+{
+  "facility_id": "cub-ren-ramos-latour-plant-fac",
+  "name": "René Ramos Latour Plant",
+  "aliases": [
+    "Nicaro Smelter; Nicaro Plant"
+  ],
+  "country_iso3": "CUB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "smelter / plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false,
+      "chemical_formula": "Co",
+      "category": "battery_material"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Formerly Cubaníquel",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.907133",
+      "evidence": "Extracted from operator column: Formerly Cubaníquel (State-Owned)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CUB 2025-10-27",
+      "date": "2025-10-27T14:21:06.907137"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:06.907138",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
