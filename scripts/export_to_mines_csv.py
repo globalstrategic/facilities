@@ -291,6 +291,49 @@ def get_companies(facility: Dict) -> List[str]:
     return companies
 
 
+def facility_has_company(facility: Dict, target_company: str) -> bool:
+    """
+    Check if facility is operated by or owned by the target company.
+
+    Uses fuzzy matching to handle variations like:
+    - "BHP" vs "BHP Billiton" vs "BHP Group"
+    - "Rio Tinto" vs "Rio Tinto Plc"
+    - "MP Materials" vs "MP Materials Corp"
+    """
+    companies = get_companies(facility)
+    if not companies:
+        return False
+
+    target_lower = target_company.lower().strip()
+
+    # Direct exact match (case insensitive)
+    for company in companies:
+        if company.lower() == target_lower:
+            return True
+
+    # Substring matching (both directions)
+    for company in companies:
+        company_lower = company.lower()
+        # Check if target is in company name or company name is in target
+        if target_lower in company_lower or company_lower in target_lower:
+            return True
+
+    # Word-based matching for multi-word companies
+    # e.g., "MP Materials" matches "MP Materials Corp"
+    target_words = set(target_lower.split())
+    if len(target_words) > 0:
+        for company in companies:
+            company_words = set(company.lower().split())
+            # If all target words are in company name, it's a match
+            if target_words.issubset(company_words):
+                return True
+            # Or if all company words are in target (reversed check)
+            if company_words.issubset(target_words):
+                return True
+
+    return False
+
+
 def get_asset_types(facility: Dict) -> str:
     """Get asset type from facility types field."""
     types = facility.get("types", [])
@@ -383,7 +426,7 @@ def facility_to_csv_row(facility: Dict, country_name: str) -> Dict[str, str]:
     }
 
 
-def export_country_to_csv(country: str, output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
+def export_country_to_csv(country: str, output_file: Optional[str] = None, metal: Optional[str] = None, company: Optional[str] = None) -> int:
     """
     Export all facilities from a country to Mines.csv format.
 
@@ -391,6 +434,7 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
         country: Country name or ISO3 code
         output_file: Output CSV path (defaults to {iso3}_mines.csv or {iso3}_{metal}_mines.csv)
         metal: Optional metal filter (e.g., "copper", "Cu", "lithium", "REE", "battery metals")
+        company: Optional company filter (e.g., "BHP", "Rio Tinto", "MP Materials")
 
     Returns:
         Number of facilities exported
@@ -403,6 +447,10 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
             print(f"  {', '.join(basket_metals[:10])}")
             if len(basket_metals) > 10:
                 print(f"  ... and {len(basket_metals) - 10} more")
+
+    # Check if company filter is provided
+    if company:
+        print(f"[Company Filter] Filtering for facilities operated/owned by '{company}'")
 
     # Normalize country
     iso3 = normalize_country_to_iso3(country)
@@ -440,24 +488,37 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
                 if metal and not facility_has_metal(facility, metal):
                     continue
 
+                # Apply company filter if specified
+                if company and not facility_has_company(facility, company):
+                    continue
+
                 facilities.append(facility)
         except Exception as e:
             print(f"Warning: Error loading {json_file}: {e}", file=sys.stderr)
 
     if not facilities:
-        metal_msg = f" producing {metal}" if metal else ""
-        print(f"No facilities{metal_msg} found in {country_dir}")
+        filters = []
+        if metal:
+            filters.append(f"metal: {metal}")
+        if company:
+            filters.append(f"company: {company}")
+        filter_msg = f" with filters ({', '.join(filters)})" if filters else ""
+        print(f"No facilities{filter_msg} found in {country_dir}")
         return 0
 
     # Set output file
     if not output_file:
+        parts = [iso3]
+        if company:
+            company_slug = company.lower().replace(' ', '_').replace(',', '')
+            parts.append(company_slug)
         if metal:
             metal_info = normalize_metal(metal)
             metal_slug = metal_info['name'] if metal_info else metal
             metal_slug = metal_slug.replace(' ', '_')
-            output_file = f"{iso3}_{metal_slug}_mines.csv"
-        else:
-            output_file = f"{iso3}_mines.csv"
+            parts.append(metal_slug)
+        parts.append("mines.csv")
+        output_file = "_".join(parts)
 
     # Write CSV
     fieldnames = [
@@ -485,13 +546,14 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
     return len(facilities)
 
 
-def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
+def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = None, company: Optional[str] = None) -> int:
     """
     Export all facilities from all countries to a single Mines.csv file.
 
     Args:
         output_file: Output CSV path (defaults to gt/Mines_{timestamp}.csv or gt/{metal}_Mines_{timestamp}.csv)
         metal: Optional metal filter (e.g., "copper", "Cu", "lithium", "REE", "battery metals")
+        company: Optional company filter (e.g., "BHP", "Rio Tinto", "MP Materials")
 
     Returns:
         Number of facilities exported
@@ -505,6 +567,10 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
             if len(basket_metals) > 10:
                 print(f"  ... and {len(basket_metals) - 10} more")
 
+    # Check if company filter is provided
+    if company:
+        print(f"[Company Filter] Filtering for facilities operated/owned by '{company}'")
+
     base_dir = Path(__file__).parent.parent / "facilities"
 
     if not base_dir.exists():
@@ -517,11 +583,18 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
         gt_dir = Path(__file__).parent.parent / "gt"
         gt_dir.mkdir(exist_ok=True)
 
+        parts = []
+        if company:
+            company_slug = company.lower().replace(' ', '_').replace(',', '')
+            parts.append(company_slug)
         if metal:
             metal_info = normalize_metal(metal)
             metal_slug = metal_info['name'] if metal_info else metal
             metal_slug = metal_slug.replace(' ', '_')
-            output_file = gt_dir / f"{metal_slug}_Mines_{timestamp}.csv"
+            parts.append(metal_slug)
+
+        if parts:
+            output_file = gt_dir / f"{'_'.join(parts)}_Mines_{timestamp}.csv"
         else:
             output_file = gt_dir / f"Mines_{timestamp}.csv"
 
@@ -556,6 +629,10 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
 
                     # Apply metal filter if specified
                     if metal and not facility_has_metal(facility, metal):
+                        continue
+
+                    # Apply company filter if specified
+                    if company and not facility_has_company(facility, company):
                         continue
 
                     # Store country name with facility for later use
@@ -612,13 +689,15 @@ def main():
                "  %(prog)s Chile\n"
                "  %(prog)s --all\n"
                "  %(prog)s Chile --metal copper\n"
-               "  %(prog)s --all --metal lithium -o lithium_mines.csv",
+               "  %(prog)s --all --metal lithium -o lithium_mines.csv\n"
+               "  %(prog)s --all --company \"BHP\"\n"
+               "  %(prog)s --all --company \"Rio Tinto\" --metal copper",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument(
         "country",
         nargs="?",
-        help="Country name or ISO3 code (e.g., 'Chile' or 'CHL'). Omit with --all to export all countries."
+        help="Country name, ISO3 code, or company name. Use --company flag for company filtering."
     )
     parser.add_argument(
         "-o", "--output",
@@ -636,14 +715,28 @@ def main():
              "'REE', 'rare earths', 'PGM', 'battery metals', 'base metals' (baskets). "
              "Uses EntityIdentity for normalization and basket expansion."
     )
+    parser.add_argument(
+        "--company",
+        help="Filter by company (operator or owner). "
+             "Examples: 'BHP', 'Rio Tinto', 'MP Materials'. "
+             "Uses fuzzy matching to handle variations."
+    )
 
     args = parser.parse_args()
 
-    # Check if --all flag is used
+    # Handle different invocation patterns
+    # Pattern 1: --all with optional filters
     if args.all:
-        count = export_all_to_csv(args.output, metal=args.metal)
-    elif args.country:
-        count = export_country_to_csv(args.country, args.output, metal=args.metal)
+        count = export_all_to_csv(args.output, metal=args.metal, company=args.company)
+    # Pattern 2: Country with optional filters
+    elif args.country and not args.company:
+        count = export_country_to_csv(args.country, args.output, metal=args.metal, company=None)
+    # Pattern 3: --company flag (implies --all if no country)
+    elif args.company and not args.country:
+        count = export_all_to_csv(args.output, metal=args.metal, company=args.company)
+    # Pattern 4: Country + --company flag
+    elif args.country and args.company:
+        count = export_country_to_csv(args.country, args.output, metal=args.metal, company=args.company)
     else:
         parser.error("Either provide a country name or use --all flag")
 
