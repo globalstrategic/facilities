@@ -1,0 +1,80 @@
+{
+  "facility_id": "bdi-musongati-deposit-fac",
+  "name": "**Musongati Deposit**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false,
+      "chemical_formula": "Co",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    },
+    {
+      "metal": "pgms (pt",
+      "primary": false
+    },
+    {
+      "metal": "pd)",
+      "primary": false
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Gold",
+      "primary": false,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "License revoked from Burundi Musongati Mining in 2022\\.",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.034122",
+      "evidence": "Extracted from operator column: License revoked from Burundi Musongati Mining (BMM) in 2022\\."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.034130"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.034136",
+    "checked_by": "import_pipeline",
+    "notes": "A massive polymetallic laterite resource, estimated to hold 6% of world nickel reserves. Development has been stalled for decades due to major infrastructure and political challenges. 7"
+  }
+}

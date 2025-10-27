@@ -1,0 +1,53 @@
+{
+  "facility_id": "bdi-cunda-cumba-mine-fac",
+  "name": "**Cunda / Cumba Mine**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (artisanal)"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true,
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Coop. Minière de Gashoho",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.218634",
+      "evidence": "Extracted from operator column: Coop. Minière de Gashoho"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.218640"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.218641",
+    "checked_by": "import_pipeline",
+    "notes": "An ASM site focused on the production of wolframite (tungsten ore). 21"
+  }
+}

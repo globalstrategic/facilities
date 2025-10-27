@@ -1,0 +1,53 @@
+{
+  "facility_id": "bdi-various-asm-gold-sites-fac",
+  "name": "**Various ASM Gold Sites**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mines (artisanal)"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Various Artisanal Miners & Cooperatives",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.136455",
+      "evidence": "Extracted from operator column: Various Artisanal Miners & Cooperatives"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.136464"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.136465",
+    "checked_by": "import_pipeline",
+    "notes": "Widespread ASM operations. Since 2019, all legally produced gold is required to be sold to the Central Bank of Burundi. The sector is subject to significant illicit trade. 5"
+  }
+}

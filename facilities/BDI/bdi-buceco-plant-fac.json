@@ -1,0 +1,50 @@
+{
+  "facility_id": "bdi-buceco-plant-fac",
+  "name": "**BUCECO Plant**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "cement",
+      "primary": true
+    },
+    {
+      "metal": "clay",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Burundi Cement Co.",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.276832",
+      "evidence": "Extracted from operator column: Burundi Cement Co. (BUCECO)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.276839"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.276841",
+    "checked_by": "import_pipeline",
+    "notes": "Not directly related to the specified metals, but it is one of the country's only major industrial mineral processing facilities. 21"
+  }
+}

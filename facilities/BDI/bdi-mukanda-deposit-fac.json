@@ -1,0 +1,58 @@
+{
+  "facility_id": "bdi-mukanda-deposit-fac",
+  "name": "**Mukanda Deposit**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Vanadium",
+      "primary": true,
+      "chemical_formula": "V",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "titanium",
+      "primary": false
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "CVMR Energy Minerals",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.095180",
+      "evidence": "Extracted from operator column: CVMR Energy Minerals"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.095186"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.095187",
+    "checked_by": "import_pipeline",
+    "notes": "Previously explored by IGE AB in 2008\\. CVMR has been conducting feasibility studies on the deposit since receiving a permit in 2017\\. 31"
+  }
+}
