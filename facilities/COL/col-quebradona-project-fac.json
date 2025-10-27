@@ -1,0 +1,48 @@
+{
+  "facility_id": "col-quebradona-project-fac",
+  "name": "Quebradona Project",
+  "aliases": [],
+  "country_iso3": "COL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "porphyry deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "AngloGold Ashanti Colombia S.A.",
+      "role": "operator",
+      "source": "Research Import COL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:39.165906",
+      "evidence": "Extracted from operator column: AngloGold Ashanti Colombia S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import COL 2025-10-27",
+      "date": "2025-10-27T14:21:39.165911"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:39.165912",
+    "checked_by": "import_pipeline",
+    "notes": "**Stalled/On Hold.** Environmental license shelved since 2021 due to regulatory and community opposition. 13"
+  }
+}

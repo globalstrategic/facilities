@@ -1,0 +1,50 @@
+{
+  "facility_id": "col-zancudo-project-fac",
+  "name": "Zancudo Project",
+  "aliases": [
+    "Independencia Mine"
+  ],
+  "country_iso3": "COL",
+  "location": {
+    "lat": 6.085,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Zancudo Metals Corp.",
+      "role": "operator",
+      "source": "Research Import COL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:39.149196",
+      "evidence": "Extracted from operator column: Zancudo Metals Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import COL 2025-10-27",
+      "date": "2025-10-27T14:21:39.149201"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:39.149202",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

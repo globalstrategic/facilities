@@ -1,0 +1,48 @@
+{
+  "facility_id": "col-berlin-project-fac",
+  "name": "Berlin Project",
+  "aliases": [],
+  "country_iso3": "COL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "sedimentary deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "U3O8 Corp.",
+      "role": "operator",
+      "source": "Research Import COL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:39.213844",
+      "evidence": "Extracted from operator column: U3O8 Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import COL 2025-10-27",
+      "date": "2025-10-27T14:21:39.213848"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:39.213849",
+    "checked_by": "import_pipeline",
+    "notes": "**Exploration.** Historic resource defined for uranium with associated vanadium. 59"
+  }
+}
