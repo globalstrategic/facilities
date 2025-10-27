@@ -1,0 +1,44 @@
+{
+  "facility_id": "ner-imouraren-project-fac",
+  "name": "**Imouraren Project**",
+  "aliases": [],
+  "country_iso3": "NER",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "undeveloped deposit (open-pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NER 2025-10-27",
+      "date": "2025-10-27T11:12:10.043970"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T11:12:10.043973",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
