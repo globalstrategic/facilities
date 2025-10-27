@@ -1,0 +1,41 @@
+{
+  "facility_id": "cze-liberty-ostrava-fac",
+  "name": "**Liberty Ostrava**",
+  "aliases": [],
+  "country_iso3": "CZE",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant (primary)"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Liberty Steel Group",
+      "role": "operator",
+      "source": "Research Import CZE 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T15:23:26.784044",
+      "evidence": "Extracted from operator column: Liberty Steel Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CZE 2025-10-27",
+      "date": "2025-10-27T15:23:26.784047"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T15:23:26.784048",
+    "checked_by": "import_pipeline",
+    "notes": "Large integrated steelworks currently in insolvency. Operates intermittently on tolling agreements using imported raw materials. Consumer of ferroalloys. 16"
+  }
+}

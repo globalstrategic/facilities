@@ -1,0 +1,49 @@
+{
+  "facility_id": "cze-domoradice-graphite-deposit-fac",
+  "name": "**Domoradice Graphite Deposit**",
+  "aliases": [],
+  "country_iso3": "CZE",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (undeveloped)"
+  ],
+  "commodities": [],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "N",
+      "role": "operator",
+      "source": "Research Import CZE 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T15:23:26.788829",
+      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
+    },
+    {
+      "name": "A",
+      "role": "operator",
+      "source": "Research Import CZE 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T15:23:26.788831",
+      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CZE 2025-10-27",
+      "date": "2025-10-27T15:23:26.788833"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T15:23:26.788834",
+    "checked_by": "import_pipeline",
+    "notes": "Significant but unexploited graphite deposit. Past mining occurred, but resumption is unlikely due to its location in a protected area. 7"
+  }
+}
