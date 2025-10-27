@@ -388,7 +388,84 @@ OUTPUT
 
 ## Important Development Patterns
 
-### 1. Country Code Handling
+### 1. Table Format Requirements (v2.1.1)
+
+**Header Validation Logic:**
+
+The `is_facility_table()` function validates tables by checking for **3 or more indicator keyword matches** across all headers:
+
+**Recognized Keywords:**
+- Facility identifiers: `facility`, `mine`, `name`, `deposit`, `project`, `site`
+- People/Companies: `operator`, `owner`
+- Location: `location`, `province`, `region`, `latitude`, `longitude`
+- Commodities: `commodity`, `commodities`, `metal`, `metals` (plural forms supported)
+
+**Good Header Examples:**
+```csv
+✓ Facility Name, Operator, Location, Primary Metal, Status
+  → Matches: facility, name, operator, location, metal (5 matches)
+
+✓ Mine Name, Owner, Province, Commodity, Type
+  → Matches: mine, name, owner, province, commodity (5 matches)
+
+✓ Site, Company, Region, Metals, Latitude
+  → Matches: site, region, metals, latitude (4 matches)
+
+✓ Facility Name(s), Corporate Owner/Group, Location (Province), Primary Commodities
+  → Matches: facility, name, owner, location, province, commodities (6 matches)
+```
+
+**Bad Header Examples:**
+```csv
+✗ Name, Company, Area, Product, Active
+  → Matches: name (1 match - needs 3+)
+
+✗ Title, Organization, Place, Material, Open
+  → Matches: none (0 matches - needs 3+)
+```
+
+**Troubleshooting Table Import Issues:**
+
+If your table isn't being detected:
+
+1. **Check headers have 3+ indicator keywords:**
+   ```bash
+   # Your headers should contain words like:
+   # facility, mine, name, operator, owner, location, commodity, metal
+   ```
+
+2. **Use recognized plural forms:**
+   - ✓ "Commodities" works (plural recognized in v2.1.1)
+   - ✓ "Metals" works (plural recognized)
+   - ✗ "Mineral" doesn't match "metal" (use exact keywords)
+
+3. **Combine multiple indicators in one header:**
+   - ✓ "Facility Name" = 2 matches (facility + name)
+   - ✓ "Mine Location" = 2 matches (mine + location)
+   - ✓ "Primary Metal" = 1 match (metal)
+
+4. **Common fixes:**
+   ```csv
+   # Change generic headers to specific ones:
+   Company        → Operator
+   Area           → Location
+   Product        → Commodity
+   Type           → Facility Type (adds both 'facility' + 'site/mine')
+   ```
+
+**Example Fix:**
+
+Before (fails validation - only 1 match):
+```csv
+Name, Company, Area, Product, Status
+```
+
+After (passes validation - 5 matches):
+```csv
+Facility Name, Operator, Location, Primary Metal, Status
+```
+
+### 2. Country Code Handling
 
 - **Storage**: Facilities organized by country in `facilities/{ISO2_OR_ISO3}/`
 - **Schema**: `country_iso3` field always uses 3-letter codes (DZA, USA, ZAF)
