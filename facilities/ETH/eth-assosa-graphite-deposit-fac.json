@@ -1,0 +1,54 @@
+{
+  "facility_id": "eth-assosa-graphite-deposit-fac",
+  "name": "Assosa Graphite Deposit",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Graphite Natural",
+      "primary": true,
+      "chemical_formula": "C",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Gold",
+      "primary": false,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "GP Resource Mining PLC",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.336767",
+      "evidence": "Extracted from operator column: GP Resource Mining PLC"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.336770"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.336771",
+    "checked_by": "import_pipeline",
+    "notes": "Large flake, gold-bearing graphite deposit; not in production.74"
+  }
+}

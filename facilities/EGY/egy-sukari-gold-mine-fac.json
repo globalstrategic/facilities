@@ -1,0 +1,56 @@
+{
+  "facility_id": "egy-sukari-gold-mine-fac",
+  "name": "**Sukari Gold Mine**",
+  "aliases": [],
+  "country_iso3": "EGY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit & underground mine with processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "AngloGold Ashanti",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.153021",
+      "evidence": "Extracted from operator column: AngloGold Ashanti / EMRA"
+    },
+    {
+      "name": "EMRA",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.153033",
+      "evidence": "Extracted from operator column: AngloGold Ashanti / EMRA"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import EGY 2025-10-28",
+      "date": "2025-10-28T16:22:57.153036"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T16:22:57.153037",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

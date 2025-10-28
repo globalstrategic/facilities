@@ -1,0 +1,48 @@
+{
+  "facility_id": "eth-raval-steel-plant-fac",
+  "name": "Raval Steel Plant",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe-C",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Raval Steel Manufacturing PLC",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.384217",
+      "evidence": "Extracted from operator column: Raval Steel Manufacturing PLC"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.384219"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.384220",
+    "checked_by": "import_pipeline",
+    "notes": "Major producer of rebars and other steel products from imported/local scrap.13"
+  }
+}

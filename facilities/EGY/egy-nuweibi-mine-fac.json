@@ -1,0 +1,58 @@
+{
+  "facility_id": "egy-nuweibi-mine-fac",
+  "name": "**Nuweibi Mine**",
+  "aliases": [
+    "El Nuweiba"
+  ],
+  "country_iso3": "EGY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "N",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.164465",
+      "evidence": "Extracted from operator column: N/A"
+    },
+    {
+      "name": "A",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.164470",
+      "evidence": "Extracted from operator column: N/A"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import EGY 2025-10-28",
+      "date": "2025-10-28T16:22:57.164473"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T16:22:57.164474",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
