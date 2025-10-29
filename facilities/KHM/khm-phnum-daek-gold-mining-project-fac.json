@@ -1,0 +1,53 @@
+{
+  "facility_id": "khm-phnum-daek-gold-mining-project-fac",
+  "name": "**Phnum Daek Gold Mining Project**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Delcom Pte. Ltd.",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.384773",
+      "evidence": "Extracted from operator column: Delcom (Kampuchea) Pte. Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.384777"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.384778",
+    "checked_by": "import_pipeline",
+    "notes": "Started trial production in 2022\\. Allegations of land grabbing and environmental damage."
+  }
+}

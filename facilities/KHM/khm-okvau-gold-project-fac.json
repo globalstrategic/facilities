@@ -1,0 +1,54 @@
+{
+  "facility_id": "khm-okvau-gold-project-fac",
+  "name": "**Okvau Gold Project**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit mine & cil plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Silver",
+      "primary": false,
+      "chemical_formula": "Ag",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Renaissance Minerals Ltd.",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.356690",
+      "evidence": "Extracted from operator column: Renaissance Minerals (Cambodia) Ltd. (Emerald Resources NL)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.356703"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.356705",
+    "checked_by": "import_pipeline",
+    "notes": "Cambodia's only large-scale industrial metal mine. Produces doré bars for export."
+  }
+}

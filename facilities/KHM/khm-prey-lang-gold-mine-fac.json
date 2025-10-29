@@ -1,0 +1,53 @@
+{
+  "facility_id": "khm-prey-lang-gold-mine-fac",
+  "name": "**Prey Lang Gold Mine**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Late Cheng Mining Development Co. Ltd.",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.404665",
+      "evidence": "Extracted from operator column: Late Cheng Mining Development Co. Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.404669"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.404671",
+    "checked_by": "import_pipeline",
+    "notes": "**High ESG Risk:** Located within the Prey Lang Wildlife Sanctuary."
+  }
+}

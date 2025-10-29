@@ -1,0 +1,59 @@
+{
+  "facility_id": "khm-phnom-samkos-exploration-fac",
+  "name": "**Phnom Samkos Exploration**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration license"
+  ],
+  "commodities": [
+    {
+      "metal": "Antimony",
+      "primary": true,
+      "chemical_formula": "Sb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Ferrochrome",
+      "primary": true,
+      "category": "ferroalloy"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Southern Mining Company",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.446384",
+      "evidence": "Extracted from operator column: Southern Mining Company"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.446387"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.446388",
+    "checked_by": "import_pipeline",
+    "notes": "Permit granted in 2007\\. No evidence of progression to mining. **High ESG Risk:** Located in Phnom Samkos Wildlife Sanctuary."
+  }
+}
