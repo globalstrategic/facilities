@@ -1,0 +1,46 @@
+{
+  "facility_id": "pan-remance-project-fac",
+  "name": "**Remance Project**",
+  "aliases": [],
+  "country_iso3": "PAN",
+  "location": {
+    "lat": 8.298,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "development project (past producer)"
+  ],
+  "commodities": [
+    {
+      "metal": "**gold**",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Greenfield Resources Inc.",
+      "role": "operator",
+      "source": "Research Import PAN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:58:20.877033",
+      "evidence": "Extracted from operator column: Greenfield Resources Inc."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PAN 2025-10-28",
+      "date": "2025-10-28T21:58:20.877057"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:58:20.877063",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
