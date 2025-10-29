@@ -1,0 +1,42 @@
+{
+  "facility_id": "per-la-oroya-complex-fac",
+  "name": "**La Oroya Complex**",
+  "aliases": [],
+  "country_iso3": "PER",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "smelter",
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PER 2025-10-28",
+      "date": "2025-10-28T21:54:37.773831"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:54:37.773851",
+    "checked_by": "import_pipeline",
+    "notes": "Moderate. *Only* source for Bi, In. Status is unreliable."
+  }
+}

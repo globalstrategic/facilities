@@ -1,0 +1,46 @@
+{
+  "facility_id": "per-aceros-arequipa-fac",
+  "name": "**Aceros Arequipa**",
+  "aliases": [],
+  "country_iso3": "PER",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "smelter / steel mill"
+  ],
+  "commodities": [
+    {
+      "metal": "steel",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Corporación Aceros Arequipa",
+      "role": "operator",
+      "source": "Research Import PER 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:54:37.717315",
+      "evidence": "Extracted from operator column: Corporación Aceros Arequipa"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PER 2025-10-28",
+      "date": "2025-10-28T21:54:37.717342"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:54:37.717348",
+    "checked_by": "import_pipeline",
+    "notes": "High. Major EAF-based steelmaker."
+  }
+}
