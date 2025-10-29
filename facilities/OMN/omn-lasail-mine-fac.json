@@ -1,0 +1,61 @@
+{
+  "facility_id": "omn-lasail-mine-fac",
+  "name": "**Lasail Mine**",
+  "aliases": [
+    "also *Al Aseel*"
+  ],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": 24.27327,
+    "lon": 56.43354,
+    "precision": "site"
+  },
+  "types": [
+    "mine (redevelopment",
+    "operational)"
+  ],
+  "commodities": [
+    {
+      "metal": "**copper**",
+      "primary": true
+    },
+    {
+      "metal": "**gold**",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Oman Mining Company",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.416878",
+      "evidence": "Extracted from operator column: Oman Mining Company (OMCO) / Minerals Development Oman (MDO) (100%)"
+    },
+    {
+      "name": "Minerals Development Oman",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.416919",
+      "evidence": "Extracted from operator column: Oman Mining Company (OMCO) / Minerals Development Oman (MDO) (100%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.416939"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-28T22:09:19.416946",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

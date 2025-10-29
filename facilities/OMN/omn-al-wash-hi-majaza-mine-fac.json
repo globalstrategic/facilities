@@ -1,0 +1,62 @@
+{
+  "facility_id": "omn-al-wash-hi-majaza-mine-fac",
+  "name": "**Al Wash-hi Majaza Mine**",
+  "aliases": [],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open-pit) & processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "**copper**",
+      "primary": true
+    },
+    {
+      "metal": "**gold**",
+      "primary": false
+    },
+    {
+      "metal": "**silver**",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Al Hadeetha Resources",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.391707",
+      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
+    },
+    {
+      "name": "Alara Resources, Al Hadeetha Investments, Al Tasnim",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.391751",
+      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.391763"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-28T22:09:19.391766",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

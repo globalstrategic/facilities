@@ -1,0 +1,58 @@
+{
+  "facility_id": "omn-maqail-south-deposit-fac",
+  "name": "Maqail South Deposit",
+  "aliases": [],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": 24.17472,
+    "lon": 56.65888,
+    "precision": "site"
+  },
+  "types": [
+    "mine (development)"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "zinc (potential)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Savannah Resources",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.695052",
+      "evidence": "Extracted from operator column: Savannah Resources (65% in Al Fairuz Mining)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.695082"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-28T22:09:19.695088",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

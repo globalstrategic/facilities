@@ -1,0 +1,48 @@
+{
+  "facility_id": "omn-chromite-mines-fac",
+  "name": "Chromite Mines",
+  "aliases": [
+    "Samayil"
+  ],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": 22.93649,
+    "lon": 58.02346,
+    "precision": "site"
+  },
+  "types": [
+    "mines (multiple)"
+  ],
+  "commodities": [
+    {
+      "metal": "chromite (feedstock for ferrochrome)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Gulf Mining Group",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.581968",
+      "evidence": "Extracted from operator column: Gulf Mining Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.582070"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-28T22:09:19.582091",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
