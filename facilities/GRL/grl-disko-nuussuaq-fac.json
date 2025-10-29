@@ -1,0 +1,62 @@
+{
+  "facility_id": "grl-disko-nuussuaq-fac",
+  "name": "**Disko-Nuussuaq**",
+  "aliases": [],
+  "country_iso3": "GRL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": false,
+      "chemical_formula": "Pt",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "Palladium",
+      "primary": false,
+      "chemical_formula": "Pd",
+      "category": "platinum_group_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Bluejay Mining",
+      "role": "operator",
+      "source": "Research Import GRL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:20.183316",
+      "evidence": "Extracted from operator column: Bluejay Mining / KoBold Metals"
+    },
+    {
+      "name": "KoBold Metals",
+      "role": "operator",
+      "source": "Research Import GRL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:20.183319",
+      "evidence": "Extracted from operator column: Bluejay Mining / KoBold Metals"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GRL 2025-10-29",
+      "date": "2025-10-29T08:01:20.183321"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T08:01:20.183322",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

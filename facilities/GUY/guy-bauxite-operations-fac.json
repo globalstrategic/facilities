@@ -1,0 +1,48 @@
+{
+  "facility_id": "guy-bauxite-operations-fac",
+  "name": "**Bauxite Operations **",
+  "aliases": [
+    "Kurubuka, etc."
+  ],
+  "country_iso3": "GUY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "bauxite",
+      "primary": true
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "Bauxite Company of Guyana Inc.",
+      "role": "operator",
+      "source": "Research Import GUY 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T09:20:21.932025",
+      "evidence": "Extracted from operator column: Bauxite Company of Guyana Inc. (RUSAL)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GUY 2025-10-29",
+      "date": "2025-10-29T09:20:21.932028"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T09:20:21.932029",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

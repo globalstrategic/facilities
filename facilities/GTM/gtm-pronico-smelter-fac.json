@@ -1,0 +1,50 @@
+{
+  "facility_id": "gtm-pronico-smelter-fac",
+  "name": "ProNiCo Smelter",
+  "aliases": [
+    "Fenix Smelter"
+  ],
+  "country_iso3": "GTM",
+  "location": {
+    "lat": 15.52,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "ferronickel smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "ProNiCo",
+      "role": "operator",
+      "source": "Research Import GTM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:33.486908",
+      "evidence": "Extracted from operator column: ProNiCo (Solway Investment Group)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GTM 2025-10-29",
+      "date": "2025-10-29T08:01:33.486920"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T08:01:33.486921",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
