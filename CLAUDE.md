@@ -305,8 +305,8 @@ The system integrates with the **EntityIdentity library** (separate repo at `../
 
 **Country Resolution:**
 - Auto-detect country from filename or text
-- Normalize to ISO3 codes (DZA, USA, ZAF)
-- Handle both ISO2 and ISO3 directory names
+- Normalize to ISO3 codes (DZA, USA, FIN, ZAF)
+- All directories use ISO3 codes consistently
 
 **Metal Normalization:**
 - `metal_identifier()` for chemical formulas (Cu, Fe2O3, etc.)
@@ -467,9 +467,9 @@ Facility Name, Operator, Location, Primary Metal, Status
 
 ### 2. Country Code Handling
 
-- **Storage**: Facilities organized by country in `facilities/{ISO2_OR_ISO3}/`
+- **Storage**: Facilities organized by country in `facilities/{ISO3}/`
 - **Schema**: `country_iso3` field always uses 3-letter codes (DZA, USA, ZAF)
-- **Directory**: Mix of ISO2 (DZ, AF) and ISO3 (USA, ZAF) - both supported
+- **Directory**: All directories use ISO3 codes (USA, ZAF, ALB, etc.)
 - **Utilities**: Use `scripts/utils/country_utils.py` for normalization
 
 **Example:**
@@ -477,6 +477,7 @@ Facility Name, Operator, Location, Primary Metal, Status
 from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
 
 iso3 = normalize_country_to_iso3("Algeria")  # → "DZA"
+iso3 = normalize_country_to_iso3("finland")  # → "FIN"
 name = iso3_to_country_name("DZA")          # → "Algeria"
 ```
 
@@ -685,9 +686,10 @@ pytest scripts/tests/test_import_enhanced.py -v
 
 ### Adding a New Country
 
-1. Create country directory (use ISO3 if possible):
+1. Create country directory (always use ISO3):
    ```bash
    mkdir facilities/DZA  # Algeria
+   mkdir facilities/FIN  # Finland
    ```
 
 2. Import facilities:
@@ -967,8 +969,9 @@ Current database (as of 2025-10-21):
 
 ## Known Issues & Gotchas
 
-1. **Directory inconsistency**: Mix of ISO2 (DZ, AF) and ISO3 (USA, ZAF) country directories
-   - Code handles both, but prefer ISO3 for new countries
+1. **Country code standardization**: All facilities use ISO3 codes (DZA, FIN, USA, ZAF)
+   - EntityIdentity returns ISO2, but code automatically converts to ISO3
+   - Always use `normalize_country_to_iso3()` from `country_utils.py`
 
 2. **Company mentions vs links**:
    - Phase 1: Extract to `company_mentions[]` (raw strings)

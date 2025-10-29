@@ -460,18 +460,25 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
 
     country_name = iso3_to_country_name(iso3)
 
-    # Find country directory (could be ISO2 or ISO3)
+    # Find country directory (should be ISO3, but legacy directories may use ISO2)
     base_dir = Path(__file__).parent.parent / "facilities"
     country_dir = None
 
-    # Try ISO3 first
+    # Try ISO3 first (preferred)
     if (base_dir / iso3).exists():
         country_dir = base_dir / iso3
     else:
-        # Try ISO2
-        iso2 = iso3[:2]  # Rough approximation
-        if (base_dir / iso2).exists():
-            country_dir = base_dir / iso2
+        # Try ISO2 for legacy directories
+        # Use pycountry for proper conversion
+        try:
+            import pycountry
+            country_obj = pycountry.countries.get(alpha_3=iso3)
+            if country_obj:
+                iso2 = country_obj.alpha_2
+                if (base_dir / iso2).exists():
+                    country_dir = base_dir / iso2
+        except:
+            pass
 
     if not country_dir or not country_dir.exists():
         print(f"Error: No facilities directory found for {iso3}")

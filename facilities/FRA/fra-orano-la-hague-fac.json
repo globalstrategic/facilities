@@ -1,0 +1,46 @@
+{
+  "facility_id": "fra-orano-la-hague-fac",
+  "name": "**Orano La Hague**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "nuclear fuel reprocessing",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Orano Group",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.737218",
+      "evidence": "Extracted from operator column: Orano Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.737224"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.737225",
+    "checked_by": "import_pipeline",
+    "notes": "World's largest reprocessing facility; separates spent fuel components. 32"
+  }
+}

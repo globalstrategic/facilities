@@ -1,0 +1,48 @@
+{
+  "facility_id": "fra-nyrstar-auby-fac",
+  "name": "**Nyrstar Auby**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Nyrstar",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.713132",
+      "evidence": "Extracted from operator column: Nyrstar (Trafigura)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.713139"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.713140",
+    "checked_by": "import_pipeline",
+    "notes": "Electrolytic smelter with an indium refinery (72 t/y capacity). Produces battery-grade zinc. 23"
+  }
+}

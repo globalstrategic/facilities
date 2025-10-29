@@ -1,0 +1,48 @@
+{
+  "facility_id": "fra-les-malines-mining-district-fac",
+  "name": "**Les Malines Mining District**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true,
+      "chemical_formula": "Pb",
+      "category": "base_metal"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Recyclex",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.817061",
+      "evidence": "Extracted from operator column: Recyclex (formerly Metaleurop)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.817068"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.817069",
+    "checked_by": "import_pipeline",
+    "notes": "France's largest historical lead-zinc deposit, operated until 1993\\. 68"
+  }
+}

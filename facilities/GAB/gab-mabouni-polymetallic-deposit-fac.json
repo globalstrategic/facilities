@@ -1,0 +1,64 @@
+{
+  "facility_id": "gab-mabouni-polymetallic-deposit-fac",
+  "name": "Mabounié Polymetallic Deposit",
+  "aliases": [],
+  "country_iso3": "GAB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "development project"
+  ],
+  "commodities": [
+    {
+      "metal": "Niobium",
+      "primary": true,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "rare earth elements (rees)",
+      "primary": true
+    },
+    {
+      "metal": "Uranium",
+      "primary": false,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Gabonese State",
+      "role": "operator",
+      "source": "Research Import GAB 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:40:54.250230",
+      "evidence": "Extracted from operator column: Gabonese State"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GAB 2025-10-28",
+      "date": "2025-10-28T17:40:54.250236"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:40:54.250237",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

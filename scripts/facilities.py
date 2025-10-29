@@ -119,9 +119,9 @@ def sync_command(args):
             print(f"  File size: {file_size_mb:.2f} MB")
 
             # Show breakdown by country
-            if 'country_iso2' in df.columns:
+            if 'country_iso3' in df.columns:
                 print(f"\nBreakdown by country:")
-                country_counts = df['country_iso2'].value_counts().head(10)
+                country_counts = df['country_iso3'].value_counts().head(10)
                 for country, count in country_counts.items():
                     print(f"  {country}: {count} facilities")
 
@@ -197,13 +197,15 @@ def sync_command(args):
 def resolve_command(args):
     """Test entity resolution using entityidentity directly."""
     if args.entity_type == 'country':
-        # Resolve country using entityidentity
+        # Resolve country using country_utils (which wraps entityidentity + pycountry)
         try:
-            sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'entityidentity'))
-            from entityidentity import country_identifier
+            from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
+            import pycountry
         except ImportError as e:
-            print(f"Error: Could not import entityidentity: {e}", file=sys.stderr)
-            print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
+            print(f"Error: Could not import required dependencies: {e}", file=sys.stderr)
+            print("\nPlease ensure dependencies are installed:", file=sys.stderr)
+            print("  pip install pycountry", file=sys.stderr)
+            print("\nAnd ensure entityidentity is available:", file=sys.stderr)
             print("  Option 1: Clone entityidentity repo to parent directory", file=sys.stderr)
             print("    git clone https://github.com/globalstrategic/entityidentity.git ../entityidentity", file=sys.stderr)
             print("  Option 2: Install as package", file=sys.stderr)
@@ -215,24 +217,23 @@ def resolve_command(args):
         print("-" * 60)
 
         try:
-            # country_identifier returns ISO2 code as string
-            iso2 = country_identifier(country_name)
+            # normalize_country_to_iso3 returns ISO3 code
+            iso3 = normalize_country_to_iso3(country_name)
 
-            if iso2:
+            if iso3:
                 print(f"  Result: SUCCESS")
-                print(f"  ISO2: {iso2}")
+                print(f"  ISO3: {iso3}")
 
-                # Get additional info from pycountry if available
+                # Get additional info from pycountry
                 try:
-                    import pycountry
-                    country = pycountry.countries.get(alpha_2=iso2)
+                    country = pycountry.countries.get(alpha_3=iso3)
                     if country:
-                        print(f"  ISO3: {country.alpha_3}")
+                        print(f"  ISO2: {country.alpha_2}")
                         print(f"  Country name: {country.name}")
                         if hasattr(country, 'official_name'):
                             print(f"  Official name: {country.official_name}")
-                except ImportError:
-                    pass  # pycountry not available, just show ISO2
+                except (AttributeError, LookupError):
+                    pass  # Could not get additional info
             else:
                 print(f"  Result: FAILED")
                 print(f"  Could not resolve country: {country_name}")
@@ -291,13 +292,14 @@ def resolve_command(args):
             return 1
 
     elif args.entity_type == 'company':
-        # Resolve company using entityidentity
+        # Resolve company using CompanyResolver (Phase 2)
         try:
-            sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'entityidentity'))
-            from entityidentity.companies import EnhancedCompanyMatcher
+            from utils.company_resolver import CompanyResolver
         except ImportError as e:
-            print(f"Error: Could not import entityidentity: {e}", file=sys.stderr)
-            print("\nPlease ensure entityidentity is installed:", file=sys.stderr)
+            print(f"Error: Could not import CompanyResolver: {e}", file=sys.stderr)
+            print("\nPlease ensure dependencies are installed:", file=sys.stderr)
+            print("  pip install pandas pycountry", file=sys.stderr)
+            print("\nAnd ensure entityidentity is available:", file=sys.stderr)
             print("  Option 1: Clone entityidentity repo to parent directory", file=sys.stderr)
             print("    git clone https://github.com/globalstrategic/entityidentity.git ../entityidentity", file=sys.stderr)
             print("  Option 2: Install as package", file=sys.stderr)
@@ -313,21 +315,29 @@ def resolve_command(args):
         print("-" * 60)
 
         try:
-            matcher = EnhancedCompanyMatcher()
-            results = matcher.match_best(company_name, limit=1, min_score=70)
+            # Initialize resolver with moderate config
+            resolver = CompanyResolver.from_config(profile='moderate')
 
-            if results and len(results) > 0:
-                best = results[0]
+            # Resolve using the operator resolution method
+            result = resolver.resolve_operator(
+                operator_name=company_name,
+                country_hint=country_hint
+            )
+
+            if result:
                 print(f"  Result: SUCCESS")
-                print(f"  Company name: {best.get('original_name', best.get('brief_name', 'N/A'))}")
-                print(f"  Canonical name: {best.get('canonical_name', 'N/A')}")
-                print(f"  LEI: {best.get('lei', 'N/A')}")
-                print(f"  Match score: {best.get('score', 0)}/100")
-                print(f"  Country: {best.get('country', 'N/A')}")
-                print(f"  Category: {best.get('category', 'N/A')}")
+                print(f"  Company ID: {result.get('company_id', 'N/A')}")
+                print(f"  Company name: {result.get('company_name', 'N/A')}")
+                print(f"  Confidence: {result.get('confidence', 0):.2f}")
+                print(f"  Match explanation: {result.get('match_explanation', 'N/A')}")
+                # Additional info if available in the result
+                if 'lei' in result:
+                    print(f"  LEI: {result['lei']}")
+                if 'country' in result:
+                    print(f"  Country: {result['country']}")
             else:
                 print(f"  Result: NO MATCH FOUND")
-                print(f"  No company match found above minimum threshold (70)")
+                print(f"  No company match found above minimum threshold")
 
         except Exception as e:
             print(f"  Result: ERROR")
@@ -439,7 +449,7 @@ Examples:
     # Company resolution
     company_parser = resolve_subparsers.add_parser('company', help='Resolve company name')
     company_parser.add_argument('name', help='Company name (e.g., "BHP", "Sibanye-Stillwater")')
-    company_parser.add_argument('--country', help='Country hint for better matching (ISO2 or ISO3)')
+    company_parser.add_argument('--country', help='Country hint for better matching (ISO3 code)')
 
     resolve_parser.set_defaults(func=resolve_command)
 

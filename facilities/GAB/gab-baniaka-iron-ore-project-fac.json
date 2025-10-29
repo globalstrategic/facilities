@@ -1,0 +1,53 @@
+{
+  "facility_id": "gab-baniaka-iron-ore-project-fac",
+  "name": "Baniaka Iron Ore Project",
+  "aliases": [],
+  "country_iso3": "GAB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "development project"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Genmin Limited",
+      "role": "operator",
+      "source": "Research Import GAB 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:40:54.179974",
+      "evidence": "Extracted from operator column: Genmin Limited"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GAB 2025-10-28",
+      "date": "2025-10-28T17:40:54.179979"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:40:54.179980",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

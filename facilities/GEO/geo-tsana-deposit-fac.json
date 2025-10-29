@@ -1,0 +1,54 @@
+{
+  "facility_id": "geo-tsana-deposit-fac",
+  "name": "**Tsana Deposit**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "dormant mine/deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "arsenic",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "N",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.241207",
+      "evidence": "Extracted from operator column: N/A"
+    },
+    {
+      "name": "A",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.241211",
+      "evidence": "Extracted from operator column: N/A"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.241214"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.241215",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

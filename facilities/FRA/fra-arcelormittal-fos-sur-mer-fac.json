@@ -1,0 +1,48 @@
+{
+  "facility_id": "fra-arcelormittal-fos-sur-mer-fac",
+  "name": "**ArcelorMittal Fos-sur-Mer**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe-C",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "ArcelorMittal",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.688734",
+      "evidence": "Extracted from operator column: ArcelorMittal"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.688744"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.688745",
+    "checked_by": "import_pipeline",
+    "notes": "Major integrated steelworks. Undergoing significant blast furnace upgrades. 12"
+  }
+}

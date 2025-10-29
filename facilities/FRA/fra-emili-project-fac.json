@@ -1,0 +1,48 @@
+{
+  "facility_id": "fra-emili-project-fac",
+  "name": "**EMILI Project**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Imerys",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.763770",
+      "evidence": "Extracted from operator column: Imerys"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.763778"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.763783",
+    "checked_by": "import_pipeline",
+    "notes": "Planned production of 34,000 t/y LiOH from 2030\\. Faces local environmental opposition. 43"
+  }
+}

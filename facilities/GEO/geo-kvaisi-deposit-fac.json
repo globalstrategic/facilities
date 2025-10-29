@@ -1,0 +1,62 @@
+{
+  "facility_id": "geo-kvaisi-deposit-fac",
+  "name": "**Kvaisi Deposit**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine/deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Lead",
+      "primary": true,
+      "chemical_formula": "Pb",
+      "category": "base_metal"
+    },
+    {
+      "metal": "Zinc",
+      "primary": true,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "N",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.152966",
+      "evidence": "Extracted from operator column: N/A"
+    },
+    {
+      "name": "A",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.152968",
+      "evidence": "Extracted from operator column: N/A"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.152970"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.152971",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

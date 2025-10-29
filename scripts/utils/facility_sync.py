@@ -97,7 +97,7 @@ class FacilitySyncManager:
 
         Converts facility JSONs to a DataFrame matching the entityidentity schema:
         - facility_id, company_id, facility_name, alt_names, facility_type
-        - country, country_iso2, admin1, city, address
+        - country, country_iso3, admin1, city, address
         - lat, lon, geo_precision
         - commodities (list), process_stages, capacity_value, capacity_unit
         - operating_status, confidence, is_verified, verification_notes
@@ -295,19 +295,15 @@ class FacilitySyncManager:
             capacity_unit = first_product.get('unit')
             capacity_asof = first_product.get('year')
 
-        # Convert ISO3 to ISO2
-        try:
-            country_iso2 = iso3_to_iso2(facility['country_iso3'])
-        except ValueError:
-            # Fallback: assume directory name is already ISO2 or use ISO3
-            country_iso2 = facility['country_iso3'][:2] if len(facility['country_iso3']) >= 2 else facility['country_iso3']
+        # Use ISO3 directly (consistent with internal schema)
+        country_iso3 = facility['country_iso3']
 
         # Get country name
         try:
-            country_obj = pycountry.countries.get(alpha_3=facility['country_iso3'])
-            country_name = country_obj.name if country_obj else facility['country_iso3']
+            country_obj = pycountry.countries.get(alpha_3=country_iso3)
+            country_name = country_obj.name if country_obj else country_iso3
         except:
-            country_name = facility['country_iso3']
+            country_name = country_iso3
 
         # Determine if verified
         verification_status = facility.get('verification', {}).get('status', '')
@@ -326,7 +322,7 @@ class FacilitySyncManager:
             'alt_names': facility.get('aliases', []),
             'facility_type': facility_type,
             'country': country_name,
-            'country_iso2': country_iso2,
+            'country_iso3': country_iso3,
             'admin1': None,  # Not in current schema
             'city': None,    # Not in current schema
             'address': None, # Not in current schema
@@ -384,21 +380,27 @@ class FacilitySyncManager:
         if not types:
             types = ['mine']  # Default fallback
 
-        # Convert ISO2 to ISO3
+        # Get ISO3 country code (prefer country_iso3, fallback to country_iso2 conversion, then country name)
         country_iso3 = None
-        if pd.notna(row.get('country_iso2')):
+        if pd.notna(row.get('country_iso3')):
+            country_iso3 = str(row['country_iso3'])
+        elif pd.notna(row.get('country_iso2')):
+            # Legacy support: convert ISO2 to ISO3 if present
             try:
                 country_iso3 = iso2_to_iso3(str(row['country_iso2']))
             except ValueError:
-                # Fallback: try to get from country name
-                if pd.notna(row.get('country')):
-                    try:
-                        country_obj = pycountry.countries.search_fuzzy(str(row['country']))[0]
-                        country_iso3 = country_obj.alpha_3
-                    except:
-                        country_iso3 = 'UNK'
-                else:
-                    country_iso3 = 'UNK'
+                pass
+
+        # If still no ISO3, try to resolve from country name
+        if not country_iso3 and pd.notna(row.get('country')):
+            try:
+                country_obj = pycountry.countries.search_fuzzy(str(row['country']))[0]
+                country_iso3 = country_obj.alpha_3
+            except:
+                country_iso3 = 'UNK'
+
+        if not country_iso3:
+            country_iso3 = 'UNK'
 
         # Parse evidence URLs and titles
         sources = []

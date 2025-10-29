@@ -1,0 +1,47 @@
+{
+  "facility_id": "fra-ferroglobe-dunkirk-fac",
+  "name": "**Ferroglobe Dunkirk**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Ferromanganese",
+      "primary": true,
+      "category": "ferroalloy"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Ferroglobe",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.707105",
+      "evidence": "Extracted from operator column: Ferroglobe"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.707110"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.707111",
+    "checked_by": "import_pipeline",
+    "notes": "Operates the world's largest manganese ferroalloys furnace. 19"
+  }
+}
