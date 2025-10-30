@@ -1,0 +1,54 @@
+{
+  "facility_id": "nld-climax-molybdenum-plant-fac",
+  "name": "Climax Molybdenum Plant",
+  "aliases": [],
+  "country_iso3": "NLD",
+  "location": {
+    "lat": 51.8837,
+    "lon": 4.2487,
+    "precision": "site"
+  },
+  "types": [
+    "chemical conversion plant"
+  ],
+  "commodities": [
+    {
+      "metal": "molybdenum (oxides)",
+      "primary": true
+    },
+    {
+      "metal": "ammonium molybdate\\*",
+      "primary": false
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Climax Molybdenum B.V.",
+      "role": "operator",
+      "source": "Research Import NLD 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T21:56:24.770482",
+      "evidence": "Extracted from operator column: Climax Molybdenum B.V. (Freeport-McMoRan)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NLD 2025-10-29",
+      "date": "2025-10-29T21:56:24.770526"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T21:56:24.770533",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
