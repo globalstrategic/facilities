@@ -1,0 +1,46 @@
+{
+  "facility_id": "nam-namsteel-project-fac",
+  "name": "NAMSTEEL Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "steel (green)",
+      "primary": true
+    }
+  ],
+  "status": "planned",
+  "company_mentions": [
+    {
+      "name": "NAMSTEEL",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.766012",
+      "evidence": "Extracted from operator column: NAMSTEEL"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.766039"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.45,
+    "last_checked": "2025-10-29T22:09:29.766044",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

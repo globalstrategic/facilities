@@ -1,0 +1,59 @@
+{
+  "facility_id": "nam-tschudi-copper-mine-fac",
+  "name": "Tschudi Copper Mine",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open pit",
+    "sx-ew)"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "silver (minor)",
+      "primary": false
+    },
+    {
+      "metal": "lead (trace)",
+      "primary": false
+    },
+    {
+      "metal": "zinc (trace) 21",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Consolidated Copper Corporation",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.640895",
+      "evidence": "Extracted from operator column: Consolidated Copper Corporation (CCC)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.640927"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.640933",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

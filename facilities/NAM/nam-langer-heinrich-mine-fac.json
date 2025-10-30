@@ -1,0 +1,56 @@
+{
+  "facility_id": "nam-langer-heinrich-mine-fac",
+  "name": "Langer Heinrich Mine",
+  "aliases": [
+    "LHM"
+  ],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    },
+    {
+      "metal": "vanadium (quantified resource",
+      "primary": false
+    },
+    {
+      "metal": "potential) 1",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Paladin Energy, CNNC",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.623848",
+      "evidence": "Extracted from operator column: Paladin Energy (75%), CNNC (25%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.623899"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.623906",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
