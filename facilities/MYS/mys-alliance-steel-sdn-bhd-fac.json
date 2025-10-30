@@ -1,0 +1,48 @@
+{
+  "facility_id": "mys-alliance-steel-sdn-bhd-fac",
+  "name": "Alliance Steel Sdn. Bhd.",
+  "aliases": [
+    "M"
+  ],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": 3.97,
+    "lon": 103.43,
+    "precision": "site"
+  },
+  "types": [
+    "integrated steel mill"
+  ],
+  "commodities": [
+    {
+      "metal": "steel",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Alliance Steel Sdn. Bhd.",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.172518",
+      "evidence": "Extracted from operator column: Alliance Steel (M) Sdn. Bhd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.172545"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:11:17.172550",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

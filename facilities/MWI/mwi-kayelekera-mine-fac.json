@@ -1,0 +1,54 @@
+{
+  "facility_id": "mwi-kayelekera-mine-fac",
+  "name": "Kayelekera Mine",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "production restart"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Lotus Resources Ltd.",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.241346",
+      "evidence": "Extracted from operator column: Lotus Resources Ltd. (85%); Government of Malawi (15%)"
+    },
+    {
+      "name": "Government of Malawi",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.241392",
+      "evidence": "Extracted from operator column: Lotus Resources Ltd. (85%); Government of Malawi (15%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.241404"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:13:11.241408",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

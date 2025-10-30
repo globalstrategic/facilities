@@ -1,0 +1,54 @@
+{
+  "facility_id": "nam-brandberg-west-project-fac",
+  "name": "Brandberg West Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (exploration)"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    },
+    {
+      "metal": "tungsten",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Andrada Mining",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.746098",
+      "evidence": "Extracted from operator column: Andrada Mining"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.746125"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:09:29.746131",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

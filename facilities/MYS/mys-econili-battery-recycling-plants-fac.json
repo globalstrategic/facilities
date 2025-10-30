@@ -1,0 +1,50 @@
+{
+  "facility_id": "mys-econili-battery-recycling-plants-fac",
+  "name": "EcoNiLi Battery Recycling Plants",
+  "aliases": [],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": 4.65,
+    "lon": 101.11,
+    "precision": "site"
+  },
+  "types": [
+    "hydrometallurgical recycling plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium (as lithium carbonate)",
+      "primary": true
+    },
+    {
+      "metal": "nickel (as mhp/sulfate)",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "EcoNiLi Battery New Energy Sdn Bhd",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.368078",
+      "evidence": "Extracted from operator column: EcoNiLi Battery New Energy Sdn Bhd"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.368114"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:11:17.368121",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

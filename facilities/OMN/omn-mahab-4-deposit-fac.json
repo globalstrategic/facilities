@@ -1,0 +1,58 @@
+{
+  "facility_id": "omn-mahab-4-deposit-fac",
+  "name": "Mahab 4 Deposit",
+  "aliases": [],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": 24.11,
+    "lon": 56.73778,
+    "precision": "site"
+  },
+  "types": [
+    "mine (development)"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    },
+    {
+      "metal": "zinc (potential)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Savannah Resources",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.672332",
+      "evidence": "Extracted from operator column: Savannah Resources (65% in Al Fairuz Mining)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.672362"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-28T22:09:19.672368",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

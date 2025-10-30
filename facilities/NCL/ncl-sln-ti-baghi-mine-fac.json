@@ -1,0 +1,54 @@
+{
+  "facility_id": "ncl-sln-ti-baghi-mine-fac",
+  "name": "**SLN \\- Tiébaghi Mine**",
+  "aliases": [],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (opencast) 44"
+  ],
+  "commodities": [
+    {
+      "metal": "**nickel**",
+      "primary": true
+    },
+    {
+      "metal": "**cobalt**",
+      "primary": false
+    },
+    {
+      "metal": "nickel ore (feeds doniambo).4",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "**Société Le Nickel** 19",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.471473",
+      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 19"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-29",
+      "date": "2025-10-29T22:07:19.471513"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:07:19.471520",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

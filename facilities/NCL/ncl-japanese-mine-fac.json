@@ -1,0 +1,56 @@
+{
+  "facility_id": "ncl-japanese-mine-fac",
+  "name": "**\"Japanese Mine\" **",
+  "aliases": [
+    "Yaté"
+  ],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (opencast) 9"
+  ],
+  "commodities": [
+    {
+      "metal": "**iron ore**",
+      "primary": true
+    },
+    {
+      "metal": "n/a",
+      "primary": false
+    },
+    {
+      "metal": "iron ore.9",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Historical operators",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.555905",
+      "evidence": "Extracted from operator column: Historical operators"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-29",
+      "date": "2025-10-29T22:07:19.555932"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:07:19.555938",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

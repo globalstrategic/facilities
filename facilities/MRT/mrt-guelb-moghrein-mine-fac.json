@@ -1,0 +1,58 @@
+{
+  "facility_id": "mrt-guelb-moghrein-mine-fac",
+  "name": "**Guelb Moghrein Mine**",
+  "aliases": [],
+  "country_iso3": "MRT",
+  "location": {
+    "lat": 19.7544,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "iron ore",
+      "primary": false
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "First Quantum Minerals",
+      "role": "operator",
+      "source": "Research Import MAURITANIAN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:17:09.530946",
+      "evidence": "Extracted from operator column: First Quantum Minerals (MCM)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MAURITANIAN 2025-10-29",
+      "date": "2025-10-29T22:17:09.530974"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:17:09.530980",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

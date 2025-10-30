@@ -1,0 +1,50 @@
+{
+  "facility_id": "nld-uzimet-fac",
+  "name": "Uzimet",
+  "aliases": [],
+  "country_iso3": "NLD",
+  "location": {
+    "lat": 52.0335,
+    "lon": 4.3476,
+    "precision": "site"
+  },
+  "types": [
+    "secondary refinery (recycling)"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Uzimet B.V.",
+      "role": "operator",
+      "source": "Research Import NLD 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T21:56:24.773575",
+      "evidence": "Extracted from operator column: Uzimet B.V."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NLD 2025-10-29",
+      "date": "2025-10-29T21:56:24.773602"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T21:56:24.773607",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

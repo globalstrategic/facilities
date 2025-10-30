@@ -1,0 +1,48 @@
+{
+  "facility_id": "mys-eastern-steel-sdn-bhd-fac",
+  "name": "Eastern Steel Sdn. Bhd.",
+  "aliases": [
+    "ESSB"
+  ],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": 4.23,
+    "lon": 103.45,
+    "precision": "site"
+  },
+  "types": [
+    "integrated steel complex"
+  ],
+  "commodities": [
+    {
+      "metal": "steel",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Eastern Steel Sdn. Bhd.",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.189400",
+      "evidence": "Extracted from operator column: Eastern Steel Sdn. Bhd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.189436"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:11:17.189444",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

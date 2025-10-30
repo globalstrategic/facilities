@@ -1,0 +1,59 @@
+{
+  "facility_id": "nga-ishiagu-deposit-fac",
+  "name": "Ishiagu Deposit",
+  "aliases": [
+    "District"
+  ],
+  "country_iso3": "NGA",
+  "location": {
+    "lat": 5.95,
+    "lon": 7.53333,
+    "precision": "site"
+  },
+  "types": [
+    "deposit / quarries"
+  ],
+  "commodities": [
+    {
+      "metal": "lead",
+      "primary": true
+    },
+    {
+      "metal": "zinc",
+      "primary": false
+    },
+    {
+      "metal": "cadmium",
+      "primary": false
+    },
+    {
+      "metal": "gallium",
+      "primary": false
+    },
+    {
+      "metal": "germanium",
+      "primary": false
+    },
+    {
+      "metal": "indium (in host ore)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NGA 2025-10-29",
+      "date": "2025-10-29T22:45:20.878569"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:45:20.878600",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

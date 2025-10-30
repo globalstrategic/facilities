@@ -1,0 +1,58 @@
+{
+  "facility_id": "mwi-kanyika-project-fac",
+  "name": "Kanyika Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "development (licensed)"
+  ],
+  "commodities": [
+    {
+      "metal": "niobium",
+      "primary": true
+    },
+    {
+      "metal": "tantalum",
+      "primary": false
+    },
+    {
+      "metal": "uranium",
+      "primary": false
+    },
+    {
+      "metal": "zircon",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Globe Metals & Mining Ltd.",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.247359",
+      "evidence": "Extracted from operator column: Globe Metals & Mining Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.247378"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:13:11.247383",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

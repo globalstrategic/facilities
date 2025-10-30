@@ -1,0 +1,66 @@
+{
+  "facility_id": "nam-r-ssing-uranium-mine-fac",
+  "name": "Rössing Uranium Mine",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    },
+    {
+      "metal": "molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "tungsten",
+      "primary": false
+    },
+    {
+      "metal": "lead",
+      "primary": false
+    },
+    {
+      "metal": "copper (potential",
+      "primary": false
+    },
+    {
+      "metal": "historic) 14",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "China National Uranium Corporation Ltd., Namibian Gov.",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.608239",
+      "evidence": "Extracted from operator column: China National Uranium Corporation Ltd. (CNUC) (Majority), Namibian Gov. (3%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.608304"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.608310",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

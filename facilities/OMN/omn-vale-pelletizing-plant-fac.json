@@ -1,0 +1,54 @@
+{
+  "facility_id": "omn-vale-pelletizing-plant-fac",
+  "name": "Vale Pelletizing Plant",
+  "aliases": [],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": 24.50417,
+    "lon": 56.61028,
+    "precision": "site"
+  },
+  "types": [
+    "pelletizing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore (processing)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Vale Oman Pelletizing Company",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.515804",
+      "evidence": "Extracted from operator column: Vale Oman Pelletizing Company (VOPC) / Vale S.A."
+    },
+    {
+      "name": "Vale S.A.",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.515830",
+      "evidence": "Extracted from operator column: Vale Oman Pelletizing Company (VOPC) / Vale S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.515843"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-28T22:09:19.515848",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

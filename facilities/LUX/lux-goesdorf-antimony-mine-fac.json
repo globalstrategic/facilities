@@ -1,0 +1,50 @@
+{
+  "facility_id": "lux-goesdorf-antimony-mine-fac",
+  "name": "Goesdorf Antimony Mine",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 49.92207,
+    "lon": 5.95777,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "**antimony**",
+      "primary": true
+    },
+    {
+      "metal": "lead (trace) 31",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Unknown 30",
+      "role": "operator",
+      "source": "Research Import LUX 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T23:29:48.165628",
+      "evidence": "Extracted from operator column: Unknown (Various operators incl. banks, Nazi Germany) 30"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LUX 2025-10-29",
+      "date": "2025-10-29T23:29:48.165640"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T23:29:48.165725",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
