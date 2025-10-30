@@ -1,0 +1,62 @@
+{
+  "facility_id": "mys-br-metals-processing-plant-fac",
+  "name": "BR Metals Processing Plant",
+  "aliases": [],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "pgm recycling plant"
+  ],
+  "commodities": [
+    {
+      "metal": "platinum",
+      "primary": true
+    },
+    {
+      "metal": "rhodium",
+      "primary": false
+    },
+    {
+      "metal": "iridium",
+      "primary": false
+    },
+    {
+      "metal": "ruthenium",
+      "primary": false
+    },
+    {
+      "metal": "osmium",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "BR Metals",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.419103",
+      "evidence": "Extracted from operator column: BR Metals"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.419151"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:11:17.419158",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

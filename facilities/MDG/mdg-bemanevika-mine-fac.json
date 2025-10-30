@@ -9,18 +9,20 @@
     "precision": "unknown"
   },
   "types": [
-    "mine (open pit)"
+    "active mine"
   ],
   "commodities": [
     {
-      "metal": "Ferrochrome",
-      "primary": true,
-      "category": "ferroalloy"
+      "metal": "ferrochrome (feedstock)",
+      "primary": false
     },
     {
-      "metal": "Neodymium-Praseodymium",
-      "primary": false,
-      "category": "rare_earth_element"
+      "metal": "chromite ore. (note: ferrochrome is not produced in madagascar",
+      "primary": true
+    },
+    {
+      "metal": "the raw ore is exported.)",
+      "primary": false
     }
   ],
   "status": "unknown",
@@ -29,14 +31,14 @@
   "sources": [
     {
       "type": "csv_import",
-      "id": "Research Import MDG 2025-10-27",
-      "date": "2025-10-27T11:11:03.786241"
+      "id": "Research Import MDG 2025-10-29",
+      "date": "2025-10-29T22:52:40.215984"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-10-27T11:11:03.786247",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:52:40.216003",
     "checked_by": "import_pipeline",
     "notes": null
   }

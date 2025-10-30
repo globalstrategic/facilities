@@ -1,0 +1,50 @@
+{
+  "facility_id": "mys-global-refining-group-west-fac",
+  "name": "Global Refining Group West",
+  "aliases": [],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "catalytic converter recycler"
+  ],
+  "commodities": [
+    {
+      "metal": "platinum",
+      "primary": true
+    },
+    {
+      "metal": "rhodium",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Global Refining Group West",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.428670",
+      "evidence": "Extracted from operator column: Global Refining Group West"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.428699"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:11:17.428705",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

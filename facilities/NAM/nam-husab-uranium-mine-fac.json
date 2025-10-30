@@ -1,0 +1,50 @@
+{
+  "facility_id": "nam-husab-uranium-mine-fac",
+  "name": "Husab Uranium Mine",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    },
+    {
+      "metal": "vanadium (potential from carnotite) 1",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Swakop Uranium",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.614563",
+      "evidence": "Extracted from operator column: Swakop Uranium (CGNPC 90%, Epangelo Mining 10%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.614793"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.614815",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

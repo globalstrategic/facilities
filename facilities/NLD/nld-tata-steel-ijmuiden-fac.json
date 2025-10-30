@@ -1,0 +1,54 @@
+{
+  "facility_id": "nld-tata-steel-ijmuiden-fac",
+  "name": "Tata Steel IJmuiden",
+  "aliases": [],
+  "country_iso3": "NLD",
+  "location": {
+    "lat": 52.4666,
+    "lon": 4.5666,
+    "precision": "site"
+  },
+  "types": [
+    "integrated steelworks (smelter)"
+  ],
+  "commodities": [
+    {
+      "metal": "steel",
+      "primary": true
+    },
+    {
+      "metal": "iron (pig)",
+      "primary": false
+    },
+    {
+      "metal": "iron ore (consumed)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Tata Steel Netherlands B.V.",
+      "role": "operator",
+      "source": "Research Import NLD 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T21:56:24.763029",
+      "evidence": "Extracted from operator column: Tata Steel Netherlands B.V."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NLD 2025-10-29",
+      "date": "2025-10-29T21:56:24.763083"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T21:56:24.763088",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

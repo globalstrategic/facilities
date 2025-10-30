@@ -1,0 +1,46 @@
+{
+  "facility_id": "omn-manganese-mines-fac",
+  "name": "Manganese Mines",
+  "aliases": [],
+  "country_iso3": "OMN",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (open-pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Trust Mining Company",
+      "role": "operator",
+      "source": "Research Import OMN 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T22:09:19.536521",
+      "evidence": "Extracted from operator column: Trust Mining Company"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import OMN 2025-10-28",
+      "date": "2025-10-28T22:09:19.536548"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-28T22:09:19.536553",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

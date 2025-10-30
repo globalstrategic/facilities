@@ -1,0 +1,54 @@
+{
+  "facility_id": "mwi-karonga-lithium-project-fac",
+  "name": "Karonga Lithium Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "rare earths",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "DY6 Metals Ltd.",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.270026",
+      "evidence": "Extracted from operator column: DY6 Metals Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.270057"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:13:11.270062",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

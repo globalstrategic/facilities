@@ -1,0 +1,54 @@
+{
+  "facility_id": "ncl-nmc-nak-ty-mine-fac",
+  "name": "**NMC \\- Nakéty Mine**",
+  "aliases": [],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine 38"
+  ],
+  "commodities": [
+    {
+      "metal": "**nickel**",
+      "primary": true
+    },
+    {
+      "metal": "**cobalt**",
+      "primary": false
+    },
+    {
+      "metal": "nickel ore (for export to korea/china).18",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "**Nickel Mining Company** 3",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.525096",
+      "evidence": "Extracted from operator column: **Nickel Mining Company (NMC)** 3"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-29",
+      "date": "2025-10-29T22:07:19.525124"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:07:19.525130",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

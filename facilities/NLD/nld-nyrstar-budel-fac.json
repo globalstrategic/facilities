@@ -1,0 +1,62 @@
+{
+  "facility_id": "nld-nyrstar-budel-fac",
+  "name": "Nyrstar Budel",
+  "aliases": [],
+  "country_iso3": "NLD",
+  "location": {
+    "lat": 51.275,
+    "lon": 5.583,
+    "precision": "site"
+  },
+  "types": [
+    "primary smelter (electrolytic)"
+  ],
+  "commodities": [
+    {
+      "metal": "zinc",
+      "primary": true
+    },
+    {
+      "metal": "cadmium",
+      "primary": false
+    },
+    {
+      "metal": "cobalt (cake)",
+      "primary": false
+    },
+    {
+      "metal": "copper (cake)",
+      "primary": false
+    },
+    {
+      "metal": "lead (in residue)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Nyrstar B.V.",
+      "role": "operator",
+      "source": "Research Import NLD 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T21:56:24.766895",
+      "evidence": "Extracted from operator column: Nyrstar B.V. (Trafigura Group)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NLD 2025-10-29",
+      "date": "2025-10-29T21:56:24.766925"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T21:56:24.766931",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

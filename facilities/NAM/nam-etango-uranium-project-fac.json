@@ -1,0 +1,46 @@
+{
+  "facility_id": "nam-etango-uranium-project-fac",
+  "name": "Etango Uranium Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (development)"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Bannerman Energy",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.677347",
+      "evidence": "Extracted from operator column: Bannerman Energy"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.677373"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.677379",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

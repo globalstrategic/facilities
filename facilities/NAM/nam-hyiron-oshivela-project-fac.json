@@ -1,0 +1,58 @@
+{
+  "facility_id": "nam-hyiron-oshivela-project-fac",
+  "name": "HyIron Oshivela Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "iron (dri)",
+      "primary": true
+    },
+    {
+      "metal": "precursor for steel 8",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "German",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.758205",
+      "evidence": "Extracted from operator column: German/Namibian Consortium"
+    },
+    {
+      "name": "Namibian Consortium",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.758250",
+      "evidence": "Extracted from operator column: German/Namibian Consortium"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.758266"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:09:29.758272",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

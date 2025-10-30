@@ -1,0 +1,46 @@
+{
+  "facility_id": "mwi-bundi-copper-project-fac",
+  "name": "Bundi Copper Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "African Minerals and Energy Holdings",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.273160",
+      "evidence": "Extracted from operator column: African Minerals and Energy Holdings (AMAEH)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.273185"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:13:11.273191",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

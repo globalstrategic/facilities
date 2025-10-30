@@ -1,0 +1,58 @@
+{
+  "facility_id": "nam-eureka-ree-project-fac",
+  "name": "Eureka REE Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (exploration)"
+  ],
+  "commodities": [
+    {
+      "metal": "neodymium",
+      "primary": true
+    },
+    {
+      "metal": "praseodymium",
+      "primary": true
+    },
+    {
+      "metal": "cerium",
+      "primary": false
+    },
+    {
+      "metal": "lanthanum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "ReeXploration Inc.",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.719552",
+      "evidence": "Extracted from operator column: ReeXploration Inc. (formerly E-Tech Resources)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.719593"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:09:29.719603",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

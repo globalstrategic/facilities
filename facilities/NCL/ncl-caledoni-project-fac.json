@@ -1,0 +1,54 @@
+{
+  "facility_id": "ncl-caledoni-project-fac",
+  "name": "**CaledoNi Project**",
+  "aliases": [],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing project 39"
+  ],
+  "commodities": [
+    {
+      "metal": "**nickel** (battery grade)",
+      "primary": true
+    },
+    {
+      "metal": "**cobalt** (implied)",
+      "primary": false
+    },
+    {
+      "metal": "**nickel sulfate** (target product)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "**Société Le Nickel** 39",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.572878",
+      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 39"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-29",
+      "date": "2025-10-29T22:07:19.572907"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:07:19.572913",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "facility_id": "mwi-chimimbe-hill-project-fac",
+  "name": "Chimimbe Hill Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "nickel",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "chrome",
+      "primary": false
+    },
+    {
+      "metal": "graphite",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Mkango Resources Ltd.",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.263859",
+      "evidence": "Extracted from operator column: Mkango Resources Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.263885"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:13:11.263890",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

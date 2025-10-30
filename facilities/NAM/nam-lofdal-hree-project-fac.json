@@ -1,0 +1,58 @@
+{
+  "facility_id": "nam-lofdal-hree-project-fac",
+  "name": "Lofdal HREE Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (development)"
+  ],
+  "commodities": [
+    {
+      "metal": "dysprosium",
+      "primary": true
+    },
+    {
+      "metal": "terbium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Namibia Critical Metals Inc.",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.710634",
+      "evidence": "Extracted from operator column: Namibia Critical Metals Inc. (NCMI) / JOGMEC JV"
+    },
+    {
+      "name": "JOGMEC JV",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.710684",
+      "evidence": "Extracted from operator column: Namibia Critical Metals Inc. (NCMI) / JOGMEC JV"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.710698"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:09:29.710705",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

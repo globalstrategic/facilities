@@ -1,0 +1,54 @@
+{
+  "facility_id": "nam-kameelburg-ree-nb-project-fac",
+  "name": "Kameelburg REE & Nb Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (exploration)"
+  ],
+  "commodities": [
+    {
+      "metal": "rees",
+      "primary": true
+    },
+    {
+      "metal": "niobium",
+      "primary": false
+    },
+    {
+      "metal": "neodymium-praseodymium 28",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Aldoro Resources",
+      "role": "operator",
+      "source": "Research Import NAM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:09:29.728325",
+      "evidence": "Extracted from operator column: Aldoro Resources"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NAM 2025-10-29",
+      "date": "2025-10-29T22:09:29.728350"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:09:29.728354",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "lux-allerborn-lead-mine-fac",
+  "name": "Allerborn Lead Mine",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 50.03583,
+    "lon": 5.86944,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "**lead**",
+      "primary": true
+    },
+    {
+      "metal": "**zinc** (sphalerite)",
+      "primary": false
+    },
+    {
+      "metal": "**silver** (by-product) 4",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Unknown",
+      "role": "operator",
+      "source": "Research Import LUX 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T23:29:48.169596",
+      "evidence": "Extracted from operator column: Unknown"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LUX 2025-10-29",
+      "date": "2025-10-29T23:29:48.169605"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T23:29:48.169607",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "lux-national-mining-museum-fac",
+  "name": "National Mining Museum",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 49.46129,
+    "lon": 6.02282,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "**iron ore**",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Unknown",
+      "role": "operator",
+      "source": "Research Import LUX 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T23:29:48.156240",
+      "evidence": "Extracted from operator column: Unknown (Multiple concessions)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LUX 2025-10-29",
+      "date": "2025-10-29T23:29:48.156293"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T23:29:48.156311",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
