@@ -1,0 +1,46 @@
+{
+  "facility_id": "mwi-mindale-hill-deposit-fac",
+  "name": "Mindale Hill Deposit",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Nyasaland Base Minerals Ltd.",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.280061",
+      "evidence": "Extracted from operator column: Nyasaland Base Minerals Ltd. (historical)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.280087"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:13:11.280093",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

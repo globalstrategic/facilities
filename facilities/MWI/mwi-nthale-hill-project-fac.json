@@ -1,0 +1,46 @@
+{
+  "facility_id": "mwi-nthale-hill-project-fac",
+  "name": "Nthale Hill Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration/deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Britannia Mining",
+      "role": "operator",
+      "source": "Research Import MWI 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:13:11.275894",
+      "evidence": "Extracted from operator column: Britannia Mining"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.275921"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:13:11.275925",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
