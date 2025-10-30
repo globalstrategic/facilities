@@ -1,0 +1,41 @@
+{
+  "facility_id": "lux-morganite-luxembourg-graphite-processing-fac",
+  "name": "Morganite Luxembourg Graphite Processing",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 49.9198719,
+    "lon": 5.9566786,
+    "precision": "region"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Morganite Luxembourg S.A.",
+      "role": "operator",
+      "source": "Luxembourg Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:10:10.181243",
+      "evidence": "Extracted from operator column: Morganite Luxembourg S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Luxembourg Deep Research 2025",
+      "date": "2025-10-29T13:10:10.181245"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T13:18:58.876248",
+    "checked_by": "import_pipeline",
+    "notes": "Geocoded via overpass (confidence: 0.63)"
+  }
+}

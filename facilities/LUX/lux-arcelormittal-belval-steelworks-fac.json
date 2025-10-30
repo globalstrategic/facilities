@@ -1,0 +1,41 @@
+{
+  "facility_id": "lux-arcelormittal-belval-steelworks-fac",
+  "name": "ArcelorMittal Belval Steelworks",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 49.7369661,
+    "lon": 6.4927238,
+    "precision": "region"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "ArcelorMittal Long Products Luxembourg",
+      "role": "operator",
+      "source": "Luxembourg Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:10:10.180600",
+      "evidence": "Extracted from operator column: ArcelorMittal Long Products Luxembourg"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Luxembourg Deep Research 2025",
+      "date": "2025-10-29T13:10:10.180609"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T13:14:02.113341",
+    "checked_by": "import_pipeline",
+    "notes": "Geocoded via overpass (confidence: 0.60)"
+  }
+}

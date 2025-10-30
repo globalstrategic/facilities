@@ -1,0 +1,46 @@
+{
+  "facility_id": "lux-circu-li-ion-battery-upcycling-facility-fac",
+  "name": "Circu Li-ion Battery Upcycling Facility",
+  "aliases": [],
+  "country_iso3": "LUX",
+  "location": {
+    "lat": 49.4727587,
+    "lon": 5.9898207,
+    "precision": "region"
+  },
+  "types": [
+    "battery_recycling"
+  ],
+  "commodities": [
+    {"metal": "lithium", "primary": true},
+    {"metal": "cobalt", "primary": false},
+    {"metal": "nickel", "primary": false},
+    {"metal": "graphite", "primary": false}
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Circu Li-ion S.A.",
+      "role": "operator",
+      "source": "Luxembourg Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:10:10.182036",
+      "evidence": "Extracted from operator column: Circu Li-ion S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Luxembourg Deep Research 2025",
+      "date": "2025-10-29T13:10:10.182038"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T13:20:26.086120",
+    "checked_by": "import_pipeline",
+    "notes": "Geocoded via overpass (confidence: 0.59)"
+  }
+}

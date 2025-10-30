@@ -1,0 +1,46 @@
+{
+  "facility_id": "mar-falcon-energy-anode-plant-fac",
+  "name": "**Falcon Energy Anode Plant**",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "graphite (synthetic/cspg)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Falcon Energy Materials",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.451053",
+      "evidence": "Extracted from operator column: Falcon Energy Materials"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.451060"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.451061",
+    "checked_by": "import_pipeline",
+    "notes": "Processing facility to produce battery anode material from imported natural graphite."
+  }
+}

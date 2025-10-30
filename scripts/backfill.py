@@ -7,6 +7,8 @@ Backfills missing or incomplete data:
 - Companies: Resolve company_mentions to canonical IDs
 - Metals: Add chemical formulas and categories to commodities
 - Mentions: Extract company_mentions from Mines.csv
+- Towns: Add town/city names to location field
+- Canonical Names: Generate canonical facility names
 
 Usage:
     # Backfill geocoding
@@ -26,6 +28,15 @@ Usage:
     # Extract company mentions from Mines.csv
     python scripts/backfill.py mentions --country BRA
     python scripts/backfill.py mentions --all --force
+
+    # Backfill town names
+    python scripts/backfill.py towns --country ZAF
+    python scripts/backfill.py towns --country ZAF --interactive
+    python scripts/backfill.py towns --all --dry-run
+
+    # Generate canonical names
+    python scripts/backfill.py canonical_names --country USA
+    python scripts/backfill.py canonical_names --all
 
     # Backfill everything
     python scripts/backfill.py all --country ARE --interactive
@@ -61,6 +72,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from utils.geocoding import AdvancedGeocoder, GeocodingResult
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
+    from utils.name_canonicalizer import FacilityNameCanonicalizer
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
@@ -620,6 +632,296 @@ def backfill_mentions(
     return stats
 
 
+def backfill_towns(
+    facilities: List[Dict],
+    country_iso3: str,
+    interactive: bool = False,
+    dry_run: bool = False
+) -> BackfillStats:
+    """
+    Backfill location.town field using multi-strategy approach.
+
+    Strategies (in order):
+    1. Extract from facility name/aliases (e.g., "Olympic Dam (Roxby Downs)")
+    2. Industrial zones database lookup
+    3. Reverse geocoding via Nominatim
+    4. Mining district mapping
+    5. Interactive prompting (if --interactive flag enabled)
+
+    Marks as "TODO" if automated methods fail.
+    """
+    stats = BackfillStats()
+    stats.total = len(facilities)
+
+    logger.info("Backfilling town/city names")
+
+    # Filter to facilities missing town
+    to_enrich = []
+    for facility in facilities:
+        location = facility.get('location', {})
+        town = location.get('town')
+        if not town or town == "TODO":
+            to_enrich.append(facility)
+
+    logger.info(f"Found {len(to_enrich)}/{len(facilities)} facilities needing town enrichment")
+
+    if not to_enrich:
+        return stats
+
+    # Prepare geocoder for reverse lookups
+    geocoder = get_geocoder()
+
+    # Process each facility
+    for i, facility in enumerate(to_enrich):
+        facility_id = facility['facility_id']
+        location = facility.get('location', {})
+        lat = location.get('lat')
+        lon = location.get('lon')
+
+        logger.info(f"[{i+1}/{len(to_enrich)}] {facility['name']}")
+
+        town = None
+
+        # Strategy 1: Extract from name/aliases
+        town = extract_town_from_name(facility)
+        if town:
+            logger.info(f"  → Found town in name: {town}")
+
+        # Strategy 2: Industrial zones (if applicable)
+        if not town and lat and lon:
+            town = lookup_industrial_zone(lat, lon, country_iso3)
+            if town:
+                logger.info(f"  → Found town from industrial zone: {town}")
+
+        # Strategy 3: Reverse geocoding via Nominatim
+        if not town and lat and lon:
+            try:
+                import requests
+                import time
+                # Nominatim reverse geocoding
+                url = f"https://nominatim.openstreetmap.org/reverse"
+                params = {
+                    'lat': lat,
+                    'lon': lon,
+                    'format': 'json',
+                    'addressdetails': 1
+                }
+                headers = {
+                    'User-Agent': 'GSMC-Facilities/2.1 (facilities enrichment)'
+                }
+
+                response = requests.get(url, params=params, headers=headers, timeout=10)
+                time.sleep(1)  # Rate limiting
+
+                if response.status_code == 200:
+                    data = response.json()
+                    address = data.get('address', {})
+
+                    # Try to get town/city from various address fields
+                    town = (address.get('town') or
+                           address.get('city') or
+                           address.get('village') or
+                           address.get('hamlet') or
+                           address.get('municipality'))
+
+                    if town:
+                        logger.info(f"  → Found town via reverse geocoding: {town}")
+            except Exception as e:
+                logger.debug(f"  Reverse geocoding failed: {e}")
+
+        # Strategy 4: Interactive prompting
+        if not town and interactive:
+            print(f"\nFacility: {facility['name']} ({facility_id})")
+            if lat and lon:
+                print(f"Coordinates: {lat}, {lon}")
+            user_input = input("Enter town/city name (or press Enter to skip): ").strip()
+            if user_input:
+                town = user_input
+                logger.info(f"  → User provided: {town}")
+
+        # Mark as TODO if no town found
+        if not town:
+            town = "TODO"
+            logger.info(f"  → Marked as TODO (needs manual input)")
+
+        # Update facility
+        if not dry_run:
+            if 'location' not in facility:
+                facility['location'] = {'precision': 'unknown'}
+            facility['location']['town'] = town
+
+            # Update verification
+            facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
+            if 'notes' in facility['verification']:
+                facility['verification']['notes'] += f" | Town enriched: {town}"
+            else:
+                facility['verification']['notes'] = f"Town enriched: {town}"
+
+            # Save facility
+            save_facility(facility, country_iso3)
+            logger.info(f"  ✓ Updated: {facility_id}")
+            stats.add_result(facility_id, "updated", f"Town: {town}")
+        else:
+            logger.info(f"  [DRY RUN] Would set town: {town}")
+            stats.add_result(facility_id, "skipped", f"Would set town: {town}")
+
+    return stats
+
+
+def extract_town_from_name(facility: Dict) -> Optional[str]:
+    """
+    Extract town name from facility name or aliases using pattern matching.
+
+    Looks for patterns like:
+    - "Name (Town)"
+    - "Name Town"
+    - "Town Name Mine"
+
+    Returns:
+        Extracted town name or None
+    """
+    import re
+
+    # Check name and aliases
+    names_to_check = [facility['name']]
+    if facility.get('aliases'):
+        names_to_check.extend(facility['aliases'])
+
+    # Pattern 1: Parenthetical (e.g., "Olympic Dam (Roxby Downs)")
+    for name in names_to_check:
+        match = re.search(r'\(([^)]+)\)', name)
+        if match:
+            town = match.group(1).strip()
+            # Filter out obvious non-town patterns
+            if not any(word in town.lower() for word in ['mine', 'project', 'complex', 'smelter', 'refinery', 'deposit']):
+                return town
+
+    # Pattern 2: Common location indicators (e.g., "Rustenburg Two Rivers")
+    # This is more complex and requires heuristics
+    # TODO: Implement if needed
+
+    return None
+
+
+def lookup_industrial_zone(lat: float, lon: float, country_iso3: str) -> Optional[str]:
+    """
+    Lookup town from industrial zones database.
+
+    Currently supports UAE. Can be extended for other countries.
+
+    Returns:
+        Town name if zone matched, None otherwise
+    """
+    # UAE industrial zones (from existing backfill.py)
+    if country_iso3 == "ARE":
+        zones = {
+            "Khalifa Industrial Zone Abu Dhabi (KIZAD)": (24.086, 52.541),
+            "Jebel Ali Free Zone": (25.012, 55.106),
+            "Dubai Industrial City": (24.994, 55.149),
+            "Al Ain Industrial Area": (24.228, 55.732),
+            "Musaffah Industrial Area": (24.354, 54.512),
+        }
+
+        # Check if facility is within 5km of any zone
+        for zone_name, (zone_lat, zone_lon) in zones.items():
+            distance = ((lat - zone_lat)**2 + (lon - zone_lon)**2)**0.5
+            if distance < 0.05:  # Roughly 5km
+                # Extract city name from zone name
+                if "Abu Dhabi" in zone_name:
+                    return "Abu Dhabi"
+                elif "Dubai" in zone_name or "Jebel Ali" in zone_name:
+                    return "Dubai"
+                elif "Al Ain" in zone_name:
+                    return "Al Ain"
+
+    # Add more countries as needed
+    # TODO: Expand industrial zones database
+
+    return None
+
+
+def backfill_canonical_names(
+    facilities: List[Dict],
+    country_iso3: str,
+    dry_run: bool = False
+) -> BackfillStats:
+    """
+    Backfill canonical_name and display_name fields.
+
+    Uses FacilityNameCanonicalizer to generate canonical names following:
+        {Town} {Operator} {Core} {Type}
+
+    Requires:
+    - location.town (backfill with towns operation first if missing)
+    - operator_link (optional, will omit if not present)
+    - types array (required)
+    """
+    stats = BackfillStats()
+    stats.total = len(facilities)
+
+    logger.info("Backfilling canonical names")
+
+    # Initialize canonicalizer
+    canonicalizer = FacilityNameCanonicalizer()
+
+    # Filter to facilities missing canonical_name
+    to_enrich = []
+    for facility in facilities:
+        if not facility.get('canonical_name'):
+            to_enrich.append(facility)
+
+    logger.info(f"Found {len(to_enrich)}/{len(facilities)} facilities needing canonical names")
+
+    if not to_enrich:
+        return stats
+
+    # Process each facility
+    for i, facility in enumerate(to_enrich):
+        facility_id = facility['facility_id']
+        logger.info(f"[{i+1}/{len(to_enrich)}] {facility['name']}")
+
+        try:
+            # Generate canonical names
+            result = canonicalizer.canonicalize_facility(facility)
+
+            canonical_name = result['canonical_name']
+            display_name = result['display_name']
+
+            logger.info(f"  → Canonical: {canonical_name}")
+            logger.info(f"  → Display: {display_name}")
+
+            # Check for TODO town
+            location = facility.get('location', {})
+            if location.get('town') == "TODO":
+                logger.warning(f"  ⚠ Town is TODO - canonical name incomplete")
+
+            # Update facility
+            if not dry_run:
+                facility['canonical_name'] = canonical_name
+                facility['display_name'] = display_name
+
+                # Update verification
+                facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
+                if 'notes' in facility['verification']:
+                    facility['verification']['notes'] += f" | Canonical name generated"
+                else:
+                    facility['verification']['notes'] = "Canonical name generated"
+
+                # Save facility
+                save_facility(facility, country_iso3)
+                logger.info(f"  ✓ Updated: {facility_id}")
+                stats.add_result(facility_id, "updated", f"Canonical: {canonical_name}")
+            else:
+                logger.info(f"  [DRY RUN] Would set canonical_name and display_name")
+                stats.add_result(facility_id, "skipped", f"Would set canonical: {canonical_name}")
+
+        except Exception as e:
+            logger.error(f"  ✗ Error generating canonical name: {e}")
+            stats.add_result(facility_id, "failed", str(e))
+
+    return stats
+
+
 def backfill_all(
     facilities: List[Dict],
     country_iso3: str,
@@ -654,6 +956,23 @@ def backfill_all(
         facilities,
         country_iso3,
         profile=company_profile,
+        dry_run=dry_run
+    )
+
+    # 4. Town enrichment
+    logger.info("\n=== STEP 4: TOWN ENRICHMENT ===")
+    results['towns'] = backfill_towns(
+        facilities,
+        country_iso3,
+        interactive=interactive,
+        dry_run=dry_run
+    )
+
+    # 5. Canonical names
+    logger.info("\n=== STEP 5: CANONICAL NAMES ===")
+    results['canonical_names'] = backfill_canonical_names(
+        facilities,
+        country_iso3,
         dry_run=dry_run
     )
 
@@ -697,6 +1016,21 @@ def main():
     mentions_parser.add_argument('--all', action='store_true', help='Process all countries')
     mentions_parser.add_argument('--force', action='store_true', help='Add mentions even if facility already has some')
     mentions_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+
+    # Towns subcommand
+    towns_parser = subparsers.add_parser('towns', help='Backfill town/city names')
+    towns_parser.add_argument('--country', help='Country ISO3 code')
+    towns_parser.add_argument('--countries', help='Comma-separated country codes')
+    towns_parser.add_argument('--all', action='store_true', help='Process all countries')
+    towns_parser.add_argument('--interactive', action='store_true', help='Interactive prompting for missing towns')
+    towns_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+
+    # Canonical names subcommand
+    canonical_parser = subparsers.add_parser('canonical_names', help='Generate canonical facility names')
+    canonical_parser.add_argument('--country', help='Country ISO3 code')
+    canonical_parser.add_argument('--countries', help='Comma-separated country codes')
+    canonical_parser.add_argument('--all', action='store_true', help='Process all countries')
+    canonical_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
 
     # All subcommand
     all_parser = subparsers.add_parser('all', help='Run all backfill operations')
@@ -793,6 +1127,23 @@ def main():
                 dry_run=args.dry_run
             )
             all_stats[country_iso3] = {'mentions': stats}
+
+        elif args.command == 'towns':
+            stats = backfill_towns(
+                facilities,
+                country_iso3,
+                interactive=args.interactive,
+                dry_run=args.dry_run
+            )
+            all_stats[country_iso3] = {'towns': stats}
+
+        elif args.command == 'canonical_names':
+            stats = backfill_canonical_names(
+                facilities,
+                country_iso3,
+                dry_run=args.dry_run
+            )
+            all_stats[country_iso3] = {'canonical_names': stats}
 
         elif args.command == 'all':
             stats = backfill_all(

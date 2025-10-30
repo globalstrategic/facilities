@@ -1,0 +1,53 @@
+{
+  "facility_id": "lbr-western-cluster-mines-fac",
+  "name": "**Western Cluster Mines**",
+  "aliases": [],
+  "country_iso3": "LBR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mines"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Western Cluster Ltd.",
+      "role": "operator",
+      "source": "Research Import LBR 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:09:06.606428",
+      "evidence": "Extracted from operator column: Western Cluster Ltd. (Associated with China Baowu Steel Group)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LBR 2025-10-29",
+      "date": "2025-10-29T13:09:06.606433"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T13:09:06.606434",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "mar-mines-del-rif-fac",
+  "name": "**Mines Del Rif **",
+  "aliases": [
+    "Wixane"
+  ],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": 35.209,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "historical mine site"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "State-owned",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.466111",
+      "evidence": "Extracted from operator column: State-owned (ONHYM)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.466118"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.466119",
+    "checked_by": "import_pipeline",
+    "notes": "Historical iron ore mine from the colonial era. Now inactive."
+  }
+}

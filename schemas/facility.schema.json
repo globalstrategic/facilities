@@ -2,10 +2,10 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Facility",
   "description": "Schema for mining and processing facility data. Enhanced with EntityIdentity integration for improved company resolution, metal normalization, and facility cross-referencing. See docs/ENTITYIDENTITY_INTEGRATION_PLAN.md for details.",
-  "version": "2.0.0",
-  "lastUpdated": "2025-10-14",
+  "version": "2.1.0",
+  "lastUpdated": "2025-10-30",
   "type": "object",
-  "required": ["facility_id", "name", "country_iso3", "types", "verification"],
+  "required": ["facility_id", "name", "country_iso3", "types", "verification", "canonical_name"],
   "properties": {
     "ei_facility_id": {
       "type": ["string", "null"],
@@ -20,7 +20,17 @@
     "name": {
       "type": "string",
       "minLength": 1,
-      "description": "Primary facility name"
+      "description": "Primary facility name (legacy field, prefer canonical_name for new code)"
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9 -]+$",
+      "description": "Canonical facility name in format: {Town} {Operator} {Core} {Type} (e.g., 'Roxby Downs BHP Olympic Dam Mine'). Operator included if operator_link is resolved. Used for EntityIdentity resolution and standardization."
+    },
+    "display_name": {
+      "type": ["string", "null"],
+      "description": "Short display name for UI (core name without town/operator/type). Auto-generated from canonical_name if not provided."
     },
     "aliases": {
       "type": "array",
@@ -53,6 +63,14 @@
           "type": "string",
           "enum": ["exact", "site", "approximate", "region", "unknown"],
           "description": "Accuracy of geographic coordinates"
+        },
+        "town": {
+          "type": ["string", "null"],
+          "description": "Nearest town or city name. Used in canonical_name. Mark as 'TODO' if needs manual input."
+        },
+        "region": {
+          "type": ["string", "null"],
+          "description": "State, province, or region name (optional)"
         }
       },
       "required": ["precision"]

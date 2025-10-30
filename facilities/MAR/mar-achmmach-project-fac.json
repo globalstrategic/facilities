@@ -1,0 +1,48 @@
+{
+  "facility_id": "mar-achmmach-project-fac",
+  "name": "**Achmmach Project**",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine development project"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true,
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Atlantic Tin",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.444828",
+      "evidence": "Extracted from operator column: Atlantic Tin (Xingye Yinxin)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.444832"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.444833",
+    "checked_by": "import_pipeline",
+    "notes": "One of the world's largest undeveloped high-grade tin deposits. To be processed at El Hammam."
+  }
+}

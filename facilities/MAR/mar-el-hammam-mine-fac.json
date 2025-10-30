@@ -1,0 +1,46 @@
+{
+  "facility_id": "mar-el-hammam-mine-fac",
+  "name": "**El Hammam Mine**",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "historical mine & mill"
+  ],
+  "commodities": [
+    {
+      "metal": "(fluorspar \\- historical)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Atlantic Tin",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.456880",
+      "evidence": "Extracted from operator column: Atlantic Tin (Xingye Yinxin)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.456884"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.456886",
+    "checked_by": "import_pipeline",
+    "notes": "Former major fluorspar mine. Its processing plant is being repurposed to treat ore from the Achmmach tin project."
+  }
+}

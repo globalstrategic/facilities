@@ -1,0 +1,48 @@
+{
+  "facility_id": "mar-draa-sfar-fac",
+  "name": "**Draa Sfar**",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Managem Group",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.412437",
+      "evidence": "Extracted from operator column: Managem Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.412448"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.412453",
+    "checked_by": "import_pipeline",
+    "notes": "Feeds the Guemassa processing complex, supplementing ore from Douar Hajar."
+  }
+}

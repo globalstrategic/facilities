@@ -1,0 +1,61 @@
+{
+  "facility_id": "lbr-yekepa-mines-concentrator-fac",
+  "name": "**Yekepa Mines & Concentrator**",
+  "aliases": [],
+  "country_iso3": "LBR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine & processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%",
+      "role": "operator",
+      "source": "Research Import LBR 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:09:06.566263",
+      "evidence": "Extracted from operator column: ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%; Govt. of Liberia, 15%)"
+    },
+    {
+      "name": "Govt. of Liberia, 15%)",
+      "role": "operator",
+      "source": "Research Import LBR 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T13:09:06.566274",
+      "evidence": "Extracted from operator column: ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%; Govt. of Liberia, 15%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LBR 2025-10-29",
+      "date": "2025-10-29T13:09:06.566277"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T13:09:06.566279",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

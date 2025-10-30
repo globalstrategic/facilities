@@ -1,0 +1,46 @@
+{
+  "facility_id": "mar-ocp-phosphate-facilities-fac",
+  "name": "**OCP Phosphate Facilities**",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mines & chemical plants"
+  ],
+  "commodities": [
+    {
+      "metal": "(phosphate)",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "OCP Group",
+      "role": "operator",
+      "source": "Morocco Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T16:17:07.484102",
+      "evidence": "Extracted from operator column: OCP Group"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Morocco Deep Research 2025",
+      "date": "2025-10-29T16:17:07.484115"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T16:17:07.484116",
+    "checked_by": "import_pipeline",
+    "notes": "Morocco's entire near-term potential for U and REEs is tied to byproduct recovery from OCP's phosphoric acid streams."
+  }
+}
