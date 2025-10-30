@@ -1,0 +1,62 @@
+{
+  "facility_id": "ncl-koniambo-mine-plant-fac",
+  "name": "**Koniambo Mine & Plant**",
+  "aliases": [],
+  "country_iso3": "NCL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine & pyrometallurgical smelter 26"
+  ],
+  "commodities": [
+    {
+      "metal": "**nickel**",
+      "primary": true
+    },
+    {
+      "metal": "**iron ore** (as ore component)",
+      "primary": false
+    },
+    {
+      "metal": "**ferronickel** (feni).20",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "**Koniambo Nickel SAS** (SMSP 51%",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.454074",
+      "evidence": "Extracted from operator column: **Koniambo Nickel SAS (KNS)** (SMSP 51%; ex-Glencore 49%) 17"
+    },
+    {
+      "name": "ex-Glencore 49%) 17",
+      "role": "operator",
+      "source": "Research Import NCL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:07:19.454102",
+      "evidence": "Extracted from operator column: **Koniambo Nickel SAS (KNS)** (SMSP 51%; ex-Glencore 49%) 17"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-29",
+      "date": "2025-10-29T22:07:19.454116"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:07:19.454121",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
