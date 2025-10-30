@@ -1,0 +1,54 @@
+{
+  "facility_id": "fra-orano-cea-ree-magnet-recycling-fac",
+  "name": "**Orano/CEA REE Magnet Recycling**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "rare earth element recycling",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Orano Group",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.777083",
+      "evidence": "Extracted from operator column: Orano Group / CEA"
+    },
+    {
+      "name": "CEA",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.777088",
+      "evidence": "Extracted from operator column: Orano Group / CEA"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.777091"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.777092",
+    "checked_by": "import_pipeline",
+    "notes": "Europe's first pilot line for 'short-loop' recycling of high-performance magnets. 46"
+  }
+}

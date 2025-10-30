@@ -1,0 +1,48 @@
+{
+  "facility_id": "chl-hern-n-videla-lira-smelter-fac",
+  "name": "Hernán Videla Lira Smelter",
+  "aliases": [
+    "Paipote"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "custom smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "blister/anode copper",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "ENAMI",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.432159",
+      "evidence": "Extracted from operator column: ENAMI (100%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.432171"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.432172",
+    "checked_by": "import_pipeline",
+    "notes": "State-owned smelter serving small and medium-scale miners.24"
+  }
+}

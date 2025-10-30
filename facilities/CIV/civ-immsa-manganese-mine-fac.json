@@ -1,0 +1,46 @@
+{
+  "facility_id": "civ-immsa-manganese-mine-fac",
+  "name": "**IMMSA Manganese Mine**",
+  "aliases": [],
+  "country_iso3": "CIV",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine-producing"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Ivorian Manganese Mines Sa",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:36.008224",
+      "evidence": "Extracted from operator column: Ivorian Manganese Mines Sa (IMMSA)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:36.008227"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:21:36.008228",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "facility_id": "grl-sarfartoq-fac",
+  "name": "**Sarfartoq**",
+  "aliases": [],
+  "country_iso3": "GRL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Neodymium",
+      "primary": false,
+      "chemical_formula": "Nd",
+      "category": "rare_earth_element"
+    },
+    {
+      "metal": "Praseodymium",
+      "primary": false,
+      "chemical_formula": "Pr",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Hudson Resources",
+      "role": "operator",
+      "source": "Research Import GRL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:20.215941",
+      "evidence": "Extracted from operator column: Hudson Resources"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GRL 2025-10-29",
+      "date": "2025-10-29T08:01:20.215946"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T08:01:20.215947",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

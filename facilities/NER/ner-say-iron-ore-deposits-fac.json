@@ -1,0 +1,44 @@
+{
+  "facility_id": "ner-say-iron-ore-deposits-fac",
+  "name": "**Say Iron Ore Deposits**",
+  "aliases": [],
+  "country_iso3": "NER",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "undeveloped deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Iron Ore",
+      "primary": true,
+      "chemical_formula": "Fe2O3/Fe3O4",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NER 2025-10-27",
+      "date": "2025-10-27T11:12:10.118709"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T11:12:10.118710",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This repository manages a global database of **9,058 mining and processing facilities** across **129 countries**, featuring structured JSON-based architecture with comprehensive entity resolution, company linking, geocoding, and research pipeline integration powered by the **EntityIdentity library**.
 
 **Package Name**: `talloy` (per setup.py)
-**Version**: 2.1.0 (Geocoding & Backfill System)
+**Version**: 2.1.1 (Enhanced Table Detection)
 
 ## Common Development Commands
 
@@ -31,17 +31,27 @@ pytest -v --cov
 ### Import Facilities
 
 ```bash
-# Standard import (basic normalization)
-python scripts/import_from_report.py report.txt --country DZ
+# From markdown files with tables (pipe-separated)
+python scripts/import_from_report.py report.md --source "Country Research 2025"
+
+# From CSV files
+python scripts/import_from_report.py facilities.csv --country DZ --source "Data Import"
 
 # Auto-detect country from filename
-python scripts/import_from_report.py albania.txt
+python scripts/import_from_report.py bulgaria.txt
+python scripts/import_from_report.py albania_mines.csv
 
-# Enhanced import with entity resolution (default now)
+# Enhanced import with entity resolution (default)
 python scripts/import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
 
 # From stdin
 cat report.txt | python scripts/import_from_report.py --country DZ
+
+# Supported formats:
+# - Markdown tables (pipe-separated: | header | header |)
+# - CSV files (comma-separated)
+# - Tab-separated tables
+# - Narrative text with facility mentions
 ```
 
 ### Unified CLI
@@ -295,8 +305,8 @@ The system integrates with the **EntityIdentity library** (separate repo at `../
 
 **Country Resolution:**
 - Auto-detect country from filename or text
-- Normalize to ISO3 codes (DZA, USA, ZAF)
-- Handle both ISO2 and ISO3 directory names
+- Normalize to ISO3 codes (DZA, USA, FIN, ZAF)
+- All directories use ISO3 codes consistently
 
 **Metal Normalization:**
 - `metal_identifier()` for chemical formulas (Cu, Fe2O3, etc.)
@@ -317,14 +327,25 @@ The system integrates with the **EntityIdentity library** (separate repo at `../
 #### 4. Import Pipeline Flow
 
 ```
-TEXT INPUT (markdown tables, CSV, stdin)
+TEXT INPUT (markdown tables, CSV, tab-separated, stdin)
   ↓
-TABLE EXTRACTION (extract_markdown_tables)
+TABLE EXTRACTION (extract_markdown_tables, parse_csv_file)
+  ├─ Markdown tables: pipe-separated (| ... |)
+  ├─ CSV: comma-separated with headers
+  ├─ Tab-separated: TSV format
+  └─ Enhanced validation: plural forms, location indicators
+  ↓
+TABLE VALIDATION (is_facility_table - v2.1.1)
+  ├─ Checks for 3+ indicator keywords in headers
+  ├─ Recognizes: facility, mine, name, operator, owner
+  ├─ Recognizes: commodity/commodities, metal/metals (plurals)
+  ├─ Recognizes: location, province, region, site
+  └─ Allows multiple indicators per header (counts all)
   ↓
 ENTITY RESOLUTION (automatic)
-  ├─ Country auto-detection
-  ├─ Metal normalization with formulas
-  └─ Company mention extraction (NOT resolution yet)
+  ├─ Country auto-detection from filename or content
+  ├─ Metal normalization with chemical formulas
+  └─ Company mention extraction (Phase 1)
   ↓
 FACILITY CREATION
   ↓
@@ -367,11 +388,88 @@ OUTPUT
 
 ## Important Development Patterns
 
-### 1. Country Code Handling
+### 1. Table Format Requirements (v2.1.1)
 
-- **Storage**: Facilities organized by country in `facilities/{ISO2_OR_ISO3}/`
+**Header Validation Logic:**
+
+The `is_facility_table()` function validates tables by checking for **3 or more indicator keyword matches** across all headers:
+
+**Recognized Keywords:**
+- Facility identifiers: `facility`, `mine`, `name`, `deposit`, `project`, `site`
+- People/Companies: `operator`, `owner`
+- Location: `location`, `province`, `region`, `latitude`, `longitude`
+- Commodities: `commodity`, `commodities`, `metal`, `metals` (plural forms supported)
+
+**Good Header Examples:**
+```csv
+✓ Facility Name, Operator, Location, Primary Metal, Status
+  → Matches: facility, name, operator, location, metal (5 matches)
+
+✓ Mine Name, Owner, Province, Commodity, Type
+  → Matches: mine, name, owner, province, commodity (5 matches)
+
+✓ Site, Company, Region, Metals, Latitude
+  → Matches: site, region, metals, latitude (4 matches)
+
+✓ Facility Name(s), Corporate Owner/Group, Location (Province), Primary Commodities
+  → Matches: facility, name, owner, location, province, commodities (6 matches)
+```
+
+**Bad Header Examples:**
+```csv
+✗ Name, Company, Area, Product, Active
+  → Matches: name (1 match - needs 3+)
+
+✗ Title, Organization, Place, Material, Open
+  → Matches: none (0 matches - needs 3+)
+```
+
+**Troubleshooting Table Import Issues:**
+
+If your table isn't being detected:
+
+1. **Check headers have 3+ indicator keywords:**
+   ```bash
+   # Your headers should contain words like:
+   # facility, mine, name, operator, owner, location, commodity, metal
+   ```
+
+2. **Use recognized plural forms:**
+   - ✓ "Commodities" works (plural recognized in v2.1.1)
+   - ✓ "Metals" works (plural recognized)
+   - ✗ "Mineral" doesn't match "metal" (use exact keywords)
+
+3. **Combine multiple indicators in one header:**
+   - ✓ "Facility Name" = 2 matches (facility + name)
+   - ✓ "Mine Location" = 2 matches (mine + location)
+   - ✓ "Primary Metal" = 1 match (metal)
+
+4. **Common fixes:**
+   ```csv
+   # Change generic headers to specific ones:
+   Company        → Operator
+   Area           → Location
+   Product        → Commodity
+   Type           → Facility Type (adds both 'facility' + 'site/mine')
+   ```
+
+**Example Fix:**
+
+Before (fails validation - only 1 match):
+```csv
+Name, Company, Area, Product, Status
+```
+
+After (passes validation - 5 matches):
+```csv
+Facility Name, Operator, Location, Primary Metal, Status
+```
+
+### 2. Country Code Handling
+
+- **Storage**: Facilities organized by country in `facilities/{ISO3}/`
 - **Schema**: `country_iso3` field always uses 3-letter codes (DZA, USA, ZAF)
-- **Directory**: Mix of ISO2 (DZ, AF) and ISO3 (USA, ZAF) - both supported
+- **Directory**: All directories use ISO3 codes (USA, ZAF, ALB, etc.)
 - **Utilities**: Use `scripts/utils/country_utils.py` for normalization
 
 **Example:**
@@ -379,6 +477,7 @@ OUTPUT
 from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
 
 iso3 = normalize_country_to_iso3("Algeria")  # → "DZA"
+iso3 = normalize_country_to_iso3("finland")  # → "FIN"
 name = iso3_to_country_name("DZA")          # → "Algeria"
 ```
 
@@ -587,9 +686,10 @@ pytest scripts/tests/test_import_enhanced.py -v
 
 ### Adding a New Country
 
-1. Create country directory (use ISO3 if possible):
+1. Create country directory (always use ISO3):
    ```bash
    mkdir facilities/DZA  # Algeria
+   mkdir facilities/FIN  # Finland
    ```
 
 2. Import facilities:
@@ -869,8 +969,9 @@ Current database (as of 2025-10-21):
 
 ## Known Issues & Gotchas
 
-1. **Directory inconsistency**: Mix of ISO2 (DZ, AF) and ISO3 (USA, ZAF) country directories
-   - Code handles both, but prefer ISO3 for new countries
+1. **Country code standardization**: All facilities use ISO3 codes (DZA, FIN, USA, ZAF)
+   - EntityIdentity returns ISO2, but code automatically converts to ISO3
+   - Always use `normalize_country_to_iso3()` from `country_utils.py`
 
 2. **Company mentions vs links**:
    - Phase 1: Extract to `company_mentions[]` (raw strings)

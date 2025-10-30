@@ -1,0 +1,53 @@
+{
+  "facility_id": "gab-salanie-gold-project-fac",
+  "name": "Salanie Gold Project",
+  "aliases": [],
+  "country_iso3": "GAB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration project"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Apollo Minerals Limited",
+      "role": "operator",
+      "source": "Research Import GAB 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:40:54.216637",
+      "evidence": "Extracted from operator column: Apollo Minerals Limited"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GAB 2025-10-28",
+      "date": "2025-10-28T17:40:54.216641"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:40:54.216642",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

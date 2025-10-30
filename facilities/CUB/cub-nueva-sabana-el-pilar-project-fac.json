@@ -1,0 +1,62 @@
+{
+  "facility_id": "cub-nueva-sabana-el-pilar-project-fac",
+  "name": "**Nueva Sabana / El Pilar Project**",
+  "aliases": [],
+  "country_iso3": "CUB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project (mine development)"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "construction",
+  "company_mentions": [
+    {
+      "name": "Minera La Victoria SA (51% Geominera S.A.",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.871352",
+      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
+    },
+    {
+      "name": "49% Antilles Gold)",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.871358",
+      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CUB 2025-10-27",
+      "date": "2025-10-27T14:21:06.871360"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:06.871361",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

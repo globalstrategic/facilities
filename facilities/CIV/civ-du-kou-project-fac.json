@@ -1,0 +1,54 @@
+{
+  "facility_id": "civ-du-kou-project-fac",
+  "name": "**Duékoué Project**",
+  "aliases": [],
+  "country_iso3": "CIV",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project-exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "Molybdenum",
+      "primary": true,
+      "chemical_formula": "Mo",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Oscillate PLC",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:36.087683",
+      "evidence": "Extracted from operator column: Oscillate PLC"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:36.087689"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:21:36.087690",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

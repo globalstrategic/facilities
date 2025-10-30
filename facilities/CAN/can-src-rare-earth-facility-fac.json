@@ -1,0 +1,50 @@
+{
+  "facility_id": "can-src-rare-earth-facility-fac",
+  "name": "SRC Rare Earth Facility",
+  "aliases": [],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 52.11,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing & separation plant"
+  ],
+  "commodities": [
+    {
+      "metal": "ree oxides",
+      "primary": true
+    },
+    {
+      "metal": "ree metals",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Saskatchewan Research Council",
+      "role": "operator",
+      "source": "Research Import CAN 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:01.517931",
+      "evidence": "Extracted from operator column: Saskatchewan Research Council"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAN 2025-10-27",
+      "date": "2025-10-27T13:22:01.517947"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:01.517948",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "facility_id": "can-cigar-lake-mine-fac",
+  "name": "Cigar Lake Mine",
+  "aliases": [],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 58.07,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Cameco",
+      "role": "operator",
+      "source": "Research Import CAN 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:01.532234",
+      "evidence": "Extracted from operator column: Cameco / Orano"
+    },
+    {
+      "name": "Orano",
+      "role": "operator",
+      "source": "Research Import CAN 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:01.532240",
+      "evidence": "Extracted from operator column: Cameco / Orano"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAN 2025-10-27",
+      "date": "2025-10-27T13:22:01.532243"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:01.532244",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

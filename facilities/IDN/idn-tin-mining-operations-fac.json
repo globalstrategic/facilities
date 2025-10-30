@@ -1,0 +1,49 @@
+{
+  "facility_id": "idn-tin-mining-operations-fac",
+  "name": "**Tin Mining Operations **",
+  "aliases": [
+    "Bangka Belitung"
+  ],
+  "country_iso3": "IDN",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (surface/offshore)",
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "PT Timah Tbk",
+      "role": "operator",
+      "source": "Research Import IDN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T10:37:55.783912",
+      "evidence": "Extracted from operator column: PT Timah Tbk"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import IDN 2025-10-29",
+      "date": "2025-10-29T10:37:55.783917"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T10:37:55.783918",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

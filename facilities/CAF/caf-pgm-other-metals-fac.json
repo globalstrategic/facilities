@@ -1,0 +1,54 @@
+{
+  "facility_id": "caf-pgm-other-metals-fac",
+  "name": "PGM / Other Metals",
+  "aliases": [],
+  "country_iso3": "CAF",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "geological occurrence"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": true,
+      "chemical_formula": "Pt",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "Palladium",
+      "primary": true,
+      "chemical_formula": "Pd",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "etc.",
+      "primary": true
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAF 2025-10-27",
+      "date": "2025-10-27T10:27:55.496753"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:27:55.496757",
+    "checked_by": "import_pipeline",
+    "notes": "No geological potential or known occurrences for Platinum Group Metals and other metals on the user list."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "facility_id": "guy-morabisi-project-fac",
+  "name": "**Morabisi Project**",
+  "aliases": [],
+  "country_iso3": "GUY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration project"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Guyana Strategic Metals Inc.",
+      "role": "operator",
+      "source": "Research Import GUY 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T09:20:21.970732",
+      "evidence": "Extracted from operator column: Guyana Strategic Metals Inc. / Greenpower Energy"
+    },
+    {
+      "name": "Greenpower Energy",
+      "role": "operator",
+      "source": "Research Import GUY 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T09:20:21.970735",
+      "evidence": "Extracted from operator column: Guyana Strategic Metals Inc. / Greenpower Energy"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GUY 2025-10-29",
+      "date": "2025-10-29T09:20:21.970737"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T09:20:21.970738",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

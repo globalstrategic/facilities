@@ -1,0 +1,48 @@
+{
+  "facility_id": "idn-dairi-mine-fac",
+  "name": "**Dairi Mine**",
+  "aliases": [],
+  "country_iso3": "IDN",
+  "location": {
+    "lat": 2.817,
+    "lon": 98.117,
+    "precision": "site"
+  },
+  "types": [
+    "mine (underground)"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "PT Dairi Prima Mineral",
+      "role": "operator",
+      "source": "Research Import IDN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T10:37:55.769526",
+      "evidence": "Extracted from operator column: PT Dairi Prima Mineral"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import IDN 2025-10-29",
+      "date": "2025-10-29T10:37:55.769540"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T10:37:55.769541",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

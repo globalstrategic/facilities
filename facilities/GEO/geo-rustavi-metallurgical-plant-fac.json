@@ -1,0 +1,56 @@
+{
+  "facility_id": "geo-rustavi-metallurgical-plant-fac",
+  "name": "**Rustavi Metallurgical Plant**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "metallurgical plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe-C",
+      "category": "industrial_mineral"
+    },
+    {
+      "metal": "pipes)",
+      "primary": true
+    },
+    {
+      "metal": "pig iron",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Rustavi Steel LLC",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.212255",
+      "evidence": "Extracted from operator column: Rustavi Steel LLC"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.212260"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.212261",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

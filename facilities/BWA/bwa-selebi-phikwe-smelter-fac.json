@@ -1,0 +1,48 @@
+{
+  "facility_id": "bwa-selebi-phikwe-smelter-fac",
+  "name": "**Selebi-Phikwe Smelter**",
+  "aliases": [],
+  "country_iso3": "BWA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "BCL Limited",
+      "role": "operator",
+      "source": "Research Import BWA 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T11:57:05.546012",
+      "evidence": "Extracted from operator column: BCL Limited (In Liquidation)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BWA 2025-10-27",
+      "date": "2025-10-27T11:57:05.546021"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T11:57:05.546022",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "facility_id": "idn-batu-hijau-mine-fac",
+  "name": "**Batu Hijau Mine**",
+  "aliases": [],
+  "country_iso3": "IDN",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (surface)",
+    "concentrator"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "PT Amman Mineral Nusa Tenggara",
+      "role": "operator",
+      "source": "Research Import IDN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T10:37:55.503927",
+      "evidence": "Extracted from operator column: PT Amman Mineral Nusa Tenggara (AMNT)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import IDN 2025-10-29",
+      "date": "2025-10-29T10:37:55.503933"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T10:37:55.503934",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

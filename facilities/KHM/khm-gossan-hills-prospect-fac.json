@@ -1,0 +1,51 @@
+{
+  "facility_id": "khm-gossan-hills-prospect-fac",
+  "name": "**Gossan Hills Prospect**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration license"
+  ],
+  "commodities": [
+    {
+      "metal": "rare earths",
+      "primary": true
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Angkor Resources Corp.",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.457852",
+      "evidence": "Extracted from operator column: Angkor Resources Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.457856"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.457858",
+    "checked_by": "import_pipeline",
+    "notes": "Very early-stage exploration. Assays show elevated REEs in soil samples. No mining."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "facility_id": "col-cobrasco-project-fac",
+  "name": "Cobrasco Project",
+  "aliases": [],
+  "country_iso3": "COL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "porphyry deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Rugby Resources Ltd.",
+      "role": "operator",
+      "source": "Research Import COL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:39.178634",
+      "evidence": "Extracted from operator column: Rugby Resources Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import COL 2025-10-27",
+      "date": "2025-10-27T14:21:39.178638"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:39.178639",
+    "checked_by": "import_pipeline",
+    "notes": "**Exploration.** Promising early drilling results on a large geochemical anomaly. 20"
+  }
+}

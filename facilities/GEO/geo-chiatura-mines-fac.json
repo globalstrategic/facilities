@@ -1,0 +1,46 @@
+{
+  "facility_id": "geo-chiatura-mines-fac",
+  "name": "**Chiatura Mines**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine complex (underground & open-pit)"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Georgian Manganese LLC",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.158396",
+      "evidence": "Extracted from operator column: Georgian Manganese LLC (GAA)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.158399"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.158400",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

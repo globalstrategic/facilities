@@ -13,8 +13,16 @@
   ],
   "commodities": [
     {
-      "metal": "uranium",
-      "primary": true
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false,
+      "chemical_formula": "Mo",
+      "category": "specialty_metal"
     }
   ],
   "status": "unknown",
@@ -23,14 +31,14 @@
   "sources": [
     {
       "type": "csv_import",
-      "id": "Research Import NER 2025-10-29",
-      "date": "2025-10-29T22:03:08.564687"
+      "id": "Research Import NER 2025-10-27",
+      "date": "2025-10-27T11:12:10.054557"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-10-29T22:03:08.564706",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T11:12:10.054559",
     "checked_by": "import_pipeline",
     "notes": null
   }

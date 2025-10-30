@@ -1,0 +1,48 @@
+{
+  "facility_id": "can-port-hope-conversion-fac",
+  "name": "Port Hope Conversion",
+  "aliases": [],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 43.95,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "conversion plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Cameco",
+      "role": "operator",
+      "source": "Research Import CAN 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:01.582240",
+      "evidence": "Extracted from operator column: Cameco"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAN 2025-10-27",
+      "date": "2025-10-27T13:22:01.582246"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:01.582247",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

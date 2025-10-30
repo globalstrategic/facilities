@@ -1,0 +1,41 @@
+{
+  "facility_id": "cze-diamo-remediation-sites-fac",
+  "name": "**DIAMO Remediation Sites**",
+  "aliases": [],
+  "country_iso3": "CZE",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "remediation site"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "DIAMO, s.p.",
+      "role": "operator",
+      "source": "Research Import CZE 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T15:23:26.784535",
+      "evidence": "Extracted from operator column: DIAMO, s.p. (State Enterprise)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CZE 2025-10-27",
+      "date": "2025-10-27T15:23:26.784537"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T15:23:26.784538",
+    "checked_by": "import_pipeline",
+    "notes": "Manages all former uranium mines. Uranium is actively extracted as a by-product of treating contaminated mine water from sites like Příbram and Rožná. 13"
+  }
+}

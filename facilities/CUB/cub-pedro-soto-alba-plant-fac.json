@@ -1,0 +1,62 @@
+{
+  "facility_id": "cub-pedro-soto-alba-plant-fac",
+  "name": "Pedro Soto Alba Plant",
+  "aliases": [
+    "Moa Plant"
+  ],
+  "country_iso3": "CUB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "sulfuric acid",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Moa Nickel S.A. (50% Sherritt Int'l",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.819444",
+      "evidence": "Extracted from operator column: Moa Nickel S.A. (50% Sherritt Int'l / 50% General Nickel Co. S.A.)"
+    },
+    {
+      "name": "50% General Nickel Co. S.A.)",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.819448",
+      "evidence": "Extracted from operator column: Moa Nickel S.A. (50% Sherritt Int'l / 50% General Nickel Co. S.A.)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CUB 2025-10-27",
+      "date": "2025-10-27T14:21:06.819451"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:06.819452",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

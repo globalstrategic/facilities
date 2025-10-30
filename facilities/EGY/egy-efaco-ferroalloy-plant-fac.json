@@ -1,0 +1,46 @@
+{
+  "facility_id": "egy-efaco-ferroalloy-plant-fac",
+  "name": "**EFACO Ferroalloy Plant**",
+  "aliases": [],
+  "country_iso3": "EGY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "ferroalloy plant"
+  ],
+  "commodities": [
+    {
+      "metal": "ferrosilicon",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Egyptian Ferroalloys Co.",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.201912",
+      "evidence": "Extracted from operator column: Egyptian Ferroalloys Co. (EFACO)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import EGY 2025-10-28",
+      "date": "2025-10-28T16:22:57.201915"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T16:22:57.201916",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

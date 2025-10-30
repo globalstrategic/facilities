@@ -1,0 +1,50 @@
+{
+  "facility_id": "gtm-el-tambor-fac",
+  "name": "El Tambor",
+  "aliases": [
+    "Progreso VII"
+  ],
+  "country_iso3": "GTM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "Exploraciones Mineras de Guatemala S.A.",
+      "role": "operator",
+      "source": "Research Import GTM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:33.497759",
+      "evidence": "Extracted from operator column: Exploraciones Mineras de Guatemala S.A. (Kappes, Cassiday & Associates)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GTM 2025-10-29",
+      "date": "2025-10-29T08:01:33.497763"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T08:01:33.497764",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

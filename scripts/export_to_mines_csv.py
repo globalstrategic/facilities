@@ -36,9 +36,20 @@ from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_count
 # Try to import metal_identifier from entityidentity
 try:
     from entityidentity import metal_identifier
+    import pandas as pd
     METAL_IDENTIFIER_AVAILABLE = True
+
+    # Load metals database to support basket queries
+    entity_path = Path(__file__).parent.parent.parent / "entityidentity"
+    metals_parquet = entity_path / "entityidentity" / "metals" / "data" / "metals.parquet"
+    if metals_parquet.exists():
+        METALS_DB = pd.read_parquet(metals_parquet)
+    else:
+        METALS_DB = None
+        print("Warning: metals.parquet not found, basket queries may be limited", file=sys.stderr)
 except ImportError:
     METAL_IDENTIFIER_AVAILABLE = False
+    METALS_DB = None
     print("Warning: metal_identifier not available (entityidentity library)", file=sys.stderr)
 
 
@@ -57,7 +68,9 @@ def normalize_metal(metal_name: str) -> Optional[Dict]:
 
     try:
         result = metal_identifier(metal_name)
-        if result and result.get('valid'):
+        # metal_identifier returns dict if match found, None if no match
+        # Check if result has category_bucket (key indicator of success)
+        if result and result.get('category_bucket'):
             return {
                 'name': result.get('name', metal_name).lower(),
                 'category': result.get('category'),
@@ -67,6 +80,7 @@ def normalize_metal(metal_name: str) -> Optional[Dict]:
     except Exception:
         pass
 
+    # Fallback: return lowercase name without category info
     return {
         'name': metal_name.lower(),
         'category': None,
@@ -74,70 +88,140 @@ def normalize_metal(metal_name: str) -> Optional[Dict]:
     }
 
 
-# Rare earth elements list
-REE_ELEMENTS = [
-    'scandium', 'yttrium', 'lanthanum', 'cerium', 'praseodymium', 'neodymium',
-    'promethium', 'samarium', 'europium', 'gadolinium', 'terbium', 'dysprosium',
-    'holmium', 'erbium', 'thulium', 'ytterbium', 'lutetium',
-    'neodymium-praseodymium', 'didymium'  # Common REE mixtures
-]
+# Basket term mappings to category_bucket values
+BASKET_MAPPINGS = {
+    # Rare earth elements
+    'ree': 'ree',
+    'rare earth': 'ree',
+    'rare earths': 'ree',
+    'rare-earth': 'ree',
+    'rare-earths': 'ree',
+    'rareearth': 'ree',
+    'rareearths': 'ree',
+
+    # Platinum group metals
+    'pgm': 'pgm',
+    'pgms': 'pgm',
+    'platinum group': 'pgm',
+    'platinum group metal': 'pgm',
+    'platinum group metals': 'pgm',
+
+    # Base metals
+    'base': 'base',
+    'base metal': 'base',
+    'base metals': 'base',
+
+    # Battery metals
+    'battery': 'battery',
+    'battery metal': 'battery',
+    'battery metals': 'battery',
+
+    # Precious metals
+    'precious': 'precious',
+    'precious metal': 'precious',
+    'precious metals': 'precious',
+
+    # Ferroalloys
+    'ferroalloy': 'ferroalloy',
+    'ferroalloys': 'ferroalloy',
+    'ferro': 'ferroalloy',
+
+    # Specialty
+    'specialty': 'specialty',
+    'specialty metal': 'specialty',
+    'specialty metals': 'specialty',
+
+    # Industrial
+    'industrial': 'industrial',
+
+    # Nuclear
+    'nuclear': 'nuclear',
+}
 
 
-def is_ree_search(metal_name: str) -> bool:
-    """Check if search term is for rare earths generally."""
-    metal_lower = metal_name.lower()
-    return any(term in metal_lower for term in ['rare earth', 'ree', 'rare-earth'])
+def resolve_basket_to_metals(basket_term: str) -> Optional[List[str]]:
+    """
+    Resolve basket term to list of individual metal names.
+
+    Args:
+        basket_term: Basket name (e.g., "REE", "rare earths", "PGM", "battery metals")
+
+    Returns:
+        List of metal names in the basket, or None if not a basket or no data available
+    """
+    if not METAL_IDENTIFIER_AVAILABLE or METALS_DB is None:
+        return None
+
+    basket_lower = basket_term.lower().strip()
+    category_bucket = BASKET_MAPPINGS.get(basket_lower)
+
+    if not category_bucket:
+        return None
+
+    # Get all metals in this category_bucket
+    metals_in_basket = METALS_DB[METALS_DB['category_bucket'] == category_bucket]
+    if metals_in_basket.empty:
+        return None
+
+    # Return normalized names
+    return metals_in_basket['name_norm'].tolist()
+
+
+def is_basket_search(metal_name: str) -> bool:
+    """Check if search term is a basket/group query."""
+    metal_lower = metal_name.lower().strip()
+    return metal_lower in BASKET_MAPPINGS
 
 
 def facility_has_metal(facility: Dict, target_metal: str) -> bool:
     """
-    Check if facility produces the target metal.
+    Check if facility produces the target metal or any metal in a basket.
 
-    Uses metal_identifier to match different forms (e.g., "copper", "Cu", "Copper ore").
-    Special handling for rare earths: searching "rare earth" or "REE" matches all REE elements.
+    Supports:
+    - Individual metals: "copper", "Cu", "lithium"
+    - Basket queries: "REE", "rare earths", "PGM", "battery metals", etc.
+
+    Uses EntityIdentity to match different forms and expand baskets.
     """
     commodities = facility.get("commodities", [])
     if not commodities:
         return False
 
-    # Check if this is a general REE search
-    is_ree_query = is_ree_search(target_metal)
+    # Normalize facility metals once (cache for efficiency)
+    facility_metals_normalized = []
+    for comm in commodities:
+        metal = comm.get("metal")
+        if metal:
+            metal_info = normalize_metal(metal)
+            if metal_info:
+                facility_metals_normalized.append(metal_info)
 
-    # Normalize target metal
+    if not facility_metals_normalized:
+        return False
+
+    # Check if this is a basket query
+    if is_basket_search(target_metal):
+        # Use category_bucket for efficient matching
+        basket_lower = target_metal.lower().strip()
+        target_bucket = BASKET_MAPPINGS.get(basket_lower)
+        if target_bucket:
+            # Check if any facility metal is in this category_bucket
+            for metal_info in facility_metals_normalized:
+                if metal_info.get('category_bucket') == target_bucket:
+                    return True
+        return False
+
+    # Individual metal search - normalize target once
     target_info = normalize_metal(target_metal)
     if not target_info:
         return False
 
     normalized_target = target_info['name']
+    target_symbol = target_info.get('symbol')
 
-    # Check each commodity
-    for comm in commodities:
-        metal = comm.get("metal")
-        if not metal:
-            continue
-
-        metal_lower = metal.lower()
-
-        # For REE queries, match any REE element OR "rare earth" in commodity name
-        if is_ree_query:
-            # Direct match on "rare earth" in commodity name
-            if 'rare earth' in metal_lower or 'ree' in metal_lower:
-                return True
-            # Check if commodity is a specific REE element
-            if any(ree in metal_lower for ree in REE_ELEMENTS):
-                return True
-            # Check category via EntityIdentity
-            if METAL_IDENTIFIER_AVAILABLE:
-                metal_info = normalize_metal(metal)
-                if metal_info and metal_info.get('category_bucket') == 'ree':
-                    return True
-
-        # Regular metal matching
-        normalized_facility_metal = normalize_metal(metal)
-        if not normalized_facility_metal:
-            continue
-
-        facility_metal_name = normalized_facility_metal['name']
+    # Check each commodity against target
+    for metal_info in facility_metals_normalized:
+        facility_metal_name = metal_info['name']
 
         # Name matching (substring in both directions)
         if normalized_target in facility_metal_name:
@@ -146,10 +230,9 @@ def facility_has_metal(facility: Dict, target_metal: str) -> bool:
             return True
 
         # Symbol matching if available
-        if METAL_IDENTIFIER_AVAILABLE:
-            target_symbol = target_info.get('symbol')
-            facility_symbol = normalized_facility_metal.get('symbol')
-            if target_symbol and facility_symbol and target_symbol == facility_symbol:
+        if target_symbol:
+            facility_symbol = metal_info.get('symbol')
+            if facility_symbol and target_symbol == facility_symbol:
                 return True
 
     return False
@@ -206,6 +289,49 @@ def get_companies(facility: Dict) -> List[str]:
         companies.append(facility["owner"])
 
     return companies
+
+
+def facility_has_company(facility: Dict, target_company: str) -> bool:
+    """
+    Check if facility is operated by or owned by the target company.
+
+    Uses fuzzy matching to handle variations like:
+    - "BHP" vs "BHP Billiton" vs "BHP Group"
+    - "Rio Tinto" vs "Rio Tinto Plc"
+    - "MP Materials" vs "MP Materials Corp"
+    """
+    companies = get_companies(facility)
+    if not companies:
+        return False
+
+    target_lower = target_company.lower().strip()
+
+    # Direct exact match (case insensitive)
+    for company in companies:
+        if company.lower() == target_lower:
+            return True
+
+    # Substring matching (both directions)
+    for company in companies:
+        company_lower = company.lower()
+        # Check if target is in company name or company name is in target
+        if target_lower in company_lower or company_lower in target_lower:
+            return True
+
+    # Word-based matching for multi-word companies
+    # e.g., "MP Materials" matches "MP Materials Corp"
+    target_words = set(target_lower.split())
+    if len(target_words) > 0:
+        for company in companies:
+            company_words = set(company.lower().split())
+            # If all target words are in company name, it's a match
+            if target_words.issubset(company_words):
+                return True
+            # Or if all company words are in target (reversed check)
+            if company_words.issubset(target_words):
+                return True
+
+    return False
 
 
 def get_asset_types(facility: Dict) -> str:
@@ -300,18 +426,32 @@ def facility_to_csv_row(facility: Dict, country_name: str) -> Dict[str, str]:
     }
 
 
-def export_country_to_csv(country: str, output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
+def export_country_to_csv(country: str, output_file: Optional[str] = None, metal: Optional[str] = None, company: Optional[str] = None) -> int:
     """
     Export all facilities from a country to Mines.csv format.
 
     Args:
         country: Country name or ISO3 code
         output_file: Output CSV path (defaults to {iso3}_mines.csv or {iso3}_{metal}_mines.csv)
-        metal: Optional metal filter (e.g., "copper", "Cu", "lithium")
+        metal: Optional metal filter (e.g., "copper", "Cu", "lithium", "REE", "battery metals")
+        company: Optional company filter (e.g., "BHP", "Rio Tinto", "MP Materials")
 
     Returns:
         Number of facilities exported
     """
+    # Check if metal filter is a basket query
+    if metal and is_basket_search(metal):
+        basket_metals = resolve_basket_to_metals(metal)
+        if basket_metals:
+            print(f"[Basket Query] Expanding '{metal}' to {len(basket_metals)} metals:")
+            print(f"  {', '.join(basket_metals[:10])}")
+            if len(basket_metals) > 10:
+                print(f"  ... and {len(basket_metals) - 10} more")
+
+    # Check if company filter is provided
+    if company:
+        print(f"[Company Filter] Filtering for facilities operated/owned by '{company}'")
+
     # Normalize country
     iso3 = normalize_country_to_iso3(country)
     if not iso3:
@@ -320,18 +460,25 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
 
     country_name = iso3_to_country_name(iso3)
 
-    # Find country directory (could be ISO2 or ISO3)
+    # Find country directory (should be ISO3, but legacy directories may use ISO2)
     base_dir = Path(__file__).parent.parent / "facilities"
     country_dir = None
 
-    # Try ISO3 first
+    # Try ISO3 first (preferred)
     if (base_dir / iso3).exists():
         country_dir = base_dir / iso3
     else:
-        # Try ISO2
-        iso2 = iso3[:2]  # Rough approximation
-        if (base_dir / iso2).exists():
-            country_dir = base_dir / iso2
+        # Try ISO2 for legacy directories
+        # Use pycountry for proper conversion
+        try:
+            import pycountry
+            country_obj = pycountry.countries.get(alpha_3=iso3)
+            if country_obj:
+                iso2 = country_obj.alpha_2
+                if (base_dir / iso2).exists():
+                    country_dir = base_dir / iso2
+        except:
+            pass
 
     if not country_dir or not country_dir.exists():
         print(f"Error: No facilities directory found for {iso3}")
@@ -348,24 +495,37 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
                 if metal and not facility_has_metal(facility, metal):
                     continue
 
+                # Apply company filter if specified
+                if company and not facility_has_company(facility, company):
+                    continue
+
                 facilities.append(facility)
         except Exception as e:
             print(f"Warning: Error loading {json_file}: {e}", file=sys.stderr)
 
     if not facilities:
-        metal_msg = f" producing {metal}" if metal else ""
-        print(f"No facilities{metal_msg} found in {country_dir}")
+        filters = []
+        if metal:
+            filters.append(f"metal: {metal}")
+        if company:
+            filters.append(f"company: {company}")
+        filter_msg = f" with filters ({', '.join(filters)})" if filters else ""
+        print(f"No facilities{filter_msg} found in {country_dir}")
         return 0
 
     # Set output file
     if not output_file:
+        parts = [iso3]
+        if company:
+            company_slug = company.lower().replace(' ', '_').replace(',', '')
+            parts.append(company_slug)
         if metal:
             metal_info = normalize_metal(metal)
             metal_slug = metal_info['name'] if metal_info else metal
             metal_slug = metal_slug.replace(' ', '_')
-            output_file = f"{iso3}_{metal_slug}_mines.csv"
-        else:
-            output_file = f"{iso3}_mines.csv"
+            parts.append(metal_slug)
+        parts.append("mines.csv")
+        output_file = "_".join(parts)
 
     # Write CSV
     fieldnames = [
@@ -393,17 +553,31 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
     return len(facilities)
 
 
-def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = None) -> int:
+def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = None, company: Optional[str] = None) -> int:
     """
     Export all facilities from all countries to a single Mines.csv file.
 
     Args:
         output_file: Output CSV path (defaults to gt/Mines_{timestamp}.csv or gt/{metal}_Mines_{timestamp}.csv)
-        metal: Optional metal filter (e.g., "copper", "Cu", "lithium")
+        metal: Optional metal filter (e.g., "copper", "Cu", "lithium", "REE", "battery metals")
+        company: Optional company filter (e.g., "BHP", "Rio Tinto", "MP Materials")
 
     Returns:
         Number of facilities exported
     """
+    # Check if metal filter is a basket query
+    if metal and is_basket_search(metal):
+        basket_metals = resolve_basket_to_metals(metal)
+        if basket_metals:
+            print(f"[Basket Query] Expanding '{metal}' to {len(basket_metals)} metals:")
+            print(f"  {', '.join(basket_metals[:10])}")
+            if len(basket_metals) > 10:
+                print(f"  ... and {len(basket_metals) - 10} more")
+
+    # Check if company filter is provided
+    if company:
+        print(f"[Company Filter] Filtering for facilities operated/owned by '{company}'")
+
     base_dir = Path(__file__).parent.parent / "facilities"
 
     if not base_dir.exists():
@@ -416,11 +590,18 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
         gt_dir = Path(__file__).parent.parent / "gt"
         gt_dir.mkdir(exist_ok=True)
 
+        parts = []
+        if company:
+            company_slug = company.lower().replace(' ', '_').replace(',', '')
+            parts.append(company_slug)
         if metal:
             metal_info = normalize_metal(metal)
             metal_slug = metal_info['name'] if metal_info else metal
             metal_slug = metal_slug.replace(' ', '_')
-            output_file = gt_dir / f"{metal_slug}_Mines_{timestamp}.csv"
+            parts.append(metal_slug)
+
+        if parts:
+            output_file = gt_dir / f"{'_'.join(parts)}_Mines_{timestamp}.csv"
         else:
             output_file = gt_dir / f"Mines_{timestamp}.csv"
 
@@ -455,6 +636,10 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
 
                     # Apply metal filter if specified
                     if metal and not facility_has_metal(facility, metal):
+                        continue
+
+                    # Apply company filter if specified
+                    if company and not facility_has_company(facility, company):
                         continue
 
                     # Store country name with facility for later use
@@ -511,13 +696,15 @@ def main():
                "  %(prog)s Chile\n"
                "  %(prog)s --all\n"
                "  %(prog)s Chile --metal copper\n"
-               "  %(prog)s --all --metal lithium -o lithium_mines.csv",
+               "  %(prog)s --all --metal lithium -o lithium_mines.csv\n"
+               "  %(prog)s --all --company \"BHP\"\n"
+               "  %(prog)s --all --company \"Rio Tinto\" --metal copper",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument(
         "country",
         nargs="?",
-        help="Country name or ISO3 code (e.g., 'Chile' or 'CHL'). Omit with --all to export all countries."
+        help="Country name, ISO3 code, or company name. Use --company flag for company filtering."
     )
     parser.add_argument(
         "-o", "--output",
@@ -530,16 +717,33 @@ def main():
     )
     parser.add_argument(
         "--metal",
-        help="Filter by metal/commodity (e.g., 'copper', 'Cu', 'lithium', 'REE'). Uses EntityIdentity normalization."
+        help="Filter by metal/commodity or basket. "
+             "Examples: 'copper', 'Cu', 'lithium' (individual) | "
+             "'REE', 'rare earths', 'PGM', 'battery metals', 'base metals' (baskets). "
+             "Uses EntityIdentity for normalization and basket expansion."
+    )
+    parser.add_argument(
+        "--company",
+        help="Filter by company (operator or owner). "
+             "Examples: 'BHP', 'Rio Tinto', 'MP Materials'. "
+             "Uses fuzzy matching to handle variations."
     )
 
     args = parser.parse_args()
 
-    # Check if --all flag is used
+    # Handle different invocation patterns
+    # Pattern 1: --all with optional filters
     if args.all:
-        count = export_all_to_csv(args.output, metal=args.metal)
-    elif args.country:
-        count = export_country_to_csv(args.country, args.output, metal=args.metal)
+        count = export_all_to_csv(args.output, metal=args.metal, company=args.company)
+    # Pattern 2: Country with optional filters
+    elif args.country and not args.company:
+        count = export_country_to_csv(args.country, args.output, metal=args.metal, company=None)
+    # Pattern 3: --company flag (implies --all if no country)
+    elif args.company and not args.country:
+        count = export_all_to_csv(args.output, metal=args.metal, company=args.company)
+    # Pattern 4: Country + --company flag
+    elif args.country and args.company:
+        count = export_country_to_csv(args.country, args.output, metal=args.metal, company=args.company)
     else:
         parser.error("Either provide a country name or use --all flag")
 

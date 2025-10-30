@@ -1,0 +1,76 @@
+{
+  "facility_id": "eth-kenticha-mine-fac",
+  "name": "Kenticha Mine",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": 5.5167,
+    "lon": 39.0333,
+    "precision": "site"
+  },
+  "types": [
+    "mine / deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Niobium",
+      "primary": false,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "cesium",
+      "primary": false
+    },
+    {
+      "metal": "rees",
+      "primary": false
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "Kenticha Mining Plc (OMSC",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.304394",
+      "evidence": "Extracted from operator column: Kenticha Mining Plc (OMSC / AML)"
+    },
+    {
+      "name": "AML)",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.304398",
+      "evidence": "Extracted from operator column: Kenticha Mining Plc (OMSC / AML)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.304400"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.304401",
+    "checked_by": "import_pipeline",
+    "notes": "World-class LCT pegmatite; operations stalled by major ownership/licensing dispute.10"
+  }
+}

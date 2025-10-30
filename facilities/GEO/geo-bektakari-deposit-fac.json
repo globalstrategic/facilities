@@ -1,0 +1,48 @@
+{
+  "facility_id": "geo-bektakari-deposit-fac",
+  "name": "**Bektakari Deposit**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "RMG Auramine",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.131689",
+      "evidence": "Extracted from operator column: RMG Auramine (RMG)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.131693"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.131694",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "facility_id": "hnd-promasa-fac",
+  "name": "Promasa",
+  "aliases": [],
+  "country_iso3": "HND",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "manufacturing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "galvanized steel products",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Promasa",
+      "role": "operator",
+      "source": "Research Import HND 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T09:19:40.553793",
+      "evidence": "Extracted from operator column: Promasa"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import HND 2025-10-29",
+      "date": "2025-10-29T09:19:40.553797"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T09:19:40.553798",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

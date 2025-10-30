@@ -309,12 +309,23 @@ python scripts/import_from_report.py Mines.csv --source "Mines Database"
 cat report.txt | python scripts/import_from_report.py --country DZ
 ```
 
+**Supported Formats:**
+- Markdown tables (pipe-separated: `| header | header |`)
+- CSV files (comma-separated)
+- Tab-separated tables (TSV)
+- Narrative text with facility mentions
+
 **Features:**
+- Enhanced table detection (v2.1.1): Recognizes plural forms (commodities, metals), location indicators (province, region)
 - Automatic duplicate prevention (4-priority matching)
 - Metal normalization with chemical formulas
 - Company mention extraction (Phase 1)
 - Per-row country detection for multi-country CSVs
 - Confidence boosting for resolved entities
+
+**Table Requirements:**
+- Headers must contain 3+ indicator keywords: facility, mine, name, operator, owner, location, commodity/commodities, metal/metals
+- See CLAUDE.md Section 1 for detailed header validation guide
 
 **Import Statistics:**
 ```

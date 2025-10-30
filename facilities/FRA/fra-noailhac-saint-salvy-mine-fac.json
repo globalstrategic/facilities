@@ -1,0 +1,48 @@
+{
+  "facility_id": "fra-noailhac-saint-salvy-mine-fac",
+  "name": "**Noailhac-Saint-Salvy Mine**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true,
+      "chemical_formula": "Zn",
+      "category": "base_metal"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Metaleurop S.A.",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.823935",
+      "evidence": "Extracted from operator column: Metaleurop S.A."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.823940"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.823942",
+    "checked_by": "import_pipeline",
+    "notes": "Notable for significant germanium and silver by-product recovery. 70"
+  }
+}

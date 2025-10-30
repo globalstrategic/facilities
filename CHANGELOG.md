@@ -5,9 +5,26 @@ All notable changes to the Facilities Database project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.1.1] - 2025-10-21
+## [2.1.1] - 2025-10-27
+
+### Added
+- **Enhanced Table Detection**: Improved `is_facility_table()` validation logic
+  - Support for plural forms: "commodities", "metals" now recognized (previously only singular)
+  - Support for location indicators: "province", "region", "owner" added to keyword list
+  - Changed counting logic: Now counts ALL indicator matches across headers (previously only first match per keyword)
+  - Enables import of markdown tables with headers like "Facility Name(s)", "Primary Commodities", "Location (Province)"
+  - Example: Bulgarian research report table now successfully imports (previously failed validation)
+
+### Changed
+- **Table Validation Keywords** (in `scripts/import_from_report.py:621`):
+  - Added: `commodities`, `metals`, `operator`, `owner`, `location`, `province`, `region`
+  - Updated matching logic to count multiple indicators per header
+  - Minimum threshold remains 3 matches, but now easier to achieve with plural support
 
 ### Fixed
+- **Markdown Table Import**: Tables with comprehensive headers now pass validation
+  - Before: "Facility Name(s) | Corporate Owner/Group | Location (Province) | Primary Commodities" = 2 matches (failed)
+  - After: Same headers = 6 matches (facility, name, owner, location, province, commodities) - passes
 - **EntityIdentity Integration**: Fixed metal formula field mapping in `scripts/import_from_report.py:911`
   - Changed `result.get('formula')` to `result.get('chemical_formula')` to match updated entityidentity API
   - Metal normalization now successfully extracts chemical formulas and categories
@@ -15,6 +32,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Resolved issue where metal resolutions were showing 0 despite entityidentity being available
 
 ### Tested
+- **Bulgarian Import**: Successfully imported 8 new facilities from markdown report
+  - ✅ Table detection: 1 markdown table found and validated
+  - ✅ Facilities added: Chelopech Mine, Ada Tepe Mine, Pirdop Smelter, Asarel-Medet Complex, etc.
+  - ✅ Duplicate detection: 7 existing facilities correctly skipped
+  - ✅ Country auto-detection: "bulgarian" filename → BGR country code
 - **Import Pipeline Validation**: Comprehensive test with 36 neodymium/REE facilities
   - ✅ Duplicate detection: 100% accurate (3/3 caught: Bayan Obo, Mountain Pass, Steenkampskraal)
   - ✅ Country assignment: 100% accurate (33 facilities sorted into 21 countries)

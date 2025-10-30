@@ -1,0 +1,54 @@
+{
+  "facility_id": "chl-molynor-plant-fac",
+  "name": "Molynor Plant",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "roaster",
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Molybdenum",
+      "primary": true,
+      "chemical_formula": "Mo",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Ferromolybdenum",
+      "primary": true,
+      "category": "ferroalloy"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Molymet",
+      "role": "operator",
+      "source": "Research Import CHL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:22:28.458785",
+      "evidence": "Extracted from operator column: Molymet"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CHL 2025-10-27",
+      "date": "2025-10-27T13:22:28.458792"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:22:28.458793",
+    "checked_by": "import_pipeline",
+    "notes": "Strategically located near northern ports and mines.45"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "hnd-clavo-rico-mine-fac",
+  "name": "Clavo Rico Mine",
+  "aliases": [
+    "El Corpus"
+  ],
+  "country_iso3": "HND",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Inception Mining",
+      "role": "operator",
+      "source": "Research Import HND 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T09:19:40.519829",
+      "evidence": "Extracted from operator column: Inception Mining (divested 2023\\)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import HND 2025-10-29",
+      "date": "2025-10-29T09:19:40.519841"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T09:19:40.519843",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "facility_id": "col-marmato-project-fac",
+  "name": "Marmato Project",
+  "aliases": [
+    "Open Pit"
+  ],
+  "country_iso3": "COL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "porphyry deposit"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Aris Mining Corporation",
+      "role": "operator",
+      "source": "Research Import COL 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:39.184528",
+      "evidence": "Extracted from operator column: Aris Mining Corporation"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import COL 2025-10-27",
+      "date": "2025-10-27T14:21:39.184535"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:39.184536",
+    "checked_by": "import_pipeline",
+    "notes": "**Development/Permitting.** Major new open-pit project adjacent to existing underground mines. 23"
+  }
+}

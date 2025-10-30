@@ -1,0 +1,60 @@
+{
+  "facility_id": "khm-phum-syarung-gold-project-fac",
+  "name": "**Phum Syarung Gold Project**",
+  "aliases": [],
+  "country_iso3": "KHM",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "underground mine & planned plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Silver",
+      "primary": false,
+      "chemical_formula": "Ag",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "Mesco Gold Co. Ltd.",
+      "role": "operator",
+      "source": "Research Import KHM 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:07.372888",
+      "evidence": "Extracted from operator column: Mesco Gold (Cambodia) Co. Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import KHM 2025-10-29",
+      "date": "2025-10-29T12:22:07.372895"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:07.372896",
+    "checked_by": "import_pipeline",
+    "notes": "Plant construction halted at \\~20% in 2020\\. Company has faced environmental penalties."
+  }
+}

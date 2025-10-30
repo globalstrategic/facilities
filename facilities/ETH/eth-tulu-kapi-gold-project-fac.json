@@ -1,0 +1,54 @@
+{
+  "facility_id": "eth-tulu-kapi-gold-project-fac",
+  "name": "Tulu Kapi Gold Project",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": 9.0819,
+    "lon": 35.5517,
+    "precision": "site"
+  },
+  "types": [
+    "development project"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Silver",
+      "primary": false,
+      "chemical_formula": "Ag",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "KEFI Gold and Copper Plc",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.208891",
+      "evidence": "Extracted from operator column: KEFI Gold and Copper Plc"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.208895"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.208896",
+    "checked_by": "import_pipeline",
+    "notes": "Large-scale project; financing in final stage as of late 2025\\.32"
+  }
+}

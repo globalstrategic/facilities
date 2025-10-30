@@ -1,0 +1,53 @@
+{
+  "facility_id": "civ-lakota-man-biankouma-project-fac",
+  "name": "**Lakota/Man/Biankouma Project**",
+  "aliases": [],
+  "country_iso3": "CIV",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project-exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Ferrochrome",
+      "primary": true,
+      "category": "ferroalloy"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Ivoire Minerais",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:36.076229",
+      "evidence": "Extracted from operator column: Ivoire Minerais"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:36.076236"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:21:36.076237",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

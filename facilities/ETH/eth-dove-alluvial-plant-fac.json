@@ -1,0 +1,48 @@
+{
+  "facility_id": "eth-dove-alluvial-plant-fac",
+  "name": "DOVE Alluvial Plant",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "DOVE Equipment & Machinery Co.",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.277919",
+      "evidence": "Extracted from operator column: DOVE Equipment & Machinery Co."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.277922"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.277923",
+    "checked_by": "import_pipeline",
+    "notes": "First mechanized alluvial gold processing plant in Ethiopia, commissioned in 2018\\.52"
+  }
+}

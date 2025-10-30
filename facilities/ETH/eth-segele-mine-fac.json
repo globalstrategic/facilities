@@ -1,0 +1,48 @@
+{
+  "facility_id": "eth-segele-mine-fac",
+  "name": "Segele Mine",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Akobo Minerals AB",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.198167",
+      "evidence": "Extracted from operator column: Akobo Minerals AB"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.198172"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.198173",
+    "checked_by": "import_pipeline",
+    "notes": "New high-grade mine, commenced operations in late 2024\\.25"
+  }
+}

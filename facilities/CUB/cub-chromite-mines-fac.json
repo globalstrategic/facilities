@@ -1,0 +1,54 @@
+{
+  "facility_id": "cub-chromite-mines-fac",
+  "name": "**Chromite Mines **",
+  "aliases": [
+    "Camagüey"
+  ],
+  "country_iso3": "CUB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Ferrochrome",
+      "primary": true,
+      "category": "ferroalloy"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "\\-",
+      "role": "operator",
+      "source": "Research Import CUB 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T14:21:06.963860",
+      "evidence": "Extracted from operator column: \\-"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CUB 2025-10-27",
+      "date": "2025-10-27T14:21:06.963864"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T14:21:06.963866",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

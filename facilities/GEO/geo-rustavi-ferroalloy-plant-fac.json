@@ -1,0 +1,51 @@
+{
+  "facility_id": "geo-rustavi-ferroalloy-plant-fac",
+  "name": "**Rustavi Ferroalloy Plant**",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Ferromanganese",
+      "primary": true,
+      "category": "ferroalloy"
+    },
+    {
+      "metal": "silicomanganese",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Chiaturmanganum Georgia LLC",
+      "role": "operator",
+      "source": "Research Import GEO 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T21:01:00.196254",
+      "evidence": "Extracted from operator column: Chiaturmanganum Georgia LLC"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GEO 2025-10-28",
+      "date": "2025-10-28T21:01:00.196257"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T21:01:00.196258",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

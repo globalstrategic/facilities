@@ -1,0 +1,54 @@
+{
+  "facility_id": "eth-lega-dembi-mine-fac",
+  "name": "Lega Dembi Mine",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": 5.4583,
+    "lon": 38.8889,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Silver",
+      "primary": false,
+      "chemical_formula": "Ag",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "MIDROC Gold Mine Plc",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.182142",
+      "evidence": "Extracted from operator column: MIDROC Gold Mine Plc"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.182153"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.182154",
+    "checked_by": "import_pipeline",
+    "notes": "Ethiopia's largest gold mine; site of major environmental and human rights controversy.3"
+  }
+}

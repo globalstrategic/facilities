@@ -1,0 +1,48 @@
+{
+  "facility_id": "eth-amg-adama-steel-factory-fac",
+  "name": "AMG / Adama Steel Factory",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe-C",
+      "category": "industrial_mineral"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "AMG Steel Factory",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.389982",
+      "evidence": "Extracted from operator column: AMG Steel Factory"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.389985"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.389986",
+    "checked_by": "import_pipeline",
+    "notes": "Produces galvanized sheets, rebars, wire rods from imported feedstock.13"
+  }
+}

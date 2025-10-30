@@ -1,0 +1,50 @@
+{
+  "facility_id": "fra-echassi-res-district-fac",
+  "name": "**Echassières District **",
+  "aliases": [
+    "Wolframines"
+  ],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true,
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Imerys",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.803141",
+      "evidence": "Extracted from operator column: Imerys (Kaolin)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.803146"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.803147",
+    "checked_by": "import_pipeline",
+    "notes": "Historical tungsten site, now a museum. The underlying granite is the target for the EMILI lithium project. 44"
+  }
+}

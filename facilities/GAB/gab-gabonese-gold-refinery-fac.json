@@ -1,0 +1,55 @@
+{
+  "facility_id": "gab-gabonese-gold-refinery-fac",
+  "name": "Gabonese Gold Refinery",
+  "aliases": [
+    "ROG"
+  ],
+  "country_iso3": "GAB",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Joint Venture",
+      "role": "operator",
+      "source": "Research Import GAB 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:40:54.228316",
+      "evidence": "Extracted from operator column: Joint Venture"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GAB 2025-10-28",
+      "date": "2025-10-28T17:40:54.228322"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:40:54.228323",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

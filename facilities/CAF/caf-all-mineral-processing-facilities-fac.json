@@ -1,0 +1,42 @@
+{
+  "facility_id": "caf-all-mineral-processing-facilities-fac",
+  "name": "All Mineral Processing Facilities",
+  "aliases": [],
+  "country_iso3": "CAF",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant"
+  ],
+  "commodities": [
+    {
+      "metal": "all processed commodities",
+      "primary": true
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAF 2025-10-27",
+      "date": "2025-10-27T10:27:55.557079"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:27:55.557087",
+    "checked_by": "import_pipeline",
+    "notes": "No smelters, refineries, or chemical plants exist in CAR for any of the specified commodities. 6"
+  }
+}

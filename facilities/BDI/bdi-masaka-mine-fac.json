@@ -1,0 +1,53 @@
+{
+  "facility_id": "bdi-masaka-mine-fac",
+  "name": "**Masaka Mine**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    {
+      "name": "African Mining Burundi, State of Burundi",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.124265",
+      "evidence": "Extracted from operator column: African Mining Burundi (85%), State of Burundi (15%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.124269"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.124270",
+    "checked_by": "import_pipeline",
+    "notes": "Operations were suspended in 2021 along with other foreign-held mining contracts. 5"
+  }
+}

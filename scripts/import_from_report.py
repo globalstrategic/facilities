@@ -616,11 +616,15 @@ def is_facility_table(table: Dict) -> bool:
 
     # Filter out None values and convert to lowercase
     headers_lower = [h.lower() for h in table['headers'] if h is not None]
-    indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
-                 'latitude', 'longitude', 'commodity', 'metal', 'operator']
 
-    matches = sum(1 for ind in indicators if any(ind in h for h in headers_lower))
-    return matches >= 3
+    # Include plural forms and variations
+    indicators = ['site', 'mine', 'facility', 'name', 'deposit', 'project',
+                 'latitude', 'longitude', 'commodity', 'commodities', 'metal', 'metals',
+                 'operator', 'owner', 'location', 'province', 'region']
+
+    # Count total indicator matches across all headers (allows multiple per header)
+    total_matches = sum(1 for h in headers_lower for ind in indicators if ind in h)
+    return total_matches >= 3
 
 
 def parse_group_names(group_names_str: str, source_name: str) -> Tuple[List[str], List[Dict]]:
@@ -733,17 +737,23 @@ def find_country_code(country_input: str) -> Tuple[str, str]:
         logger.warning(f"Could not use country_utils: {e}, falling back")
         iso3 = country_input.upper()
 
-    # Now find which directory exists (could be ISO3 or ISO2)
-    # Try exact ISO3
+    # Now find which directory exists (prefer ISO3, fallback to legacy ISO2)
+    # Try exact ISO3 first (preferred)
     if (FACILITIES_DIR / iso3).exists():
         return (iso3, iso3)
 
-    # Try ISO2 (first 2 chars)
+    # Try ISO2 for legacy directories (using proper conversion)
     if len(iso3) == 3:
-        iso2 = iso3[:2]
-        if (FACILITIES_DIR / iso2).exists():
-            logger.info(f"Using directory '{iso2}' for country {iso3}")
-            return (iso3, iso2)
+        try:
+            import pycountry
+            country_obj = pycountry.countries.get(alpha_3=iso3)
+            if country_obj:
+                iso2 = country_obj.alpha_2
+                if (FACILITIES_DIR / iso2).exists():
+                    logger.info(f"Using legacy directory '{iso2}' for country {iso3}")
+                    return (iso3, iso2)
+        except:
+            pass
 
     # Try uppercase input as-is
     upper = country_input.upper()
@@ -759,7 +769,7 @@ def load_existing_facilities(country_dir_name: str) -> Dict[str, Dict]:
     """Load existing facilities for duplicate detection.
 
     Args:
-        country_dir_name: Directory name (could be ISO2 or ISO3)
+        country_dir_name: Directory name (ISO3 code, or legacy ISO2 for older directories)
     """
     existing = {}
     country_dir = FACILITIES_DIR / country_dir_name
@@ -1153,14 +1163,20 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                         row_country_name = row.get('country', '').strip()
                         if row_country_name and row_country_name != '-':
                             row_country_iso3 = normalize_country_to_iso3(row_country_name)
-                            # Determine directory for this country
+                            # Determine directory for this country (prefer ISO3, fallback to legacy ISO2)
                             row_country_dir = row_country_iso3
                             if not (FACILITIES_DIR / row_country_iso3).exists():
-                                # Try ISO2
+                                # Try ISO2 for legacy directories
                                 if len(row_country_iso3) == 3:
-                                    iso2 = row_country_iso3[:2]
-                                    if (FACILITIES_DIR / iso2).exists():
-                                        row_country_dir = iso2
+                                    try:
+                                        import pycountry
+                                        country_obj = pycountry.countries.get(alpha_3=row_country_iso3)
+                                        if country_obj:
+                                            iso2 = country_obj.alpha_2
+                                            if (FACILITIES_DIR / iso2).exists():
+                                                row_country_dir = iso2
+                                    except:
+                                        pass
                     except Exception as e:
                         logger.warning(f"Could not normalize country '{row.get('country')}': {e}")
 
@@ -1452,7 +1468,7 @@ def write_facilities(facilities: List[Dict], country_dir_name: str) -> int:
 
     Args:
         facilities: List of facility dicts (may have per-row country_dir)
-        country_dir_name: Default directory name (could be ISO2 or ISO3)
+        country_dir_name: Default directory name (ISO3 code, or legacy ISO2)
     """
     written = 0
     written_by_country = defaultdict(int)
@@ -1514,15 +1530,56 @@ def detect_country_from_filename(filename: str) -> Optional[str]:
         "albania.txt" -> "albania"
         "algeria_mines.txt" -> "algeria"
         "/path/to/dza_facilities.txt" -> "dza"
+        "Finnish Mining.md" -> "Finland"
     """
     if not filename or filename == '-':
         return None
 
+    # Common adjective-to-country mappings
+    adjective_to_country = {
+        'finnish': 'Finland',
+        'french': 'France',
+        'german': 'Germany',
+        'spanish': 'Spain',
+        'italian': 'Italy',
+        'polish': 'Poland',
+        'swedish': 'Sweden',
+        'norwegian': 'Norway',
+        'danish': 'Denmark',
+        'dutch': 'Netherlands',
+        'belgian': 'Belgium',
+        'austrian': 'Austria',
+        'swiss': 'Switzerland',
+        'greek': 'Greece',
+        'turkish': 'Turkey',
+        'russian': 'Russia',
+        'chinese': 'China',
+        'japanese': 'Japan',
+        'korean': 'Korea',
+        'indian': 'India',
+        'brazilian': 'Brazil',
+        'mexican': 'Mexico',
+        'canadian': 'Canada',
+        'australian': 'Australia',
+        'egyptian': 'Egypt',
+        'nigerian': 'Nigeria',
+        'south african': 'South Africa',
+        'argentinian': 'Argentina',
+        'chilean': 'Chile',
+        'peruvian': 'Peru',
+        'colombian': 'Colombia',
+    }
+
     # Get just the filename without path
-    basename = pathlib.Path(filename).stem
+    basename = pathlib.Path(filename).stem.lower()
+
+    # Check for adjective forms first (case-insensitive)
+    for adjective, country in adjective_to_country.items():
+        if adjective in basename:
+            return country
 
     # Split on common separators and take first part
-    parts = re.split(r'[_\-\s.]', basename.lower())
+    parts = re.split(r'[_\-\s.]', basename)
     if parts:
         # Return the first meaningful part (likely the country)
         country_part = parts[0].strip()
@@ -1562,7 +1619,7 @@ Features (automatic):
         """
     )
     parser.add_argument("input_file", help="Input report file (use '-' for stdin)")
-    parser.add_argument("--country", help="Country name, ISO2, or ISO3 code (optional, auto-detected from filename if not provided)")
+    parser.add_argument("--country", help="Country name or ISO3 code (optional, auto-detected from filename if not provided)")
     parser.add_argument("--source", help="Source name for citation (optional, auto-generated if not provided)")
 
     args = parser.parse_args()
@@ -1597,8 +1654,8 @@ Features (automatic):
             country_iso3, country_dir = find_country_code(country_input)
         except Exception as e:
             print(f"Error: Could not resolve country '{country_input}': {e}")
-            print("\nPlease provide a valid country name, ISO2, or ISO3 code")
-            print("Examples: Albania, ALB, AL")
+            print("\nPlease provide a valid country name or ISO3 code")
+            print("Examples: Albania, ALB")
             return 1
 
     # Auto-generate source name if not provided

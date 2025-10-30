@@ -1,0 +1,46 @@
+{
+  "facility_id": "egy-nag-hammadi-smelter-fac",
+  "name": "**Nag Hammadi Smelter**",
+  "aliases": [],
+  "country_iso3": "EGY",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "aluminum smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "aluminum (not on list)",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Aluminium Company of Egypt",
+      "role": "operator",
+      "source": "Research Import EGY 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T16:22:57.190305",
+      "evidence": "Extracted from operator column: Aluminium Company of Egypt (Egyptalum)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import EGY 2025-10-28",
+      "date": "2025-10-28T16:22:57.190308"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T16:22:57.190309",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

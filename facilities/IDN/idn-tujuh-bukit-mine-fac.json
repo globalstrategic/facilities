@@ -1,0 +1,48 @@
+{
+  "facility_id": "idn-tujuh-bukit-mine-fac",
+  "name": "**Tujuh Bukit Mine**",
+  "aliases": [],
+  "country_iso3": "IDN",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine (surface/underground)"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "PT Merdeka Copper Gold Tbk",
+      "role": "operator",
+      "source": "Research Import IDN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T10:37:55.516437",
+      "evidence": "Extracted from operator column: PT Merdeka Copper Gold Tbk"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import IDN 2025-10-29",
+      "date": "2025-10-29T10:37:55.516442"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T10:37:55.516443",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

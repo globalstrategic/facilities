@@ -1,0 +1,46 @@
+{
+  "facility_id": "fra-compagnie-des-mines-ar-diennes-fac",
+  "name": "**Compagnie des Mines Arédiennes**",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "polymetallic exploration",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Aquitaine Metals Corp.",
+      "role": "operator",
+      "source": "Research Import FRA 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:18:38.770454",
+      "evidence": "Extracted from operator column: Aquitaine Metals Corp."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-28",
+      "date": "2025-10-28T17:18:38.770460"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:18:38.770462",
+    "checked_by": "import_pipeline",
+    "notes": "Holds three exploration permits over historical mining districts; broad-spectrum metal targets. 2"
+  }
+}

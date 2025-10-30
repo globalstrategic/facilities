@@ -1,0 +1,62 @@
+{
+  "facility_id": "civ-samapleu-grata-project-fac",
+  "name": "**Samapleu-Grata Project**",
+  "aliases": [],
+  "country_iso3": "CIV",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "project-development"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Sama Resources",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:35.991517",
+      "evidence": "Extracted from operator column: Sama Resources / Ivanhoe Electric"
+    },
+    {
+      "name": "Ivanhoe Electric",
+      "role": "operator",
+      "source": "Research Import CIV 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T13:21:35.991522",
+      "evidence": "Extracted from operator column: Sama Resources / Ivanhoe Electric"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:35.991524"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T13:21:35.991525",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "facility_id": "eth-konso-exploration-area-fac",
+  "name": "Konso Exploration Area",
+  "aliases": [],
+  "country_iso3": "ETH",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "exploration license"
+  ],
+  "commodities": [
+    {
+      "metal": "Cobalt",
+      "primary": true,
+      "chemical_formula": "Co",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Nickel",
+      "primary": true,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    },
+    {
+      "metal": "Lithium",
+      "primary": false,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "*Various Licensees*",
+      "role": "operator",
+      "source": "Research Import ETH 2025-10-28",
+      "confidence": 0.7,
+      "first_seen": "2025-10-28T17:04:41.325521",
+      "evidence": "Extracted from operator column: *Various Licensees*"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ETH 2025-10-28",
+      "date": "2025-10-28T17:04:41.325524"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-28T17:04:41.325525",
+    "checked_by": "import_pipeline",
+    "notes": "Early-stage exploration area with noted potential for battery metals.8"
+  }
+}

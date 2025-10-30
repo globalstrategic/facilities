@@ -1,0 +1,64 @@
+{
+  "facility_id": "bdi-numerous-other-3t-asm-sites-fac",
+  "name": "***Numerous other 3T ASM sites***",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mines (artisanal)"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Tungsten",
+      "primary": true,
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Niobium",
+      "primary": false,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Various Cooperatives",
+      "role": "operator",
+      "source": "Research Import BDI 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T10:36:55.265713",
+      "evidence": "Extracted from operator column: Various Cooperatives (e.g., CDP, CODEMIBU, DUTEZANYIMBERE, etc.)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.265720"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T10:36:55.265726",
+    "checked_by": "import_pipeline",
+    "notes": "Over 174 mine sites have been covered by the iTSCi program, with approximately 127 active at various times, forming the backbone of Burundi's 3T mineral exports. 21"
+  }
+}

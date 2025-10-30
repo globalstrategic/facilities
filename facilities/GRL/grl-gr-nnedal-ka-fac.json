@@ -1,0 +1,54 @@
+{
+  "facility_id": "grl-gr-nnedal-ka-fac",
+  "name": "**Grønnedal-Íka**",
+  "aliases": [],
+  "country_iso3": "GRL",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Palladium",
+      "primary": false,
+      "chemical_formula": "Pd",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "Platinum",
+      "primary": false,
+      "chemical_formula": "Pt",
+      "category": "platinum_group_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Eclipse Metals Ltd",
+      "role": "operator",
+      "source": "Research Import GRL 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T08:01:20.172617",
+      "evidence": "Extracted from operator column: Eclipse Metals Ltd"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GRL 2025-10-29",
+      "date": "2025-10-29T08:01:20.172621"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T08:01:20.172623",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

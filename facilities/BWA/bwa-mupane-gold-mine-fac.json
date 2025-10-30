@@ -1,0 +1,48 @@
+{
+  "facility_id": "bwa-mupane-gold-mine-fac",
+  "name": "**Mupane Gold Mine**",
+  "aliases": [],
+  "country_iso3": "BWA",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "open-pit & underground mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "In Liquidation",
+      "role": "operator",
+      "source": "Research Import BWA 2025-10-27",
+      "confidence": 0.7,
+      "first_seen": "2025-10-27T11:57:05.570482",
+      "evidence": "Extracted from operator column: In Liquidation (formerly Hawks Mining Company)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BWA 2025-10-27",
+      "date": "2025-10-27T11:57:05.570485"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-27T11:57:05.570486",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
