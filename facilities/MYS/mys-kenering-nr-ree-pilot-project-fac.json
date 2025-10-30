@@ -1,0 +1,50 @@
+{
+  "facility_id": "mys-kenering-nr-ree-pilot-project-fac",
+  "name": "Kenering NR-REE Pilot Project",
+  "aliases": [],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": 5.5,
+    "lon": 101.2,
+    "precision": "site"
+  },
+  "types": [
+    "pilot mine (in-situ leach)"
+  ],
+  "commodities": [
+    {
+      "metal": "neodymium",
+      "primary": true
+    },
+    {
+      "metal": "dysprosium",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "MCRE Resources Sdn Bhd",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.341193",
+      "evidence": "Extracted from operator column: MCRE Resources Sdn Bhd"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.341244"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-10-29T22:11:17.341251",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}

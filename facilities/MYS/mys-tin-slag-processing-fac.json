@@ -1,0 +1,50 @@
+{
+  "facility_id": "mys-tin-slag-processing-fac",
+  "name": "Tin Slag Processing",
+  "aliases": [],
+  "country_iso3": "MYS",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "hydrometallurgical plant"
+  ],
+  "commodities": [
+    {
+      "metal": "tantalum",
+      "primary": true
+    },
+    {
+      "metal": "tungsten",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Malaysia Smelting Corporation Berhad",
+      "role": "operator",
+      "source": "Research Import MYS 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:11:17.307367",
+      "evidence": "Extracted from operator column: Malaysia Smelting Corporation (MSC) Berhad (Affiliates)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MYS 2025-10-29",
+      "date": "2025-10-29T22:11:17.307422"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-10-29T22:11:17.307429",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
