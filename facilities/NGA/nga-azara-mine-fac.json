@@ -1,20 +1,24 @@
 {
-  "facility_id": "nigerian-itakpe-mine-fac",
-  "name": "Itakpe Mine",
+  "facility_id": "nga-azara-mine-fac",
+  "name": "Azara Mine",
   "aliases": [],
-  "country_iso3": "NIGERIAN",
+  "country_iso3": "NGA",
   "location": {
-    "lat": 7.61848,
-    "lon": 6.317862,
+    "lat": 8.33975,
+    "lon": 9.26396,
     "precision": "site"
   },
   "types": [
-    "mine"
+    "mine / deposit"
   ],
   "commodities": [
     {
-      "metal": "iron ore",
+      "metal": "copper",
       "primary": true
+    },
+    {
+      "metal": "baryte",
+      "primary": false
     }
   ],
   "status": "unknown",
@@ -23,14 +27,14 @@
   "sources": [
     {
       "type": "csv_import",
-      "id": "Research Import NIGERIAN 2025-10-29",
-      "date": "2025-10-29T21:59:39.051112"
+      "id": "Research Import NGA 2025-10-29",
+      "date": "2025-10-29T22:45:20.854985"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T21:59:39.051143",
+    "last_checked": "2025-10-29T22:45:20.855005",
     "checked_by": "import_pipeline",
     "notes": null
   }

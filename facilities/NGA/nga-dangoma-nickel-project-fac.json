@@ -1,20 +1,26 @@
 {
-  "facility_id": "nigerian-saulawa-graphite-deposit-fac",
-  "name": "Saulawa Graphite Deposit",
-  "aliases": [],
-  "country_iso3": "NIGERIAN",
+  "facility_id": "nga-dangoma-nickel-project-fac",
+  "name": "Dangoma Nickel Project",
+  "aliases": [
+    "Titan"
+  ],
+  "country_iso3": "NGA",
   "location": {
     "lat": null,
     "lon": null,
     "precision": "unknown"
   },
   "types": [
-    "deposit / artisanal workings"
+    "project / prospect"
   ],
   "commodities": [
     {
-      "metal": "graphite natural",
+      "metal": "nickel",
       "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
     }
   ],
   "status": "unknown",
@@ -23,14 +29,14 @@
   "sources": [
     {
       "type": "csv_import",
-      "id": "Research Import NIGERIAN 2025-10-29",
-      "date": "2025-10-29T21:59:39.539375"
+      "id": "Research Import NGA 2025-10-29",
+      "date": "2025-10-29T22:45:20.830483"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T21:59:39.539441",
+    "last_checked": "2025-10-29T22:45:20.830520",
     "checked_by": "import_pipeline",
     "notes": null
   }
