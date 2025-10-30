@@ -1,0 +1,46 @@
+{
+  "facility_id": "mrt-takamul-pelletizing-plant-fac",
+  "name": "**Takamul Pelletizing Plant**",
+  "aliases": [],
+  "country_iso3": "MRT",
+  "location": {
+    "lat": 20.9016,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "processing plant (planned)"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore pellets",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Takamul",
+      "role": "operator",
+      "source": "Research Import MAURITANIAN 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T22:17:09.563796",
+      "evidence": "Extracted from operator column: Takamul (SNIM 50%, Hadeed 50%)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MAURITANIAN 2025-10-29",
+      "date": "2025-10-29T22:17:09.563839"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T22:17:09.563850",
+    "checked_by": "import_pipeline",
+    "notes": null
+  }
+}
