@@ -52,6 +52,7 @@ Usage:
 import argparse
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -72,7 +73,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from utils.geocoding import AdvancedGeocoder, GeocodingResult
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
-    from utils.name_canonicalizer import FacilityNameCanonicalizer
+    from utils.name_canonicalizer import FacilityNameCanonicalizer, choose_town_from_address
+    from utils.geocode_cache import GeocodeCache
+    from utils.geo import encode_geohash
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
@@ -671,99 +674,136 @@ def backfill_towns(
     # Prepare geocoder for reverse lookups
     geocoder = get_geocoder()
 
-    # Process each facility
-    for i, facility in enumerate(to_enrich):
-        facility_id = facility['facility_id']
-        location = facility.get('location', {})
-        lat = location.get('lat')
-        lon = location.get('lon')
+    # Initialize geocode cache
+    with GeocodeCache(ttl_days=365) as cache:
+        # Process each facility
+        for i, facility in enumerate(to_enrich):
+            facility_id = facility['facility_id']
+            location = facility.get('location', {})
+            lat = location.get('lat')
+            lon = location.get('lon')
 
-        logger.info(f"[{i+1}/{len(to_enrich)}] {facility['name']}")
+            logger.info(f"[{i+1}/{len(to_enrich)}] {facility['name']}")
 
-        town = None
+            town = None
 
-        # Strategy 1: Extract from name/aliases
-        town = extract_town_from_name(facility)
-        if town:
-            logger.info(f"  → Found town in name: {town}")
-
-        # Strategy 2: Industrial zones (if applicable)
-        if not town and lat and lon:
-            town = lookup_industrial_zone(lat, lon, country_iso3)
+            # Strategy 1: Extract from name/aliases
+            town = extract_town_from_name(facility)
             if town:
-                logger.info(f"  → Found town from industrial zone: {town}")
+                logger.info(f"  → Found town in name: {town}")
 
-        # Strategy 3: Reverse geocoding via Nominatim
-        if not town and lat and lon:
-            try:
-                import requests
-                import time
-                # Nominatim reverse geocoding
-                url = f"https://nominatim.openstreetmap.org/reverse"
-                params = {
-                    'lat': lat,
-                    'lon': lon,
-                    'format': 'json',
-                    'addressdetails': 1
-                }
-                headers = {
-                    'User-Agent': 'GSMC-Facilities/2.1 (facilities enrichment)'
-                }
+            # Strategy 2: Industrial zones (if applicable)
+            if not town and lat and lon:
+                town = lookup_industrial_zone(lat, lon, country_iso3)
+                if town:
+                    logger.info(f"  → Found town from industrial zone: {town}")
 
-                response = requests.get(url, params=params, headers=headers, timeout=10)
-                time.sleep(1)  # Rate limiting
+            # Strategy 3: Reverse geocoding via Nominatim (deterministic selection + cache)
+            strategy = None
+            if not town and lat and lon:
+                # Check cache first
+                cached_address = cache.get(lat, lon)
+                if cached_address:
+                    town_candidate = choose_town_from_address(cached_address)
+                    if town_candidate:
+                        town = town_candidate
+                        strategy = 'reverse_geocode'
+                        logger.info(f"  → Found town via cached geocoding: {town}")
+                else:
+                    # Cache miss - call Nominatim
+                    try:
+                        import requests
+                        import time
+                        url = "https://nominatim.openstreetmap.org/reverse"
+                        params = {'lat': lat, 'lon': lon, 'format': 'json', 'addressdetails': 1}
+                        ua_contact = os.getenv("OSM_CONTACT_EMAIL", "ops@gsmc.example")
+                        headers = {'User-Agent': f'GSMC-Facilities/2.1 (contact: {ua_contact})'}
+                        response = requests.get(url, params=params, headers=headers, timeout=10)
+                        time.sleep(1)  # 1 rps per OSM policy
+                        if response.status_code == 200:
+                            address = (response.json() or {}).get('address', {})
 
-                if response.status_code == 200:
-                    data = response.json()
-                    address = data.get('address', {})
+                            # Cache the result
+                            cache.set(lat, lon, address)
 
-                    # Try to get town/city from various address fields
-                    town = (address.get('town') or
-                           address.get('city') or
-                           address.get('village') or
-                           address.get('hamlet') or
-                           address.get('municipality'))
+                            town_candidate = choose_town_from_address(address)  # town > city > municipality > village > hamlet
+                            if town_candidate:
+                                town = town_candidate
+                                strategy = 'reverse_geocode'
+                                logger.info(f"  → Found town via reverse geocoding: {town}")
+                    except Exception as e:
+                        logger.debug(f"  Reverse geocoding failed: {e}")
 
-                    if town:
-                        logger.info(f"  → Found town via reverse geocoding: {town}")
-            except Exception as e:
-                logger.debug(f"  Reverse geocoding failed: {e}")
+            # Strategy 4: Interactive prompting
+            if not town and interactive:
+                print(f"\nFacility: {facility['name']} ({facility_id})")
+                if lat and lon:
+                    print(f"Coordinates: {lat}, {lon}")
+                user_input = input("Enter town/city name (or press Enter to skip): ").strip()
+                if user_input:
+                    town = user_input
+                    logger.info(f"  → User provided: {town}")
 
-        # Strategy 4: Interactive prompting
-        if not town and interactive:
-            print(f"\nFacility: {facility['name']} ({facility_id})")
-            if lat and lon:
-                print(f"Coordinates: {lat}, {lon}")
-            user_input = input("Enter town/city name (or press Enter to skip): ").strip()
-            if user_input:
-                town = user_input
-                logger.info(f"  → User provided: {town}")
+            # If still unknown, leave null and flag in data_quality
+            if not town:
+                logger.info("  → No automated town; leaving null (flagging town_missing)")
 
-        # Mark as TODO if no town found
-        if not town:
-            town = "TODO"
-            logger.info(f"  → Marked as TODO (needs manual input)")
+            # Update facility
+            if not dry_run:
+                if 'location' not in facility:
+                    facility['location'] = {'precision': 'unknown'}
+                facility['location']['town'] = town if town else None
 
-        # Update facility
-        if not dry_run:
-            if 'location' not in facility:
-                facility['location'] = {'precision': 'unknown'}
-            facility['location']['town'] = town
+                # Fill geohash if missing and coords present
+                if lat is not None and lon is not None and not facility['location'].get('geohash'):
+                    facility['location']['geohash'] = encode_geohash(
+                        float(lat), float(lon), precision=7
+                    )
 
-            # Update verification
-            facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
-            if 'notes' in facility['verification']:
-                facility['verification']['notes'] += f" | Town enriched: {town}"
+                # Record resolution strategy
+                if strategy:
+                    facility['location']['town_resolution_strategy'] = strategy
+
+                # Flag data quality
+                dq = facility.get('data_quality') or {}
+                flags = dq.get('flags') or {}
+                flags['town_missing'] = (facility['location']['town'] is None)
+                dq['flags'] = flags
+                facility['data_quality'] = dq
+
+                # Update verification
+                facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
+                if 'notes' in facility['verification']:
+                    facility['verification']['notes'] += f" | Town enriched: {town or 'null'}"
+                else:
+                    facility['verification']['notes'] = f"Town enriched: {town or 'null'}"
+
+                # Save facility
+                save_facility(facility, country_iso3)
+                logger.info(f"  ✓ Updated: {facility_id}")
+                stats.add_result(facility_id, "updated", f"Town: {town or 'null'}")
             else:
-                facility['verification']['notes'] = f"Town enriched: {town}"
+                logger.info(f"  [DRY RUN] Would set town: {town or 'null'}")
+                stats.add_result(facility_id, "skipped", f"Would set town: {town or 'null'}")
 
-            # Save facility
-            save_facility(facility, country_iso3)
-            logger.info(f"  ✓ Updated: {facility_id}")
-            stats.add_result(facility_id, "updated", f"Town: {town}")
-        else:
-            logger.info(f"  [DRY RUN] Would set town: {town}")
-            stats.add_result(facility_id, "skipped", f"Would set town: {town}")
+        # Print cache statistics
+        cache_stats = cache.stats()
+        logger.info(f"\n{'='*60}")
+        logger.info(f"GEOCODE CACHE STATISTICS")
+        logger.info(f"{'='*60}")
+        logger.info(f"Cache size: {cache_stats['size']} entries")
+        logger.info(f"Cache hits: {cache_stats['hits']}")
+        logger.info(f"Cache misses: {cache_stats['misses']}")
+        if cache_stats['hits'] + cache_stats['misses'] > 0:
+            hit_rate = 100 * cache_stats['hits'] / (cache_stats['hits'] + cache_stats['misses'])
+            logger.info(f"Hit rate: {hit_rate:.1f}%")
+        logger.info(f"Loads: {cache_stats['loads']}")
+        logger.info(f"Saves: {cache_stats['saves']}")
+        logger.info(f"Pruned: {cache_stats['pruned']} expired entries")
+        logger.info(f"Backend: {cache_stats['backend']}")
+        logger.info(f"TTL: {cache_stats['ttl_days']} days")
+        logger.info(f"Path: {cache_stats['path']}")
+        logger.info(f"{'='*60}\n")
 
     return stats
 
@@ -846,78 +886,111 @@ def backfill_canonical_names(
     dry_run: bool = False
 ) -> BackfillStats:
     """
-    Backfill canonical_name and display_name fields.
+    Backfill canonical_name, display_name, canonical_slug, primary_type/type_confidence,
+    and data_quality flags using FacilityNameCanonicalizer.
 
-    Uses FacilityNameCanonicalizer to generate canonical names following:
-        {Town} {Operator} {Core} {Type}
-
-    Requires:
-    - location.town (backfill with towns operation first if missing)
-    - operator_link (optional, will omit if not present)
-    - types array (required)
+    - Slugs EXCLUDE operator (stable through operator churn)
+    - Uniqueness is enforced within the processed set via in-memory slug map
     """
     stats = BackfillStats()
     stats.total = len(facilities)
 
-    logger.info("Backfilling canonical names")
+    logger.info("Backfilling canonical names & slugs")
 
-    # Initialize canonicalizer
     canonicalizer = FacilityNameCanonicalizer()
 
-    # Filter to facilities missing canonical_name
-    to_enrich = []
-    for facility in facilities:
-        if not facility.get('canonical_name'):
-            to_enrich.append(facility)
+    # Build slug map from existing data (so we respect preexisting slugs and avoid collisions)
+    existing_slugs: Dict[str, str] = {}
+    for fac in facilities:
+        slug = fac.get('canonical_slug')
+        if slug:
+            existing_slugs[slug] = fac.get('facility_id')
 
-    logger.info(f"Found {len(to_enrich)}/{len(facilities)} facilities needing canonical names")
-
-    if not to_enrich:
-        return stats
-
-    # Process each facility
-    for i, facility in enumerate(to_enrich):
-        facility_id = facility['facility_id']
-        logger.info(f"[{i+1}/{len(to_enrich)}] {facility['name']}")
+    for i, facility in enumerate(facilities):
+        facility_id = facility.get('facility_id')
+        logger.info(f"[{i+1}/{len(facilities)}] {facility.get('name')} ({facility_id})")
 
         try:
-            # Generate canonical names
-            result = canonicalizer.canonicalize_facility(facility)
+            result = canonicalizer.canonicalize_facility(facility, existing_slugs)
 
-            canonical_name = result['canonical_name']
-            display_name = result['display_name']
+            canonical_name = result['canonical_name'] or None
+            display_name = result['display_name'] or None
+            canonical_slug = result['canonical_slug']
+            comps = result['canonical_components']  # town, operator_display, core, primary_type
+            conf = result['canonicalization_confidence']
+            detail = result['canonicalization_detail']  # {'type': .., 'core': .., ...}
 
-            logger.info(f"  → Canonical: {canonical_name}")
-            logger.info(f"  → Display: {display_name}")
+            # Flags
+            town_missing = ((facility.get('location') or {}).get('town') is None)
+            operator_unresolved = bool(
+                (facility.get('company_mentions') or facility.get('operators')) and not facility.get('operator_display')
+            )
+            # Consider canonical "incomplete" if missing primary_type OR (missing town and we have coords)
+            has_coords = bool((facility.get('location') or {}).get('lat') and (facility.get('location') or {}).get('lon'))
+            canonical_incomplete = (comps.get('primary_type') is None) or (town_missing and has_coords)
 
-            # Check for TODO town
-            location = facility.get('location', {})
-            if location.get('town') == "TODO":
-                logger.warning(f"  ⚠ Town is TODO - canonical name incomplete")
+            if dry_run:
+                logger.info(f"  [DRY RUN] → {canonical_name}  | slug={canonical_slug}  | conf={conf:.2f}")
+                stats.add_result(facility_id or "?", "skipped",
+                                 f"Would set canonical='{canonical_name}', slug='{canonical_slug}', conf={conf:.2f}")
+                # Reserve the slug so future dry-run rows show disambiguation
+                existing_slugs[canonical_slug] = facility_id or f"?-{i}"
+                continue
 
-            # Update facility
-            if not dry_run:
-                facility['canonical_name'] = canonical_name
-                facility['display_name'] = display_name
+            # --- mutate facility ---
+            # 1) primary_type / type_confidence
+            if not facility.get('primary_type') and comps.get('primary_type'):
+                facility['primary_type'] = comps['primary_type']
+            if detail.get('type') is not None:
+                old_tc = facility.get('type_confidence')
+                new_tc = float(detail['type'])
+                if old_tc is None or (isinstance(old_tc, (int, float)) and new_tc > float(old_tc)):
+                    facility['type_confidence'] = new_tc
 
-                # Update verification
-                facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
-                if 'notes' in facility['verification']:
-                    facility['verification']['notes'] += f" | Canonical name generated"
-                else:
-                    facility['verification']['notes'] = "Canonical name generated"
+            # 2) names & slug
+            prev_name = facility.get('canonical_name')
+            if prev_name and prev_name != canonical_name:
+                # Append to history if schema present; use last_checked as 'from' if available
+                history = facility.get('canonical_name_history') or []
+                from_ts = facility.get('verification', {}).get('last_checked') or datetime.utcnow().isoformat() + 'Z'
+                history.append({
+                    "name": prev_name,
+                    "from": from_ts,
+                    "to": datetime.utcnow().isoformat() + 'Z',
+                    "reason": "data_correction"
+                })
+                facility['canonical_name_history'] = history
 
-                # Save facility
-                save_facility(facility, country_iso3)
-                logger.info(f"  ✓ Updated: {facility_id}")
-                stats.add_result(facility_id, "updated", f"Canonical: {canonical_name}")
-            else:
-                logger.info(f"  [DRY RUN] Would set canonical_name and display_name")
-                stats.add_result(facility_id, "skipped", f"Would set canonical: {canonical_name}")
+            facility['canonical_name'] = canonical_name
+            facility['display_name'] = display_name
+            facility['display_name_source'] = 'manual' if facility.get('display_name_override') else 'auto'
+            facility['canonical_slug'] = canonical_slug
+
+            # 3) data_quality
+            dq = facility.get('data_quality') or {}
+            flags = dq.get('flags') or {}
+            flags['town_missing'] = town_missing
+            flags['operator_unresolved'] = operator_unresolved
+            flags['canonical_name_incomplete'] = canonical_incomplete
+            dq['flags'] = flags
+            dq['canonicalization_confidence'] = conf
+            facility['data_quality'] = dq
+
+            # 4) verification
+            facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
+            notes = facility['verification'].get('notes') or ""
+            facility['verification']['notes'] = (notes + " | " if notes else "") + "Canonical name+slug generated"
+
+            # Persist
+            save_facility(facility, country_iso3)
+            stats.add_result(facility_id or "?", "updated", f"{canonical_name} [{canonical_slug}]")
+
+            # Reserve slug to avoid collisions downstream in this run
+            existing_slugs[canonical_slug] = facility_id
 
         except Exception as e:
-            logger.error(f"  ✗ Error generating canonical name: {e}")
-            stats.add_result(facility_id, "failed", str(e))
+            logger.exception(f"  ✗ Error generating canonical for {facility_id}: {e}")
+            stats.add_result(facility_id or "?", "failed", str(e))
 
     return stats
 
