@@ -51,6 +51,7 @@ Usage:
 
 import argparse
 import csv
+import glob
 import json
 import os
 import sys
@@ -155,6 +156,36 @@ class BackfillStats:
         if self.processed > 0:
             print(f"Success rate: {self.updated/self.processed*100:.1f}%")
         print(f"{'='*60}")
+
+
+def build_global_slug_map(root: str = "facilities") -> Dict[str, str]:
+    """
+    Scan all facilities to build a global slug → facility_id map.
+
+    Used with --global-dedupe to ensure slug uniqueness across all countries.
+
+    Args:
+        root: Root directory containing country subdirectories
+
+    Returns:
+        Dictionary mapping canonical_slug → facility_id
+    """
+    slug_map: Dict[str, str] = {}
+    root_path = Path(root)
+
+    for p in root_path.glob("*/*.json"):
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                doc = json.load(f)
+            slug = doc.get("canonical_slug")
+            fid = doc.get("facility_id")
+            if slug and fid and slug not in slug_map:
+                slug_map[slug] = fid
+        except Exception as e:
+            logger.debug(f"Slug-scan skip {p}: {e}")
+
+    logger.info(f"Seeded {len(slug_map)} slugs from {root}/**/*.json")
+    return slug_map
 
 
 def load_facilities_for_country(country_iso3: str) -> List[Dict]:
@@ -639,7 +670,10 @@ def backfill_towns(
     facilities: List[Dict],
     country_iso3: str,
     interactive: bool = False,
-    dry_run: bool = False
+    dry_run: bool = False,
+    geohash_precision: int = 7,
+    nominatim_delay: float = 1.0,
+    offline: bool = False,
 ) -> BackfillStats:
     """
     Backfill location.town field using multi-strategy approach.
@@ -710,29 +744,30 @@ def backfill_towns(
                         strategy = 'reverse_geocode'
                         logger.info(f"  → Found town via cached geocoding: {town}")
                 else:
-                    # Cache miss - call Nominatim
-                    try:
-                        import requests
-                        import time
-                        url = "https://nominatim.openstreetmap.org/reverse"
-                        params = {'lat': lat, 'lon': lon, 'format': 'json', 'addressdetails': 1}
-                        ua_contact = os.getenv("OSM_CONTACT_EMAIL", "ops@gsmc.example")
-                        headers = {'User-Agent': f'GSMC-Facilities/2.1 (contact: {ua_contact})'}
-                        response = requests.get(url, params=params, headers=headers, timeout=10)
-                        time.sleep(1)  # 1 rps per OSM policy
-                        if response.status_code == 200:
-                            address = (response.json() or {}).get('address', {})
+                    # Cache miss - call Nominatim (unless offline mode)
+                    if not offline:
+                        try:
+                            import requests
+                            import time
+                            url = "https://nominatim.openstreetmap.org/reverse"
+                            params = {'lat': lat, 'lon': lon, 'format': 'json', 'addressdetails': 1}
+                            ua_contact = os.getenv("OSM_CONTACT_EMAIL", "ops@gsmc.example")
+                            headers = {'User-Agent': f'GSMC-Facilities/2.1 (contact: {ua_contact})'}
+                            response = requests.get(url, params=params, headers=headers, timeout=10)
+                            time.sleep(max(0.0, float(nominatim_delay)))  # OSM policy compliance
+                            if response.status_code == 200:
+                                address = (response.json() or {}).get('address', {})
 
-                            # Cache the result
-                            cache.set(lat, lon, address)
+                                # Cache the result
+                                cache.set(lat, lon, address)
 
-                            town_candidate = choose_town_from_address(address)  # town > city > municipality > village > hamlet
-                            if town_candidate:
-                                town = town_candidate
-                                strategy = 'reverse_geocode'
-                                logger.info(f"  → Found town via reverse geocoding: {town}")
-                    except Exception as e:
-                        logger.debug(f"  Reverse geocoding failed: {e}")
+                                town_candidate = choose_town_from_address(address)  # town > city > municipality > village > hamlet
+                                if town_candidate:
+                                    town = town_candidate
+                                    strategy = 'reverse_geocode'
+                                    logger.info(f"  → Found town via reverse geocoding: {town}")
+                        except Exception as e:
+                            logger.debug(f"  Reverse geocoding failed: {e}")
 
             # Strategy 4: Interactive prompting
             if not town and interactive:
@@ -757,7 +792,7 @@ def backfill_towns(
                 # Fill geohash if missing and coords present
                 if lat is not None and lon is not None and not facility['location'].get('geohash'):
                     facility['location']['geohash'] = encode_geohash(
-                        float(lat), float(lon), precision=7
+                        float(lat), float(lon), precision=geohash_precision
                     )
 
                 # Record resolution strategy
@@ -883,7 +918,8 @@ def lookup_industrial_zone(lat: float, lon: float, country_iso3: str) -> Optiona
 def backfill_canonical_names(
     facilities: List[Dict],
     country_iso3: str,
-    dry_run: bool = False
+    dry_run: bool = False,
+    existing_slugs_init: Optional[Dict[str, str]] = None,
 ) -> BackfillStats:
     """
     Backfill canonical_name, display_name, canonical_slug, primary_type/type_confidence,
@@ -891,6 +927,16 @@ def backfill_canonical_names(
 
     - Slugs EXCLUDE operator (stable through operator churn)
     - Uniqueness is enforced within the processed set via in-memory slug map
+    - Can seed with global slug map via existing_slugs_init for --global-dedupe
+
+    Args:
+        facilities: List of facility dicts to process
+        country_iso3: ISO3 country code
+        dry_run: If True, don't save changes
+        existing_slugs_init: Optional pre-seeded slug map from global scan
+
+    Returns:
+        BackfillStats with results
     """
     stats = BackfillStats()
     stats.total = len(facilities)
@@ -899,8 +945,9 @@ def backfill_canonical_names(
 
     canonicalizer = FacilityNameCanonicalizer()
 
-    # Build slug map from existing data (so we respect preexisting slugs and avoid collisions)
-    existing_slugs: Dict[str, str] = {}
+    # Build slug map from existing data (collision avoidance)
+    # Start with global seed if provided, then add current batch
+    existing_slugs: Dict[str, str] = dict(existing_slugs_init or {})
     for fac in facilities:
         slug = fac.get('canonical_slug')
         if slug:
@@ -1097,6 +1144,10 @@ def main():
     towns_parser.add_argument('--all', action='store_true', help='Process all countries')
     towns_parser.add_argument('--interactive', action='store_true', help='Interactive prompting for missing towns')
     towns_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+    towns_parser.add_argument('--geohash-precision', type=int, default=7, help='Geohash precision (default: 7)')
+    towns_parser.add_argument('--nominatim-delay', type=float, default=float(os.getenv("NOMINATIM_DELAY_S", "1.0")),
+                              help='Delay between Nominatim calls in seconds (default: 1.0 or $NOMINATIM_DELAY_S)')
+    towns_parser.add_argument('--offline', action='store_true', help='Offline mode: use cache/heuristics only, no Nominatim calls')
 
     # Canonical names subcommand
     canonical_parser = subparsers.add_parser('canonical_names', help='Generate canonical facility names')
@@ -1104,6 +1155,10 @@ def main():
     canonical_parser.add_argument('--countries', help='Comma-separated country codes')
     canonical_parser.add_argument('--all', action='store_true', help='Process all countries')
     canonical_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+    canonical_parser.add_argument('--global-dedupe', action='store_true',
+                                  help='Seed slug map with all existing slugs across facilities/*/*.json')
+    canonical_parser.add_argument('--global-scan-root', default='facilities',
+                                  help='Root directory to scan when using --global-dedupe (default: facilities)')
 
     # All subcommand
     all_parser = subparsers.add_parser('all', help='Run all backfill operations')
@@ -1206,15 +1261,22 @@ def main():
                 facilities,
                 country_iso3,
                 interactive=args.interactive,
-                dry_run=args.dry_run
+                dry_run=args.dry_run,
+                geohash_precision=args.geohash_precision,
+                nominatim_delay=args.nominatim_delay,
+                offline=args.offline,
             )
             all_stats[country_iso3] = {'towns': stats}
 
         elif args.command == 'canonical_names':
+            # Build global slug map if --global-dedupe flag set
+            seed = build_global_slug_map(args.global_scan_root) if args.global_dedupe else None
+
             stats = backfill_canonical_names(
                 facilities,
                 country_iso3,
-                dry_run=args.dry_run
+                dry_run=args.dry_run,
+                existing_slugs_init=seed
             )
             all_stats[country_iso3] = {'canonical_names': stats}
 
