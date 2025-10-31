@@ -5,7 +5,7 @@
   "version": "2.1.0",
   "lastUpdated": "2025-10-30",
   "type": "object",
-  "required": ["facility_id", "name", "country_iso3", "types", "verification", "canonical_name"],
+  "required": ["facility_id", "name", "country_iso3", "types", "verification"],
   "properties": {
     "ei_facility_id": {
       "type": ["string", "null"],
@@ -23,14 +23,29 @@
       "description": "Primary facility name (legacy field, prefer canonical_name for new code)"
     },
     "canonical_name": {
-      "type": "string",
+      "type": ["string", "null"],
       "minLength": 1,
-      "pattern": "^[A-Za-z0-9 -]+$",
-      "description": "Canonical facility name in format: {Town} {Operator} {Core} {Type} (e.g., 'Roxby Downs BHP Olympic Dam Mine'). Operator included if operator_link is resolved. Used for EntityIdentity resolution and standardization."
+      "description": "Canonical facility name in format: {Town} {Operator} {Core} {Type} (e.g., 'Roxby Downs BHP Olympic Dam Mine'). Unicode-aware, supports diacritics and non-Latin scripts. Operator included if operator_display is set. Used for human-readable EntityIdentity resolution."
+    },
+    "canonical_slug": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Machine-safe canonical identifier (ASCII lowercase, hyphenated). Stable across name changes. Used for joins, URLs, and programmatic access. Auto-generated from canonical_name via transliteration."
     },
     "display_name": {
       "type": ["string", "null"],
-      "description": "Short display name for UI (core name without town/operator/type). Auto-generated from canonical_name if not provided."
+      "description": "Short display name for UI (core name without town/operator/type). Auto-generated from canonical_name unless display_name_override is true."
+    },
+    "display_name_override": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, display_name was manually curated and should not be auto-regenerated."
+    },
+    "display_name_source": {
+      "type": "string",
+      "enum": ["auto", "manual"],
+      "default": "auto",
+      "description": "Source of display_name: 'auto' (generated) or 'manual' (hand-curated)."
     },
     "aliases": {
       "type": "array",
@@ -66,11 +81,25 @@
         },
         "town": {
           "type": ["string", "null"],
-          "description": "Nearest town or city name. Used in canonical_name. Mark as 'TODO' if needs manual input."
+          "description": "Nearest town or city name. Used in canonical_name. Null if missing (do not use 'TODO' sentinel). Deterministic selection: town > city > municipality > village > hamlet."
+        },
+        "town_ascii": {
+          "type": ["string", "null"],
+          "description": "ASCII transliteration of town name for non-Latin scripts (BGN/PCGN standard). Used in canonical_slug generation."
         },
         "region": {
           "type": ["string", "null"],
           "description": "State, province, or region name (optional)"
+        },
+        "geohash": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9b-hjkmnp-z]{1,12}$",
+          "description": "Geohash encoding of coordinates (precision 6-8 chars). Used for proximity queries and duplicate detection."
+        },
+        "town_resolution_strategy": {
+          "type": ["string", "null"],
+          "enum": ["name_extraction", "industrial_zone", "reverse_geocode", "manual", "mining_district", null],
+          "description": "How location.town was resolved. Aids auditability and re-enrichment."
         }
       },
       "required": ["precision"]
@@ -79,10 +108,21 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["mine", "smelter", "refinery", "concentrator", "plant", "mill", "heap_leach", "tailings", "exploration", "development"]
+        "enum": ["mine", "smelter", "refinery", "concentrator", "plant", "mill", "heap_leach", "tailings", "exploration", "development", "hydromet_plant", "rolling_mill", "steel_plant", "battery_recycling", "processing_plant"]
       },
       "minItems": 1,
-      "description": "Facility operation types"
+      "description": "Facility operation types (legacy field, may contain uncleaned data)"
+    },
+    "primary_type": {
+      "type": ["string", "null"],
+      "enum": ["mine", "smelter", "refinery", "concentrator", "plant", "mill", "heap_leach", "tailings", "exploration", "development", "hydromet_plant", "rolling_mill", "steel_plant", "battery_recycling", "processing_plant", null],
+      "description": "Primary facility type (cleaned and validated). Used in canonical_name generation. Prefer over types[0]."
+    },
+    "type_confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence score for primary_type classification (0-1). Null if type uncertain."
     },
     "commodities": {
       "type": "array",
@@ -165,7 +205,54 @@
         }
       },
       "required": ["company_id"],
-      "description": "Operating company information"
+      "description": "Operating company information (single current operator). For JVs/multiple operators, use operators[] array."
+    },
+    "operators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company_id": {
+            "type": "string",
+            "pattern": "^cmp-[a-z0-9-]+$",
+            "description": "Canonical company identifier"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["operator", "joint_venture", "managing_partner"],
+            "description": "Operational role"
+          },
+          "share": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Ownership/operational share percentage"
+          },
+          "start_date": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "Start date of operational role (YYYY-MM-DD)"
+          },
+          "end_date": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "End date of operational role (YYYY-MM-DD). Null if current."
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Confidence score for this link"
+          }
+        },
+        "required": ["company_id", "role"],
+        "description": "Operator entry with temporal tracking"
+      },
+      "description": "All operators (current and historical). Supports JVs and operator churn."
+    },
+    "operator_display": {
+      "type": ["string", "null"],
+      "description": "Derived display string for current operator(s). Used in canonical_name. Auto-generated from operators[] if not manually set. For JVs: 'CompanyA-CompanyB JV'."
     },
     "products": {
       "type": "array",
@@ -260,6 +347,73 @@
         }
       },
       "required": ["status", "confidence", "last_checked"]
+    },
+    "data_quality": {
+      "type": "object",
+      "properties": {
+        "flags": {
+          "type": "object",
+          "properties": {
+            "town_missing": {
+              "type": "boolean",
+              "description": "True if location.town is null and needs enrichment"
+            },
+            "type_uncertain": {
+              "type": "boolean",
+              "description": "True if primary_type classification has low confidence (<0.7)"
+            },
+            "operator_unresolved": {
+              "type": "boolean",
+              "description": "True if operator_display is null despite company_mentions present"
+            },
+            "coordinates_missing": {
+              "type": "boolean",
+              "description": "True if lat/lon are null"
+            },
+            "canonical_name_incomplete": {
+              "type": "boolean",
+              "description": "True if canonical_name is missing required components (town, operator, or type)"
+            }
+          },
+          "description": "Structured data quality flags. Replace 'TODO' sentinels."
+        },
+        "canonicalization_confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score for canonical_name generation (0-1). Factors: town resolution, operator resolution, type cleaning."
+        }
+      },
+      "description": "Data quality tracking and flags"
+    },
+    "canonical_name_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Previous canonical name"
+          },
+          "from": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start date of this name"
+          },
+          "to": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End date of this name"
+          },
+          "reason": {
+            "type": "string",
+            "enum": ["operator_change", "town_correction", "type_correction", "rebranding", "data_correction"],
+            "description": "Reason for name change"
+          }
+        },
+        "required": ["name", "from", "to", "reason"]
+      },
+      "description": "History of canonical name changes. Preserves auditability when operators change or data is corrected."
     }
   }
 }
