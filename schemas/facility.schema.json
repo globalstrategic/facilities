@@ -30,7 +30,7 @@
     "canonical_slug": {
       "type": ["string", "null"],
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-      "description": "Machine-safe canonical identifier (ASCII lowercase, hyphenated). Stable across name changes. Used for joins, URLs, and programmatic access. Auto-generated from canonical_name via transliteration."
+      "description": "Machine-safe canonical identifier (ASCII lowercase, hyphenated). EXCLUDES operator for stability through operator churn. Generated from {town}-{core}-{primary_type} via transliteration. Used for joins, URLs, and programmatic access."
     },
     "display_name": {
       "type": ["string", "null"],
@@ -219,7 +219,7 @@
           },
           "role": {
             "type": "string",
-            "enum": ["operator", "joint_venture", "managing_partner"],
+            "enum": ["operator", "owner", "joint_venture", "managing_partner"],
             "description": "Operational role"
           },
           "share": {

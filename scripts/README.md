@@ -1,311 +1,319 @@
 # Facilities Scripts
 
-Unified CLI for managing the facilities database.
+Command-line tools for managing the facilities database.
 
 ## Quick Start
 
-All operations now use a single `facilities.py` CLI:
-
 ```bash
 # Import facilities from research reports
-python facilities.py import report.txt --country DZ
+python import_from_report.py report.txt --country DZ
 
-# Enrich with Gemini Deep Research
-python facilities.py research --generate-prompt --country ZAF --metal platinum
+# Backfill missing data
+python backfill.py geocode --country ARE --interactive
+python backfill.py companies --country IND
+python backfill.py all --country ARE
 
-# Run tests
-python facilities.py test
+# Clean up duplicates
+python tools/deduplicate_facilities.py --country ZAF --dry-run
+
+# Export to parquet
+python facilities.py sync --export
 ```
 
-## Import Research Reports
+## Main Scripts
 
-Import facilities from text reports in two simple steps:
+### import_from_report.py
+
+**Purpose**: Import facilities from markdown tables, CSV, or TSV files
+
+**Supported formats:**
+- Markdown tables (`| header | header |`)
+- CSV files (comma-separated)
+- Tab-separated tables (TSV)
+
+**Features:**
+- Auto-detects country from filename or content
+- Extracts company mentions (Phase 1)
+- Normalizes metals with chemical formulas
+- Detects duplicates automatically
+- Writes schema-compliant JSON files
+
+**Examples:**
 
 ```bash
-# Step 1: Save your report to a file
-cat > report.txt
-[Paste your full report text, then press Ctrl+D]
+# From text file
+python import_from_report.py report.txt --country DZ --source "Algeria Report 2025"
 
-# Step 2: Import
-python facilities.py import report.txt --country DZ
+# Auto-detect country from filename
+python import_from_report.py bulgaria.txt
+
+# From CSV
+python import_from_report.py facilities.csv --country DZ
+
+# From stdin
+cat report.txt | python import_from_report.py --country DZ
 ```
 
-**That's it!** The script will:
-- Auto-detect the correct country code (DZA → DZ)
-- Extract facility tables from your report
-- Check for duplicates against existing facilities
-- Generate properly formatted JSON files
+**Table requirements:**
+- Headers must contain 3+ indicator keywords
+- Keywords: `facility`, `mine`, `name`, `operator`, `owner`, `location`, `province`, `region`, `commodity`, `commodities`, `metal`, `metals`
+- Plural forms recognized (commodities, metals)
 
-**Alternative methods:**
+**Output:**
+- Facility JSONs in `../facilities/{COUNTRY}/`
+- Import log in `../output/import_logs/`
+
+### backfill.py
+
+**Purpose**: Enrich existing facilities with missing data
+
+**Operations:**
+- `geocode`: Add coordinates (industrial zones → Nominatim → interactive)
+- `companies`: Resolve company mentions to canonical IDs
+- `metals`: Add chemical formulas and categories
+- `all`: Run all enrichment operations
+
+**Examples:**
 
 ```bash
-# If report is already saved
-python facilities.py import report.txt --country AF
+# Geocode facilities
+python backfill.py geocode --country ARE
+python backfill.py geocode --country ARE --interactive
 
-# With optional custom source name
-python facilities.py import report.txt --country DZ --source "Algeria Mining Report 2025"
+# Resolve companies
+python backfill.py companies --country IND --profile moderate
 
-# From clipboard (Mac)
-pbpaste > report.txt
-python facilities.py import report.txt --country DZ
+# Add metal formulas
+python backfill.py metals --all
 
-# From clipboard (Linux with xclip)
-xclip -o > report.txt
-python facilities.py import report.txt --country AF
+# Do everything
+python backfill.py all --country ARE --interactive
+
+# Dry run (preview changes)
+python backfill.py all --country ARE --dry-run
+
+# Multiple countries
+python backfill.py geocode --countries ARE,IND,CHN
 ```
 
-### What it does
+### enrich_companies.py
 
-1. **Auto-detects country code** - use DZA or DZ, both work
-2. **Extracts facility tables** from markdown text (supports both `|` and tab-separated)
-3. **Normalizes** metals, facility types, and operational status
-4. **Checks for duplicates** by name, location, and aliases
-5. **Generates** schema-compliant JSON files
-6. **Creates** detailed import report with statistics
+**Purpose**: Phase 2 company resolution (batch processing)
 
-### Output
-
-Files created in: `../facilities/{COUNTRY}/`
-
-Example: `../facilities/DZ/dz-gara-djebilet-fac.json`
-
-Import report: `../output/import_logs/import_report_{COUNTRY}_{timestamp}.json`
-
-### Example output
-
-```
-INFO: Found existing directory 'DZ' for input 'DZA'
-INFO: Processing report for DZ...
-INFO: Found 1 facility tables
-INFO: Loaded 22 existing facilities for duplicate detection
-INFO: Found 41 new facilities
-
-============================================================
-IMPORT COMPLETE
-============================================================
-Country: DZ
-Source: Algeria Mining Report 2025
-New facilities: 41
-Duplicates skipped: 1
-Files written: 41
-============================================================
-
-Duplicates found (skipped 1 existing facilities):
-  - 'El Abed Oued Zaunder Mines' (exists as dz-el-abed-oued-zaunder-mines-fac)
-```
-
-### Duplicate Detection
-
-Won't create duplicates if:
-- Exact facility ID match
-- Same name + location within ~1km (0.01°)
-- Same name when no coordinates (conservatively assumes duplicate)
-- Name matches an existing facility's alias
-
-**Tested and verified:** Run `python test_dedup.py` to verify duplicate detection is working.
-
-### Country Codes
-
-**The script auto-detects existing country directories.** You can use any ISO code (2 or 3 letter) and it will find the correct directory:
-
-- `DZA` → `DZ` (Algeria)
-- `AFG` → `AF` (Afghanistan)
-- `USA` → `USA` (United States)
-- `ARG` → `ARG` (Argentina)
-- `AUS` → `AUS` (Australia)
-
-**No need to check existing directories** - just use any valid ISO code and the script handles the rest.
-
-### Input Format
-
-The script automatically extracts tables from your report text. Supports both:
-- **Pipe-separated tables**: `| Name | Location | ... |`
-- **Tab-separated tables**: `Name\tLocation\t...` (like from Excel/Sheets)
-
-**Column names** (flexible - script normalizes these):
-- **Site/Mine Name** (required) - Facility name
-- **Latitude, Longitude** OR **Coordinates (Lat, Lon)** (recommended) - Decimal coordinates
-- **Primary Commodity** - Main metal/mineral
-- **Other Commodities** - Secondary metals/minerals
-- **Asset Type** - Mine, Smelter, Plant, etc.
-- **Operational Status** - Operating, Construction, Planned, Closed, etc.
-- **Operator(s)** - Company names
-- **Synonyms/Aliases** - Alternative names
-- **Notes** - Additional information
-
-### Normalization
-
-**Metals:** `Cu` → `copper`, `Au` → `gold`, `REE` → `rare earths`, `Fe` → `iron`
-
-**Types:** `Open Pit Mine` → `mine`, `Cement Factory` → `plant`, `Copper Smelter` → `smelter`
-
-**Status:** `Operational` → `operating`, `In Development` → `construction`, `Proposed` → `planned`
-
-## Company Enrichment (Phase 2)
-
-After importing facilities, enrich them with resolved company links:
+**Examples:**
 
 ```bash
 # Enrich all facilities
 python enrich_companies.py
 
-# Enrich specific country
+# Specific country
 python enrich_companies.py --country IND
 
-# Preview without saving
+# Dry run
 python enrich_companies.py --dry-run
 
 # Set confidence threshold
 python enrich_companies.py --min-confidence 0.75
 ```
 
-**What it does:**
-- Batch resolves company mentions to canonical company IDs
-- Uses quality gates (auto_accept / review / pending)
-- Writes relationships to `../tables/facilities/facility_company_relationships.parquet`
-- Does NOT modify facility JSONs (relationships stored separately)
+**Output**: `../tables/facilities/facility_company_relationships.parquet`
 
-**Workflow:**
-1. Import facilities (Phase 1) - extracts company mentions
-2. Run enrichment (Phase 2) - resolves mentions to canonical IDs
-3. Review pending items if needed
+### facilities.py
 
-See `../docs/ENTITYIDENTITY_INTEGRATION_PLAN.md` for architecture details.
+**Purpose**: Unified CLI wrapper (limited functionality)
 
-## Deep Research Integration
-
-Enrich facilities with Gemini Deep Research data:
+**Examples:**
 
 ```bash
-# Generate research prompt
-python facilities.py research --generate-prompt --country ZAF --metal platinum --limit 50
+# Test entity resolution
+python facilities.py resolve country "Algeria"
+python facilities.py resolve metal "Cu"
+python facilities.py resolve company "BHP"
 
-# Process research output
-python facilities.py research --process output.json --country ZAF --metal platinum
-
-# Batch processing
-python facilities.py research --batch research_batch.jsonl
-```
-
-See `../docs/DEEP_RESEARCH_WORKFLOW.md` for detailed workflow.
-
-## Utility Scripts
-
-Additional maintenance and verification tools:
-
-```bash
-# Run data quality checks
-python audit_facilities.py
-
-# Backfill company mentions from CSV sources
-python backfill.py mentions --country IND
-
-# Verify backfill results
-python verify_backfill.py
-
-# Export/import facilities to parquet format
+# Export/import
 python facilities.py sync --export
 python facilities.py sync --import facilities.parquet
+
+# Database status
+python facilities.py sync --status
+
+# Run tests
+python facilities.py test
+python facilities.py test --suite dedup
+```
+
+## Utility Tools (tools/)
+
+### deduplicate_facilities.py
+
+**Purpose**: Batch cleanup of existing duplicates
+
+**Examples:**
+
+```bash
+# Preview duplicates (always do this first)
+python tools/deduplicate_facilities.py --country ZAF --dry-run
+
+# Clean up duplicates
+python tools/deduplicate_facilities.py --country ZAF
+
+# All countries (use with caution)
+python tools/deduplicate_facilities.py --all
+```
+
+**What it does:**
+- Finds duplicate groups using 4-priority matching
+- Scores facilities by data completeness
+- Merges data (aliases, sources, commodities, company mentions)
+- Deletes inferior duplicates
+- Tracks merge history in verification notes
+
+### geocode_facilities.py
+
+**Purpose**: Standalone geocoding utility
+
+**Examples:**
+
+```bash
+# Geocode all facilities in a country
+python tools/geocode_facilities.py --country ARE
+
+# Interactive mode
+python tools/geocode_facilities.py --country ARE --interactive
+
+# Dry run
+python tools/geocode_facilities.py --country ARE --dry-run
+
+# Single facility
+python tools/geocode_facilities.py --facility-id are-union-cement-company-fac
+```
+
+### audit_facilities.py
+
+**Purpose**: Data quality checks and reporting
+
+```bash
+python tools/audit_facilities.py
+```
+
+### verify_backfill.py
+
+**Purpose**: Verify backfill results
+
+```bash
+python tools/verify_backfill.py
 ```
 
 ## Testing
 
-Run test suites to verify functionality:
-
 ```bash
 # Run all tests
-python facilities.py test
+pytest tests/ -v
 
-# Run specific test suite
-python facilities.py test --suite dedup
-python facilities.py test --suite schema
+# Run specific test
+pytest tests/test_import_enhanced.py -v
+
+# Via CLI wrapper
+python facilities.py test
 ```
+
+## Common Workflows
+
+### Adding a New Country
+
+```bash
+# Import facilities
+python import_from_report.py country_report.txt --country DZ
+
+# Enrich with geocoding
+python backfill.py geocode --country DZ --interactive
+
+# Resolve companies
+python enrich_companies.py --country DZ
+```
+
+### Cleaning Up Duplicates
+
+```bash
+# Preview what will be merged
+python tools/deduplicate_facilities.py --country ZAF --dry-run
+
+# Review the output, then run for real
+python tools/deduplicate_facilities.py --country ZAF
+```
+
+### Enriching Existing Data
+
+```bash
+# Add missing coordinates
+python backfill.py geocode --country ARE --interactive
+
+# Add chemical formulas to commodities
+python backfill.py metals --all
+
+# Resolve company mentions to canonical IDs
+python backfill.py companies --country IND
+```
+
+## Troubleshooting
+
+**"No facility tables found in report"**
+- Ensure headers contain 3+ indicator keywords (facility, mine, name, operator, commodity, location)
+- Check table format (must be pipe-separated `|` or CSV)
+- Use plural forms: commodities, metals (recognized in v2.1.1+)
+
+**"Too many duplicates detected"**
+- This is working correctly - preventing duplicate entries
+- Review import log in `output/import_logs/` for details
+
+**"Coordinates not parsing"**
+- Use decimal degrees: `34.267` not `34° 16' N`
+
+**"EntityIdentity not found"**
+```bash
+export PYTHONPATH="/Users/willb/Github/GSMC/entityidentity:$PYTHONPATH"
+# or
+pip install git+https://github.com/microprediction/entityidentity.git
+```
+
+**"Metal formulas not being extracted"**
+- Ensure EntityIdentity is installed
+- Check that code uses `result.get('chemical_formula')` not `result.get('formula')` (fixed in v2.1.1)
+
+## Documentation
+
+- **Developer guide**: [../CLAUDE.md](../CLAUDE.md)
+- **User guide**: [../README.md](../README.md)
+- **Version history**: [../CHANGELOG.md](../CHANGELOG.md)
+- **Schema reference**: `../schemas/facility.schema.json`
 
 ## Directory Structure
 
 ```
 scripts/
-├── facilities.py                    # Unified CLI (main entry point)
-├── import_from_report.py            # Phase 1: Import with entity resolution
-├── backfill.py                      # Unified backfill system (geocoding, companies, metals, mentions)
-├── enrich_companies.py              # Phase 2: Batch company enrichment
-├── deep_research_integration.py     # Gemini Deep Research integration
+├── import_from_report.py            # Main import pipeline (1,771 lines)
+├── backfill.py                      # Unified enrichment system
+├── enrich_companies.py              # Phase 2 company resolution
+├── facilities.py                    # CLI wrapper
+├── deep_research_integration.py     # Gemini research integration
 │
-├── tools/                           # Standalone utility tools
-│   ├── audit_facilities.py          # Data quality checks
-│   ├── deduplicate_facilities.py    # Batch deduplication utility
-│   ├── verify_backfill.py           # Verify backfill results
-│   ├── geocode_facilities.py        # Standalone geocoding utility
-│   └── legacy/                      # Archived one-time migration scripts
-│       ├── full_migration.py        # Legacy CSV → JSON migration
-│       └── migrate_legacy_fields.py # Schema field migration
+├── tools/                           # Standalone utilities
+│   ├── deduplicate_facilities.py
+│   ├── geocode_facilities.py
+│   ├── audit_facilities.py
+│   └── verify_backfill.py
 │
-├── tests/                           # Test suites
-│   ├── test_dedup.py
-│   ├── test_import_enhanced.py
-│   ├── test_facility_sync.py
-│   └── test_schema.py
+├── utils/                           # Shared libraries
+│   ├── company_resolver.py
+│   ├── country_utils.py
+│   ├── deduplication.py
+│   ├── geocoding.py
+│   ├── name_canonicalizer.py
+│   └── facility_sync.py
 │
-├── utils/                           # Shared utilities (library modules)
-│   ├── company_resolver.py          # CompanyResolver with quality gates
-│   ├── id_utils.py                  # Canonical ID mapping
-│   ├── country_utils.py             # Country code normalization
-│   ├── ownership_parser.py          # Ownership percentage parsing
-│   ├── facility_sync.py             # Parquet export/import
-│   └── paths.py                     # Shared path configuration
-│
-└── README.md
+└── tests/                           # Test suites
+    ├── test_import_enhanced.py
+    ├── test_dedup.py
+    ├── test_schema.py
+    └── test_facility_sync.py
 ```
-
-## Troubleshooting
-
-**"Ctrl+D / Cmd+D not working after paste"**
-- **Solution:** Use the two-step method (recommended):
-  ```bash
-  cat > report.txt
-  [Paste, Ctrl+D]
-  python facilities.py import report.txt --country DZ
-  ```
-- Or use clipboard directly: `pbpaste > report.txt` (Mac) or `xclip -o > report.txt` (Linux)
-
-**"Report seems very small / paste was cut off"**
-- Terminal paste has limits (typically 4-16KB)
-- **Solution:** Save your report in a text editor first, then:
-  ```bash
-  python facilities.py import /path/to/report.txt --country DZ
-  ```
-- Or use clipboard: `pbpaste > report.txt` bypasses terminal paste limits
-
-**"No facility tables found in report"**
-- Ensure your report contains markdown tables with `|` separators
-- Tables need headers like "Mine Name", "Commodity", "Location"
-- Check that the full report was saved (use `wc -l report.txt` to verify)
-
-**"Too many duplicates detected"**
-- Check the import report JSON for details on what matched
-- This is working correctly - it's preventing duplicate entries
-- Review `../output/import_logs/import_report_*.json`
-
-**"Coordinates not parsing"**
-- Use decimal degrees: `34.267` not `34° 16' N`
-- Converter: https://www.fcc.gov/media/radio/dms-decimal
-
-## Schema
-
-Facility files follow the schema: `../schemas/facility.schema.json`
-
-Key fields:
-- `facility_id`: Unique ID in format `{iso3}-{slug}-fac`
-- `name`: Primary facility name
-- `country_iso3`: ISO 3166-1 alpha-3 country code
-- `location`: Coordinates and precision
-- `types`: Array of facility types
-- `commodities`: Array of metals with primary flag
-- `status`: Operational status
-- `verification`: Confidence and source information
-
-## Development
-
-All scripts log to `.log` files in the scripts directory for debugging.
-
-For detailed logging: Check `research_import.log` or `migration.log`
