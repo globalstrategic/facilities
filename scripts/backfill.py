@@ -814,7 +814,7 @@ def backfill_towns(
                     facility['verification']['notes'] = f"Town enriched: {town or 'null'}"
 
                 # Save facility
-                save_facility(facility, country_iso3)
+                save_facility(facility, dry_run=dry_run)
                 logger.info(f"  ✓ Updated: {facility_id}")
                 stats.add_result(facility_id, "updated", f"Town: {town or 'null'}")
             else:
@@ -1029,7 +1029,7 @@ def backfill_canonical_names(
             facility['verification']['notes'] = (notes + " | " if notes else "") + "Canonical name+slug generated"
 
             # Persist
-            save_facility(facility, country_iso3)
+            save_facility(facility, dry_run=dry_run)
             stats.add_result(facility_id or "?", "updated", f"{canonical_name} [{canonical_slug}]")
 
             # Reserve slug to avoid collisions downstream in this run
