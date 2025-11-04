@@ -1,0 +1,254 @@
+# Facilities Needing Geocoding
+
+Quick reference for open-source lookups:
+
+- **Al Ahlia Gypsum Mine** [ARE] (commodities: gypsum)
+- **Al Ghail Quarry** [ARE] (region: Ras Al Khaimah, commodities: dolomite|limestone)
+- **EMSTEEL Steel Division** [ARE] (commodities: Steel|sections)|wire rod|sheet piles)
+- **ESNAA Copper Smelter** [ARE] (commodities: Copper|precious metals)
+- **Fujairah Cement Industries (FCI)** [ARE] (commodities: cement|clinker)
+- **Fujairah Chrome Mine** [ARE] (commodities: chromium)
+- **Fujairah Clay Quarry** [ARE] (commodities: clay)
+- **Fujairah Mine** [ARE] (commodities: limestone)
+- **Hamriyah Steel** [ARE] (region: HFZA (Sharjah), operator: Hamriyah Steel FZC, commodities: Steel|hbi|Iron Ore)
+- **Kadra Quarry** [ARE] (region: Ras Al Khaimah, commodities: gabbro|aggregates)
+- **Khor Khwair Quarry** [ARE] (region: Ras Al Khaimah, operator: Stevin Rock, commodities: limestone|aggregates|armour rock)
+- **National Cement Co. P.S.C.** [ARE] (commodities: cement)
+- **Sun Metal Casting Factory LLC** [ARE] (commodities: Zinc|Lead)
+- **Union Cement Company (UCC)** [ARE] (commodities: cement|clinker|oil well cement)
+- **Union Copper Rod LLC (UCR)** [ARE] (commodities: Copper)
+- **United Steel Industries LLC (USI)** [ARE] (commodities: Steel|wire rod)
+- **USK METALS L.L.C** [ARE] (commodities: Zinc)
+- **Wasit Gypsum Mine** [ARE] (commodities: gypsum)
+- **Altar** [ARG]
+- **Amarillo Grande** [ARG]
+- **Calcatreu** [ARG]
+- **Centenario-Ratones** [ARG]
+- **Diablillos** [ARG]
+- **El Pachón** [ARG]
+- **Fénix Project (Hombre Muerto)** [ARG]
+- **Filo del Sol** [ARG]
+- **Joaquín** [ARG]
+- **Josemaría** [ARG]
+- **Lomada de Leiva** [ARG]
+- **Los Azules** [ARG]
+- **MARA (Agua Rica)** [ARG]
+- **Mariana** [ARG]
+- **Navidad** [ARG]
+- **Puna Operations (Chinchillas/Pirquitas)** [ARG]
+- **AAB Concern Quarry** [ARM]
+- **Akhtala / Shamlugh Mine** [ARM]
+- **Amulsar Project** [ARM]
+- **Ararat Gold Extraction Plant** [ARM]
+- **Armanis Mine** [ARM]
+- **ATMC Travertine Quarry** [ARM]
+- **Dastakert Mine** [ARM]
+- **Hanqasar Mine** [ARM]
+- **Kashen / Drmbon Operations** [ARM]
+- **Manana Stone Quarries** [ARM]
+- **Meghradzor Mine** [ARM]
+- **Multi Group Stone Quarry** [ARM]
+- **Plant of Pure Iron** [ARM]
+- **Sisian-Shik Quarry** [ARM]
+- **Sotk (Zod) Mine** [ARM]
+- **Teghut Mine** [ARM]
+- **Zeolite Pro Quarry** [ARM]
+- ****Battery Recycling Plant**** [ATF]
+- ****Cheonan Pre-treatment Plant**** [ATF]
+- ****Dangjin Plant**** [ATF]
+- ****Danyang Recycling Plant**** [ATF]
+- ****Eunsan & Gasa-do Mines**** [ATF]
+- ****Ferronickel Plant**** [ATF]
+- ****Gallium Recovery Plant**** [ATF]
+- ****Germanium Plant**** [ATF]
+- ****Gwangyang Works**** [ATF]
+- ****Hyeonpung Magnet Plant**** [ATF]
+- ****Keumsung Mine**** [ATF]
+- ****Korean Metals Plant **** [ATF]
+- ****Lithium Hydroxide Plant**** [ATF]
+- ****Magnet Factory**** [ATF]
+- ****NdFeB Magnet Plant**** [ATF]
+- ****Nickel Refinery**** [ATF]
+- ****Nickel Refining Plant**** [ATF]
+- ****Onsan Cobalt Sulfate Plant**** [ATF]
+- ****Onsan Copper Smelter**** [ATF]
+- ****Onsan Refinery**** [ATF]
+- ****Pohang Graphite Plant**** [ATF]
+- ****Pohang Works**** [ATF]
+- ****Precious Metals Recycling Plant**** [ATF]
+- ****Pyeongtaek/Asan Graphite Plants**** [ATF]
+- ****Sangdong Mine**** [ATF]
+- ****Sejong Anode Plant**** [ATF]
+- ****Seokpo Smelter**** [ATF]
+- ****Sinyemi Mine**** [ATF]
+- ****Spherical Graphite Plant**** [ATF]
+- ****Yeosu Ferroalloy Plant**** [ATF]
+- **(Note: This table is a representative compilation and may not include every single smaller operation. "N/A" indicates the specific operator was not readily available in the synthesized sources for this report).** [AUS]
+- **Alumina Refineries** [AUS]
+- **Browns Range** [AUS] (commodities: Neodymium|rare earths)
+- **Copper Smelters & Refineries** [AUS]
+- **Dubbo** [AUS] (commodities: Neodymium|rare earths|zirconium)
+- ****Dubbo Project**** [AUS]
+- **Iluka Eneabba** [AUS] (commodities: Neodymium|rare earths)
+- **Lead & Zinc Smelters** [AUS]
+- **Mount Isa Copper Smelter** [AUS]
+- **Mount Isa Lead Smelter** [AUS]
+- **Mt Weld** [AUS] (commodities: Neodymium|rare earths)
+- **Nickel Smelters & Refineries** [AUS]
+- **Nolans** [AUS] (commodities: Neodymium|rare earths)
+- **Yangibana** [AUS] (commodities: Neodymium|rare earths)
+- **Altaussee Mine** [AUT] (commodities: salt (brine))
+- **AMAG Austria Metall AG Plant** [AUT] (commodities: aluminum products)
+- **Bad Ischl Mine** [AUT] (commodities: salt (brine))
+- **Breitenau Mine** [AUT] (commodities: magnesite)
+- **CARINTHIA** [AUT]
+- **Ecobat Resources Austria** [AUT] (commodities: Lead|Zinc|polypropylene|sodium sulphate)
+- **Hallstatt Mine** [AUT] (commodities: salt (brine))
+- **Hochfilzen Mine** [AUT] (commodities: magnesite)
+- **Imerys Villach Plant** [AUT] (commodities: fused alumina (corundum))
+- **Kaisersberg Mine** [AUT] (commodities: Graphite Natural)
+- **Kleinfeistritz Mine** [AUT] (commodities: leucophyllite|talc)
+- **Kriechbaum Mine** [AUT] (commodities: kaolin|quartz sand)
+- **Lassing Talc Mine** [AUT] (commodities: talc)
+- **LOWER AUSTRIA** [AUT]
+- **Mistlberg Mine** [AUT] (commodities: kaolin (brick clay))
+- **Mitterberg Mining District** [AUT] (commodities: Copper|Nickel|Uranium)
+- **Montanwerke Brixlegg AG Refinery** [AUT] (commodities: Copper|Gold|Silver|Nickel Sulfate)
+- **Oberfeistritz Plant** [AUT] (commodities: talc powders)
+- **Rabenwald Mine** [AUT] (commodities: talc)
+- **Radenthein Mine** [AUT] (commodities: magnesite)
+- **Salinen Austria AG Salt Works** [AUT] (commodities: salt)
+- **SALZBURG** [AUT]
+- **Schwaz-Brixlegg District** [AUT] (commodities: Silver|Copper|Lead|Zinc)
+- **Steyrling Quarry (Brennet Quarry)** [AUT] (commodities: limestone)
+- **STYRIA** [AUT]
+- **TYROL** [AUT]
+- **UPPER AUSTRIA** [AUT]
+- **Veitsch Mine** [AUT] (commodities: magnesite)
+- **voestalpine Krems** [AUT] (commodities: Steel)
+- **voestalpine Lime Plant** [AUT] (commodities: lime)
+- **voestalpine Stahl Donawitz** [AUT] (commodities: Steel)
+- **voestalpine Stahl Linz** [AUT] (commodities: Steel)
+- **WBH St. Martin Facility** [AUT] (commodities: Tungsten)
+- **Weisskirchen Plant** [AUT] (commodities: leucophyllite powders|talc powders)
+- **Wolfsberg Lithium Project** [AUT] (commodities: Lithium|feldspar|quartz)
+- **Aghyokhush Mine** [AZE] (commodities: Gold)
+- **"Azerboru" Pipe Plant** [AZE] (commodities: Steel)
+- **"AzFerAl" Ferroalloys Plant** [AZE] (commodities: ferrosilicon)
+- **Chovdar Gold Mine** [AZE] (commodities: Gold|Silver)
+- **Chovdar Integrated Regional Processing Area (CIRPA)** [AZE] (commodities: Gold|Silver)
+- **Dash-Salakhlinskoye Mine** [AZE] (commodities: bentonite)
+- **Dashkesan Beneficiation Plant** [AZE] (commodities: Iron Ore)
+- **Dashkesan Pelletizing Plant** [AZE] (commodities: Iron Ore)
+- **Duzdag Salt Mine** [AZE] (commodities: rock salt)
+- **Filizchay Project** [AZE] (commodities: Zinc|Lead|Copper|Silver|Gold)
+- **Gadir Underground Mine** [AZE] (commodities: Gold|Copper|Silver|Zinc)
+- **Garadag Project** [AZE] (commodities: Copper)
+- **Gedabek Processing Hub** [AZE] (commodities: Gold|Copper|Silver)
+- **Gedabek Underground Mine** [AZE] (commodities: Gold|Copper|Silver)
+- **Gilar Mine** [AZE] (commodities: Copper|Gold)
+- **Gosha Mine** [AZE] (commodities: Gold|Silver)
+- **HBI Plant (Shamkir)** [AZE] (commodities: hot briquetted iron (hbi))
+- **Holcim (Azerbaijan) Plant** [AZE] (commodities: cement)
+- **Kyzlbulag / Demirli Mine** [AZE] (commodities: Copper|Molybdenum)
+- **Marah Mine** [AZE] (commodities: Gold)
+- **Mazymchay Project** [AZE] (commodities: polymetallic)
+- **Norm Sement Plant** [AZE] (commodities: cement)
+- **Ordubad Project** [AZE] (commodities: Gold|Copper)
+- **Ortakand-Khanagha Project** [AZE] (commodities: Gold|Copper)
+- **Qazax Sement Plant** [AZE] (commodities: cement)
+- **Tulallar Mine** [AZE] (commodities: Gold)
+- **Vejnaly Mine** [AZE] (commodities: Gold|Copper)
+- **Xarxar Project** [AZE] (commodities: Copper)
+- ****BUCECO Plant**** [BDI] (commodities: cement|clay)
+- ****Cimba Mine**** [BDI] (commodities: Gold|Copper|Silver)
+- ****Cunda / Cumba Mine**** [BDI] (commodities: Tungsten|Neodymium-Praseodymium)
+- **Gakara** [BDI] (commodities: Neodymium|rare earths)
+- ****Gakara Project**** [BDI] (commodities: rare earths|Neodymium-Praseodymium)
+- ****Gatete Mine**** [BDI] (commodities: Tantalum|Niobium|tin|Neodymium-Praseodymium)
+- ****Kabarore Site**** [BDI] (commodities: Tantalum|Niobium|Neodymium-Praseodymium)
+- ****Kabezi Plant**** [BDI] (commodities: rare earth concentrate|Neodymium-Praseodymium)
+- ****Kivuvu Mine**** [BDI] (commodities: Tantalum|Niobium|tin)
+- ****Kuwinkona Mine**** [BDI] (commodities: Tungsten|Neodymium-Praseodymium)
+- ****Masaka Mine**** [BDI] (commodities: Gold|Neodymium-Praseodymium)
+- ****Mukanda Deposit**** [BDI] (commodities: Vanadium|titanium|Iron Ore)
+- ****Murehe Mine**** [BDI] (commodities: tin|Neodymium-Praseodymium)
+- ****Musongati Deposit**** [BDI] (commodities: Nickel|Cobalt|Copper|pgms (pt|pd)|Iron Ore|Gold)
+- *****Numerous other 3T ASM sites***** [BDI] (commodities: tin|Tantalum|Tungsten|Niobium)
+- ****Nyabikere Deposit**** [BDI] (commodities: Nickel|Cobalt|Copper|Iron Ore)
+- ****Rwamirambol / Buhorana II Mine**** [BDI] (commodities: Tungsten|Neodymium-Praseodymium)
+- ****Various ASM Gold Sites**** [BDI] (commodities: Gold|Neodymium-Praseodymium)
+- ****Waga Deposit**** [BDI] (commodities: Nickel|Cobalt|Copper|Iron Ore)
+- **Active Facilities** [BEL]
+- **Aisemont Quarry** [BEL] (commodities: limestone|fillers)
+- **Andenne, Namur** [BEL]
+- **Antoing/Cimescaut Quarry** [BEL] (commodities: blue limestone|cement)
+- **Antoing, Hainaut** [BEL]
+- **Barry Quarry** [BEL] (commodities: limestone)
+- **Beez, Namur** [BEL]
+- **Beez Quarry** [BEL] (commodities: limestone)
+- **Boverie Quarry (On-Jemelle)** [BEL] (commodities: limestone|lime)
+- **Braine-le-Comte, Hainaut** [BEL]
+- **Carrière de l'Ermitage** [BEL] (commodities: porphyry)
+- **Carrière de Leffe** [BEL] (commodities: limestone)
+- **Carrière du Milieu** [BEL] (commodities: limestone)
+- **Coal mine du Gouffre** [BEL] (commodities: coal)
+- **Coal Mines** [BEL]
+- **Dessel Plant & Quarry** [BEL]
+- **Dessel Site** [BEL] (commodities: silica sand|cristobalite)
+- **Dinant, Namur** [BEL]
+- **Engis, Liège** [BEL]
+- **Engis Site** [BEL] (commodities: limestone)
+- **Fosses-la-Ville, Namur** [BEL]
+- **Frasnes-lez-Couvin, Namur** [BEL]
+- **Hasard de Cheratte** [BEL] (commodities: coal)
+- **Hermalle Quarry** [BEL] (commodities: limestone|dolostone)
+- **High 5 / Lodelinsart** [BEL] (commodities: glass (recycled))
+- **Historical Mines/Quarries** [BEL]
+- **Jemelle, Namur** [BEL]
+- **Lead-Zinc Mines** [BEL]
+- **Lessines, Hainaut** [BEL]
+- **Lommel, Limburg** [BEL]
+- **Lommel Site** [BEL] (commodities: silica sand)
+- **Lontzen-Poppelsberg** [BEL] (commodities: Lead|Zinc)
+- **Lustin, Namur** [BEL]
+- **Lustin Quarry** [BEL] (commodities: sandstone)
+- **Maasmechelen, Limburg** [BEL]
+- **Maasmechelen Site** [BEL] (commodities: silica sand)
+- **Maizeret Quarry** [BEL] (commodities: limestone)
+- **Marche-les-Dames Quarry** [BEL] (commodities: dolomite)
+- **Moha Limestone Quarry** [BEL] (commodities: limestone (chalk))
+- **Nameche Dolomite Quarry** [BEL] (commodities: dolomite)
+- **Namur, Namur** [BEL]
+- **Neolithic flint mines of Spiennes** [BEL] (commodities: flint)
+- **Neufvilles, Hainaut** [BEL]
+- **Nyrstar Balen-Pelt** [BEL] (commodities: Zinc)
+- **Olne, Liège** [BEL]
+- **Other Mines/Quarries** [BEL]
+- **Plombières (Bleiberg)** [BEL] (commodities: Lead|Zinc)
+- **Saint-Georges-sur-Meuse, Liège** [BEL]
+- **Seilles, Namur** [BEL]
+- **Seilles Quarry** [BEL] (commodities: limestone)
+- **Soignies, Hainaut** [BEL]
+- **Tellier-des-Prés Quarry** [BEL] (commodities: limestone)
+- **Vaulx / Tournai Quarries** [BEL] (commodities: limestone)
+- **Vieille Montagne / La Calamine** [BEL] (commodities: Zinc|Lead)
+- **Visé, Liège** [BEL]
+- **Zeebrugge, Oostende, Kallo** [BEL]
+- **Houndé** [BFA] (commodities: Gold|Silver)
+- **Kiaka** [BFA] (commodities: Gold)
+- **Toega** [BFA] (commodities: Gold)
+- ****Ada Tepe Mine**** [BGR]
+- ****Asarel-Medet Complex**** [BGR]
+- **Asarel-Medet Mine** [BGR]
+- ****Buhovo, Eleshnitsa, et al.**** [BGR]
+- ****Chelopech Mine**** [BGR]
+- ****Elatsite Mine**** [BGR]
+- **Gorubso-Madan Mines** [BGR]
+- **Gruncharitsa Project** [BGR]
+- **Lucky Invest Mines** [BGR]
+- **Maritsa East Coal Complex** [BGR]
+- ****Maritsa East Mines**** [BGR]
+- ****Medet Recycling Hub**** [BGR]
+- ****Pirdop Smelter & Refinery**** [BGR]
+- **Promet Steel** [BGR]

@@ -1,0 +1,53 @@
+{
+  "facility_id": "kor-dangjin-plant-fac",
+  "name": "**Dangjin Plant**",
+  "aliases": [],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "integrated steelworks"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Hyundai Steel Co. Ltd.",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.516071",
+      "evidence": "Extracted from operator column: Hyundai Steel Co. Ltd."
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.516073"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.516074",
+    "checked_by": "import_pipeline",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The largest single steel plant in South Korea by capacity. 1"
+  },
+  "canonical_name": "**Dangjin ** Steel Plant",
+  "canonical_slug": "dangjin-steel-plant",
+  "display_name": "**Dangjin **",
+  "primary_type": "steel_plant",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
+  }
+}

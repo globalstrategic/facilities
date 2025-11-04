@@ -1,0 +1,55 @@
+{
+  "facility_id": "kor-korean-metals-plant-fac",
+  "name": "**Korean Metals Plant **",
+  "aliases": [
+    "KMP"
+  ],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "metallization plant"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Australian Strategic Materials",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.517795",
+      "evidence": "Extracted from operator column: Australian Strategic Materials (ASM)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.517797"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.517798",
+    "checked_by": "import_pipeline",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A critical midstream facility converting REE oxides into high-purity metals and alloys for magnets. 43"
+  },
+  "canonical_name": "**Korean Metals ** Plant",
+  "canonical_slug": "korean-metals-plant",
+  "display_name": "**Korean Metals **",
+  "primary_type": "plant",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
+  }
+}

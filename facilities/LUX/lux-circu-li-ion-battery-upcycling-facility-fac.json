@@ -12,10 +12,22 @@
     "battery_recycling"
   ],
   "commodities": [
-    {"metal": "lithium", "primary": true},
-    {"metal": "cobalt", "primary": false},
-    {"metal": "nickel", "primary": false},
-    {"metal": "graphite", "primary": false}
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "cobalt",
+      "primary": false
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    },
+    {
+      "metal": "graphite",
+      "primary": false
+    }
   ],
   "status": "operating",
   "company_mentions": [
@@ -42,5 +54,18 @@
     "last_checked": "2025-10-29T13:20:26.086120",
     "checked_by": "import_pipeline",
     "notes": "Geocoded via overpass (confidence: 0.59)"
+  },
+  "canonical_name": "Circu Li-ion Battery Upcycling Facility Battery Recycling",
+  "canonical_slug": "circu-li-ion-battery-upcycling-facility-battery-recycling",
+  "display_name": "Circu Li-ion Battery Upcycling Facility",
+  "primary_type": "battery_recycling",
+  "type_confidence": 0.9,
+  "data_quality": {
+    "canonicalization_confidence": 0.48,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
   }
 }

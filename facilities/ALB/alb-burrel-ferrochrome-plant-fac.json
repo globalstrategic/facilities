@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ALB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.60833,
+    "lon": 20.01111,
+    "precision": "town",
+    "town": "Burrel",
+    "region": "Dibër"
   },
   "types": [
     "metallurgical plant (smelter)"
@@ -32,6 +34,20 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:22:18.977915",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "Plant near Burrel; AlbChrome acquired by YILDIRIM (Jan 2022)"
+  },
+  "canonical_name": "Burrel Ferrochrome Smelter",
+  "canonical_slug": "burrel-ferrochrome-smelter",
+  "display_name": "Burrel Ferrochrome",
+  "primary_type": "smelter",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false
+    }
+  },
+  "operator_display": "AlbChrome (YILDIRIM Group)"
 }

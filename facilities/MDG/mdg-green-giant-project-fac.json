@@ -4,17 +4,16 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -24.08,
+    "lon": 45.01417,
+    "precision": "region",
+    "region": "Atsimo-Andrefana"
   },
   "types": [
     "exploration project"
   ],
   "commodities": [
     {
-      "metal": "location: 11-15km from molo mine.",
-      "primary": false
       "metal": "Vanadium",
       "primary": true,
       "chemical_formula": "V",
@@ -31,16 +30,29 @@
   "products": [],
   "sources": [
     {
-      "type": "csv_import",
-      "id": "Research Import MDG 2025-10-29",
-      "date": "2025-10-29T22:52:40.243963"
+      "type": "research",
+      "id": "Deep Research 2025",
+      "date": "2025-10-30T14:29:33.125193"
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-10-29T22:52:40.243981",
+    "status": "unverified",
+    "confidence": 0.65,
+    "last_checked": "2025-10-30T14:29:33.125198",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "Green Giant vanadium project near Fotadrevo/Betioky Sud; Mindat estimated coords"
+  },
+  "data_quality": {
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    },
+    "canonicalization_confidence": 0.5700000000000001
+  },
+  "canonical_name": "Green Giant Exploration",
+  "canonical_slug": "green-giant-exploration",
+  "display_name": "Green Giant",
+  "primary_type": "exploration",
+  "type_confidence": 0.85
 }

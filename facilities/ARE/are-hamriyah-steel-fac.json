@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": 25.434,
-    "lon": 55.528,
-    "precision": "region"
+    "lat": 25.450185,
+    "lon": 55.504045,
+    "precision": "region",
+    "town": "Al Hamriyah",
+    "region": "HFZA (Sharjah)"
   },
   "types": [
     "steel plant"
@@ -42,6 +44,21 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:42:23.253846",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)"
-  }
+    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)",
+    "geocoding_source": "HFZA coordinate; refine to plot-level when available"
+  },
+  "canonical_name": "Hamriyah Steel Steel Plant",
+  "canonical_slug": "hamriyah-steel-steel-plant",
+  "display_name": "Hamriyah Steel",
+  "primary_type": "steel_plant",
+  "type_confidence": 0.75,
+  "data_quality": {
+    "canonicalization_confidence": 0.495,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "operator_display": "Hamriyah Steel FZC"
 }

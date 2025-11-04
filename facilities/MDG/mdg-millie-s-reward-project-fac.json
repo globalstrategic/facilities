@@ -9,26 +9,20 @@
     "precision": "unknown"
   },
   "types": [
-    "exploration project"
+    "development"
   ],
   "commodities": [
     {
-      "metal": "location: central madagascar. (note: this is a hard-rock asset",
-      "primary": false
-    },
-    {
-      "metal": "feedstock for lithium carbonate/hydroxide.)",
-      "primary": false
-
-      "metal": "Lithium",
+      "metal": "Copper",
       "primary": true,
-      "chemical_formula": "Li",
-      "category": "battery_material"
+      "chemical_formula": "Cu",
+      "category": "base_metal"
     },
     {
-      "metal": "Neodymium-Praseodymium",
+      "metal": "Gold",
       "primary": false,
-      "category": "rare_earth_element"
+      "chemical_formula": "Au",
+      "category": "precious_metal"
     }
   ],
   "status": "unknown",
@@ -36,16 +30,28 @@
   "products": [],
   "sources": [
     {
-      "type": "csv_import",
-      "id": "Research Import MDG 2025-10-29",
-      "date": "2025-10-29T22:52:40.248527"
+      "type": "research",
+      "id": "Deep Research 2025",
+      "date": "2025-10-30T14:29:33.125193"
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-10-29T22:52:40.248559",
+    "status": "unverified",
+    "confidence": 0.65,
+    "last_checked": "2025-10-30T14:29:33.125198",
     "checked_by": "import_pipeline",
     "notes": null
+  },
+  "canonical_name": "Millie's Reward Development",
+  "canonical_slug": "millie-s-reward-development",
+  "display_name": "Millie's Reward",
+  "primary_type": "development",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.6,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
   }
 }

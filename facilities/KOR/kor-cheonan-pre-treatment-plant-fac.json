@@ -1,0 +1,54 @@
+{
+  "facility_id": "kor-cheonan-pre-treatment-plant-fac",
+  "name": "**Cheonan Pre-treatment Plant**",
+  "aliases": [],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "pre-treatment facility"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "GRM",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.521453",
+      "evidence": "Extracted from operator column: GRM (Global Resources and Materials)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.521455"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.521456",
+    "checked_by": "import_pipeline",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Crushes and sorts electronic scrap as feedstock for the Danyang plant. 62"
+  },
+  "canonical_name": "**Cheonan Pre-treatment **",
+  "canonical_slug": "cheonan-pre-treatment-facility",
+  "display_name": "**Cheonan Pre-treatment **",
+  "primary_type": "facility",
+  "type_confidence": 0.3,
+  "data_quality": {
+    "canonicalization_confidence": 0.405,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
+  }
+}

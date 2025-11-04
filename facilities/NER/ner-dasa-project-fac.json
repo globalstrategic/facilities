@@ -8,16 +8,43 @@
     "lon": null,
     "precision": "unknown"
   },
-  "types": ["underground mine (under development)"],
+  "types": [
+    "underground mine (under development)"
+  ],
   "commodities": [
-    { "metal": "Uranium", "primary": true, "chemical_formula": "U", "category": "nuclear" },
-    { "metal": "Molybdenum (potential)", "primary": false, "chemical_formula": "Mo", "category": "specialty_metal" }
+    {
+      "metal": "Uranium",
+      "primary": true,
+      "chemical_formula": "U",
+      "category": "nuclear"
+    },
+    {
+      "metal": "Molybdenum (potential)",
+      "primary": false,
+      "chemical_formula": "Mo",
+      "category": "specialty_metal"
+    }
   ],
   "status": "under development",
   "company_mentions": [
-    { "name": "SOMIDA (Société Minière de Dasa S.A.)", "role": "operator", "source": "Global Atomic – Dasa operations page", "confidence": 0.8 },
-    { "name": "Global Atomic Corporation", "role": "80% owner of SOMIDA", "source": "Global Atomic – Dasa operations page", "confidence": 0.9 },
-    { "name": "Government of Niger", "role": "20% owner (10% free-carry + 10% paid)", "source": "Global Atomic – Dasa operations page", "confidence": 0.8 }
+    {
+      "name": "SOMIDA (Société Minière de Dasa S.A.)",
+      "role": "operator",
+      "source": "Global Atomic – Dasa operations page",
+      "confidence": 0.8
+    },
+    {
+      "name": "Global Atomic Corporation",
+      "role": "80% owner of SOMIDA",
+      "source": "Global Atomic – Dasa operations page",
+      "confidence": 0.9
+    },
+    {
+      "name": "Government of Niger",
+      "role": "20% owner (10% free-carry + 10% paid)",
+      "source": "Global Atomic – Dasa operations page",
+      "confidence": 0.8
+    }
   ],
   "products": [],
   "sources": [
@@ -33,5 +60,17 @@
     "last_checked": "2025-10-27T11:12:10.032698",
     "checked_by": "import_pipeline",
     "notes": null
+  },
+  "canonical_name": "Dasa Mine",
+  "canonical_slug": "dasa-mine",
+  "display_name": "Dasa",
+  "primary_type": "mine",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
   }
 }

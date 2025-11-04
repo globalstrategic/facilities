@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": 24.986,
-    "lon": 55.048,
-    "precision": "region"
+    "lat": 25.044801,
+    "lon": 55.155846,
+    "precision": "site",
+    "town": "Dubai",
+    "region": "Jebel Ali"
   },
   "types": [
     "aluminium smelter"
@@ -32,6 +34,20 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:41:37.946905",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)"
-  }
+    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)",
+    "geocoding_source": "Exact power/smelter campus coordinates"
+  },
+  "canonical_name": "Jebel Ali Smelter",
+  "canonical_slug": "jebel-ali-smelter",
+  "display_name": "Jebel Ali",
+  "primary_type": "smelter",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false
+    }
+  },
+  "operator_display": "Emirates Global Aluminium (EGA)"
 }

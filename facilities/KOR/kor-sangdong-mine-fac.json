@@ -1,45 +1,53 @@
 {
   "facility_id": "kor-sangdong-mine-fac",
-  "name": "Sangdong Mine",
-  "aliases": [
-    "Sangdong Mine",
-    "Sangdong",
-    "Sangdong"
-  ],
+  "name": "**Sangdong Mine**",
+  "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": 37.146,
-    "lon": 128.828,
-    "precision": "site"
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
   },
   "types": [
-    "mine"
+    "mine/processing plant"
   ],
-  "commodities": [
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
     {
-      "metal": "Tungsten",
-      "primary": true
-    },
-    {
-      "metal": "Bismuth",
-      "primary": false
+      "name": "Almonty Korea Tungsten Corp.",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.517283",
+      "evidence": "Extracted from operator column: Almonty Korea Tungsten Corp."
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
-      "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:27:04.627038"
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.517284"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-10-20T15:27:04.627043",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.517285",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A strategically vital mine set to be a major non-Chinese source of tungsten and molybdenum. 4"
+  },
+  "canonical_name": "**Sangdong ** Processing Plant",
+  "canonical_slug": "sangdong-processing-plant",
+  "display_name": "**Sangdong **",
+  "primary_type": "processing_plant",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
   }
 }

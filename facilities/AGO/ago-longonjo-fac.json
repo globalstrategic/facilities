@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "AGO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -12.91667,
+    "lon": 15.21667,
+    "precision": "site",
+    "town": "Longonjo",
+    "region": "Huambo"
   },
   "types": [
     "mine"
@@ -38,6 +40,20 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T10:13:24.080747",
     "checked_by": "import_pipeline",
-    "notes": "NdPr concentrate planned"
+    "notes": "NdPr concentrate planned",
+    "geocoding_source": "Longonjo carbonatite intrusion coords (Mindat); Pensana project location confirmed"
+  },
+  "canonical_name": "Longonjo Mine",
+  "canonical_slug": "longonjo-mine",
+  "display_name": "Longonjo",
+  "primary_type": "mine",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.495,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
   }
 }

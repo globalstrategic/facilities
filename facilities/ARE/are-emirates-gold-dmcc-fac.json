@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.068103,
+    "lon": 55.139089,
+    "precision": "site",
+    "town": "Dubai",
+    "region": "JLT – Cluster I (Platinum Tower)"
   },
   "types": [
     "precious metals refinery"
@@ -36,6 +38,21 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:24:12.629695",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "Office/plant address in Platinum Tower; tower centroid used"
+  },
+  "canonical_name": "Emirates Gold DMCC Refinery",
+  "canonical_slug": "emirates-gold-dmcc-refinery",
+  "display_name": "Emirates Gold DMCC",
+  "primary_type": "refinery",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.46499999999999997,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "operator_display": "Emirates Gold DMCC"
 }

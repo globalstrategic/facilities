@@ -6,7 +6,9 @@
   "location": {
     "lat": null,
     "lon": null,
-    "precision": "unknown"
+    "precision": "region",
+    "town": "Khor Khwair",
+    "region": "Ras Al Khaimah"
   },
   "types": [
     "mine"
@@ -40,6 +42,21 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:24:12.726026",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "Large multi-operator quarry district; leave lat/lon blank until pit centroid chosen"
+  },
+  "canonical_name": "Khor Khwair Quarry Mine",
+  "canonical_slug": "khor-khwair-quarry-mine",
+  "display_name": "Khor Khwair Quarry",
+  "primary_type": "mine",
+  "type_confidence": 0.75,
+  "data_quality": {
+    "canonicalization_confidence": 0.495,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "operator_display": "Stevin Rock"
 }

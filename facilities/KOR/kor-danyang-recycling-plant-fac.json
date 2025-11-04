@@ -1,0 +1,53 @@
+{
+  "facility_id": "kor-danyang-recycling-plant-fac",
+  "name": "**Danyang Recycling Plant**",
+  "aliases": [],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "recycling plant (pyrometallurgy)"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "GRM",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.520770",
+      "evidence": "Extracted from operator column: GRM (Global Resources and Materials)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.520771"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.520772",
+    "checked_by": "import_pipeline",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Recovers PGMs and precious metals from e-waste; feeds concentrate to Onsan smelter. 62"
+  },
+  "canonical_name": "**Danyang Recycling ** Battery Recycling",
+  "canonical_slug": "danyang-recycling-battery-recycling",
+  "display_name": "**Danyang Recycling **",
+  "primary_type": "battery_recycling",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
+  }
+}

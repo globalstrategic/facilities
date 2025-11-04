@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ALB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.052,
+    "lon": 20.088,
+    "precision": "site",
+    "town": "Fushë-Arrëz",
+    "region": "Shkodër"
   },
   "types": [
     "mine"
@@ -32,6 +34,19 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:22:19.006353",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": null,
+    "geocoding_source": "Mindat locality gives deposit centroid"
+  },
+  "canonical_name": "Lak Roshi Mine",
+  "canonical_slug": "lak-roshi-mine",
+  "display_name": "Lak Roshi",
+  "primary_type": "mine",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.6,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": true
+    }
   }
 }

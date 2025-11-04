@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.983932,
+    "lon": 56.075012,
+    "precision": "town",
+    "town": "Ghalilah (Ras Al Khaimah)",
+    "region": "Khor Khwair/Ghalilah"
   },
   "types": [
     "integrated cement plant"
@@ -32,6 +34,21 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:24:12.829144",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "Town centroid near plant cluster"
+  },
+  "canonical_name": "RAK White Cement Plant",
+  "canonical_slug": "rak-white-cement-plant",
+  "display_name": "RAK White Cement",
+  "primary_type": "plant",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.46499999999999997,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "operator_display": "RAK Co. for White Cement & Construction Materials"
 }

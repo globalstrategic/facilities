@@ -1,23 +1,14 @@
 {
   "facility_id": "mar-bouskour-project-fac",
-<<<<<<< HEAD
   "name": "**Bouskour Project**",
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
     "lat": null,
-=======
-  "name": "Bouskour Project",
-  "aliases": [],
-  "country_iso3": "MAR",
-  "location": {
-    "lat": 30.9297,
->>>>>>> f41a1c458972bfeaba3408df8084ec1ffcb5d8a0
     "lon": null,
     "precision": "unknown"
   },
   "types": [
-<<<<<<< HEAD
     "mine development project"
   ],
   "commodities": [
@@ -39,51 +30,31 @@
       "evidence": "Extracted from operator column: Managem Group"
     }
   ],
-=======
-    "mine (under development)"
-  ],
-  "commodities": [
-    {
-      "metal": "copper",
-      "primary": true
-    },
-    {
-      "metal": "silver",
-      "primary": false
-    },
-    {
-      "metal": "n/a",
-      "primary": false
-    }
-  ],
-  "status": "unknown",
-  "company_mentions": [],
->>>>>>> f41a1c458972bfeaba3408df8084ec1ffcb5d8a0
   "products": [],
   "sources": [
     {
       "type": "csv_import",
-<<<<<<< HEAD
       "id": "Morocco Deep Research 2025",
       "date": "2025-10-29T16:17:07.439114"
-=======
-      "id": "Research Import MAR 2025-10-29",
-      "date": "2025-10-29T23:26:51.765896"
->>>>>>> f41a1c458972bfeaba3408df8084ec1ffcb5d8a0
     }
   ],
   "verification": {
     "status": "csv_imported",
-<<<<<<< HEAD
     "confidence": 0.5,
     "last_checked": "2025-10-29T16:17:07.439115",
     "checked_by": "import_pipeline",
     "notes": "Significant copper-silver deposit in the eastern Anti-Atlas."
-=======
-    "confidence": 0.65,
-    "last_checked": "2025-10-29T23:26:51.765916",
-    "checked_by": "import_pipeline",
-    "notes": null
->>>>>>> f41a1c458972bfeaba3408df8084ec1ffcb5d8a0
+  },
+  "canonical_name": "**Bouskour ** Mine",
+  "canonical_slug": "bouskour-mine",
+  "display_name": "**Bouskour **",
+  "primary_type": "mine",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
   }
 }

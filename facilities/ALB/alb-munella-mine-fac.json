@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ALB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.967,
+    "lon": 20.1,
+    "precision": "site",
+    "town": "Mirditë",
+    "region": "Lezhë"
   },
   "types": [
     "mine"
@@ -44,6 +46,19 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:22:19.001651",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": null,
+    "geocoding_source": "Munellë mine locality coords"
+  },
+  "canonical_name": "Munella Mine",
+  "canonical_slug": "munella-mine",
+  "display_name": "Munella",
+  "primary_type": "mine",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.6,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": true
+    }
   }
 }

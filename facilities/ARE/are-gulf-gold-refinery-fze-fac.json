@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.345453,
+    "lon": 55.485305,
+    "precision": "site",
+    "town": "Sharjah",
+    "region": "SAIF Zone"
   },
   "types": [
     "precious metals refinery"
@@ -36,6 +38,20 @@
     "confidence": 0.5,
     "last_checked": "2025-10-21T09:24:12.647647",
     "checked_by": "import_pipeline",
-    "notes": null
-  }
+    "notes": null,
+    "geocoding_source": "SAIF warehouse/office coordinates"
+  },
+  "canonical_name": "Gulf Gold FZE Refinery",
+  "canonical_slug": "gulf-gold-fze-refinery",
+  "display_name": "Gulf Gold FZE",
+  "primary_type": "refinery",
+  "type_confidence": 0.95,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false
+    }
+  },
+  "operator_display": "Gulf Gold Refinery FZE"
 }

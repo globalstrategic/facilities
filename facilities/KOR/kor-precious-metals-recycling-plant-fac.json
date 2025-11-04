@@ -1,0 +1,53 @@
+{
+  "facility_id": "kor-precious-metals-recycling-plant-fac",
+  "name": "**Precious Metals Recycling Plant**",
+  "aliases": [],
+  "country_iso3": "KOR",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "recycling plant (hydrometallurgy)"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "TORECOM",
+      "role": "operator",
+      "source": "Research Import ATF 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T12:22:53.522363",
+      "evidence": "Extracted from operator column: TORECOM"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ATF 2025-10-29",
+      "date": "2025-10-29T12:22:53.522373"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-10-29T12:22:53.522374",
+    "checked_by": "import_pipeline",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Market leader in hydrometallurgical recovery of precious metals from e-waste. 62"
+  },
+  "canonical_name": "**Precious Metals Recycling ** Battery Recycling",
+  "canonical_slug": "precious-metals-recycling-battery-recycling",
+  "display_name": "**Precious Metals Recycling **",
+  "primary_type": "battery_recycling",
+  "type_confidence": 0.85,
+  "data_quality": {
+    "canonicalization_confidence": 0.5700000000000001,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true
+    }
+  }
+}
