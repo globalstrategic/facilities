@@ -25,20 +25,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T10:38:02.771374",
+    "last_checked": "2025-11-04T19:18:51.072270Z",
     "checked_by": "import_pipeline",
-    "notes": "Feeds Turamdih Mill"
+    "notes": "Feeds Turamdih Mill | Canonical name+slug generated"
   },
   "canonical_name": "Mohuldih Mine",
   "canonical_slug": "mohuldih-mine",
   "display_name": "Mohuldih",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

@@ -43,20 +43,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:18:38.803147",
+    "last_checked": "2025-11-04T19:18:51.677295Z",
     "checked_by": "import_pipeline",
-    "notes": "Historical tungsten site, now a museum. The underlying granite is the target for the EMILI lithium project. 44"
+    "notes": "Historical tungsten site, now a museum. The underlying granite is the target for the EMILI lithium project. 44 | Canonical name+slug generated"
   },
-  "canonical_name": "**Echassières ** Mine",
+  "canonical_name": "Echassières Mine",
   "canonical_slug": "echassieres-mine",
-  "display_name": "**Echassières **",
+  "display_name": "Echassières",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Echassières ** Mine",
+      "from": "2025-10-28T17:18:38.803147",
+      "to": "2025-11-04T19:18:51.677293Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

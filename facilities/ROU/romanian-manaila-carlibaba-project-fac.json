@@ -38,20 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T14:29:36.224066",
+    "last_checked": "2025-11-04T19:18:47.784929Z",
     "checked_by": "import_pipeline",
-    "notes": "Previously producing polymetallic mine. Currently on care and maintenance pending evaluation for recommencement with optimized processing. 11"
+    "notes": "Previously producing polymetallic mine. Currently on care and maintenance pending evaluation for recommencement with optimized processing. 11 | Canonical name+slug generated"
   },
-  "canonical_name": "Manaila-Carlibaba Mine",
+  "canonical_name": "Manaila Carlibaba Mine",
   "canonical_slug": "manaila-carlibaba-mine",
-  "display_name": "Manaila-Carlibaba",
+  "display_name": "Manaila Carlibaba",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Manaila-Carlibaba Mine",
+      "from": "2025-10-23T14:29:36.224066",
+      "to": "2025-11-04T19:18:47.784926Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

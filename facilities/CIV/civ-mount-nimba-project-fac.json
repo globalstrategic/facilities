@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:21:36.023122",
+    "last_checked": "2025-11-04T19:19:04.458439Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Mount Nimba ** Exploration",
+  "canonical_name": "Mount Nimba Exploration",
   "canonical_slug": "mount-nimba-exploration",
-  "display_name": "**Mount Nimba **",
+  "display_name": "Mount Nimba",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mount Nimba ** Exploration",
+      "from": "2025-10-27T13:21:36.023122",
+      "to": "2025-11-04T19:19:04.458435Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

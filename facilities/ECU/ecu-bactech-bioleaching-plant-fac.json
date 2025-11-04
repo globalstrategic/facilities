@@ -25,20 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T16:58:49.040421",
+    "last_checked": "2025-11-04T19:19:02.546936Z",
     "checked_by": "import_pipeline",
-    "notes": "Projected 125,000 oz Au/y equivalent"
+    "notes": "Projected 125,000 oz Au/y equivalent | Canonical name+slug generated"
   },
-  "canonical_name": "BacTech Bioleaching Mine",
+  "canonical_name": "Bactech Bioleaching Mine",
   "canonical_slug": "bactech-bioleaching-mine",
-  "display_name": "BacTech Bioleaching",
+  "display_name": "Bactech Bioleaching",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "BacTech Bioleaching Mine",
+      "from": "2025-10-27T16:58:49.040421",
+      "to": "2025-11-04T19:19:02.546932Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T10:37:55.730713",
+    "last_checked": "2025-11-04T19:19:10.251397Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Pomalaa Ferronickel ** Smelter",
+  "canonical_name": "Pomalaa Ferronickel Smelter",
   "canonical_slug": "pomalaa-ferronickel-smelter",
-  "display_name": "**Pomalaa Ferronickel **",
+  "display_name": "Pomalaa Ferronickel",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Pomalaa Ferronickel ** Smelter",
+      "from": "2025-10-29T10:37:55.730713",
+      "to": "2025-11-04T19:19:10.251394Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

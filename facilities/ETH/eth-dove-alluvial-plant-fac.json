@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:04:41.277923",
+    "last_checked": "2025-11-04T19:19:14.284395Z",
     "checked_by": "import_pipeline",
-    "notes": "First mechanized alluvial gold processing plant in Ethiopia, commissioned in 2018\\.52"
+    "notes": "First mechanized alluvial gold processing plant in Ethiopia, commissioned in 2018\\.52 | Canonical name+slug generated"
   },
-  "canonical_name": "DOVE Alluvial Processing Plant",
+  "canonical_name": "Dove Alluvial Processing Plant",
   "canonical_slug": "dove-alluvial-processing-plant",
-  "display_name": "DOVE Alluvial",
+  "display_name": "Dove Alluvial",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "DOVE Alluvial Processing Plant",
+      "from": "2025-10-28T17:04:41.277923",
+      "to": "2025-11-04T19:19:14.284390Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

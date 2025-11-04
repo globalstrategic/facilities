@@ -38,20 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.175051",
+    "last_checked": "2025-11-04T19:18:49.651894Z",
     "checked_by": "import_pipeline",
-    "notes": "Large gold deposit adjacent to Las Cristinas, also part of the Siembra Minera JV.28 Coordinates are approximate based on proximity."
+    "notes": "Large gold deposit adjacent to Las Cristinas, also part of the Siembra Minera JV.28 Coordinates are approximate based on proximity. | Canonical name+slug generated"
   },
-  "canonical_name": "**Brisas ** Development",
+  "canonical_name": "Brisas Development",
   "canonical_slug": "brisas-development",
-  "display_name": "**Brisas **",
+  "display_name": "Brisas",
   "primary_type": "development",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Brisas ** Development",
+      "from": "2025-10-21T11:38:45.175051",
+      "to": "2025-11-04T19:18:49.651880Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -59,20 +59,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.056178",
+    "last_checked": "2025-11-04T19:19:00.899280Z",
     "checked_by": "import_pipeline",
-    "notes": "Part of the extensive nickel laterite complex that includes Musongati. License awarded to CVMR after BMM's was revoked. 7"
+    "notes": "Part of the extensive nickel laterite complex that includes Musongati. License awarded to CVMR after BMM's was revoked. 7 | Canonical name+slug generated"
   },
-  "canonical_name": "**Waga ** Mine",
+  "canonical_name": "Waga Mine",
   "canonical_slug": "waga-mine",
-  "display_name": "**Waga **",
+  "display_name": "Waga",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Waga ** Mine",
+      "from": "2025-10-27T10:36:55.056178",
+      "to": "2025-11-04T19:19:00.899270Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -47,20 +47,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-21T12:59:39.040488",
+    "last_checked": "2025-11-04T19:19:12.125814Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Jinja Plant",
   "canonical_slug": "jinja-plant",
   "display_name": "Jinja",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

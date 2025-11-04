@@ -37,20 +37,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:27:55.068305",
+    "last_checked": "2025-11-04T19:18:48.054135Z",
     "checked_by": "import_pipeline",
-    "notes": "Chinese-owned company suspended by the government in June 2024 for alleged cooperation with armed militias. 21"
+    "notes": "Chinese-owned company suspended by the government in June 2024 for alleged cooperation with armed militias. 21 | Canonical name+slug generated"
   },
   "canonical_name": "Mingala Area Gold Mine",
   "canonical_slug": "mingala-area-gold-mine",
   "display_name": "Mingala Area Gold",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

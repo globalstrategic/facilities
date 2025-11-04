@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-29T21:57:47.141606",
+    "last_checked": "2025-11-04T19:18:55.275675Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Río Coco II Concession** Exploration",
+  "canonical_name": "Río Coco II Concession Exploration",
   "canonical_slug": "rio-coco-ii-concession-exploration",
-  "display_name": "**Río Coco II Concession**",
+  "display_name": "Río Coco II Concession",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Río Coco II Concession** Exploration",
+      "from": "2025-10-29T21:57:47.141606",
+      "to": "2025-11-04T19:18:55.275660Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

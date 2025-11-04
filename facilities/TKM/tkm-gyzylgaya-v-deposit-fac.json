@@ -35,20 +35,30 @@
   "verification": {
     "status": "research_imported",
     "confidence": 0.7,
-    "last_checked": "2025-01-21T00:00:00.000000",
+    "last_checked": "2025-11-04T19:19:03.071496Z",
     "checked_by": "research_pipeline",
-    "notes": "Discovered in 2019. Resource estimate: 70-75 million tons at ~20% iron content. Low grade ore requiring beneficiation. No development progress since discovery."
+    "notes": "Discovered in 2019. Resource estimate: 70-75 million tons at ~20% iron content. Low grade ore requiring beneficiation. No development progress since discovery. | Canonical name+slug generated"
   },
-  "canonical_name": "Gyzylgaya-V Mine",
+  "canonical_name": "Gyzylgaya V Mine",
   "canonical_slug": "gyzylgaya-v-mine",
-  "display_name": "Gyzylgaya-V",
+  "display_name": "Gyzylgaya V",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Gyzylgaya-V Mine",
+      "from": "2025-01-21T00:00:00.000000",
+      "to": "2025-11-04T19:19:03.071492Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

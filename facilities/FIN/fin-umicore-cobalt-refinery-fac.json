@@ -35,20 +35,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:16:23.779697",
+    "last_checked": "2025-11-04T19:18:54.191360Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Umicore Cobalt ** Refinery",
+  "canonical_name": "Umicore Cobalt Refinery",
   "canonical_slug": "umicore-cobalt-refinery",
-  "display_name": "**Umicore Cobalt **",
+  "display_name": "Umicore Cobalt",
   "primary_type": "refinery",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Umicore Cobalt ** Refinery",
+      "from": "2025-10-28T17:16:23.779697",
+      "to": "2025-11-04T19:18:54.191357Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

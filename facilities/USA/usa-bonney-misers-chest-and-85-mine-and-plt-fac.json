@@ -47,20 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:26:28.677007",
+    "last_checked": "2025-11-04T19:18:45.922853Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Bonney Misers Chest and 85 and Plt Mine",
+  "canonical_name": "Bonney Misers Chest And 85 And Plt Mine",
   "canonical_slug": "bonney-misers-chest-and-85-and-plt-mine",
-  "display_name": "Bonney Misers Chest and 85 and Plt",
+  "display_name": "Bonney Misers Chest And 85 And Plt",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Bonney Misers Chest and 85 and Plt Mine",
+      "from": "2025-10-20T15:26:28.677007",
+      "to": "2025-11-04T19:18:45.922851Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

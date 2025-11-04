@@ -45,21 +45,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:54:37.666692",
+    "last_checked": "2025-11-04T19:19:08.318512Z",
     "checked_by": "import_pipeline",
-    "notes": "High. Major polymetallic complex. Feedstock for La Oroya."
+    "notes": "High. Major polymetallic complex. Feedstock for La Oroya. | Canonical name+slug generated"
   },
-  "canonical_name": "**Volcan ** Mine",
+  "canonical_name": "Volcan Mine",
   "canonical_slug": "volcan-mine",
-  "display_name": "**Volcan **",
+  "display_name": "Volcan",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Volcan ** Mine",
+      "from": "2025-10-28T21:54:37.666692",
+      "to": "2025-11-04T19:19:08.318509Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -38,21 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T21:51:42.300360",
+    "last_checked": "2025-11-04T19:19:22.485684Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Bering Khola Polymetallic Prospect**",
+  "canonical_name": "Bering Khola Polymetallic Prospect Facility",
   "canonical_slug": "bering-khola-polymetallic-prospect-facility",
-  "display_name": "**Bering Khola Polymetallic Prospect**",
+  "display_name": "Bering Khola Polymetallic Prospect",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bering Khola Polymetallic Prospect**",
+      "from": "2025-10-29T21:51:42.300360",
+      "to": "2025-11-04T19:19:22.485681Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

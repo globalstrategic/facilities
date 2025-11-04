@@ -63,20 +63,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:04.056658",
+    "last_checked": "2025-11-04T19:19:05.021019Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Kosaka Pb Smelter",
   "canonical_slug": "kosaka-pb-smelter",
   "display_name": "Kosaka Pb",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

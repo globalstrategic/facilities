@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:11:30.493718",
+    "last_checked": "2025-11-04T19:19:08.017896Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Kribi-Lobé** Mine",
+  "canonical_name": "Kribi Lobé Mine",
   "canonical_slug": "kribi-lobe-mine",
-  "display_name": "**Kribi-Lobé**",
+  "display_name": "Kribi Lobé",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Kribi-Lobé** Mine",
+      "from": "2025-10-27T14:11:30.493718",
+      "to": "2025-11-04T19:19:08.017892Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

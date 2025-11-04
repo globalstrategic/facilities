@@ -34,20 +34,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.486323",
+    "last_checked": "2025-11-04T19:18:53.401156Z",
     "checked_by": "import_pipeline",
-    "notes": "Processes crude ore from the Kleinfeistritz mine and other sources."
+    "notes": "Processes crude ore from the Kleinfeistritz mine and other sources. | Canonical name+slug generated"
   },
   "canonical_name": "Weisskirchen Processing Plant",
   "canonical_slug": "weisskirchen-processing-plant",
   "display_name": "Weisskirchen",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

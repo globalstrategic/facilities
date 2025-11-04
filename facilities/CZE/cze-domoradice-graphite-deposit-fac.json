@@ -42,20 +42,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.788834",
+    "last_checked": "2025-11-04T19:19:10.582705Z",
     "checked_by": "import_pipeline",
-    "notes": "Significant but unexploited graphite deposit. Past mining occurred, but resumption is unlikely due to its location in a protected area. 7"
+    "notes": "Significant but unexploited graphite deposit. Past mining occurred, but resumption is unlikely due to its location in a protected area. 7 | Canonical name+slug generated"
   },
-  "canonical_name": "**Domoradice Graphite ** Mine",
+  "canonical_name": "Domoradice Graphite Mine",
   "canonical_slug": "domoradice-graphite-mine",
-  "display_name": "**Domoradice Graphite **",
+  "display_name": "Domoradice Graphite",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Domoradice Graphite ** Mine",
+      "from": "2025-10-27T15:23:26.788834",
+      "to": "2025-11-04T19:19:10.582701Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

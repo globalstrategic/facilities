@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:21:39.159493",
+    "last_checked": "2025-11-04T19:19:22.743622Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Acerías Paz del Río Steel Steel Plant",
+  "canonical_name": "Acerías Paz Del Río Steel Steel Plant",
   "canonical_slug": "acerias-paz-del-rio-steel-steel-plant",
-  "display_name": "Acerías Paz del Río Steel",
+  "display_name": "Acerías Paz Del Río Steel",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Acerías Paz del Río Steel Steel Plant",
+      "from": "2025-10-27T14:21:39.159493",
+      "to": "2025-11-04T19:19:22.743619Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

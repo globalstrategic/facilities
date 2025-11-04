@@ -39,21 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:18:38.737225",
+    "last_checked": "2025-11-04T19:18:51.668313Z",
     "checked_by": "import_pipeline",
-    "notes": "World's largest reprocessing facility; separates spent fuel components. 32"
+    "notes": "World's largest reprocessing facility; separates spent fuel components. 32 | Canonical name+slug generated"
   },
-  "canonical_name": "**Orano La Hague** Mine",
+  "canonical_name": "Orano La Hague Mine",
   "canonical_slug": "orano-la-hague-mine",
-  "display_name": "**Orano La Hague**",
+  "display_name": "Orano La Hague",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Orano La Hague** Mine",
+      "from": "2025-10-28T17:18:38.737225",
+      "to": "2025-11-04T19:18:51.668310Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

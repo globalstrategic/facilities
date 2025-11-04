@@ -47,20 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:07:19.525130",
+    "last_checked": "2025-11-04T19:18:56.374154Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**NMC \\- Nakéty ** Mine",
+  "canonical_name": "NMC Nakéty Mine",
   "canonical_slug": "nmc-nakety-mine",
-  "display_name": "**NMC \\- Nakéty **",
+  "display_name": "NMC Nakéty",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**NMC \\- Nakéty ** Mine",
+      "from": "2025-10-29T22:07:19.525130",
+      "to": "2025-11-04T19:18:56.374152Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:37.602086",
+    "last_checked": "2025-11-04T19:18:53.662154Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Mina do Barroso Mine",
+  "canonical_name": "Mina Do Barroso Mine",
   "canonical_slug": "mina-do-barroso-mine",
-  "display_name": "Mina do Barroso",
+  "display_name": "Mina Do Barroso",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mina do Barroso Mine",
+      "from": "2025-10-20T15:29:37.602086",
+      "to": "2025-11-04T19:18:53.662139Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

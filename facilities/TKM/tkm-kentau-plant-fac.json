@@ -43,20 +43,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:03:08.213670",
+    "last_checked": "2025-11-04T19:19:03.073394Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Kentau Mine",
   "canonical_slug": "kentau-mine-2",
   "display_name": "Kentau",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

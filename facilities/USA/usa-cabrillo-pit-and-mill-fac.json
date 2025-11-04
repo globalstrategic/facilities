@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:26:32.585872",
+    "last_checked": "2025-11-04T19:18:45.950205Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Cabrillo and Mine",
+  "canonical_name": "Cabrillo And Mine",
   "canonical_slug": "cabrillo-and-mine",
-  "display_name": "Cabrillo and",
+  "display_name": "Cabrillo And",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Cabrillo and Mine",
+      "from": "2025-10-20T15:26:32.585872",
+      "to": "2025-11-04T19:18:45.950203Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

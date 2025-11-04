@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T11:57:05.546022",
+    "last_checked": "2025-11-04T19:19:06.631647Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Selebi-Phikwe ** Smelter",
+  "canonical_name": "Selebi Phikwe Smelter",
   "canonical_slug": "selebi-phikwe-smelter",
-  "display_name": "**Selebi-Phikwe **",
+  "display_name": "Selebi Phikwe",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Selebi-Phikwe ** Smelter",
+      "from": "2025-10-27T11:57:05.546022",
+      "to": "2025-11-04T19:19:06.631644Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

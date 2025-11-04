@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:42:54.618838",
+    "last_checked": "2025-11-04T19:19:03.879723Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Loulo-Gounkoto Mine",
+  "canonical_name": "Loulo Gounkoto Mine",
   "canonical_slug": "loulo-gounkoto-mine",
-  "display_name": "Loulo-Gounkoto",
+  "display_name": "Loulo Gounkoto",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Loulo-Gounkoto Mine",
+      "from": "2025-10-29T22:42:54.618838",
+      "to": "2025-11-04T19:19:03.879720Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

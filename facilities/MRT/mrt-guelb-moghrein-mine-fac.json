@@ -51,20 +51,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:17:09.530980",
+    "last_checked": "2025-11-04T19:19:15.923624Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Guelb Moghrein ** Mine",
+  "canonical_name": "Guelb Moghrein Mine",
   "canonical_slug": "guelb-moghrein-mine-2",
-  "display_name": "**Guelb Moghrein **",
+  "display_name": "Guelb Moghrein",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Guelb Moghrein ** Mine",
+      "from": "2025-10-29T22:17:09.530980",
+      "to": "2025-11-04T19:19:15.923621Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

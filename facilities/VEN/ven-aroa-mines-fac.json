@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.097342",
+    "last_checked": "2025-11-04T19:18:49.654959Z",
     "checked_by": "import_pipeline",
-    "notes": "Historic copper mines, now a national park. Not actively exploited for minerals.1"
+    "notes": "Historic copper mines, now a national park. Not actively exploited for minerals.1 | Canonical name+slug generated"
   },
-  "canonical_name": "**Aroa Mines ** Mine",
+  "canonical_name": "Aroa Mines Mine",
   "canonical_slug": "aroa-mines-mine",
-  "display_name": "**Aroa Mines **",
+  "display_name": "Aroa Mines",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Aroa Mines ** Mine",
+      "from": "2025-10-21T11:38:45.097342",
+      "to": "2025-11-04T19:18:49.654957Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

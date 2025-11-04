@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.424508",
+    "last_checked": "2025-11-04T19:18:48.333320Z",
     "checked_by": "import_pipeline",
-    "notes": "Major steelworks complex located in a key industrial port zone."
+    "notes": "Major steelworks complex located in a key industrial port zone. | Canonical name+slug generated"
   },
-  "canonical_name": "**Sonasid Jorf Lasfar ** Processing Plant",
+  "canonical_name": "Sonasid Jorf Lasfar Processing Plant",
   "canonical_slug": "sonasid-jorf-lasfar-processing-plant",
-  "display_name": "**Sonasid Jorf Lasfar **",
+  "display_name": "Sonasid Jorf Lasfar",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Sonasid Jorf Lasfar ** Processing Plant",
+      "from": "2025-10-29T16:17:07.424508",
+      "to": "2025-11-04T19:18:48.333318Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

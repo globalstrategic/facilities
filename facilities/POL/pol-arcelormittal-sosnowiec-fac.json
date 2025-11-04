@@ -39,21 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T17:42:42.631952",
+    "last_checked": "2025-11-04T19:18:49.937515Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "ArcelorMittal Sosnowiec Plant",
+  "canonical_name": "Arcelormittal Sosnowiec Plant",
   "canonical_slug": "arcelormittal-sosnowiec-plant",
-  "display_name": "ArcelorMittal Sosnowiec",
+  "display_name": "Arcelormittal Sosnowiec",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "ArcelorMittal Sosnowiec Plant",
+      "from": "2025-10-23T17:42:42.631952",
+      "to": "2025-11-04T19:18:49.937508Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

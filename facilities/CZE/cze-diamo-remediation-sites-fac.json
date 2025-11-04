@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.784538",
+    "last_checked": "2025-11-04T19:19:10.585061Z",
     "checked_by": "import_pipeline",
-    "notes": "Manages all former uranium mines. Uranium is actively extracted as a by-product of treating contaminated mine water from sites like Příbram and Rožná. 13"
+    "notes": "Manages all former uranium mines. Uranium is actively extracted as a by-product of treating contaminated mine water from sites like Příbram and Rožná. 13 | Canonical name+slug generated"
   },
-  "canonical_name": "**DIAMO Remediation Sites**",
+  "canonical_name": "Diamo Remediation Sites Facility",
   "canonical_slug": "diamo-remediation-sites-facility",
-  "display_name": "**DIAMO Remediation Sites**",
+  "display_name": "Diamo Remediation Sites",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**DIAMO Remediation Sites**",
+      "from": "2025-10-27T15:23:26.784538",
+      "to": "2025-11-04T19:19:10.585055Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

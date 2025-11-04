@@ -27,21 +27,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T16:58:49.040555",
+    "last_checked": "2025-11-04T19:19:02.548920Z",
     "checked_by": "import_pipeline",
-    "notes": "310 kt/y ore"
+    "notes": "310 kt/y ore | Canonical name+slug generated"
   },
   "canonical_name": "La Plata Mine",
   "canonical_slug": "la-plata-mine",
   "display_name": "La Plata",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

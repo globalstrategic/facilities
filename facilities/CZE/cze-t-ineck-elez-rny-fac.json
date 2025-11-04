@@ -36,21 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.782949",
+    "last_checked": "2025-11-04T19:19:10.584206Z",
     "checked_by": "import_pipeline",
-    "notes": "Largest integrated steel producer in Czechia (\\~2.5 Mt/yr). Major consumer of imported iron ore, coking coal, and ferroalloys (FeCr, FeMn, FeMo, FeV). 17"
+    "notes": "Largest integrated steel producer in Czechia (\\~2.5 Mt/yr). Major consumer of imported iron ore, coking coal, and ferroalloys (FeCr, FeMn, FeMo, FeV). 17 | Canonical name+slug generated"
   },
-  "canonical_name": "**Třinecké železárny ** Processing Plant",
+  "canonical_name": "Třinecké Železárny Processing Plant",
   "canonical_slug": "trinecke-zelezarny-processing-plant",
-  "display_name": "**Třinecké železárny **",
+  "display_name": "Třinecké Železárny",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Třinecké železárny ** Processing Plant",
+      "from": "2025-10-27T15:23:26.782949",
+      "to": "2025-11-04T19:19:10.584203Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

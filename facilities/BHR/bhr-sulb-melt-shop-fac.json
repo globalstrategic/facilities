@@ -32,21 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T09:44:24.721804",
+    "last_checked": "2025-11-04T19:19:15.071938Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "SULB Melt Shop",
+  "canonical_name": "Sulb Melt Shop Facility",
   "canonical_slug": "sulb-melt-shop-facility",
-  "display_name": "SULB Melt Shop",
+  "display_name": "Sulb Melt Shop",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "SULB Melt Shop",
+      "from": "2025-10-27T09:44:24.721804",
+      "to": "2025-11-04T19:19:15.071935Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

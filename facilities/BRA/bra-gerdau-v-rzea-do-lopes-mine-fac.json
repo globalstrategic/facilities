@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:18.408018",
+    "last_checked": "2025-11-04T19:18:47.210390Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Gerdau Várzea do Lopes Mine",
+  "canonical_name": "Gerdau VÃ Rzea Do Lopes Mine",
   "canonical_slug": "gerdau-varzea-do-lopes-mine",
-  "display_name": "Gerdau Várzea do Lopes",
+  "display_name": "Gerdau VÃ Rzea Do Lopes",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Gerdau Várzea do Lopes Mine",
+      "from": "2025-10-20T15:29:18.408018",
+      "to": "2025-11-04T19:18:47.210388Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

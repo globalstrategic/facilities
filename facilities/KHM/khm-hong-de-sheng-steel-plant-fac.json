@@ -46,20 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:07.466989",
+    "last_checked": "2025-11-04T19:18:46.252115Z",
     "checked_by": "import_pipeline",
-    "notes": "Processes imported and domestic scrap metal only; not integrated with primary iron ore mining."
+    "notes": "Processes imported and domestic scrap metal only; not integrated with primary iron ore mining. | Canonical name+slug generated"
   },
-  "canonical_name": "**Hong de Sheng Steel ** Steel Plant",
+  "canonical_name": "Hong De Sheng Steel Steel Plant",
   "canonical_slug": "hong-de-sheng-steel-steel-plant",
-  "display_name": "**Hong de Sheng Steel **",
+  "display_name": "Hong De Sheng Steel",
   "primary_type": "steel_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Hong de Sheng Steel ** Steel Plant",
+      "from": "2025-10-29T12:22:07.466989",
+      "to": "2025-11-04T19:18:46.252104Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

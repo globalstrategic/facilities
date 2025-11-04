@@ -32,21 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.622155",
+    "last_checked": "2025-11-04T19:18:49.654494Z",
     "checked_by": "import_pipeline",
-    "notes": "A cluster of names from the initial list, likely referring to small, informal gold mining operations in the El Callao region."
+    "notes": "A cluster of names from the initial list, likely referring to small, informal gold mining operations in the El Callao region. | Canonical name+slug generated"
   },
-  "canonical_name": "**Santa Ana; Mina A; La Loca; El Roble; Talisman** Mine",
+  "canonical_name": "Santa Ana Mina A La Loca El Roble Talisman Mine",
   "canonical_slug": "santa-ana-mina-a-la-loca-el-roble-talisman-mine",
-  "display_name": "**Santa Ana; Mina A; La Loca; El Roble; Talisman**",
+  "display_name": "Santa Ana Mina A La Loca El Roble Talisman",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Santa Ana; Mina A; La Loca; El Roble; Talisman** Mine",
+      "from": "2025-10-21T11:38:45.622155",
+      "to": "2025-11-04T19:18:49.654492Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:26:40.344518",
+    "last_checked": "2025-11-04T19:18:45.742456Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Yellowstone Hill and Plant",
+  "canonical_name": "Yellowstone Hill And Plant",
   "canonical_slug": "yellowstone-hill-and-plant",
-  "display_name": "Yellowstone Hill and",
+  "display_name": "Yellowstone Hill And",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Yellowstone Hill and Plant",
+      "from": "2025-10-20T15:26:40.344518",
+      "to": "2025-11-04T19:18:45.742453Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

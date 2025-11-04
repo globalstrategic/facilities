@@ -53,20 +53,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:07.372896",
+    "last_checked": "2025-11-04T19:18:46.255247Z",
     "checked_by": "import_pipeline",
-    "notes": "Plant construction halted at \\~20% in 2020\\. Company has faced environmental penalties."
+    "notes": "Plant construction halted at \\~20% in 2020\\. Company has faced environmental penalties. | Canonical name+slug generated"
   },
-  "canonical_name": "**Phum Syarung Gold ** Mine",
+  "canonical_name": "Phum Syarung Gold Mine",
   "canonical_slug": "phum-syarung-gold-mine",
-  "display_name": "**Phum Syarung Gold **",
+  "display_name": "Phum Syarung Gold",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Phum Syarung Gold ** Mine",
+      "from": "2025-10-29T12:22:07.372896",
+      "to": "2025-11-04T19:18:46.255245Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:28:21.930728",
+    "last_checked": "2025-11-04T19:18:46.858985Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Hebi No. 11 Coal Mine",
+  "canonical_name": "Hebi No 11 Coal Mine",
   "canonical_slug": "hebi-no-11-coal-mine",
-  "display_name": "Hebi No. 11 Coal",
+  "display_name": "Hebi No 11 Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Hebi No. 11 Coal Mine",
+      "from": "2025-10-20T15:28:21.930728",
+      "to": "2025-11-04T19:18:46.858983Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

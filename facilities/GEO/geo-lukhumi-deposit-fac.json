@@ -47,20 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:01:00.235483",
+    "last_checked": "2025-11-04T19:19:01.723907Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Lukhumi ** Mine",
+  "canonical_name": "Lukhumi Mine",
   "canonical_slug": "lukhumi-mine",
-  "display_name": "**Lukhumi **",
+  "display_name": "Lukhumi",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Lukhumi ** Mine",
+      "from": "2025-10-28T21:01:00.235483",
+      "to": "2025-11-04T19:19:01.723904Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

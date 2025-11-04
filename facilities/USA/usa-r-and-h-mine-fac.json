@@ -65,20 +65,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:26:30.302093",
+    "last_checked": "2025-11-04T19:18:45.883276Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "R and H Mine",
+  "canonical_name": "R And H Mine",
   "canonical_slug": "r-and-h-mine",
-  "display_name": "R and H",
+  "display_name": "R And H",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "R and H Mine",
+      "from": "2025-10-20T15:26:30.302093",
+      "to": "2025-11-04T19:18:45.883273Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

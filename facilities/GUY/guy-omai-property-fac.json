@@ -43,20 +43,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:26:10.276365",
+    "last_checked": "2025-11-04T19:18:57.985182Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Omai Mine",
   "canonical_slug": "omai-mine",
   "display_name": "Omai",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

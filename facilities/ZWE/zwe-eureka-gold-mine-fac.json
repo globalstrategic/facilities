@@ -25,20 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T13:04:39.392194",
+    "last_checked": "2025-11-04T19:18:51.958807Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Eureka Gold ** Mine",
+  "canonical_name": "Eureka Gold Mine",
   "canonical_slug": "eureka-gold-mine",
-  "display_name": "**Eureka Gold **",
+  "display_name": "Eureka Gold",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Eureka Gold ** Mine",
+      "from": "2025-10-21T13:04:39.392194",
+      "to": "2025-11-04T19:18:51.958803Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

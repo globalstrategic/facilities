@@ -36,21 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T08:01:20.223061",
+    "last_checked": "2025-11-04T19:19:00.631098Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Black Angel ** Mine",
+  "canonical_name": "Black Angel Mine",
   "canonical_slug": "black-angel-mine",
-  "display_name": "**Black Angel **",
+  "display_name": "Black Angel",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Black Angel ** Mine",
+      "from": "2025-10-29T08:01:20.223061",
+      "to": "2025-11-04T19:19:00.631095Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

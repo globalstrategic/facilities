@@ -36,21 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:27:00.063284",
+    "last_checked": "2025-11-04T19:18:52.317017Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Prince of Wales UG Mine",
+  "canonical_name": "Prince Of Wales UG Mine",
   "canonical_slug": "prince-of-wales-ug-mine",
-  "display_name": "Prince of Wales UG",
+  "display_name": "Prince Of Wales UG",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Prince of Wales UG Mine",
+      "from": "2025-10-20T15:27:00.063284",
+      "to": "2025-11-04T19:18:52.317015Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

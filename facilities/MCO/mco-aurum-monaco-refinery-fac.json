@@ -36,23 +36,31 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-31T17:44:10.230860Z",
+    "last_checked": "2025-11-04T19:19:21.152523Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
     "geocoding_source": "Address 1 Rue du Gabian (Le Thalès); coords from nearby POIs on Rue du Gabian"
   },
   "primary_type": "mine",
-  "type_confidence": 0.95,
-  "canonical_name": "Aurum Monaco Mine",
+  "type_confidence": 1.0,
+  "canonical_name": "Monaco Aurum Monaco Mine",
   "display_name": "Aurum Monaco",
   "display_name_source": "auto",
   "canonical_slug": "aurum-monaco-mine",
   "data_quality": {
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": true,
       "canonical_name_incomplete": false
     },
-    "canonicalization_confidence": 0.6
-  }
+    "canonicalization_confidence": 0.7649999999999999
+  },
+  "canonical_name_history": [
+    {
+      "name": "Aurum Monaco Mine",
+      "from": "2025-10-31T17:44:10.230860Z",
+      "to": "2025-11-04T19:19:21.152517Z",
+      "reason": "data_correction"
+    }
+  ]
 }

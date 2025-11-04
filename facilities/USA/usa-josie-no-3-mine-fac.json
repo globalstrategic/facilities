@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:28:33.621649",
+    "last_checked": "2025-11-04T19:18:45.798840Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Josie No. 3 Mine",
+  "canonical_name": "Josie No 3 Mine",
   "canonical_slug": "josie-no-3-mine",
-  "display_name": "Josie No. 3",
+  "display_name": "Josie No 3",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Josie No. 3 Mine",
+      "from": "2025-10-20T15:28:33.621649",
+      "to": "2025-11-04T19:18:45.798837Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

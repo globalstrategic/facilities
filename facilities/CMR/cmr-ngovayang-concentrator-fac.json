@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:11:30.497428",
+    "last_checked": "2025-11-04T19:19:08.020166Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Ngovayang ** Concentrator",
+  "canonical_name": "Ngovayang Concentrator",
   "canonical_slug": "ngovayang-concentrator",
-  "display_name": "**Ngovayang **",
+  "display_name": "Ngovayang",
   "primary_type": "concentrator",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Ngovayang ** Concentrator",
+      "from": "2025-10-27T14:11:30.497428",
+      "to": "2025-11-04T19:19:08.020160Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

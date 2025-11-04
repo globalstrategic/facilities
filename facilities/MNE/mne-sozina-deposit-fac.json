@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-29T22:24:19.860508",
+    "last_checked": "2025-11-04T19:18:49.391761Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Sozina **",
+  "canonical_name": "Sozina Facility",
   "canonical_slug": "sozina-facility",
-  "display_name": "**Sozina **",
+  "display_name": "Sozina",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Sozina **",
+      "from": "2025-10-29T22:24:19.860508",
+      "to": "2025-11-04T19:18:49.391758Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

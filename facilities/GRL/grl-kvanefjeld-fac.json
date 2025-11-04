@@ -42,21 +42,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T10:13:24.504215",
+    "last_checked": "2025-11-04T19:19:00.633083Z",
     "checked_by": "import_pipeline",
-    "notes": "Large LREE resource; stalled due to policy/uranium issues"
+    "notes": "Large LREE resource; stalled due to policy/uranium issues | Canonical name+slug generated"
   },
   "canonical_name": "Kvanefjeld Mine",
   "canonical_slug": "kvanefjeld-mine",
   "display_name": "Kvanefjeld",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

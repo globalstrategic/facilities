@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:27:25.007204",
+    "last_checked": "2025-11-04T19:18:51.672114Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Fos sur Mer steel Steel Plant",
+  "canonical_name": "Fos Sur Mer Steel Steel Plant",
   "canonical_slug": "fos-sur-mer-steel-steel-plant",
-  "display_name": "Fos sur Mer steel",
+  "display_name": "Fos Sur Mer Steel",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Fos sur Mer steel Steel Plant",
+      "from": "2025-10-20T15:27:25.007204",
+      "to": "2025-11-04T19:18:51.672111Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

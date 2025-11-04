@@ -50,21 +50,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:36.718017",
+    "last_checked": "2025-11-04T19:18:50.742693Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Lac des Iles Mine",
+  "canonical_name": "Lac Des Iles Mine",
   "canonical_slug": "lac-des-iles-mine",
-  "display_name": "Lac des Iles",
+  "display_name": "Lac Des Iles",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Lac des Iles Mine",
+      "from": "2025-10-20T15:29:36.718017",
+      "to": "2025-11-04T19:18:50.742690Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

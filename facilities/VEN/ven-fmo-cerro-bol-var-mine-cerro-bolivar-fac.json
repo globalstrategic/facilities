@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:44.862518",
+    "last_checked": "2025-11-04T19:18:49.655279Z",
     "checked_by": "import_pipeline",
-    "notes": "Historic and significant iron ore deposit. Part of the FMO complex.23 Coordinates from initial list."
+    "notes": "Historic and significant iron ore deposit. Part of the FMO complex.23 Coordinates from initial list. | Canonical name+slug generated"
   },
-  "canonical_name": "**FMO Cerro Bolívar ; Cerro Bolivar ** Mine",
+  "canonical_name": "FMO Cerro Bolívar Cerro Bolivar Mine",
   "canonical_slug": "fmo-cerro-bolivar-cerro-bolivar-mine",
-  "display_name": "**FMO Cerro Bolívar ; Cerro Bolivar **",
+  "display_name": "FMO Cerro Bolívar Cerro Bolivar",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**FMO Cerro Bolívar ; Cerro Bolivar ** Mine",
+      "from": "2025-10-21T11:38:44.862518",
+      "to": "2025-11-04T19:18:49.655277Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

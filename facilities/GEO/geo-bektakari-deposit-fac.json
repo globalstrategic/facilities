@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:01:00.131694",
+    "last_checked": "2025-11-04T19:19:01.724606Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Bektakari ** Mine",
+  "canonical_name": "Bektakari Mine",
   "canonical_slug": "bektakari-mine",
-  "display_name": "**Bektakari **",
+  "display_name": "Bektakari",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bektakari ** Mine",
+      "from": "2025-10-28T21:01:00.131694",
+      "to": "2025-11-04T19:19:01.724603Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

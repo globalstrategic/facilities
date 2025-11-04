@@ -47,20 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:07:19.572913",
+    "last_checked": "2025-11-04T19:18:56.366607Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**CaledoNi ** Processing Plant",
+  "canonical_name": "Caledoni Processing Plant",
   "canonical_slug": "caledoni-processing-plant",
-  "display_name": "**CaledoNi **",
+  "display_name": "Caledoni",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**CaledoNi ** Processing Plant",
+      "from": "2025-10-29T22:07:19.572913",
+      "to": "2025-11-04T19:18:56.366604Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

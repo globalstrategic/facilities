@@ -34,20 +34,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-23T14:29:36.249758",
+    "last_checked": "2025-11-04T19:18:47.780724Z",
     "checked_by": "import_pipeline",
-    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. 25"
+    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. 25 | Canonical name+slug generated"
   },
   "canonical_name": "Lueta Mine",
   "canonical_slug": "lueta-mine",
   "display_name": "Lueta",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

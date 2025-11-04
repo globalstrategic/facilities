@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:17.918851",
+    "last_checked": "2025-11-04T19:19:14.813654Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "ALSCON Aluminium Smelter",
+  "canonical_name": "Alscon Aluminium Smelter",
   "canonical_slug": "alscon-aluminium-smelter",
-  "display_name": "ALSCON Aluminium",
+  "display_name": "Alscon Aluminium",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "ALSCON Aluminium Smelter",
+      "from": "2025-10-20T15:27:17.918851",
+      "to": "2025-11-04T19:19:14.813651Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

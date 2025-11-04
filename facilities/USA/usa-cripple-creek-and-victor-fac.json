@@ -53,21 +53,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:26:34.483628",
+    "last_checked": "2025-11-04T19:18:45.844443Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Cripple Creek and Victor Mine",
+  "canonical_name": "Cripple Creek And Victor Mine",
   "canonical_slug": "cripple-creek-and-victor-mine",
-  "display_name": "Cripple Creek and Victor",
+  "display_name": "Cripple Creek And Victor",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Cripple Creek and Victor Mine",
+      "from": "2025-10-20T15:26:34.483628",
+      "to": "2025-11-04T19:18:45.844441Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

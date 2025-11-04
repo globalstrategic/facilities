@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:10.220157",
+    "last_checked": "2025-11-04T19:18:45.869959Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Gray #1 Blackfoot #5 Mine",
+  "canonical_name": "Gray 1 Blackfoot 5 Mine",
   "canonical_slug": "gray-1-blackfoot-5-mine",
-  "display_name": "Gray #1 Blackfoot #5",
+  "display_name": "Gray 1 Blackfoot 5",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Gray #1 Blackfoot #5 Mine",
+      "from": "2025-10-20T15:29:10.220157",
+      "to": "2025-11-04T19:18:45.869954Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

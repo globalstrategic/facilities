@@ -26,20 +26,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:22:19.391972",
+    "last_checked": "2025-11-04T19:18:58.772025Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Pirdop & ** Smelter",
+  "canonical_name": "Pirdop & Smelter",
   "canonical_slug": "pirdop-smelter-2",
-  "display_name": "**Pirdop & **",
+  "display_name": "Pirdop &",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Pirdop & ** Smelter",
+      "from": "2025-10-27T10:22:19.391972",
+      "to": "2025-11-04T19:18:58.772023Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

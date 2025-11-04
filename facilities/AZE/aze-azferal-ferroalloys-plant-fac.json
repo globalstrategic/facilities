@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.806278",
+    "last_checked": "2025-11-04T19:18:55.536970Z",
     "checked_by": "import_pipeline",
-    "notes": "Produces FeSi75 for steelmaking. 18 kt/yr capacity."
+    "notes": "Produces FeSi75 for steelmaking. 18 kt/yr capacity. | Canonical name+slug generated"
   },
-  "canonical_name": "\"AzFerAl\" Ferroalloys Processing Plant",
+  "canonical_name": "Azferal Ferroalloys Processing Plant",
   "canonical_slug": "azferal-ferroalloys-processing-plant",
-  "display_name": "\"AzFerAl\" Ferroalloys",
+  "display_name": "Azferal Ferroalloys",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "\"AzFerAl\" Ferroalloys Processing Plant",
+      "from": "2025-10-21T09:23:43.806278",
+      "to": "2025-11-04T19:18:55.536968Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

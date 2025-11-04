@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T13:12:25.800719",
+    "last_checked": "2025-11-04T19:19:20.092122Z",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via overpass (confidence: 0.62)"
+    "notes": "Geocoded via overpass (confidence: 0.62) | Canonical name+slug generated"
   },
-  "canonical_name": "ArcelorMittal Bissen Wire Mine",
+  "canonical_name": "Arcelormittal Bissen Wire Mine",
   "canonical_slug": "arcelormittal-bissen-wire-mine",
-  "display_name": "ArcelorMittal Bissen Wire",
+  "display_name": "Arcelormittal Bissen Wire",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "ArcelorMittal Bissen Wire Mine",
+      "from": "2025-10-29T13:12:25.800719",
+      "to": "2025-11-04T19:19:20.092119Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -40,21 +40,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T15:08:50.173189",
+    "last_checked": "2025-11-04T19:18:53.665296Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Canedo-Covas",
+  "canonical_name": "Canedo Covas Facility",
   "canonical_slug": "canedo-covas-facility",
-  "display_name": "Canedo-Covas",
+  "display_name": "Canedo Covas",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Canedo-Covas",
+      "from": "2025-10-23T15:08:50.173189",
+      "to": "2025-11-04T19:18:53.665294Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:28:35.746157",
+    "last_checked": "2025-11-04T19:19:02.274793Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "at Trang Bach Mine",
+  "canonical_name": "At Trang Bach Mine",
   "canonical_slug": "at-trang-bach-mine",
-  "display_name": "at Trang Bach",
+  "display_name": "At Trang Bach",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "at Trang Bach Mine",
+      "from": "2025-10-20T15:28:35.746157",
+      "to": "2025-11-04T19:19:02.274789Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

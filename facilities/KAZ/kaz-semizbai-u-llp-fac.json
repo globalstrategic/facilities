@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:03:09.193370",
+    "last_checked": "2025-11-04T19:19:07.747824Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Semizbai-U LLP Mine",
+  "canonical_name": "Semizbai U LLP Mine",
   "canonical_slug": "semizbai-u-llp-mine",
-  "display_name": "Semizbai-U LLP",
+  "display_name": "Semizbai U LLP",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Semizbai-U LLP Mine",
+      "from": "2025-10-21T09:03:09.193370",
+      "to": "2025-11-04T19:19:07.747822Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

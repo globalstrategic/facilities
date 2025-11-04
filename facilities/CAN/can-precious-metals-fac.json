@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:01.404524",
+    "last_checked": "2025-11-04T19:18:50.746571Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**\\--- Precious Metals \\---** Mine",
+  "canonical_name": "Precious Metals Mine",
   "canonical_slug": "precious-metals-mine",
-  "display_name": "**\\--- Precious Metals \\---**",
+  "display_name": "Precious Metals",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**\\--- Precious Metals \\---** Mine",
+      "from": "2025-10-27T13:22:01.404524",
+      "to": "2025-11-04T19:18:50.746560Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

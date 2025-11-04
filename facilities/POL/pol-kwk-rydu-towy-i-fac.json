@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:04.332621",
+    "last_checked": "2025-11-04T19:18:49.929026Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "KWK Rydułtowy I Mine",
+  "canonical_name": "KWK Ryduå Towy I Mine",
   "canonical_slug": "kwk-ryduatowy-i-mine",
-  "display_name": "KWK Rydułtowy I",
+  "display_name": "KWK Ryduå Towy I",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "KWK Rydułtowy I Mine",
+      "from": "2025-10-20T15:29:04.332621",
+      "to": "2025-11-04T19:18:49.929023Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

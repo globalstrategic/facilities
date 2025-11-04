@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-28T22:09:19.443311",
+    "last_checked": "2025-11-04T19:18:48.871279Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Smelter",
+  "canonical_name": "Smelter Facility",
   "canonical_slug": "smelter-facility-3",
   "display_name": "Smelter",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.37,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Smelter",
+      "from": "2025-10-28T22:09:19.443311",
+      "to": "2025-11-04T19:18:48.871276Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

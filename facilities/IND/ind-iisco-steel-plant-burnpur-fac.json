@@ -36,20 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T10:38:02.520165",
+    "last_checked": "2025-11-04T19:18:51.133489Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "IISCO Steel , Burnpur Steel Plant",
+  "canonical_name": "Iisco Steel , Burnpur Steel Plant",
   "canonical_slug": "iisco-steel-burnpur-steel-plant",
-  "display_name": "IISCO Steel , Burnpur",
+  "display_name": "Iisco Steel , Burnpur",
   "primary_type": "steel_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "IISCO Steel , Burnpur Steel Plant",
+      "from": "2025-10-29T10:38:02.520165",
+      "to": "2025-11-04T19:18:51.133486Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

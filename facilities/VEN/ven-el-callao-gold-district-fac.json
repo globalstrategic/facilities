@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.208218",
+    "last_checked": "2025-11-04T19:18:49.660355Z",
     "checked_by": "import_pipeline",
-    "notes": "A large area encompassing numerous formal and informal mines. Heavily controlled by criminal groups.7 The coordinates represent the general district center."
+    "notes": "A large area encompassing numerous formal and informal mines. Heavily controlled by criminal groups.7 The coordinates represent the general district center. | Canonical name+slug generated"
   },
-  "canonical_name": "**El Callao Gold ** Mine",
+  "canonical_name": "El Callao Gold Mine",
   "canonical_slug": "el-callao-gold-mine",
-  "display_name": "**El Callao Gold **",
+  "display_name": "El Callao Gold",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**El Callao Gold ** Mine",
+      "from": "2025-10-21T11:38:45.208218",
+      "to": "2025-11-04T19:18:49.660348Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

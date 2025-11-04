@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T15:08:50.195888",
+    "last_checked": "2025-11-04T19:18:53.666136Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Böllinghaus Steel Plant",
   "canonical_slug": "bollinghaus-steel-plant",
   "display_name": "Böllinghaus Steel",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

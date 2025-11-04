@@ -36,20 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T10:13:23.842143",
+    "last_checked": "2025-11-04T19:18:51.075321Z",
     "checked_by": "import_pipeline",
-    "notes": "Monazite feed for domestic REE products"
+    "notes": "Monazite feed for domestic REE products | Canonical name+slug generated"
   },
-  "canonical_name": "IREL beach-sand monazite Mine",
+  "canonical_name": "Irel Beach Sand Monazite Mine",
   "canonical_slug": "irel-beach-sand-monazite-mine",
-  "display_name": "IREL beach-sand monazite",
+  "display_name": "Irel Beach Sand Monazite",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "IREL beach-sand monazite Mine",
+      "from": "2025-10-21T10:13:23.842143",
+      "to": "2025-11-04T19:18:51.075318Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

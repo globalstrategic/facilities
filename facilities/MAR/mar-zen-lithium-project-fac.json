@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.490314",
+    "last_checked": "2025-11-04T19:18:48.329856Z",
     "checked_by": "import_pipeline",
-    "notes": "Greenfield exploration targeting LCT pegmatites in the Anti-Atlas."
+    "notes": "Greenfield exploration targeting LCT pegmatites in the Anti-Atlas. | Canonical name+slug generated"
   },
-  "canonical_name": "**ZEN Lithium ** Exploration",
+  "canonical_name": "ZEN Lithium Exploration",
   "canonical_slug": "zen-lithium-exploration",
-  "display_name": "**ZEN Lithium **",
+  "display_name": "ZEN Lithium",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**ZEN Lithium ** Exploration",
+      "from": "2025-10-29T16:17:07.490314",
+      "to": "2025-11-04T19:18:48.329850Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

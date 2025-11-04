@@ -31,21 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.465392",
+    "last_checked": "2025-11-04T19:18:53.396063Z",
     "checked_by": "import_pipeline",
-    "notes": "Major integrated steelworks supplied by Erzberg; undergoing \"greentec steel\" transition to EAF."
+    "notes": "Major integrated steelworks supplied by Erzberg; undergoing \"greentec steel\" transition to EAF. | Canonical name+slug generated"
   },
-  "canonical_name": "voestalpine Stahl Donawitz Steel Plant",
+  "canonical_name": "Voestalpine Stahl Donawitz Steel Plant",
   "canonical_slug": "voestalpine-stahl-donawitz-steel-plant",
-  "display_name": "voestalpine Stahl Donawitz",
+  "display_name": "Voestalpine Stahl Donawitz",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "voestalpine Stahl Donawitz Steel Plant",
+      "from": "2025-10-21T09:23:32.465392",
+      "to": "2025-11-04T19:18:53.396059Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

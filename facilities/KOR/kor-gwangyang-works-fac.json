@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:53.515748",
+    "last_checked": "2025-11-04T19:19:18.755575Z",
     "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] One of the world's largest and most advanced integrated steel mills. 1"
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] One of the world's largest and most advanced integrated steel mills. 1 | Canonical name+slug generated"
   },
-  "canonical_name": "**Gwangyang ** Steel Plant",
+  "canonical_name": "Gwangyang Steel Plant",
   "canonical_slug": "gwangyang-steel-plant",
-  "display_name": "**Gwangyang **",
+  "display_name": "Gwangyang",
   "primary_type": "steel_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Gwangyang ** Steel Plant",
+      "from": "2025-10-29T12:22:53.515748",
+      "to": "2025-11-04T19:19:18.755573Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

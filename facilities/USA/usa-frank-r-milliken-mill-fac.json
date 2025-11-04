@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:26:32.281283",
+    "last_checked": "2025-11-04T19:18:45.825143Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Frank R. Milliken Plant",
+  "canonical_name": "Frank R Milliken Plant",
   "canonical_slug": "frank-r-milliken-plant",
-  "display_name": "Frank R. Milliken",
+  "display_name": "Frank R Milliken",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Frank R. Milliken Plant",
+      "from": "2025-10-20T15:26:32.281283",
+      "to": "2025-11-04T19:18:45.825135Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

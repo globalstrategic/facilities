@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T17:59:20.743838",
+    "last_checked": "2025-11-04T19:18:59.578629Z",
     "checked_by": "import_pipeline",
-    "notes": "Major bauxite operation in the Southern Province. 4"
+    "notes": "Major bauxite operation in the Southern Province. 4 | Canonical name+slug generated"
   },
   "canonical_name": "SML Bauxite Mine",
   "canonical_slug": "sml-bauxite-mine",
   "display_name": "SML Bauxite",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

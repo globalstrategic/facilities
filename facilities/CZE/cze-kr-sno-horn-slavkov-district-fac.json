@@ -42,20 +42,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.787447",
+    "last_checked": "2025-11-04T19:19:10.578747Z",
     "checked_by": "import_pipeline",
-    "notes": "Historically one of the most important Sn-W mining areas in Europe. The user-provided \"Stannum Krasno\" mine is part of this district. 4"
+    "notes": "Historically one of the most important Sn-W mining areas in Europe. The user-provided \"Stannum Krasno\" mine is part of this district. 4 | Canonical name+slug generated"
   },
-  "canonical_name": "**Krásno / Horní Slavkov ** Mine",
+  "canonical_name": "Krásno / Horní Slavkov Mine",
   "canonical_slug": "krasno-horni-slavkov-mine",
-  "display_name": "**Krásno / Horní Slavkov **",
+  "display_name": "Krásno / Horní Slavkov",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Krásno / Horní Slavkov ** Mine",
+      "from": "2025-10-27T15:23:26.787447",
+      "to": "2025-11-04T19:19:10.578741Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

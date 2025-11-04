@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.439115",
+    "last_checked": "2025-11-04T19:18:48.330118Z",
     "checked_by": "import_pipeline",
-    "notes": "Significant copper-silver deposit in the eastern Anti-Atlas."
+    "notes": "Significant copper-silver deposit in the eastern Anti-Atlas. | Canonical name+slug generated"
   },
-  "canonical_name": "**Bouskour ** Mine",
+  "canonical_name": "Bouskour Mine",
   "canonical_slug": "bouskour-mine",
-  "display_name": "**Bouskour **",
+  "display_name": "Bouskour",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bouskour ** Mine",
+      "from": "2025-10-29T16:17:07.439115",
+      "to": "2025-11-04T19:18:48.330112Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

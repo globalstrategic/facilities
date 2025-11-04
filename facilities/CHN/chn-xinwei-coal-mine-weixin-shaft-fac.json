@@ -33,20 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:28:00.571040",
+    "last_checked": "2025-11-04T19:18:46.785331Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Xinwei Coal (Weixin ) Mine",
+  "canonical_name": "Xinwei Coal Ï¼ˆweixin ) Mine",
   "canonical_slug": "xinwei-coal-i14weixin-mine",
-  "display_name": "Xinwei Coal (Weixin )",
+  "display_name": "Xinwei Coal Ï¼ˆweixin )",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Xinwei Coal (Weixin ) Mine",
+      "from": "2025-10-20T15:28:00.571040",
+      "to": "2025-11-04T19:18:46.785329Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:41:01.956017",
+    "last_checked": "2025-11-04T19:19:20.594821Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Friguia ** Refinery",
+  "canonical_name": "Friguia Refinery",
   "canonical_slug": "friguia-refinery",
-  "display_name": "**Friguia **",
+  "display_name": "Friguia",
   "primary_type": "refinery",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Friguia ** Refinery",
+      "from": "2025-10-28T17:41:01.956017",
+      "to": "2025-11-04T19:19:20.594818Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

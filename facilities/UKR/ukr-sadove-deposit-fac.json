@@ -32,20 +32,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-21T12:44:23.718544",
+    "last_checked": "2025-11-04T19:18:54.712507Z",
     "checked_by": "import_pipeline",
-    "notes": "Sandstone-type deposit suitable for ISL. 48"
+    "notes": "Sandstone-type deposit suitable for ISL. 48 | Canonical name+slug generated"
   },
   "canonical_name": "Sadove Mine",
   "canonical_slug": "sadove-mine",
   "display_name": "Sadove",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

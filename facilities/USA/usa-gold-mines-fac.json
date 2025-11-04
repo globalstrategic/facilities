@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:55.374855",
+    "last_checked": "2025-11-04T19:18:45.972488Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Gold Mines** Mine",
+  "canonical_name": "Gold Mines Mine",
   "canonical_slug": "gold-mines-mine",
-  "display_name": "**Gold Mines**",
+  "display_name": "Gold Mines",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Gold Mines** Mine",
+      "from": "2025-10-21T11:38:55.374855",
+      "to": "2025-11-04T19:18:45.972485Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

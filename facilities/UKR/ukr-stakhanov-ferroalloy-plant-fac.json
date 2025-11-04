@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-21T12:44:24.405595",
+    "last_checked": "2025-11-04T19:18:54.714660Z",
     "checked_by": "import_pipeline",
-    "notes": "Under Russian control since 2014\\. 23"
+    "notes": "Under Russian control since 2014\\. 23 | Canonical name+slug generated"
   },
   "canonical_name": "Stakhanov Ferroalloy Plant",
   "canonical_slug": "stakhanov-ferroalloy-plant",
   "display_name": "Stakhanov Ferroalloy",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

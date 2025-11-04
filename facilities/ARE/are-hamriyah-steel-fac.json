@@ -42,23 +42,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:42:23.253846",
+    "last_checked": "2025-11-04T19:19:13.779830Z",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)",
+    "notes": "Geocoded via industrial_zone_db (confidence: 0.80) | Canonical name+slug generated",
     "geocoding_source": "HFZA coordinate; refine to plot-level when available"
   },
-  "canonical_name": "Hamriyah Steel Steel Plant",
+  "canonical_name": "Al Hamriyah Hamriyah Steel FZC Hamriyah Steel Steel Plant",
   "canonical_slug": "hamriyah-steel-steel-plant",
   "display_name": "Hamriyah Steel",
   "primary_type": "steel_plant",
-  "type_confidence": 0.75,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
       "town_missing": false,
       "operator_unresolved": false,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Hamriyah Steel FZC"
+  "operator_display": "Hamriyah Steel FZC",
+  "canonical_name_history": [
+    {
+      "name": "Hamriyah Steel Steel Plant",
+      "from": "2025-10-21T09:42:23.253846",
+      "to": "2025-11-04T19:19:13.779827Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

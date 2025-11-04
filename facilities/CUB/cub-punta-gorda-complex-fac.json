@@ -47,21 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:21:06.830867",
+    "last_checked": "2025-11-04T19:18:54.450626Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Punta Gorda **",
+  "canonical_name": "Punta Gorda Facility",
   "canonical_slug": "punta-gorda-facility",
-  "display_name": "**Punta Gorda **",
+  "display_name": "Punta Gorda",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Punta Gorda **",
+      "from": "2025-10-27T14:21:06.830867",
+      "to": "2025-11-04T19:18:54.450623Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

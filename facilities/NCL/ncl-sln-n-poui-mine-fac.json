@@ -47,20 +47,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:07:19.488235",
+    "last_checked": "2025-11-04T19:18:56.372773Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**SLN \\- Népoui ** Mine",
+  "canonical_name": "SLN Népoui Mine",
   "canonical_slug": "sln-nepoui-mine",
-  "display_name": "**SLN \\- Népoui **",
+  "display_name": "SLN Népoui",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**SLN \\- Népoui ** Mine",
+      "from": "2025-10-29T22:07:19.488235",
+      "to": "2025-11-04T19:18:56.372770Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

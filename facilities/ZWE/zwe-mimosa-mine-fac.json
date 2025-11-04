@@ -25,20 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T13:04:39.399939",
+    "last_checked": "2025-11-04T19:18:51.953646Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Mimosa ** Mine",
+  "canonical_name": "Mimosa Mine",
   "canonical_slug": "mimosa-mine-2",
-  "display_name": "**Mimosa **",
+  "display_name": "Mimosa",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mimosa ** Mine",
+      "from": "2025-10-21T13:04:39.399939",
+      "to": "2025-11-04T19:18:51.953644Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

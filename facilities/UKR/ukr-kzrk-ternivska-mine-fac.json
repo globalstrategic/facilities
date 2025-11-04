@@ -36,20 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:24.399351",
+    "last_checked": "2025-11-04T19:18:54.736020Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "KZRK Ternivska Mine",
+  "canonical_name": "Kzrk Ternivska Mine",
   "canonical_slug": "kzrk-ternivska-mine",
-  "display_name": "KZRK Ternivska",
+  "display_name": "Kzrk Ternivska",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "KZRK Ternivska Mine",
+      "from": "2025-10-20T15:29:24.399351",
+      "to": "2025-11-04T19:18:54.736018Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

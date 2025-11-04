@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.774631",
+    "last_checked": "2025-11-04T19:18:55.536657Z",
     "checked_by": "import_pipeline",
-    "notes": "Produces seamless steel pipes for the oil and gas industry."
+    "notes": "Produces seamless steel pipes for the oil and gas industry. | Canonical name+slug generated"
   },
-  "canonical_name": "\"Azerboru\" Pipe Processing Plant",
+  "canonical_name": "Azerboru Pipe Processing Plant",
   "canonical_slug": "azerboru-pipe-processing-plant",
-  "display_name": "\"Azerboru\" Pipe",
+  "display_name": "Azerboru Pipe",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "\"Azerboru\" Pipe Processing Plant",
+      "from": "2025-10-21T09:23:43.774631",
+      "to": "2025-11-04T19:18:55.536652Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

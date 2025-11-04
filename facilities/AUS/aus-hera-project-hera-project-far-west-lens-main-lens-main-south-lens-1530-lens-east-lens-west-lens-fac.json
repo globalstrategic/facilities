@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:26:56.975667",
+    "last_checked": "2025-11-04T19:18:52.304572Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Hera , Hera , Far West lens, Main lens, Main South lens, 1530 lens, East lens, West lens Mine",
+  "canonical_name": "Hera , Hera , Far West Lens, Main Lens, Main South Lens, 1530 Lens, East Lens, West Lens Mine",
   "canonical_slug": "hera-hera-far-west-lens-main-lens-main-south-lens-1530-lens-east-lens-west-lens-mine",
-  "display_name": "Hera , Hera , Far West lens, Main lens, Main South lens, 1530 lens, East lens, West lens",
+  "display_name": "Hera , Hera , Far West Lens, Main Lens, Main South Lens, 1530 Lens, East Lens, West Lens",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Hera , Hera , Far West lens, Main lens, Main South lens, 1530 lens, East lens, West lens Mine",
+      "from": "2025-10-20T15:26:56.975667",
+      "to": "2025-11-04T19:18:52.304569Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

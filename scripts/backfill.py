@@ -807,16 +807,7 @@ def backfill_towns(
                 facility['data_quality'] = dq
 
                 # Update verification
-                if 'verification' not in facility or facility['verification'] is None:
-                    facility['verification'] = {}
-
-                facility['verification']['last_checked'] = (
-                    datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
-                )
-
-                notes_prev = facility['verification'].get('notes') or ''
-                suffix = f"Town enriched: {town or 'null'}"
-                facility['verification']['notes'] = f"{notes_prev} | {suffix}" if notes_prev else suffix
+                set_verification_note(facility, f"Town enriched: {town or 'null'}")
 
                 # Save facility
                 save_facility(facility, dry_run=dry_run)
@@ -883,6 +874,22 @@ def extract_town_from_name(facility: Dict) -> Optional[str]:
     return None
 
 
+def set_verification_note(facility: dict, suffix: str):
+    """
+    Set verification note in a null-safe, consistent manner.
+
+    Args:
+        facility: Facility dict to update
+        suffix: Note suffix to append
+    """
+    if not facility.get('verification'):
+        facility['verification'] = {}
+    v = facility['verification']
+    v['last_checked'] = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+    prev = v.get('notes') or ''
+    v['notes'] = f"{prev} | {suffix}" if prev else suffix
+
+
 def lookup_industrial_zone(lat: float, lon: float, country_iso3: str) -> Optional[str]:
     """
     Lookup town from industrial zones database.
@@ -925,6 +932,7 @@ def backfill_canonical_names(
     country_iso3: str,
     dry_run: bool = False,
     existing_slugs_init: Optional[Dict[str, str]] = None,
+    rebuild_slugs: bool = False,
 ) -> BackfillStats:
     """
     Backfill canonical_name, display_name, canonical_slug, primary_type/type_confidence,
@@ -963,11 +971,20 @@ def backfill_canonical_names(
         logger.info(f"[{i+1}/{len(facilities)}] {facility.get('name')} ({facility_id})")
 
         try:
-            result = canonicalizer.canonicalize_facility(facility, existing_slugs)
-
-            canonical_name = result['canonical_name'] or None
-            display_name = result['display_name'] or None
-            canonical_slug = result['canonical_slug']
+            # Preserve existing slug unless --rebuild-slugs flag is set
+            if facility.get('canonical_slug') and not rebuild_slugs:
+                canonical_slug = facility['canonical_slug']
+                # Still run canonicalizer for name/type updates
+                result = canonicalizer.canonicalize_facility(facility, existing_slugs)
+                canonical_name = result['canonical_name'] or None
+                display_name = result['display_name'] or None
+                # Override slug with existing
+                result['canonical_slug'] = canonical_slug
+            else:
+                result = canonicalizer.canonicalize_facility(facility, existing_slugs)
+                canonical_name = result['canonical_name'] or None
+                display_name = result['display_name'] or None
+                canonical_slug = result['canonical_slug']
             comps = result['canonical_components']  # town, operator_display, core, primary_type
             conf = result['canonicalization_confidence']
             detail = result['canonicalization_detail']  # {'type': .., 'core': .., ...}
@@ -1029,16 +1046,7 @@ def backfill_canonical_names(
             facility['data_quality'] = dq
 
             # 4) verification
-            if 'verification' not in facility or facility['verification'] is None:
-                facility['verification'] = {}
-
-            facility['verification']['last_checked'] = (
-                datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
-            )
-
-            notes_prev = facility['verification'].get('notes') or ''
-            suffix = "Canonical name+slug generated"
-            facility['verification']['notes'] = f"{notes_prev} | {suffix}" if notes_prev else suffix
+            set_verification_note(facility, "Canonical name+slug generated")
 
             # Persist
             save_facility(facility, dry_run=dry_run)
@@ -1050,6 +1058,42 @@ def backfill_canonical_names(
         except Exception as e:
             logger.exception(f"  ✗ Error generating canonical for {facility_id}: {e}")
             stats.add_result(facility_id or "?", "failed", str(e))
+
+    # Final intra-batch collision check (backstop for edge cases)
+    logger.info("\nPerforming final collision check...")
+    seen_slugs = {}
+    collisions = []
+
+    for fac in facilities:
+        slug = fac.get('canonical_slug')
+        fac_id = fac.get('facility_id')
+        if not slug or not fac_id:
+            continue
+
+        if slug in seen_slugs:
+            collisions.append((seen_slugs[slug], fac_id, slug))
+        else:
+            seen_slugs[slug] = fac_id
+
+    if collisions:
+        logger.warning(f"⚠ Found {len(collisions)} intra-batch slug collisions!")
+        for fac1, fac2, slug in collisions:
+            logger.warning(f"  Collision: {slug} -> {fac1} vs {fac2}")
+            # Apply disambiguation fix inline
+            fac2_obj = next((f for f in facilities if f.get('facility_id') == fac2), None)
+            if fac2_obj:
+                loc = fac2_obj.get('location', {})
+                reg = loc.get('region') or ''
+                town = loc.get('town') or ''
+                from scripts.utils.name_parts import slugify, to_ascii
+
+                suffix = slugify(reg) if reg else (slugify(town) if town else to_ascii(fac2)[-4:].lower())
+                new_slug = f"{slug}-{suffix}"
+                fac2_obj['canonical_slug'] = new_slug
+
+                set_verification_note(fac2_obj, f"Slug collision resolved: {slug} -> {new_slug}")
+                save_facility(fac2_obj, dry_run=dry_run)
+                logger.info(f"  ✓ Fixed: {fac2} -> {new_slug}")
 
     return stats
 
@@ -1167,6 +1211,8 @@ def main():
     canonical_parser.add_argument('--countries', help='Comma-separated country codes')
     canonical_parser.add_argument('--all', action='store_true', help='Process all countries')
     canonical_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+    canonical_parser.add_argument('--rebuild-slugs', action='store_true',
+                                  help='Force regeneration of slugs (default: preserve existing)')
     canonical_parser.add_argument('--global-dedupe', action='store_true',
                                   help='Seed slug map with all existing slugs across facilities/*/*.json')
     canonical_parser.add_argument('--global-scan-root', default='facilities',
@@ -1281,14 +1327,15 @@ def main():
             all_stats[country_iso3] = {'towns': stats}
 
         elif args.command == 'canonical_names':
-            # Build global slug map if --global-dedupe flag set
-            seed = build_global_slug_map(args.global_scan_root) if args.global_dedupe else None
+            # ALWAYS preseed with global slugs to prevent collisions (idempotent)
+            seed = build_global_slug_map(args.global_scan_root)
 
             stats = backfill_canonical_names(
                 facilities,
                 country_iso3,
                 dry_run=args.dry_run,
-                existing_slugs_init=seed
+                existing_slugs_init=seed,
+                rebuild_slugs=getattr(args, 'rebuild_slugs', False)
             )
             all_stats[country_iso3] = {'canonical_names': stats}
 

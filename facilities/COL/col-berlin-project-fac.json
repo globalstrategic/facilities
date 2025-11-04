@@ -41,21 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:21:39.213849",
+    "last_checked": "2025-11-04T19:19:22.739814Z",
     "checked_by": "import_pipeline",
-    "notes": "**Exploration.** Historic resource defined for uranium with associated vanadium. 59"
+    "notes": "**Exploration.** Historic resource defined for uranium with associated vanadium. 59 | Canonical name+slug generated"
   },
-  "canonical_name": "Berlin",
+  "canonical_name": "Berlin Facility",
   "canonical_slug": "berlin-facility",
   "display_name": "Berlin",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Berlin",
+      "from": "2025-10-27T14:21:39.213849",
+      "to": "2025-11-04T19:19:22.739812Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

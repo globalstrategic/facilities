@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:04:41.378594",
+    "last_checked": "2025-11-04T19:19:14.296622Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**PROCESSING FACILITIES** Mine",
+  "canonical_name": "Processing Facilities Mine",
   "canonical_slug": "processing-facilities-mine",
-  "display_name": "**PROCESSING FACILITIES**",
+  "display_name": "Processing Facilities",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**PROCESSING FACILITIES** Mine",
+      "from": "2025-10-28T17:04:41.378594",
+      "to": "2025-11-04T19:19:14.296617Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

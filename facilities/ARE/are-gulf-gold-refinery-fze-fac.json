@@ -36,22 +36,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:24:12.647647",
+    "last_checked": "2025-11-04T19:19:13.774410Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "SAIF warehouse/office coordinates"
   },
-  "canonical_name": "Gulf Gold FZE Refinery",
+  "canonical_name": "Sharjah Gulf Gold Refinery FZE Gulf Gold Refinery FZE Refinery",
   "canonical_slug": "gulf-gold-fze-refinery",
-  "display_name": "Gulf Gold FZE",
+  "display_name": "Gulf Gold Refinery FZE",
   "primary_type": "refinery",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.72,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": false
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Gulf Gold Refinery FZE"
+  "operator_display": "Gulf Gold Refinery FZE",
+  "canonical_name_history": [
+    {
+      "name": "Gulf Gold FZE Refinery",
+      "from": "2025-10-21T09:24:12.647647",
+      "to": "2025-11-04T19:19:13.774404Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

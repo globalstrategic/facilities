@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.456886",
+    "last_checked": "2025-11-04T19:18:48.327891Z",
     "checked_by": "import_pipeline",
-    "notes": "Former major fluorspar mine. Its processing plant is being repurposed to treat ore from the Achmmach tin project."
+    "notes": "Former major fluorspar mine. Its processing plant is being repurposed to treat ore from the Achmmach tin project. | Canonical name+slug generated"
   },
-  "canonical_name": "**El Hammam ** Mine",
+  "canonical_name": "El Hammam Mine",
   "canonical_slug": "el-hammam-mine",
-  "display_name": "**El Hammam **",
+  "display_name": "El Hammam",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**El Hammam ** Mine",
+      "from": "2025-10-29T16:17:07.456886",
+      "to": "2025-11-04T19:18:48.327889Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

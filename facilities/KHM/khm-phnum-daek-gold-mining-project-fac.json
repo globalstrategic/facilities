@@ -46,20 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:07.384778",
+    "last_checked": "2025-11-04T19:18:46.255075Z",
     "checked_by": "import_pipeline",
-    "notes": "Started trial production in 2022\\. Allegations of land grabbing and environmental damage."
+    "notes": "Started trial production in 2022\\. Allegations of land grabbing and environmental damage. | Canonical name+slug generated"
   },
-  "canonical_name": "**Phnum Daek Gold Mining ** Mine",
+  "canonical_name": "Phnum Daek Gold Mining Mine",
   "canonical_slug": "phnum-daek-gold-mining-mine",
-  "display_name": "**Phnum Daek Gold Mining **",
+  "display_name": "Phnum Daek Gold Mining",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Phnum Daek Gold Mining ** Mine",
+      "from": "2025-10-29T12:22:07.384778",
+      "to": "2025-11-04T19:18:46.255072Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

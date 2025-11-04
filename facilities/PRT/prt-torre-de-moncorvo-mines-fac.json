@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T15:08:50.188549",
+    "last_checked": "2025-11-04T19:18:53.665007Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Torre de Moncorvo Mines",
+  "canonical_name": "Torre De Moncorvo Mines Facility",
   "canonical_slug": "torre-de-moncorvo-mines-facility",
-  "display_name": "Torre de Moncorvo Mines",
+  "display_name": "Torre De Moncorvo Mines",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Torre de Moncorvo Mines",
+      "from": "2025-10-23T15:08:50.188549",
+      "to": "2025-11-04T19:18:53.665005Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

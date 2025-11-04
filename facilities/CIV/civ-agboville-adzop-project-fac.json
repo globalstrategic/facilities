@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:21:36.046759",
+    "last_checked": "2025-11-04T19:19:04.459018Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Agboville/Adzopé ** Exploration",
+  "canonical_name": "Agboville/adzopé Exploration",
   "canonical_slug": "agboville-adzope-exploration",
-  "display_name": "**Agboville/Adzopé **",
+  "display_name": "Agboville/adzopé",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Agboville/Adzopé ** Exploration",
+      "from": "2025-10-27T13:21:36.046759",
+      "to": "2025-11-04T19:19:04.459013Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

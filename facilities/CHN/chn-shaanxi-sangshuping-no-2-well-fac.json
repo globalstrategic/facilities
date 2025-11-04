@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:28:51.176370",
+    "last_checked": "2025-11-04T19:18:46.833969Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Shaanxi Sangshuping No. 2 Well Mine",
+  "canonical_name": "Shaanxi Sangshuping No 2 Well Mine",
   "canonical_slug": "shaanxi-sangshuping-no-2-well-mine",
-  "display_name": "Shaanxi Sangshuping No. 2 Well",
+  "display_name": "Shaanxi Sangshuping No 2 Well",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Shaanxi Sangshuping No. 2 Well Mine",
+      "from": "2025-10-20T15:28:51.176370",
+      "to": "2025-11-04T19:18:46.833967Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

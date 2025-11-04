@@ -33,23 +33,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:24:12.593134",
+    "last_checked": "2025-11-04T19:19:13.773685Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Exact plant coords"
   },
-  "canonical_name": "Emirates Steel LLC Steel Plant",
+  "canonical_name": "Abu Dhabi Emirates Steel Arkan Emirates Steel LLC Steel Plant",
   "canonical_slug": "emirates-steel-llc-steel-plant",
   "display_name": "Emirates Steel LLC",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
       "town_missing": false,
       "operator_unresolved": false,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Emirates Steel Arkan"
+  "operator_display": "Emirates Steel Arkan",
+  "canonical_name_history": [
+    {
+      "name": "Emirates Steel LLC Steel Plant",
+      "from": "2025-10-21T09:24:12.593134",
+      "to": "2025-11-04T19:19:13.773681Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

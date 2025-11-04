@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T17:59:20.749246",
+    "last_checked": "2025-11-04T19:18:59.578469Z",
     "checked_by": "import_pipeline",
-    "notes": "Holds a large-scale license for gold. 1"
+    "notes": "Holds a large-scale license for gold. 1 | Canonical name+slug generated"
   },
-  "canonical_name": "Meya Mining",
+  "canonical_name": "Meya Mining Facility",
   "canonical_slug": "meya-mining-facility",
   "display_name": "Meya Mining",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Meya Mining",
+      "from": "2025-10-21T17:59:20.749246",
+      "to": "2025-11-04T19:18:59.578466Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

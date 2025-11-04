@@ -25,20 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:01.219357",
+    "last_checked": "2025-11-04T19:18:50.777548Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "TANCO Mine",
+  "canonical_name": "Tanco Mine",
   "canonical_slug": "tanco-mine",
-  "display_name": "TANCO",
+  "display_name": "Tanco",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "TANCO Mine",
+      "from": "2025-10-27T13:22:01.219357",
+      "to": "2025-11-04T19:18:50.777546Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -26,20 +26,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:22:19.393404",
+    "last_checked": "2025-11-04T19:18:58.771551Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Asarel-Medet ** Mine",
+  "canonical_name": "Asarel Medet Mine",
   "canonical_slug": "asarel-medet-mine",
-  "display_name": "**Asarel-Medet **",
+  "display_name": "Asarel Medet",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Asarel-Medet ** Mine",
+      "from": "2025-10-27T10:22:19.393404",
+      "to": "2025-11-04T19:18:58.771549Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

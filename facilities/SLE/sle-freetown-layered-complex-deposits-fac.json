@@ -38,21 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T17:59:20.740207",
+    "last_checked": "2025-11-04T19:18:59.577497Z",
     "checked_by": "import_pipeline",
-    "notes": "Alluvial PGM occurrences in rivers on the Freetown Peninsula. No large-scale commercial operation. 53"
+    "notes": "Alluvial PGM occurrences in rivers on the Freetown Peninsula. No large-scale commercial operation. 53 | Canonical name+slug generated"
   },
-  "canonical_name": "Freetown Layered Deposits",
+  "canonical_name": "Freetown Layered Deposits Facility",
   "canonical_slug": "freetown-layered-deposits-facility",
   "display_name": "Freetown Layered Deposits",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Freetown Layered Deposits",
+      "from": "2025-10-21T17:59:20.740207",
+      "to": "2025-11-04T19:18:59.577494Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -25,20 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:22.576869",
+    "last_checked": "2025-11-04T19:19:01.179050Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "MARA Mine",
+  "canonical_name": "Mara Mine",
   "canonical_slug": "mara-mine",
-  "display_name": "MARA",
+  "display_name": "Mara",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "MARA Mine",
+      "from": "2025-10-21T09:23:22.576869",
+      "to": "2025-11-04T19:19:01.179048Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

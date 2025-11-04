@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:17:09.497394",
+    "last_checked": "2025-11-04T19:19:15.924827Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Guelb el Rhein ** Mine",
+  "canonical_name": "Guelb El Rhein Mine",
   "canonical_slug": "guelb-el-rhein-mine",
-  "display_name": "**Guelb el Rhein **",
+  "display_name": "Guelb El Rhein",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Guelb el Rhein ** Mine",
+      "from": "2025-10-29T22:17:09.497394",
+      "to": "2025-11-04T19:19:15.924825Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

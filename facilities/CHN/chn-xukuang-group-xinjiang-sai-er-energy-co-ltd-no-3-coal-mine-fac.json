@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:01.304008",
+    "last_checked": "2025-11-04T19:18:46.619908Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Xukuang Group Xinjiang Sai'er Energy Co., Ltd. No.3 Coal Mine",
+  "canonical_name": "Xukuang Group Xinjiang Sai'er Energy Co , Ltd No 3 Coal Mine",
   "canonical_slug": "xukuang-group-xinjiang-sai-er-energy-co-ltd-no-3-coal-mine",
-  "display_name": "Xukuang Group Xinjiang Sai'er Energy Co., Ltd. No.3 Coal",
+  "display_name": "Xukuang Group Xinjiang Sai'er Energy Co , Ltd No 3 Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Xukuang Group Xinjiang Sai'er Energy Co., Ltd. No.3 Coal Mine",
+      "from": "2025-10-20T15:29:01.304008",
+      "to": "2025-11-04T19:18:46.619905Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

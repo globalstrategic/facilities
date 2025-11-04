@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-29T22:26:30.605495",
+    "last_checked": "2025-11-04T19:19:08.864674Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Yangon Metal Industry Co. Ltd. Smelter",
+  "canonical_name": "Yangon Metal Industry Co Ltd Smelter",
   "canonical_slug": "yangon-metal-industry-co-ltd-smelter",
-  "display_name": "Yangon Metal Industry Co. Ltd.",
+  "display_name": "Yangon Metal Industry Co Ltd",
   "primary_type": "smelter",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Yangon Metal Industry Co. Ltd. Smelter",
+      "from": "2025-10-29T22:26:30.605495",
+      "to": "2025-11-04T19:19:08.864670Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -40,22 +40,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:24:12.682450",
+    "last_checked": "2025-11-04T19:19:13.775642Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Factory ICAD-3; DMS→DD conversion"
   },
-  "canonical_name": "Emirates National Copper Factory Processing Plant",
+  "canonical_name": "Abu Dhabi Emirates National Copper Factory Emirates National Copper Factory (nuhas) Processing Plant",
   "canonical_slug": "emirates-national-copper-factory-processing-plant",
-  "display_name": "Emirates National Copper Factory",
+  "display_name": "Emirates National Copper Factory (nuhas)",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.72,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": false
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Emirates National Copper Factory"
+  "operator_display": "Emirates National Copper Factory",
+  "canonical_name_history": [
+    {
+      "name": "Emirates National Copper Factory Processing Plant",
+      "from": "2025-10-21T09:24:12.682450",
+      "to": "2025-11-04T19:19:13.775639Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

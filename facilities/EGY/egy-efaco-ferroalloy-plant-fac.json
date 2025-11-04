@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T16:22:57.201916",
+    "last_checked": "2025-11-04T19:19:07.181557Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**EFACO Ferroalloy ** Plant",
+  "canonical_name": "Efaco Ferroalloy Plant",
   "canonical_slug": "efaco-ferroalloy-plant",
-  "display_name": "**EFACO Ferroalloy **",
+  "display_name": "Efaco Ferroalloy",
   "primary_type": "plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**EFACO Ferroalloy ** Plant",
+      "from": "2025-10-28T16:22:57.201916",
+      "to": "2025-11-04T19:19:07.181554Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

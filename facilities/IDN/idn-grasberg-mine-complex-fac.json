@@ -44,20 +44,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T10:37:55.490333",
+    "last_checked": "2025-11-04T19:19:10.202121Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Grasberg ** Mine",
+  "canonical_name": "Grasberg Mine",
   "canonical_slug": "grasberg-mine-2",
-  "display_name": "**Grasberg **",
+  "display_name": "Grasberg",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Grasberg ** Mine",
+      "from": "2025-10-29T10:37:55.490333",
+      "to": "2025-11-04T19:19:10.202118Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

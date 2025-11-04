@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.398676",
+    "last_checked": "2025-11-04T19:18:55.539274Z",
     "checked_by": "import_pipeline",
-    "notes": "Commenced mining in Feb 2023. Ore processed at CIRPA."
+    "notes": "Commenced mining in Feb 2023. Ore processed at CIRPA. | Canonical name+slug generated"
   },
   "canonical_name": "Tulallar Mine",
   "canonical_slug": "tulallar-mine",
   "display_name": "Tulallar",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

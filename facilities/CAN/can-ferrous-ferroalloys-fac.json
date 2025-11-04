@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:01.446950",
+    "last_checked": "2025-11-04T19:18:50.771477Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**\\--- Ferrous & Ferroalloys \\---** Mine",
+  "canonical_name": "Ferrous & Ferroalloys Mine",
   "canonical_slug": "ferrous-ferroalloys-mine",
-  "display_name": "**\\--- Ferrous & Ferroalloys \\---**",
+  "display_name": "Ferrous & Ferroalloys",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**\\--- Ferrous & Ferroalloys \\---** Mine",
+      "from": "2025-10-27T13:22:01.446950",
+      "to": "2025-11-04T19:18:50.771475Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

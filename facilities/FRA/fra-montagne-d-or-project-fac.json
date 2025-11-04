@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T08:01:48.996878",
+    "last_checked": "2025-11-04T19:18:51.670916Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Montagne d'Or Mine",
+  "canonical_name": "Montagne D'or Mine",
   "canonical_slug": "montagne-d-or-mine",
-  "display_name": "Montagne d'Or",
+  "display_name": "Montagne D'or",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Montagne d'Or Mine",
+      "from": "2025-10-29T08:01:48.996878",
+      "to": "2025-11-04T19:18:51.670913Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

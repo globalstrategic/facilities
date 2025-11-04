@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:01.248670",
+    "last_checked": "2025-11-04T19:18:50.776736Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "CEZinc Mine",
+  "canonical_name": "Cezinc Mine",
   "canonical_slug": "cezinc-mine",
-  "display_name": "CEZinc",
+  "display_name": "Cezinc",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "CEZinc Mine",
+      "from": "2025-10-27T13:22:01.248670",
+      "to": "2025-11-04T19:18:50.776734Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

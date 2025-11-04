@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:18:38.783370",
+    "last_checked": "2025-11-04T19:18:51.668476Z",
     "checked_by": "import_pipeline",
-    "notes": "Closed in 2004\\. Site of major, persistent arsenic pollution. 47"
+    "notes": "Closed in 2004\\. Site of major, persistent arsenic pollution. 47 | Canonical name+slug generated"
   },
-  "canonical_name": "**Salsigne ** Mine",
+  "canonical_name": "Salsigne Mine",
   "canonical_slug": "salsigne-mine-2",
-  "display_name": "**Salsigne **",
+  "display_name": "Salsigne",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Salsigne ** Mine",
+      "from": "2025-10-28T17:18:38.783370",
+      "to": "2025-11-04T19:18:51.668473Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

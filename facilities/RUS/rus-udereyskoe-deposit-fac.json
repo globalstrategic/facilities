@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-23T14:49:52.634728",
+    "last_checked": "2025-11-04T19:19:15.607919Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Udereyskoe",
+  "canonical_name": "Udereyskoe Facility",
   "canonical_slug": "udereyskoe-facility",
   "display_name": "Udereyskoe",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Udereyskoe",
+      "from": "2025-10-23T14:49:52.634728",
+      "to": "2025-11-04T19:19:15.607916Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

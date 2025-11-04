@@ -33,20 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:50.204557",
+    "last_checked": "2025-11-04T19:18:56.640090Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Welzow Süd Coal Mine",
+  "canonical_name": "Welzow Sã¼d Coal Mine",
   "canonical_slug": "welzow-sa14d-coal-mine",
-  "display_name": "Welzow Süd Coal",
+  "display_name": "Welzow Sã¼d Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Welzow Süd Coal Mine",
+      "from": "2025-10-20T15:27:50.204557",
+      "to": "2025-11-04T19:18:56.640086Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

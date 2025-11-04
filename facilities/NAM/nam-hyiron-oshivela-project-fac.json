@@ -51,20 +51,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-29T22:09:29.758272",
+    "last_checked": "2025-11-04T19:19:14.555516Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "HyIron Oshivela Processing Plant",
+  "canonical_name": "Hyiron Oshivela Processing Plant",
   "canonical_slug": "hyiron-oshivela-processing-plant",
-  "display_name": "HyIron Oshivela",
+  "display_name": "Hyiron Oshivela",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "HyIron Oshivela Processing Plant",
+      "from": "2025-10-29T22:09:29.758272",
+      "to": "2025-11-04T19:19:14.555514Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

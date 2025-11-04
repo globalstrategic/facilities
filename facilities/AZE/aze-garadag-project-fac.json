@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.106397",
+    "last_checked": "2025-11-04T19:18:55.537928Z",
     "checked_by": "import_pipeline",
-    "notes": "Large copper deposit. Non-JORC estimate of 324,000 tonnes Cu."
+    "notes": "Large copper deposit. Non-JORC estimate of 324,000 tonnes Cu. | Canonical name+slug generated"
   },
   "canonical_name": "Garadag Mine",
   "canonical_slug": "garadag-mine",
   "display_name": "Garadag",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

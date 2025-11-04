@@ -54,21 +54,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:34:45.494530",
+    "last_checked": "2025-11-04T19:19:21.969670Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Met-Mex Peñoles Smelter",
+  "canonical_name": "Met Mex Peñoles Smelter",
   "canonical_slug": "met-mex-penoles-smelter",
-  "display_name": "Met-Mex Peñoles",
+  "display_name": "Met Mex Peñoles",
   "primary_type": "smelter",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Met-Mex Peñoles Smelter",
+      "from": "2025-10-29T22:34:45.494530",
+      "to": "2025-11-04T19:19:21.969667Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

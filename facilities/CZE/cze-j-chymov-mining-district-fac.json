@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.786737",
+    "last_checked": "2025-11-04T19:19:10.580343Z",
     "checked_by": "import_pipeline",
-    "notes": "Historic source of silver (Thaler coin) and the world's first source of radium and mined uranium. Now a UNESCO site managed by DIAMO. 1"
+    "notes": "Historic source of silver (Thaler coin) and the world's first source of radium and mined uranium. Now a UNESCO site managed by DIAMO. 1 | Canonical name+slug generated"
   },
-  "canonical_name": "**Jáchymov Mining ** Mine",
+  "canonical_name": "Jáchymov Mining Mine",
   "canonical_slug": "jachymov-mining-mine",
-  "display_name": "**Jáchymov Mining **",
+  "display_name": "Jáchymov Mining",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Jáchymov Mining ** Mine",
+      "from": "2025-10-27T15:23:26.786737",
+      "to": "2025-11-04T19:19:10.580339Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

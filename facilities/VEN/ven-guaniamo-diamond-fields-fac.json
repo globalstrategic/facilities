@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.446502",
+    "last_checked": "2025-11-04T19:18:49.654172Z",
     "checked_by": "import_pipeline",
-    "notes": "A major alluvial diamond mining region, not a single mine. Operations are entirely informal and illicit.21 Coordinates are for the general area."
+    "notes": "A major alluvial diamond mining region, not a single mine. Operations are entirely informal and illicit.21 Coordinates are for the general area. | Canonical name+slug generated"
   },
-  "canonical_name": "**Guaniamo Diamond Fields** Mine",
+  "canonical_name": "Guaniamo Diamond Fields Mine",
   "canonical_slug": "guaniamo-diamond-fields-mine",
-  "display_name": "**Guaniamo Diamond Fields**",
+  "display_name": "Guaniamo Diamond Fields",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Guaniamo Diamond Fields** Mine",
+      "from": "2025-10-21T11:38:45.446502",
+      "to": "2025-11-04T19:18:49.654170Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

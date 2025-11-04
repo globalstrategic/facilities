@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:21:36.117253",
+    "last_checked": "2025-11-04T19:19:04.461107Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**IMMSA Calcination ** Processing Plant",
+  "canonical_name": "Immsa Calcination Processing Plant",
   "canonical_slug": "immsa-calcination-processing-plant",
-  "display_name": "**IMMSA Calcination **",
+  "display_name": "Immsa Calcination",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**IMMSA Calcination ** Processing Plant",
+      "from": "2025-10-27T13:21:36.117253",
+      "to": "2025-11-04T19:19:04.461105Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

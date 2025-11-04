@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:22.234976",
+    "last_checked": "2025-11-04T19:18:45.916137Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Coal‑Mac Mine",
+  "canonical_name": "Coalâ Mac Mine",
   "canonical_slug": "coalamac-mine",
-  "display_name": "Coal‑Mac",
+  "display_name": "Coalâ Mac",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Coal‑Mac Mine",
+      "from": "2025-10-20T15:27:22.234976",
+      "to": "2025-11-04T19:18:45.916130Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:42:05.450257",
+    "last_checked": "2025-11-04T19:19:13.778058Z",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via nominatim (confidence: 0.70)"
+    "notes": "Geocoded via nominatim (confidence: 0.70) | Canonical name+slug generated"
   },
-  "canonical_name": "Al Etihad Gold DMCC Refinery",
+  "canonical_name": "Al Etihad Gold Dmcc Refinery",
   "canonical_slug": "al-etihad-gold-dmcc-refinery",
-  "display_name": "Al Etihad Gold DMCC",
+  "display_name": "Al Etihad Gold Dmcc",
   "primary_type": "refinery",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Al Etihad Gold DMCC Refinery",
+      "from": "2025-10-21T09:42:05.450257",
+      "to": "2025-11-04T19:19:13.778055Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

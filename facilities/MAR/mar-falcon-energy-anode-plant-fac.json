@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.451061",
+    "last_checked": "2025-11-04T19:18:48.333662Z",
     "checked_by": "import_pipeline",
-    "notes": "Processing facility to produce battery anode material from imported natural graphite."
+    "notes": "Processing facility to produce battery anode material from imported natural graphite. | Canonical name+slug generated"
   },
-  "canonical_name": "**Falcon Energy Anode ** Processing Plant",
+  "canonical_name": "Falcon Energy Anode Processing Plant",
   "canonical_slug": "falcon-energy-anode-processing-plant",
-  "display_name": "**Falcon Energy Anode **",
+  "display_name": "Falcon Energy Anode",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Falcon Energy Anode ** Processing Plant",
+      "from": "2025-10-29T16:17:07.451061",
+      "to": "2025-11-04T19:18:48.333659Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

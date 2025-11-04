@@ -35,20 +35,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:37.775881",
+    "last_checked": "2025-11-04T19:18:54.450303Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Moa Bay and HPAL Mine",
+  "canonical_name": "Moa Bay And Hpal Mine",
   "canonical_slug": "moa-bay-and-hpal-mine",
-  "display_name": "Moa Bay and HPAL",
+  "display_name": "Moa Bay And Hpal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Moa Bay and HPAL Mine",
+      "from": "2025-10-20T15:29:37.775881",
+      "to": "2025-11-04T19:18:54.450300Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

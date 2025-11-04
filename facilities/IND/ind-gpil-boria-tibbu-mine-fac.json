@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:26.511516",
+    "last_checked": "2025-11-04T19:18:51.071724Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "GPIL Boria Tibbu Mine",
+  "canonical_name": "Gpil Boria Tibbu Mine",
   "canonical_slug": "gpil-boria-tibbu-mine",
-  "display_name": "GPIL Boria Tibbu",
+  "display_name": "Gpil Boria Tibbu",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "GPIL Boria Tibbu Mine",
+      "from": "2025-10-20T15:29:26.511516",
+      "to": "2025-11-04T19:18:51.071722Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T14:29:36.261214",
+    "last_checked": "2025-11-04T19:18:47.781772Z",
     "checked_by": "import_pipeline",
-    "notes": "Major alumina refinery that processes imported bauxite to supply the Alro aluminum smelter. 11"
+    "notes": "Major alumina refinery that processes imported bauxite to supply the Alro aluminum smelter. 11 | Canonical name+slug generated"
   },
-  "canonical_name": "Alum S.A. Plant",
+  "canonical_name": "Alum S A Plant",
   "canonical_slug": "alum-s-a-plant",
-  "display_name": "Alum S.A.",
+  "display_name": "Alum S A",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Alum S.A. Plant",
+      "from": "2025-10-23T14:29:36.261214",
+      "to": "2025-11-04T19:18:47.781770Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

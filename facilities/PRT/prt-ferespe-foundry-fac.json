@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T15:08:50.200991",
+    "last_checked": "2025-11-04T19:18:53.665600Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "FERESPE Foundry Plant",
+  "canonical_name": "Ferespe Foundry Plant",
   "canonical_slug": "ferespe-foundry-plant",
-  "display_name": "FERESPE Foundry",
+  "display_name": "Ferespe Foundry",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "FERESPE Foundry Plant",
+      "from": "2025-10-23T15:08:50.200991",
+      "to": "2025-11-04T19:18:53.665597Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

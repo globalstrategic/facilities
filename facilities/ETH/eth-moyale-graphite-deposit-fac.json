@@ -41,20 +41,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:04:41.328524",
+    "last_checked": "2025-11-04T19:19:14.299227Z",
     "checked_by": "import_pipeline",
-    "notes": "Flake graphite deposit near Kenyan border; not in production.72"
+    "notes": "Flake graphite deposit near Kenyan border; not in production.72 | Canonical name+slug generated"
   },
   "canonical_name": "Moyale Graphite Mine",
   "canonical_slug": "moyale-graphite-mine",
   "display_name": "Moyale Graphite",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

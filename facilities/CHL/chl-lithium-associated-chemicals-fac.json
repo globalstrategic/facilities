@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:28.462099",
+    "last_checked": "2025-11-04T19:19:09.899931Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**LITHIUM & ASSOCIATED CHEMICALS** Mine",
+  "canonical_name": "Lithium & Associated Chemicals Mine",
   "canonical_slug": "lithium-associated-chemicals-mine",
-  "display_name": "**LITHIUM & ASSOCIATED CHEMICALS**",
+  "display_name": "Lithium & Associated Chemicals",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**LITHIUM & ASSOCIATED CHEMICALS** Mine",
+      "from": "2025-10-27T13:22:28.462099",
+      "to": "2025-11-04T19:19:09.899927Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T21:57:46.861685",
+    "last_checked": "2025-11-04T19:18:55.277700Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**La India ** Development",
+  "canonical_name": "La India Development",
   "canonical_slug": "la-india-development",
-  "display_name": "**La India **",
+  "display_name": "La India",
   "primary_type": "development",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**La India ** Development",
+      "from": "2025-10-29T21:57:46.861685",
+      "to": "2025-11-04T19:18:55.277697Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

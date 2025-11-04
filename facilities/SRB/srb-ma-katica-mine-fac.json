@@ -46,21 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-21T17:52:17.161769",
+    "last_checked": "2025-11-04T19:19:19.511107Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Mačkatica",
+  "canonical_name": "Mačkatica Facility",
   "canonical_slug": "mackatica-facility",
   "display_name": "Mačkatica",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mačkatica",
+      "from": "2025-10-21T17:52:17.161769",
+      "to": "2025-11-04T19:19:19.511104Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

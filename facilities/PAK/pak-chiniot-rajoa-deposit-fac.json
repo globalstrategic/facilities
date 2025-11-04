@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-28T22:02:29.277655",
+    "last_checked": "2025-11-04T19:19:03.335096Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Chiniot-Rajoa Mine",
+  "canonical_name": "Chiniot Rajoa Mine",
   "canonical_slug": "chiniot-rajoa-mine",
-  "display_name": "Chiniot-Rajoa",
+  "display_name": "Chiniot Rajoa",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Chiniot-Rajoa Mine",
+      "from": "2025-10-28T22:02:29.277655",
+      "to": "2025-11-04T19:19:03.335092Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -34,20 +34,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-23T14:29:36.244412",
+    "last_checked": "2025-11-04T19:18:47.779035Z",
     "checked_by": "import_pipeline",
-    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. Part of the largely dormant Romanian iron ore sector. 24"
+    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. Part of the largely dormant Romanian iron ore sector. 24 | Canonical name+slug generated"
   },
   "canonical_name": "Băișoara Mine",
   "canonical_slug": "baisoara-mine",
   "display_name": "Băișoara",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

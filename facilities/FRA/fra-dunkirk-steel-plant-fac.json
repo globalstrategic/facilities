@@ -44,20 +44,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:23.693871",
+    "last_checked": "2025-11-04T19:18:51.675808Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Dunkirk steel Smelter",
+  "canonical_name": "Dunkirk Steel Smelter",
   "canonical_slug": "dunkirk-steel-smelter",
-  "display_name": "Dunkirk steel",
+  "display_name": "Dunkirk Steel",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Dunkirk steel Smelter",
+      "from": "2025-10-20T15:27:23.693871",
+      "to": "2025-11-04T19:18:51.675802Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

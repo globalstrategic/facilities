@@ -37,20 +37,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:27:05.820674",
+    "last_checked": "2025-11-04T19:18:46.799718Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Tiantai Pb/Zn Mine",
+  "canonical_name": "Tiantai Pb/zn Mine",
   "canonical_slug": "tiantai-pb-zn-mine",
-  "display_name": "Tiantai Pb/Zn",
+  "display_name": "Tiantai Pb/zn",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Tiantai Pb/Zn Mine",
+      "from": "2025-10-20T15:27:05.820674",
+      "to": "2025-11-04T19:18:46.799716Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

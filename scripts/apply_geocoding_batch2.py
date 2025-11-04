@@ -152,6 +152,60 @@ def apply_enrichment(facility, enrich):
 
     return facility
 
+def find_facility(fac_id: str, country: str, canonical_name: str = None) -> Path:
+    """
+    Find facility with robust matching (exact ID -> slug -> name).
+
+    Args:
+        fac_id: Facility ID to search for
+        country: Country ISO3 code
+        canonical_name: Optional canonical name for fuzzy fallback
+
+    Returns:
+        Path to facility JSON if found, None otherwise
+    """
+    # Try exact ID
+    exact_path = Path(f"facilities/{country}/{fac_id}.json")
+    if exact_path.exists():
+        return exact_path
+
+    # Try finding by canonical_slug match (convert name to slug format)
+    if canonical_name:
+        from scripts.utils.name_parts import slugify
+        expected_slug = slugify(canonical_name)
+
+        country_dir = Path(f"facilities/{country}")
+        if country_dir.exists():
+            for p in country_dir.glob("*.json"):
+                try:
+                    with open(p, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        if data.get('canonical_slug') == expected_slug:
+                            print(f"  Matched by slug: {fac_id} -> {p.name}")
+                            return p
+                except:
+                    continue
+
+    # Try name contains match (case-insensitive)
+    if canonical_name:
+        canonical_lower = canonical_name.lower()
+        country_dir = Path(f"facilities/{country}")
+        if country_dir.exists():
+            for p in country_dir.glob("*.json"):
+                try:
+                    with open(p, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        data_name = (data.get('canonical_name') or data.get('name') or '').lower()
+                        # Check if substantial overlap (80%+ words match)
+                        if canonical_lower in data_name or data_name in canonical_lower:
+                            print(f"  Matched by name: {fac_id} -> {p.name}")
+                            return p
+                except:
+                    continue
+
+    return None
+
+
 def main():
     """Apply geocoding enrichments batch 2."""
     enrichments = parse_csv_data()
@@ -164,10 +218,13 @@ def main():
     for enrich in enrichments:
         fac_id = enrich['facility_id']
         country = fac_id.split('-')[0].upper()
-        fac_path = Path(f"facilities/{country}/{fac_id}.json")
+        canonical_name = enrich.get('canonical_name')
 
-        if not fac_path.exists():
-            print(f"Warning: {fac_path} not found")
+        # Use robust matching
+        fac_path = find_facility(fac_id, country, canonical_name)
+
+        if not fac_path:
+            print(f"Warning: Could not find facility for {fac_id} (tried exact, slug, name)")
             skipped += 1
             continue
 

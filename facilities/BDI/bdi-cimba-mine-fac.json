@@ -53,20 +53,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.112153",
+    "last_checked": "2025-11-04T19:19:00.898840Z",
     "checked_by": "import_pipeline",
-    "notes": "Operations were suspended by the government in July 2021, citing numerous violations of the country's mining code. 5"
+    "notes": "Operations were suspended by the government in July 2021, citing numerous violations of the country's mining code. 5 | Canonical name+slug generated"
   },
-  "canonical_name": "**Cimba ** Mine",
+  "canonical_name": "Cimba Mine",
   "canonical_slug": "cimba-mine",
-  "display_name": "**Cimba **",
+  "display_name": "Cimba",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Cimba ** Mine",
+      "from": "2025-10-27T10:36:55.112153",
+      "to": "2025-11-04T19:19:00.898838Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

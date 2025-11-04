@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:22.374932",
+    "last_checked": "2025-11-04T19:18:51.121000Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "AMNS Ghoraburhani Sagasahi Mine",
+  "canonical_name": "Amns Ghoraburhani Sagasahi Mine",
   "canonical_slug": "amns-ghoraburhani-sagasahi-mine",
-  "display_name": "AMNS Ghoraburhani Sagasahi",
+  "display_name": "Amns Ghoraburhani Sagasahi",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "AMNS Ghoraburhani Sagasahi Mine",
+      "from": "2025-10-20T15:29:22.374932",
+      "to": "2025-11-04T19:18:51.120998Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

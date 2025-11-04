@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.063887",
+    "last_checked": "2025-11-04T19:18:49.657241Z",
     "checked_by": "import_pipeline",
-    "notes": "Sister mine to Paso Diablo, part of the same complex in the Guasare Coal Basin.1 Coordinates are approximate based on proximity to Paso Diablo."
+    "notes": "Sister mine to Paso Diablo, part of the same complex in the Guasare Coal Basin.1 Coordinates are approximate based on proximity to Paso Diablo. | Canonical name+slug generated"
   },
-  "canonical_name": "**Mina Norte** Mine",
+  "canonical_name": "Mina Norte Mine",
   "canonical_slug": "mina-norte-mine",
-  "display_name": "**Mina Norte**",
+  "display_name": "Mina Norte",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mina Norte** Mine",
+      "from": "2025-10-21T11:38:45.063887",
+      "to": "2025-11-04T19:18:49.657237Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-21T18:09:18.801631",
+    "last_checked": "2025-11-04T19:19:12.381629Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Ad-Duwayhi Mine",
+  "canonical_name": "Ad Duwayhi Mine",
   "canonical_slug": "ad-duwayhi-mine",
-  "display_name": "Ad-Duwayhi",
+  "display_name": "Ad Duwayhi",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Ad-Duwayhi Mine",
+      "from": "2025-10-21T18:09:18.801631",
+      "to": "2025-11-04T19:19:12.381626Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

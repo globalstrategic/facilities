@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.616914",
+    "last_checked": "2025-11-04T19:18:55.540483Z",
     "checked_by": "import_pipeline",
-    "notes": "Located near Filizchay. Planned commissioning in 2027."
+    "notes": "Located near Filizchay. Planned commissioning in 2027. | Canonical name+slug generated"
   },
   "canonical_name": "Mazymchay Mine",
   "canonical_slug": "mazymchay-mine",
   "display_name": "Mazymchay",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

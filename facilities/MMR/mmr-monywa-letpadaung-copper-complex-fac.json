@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:26:30.442936",
+    "last_checked": "2025-11-04T19:19:08.875920Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Monywa-Letpadaung Copper Mine",
+  "canonical_name": "Monywa Letpadaung Copper Mine",
   "canonical_slug": "monywa-letpadaung-copper-mine",
-  "display_name": "Monywa-Letpadaung Copper",
+  "display_name": "Monywa Letpadaung Copper",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Monywa-Letpadaung Copper Mine",
+      "from": "2025-10-29T22:26:30.442936",
+      "to": "2025-11-04T19:19:08.875917Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -33,22 +33,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:24:12.580297",
+    "last_checked": "2025-11-04T19:19:13.778329Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Exact plant coords (ICAD II)"
   },
-  "canonical_name": "Arabian Gulf Steel Industries Steel Plant",
+  "canonical_name": "Abu Dhabi Arabian Gulf Steel Industries Arabian Gulf Steel Industries (agsi) Steel Plant",
   "canonical_slug": "arabian-gulf-steel-industries-steel-plant",
-  "display_name": "Arabian Gulf Steel Industries",
+  "display_name": "Arabian Gulf Steel Industries (agsi)",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.72,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": false
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Arabian Gulf Steel Industries"
+  "operator_display": "Arabian Gulf Steel Industries",
+  "canonical_name_history": [
+    {
+      "name": "Arabian Gulf Steel Industries Steel Plant",
+      "from": "2025-10-21T09:24:12.580297",
+      "to": "2025-11-04T19:19:13.778325Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

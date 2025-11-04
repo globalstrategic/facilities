@@ -35,21 +35,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:27:55.557087",
+    "last_checked": "2025-11-04T19:18:48.054776Z",
     "checked_by": "import_pipeline",
-    "notes": "No smelters, refineries, or chemical plants exist in CAR for any of the specified commodities. 6"
+    "notes": "No smelters, refineries, or chemical plants exist in CAR for any of the specified commodities. 6 | Canonical name+slug generated"
   },
   "canonical_name": "All Mineral Processing Facilities Processing Plant",
   "canonical_slug": "all-mineral-processing-facilities-processing-plant",
   "display_name": "All Mineral Processing Facilities",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

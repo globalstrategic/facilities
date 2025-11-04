@@ -46,20 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.218641",
+    "last_checked": "2025-11-04T19:19:00.898039Z",
     "checked_by": "import_pipeline",
-    "notes": "An ASM site focused on the production of wolframite (tungsten ore). 21"
+    "notes": "An ASM site focused on the production of wolframite (tungsten ore). 21 | Canonical name+slug generated"
   },
-  "canonical_name": "**Cunda / Cumba ** Mine",
+  "canonical_name": "Cunda / Cumba Mine",
   "canonical_slug": "cunda-cumba-mine",
-  "display_name": "**Cunda / Cumba **",
+  "display_name": "Cunda / Cumba",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Cunda / Cumba ** Mine",
+      "from": "2025-10-27T10:36:55.218641",
+      "to": "2025-11-04T19:19:00.898037Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

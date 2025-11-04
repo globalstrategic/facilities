@@ -31,21 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:22.447691",
+    "last_checked": "2025-11-04T19:19:17.470480Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Windalco-Kirkvine** Mine",
+  "canonical_name": "Windalco Kirkvine Mine",
   "canonical_slug": "windalco-kirkvine-mine",
-  "display_name": "**Windalco-Kirkvine**",
+  "display_name": "Windalco Kirkvine",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Windalco-Kirkvine** Mine",
+      "from": "2025-10-29T12:22:22.447691",
+      "to": "2025-11-04T19:19:17.470477Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

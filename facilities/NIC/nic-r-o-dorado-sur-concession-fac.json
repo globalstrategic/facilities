@@ -38,21 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-29T21:57:47.113820",
+    "last_checked": "2025-11-04T19:18:55.278619Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Río Dorado Sur Concession** Exploration",
+  "canonical_name": "Río Dorado Sur Concession Exploration",
   "canonical_slug": "rio-dorado-sur-concession-exploration",
-  "display_name": "**Río Dorado Sur Concession**",
+  "display_name": "Río Dorado Sur Concession",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Río Dorado Sur Concession** Exploration",
+      "from": "2025-10-29T21:57:47.113820",
+      "to": "2025-11-04T19:18:55.278616Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

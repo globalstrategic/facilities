@@ -36,22 +36,31 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:24:12.743306",
+    "last_checked": "2025-11-04T19:19:13.780402Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Village centroid; refine to pit polygon later"
   },
-  "canonical_name": "Kadra Quarry Mine",
+  "canonical_name": "Kadrah Kadra Quarry Mine",
   "canonical_slug": "kadra-quarry-mine",
   "display_name": "Kadra Quarry",
   "primary_type": "mine",
-  "type_confidence": 0.75,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.6599999999999999,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Kadra Quarry Mine",
+      "from": "2025-10-21T09:24:12.743306",
+      "to": "2025-11-04T19:19:13.780400Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

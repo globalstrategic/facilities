@@ -41,21 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T11:57:05.539726",
+    "last_checked": "2025-11-04T19:19:06.633006Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Selebi & Selebi North Mines** Mine",
+  "canonical_name": "Selebi & Selebi North Mines Mine",
   "canonical_slug": "selebi-selebi-north-mines-mine",
-  "display_name": "**Selebi & Selebi North Mines**",
+  "display_name": "Selebi & Selebi North Mines",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Selebi & Selebi North Mines** Mine",
+      "from": "2025-10-27T11:57:05.539726",
+      "to": "2025-11-04T19:19:06.633003Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

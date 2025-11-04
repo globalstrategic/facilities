@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:42:24.830114",
+    "last_checked": "2025-11-04T19:19:13.780021Z",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via nominatim (confidence: 0.70)"
+    "notes": "Geocoded via nominatim (confidence: 0.70) | Canonical name+slug generated"
   },
-  "canonical_name": "National Cement Factory",
+  "canonical_name": "National Cement Factory Facility",
   "canonical_slug": "national-cement-factory-facility",
   "display_name": "National Cement Factory",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "National Cement Factory",
+      "from": "2025-10-21T09:42:24.830114",
+      "to": "2025-11-04T19:19:13.780019Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

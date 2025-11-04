@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T11:57:05.570486",
+    "last_checked": "2025-11-04T19:19:06.634938Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Mupane Gold ** Mine",
+  "canonical_name": "Mupane Gold Mine",
   "canonical_slug": "mupane-gold-mine",
-  "display_name": "**Mupane Gold **",
+  "display_name": "Mupane Gold",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mupane Gold ** Mine",
+      "from": "2025-10-27T11:57:05.570486",
+      "to": "2025-11-04T19:19:06.634928Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -32,21 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:22:28.107369",
+    "last_checked": "2025-11-04T19:19:07.462598Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "*Geological Gap *",
+  "canonical_name": "Geological Gap Facility",
   "canonical_slug": "geological-gap-facility",
-  "display_name": "*Geological Gap *",
+  "display_name": "Geological Gap",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "*Geological Gap *",
+      "from": "2025-10-29T22:22:28.107369",
+      "to": "2025-11-04T19:19:07.462595Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

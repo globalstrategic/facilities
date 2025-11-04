@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-21T12:44:24.116187",
+    "last_checked": "2025-11-04T19:18:54.716949Z",
     "checked_by": "import_pipeline",
-    "notes": "Largest deposit in the Volynskyi placer region. 56"
+    "notes": "Largest deposit in the Volynskyi placer region. 56 | Canonical name+slug generated"
   },
   "canonical_name": "Mezhyrichne Mine",
   "canonical_slug": "mezhyrichne-mine",
   "display_name": "Mezhyrichne",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

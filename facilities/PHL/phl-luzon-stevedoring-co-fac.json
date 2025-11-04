@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:26:50.708445",
+    "last_checked": "2025-11-04T19:19:04.749934Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Luzon Stevedoring Co. Mine",
+  "canonical_name": "Luzon Stevedoring Co Mine",
   "canonical_slug": "luzon-stevedoring-co-mine",
-  "display_name": "Luzon Stevedoring Co.",
+  "display_name": "Luzon Stevedoring Co",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Luzon Stevedoring Co. Mine",
+      "from": "2025-10-20T15:26:50.708445",
+      "to": "2025-11-04T19:19:04.749932Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

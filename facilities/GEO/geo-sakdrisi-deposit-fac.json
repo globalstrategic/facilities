@@ -55,20 +55,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:01:00.142322",
+    "last_checked": "2025-11-04T19:19:01.723080Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Sakdrisi ** Mine",
+  "canonical_name": "Sakdrisi Mine",
   "canonical_slug": "sakdrisi-mine",
-  "display_name": "**Sakdrisi **",
+  "display_name": "Sakdrisi",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Sakdrisi ** Mine",
+      "from": "2025-10-28T21:01:00.142322",
+      "to": "2025-11-04T19:19:01.723070Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

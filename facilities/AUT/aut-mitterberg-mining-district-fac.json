@@ -38,21 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.499248",
+    "last_checked": "2025-11-04T19:18:53.400570Z",
     "checked_by": "import_pipeline",
-    "notes": "Ancient copper district worked from the Bronze Age until 1977."
+    "notes": "Ancient copper district worked from the Bronze Age until 1977. | Canonical name+slug generated"
   },
-  "canonical_name": "Mitterberg Mining",
+  "canonical_name": "Mitterberg Mining Facility",
   "canonical_slug": "mitterberg-mining-facility",
   "display_name": "Mitterberg Mining",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mitterberg Mining",
+      "from": "2025-10-21T09:23:32.499248",
+      "to": "2025-11-04T19:18:53.400564Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

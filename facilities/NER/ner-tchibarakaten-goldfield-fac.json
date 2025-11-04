@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:03:08.653295",
+    "last_checked": "2025-11-04T19:18:55.829316Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Tchibarakaten Goldfield",
+  "canonical_name": "Tchibarakaten Goldfield Facility",
   "canonical_slug": "tchibarakaten-goldfield-facility",
   "display_name": "Tchibarakaten Goldfield",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Tchibarakaten Goldfield",
+      "from": "2025-10-29T22:03:08.653295",
+      "to": "2025-11-04T19:18:55.829313Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

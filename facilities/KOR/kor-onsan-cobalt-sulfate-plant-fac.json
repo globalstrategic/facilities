@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:53.526864",
+    "last_checked": "2025-11-04T19:19:18.759358Z",
     "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A key producer of cobalt sulfate for the domestic battery industry. 37"
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A key producer of cobalt sulfate for the domestic battery industry. 37 | Canonical name+slug generated"
   },
-  "canonical_name": "**Onsan Cobalt Sulfate ** Plant",
+  "canonical_name": "Onsan Cobalt Sulfate Plant",
   "canonical_slug": "onsan-cobalt-sulfate-plant",
-  "display_name": "**Onsan Cobalt Sulfate **",
+  "display_name": "Onsan Cobalt Sulfate",
   "primary_type": "plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Onsan Cobalt Sulfate ** Plant",
+      "from": "2025-10-29T12:22:53.526864",
+      "to": "2025-11-04T19:19:18.759356Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

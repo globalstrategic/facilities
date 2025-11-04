@@ -15,8 +15,17 @@ def _slugify_suffix(s: str) -> str:
 class SlugRegistry:
     """Registry to ensure globally unique facility slugs."""
 
-    def __init__(self):
+    def __init__(self, preseed=()):
+        """
+        Initialize registry with optional pre-seeding.
+
+        Args:
+            preseed: Iterable of existing slugs to register upfront
+        """
         self.seen = defaultdict(int)  # slug -> count
+        for s in preseed:
+            if s:
+                self.seen[s] = 1
 
     def unique(self, slug: str, *, country: Optional[str] = None,
                region: Optional[str] = None, geohash6: Optional[str] = None) -> str:

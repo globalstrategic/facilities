@@ -34,20 +34,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.043573",
+    "last_checked": "2025-11-04T19:18:55.535104Z",
     "checked_by": "import_pipeline",
-    "notes": "Small, high-grade underground mine. Ore transported to Gedabek for processing."
+    "notes": "Small, high-grade underground mine. Ore transported to Gedabek for processing. | Canonical name+slug generated"
   },
   "canonical_name": "Gosha Mine",
   "canonical_slug": "gosha-mine",
   "display_name": "Gosha",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

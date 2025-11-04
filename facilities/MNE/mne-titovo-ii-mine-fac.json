@@ -38,20 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-29T22:24:19.826308",
+    "last_checked": "2025-11-04T19:18:49.392097Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Štitovo II ** Mine",
+  "canonical_name": "Štitovo II Mine",
   "canonical_slug": "stitovo-ii-mine",
-  "display_name": "**Štitovo II **",
+  "display_name": "Štitovo II",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Štitovo II ** Mine",
+      "from": "2025-10-29T22:24:19.826308",
+      "to": "2025-11-04T19:18:49.392094Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

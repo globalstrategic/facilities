@@ -39,21 +39,23 @@
   "verification": {
     "status": "unverified",
     "confidence": 0.65,
-    "last_checked": "2025-10-30T14:29:25.607041",
+    "last_checked": "2025-11-04T19:18:55.830903Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Permit corner coordinates per Table 1; centroid approx; verify on next pass"
   },
   "data_quality": {
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     },
-    "canonicalization_confidence": 0.6
+    "canonicalization_confidence": 0.615
   },
   "canonical_name": "Tarouadji Exploration",
   "canonical_slug": "tarouadji-exploration",
   "display_name": "Tarouadji",
   "primary_type": "exploration",
-  "type_confidence": 0.95
+  "type_confidence": 1.0,
+  "display_name_source": "auto"
 }

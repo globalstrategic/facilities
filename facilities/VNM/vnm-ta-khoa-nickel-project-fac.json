@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T13:04:38.092355",
+    "last_checked": "2025-11-04T19:19:02.271956Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Ta Khoa Nickel ** Mine",
+  "canonical_name": "Ta Khoa Nickel Mine",
   "canonical_slug": "ta-khoa-nickel-mine",
-  "display_name": "**Ta Khoa Nickel **",
+  "display_name": "Ta Khoa Nickel",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Ta Khoa Nickel ** Mine",
+      "from": "2025-10-21T13:04:38.092355",
+      "to": "2025-11-04T19:19:02.271952Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

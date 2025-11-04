@@ -52,21 +52,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:45:20.878600",
+    "last_checked": "2025-11-04T19:19:14.812133Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Ishiagu",
+  "canonical_name": "Ishiagu Facility",
   "canonical_slug": "ishiagu-facility",
   "display_name": "Ishiagu",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Ishiagu",
+      "from": "2025-10-29T22:45:20.878600",
+      "to": "2025-11-04T19:19:14.812130Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

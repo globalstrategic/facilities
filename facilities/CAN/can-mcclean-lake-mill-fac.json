@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:22:01.558344",
+    "last_checked": "2025-11-04T19:18:50.777874Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "McClean Lake Mill",
+  "canonical_name": "Mcclean Lake Mill",
   "canonical_slug": "mcclean-lake-mill",
-  "display_name": "McClean Lake",
+  "display_name": "Mcclean Lake",
   "primary_type": "mill",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "McClean Lake Mill",
+      "from": "2025-10-27T13:22:01.558344",
+      "to": "2025-11-04T19:18:50.777872Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

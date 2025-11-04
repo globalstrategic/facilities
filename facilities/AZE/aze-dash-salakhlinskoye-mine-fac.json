@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.931686",
+    "last_checked": "2025-11-04T19:18:55.536489Z",
     "checked_by": "import_pipeline",
-    "notes": "Primary bentonite producer in the country."
+    "notes": "Primary bentonite producer in the country. | Canonical name+slug generated"
   },
-  "canonical_name": "Dash-Salakhlinskoye Mine",
+  "canonical_name": "Dash Salakhlinskoye Mine",
   "canonical_slug": "dash-salakhlinskoye-mine",
-  "display_name": "Dash-Salakhlinskoye",
+  "display_name": "Dash Salakhlinskoye",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Dash-Salakhlinskoye Mine",
+      "from": "2025-10-21T09:23:43.931686",
+      "to": "2025-11-04T19:18:55.536486Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

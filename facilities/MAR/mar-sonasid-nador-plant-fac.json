@@ -49,20 +49,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.421392",
+    "last_checked": "2025-11-04T19:18:48.335070Z",
     "checked_by": "import_pipeline",
-    "notes": "Produces long steel products (rebar, wire rod)."
+    "notes": "Produces long steel products (rebar, wire rod). | Canonical name+slug generated"
   },
-  "canonical_name": "**Sonasid Nador ** Processing Plant",
+  "canonical_name": "Sonasid Nador Processing Plant",
   "canonical_slug": "sonasid-nador-processing-plant",
-  "display_name": "**Sonasid Nador **",
+  "display_name": "Sonasid Nador",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Sonasid Nador ** Processing Plant",
+      "from": "2025-10-29T16:17:07.421392",
+      "to": "2025-11-04T19:18:48.335068Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

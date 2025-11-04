@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.267450",
+    "last_checked": "2025-11-04T19:18:49.656983Z",
     "checked_by": "import_pipeline",
-    "notes": "A known mine within the El Callao district. Coordinates from initial list and corroborated by Mindat.org.50"
+    "notes": "A known mine within the El Callao district. Coordinates from initial list and corroborated by Mindat.org.50 | Canonical name+slug generated"
   },
-  "canonical_name": "**Mina Colombia; Mocupia; Sosa Mendez; Revemin ** Mine",
+  "canonical_name": "Mina Colombia Mocupia Sosa Mendez Revemin Mine",
   "canonical_slug": "mina-colombia-mocupia-sosa-mendez-revemin-mine",
-  "display_name": "**Mina Colombia; Mocupia; Sosa Mendez; Revemin **",
+  "display_name": "Mina Colombia Mocupia Sosa Mendez Revemin",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mina Colombia; Mocupia; Sosa Mendez; Revemin ** Mine",
+      "from": "2025-10-21T11:38:45.267450",
+      "to": "2025-11-04T19:18:49.656977Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T13:04:38.133656",
+    "last_checked": "2025-11-04T19:19:02.276322Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Pac Lang Gold ** Mine",
+  "canonical_name": "Pac Lang Gold Mine",
   "canonical_slug": "pac-lang-gold-mine",
-  "display_name": "**Pac Lang Gold **",
+  "display_name": "Pac Lang Gold",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Pac Lang Gold ** Mine",
+      "from": "2025-10-21T13:04:38.133656",
+      "to": "2025-11-04T19:19:02.276319Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

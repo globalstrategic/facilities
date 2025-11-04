@@ -49,20 +49,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-10-24T06:31:39.826375",
+    "last_checked": "2025-11-04T19:19:08.873444Z",
     "checked_by": "import_pipeline",
-    "notes": "Identified as the country's highest-grade uranium deposit, but no evidence of active mining. 55"
+    "notes": "Identified as the country's highest-grade uranium deposit, but no evidence of active mining. 55 | Canonical name+slug generated"
   },
   "canonical_name": "Magwe Uranium Mine",
   "canonical_slug": "magwe-uranium-mine",
   "display_name": "Magwe Uranium",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

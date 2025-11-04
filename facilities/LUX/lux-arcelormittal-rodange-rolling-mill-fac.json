@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T13:10:10.180839",
+    "last_checked": "2025-11-04T19:19:20.091610Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "ArcelorMittal Rodange Rolling Mine",
+  "canonical_name": "Arcelormittal Rodange Rolling Mine",
   "canonical_slug": "arcelormittal-rodange-rolling-mine",
-  "display_name": "ArcelorMittal Rodange Rolling",
+  "display_name": "Arcelormittal Rodange Rolling",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "ArcelorMittal Rodange Rolling Mine",
+      "from": "2025-10-29T13:10:10.180839",
+      "to": "2025-11-04T19:19:20.091606Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

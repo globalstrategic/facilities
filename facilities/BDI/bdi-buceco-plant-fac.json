@@ -43,20 +43,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.276841",
+    "last_checked": "2025-11-04T19:19:00.900801Z",
     "checked_by": "import_pipeline",
-    "notes": "Not directly related to the specified metals, but it is one of the country's only major industrial mineral processing facilities. 21"
+    "notes": "Not directly related to the specified metals, but it is one of the country's only major industrial mineral processing facilities. 21 | Canonical name+slug generated"
   },
-  "canonical_name": "**BUCECO ** Processing Plant",
+  "canonical_name": "Buceco Processing Plant",
   "canonical_slug": "buceco-processing-plant",
-  "display_name": "**BUCECO **",
+  "display_name": "Buceco",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**BUCECO ** Processing Plant",
+      "from": "2025-10-27T10:36:55.276841",
+      "to": "2025-11-04T19:19:00.900799Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

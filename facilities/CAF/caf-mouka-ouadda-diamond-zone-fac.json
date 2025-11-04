@@ -41,21 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:27:54.931900",
+    "last_checked": "2025-11-04T19:18:48.054610Z",
     "checked_by": "import_pipeline",
-    "notes": "Major ASM region in the east. Historically controlled by various armed groups. 1"
+    "notes": "Major ASM region in the east. Historically controlled by various armed groups. 1 | Canonical name+slug generated"
   },
-  "canonical_name": "Mouka-Ouadda Diamond Zone",
+  "canonical_name": "Mouka Ouadda Diamond Zone Facility",
   "canonical_slug": "mouka-ouadda-diamond-zone-facility",
-  "display_name": "Mouka-Ouadda Diamond Zone",
+  "display_name": "Mouka Ouadda Diamond Zone",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mouka-Ouadda Diamond Zone",
+      "from": "2025-10-27T10:27:54.931900",
+      "to": "2025-11-04T19:18:48.054608Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

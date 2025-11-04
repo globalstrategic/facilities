@@ -38,20 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-29T21:57:46.942328",
+    "last_checked": "2025-11-04T19:18:55.277230Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Rosita ** Mine",
+  "canonical_name": "Rosita Mine",
   "canonical_slug": "rosita-mine",
-  "display_name": "**Rosita **",
+  "display_name": "Rosita",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Rosita ** Mine",
+      "from": "2025-10-29T21:57:46.942328",
+      "to": "2025-11-04T19:18:55.277228Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

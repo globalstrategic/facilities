@@ -34,21 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T17:45:37.373415",
+    "last_checked": "2025-11-04T19:18:51.400915Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Upper Tapanahony Area Deposits",
+  "canonical_name": "Upper Tapanahony Area Deposits Facility",
   "canonical_slug": "upper-tapanahony-area-deposits-facility",
   "display_name": "Upper Tapanahony Area Deposits",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Upper Tapanahony Area Deposits",
+      "from": "2025-10-21T17:45:37.373415",
+      "to": "2025-11-04T19:18:51.400913Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

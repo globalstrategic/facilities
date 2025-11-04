@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.343945",
+    "last_checked": "2025-11-04T19:18:49.656007Z",
     "checked_by": "import_pipeline",
-    "notes": "A significant open-pit gold mine near El Callao, formerly operated by Rusoro Mining before expropriation.51"
+    "notes": "A significant open-pit gold mine near El Callao, formerly operated by Rusoro Mining before expropriation.51 | Canonical name+slug generated"
   },
-  "canonical_name": "**Choco 10 ** Mine",
+  "canonical_name": "Choco 10 Mine",
   "canonical_slug": "choco-10-mine",
-  "display_name": "**Choco 10 **",
+  "display_name": "Choco 10",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Choco 10 ** Mine",
+      "from": "2025-10-21T11:38:45.343945",
+      "to": "2025-11-04T19:18:49.656005Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

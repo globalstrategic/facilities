@@ -55,21 +55,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-29T22:17:09.587073",
+    "last_checked": "2025-11-04T19:19:15.925329Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Bou Naga Alkaline **",
+  "canonical_name": "Bou Naga Alkaline Facility",
   "canonical_slug": "bou-naga-alkaline-facility",
-  "display_name": "**Bou Naga Alkaline **",
+  "display_name": "Bou Naga Alkaline",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bou Naga Alkaline **",
+      "from": "2025-10-29T22:17:09.587073",
+      "to": "2025-11-04T19:19:15.925326Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

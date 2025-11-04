@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:27:18.125256",
+    "last_checked": "2025-11-04T19:18:45.828279Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "AMVEST Fola Mine",
+  "canonical_name": "Amvest Fola Mine",
   "canonical_slug": "amvest-fola-mine",
-  "display_name": "AMVEST Fola",
+  "display_name": "Amvest Fola",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "AMVEST Fola Mine",
+      "from": "2025-10-20T15:27:18.125256",
+      "to": "2025-11-04T19:18:45.828277Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

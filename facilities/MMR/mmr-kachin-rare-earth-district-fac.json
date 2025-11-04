@@ -36,20 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T10:13:23.221834",
+    "last_checked": "2025-11-04T19:19:08.873114Z",
     "checked_by": "import_pipeline",
-    "notes": "Shell-leach clay; hundreds of mines supplying China"
+    "notes": "Shell-leach clay; hundreds of mines supplying China | Canonical name+slug generated"
   },
-  "canonical_name": "Kachin rare-earth Mine",
+  "canonical_name": "Kachin Rare Earth Mine",
   "canonical_slug": "kachin-rare-earth-mine",
-  "display_name": "Kachin rare-earth",
+  "display_name": "Kachin Rare Earth",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Kachin rare-earth Mine",
+      "from": "2025-10-21T10:13:23.221834",
+      "to": "2025-11-04T19:19:08.873111Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

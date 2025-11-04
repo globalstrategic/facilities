@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.462611",
+    "last_checked": "2025-11-04T19:18:48.329239Z",
     "checked_by": "import_pipeline",
-    "notes": "Historical pyrrhotite mine with Ni/Cu credits. Now a major acid mine drainage (AMD) site."
+    "notes": "Historical pyrrhotite mine with Ni/Cu credits. Now a major acid mine drainage (AMD) site. | Canonical name+slug generated"
   },
-  "canonical_name": "**Kettara ** Mine",
+  "canonical_name": "Kettara Mine",
   "canonical_slug": "kettara-mine",
-  "display_name": "**Kettara **",
+  "display_name": "Kettara",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Kettara ** Mine",
+      "from": "2025-10-29T16:17:07.462611",
+      "to": "2025-11-04T19:18:48.329237Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

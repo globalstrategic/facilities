@@ -49,7 +49,6 @@ Quick reference for open-source lookups:
 - **Sisian-Shik Quarry** [ARM]
 - **Teghut Mine** [ARM] (region: Lori, operator: Teghout CJSC (historic Vallex/ACP))
 - **Zeolite Pro Quarry** [ARM]
-- **(Note: This table is a representative compilation and may not include every single smaller operation. "N/A" indicates the specific operator was not readily available in the synthesized sources for this report).** [AUS]
 - **Alumina Refineries** [AUS]
 - **Browns Range** [AUS] (commodities: Neodymium|rare earths)
 - **Copper Smelters & Refineries** [AUS]
@@ -252,3 +251,4 @@ Quick reference for open-source lookups:
 - **Copper Occurrences** [CAF] (commodities: Copper|Neodymium-Praseodymium)
 - **Manganese Occurrences** [CAF] (commodities: manganese|Neodymium-Praseodymium)
 - **Nickel Occurrences** [CAF] (commodities: Nickel|Neodymium-Praseodymium)
+- ****PGM Occurrences**** [CAF] (commodities: Platinum|Palladium|Neodymium-Praseodymium)

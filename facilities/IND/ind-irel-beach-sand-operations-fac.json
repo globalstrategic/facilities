@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T09:12:37.592170",
+    "last_checked": "2025-11-04T19:18:51.056946Z",
     "checked_by": "import_pipeline",
-    "notes": "Operations at Chavara (Kerala), Manavalakurichi (Tamil Nadu), and OSCOM (Odisha).74"
+    "notes": "Operations at Chavara (Kerala), Manavalakurichi (Tamil Nadu), and OSCOM (Odisha).74 | Canonical name+slug generated"
   },
-  "canonical_name": "**IREL beach-sand ** Processing Plant",
+  "canonical_name": "Irel Beach Sand Processing Plant",
   "canonical_slug": "irel-beach-sand-processing-plant",
-  "display_name": "**IREL beach-sand **",
+  "display_name": "Irel Beach Sand",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**IREL beach-sand ** Processing Plant",
+      "from": "2025-10-27T09:12:37.592170",
+      "to": "2025-11-04T19:18:51.056943Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

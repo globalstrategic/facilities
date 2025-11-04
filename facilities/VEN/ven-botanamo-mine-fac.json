@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.377280",
+    "last_checked": "2025-11-04T19:18:49.654018Z",
     "checked_by": "import_pipeline",
-    "notes": "A known historical mining area for both gold and tungsten.57"
+    "notes": "A known historical mining area for both gold and tungsten.57 | Canonical name+slug generated"
   },
-  "canonical_name": "**Botanamo ** Mine",
+  "canonical_name": "Botanamo Mine",
   "canonical_slug": "botanamo-mine",
-  "display_name": "**Botanamo **",
+  "display_name": "Botanamo",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Botanamo ** Mine",
+      "from": "2025-10-21T11:38:45.377280",
+      "to": "2025-11-04T19:18:49.654016Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

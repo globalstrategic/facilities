@@ -55,20 +55,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-28T22:09:19.391766",
+    "last_checked": "2025-11-04T19:18:48.870717Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Al Wash-hi Majaza ** Processing Plant",
+  "canonical_name": "Al Wash Hi Majaza Processing Plant",
   "canonical_slug": "al-wash-hi-majaza-processing-plant",
-  "display_name": "**Al Wash-hi Majaza **",
+  "display_name": "Al Wash Hi Majaza",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Al Wash-hi Majaza ** Processing Plant",
+      "from": "2025-10-28T22:09:19.391766",
+      "to": "2025-11-04T19:18:48.870713Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -37,21 +37,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:10.147271",
+    "last_checked": "2025-11-04T19:18:45.707257Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Goodin Creek # 1 and 2 Refuge Area Mine",
+  "canonical_name": "Goodin Creek 1 And 2 Refuge Area Mine",
   "canonical_slug": "goodin-creek-1-and-2-refuge-area-mine",
-  "display_name": "Goodin Creek # 1 and 2 Refuge Area",
+  "display_name": "Goodin Creek 1 And 2 Refuge Area",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Goodin Creek # 1 and 2 Refuge Area Mine",
+      "from": "2025-10-20T15:29:10.147271",
+      "to": "2025-11-04T19:18:45.707253Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

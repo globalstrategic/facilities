@@ -42,21 +42,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T21:51:42.524741",
+    "last_checked": "2025-11-04T19:19:22.484402Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Barghare Polymetallic** Mine",
+  "canonical_name": "Barghare Polymetallic Mine",
   "canonical_slug": "barghare-polymetallic-mine",
-  "display_name": "**Barghare Polymetallic**",
+  "display_name": "Barghare Polymetallic",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Barghare Polymetallic** Mine",
+      "from": "2025-10-29T21:51:42.524741",
+      "to": "2025-11-04T19:19:22.484400Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

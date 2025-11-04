@@ -46,20 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:07.404671",
+    "last_checked": "2025-11-04T19:18:46.254882Z",
     "checked_by": "import_pipeline",
-    "notes": "**High ESG Risk:** Located within the Prey Lang Wildlife Sanctuary."
+    "notes": "**High ESG Risk:** Located within the Prey Lang Wildlife Sanctuary. | Canonical name+slug generated"
   },
-  "canonical_name": "**Prey Lang Gold ** Mine",
+  "canonical_name": "Prey Lang Gold Mine",
   "canonical_slug": "prey-lang-gold-mine",
-  "display_name": "**Prey Lang Gold **",
+  "display_name": "Prey Lang Gold",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Prey Lang Gold ** Mine",
+      "from": "2025-10-29T12:22:07.404671",
+      "to": "2025-11-04T19:18:46.254879Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:20.017097",
+    "last_checked": "2025-11-04T19:18:46.714772Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "TISCO Ekou South East Mine",
+  "canonical_name": "Tisco Ekou South East Mine",
   "canonical_slug": "tisco-ekou-south-east-mine",
-  "display_name": "TISCO Ekou South East",
+  "display_name": "Tisco Ekou South East",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "TISCO Ekou South East Mine",
+      "from": "2025-10-20T15:29:20.017097",
+      "to": "2025-11-04T19:18:46.714770Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

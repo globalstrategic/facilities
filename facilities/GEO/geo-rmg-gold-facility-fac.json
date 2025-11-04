@@ -41,21 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:01:00.126243",
+    "last_checked": "2025-11-04T19:19:01.727019Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**RMG Gold Facility** Heap Leach",
+  "canonical_name": "RMG Gold Facility Heap Leach",
   "canonical_slug": "rmg-gold-facility-heap-leach",
-  "display_name": "**RMG Gold Facility**",
+  "display_name": "RMG Gold Facility",
   "primary_type": "heap_leach",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**RMG Gold Facility** Heap Leach",
+      "from": "2025-10-28T21:01:00.126243",
+      "to": "2025-11-04T19:19:01.727015Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T21:51:42.561020",
+    "last_checked": "2025-11-04T19:19:22.484046Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Bhairahawa Steel ** Smelter",
+  "canonical_name": "Bhairahawa Steel Smelter",
   "canonical_slug": "bhairahawa-steel-smelter",
-  "display_name": "**Bhairahawa Steel **",
+  "display_name": "Bhairahawa Steel",
   "primary_type": "smelter",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bhairahawa Steel ** Smelter",
+      "from": "2025-10-29T21:51:42.561020",
+      "to": "2025-11-04T19:19:22.484043Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

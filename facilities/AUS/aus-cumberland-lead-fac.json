@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:26:57.327570",
+    "last_checked": "2025-11-04T19:18:52.326514Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "CUMBERLAND LEAD Mine",
+  "canonical_name": "Cumberland Lead Mine",
   "canonical_slug": "cumberland-lead-mine",
-  "display_name": "CUMBERLAND LEAD",
+  "display_name": "Cumberland Lead",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "CUMBERLAND LEAD Mine",
+      "from": "2025-10-20T15:26:57.327570",
+      "to": "2025-11-04T19:18:52.326512Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

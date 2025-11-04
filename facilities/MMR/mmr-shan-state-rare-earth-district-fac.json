@@ -36,20 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T10:13:23.251933",
+    "last_checked": "2025-11-04T19:19:08.871961Z",
     "checked_by": "import_pipeline",
-    "notes": "Shell-leach clay; HREE-heavy with some Nd/Pr"
+    "notes": "Shell-leach clay; HREE-heavy with some Nd/Pr | Canonical name+slug generated"
   },
-  "canonical_name": "Shan State rare-earth Mine",
+  "canonical_name": "Shan State Rare Earth Mine",
   "canonical_slug": "shan-state-rare-earth-mine",
-  "display_name": "Shan State rare-earth",
+  "display_name": "Shan State Rare Earth",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Shan State rare-earth Mine",
+      "from": "2025-10-21T10:13:23.251933",
+      "to": "2025-11-04T19:19:08.871959Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

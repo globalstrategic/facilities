@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.566935",
+    "last_checked": "2025-11-04T19:18:53.395459Z",
     "checked_by": "import_pipeline",
-    "notes": "Leading aluminum producer with a high recycling rate (75-80%); serves aerospace/automotive."
+    "notes": "Leading aluminum producer with a high recycling rate (75-80%); serves aerospace/automotive. | Canonical name+slug generated"
   },
-  "canonical_name": "AMAG Austria Metall AG Plant",
+  "canonical_name": "Amag Austria Metall AG Plant",
   "canonical_slug": "amag-austria-metall-ag-plant",
-  "display_name": "AMAG Austria Metall AG",
+  "display_name": "Amag Austria Metall AG",
   "primary_type": "plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "AMAG Austria Metall AG Plant",
+      "from": "2025-10-21T09:23:32.566935",
+      "to": "2025-11-04T19:18:53.395456Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

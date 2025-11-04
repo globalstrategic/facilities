@@ -32,22 +32,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:41:37.946905",
+    "last_checked": "2025-11-04T19:19:13.775418Z",
     "checked_by": "import_pipeline",
-    "notes": "Geocoded via industrial_zone_db (confidence: 0.80)",
+    "notes": "Geocoded via industrial_zone_db (confidence: 0.80) | Canonical name+slug generated",
     "geocoding_source": "Exact power/smelter campus coordinates"
   },
-  "canonical_name": "Jebel Ali Smelter",
+  "canonical_name": "Dubai Emirates Global Aluminium (EGA) Jebel Ali Smelter",
   "canonical_slug": "jebel-ali-smelter",
   "display_name": "Jebel Ali",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": false
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
   },
-  "operator_display": "Emirates Global Aluminium (EGA)"
+  "operator_display": "Emirates Global Aluminium (EGA)",
+  "canonical_name_history": [
+    {
+      "name": "Jebel Ali Smelter",
+      "from": "2025-10-21T09:41:37.946905",
+      "to": "2025-11-04T19:19:13.775415Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

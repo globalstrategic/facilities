@@ -42,21 +42,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.596328",
+    "last_checked": "2025-11-04T19:18:53.399043Z",
     "checked_by": "import_pipeline",
-    "notes": "Historically one of Europe's largest silver and copper producers."
+    "notes": "Historically one of Europe's largest silver and copper producers. | Canonical name+slug generated"
   },
-  "canonical_name": "Schwaz-Brixlegg",
+  "canonical_name": "Schwaz Brixlegg Facility",
   "canonical_slug": "schwaz-brixlegg-facility",
-  "display_name": "Schwaz-Brixlegg",
+  "display_name": "Schwaz Brixlegg",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Schwaz-Brixlegg",
+      "from": "2025-10-21T09:23:32.596328",
+      "to": "2025-11-04T19:18:53.399041Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

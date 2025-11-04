@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:59.509559",
+    "last_checked": "2025-11-04T19:18:46.664535Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Pan'er Coal Mine",
+  "canonical_name": "Panâ Er Coal Mine",
   "canonical_slug": "panatmer-coal-mine",
-  "display_name": "Pan'er Coal",
+  "display_name": "Panâ Er Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Pan'er Coal Mine",
+      "from": "2025-10-20T15:27:59.509559",
+      "to": "2025-11-04T19:18:46.664533Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

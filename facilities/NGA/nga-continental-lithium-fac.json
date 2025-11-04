@@ -32,21 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:45:20.610421",
+    "last_checked": "2025-11-04T19:19:14.811344Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Continental Lithium",
+  "canonical_name": "Continental Lithium Facility",
   "canonical_slug": "continental-lithium-facility",
   "display_name": "Continental Lithium",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.3,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Continental Lithium",
+      "from": "2025-10-29T22:45:20.610421",
+      "to": "2025-11-04T19:19:14.811342Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

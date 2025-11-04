@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T10:38:14.046059",
+    "last_checked": "2025-11-04T19:19:00.105794Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Mines in Transition** Mine",
+  "canonical_name": "Mines In Transition Mine",
   "canonical_slug": "mines-in-transition-mine",
-  "display_name": "**Mines in Transition**",
+  "display_name": "Mines In Transition",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mines in Transition** Mine",
+      "from": "2025-10-29T10:38:14.046059",
+      "to": "2025-11-04T19:19:00.105792Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

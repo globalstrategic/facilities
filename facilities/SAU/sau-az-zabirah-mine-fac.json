@@ -43,20 +43,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-21T18:09:18.812334",
+    "last_checked": "2025-11-04T19:19:12.378213Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Az-Zabirah Mine",
+  "canonical_name": "Az Zabirah Mine",
   "canonical_slug": "az-zabirah-mine",
-  "display_name": "Az-Zabirah",
+  "display_name": "Az Zabirah",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Az-Zabirah Mine",
+      "from": "2025-10-21T18:09:18.812334",
+      "to": "2025-11-04T19:19:12.378210Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

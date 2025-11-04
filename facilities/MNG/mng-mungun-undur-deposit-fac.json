@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-29T22:22:28.040293",
+    "last_checked": "2025-11-04T19:19:07.452939Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Mungun-Undur Mine",
+  "canonical_name": "Mungun Undur Mine",
   "canonical_slug": "mungun-undur-mine",
-  "display_name": "Mungun-Undur",
+  "display_name": "Mungun Undur",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mungun-Undur Mine",
+      "from": "2025-10-29T22:22:28.040293",
+      "to": "2025-11-04T19:19:07.452936Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

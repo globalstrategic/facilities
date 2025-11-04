@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:24.859746",
+    "last_checked": "2025-11-04T19:18:55.014689Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "SMGB Group Galas Mine",
+  "canonical_name": "Smgb Group Galas Mine",
   "canonical_slug": "smgb-group-galas-mine",
-  "display_name": "SMGB Group Galas",
+  "display_name": "Smgb Group Galas",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "SMGB Group Galas Mine",
+      "from": "2025-10-20T15:29:24.859746",
+      "to": "2025-11-04T19:18:55.014687Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.535009",
+    "last_checked": "2025-11-04T19:18:55.540892Z",
     "checked_by": "import_pipeline",
-    "notes": "Planned Stage 3 of Dashkesan megaproject. 2 Mt/yr capacity."
+    "notes": "Planned Stage 3 of Dashkesan megaproject. 2 Mt/yr capacity. | Canonical name+slug generated"
   },
   "canonical_name": "HBI Processing Plant",
   "canonical_slug": "hbi-processing-plant",
   "display_name": "HBI",
   "primary_type": "processing_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

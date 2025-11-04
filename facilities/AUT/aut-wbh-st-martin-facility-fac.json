@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:32.473956",
+    "last_checked": "2025-11-04T19:18:53.400303Z",
     "checked_by": "import_pipeline",
-    "notes": "Only integrated tungsten producer outside Asia; refines Mittersill concentrate and scrap."
+    "notes": "Only integrated tungsten producer outside Asia; refines Mittersill concentrate and scrap. | Canonical name+slug generated"
   },
-  "canonical_name": "WBH St. Martin Facility Plant",
+  "canonical_name": "WBH St Martin Facility Plant",
   "canonical_slug": "wbh-st-martin-facility-plant",
-  "display_name": "WBH St. Martin Facility",
+  "display_name": "WBH St Martin Facility",
   "primary_type": "plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.46499999999999997,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "WBH St. Martin Facility Plant",
+      "from": "2025-10-21T09:23:32.473956",
+      "to": "2025-11-04T19:18:53.400299Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

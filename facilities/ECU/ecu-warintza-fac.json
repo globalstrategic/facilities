@@ -27,21 +27,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T16:58:49.041111",
+    "last_checked": "2025-11-04T19:19:02.546469Z",
     "checked_by": "import_pipeline",
-    "notes": "Resource 579Mt (Indicated)"
+    "notes": "Resource 579Mt (Indicated) | Canonical name+slug generated"
   },
   "canonical_name": "Warintza Mine",
   "canonical_slug": "warintza-mine",
   "display_name": "Warintza",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

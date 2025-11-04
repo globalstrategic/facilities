@@ -32,20 +32,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:45.300224",
+    "last_checked": "2025-11-04T19:18:49.653855Z",
     "checked_by": "import_pipeline",
-    "notes": "A historic mine in the El Callao district, previously operated by Rusoro Mining.51 Coordinates from initial list and Mindat.org."
+    "notes": "A historic mine in the El Callao district, previously operated by Rusoro Mining.51 Coordinates from initial list and Mindat.org. | Canonical name+slug generated"
   },
-  "canonical_name": "**Mina Isidora ** Mine",
+  "canonical_name": "Mina Isidora Mine",
   "canonical_slug": "mina-isidora-mine",
-  "display_name": "**Mina Isidora **",
+  "display_name": "Mina Isidora",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Mina Isidora ** Mine",
+      "from": "2025-10-21T11:38:45.300224",
+      "to": "2025-11-04T19:18:49.653853Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

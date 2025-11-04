@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T13:21:36.029710",
+    "last_checked": "2025-11-04T19:19:04.459351Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Tabou/San-Pedro ** Exploration",
+  "canonical_name": "Tabou/san Pedro Exploration",
   "canonical_slug": "tabou-san-pedro-exploration",
-  "display_name": "**Tabou/San-Pedro **",
+  "display_name": "Tabou/san Pedro",
   "primary_type": "exploration",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Tabou/San-Pedro ** Exploration",
+      "from": "2025-10-27T13:21:36.029710",
+      "to": "2025-11-04T19:19:04.459349Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

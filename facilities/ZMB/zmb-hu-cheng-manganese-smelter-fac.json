@@ -40,20 +40,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-21T13:04:38.858979",
+    "last_checked": "2025-11-04T19:19:21.681687Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Hu-Cheng Manganese Smelter",
+  "canonical_name": "Hu Cheng Manganese Smelter",
   "canonical_slug": "hu-cheng-manganese-smelter",
-  "display_name": "Hu-Cheng Manganese",
+  "display_name": "Hu Cheng Manganese",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Hu-Cheng Manganese Smelter",
+      "from": "2025-10-21T13:04:38.858979",
+      "to": "2025-11-04T19:19:21.681685Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

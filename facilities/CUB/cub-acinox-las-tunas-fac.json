@@ -46,21 +46,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T14:21:07.006907",
+    "last_checked": "2025-11-04T19:18:54.451798Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Acinox Las Tunas** Steel Plant",
+  "canonical_name": "Acinox Las Tunas Steel Plant",
   "canonical_slug": "acinox-las-tunas-steel-plant",
-  "display_name": "**Acinox Las Tunas**",
+  "display_name": "Acinox Las Tunas",
   "primary_type": "steel_plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Acinox Las Tunas** Steel Plant",
+      "from": "2025-10-27T14:21:07.006907",
+      "to": "2025-11-04T19:18:54.451796Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

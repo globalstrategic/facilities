@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -25.67526,
+    "lon": 27.32613,
+    "precision": "site",
+    "town": "Rustenburg",
+    "region": "North West"
   },
   "types": [
     "mine"
@@ -30,22 +32,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T17:58:50.189120Z",
+    "last_checked": "2025-11-04T19:35:07.744608Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Smelter campus coords."
   },
-  "canonical_name": "Waterval Mine",
+  "canonical_name": "Rustenburg Anglo American Platinum Waterval Smelter",
   "canonical_slug": "waterval-mine",
   "display_name": "Waterval",
-  "primary_type": "mine",
+  "primary_type": "smelter",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "operator_display": "Anglo American Platinum",
+  "canonical_name_history": [
+    {
+      "name": "Waterval Mine",
+      "from": "2025-11-04T19:19:19.152654Z",
+      "to": "2025-11-04T19:35:07.744604Z",
+      "reason": "data_correction"
+    }
+  ]
 }

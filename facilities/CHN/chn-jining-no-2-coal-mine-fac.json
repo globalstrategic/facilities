@@ -33,20 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:58.864848",
+    "last_checked": "2025-11-04T19:18:46.789918Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Jining No. 2 Coal Mine",
+  "canonical_name": "Jining No 2 Coal Mine",
   "canonical_slug": "jining-no-2-coal-mine",
-  "display_name": "Jining No. 2 Coal",
+  "display_name": "Jining No 2 Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Jining No. 2 Coal Mine",
+      "from": "2025-10-20T15:27:58.864848",
+      "to": "2025-11-04T19:18:46.789916Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

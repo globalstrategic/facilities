@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T11:38:44.987482",
+    "last_checked": "2025-11-04T19:18:49.655861Z",
     "checked_by": "import_pipeline",
-    "notes": "Venezuela's only exploited bauxite deposit. State-owned and operated. Coordinates are well-corroborated.1"
+    "notes": "Venezuela's only exploited bauxite deposit. State-owned and operated. Coordinates are well-corroborated.1 | Canonical name+slug generated"
   },
-  "canonical_name": "**Los Pijiguaos ** Mine",
+  "canonical_name": "Los Pijiguaos Mine",
   "canonical_slug": "los-pijiguaos-mine",
-  "display_name": "**Los Pijiguaos **",
+  "display_name": "Los Pijiguaos",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Los Pijiguaos ** Mine",
+      "from": "2025-10-21T11:38:44.987482",
+      "to": "2025-11-04T19:18:49.655859Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

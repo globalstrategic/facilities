@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.786215",
+    "last_checked": "2025-11-04T19:19:10.578979Z",
     "checked_by": "import_pipeline",
-    "notes": "Famed medieval silver mining center. Some underground workings are preserved as a museum. No commercial activity. 1"
+    "notes": "Famed medieval silver mining center. Some underground workings are preserved as a museum. No commercial activity. 1 | Canonical name+slug generated"
   },
-  "canonical_name": "**Kutná Hora Mining ** Mine",
+  "canonical_name": "Kutná Hora Mining Mine",
   "canonical_slug": "kutna-hora-mining-mine",
-  "display_name": "**Kutná Hora Mining **",
+  "display_name": "Kutná Hora Mining",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Kutná Hora Mining ** Mine",
+      "from": "2025-10-27T15:23:26.786215",
+      "to": "2025-11-04T19:19:10.578975Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

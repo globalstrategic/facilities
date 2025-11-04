@@ -33,21 +33,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:27:11.926765",
+    "last_checked": "2025-11-04T19:18:51.960711Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Hay/Noro Mine",
+  "canonical_name": "Hay/noro Mine",
   "canonical_slug": "hay-noro-mine",
-  "display_name": "Hay/Noro",
+  "display_name": "Hay/noro",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Hay/Noro Mine",
+      "from": "2025-10-20T15:27:11.926765",
+      "to": "2025-11-04T19:18:51.960709Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

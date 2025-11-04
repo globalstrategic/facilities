@@ -51,20 +51,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-23T17:54:07.068238",
+    "last_checked": "2025-11-04T19:19:04.736703Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Co-O Processing Plant",
+  "canonical_name": "Co O Processing Plant",
   "canonical_slug": "co-o-processing-plant",
-  "display_name": "Co-O",
+  "display_name": "Co O",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Co-O Processing Plant",
+      "from": "2025-10-23T17:54:07.068238",
+      "to": "2025-11-04T19:19:04.736691Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

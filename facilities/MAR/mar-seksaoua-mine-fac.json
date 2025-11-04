@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.471874",
+    "last_checked": "2025-11-04T19:18:48.330788Z",
     "checked_by": "import_pipeline",
-    "notes": "Historical polymetallic mine. Status unclear following a planned modernization in 2013\\."
+    "notes": "Historical polymetallic mine. Status unclear following a planned modernization in 2013\\. | Canonical name+slug generated"
   },
-  "canonical_name": "**Seksaoua ** Mine",
+  "canonical_name": "Seksaoua Mine",
   "canonical_slug": "seksaoua-mine-2",
-  "display_name": "**Seksaoua **",
+  "display_name": "Seksaoua",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Seksaoua ** Mine",
+      "from": "2025-10-29T16:17:07.471874",
+      "to": "2025-11-04T19:18:48.330785Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

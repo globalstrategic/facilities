@@ -44,21 +44,31 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:22:19.001651",
+    "last_checked": "2025-11-04T19:19:01.451148Z",
     "checked_by": "import_pipeline",
-    "notes": null,
+    "notes": "Canonical name+slug generated",
     "geocoding_source": "Munellë mine locality coords"
   },
-  "canonical_name": "Munella Mine",
+  "canonical_name": "Mirditë Munella Mine",
   "canonical_slug": "munella-mine",
   "display_name": "Munella",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.7649999999999999,
     "flags": {
       "town_missing": false,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Munella Mine",
+      "from": "2025-10-21T09:22:19.001651",
+      "to": "2025-11-04T19:19:01.451145Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

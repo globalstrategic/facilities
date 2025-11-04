@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T15:23:26.785506",
+    "last_checked": "2025-11-04T19:19:10.581575Z",
     "checked_by": "import_pipeline",
-    "notes": "One of Europe's most significant historical Ag-Pb mining districts. Now managed by DIAMO for long-term remediation. 3"
+    "notes": "One of Europe's most significant historical Ag-Pb mining districts. Now managed by DIAMO for long-term remediation. 3 | Canonical name+slug generated"
   },
-  "canonical_name": "**Příbram Mining ** Mine",
+  "canonical_name": "Příbram Mining Mine",
   "canonical_slug": "pribram-mining-mine",
-  "display_name": "**Příbram Mining **",
+  "display_name": "Příbram Mining",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Příbram Mining ** Mine",
+      "from": "2025-10-27T15:23:26.785506",
+      "to": "2025-11-04T19:19:10.581570Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

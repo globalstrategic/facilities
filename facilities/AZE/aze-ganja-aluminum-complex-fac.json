@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.684457",
+    "last_checked": "2025-11-04T19:18:55.535418Z",
     "checked_by": "import_pipeline",
-    "notes": "Primary aluminum smelter. Capacity 54 kt/yr, planned expansion to 200 kt/yr."
+    "notes": "Primary aluminum smelter. Capacity 54 kt/yr, planned expansion to 200 kt/yr. | Canonical name+slug generated"
   },
   "canonical_name": "Ganja Aluminum Smelter",
   "canonical_slug": "ganja-aluminum-smelter",
   "display_name": "Ganja Aluminum",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

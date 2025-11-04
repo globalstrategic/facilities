@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T13:04:38.145596",
+    "last_checked": "2025-11-04T19:19:02.280938Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Thach Khe ** Mine",
+  "canonical_name": "Thach Khe Mine",
   "canonical_slug": "thach-khe-mine",
-  "display_name": "**Thach Khe **",
+  "display_name": "Thach Khe",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Thach Khe ** Mine",
+      "from": "2025-10-21T13:04:38.145596",
+      "to": "2025-11-04T19:19:02.280936Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -36,21 +36,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:26.669461",
+    "last_checked": "2025-11-04T19:18:52.263495Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Brockman/Nammuldi Mine",
+  "canonical_name": "Brockman/nammuldi Mine",
   "canonical_slug": "brockman-nammuldi-mine",
-  "display_name": "Brockman/Nammuldi",
+  "display_name": "Brockman/nammuldi",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
+      "operator_unresolved": false,
       "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Brockman/Nammuldi Mine",
+      "from": "2025-10-20T15:27:26.669461",
+      "to": "2025-11-04T19:18:52.263493Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

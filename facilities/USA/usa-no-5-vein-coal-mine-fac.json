@@ -35,20 +35,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:28:34.418877",
+    "last_checked": "2025-11-04T19:18:45.874559Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "No. 5 Vein Coal Mine",
+  "canonical_name": "No 5 Vein Coal Mine",
   "canonical_slug": "no-5-vein-coal-mine",
-  "display_name": "No. 5 Vein Coal",
+  "display_name": "No 5 Vein Coal",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "No. 5 Vein Coal Mine",
+      "from": "2025-10-20T15:28:34.418877",
+      "to": "2025-11-04T19:18:45.874555Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

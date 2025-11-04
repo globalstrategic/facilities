@@ -41,20 +41,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T16:17:07.444833",
+    "last_checked": "2025-11-04T19:18:48.332833Z",
     "checked_by": "import_pipeline",
-    "notes": "One of the world's largest undeveloped high-grade tin deposits. To be processed at El Hammam."
+    "notes": "One of the world's largest undeveloped high-grade tin deposits. To be processed at El Hammam. | Canonical name+slug generated"
   },
-  "canonical_name": "**Achmmach ** Mine",
+  "canonical_name": "Achmmach Mine",
   "canonical_slug": "achmmach-mine",
-  "display_name": "**Achmmach **",
+  "display_name": "Achmmach",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Achmmach ** Mine",
+      "from": "2025-10-29T16:17:07.444833",
+      "to": "2025-11-04T19:18:48.332830Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

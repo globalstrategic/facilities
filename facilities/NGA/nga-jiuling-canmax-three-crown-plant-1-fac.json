@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T22:45:20.684654",
+    "last_checked": "2025-11-04T19:19:14.812312Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Jiuling/Canmax/Three Crown 1 Processing Plant",
+  "canonical_name": "Jiuling/canmax/three Crown 1 Processing Plant",
   "canonical_slug": "jiuling-canmax-three-crown-1-processing-plant",
-  "display_name": "Jiuling/Canmax/Three Crown 1",
+  "display_name": "Jiuling/canmax/three Crown 1",
   "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Jiuling/Canmax/Three Crown 1 Processing Plant",
+      "from": "2025-10-29T22:45:20.684654",
+      "to": "2025-11-04T19:19:14.812309Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

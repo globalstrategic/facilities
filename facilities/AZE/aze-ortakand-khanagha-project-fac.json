@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:43.653318",
+    "last_checked": "2025-11-04T19:18:55.539849Z",
     "checked_by": "import_pipeline",
-    "notes": "Prospective area under evaluation."
+    "notes": "Prospective area under evaluation. | Canonical name+slug generated"
   },
-  "canonical_name": "Ortakand-Khanagha Mine",
+  "canonical_name": "Ortakand Khanagha Mine",
   "canonical_slug": "ortakand-khanagha-mine",
-  "display_name": "Ortakand-Khanagha",
+  "display_name": "Ortakand Khanagha",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Ortakand-Khanagha Mine",
+      "from": "2025-10-21T09:23:43.653318",
+      "to": "2025-11-04T19:18:55.539845Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -31,20 +31,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:18.756874",
+    "last_checked": "2025-11-04T19:19:08.021092Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Sinosteel Kribi Lobé Mine",
+  "canonical_name": "Sinosteel Kribi Lobã Mine",
   "canonical_slug": "sinosteel-kribi-loba-mine",
-  "display_name": "Sinosteel Kribi Lobé",
+  "display_name": "Sinosteel Kribi Lobã",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Sinosteel Kribi Lobé Mine",
+      "from": "2025-10-20T15:29:18.756874",
+      "to": "2025-11-04T19:19:08.021089Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

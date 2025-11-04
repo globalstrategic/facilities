@@ -40,21 +40,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T17:18:38.707111",
+    "last_checked": "2025-11-04T19:18:51.671409Z",
     "checked_by": "import_pipeline",
-    "notes": "Operates the world's largest manganese ferroalloys furnace. 19"
+    "notes": "Operates the world's largest manganese ferroalloys furnace. 19 | Canonical name+slug generated"
   },
-  "canonical_name": "**Ferroglobe Dunkirk** Mine",
+  "canonical_name": "Ferroglobe Dunkirk Mine",
   "canonical_slug": "ferroglobe-dunkirk-mine",
-  "display_name": "**Ferroglobe Dunkirk**",
+  "display_name": "Ferroglobe Dunkirk",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
       "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Ferroglobe Dunkirk** Mine",
+      "from": "2025-10-28T17:18:38.707111",
+      "to": "2025-11-04T19:18:51.671402Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

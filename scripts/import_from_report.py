@@ -98,6 +98,57 @@ STATUS_MAP = {
 }
 
 
+def is_valid_facility_name(name: str) -> bool:
+    """Validate that a name represents an actual facility, not metadata or notes.
+
+    Rejects:
+    - Empty/blank names
+    - Names that are table notes or metadata
+    - Names indicating absence of facilities
+    - Names that are just "not specified" or similar
+    """
+    if not name or not name.strip():
+        return False
+
+    name_lower = name.lower().strip()
+
+    # Reject obvious non-facility patterns
+    reject_patterns = [
+        # Empty or placeholder
+        r'^-+$',
+        r'^n/?a$',
+        r'^tbd$',
+        r'^unknown$',
+
+        # Table metadata
+        r'^note:',
+        r'^\(note',
+        r'this table',
+        r'representative compilation',
+
+        # Absence indicators
+        r'^no other (name|known)',
+        r'^not (specified|identified|available)',
+        r'^no (steel|processing|facilities|industry|smelters)',
+        r'no .+ exist',
+        r'net importer',
+
+        # Generic/potential only
+        r'^generic potential',
+        r'^uneconomic traces',
+        r'^potential noted',
+
+        # Too short to be meaningful (after removing special chars)
+        r'^.{1,2}$'
+    ]
+
+    for pattern in reject_patterns:
+        if re.search(pattern, name_lower):
+            return False
+
+    return True
+
+
 def slugify(text: str) -> str:
     """Convert text to URL-safe slug."""
     if not text:
@@ -1126,6 +1177,12 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
                 if not raw_name or raw_name == '-':
                     continue
 
+                # Validate that this is an actual facility name, not metadata/notes
+                if not is_valid_facility_name(raw_name):
+                    logger.debug(f"Skipping non-facility row: '{raw_name}'")
+                    stats['skipped'] += 1
+                    continue
+
                 # Extract parenthetical aliases (e.g., "Bakuta (Boguty)" -> name="Bakuta", aliases=["Boguty"])
                 # But skip if parenthetical is clearly not an alias (Gov't, Ltd, dates, etc.)
                 import re
@@ -1367,6 +1424,12 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
             if not name:
                 continue
 
+            # Validate that this is an actual facility name, not metadata/notes
+            if not is_valid_facility_name(name):
+                logger.debug(f"Skipping non-facility text entry: '{name}'")
+                stats['skipped'] += 1
+                continue
+
             # Generate facility ID
             facility_id = f"{country_iso3.lower()}-{slugify(name)}-fac"
 
@@ -1450,6 +1513,8 @@ def process_report(report_text: str, country_iso3: str, country_dir: str, source
     logger.info(f"Processed {row_num} table rows + {text_num} text facilities")
     logger.info(f"Found {stats['total_facilities']} new facilities")
     logger.info(f"Skipped {stats['duplicates_skipped']} duplicates")
+    if stats['skipped'] > 0:
+        logger.info(f"Skipped {stats['skipped']} invalid/non-facility rows")
     logger.info(f"Entity resolution stats:")
     logger.info(f"  - Metals with formulas: {stats['metal_resolutions']}")
     logger.info(f"  - Company mentions extracted: {stats['company_mentions_extracted']}")

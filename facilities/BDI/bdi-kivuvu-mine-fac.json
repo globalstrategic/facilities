@@ -59,20 +59,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.153635",
+    "last_checked": "2025-11-04T19:19:00.897698Z",
     "checked_by": "import_pipeline",
-    "notes": "Considered one of the country's largest columbite-tantalite (coltan) mines. Covered by the iTSCi traceability program. 21"
+    "notes": "Considered one of the country's largest columbite-tantalite (coltan) mines. Covered by the iTSCi traceability program. 21 | Canonical name+slug generated"
   },
-  "canonical_name": "**Kivuvu ** Mine",
+  "canonical_name": "Kivuvu Mine",
   "canonical_slug": "kivuvu-mine",
-  "display_name": "**Kivuvu **",
+  "display_name": "Kivuvu",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Kivuvu ** Mine",
+      "from": "2025-10-27T10:36:55.153635",
+      "to": "2025-11-04T19:19:00.897696Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

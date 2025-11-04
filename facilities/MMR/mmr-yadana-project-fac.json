@@ -31,21 +31,30 @@
   "verification": {
     "status": "llm_suggested",
     "confidence": 0.65,
-    "last_checked": "2025-10-21T09:24:04.744589",
+    "last_checked": "2025-11-04T19:19:08.867238Z",
     "checked_by": "import_pipeline_text_extraction",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Yadana",
+  "canonical_name": "Yadana Facility",
   "canonical_slug": "yadana-facility",
   "display_name": "Yadana",
   "primary_type": "facility",
-  "type_confidence": 0.3,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.405,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Yadana",
+      "from": "2025-10-21T09:24:04.744589",
+      "to": "2025-11-04T19:19:08.867235Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

@@ -56,20 +56,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-27T10:36:55.176622",
+    "last_checked": "2025-11-04T19:19:00.898537Z",
     "checked_by": "import_pipeline",
-    "notes": "An active site producing both coltan (tantalum/niobium ore) and cassiterite (tin ore) under the iTSCi program. 21"
+    "notes": "An active site producing both coltan (tantalum/niobium ore) and cassiterite (tin ore) under the iTSCi program. 21 | Canonical name+slug generated"
   },
-  "canonical_name": "**Gatete ** Mine",
+  "canonical_name": "Gatete Mine",
   "canonical_slug": "gatete-mine",
-  "display_name": "**Gatete **",
+  "display_name": "Gatete",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Gatete ** Mine",
+      "from": "2025-10-27T10:36:55.176622",
+      "to": "2025-11-04T19:19:00.898535Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

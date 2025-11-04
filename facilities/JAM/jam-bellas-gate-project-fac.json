@@ -34,20 +34,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-29T12:22:22.448079",
+    "last_checked": "2025-11-04T19:19:17.471760Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "**Bellas Gate ** Mine",
+  "canonical_name": "Bellas Gate Mine",
   "canonical_slug": "bellas-gate-mine",
-  "display_name": "**Bellas Gate **",
+  "display_name": "Bellas Gate",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Bellas Gate ** Mine",
+      "from": "2025-10-29T12:22:22.448079",
+      "to": "2025-11-04T19:19:17.471757Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

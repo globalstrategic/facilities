@@ -39,20 +39,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-28T21:54:37.803868",
+    "last_checked": "2025-11-04T19:19:08.318154Z",
     "checked_by": "import_pipeline",
-    "notes": "High. Key strategic project for Li-U. Not in production."
+    "notes": "High. Key strategic project for Li-U. Not in production. | Canonical name+slug generated"
   },
-  "canonical_name": "**Falchani ** Development",
+  "canonical_name": "Falchani Development",
   "canonical_slug": "falchani-development",
-  "display_name": "**Falchani **",
+  "display_name": "Falchani",
   "primary_type": "development",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Falchani ** Development",
+      "from": "2025-10-28T21:54:37.803868",
+      "to": "2025-11-04T19:19:08.318151Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }
