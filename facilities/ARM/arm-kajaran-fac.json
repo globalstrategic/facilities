@@ -8,9 +8,11 @@
   ],
   "country_iso3": "ARM",
   "location": {
-    "lat": 39.159,
-    "lon": 46.135,
-    "precision": "site"
+    "lat": 39.14389,
+    "lon": 46.13778,
+    "precision": "site",
+    "town": "Kajaran",
+    "region": "Syunik"
   },
   "types": [
     "mine"
@@ -50,21 +52,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:26:48.641575",
+    "last_checked": "2025-11-04T17:58:50.010760Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Mindat site coords."
   },
-  "canonical_name": "Kajaran Mine",
-  "canonical_slug": "kajaran-mine",
+  "canonical_name": "Kajaran Zangezur Copper & Molybdenum Combine Kajaran Mine",
+  "canonical_slug": "kajaran-kajaran-mine",
   "display_name": "Kajaran",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Zangezur Copper & Molybdenum Combine",
+  "canonical_name_history": [
+    {
+      "name": "Kajaran Mine",
+      "from": "2025-10-20T15:26:48.641575",
+      "to": "2025-11-04T17:40:20.502138Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Kajaran Zangezur Copper & Molybdenum Combine (ZCMC) Kajaran Mine",
+      "from": "2025-11-04T17:40:20.502142Z",
+      "to": "2025-11-04T17:58:50.010758Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

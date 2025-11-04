@@ -25,21 +25,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:55.321599",
+    "last_checked": "2025-11-04T17:58:50.016088Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Saint-Georges-sur-Meuse, Liège Mine",
-  "canonical_slug": "saint-georges-sur-meuse-liege-mine",
-  "display_name": "Saint-Georges-sur-Meuse, Liège",
+  "canonical_name": "Saint Georges Sur Meuse, Liège Mine",
+  "canonical_slug": "saint-georges-sur-meuse-lige-mine",
+  "display_name": "Saint Georges Sur Meuse, Liège",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Saint-Georges-sur-Meuse, Liège Mine",
+      "from": "2025-10-21T09:23:55.321599",
+      "to": "2025-11-04T17:40:20.514584Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

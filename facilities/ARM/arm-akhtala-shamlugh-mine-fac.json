@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.150347,
+    "lon": 44.770628,
+    "precision": "town",
+    "town": "Akhtala",
+    "region": "Lori"
   },
   "types": [
     "underground mine & processing plant"
@@ -25,20 +27,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:30.705293",
+    "last_checked": "2025-11-04T17:58:50.010566Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Town centroid near mine & plant."
   },
-  "canonical_name": "Akhtala / Shamlugh Processing Plant",
-  "canonical_slug": "akhtala-shamlugh-processing-plant",
+  "canonical_name": "Akhtala Akhtala Mining Plant Akhtala / Shamlugh Mine",
+  "canonical_slug": "akhtala-akhtala-shamlugh-mine",
   "display_name": "Akhtala / Shamlugh",
-  "primary_type": "processing_plant",
-  "type_confidence": 0.85,
+  "primary_type": "mine",
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Akhtala Mining Plant",
+  "canonical_name_history": [
+    {
+      "name": "Akhtala / Shamlugh Processing Plant",
+      "from": "2025-10-21T09:23:30.705293",
+      "to": "2025-11-04T17:40:20.501918Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

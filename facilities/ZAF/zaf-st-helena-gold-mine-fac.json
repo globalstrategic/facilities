@@ -45,20 +45,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T17:16:25.047034",
+    "last_checked": "2025-11-04T17:58:50.179228Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-st-helena-mines-fac"
+    "notes": "Merged from: zaf-st-helena-mines-fac | Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "St. Helena Gold Mine",
+  "canonical_name": "St Helena Gold Mine",
   "canonical_slug": "st-helena-gold-mine",
-  "display_name": "St. Helena Gold",
+  "display_name": "St Helena Gold",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "St. Helena Gold Mine",
+      "from": "2025-10-20T17:16:25.047034",
+      "to": "2025-11-04T17:40:20.664521Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

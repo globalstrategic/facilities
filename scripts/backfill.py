@@ -56,7 +56,7 @@ import json
 import os
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Dict, Set, Optional, Tuple
 from collections import defaultdict
 import logging
@@ -807,11 +807,16 @@ def backfill_towns(
                 facility['data_quality'] = dq
 
                 # Update verification
-                facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
-                if 'notes' in facility['verification']:
-                    facility['verification']['notes'] += f" | Town enriched: {town or 'null'}"
-                else:
-                    facility['verification']['notes'] = f"Town enriched: {town or 'null'}"
+                if 'verification' not in facility or facility['verification'] is None:
+                    facility['verification'] = {}
+
+                facility['verification']['last_checked'] = (
+                    datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+                )
+
+                notes_prev = facility['verification'].get('notes') or ''
+                suffix = f"Town enriched: {town or 'null'}"
+                facility['verification']['notes'] = f"{notes_prev} | {suffix}" if notes_prev else suffix
 
                 # Save facility
                 save_facility(facility, dry_run=dry_run)
@@ -999,11 +1004,11 @@ def backfill_canonical_names(
             if prev_name and prev_name != canonical_name:
                 # Append to history if schema present; use last_checked as 'from' if available
                 history = facility.get('canonical_name_history') or []
-                from_ts = facility.get('verification', {}).get('last_checked') or datetime.utcnow().isoformat() + 'Z'
+                from_ts = facility.get('verification', {}).get('last_checked') or datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
                 history.append({
                     "name": prev_name,
                     "from": from_ts,
-                    "to": datetime.utcnow().isoformat() + 'Z',
+                    "to": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
                     "reason": "data_correction"
                 })
                 facility['canonical_name_history'] = history
@@ -1024,9 +1029,16 @@ def backfill_canonical_names(
             facility['data_quality'] = dq
 
             # 4) verification
-            facility['verification']['last_checked'] = datetime.utcnow().isoformat() + 'Z'
-            notes = facility['verification'].get('notes') or ""
-            facility['verification']['notes'] = (notes + " | " if notes else "") + "Canonical name+slug generated"
+            if 'verification' not in facility or facility['verification'] is None:
+                facility['verification'] = {}
+
+            facility['verification']['last_checked'] = (
+                datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+            )
+
+            notes_prev = facility['verification'].get('notes') or ''
+            suffix = "Canonical name+slug generated"
+            facility['verification']['notes'] = f"{notes_prev} | {suffix}" if notes_prev else suffix
 
             # Persist
             save_facility(facility, dry_run=dry_run)

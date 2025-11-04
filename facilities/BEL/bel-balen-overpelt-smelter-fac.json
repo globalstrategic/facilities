@@ -45,20 +45,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.65,
-    "last_checked": "2025-10-20T15:29:47.196980",
+    "last_checked": "2025-11-04T17:58:50.018034Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Balen/Overpelt Smelter",
+  "canonical_name": "Balen/overpelt Smelter",
   "canonical_slug": "balen-overpelt-smelter",
-  "display_name": "Balen/Overpelt",
+  "display_name": "Balen/overpelt",
   "primary_type": "smelter",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Balen/Overpelt Smelter",
+      "from": "2025-10-20T15:29:47.196980",
+      "to": "2025-11-04T17:40:20.517029Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

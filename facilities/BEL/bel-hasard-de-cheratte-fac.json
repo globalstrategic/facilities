@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:55.346527",
+    "last_checked": "2025-11-04T17:58:50.027041Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Hasard de Cheratte Mine",
+  "canonical_name": "Hasard De Cheratte Mine",
   "canonical_slug": "hasard-de-cheratte-mine",
-  "display_name": "Hasard de Cheratte",
+  "display_name": "Hasard De Cheratte",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.51,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Hasard de Cheratte Mine",
+      "from": "2025-10-21T09:23:55.346527",
+      "to": "2025-11-04T17:40:20.525472Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

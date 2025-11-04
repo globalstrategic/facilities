@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:56.070654",
+    "last_checked": "2025-11-04T17:58:50.017560Z",
     "checked_by": "import_pipeline",
-    "notes": "Site of GO4ZERO modernization and CCS project."
+    "notes": "Site of GO4ZERO modernization and CCS project. | Canonical name+slug generated | Canonical name+slug generated"
   },
   "canonical_name": "Obourg Cement Plant",
   "canonical_slug": "obourg-cement-plant",
   "display_name": "Obourg Cement",
   "primary_type": "plant",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

@@ -1,0 +1,43 @@
+{
+  "facility_id": "tcd-lamadji-plant-fac",
+  "name": "Lamadji Plant",
+  "aliases": [
+    "Cement"
+  ],
+  "country_iso3": "TCD",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    {
+      "name": "Ciments de L'Afrique",
+      "role": "operator",
+      "source": "Research Import TCD 2025-11-04",
+      "confidence": 0.7,
+      "first_seen": "2025-11-04T13:00:18.448051",
+      "evidence": "Extracted from operator column: Ciments de L'Afrique (CIMAF) (Addoha Group SA)"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TCD 2025-11-04",
+      "date": "2025-11-04T13:00:18.448054"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-11-04T13:00:18.448055",
+    "checked_by": "import_pipeline",
+    "notes": "Processes Limestone. \\[2, 6\\]"
+  }
+}

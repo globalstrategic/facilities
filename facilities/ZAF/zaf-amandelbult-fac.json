@@ -12,9 +12,11 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.826,
-    "lon": 27.345,
-    "precision": "site"
+    "lat": -24.78576,
+    "lon": 27.35435,
+    "precision": "site",
+    "town": "Thabazimbi",
+    "region": "Limpopo"
   },
   "types": [
     "mine"
@@ -55,21 +57,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:14.449255",
+    "last_checked": "2025-11-04T17:58:50.228540Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-amandelbult-complex-northam-zondereinde-fac"
+    "notes": "Merged from: zaf-amandelbult-complex-northam-zondereinde-fac | Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Mine locality coordinates."
   },
-  "canonical_name": "Amandelbult Mine",
-  "canonical_slug": "amandelbult-mine",
+  "canonical_name": "Thabazimbi Anglo American Platinum Amandelbult Mine",
+  "canonical_slug": "thabazimbi-amandelbult-mine",
   "display_name": "Amandelbult",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Anglo American Platinum",
+  "canonical_name_history": [
+    {
+      "name": "Amandelbult Mine",
+      "from": "2025-10-20T15:27:14.449255",
+      "to": "2025-11-04T17:40:20.714542Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

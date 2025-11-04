@@ -38,20 +38,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T17:16:25.020228",
+    "last_checked": "2025-11-04T17:58:50.147999Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-afrimat-driehoekspan-mine-fac"
+    "notes": "Merged from: zaf-afrimat-driehoekspan-mine-fac | Canonical name+slug generated | Canonical name+slug generated"
   },
   "canonical_name": "Driehoekspan Mine",
   "canonical_slug": "driehoekspan-mine",
   "display_name": "Driehoekspan",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

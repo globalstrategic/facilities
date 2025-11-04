@@ -37,20 +37,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T17:16:24.998223",
+    "last_checked": "2025-11-04T17:58:50.195780Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-sheba-gold-mining-company-limite-fac"
+    "notes": "Merged from: zaf-sheba-gold-mining-company-limite-fac | Canonical name+slug generated | Canonical name+slug generated"
   },
   "canonical_name": "Sheba Gold Mine",
   "canonical_slug": "sheba-gold-mine",
   "display_name": "Sheba Gold",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

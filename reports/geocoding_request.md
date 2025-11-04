@@ -37,9 +37,6 @@ Quick reference for open-source lookups:
 - **Navidad** [ARG]
 - **Puna Operations (Chinchillas/Pirquitas)** [ARG]
 - **AAB Concern Quarry** [ARM]
-- **Akhtala / Shamlugh Mine** [ARM]
-- **Amulsar Project** [ARM]
-- **Ararat Gold Extraction Plant** [ARM]
 - **Armanis Mine** [ARM]
 - **ATMC Travertine Quarry** [ARM]
 - **Dastakert Mine** [ARM]
@@ -50,39 +47,8 @@ Quick reference for open-source lookups:
 - **Multi Group Stone Quarry** [ARM]
 - **Plant of Pure Iron** [ARM]
 - **Sisian-Shik Quarry** [ARM]
-- **Sotk (Zod) Mine** [ARM]
-- **Teghut Mine** [ARM]
+- **Teghut Mine** [ARM] (region: Lori, operator: Teghout CJSC (historic Vallex/ACP))
 - **Zeolite Pro Quarry** [ARM]
-- ****Battery Recycling Plant**** [ATF]
-- ****Cheonan Pre-treatment Plant**** [ATF]
-- ****Dangjin Plant**** [ATF]
-- ****Danyang Recycling Plant**** [ATF]
-- ****Eunsan & Gasa-do Mines**** [ATF]
-- ****Ferronickel Plant**** [ATF]
-- ****Gallium Recovery Plant**** [ATF]
-- ****Germanium Plant**** [ATF]
-- ****Gwangyang Works**** [ATF]
-- ****Hyeonpung Magnet Plant**** [ATF]
-- ****Keumsung Mine**** [ATF]
-- ****Korean Metals Plant **** [ATF]
-- ****Lithium Hydroxide Plant**** [ATF]
-- ****Magnet Factory**** [ATF]
-- ****NdFeB Magnet Plant**** [ATF]
-- ****Nickel Refinery**** [ATF]
-- ****Nickel Refining Plant**** [ATF]
-- ****Onsan Cobalt Sulfate Plant**** [ATF]
-- ****Onsan Copper Smelter**** [ATF]
-- ****Onsan Refinery**** [ATF]
-- ****Pohang Graphite Plant**** [ATF]
-- ****Pohang Works**** [ATF]
-- ****Precious Metals Recycling Plant**** [ATF]
-- ****Pyeongtaek/Asan Graphite Plants**** [ATF]
-- ****Sangdong Mine**** [ATF]
-- ****Sejong Anode Plant**** [ATF]
-- ****Seokpo Smelter**** [ATF]
-- ****Sinyemi Mine**** [ATF]
-- ****Spherical Graphite Plant**** [ATF]
-- ****Yeosu Ferroalloy Plant**** [ATF]
 - **(Note: This table is a representative compilation and may not include every single smaller operation. "N/A" indicates the specific operator was not readily available in the synthesized sources for this report).** [AUS]
 - **Alumina Refineries** [AUS]
 - **Browns Range** [AUS] (commodities: Neodymium|rare earths)
@@ -236,8 +202,11 @@ Quick reference for open-source lookups:
 - **Visé, Liège** [BEL]
 - **Zeebrugge, Oostende, Kallo** [BEL]
 - **Houndé** [BFA] (commodities: Gold|Silver)
+- **Karma** [BFA] (region: Yatenga, operator: Néré Mining, commodities: Gold)
 - **Kiaka** [BFA] (commodities: Gold)
 - **Toega** [BFA] (commodities: Gold)
+- **Wahgnion (Banfora)** [BFA] (region: Cascades, operator: Government of Burkina Faso, commodities: Gold)
+- **Yaramoko** [BFA] (region: Balé, operator: Fortuna Silver Mines, commodities: Gold)
 - ****Ada Tepe Mine**** [BGR]
 - ****Asarel-Medet Complex**** [BGR]
 - **Asarel-Medet Mine** [BGR]
@@ -252,3 +221,34 @@ Quick reference for open-source lookups:
 - ****Medet Recycling Hub**** [BGR]
 - ****Pirdop Smelter & Refinery**** [BGR]
 - **Promet Steel** [BGR]
+- **Stomana Industry** [BGR]
+- **Varba-Batantsi Mine** [BGR]
+- **Al Manaratain Sand Washing** [BHR] (commodities: washed sand & aggregates)
+- **Alba Coke Calciner** [BHR] (commodities: calcined petroleum coke)
+- **Alba Power Stations** [BHR] (commodities: electricity)
+- **Alba Smelter Complex** [BHR] (commodities: primary aluminium (ingots|slabs|billets|etc.))
+- **BAFA Ferro Alloys Plant** [BHR] (commodities: Ferromanganese|silicomanganese)
+- **Falcon Cement Plant** [BHR] (commodities: portland cement (type i & v))
+- **NCC Ready-Mix / Precast** [BHR] (commodities: ready-mix concrete|precast products)
+- **NCC Sand Washing Plant** [BHR] (commodities: washed marine sand & aggregates)
+- **Pelletizing Plant No. 1** [BHR] (commodities: Iron Ore)
+- **SULB DRI Plant** [BHR] (commodities: hot & cold direct reduced iron (hdri/cdri))
+- **SULB Integrated Steel Plant** [BHR] (commodities: structural steel (beams|sections))
+- **SULB Melt Shop** [BHR] (commodities: crude steel)
+- **USCO Stainless Steel Mill** [BHR] (commodities: cold-rolled stainless steel)
+- ****Cano Yagua**** [BRA] (commodities: Gold)
+- **Serra Verde** [BRA] (commodities: Neodymium|rare earths)
+- ****Khoemacau Copper Mine **** [BWA] (commodities: Copper)
+- ****Kihabe-Nxuu Project**** [BWA] (commodities: Zinc)
+- ****Matsitama Project**** [BWA] (commodities: Copper)
+- ****Motheo Copper Mine **** [BWA] (commodities: Copper)
+- ****Mowana Copper Mine **** [BWA] (commodities: Copper)
+- ****Mupane Gold Mine**** [BWA] (commodities: Gold)
+- ****Phoenix Mine **** [BWA] (commodities: Nickel)
+- ****Selebi-Phikwe Smelter**** [BWA] (commodities: Nickel)
+- ****Selebi & Selebi North Mines**** [BWA] (commodities: Nickel)
+- **All Mineral Processing Facilities** [CAF] (commodities: all processed commodities|Neodymium-Praseodymium)
+- **Berbérati / Bangassou Iron Deposits** [CAF] (commodities: Iron Ore|Neodymium-Praseodymium)
+- **Copper Occurrences** [CAF] (commodities: Copper|Neodymium-Praseodymium)
+- **Manganese Occurrences** [CAF] (commodities: manganese|Neodymium-Praseodymium)
+- **Nickel Occurrences** [CAF] (commodities: Nickel|Neodymium-Praseodymium)

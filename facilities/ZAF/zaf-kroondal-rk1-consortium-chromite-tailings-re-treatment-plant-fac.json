@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-20T17:39:12.933949",
+    "last_checked": "2025-11-04T17:58:50.207305Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Kroondal Rk1 Consortium Chromite Tailings Re-Treatment Mine",
+  "canonical_name": "Kroondal Rk1 Consortium Chromite Tailings Re Treatment Mine",
   "canonical_slug": "kroondal-rk1-consortium-chromite-tailings-re-treatment-mine",
-  "display_name": "Kroondal Rk1 Consortium Chromite Tailings Re-Treatment",
+  "display_name": "Kroondal Rk1 Consortium Chromite Tailings Re Treatment",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Kroondal Rk1 Consortium Chromite Tailings Re-Treatment Mine",
+      "from": "2025-10-20T17:39:12.933949",
+      "to": "2025-11-04T17:40:20.694303Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

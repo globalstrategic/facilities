@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-20T17:39:12.042723",
+    "last_checked": "2025-11-04T17:58:50.241078Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Acid Drainage - Long Term Solution Mine",
+  "canonical_name": "Acid Drainage Long Term Solution Mine",
   "canonical_slug": "acid-drainage-long-term-solution-mine",
-  "display_name": "Acid Drainage - Long Term Solution",
+  "display_name": "Acid Drainage Long Term Solution",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Acid Drainage - Long Term Solution Mine",
+      "from": "2025-10-20T17:39:12.042723",
+      "to": "2025-11-04T17:40:20.727514Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

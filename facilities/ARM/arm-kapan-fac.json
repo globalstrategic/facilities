@@ -9,9 +9,11 @@
   ],
   "country_iso3": "ARM",
   "location": {
-    "lat": 39.204,
-    "lon": 46.407,
-    "precision": "site"
+    "lat": 39.20659,
+    "lon": 46.43303,
+    "precision": "site",
+    "town": "Kapan",
+    "region": "Syunik"
   },
   "types": [
     "mine"
@@ -47,21 +49,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:26:48.578650",
+    "last_checked": "2025-11-04T17:58:50.011438Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Kapan complex / Shahumyan."
   },
-  "canonical_name": "Kapan Mine",
-  "canonical_slug": "kapan-mine",
+  "canonical_name": "Kapan Chaarat Kapan Kapan Mine",
+  "canonical_slug": "kapan-kapan-mine",
   "display_name": "Kapan",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto",
+  "operator_display": "Chaarat Kapan",
+  "canonical_name_history": [
+    {
+      "name": "Kapan Mine",
+      "from": "2025-11-04T17:40:20.503397Z",
+      "to": "2025-11-04T17:58:50.011435Z",
+      "reason": "data_correction"
+    }
+  ]
 }

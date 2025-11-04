@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "BFA",
   "location": {
-    "lat": 10.377,
-    "lon": -5.389,
-    "precision": "site"
+    "lat": 10.37528,
+    "lon": -5.38498,
+    "precision": "region",
+    "town": "Banfora",
+    "region": "Cascades"
   },
   "types": [
     "mine"
@@ -30,20 +32,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:42.981265",
+    "last_checked": "2025-11-04T17:58:50.034112Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Power plant/industrial pad inside mine area."
   },
-  "canonical_name": "Wahgnion Mine",
-  "canonical_slug": "wahgnion-mine",
+  "canonical_name": "Banfora Government of Burkina Faso Wahgnion Mine",
+  "canonical_slug": "banfora-wahgnion-mine",
   "display_name": "Wahgnion",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Government of Burkina Faso",
+  "canonical_name_history": [
+    {
+      "name": "Wahgnion Mine",
+      "from": "2025-10-20T15:29:42.981265",
+      "to": "2025-11-04T17:40:20.534629Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Banfora area Government of Burkina Faso (current operator) Wahgnion Mine",
+      "from": "2025-11-04T17:40:20.534634Z",
+      "to": "2025-11-04T17:58:50.034110Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

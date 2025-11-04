@@ -7,9 +7,11 @@
   ],
   "country_iso3": "BFA",
   "location": {
-    "lat": 14.382,
-    "lon": 0.075,
-    "precision": "site"
+    "lat": 14.38306,
+    "lon": 0.07611,
+    "precision": "site",
+    "town": "Essakane/Séno",
+    "region": "Sahel"
   },
   "types": [
     "mine"
@@ -33,21 +35,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:32.806201",
+    "last_checked": "2025-11-04T17:58:50.033341Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Mindat lat/lon; operator page."
   },
-  "canonical_name": "Essakane Mine",
-  "canonical_slug": "essakane-mine",
+  "canonical_name": "Essakane/Séno IAMGOLD 85% + Gov 15% Essakane Mine",
+  "canonical_slug": "essakane-sno-essakane-mine",
   "display_name": "Essakane",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "IAMGOLD 85% + Gov 15%",
+  "canonical_name_history": [
+    {
+      "name": "Essakane Mine",
+      "from": "2025-10-20T15:29:32.806201",
+      "to": "2025-11-04T17:40:20.533133Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Essakane (near Gorom-Gorom) IAMGOLD (85%) & Government (15%) Essakane Mine",
+      "from": "2025-11-04T17:40:20.533137Z",
+      "to": "2025-11-04T17:58:50.033338Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

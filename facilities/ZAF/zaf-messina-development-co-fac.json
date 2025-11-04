@@ -38,20 +38,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T17:16:28.146451",
+    "last_checked": "2025-11-04T17:58:50.132648Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-messina-transvaal-development-co-ltd-fac, zaf-messina-fac"
+    "notes": "Merged from: zaf-messina-transvaal-development-co-ltd-fac, zaf-messina-fac | Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Messina Development Co. Mine",
+  "canonical_name": "Messina Development Co Mine",
   "canonical_slug": "messina-development-co-mine",
-  "display_name": "Messina Development Co.",
+  "display_name": "Messina Development Co",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Messina Development Co. Mine",
+      "from": "2025-10-20T17:16:28.146451",
+      "to": "2025-11-04T17:40:20.611904Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

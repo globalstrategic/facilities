@@ -51,20 +51,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T17:16:25.721601",
+    "last_checked": "2025-11-04T17:58:50.189573Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Daggafontein Division; Vogelstruisbult; Marievale; Zincor Mine",
+  "canonical_name": "Daggafontein Division Vogelstruisbult Marievale Zincor Mine",
   "canonical_slug": "daggafontein-division-vogelstruisbult-marievale-zincor-mine",
-  "display_name": "Daggafontein Division; Vogelstruisbult; Marievale; Zincor",
+  "display_name": "Daggafontein Division Vogelstruisbult Marievale Zincor",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Daggafontein Division; Vogelstruisbult; Marievale; Zincor Mine",
+      "from": "2025-10-20T17:16:25.721601",
+      "to": "2025-11-04T17:40:20.675970Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

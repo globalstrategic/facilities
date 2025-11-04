@@ -30,20 +30,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-20T17:39:12.734789",
+    "last_checked": "2025-11-04T17:58:50.237918Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Slug collision resolved: grootegeluk-mine-zaf -> grootegeluk-mine-zaf--fac | Canonical name+slug generated | Slug collision resolved: grootegeluk-mine-zaf -> grootegeluk-mine-zaf--fac"
   },
   "canonical_name": "Grootegeluk Mine",
-  "canonical_slug": "grootegeluk-mine-3",
+  "canonical_slug": "grootegeluk-mine-zaf--fac",
   "display_name": "Grootegeluk",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "display_name_source": "auto"
 }

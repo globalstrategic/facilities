@@ -30,21 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:55.525433",
+    "last_checked": "2025-11-04T17:58:50.016539Z",
     "checked_by": "import_pipeline",
-    "notes": "Belgium's largest surface mine."
+    "notes": "Belgium's largest surface mine. | Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Marche-les-Dames Quarry Mine",
+  "canonical_name": "Marche Les Dames Quarry Mine",
   "canonical_slug": "marche-les-dames-quarry-mine",
-  "display_name": "Marche-les-Dames Quarry",
+  "display_name": "Marche Les Dames Quarry",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Marche-les-Dames Quarry Mine",
+      "from": "2025-10-21T09:23:55.525433",
+      "to": "2025-11-04T17:40:20.515064Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

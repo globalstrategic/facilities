@@ -7,9 +7,11 @@
   ],
   "country_iso3": "BFA",
   "location": {
-    "lat": 11.747,
-    "lon": -3.28,
-    "precision": "site"
+    "lat": 11.8,
+    "lon": -3.28333,
+    "precision": "region",
+    "town": "Safané",
+    "region": "Balé"
   },
   "types": [
     "mine"
@@ -33,21 +35,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:43.538959",
+    "last_checked": "2025-11-04T17:58:50.033542Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Mine location ~42 km S of Safané; mine TR."
   },
-  "canonical_name": "Yaramoko Mine",
-  "canonical_slug": "yaramoko-mine",
+  "canonical_name": "Safané Fortuna Silver Mines Yaramoko Mine",
+  "canonical_slug": "safan-yaramoko-mine",
   "display_name": "Yaramoko",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Fortuna Silver Mines",
+  "canonical_name_history": [
+    {
+      "name": "Yaramoko Mine",
+      "from": "2025-10-20T15:29:43.538959",
+      "to": "2025-11-04T17:40:20.533527Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Safané area Fortuna Silver Mines Yaramoko Mine",
+      "from": "2025-11-04T17:40:20.533533Z",
+      "to": "2025-11-04T17:58:50.033540Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

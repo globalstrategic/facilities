@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-20T17:39:12.100529",
+    "last_checked": "2025-11-04T17:58:50.193344Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Atcom East - Impunzi Mine",
+  "canonical_name": "Atcom East Impunzi Mine",
   "canonical_slug": "atcom-east-impunzi-mine",
-  "display_name": "Atcom East - Impunzi",
+  "display_name": "Atcom East Impunzi",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Atcom East - Impunzi Mine",
+      "from": "2025-10-20T17:39:12.100529",
+      "to": "2025-11-04T17:40:20.679157Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

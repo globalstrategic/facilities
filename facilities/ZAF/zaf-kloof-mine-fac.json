@@ -47,20 +47,22 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:27:16.308137",
+    "last_checked": "2025-11-04T17:58:50.162292Z",
     "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-kloof-gold-mine-fac"
+    "notes": "Merged from: zaf-kloof-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated"
   },
   "canonical_name": "Kloof Mine",
   "canonical_slug": "kloof-mine",
   "display_name": "Kloof",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
     }
-  }
+  },
+  "display_name_source": "auto"
 }

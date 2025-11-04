@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARM",
   "location": {
-    "lat": 38.882,
-    "lon": 46.168,
-    "precision": "site"
+    "lat": 38.91611,
+    "lon": 46.18944,
+    "precision": "site",
+    "town": "Agarak",
+    "region": "Syunik"
   },
   "types": [
     "mine"
@@ -30,20 +32,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.3,
-    "last_checked": "2025-10-20T15:26:48.759882",
+    "last_checked": "2025-11-04T17:58:50.009922Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Combine campus."
   },
-  "canonical_name": "Agarak Mine",
-  "canonical_slug": "agarak-mine",
+  "canonical_name": "Agarak GeoProMining Agarak Processing Plant",
+  "canonical_slug": "agarak-agarak-processing-plant",
   "display_name": "Agarak",
-  "primary_type": "mine",
-  "type_confidence": 0.95,
+  "primary_type": "processing_plant",
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "GeoProMining",
+  "canonical_name_history": [
+    {
+      "name": "Agarak Mine",
+      "from": "2025-10-20T15:26:48.759882",
+      "to": "2025-11-04T17:40:20.501208Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Agarak GeoProMining Agarak Mine",
+      "from": "2025-11-04T17:40:20.501212Z",
+      "to": "2025-11-04T17:58:50.009919Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

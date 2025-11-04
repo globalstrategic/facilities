@@ -6,9 +6,11 @@
   ],
   "country_iso3": "BFA",
   "location": {
-    "lat": 11.422,
-    "lon": -3.533,
-    "precision": "site"
+    "lat": 11.42306,
+    "lon": -3.53528,
+    "precision": "site",
+    "town": "Houndé",
+    "region": "Tuy"
   },
   "types": [
     "mine"
@@ -32,21 +34,38 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-10-20T15:29:34.452060",
+    "last_checked": "2025-11-04T17:58:50.035101Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "Plant/power block area; Endeavour docs."
   },
-  "canonical_name": "Hounde Mine",
-  "canonical_slug": "hounde-mine-2",
+  "canonical_name": "Houndé Endeavour Mining 90% + Gov 10% Hounde Mine",
+  "canonical_slug": "hound-hounde-mine",
   "display_name": "Hounde",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.495,
+    "canonicalization_confidence": 0.8599999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
-      "canonical_name_incomplete": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Endeavour Mining 90% + Gov 10%",
+  "canonical_name_history": [
+    {
+      "name": "Hounde Mine",
+      "from": "2025-10-20T15:29:34.452060",
+      "to": "2025-11-04T17:40:20.536296Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "Houndé Endeavour Mining (90%) & Government (10%) Hounde Mine",
+      "from": "2025-11-04T17:40:20.536300Z",
+      "to": "2025-11-04T17:58:50.035099Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

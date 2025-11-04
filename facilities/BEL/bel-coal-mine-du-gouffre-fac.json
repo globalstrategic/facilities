@@ -30,20 +30,30 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:55.350627",
+    "last_checked": "2025-11-04T17:58:50.020380Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Coal du Gouffre Mine",
+  "canonical_name": "Coal Du Gouffre Mine",
   "canonical_slug": "coal-du-gouffre-mine",
-  "display_name": "Coal du Gouffre",
+  "display_name": "Coal Du Gouffre",
   "primary_type": "mine",
-  "type_confidence": 0.95,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.6,
+    "canonicalization_confidence": 0.615,
     "flags": {
       "town_missing": true,
-      "operator_unresolved": true
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Coal du Gouffre Mine",
+      "from": "2025-10-21T09:23:55.350627",
+      "to": "2025-11-04T17:40:20.519159Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }

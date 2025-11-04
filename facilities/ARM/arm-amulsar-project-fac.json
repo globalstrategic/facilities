@@ -4,9 +4,11 @@
   "aliases": [],
   "country_iso3": "ARM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 39.736988,
+    "lon": 45.606874,
+    "precision": "site",
+    "town": "Jermuk",
+    "region": "Vayots Dzor"
   },
   "types": [
     "open-pit mine (planned)"
@@ -25,20 +27,32 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-10-21T09:23:30.705023",
+    "last_checked": "2025-11-04T17:58:50.009566Z",
     "checked_by": "import_pipeline",
-    "notes": null
+    "notes": "Canonical name+slug generated | Canonical name+slug generated",
+    "geocoding_source": "HLF pad coords."
   },
-  "canonical_name": "Amulsar Mine",
-  "canonical_slug": "amulsar-mine",
+  "canonical_name": "Jermuk Lydian Armenia Amulsar Mine",
+  "canonical_slug": "jermuk-amulsar-mine",
   "display_name": "Amulsar",
   "primary_type": "mine",
-  "type_confidence": 0.85,
+  "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.5700000000000001,
+    "canonicalization_confidence": 0.9649999999999999,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
     }
-  }
+  },
+  "operator_display": "Lydian Armenia",
+  "canonical_name_history": [
+    {
+      "name": "Amulsar Mine",
+      "from": "2025-10-21T09:23:30.705023",
+      "to": "2025-11-04T17:40:20.500692Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto"
 }
