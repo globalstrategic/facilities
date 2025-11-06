@@ -252,31 +252,57 @@ def backfill_geocoding(
     if not to_geocode:
         return stats
 
-    # Geocode each facility
-    geocoder = get_geocoder()
+    # Import validation functions
+    from scripts.utils.geocoding import (
+        geocode_via_nominatim, is_valid_coord, in_country_bbox, is_sentinel_coord
+    )
 
+    # Geocode each facility using simple, safe Nominatim forward geocoding
     for i, facility in enumerate(to_geocode):
         facility_id = facility['facility_id']
-        logger.info(f"[{i+1}/{len(to_geocode)}] {facility['name']}")
+        facility_name = facility.get('name', '')
+        logger.info(f"[{i+1}/{len(to_geocode)}] {facility_name}")
 
-        # Extract commodities and aliases for better matching
-        commodities = [c.get('metal') for c in facility.get('commodities', []) if c.get('metal')]
-        aliases = facility.get('aliases', [])
+        # Compose query: "Facility Name, Country Name"
+        query = f"{facility_name}, {country_name}"
 
-        result = geocoder.geocode_facility(
-            facility_name=facility['name'],
-            country_iso3=country_iso3,
-            commodities=commodities,
-            aliases=aliases,
-            min_confidence=0.5  # Moderate threshold for backfill
-        )
+        # Try forward geocoding via Nominatim
+        result = geocode_via_nominatim(query, country_iso3)
 
-        if result.lat is not None and result.lon is not None:
-            # Update facility
+        if result and result.get('lat') and result.get('lon'):
+            lat, lon = result['lat'], result['lon']
+
+            # VALIDATION GATES - Prevent garbage coordinates
+            if is_sentinel_coord(lat, lon):
+                logger.warning(f"  ✗ Sentinel coordinates detected ({lat}, {lon}) - skipping write")
+                # Mark as failed in data_quality
+                dq = facility.get('data_quality') or {}
+                dq.setdefault('flags', {})['sentinel_coords_rejected'] = True
+                facility['data_quality'] = dq
+                stats.add_result(facility_id, "failed", "Sentinel coordinates rejected")
+                continue
+
+            if not is_valid_coord(lat, lon):
+                logger.warning(f"  ✗ Invalid coordinates ({lat}, {lon}) - skipping write")
+                dq = facility.get('data_quality') or {}
+                dq.setdefault('flags', {})['invalid_coords'] = True
+                facility['data_quality'] = dq
+                stats.add_result(facility_id, "failed", "Invalid coordinates")
+                continue
+
+            if not in_country_bbox(lat, lon, country_iso3):
+                logger.warning(f"  ✗ Out-of-country coordinates ({lat}, {lon}) - skipping write")
+                dq = facility.get('data_quality') or {}
+                dq.setdefault('flags', {})['out_of_country'] = True
+                facility['data_quality'] = dq
+                stats.add_result(facility_id, "failed", f"Coordinates outside {country_iso3} bbox")
+                continue
+
+            # All validations passed - safe to write
             facility['location'] = {
-                'lat': result.lat,
-                'lon': result.lon,
-                'precision': result.precision
+                'lat': lat,
+                'lon': lon,
+                'precision': 'town'  # Conservative default for Nominatim
             }
 
             # Update verification
@@ -284,17 +310,21 @@ def backfill_geocoding(
                 facility['verification'] = {}
 
             facility['verification']['last_checked'] = datetime.now().isoformat()
-            notes = f"Geocoded via {result.source} (confidence: {result.confidence:.2f})"
+            notes = f"Forward geocoded via Nominatim: {query}"
             facility['verification']['notes'] = notes
 
             # Save
             save_facility(facility, dry_run=dry_run)
 
             action = "Would update" if dry_run else "Updated"
-            logger.info(f"  ✓ {action}: {result.lat}, {result.lon}")
-            stats.add_result(facility_id, "updated", f"{result.lat}, {result.lon}")
+            logger.info(f"  ✓ {action}: {lat}, {lon}")
+            stats.add_result(facility_id, "updated", f"{lat}, {lon}")
         else:
-            logger.warning(f"  ✗ Failed to geocode")
+            logger.warning(f"  ✗ Failed to geocode - no results from Nominatim")
+            # Mark as failed in data_quality (but don't write bad coords)
+            dq = facility.get('data_quality') or {}
+            dq.setdefault('flags', {})['geocode_failed'] = True
+            facility['data_quality'] = dq
             stats.add_result(facility_id, "failed", "No coordinates found")
 
     return stats

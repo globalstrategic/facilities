@@ -48,6 +48,9 @@ Usage:
 
 import re
 import time
+import os
+import requests
+from datetime import datetime, timezone
 import logging
 from typing import Optional, Dict, List, Tuple, Any
 from dataclasses import dataclass, field
@@ -56,6 +59,75 @@ import json
 from functools import lru_cache
 
 logger = logging.getLogger(__name__)
+
+# ISO3 to ISO2 mapping (for Nominatim countrycodes parameter)
+ISO3_TO_ISO2 = {
+    "TCD": "TD", "USA": "US", "CHN": "CN", "AUS": "AU", "ZAF": "ZA",
+    "IND": "IN", "IDN": "ID", "BRA": "BR", "CAN": "CA", "RUS": "RU",
+    "MEX": "MX", "PER": "PE", "CHL": "CL", "ARG": "AR", "COL": "CO",
+    "ZMB": "ZM", "ZWE": "ZW", "NAM": "NA", "BWA": "BW", "GHA": "GH",
+    "NGA": "NG", "MAR": "MA", "DZA": "DZ", "EGY": "EG", "TUN": "TN",
+    "KAZ": "KZ", "UZB": "UZ", "MNG": "MN", "TUR": "TR", "IRN": "IR",
+    "SAU": "SA", "ARE": "AE", "OMN": "OM", "PAK": "PK", "BGD": "BD",
+    "MMR": "MM", "THA": "TH", "VNM": "VN", "PHL": "PH", "MYS": "MY",
+    "PNG": "PG", "NCL": "NC", "FJI": "FJ", "NZL": "NZ", "JPN": "JP",
+    "KOR": "KR", "TWN": "TW", "POL": "PL", "DEU": "DE", "FRA": "FR",
+    "GBR": "GB", "ESP": "ES", "ITA": "IT", "SWE": "SE", "NOR": "NO",
+    "FIN": "FI", "UKR": "UA", "ROU": "RO", "BGR": "BG", "SRB": "RS"
+}
+
+# Country bounding boxes for validation (lat_min, lat_max, lon_min, lon_max)
+# Prevents out-of-country garbage coordinates from being written
+COUNTRY_BBOX = {
+    "TCD": {"lat_min": 7.0, "lat_max": 24.0, "lon_min": 13.0, "lon_max": 24.5},
+    "USA": {"lat_min": 24.0, "lat_max": 72.0, "lon_min": -180.0, "lon_max": -66.0},
+    "CHN": {"lat_min": 18.0, "lat_max": 54.0, "lon_min": 73.0, "lon_max": 135.0},
+    "AUS": {"lat_min": -44.0, "lat_max": -10.0, "lon_min": 113.0, "lon_max": 154.0},
+    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},
+    "IND": {"lat_min": 6.0, "lat_max": 36.0, "lon_min": 68.0, "lon_max": 98.0},
+    "IDN": {"lat_min": -11.0, "lat_max": 6.0, "lon_min": 95.0, "lon_max": 141.0},
+    "BRA": {"lat_min": -34.0, "lat_max": 6.0, "lon_min": -74.0, "lon_max": -34.0},
+    "CAN": {"lat_min": 41.0, "lat_max": 84.0, "lon_min": -141.0, "lon_max": -52.0},
+    "RUS": {"lat_min": 41.0, "lat_max": 82.0, "lon_min": 19.0, "lon_max": -169.0},
+    "MEX": {"lat_min": 14.0, "lat_max": 33.0, "lon_min": -118.0, "lon_max": -86.0},
+    "PER": {"lat_min": -19.0, "lat_max": -0.0, "lon_min": -82.0, "lon_max": -68.0},
+    "CHL": {"lat_min": -56.0, "lat_max": -17.0, "lon_min": -110.0, "lon_max": -66.0},
+    "ZMB": {"lat_min": -18.0, "lat_max": -8.0, "lon_min": 22.0, "lon_max": 34.0},
+}
+
+# Known bad sentinel coordinates (bugs that should never be written)
+BAD_SENTINELS = {
+    (21.7713519, -72.2788891),  # Turks & Caicos airport - geocoder fallback bug
+}
+
+def is_valid_coord(lat: float, lon: float) -> bool:
+    """Validate that coordinates are within valid Earth bounds."""
+    try:
+        lat = float(lat)
+        lon = float(lon)
+    except (TypeError, ValueError):
+        return False
+    return -90 <= lat <= 90 and -180 <= lon <= 180
+
+def in_country_bbox(lat: float, lon: float, country_iso3: str) -> bool:
+    """Check if coordinates fall within expected country bounding box.
+
+    Returns True if no bbox defined (permissive) or if coords are inside bbox.
+    """
+    bbox = COUNTRY_BBOX.get(country_iso3)
+    if not bbox:
+        return True  # No bbox defined, allow (for countries we haven't mapped)
+
+    return (bbox["lat_min"] <= lat <= bbox["lat_max"] and
+            bbox["lon_min"] <= lon <= bbox["lon_max"])
+
+def is_sentinel_coord(lat: float, lon: float) -> bool:
+    """Check if coordinates match known bad sentinel values."""
+    try:
+        rounded = (round(float(lat), 7), round(float(lon), 7))
+        return rounded in BAD_SENTINELS
+    except (TypeError, ValueError):
+        return False
 
 # Rate limiting configuration
 RATE_LIMITS = {
@@ -116,6 +188,79 @@ class GeocodingCandidate:
             raise ValueError(f"Invalid latitude: {self.lat}")
         if not (-180 <= self.lon <= 180):
             raise ValueError(f"Invalid longitude: {self.lon}")
+
+
+def nominatim_headers() -> Dict[str, str]:
+    """Generate OSM-compliant headers for Nominatim requests."""
+    contact = os.getenv("OSM_CONTACT_EMAIL", "facilities@gsmc.example")
+    return {"User-Agent": f"GSMC-Facilities/2.1 (mailto:{contact})"}
+
+
+def geocode_via_nominatim(
+    query: str,
+    country_iso3: str = None,
+    delay_s: float = None
+) -> Optional[Dict[str, Any]]:
+    """
+    Forward geocode a free-text query via Nominatim (OSM).
+
+    Args:
+        query: Free-text search query (e.g., "Kouri Bougoudi, Chad")
+        country_iso3: ISO3 country code for filtering (optional)
+        delay_s: Custom delay in seconds (default: $NOMINATIM_DELAY_S or 1.0)
+
+    Returns:
+        Dict with keys: lat, lon, address (or None on failure)
+    """
+    if not query or not query.strip():
+        return None
+
+    delay_s = delay_s or float(os.getenv("NOMINATIM_DELAY_S", "1.0"))
+    url = "https://nominatim.openstreetmap.org/search"
+
+    params = {
+        "q": query.strip(),
+        "format": "jsonv2",
+        "addressdetails": 1,
+        "limit": 1,
+    }
+
+    # Add country filter if available
+    if country_iso3:
+        iso2 = ISO3_TO_ISO2.get(country_iso3)
+        if iso2:
+            params["countrycodes"] = iso2.lower()
+
+    try:
+        resp = requests.get(url, params=params, headers=nominatim_headers(), timeout=10)
+        resp.raise_for_status()
+        items = resp.json() or []
+        time.sleep(delay_s)  # OSM policy compliance
+
+        if not items:
+            logger.debug(f"Nominatim: No results for '{query}'")
+            return None
+
+        top = items[0]
+        result = {
+            "lat": float(top["lat"]),
+            "lon": float(top["lon"]),
+            "address": top.get("address", {}),
+            "display_name": top.get("display_name", ""),
+        }
+
+        logger.debug(f"Nominatim: Found {result['lat']}, {result['lon']} for '{query}'")
+        return result
+
+    except requests.exceptions.Timeout:
+        logger.warning(f"Nominatim timeout for query: {query}")
+        return None
+    except requests.exceptions.RequestException as e:
+        logger.warning(f"Nominatim request failed: {e}")
+        return None
+    except (KeyError, ValueError) as e:
+        logger.warning(f"Nominatim response parsing error: {e}")
+        return None
 
 
 def rate_limit(source: str):
@@ -754,3 +899,124 @@ class AdvancedGeocoder:
                 return 'country'
 
         return 'region'  # Default
+
+
+# ============================================================================
+# Simple, Safe Nominatim Wrapper (OSM-compliant)
+# ============================================================================
+
+NOMINATIM_URL = os.getenv("NOMINATIM_BASE_URL", "https://nominatim.openstreetmap.org/search")
+NOMINATIM_REVERSE_URL = os.getenv("NOMINATIM_REVERSE_URL", "https://nominatim.openstreetmap.org/reverse")
+
+COUNTRY_BBOX = {
+    # Coarse, defensible bounding boxes. Expand with proper gazetteer later.
+    "TCD": {"lat_min": 7.0, "lat_max": 24.2, "lon_min": 13.0, "lon_max": 24.2},  # Chad
+    "ARM": {"lat_min": 38.8, "lat_max": 41.3, "lon_min": 43.4, "lon_max": 46.6},  # Armenia
+    "BEL": {"lat_min": 49.5, "lat_max": 51.5, "lon_min": 2.5, "lon_max": 6.4},   # Belgium
+    "BFA": {"lat_min": 9.4, "lat_max": 15.1, "lon_min": -5.5, "lon_max": 2.4},   # Burkina Faso
+    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},  # South Africa
+    # Add others as needed
+}
+
+
+def in_country_bbox(lat: float, lon: float, iso3: str) -> bool:
+    """
+    Check if coordinates are within expected country bounding box.
+
+    Args:
+        lat: Latitude
+        lon: Longitude
+        iso3: ISO3 country code
+
+    Returns:
+        True if in bbox or bbox unknown, False if definitely out of country
+    """
+    b = COUNTRY_BBOX.get(iso3)
+    if not b or lat is None or lon is None:
+        return True  # Don't block if unknown bbox
+    return (b["lat_min"] <= lat <= b["lat_max"]) and (b["lon_min"] <= lon <= b["lon_max"])
+
+
+def _nominatim_headers():
+    """Get OSM-compliant headers with contact email."""
+    email = os.getenv("OSM_CONTACT_EMAIL", "ops@example.com")
+    return {"User-Agent": f"GSMC-Facilities/2.1 (mailto:{email})"}
+
+
+
+def reverse_geocode_via_nominatim(
+    lat: float,
+    lon: float,
+    delay_env: str = "NOMINATIM_DELAY_S"
+) -> Dict:
+    """
+    Reverse geocode via Nominatim (OSM-compliant).
+
+    Args:
+        lat: Latitude
+        lon: Longitude
+        delay_env: Environment variable for rate limit delay
+
+    Returns:
+        Address dict or {} if failed
+    """
+    if lat is None or lon is None:
+        return {}
+
+    params = {
+        "lat": lat,
+        "lon": lon,
+        "format": "json",
+        "addressdetails": 1
+    }
+
+    try:
+        r = requests.get(
+            NOMINATIM_REVERSE_URL,
+            params=params,
+            headers=_nominatim_headers(),
+            timeout=15
+        )
+
+        # Handle rate limiting
+        if r.status_code == 429:
+            time.sleep(float(os.getenv(delay_env, "1.0")))
+            r = requests.get(
+                NOMINATIM_REVERSE_URL,
+                params=params,
+                headers=_nominatim_headers(),
+                timeout=15
+            )
+
+        r.raise_for_status()
+        data = r.json() or {}
+
+        # OSM policy delay
+        time.sleep(float(os.getenv(delay_env, "1.0")))
+
+        return data.get("address") or {}
+
+    except Exception as e:
+        logging.error(f"Nominatim reverse geocoding failed for {lat},{lon}: {e}")
+        return {}
+
+
+def pick_best_town(address: dict) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Extract town name from OSM address dict using deterministic order.
+
+    Args:
+        address: OSM address dictionary
+
+    Returns:
+        (town_name, precision) where precision is the key that matched
+    """
+    if not address:
+        return (None, None)
+
+    # Deterministic priority order
+    for key in ("town", "city", "municipality", "village", "hamlet"):
+        if val := address.get(key):
+            return (val, key)
+
+    return (None, None)

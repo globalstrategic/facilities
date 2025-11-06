@@ -1,0 +1,396 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Facility Measurables Library",
+  "description": "Library of LLM-powered facility measurable questions. Each measurable is a structured prompt that returns timestamped, evidenced results.",
+  "version": "0.1.0",
+  "lastUpdated": "2025-11-06",
+  "measurables": [
+    {
+      "json_id": "supply.facility.status.current_operational_state",
+      "pack": "core",
+      "priority": 1,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.status.current_operational_state\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": \"<enum: producing|temporarily_suspended|care_and_maintenance|commissioning|construction|closed>\",\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<If not producing: reason and best-estimate restart window>\"\n}\n\nUse the most credible & recent sources. If nothing within 365 days, return the last known value and set freshness_days accordingly. If unknown, set value to 'unknown' with confidence<=30.",
+      "rationale": "Single most actionable metric for supply modeling and routing. Status changes trigger immediate re-evaluation of all other measurables.",
+      "value_type": "enum",
+      "value_enum": ["producing", "temporarily_suspended", "care_and_maintenance", "commissioning", "construction", "closed", "unknown"],
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 60,
+        "max_freshness_days": 365,
+        "require_dated_source": true,
+        "status_change_override": true
+      }
+    },
+    {
+      "json_id": "supply.facility.production.last_reported_output",
+      "pack": "core",
+      "priority": 2,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.production.last_reported_output\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": <number>,\n  \"unit\": \"<t|tpd|tpm|tpa|koz|Mlb|etc>\",\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: specify if calendar year, fiscal year, quarter, or month>\"\n}\n\nUse the most recent reported output with a specific date. Prefer official company reports or regulatory filings. If nothing within 365 days, return last known value with freshness_days set accordingly.",
+      "rationale": "Most recent hard anchor for production modeling. Directly feeds near-term supply scenarios.",
+      "value_type": "number",
+      "value_enum": null,
+      "unit": "variable",
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 180,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.production.monthly_run_rate_3m_trend",
+      "pack": "core",
+      "priority": 3,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.production.monthly_run_rate_3m_trend\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"run_rate_tpm\": <number>, \"trend\": \"<up|flat|down>\", \"trend_magnitude\": \"<strong|moderate|weak>\"},\n  \"unit\": \"tpm\",\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Drivers of trend: ramp-up, bottleneck, grade decline, etc.>\"\n}\n\nEstimate current monthly run-rate and its 3-month trend. If multiple data points available, infer trend; otherwise mark as 'unknown'.",
+      "rationale": "Near-term momentum indicator. Detects ramps, degradation, or stabilization in production.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": "tpm",
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 120,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.production.quarterly_forecast_range",
+      "pack": "core",
+      "priority": 4,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.production.quarterly_forecast_range\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"quarter\": \"<Q1|Q2|Q3|Q4> YYYY\", \"low\": <number>, \"base\": <number>, \"high\": <number>},\n  \"unit\": \"t\",\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Drivers: guidance, run-rate extrapolation, known constraints>\"\n}\n\nProvide a plausible production range for the current or next quarter (low/base/high). Prefer company guidance; infer from run-rate if guidance unavailable.",
+      "rationale": "Directly feeds near-term supply scenarios and probabilistic models.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": "t",
+      "acceptance_rules": {
+        "min_confidence": 60,
+        "max_freshness_days": 90,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.capacity.nameplate_and_bottleneck_stage",
+      "pack": "core",
+      "priority": 5,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.capacity.nameplate_and_bottleneck_stage\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"nameplate_capacity\": <number>, \"nameplate_unit\": \"<tpa|tpd|etc>\", \"current_bottleneck\": \"<mine|concentrator|smelter|refiner|port|power|water|none|unknown>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: debottleneck projects underway or planned>\"\n}\n\nIdentify nameplate capacity and the current rate-limiting stage. If no explicit bottleneck mentioned, use 'unknown'.",
+      "rationale": "Identifies capacity ceiling and expansion opportunities. Critical for long-term supply models.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 365,
+        "require_dated_source": false,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.maintenance.unplanned_downtime_last_30d",
+      "pack": "core",
+      "priority": 6,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.maintenance.unplanned_downtime_last_30d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"incident_occurred\": <boolean>, \"event_type\": \"<equipment_failure|power_outage|weather|labor|other|none>\", \"duration_days\": <number|null>, \"impact_description\": \"<string|null>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production loss>\"\n}\n\nReport any unplanned downtime in the last 30 days that materially affected output. If none, set incident_occurred=false.",
+      "rationale": "Near-term supply disruption indicator. High-frequency signal for operational volatility.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 30,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.maintenance.planned_downtime_next_90d",
+      "pack": "core",
+      "priority": 7,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.maintenance.planned_downtime_next_90d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"shutdown_planned\": <boolean>, \"start_date\": \"YYYY-MM-DD|null\", \"duration_days\": <number|null>, \"reason\": \"<annual_shutdown|reline|expansion|other|null>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production loss>\"\n}\n\nReport any announced maintenance shutdowns in the next 90 days. If none, set shutdown_planned=false.",
+      "rationale": "Forward-looking supply disruption signal. Enables proactive supply modeling adjustments.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 60,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.power_reliability_status",
+      "pack": "core",
+      "priority": 8,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.power_reliability_status\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"constraint_active\": <boolean>, \"constraint_type\": \"<load_shedding|curtailment|fuel_shortage|none>\", \"severity\": \"<critical|high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production impact>\"\n}\n\nDetermine if grid or onsite power is constraining output now or flagged as near-term risk. If no constraint, set constraint_active=false.",
+      "rationale": "Critical input constraint for power-intensive facilities. Directly affects production capacity.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 60,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.water_availability_status",
+      "pack": "core",
+      "priority": 9,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.water_availability_status\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"constraint_active\": <boolean>, \"constraint_type\": \"<drought|permit|competition|none>\", \"severity\": \"<critical|high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production impact>\"\n}\n\nDetermine if water availability or permit is limiting operations now or flagged as near-term risk. If no constraint, set constraint_active=false.",
+      "rationale": "Critical input constraint for water-intensive processes (flotation, HPAL, SXEW). Climate-sensitive.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 60,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.logistics.site_access_status",
+      "pack": "core",
+      "priority": 10,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.logistics.site_access_status\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"constraint_active\": <boolean>, \"constraint_type\": \"<haul_road|rail|port|border|blockade|none>\", \"severity\": \"<critical|high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated shipment backlog or delay>\"\n}\n\nDetermine if access constraints (haul road, rail, port, border) are affecting shipments in the last 30 days. If no constraint, set constraint_active=false.",
+      "rationale": "Logistics constraints can create phantom supply tightness. Critical for export-dependent facilities.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 30,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.incidents.safety_event_last_90d",
+      "pack": "core",
+      "priority": 11,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.incidents.safety_event_last_90d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"incident_occurred\": <boolean>, \"event_type\": \"<fatality|injury|fire|explosion|spill|collapse|other|none>\", \"production_impact\": \"<shutdown|reduced|none>\", \"regulatory_action\": <boolean>},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production loss or inspection duration>\"\n}\n\nReport any safety incidents in the last 90 days that reduced output or caused inspections. If none, set incident_occurred=false.",
+      "rationale": "Safety incidents can trigger shutdowns and regulatory interventions. High-consequence events.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 90,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.regulatory.adverse_action_last_180d",
+      "pack": "core",
+      "priority": 12,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.regulatory.adverse_action_last_180d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"action_occurred\": <boolean>, \"action_type\": \"<permit_revoked|permit_suspended|new_tax|royalty_increase|sanction|inspection_order|other|none>\", \"production_impact\": \"<shutdown|reduced|increased_cost|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production impact or cost change>\"\n}\n\nReport any new permit/regulatory/sanction/royalty actions impacting output in the last 180 days. If none, set action_occurred=false.",
+      "rationale": "Regulatory actions can abruptly constrain supply or increase costs. Country-risk dependent.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 180,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.projects.expansion_or_debottleneck_status",
+      "pack": "core",
+      "priority": 13,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.projects.expansion_or_debottleneck_status\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"project_exists\": <boolean>, \"project_name\": \"<string|null>\", \"target_capacity_increase\": <number|null>, \"target_capacity_unit\": \"<tpa|tpd|etc|null>\", \"current_stage\": \"<study|permitting|construction|commissioning|completed|suspended|cancelled|none>\", \"target_completion\": \"YYYY-MM-DD|null\", \"slippage_risk\": \"<high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: gating dependencies or risks>\"\n}\n\nReport status of any expansion or debottleneck project. If none, set project_exists=false.",
+      "rationale": "Forward-looking supply growth indicator. Critical for medium-term supply models.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 180,
+        "require_dated_source": true,
+        "status_change_override": false
+      }
+    },
+    {
+      "json_id": "supply.facility.status.restart_or_startup_timeline",
+      "pack": "core",
+      "priority": 14,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.status.restart_or_startup_timeline\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"applicable\": <boolean>, \"target_restart_date\": \"YYYY-MM-DD|null\", \"target_restart_quarter\": \"<Q1|Q2|Q3|Q4> YYYY|null\", \"confidence_level\": \"<high|medium|low|unknown>\", \"gating_dependencies\": [\"<price|permit|funding|operator|other>\"]},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: historical restart timeline slippage>\"\n}\n\nIf facility is suspended/commissioning/construction, provide most credible restart/start-up window and gating dependencies. If producing, set applicable=false.",
+      "rationale": "Critical for supply re-entry modeling. High-value for care-and-maintenance assets.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 60,
+        "max_freshness_days": 120,
+        "require_dated_source": true,
+        "status_change_override": true
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.sulfuric_acid_supply_constraint_risk",
+      "pack": "acid_dependent",
+      "priority": 15,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.sulfuric_acid_supply_constraint_risk\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"constraint_active\": <boolean>, \"constraint_type\": \"<onsite_acid_plant|import_availability|logistics|none>\", \"severity\": \"<critical|high|medium|low|none>\", \"estimated_impact_pct\": <number|null>},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: onsite acid plant uptime or import source reliability>\"\n}\n\nDetermine if sulfuric acid supply is constraining production now or likely within 30-60 days. Include whether onsite acid plant uptime or imports are the gating factor. If no constraint, set constraint_active=false.",
+      "rationale": "High-leverage constraint for SXEW/HPAL and some refineries. Acid availability can abruptly halt production.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 60,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "process_type": ["sxew", "hpal", "heap_leach"],
+        "acid_dependency": ["high", "medium"]
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.acid_plant_uptime_dependency",
+      "pack": "acid_dependent",
+      "priority": 16,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.acid_plant_uptime_dependency\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"has_onsite_acid_plant\": <boolean>, \"acid_plant_uptime_pct\": <number|null>, \"recent_acid_plant_outage\": <boolean>, \"outage_duration_days\": <number|null>},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: backup acid supply arrangements>\"\n}\n\nDetermine if facility has an onsite acid plant and its recent uptime. If recent outage (last 90 days), report duration. If no onsite plant, set has_onsite_acid_plant=false.",
+      "rationale": "Onsite acid plant outages can create single-point failure for SXEW/HPAL operations.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 90,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "process_type": ["sxew", "hpal"],
+        "acid_dependency": ["high"]
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.power_loadshedding_risk_nowcasting",
+      "pack": "power_intensive",
+      "priority": 17,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.power_loadshedding_risk_nowcasting\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"loadshedding_active\": <boolean>, \"loadshedding_stage\": \"<stage_1|stage_2|stage_3|stage_4|stage_5|stage_6|none>\", \"estimated_uptime_pct\": <number|null>, \"next_30d_risk\": \"<high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: backup generation capacity or exemption status>\"\n}\n\nDetermine current load-shedding status and near-term (30-day) risk. For South Africa, reference Eskom stage. For other countries, assess grid reliability. If no load-shedding, set loadshedding_active=false.",
+      "rationale": "Critical for power-intensive facilities (Al, FeSi, Zn smelters). Load-shedding directly reduces production.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 30,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "power_intensity": ["very_high", "high"],
+        "country_risk_bucket": [3, 4, 5]
+      }
+    },
+    {
+      "json_id": "supply.facility.inputs.power_tariff_change_risk",
+      "pack": "power_intensive",
+      "priority": 18,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.inputs.power_tariff_change_risk\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"tariff_change_announced\": <boolean>, \"change_magnitude_pct\": <number|null>, \"effective_date\": \"YYYY-MM-DD|null\", \"curtailment_risk\": \"<high|medium|low|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated cost impact or curtailment response>\"\n}\n\nDetermine if power tariff changes have been announced or implemented in the last 180 days. Assess curtailment risk (economic shutdown). If no change, set tariff_change_announced=false.",
+      "rationale": "Power cost spikes can make smelters economically unviable, triggering curtailments. High-consequence for Al/FeSi.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 180,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "power_intensity": ["very_high", "high"]
+      }
+    },
+    {
+      "json_id": "supply.facility.environment.rainfall_disruption_last_30d",
+      "pack": "rain_sensitive",
+      "priority": 19,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.environment.rainfall_disruption_last_30d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"disruption_occurred\": <boolean>, \"disruption_type\": \"<flooding|road_washout|pit_water|tailings_overflow|none>\", \"duration_days\": <number|null>, \"production_impact_pct\": <number|null>},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: seasonal risk outlook>\"\n}\n\nReport rainfall-related disruptions in the last 30 days (flooding, road washouts, pit dewatering). If none, set disruption_occurred=false.",
+      "rationale": "High-frequency signal for tropical/monsoon open-pit mines. Seasonal production volatility.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 30,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "mine_method": ["open_pit", "both"],
+        "climate_zone": ["tropical", "monsoon"]
+      }
+    },
+    {
+      "json_id": "supply.facility.market_link.feedstock_availability_constraint",
+      "pack": "smelter_refiner",
+      "priority": 20,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.market_link.feedstock_availability_constraint\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"constraint_active\": <boolean>, \"feedstock_type\": \"<concentrate|scrap|matte|other>\", \"constraint_severity\": \"<critical|high|medium|low|none>\", \"utilization_rate_pct\": <number|null>},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: feedstock sourcing changes or TCRC impact>\"\n}\n\nDetermine if feedstock availability is constraining smelter/refiner output. Report current utilization rate if available. If no constraint, set constraint_active=false.",
+      "rationale": "Smelters/refiners can be feedstock-limited despite operational capacity. Distinct from mine-side constraints.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 65,
+        "max_freshness_days": 90,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "primary_type": ["smelter", "refinery"]
+      }
+    },
+    {
+      "json_id": "supply.facility.incidents.blockade_or_security_incident_last_30d",
+      "pack": "security_risk",
+      "priority": 21,
+      "prompt_template": "For {FACILITY_CANONICAL_NAME} (aka {ALIASES}), a {PROCESS_TYPE} {FACILITY_TYPE} producing {PRIMARY_METALS} in {COUNTRY_REGION}, as of today, answer only in JSON matching this schema:\n{\n  \"metric\": \"supply.facility.incidents.blockade_or_security_incident_last_30d\",\n  \"facility\": \"{FACILITY_CANONICAL_NAME}\",\n  \"value\": {\"incident_occurred\": <boolean>, \"incident_type\": \"<community_blockade|labor_blockade|armed_attack|theft|vandalism|other|none>\", \"duration_days\": <number|null>, \"production_impact\": \"<shutdown|reduced|none>\"},\n  \"unit\": null,\n  \"as_of_date\": \"YYYY-MM-DD\",\n  \"confidence\": 0-100,\n  \"freshness_days\": <int>,\n  \"evidence\": [{\"title\": \"...\", \"url\": \"...\", \"date\": \"YYYY-MM-DD\"}],\n  \"method\": \"explicit|inferred\",\n  \"notes\": \"<Optional: estimated production loss or negotiation status>\"\n}\n\nReport blockades or security incidents in the last 30 days that affected production or access. If none, set incident_occurred=false.",
+      "rationale": "High-frequency signal for social license and security risk. Can cause abrupt supply disruptions.",
+      "value_type": "object",
+      "value_enum": null,
+      "unit": null,
+      "acceptance_rules": {
+        "min_confidence": 70,
+        "max_freshness_days": 30,
+        "require_dated_source": true,
+        "status_change_override": false
+      },
+      "routing_criteria": {
+        "country_risk_bucket": [3, 4, 5]
+      }
+    }
+  ],
+  "packs": {
+    "core": {
+      "description": "Core measurables applied to all facilities regardless of type or location",
+      "count": 14
+    },
+    "acid_dependent": {
+      "description": "Additional measurables for acid-dependent processes (SXEW, HPAL, heap leach)",
+      "count": 2
+    },
+    "power_intensive": {
+      "description": "Additional measurables for power-intensive facilities (Al, FeSi, Zn smelters, electro-refining)",
+      "count": 2
+    },
+    "rain_sensitive": {
+      "description": "Additional measurables for rainfall-sensitive open-pit operations in tropical/monsoon zones",
+      "count": 1
+    },
+    "smelter_refiner": {
+      "description": "Additional measurables for smelters and refineries (feedstock dependency)",
+      "count": 1
+    },
+    "security_risk": {
+      "description": "Additional measurables for facilities in high country-risk regions",
+      "count": 1
+    }
+  }
+}

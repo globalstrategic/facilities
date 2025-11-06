@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Measurable Result",
+  "description": "Time-series results from LLM-powered facility measurable queries. Each result represents a timestamped answer to a specific measurable question for a specific facility.",
+  "version": "0.1.0",
+  "lastUpdated": "2025-11-06",
+  "type": "object",
+  "required": ["result_id", "facility_id", "json_id", "value", "as_of_date", "confidence", "freshness_days", "query_timestamp", "accepted"],
+  "properties": {
+    "result_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$",
+      "description": "Unique UUID for this result record"
+    },
+    "facility_id": {
+      "type": "string",
+      "pattern": "^[a-z]{3}-[a-z0-9-]+-fac$",
+      "description": "Facility identifier in format: iso3-slug-fac"
+    },
+    "json_id": {
+      "type": "string",
+      "pattern": "^supply\\.facility\\.[a-z_]+\\.[a-z_]+$",
+      "description": "Measurable JSON_ID from library (e.g., 'supply.facility.status.current_operational_state')"
+    },
+    "value": {
+      "description": "The answer value. Type varies by measurable (string, number, boolean, object, array)."
+    },
+    "unit": {
+      "type": ["string", "null"],
+      "description": "Unit of measurement for numeric values (e.g., 't', 'tpm', 'tpa', '%'). Null for non-numeric or dimensionless values."
+    },
+    "as_of_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date as of which this value is valid (YYYY-MM-DD). May differ from query_timestamp if reporting historical data."
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "LLM-assessed confidence score (0-100). Higher is more confident."
+    },
+    "freshness_days": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Days since the most recent evidence source. Lower is fresher."
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title or description of the source"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the source"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Publication or access date of the source (YYYY-MM-DD)"
+          }
+        },
+        "required": ["title", "url", "date"]
+      },
+      "description": "Array of evidence sources supporting this result. Minimum 1 for accepted results."
+    },
+    "method": {
+      "type": "string",
+      "enum": ["explicit", "inferred", "unknown"],
+      "description": "How the value was determined: 'explicit' (stated directly in source), 'inferred' (derived from context), 'unknown'."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Optional notes from the LLM providing context, caveats, or additional details (1-2 sentences)."
+    },
+    "query_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this query was executed (ISO 8601 format with timezone)."
+    },
+    "accepted": {
+      "type": "boolean",
+      "description": "Whether this result passed acceptance criteria (confidence, freshness thresholds). Only accepted=true results should be used in models."
+    },
+    "provisional": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this result is provisional and should be flagged for human review or re-query. Set when confidence or freshness is borderline."
+    },
+    "acceptance_reason": {
+      "type": ["string", "null"],
+      "description": "Reason for acceptance/rejection decision. E.g., 'Passed: confidence 85, freshness 45d' or 'Rejected: confidence 55 < 60 threshold'."
+    },
+    "prompt_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 hash of the prompt sent to the LLM. Enables auditability and prompt version tracking."
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$",
+      "description": "UUID for the batch run that generated this result. Groups results from the same orchestration run."
+    },
+    "llm_model": {
+      "type": "string",
+      "description": "LLM model used for this query (e.g., 'sonar-pro', 'gpt-4', 'claude-3-opus')."
+    },
+    "llm_provider": {
+      "type": "string",
+      "enum": ["perplexity", "openai", "anthropic", "other"],
+      "description": "LLM provider used for this query."
+    },
+    "query_latency_ms": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Query execution time in milliseconds. Null if not recorded."
+    },
+    "superseded_by": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$",
+      "description": "Result_id of a newer result that supersedes this one. Null if this is the latest result."
+    },
+    "status_change": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this result represents a status change from the previous result (e.g., producing → suspended). Triggers re-routing and priority re-query."
+    },
+    "previous_value": {
+      "description": "Previous value for comparison (if status_change=true). Same type as 'value'."
+    },
+    "validation_errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of validation error messages if the LLM response failed schema validation. Empty if validation passed."
+    }
+  }
+}

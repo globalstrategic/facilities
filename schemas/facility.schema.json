@@ -414,6 +414,74 @@
         "required": ["name", "from", "to", "reason"]
       },
       "description": "History of canonical name changes. Preserves auditability when operators change or data is corrected."
+    },
+    "facility_features": {
+      "type": ["object", "null"],
+      "properties": {
+        "process_type": {
+          "type": ["string", "null"],
+          "enum": ["open_pit", "underground", "flotation", "heap_leach", "sxew", "hpal", "blast_furnace", "electric_arc_furnace", "reverb_furnace", "flash_smelting", "pressure_oxidation", "bioleach", "gravity_separation", "magnetic_separation", "electrolytic_refining", "pyrometallurgical_refining", "hydrometallurgical_refining", null],
+          "description": "Primary process technology used at the facility"
+        },
+        "mine_method": {
+          "type": ["string", "null"],
+          "enum": ["open_pit", "underground", "both", "not_applicable", null],
+          "description": "Mining method if facility_type is mine"
+        },
+        "acid_dependency": {
+          "type": ["string", "null"],
+          "enum": ["high", "medium", "low", "none", null],
+          "description": "Dependency on sulfuric acid supply (high: SXEW/HPAL, medium: heap leach, low: some flotation, none: other)"
+        },
+        "power_intensity": {
+          "type": ["string", "null"],
+          "enum": ["very_high", "high", "medium", "low", null],
+          "description": "Electrical power intensity (very_high: Al/FeSi/Si smelters, high: Zn/electro-refining, medium: flotation, low: other)"
+        },
+        "climate_zone": {
+          "type": ["string", "null"],
+          "enum": ["tropical", "monsoon", "arid", "temperate", "continental", "polar", null],
+          "description": "Climate zone based on facility location (Koppen classification simplified)"
+        },
+        "port_dependency": {
+          "type": ["string", "null"],
+          "enum": ["critical", "high", "medium", "low", "none", null],
+          "description": "Dependency on port/shipping access for feedstock or export (critical: island smelters, high: export-focused, medium: some export, low/none: domestic)"
+        },
+        "water_intensity": {
+          "type": ["string", "null"],
+          "enum": ["very_high", "high", "medium", "low", null],
+          "description": "Water consumption intensity (very_high: flotation/HPAL, high: SXEW, medium: heap leach, low: dry processing)"
+        },
+        "country_risk_bucket": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Country geopolitical/operational risk score (1=lowest, 5=highest) based on stability, regulatory, security factors"
+        },
+        "consequentiality_score": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Facility Consequentiality Score (FCS): 0.45*global_supply_share + 0.2*metal_criticality + 0.15*supply_concentration + 0.1*single_point_failure + 0.1*recent_volatility. Scale 0-100."
+        },
+        "single_point_failure": {
+          "type": ["boolean", "null"],
+          "description": "True if facility represents >5% of global supply for any primary commodity"
+        },
+        "last_feature_update": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Timestamp of last facility_features computation"
+        },
+        "feature_confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall confidence in derived features (0-1)"
+        }
+      },
+      "description": "Derived operational and geographic features used for measurables routing and risk assessment. Auto-computed from facility metadata and external data sources."
     }
   }
 }
