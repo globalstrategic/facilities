@@ -6,7 +6,7 @@
   "location": {
     "lat": null,
     "lon": null,
-    "precision": "unknown"
+    "precision": "region"
   },
   "types": [
     "copper smelter"
@@ -22,21 +22,36 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "ESNAA Copper Non-Ferrous Metal Casting L.L.C.",
+    "AMA Group UAE"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.664999"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.219751",
+      "notes": "Next-generation copper and precious-metals refining complex in designated industrial zone, Dubai. Under development."
+    },
+    {
+      "type": "verification",
+      "id": "detailed_project_verification",
+      "date": "2025-11-17T11:10:00.000000",
+      "notes": "Confirmed as real planned facility. Core business: next-gen copper smelter with integrated precious metals capability. Developer: AMA Group UAE. Strategic alignment: UAE VISION 2031, OPERATION 300BN. Sustainability: ISO 14001/45001 standards, emission control, sulfur capture, zero-liquid discharge, waste-heat recovery. Part of UAE's strategy to diversify economy and build high-value manufacturing."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.778849Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T11:10:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "Confirmed real project by AMA Group UAE, aligned with UAE VISION 2031 and OPERATION 300BN. World-class facility with ISO 14001/45001 standards planned."
   },
   "canonical_name": "Esnaa Copper Smelter",
   "canonical_slug": "esnaa-copper-smelter",
@@ -59,5 +74,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dubai"
 }

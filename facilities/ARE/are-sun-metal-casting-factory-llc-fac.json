@@ -4,12 +4,13 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.506944,
+    "lon": 55.558056,
+    "precision": "industrial_zone_approx"
   },
   "types": [
-    "secondary smelter"
+    "smelter",
+    "secondary_smelter"
   ],
   "commodities": [
     {
@@ -22,20 +23,28 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sun Metal Casting Factory LLC"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.704154"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.224245",
+      "notes": "Zinc/lead oxide plant in Umm Al Quwain Industrial Area 4; coordinates approximate to industrial-area centre"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.776469Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.85,
+    "last_checked": "2025-11-14T11:29:36.224241Z",
+    "checked_by": "manual_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Sun Metal Casting Factory LLC Smelter",
@@ -51,5 +60,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Umm Al Quwain"
 }

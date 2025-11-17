@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.1167,
+    "lon": 56.3269,
+    "precision": "exact"
   },
   "types": [
-    "mine (open pit)"
+    "mine"
   ],
   "commodities": [
     {
@@ -18,20 +18,35 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Derwent Mining Ltd.",
+    "Fujairah Gold FZC"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.611514"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.221162",
+      "notes": "Large open-pit chromite mine"
+    },
+    {
+      "type": "llm_geocoding",
+      "id": "openai_web_search",
+      "date": "2025-11-17T08:18:15.306108",
+      "notes": "The Fujairah Chrome Mine is a legitimate facility located in Fujairah, UAE, primarily focused on chromium extraction. It is operated by Fujairah Gold FZC and is currently in operation."
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.779147Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T08:18:15.306106Z",
+    "checked_by": "llm_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Fujairah Chrome Mine",
@@ -47,5 +62,7 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Fujairah",
+  "town": "Fujairah"
 }

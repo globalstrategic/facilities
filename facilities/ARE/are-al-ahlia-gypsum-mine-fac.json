@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "precision": "town"
   },
   "types": [
     "mine / quarry"
@@ -18,20 +18,35 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Al Ahlia Gypsum / Luluat Alahli",
+    "Al Ahlia Gypsum Company"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.761539"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.218193",
+      "notes": "Real company operating gypsum mine in UAE, but exact location not publicly disclosed. Office in Al Qusais, Dubai."
+    },
+    {
+      "type": "llm_geocoding",
+      "id": "openai_web_search",
+      "date": "2025-11-17T08:18:15.305061",
+      "notes": "The Al Ahlia Gypsum Mine is a legitimate facility located in Fujairah, UAE, operated by Al Ahlia Gypsum Company. It is currently operational and specializes in gypsum production."
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.778688Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.8,
+    "last_checked": "2025-11-17T08:18:15.305053Z",
+    "checked_by": "llm_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Al Ahlia Gypsum Mine",
@@ -47,5 +62,7 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Fujairah",
+  "province": "Fujairah"
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 24.322033,
+    "lon": 54.467987,
+    "precision": "plant"
   },
   "types": [
     "integrated steel plant"
@@ -18,10 +18,6 @@
       "chemical_formula": "Fe-C"
     },
     {
-      "metal": "sections)",
-      "primary": true
-    },
-    {
       "metal": "wire rod",
       "primary": false
     },
@@ -31,20 +27,29 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "EMSTEEL PJSC",
+    "EMSTEEL PJSC (majority owned by ADQ via Senaat)"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.575622"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.219095",
+      "notes": "Integrated steel complex in ICAD I, Mussafah, Abu Dhabi"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.778517Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.85,
+    "last_checked": "2025-11-14T11:29:36.219090Z",
+    "checked_by": "manual_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Emsteel Steel Division Steel Plant",
@@ -55,7 +60,7 @@
   "data_quality": {
     "canonicalization_confidence": 0.51,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
@@ -68,5 +73,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Mussafah",
+  "province": "Abu Dhabi"
 }

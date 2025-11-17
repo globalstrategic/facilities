@@ -4,14 +4,12 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "region",
-    "town": "Khor Khwair",
-    "region": "Ras Al Khaimah"
+    "lat": 25.967222,
+    "lon": 56.054444,
+    "precision": "industrial_zone"
   },
   "types": [
-    "mine"
+    "quarry"
   ],
   "commodities": [
     {
@@ -28,20 +26,29 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Stevin Rock LLC",
+    "Government of Ras Al Khaimah (via Stevin Rock / RAK Rock)"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.726018"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.223345",
+      "notes": "World's largest limestone quarry complex at Khor Khuwair / Saqr Port"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.777248Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.85,
+    "last_checked": "2025-11-14T11:29:36.223340Z",
+    "checked_by": "manual_geocoding",
     "notes": "Canonical name+slug generated",
     "geocoding_source": "Large multi-operator quarry district; leave lat/lon blank until pit centroid chosen"
   },
@@ -67,5 +74,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Khor Khuwair",
+  "province": "Ras Al Khaimah"
 }

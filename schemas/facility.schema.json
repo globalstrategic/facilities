@@ -418,40 +418,50 @@
     "facility_features": {
       "type": ["object", "null"],
       "properties": {
-        "process_type": {
-          "type": ["string", "null"],
-          "enum": ["open_pit", "underground", "flotation", "heap_leach", "sxew", "hpal", "blast_furnace", "electric_arc_furnace", "reverb_furnace", "flash_smelting", "pressure_oxidation", "bioleach", "gravity_separation", "magnetic_separation", "electrolytic_refining", "pyrometallurgical_refining", "hydrometallurgical_refining", null],
-          "description": "Primary process technology used at the facility"
+        "process_chain": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["flotation", "heap_leach", "sxew", "hpal", "pox", "bioleach", "gravity_separation", "magnetic_separation", "blast_furnace", "electric_arc_furnace", "reverb_furnace", "flash_smelting", "electrolytic_refining", "pyrometallurgical_refining", "hydrometallurgical_refining", "roasting", "calcining", "sintering", "pelletizing", "direct_reduction"]
+          },
+          "description": "Array of process technologies in the facility's value chain (e.g., ['flotation', 'smelting', 'electrolytic_refining']). Multi-stage facilities have multiple entries."
         },
         "mine_method": {
           "type": ["string", "null"],
-          "enum": ["open_pit", "underground", "both", "not_applicable", null],
-          "description": "Mining method if facility_type is mine"
+          "enum": ["open_pit", "underground", "both", "not_applicable"],
+          "description": "Mining method if primary_type is mine. Use 'not_applicable' for non-mining facilities."
+        },
+        "metals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Array of normalized commodity codes (e.g., ['Cu', 'Au', 'Mo']). Derived from commodities[] with chemical_formula. Used for metal-specific pack routing."
         },
         "acid_dependency": {
           "type": ["string", "null"],
-          "enum": ["high", "medium", "low", "none", null],
+          "enum": ["high", "medium", "low", "none"],
           "description": "Dependency on sulfuric acid supply (high: SXEW/HPAL, medium: heap leach, low: some flotation, none: other)"
         },
         "power_intensity": {
           "type": ["string", "null"],
-          "enum": ["very_high", "high", "medium", "low", null],
+          "enum": ["very_high", "high", "medium", "low"],
           "description": "Electrical power intensity (very_high: Al/FeSi/Si smelters, high: Zn/electro-refining, medium: flotation, low: other)"
+        },
+        "water_intensity": {
+          "type": ["string", "null"],
+          "enum": ["very_high", "high", "medium", "low"],
+          "description": "Water consumption intensity (very_high: flotation/HPAL, high: SXEW, medium: heap leach, low: dry processing)"
         },
         "climate_zone": {
           "type": ["string", "null"],
-          "enum": ["tropical", "monsoon", "arid", "temperate", "continental", "polar", null],
+          "enum": ["tropical", "monsoon", "arid", "temperate", "continental", "polar"],
           "description": "Climate zone based on facility location (Koppen classification simplified)"
         },
         "port_dependency": {
           "type": ["string", "null"],
-          "enum": ["critical", "high", "medium", "low", "none", null],
+          "enum": ["critical", "high", "medium", "low", "none"],
           "description": "Dependency on port/shipping access for feedstock or export (critical: island smelters, high: export-focused, medium: some export, low/none: domestic)"
-        },
-        "water_intensity": {
-          "type": ["string", "null"],
-          "enum": ["very_high", "high", "medium", "low", null],
-          "description": "Water consumption intensity (very_high: flotation/HPAL, high: SXEW, medium: heap leach, low: dry processing)"
         },
         "country_risk_bucket": {
           "type": ["integer", "null"],
@@ -464,6 +474,11 @@
           "minimum": 0,
           "maximum": 100,
           "description": "Facility Consequentiality Score (FCS): 0.45*global_supply_share + 0.2*metal_criticality + 0.15*supply_concentration + 0.1*single_point_failure + 0.1*recent_volatility. Scale 0-100."
+        },
+        "tier": {
+          "type": ["integer", "null"],
+          "enum": [1, 2, 3, 4],
+          "description": "Query tier: 1=Bronze (5 measurables/month), 2=Silver (50/week), 3=Gold (100/3x week), 4=Platinum (500/daily). Derived from FCS."
         },
         "single_point_failure": {
           "type": ["boolean", "null"],

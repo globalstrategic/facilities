@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "ARE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.157778,
+    "lon": 55.243333,
+    "precision": "plant"
   },
   "types": [
-    "plant"
+    "cement_plant"
   ],
   "commodities": [
     {
@@ -18,20 +18,28 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "National Cement Co. P.S.C."
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.820458"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.223861",
+      "notes": ""
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.777564Z",
-    "checked_by": "import_pipeline",
+    "confidence": 0.85,
+    "last_checked": "2025-11-14T11:29:36.223859Z",
+    "checked_by": "manual_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "National Cement Co P S C Plant",
@@ -42,7 +50,7 @@
   "data_quality": {
     "canonicalization_confidence": 0.615,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
@@ -55,5 +63,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Al Quoz",
+  "province": "Dubai"
 }

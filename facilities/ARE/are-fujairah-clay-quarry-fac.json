@@ -6,10 +6,10 @@
   "location": {
     "lat": null,
     "lon": null,
-    "precision": "unknown"
+    "precision": "emirate"
   },
   "types": [
-    "mine"
+    "quarry"
   ],
   "commodities": [
     {
@@ -18,20 +18,28 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fujairah Natural Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Deep Research 2025",
       "date": "2025-10-21T09:24:12.752472"
+    },
+    {
+      "type": "geocoding",
+      "id": "manual_verification_2025",
+      "date": "2025-11-14T11:29:36.221491",
+      "notes": "Large surface clay mine; exact coordinates not publicly available"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:13.776313Z",
-    "checked_by": "import_pipeline",
+    "last_checked": "2025-11-14T11:29:36.221488Z",
+    "checked_by": "manual_geocoding",
     "notes": "Canonical name+slug generated"
   },
   "canonical_name": "Fujairah Clay Quarry Mine",
@@ -47,5 +55,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Fujairah"
 }
