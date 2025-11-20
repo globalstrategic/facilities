@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.5,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.721551Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T15:05:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.valterraplatinum.com/~/media/Files/A/Anglo-American-Group/Platinum/sustainability/der-brochen-mototolo-slp-3.pdf. The Der Brochen Project is located approximately 40 km south of Steelpoort, in the Limpopo province, near the border of Mpumalanga"
   },
   "canonical_name": "Der Brochen Mine",
   "canonical_slug": "der-brochen-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.36667,
+    "lon": 28.95,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.711152Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T15:01:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1971/Volspruit-Project.aspx. The Volspruit Platinum Project is located approximately 20 km southwest of Mokopane in the Limpopo Province of South Africa"
   },
   "canonical_name": "Volspruit Platinum Mine",
   "canonical_slug": "volspruit-platinum-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo"
 }

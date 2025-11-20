@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -27.0,
+    "lon": 26.0,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.792561Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-17T15:38:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sibanyestillwater.com/business/southern-africa/gold-operations/projects/. The Robijn Project is part of the Southern Free State (SOFS) project, located near Welkom, approximately 240 km southwest of Johannesburg"
   },
   "canonical_name": "Robijn Mine",
   "canonical_slug": "robijn-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -27.5,
+    "lon": 23.1,
     "precision": "unknown"
   },
   "types": [
@@ -29,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.791707Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-17T17:03:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: http://www.ntuthukogroup.co.za/. The Vinci Iron Ore Project is located approximately 10 km North East of Postmasburg in the Northern Cape Province"
   },
   "canonical_name": "Vinci Iron Ore Mine",
   "canonical_slug": "vinci-iron-ore-mine",
@@ -48,5 +48,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape"
 }

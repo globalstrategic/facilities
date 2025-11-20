@@ -1,48 +1,55 @@
 {
   "facility_id": "zaf-sedibeng-plant-bellsbank-kimberlite-pipe-fac",
   "name": "Sedibeng Plant - Bellsbank Kimberlite Pipe",
-  "aliases": [],
+  "aliases": ["Bellsbank Kimberlite Pipe", "Bellsbank Diamond Mine"],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -28.216944,
+    "lon": 24.501389,
+    "precision": "exact"
   },
   "types": [
     "mine"
   ],
   "commodities": [
     {
-      "metal": "diamonds",
-      "primary": true
+      "metal": "Diamond",
+      "primary": true,
+      "chemical_formula": "C"
     }
   ],
   "status": "operating",
-  "company_mentions": [],
-  "products": [],
+  "company_mentions": ["Frontier Diamonds"],
+  "products": ["rough diamonds"],
   "sources": [
     {
       "type": "csv_import",
       "id": "South Africa Final Import",
       "date": "2025-10-20T17:39:13.197858"
+    },
+    {
+      "type": "verification",
+      "id": "manual_research_2025",
+      "date": "2025-11-17T12:35:00.000000",
+      "notes": "Bellsbank Kimberlite Pipe is a Frontier Diamonds asset, 10km west of Sedibeng Diamond Mine. Located ~110km NW of Kimberley. Sedibeng plant near Delportshoop processes Bellsbank bulk samples. Coords from georeferenced Wikimedia Commons image of Bellsbank locality. Location represents ore source (Bellsbank pipe), processing at Sedibeng plant 10km E."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.701833Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.95,
+    "last_checked": "2025-11-17T12:35:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "Coords from Wikimedia Commons georeferenced image: 28°13′01″ S, 24°30′05″ E. Bellsbank Mines near Mount Rupert, north of Kimberley. Frontier Diamonds asset confirmed in ASX releases and Crown Publications."
   },
-  "canonical_name": "Sedibeng Bellsbank Kimberlite Pipe Mine",
-  "canonical_slug": "sedibeng-bellsbank-kimberlite-pipe-mine",
-  "display_name": "Sedibeng Bellsbank Kimberlite Pipe",
+  "canonical_name": "Bellsbank Kimberlite Pipe Mine",
+  "canonical_slug": "bellsbank-kimberlite-pipe-mine",
+  "display_name": "Bellsbank Kimberlite Pipe",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.95,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
@@ -55,5 +62,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "manual",
+  "town": "Mount Rupert",
+  "province": "Northern Cape"
 }

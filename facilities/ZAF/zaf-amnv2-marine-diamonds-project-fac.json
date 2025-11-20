@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -28.4,
+    "lon": 16.8,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.760352Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T17:01:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.jpl.nasa.gov/images/pia00821-south-africa-namibia-diamond-deposits/. Coordinates are from a radar image covering an area of active diamond mining along the Orange River, which marks the boundary between South Africa and Namibia"
   },
   "canonical_name": "Amnv2 Marine Diamonds Mine",
   "canonical_slug": "amnv2-marine-diamonds-mine",
@@ -55,5 +55,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape"
 }

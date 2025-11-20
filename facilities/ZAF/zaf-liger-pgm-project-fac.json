@@ -1,51 +1,70 @@
 {
   "facility_id": "zaf-liger-pgm-project-fac",
-  "name": "Liger Pgm Project",
-  "aliases": [],
+  "name": "Liger PGM Project",
+  "aliases": ["Leeuwkop 425 KS", "Tigerpoort 426 KS", "Platfields Liger Project"],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -24.31346,
+    "lon": 29.92429,
+    "precision": "approximate"
   },
   "types": [
     "mine"
   ],
   "commodities": [
     {
-      "metal": "platinum",
-      "primary": true
+      "metal": "Platinum",
+      "primary": true,
+      "chemical_formula": "Pt"
+    },
+    {
+      "metal": "Palladium",
+      "primary": true,
+      "chemical_formula": "Pd"
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false,
+      "chemical_formula": "Rh"
     }
   ],
-  "status": "suspended",
-  "company_mentions": [],
-  "products": [],
+  "status": "exploration",
+  "company_mentions": ["Platfields", "Sibanye-Stillwater", "ARM"],
+  "products": ["PGM concentrate"],
   "sources": [
     {
       "type": "csv_import",
       "id": "South Africa Final Import",
       "date": "2025-10-20T17:39:12.963951"
+    },
+    {
+      "type": "verification",
+      "id": "manual_research_2025",
+      "date": "2025-11-17T12:40:00.000000",
+      "notes": "Platfields' Liger Project comprises two contiguous farms: Leeuwkop 425 KS and Tigerpoort 426 KS. Near-surface PGM target at NW end of Eastern Limb of Bushveld Complex. Immediately west of Lebowa/Bokoni Platinum Mine in Sekhukhune Magisterial District. North of Phosiri Dome. Coords aligned to Lebowa/Bokoni (24°18′48.47″ S, 29°55′27.43″ E) as Liger is immediately adjacent."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.704473Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.85,
+    "last_checked": "2025-11-17T12:40:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "Approximate coords aligned to Lebowa/Bokoni Platinum Mine (DERA source). Liger (Leeuwkop 425 KS & Tigerpoort 426 KS) is immediately west of this location. Sibanye/ARM reporting confirms farm locations. Can be refined with cadastral shapefiles/SG diagrams."
   },
-  "canonical_name": "Liger Pgm Mine",
+  "canonical_name": "Liger PGM Mine",
   "canonical_slug": "liger-pgm-mine",
-  "display_name": "Liger Pgm",
+  "display_name": "Liger PGM Project",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.85,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "manual",
+  "town": "Sekhukhune",
+  "province": "Limpopo"
 }

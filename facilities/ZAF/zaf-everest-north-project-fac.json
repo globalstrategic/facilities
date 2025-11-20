@@ -1,51 +1,70 @@
 {
   "facility_id": "zaf-everest-north-project-fac",
   "name": "Everest North Project",
-  "aliases": [],
+  "aliases": ["Everest North - Vygenhoek UG2", "Vygenhoek UG2 Project"],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -25.0531,
+    "lon": 30.1536,
+    "precision": "approximate"
   },
   "types": [
     "mine"
   ],
   "commodities": [
     {
-      "metal": "platinum",
-      "primary": true
+      "metal": "Platinum",
+      "primary": true,
+      "chemical_formula": "Pt"
+    },
+    {
+      "metal": "Palladium",
+      "primary": true,
+      "chemical_formula": "Pd"
+    },
+    {
+      "metal": "Rhodium",
+      "primary": false,
+      "chemical_formula": "Rh"
     }
   ],
-  "status": "suspended",
-  "company_mentions": [],
-  "products": [],
+  "status": "development",
+  "company_mentions": ["Aquarius Platinum", "Sylvania Platinum"],
+  "products": ["PGM concentrate"],
   "sources": [
     {
       "type": "csv_import",
       "id": "South Africa Final Import",
-      "date": "2025-10-20T17:39:12.540961"
+      "date": "2025-10-20T17:39:13.000000"
+    },
+    {
+      "type": "verification",
+      "id": "manual_research_2025",
+      "date": "2025-11-17T12:30:00.000000",
+      "notes": "PGM (UG2) project on eastern limb of Bushveld Complex. Historically held by Aquarius Platinum/Sylvania Platinum. Located on farms Vygenhoek and Mareesburg, 35km SW of Mashishing (Lydenburg) and 30km NE of Roossenekal. USGS PGE survey confirms project."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.698264Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T12:30:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "Aquarius Platinum annual report describes project. USGS PGE survey lists Everest North (Vygenhoek) among Bushveld PGM projects. Coords approximate to Vygenhoek Farm from Mindat."
   },
-  "canonical_name": "Everest North Mine",
-  "canonical_slug": "everest-north-mine",
-  "display_name": "Everest North",
+  "canonical_name": "Everest North PGM Mine",
+  "canonical_slug": "everest-north-pgm-mine",
+  "display_name": "Everest North Project",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.9,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "manual",
+  "town": "Roossenekal",
+  "province": "Limpopo"
 }

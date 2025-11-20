@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.4860587,
+    "lon": 31.548418,
     "precision": "unknown"
   },
   "types": [
@@ -29,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.726117Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T15:07:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gs.maptons.com/1972135. Coordinates extracted directly from the map location of Malelane, Mpumalanga, South Africa"
   },
   "canonical_name": "Malelane Iron Ore Mine",
   "canonical_slug": "malelane-iron-ore-mine",
@@ -48,5 +48,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga"
 }

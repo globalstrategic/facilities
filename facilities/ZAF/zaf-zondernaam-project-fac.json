@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.913290238521917,
+    "lon": 27.277985110812242,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.736440Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-17T15:12:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Pretoria (https://miningdataonline.com/property/1154/Zondereinde-Mine.aspx). The Zondereinde mine is located 130 km NW from Pretoria, in Limpopo Province, South Africa"
   },
   "canonical_name": "Zondernaam Mine",
   "canonical_slug": "zondernaam-mine",
@@ -47,5 +47,7 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo Province",
+  "town": "Pretoria"
 }

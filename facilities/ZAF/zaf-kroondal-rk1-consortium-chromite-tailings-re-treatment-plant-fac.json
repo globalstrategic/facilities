@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.75,
+    "lon": 27.3167,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.758949Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T15:21:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitude.to/articles-by-country/za/south-africa/244326/kroondal. The Kroondal Rk1 Consortium Chromite Tailings Re-Treatment Plant is located in Kroondal, which is situated on the Western Limb of the Bushveld Complex"
   },
   "canonical_name": "Kroondal Rk1 Consortium Chromite Tailings Re Treatment Mine",
   "canonical_slug": "kroondal-rk1-consortium-chromite-tailings-re-treatment-mine",
@@ -55,5 +55,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West"
 }

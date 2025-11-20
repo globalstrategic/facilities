@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.67488,
+    "lon": 27.328461,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.771725Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T15:29:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://sahris-bucket.s3.af-south-1.amazonaws.com/web%20folders/live%20site/media/heritage-reports/docs/2025-03/Appendix%20E%20%28Ann%20A%29%20-%20Heritage%20Impact%20Assessment.pdf?VersionId=s2w5luB80ZUMSDu5NOd5tl14ScwCXciE. Coordinates extracted from a heritage impact assessment document related to the Waterval facility"
   },
   "canonical_name": "Waterval Phase B Expansion Mine",
   "canonical_slug": "waterval-phase-b-expansion-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West"
 }

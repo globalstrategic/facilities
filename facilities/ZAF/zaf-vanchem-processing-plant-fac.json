@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.8581799,
+    "lon": 29.163837,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.698542Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T13:15:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://elevation.maplogs.com/poi/bushveld_vanchem_ltd_ferrobank_van_eck_dr_witbank_emalahleni_south_africa.556246.html. Coordinates extracted directly from elevation data for the Vanchem Processing Plant located in Ferrobank Industrial Park, Emalahleni, Mpumalanga"
   },
   "canonical_name": "Vanchem Processing Mine",
   "canonical_slug": "vanchem-processing-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga"
 }

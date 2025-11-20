@@ -1,12 +1,12 @@
 {
   "facility_id": "zaf-radiant-project-fac",
   "name": "Radiant Project",
-  "aliases": [],
+  "aliases": ["Radiant Target", "Radiant Gold Project"],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -26.2091,
+    "lon": 27.9139,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -14,38 +14,47 @@
   "commodities": [
     {
       "metal": "Gold",
-      "primary": true
+      "primary": true,
+      "chemical_formula": "Au"
     }
   ],
-  "status": "planned",
-  "company_mentions": [],
+  "status": "exploration",
+  "company_mentions": ["West Wits Mining"],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "South Africa Final Import",
       "date": "2025-10-20T17:39:13.141770"
+    },
+    {
+      "type": "verification",
+      "id": "manual_research_2025",
+      "date": "2025-11-17T12:30:00.000000",
+      "notes": "Gold exploration target within West Wits Mining's Soweto Project on Rand Leases ground. Unmined section of Kimberley Reef with JORC resources. Located on Rand Leases Vogelstruisfontein mine footprint near Roodepoort/western Johannesburg."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.695962Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.85,
+    "last_checked": "2025-11-17T12:30:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "West Wits ASX releases confirm Radiant Target on Rand Leases. ProjectIQ lists as Pre-Feasibility stage. Coords approximate to Rand Leases Vogelstruisfontein mine footprint."
   },
-  "canonical_name": "Radiant Mine",
-  "canonical_slug": "radiant-mine",
-  "display_name": "Radiant",
+  "canonical_name": "Radiant Gold Mine",
+  "canonical_slug": "radiant-gold-mine",
+  "display_name": "Radiant Project",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.85,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "manual",
+  "town": "Roodepoort",
+  "province": "Gauteng"
 }

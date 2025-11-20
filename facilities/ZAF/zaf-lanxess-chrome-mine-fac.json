@@ -1,51 +1,60 @@
 {
   "facility_id": "zaf-lanxess-chrome-mine-fac",
   "name": "Lanxess Chrome Mine",
-  "aliases": [],
+  "aliases": ["Rustenburg Chrome Mine", "Clover Alloys Chrome Mine"],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -25.72978,
+    "lon": 27.38274,
+    "precision": "exact"
   },
   "types": [
     "mine"
   ],
   "commodities": [
     {
-      "metal": "chrome",
-      "primary": true
+      "metal": "Chromium",
+      "primary": true,
+      "chemical_formula": "Cr"
     }
   ],
   "status": "operating",
-  "company_mentions": [],
-  "products": [],
+  "company_mentions": ["Lanxess", "Clover Alloys"],
+  "products": ["chromite ore"],
   "sources": [
     {
       "type": "csv_import",
       "id": "South Africa Final Import",
       "date": "2025-10-20T17:39:12.950798"
+    },
+    {
+      "type": "verification",
+      "id": "manual_research_2025",
+      "date": "2025-11-17T12:30:00.000000",
+      "notes": "Formerly Lanxess Chrome Mine, now Rustenburg Chrome Mine owned by Clover Alloys. Lanxess sold 74% stake to Clover Alloys in 2019-2021. Located on western limb of Bushveld Complex near Rustenburg."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.699029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.95,
+    "last_checked": "2025-11-17T12:30:00.000000Z",
+    "checked_by": "manual_verification",
+    "notes": "DERA lists as chromite ore supplier. Multiple references confirm as operating chrome mine. Coordinates from Mapcarta highly precise."
   },
-  "canonical_name": "Lanxess Chrome Mine",
-  "canonical_slug": "lanxess-chrome-mine",
-  "display_name": "Lanxess Chrome",
+  "canonical_name": "Rustenburg Chrome Mine",
+  "canonical_slug": "rustenburg-chrome-mine",
+  "display_name": "Lanxess Chrome Mine",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.95,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "manual",
+  "town": "Rustenburg",
+  "province": "North West"
 }
