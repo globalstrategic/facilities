@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 50.9797558,
-    "lon": 5.7018474,
+    "lat": 50.967,
+    "lon": 5.7,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal S.A.",
+    "SRC-Sibelco S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T17:13:45.000000Z",
+    "last_checked": "2025-11-25T16:16:40.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://ng.toponavi.com/108209. Coordinates extracted from TopoNavi.com for the Maasmechelen site in Belgium"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://ng.toponavi.com/108209. Coordinates extracted from TopoNavi.com for the Maasmechelen site in Belgium. Web search geocoded. Source: https://en.wikipedia.org/wiki/Maasmechelen. Coordinates for Maasmechelen municipality, which includes the mining facility"
   },
   "canonical_name": "Maasmechelen Site Plant",
   "canonical_slug": "maasmechelen-site-plant",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limburg"
+  "province": "Limburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:16:40.000000Z",
+      "operators": [
+        "SRC-Sibelco S.A."
+      ],
+      "owners": [
+        "ArcelorMittal S.A."
+      ],
+      "notes": "SRC-Sibelco operates the silica sand mines in the area, while ArcelorMittal has steel plants nearby."
+    }
+  }
 }

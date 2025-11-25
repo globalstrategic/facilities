@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 50.71809,
-    "lon": 6.01107,
+    "lat": 50.6011,
+    "lon": 5.9631,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Société des mines et fonderies de zinc de la Vieille-Montagne",
+    "Umicore"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,9 +37,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T17:11:13.000000Z",
+    "last_checked": "2025-11-25T16:20:12.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "The foundational mine of the European zinc industry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/be/la-calamine/. Coordinates for La Calamine, Belgium, where the Vieille Montagne mining facility is located"
+    "notes": "The foundational mine of the European zinc industry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/be/la-calamine/. Coordinates for La Calamine, Belgium, where the Vieille Montagne mining facility is located. Web search geocoded. Source: https://www.mindat.org/g/534. The coordinates correspond to the Altenberg zinc mine in Neutral-Moresnet, now part of Kelmis (La Calamine), Belgium"
   },
   "canonical_name": "Vieille Montagne / La Calamine Mine",
   "canonical_slug": "vieille-montagne-la-calamine-mine",
@@ -52,5 +55,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Liège"
+  "province": "Liège",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:20:12.000000Z",
+      "operators": [
+        "Société des mines et fonderies de zinc de la Vieille-Montagne"
+      ],
+      "owners": [
+        "Umicore"
+      ],
+      "notes": "The Vieille Montagne company was historically significant in zinc production and is now part of Umicore."
+    }
+  }
 }

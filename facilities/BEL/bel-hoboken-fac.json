@@ -10,8 +10,8 @@
   ],
   "country_iso3": "BEL",
   "location": {
-    "lat": 51.16667,
-    "lon": 4.36667,
+    "lat": 51.2277,
+    "lon": 4.4213,
     "precision": "town",
     "town": "Hoboken",
     "region": "Antwerp"
@@ -47,7 +47,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Umicore SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -57,11 +59,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.141443Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated",
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T16:15:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.umicore.be/en/our-sites/hoboken/. The Umicore plant in Hoboken is located near Antwerp, Belgium, and is involved in precious metals refining",
     "geocoding_source": "Plant at Adolf Greinerstraat 14; Hoboken centroid used."
   },
   "canonical_name": "Hoboken Umicore PMR Hoboken Smelter",
@@ -86,5 +88,18 @@
       "to": "2025-11-04T19:35:07.141439Z",
       "reason": "data_correction"
     }
-  ]
+  ],
+  "province": "Antwerp",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:15:03.000000Z",
+      "operators": [
+        "Umicore SA"
+      ],
+      "owners": [
+        "Umicore SA"
+      ],
+      "notes": "Umicore operates and owns the facility, which is a significant site for precious metals refining."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 51.183,
-    "lon": 3.824,
+    "lat": 51.169929,
+    "lon": 3.804462,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "ArcelorMittal Gent"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.146446Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T16:14:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Gent_steel_plant. The Gent steel plant is operated by ArcelorMittal and is known for its various steel production technologies"
   },
   "canonical_name": "Gent Steel Steel Plant",
   "canonical_slug": "gent-steel-steel-plant",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Vlaanderen",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:14:11.000000Z",
+      "operators": [
+        "ArcelorMittal Gent"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal is a leading global steel and mining company."
+    }
+  }
 }
