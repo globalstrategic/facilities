@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.5881,
+    "lon": 13.8261,
     "precision": "unknown"
   },
   "types": [
@@ -43,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.400110Z",
-    "checked_by": "import_pipeline",
-    "notes": "Recycles lead-acid batteries at the site of the historic BBU primary smelter. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:05:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Recycles lead-acid batteries at the site of the historic BBU primary smelter. | Canonical name+slug generated. Web search geocoded. Source: https://ecobat.com/about-us/locations/. Ecobat Resources Austria is located in Arnoldstein, known for lead and tin smelting"
   },
   "canonical_name": "Ecobat Resources Austria Smelter",
   "canonical_slug": "ecobat-resources-austria-smelter",
@@ -66,14 +66,14 @@
   "province": "Carinthia",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T10:01:20.000000Z",
+      "timestamp": "2025-11-25T11:05:38.000000Z",
       "operators": [
         "Ecobat Resources Austria"
       ],
       "owners": [
         "Ecobat"
       ],
-      "notes": "Ecobat is a global leader in battery recycling and has been in the business for over 500 years."
+      "notes": "Ecobat Resources Austria has been in operation for over 500 years."
     }
   }
 }

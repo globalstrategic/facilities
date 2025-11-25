@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.42917,
+    "lon": 11.8775,
     "precision": "unknown"
   },
   "types": [
@@ -27,11 +27,13 @@
     {
       "metal": "Nickel Sulfate",
       "primary": false,
-      "chemical_formula": "NiSO4·6H2O"
+      "chemical_formula": "NiSO4Â·6H2O"
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Montanwerke Brixlegg AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.397331Z",
-    "checked_by": "import_pipeline",
-    "notes": "Austria's only copper refinery; a 100% recycling operation producing \"green copper\". | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:07:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Austria's only copper refinery; a 100% recycling operation producing \"green copper\". | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Brixlegg. Coordinates extracted from the Wikipedia page for Brixlegg, which is the location of the Montanwerke Brixlegg AG Refinery"
   },
   "canonical_name": "Montanwerke Brixlegg AG Refinery",
   "canonical_slug": "montanwerke-brixlegg-ag-refinery",
@@ -60,5 +62,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tyrol",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:07:20.000000Z",
+      "operators": [
+        "Montanwerke Brixlegg AG"
+      ],
+      "owners": [],
+      "notes": "Montanwerke Brixlegg AG is the operator of the refinery."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.2905,
+    "lon": 14.3055,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Primetals Technologies",
+    "voestalpine AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.397631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Co-located with the quarry; produces burned lime for steelmaking. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:08:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Co-located with the quarry; produces burned lime for steelmaking. | Canonical name+slug generated. Web search geocoded. Source: https://www.primetals.com/en/news/2025083472-construction-begins-on-hydrogen-based-ironmaking-plant-in-linz-austria/. The voestalpine Lime Plant is located at the voestalpine premises in Linz, Austria"
   },
   "canonical_name": "Voestalpine Lime Processing Plant",
   "canonical_slug": "voestalpine-lime-processing-plant",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Upper Austria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:08:46.000000Z",
+      "operators": [
+        "voestalpine AG",
+        "Primetals Technologies"
+      ],
+      "owners": [
+        "voestalpine AG"
+      ],
+      "notes": "voestalpine AG is the primary owner and operator of the facility."
+    }
+  }
 }
