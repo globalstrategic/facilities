@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 51.183,
-    "lon": 3.824,
+    "lat": 51.0543,
+    "lon": 3.7174,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Gent",
+    "ArcelorMittal S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.142195Z",
-    "checked_by": "import_pipeline",
-    "notes": "Site of major decarbonization projects (Steelanol, Torero, DRI). | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T15:24:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Site of major decarbonization projects (Steelanol, Torero, DRI). | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Gent_steel_plant. ArcelorMittal Gent is a steel plant located in Gent, Belgium, utilizing various steel production technologies"
   },
   "canonical_name": "Arcelormittal Gent Steel Plant",
   "canonical_slug": "arcelormittal-gent-steel-plant",
@@ -60,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Vlaanderen",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T15:24:27.000000Z",
+      "operators": [
+        "ArcelorMittal Gent"
+      ],
+      "owners": [
+        "ArcelorMittal S.A."
+      ],
+      "notes": "ArcelorMittal Gent is part of the multinational steel manufacturing corporation ArcelorMittal."
+    }
+  }
 }
