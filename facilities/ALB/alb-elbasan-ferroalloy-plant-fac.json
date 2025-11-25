@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ALB",
   "location": {
-    "lat": 41.108,
-    "lon": 20.079,
+    "lat": 41.07366921915332,
+    "lon": 20.034624876506637,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Albanian Chrome (ACR)",
+    "DCM DECOmetal",
+    "Kurum International",
+    "Yılmaden Holding"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:01.450982Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-25T09:16:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Elbasan (https://seenews.com/news/mining-company-albanian-chrome-restarts-ferrochrome-production-in-elbasan-933439). The Elbasan Ferroalloy Plant is located close to the city of Elbasan, approximately 6 kilometers to the southwest"
   },
   "canonical_name": "Elbasan Ferroalloy Plant",
   "canonical_slug": "elbasan-ferroalloy-plant",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Elbasan",
+  "town": "Elbasan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:16:56.000000Z",
+      "operators": [
+        "Albanian Chrome (ACR)",
+        "Kurum International"
+      ],
+      "owners": [
+        "DCM DECOmetal",
+        "Yılmaden Holding"
+      ],
+      "notes": "ACR operates the ferrochrome plant and is owned by DCM DECOmetal, while AlbChrome is part of Yılmaden Holding."
+    }
+  }
 }

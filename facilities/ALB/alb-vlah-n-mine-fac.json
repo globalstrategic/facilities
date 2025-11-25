@@ -1,11 +1,11 @@
 {
   "facility_id": "alb-vlah-n-mine-fac",
-  "name": "Vlahën Mine",
+  "name": "Vlah\u00ebn Mine",
   "aliases": [],
   "country_iso3": "ALB",
   "location": {
-    "lat": 42.233,
-    "lon": 20.1,
+    "lat": 41.0,
+    "lon": 20.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Albchrome Holding sh.p.k."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,15 +30,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.456674Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:21:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Vlahna_mine. The Vlahna mine is located in northern Albania and is known for its chromium reserves"
   },
-  "canonical_name": "Vlahën Mine",
+  "canonical_name": "Vlah\u00ebn Mine",
   "canonical_slug": "vlahen-mine",
-  "display_name": "Vlahën",
+  "display_name": "Vlah\u00ebn",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bulqiz\u00eb County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:21:01.000000Z",
+      "operators": [
+        "Albchrome Holding sh.p.k."
+      ],
+      "owners": [
+        "Albchrome Holding sh.p.k."
+      ],
+      "notes": "Albchrome Holding sh.p.k. owns and operates the Vlah\u00ebn Mine."
+    }
+  }
 }

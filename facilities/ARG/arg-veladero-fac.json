@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ARG",
   "location": {
-    "lat": -29.373,
-    "lon": -69.952,
+    "lat": -29.4092,
+    "lon": -69.895,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Minera Andina del Sol SRL (formerly Minera Argentina Gold SRL)",
+    "Shandong Gold Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.181752Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:36:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Veladero_mine. The Veladero mine is a large open pit, heap leach gold and silver mine located in the Andes mountains"
   },
   "canonical_name": "Veladero Mine",
   "canonical_slug": "veladero-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Juan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:36:58.000000Z",
+      "operators": [
+        "Minera Andina del Sol SRL (formerly Minera Argentina Gold SRL)"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Shandong Gold Group Co., Ltd."
+      ],
+      "notes": "The mine is operated through a joint venture between Barrick Gold and Shandong Gold, each holding a 50% stake."
+    }
+  }
 }

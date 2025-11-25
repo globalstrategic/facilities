@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AFG",
   "location": {
-    "lat": 34.764,
-    "lon": 62.029,
+    "lat": 34.05,
+    "lon": 70.717,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:20.854554Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:15:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/2002/0110/pdf/of02-110.pdf. Coordinates extracted from the mining report for a locality in Afghanistan"
   },
   "canonical_name": "Sangilyn Mine",
   "canonical_slug": "sangilyn-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lowgar"
 }

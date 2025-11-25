@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 33.1025,
-    "lon": null,
+    "lat": 33.1333,
+    "lon": -8.6167,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "llm_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.325541Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-11-24T10:49:21.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Sonasid company website and general geographic data. Jorf Lasfar is a known industrial area in Morocco, hosting several facilities including the Sonasid steel plant. Exact coordinates for the specific facility are not publicly detailed, but the general area is well-documented"
   },
   "canonical_name": "Sonasid Jorf Lasfar Steel Plant",
   "canonical_slug": "sonasid-jorf-lasfar-steel-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "El Jadida"
 }

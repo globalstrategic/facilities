@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 31.9033,
+    "lon": -7.94222,
     "precision": "unknown"
   },
   "types": [
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:48.326405Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:36:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.travelmath.com/cities/Sidi+Bou+Othmane,+Morocco. Coordinates extracted from multiple sources confirm the location of Sidi Bou Othmane in the Marrakesh-Safi region of Morocco"
   },
   "canonical_name": "Sidi Bou Othmane Facility",
   "canonical_slug": "sidi-bou-othmane-facility",
@@ -63,5 +63,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakesh-Safi"
 }

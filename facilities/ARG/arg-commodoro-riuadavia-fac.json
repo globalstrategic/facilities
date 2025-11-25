@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -45.848,
-    "lon": -67.499,
+    "lat": -46.911,
+    "lon": -70.241,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cerrado Gold Inc. (100%)",
+    "Minera Don Nicol\u00e1s S.A.",
+    "Newmont Goldcorp (100%)",
+    "OroPlata S.A.",
+    "Orvana Minerals Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.170638Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:27:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.argentina.gob.ar/sites/default/files/portfolio_gold_2025.pptx.pdf. The Cerro Negro Project is located approximately 345 kilometers southwest of Comodoro Rivadavia"
   },
   "canonical_name": "Commodoro Riuadavia Mine",
   "canonical_slug": "commodoro-riuadavia-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:27:33.000000Z",
+      "operators": [
+        "OroPlata S.A.",
+        "Minera Don Nicol\u00e1s S.A."
+      ],
+      "owners": [
+        "Newmont Goldcorp (100%)",
+        "Cerrado Gold Inc. (100%)",
+        "Orvana Minerals Corp."
+      ],
+      "notes": "Newmont Goldcorp is the owner of the Cerro Negro Project, while OroPlata S.A. operates it."
+    }
+  }
 }

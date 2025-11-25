@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 24.947776,
+    "lon": 74.131622,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.078058Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:59:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rajpura_Dariba_Mine_power_station. Exact coordinates extracted from the Global Energy Monitor report for the Rajpura Dariba Mine power station"
   },
   "canonical_name": "Rajpura Dariba Mine",
   "canonical_slug": "rajpura-dariba-mine",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan"
 }

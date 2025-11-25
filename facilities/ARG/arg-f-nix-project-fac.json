@@ -1,11 +1,11 @@
 {
   "facility_id": "arg-f-nix-project-fac",
-  "name": "Fénix Project (Hombre Muerto)",
+  "name": "F\u00e9nix Project (Hombre Muerto)",
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.5,
+    "lon": -66.5,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arcadium Lithium plc",
+    "Minera del Altiplano S.A.",
+    "Rio Tinto plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,15 +27,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.178737Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:34:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/2113/Fenix-(Salar-del-Hombre-Muerto)-Mine.aspx. The F\u00e9nix Project is located near the southern edge of the Salar del Hombre Muerto in the Antofagasta de la Sierra department"
   },
-  "canonical_name": "Fénix Mine",
+  "canonical_name": "F\u00e9nix Mine",
   "canonical_slug": "fenix-mine",
-  "display_name": "Fénix",
+  "display_name": "F\u00e9nix",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -42,5 +46,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Catamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:34:36.000000Z",
+      "operators": [
+        "Minera del Altiplano S.A.",
+        "Arcadium Lithium plc"
+      ],
+      "owners": [
+        "Rio Tinto plc",
+        "Arcadium Lithium plc"
+      ],
+      "notes": "Minera del Altiplano S.A. is the operator, while Arcadium Lithium plc is the owner following the merger of Livent and Allkem."
+    }
+  }
 }

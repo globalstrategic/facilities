@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ARM",
   "location": {
-    "lat": 39.14389,
-    "lon": 46.13778,
+    "lat": 39.145131,
+    "lon": 46.137979,
     "precision": "site",
     "town": "Kajaran",
     "region": "Syunik"
@@ -40,7 +40,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zangezur Copper and Molybdenum Combine"
+  ],
   "products": [],
   "sources": [
     {
@@ -50,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:06.868244Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated",
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:40:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kajaran_mine. Kajaran Mine is the largest operating mine in Armenia, located in the southern province of Syunik",
     "geocoding_source": "Mindat site coords."
   },
   "canonical_name": "Kajaran Zangezur Copper & Molybdenum Combine Kajaran Mine",
@@ -85,5 +87,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Syunik",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:40:51.000000Z",
+      "operators": [
+        "Zangezur Copper and Molybdenum Combine"
+      ],
+      "owners": [
+        "Zangezur Copper and Molybdenum Combine"
+      ],
+      "notes": "Zangezur Copper and Molybdenum Combine is the sole operator and owner of the mine."
+    }
+  }
 }

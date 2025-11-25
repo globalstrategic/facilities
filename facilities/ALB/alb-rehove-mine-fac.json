@@ -6,7 +6,8 @@
   "location": {
     "lat": 40.516,
     "lon": 20.702,
-    "precision": "site"
+    "precision": "site",
+    "region": "Korçë"
   },
   "types": [
     "mine"
@@ -17,8 +18,14 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "operating",
+  "company_mentions": [
+    "Deteman Mining",
+    "Dedeman Mining",
+    "North Star Mining sh.p.k.",
+    "European Electric Metals Inc.",
+    "Tirex Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +36,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
+    "confidence": 0.7,
     "last_checked": "2025-11-04T19:19:01.452949Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "State copper mine; ~1999 re-opened by Turkish company Deteman/Dedeman Mining; concession passed to North Star Mining sh.p.k.; Feb 2017 new 25-year mining licence granted to Canadian company European Electric Metals Inc. (formerly Tirex Resources), current licence holder"
   },
   "canonical_name": "Rehove Mine",
   "canonical_slug": "rehove-mine",

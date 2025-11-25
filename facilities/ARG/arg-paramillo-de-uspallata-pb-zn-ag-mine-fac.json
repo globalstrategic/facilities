@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -32.462,
-    "lon": -69.137,
+    "lat": -32.24472,
+    "lon": -69.43778,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aterra Capital",
+    "Minera San Jorge S.A.",
+    "Solway Investment"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.176430Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:32:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.argentina.gob.ar/sites/default/files/catalog_of_advanced_copper_projects_in_argentina-cm2020.pdf. The facility is located in the Cordillera del Tigre at an altitude of 2600 meters above sea level"
   },
   "canonical_name": "Paramillo De Uspallata Pb, Zn, Ag Mine",
   "canonical_slug": "paramillo-de-uspallata-pb-zn-ag-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mendoza",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:32:33.000000Z",
+      "operators": [
+        "Minera San Jorge S.A."
+      ],
+      "owners": [
+        "Solway Investment",
+        "Aterra Capital"
+      ],
+      "notes": "The project is jointly owned by Solway Investment and Aterra Capital."
+    }
+  }
 }

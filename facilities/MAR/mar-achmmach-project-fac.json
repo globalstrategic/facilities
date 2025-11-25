@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.643034485792164,
+    "lon": -5.837045481388261,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.332833Z",
-    "checked_by": "import_pipeline",
-    "notes": "One of the world's largest undeveloped high-grade tin deposits. To be processed at El Hammam. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-25T08:39:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "One of the world's largest undeveloped high-grade tin deposits. To be processed at El Hammam. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Meknès (https://www.mining-technology.com/projects/achmmach-tin-project-el-hajeb/). The Achmmach Project is located approximately 40 km southwest of Meknès, Morocco"
   },
   "canonical_name": "Achmmach Mine",
   "canonical_slug": "achmmach-mine",
@@ -66,5 +66,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "El Hajeb",
+  "town": "Meknès"
 }

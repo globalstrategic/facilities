@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.8479,
+    "lon": 4.3344,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.140032Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:11:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.countryreports.org/country/Belgium/geography.htm. Coordinates correspond to the capital city of Belgium, which is a significant reference point for the country"
   },
   "canonical_name": "Active Facilities Mine",
   "canonical_slug": "active-facilities-mine",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Brussels-Capital Region"
 }

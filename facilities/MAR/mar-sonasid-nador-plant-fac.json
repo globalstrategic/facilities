@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.06461,
+    "lon": -2.928,
     "precision": "unknown"
   },
   "types": [
@@ -47,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.335070Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces long steel products (rebar, wire rod). | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:40:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produces long steel products (rebar, wire rod). | Canonical name+slug generated. Web search geocoded. Source: https://www.fallingrain.com/world/MO/54/Sonasid.html. Coordinates extracted directly from the source for the Sonasid Nador Plant"
   },
   "canonical_name": "Sonasid Nador Processing Plant",
   "canonical_slug": "sonasid-nador-processing-plant",
@@ -74,5 +74,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oriental"
 }

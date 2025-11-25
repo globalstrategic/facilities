@@ -6,7 +6,8 @@
   "location": {
     "lat": -27.654,
     "lon": -67.337,
-    "precision": "site"
+    "precision": "site",
+    "town": "Cerro El Deslinde"
   },
   "types": [
     "mine"
@@ -17,8 +18,10 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "historic",
+  "company_mentions": [
+    "Dirección Central de Fabricaciones Militares"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
+    "confidence": 0.65,
     "last_checked": "2025-11-04T19:19:01.173306Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Historic tin mine at Cerro El Deslinde. Studied under Dirección Central de Fabricaciones Militares in the 1940s. No modern private operator identified online."
   },
   "canonical_name": "El Progreso Argentino Mine",
   "canonical_slug": "el-progreso-argentino-mine",

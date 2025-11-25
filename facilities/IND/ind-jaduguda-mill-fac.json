@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.653273,
+    "lon": 86.346639,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.104212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Processes ore from Jaduguda, Bhatin, Narwapahar | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:02:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Processes ore from Jaduguda, Bhatin, Narwapahar | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Jaduguda_uranium_mine. The Jaduguda Uranium Mine is the first uranium mine in India, located in Jaduguda village, Purbi Singhbhum district"
   },
   "canonical_name": "Jaduguda Processing Plant",
   "canonical_slug": "jaduguda-processing-plant",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

@@ -96,10 +96,11 @@ class FacilitySyncManager:
         Export all facilities to entityidentity parquet format.
 
         Converts facility JSONs to a DataFrame matching the entityidentity schema:
-        - facility_id, company_id, facility_name, alt_names, facility_type
+        - facility_id, company_id, company_names, facility_name, alt_names, facility_type
         - country, country_iso3, admin1, city, address
         - lat, lon, geo_precision
-        - commodities (list), process_stages, capacity_value, capacity_unit
+        - commodities (all), primary_metal, secondary_metal, other_metals
+        - process_stages, capacity_value, capacity_unit
         - operating_status, confidence, is_verified, verification_notes
         - evidence_urls, evidence_titles
         - first_seen_utc, last_seen_utc, source
@@ -264,10 +265,50 @@ class FacilitySyncManager:
         if facility.get('operator_link') and isinstance(facility['operator_link'], dict):
             company_id = facility['operator_link'].get('company_id')
 
-        # Extract commodities as list
+        # Extract company names from multiple sources
+        company_names = []
+        # From operator_link
+        if facility.get('operator_link') and isinstance(facility['operator_link'], dict):
+            name = facility['operator_link'].get('name')
+            if name and name not in company_names:
+                company_names.append(name)
+        # From owner_links
+        if facility.get('owner_links'):
+            for owner in facility['owner_links']:
+                if isinstance(owner, dict):
+                    name = owner.get('name')
+                    if name and name not in company_names:
+                        company_names.append(name)
+        # From company_mentions
+        if facility.get('company_mentions'):
+            for mention in facility['company_mentions']:
+                if isinstance(mention, dict):
+                    name = mention.get('name')
+                    if name and name not in company_names:
+                        company_names.append(name)
+        # Legacy fields
+        if facility.get('operator') and facility['operator'] not in company_names:
+            company_names.append(facility['operator'])
+        if facility.get('owner') and facility['owner'] not in company_names:
+            company_names.append(facility['owner'])
+
+        # Extract commodities as list and separate by primary/secondary/other
         commodities = []
+        primary_metal = None
+        secondary_metal = None
+        other_metals = []
         if facility.get('commodities'):
-            commodities = [c['metal'] for c in facility['commodities']]
+            for comm in facility['commodities']:
+                metal = comm.get('metal')
+                if metal:
+                    commodities.append(metal)
+                    if comm.get('primary'):
+                        primary_metal = metal
+            # Remaining metals (non-primary)
+            remaining = [m for m in commodities if m != primary_metal]
+            if remaining:
+                secondary_metal = remaining[0]
+                other_metals = remaining[1:]
 
         # Extract evidence URLs and titles from sources
         evidence_urls = []
@@ -318,6 +359,7 @@ class FacilitySyncManager:
         row = {
             'facility_id': facility['facility_id'],
             'company_id': company_id,
+            'company_names': ';'.join(company_names) if company_names else None,
             'facility_name': facility['name'],
             'alt_names': facility.get('aliases', []),
             'facility_type': facility_type,
@@ -329,7 +371,10 @@ class FacilitySyncManager:
             'lat': facility.get('location', {}).get('lat'),
             'lon': facility.get('location', {}).get('lon'),
             'geo_precision': facility.get('location', {}).get('precision', 'unknown'),
-            'commodities': ';'.join(commodities) if commodities else None,  # Semi-colon separated
+            'commodities': ';'.join(commodities) if commodities else None,  # Semi-colon separated (all)
+            'primary_metal': primary_metal,
+            'secondary_metal': secondary_metal,
+            'other_metals': ';'.join(other_metals) if other_metals else None,
             'process_stages': ';'.join(process_stages) if process_stages else None,
             'capacity_value': capacity_value,
             'capacity_unit': capacity_unit,

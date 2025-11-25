@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.58531,
+    "lon": 86.47682,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.092326Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:00:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/india/jharkhand/ghatsila. Coordinates extracted from multiple sources confirm the location of the Ghatsila Plant in India"
   },
   "canonical_name": "Ghatsila Plant",
   "canonical_slug": "ghatsila-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

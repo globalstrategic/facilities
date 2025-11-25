@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -42.75,
-    "lon": -65.6,
+    "lat": -42.7667,
+    "lon": -65.0333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aluar Aluminio Argentino S.A.I.C.",
+    "Argentina Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.179992Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:35:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10134108. The facility is an aluminum smelter located in Puerto Madryn, which is the only producer of primary aluminum in Argentina"
   },
   "canonical_name": "Puerto Madryn Smelter",
   "canonical_slug": "puerto-madryn-smelter",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chubut Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:35:36.000000Z",
+      "operators": [
+        "Aluar Aluminio Argentino S.A.I.C."
+      ],
+      "owners": [
+        "Aluar Aluminio Argentino S.A.I.C.",
+        "Argentina Government"
+      ],
+      "notes": "Aluar is the primary operator and owner of the facility, with significant private interests."
+    }
+  }
 }

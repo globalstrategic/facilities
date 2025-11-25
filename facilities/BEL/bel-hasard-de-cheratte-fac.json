@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.680883,
+    "lon": 5.669848,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.147871Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:16:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://tripomatic.com/en/poi/coal-mine-of-hasard-de-cheratte-poi:36983492. Coordinates extracted from the Tripomatic source for the Hasard de Cheratte facility"
   },
   "canonical_name": "Hasard De Cheratte Mine",
   "canonical_slug": "hasard-de-cheratte-mine",
@@ -55,5 +55,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liège"
 }

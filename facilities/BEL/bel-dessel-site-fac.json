@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 51.23985,
+    "lon": 5.11269,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.145287Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:15:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Dessel. Coordinates extracted directly from the Wikipedia page for Dessel, Belgium"
   },
   "canonical_name": "Dessel Site Plant",
   "canonical_slug": "dessel-site-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antwerp"
 }

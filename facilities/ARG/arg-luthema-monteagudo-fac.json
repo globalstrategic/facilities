@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -36.464,
-    "lon": -69.916,
+    "lat": -35.5,
+    "lon": -69.5,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.180315Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:35:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/mn11063.html. The Luthema-Monteagudo facility is associated with deposits of baritina and celestina in the Mendoza province"
   },
   "canonical_name": "Luthema, Monteagudo Mine",
   "canonical_slug": "luthema-monteagudo-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mendoza"
 }

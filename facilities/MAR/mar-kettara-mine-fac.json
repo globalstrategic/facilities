@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.81,
-    "lon": null,
+    "lat": 31.8833,
+    "lon": -8.1667,
     "precision": "unknown"
   },
   "types": [
@@ -37,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.329239Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historical pyrrhotite mine with Ni/Cu credits. Now a major acid mine drainage (AMD) site. | Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:35:08.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Historical pyrrhotite mine with Ni/Cu credits. Now a major acid mine drainage (AMD) site. | Canonical name+slug generated. LLM geocoded from: https://www.miningdataonline.com/property/1166/Kettara-Project.aspx. The Kettara Mine is located near the town of Marrakech in the Marrakech-Safi region of Morocco. The coordinates are approximate and based on available data from mining databases"
   },
   "canonical_name": "Kettara Mine",
   "canonical_slug": "kettara-mine",
@@ -64,5 +64,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi"
 }

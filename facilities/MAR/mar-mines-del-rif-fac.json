@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MAR",
   "location": {
-    "lat": 35.209,
-    "lon": null,
+    "lat": 35.0,
+    "lon": -4.0,
     "precision": "unknown"
   },
   "types": [
@@ -41,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.332160Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historical iron ore mine from the colonial era. Now inactive. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:38:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historical iron ore mine from the colonial era. Now inactive. | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mines_Del_Rif_Nador_Mine. Coordinates are approximate for the Mines Del Rif Nador Mine located in the Rif region of Morocco"
   },
   "canonical_name": "Mines Del Rif Mine",
   "canonical_slug": "mines-del-rif-mine",
@@ -68,5 +68,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rif"
 }

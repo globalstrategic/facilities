@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ARG",
   "location": {
-    "lat": -27.33,
-    "lon": -66.609,
+    "lat": -27.330651,
+    "lon": -66.608403,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Goldcorp",
+    "Minera Alumbrera Ltda",
+    "Yacimientos Mineros de Agua de Dionisio (YMAD)",
+    "Yamana Gold"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.183597Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:38:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bajo_de_la_Alumbrera_mine. The Bajo de la Alumbrera mine is a copper and gold mine located in the Catamarca province of Argentina"
   },
   "canonical_name": "Alumbrera Mine",
   "canonical_slug": "alumbrera-mine",
@@ -58,5 +64,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Catamarca Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:38:02.000000Z",
+      "operators": [
+        "Minera Alumbrera Ltda",
+        "Yacimientos Mineros de Agua de Dionisio (YMAD)"
+      ],
+      "owners": [
+        "Minera Alumbrera Ltda",
+        "Glencore",
+        "Goldcorp",
+        "Yamana Gold"
+      ],
+      "notes": "Minera Alumbrera is a joint venture involving multiple companies, with YMAD holding exploration and mining rights."
+    }
+  }
 }

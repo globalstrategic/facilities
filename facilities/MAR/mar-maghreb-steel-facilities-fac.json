@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.59358,
+    "lon": -7.47488,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.332654Z",
-    "checked_by": "import_pipeline",
-    "notes": "Morocco's sole producer of flat steel, operating at Tit Mellil and Chellalat sites. Major scrap recycler. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:39:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Morocco's sole producer of flat steel, operating at Tit Mellil and Chellalat sites. Major scrap recycler. | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/W401298462. Coordinates extracted from a map indicating the location of Maghreb Steel in Casablanca"
   },
   "canonical_name": "Maghreb Steel Facilities Processing Plant",
   "canonical_slug": "maghreb-steel-facilities-processing-plant",
@@ -66,5 +66,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Grand Casablanca"
 }

@@ -6,7 +6,8 @@
   "location": {
     "lat": -34.906,
     "lon": -69.908,
-    "precision": "site"
+    "precision": "site",
+    "region": "Mendoza"
   },
   "types": [
     "mine"
@@ -17,8 +18,10 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "operating",
+  "company_mentions": [
+    "La Elcha Minera Industrial S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.3,
+    "confidence": 0.75,
     "last_checked": "2025-11-04T19:19:01.173944Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Concession holder: La Elcha Minera Industrial S.A., per the Mendoza mining roll (status 'vigente')"
   },
   "canonical_name": "Rojino Mine",
   "canonical_slug": "rojino-mine",

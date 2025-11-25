@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 24.9487,
+    "lon": 74.1342,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.073212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:58:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://database.earth/countries/india/regions/rajasthan/cities/dariba. Coordinates extracted from multiple sources confirm the location of the Dariba Smelting Complex in Rajsamand district, Rajasthan, India"
   },
   "canonical_name": "Dariba Smelting Smelter",
   "canonical_slug": "dariba-smelting-smelter",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan"
 }

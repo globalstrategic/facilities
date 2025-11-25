@@ -8,7 +8,7 @@
     "lon": 54.467987,
     "precision": "site",
     "town": "Abu Dhabi",
-    "region": "Mussafah – ICAD"
+    "region": "Mussafah \u2013 ICAD"
   },
   "types": [
     "steel mill (induction)"
@@ -21,7 +21,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "ADQ",
+    "Emirates Steel Arkan"
+  ],
   "products": [],
   "sources": [
     {
@@ -60,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Abu Dhabi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:21:53.000000Z",
+      "operators": [
+        "Emirates Steel Arkan"
+      ],
+      "owners": [
+        "ADQ"
+      ],
+      "notes": "Emirates Steel Arkan is majority owned by ADQ, a significant holding company in Abu Dhabi."
+    }
+  }
 }

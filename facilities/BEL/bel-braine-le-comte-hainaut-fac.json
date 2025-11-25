@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.60936,
+    "lon": 4.13484,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.144919Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:14:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mp.toponavi.com/28150. Exact coordinates for Braine-le-Comte, Hainaut, Belgium"
   },
   "canonical_name": "Braine Le Comte, Hainaut Mine",
   "canonical_slug": "braine-le-comte-hainaut-mine",
@@ -50,5 +50,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hainaut"
 }

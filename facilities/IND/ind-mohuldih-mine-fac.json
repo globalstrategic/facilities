@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.74425,
+    "lon": 86.14367,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.072270Z",
-    "checked_by": "import_pipeline",
-    "notes": "Feeds Turamdih Mill | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:58:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Feeds Turamdih Mill | Canonical name+slug generated. Web search geocoded. Source: https://explorenuclear.com/maps/map-of-indian-nuclear-sites/. Coordinates extracted from a reliable source indicating the location of Mohuldih Mine"
   },
   "canonical_name": "Mohuldih Mine",
   "canonical_slug": "mohuldih-mine",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

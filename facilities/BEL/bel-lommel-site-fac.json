@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 51.2304193,
+    "lon": 5.3110063,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.145130Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:14:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://us.maptons.com/15703. Coordinates extracted from multiple sources confirming the location of Lommel, Belgium"
   },
   "canonical_name": "Lommel Site Plant",
   "canonical_slug": "lommel-site-plant",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limburg"
 }

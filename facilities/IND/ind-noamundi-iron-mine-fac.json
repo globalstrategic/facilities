@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.1605,
+    "lon": 85.5045,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.068879Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:45:34.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Tata Steel official website and Google Maps. The Noamundi Iron Mine is operated by Tata Steel and is located in the West Singhbhum district of Jharkhand, India. The coordinates are derived from multiple sources including the company's official site and verified through mapping services"
   },
   "canonical_name": "Noamundi Iron Mine",
   "canonical_slug": "noamundi-iron-mine",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

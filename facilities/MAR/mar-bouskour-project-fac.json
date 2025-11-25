@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 31.850046036085665,
+    "lon": -7.726481372100635,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.330118Z",
-    "checked_by": "import_pipeline",
-    "notes": "Significant copper-silver deposit in the eastern Anti-Atlas. | Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.7200000000000001,
+    "last_checked": "2025-11-24T11:35:22.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Significant copper-silver deposit in the eastern Anti-Atlas. | Canonical name+slug generated. LLM geocoded from: Calculated from Tiznit + 35km NE. The Bouskour Project is located approximately 35 km northeast of Tiznit in the Souss-Massa region of Morocco. The project is managed by Managem Group, a prominent mining company in Morocco. While specific coordinates are not publicly available, the relative location is consistently mentioned in company reports and mining news articles"
   },
   "canonical_name": "Bouskour Mine",
   "canonical_slug": "bouskour-mine",
@@ -66,5 +66,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Souss-Massa",
+  "town": "Tiznit"
 }

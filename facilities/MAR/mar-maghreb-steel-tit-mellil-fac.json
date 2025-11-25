@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.5333,
+    "lon": -7.5167,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.326598Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:34:11.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Company website and local business directories. Maghreb Steel Tit Mellil is located near the town of Tit Mellil, which is approximately 15 km southeast of Casablanca. The coordinates provided are for the general area of Tit Mellil, where the facility is known to be situated"
   },
   "canonical_name": "Maghreb Steel Tit Mellil Steel Plant",
   "canonical_slug": "maghreb-steel-tit-mellil-steel-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Casablanca-Settat"
 }

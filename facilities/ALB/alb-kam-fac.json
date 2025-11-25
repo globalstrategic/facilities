@@ -9,7 +9,8 @@
   "location": {
     "lat": 42.249,
     "lon": 20.235,
-    "precision": "site"
+    "precision": "site",
+    "region": "Tropoja"
   },
   "types": [
     "mine"
@@ -20,8 +21,12 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "operating",
+  "company_mentions": [
+    "Albkrom Sh.a.",
+    "Albkromi Sh.a.",
+    "Sara Albania sh.p.k."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,10 +37,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.65,
+    "confidence": 0.7,
     "last_checked": "2025-11-04T19:19:01.454044Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Kam chromite mine in Tropoja district (Kam-Tropoja deposit). Long operated by state chrome company Albkrom/Albkromi Sh.a.; after privatisation, part of area (Kam 2 zone) concessioned to Sara Albania sh.p.k. Dozens of small companies now hold overlapping concessions in Tropoja's chromite belt; split among several licence holders."
   },
   "canonical_name": "Kam Mine",
   "canonical_slug": "kam-mine",

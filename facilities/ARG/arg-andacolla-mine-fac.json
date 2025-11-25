@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -27.876,
-    "lon": -67.465,
+    "lat": -30.2501806,
+    "lon": -71.0939528,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compa\u00f1\u00eda Minera Teck Carmen de Andacollo",
+    "Empresa Nacional de Miner\u00eda (10%)",
+    "Teck Resources Ltd. (90%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.177862Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:33:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Carmen_de_Andacollo. Andacollo Mine is an open-pit copper mine located approximately 2 kilometers southwest of the town of Andacollo"
   },
   "canonical_name": "Andacolla Mine",
   "canonical_slug": "andacolla-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coquimbo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:33:46.000000Z",
+      "operators": [
+        "Compa\u00f1\u00eda Minera Teck Carmen de Andacollo"
+      ],
+      "owners": [
+        "Teck Resources Ltd. (90%)",
+        "Empresa Nacional de Miner\u00eda (10%)"
+      ],
+      "notes": "Teck Resources Ltd. operates the mine through its subsidiary, Compa\u00f1\u00eda Minera Teck Carmen de Andacollo."
+    }
+  }
 }

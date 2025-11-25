@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 32.88108,
+    "lon": -6.9063,
     "precision": "unknown"
   },
   "types": [
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.332998Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:39:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/ma/khouribga/. Coordinates extracted directly from the source for Khouribga, Morocco"
   },
   "canonical_name": "Khouribga Phosphate Mine",
   "canonical_slug": "khouribga-phosphate-mine",
@@ -55,5 +55,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Béni Mellal-Khénifra"
 }

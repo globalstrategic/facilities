@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.468333,
+    "lon": 86.491667,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.097081Z",
-    "checked_by": "import_pipeline",
-    "notes": "Feeds Jaduguda Mill | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:01:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Feeds Jaduguda Mill | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/maps.php?id=238032. Coordinates extracted from multiple sources confirm the location of Bagjata Mine in East Singhbhum District, Jharkhand, India"
   },
   "canonical_name": "Bagjata Mine",
   "canonical_slug": "bagjata-mine",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

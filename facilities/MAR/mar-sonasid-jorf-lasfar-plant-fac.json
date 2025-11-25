@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.1267,
+    "lon": -8.6033,
     "precision": "unknown"
   },
   "types": [
@@ -47,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.333320Z",
-    "checked_by": "import_pipeline",
-    "notes": "Major steelworks complex located in a key industrial port zone. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:39:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Major steelworks complex located in a key industrial port zone. | Canonical name+slug generated. Web search geocoded. Source: https://latitude.to/articles-by-country/ma/morocco/52503/jorf-lasfar. Coordinates extracted from multiple sources indicating the location of the Sonasid Jorf Lasfar Plant in Jorf Lasfar, Morocco"
   },
   "canonical_name": "Sonasid Jorf Lasfar Processing Plant",
   "canonical_slug": "sonasid-jorf-lasfar-processing-plant",
@@ -74,5 +74,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Casablanca-Settat"
 }

@@ -1,8 +1,8 @@
 {
   "facility_id": "arg-r-fac",
-  "name": "RÃ",
+  "name": "R\u00c3",
   "aliases": [
-    "RÃ"
+    "R\u00c3"
   ],
   "country_iso3": "ARG",
   "location": {
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minas Argentinas S.A.",
+    "Yamana Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,9 +39,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "RÃ Mine",
+  "canonical_name": "R\u00c3 Mine",
   "canonical_slug": "ra-mine",
-  "display_name": "RÃ",
+  "display_name": "R\u00c3",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -49,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Juan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:31:45.000000Z",
+      "operators": [
+        "Minas Argentinas S.A."
+      ],
+      "owners": [
+        "Yamana Gold Inc.",
+        "Minas Argentinas S.A."
+      ],
+      "notes": "Mineros Argentinas S.A. acquired the Gualcamayo Property through the acquisition of MASA from Yamana Gold Inc."
+    }
+  }
 }

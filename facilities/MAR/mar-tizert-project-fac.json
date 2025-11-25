@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 30.25,
+    "lon": -8.43,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.333154Z",
-    "checked_by": "import_pipeline",
-    "notes": "World-class copper-silver deposit; a key future asset for Managem and Morocco. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:39:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "World-class copper-silver deposit; a key future asset for Managem and Morocco. | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-25320.html. The Tizert Project is located in the Taroudant Province, approximately 65 km from Taroudant City"
   },
   "canonical_name": "Tizert Mine",
   "canonical_slug": "tizert-mine",
@@ -66,5 +66,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Taroudant Province"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.0333,
+    "lon": -5.3333,
     "precision": "unknown"
   },
   "types": [
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:48.327101Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:34:20.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Geological studies and academic papers on the Beni Bousera Massif. The Beni Bousera Massif is a well-documented geological feature in northern Morocco, known for its ultramafic rocks and located near the town of Chefchaouen in the Tangier-Tetouan-Al Hoceima region. The coordinates provided are approximate and based on geological survey data"
   },
   "canonical_name": "Beni Bousera Massif Facility",
   "canonical_slug": "beni-bousera-massif-facility",
@@ -63,5 +63,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tangier-Tetouan-Al Hoceima"
 }

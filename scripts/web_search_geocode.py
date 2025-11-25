@@ -1,23 +1,45 @@
 #!/usr/bin/env python3
 """
-Web search-based geocoding for mining facilities.
+Web search-based geocoding AND company enrichment for mining facilities.
 
-Uses real web searches (Tavily, Brave, or Google) + LLM to interpret results.
+Uses real web searches (Tavily, Brave) + LLM to extract:
+1. Coordinates (lat/lon)
+2. Company mentions (operators/owners)
+3. Location metadata (province, town)
+
 This actually searches the web, unlike pure LLM approaches.
 
 Usage:
-    # With Tavily (recommended - best for mining data)
+    # Process ALL countries (10 facilities per country)
     export TAVILY_API_KEY="your-key"
-    python scripts/web_search_geocode.py --country ZAF --limit 10
+    export OPENAI_API_KEY="your-key"
+    python scripts/web_search_geocode.py --limit 10
 
-    # With Brave Search
+    # Process ALL countries with total limit (stop after 100 total facilities)
+    python scripts/web_search_geocode.py --limit 10 --limit-total 100
+
+    # Process specific country
+    python scripts/web_search_geocode.py --country MAR --limit 20
+
+    # Only process facilities missing companies across all countries
+    python scripts/web_search_geocode.py --missing-companies --limit 5 --limit-total 50
+
+    # Process ALL facilities (regardless of missing data)
+    python scripts/web_search_geocode.py --all --limit 3
+
+    # With Brave Search instead
     export BRAVE_API_KEY="your-key"
-    python scripts/web_search_geocode.py --country ZAF --search-engine brave
+    python scripts/web_search_geocode.py --search-engine brave --limit 5
 
 Environment:
     TAVILY_API_KEY: For Tavily search API (https://tavily.com/)
     BRAVE_API_KEY: For Brave search API
     OPENAI_API_KEY: For LLM processing of search results
+
+Flags:
+    --all: Process ALL facilities (not just missing coords)
+    --missing-companies: Process facilities with empty company_mentions
+    --dry-run: Don't update files, just show what would be done
 """
 
 import json
@@ -107,7 +129,7 @@ def extract_coordinates_with_llm(
     search_results: List[Dict],
     client: OpenAI
 ) -> Optional[Dict]:
-    """Use LLM to extract coordinates from search results."""
+    """Use LLM to extract coordinates AND company information from search results."""
 
     # Format search results for LLM
     results_text = ""
@@ -117,7 +139,7 @@ def extract_coordinates_with_llm(
         results_text += f"URL: {result.get('url', 'N/A')}\n"
         results_text += f"Content: {result.get('content', 'N/A')[:1000]}\n"
 
-    prompt = f"""Extract location information for this mining facility from the search results:
+    prompt = f"""Extract location AND company information for this mining facility from the search results:
 
 FACILITY: {facility_name}
 COUNTRY: {country}
@@ -136,15 +158,28 @@ Extract and return JSON with:
     "province": "province/state name",
     "source_url": "URL where you found the info",
     "confidence": 0.0-1.0,
-    "notes": "relevant context about the location"
+    "notes": "relevant context about the location",
+    "companies": {{
+        "operators": ["Company Name 1", "Company Name 2"],
+        "owners": ["Owner Company 1", "Owner Company 2"],
+        "notes": "Any context about ownership/operation"
+    }}
 }}
 
-IMPORTANT:
+IMPORTANT FOR COORDINATES:
 - Extract EXACT coordinates if mentioned (e.g., "-26.5°S, 27.3°E" = lat:-26.5, lon:27.3)
 - If only relative location (e.g., "22km NE of Welkom"), provide reference_town + distance + direction
 - South latitudes are NEGATIVE, West longitudes are NEGATIVE
 - Parse various formats: decimal degrees, DMS, or relative locations
-- Confidence should reflect how certain you are (direct coords = 0.9, relative = 0.7, general area = 0.5)"""
+- Confidence should reflect how certain you are (direct coords = 0.9, relative = 0.7, general area = 0.5)
+
+IMPORTANT FOR COMPANIES:
+- Extract ALL company names mentioned as operators, owners, or developers
+- Include full legal names (e.g., "BHP Billiton Ltd" not just "BHP")
+- Include joint venture partners separately
+- Include parent companies if mentioned
+- Use "operators" for companies actively running the facility
+- Use "owners" for companies that own equity/assets"""
 
     try:
         response = client.chat.completions.create(
@@ -211,13 +246,14 @@ def geocode_single_facility(
     search_func,
     openai_client: OpenAI
 ) -> Optional[Dict]:
-    """Geocode a single facility using web search + LLM."""
+    """Geocode a single facility AND extract company information using web search + LLM."""
 
     name = facility.get("name", "")
     country_iso3 = facility.get("country_iso3", "")
 
     # Build search queries (multiple attempts)
     queries = [
+        f"{name} {country_name} mine operator owner",
         f"{name} {country_name} coordinates location",
         f'"{name}" site:miningdataonline.com OR site:infomine.com',
         f"{name} {country_name} NI 43-101 OR JORC report",
@@ -238,9 +274,9 @@ def geocode_single_facility(
         print(f"  No search results found")
         return None
 
-    print(f"  Found {len(all_results)} search results, extracting location...")
+    print(f"  Found {len(all_results)} search results, extracting info...")
 
-    # Extract coordinates using LLM
+    # Extract coordinates AND company info using LLM
     extraction = extract_coordinates_with_llm(name, country_name, all_results, openai_client)
 
     if not extraction or not extraction.get("found"):
@@ -252,6 +288,15 @@ def geocode_single_facility(
         "province": extraction.get("province"),
         "notes": extraction.get("notes", "")
     }
+
+    # Extract company information
+    companies = extraction.get("companies", {})
+    if companies:
+        result["companies"] = companies
+        operators = companies.get("operators", [])
+        owners = companies.get("owners", [])
+        if operators or owners:
+            print(f"  ✓ Found companies: {', '.join(operators[:2] + owners[:2])}")
 
     # Case 1: Direct coordinates
     if extraction.get("lat") and extraction.get("lon"):
@@ -278,11 +323,15 @@ def geocode_single_facility(
             print(f"  ✓ Calculated coordinates: {result['lat']:.6f}, {result['lon']:.6f}")
             return result
 
+    # Return company info even if no coordinates found
+    if result.get("companies"):
+        return result
+
     return None
 
 
 def update_facility_json(facility: Dict, location: Dict) -> bool:
-    """Update facility JSON file with new coordinates."""
+    """Update facility JSON file with new coordinates AND company mentions."""
     path = Path(f"facilities/{facility['country_iso3']}/{facility['facility_id']}.json")
 
     if not path.exists():
@@ -291,9 +340,20 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
     with open(path) as f:
         data = json.load(f)
 
-    # Update coordinates
-    data["location"]["lat"] = location["lat"]
-    data["location"]["lon"] = location["lon"]
+    # Update coordinates (if provided)
+    if location.get("lat") is not None and location.get("lon") is not None:
+        data["location"]["lat"] = location["lat"]
+        data["location"]["lon"] = location["lon"]
+
+        # Update verification for coordinates
+        data["verification"]["status"] = "web_search_geocoded"
+        data["verification"]["confidence"] = location.get("confidence", 0.7)
+        data["verification"]["last_checked"] = time.strftime("%Y-%m-%dT%H:%M:%S.000000Z")
+        data["verification"]["checked_by"] = "web_search_llm"
+
+        old_notes = data["verification"].get("notes", "")
+        new_notes = f"Web search geocoded. Source: {location.get('source', 'web')}. {location.get('notes', '')}"
+        data["verification"]["notes"] = f"{old_notes}. {new_notes}".strip(". ")
 
     # Update metadata
     if location.get("province"):
@@ -301,18 +361,32 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
     if location.get("town"):
         data["town"] = location["town"]
 
-    # Update verification
-    data["verification"]["status"] = "web_search_geocoded"
-    data["verification"]["confidence"] = location.get("confidence", 0.7)
-    data["verification"]["last_checked"] = time.strftime("%Y-%m-%dT%H:%M:%S.000000Z")
-    data["verification"]["checked_by"] = "web_search_llm"
+    # Update company mentions
+    companies = location.get("companies", {})
+    if companies:
+        operators = companies.get("operators", [])
+        owners = companies.get("owners", [])
 
-    old_notes = data["verification"].get("notes", "")
-    new_notes = f"Web search geocoded. Source: {location.get('source', 'web')}. {location.get('notes', '')}"
-    data["verification"]["notes"] = f"{old_notes}. {new_notes}".strip(". ")
+        # Merge with existing company_mentions (deduplicate)
+        existing_mentions = set(data.get("company_mentions", []))
+        new_mentions = set(operators + owners)
+        all_mentions = sorted(list(existing_mentions | new_mentions))
 
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
+        if all_mentions:
+            data["company_mentions"] = all_mentions
+
+            # Add note about web search enrichment
+            if "enrichment_notes" not in data:
+                data["enrichment_notes"] = {}
+            data["enrichment_notes"]["web_search_companies"] = {
+                "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S.000000Z"),
+                "operators": operators,
+                "owners": owners,
+                "notes": companies.get("notes", "")
+            }
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
     return True
 
@@ -320,11 +394,14 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(description="Web search-based geocoding")
-    parser.add_argument("--country", required=True, help="ISO3 country code")
-    parser.add_argument("--limit", type=int, default=10, help="Max facilities")
+    parser = argparse.ArgumentParser(description="Web search-based geocoding and company enrichment")
+    parser.add_argument("--country", help="ISO3 country code (omit to process ALL countries)")
+    parser.add_argument("--limit", type=int, default=10, help="Max facilities per country")
+    parser.add_argument("--limit-total", type=int, help="Max total facilities across all countries")
     parser.add_argument("--search-engine", default="tavily", choices=["tavily", "brave"])
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing coords)")
+    parser.add_argument("--missing-companies", action="store_true", help="Process facilities missing company_mentions")
     args = parser.parse_args()
 
     # Check dependencies
@@ -358,74 +435,162 @@ def main():
 
     openai_client = OpenAI(api_key=openai_key)
 
-    # Country names
+    # Country names mapping
     country_names = {
         "ZAF": "South Africa", "USA": "United States", "AUS": "Australia",
         "IND": "India", "CHN": "China", "BRA": "Brazil", "RUS": "Russia",
         "CAN": "Canada", "IDN": "Indonesia", "KAZ": "Kazakhstan",
         "MEX": "Mexico", "PER": "Peru", "CHL": "Chile", "COL": "Colombia",
         "ARE": "United Arab Emirates", "BEL": "Belgium", "MAR": "Morocco",
+        "KOR": "South Korea", "PRK": "North Korea", "MNG": "Mongolia",
+        "ZWE": "Zimbabwe", "FRA": "France", "AUT": "Austria", "CIV": "Ivory Coast",
+        "MDG": "Madagascar", "NER": "Niger", "PAK": "Pakistan", "AZE": "Azerbaijan",
+        "NCL": "New Caledonia", "NPL": "Nepal", "PRT": "Portugal", "SDN": "Sudan",
     }
-    country_name = country_names.get(args.country, args.country)
+
+    # Determine which countries to process
+    if args.country:
+        countries_to_process = [args.country.upper()]
+    else:
+        # Process all countries
+        facilities_base = Path("facilities")
+        countries_to_process = sorted([d.name for d in facilities_base.iterdir() if d.is_dir()])
+        print(f"Processing ALL countries: {len(countries_to_process)} found\n")
 
     print(f"\n{'='*60}")
-    print(f"WEB SEARCH GEOCODING: {country_name} ({args.country})")
+    print(f"WEB SEARCH GEOCODING + COMPANY ENRICHMENT")
     print(f"Search Engine: {args.search_engine}")
-    print(f"{'='*60}")
+    print(f"{'='*60}\n")
 
-    # Load facilities needing geocoding
-    facilities_dir = Path(f"facilities/{args.country}")
-    if not facilities_dir.exists():
-        print(f"No facilities directory for {args.country}")
-        return
+    total_success = 0
+    total_failed = 0
+    total_processed = 0
+    countries_processed = 0
 
-    missing = []
-    for f in facilities_dir.glob("*.json"):
-        with open(f) as fp:
-            data = json.load(fp)
-        loc = data.get("location", {})
-        if loc.get("lat") is None or loc.get("lon") is None:
-            missing.append(data)
+    for country_iso3 in countries_to_process:
+        country_name = country_names.get(country_iso3, country_iso3)
 
-    print(f"Found {len(missing)} facilities needing coordinates")
+        # Check total limit
+        if args.limit_total and total_processed >= args.limit_total:
+            print(f"\n→ Reached total limit of {args.limit_total} facilities")
+            break
 
-    if not missing:
-        return
+        print(f"\n{'─'*60}")
+        print(f"COUNTRY: {country_name} ({country_iso3})")
+        print(f"{'─'*60}")
 
-    to_process = missing[:args.limit]
-    print(f"Processing {len(to_process)} facilities\n")
+        # Load facilities to process
+        facilities_dir = Path(f"facilities/{country_iso3}")
+        if not facilities_dir.exists():
+            print(f"⚠ No facilities directory found, skipping")
+            continue
 
-    success = 0
-    failed = 0
+        to_process = []
 
-    for i, facility in enumerate(to_process, 1):
-        print(f"[{i}/{len(to_process)}] {facility['name']}")
+        for f in facilities_dir.glob("*.json"):
+            try:
+                with open(f) as fp:
+                    data = json.load(fp)
+            except Exception as e:
+                print(f"⚠ Error reading {f.name}: {e}")
+                continue
 
-        result = geocode_single_facility(facility, country_name, search_func, openai_client)
+            # Determine if we should process this facility
+            should_process = False
 
-        if result and result.get("lat") and result.get("lon"):
-            if not args.dry_run:
-                if update_facility_json(facility, result):
-                    print(f"  → Updated facility file")
-                    success += 1
-                else:
-                    failed += 1
+            if args.all:
+                # Process everything
+                should_process = True
+            elif args.missing_companies:
+                # Process ONLY if company_mentions is empty or missing
+                if not data.get("company_mentions"):
+                    should_process = True
             else:
-                print(f"  [DRY RUN] Would update")
-                success += 1
-        else:
-            print(f"  ✗ Could not geocode")
-            failed += 1
+                # Default: process if missing coordinates OR company_mentions
+                loc = data.get("location", {})
+                missing_coords = loc.get("lat") is None or loc.get("lon") is None
+                missing_companies = not data.get("company_mentions")
 
-        print()
-        time.sleep(1)  # Rate limiting
+                if missing_coords or missing_companies:
+                    should_process = True
 
+            if should_process:
+                to_process.append(data)
+
+        mode = "ALL facilities" if args.all else "missing companies" if args.missing_companies else "missing coords/companies"
+
+        if not to_process:
+            print(f"✓ No facilities need processing ({mode})")
+            continue
+
+        # Apply limits
+        original_count = len(to_process)
+
+        # Per-country limit
+        if args.limit:
+            to_process = to_process[:args.limit]
+
+        # Total limit
+        if args.limit_total:
+            remaining_budget = args.limit_total - total_processed
+            to_process = to_process[:remaining_budget]
+
+        print(f"Found {original_count} {mode}, processing {len(to_process)}")
+
+        country_success = 0
+        country_failed = 0
+
+        for i, facility in enumerate(to_process, 1):
+            print(f"\n[{i}/{len(to_process)}] {facility['name']}")
+
+            result = geocode_single_facility(facility, country_name, search_func, openai_client)
+
+            if result:
+                has_coords = result.get("lat") is not None and result.get("lon") is not None
+                has_companies = bool(result.get("companies", {}).get("operators") or result.get("companies", {}).get("owners"))
+
+                if has_coords or has_companies:
+                    if not args.dry_run:
+                        if update_facility_json(facility, result):
+                            update_msg = []
+                            if has_coords:
+                                update_msg.append(f"coords: {result['lat']:.6f}, {result['lon']:.6f}")
+                            if has_companies:
+                                update_msg.append(f"companies: {len(result['companies'].get('operators', []) + result['companies'].get('owners', []))}")
+                            print(f"  → Updated ({', '.join(update_msg)})")
+                            country_success += 1
+                        else:
+                            country_failed += 1
+                    else:
+                        print(f"  [DRY RUN] Would update")
+                        country_success += 1
+                else:
+                    print(f"  ✗ No info found")
+                    country_failed += 1
+            else:
+                print(f"  ✗ No info found")
+                country_failed += 1
+
+            time.sleep(1)  # Rate limiting
+
+        total_success += country_success
+        total_failed += country_failed
+        total_processed += len(to_process)
+        countries_processed += 1
+
+        print(f"\n{country_iso3} Summary: {country_success} success, {country_failed} failed")
+
+    # Final summary
     print(f"\n{'='*60}")
-    print("RESULTS")
+    print("FINAL RESULTS")
     print(f"{'='*60}")
-    print(f"Successfully geocoded: {success}")
-    print(f"Failed: {failed}")
-    print(f"Remaining: {len(missing) - args.limit}")
+    print(f"Countries processed: {countries_processed}")
+    print(f"Total facilities processed: {total_processed}")
+    print(f"Successfully enriched: {total_success}")
+    print(f"Failed: {total_failed}")
+    if args.limit_total:
+        print(f"Total limit: {args.limit_total}")
+    print(f"{'='*60}")
 
 
 if __name__ == "__main__":

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.669296,
+    "lon": 86.151115,
     "precision": "unknown"
   },
   "types": [
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.074128Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:59:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.latlong.net/place/bokaro-steel-city-jharkhand-india-20411.html. Coordinates extracted from multiple sources confirming the location of Bokaro Steel Plant in Bokaro Steel City, Jharkhand, India"
   },
   "canonical_name": "Bokaro Steel Steel Plant",
   "canonical_slug": "bokaro-steel-steel-plant",
@@ -53,5 +53,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

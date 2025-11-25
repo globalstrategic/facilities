@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 34.273,
+    "lon": -3.571,
     "precision": "unknown"
   },
   "types": [
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:48.328424Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:36:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.elcoracorp.com/wp-content/uploads/2023/06/Ermazon-43-101-Atlas-Lion-Ni-43-101-Tech-Report.pdf. Coordinates extracted from the technical report for the Atlas Lion Vanadinite Project, located in North-Eastern Morocco"
   },
   "canonical_name": "Atlas Lion Vanadinite Exploration",
   "canonical_slug": "atlas-lion-vanadinite-exploration",
@@ -55,5 +55,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Boulemane Province"
 }

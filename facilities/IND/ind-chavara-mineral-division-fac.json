@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 8.9403,
+    "lon": 76.5336,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.057101Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:45:05.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Indian Rare Earths Limited (IREL) official website and geological survey data. Chavara Mineral Division is located in the Kollam district of Kerala, India. The coordinates are approximate and based on the general location of the facility as described in various sources"
   },
   "canonical_name": "Chavara Mineral Division Mine",
   "canonical_slug": "chavara-mineral-division-mine",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kerala"
 }

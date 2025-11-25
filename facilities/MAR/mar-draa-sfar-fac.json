@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 31.7917,
+    "lon": -7.9086,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.327415Z",
-    "checked_by": "import_pipeline",
-    "notes": "Feeds the Guemassa processing complex, supplementing ore from Douar Hajar. | Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:34:27.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Feeds the Guemassa processing complex, supplementing ore from Douar Hajar. | Canonical name+slug generated. LLM geocoded from: Managem Group website and technical reports. The Draa Sfar mine is located approximately 15 km northeast of Marrakech, in the Marrakech-Safi region of Morocco. The coordinates provided are approximate and based on the general location of the mine as described in company reports and mining databases"
   },
   "canonical_name": "Draa Sfar Mine",
   "canonical_slug": "draa-sfar-mine",
@@ -66,5 +66,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi"
 }

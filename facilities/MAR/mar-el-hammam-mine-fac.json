@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.6833,
+    "lon": -5.9167,
     "precision": "unknown"
   },
   "types": [
@@ -37,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.327891Z",
-    "checked_by": "import_pipeline",
-    "notes": "Former major fluorspar mine. Its processing plant is being repurposed to treat ore from the Achmmach tin project. | Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-11-24T11:34:33.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Former major fluorspar mine. Its processing plant is being repurposed to treat ore from the Achmmach tin project. | Canonical name+slug generated. LLM geocoded from: Mining Technology, Moroccan Mining Directory. El Hammam Mine is located near the town of Khouribga, which is a well-known mining area in Morocco. The coordinates provided are approximate and based on the general location of mining activities in the region"
   },
   "canonical_name": "El Hammam Mine",
   "canonical_slug": "el-hammam-mine",
@@ -64,5 +64,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khouribga Province"
 }

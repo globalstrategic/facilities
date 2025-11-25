@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ALB",
   "location": {
-    "lat": 41.716,
-    "lon": 20.019,
+    "lat": 43.66679590258747,
+    "lon": 5.872362417003538,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arian Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.450065Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-25T09:16:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Burrel (https://thediggings.com/mines/usgs10158392). The Kurbnesh-Perlat Copper Mine is located 55 kilometers northeast of Tirana, near Burrel"
   },
   "canonical_name": "Kurbnesh Perlat Mine",
   "canonical_slug": "kurbnesh-perlat-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Albania",
+  "town": "Burrel",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:16:23.000000Z",
+      "operators": [
+        "Arian Resources Corp."
+      ],
+      "owners": [],
+      "notes": "Arian Resources Corp. is focused on the exploration of gold and copper properties."
+    }
+  }
 }

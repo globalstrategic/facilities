@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ARG",
   "location": {
-    "lat": -25.414,
-    "lon": -66.991,
+    "lat": -25.40936,
+    "lon": -66.91242,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allkem Ltd.",
+    "Galaxy Lithium (Sal de Vida) S.A.",
+    "Galaxy Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.173761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:30:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://s203.q4cdn.com/709125885/files/doc_downloads/TechnicalRep/New/Sal-de-Vida-Lithium-Brine-Project-Argentina.pdf. The Sal de Vida lithium project is located in the Salar del Hombre Muerto, approximately 200 km south of Olaroz in the high-altitude Puna ecoregion"
   },
   "canonical_name": "Sal De Vida Mine",
   "canonical_slug": "sal-de-vida-mine",
@@ -57,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Catamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:30:00.000000Z",
+      "operators": [
+        "Galaxy Lithium (Sal de Vida) S.A."
+      ],
+      "owners": [
+        "Galaxy Resources Ltd.",
+        "Allkem Ltd."
+      ],
+      "notes": "Galaxy Lithium (Sal de Vida) S.A. is a wholly owned subsidiary of Galaxy Resources Ltd., which is 100% owned by Allkem Ltd. since August 2021."
+    }
+  }
 }

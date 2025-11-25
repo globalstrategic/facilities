@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 44.0128576,
+    "lon": 67.4106033,
     "precision": "unknown"
   },
   "types": [
@@ -29,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.734945Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T18:18:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nz.maptons.com/1428795. Coordinates for the Shalkiya Deposit are directly provided in decimal degrees"
   },
   "canonical_name": "Shalkiya Mine",
   "canonical_slug": "shalkiya-mine",
@@ -48,5 +48,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kyzylorda Region"
 }

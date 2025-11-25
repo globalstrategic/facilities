@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 21.62470054610332,
+    "lon": -14.923329432890162,
     "precision": "unknown"
   },
   "types": [
@@ -44,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:48.331141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-25T08:38:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Aousserd (https://vest-sahara.s3.amazonaws.com/wsrw/feature-images/File/774/63187faff3737_ONHYM_RareMinerals_2021.pdf). The Glibat Lafhouda prospect is located 70 km southwest of Aousserd town"
   },
   "canonical_name": "Glibat Lafhouda Prospect Exploration",
   "canonical_slug": "glibat-lafhouda-prospect-exploration",
@@ -63,5 +63,7 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dakhla-Oued Ed-Dahab",
+  "town": "Aousserd"
 }

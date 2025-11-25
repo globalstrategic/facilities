@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 25.833055555556,
+    "lon": 74.733055555556,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.127005Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:04:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-1279246.html. Coordinates for Rampura Agucha zinc-lead deposit located in Bhilwara District, Rajasthan, India"
   },
   "canonical_name": "Rampura Agucha, Sindesar Khurd, Etc Mine",
   "canonical_slug": "rampura-agucha-sindesar-khurd-etc-mine",
@@ -59,5 +59,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan"
 }

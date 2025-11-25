@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -29.318,
-    "lon": -70.013,
+    "lat": -27.0,
+    "lon": -68.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Exploraciones S.A.",
+    "Barrick Gold Corporation",
+    "Compa\u00f1ia Minera Nevada SpA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:01.168517Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:25:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pascua_Lama. Pascua Lama is located on the border between Chile and Argentina, with significant portions in both countries"
   },
   "canonical_name": "Pascua Lama Mine",
   "canonical_slug": "pascua-lama-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Juan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:25:31.000000Z",
+      "operators": [
+        "Barrick Gold Corporation",
+        "Compa\u00f1ia Minera Nevada SpA"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Barrick Exploraciones S.A."
+      ],
+      "notes": "Barrick Gold is the primary operator and owner of the Pascua Lama project."
+    }
+  }
 }

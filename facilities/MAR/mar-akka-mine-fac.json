@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MAR",
   "location": {
-    "lat": 29.4867,
-    "lon": null,
+    "lat": 29.167,
+    "lon": -9.167,
     "precision": "unknown"
   },
   "types": [
@@ -38,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.330339Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:35:27.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Managem Group website and various mining databases. The Akka Mine is located in the Souss-Massa region of Morocco. The coordinates are approximate and derived from multiple sources including company reports and mining databases"
   },
   "canonical_name": "Akka Mine",
   "canonical_slug": "akka-mine-2",
@@ -57,5 +57,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Souss-Massa"
 }

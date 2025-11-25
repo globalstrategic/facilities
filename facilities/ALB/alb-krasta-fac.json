@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ALB",
   "location": {
-    "lat": 41.43,
-    "lon": 20.209,
+    "lat": 41.43083,
+    "lon": 20.20917,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Albania Chrome"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:01.455960Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:20:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Krasta_mine. Krasta mine is one of the largest chromium reserves in Albania"
   },
   "canonical_name": "Krasta Mine",
   "canonical_slug": "krasta-mine",
@@ -49,5 +51,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dib\u00ebr County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:20:44.000000Z",
+      "operators": [
+        "Albania Chrome"
+      ],
+      "owners": [],
+      "notes": "Albania Chrome is the largest mining company in Albania."
+    }
+  }
 }

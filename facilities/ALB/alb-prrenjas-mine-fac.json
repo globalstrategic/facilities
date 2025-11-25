@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ALB",
   "location": {
-    "lat": 41.067,
-    "lon": 20.544,
+    "lat": 41.0654,
+    "lon": 20.5518,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "State Owned"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:01.450807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:16:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10024534. The Prrenjas Chromium Mine is located near Librazhd, Albania, and is state-owned"
   },
   "canonical_name": "Prrenjas Mine",
   "canonical_slug": "prrenjas-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Elbasan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:16:44.000000Z",
+      "operators": [
+        "State Owned"
+      ],
+      "owners": [
+        "State Owned"
+      ],
+      "notes": "The mine is operated by the state and has been mentioned in the context of Darfo S.p.A. of Italy, which had a concession agreement for operations."
+    }
+  }
 }

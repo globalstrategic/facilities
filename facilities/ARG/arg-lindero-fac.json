@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ARG",
   "location": {
-    "lat": -25.083,
-    "lon": -67.779,
+    "lat": -25.08333,
+    "lon": -67.78333,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fortuna Mining Corp.",
+    "Mansfield Minera S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.184166Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:38:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://fortunamining.com/wp-content/uploads/2023/10/technical_report_lindero_mine_and_arizaro_project_221231.pdf. The Lindero Mine is located in the Argentine puna, approximately 260 km due west of Salta"
   },
   "canonical_name": "Lindero Mine",
   "canonical_slug": "lindero-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Salta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:38:33.000000Z",
+      "operators": [
+        "Mansfield Minera S.A."
+      ],
+      "owners": [
+        "Fortuna Mining Corp."
+      ],
+      "notes": "Fortuna Mining Corp. owns 100% of the Lindero Mine through its subsidiary Mansfield Minera S.A."
+    }
+  }
 }

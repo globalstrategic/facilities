@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.0074,
+    "lon": 79.2917,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.069932Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:45:40.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: https://www.steelauthority.com/plant/chandrapur-ferro-alloy-plant. The Chandrapur Ferro Alloy Plant is located in Chandrapur, Maharashtra, India. The coordinates are approximate and based on the general location of the plant in the city"
   },
   "canonical_name": "Chandrapur Ferro Alloy Processing Plant",
   "canonical_slug": "chandrapur-ferro-alloy-processing-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra"
 }

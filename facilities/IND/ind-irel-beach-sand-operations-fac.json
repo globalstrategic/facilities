@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 8.487785883838518,
+    "lon": 77.19356944861349,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.056946Z",
-    "checked_by": "import_pipeline",
-    "notes": "Operations at Chavara (Kerala), Manavalakurichi (Tamil Nadu), and OSCOM (Odisha).74 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-20T16:58:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Operations at Chavara (Kerala), Manavalakurichi (Tamil Nadu), and OSCOM (Odisha).74 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Kanniyakumari (https://www.irel.co.in/manavalakurichi-mineral-division). The Manavalakurichi unit is located 25 km NW of Kanniyakumari in Tamil Nadu"
   },
   "canonical_name": "Irel Beach Sand Processing Plant",
   "canonical_slug": "irel-beach-sand-processing-plant",
@@ -59,5 +59,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tamil Nadu",
+  "town": "Kanniyakumari"
 }

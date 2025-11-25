@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARM",
   "location": {
-    "lat": 41.150347,
-    "lon": 44.770628,
+    "lat": 41.165272,
+    "lon": 44.719861,
     "precision": "town",
     "town": "Akhtala",
     "region": "Lori"
@@ -15,7 +15,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Akhtala Ore Dressing Combine CJSC",
+    "Metal Prince Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:06.868029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated",
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:40:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mineral_industry_of_Armenia. Coordinates for the Shamlugh Mine are provided in the source",
     "geocoding_source": "Town centroid near mine & plant."
   },
   "canonical_name": "Akhtala Akhtala Mining Plant Akhtala / Shamlugh Mine",
@@ -54,5 +57,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lori",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:40:42.000000Z",
+      "operators": [
+        "Akhtala Ore Dressing Combine CJSC",
+        "Metal Prince Ltd."
+      ],
+      "owners": [
+        "Akhtala Ore Dressing Combine CJSC",
+        "Metal Prince Ltd."
+      ],
+      "notes": "The facility is operated by Akhtala Ore Dressing Combine CJSC and Metal Prince Ltd. is mentioned as an investor."
+    }
+  }
 }

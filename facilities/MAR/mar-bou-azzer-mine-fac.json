@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 30.5183,
-    "lon": null,
+    "lat": 30.51833,
+    "lon": -6.91111,
     "precision": "unknown"
   },
   "types": [
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.334016Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T08:40:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-123386.html. Coordinates extracted from multiple sources confirming the location of the Bou Azzer Mine"
   },
   "canonical_name": "Bou Azzer Mine",
   "canonical_slug": "bou-azzer-mine-2",
@@ -63,5 +63,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Drâa-Tafilalet"
 }

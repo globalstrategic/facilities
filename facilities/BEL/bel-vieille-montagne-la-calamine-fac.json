@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.71809,
+    "lon": 6.01107,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.139010Z",
-    "checked_by": "import_pipeline",
-    "notes": "The foundational mine of the European zinc industry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:11:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "The foundational mine of the European zinc industry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/be/la-calamine/. Coordinates for La Calamine, Belgium, where the Vieille Montagne mining facility is located"
   },
   "canonical_name": "Vieille Montagne / La Calamine Mine",
   "canonical_slug": "vieille-montagne-la-calamine-mine",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liège"
 }

@@ -1,6 +1,6 @@
 {
   "facility_id": "arg-joaqu-n-fac",
-  "name": "Joaquín",
+  "name": "Joaqu\u00edn",
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pan American Silver",
+    "Unico Silver"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,9 +32,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Joaquín Mine",
+  "canonical_name": "Joaqu\u00edn Mine",
   "canonical_slug": "joaquin-mine",
-  "display_name": "Joaquín",
+  "display_name": "Joaqu\u00edn",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:36:12.000000Z",
+      "operators": [
+        "Unico Silver"
+      ],
+      "owners": [
+        "Pan American Silver"
+      ],
+      "notes": "Unico Silver has acquired the Joaquin Silver District from Pan American Silver."
+    }
+  }
 }

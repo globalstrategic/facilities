@@ -6,7 +6,7 @@ This script converts facility JSON files to the same CSV format as Mines.csv,
 with columns:
 - Confidence Factor
 - Mine Name
-- Companies (semicolon-separated list)
+- Company Name(s) (semicolon-separated list)
 - Latitude
 - Longitude
 - Asset Type
@@ -415,7 +415,7 @@ def facility_to_csv_row(facility: Dict, country_name: str) -> Dict[str, str]:
     return {
         "Confidence Factor": confidence_label,
         "Mine Name": mine_name,
-        "Companies": company_str,
+        "Company Name(s)": company_str,
         "Latitude": str(lat) if lat else "",
         "Longitude": str(lon) if lon else "",
         "Asset Type": get_asset_types(facility),
@@ -531,7 +531,7 @@ def export_country_to_csv(country: str, output_file: Optional[str] = None, metal
     fieldnames = [
         "Confidence Factor",
         "Mine Name",
-        "Companies",
+        "Company Name(s)",
         "Latitude",
         "Longitude",
         "Asset Type",
@@ -661,7 +661,7 @@ def export_all_to_csv(output_file: Optional[str] = None, metal: Optional[str] = 
     fieldnames = [
         "Confidence Factor",
         "Mine Name",
-        "Companies",
+        "Company Name(s)",
         "Latitude",
         "Longitude",
         "Asset Type",

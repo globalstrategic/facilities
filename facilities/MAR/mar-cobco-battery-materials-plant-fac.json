@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 32.46742388108932,
+    "lon": -7.6200284,
     "precision": "unknown"
   },
   "types": [
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.334186Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-25T08:40:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Casablanca (https://www.electrive.com/2025/06/26/cobco-starts-ev-battery-material-production-in-morocco/). The COBCO Battery Materials Plant is located approximately 125 kilometers south of Casablanca, in Jorf Lasfar"
   },
   "canonical_name": "Cobco Battery Materials Refinery",
   "canonical_slug": "cobco-battery-materials-refinery",
@@ -67,5 +67,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Casablanca-Settat",
+  "town": "Casablanca"
 }

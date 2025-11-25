@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.462222222222,
+    "lon": 4.9936111111111,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.138179Z",
-    "checked_by": "import_pipeline",
-    "notes": "One of Belgium's five largest quarries. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:10:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "One of Belgium's five largest quarries. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://zh.mindat.org/maps.php?id=424153. Coordinates extracted from Mindat, indicating the location of Maizeret Quarry in Andenne, Namur, Belgium"
   },
   "canonical_name": "Maizeret Quarry Mine",
   "canonical_slug": "maizeret-quarry-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Namur"
 }

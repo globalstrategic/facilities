@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.58599,
+    "lon": 3.45787,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.143515Z",
-    "checked_by": "import_pipeline",
-    "notes": "One of Benelux's largest aggregate sites. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:14:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "One of Benelux's largest aggregate sites. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/W778981973. Coordinates extracted directly from the map of Milieu quarry, which is operated by Holcim"
   },
   "canonical_name": "Carrière Du Milieu Mine",
   "canonical_slug": "carrire-du-milieu-mine",
@@ -55,5 +55,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wallonia"
 }

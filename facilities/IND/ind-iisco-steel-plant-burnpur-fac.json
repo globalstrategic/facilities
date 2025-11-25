@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.66731,
+    "lon": 86.917333,
     "precision": "unknown"
   },
   "types": [
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.133489Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T17:04:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.distancesto.com/coordinates/in/iisco-steel-plant-latitude-longitude/history/929026.html. Coordinates extracted directly from a reliable source for the IISCO Steel Plant located in Burnpur, West Bengal, India"
   },
   "canonical_name": "Iisco Steel , Burnpur Steel Plant",
   "canonical_slug": "iisco-steel-burnpur-steel-plant",
@@ -61,5 +61,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Bengal"
 }

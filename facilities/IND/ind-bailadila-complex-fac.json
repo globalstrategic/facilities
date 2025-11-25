@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.615358,
+    "lon": 81.229663,
     "precision": "unknown"
   },
   "types": [
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.072006Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:58:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/NMDC_Bailadila-Kirandul_Deposit_14_NMZ_Mine. Coordinates extracted from the NMDC Bailadila-Kirandul Deposit 14 NMZ Mine document"
   },
   "canonical_name": "Bailadila Mine",
   "canonical_slug": "bailadila-mine",
@@ -53,5 +53,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.7375,
+    "lon": 85.3967,
     "precision": "unknown"
   },
   "types": [
@@ -23,11 +23,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.064854Z",
-    "checked_by": "import_pipeline",
-    "notes": "Processes ore from Turamdih, Banduhurang, Mohuldih | Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-20T16:45:15.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Processes ore from Turamdih, Banduhurang, Mohuldih | Canonical name+slug generated. LLM geocoded from: Uranium Corporation of India Limited (UCIL) official website and various mining reports. The Turamdih Mill is located near the town of Jamshedpur in the state of Jharkhand, India. The coordinates are approximate and based on multiple sources including company reports and geographic databases"
   },
   "canonical_name": "Turamdih Processing Plant",
   "canonical_slug": "turamdih-processing-plant",
@@ -42,5 +42,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand"
 }

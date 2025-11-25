@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ARG",
   "location": {
-    "lat": -46.872,
-    "lon": -70.22,
+    "lat": -46.5,
+    "lon": -67.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Newmont Goldcorp Corporation",
+    "Oroplata S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:01.170944Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:27:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://cyanidecode.org/wp-content/uploads/2025/03/NewmontGoldcorpCerroNegroSAR2019.pdf. Cerro Negro is located approximately 60 kilometers southeast of Perito Moreno town in the province of Santa Cruz, Argentina"
   },
   "canonical_name": "Cerro Negro Mine",
   "canonical_slug": "cerro-negro-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:27:43.000000Z",
+      "operators": [
+        "Oroplata S.A."
+      ],
+      "owners": [
+        "Newmont Goldcorp Corporation"
+      ],
+      "notes": "Cerro Negro is 100% owned by Newmont through its wholly-owned subsidiary, Oroplata S.A."
+    }
+  }
 }

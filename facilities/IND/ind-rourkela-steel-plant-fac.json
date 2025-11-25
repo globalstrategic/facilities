@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.2271,
+    "lon": 84.8536,
     "precision": "unknown"
   },
   "types": [
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.055453Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.95,
+    "last_checked": "2025-11-20T16:44:54.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Steel Authority of India Limited (SAIL) official website and Google Maps. The Rourkela Steel Plant is located in Rourkela, Odisha, India. The coordinates are derived from the location of the plant as indicated on Google Maps and corroborated by the Steel Authority of India Limited's information about the plant's location"
   },
   "canonical_name": "Rourkela Steel Steel Plant",
   "canonical_slug": "rourkela-steel-steel-plant",
@@ -53,5 +53,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha"
 }

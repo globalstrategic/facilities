@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 34.9916,
-    "lon": null,
+    "lat": 35.1686,
+    "lon": -2.9285,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.326180Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-24T11:34:02.000000Z",
+    "checked_by": "llm_web_search",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Sonasid official website and Google Maps. The Sonasid Nador Steel Plant is located in the city of Nador, which is in the Oriental region of Morocco. The coordinates are approximate based on the location of the industrial area in Nador where the plant is situated"
   },
   "canonical_name": "Sonasid Nador Steel Steel Plant",
   "canonical_slug": "sonasid-nador-steel-steel-plant",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oriental"
 }

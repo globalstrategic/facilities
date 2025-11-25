@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -26.5,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,12 @@
   ],
   "commodities": [],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Minera Agua Rica LLC",
+    "Newmont Goldcorp",
+    "Yamana Gold"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.179050Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:34:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://proyectomara.com.ar/en/mara-eng/. The Agua Rica deposit is located in Andalgal\u00e1, Catamarca, Argentina"
   },
   "canonical_name": "Mara Mine",
   "canonical_slug": "mara-mine",
@@ -50,5 +55,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Catamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:34:59.000000Z",
+      "operators": [
+        "Yamana Gold",
+        "Glencore"
+      ],
+      "owners": [
+        "Minera Agua Rica LLC",
+        "Glencore",
+        "Yamana Gold",
+        "Newmont Goldcorp"
+      ],
+      "notes": "MARA is a joint venture project involving multiple companies, with Glencore expected to become the sole owner."
+    }
+  }
 }

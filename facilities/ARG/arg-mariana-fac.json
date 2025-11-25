@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.5,
+    "lon": -66.5,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ganfeng Lithium Group Co., Ltd.",
+    "Litio Minera Argentina S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.179685Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:35:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ganfenglithium-latam.com/en/proyecto-mariana/. The Mariana project is located in the Salar de Llullaillaco, in the province of Salta, Argentina"
   },
   "canonical_name": "Mariana Mine",
   "canonical_slug": "mariana-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Salta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:35:26.000000Z",
+      "operators": [
+        "Litio Minera Argentina S.A."
+      ],
+      "owners": [
+        "Ganfeng Lithium Group Co., Ltd."
+      ],
+      "notes": "Ganfeng Lithium fully owns the Mariana Lithium Project through its subsidiary Litio Minera Argentina S.A."
+    }
+  }
 }
