@@ -368,7 +368,14 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
         owners = companies.get("owners", [])
 
         # Merge with existing company_mentions (deduplicate)
-        existing_mentions = set(data.get("company_mentions", []))
+        raw_mentions = data.get("company_mentions", [])
+        existing_mentions = set()
+        for mention in raw_mentions:
+            if isinstance(mention, dict):
+                if "name" in mention:
+                    existing_mentions.add(mention["name"])
+            elif isinstance(mention, str):
+                existing_mentions.add(mention)
         new_mentions = set(operators + owners)
         all_mentions = sorted(list(existing_mentions | new_mentions))
 

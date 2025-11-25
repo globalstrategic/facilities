@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.2061,
+    "lon": 13.2275,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMAG Arbeitnehmer Privatstiftung",
+    "AMAG Austria Metall AG",
+    "B&C Industrieholding GmbH",
+    "Raiffeisenlandesbank Oberösterreich AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.395459Z",
-    "checked_by": "import_pipeline",
-    "notes": "Leading aluminum producer with a high recycling rate (75-80%); serves aerospace/automotive. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:00:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Leading aluminum producer with a high recycling rate (75-80%); serves aerospace/automotive. | Canonical name+slug generated. Web search geocoded. Source: https://www.amag-al4u.com/en/contact/road-map/locations. The AMAG Austria Metall AG Plant is located in Braunau-Ranshofen, Austria"
   },
   "canonical_name": "Amag Austria Metall AG Plant",
   "canonical_slug": "amag-austria-metall-ag-plant",
@@ -57,5 +62,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Upper Austria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:00:19.000000Z",
+      "operators": [
+        "AMAG Austria Metall AG"
+      ],
+      "owners": [
+        "B&C Industrieholding GmbH",
+        "Raiffeisenlandesbank Oberösterreich AG",
+        "AMAG Arbeitnehmer Privatstiftung"
+      ],
+      "notes": "B&C Industrieholding GmbH holds a majority stake in AMAG Austria Metall AG."
+    }
+  }
 }

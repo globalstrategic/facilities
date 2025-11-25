@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.2,
-    "lon": 121.367,
+    "lat": -28.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genesis Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.311356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:59:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://genesisminerals.com.au/our-assets/leonora-operations/admiral-operations/. The Admiral facility is an open pit located 40km from the Leonora mill"
   },
   "canonical_name": "Admiral Mine",
   "canonical_slug": "admiral-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:59:07.000000Z",
+      "operators": [
+        "Genesis Minerals Limited"
+      ],
+      "owners": [
+        "Genesis Minerals Limited"
+      ],
+      "notes": "Genesis acquired Admiral deposits in 2020."
+    }
+  }
 }

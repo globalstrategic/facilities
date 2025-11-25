@@ -31,22 +31,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Tantalum Mining Co.",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.153621",
-      "evidence": "Extracted from operator column: Tantalum Mining Co. (TAMINCO); formerly COMEBU"
-    },
-    {
-      "name": "formerly COMEBU",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.153631",
-      "evidence": "Extracted from operator column: Tantalum Mining Co. (TAMINCO); formerly COMEBU"
-    }
+    "Tantalum Mining Co.",
+    "Tantalum Mining Co. (formerly Comptoir Minier des Exploitations du Burundi S.A.)",
+    "formerly COMEBU"
   ],
   "products": [],
   "sources": [
@@ -84,5 +71,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kayanza Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:49:37.000000Z",
+      "operators": [
+        "Tantalum Mining Co. (formerly Comptoir Minier des Exploitations du Burundi S.A.)"
+      ],
+      "owners": [],
+      "notes": "Tantalum Mining Co. is the primary operator of the Kivuvu Mine."
+    }
+  }
 }

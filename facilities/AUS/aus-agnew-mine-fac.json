@@ -10,8 +10,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -27.811,
-    "lon": 120.701,
+    "lat": -28.0,
+    "lon": 120.0,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.333514Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:59:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/agnew-gold-mine/. The Agnew gold mine is located near Leinster in Western Australia, approximately 870km northeast of Perth"
   },
   "canonical_name": "Agnew Mine",
   "canonical_slug": "agnew-mine-2",
@@ -58,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:59:36.000000Z",
+      "operators": [
+        "Gold Fields"
+      ],
+      "owners": [
+        "Gold Fields"
+      ],
+      "notes": "Gold Fields is a South Africa-based mining company that fully owns and operates the Agnew gold mine."
+    }
+  }
 }
