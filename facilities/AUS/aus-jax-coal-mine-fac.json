@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.709,
-    "lon": 147.859,
+    "lat": -20.63668673,
+    "lon": 147.85009,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "QCoal Group",
+    "Thiess Group Holdings Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.323771Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:18:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jax_Coal_Mine. The Jax Coal Mine is an open-cut coal mine located near Collinsville in Queensland's Bowen Basin"
   },
   "canonical_name": "Jax Coal Mine",
   "canonical_slug": "jax-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:18:44.000000Z",
+      "operators": [
+        "Thiess Group Holdings Pty Ltd"
+      ],
+      "owners": [
+        "QCoal Group"
+      ],
+      "notes": "Jax Coal Mine is owned by QCoal Group and operated by Thiess."
+    }
+  }
 }

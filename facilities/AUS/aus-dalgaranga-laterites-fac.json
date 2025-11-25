@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -27.821,
-    "lon": 117.296,
+    "lat": -28.5,
+    "lon": 116.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barminco Ltd",
+    "Ramelius Resources Limited",
+    "Spartan Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.248032Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:55:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.linkedin.com/posts/barminco_were-excited-to-announce-that-barminco-has-activity-7371711627676798976-dhjt. The Dalgaranga Gold Project is located in the Murchison region of Western Australia, approximately 65 km northwest of Mt Magnet"
   },
   "canonical_name": "Dalgaranga Laterites Mine",
   "canonical_slug": "dalgaranga-laterites-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:55:12.000000Z",
+      "operators": [
+        "Barminco Ltd"
+      ],
+      "owners": [
+        "Ramelius Resources Limited",
+        "Spartan Resources Limited"
+      ],
+      "notes": "Ramelius Resources owns the Dalgaranga project, while Spartan Resources has a significant interest in the project."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.073,
-    "lon": 122.176,
+    "lat": -28.5,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore International AG",
+    "Minara Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.278448Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:41:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Murrin_Murrin_Mine. The Murrin Murrin Mine is located approximately 45 km east of Leonora in the North Eastern Goldfields region"
   },
   "canonical_name": "Murrin East Mine",
   "canonical_slug": "murrin-east-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:41:26.000000Z",
+      "operators": [
+        "Minara Resources Ltd",
+        "Glencore International AG"
+      ],
+      "owners": [
+        "Glencore International AG"
+      ],
+      "notes": "Minara Resources is a wholly-owned subsidiary of Glencore International AG."
+    }
+  }
 }

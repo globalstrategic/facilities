@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.662,
-    "lon": 148.08,
+    "lat": -41.633417,
+    "lon": 148.051583,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hydrogen Ready Coal Mining",
+    "Paladin Hydrogen"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.321303Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:14:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.tasconservation.org.au/hrcm-fingal-mine. The Hard Rock Coal Mine is located in Fingal, Tasmania, Australia"
   },
   "canonical_name": "Hard Rock Coal Mine",
   "canonical_slug": "hard-rock-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:14:03.000000Z",
+      "operators": [
+        "Hydrogen Ready Coal Mining"
+      ],
+      "owners": [
+        "Paladin Hydrogen"
+      ],
+      "notes": "The mine was previously operated by Hard Rock Coal Mining before going into voluntary administration."
+    }
+  }
 }

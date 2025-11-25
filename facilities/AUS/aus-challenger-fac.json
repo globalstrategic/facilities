@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.878,
-    "lon": 133.588,
+    "lat": -30.0,
+    "lon": 139.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barton Gold Holdings Ltd.",
+    "Challenger 2 Pty Ltd.",
+    "Great Divide Mining",
+    "Kingsgate Consolidated"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.293507Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:33:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/challengergoldmine/. The Challenger gold mine is located approximately 740km north-west of Adelaide, South Australia"
   },
   "canonical_name": "Challenger Mine",
   "canonical_slug": "challenger-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:33:35.000000Z",
+      "operators": [
+        "Kingsgate Consolidated",
+        "Great Divide Mining"
+      ],
+      "owners": [
+        "Barton Gold Holdings Ltd.",
+        "Challenger 2 Pty Ltd."
+      ],
+      "notes": "Kingsgate Consolidated is the current operator, while Barton Gold Holdings Ltd. holds a 100% interest through its subsidiary."
+    }
+  }
 }

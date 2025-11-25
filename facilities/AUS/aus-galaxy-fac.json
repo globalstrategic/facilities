@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.519,
-    "lon": 120.2,
+    "lat": -33.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Galaxy Resources Limited",
+    "Orocobre Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.259401Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:05:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mt_Cattlin_mine. Coordinates are approximate based on the location of the Mt Cattlin mine operated by Galaxy Resources"
   },
   "canonical_name": "Galaxy Mine",
   "canonical_slug": "galaxy-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:05:29.000000Z",
+      "operators": [
+        "Galaxy Resources Limited"
+      ],
+      "owners": [
+        "Orocobre Ltd"
+      ],
+      "notes": "Galaxy Resources was acquired by Orocobre Ltd, creating a larger lithium company."
+    }
+  }
 }

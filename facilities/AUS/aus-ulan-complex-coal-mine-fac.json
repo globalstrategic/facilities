@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.245,
-    "lon": 149.75,
+    "lat": -32.5,
+    "lon": 149.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Coal Pty Limited",
+    "Ulan Coal Mines Pty Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.278284Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T13:06:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://epbcpublicportal.environment.gov.au/all-referrals/project-referral-summary/?id=87a5837b-40ef-ef11-9341-00224811c7a7. The Ulan Coal Complex is located approximately 38 km north-east of Mudgee"
   },
   "canonical_name": "Ulan Coal Mine",
   "canonical_slug": "ulan-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:06:26.000000Z",
+      "operators": [
+        "Ulan Coal Mines Pty Limited"
+      ],
+      "owners": [
+        "Glencore Coal Pty Limited"
+      ],
+      "notes": "Ulan Coal Mines Pty Limited is a subsidiary of Glencore Coal Pty Limited."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -35.544,
-    "lon": 149.744,
+    "lat": -35.5,
+    "lon": 149.5,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurelia Metals Ltd",
+    "Diversified Minerals Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.264916Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:55:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://aboutregional.com.au/dargues-gold-mine-at-majors-creek-changes-hands/364448/. The Dargues Gold Mine is located directly north of Majors Creek, approximately 60km southeast of Canberra"
   },
   "canonical_name": "Dargues Mine",
   "canonical_slug": "dargues-mine",
@@ -58,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:55:20.000000Z",
+      "operators": [
+        "Aurelia Metals Ltd"
+      ],
+      "owners": [
+        "Diversified Minerals Pty Ltd",
+        "Aurelia Metals Ltd"
+      ],
+      "notes": "Aurelia Metals Ltd acquired the Dargues Gold Mine from Diversified Minerals Pty Ltd."
+    }
+  }
 }

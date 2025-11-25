@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.443,
-    "lon": 119.913,
+    "lat": -23.5,
+    "lon": 119.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Steel Corporation",
+    "Hancock Prospecting Pty Ltd",
+    "Marubeni Corporation",
+    "POSCO Corporation",
+    "Roy Hill Holdings Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.306122Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:56:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/roy-hill-iron-ore-project-pilbara/. The Roy Hill mine is located in the Pilbara region, specifically in the Chichester Range"
   },
   "canonical_name": "Roy Hill Mine",
   "canonical_slug": "roy-hill-mine",
@@ -51,5 +57,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:56:38.000000Z",
+      "operators": [
+        "Roy Hill Holdings Pty Ltd"
+      ],
+      "owners": [
+        "Hancock Prospecting Pty Ltd",
+        "POSCO Corporation",
+        "Marubeni Corporation",
+        "China Steel Corporation"
+      ],
+      "notes": "Hancock Prospecting holds a 70% interest, while the remaining 30% is held by a consortium including POSCO, Marubeni, and China Steel."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.49,
-    "lon": 145.201,
+    "lat": -41.2,
+    "lon": 145.8,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grange Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.257276Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:57:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.grangeresources.com.au/. Savage River Mine is located approximately 100 km southwest of Burnie, Tasmania"
   },
   "canonical_name": "Savage River Mine",
   "canonical_slug": "savage-river-mine",
@@ -57,5 +59,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:57:27.000000Z",
+      "operators": [
+        "Grange Resources Limited"
+      ],
+      "owners": [
+        "Grange Resources Limited"
+      ],
+      "notes": "Grange Resources Limited owns and operates the Savage River Mine."
+    }
+  }
 }

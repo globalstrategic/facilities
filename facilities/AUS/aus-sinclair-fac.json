@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.361,
-    "lon": 120.858,
+    "lat": -30.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pioneer Resources",
+    "Talisman Mining",
+    "Xstrata Nickel"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.250122Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:58:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/rural/2018-09-21/sinclair-caesium-mine-opening/10287516. The Sinclair project is located 40km north of Norseman"
   },
   "canonical_name": "Sinclair Mine",
   "canonical_slug": "sinclair-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:58:38.000000Z",
+      "operators": [
+        "Pioneer Resources"
+      ],
+      "owners": [
+        "Pioneer Resources",
+        "Xstrata Nickel",
+        "Talisman Mining"
+      ],
+      "notes": "Pioneer Resources operates the Sinclair caesium mine, while Talisman Mining has acquired the Sinclair Nickel Project from Xstrata."
+    }
+  }
 }

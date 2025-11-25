@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.906,
-    "lon": 115.887,
+    "lat": -32.948,
+    "lon": 115.905,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.255404Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T14:16:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://latitude.to/articles-by-country/au/australia/142906/wagerup-western-australia. Wagerup is a locality in the Waroona Shire, located in the south west agricultural region of Western Australia"
   },
   "canonical_name": "Wagerup Refinery",
   "canonical_slug": "wagerup-refinery",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia"
 }

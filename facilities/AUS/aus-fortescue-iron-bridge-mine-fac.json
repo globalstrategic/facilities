@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.252,
-    "lon": 119.056,
+    "lat": -20.5,
+    "lon": 118.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FMG Fortescue",
+    "FMG Magnetite Pty Ltd",
+    "Formosa Steel IB Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.316055Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:03:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fortescue_(company). The Iron Bridge mine is located 145 km south of Port Hedland"
   },
   "canonical_name": "Fortescue Iron Bridge Mine",
   "canonical_slug": "fortescue-iron-bridge-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:03:43.000000Z",
+      "operators": [
+        "FMG Magnetite Pty Ltd"
+      ],
+      "owners": [
+        "FMG Fortescue",
+        "Formosa Steel IB Pty Ltd"
+      ],
+      "notes": "The mine is a joint venture between FMG Fortescue (69%) and Formosa Steel (31%)."
+    }
+  }
 }

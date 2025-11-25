@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.126,
-    "lon": 149.849,
+    "lat": -26.5,
+    "lon": 150.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore PLC",
+    "Glencore's Wandoan Holdings Pty Limited",
+    "ICRA Wandoan Pty Ltd",
+    "SCAP Wandoan Pty Ltd",
+    "Sumisho Coal Australia Pty Limited",
+    "Sumitomo Corp",
+    "Xstrata Coal Queensland Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.329761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T14:16:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.psm.com.au/projects/wandoan-open-pit-coal-mine-wandoan-qld. The Wandoan Coal Project is located in the Surat Basin, west of the township of Wandoan"
   },
   "canonical_name": "Wandoan Coal Mine",
   "canonical_slug": "wandoan-coal-mine",
@@ -47,5 +55,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:16:46.000000Z",
+      "operators": [
+        "Glencore's Wandoan Holdings Pty Limited",
+        "SCAP Wandoan Pty Ltd"
+      ],
+      "owners": [
+        "Glencore PLC",
+        "Sumitomo Corp",
+        "Xstrata Coal Queensland Pty Ltd",
+        "ICRA Wandoan Pty Ltd",
+        "Sumisho Coal Australia Pty Limited"
+      ],
+      "notes": "The project is a joint venture with multiple stakeholders, including Glencore and Sumitomo."
+    }
+  }
 }

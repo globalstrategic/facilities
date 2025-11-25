@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.926,
-    "lon": 148.556,
+    "lat": -23.5,
+    "lon": 148.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Mitsui Coal Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.251182Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:30:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://australia.angloamerican.com/~/media/Files/A/Anglo-American-Australia-V3/document/factsheets/ang-2291-fs-capcoal-fa-sr.pdf. Capcoal is located in the Bowen Basin, approximately 25 kilometers southwest of Middlemount"
   },
   "canonical_name": "Capcoal Mine",
   "canonical_slug": "capcoal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:30:45.000000Z",
+      "operators": [
+        "Anglo American"
+      ],
+      "owners": [
+        "Anglo American",
+        "Mitsui Coal Holdings"
+      ],
+      "notes": "Anglo American holds a 70% ownership stake in the Capcoal joint venture."
+    }
+  }
 }

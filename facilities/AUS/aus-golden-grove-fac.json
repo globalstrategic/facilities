@@ -14,8 +14,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.745,
-    "lon": 116.945,
+    "lat": -28.0,
+    "lon": 115.0,
     "precision": "site"
   },
   "types": [
@@ -44,7 +44,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "29Metals Limited",
+    "EMR Capital",
+    "Minerals and Metals Group (MMG)",
+    "Newmont Australia",
+    "OZ Minerals",
+    "Oxiana Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -54,11 +61,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.271071Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:08:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/golden-grove/. The exact coordinates are not provided, but the mine is approximately 450 km northeast of Perth"
   },
   "canonical_name": "Golden Grove Mine",
   "canonical_slug": "golden-grove-mine",
@@ -73,5 +80,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:08:48.000000Z",
+      "operators": [
+        "29Metals Limited",
+        "EMR Capital"
+      ],
+      "owners": [
+        "Minerals and Metals Group (MMG)",
+        "OZ Minerals",
+        "Newmont Australia",
+        "Oxiana Limited"
+      ],
+      "notes": "The mine has changed ownership multiple times, with the current operator being 29Metals Limited."
+    }
+  }
 }

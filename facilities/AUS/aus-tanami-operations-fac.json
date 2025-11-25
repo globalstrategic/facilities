@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.0,
-    "lon": 129.7,
+    "lat": -19.5,
+    "lon": 128.5,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Newmont Corporation",
+    "Newmont Tanami Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.313074Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T13:02:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://operations.newmont.com/australia/tanami. The Tanami Operations are located in the remote Tanami Desert, approximately 563 km northwest of Alice Springs"
   },
   "canonical_name": "Tanami Mine",
   "canonical_slug": "tanami-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:02:53.000000Z",
+      "operators": [
+        "Newmont Tanami Pty Ltd"
+      ],
+      "owners": [
+        "Newmont Corporation"
+      ],
+      "notes": "Newmont has full ownership and operates the Tanami mine since acquiring Normandy Mining in 2002."
+    }
+  }
 }

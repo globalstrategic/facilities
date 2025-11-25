@@ -11,8 +11,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.291,
-    "lon": 118.696,
+    "lat": -31.285,
+    "lon": 118.695,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Edna May Operations Pty Ltd",
+    "Ramelius Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +59,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.243419Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:59:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Edna_May_Gold_Mine. The Edna May Gold Mine is located near Westonia, Western Australia, and is operated by Ramelius Resources"
   },
   "canonical_name": "Edna May Mine",
   "canonical_slug": "edna-may-mine",
@@ -75,5 +78,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:59:05.000000Z",
+      "operators": [
+        "Ramelius Resources Ltd"
+      ],
+      "owners": [
+        "Ramelius Resources Ltd",
+        "Edna May Operations Pty Ltd"
+      ],
+      "notes": "Edna May Operations Pty Ltd is a wholly owned subsidiary of Ramelius Resources Ltd."
+    }
+  }
 }

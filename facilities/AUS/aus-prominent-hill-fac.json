@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.685,
-    "lon": 135.714,
+    "lat": -30.0,
+    "lon": 136.0,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP",
+    "OZ Minerals Limited",
+    "Thiess"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.259254Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:51:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thiess.com/projects/prominent-hill. Prominent Hill is located approximately 650 km north-northwest of Adelaide and 130 km southeast of Coober Pedy"
   },
   "canonical_name": "Prominent Hill Mine",
   "canonical_slug": "prominent-hill-mine",
@@ -53,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:51:31.000000Z",
+      "operators": [
+        "Thiess",
+        "BHP"
+      ],
+      "owners": [
+        "OZ Minerals Limited"
+      ],
+      "notes": "OZ Minerals owns the Prominent Hill mine, and BHP took ownership in 2023 after acquiring OZ Minerals."
+    }
+  }
 }

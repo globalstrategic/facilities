@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.72,
-    "lon": 146.391,
+    "lat": -23.5,
+    "lon": 147.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMCI (Alpha) Pty Ltd",
+    "Bandanna Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.245985Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:59:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.statedevelopment.qld.gov.au/coordinator-general/assessments-and-approvals/coordinated-projects/completed-projects/south-galilee-coal-project. The South Galilee Coal Project is located in the Galilee Basin, approximately 12 km south-west of Alpha"
   },
   "canonical_name": "South Galilee Coal Mine",
   "canonical_slug": "south-galilee-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:59:29.000000Z",
+      "operators": [
+        "AMCI (Alpha) Pty Ltd"
+      ],
+      "owners": [
+        "Bandanna Energy"
+      ],
+      "notes": "AMCI (Alpha) Pty Ltd is a subsidiary of the AMCI Group, and Bandanna Energy is the exploration company proposing the project."
+    }
+  }
 }

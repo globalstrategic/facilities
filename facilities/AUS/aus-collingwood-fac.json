@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -15.763,
-    "lon": 145.23,
+    "lat": -26.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Cockatoo Coal Limited",
+    "Exxaro"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.236055Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:35:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.statedevelopment.qld.gov.au/__data/assets/pdf_file/0023/18167/nth-surat-collingwood-coal-ias.pdf. The Collingwood Coal Project is part of the North Surat Coal Projects located in the Surat Basin, Queensland"
   },
   "canonical_name": "Collingwood Mine",
   "canonical_slug": "collingwood-mine",
@@ -49,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:35:59.000000Z",
+      "operators": [
+        "Cockatoo Coal Limited"
+      ],
+      "owners": [
+        "Anglo American",
+        "Exxaro"
+      ],
+      "notes": "Anglo American owns 51% of the Collingwood project, while Cockatoo Coal Limited is proposing to expand operations."
+    }
+  }
 }

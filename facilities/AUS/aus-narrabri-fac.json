@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.518,
-    "lon": 149.897,
+    "lat": -30.51820371,
+    "lon": 149.89767941,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "J-Power Australia Pty Ltd (7.5%)",
+    "Kores Narrabri Pty Ltd (2.5%)",
+    "Narrabri Coal Operations Pty Ltd (NCOPL)",
+    "Posco International Narrabri Investment Pty Ltd (5%)",
+    "Upper Horn Investments (Australia) Pty Ltd (7.5%)",
+    "Whitehaven Coal Ltd (77.5%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.304365Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:42:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Narrabri_Coal_Mine. The Narrabri coal mine is an underground coal mine located near Narrabri, New South Wales, Australia"
   },
   "canonical_name": "Narrabri Mine",
   "canonical_slug": "narrabri-mine",
@@ -52,5 +59,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:42:34.000000Z",
+      "operators": [
+        "Narrabri Coal Operations Pty Ltd (NCOPL)"
+      ],
+      "owners": [
+        "Whitehaven Coal Ltd (77.5%)",
+        "J-Power Australia Pty Ltd (7.5%)",
+        "Upper Horn Investments (Australia) Pty Ltd (7.5%)",
+        "Posco International Narrabri Investment Pty Ltd (5%)",
+        "Kores Narrabri Pty Ltd (2.5%)"
+      ],
+      "notes": "The mine is operated by Narrabri Coal Operations Pty Ltd, a subsidiary of Whitehaven Coal, which is the majority shareholder."
+    }
+  }
 }

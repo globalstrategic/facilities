@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -38.259,
-    "lon": 146.379,
+    "lat": -38.2,
+    "lon": 146.4,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Australian Power Partners B.V",
+    "Engie S.A.",
+    "Hazelwood Churchill Pty Ltd",
+    "Hazelwood Pacific Pty Ltd",
+    "Mitsui & Co",
+    "National Power Australia Investments Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.309141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:14:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/2023-05-02/engie-plan-to-turn-hazelwood-coal-mine-into-lake-rehabilitation/102287216. The Hazelwood Mine is located in the Latrobe Valley, near Morwell, Victoria"
   },
   "canonical_name": "Hazelwood Mine",
   "canonical_slug": "hazelwood-mine",
@@ -50,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Victoria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:14:14.000000Z",
+      "operators": [
+        "Hazelwood Pacific Pty Ltd",
+        "Australian Power Partners B.V",
+        "Hazelwood Churchill Pty Ltd",
+        "National Power Australia Investments Ltd"
+      ],
+      "owners": [
+        "Engie S.A.",
+        "Mitsui & Co"
+      ],
+      "notes": "Engie is the majority owner with a 72% share, while Mitsui holds a 28% share."
+    }
+  }
 }

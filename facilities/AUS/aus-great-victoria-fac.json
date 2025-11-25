@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.544,
-    "lon": 119.574,
+    "lat": -28.0,
+    "lon": 120.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Great Victoria Gold Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.297175Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:11:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-11511.html. The Great Victoria Gold Mine is located in the Great Victoria Desert region"
   },
   "canonical_name": "Great Victoria Mine",
   "canonical_slug": "great-victoria-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:11:09.000000Z",
+      "operators": [
+        "Great Victoria Gold Mine"
+      ],
+      "owners": [],
+      "notes": "The mine has historical significance and was discovered in 1902."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -35.252,
-    "lon": 138.916,
+    "lat": -35.5,
+    "lon": 138.8,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Terramin Australia Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.242463Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:14:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.energymining.sa.gov.au/industry/minerals-and-mining/mining/major-projects-and-mining-activities/major-operating-and-approved-mines/angas-zinc-mine. The Angas Zinc Mine is located 2 km outside Strathalbyn and is operated by Terramin Australia"
   },
   "canonical_name": "Angas Mine",
   "canonical_slug": "angas-mine",
@@ -62,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:14:33.000000Z",
+      "operators": [
+        "Terramin Australia Limited"
+      ],
+      "owners": [
+        "Terramin Australia Limited"
+      ],
+      "notes": "Terramin Australia is the sole owner and operator of the Angas Zinc Mine."
+    }
+  }
 }

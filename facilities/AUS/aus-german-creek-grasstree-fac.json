@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.021,
-    "lon": 148.565,
+    "lat": -23.5,
+    "lon": 148.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Mitsui Coal Holdings Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.238950Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:06:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/CapCoal_Mine_Complex. The Grasstree mine is part of the Capcoal complex located in the Bowen Basin"
   },
   "canonical_name": "German Creek Grasstree Mine",
   "canonical_slug": "german-creek-grasstree-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:06:47.000000Z",
+      "operators": [
+        "Anglo American"
+      ],
+      "owners": [
+        "Anglo American",
+        "Mitsui Coal Holdings Australia"
+      ],
+      "notes": "Anglo American operates the Grasstree mine and is a major stakeholder in the Capcoal complex."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.251,
-    "lon": 140.154,
+    "lat": -20.7,
+    "lon": 140.5,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MMG Limited",
+    "Perenti Global Limited",
+    "Redpath Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.296598Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:58:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mmg.com/our-business/dugald-river/. Dugald River is located approximately 65km north-west of Cloncurry, Queensland, Australia"
   },
   "canonical_name": "Dugald River Mine",
   "canonical_slug": "dugald-river-mine",
@@ -67,5 +71,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:58:03.000000Z",
+      "operators": [
+        "Redpath Australia",
+        "Perenti Global Limited"
+      ],
+      "owners": [
+        "MMG Limited"
+      ],
+      "notes": "MMG Limited is the owner of the Dugald River mine, which is transitioning to an owner-operator model."
+    }
+  }
 }

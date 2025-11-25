@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.764,
-    "lon": 148.006,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Mitsubishi Alliance Pty Ltd",
+    "BHP Group Ltd",
+    "Mitsubishi Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.248784Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-11-25T12:53:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Red_Hill_Coal_Project. Coordinates are approximate based on the general location of Moranbah, Queensland, where the Red Hill Coal Project is situated"
   },
   "canonical_name": "Red Hill Coal Mine",
   "canonical_slug": "red-hill-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:53:07.000000Z",
+      "operators": [
+        "BHP Billiton Mitsubishi Alliance Pty Ltd"
+      ],
+      "owners": [
+        "BHP Group Ltd",
+        "Mitsubishi Corp"
+      ],
+      "notes": "The project is operated by BHP Billiton Mitsubishi Alliance, a joint venture between BHP Group and Mitsubishi Corporation."
+    }
+  }
 }

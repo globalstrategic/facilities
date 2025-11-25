@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.366,
-    "lon": 150.056,
+    "lat": -33.364474,
+    "lon": 150.046122,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CLP Holdings Ltd",
+    "EnergyAustralia Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.242313Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:49:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Pine_Dale_Coal_Mine. The Pine Dale Coal Mine is currently mothballed and located in Wallerawang, New South Wales"
   },
   "canonical_name": "Pine Dale Coal Mine",
   "canonical_slug": "pine-dale-coal-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:49:29.000000Z",
+      "operators": [
+        "EnergyAustralia Pty Ltd"
+      ],
+      "owners": [
+        "EnergyAustralia Pty Ltd",
+        "CLP Holdings Ltd"
+      ],
+      "notes": "EnergyAustralia is the operator and owner of the Pine Dale Coal Mine."
+    }
+  }
 }

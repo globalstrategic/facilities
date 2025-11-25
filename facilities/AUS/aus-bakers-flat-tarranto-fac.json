@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.968,
-    "lon": 121.251,
+    "lat": -30.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.297322Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:53:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-429409.html. Bakers Flat-Taranto Mine is a former open pit gold mine located in the Coolgardie Shire. Web search geocoded. Source: https://www.mindat.org/loc-429409.html. Bakers Flat-Taranto Mine is a former open pit gold mine located in the Coolgardie Shire"
   },
   "canonical_name": "Bakers Flat Tarranto Mine",
   "canonical_slug": "bakers-flat-tarranto-mine",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia"
 }

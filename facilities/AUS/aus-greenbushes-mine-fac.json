@@ -13,8 +13,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.86,
-    "lon": 116.065,
+    "lat": -33.7,
+    "lon": 116.1,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Albemarle Corporation",
+    "IGO Ltd.",
+    "Talison Lithium Australia Pty Ltd",
+    "Tianqi Lithium Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.322333Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:11:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/829/Greenbushes-Mine.aspx. The Greenbushes lithium mine is located directly south and adjacent to the town of Greenbushes"
   },
   "canonical_name": "Greenbushes Mine",
   "canonical_slug": "greenbushes-mine",
@@ -64,5 +69,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:11:25.000000Z",
+      "operators": [
+        "Talison Lithium Australia Pty Ltd"
+      ],
+      "owners": [
+        "Tianqi Lithium Corporation",
+        "Albemarle Corporation",
+        "IGO Ltd."
+      ],
+      "notes": "Talison Lithium Australia is 51% owned by Tianqi Lithium Energy Australia Pty Ltd, which is a joint venture with IGO (49%) and Albemarle Corp. (49%)."
+    }
+  }
 }

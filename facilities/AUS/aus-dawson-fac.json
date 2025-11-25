@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -24.626,
-    "lon": 150.052,
+    "lat": -24.0,
+    "lon": 150.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc.",
+    "BUMA International",
+    "Mitsui & Co., Ltd.",
+    "Peabody Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.266529Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-11-25T11:56:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/382/Dawson-Mine.aspx. Dawson is located in the Bowen Basin, Central Queensland, recognized as one of Australia's longest-established coal mines"
   },
   "canonical_name": "Dawson Mine",
   "canonical_slug": "dawson-mine",
@@ -51,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:56:13.000000Z",
+      "operators": [
+        "Anglo American plc."
+      ],
+      "owners": [
+        "Mitsui & Co., Ltd.",
+        "Anglo American plc.",
+        "Peabody Energy Corporation",
+        "BUMA International"
+      ],
+      "notes": "Dawson mine is a joint operation between Anglo American and Mitsui Moura Investment Pty Ltd, with Peabody Energy Corporation acquiring a stake."
+    }
+  }
 }

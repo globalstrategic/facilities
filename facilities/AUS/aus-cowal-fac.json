@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.636,
-    "lon": 147.403,
+    "lat": -33.5,
+    "lon": 146.5,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Evolution Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.286331Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:38:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Evolution_Mining. The Cowal gold operation is an open-pit gold operation approximately 350 km west of Sydney"
   },
   "canonical_name": "Cowal Mine",
   "canonical_slug": "cowal-mine",
@@ -56,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:38:11.000000Z",
+      "operators": [
+        "Evolution Mining Limited"
+      ],
+      "owners": [
+        "Evolution Mining Limited"
+      ],
+      "notes": "Evolution Mining is the operator and owner of the Cowal gold mine."
+    }
+  }
 }

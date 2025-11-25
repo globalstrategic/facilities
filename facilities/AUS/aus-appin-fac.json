@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -34.22,
-    "lon": 150.818,
+    "lat": -34.1,
+    "lon": 150.8,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Golden M NSW Pty Ltd",
+    "Illawarra Coal",
+    "South32"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.269506Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:15:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Appin_Coal_Mine. The Appin Mine is located approximately 37 kilometers northwest of Wollongong, NSW, Australia"
   },
   "canonical_name": "Appin Mine",
   "canonical_slug": "appin-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:15:57.000000Z",
+      "operators": [
+        "Illawarra Coal"
+      ],
+      "owners": [
+        "Golden M NSW Pty Ltd",
+        "South32"
+      ],
+      "notes": "Illawarra Coal is a subsidiary of South32, which was previously part of BHP."
+    }
+  }
 }

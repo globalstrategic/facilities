@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.78,
+    "lat": -30.7,
     "lon": 121.5,
     "precision": "site"
   },
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northern Star Resources",
+    "Saracen Mineral Holdings Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.248211Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:21:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Super_Pit_gold_mine. The Super Pit is located in Kalgoorlie, which is a well-known mining town in Western Australia"
   },
   "canonical_name": "Kcgm Mine",
   "canonical_slug": "kcgm-mine",
@@ -50,5 +53,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:21:27.000000Z",
+      "operators": [
+        "Northern Star Resources"
+      ],
+      "owners": [
+        "Northern Star Resources",
+        "Saracen Mineral Holdings Ltd"
+      ],
+      "notes": "The KCGM Operations became 100% Australian-owned in January 2020."
+    }
+  }
 }

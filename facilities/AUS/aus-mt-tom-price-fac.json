@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.765,
-    "lon": 117.77,
+    "lat": -22.766229,
+    "lon": 117.771934,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto Iron Ore",
+    "Rio Tinto Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.268702Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:40:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rio_Tinto_Mount_Tom_Price_(Hamersley)_Mine. Mount Tom Price is a significant iron ore mining operation located in the Pilbara region of Western Australia"
   },
   "canonical_name": "Mt Tom Price Mine",
   "canonical_slug": "mt-tom-price-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:40:16.000000Z",
+      "operators": [
+        "Rio Tinto Iron Ore"
+      ],
+      "owners": [
+        "Rio Tinto Ltd"
+      ],
+      "notes": "Rio Tinto owns and operates the Mount Tom Price mine."
+    }
+  }
 }

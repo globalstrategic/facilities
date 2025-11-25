@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.996,
-    "lon": 135.153,
+    "lat": -29.0,
+    "lon": 134.0,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Iron Pty Ltd",
+    "Peak Iron Mines Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.290513Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:48:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.peakiron.com/corporate-governance. The Buzzard Iron Ore Project is located 118 km south-southeast of Coober Pedy"
   },
   "canonical_name": "Peak Iron Buzzard Mine",
   "canonical_slug": "peak-iron-buzzard-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:48:31.000000Z",
+      "operators": [
+        "Central Iron Pty Ltd"
+      ],
+      "owners": [
+        "Peak Iron Mines Pty Ltd"
+      ],
+      "notes": "Central Iron is a wholly owned subsidiary of Peak Iron Mines."
+    }
+  }
 }

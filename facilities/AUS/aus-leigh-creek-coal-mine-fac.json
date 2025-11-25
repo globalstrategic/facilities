@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.481,
-    "lon": 138.409,
+    "lat": -30.0,
+    "lon": 138.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alinta Energy",
+    "Flinders Power Partnership"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.240847Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:25:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://energymining.sa.gov.au/industry/minerals-and-mining/mining/former-mines/leigh-creek-coal-mine. The Leigh Creek Coal Mine is located approximately 15 km north of the Leigh Creek township"
   },
   "canonical_name": "Leigh Creek Coal Mine",
   "canonical_slug": "leigh-creek-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:25:16.000000Z",
+      "operators": [
+        "Flinders Power Partnership"
+      ],
+      "owners": [
+        "Alinta Energy"
+      ],
+      "notes": "The mine was operated by Flinders Power Partnership, a subsidiary of Alinta Energy, which announced the closure of the mine in 2015."
+    }
+  }
 }

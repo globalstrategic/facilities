@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.946,
-    "lon": 148.099,
+    "lat": -32.91052,
+    "lon": 148.03722,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Evolution Mining",
+    "Evolution Mining (Northparkes) Pty Ltd",
+    "Sumitomo Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.266679Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:09:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Northparkes. Northparkes Mine is a copper and gold mine located near Goonumbla, approximately 27 km north-west of Parkes"
   },
   "canonical_name": "Goonumbla Northparkes Mine",
   "canonical_slug": "goonumbla-northparkes-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:09:42.000000Z",
+      "operators": [
+        "Evolution Mining (Northparkes) Pty Ltd"
+      ],
+      "owners": [
+        "Evolution Mining",
+        "Sumitomo Group"
+      ],
+      "notes": "Evolution Mining acquired an 80% interest in Northparkes in December 2023, entering into a joint venture with Sumitomo Group, which holds the remaining 20%."
+    }
+  }
 }

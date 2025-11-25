@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NRR Mining Pty Ltd",
+    "Nathan River Resources Pty Ltd",
+    "QBE Insurance Group Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.261499Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:42:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nathan_River_Roper_Bar_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Nathan River Roper Bar Mine",
   "canonical_slug": "nathan-river-roper-bar-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:42:43.000000Z",
+      "operators": [
+        "NRR Mining Pty Ltd"
+      ],
+      "owners": [
+        "Nathan River Resources Pty Ltd",
+        "QBE Insurance Group Ltd"
+      ],
+      "notes": "Nathan River Resources owns the Roper Bar iron ore project, with NRR Mining as the authorized operator."
+    }
+  }
 }

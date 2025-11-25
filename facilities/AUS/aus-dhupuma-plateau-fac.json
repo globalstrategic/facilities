@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -12.33,
+    "lat": -12.5,
     "lon": 136.8,
     "precision": "site"
   },
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gulkula Mining Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.272998Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:57:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://resourcingtheterritory.nt.gov.au/minerals/mineral-commodities/bauxite. The Dhupuma Plateau is located approximately 30 km south of Nhulunbuy in the Northern Territory, Australia"
   },
   "canonical_name": "Dhupuma Plateau Mine",
   "canonical_slug": "dhupuma-plateau-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:57:04.000000Z",
+      "operators": [
+        "Gulkula Mining Pty Ltd"
+      ],
+      "owners": [
+        "Gulkula Mining Pty Ltd"
+      ],
+      "notes": "Gulkula Mining Pty Ltd is an Aboriginal-owned company operating the mine on traditional Yolngu land."
+    }
+  }
 }

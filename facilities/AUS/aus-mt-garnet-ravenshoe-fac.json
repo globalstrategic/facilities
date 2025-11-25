@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -17.647,
-    "lon": 145.132,
+    "lat": -17.5,
+    "lon": 145.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurora Metals Limited",
+    "CSD",
+    "Kagara Limited",
+    "Snow Peak Mining Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.248355Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:38:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/2025-05-14/ralph-de-lacey-fights-environmental-breaches-aurora-metals/105291866. The Mt Garnet mine is located approximately 170 km south-west of Cairns, Queensland"
   },
   "canonical_name": "Mt Garnet/ravenshoe Mine",
   "canonical_slug": "mt-garnet-ravenshoe-mine",
@@ -55,5 +60,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:38:16.000000Z",
+      "operators": [
+        "Aurora Metals Limited"
+      ],
+      "owners": [
+        "CSD",
+        "Kagara Limited",
+        "Snow Peak Mining Pty Ltd"
+      ],
+      "notes": "Aurora Metals Limited was the most recent operator before the site was put into care and maintenance. CSD purchased the project from SPM in 2016."
+    }
+  }
 }

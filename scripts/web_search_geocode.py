@@ -54,9 +54,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 try:
     import requests
+    from requests.exceptions import HTTPError, RequestException, Timeout
     HAS_REQUESTS = True
 except ImportError:
     HAS_REQUESTS = False
+    HTTPError = RequestException = Timeout = Exception
 
 try:
     from openai import OpenAI
@@ -72,7 +74,14 @@ except ImportError:
     HAS_GEOPY = False
 
 
-def tavily_search(query: str, api_key: str) -> List[Dict]:
+def _should_retry(status_code: Optional[int]) -> bool:
+    """Return True if status indicates a transient issue."""
+    if status_code is None:
+        return False
+    return status_code in {408, 420, 429, 430, 431, 432, 499, 500, 502, 503, 504}
+
+
+def tavily_search(query: str, api_key: str, retries: int = 3) -> List[Dict]:
     """Search using Tavily API - great for technical content."""
     url = "https://api.tavily.com/search"
     payload = {
@@ -84,17 +93,32 @@ def tavily_search(query: str, api_key: str) -> List[Dict]:
         "max_results": 10,
     }
 
-    try:
-        response = requests.post(url, json=payload, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        return data.get("results", [])
-    except Exception as e:
-        print(f"  Tavily search error: {e}")
-        return []
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.post(url, json=payload, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            return data.get("results", [])
+        except HTTPError as e:
+            status = e.response.status_code if e.response else None
+            if _should_retry(status):
+                wait = min(60, attempt * 5)
+                print(f"  Tavily rate limit ({status}). Retrying in {wait}s...")
+                time.sleep(wait)
+                continue
+            print(f"  Tavily search error ({status}): {e}")
+            break
+        except (Timeout, RequestException) as e:
+            wait = min(60, attempt * 5)
+            print(f"  Tavily network issue: {e}. Retrying in {wait}s...")
+            time.sleep(wait)
+        except Exception as e:
+            print(f"  Tavily search error: {e}")
+            break
+    return []
 
 
-def brave_search(query: str, api_key: str) -> List[Dict]:
+def brave_search(query: str, api_key: str, retries: int = 3) -> List[Dict]:
     """Search using Brave Search API."""
     url = "https://api.search.brave.com/res/v1/web/search"
     headers = {
@@ -106,21 +130,36 @@ def brave_search(query: str, api_key: str) -> List[Dict]:
         "count": 10
     }
 
-    try:
-        response = requests.get(url, headers=headers, params=params, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        results = []
-        for item in data.get("web", {}).get("results", []):
-            results.append({
-                "title": item.get("title", ""),
-                "url": item.get("url", ""),
-                "content": item.get("description", "")
-            })
-        return results
-    except Exception as e:
-        print(f"  Brave search error: {e}")
-        return []
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            results = []
+            for item in data.get("web", {}).get("results", []):
+                results.append({
+                    "title": item.get("title", ""),
+                    "url": item.get("url", ""),
+                    "content": item.get("description", "")
+                })
+            return results
+        except HTTPError as e:
+            status = e.response.status_code if e.response else None
+            if _should_retry(status):
+                wait = min(60, attempt * 5)
+                print(f"  Brave rate limit ({status}). Retrying in {wait}s...")
+                time.sleep(wait)
+                continue
+            print(f"  Brave search error ({status}): {e}")
+            break
+        except (Timeout, RequestException) as e:
+            wait = min(60, attempt * 5)
+            print(f"  Brave network issue: {e}. Retrying in {wait}s...")
+            time.sleep(wait)
+        except Exception as e:
+            print(f"  Brave search error: {e}")
+            break
+    return []
 
 
 def extract_coordinates_with_llm(

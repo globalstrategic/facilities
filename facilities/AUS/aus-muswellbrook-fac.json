@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.246,
-    "lon": 150.941,
+    "lat": -32.25,
+    "lon": 150.9,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Idemitsu Australia Resources Pty Ltd",
+    "Idemitsu Kosan Co Ltd",
+    "Muswellbrook Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.263356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:41:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Muswellbrook_No._2_Coal_Mine. The Muswellbrook No. 2 coal mine is located near Muswellbrook in Central New South Wales, Australia"
   },
   "canonical_name": "Muswellbrook Mine",
   "canonical_slug": "muswellbrook-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:41:57.000000Z",
+      "operators": [
+        "Muswellbrook Coal Company"
+      ],
+      "owners": [
+        "Idemitsu Australia Resources Pty Ltd",
+        "Idemitsu Kosan Co Ltd"
+      ],
+      "notes": "Muswellbrook Coal Company is a subsidiary of Idemitsu Australia Resources, which is fully owned by Idemitsu Kosan Co Ltd."
+    }
+  }
 }

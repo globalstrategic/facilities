@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.875,
-    "lon": 120.102,
+    "lat": -20.5,
+    "lon": 120.1,
     "precision": "site"
   },
   "types": [
@@ -37,7 +37,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Millennium Minerals Limited",
+    "Novo Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -47,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.305037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:20:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.woodmac.com/reports/metals-beatons-creek-gold-mine-project-506362/. The Beatons Creek Project is located approximately 10 km south of Nullagine in the Pilbara region"
   },
   "canonical_name": "Beatons Creek Mine",
   "canonical_slug": "beatons-creek-mine",
@@ -66,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:20:50.000000Z",
+      "operators": [
+        "Novo Resources Corp."
+      ],
+      "owners": [
+        "Novo Resources Corp.",
+        "Millennium Minerals Limited"
+      ],
+      "notes": "Novo Resources holds a 100% interest in the core of the Beatons Creek project, while Millennium Minerals was involved in the establishment of the project."
+    }
+  }
 }

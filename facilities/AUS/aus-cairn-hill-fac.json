@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.298,
-    "lon": 135.119,
+    "lat": -29.2976284,
+    "lon": 135.117412,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cu-River Mining",
+    "Cu-River Mining Australia Pty Ltd",
+    "IMX Resources",
+    "Sichuan Taifeng"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.251482Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:29:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cairn_Hill_mine. Cairn Hill mine is an iron ore mine located 55 km south-east of Coober Pedy"
   },
   "canonical_name": "Cairn Hill Mine",
   "canonical_slug": "cairn-hill-mine",
@@ -60,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:44.000000Z",
+      "operators": [
+        "Cu-River Mining"
+      ],
+      "owners": [
+        "IMX Resources",
+        "Sichuan Taifeng",
+        "Cu-River Mining Australia Pty Ltd"
+      ],
+      "notes": "Cairn Hill was previously operated by IMX Resources and is now operated by Cu-River Mining."
+    }
+  }
 }

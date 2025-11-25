@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.246,
-    "lon": 121.449,
+    "lat": -30.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Maximus Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.276756Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T13:00:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.miningweekly.com/article/maximus-takes-full-ownership-of-spargoville-tenements-2016-02-19. Spargoville is a gold project located 70 km south of Kalgoorlie"
   },
   "canonical_name": "Spargoville Mine",
   "canonical_slug": "spargoville-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:00:14.000000Z",
+      "operators": [
+        "Maximus Resources Ltd"
+      ],
+      "owners": [
+        "Maximus Resources Ltd"
+      ],
+      "notes": "Maximus Resources has full ownership and control of the Spargoville gold project."
+    }
+  }
 }

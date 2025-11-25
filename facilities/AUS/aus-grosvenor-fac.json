@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.973,
-    "lon": 148.014,
+    "lat": -21.97420531,
+    "lon": 148.01061967,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Anglo Coal Australia",
+    "JFE Mineral Co. Ltd",
+    "Mitsui & Co. Ltd",
+    "Nippon Steel",
+    "Nippon Steel Trading Corporation",
+    "Shinsho Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.238807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:12:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Grosvenor_Coal_Mine. The Grosvenor coal mine is an underground coal mine located near Moranbah in Queensland, Australia"
   },
   "canonical_name": "Grosvenor Mine",
   "canonical_slug": "grosvenor-mine",
@@ -52,5 +60,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:12:07.000000Z",
+      "operators": [
+        "Anglo Coal Australia"
+      ],
+      "owners": [
+        "Anglo American",
+        "Nippon Steel",
+        "Mitsui & Co. Ltd",
+        "Nippon Steel Trading Corporation",
+        "Shinsho Corporation",
+        "JFE Mineral Co. Ltd"
+      ],
+      "notes": "Anglo American operates the mine and holds the majority ownership."
+    }
+  }
 }

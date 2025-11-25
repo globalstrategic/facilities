@@ -10,8 +10,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.13,
-    "lon": 123.749,
+    "lat": -16.1275,
+    "lon": 123.7402,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mount Gibson Iron Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.295911Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:23:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mt_Gibson_Iron_Koolan_Island_Mine. Koolan Island is located in the Buccaneer Archipelago, approximately 140 km north of Derby"
   },
   "canonical_name": "Koolan Island Mine",
   "canonical_slug": "koolan-island-mine",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:23:31.000000Z",
+      "operators": [
+        "Mount Gibson Iron Ltd"
+      ],
+      "owners": [
+        "Mount Gibson Iron Ltd"
+      ],
+      "notes": "Mount Gibson Iron acquired the Koolan Island mine through the takeover of Aztec Resources Ltd in 2007."
+    }
+  }
 }

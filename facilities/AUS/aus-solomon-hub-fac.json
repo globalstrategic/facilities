@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.125,
-    "lon": 117.872,
+    "lat": -22.1287,
+    "lon": 117.7695,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fortescue Metals Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.279660Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:59:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/solomon-hub-iron-ore-mine-western-australia/. The Solomon Hub is an open-cut iron ore mine located approximately 60 km north of Tom Price in the Pilbara region"
   },
   "canonical_name": "Solomon Hub Mine",
   "canonical_slug": "solomon-hub-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:59:18.000000Z",
+      "operators": [
+        "Fortescue Metals Group"
+      ],
+      "owners": [
+        "Fortescue Metals Group"
+      ],
+      "notes": "Fortescue Metals Group is the sole owner and operator of the Solomon Hub."
+    }
+  }
 }

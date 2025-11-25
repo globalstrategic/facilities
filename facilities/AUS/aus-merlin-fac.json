@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.853,
-    "lon": 136.337,
+    "lat": -26.5,
+    "lon": 135.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Australian Natural Diamonds Pty Ltd",
+    "Lucapa Diamond Company Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.271445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:29:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/105329966. The Merlin diamond mine is located 720 kilometers southeast of Darwin, Northern Territory"
   },
   "canonical_name": "Merlin Mine",
   "canonical_slug": "merlin-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:29:40.000000Z",
+      "operators": [
+        "Lucapa Diamond Company Ltd",
+        "Australian Natural Diamonds Pty Ltd"
+      ],
+      "owners": [
+        "Lucapa Diamond Company Ltd"
+      ],
+      "notes": "Lucapa Diamond Company acquired the mine in 2021 and operates it through its subsidiary."
+    }
+  }
 }

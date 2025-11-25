@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.925,
-    "lon": 118.647,
+    "lat": -26.5,
+    "lon": 117.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Australian Vanadium Limited",
+    "KOP Ventures Pty Ltd",
+    "Technology Metals Australia Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.298340Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:05:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.epa.wa.gov.au/sites/default/files/Referral_Documentation/Supporting%20Information%20%20Part%20A.pdf. The Gabanintha Vanadium Project is located approximately 40km southeast of Meekatharra"
   },
   "canonical_name": "Gabanintha Mine",
   "canonical_slug": "gabanintha-mine",
@@ -51,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:05:20.000000Z",
+      "operators": [
+        "Technology Metals Australia Ltd",
+        "Australian Vanadium Limited"
+      ],
+      "owners": [
+        "Technology Metals Australia Ltd",
+        "KOP Ventures Pty Ltd",
+        "Australian Vanadium Limited"
+      ],
+      "notes": "Technology Metals Australia Ltd is the proponent for the Gabanintha Vanadium Project, while Australian Vanadium Limited has also been involved in the project."
+    }
+  }
 }

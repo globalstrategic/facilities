@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.563,
-    "lon": 150.118,
+    "lat": -30.0,
+    "lon": 149.0,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Itochu Corporation",
+    "J-Power Australia Pty Ltd",
+    "Whitehaven Coal Limited",
+    "Whitehaven Coal Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.237966Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:28:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://whitehavencoal.com.au/our-business/our-assets/maules-creek-mine/. Maules Creek Mine is located approximately 45 km southeast of Narrabri"
   },
   "canonical_name": "Maules Creek Mine",
   "canonical_slug": "maules-creek-mine",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:28:52.000000Z",
+      "operators": [
+        "Whitehaven Coal Pty Ltd"
+      ],
+      "owners": [
+        "Whitehaven Coal Limited",
+        "Itochu Corporation",
+        "J-Power Australia Pty Ltd"
+      ],
+      "notes": "Whitehaven Coal operates the mine with a 75% interest, while Itochu holds 15% and J-Power holds 10%."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.624,
-    "lon": 148.198,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bowen Coking Coal Ltd",
+    "Peabody Energy Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.287360Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:29:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.miningweekly.com/article/bowen-to-assume-owner-operator-role-at-burton-mine-complex-2025-06-11. The Burton Mine Complex is located in the Bowen Basin of Queensland, north of Moranbah"
   },
   "canonical_name": "Burton Mine",
   "canonical_slug": "burton-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:16.000000Z",
+      "operators": [
+        "Bowen Coking Coal Ltd"
+      ],
+      "owners": [
+        "Bowen Coking Coal Ltd",
+        "Peabody Energy Australia"
+      ],
+      "notes": "Bowen Coking Coal is transitioning to an owner-operator model for the Burton Mine Complex."
+    }
+  }
 }

@@ -11,8 +11,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.978,
-    "lon": 148.128,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Stanmore Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.234320Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:17:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://mqworld.com/2020/08/20/isaac-downs-isaac-plains-coal-projects/. Isaac Plains is located in the Bowen Basin region of Queensland, Australia, near Moranbah"
   },
   "canonical_name": "Isaac Plains Mine",
   "canonical_slug": "isaac-plains-mine",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:17:58.000000Z",
+      "operators": [
+        "Stanmore Resources Ltd"
+      ],
+      "owners": [
+        "Stanmore Resources Ltd"
+      ],
+      "notes": "Stanmore Resources Ltd owns and operates the Isaac Plains Complex."
+    }
+  }
 }

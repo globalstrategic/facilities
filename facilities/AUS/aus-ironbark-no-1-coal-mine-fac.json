@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.976,
-    "lon": 148.235,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMCI",
+    "Fitzroy Australia Resources",
+    "Fitzroy Mining Operations",
+    "Peabody Energy Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.305212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:17:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ironbark_No._1_Coal_Mine. The Ironbark No. 1 Coal Mine is located approximately 30 kilometers northeast of Moranbah"
   },
   "canonical_name": "Ironbark No 1 Coal Mine",
   "canonical_slug": "ironbark-no-1-coal-mine",
@@ -55,5 +60,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:17:37.000000Z",
+      "operators": [
+        "Fitzroy Mining Operations"
+      ],
+      "owners": [
+        "Fitzroy Australia Resources",
+        "Peabody Energy Australia",
+        "AMCI"
+      ],
+      "notes": "Fitzroy Australia Resources is the owner and operator of the mine, with Peabody Energy Australia owning the land underlying the mine."
+    }
+  }
 }

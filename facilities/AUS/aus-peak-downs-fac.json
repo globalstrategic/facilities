@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.255,
-    "lon": 148.185,
+    "lat": -22.25444,
+    "lon": 148.18056,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton",
+    "BHP Mitsubishi Alliance",
+    "Mitsubishi Development"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.233729Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:48:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Peak_Downs_Mine. Peak Downs Mine is a large open cut coking coal mine located in the Bowen Basin"
   },
   "canonical_name": "Peak Downs Mine",
   "canonical_slug": "peak-downs-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:48:11.000000Z",
+      "operators": [
+        "BHP Mitsubishi Alliance"
+      ],
+      "owners": [
+        "BHP Billiton",
+        "Mitsubishi Development"
+      ],
+      "notes": "The mine is operated by BHP Mitsubishi Alliance, a joint venture between BHP Billiton and Mitsubishi Development."
+    }
+  }
 }

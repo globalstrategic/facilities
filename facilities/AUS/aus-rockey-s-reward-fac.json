@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.013,
-    "lon": 119.999,
+    "lat": -28.0,
+    "lon": 120.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Nickel West",
+    "Thiess Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.324226Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:55:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.australianmining.com.au/thiess-awarded-225m-contract-bhp-rockys-reward/. The Rocky's Reward mine is located within the Nickel West’s Leinster mine complex"
   },
   "canonical_name": "Rockey's Reward Mine",
   "canonical_slug": "rockey-s-reward-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:55:52.000000Z",
+      "operators": [
+        "Thiess Pty Ltd"
+      ],
+      "owners": [
+        "BHP Nickel West"
+      ],
+      "notes": "Thiess is contracted to provide mining services for BHP Nickel West at the Rocky's Reward mine."
+    }
+  }
 }

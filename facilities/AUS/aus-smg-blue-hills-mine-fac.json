@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.14,
-    "lon": 116.867,
+    "lat": -28.0,
+    "lon": 115.0,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sinosteel Corporation",
+    "Sinosteel Midwest Corporation Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.333137Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:58:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://smcl.com.au/projects/blue-hills-dso-hematite/. The Blue Hills (Mungada) Mine is located approximately 65 km northeast of Perenjori"
   },
   "canonical_name": "SMG Blue Hills Mine",
   "canonical_slug": "smg-blue-hills-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:58:59.000000Z",
+      "operators": [
+        "Sinosteel Midwest Corporation Limited"
+      ],
+      "owners": [
+        "Sinosteel Corporation"
+      ],
+      "notes": "Sinosteel Midwest Corporation Limited operates the mine, which is owned by Sinosteel Corporation."
+    }
+  }
 }

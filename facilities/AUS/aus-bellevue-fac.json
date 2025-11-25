@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -27.641,
-    "lon": 120.555,
+    "lat": -28.5,
+    "lon": 120.5,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bellevue Gold Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.244335Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:21:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nz.finance.yahoo.com/quote/BGL.AX/profile/. The Bellevue gold project is located to the north-west of Leinster in the Goldfields region of Western Australia"
   },
   "canonical_name": "Bellevue Mine",
   "canonical_slug": "bellevue-mine",
@@ -59,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:21:20.000000Z",
+      "operators": [
+        "Bellevue Gold Limited"
+      ],
+      "owners": [
+        "Bellevue Gold Limited"
+      ],
+      "notes": "Bellevue Gold Limited is the primary company involved in the exploration, development, and mining of the Bellevue gold project."
+    }
+  }
 }

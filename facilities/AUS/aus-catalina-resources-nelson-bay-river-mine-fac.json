@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.154,
-    "lon": 144.744,
+    "lat": -41.155347,
+    "lon": 144.746017,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Catalina Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.246634Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:32:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Catalina_Resources_Nelson_Bay_River_Mine. The Catalina Resources Nelson Bay River Mine is located in Circular Head, Tasmania, Australia"
   },
   "canonical_name": "Catalina Resources Nelson Bay River Mine",
   "canonical_slug": "catalina-resources-nelson-bay-river-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:32:21.000000Z",
+      "operators": [
+        "Catalina Resources Ltd"
+      ],
+      "owners": [
+        "Catalina Resources Ltd"
+      ],
+      "notes": "Catalina Resources Ltd is the owner and operator of the Nelson Bay River Mine."
+    }
+  }
 }

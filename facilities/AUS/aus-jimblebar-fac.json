@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.37,
-    "lon": 120.056,
+    "lat": -23.4,
+    "lon": 119.8,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Iron Ore Pty Ltd",
+    "ITOCHU Minerals & Energy of Australia Pty Ltd",
+    "Mitsui-Itochu Iron Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.253729Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:19:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Jimblebar_mine. The Jimblebar mine is located in the Pilbara region, specifically 41 km east of Newman"
   },
   "canonical_name": "Jimblebar Mine",
   "canonical_slug": "jimblebar-mine",
@@ -53,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:19:25.000000Z",
+      "operators": [
+        "BHP Billiton Iron Ore Pty Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Iron Ore Pty Ltd",
+        "Mitsui-Itochu Iron Pty Ltd",
+        "ITOCHU Minerals & Energy of Australia Pty Ltd"
+      ],
+      "notes": "BHP is the primary operator and owner, with Mitsui and ITOCHU as joint venture partners."
+    }
+  }
 }

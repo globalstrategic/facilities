@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.049,
-    "lon": 117.237,
+    "lat": -26.0523,
+    "lon": 117.2414,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Crosslands Resources Pty Ltd",
+    "Sinosteel Corp Ltd",
+    "Sinosteel Midwest Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.284440Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:59:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SMG_Jack_Hills_Mine. The SMG Jack Hills Mine is an iron ore mine that has been mothballed"
   },
   "canonical_name": "SMG Jack Hills Mine",
   "canonical_slug": "smg-jack-hills-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:59:08.000000Z",
+      "operators": [
+        "Sinosteel Midwest Corp Ltd"
+      ],
+      "owners": [
+        "Sinosteel Corp Ltd",
+        "Crosslands Resources Pty Ltd"
+      ],
+      "notes": "Sinosteel Midwest Corp Ltd operates the mine, which is owned by Sinosteel Corp Ltd and Crosslands Resources Pty Ltd."
+    }
+  }
 }

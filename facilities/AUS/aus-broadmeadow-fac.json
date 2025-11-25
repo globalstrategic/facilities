@@ -11,8 +11,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.812,
-    "lon": 147.975,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "B.M Alliance Coal Operations Pty Ltd",
+    "BHP Billiton Ltd",
+    "BHP Billiton Mitsubishi Alliance",
+    "Mitsubishi"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.298630Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:28:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Broadmeadow_Coal_Mine. Broadmeadow coal mine is located in Queensland's Bowen Basin, approximately 34 kilometers north of Moranbah"
   },
   "canonical_name": "Broadmeadow Mine",
   "canonical_slug": "broadmeadow-mine",
@@ -54,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:28:15.000000Z",
+      "operators": [
+        "B.M Alliance Coal Operations Pty Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Mitsubishi Alliance",
+        "BHP Billiton Ltd",
+        "Mitsubishi"
+      ],
+      "notes": "Broadmeadow is operated by B.M Alliance Coal Operations Pty Ltd, which is a joint venture between BHP Billiton Ltd and Mitsubishi."
+    }
+  }
 }

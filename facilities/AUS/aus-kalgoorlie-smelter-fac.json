@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.874,
-    "lon": 121.485,
+    "lat": -28.7,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Nickel West"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.261884Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:20:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mininglink.com.au/mine-details/kalgoorlie-nickel-smelter. The Kalgoorlie Nickel Smelter is located 20 kilometers south of Kalgoorlie"
   },
   "canonical_name": "Kalgoorlie Smelter",
   "canonical_slug": "kalgoorlie-smelter",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:20:18.000000Z",
+      "operators": [
+        "BHP Billiton Nickel West"
+      ],
+      "owners": [
+        "BHP Billiton Nickel West"
+      ],
+      "notes": "The smelter is fully owned by BHP Billiton Nickel West."
+    }
+  }
 }

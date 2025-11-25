@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.858,
-    "lon": 148.429,
+    "lat": -21.85833,
+    "lon": 148.44167,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CITIC Resources",
+    "Macarthur Coal",
+    "Marubeni Corporation",
+    "Nippon Steel",
+    "Peabody Energy",
+    "Sojitz Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.302410Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:37:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Coppabella_coal_mine. Coppabella Coal Mine is an operating metallurgical open cut mine located in central Queensland, Australia"
   },
   "canonical_name": "Coppabella Mine",
   "canonical_slug": "coppabella-mine",
@@ -52,5 +59,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:37:19.000000Z",
+      "operators": [
+        "Peabody Energy"
+      ],
+      "owners": [
+        "Peabody Energy",
+        "Macarthur Coal",
+        "CITIC Resources",
+        "Marubeni Corporation",
+        "Sojitz Corporation",
+        "Nippon Steel"
+      ],
+      "notes": "Peabody Energy is the majority owner of the mine, which is operated as a joint venture."
+    }
+  }
 }

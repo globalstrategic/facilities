@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.879,
-    "lon": 147.961,
+    "lat": -21.97806,
+    "lon": 148.00667,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Australia",
+    "Joint venture partners (not specified)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.233252Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:33:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Moranbah_North_coal_mine. The Moranbah North Coal Mine is a significant coal mining operation located in the Bowen Basin"
   },
   "canonical_name": "Moranbah Mine",
   "canonical_slug": "moranbah-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:33:40.000000Z",
+      "operators": [
+        "Anglo American Australia"
+      ],
+      "owners": [
+        "Anglo American Australia",
+        "Joint venture partners (not specified)"
+      ],
+      "notes": "Anglo American owns 88% of the Moranbah North Coal Mine, with the remaining 12% held by a consortium of Japanese partners."
+    }
+  }
 }

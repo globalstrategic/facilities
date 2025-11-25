@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.295,
-    "lon": 150.703,
+    "lat": -32.25,
+    "lon": 150.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore PLC",
+    "Mangoola Coal Operations Pty Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.262204Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:28:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mangoola_Coal_Mine. The Mangoola Coal Mine is located near Wybong in the Upper Hunter Valley, approximately 20 km west of Muswellbrook"
   },
   "canonical_name": "Mangoola Mine",
   "canonical_slug": "mangoola-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:28:11.000000Z",
+      "operators": [
+        "Mangoola Coal Operations Pty Limited"
+      ],
+      "owners": [
+        "Glencore PLC"
+      ],
+      "notes": "Mangoola Coal Operations is a subsidiary of Glencore."
+    }
+  }
 }

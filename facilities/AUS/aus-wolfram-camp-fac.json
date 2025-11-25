@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -17.085,
-    "lon": 144.97,
+    "lat": -16.5,
+    "lon": 145.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Almonty Industries Inc.",
+    "Wolfram Camp Mining Pty"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.234478Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T14:19:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/747/Wolfram-Camp-Mine.aspx. Wolfram Camp is a tungsten mine located approximately 1.5 hours west of Cairns"
   },
   "canonical_name": "Wolfram Camp Mine",
   "canonical_slug": "wolfram-camp-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:19:32.000000Z",
+      "operators": [
+        "Wolfram Camp Mining Pty",
+        "Almonty Industries Inc."
+      ],
+      "owners": [
+        "Almonty Industries Inc."
+      ],
+      "notes": "Wolfram Camp Mining Pty is fully owned by Almonty Industries."
+    }
+  }
 }

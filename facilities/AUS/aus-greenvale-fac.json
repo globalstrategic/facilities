@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -18.914,
-    "lon": 144.982,
+    "lat": -23.5,
+    "lon": 133.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Greenvale Energy Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.272453Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:11:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/greenvale-energy-acquires-interest/. Greenvale Energy has acquired an 80% interest in the Henbury Uranium Project, located 120km south-west of Alice Springs"
   },
   "canonical_name": "Greenvale Mine",
   "canonical_slug": "greenvale-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:11:35.000000Z",
+      "operators": [
+        "Greenvale Energy Limited"
+      ],
+      "owners": [
+        "Greenvale Energy Limited"
+      ],
+      "notes": "Greenvale Energy Limited is the primary company involved in the acquisition and operation of the Henbury Uranium Project."
+    }
+  }
 }

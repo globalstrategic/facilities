@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.513,
-    "lon": 119.499,
+    "lat": -23.5,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aust-Pac Capital Pty Ltd",
+    "Bounty Mining Investments Pty Ltd",
+    "Bounty Mining Ltd",
+    "QCoal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.267979Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:27:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.afr.com/companies/mining/bounty-pushed-to-the-brink-by-cook-20190923-p52u3j. Bounty Mining operates in the Bowen Basin, which is near Emerald, Queensland"
   },
   "canonical_name": "Bounty Mine",
   "canonical_slug": "bounty-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:27:10.000000Z",
+      "operators": [
+        "Bounty Mining Ltd"
+      ],
+      "owners": [
+        "Bounty Mining Investments Pty Ltd",
+        "Aust-Pac Capital Pty Ltd",
+        "QCoal Group"
+      ],
+      "notes": "Bounty Mining Ltd is the operator, while ownership has changed hands, including a recent acquisition by QCoal."
+    }
+  }
 }

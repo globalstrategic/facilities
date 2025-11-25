@@ -11,8 +11,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.171,
-    "lon": 138.01,
+    "lat": -33.1833,
+    "lon": 138.0167,
     "precision": "site"
   },
   "types": [
@@ -58,7 +58,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nyrstar",
+    "Nyrstar Australia",
+    "Trafigura Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -68,11 +72,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.275345Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:50:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nyrstar.com/operations/metals-processing/nyrstar-port-pirie. Nyrstar's Port Pirie facility has been in operation for over 130 years and is a significant lead and zinc processing site"
   },
   "canonical_name": "Port Pirie Smelter",
   "canonical_slug": "port-pirie-smelter",
@@ -87,5 +91,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:50:33.000000Z",
+      "operators": [
+        "Nyrstar Australia"
+      ],
+      "owners": [
+        "Nyrstar",
+        "Trafigura Group"
+      ],
+      "notes": "Nyrstar is the operator and owner of the Port Pirie smelter, with Trafigura as its parent company."
+    }
+  }
 }

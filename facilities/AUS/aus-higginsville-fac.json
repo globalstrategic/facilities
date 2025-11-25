@@ -13,8 +13,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.737,
-    "lon": 121.726,
+    "lat": -33.5,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -51,7 +51,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Karora Resources Inc.",
+    "Westgold Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -61,11 +64,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.257425Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:15:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Higginsville_Gold_Mine. The Higginsville Gold Mine is located near Higginsville, approximately 45 km north of Norseman"
   },
   "canonical_name": "Higginsville Mine",
   "canonical_slug": "higginsville-mine",
@@ -80,5 +83,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:15:19.000000Z",
+      "operators": [
+        "Westgold Resources Ltd",
+        "Karora Resources Inc."
+      ],
+      "owners": [
+        "Westgold Resources Ltd",
+        "Karora Resources Inc."
+      ],
+      "notes": "Westgold operates the mine and has merged with Karora Resources, which also owns a stake in the facility."
+    }
+  }
 }

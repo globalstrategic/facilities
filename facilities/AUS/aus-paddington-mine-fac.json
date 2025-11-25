@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.494,
-    "lon": 121.344,
+    "lat": -28.7,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Norton Gold Fields Pty Ltd",
+    "Zijin Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.258139Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:47:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://jobs.goldindustrygroup.com.au/companies/norton-gold-fields-pty-ltd/. Paddington Mine is located 35 km north of Kalgoorlie-Boulder in Western Australia"
   },
   "canonical_name": "Paddington Mine",
   "canonical_slug": "paddington-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:47:11.000000Z",
+      "operators": [
+        "Norton Gold Fields Pty Ltd"
+      ],
+      "owners": [
+        "Zijin Mining Group"
+      ],
+      "notes": "Norton Gold Fields is a wholly owned subsidiary of Zijin Mining Group."
+    }
+  }
 }

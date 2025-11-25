@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.291,
-    "lon": 146.272,
+    "lat": -20.1,
+    "lon": 146.3,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Newmont Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.286622Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:39:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ausimm.com/publications/conference-proceedings/sixth-international-conference-on-acid-rock-drainage-icard/laboratory-calibration-and-initial-results-of-a-soil-moisture-monitoring-system-at-the-mt-leyshon-tailings-dam-and-waste-rock-cover-system/. Mt Leyshon is an open cut gold mine operated by Newmont Australia"
   },
   "canonical_name": "Mt Leyshon Mine",
   "canonical_slug": "mt-leyshon-mine",
@@ -54,5 +56,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:39:03.000000Z",
+      "operators": [
+        "Newmont Australia"
+      ],
+      "owners": [],
+      "notes": "Newmont Australia is the operator of the Mt Leyshon mine."
+    }
+  }
 }

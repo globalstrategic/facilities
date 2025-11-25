@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.396,
-    "lon": 127.999,
+    "lat": -28.5,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mim Holdings Ltd",
+    "Seltrust Holdings Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.320284Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:03:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10231550. Teutonic Bore is located approximately 56km north of Leonora, Western Australia"
   },
   "canonical_name": "Teutonic Bore Mine",
   "canonical_slug": "teutonic-bore-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:03:56.000000Z",
+      "operators": [
+        "Mim Holdings Ltd",
+        "Seltrust Holdings Ltd"
+      ],
+      "owners": [
+        "Mim Holdings Ltd",
+        "Seltrust Holdings Ltd"
+      ],
+      "notes": "Both Mim Holdings Ltd and Seltrust Holdings Ltd are involved as owner-operators of the Teutonic Bore mine."
+    }
+  }
 }

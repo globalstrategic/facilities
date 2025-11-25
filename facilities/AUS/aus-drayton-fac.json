@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.351,
-    "lon": 150.905,
+    "lat": -32.0,
+    "lon": 150.0,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Plc",
+    "Anglo Coal (Drayton Management) Pty Ltd",
+    "Anglo Coal Australia (ACA)",
+    "Malabar Coal Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.256053Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:57:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.e-mj.com/features/australia-mining-technology/. Drayton Mine is located approximately 13 kilometers south of Muswellbrook in the Upper Hunter Valley"
   },
   "canonical_name": "Drayton Mine",
   "canonical_slug": "drayton-mine",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:57:23.000000Z",
+      "operators": [
+        "Anglo Coal Australia (ACA)",
+        "Malabar Coal Limited"
+      ],
+      "owners": [
+        "Anglo American Plc",
+        "Anglo Coal (Drayton Management) Pty Ltd"
+      ],
+      "notes": "Anglo Coal Australia is a division of Anglo American Plc, which has operations along the Australian East Coast coal fields."
+    }
+  }
 }

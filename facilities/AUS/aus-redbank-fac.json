@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -17.193,
-    "lon": 137.744,
+    "lat": -32.58,
+    "lon": 151.072,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Biogreen Energy Pty Ltd",
+    "Redbank Energy",
+    "Redbank Mines Limited",
+    "Verdant Technologies Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.263635Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:53:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Redbank_Power_Station. Coordinates are for the Redbank Power Station, which is associated with the Redbank Project"
   },
   "canonical_name": "Redbank Mine",
   "canonical_slug": "redbank-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:53:26.000000Z",
+      "operators": [
+        "Redbank Mines Limited",
+        "Biogreen Energy Pty Ltd"
+      ],
+      "owners": [
+        "Verdant Technologies Australia",
+        "Redbank Energy"
+      ],
+      "notes": "Redbank Mines Limited was the operator of the Redbank Project, and ownership has changed hands several times, with Biogreen Energy currently involved."
+    }
+  }
 }

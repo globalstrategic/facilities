@@ -14,8 +14,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.543,
-    "lon": 145.864,
+    "lat": -31.408,
+    "lon": 145.801,
     "precision": "site"
   },
   "types": [
@@ -40,7 +40,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc",
+    "Metals Acquisition Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -50,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.258952Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:43:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/CSA_Mine. The CSA Mine is a copper mine located near Cobar, New South Wales, owned by Metals Acquisition"
   },
   "canonical_name": "New Cobar Mine",
   "canonical_slug": "new-cobar-mine",
@@ -69,5 +72,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:43:26.000000Z",
+      "operators": [
+        "Metals Acquisition Corp."
+      ],
+      "owners": [
+        "Metals Acquisition Corp.",
+        "Glencore plc"
+      ],
+      "notes": "Metals Acquisition Corp. is the current owner and operator of the CSA Mine, having acquired it from Glencore."
+    }
+  }
 }

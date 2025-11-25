@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.569,
-    "lon": 116.349,
+    "lat": -22.567456,
+    "lon": 116.350237,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Miracle Iron Holdings Pty Ltd",
+    "Paulsens East Iron Ore Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.277325Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:48:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Paulsens_East_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "Paulsens East Mine",
   "canonical_slug": "paulsens-east-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:48:02.000000Z",
+      "operators": [
+        "Paulsens East Iron Ore Pty Ltd"
+      ],
+      "owners": [
+        "Miracle Iron Holdings Pty Ltd"
+      ],
+      "notes": "Paulsens East Iron Ore Pty Ltd is the operator, owned by Miracle Iron Holdings Pty Ltd."
+    }
+  }
 }

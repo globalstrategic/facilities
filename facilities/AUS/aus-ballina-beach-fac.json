@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.875,
-    "lon": 153.592,
+    "lat": -28.8833,
+    "lon": 153.5667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Australian Garnet Pty Ltd",
+    "Resource Development Group Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.241673Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:19:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ballina.nsw.gov.au/Environment/Environmental-Plans-and-Reports/Quarries/South-Ballina-Sand-Quarry. The South Ballina Sand Quarry is located at 260 South Ballina Beach Road, South Ballina"
   },
   "canonical_name": "Ballina Beach Mine",
   "canonical_slug": "ballina-beach-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:19:59.000000Z",
+      "operators": [
+        "Australian Garnet Pty Ltd"
+      ],
+      "owners": [
+        "Resource Development Group Ltd"
+      ],
+      "notes": "Australian Garnet Pty Ltd holds the mining licenses for the Lucky Bay Garnet Mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -13.985,
-    "lon": 136.447,
+    "lat": -13.5,
+    "lon": 136.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Plc",
+    "Groote Eylandt Mining Company Pty Ltd (GEMCO)",
+    "South32"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.288580Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:06:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/GEMCO. GEMCO operates on Groote Eylandt, which is part of the Arnhem Land Aboriginal Reserve"
   },
   "canonical_name": "Gemco Mine",
   "canonical_slug": "gemco-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:06:14.000000Z",
+      "operators": [
+        "Groote Eylandt Mining Company Pty Ltd (GEMCO)"
+      ],
+      "owners": [
+        "South32",
+        "Anglo American Plc"
+      ],
+      "notes": "GEMCO is majority owned by South32 (60%) and the remaining 40% is held by Anglo American Plc."
+    }
+  }
 }

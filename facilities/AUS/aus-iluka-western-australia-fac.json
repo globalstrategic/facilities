@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.75,
-    "lon": 115.537,
+    "lat": -28.0,
+    "lon": 115.0,
     "precision": "site"
   },
   "types": [
@@ -58,7 +58,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Iluka Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -68,11 +70,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.331908Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:16:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.iluka.com/operations-resource-development/operations/western-australia/. Iluka operates several facilities in Western Australia, including mineral processing operations in Narngulu and Capel"
   },
   "canonical_name": "Iluka Western Australia Mine",
   "canonical_slug": "iluka-western-australia-mine",
@@ -87,5 +89,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:16:56.000000Z",
+      "operators": [
+        "Iluka Resources Limited"
+      ],
+      "owners": [
+        "Iluka Resources Limited"
+      ],
+      "notes": "Iluka Resources Limited is the primary operator and owner of the facilities mentioned."
+    }
+  }
 }

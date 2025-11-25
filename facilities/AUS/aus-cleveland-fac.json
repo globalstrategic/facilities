@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.463,
-    "lon": 145.398,
+    "lat": -41.2,
+    "lon": 145.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elementos"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.335700Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:34:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.asx.com.au/asxpdf/20180926/pdf/43yn3lz29m2lmn.pdf. The Cleveland Project is located 80 km SW of Burnie and is 100% owned by Elementos"
   },
   "canonical_name": "Cleveland Mine",
   "canonical_slug": "cleveland-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:34:59.000000Z",
+      "operators": [],
+      "owners": [
+        "Elementos"
+      ],
+      "notes": "Elementos owns the Cleveland Project outright."
+    }
+  }
 }

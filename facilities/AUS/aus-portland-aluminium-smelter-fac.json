@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -38.385,
-    "lon": 141.632,
+    "lat": -38.3445,
+    "lon": 141.5881,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alcoa of Australia",
+    "CITIC",
+    "Marubeni Aluminium Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.310511Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:50:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.smh.com.au/business/companies/us-giant-alcoa-set-to-take-over-australian-partner-in-3-3b-deal-20240226-p5f7s8.html. The Portland Aluminium Smelter is located in Victoria, Australia, and is a significant facility for aluminium production"
   },
   "canonical_name": "Portland Aluminium Smelter",
   "canonical_slug": "portland-aluminium-smelter",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Victoria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:50:56.000000Z",
+      "operators": [
+        "Alcoa of Australia"
+      ],
+      "owners": [
+        "Alcoa of Australia",
+        "CITIC",
+        "Marubeni Aluminium Australia"
+      ],
+      "notes": "The smelter is a joint venture with Alcoa holding a 55% stake, CITIC 22.5%, and Marubeni Aluminium Australia 22.5%."
+    }
+  }
 }

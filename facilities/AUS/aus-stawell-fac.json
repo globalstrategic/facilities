@@ -144,8 +144,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -37.055,
-    "lon": 142.788,
+    "lat": -37.07,
+    "lon": 142.81,
     "precision": "site"
   },
   "types": [
@@ -158,7 +158,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arete Capital Partners",
+    "Crocodile Gold Corp.",
+    "Newmarket Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -168,11 +172,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.292929Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:01:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Stawell_Gold_Mine. The Stawell Gold Mine is a significant gold production facility located in Stawell, Victoria, Australia"
   },
   "canonical_name": "Stawell Mine",
   "canonical_slug": "stawell-mine",
@@ -187,5 +191,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Victoria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:01:34.000000Z",
+      "operators": [
+        "Crocodile Gold Corp.",
+        "Newmarket Gold Inc."
+      ],
+      "owners": [
+        "Arete Capital Partners"
+      ],
+      "notes": "Crocodile Gold obtained the mine in 2012, and it transitioned to Newmarket Gold Inc. in July 2015."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -18.733,
-    "lon": 138.617,
+    "lat": -18.5,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CRA Limited",
+    "MMG Limited",
+    "New Century Resources",
+    "Pasminco",
+    "Sibanye-Stillwater",
+    "Zinifex"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.249347Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:32:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Century_Mine. Century Mine was a large open cut zinc, lead and silver mine located at Lawn Hill, 250 km northwest of Mount Isa"
   },
   "canonical_name": "Century Mine",
   "canonical_slug": "century-mine",
@@ -63,5 +70,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:32:54.000000Z",
+      "operators": [
+        "New Century Resources",
+        "MMG Limited",
+        "Zinifex",
+        "Pasminco"
+      ],
+      "owners": [
+        "Sibanye-Stillwater",
+        "New Century Resources",
+        "CRA Limited"
+      ],
+      "notes": "The mine has changed ownership multiple times, with New Century Resources currently operating the tailings reprocessing."
+    }
+  }
 }

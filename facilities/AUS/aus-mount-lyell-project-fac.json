@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -42.062,
-    "lon": 145.583,
+    "lat": -42.0,
+    "lon": 145.9,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copper Mines of Tasmania Pty Ltd",
+    "New Century Resources Ltd",
+    "Sibanye Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.237525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:36:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.proactiveinvestors.com.au/companies/news/1003975/new-century-resources-considers-making-mt-lyell-restart-a-reality-following-pivotal-pfs-1003975.html. The Mt Lyell Project is located in Tasmania, Australia, near Queenstown"
   },
   "canonical_name": "Mount Lyell Mine",
   "canonical_slug": "mount-lyell-mine-2",
@@ -55,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:36:16.000000Z",
+      "operators": [
+        "Copper Mines of Tasmania Pty Ltd",
+        "New Century Resources Ltd",
+        "Sibanye Stillwater"
+      ],
+      "owners": [
+        "Sibanye Stillwater"
+      ],
+      "notes": "Sibanye Stillwater has acquired Copper Mines of Tasmania, which operates the Mt Lyell project."
+    }
+  }
 }

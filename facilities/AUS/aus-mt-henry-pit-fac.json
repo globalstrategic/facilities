@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.372,
-    "lon": 121.787,
+    "lat": -20.4476,
+    "lon": 140.7136,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metals X Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.295007Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:38:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ernest_Henry_mine. The Mt Henry Pit is part of the Higginsville Gold Operations, which is owned by Metals X Limited"
   },
   "canonical_name": "Mt Henry Mine",
   "canonical_slug": "mt-henry-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:38:37.000000Z",
+      "operators": [
+        "Metals X Limited"
+      ],
+      "owners": [
+        "Metals X Limited"
+      ],
+      "notes": "Metals X Limited is the owner and operator of the Mt Henry Gold Project."
+    }
+  }
 }

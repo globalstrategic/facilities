@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -12.538,
-    "lon": 141.832,
+    "lat": -12.678,
+    "lon": 141.733,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.332065Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:14:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/17/Weipa_Operations_SD_Report_2017.pdf. Andoom is one of the two existing beneficiation plants operated by Rio Tinto, located 15 kilometers north of Weipa"
   },
   "canonical_name": "Andoom Mine",
   "canonical_slug": "andoom-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:14:22.000000Z",
+      "operators": [
+        "Rio Tinto"
+      ],
+      "owners": [
+        "Rio Tinto"
+      ],
+      "notes": "Rio Tinto operates and owns the Andoom facility."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -38.615,
-    "lon": 146.349,
+    "lat": -28.0,
+    "lon": 122.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Great Southern Mining Limited",
+    "Regis Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.245831Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:11:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.smh.com.au/business/companies/great-southern-sells-mining-licence-in-9-million-wa-gold-belt-deal-20250721-p5mgmy.html. The Southern Star mining licence is located 3.5 kilometers south of the Ben Hur open pit, which is part of the Duketon Greenstone Belt"
   },
   "canonical_name": "Great Southern Co Mine",
   "canonical_slug": "great-southern-co-mine",
@@ -58,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:11:01.000000Z",
+      "operators": [
+        "Great Southern Mining Limited",
+        "Regis Resources"
+      ],
+      "owners": [
+        "Great Southern Mining Limited"
+      ],
+      "notes": "Great Southern Mining is involved in a strategic alliance with Regis Resources regarding the Southern Star mining licence."
+    }
+  }
 }

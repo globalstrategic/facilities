@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.781,
-    "lon": 148.477,
+    "lat": -21.5,
+    "lon": 148.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Stanmore Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.265364Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:59:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/South_Walker_Creek_Coal_Mine. The South Walker Creek coal mine is located 35 km west of Nebo in Queensland’s Bowen Basin"
   },
   "canonical_name": "South Walker Creek Mine",
   "canonical_slug": "south-walker-creek-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:59:48.000000Z",
+      "operators": [
+        "Stanmore Resources Ltd"
+      ],
+      "owners": [
+        "Stanmore Resources Ltd"
+      ],
+      "notes": "Stanmore Resources acquired full ownership of the mine in 2022."
+    }
+  }
 }

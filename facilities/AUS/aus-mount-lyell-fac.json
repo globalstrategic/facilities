@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -42.113,
-    "lon": 145.548,
+    "lat": -42.0,
+    "lon": 145.9,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copper Mines of Tasmania Pty Ltd",
+    "Monte Cello BV",
+    "Sibanye Stillwater",
+    "Vedanta Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.263229Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:36:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.businessworld.in/article/vedanta-sells-stake-in-mt-lyell-copper-mine-to-new-century-resources-497454. The Mt Lyell copper mine is located near Queenstown, Tasmania"
   },
   "canonical_name": "Mount Lyell Mine",
   "canonical_slug": "mount-lyell-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:36:05.000000Z",
+      "operators": [
+        "Copper Mines of Tasmania Pty Ltd",
+        "Sibanye Stillwater"
+      ],
+      "owners": [
+        "Vedanta Resources",
+        "Monte Cello BV"
+      ],
+      "notes": "The mine has changed ownership and operators over the years, with Vedanta previously owning it and Sibanye Stillwater currently involved."
+    }
+  }
 }

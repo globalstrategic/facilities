@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.353,
-    "lon": 153.332,
+    "lat": -41.3,
+    "lon": 147.5,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.248496Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:01:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://figshare.utas.edu.au/articles/thesis/The_ecological_effects_of_mine_effluents_on_the_South_Esk_River_North_East_Tasmania_/23245775/1/files/40964429.pdf. The South Esk River is located in northeast Tasmania, Australia, near Launceston"
   },
   "canonical_name": "Esk River Mine",
   "canonical_slug": "esk-river-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania"
 }

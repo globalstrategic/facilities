@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.933,
-    "lon": 144.264,
+    "lat": -17.2,
+    "lon": 145.4,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurora Metals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.329135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:22:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/23/Aurora-Metals-About-Us-11072022.pdf. The King Vol Mine is located near Chillagoe in north Queensland and is currently producing ore"
   },
   "canonical_name": "King Vol Mine",
   "canonical_slug": "king-vol-mine",
@@ -63,5 +65,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:22:50.000000Z",
+      "operators": [
+        "Aurora Metals Limited"
+      ],
+      "owners": [
+        "Aurora Metals Limited"
+      ],
+      "notes": "Aurora Metals Limited is both the operator and owner of the King Vol Mine."
+    }
+  }
 }

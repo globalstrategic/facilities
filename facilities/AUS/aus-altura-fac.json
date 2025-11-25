@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.017,
-    "lon": 118.913,
+    "lat": -20.5,
+    "lon": 118.9,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altura Lithium Operations Pty Ltd",
+    "Altura Mining Limited",
+    "Pilbara Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.266379Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:13:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.corcordis.com.au/experience/altura-mining-limited. The Altura Lithium Project is a hard-rock lithium operation located at Pilgangoora, approximately 123 km from Port Hedland"
   },
   "canonical_name": "Altura Mine",
   "canonical_slug": "altura-mine",
@@ -71,5 +75,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:13:29.000000Z",
+      "operators": [
+        "Altura Lithium Operations Pty Ltd"
+      ],
+      "owners": [
+        "Altura Mining Limited",
+        "Pilbara Minerals Limited"
+      ],
+      "notes": "Altura Mining Limited was previously an ASX-listed lithium miner, and Pilbara Minerals has acquired 100% ownership of the Altura lithium mining project."
+    }
+  }
 }

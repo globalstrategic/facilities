@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -42.817,
-    "lon": 147.267,
+    "lat": -42.8833,
+    "lon": 147.3333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nyrstar",
+    "Nyrstar Hobart"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.327279Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:55:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Risdon_Zinc_Works. The Risdon Zinc Works is located in Lutana, a suburb of Hobart, Tasmania"
   },
   "canonical_name": "Risdon Smelter",
   "canonical_slug": "risdon-smelter",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:55:11.000000Z",
+      "operators": [
+        "Nyrstar Hobart"
+      ],
+      "owners": [
+        "Nyrstar"
+      ],
+      "notes": "Nyrstar has owned and operated the facility since 2007."
+    }
+  }
 }
