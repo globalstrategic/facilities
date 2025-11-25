@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BFA",
   "location": {
-    "lat": 13.154,
-    "lon": -1.513,
+    "lat": 13.16578,
+    "lon": -1.46024,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nordgold"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.414532Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T15:48:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-298080.html. The Bissa-Bouly gold mine is located approximately 85 km north of Ouagadougou, the capital of Burkina Faso"
   },
   "canonical_name": "Bissa Bouly Mine",
   "canonical_slug": "bissa-bouly-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bam Province, Centre-Nord Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T15:48:00.000000Z",
+      "operators": [
+        "Nordgold"
+      ],
+      "owners": [
+        "Nordgold"
+      ],
+      "notes": "Nordgold is both the operator and owner of the Bissa-Bouly gold mine."
+    }
+  }
 }
