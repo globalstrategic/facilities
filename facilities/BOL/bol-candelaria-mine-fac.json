@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BOL",
   "location": {
-    "lat": -21.548,
-    "lon": -66.112,
+    "lat": -24.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining Corp.",
+    "Sumitomo Corporation",
+    "Sumitomo Metal Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.445814Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T09:55:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.e-mj.com/features/continuity-for-candelaria/. Candelaria Mine is located in the Atacama Region of Chile, approximately 50 km south of Copiapó"
   },
   "canonical_name": "Candelaria Mine",
   "canonical_slug": "candelaria-mine-2",
@@ -54,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:55:07.000000Z",
+      "operators": [
+        "Lundin Mining Corp."
+      ],
+      "owners": [
+        "Lundin Mining Corp.",
+        "Sumitomo Corporation",
+        "Sumitomo Metal Mining Co., Ltd."
+      ],
+      "notes": "Lundin Mining holds an 80% interest in the Candelaria operations, while Sumitomo Corporation and Sumitomo Metal Mining Co., Ltd. hold the remaining 20%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.398,
-    "lon": -66.466,
+    "lat": -5.5,
+    "lon": 152.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "St Barbara Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.437099Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:13:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/St_Barbara_(company). The Simberi mine is operated by St Barbara Limited in Papua New Guinea"
   },
   "canonical_name": "Santa Barbara Mine",
   "canonical_slug": "santa-barbara-mine-2",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Ireland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:13:20.000000Z",
+      "operators": [
+        "St Barbara Limited"
+      ],
+      "owners": [
+        "St Barbara Limited"
+      ],
+      "notes": "St Barbara Limited is both the operator and owner of the Simberi mine."
+    }
+  }
 }

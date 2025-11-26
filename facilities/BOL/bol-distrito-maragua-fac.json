@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.958,
-    "lon": -65.679,
+    "lat": -18.417,
+    "lon": -66.633,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Minera de Bolivia (COMIBOL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.445658Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:58:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Siglo_XX_mine. The Siglo XX mine is part of a mining complex in the area and is located in Llallagua"
   },
   "canonical_name": "Distrito Maragua Mine",
   "canonical_slug": "distrito-maragua-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Potosí Department",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:58:45.000000Z",
+      "operators": [
+        "Corporación Minera de Bolivia (COMIBOL)"
+      ],
+      "owners": [
+        "Corporación Minera de Bolivia (COMIBOL)"
+      ],
+      "notes": "The mine is state-owned and was nationalized following the Bolivian National Revolution."
+    }
+  }
 }

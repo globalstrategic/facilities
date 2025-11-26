@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -16.908,
-    "lon": -67.57,
+    "lat": -17.0,
+    "lon": -66.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compania General de Minas en Bolivia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.433932Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T09:57:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://upload.wikimedia.org/wikipedia/commons/0/06/Engineering_and_Mining_Journal_1920-11-20-_Vol_110_Iss_21_%28IA_sim_engineering-and-mining-journal_1920-11-20_110_21%29.pdf. The Chojnacota mine is located in the Chojnacota Canyon, a branch of the Yaco River, at the foot of Jachacunocollo Peak"
   },
   "canonical_name": "Chojnacota Mine",
   "canonical_slug": "chojnacota-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "La Paz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:57:03.000000Z",
+      "operators": [
+        "Compania General de Minas en Bolivia"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by a Bolivian company, but specific ownership details are not provided."
+    }
+  }
 }

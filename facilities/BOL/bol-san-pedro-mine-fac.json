@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -20.648,
-    "lon": -66.233,
+    "lat": 22.234610866139974,
+    "lon": -100.83865428560384,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera San Xavier",
+    "New Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.431619Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:12:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from San Luis Potosí (https://www.mining-technology.com/projects/cerrosanpedromine/). The Cerro San Pedro mine is located 20 km northeast of San Luis Potosí city"
   },
   "canonical_name": "San Pedro Mine",
   "canonical_slug": "san-pedro-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Luis Potosí",
+  "town": "San Luis Potosí",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:12:52.000000Z",
+      "operators": [
+        "Minera San Xavier"
+      ],
+      "owners": [
+        "New Gold Inc."
+      ],
+      "notes": "New Gold Inc. owns 100% of the mine through its subsidiary Minera San Xavier."
+    }
+  }
 }
