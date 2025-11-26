@@ -6,8 +6,8 @@
   ],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.5,
+    "lon": 20.5,
     "precision": "unknown"
   },
   "types": [
@@ -24,14 +24,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Sandfire Resources",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.564671",
-      "evidence": "Extracted from operator column: Sandfire Resources"
-    }
+    "Sandfire Resources",
+    "Sandfire Resources Ltd",
+    "Tshukudu Metals Botswana"
   ],
   "products": [],
   "sources": [
@@ -42,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.634192Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:33:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/sandfire-motheo-copper-mine/. Motheo Copper Mine is located in the Kalahari Copper Belt, approximately 70 km northeast of Ghanzi"
   },
   "canonical_name": "Motheo Copper Mine",
   "canonical_slug": "motheo-copper-mine",
@@ -69,5 +64,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ghanzi District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:33:13.000000Z",
+      "operators": [
+        "Sandfire Resources Ltd"
+      ],
+      "owners": [
+        "Tshukudu Metals Botswana",
+        "Sandfire Resources Ltd"
+      ],
+      "notes": "Tshukudu Metals Botswana is a subsidiary of Sandfire Resources, which acquired the project through MOD Resources."
+    }
+  }
 }

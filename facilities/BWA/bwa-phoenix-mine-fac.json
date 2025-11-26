@@ -6,8 +6,8 @@
   ],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.74889,
+    "lon": -105.56583,
     "precision": "unknown"
   },
   "types": [
@@ -24,14 +24,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Global Critical Resources Corp.",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.552300",
-      "evidence": "Extracted from operator column: Global Critical Resources Corp."
-    }
+    "Dave Mosch",
+    "Global Critical Resources Corp.",
+    "Phoenix Gold Mine"
   ],
   "products": [],
   "sources": [
@@ -42,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.636307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:33:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Phoenix_Gold_Mine. The Phoenix Gold Mine is a fully operational gold mine located in Idaho Springs, Colorado"
   },
   "canonical_name": "Phoenix Mine",
   "canonical_slug": "phoenix-mine",
@@ -69,5 +64,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:33:48.000000Z",
+      "operators": [
+        "Phoenix Gold Mine"
+      ],
+      "owners": [
+        "Dave Mosch"
+      ],
+      "notes": "The mine has been family-owned and operated by the Mosch family since 1988."
+    }
+  }
 }

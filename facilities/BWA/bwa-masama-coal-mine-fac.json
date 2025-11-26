@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BWA",
   "location": {
-    "lat": -24.053,
-    "lon": 25.888,
+    "lat": -24.5,
+    "lon": 25.9,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minergy Coal",
+    "Minergy Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.632477Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:32:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/masama-coal-project/. The Masama Coal Mine is located approximately 50 km north of Gaborone, Botswana"
   },
   "canonical_name": "Masama Coal Mine",
   "canonical_slug": "masama-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kweneng District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:32:23.000000Z",
+      "operators": [
+        "Minergy Coal"
+      ],
+      "owners": [
+        "Minergy Limited"
+      ],
+      "notes": "Minergy Limited owns the Masama Coal Mine through its subsidiary Minergy Coal."
+    }
+  }
 }
