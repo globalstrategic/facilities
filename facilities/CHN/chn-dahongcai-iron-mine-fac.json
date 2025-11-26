@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.078,
-    "lon": 113.19,
+    "lat": 39.085966,
+    "lon": 113.199786,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dahongcai Mining Co (代县大红才矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.608573Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:25:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dahongcai_Iron_Mine. The Dahongcai Iron Mine is located in Xinzhou, Shanxi, China, and is operated by Dahongcai Mining Co"
   },
   "canonical_name": "Dahongcai Iron Mine",
   "canonical_slug": "dahongcai-iron-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:25:35.000000Z",
+      "operators": [
+        "Dahongcai Mining Co (代县大红才矿业有限公司)"
+      ],
+      "owners": [
+        "Dahongcai Mining Co (代县大红才矿业有限公司)"
+      ],
+      "notes": "Dahongcai Mining Co owns 100% of the facility."
+    }
+  }
 }

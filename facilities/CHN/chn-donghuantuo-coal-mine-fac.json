@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.648,
-    "lon": 118.016,
+    "lat": 39.647378,
+    "lon": 118.002442,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kailuan Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.816421Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:35:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%BC%80%E6%BB%A6%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%B8%9C%E6%AC%A2%E5%9D%A8%E7%9F%BF%E4%B8%9A%E5%88%86%E5%85%AC%E5%8F%B8. The Donghuantuo Coal Mine is an underground coal mine operated by the Kailuan Group"
   },
   "canonical_name": "Donghuantuo Coal Mine",
   "canonical_slug": "donghuantuo-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:35:42.000000Z",
+      "operators": [
+        "Kailuan Group"
+      ],
+      "owners": [
+        "Kailuan Group"
+      ],
+      "notes": "Kailuan Group is both the operator and owner of the Donghuantuo Coal Mine."
+    }
+  }
 }

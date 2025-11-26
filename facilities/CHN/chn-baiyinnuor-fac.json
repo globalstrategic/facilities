@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.449,
-    "lon": 118.893,
+    "lat": 36.56111,
+    "lon": 104.21833,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baiyin Nonferrous Metal (Group) Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.664093Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:03:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Baiyin%20Nonferrous.htm. Baiyin Nonferrous Group Co., Ltd. is a major player in the mining and processing of nonferrous metals, located in Baiyin City, Gansu Province, China"
   },
   "canonical_name": "Baiyinnuor Mine",
   "canonical_slug": "baiyinnuor-mine",
@@ -67,5 +69,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:03:47.000000Z",
+      "operators": [
+        "Baiyin Nonferrous Metal (Group) Co., Ltd."
+      ],
+      "owners": [
+        "Baiyin Nonferrous Metal (Group) Co., Ltd."
+      ],
+      "notes": "Baiyin Nonferrous Group is a state-owned enterprise involved in various mining operations."
+    }
+  }
 }

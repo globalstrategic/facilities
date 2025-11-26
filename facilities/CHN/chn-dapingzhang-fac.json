@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 22.788,
-    "lon": 100.518,
+    "lat": 20.8338695612893,
+    "lon": 98.85937073416012,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Joint Venture Company",
+    "Regent Pacific Group Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.730221Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T13:29:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Simao City (https://www1.hkexnews.hk/listedco/listconews/sehk/20051123/ltn20051123023.pdf). The Dapingzhang Copper Mine is located near Simao City in south west Yunnan Province, 310 km south west of Kunming"
   },
   "canonical_name": "Dapingzhang Mine",
   "canonical_slug": "dapingzhang-mine",
@@ -62,5 +65,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yunnan",
+  "town": "Simao City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:29:48.000000Z",
+      "operators": [
+        "Joint Venture Company"
+      ],
+      "owners": [
+        "Regent Pacific Group Limited"
+      ],
+      "notes": "The Joint Venture Company is acquiring mining and exploration licenses from SSM."
+    }
+  }
 }

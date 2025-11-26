@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.805,
-    "lon": 109.874,
+    "lat": 41.804634,
+    "lon": 109.8,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia BaoTou Steel Union Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.753415Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:08:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bayan_Obo_West_Mine. The Bayan Obo West Mine is part of the larger Bayan Obo mining district, which is known for its significant rare earth element production"
   },
   "canonical_name": "Bayan Obo West Mine",
   "canonical_slug": "bayan-obo-west-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:08:46.000000Z",
+      "operators": [
+        "Inner Mongolia BaoTou Steel Union Co Ltd"
+      ],
+      "owners": [
+        "Inner Mongolia BaoTou Steel Union Co Ltd"
+      ],
+      "notes": "The mine is fully owned and operated by Inner Mongolia BaoTou Steel Union Co Ltd."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 30.614,
-    "lon": 117.076,
+    "lat": 30.613864,
+    "lon": 117.0,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huaining Mingyue Mining Development Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.732995Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:27:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dalongshan_Iron_Ore_Mine. The Dalongshan Iron Ore Mine is mothballed and located in Anqing, Anhui, China"
   },
   "canonical_name": "Dalongshan Iron Ore Mine",
   "canonical_slug": "dalongshan-iron-ore-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:27:35.000000Z",
+      "operators": [
+        "Huaining Mingyue Mining Development Co Ltd"
+      ],
+      "owners": [
+        "Huaining Mingyue Mining Development Co Ltd"
+      ],
+      "notes": "The company owns 100% of the mine."
+    }
+  }
 }

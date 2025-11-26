@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.369,
-    "lon": 110.48,
+    "lat": 39.368693,
+    "lon": 110.479916,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "准格尔旗弓家塔宝平湾煤炭有限责任公司 (Jungar Banner Gongjiata Baopingwan Coal Company)",
+    "北京华源佳鑫投资有限公司 (Beijing Huayuan Jiaxin Investment Company)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.661483Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:06:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%87%86%E6%A0%BC%E5%B0%94%E6%97%97%E5%BC%93%E5%AE%B6%E5%A1%94%E5%AE%9D%E5%B9%B3%E6%B9%BE%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Baopingwan Coal Mine is an underground coal mine located in the Jungar Banner of Ordos City, Inner Mongolia"
   },
   "canonical_name": "Baopingwan Coal Mine",
   "canonical_slug": "baopingwan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古 (Inner Mongolia)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:06:16.000000Z",
+      "operators": [
+        "准格尔旗弓家塔宝平湾煤炭有限责任公司 (Jungar Banner Gongjiata Baopingwan Coal Company)"
+      ],
+      "owners": [
+        "北京华源佳鑫投资有限公司 (Beijing Huayuan Jiaxin Investment Company)"
+      ],
+      "notes": "The mine is operated by Jungar Banner Gongjiata Baopingwan Coal Company, which is fully owned by Beijing Huayuan Jiaxin Investment Company."
+    }
+  }
 }

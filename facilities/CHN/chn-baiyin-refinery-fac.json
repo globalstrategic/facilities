@@ -14,8 +14,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.555,
-    "lon": 104.209,
+    "lat": 36.56111,
+    "lon": 104.21833,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baiyin Nonferrous Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.872328Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:02:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Baiyin%20Nonferrous.htm. Baiyin Refinery is part of Baiyin Nonferrous Group's operations in Gansu Province, which is a key area for nonferrous metal production in China"
   },
   "canonical_name": "Baiyin Refinery",
   "canonical_slug": "baiyin-refinery",
@@ -65,5 +67,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:02:53.000000Z",
+      "operators": [
+        "Baiyin Nonferrous Group Co., Ltd."
+      ],
+      "owners": [
+        "Baiyin Nonferrous Group Co., Ltd."
+      ],
+      "notes": "Baiyin Nonferrous Group Co., Ltd. is a state-owned enterprise primarily engaged in mining and metallurgy."
+    }
+  }
 }

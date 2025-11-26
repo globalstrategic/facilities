@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.984,
-    "lon": 113.101,
+    "lat": 35.984448,
+    "lon": 113.100708,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Changzhi Yangtouling Beizhiyu Coal Industry Company",
+    "Shanxi Changzhi Yangtouling Coal Industry Company",
+    "Shanxi Rishengda New Energy Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.620368Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:09:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E9%95%BF%E6%B2%BB%E7%BE%8A%E5%A4%B4%E5%B2%AD%E5%8C%97%E5%B3%99%E5%B3%AA%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Beizhiyu Coal Mine is an underground coal mine located in Henan Village, Yincheng Town, Shangdang District, Changzhi City, Shanxi Province"
   },
   "canonical_name": "Beizhiyu Coal Mine",
   "canonical_slug": "beizhiyu-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:09:37.000000Z",
+      "operators": [
+        "Shanxi Changzhi Yangtouling Beizhiyu Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Changzhi Yangtouling Coal Industry Company",
+        "Shanxi Rishengda New Energy Group"
+      ],
+      "notes": "The Beizhiyu Coal Mine is operated by Shanxi Changzhi Yangtouling Beizhiyu Coal Industry Company, which is a subsidiary of Shanxi Changzhi Yangtouling Coal Industry Company and partially owned by Shanxi Rishengda New Energy Group."
+    }
+  }
 }

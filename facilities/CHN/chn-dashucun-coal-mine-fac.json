@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.561,
-    "lon": 114.279,
+    "lat": 31.025112,
+    "lon": 107.279023,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sichuan Dazhu Coal Power Group Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.894506Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:30:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%9B%E5%B7%9D%E8%BE%BE%E7%AB%B9%E7%85%A4%E7%94%B5%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%93%81%E5%B1%B1%E5%8D%97%E7%85%A4%E7%9F%BF. The facility is specifically identified as the Sichuan Dazhu Coal Power Group Co Ltd's Tianshan South Coal Mine located in Dazhou, Sichuan"
   },
   "canonical_name": "Dashucun Coal Mine",
   "canonical_slug": "dashucun-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:30:07.000000Z",
+      "operators": [
+        "Sichuan Dazhu Coal Power Group Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Sichuan Dazhu Coal Power Group Co Ltd, which is a state-owned enterprise."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 21.502,
-    "lon": 100.644,
+    "lat": 21.5017,
+    "lon": 100.6439,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinghong Longxin Mining Co (景洪市龙鑫矿业有限责任公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.734578Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:28:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Damenglong_Jiangfeng_Mine. The Damenglong Jiangfeng Mine is an iron ore mine located in Jinghong, Yunnan, China"
   },
   "canonical_name": "Damenglong Jiangfeng Mine",
   "canonical_slug": "damenglong-jiangfeng-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yunnan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:28:02.000000Z",
+      "operators": [
+        "Jinghong Longxin Mining Co (景洪市龙鑫矿业有限责任公司)"
+      ],
+      "owners": [
+        "Jinghong Longxin Mining Co (景洪市龙鑫矿业有限责任公司)"
+      ],
+      "notes": "The company owns 100% of the mine."
+    }
+  }
 }

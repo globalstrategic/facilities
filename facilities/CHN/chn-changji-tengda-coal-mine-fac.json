@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.717,
-    "lon": 86.863,
+    "lat": 43.716851,
+    "lon": 86.863187,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tai'an Changhong Trading Company",
+    "Xinjiang Changji Heze Tengda Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.831829Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:15:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E6%98%8C%E5%90%89%E5%B8%82%E8%8F%8A%E6%B3%BD%E8%85%BE%E8%BE%BE%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%85%A4%E7%9F%BF. The Changji Tengda Coal Mine is an underground coal mine located in the Changji region of Xinjiang"
   },
   "canonical_name": "Changji Tengda Coal Mine",
   "canonical_slug": "changji-tengda-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:15:57.000000Z",
+      "operators": [
+        "Xinjiang Changji Heze Tengda Mining Company"
+      ],
+      "owners": [
+        "Tai'an Changhong Trading Company"
+      ],
+      "notes": "The mine is operated by Xinjiang Changji Heze Tengda Mining Company, which is fully owned by Tai'an Changhong Trading Company."
+    }
+  }
 }

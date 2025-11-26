@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.055,
-    "lon": 112.895,
+    "lat": 34.055418,
+    "lon": 112.89473,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Pingmei Shenma Energy and Chemical Group",
+    "Pingdingshan Tianan Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.712120Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:18:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B9%B3%E9%A1%B6%E5%B1%B1%E5%A4%A9%E5%AE%89%E7%85%A4%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%9C%9D%E5%B7%9D%E7%9F%BF%E4%B8%80%E4%BA%95. Chaochuan Coal Mine No. 1 Well is an underground coal mine located in Xiaotun Town, Ruzhou City, Henan Province"
   },
   "canonical_name": "Chaochuan Coal No 1 Well Mine",
   "canonical_slug": "chaochuan-coal-no-1-well-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:18:20.000000Z",
+      "operators": [
+        "Pingdingshan Tianan Coal Industry Company"
+      ],
+      "owners": [
+        "China Pingmei Shenma Energy and Chemical Group"
+      ],
+      "notes": "Pingdingshan Tianan Coal Industry Company operates the mine, which is owned by China Pingmei Shenma Energy and Chemical Group."
+    }
+  }
 }

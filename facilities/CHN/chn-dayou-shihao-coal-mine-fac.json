@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.727,
-    "lon": 111.534,
+    "lat": 34.72515,
+    "lon": 111.545352,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Henan Dayou Energy",
+    "Yima Coal Industry Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.791894Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:32:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%B2%B3%E5%8D%97%E5%A4%A7%E6%9C%89%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%9F%B3%E5%A3%95%E7%85%A4%E7%9F%BF. The Dayou Shihao Coal Mine is an underground coal mine located in the town of Duanyan Village, within the Shanzhou District of Sanmenxia City, Henan Province"
   },
   "canonical_name": "Dayou Shihao Coal Mine",
   "canonical_slug": "dayou-shihao-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "河南省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:32:36.000000Z",
+      "operators": [
+        "Henan Dayou Energy"
+      ],
+      "owners": [
+        "Yima Coal Industry Group"
+      ],
+      "notes": "Henan Dayou Energy operates the mine and is fully owned by Yima Coal Industry Group."
+    }
+  }
 }

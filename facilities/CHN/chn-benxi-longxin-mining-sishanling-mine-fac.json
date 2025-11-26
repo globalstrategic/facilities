@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.196,
-    "lon": 123.801,
+    "lat": 41.19638,
+    "lon": 123.803394,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benxi Longxin Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.766439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:10:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Benxi_Longxin_Mining_Sishanling_Mine. The Sishanling iron ore mine is one of the largest iron ore mines currently being opened in China"
   },
   "canonical_name": "Benxi Longxin Mining Sishanling Mine",
   "canonical_slug": "benxi-longxin-mining-sishanling-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:10:39.000000Z",
+      "operators": [
+        "Benxi Longxin Mining Co., Ltd."
+      ],
+      "owners": [
+        "Benxi Longxin Mining Co., Ltd."
+      ],
+      "notes": "Benxi Longxin Mining Co., Ltd. is part of the Jianlong Group."
+    }
+  }
 }

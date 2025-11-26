@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.205,
-    "lon": 106.633,
+    "lat": 35.205077,
+    "lon": 106.6328,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "中国华能集团有限公司",
+    "甘肃华亭煤电股份有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.844704Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:19:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E7%94%98%E8%82%83%E5%8D%8E%E4%BA%AD%E7%85%A4%E7%94%B5%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%99%88%E5%AE%B6%E6%B2%9F%E7%85%A4%E7%9F%BF. The Chenjiagou Coal Mine is an underground coal mine located in Gansu Province, China"
   },
   "canonical_name": "Chenjiagou Coal Mine",
   "canonical_slug": "chenjiagou-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "甘肃省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:19:48.000000Z",
+      "operators": [
+        "甘肃华亭煤电股份有限公司"
+      ],
+      "owners": [
+        "甘肃华亭煤电股份有限公司",
+        "中国华能集团有限公司"
+      ],
+      "notes": "The mine is operated by Gansu Huating Coal and Electricity Company, which is a subsidiary of China Huaneng Group."
+    }
+  }
 }

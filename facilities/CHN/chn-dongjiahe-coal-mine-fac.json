@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.174,
-    "lon": 109.904,
+    "lat": 35.174484,
+    "lon": 109.903951,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Coal and Chemical Industry Group",
+    "Shaanxi Shaanmei Chenghe Mining Company Dongjiahe Coal Mine Branch"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.778137Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:35:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E9%99%95%E7%85%A4%E6%BE%84%E5%90%88%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%91%A3%E5%AE%B6%E6%B2%B3%E7%85%A4%E7%9F%BF%E5%88%86%E5%85%AC%E5%8F%B8. The Dongjiahe Coal Mine is an underground coal mine located in Dongjiahe Village, Chengguan Town, Chengcheng County, Weinan City, Shaanxi Province"
   },
   "canonical_name": "Dongjiahe Coal Mine",
   "canonical_slug": "dongjiahe-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:35:53.000000Z",
+      "operators": [
+        "Shaanxi Shaanmei Chenghe Mining Company Dongjiahe Coal Mine Branch"
+      ],
+      "owners": [
+        "Shaanxi Coal and Chemical Industry Group"
+      ],
+      "notes": "The mine is operated by a branch of Shaanxi Shaanmei Chenghe Mining Company, which is part of the larger Shaanxi Coal and Chemical Industry Group."
+    }
+  }
 }

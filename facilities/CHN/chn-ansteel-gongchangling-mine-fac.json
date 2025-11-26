@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.105,
-    "lon": 123.509,
+    "lat": 41.114311,
+    "lon": 123.516128,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anshan Iron and Steel Group",
+    "Anshan Iron and Steel Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.786973Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:59:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ansteel_Gongchangling_Mine. The Ansteel Gongchangling Mine is an iron ore mine located in Liaoyang, Liaoning, China"
   },
   "canonical_name": "Ansteel Gongchangling Mine",
   "canonical_slug": "ansteel-gongchangling-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:59:19.000000Z",
+      "operators": [
+        "Anshan Iron and Steel Mining"
+      ],
+      "owners": [
+        "Anshan Iron and Steel Group"
+      ],
+      "notes": "Anshan Iron and Steel Group owns 100% of the Ansteel Gongchangling Mine."
+    }
+  }
 }

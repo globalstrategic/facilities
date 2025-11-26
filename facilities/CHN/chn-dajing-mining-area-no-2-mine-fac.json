@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.795,
-    "lon": 89.147,
+    "lat": 44.782168,
+    "lon": 89.572565,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "国网能源新疆准东煤电有限公司 (State Grid Energy Xinjiang Zhundong Coal Power Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.892889Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:26:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%BD%E7%BD%91%E8%83%BD%E6%BA%90%E6%96%B0%E7%96%86%E5%87%86%E4%B8%9C%E7%85%A4%E7%94%B5%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%87%86%E4%B8%9C%E7%85%A4%E7%94%B0%E5%A4%A7%E4%BA%95%E7%9F%BF%E5%8C%BA%E4%BA%8C%E5%8F%B7%E7%9F%BF%E4%BA%95. The Dajing Mining Area No. 2 Mine is an underground coal mine located in Xinjiang, China"
   },
   "canonical_name": "Dajing Mining Area No 2 Mine",
   "canonical_slug": "dajing-mining-area-no-2-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uyghur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:26:20.000000Z",
+      "operators": [
+        "国网能源新疆准东煤电有限公司 (State Grid Energy Xinjiang Zhundong Coal Power Co., Ltd.)"
+      ],
+      "owners": [
+        "国网能源新疆准东煤电有限公司 (State Grid Energy Xinjiang Zhundong Coal Power Co., Ltd.)"
+      ],
+      "notes": "The mine is operated and owned by State Grid Energy Xinjiang Zhundong Coal Power Co., Ltd."
+    }
+  }
 }

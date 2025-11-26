@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 23.333,
-    "lon": 107.567,
+    "lat": 23.5,
+    "lon": 106.6,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aluminum Corporation of China Ltd (CHALCO)",
+    "CHALCO"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.629613Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:01:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Pingguo_Aluminum_power_station. The Pingguo Aluminum Smelter is located in Pingguo, Baise, Guangxi, China"
   },
   "canonical_name": "Baise Pingguo Refinery",
   "canonical_slug": "baise-pingguo-refinery",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guangxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:01:56.000000Z",
+      "operators": [
+        "Aluminum Corporation of China Ltd (CHALCO)"
+      ],
+      "owners": [
+        "CHALCO"
+      ],
+      "notes": "CHALCO owns and operates the Pingguo Aluminum power station."
+    }
+  }
 }

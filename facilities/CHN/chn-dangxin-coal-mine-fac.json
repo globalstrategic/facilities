@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.416,
-    "lon": 112.309,
+    "lat": 39.411176,
+    "lon": 112.314693,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Shuozhou Pinglu District Xiyi Dangxin Coal Mine Company",
+    "Shanxi Xiyi Energy Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.879758Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:29:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%9C%94%E5%B7%9E%E5%B9%B3%E9%B2%81%E5%8C%BA%E8%A5%BF%E6%98%93%E5%85%9A%E6%96%B0%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Dangxin Coal Mine is located in the Pinglu District of Shuozhou, Shanxi Province"
   },
   "canonical_name": "Dangxin Coal Mine",
   "canonical_slug": "dangxin-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:29:09.000000Z",
+      "operators": [
+        "Shanxi Shuozhou Pinglu District Xiyi Dangxin Coal Mine Company"
+      ],
+      "owners": [
+        "Shanxi Xiyi Energy Group"
+      ],
+      "notes": "The mine is operated by Shanxi Shuozhou Pinglu District Xiyi Dangxin Coal Mine Company, which is fully owned by Shanxi Xiyi Energy Group."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.692,
-    "lon": 112.623,
+    "lat": 39.686861,
+    "lon": 112.634808,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Shanyin Beizu Coal Industry Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.892610Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:09:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%9C%94%E5%B7%9E%E5%B1%B1%E9%98%B4%E4%B8%AD%E7%85%A4%E9%A1%BA%E9%80%9A%E5%8C%97%E7%A5%96%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Beizu Coal Mine is a shaft coal mine located in the western part of Beizu Village, Yujing Town, Shanyin County, Shuozhou City, Shanxi Province"
   },
   "canonical_name": "Beizu Coal Mine",
   "canonical_slug": "beizu-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:09:50.000000Z",
+      "operators": [
+        "Shanxi Shanyin Beizu Coal Industry Co., Ltd."
+      ],
+      "owners": [
+        "Shanxi Shanyin Beizu Coal Industry Co., Ltd."
+      ],
+      "notes": "The Beizu Coal Mine is operated and owned by Shanxi Shanyin Beizu Coal Industry Co., Ltd."
+    }
+  }
 }

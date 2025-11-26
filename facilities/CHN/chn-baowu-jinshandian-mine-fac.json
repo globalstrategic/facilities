@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 30.134,
-    "lon": 114.807,
+    "lat": 30.133448,
+    "lon": 114.801121,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Baowu Steel Group Corp., Ltd.",
+    "China Baowu Steel Group Jinshandian Mining (武钢资源集团金山店矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.863292Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:08:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baowu_Jinshandian_Mine. The Baowu Jinshandian Mine is an iron ore mine located in Daye, Hubei, China"
   },
   "canonical_name": "Baowu Jinshandian Mine",
   "canonical_slug": "baowu-jinshandian-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hubei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:08:17.000000Z",
+      "operators": [
+        "China Baowu Steel Group Jinshandian Mining (武钢资源集团金山店矿业有限公司)"
+      ],
+      "owners": [
+        "China Baowu Steel Group Corp., Ltd."
+      ],
+      "notes": "The mine is fully owned by China Baowu Steel Group."
+    }
+  }
 }

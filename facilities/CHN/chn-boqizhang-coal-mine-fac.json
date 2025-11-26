@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.806,
-    "lon": 112.849,
+    "lat": 39.808962,
+    "lon": 112.845462,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy",
+    "Jinneng Group",
+    "Shanxi Coal Transportation and Sales Group Boqizhang Coal Industry Company",
+    "Zuoyun Kaihao Industrial Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.619728Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:12:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E7%B0%B8%E7%AE%95%E6%8E%8C%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Boqizhang Coal Mine is an underground coal mine with a construction scale of 1.2 million tons per year"
   },
   "canonical_name": "Boqizhang Coal Mine",
   "canonical_slug": "boqizhang-coal-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:12:15.000000Z",
+      "operators": [
+        "Shanxi Coal Transportation and Sales Group Boqizhang Coal Industry Company"
+      ],
+      "owners": [
+        "Jinneng Group",
+        "China Energy",
+        "Zuoyun Kaihao Industrial Company"
+      ],
+      "notes": "The mine is operated by Shanxi Coal Transportation and Sales Group, with ownership shared among Jinneng Group (26%), China Energy (25%), and Zuoyun Kaihao Industrial Company (49%)."
+    }
+  }
 }

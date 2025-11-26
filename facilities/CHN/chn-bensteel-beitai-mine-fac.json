@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.246,
-    "lon": 123.643,
+    "lat": 41.246144,
+    "lon": 123.643391,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benxi Steel Group Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.854373Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:09:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bensteel_Beitai_Mine. The Bensteel Beitai Mine is an iron ore mine located in Benxi, Liaoning, China"
   },
   "canonical_name": "Bensteel Beitai Mine",
   "canonical_slug": "bensteel-beitai-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:09:59.000000Z",
+      "operators": [
+        "Benxi Steel Group Mining Co"
+      ],
+      "owners": [
+        "Benxi Steel Group Mining Co"
+      ],
+      "notes": "Benxi Steel Group Mining Co owns 100% of the Bensteel Beitai Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 33.459,
-    "lon": 118.531,
+    "lat": 33.459444,
+    "lon": 118.531389,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Baowu Steel Group",
+    "Maanshan Iron & Steel Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.701365Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:08:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baowu-Ma_Steel_Baixiangshan_Mine. The Baowu Ma Steel Baixiangshan Mine is an iron ore mine located in Maanshan, Anhui, China"
   },
   "canonical_name": "Baowu Ma Steel Baixiangshan Mine",
   "canonical_slug": "baowu-ma-steel-baixiangshan-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:08:27.000000Z",
+      "operators": [
+        "Maanshan Iron & Steel Co Ltd"
+      ],
+      "owners": [
+        "China Baowu Steel Group"
+      ],
+      "notes": "Maanshan Iron & Steel Co Ltd operates the mine and is fully owned by China Baowu Steel Group."
+    }
+  }
 }

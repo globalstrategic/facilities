@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 23.609,
-    "lon": 114.941,
+    "lat": 31.4012,
+    "lon": 121.489,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baoshan Iron & Steel Co., Ltd.",
+    "China Baowu Steel Group Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.643307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:07:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baoshan_Iron_and_Steel_Co_Ltd_Headquarters. The Baoshan Iron Mine is associated with Baoshan Iron & Steel Co., Ltd., which is located in Baoshan District, Shanghai"
   },
   "canonical_name": "Baoshan Iron Mine",
   "canonical_slug": "baoshan-iron-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanghai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:07:22.000000Z",
+      "operators": [
+        "Baoshan Iron & Steel Co., Ltd."
+      ],
+      "owners": [
+        "China Baowu Steel Group Corp Ltd"
+      ],
+      "notes": "Baoshan Iron & Steel Co., Ltd. is a subsidiary of China Baowu Steel Group."
+    }
+  }
 }

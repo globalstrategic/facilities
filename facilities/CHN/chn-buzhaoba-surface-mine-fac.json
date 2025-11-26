@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 23.813,
-    "lon": 103.193,
+    "lat": 23.800855,
+    "lon": 103.180577,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yunnan Xiaolongtan Mining Administration"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.875801Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:12:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%BA%91%E5%8D%97%E7%9C%81%E5%B0%8F%E9%BE%99%E6%BD%AD%E7%9F%BF%E5%8A%A1%E5%B1%80%E5%B8%83%E6%B2%BC%E5%9D%9D%E9%9C%B2%E5%A4%A9%E7%9F%BF. The Buzhaoba Surface Mine is an open-pit coal mine located in Yunnan Province, China, with a production capacity of 13 million tons per year"
   },
   "canonical_name": "Buzhaoba Surface Mine",
   "canonical_slug": "buzhaoba-surface-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yunnan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:12:46.000000Z",
+      "operators": [
+        "Yunnan Xiaolongtan Mining Administration"
+      ],
+      "owners": [
+        "Yunnan Xiaolongtan Mining Administration"
+      ],
+      "notes": "The facility is operated and owned by the Yunnan Xiaolongtan Mining Administration."
+    }
+  }
 }

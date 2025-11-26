@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.284,
+    "lat": 41.2841,
     "lon": 95.525,
     "precision": "site"
   },
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alxa League Wanchuang Mining Co (阿拉善盟万创矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.756052Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:55:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Alxa_League_Wanchuang_Mining_Yangling_Mine. The Alxa League Wanchuang Mining Yangling Mine is an iron ore mine located in Jiuquan, Gansu, China"
   },
   "canonical_name": "Alxa League Wanchuang Mining Yangling Mine",
   "canonical_slug": "alxa-league-wanchuang-mining-yangling-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:55:35.000000Z",
+      "operators": [
+        "Alxa League Wanchuang Mining Co (阿拉善盟万创矿业有限公司)"
+      ],
+      "owners": [
+        "Alxa League Wanchuang Mining Co (阿拉善盟万创矿业有限公司)"
+      ],
+      "notes": "The company operates and owns the mine with 100% ownership."
+    }
+  }
 }

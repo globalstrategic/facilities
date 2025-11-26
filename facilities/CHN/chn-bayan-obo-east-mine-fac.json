@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.799,
-    "lon": 109.974,
+    "lat": 41.78278,
+    "lon": 109.97361,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baogang Group",
+    "China Northern Rare Earth Group High-Tech Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.807621Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:08:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/bayan-obo-rare-earth-mine/. The Bayan Obo East Mine is part of the larger Bayan Obo mining district, which is known for its significant rare earth element production"
   },
   "canonical_name": "Bayan Obo East Mine",
   "canonical_slug": "bayan-obo-east-mine",
@@ -62,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:08:36.000000Z",
+      "operators": [
+        "China Northern Rare Earth Group High-Tech Co., Ltd.",
+        "Baogang Group"
+      ],
+      "owners": [
+        "Baogang Group",
+        "China Northern Rare Earth Group High-Tech Co., Ltd."
+      ],
+      "notes": "Baogang Group is a state-owned enterprise and the controlling shareholder of China Northern Rare Earth Group High-Tech Co., Ltd."
+    }
+  }
 }
