@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -12.237,
-    "lon": 25.822,
+    "lat": -12.2242,
+    "lon": 25.8186,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Lumwana Mining Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.680749Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:40:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Lumwana_mine. The Lumwana mine is one of the largest copper mines in Zambia, located in the North-Western Province"
   },
   "canonical_name": "Lumwana Mine",
   "canonical_slug": "lumwana-mine",
@@ -58,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North-Western Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:41.000000Z",
+      "operators": [
+        "Lumwana Mining Company Limited"
+      ],
+      "owners": [
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Barrick Gold Corporation owns Lumwana Mining Company Limited, which operates the mine."
+    }
+  }
 }

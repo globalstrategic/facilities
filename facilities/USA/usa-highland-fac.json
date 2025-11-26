@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.738,
-    "lon": -87.773,
+    "lat": 36.925,
+    "lon": -87.028,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Highland Mining Company",
+    "Patriot Coal",
+    "Peabody Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.683552Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:45:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Highland_9_Mine. Highland 9 Mine is located two miles west of US HWY 60 in Waverly, Union County, Kentucky"
   },
   "canonical_name": "Highland Mine",
   "canonical_slug": "highland-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:45:00.000000Z",
+      "operators": [
+        "Highland Mining Company"
+      ],
+      "owners": [
+        "Patriot Coal",
+        "Peabody Energy"
+      ],
+      "notes": "Highland Mining Company is a subsidiary of Interior Holdings Corporation."
+    }
+  }
 }

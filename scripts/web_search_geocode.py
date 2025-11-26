@@ -407,26 +407,17 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
         owners = companies.get("owners", [])
 
         # Merge with existing company_mentions (deduplicate)
-<<<<<<< HEAD
         # Handle both string and dict formats in company_mentions
-=======
->>>>>>> 87ab423d0ade8620ec9aa4f06395bbd75d0415b2
         raw_mentions = data.get("company_mentions", [])
         existing_mentions = set()
         for mention in raw_mentions:
             if isinstance(mention, dict):
-<<<<<<< HEAD
                 # Extract name from structured format
-=======
->>>>>>> 87ab423d0ade8620ec9aa4f06395bbd75d0415b2
                 if "name" in mention:
                     existing_mentions.add(mention["name"])
             elif isinstance(mention, str):
                 existing_mentions.add(mention)
-<<<<<<< HEAD
 
-=======
->>>>>>> 87ab423d0ade8620ec9aa4f06395bbd75d0415b2
         new_mentions = set(operators + owners)
         all_mentions = sorted(list(existing_mentions | new_mentions))
 
@@ -461,6 +452,7 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing coords)")
     parser.add_argument("--missing-companies", action="store_true", help="Process facilities missing company_mentions")
+    parser.add_argument("--reverse", action="store_true", help="Process countries in reverse order (Z to A)")
     args = parser.parse_args()
 
     # Validate arguments
@@ -532,6 +524,11 @@ def main():
         else:
             countries_to_process = all_countries
             print(f"Processing ALL countries: {len(countries_to_process)} found\n")
+
+    # Apply reverse order if requested
+    if args.reverse:
+        countries_to_process = list(reversed(countries_to_process))
+        print(f"Processing in REVERSE order (Z→A)\n")
 
     print(f"\n{'='*60}")
     print(f"WEB SEARCH GEOCODING + COMPANY ENRICHMENT")

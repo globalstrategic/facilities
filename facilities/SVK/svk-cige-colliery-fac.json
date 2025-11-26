@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SVK",
   "location": {
-    "lat": 48.734,
-    "lon": 18.641,
+    "lat": 48.73433,
+    "lon": 18.63755,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hornonitrianske Bane Prievidza"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.644218Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:57:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.kamnavylet.sk/en/attraction/hornonitriansky-mine-open-air-museum-mine-cigel. Cigeľ Colliery is located near Prievidza and has been closed since October 2017"
   },
   "canonical_name": "Cigeä¾ Colliery Mine",
   "canonical_slug": "cigea34-colliery-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Trenčín",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:57:10.000000Z",
+      "operators": [
+        "Hornonitrianske Bane Prievidza"
+      ],
+      "owners": [],
+      "notes": "Hornonitrianske Bane Prievidza is the operator of the Cigeľ mine."
+    }
+  }
 }

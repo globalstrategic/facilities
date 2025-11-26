@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.421,
-    "lon": 27.348,
+    "lat": -26.118393012848703,
+    "lon": 29.41831470478817,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Coal Central (Pty) Ltd",
+    "Exxaro Resources Limited",
+    "Overlooked Colliery"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.696263Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-doornfontein-blyvooruitzicht-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:42:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-doornfontein-blyvooruitzicht-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Kriel (https://www.gem.wiki/Dorstfontein_Complex). The Doornfontein facility is likely confused with the Dorstfontein Complex, which is located near Kriel"
   },
   "canonical_name": "Doornfontein Mine",
   "canonical_slug": "doornfontein-mine",
@@ -63,5 +67,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Kriel",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:42:08.000000Z",
+      "operators": [
+        "Exxaro Coal Central (Pty) Ltd",
+        "Overlooked Colliery"
+      ],
+      "owners": [
+        "Exxaro Resources Limited"
+      ],
+      "notes": "Exxaro sold the mine to Overlooked Colliery in 2021."
+    }
+  }
 }

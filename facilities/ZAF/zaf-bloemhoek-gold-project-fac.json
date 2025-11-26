@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.6335,
-    "lon": 27.2833,
+    "lat": -27.0,
+    "lon": 26.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +31,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T13:14:03.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:41:13.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitude.to/articles-by-country/za/south-africa/407246/bloemhoek-dam. Coordinates extracted from the GPS location of Bloemhoek Dam, which is associated with the Bloemhoek Gold Project"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitude.to/articles-by-country/za/south-africa/407246/bloemhoek-dam. Coordinates extracted from the GPS location of Bloemhoek Dam, which is associated with the Bloemhoek Gold Project. Web search geocoded. Source: https://www.sibanyestillwater.com/business/southern-africa/gold-operations/projects/. The Bloemhoek Gold Project is part of the Southern Free State (SOFS) project, located near Welkom"
   },
   "canonical_name": "Bloemhoek Gold Mine",
   "canonical_slug": "bloemhoek-gold-mine",
@@ -48,5 +50,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Free State"
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:41:13.000000Z",
+      "operators": [
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Sibanye-Stillwater"
+      ],
+      "notes": "Sibanye-Stillwater acquired the assets including Bloemhoek through the acquisition of Wits Gold."
+    }
+  }
 }

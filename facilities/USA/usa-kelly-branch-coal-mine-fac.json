@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.861,
-    "lon": -83.317,
+    "lat": 36.860726,
+    "lon": -83.317124,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nally & Hamilton Enterprises INC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.683738Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:45:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/?record_id=COAL-1519897. The Kelly Branch Coal Mine is located in Harlan County, Kentucky, and is an active coal mine"
   },
   "canonical_name": "Kelly Branch Coal Mine",
   "canonical_slug": "kelly-branch-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:45:10.000000Z",
+      "operators": [
+        "Nally & Hamilton Enterprises INC"
+      ],
+      "owners": [
+        "Nally & Hamilton Enterprises INC"
+      ],
+      "notes": "Nally & Hamilton Enterprises INC is both the owner and operator of the Kelly Branch Coal Mine."
+    }
+  }
 }

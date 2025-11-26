@@ -9,8 +9,8 @@
   ],
   "country_iso3": "SWE",
   "location": {
-    "lat": 67.187,
-    "lon": 20.705,
+    "lat": 67.1959167,
+    "lon": 20.7080269,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Luossavaara-Kiirunavaara AB"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.599242Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Malmberget_mine. Malmberget mine is one of the largest iron ore mines in the world, located in Norrbotten County, Sweden"
   },
   "canonical_name": "Malmberget Mine",
   "canonical_slug": "malmberget-mine",
@@ -57,5 +59,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Norrbotten County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:04.000000Z",
+      "operators": [
+        "Luossavaara-Kiirunavaara AB"
+      ],
+      "owners": [
+        "Luossavaara-Kiirunavaara AB"
+      ],
+      "notes": "LKAB is a state-owned company that operates the Malmberget mine."
+    }
+  }
 }

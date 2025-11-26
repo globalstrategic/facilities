@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.741,
-    "lon": 29.354,
+    "lat": -26.98556,
+    "lon": 29.3075,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Seriti Coal Pty Ltd",
+    "Seriti Resources Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.695799Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-new-denmark-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:41:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-new-denmark-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/New_Denmark_Coal_Mine. The New Denmark coal mine is located in the Highveld coalfields, approximately 30 kilometers north of Standerton"
   },
   "canonical_name": "New Denmark Mine",
   "canonical_slug": "new-denmark-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:41:33.000000Z",
+      "operators": [
+        "Seriti Coal Pty Ltd"
+      ],
+      "owners": [
+        "Seriti Resources Holdings"
+      ],
+      "notes": "Seriti Resources acquired New Denmark from Anglo American in 2018."
+    }
+  }
 }
