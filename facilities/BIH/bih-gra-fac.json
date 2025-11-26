@@ -1,11 +1,11 @@
 {
   "facility_id": "bih-gra-fac",
-  "name": "GraÄ",
+  "name": "GraÃ„",
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 43.993,
-    "lon": 17.514,
+    "lat": -4.5,
+    "lon": 137.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan",
+    "Government of Indonesia",
+    "PT Freeport Indonesia (PTFI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,15 +32,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.134253Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:45:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.fcx.com/operations/indonesia. The Grasberg mine is located in the Grasberg minerals district in Papua, Indonesia, near the town of Timika"
   },
-  "canonical_name": "Graä Mine",
+  "canonical_name": "GraÃ¤ Mine",
   "canonical_slug": "graa-mine",
-  "display_name": "Graä",
+  "display_name": "GraÃ¤",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -49,11 +53,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "GraÄ Mine",
+      "name": "GraÃ„ Mine",
       "from": "2025-10-20T15:28:05.432542",
       "to": "2025-11-04T19:18:53.134251Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:45:06.000000Z",
+      "operators": [
+        "PT Freeport Indonesia (PTFI)"
+      ],
+      "owners": [
+        "Government of Indonesia",
+        "Freeport-McMoRan"
+      ],
+      "notes": "PTFI is a subsidiary of Freeport-McMoRan, which operates the Grasberg mine."
+    }
+  }
 }

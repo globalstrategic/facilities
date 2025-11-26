@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 44.14,
-    "lon": 18.098,
+    "lat": 44.14001979,
+    "lon": 18.09803137,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda BiH dd",
+    "RMU Kakanj doo"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.134856Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:46:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vrtliste_Coal_Mine. Vrtliste Coal Mine is a surface mine located near Kakanj, part of the Kakanj coal mine complex"
   },
   "canonical_name": "Vrtliste Coal Mine",
   "canonical_slug": "vrtliste-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zenica-Doboj Canton",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:46:50.000000Z",
+      "operators": [
+        "RMU Kakanj doo"
+      ],
+      "owners": [
+        "Elektroprivreda BiH dd"
+      ],
+      "notes": "RMU Kakanj doo operates the mine and is owned by Elektroprivreda BiH, which holds a 90.4% stake."
+    }
+  }
 }

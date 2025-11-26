@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 44.666,
-    "lon": 18.989,
+    "lat": 44.68194,
+    "lon": 18.96722,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda Republike Srpske",
+    "Rudnik i Termoelektrana Ugljevik"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.132798Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:46:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ugljevik_Coal_Mine. Ugljevik Coal Mine is a surface mine located in Ugljevik, Republika Srpska, Bosnia and Herzegovina"
   },
   "canonical_name": "Ugljevik Coal Mine",
   "canonical_slug": "ugljevik-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Republika Srpska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:46:26.000000Z",
+      "operators": [
+        "Rudnik i Termoelektrana Ugljevik"
+      ],
+      "owners": [
+        "Elektroprivreda Republike Srpske"
+      ],
+      "notes": "Rudnik i Termoelektrana Ugljevik operates the mine and is a subsidiary of Elektroprivreda Republike Srpske."
+    }
+  }
 }
