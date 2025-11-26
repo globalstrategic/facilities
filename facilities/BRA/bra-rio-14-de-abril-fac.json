@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -11.098,
-    "lon": -60.833,
+    "lat": -19.2,
+    "lon": -43.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "Vale SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.210559Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:48:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anglo_American_Minas-Rio_Mine. The Minas-Rio mine is located in the state of Minas Gerais, Brazil, and is operated by Anglo American"
   },
   "canonical_name": "Rio 14 De Abril Mine",
   "canonical_slug": "rio-14-de-abril-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:48:29.000000Z",
+      "operators": [
+        "Anglo American plc"
+      ],
+      "owners": [
+        "Anglo American plc",
+        "Vale SA"
+      ],
+      "notes": "Anglo American owns 85% of the Minas-Rio operation, while Vale SA holds a 15% stake."
+    }
+  }
 }

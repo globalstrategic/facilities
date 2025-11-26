@@ -3,12 +3,12 @@
   "name": "Urucum",
   "aliases": [
     "Urucum",
-    "Vetria LaÃ"
+    "Vetria LaÃƒ"
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.191,
-    "lon": -57.611,
+    "lat": -19.1309,
+    "lon": -57.5492,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baronesa De Vila Maria",
+    "Gustavo A. De Almeida",
+    "J&F Investimentos S.A.",
+    "Joao Baptista De Carvalho E Vasconcelos",
+    "LHG Mining Corumbá S.A.",
+    "Urucum Mineracao S. A."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.220046Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:57:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10024440. The Urucum Mine is located near Corumba, Brazil, and is known for its manganese and iron ore production"
   },
   "canonical_name": "Urucum Mine",
   "canonical_slug": "urucum-mine",
@@ -50,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mato Grosso do Sul",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:57:08.000000Z",
+      "operators": [
+        "Urucum Mineracao S. A.",
+        "LHG Mining Corumbá S.A."
+      ],
+      "owners": [
+        "Baronesa De Vila Maria",
+        "Joao Baptista De Carvalho E Vasconcelos",
+        "Gustavo A. De Almeida",
+        "J&F Investimentos S.A."
+      ],
+      "notes": "LHG Mining operates the mine and is part of the J&F Group, which acquired the mine in 2022."
+    }
+  }
 }

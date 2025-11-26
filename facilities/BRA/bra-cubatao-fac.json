@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -23.855,
-    "lon": -46.38,
+    "lat": -23.8833,
+    "lon": -46.4333,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Usinas Siderúrgicas de Minas Gerais S.A. (Usiminas)",
+    "Yara International"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.202303Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:31:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Usiminas_Cubat%C3%A3o_steel_plant. The coordinates correspond to the location of the Usiminas Cubatão steel plant"
   },
   "canonical_name": "Cubatao Steel Plant",
   "canonical_slug": "cubatao-steel-plant",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "São Paulo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:31:01.000000Z",
+      "operators": [
+        "Usinas Siderúrgicas de Minas Gerais S.A. (Usiminas)"
+      ],
+      "owners": [
+        "Usinas Siderúrgicas de Minas Gerais S.A. (Usiminas)",
+        "Yara International"
+      ],
+      "notes": "Usiminas operates the steel plant, while Yara has acquired the Cubatão complex from Vale."
+    }
+  }
 }

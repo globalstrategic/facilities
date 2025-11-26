@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.094,
-    "lon": -44.091,
+    "lat": -20.052878,
+    "lon": -43.963779,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.199149Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:45:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vale_Paraopeba_Complex_Mine. The Vale Paraopeba Complex Mine is an iron ore mine located in Nova Lima, Minas Gerais, Brazil"
   },
   "canonical_name": "Paraopeba Mine",
   "canonical_slug": "paraopeba-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:45:37.000000Z",
+      "operators": [
+        "Vale SA"
+      ],
+      "owners": [
+        "Vale SA"
+      ],
+      "notes": "Vale SA is the sole owner and operator of the Paraopeba Complex Mine."
+    }
+  }
 }

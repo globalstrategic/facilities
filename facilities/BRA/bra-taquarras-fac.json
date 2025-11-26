@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -9.829,
-    "lon": -65.279,
+    "lat": -10.5,
+    "lon": -37.3,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mosaic Company",
+    "VL Holding",
+    "VL Mineração Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.227307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:55:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nasdaq.com/press-release/mosaic-announces-completion-sale-potash-mining-operations-brazil-vl-mineracao-2025-11. The Taquari-Vassouras potash mine is located in Rosário do Catete, Sergipe, Brazil"
   },
   "canonical_name": "Taquarras Mine",
   "canonical_slug": "taquarras-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sergipe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:55:51.000000Z",
+      "operators": [
+        "VL Mineração Ltda"
+      ],
+      "owners": [
+        "Mosaic Company",
+        "VL Holding"
+      ],
+      "notes": "Mosaic Company sold the mine to VL Mineração, which will operate the facility."
+    }
+  }
 }

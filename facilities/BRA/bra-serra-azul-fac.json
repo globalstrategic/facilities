@@ -4,18 +4,18 @@
   "aliases": [
     "Serra Azul",
     "ArcelorMittal Serra Azul Mine",
-    "Usiminas East (Mineração Usiminas Mining Complex) Mine",
+    "Usiminas East (MineraÃ§Ã£o Usiminas Mining Complex) Mine",
     "Minerita Lagoa das Flores Mine",
     "AVG Santanense Mine",
-    "Usiminas Central (Mineração Usiminas Mining Complex) Mine",
+    "Usiminas Central (MineraÃ§Ã£o Usiminas Mining Complex) Mine",
     "Serra Azul (ArcelorMittal)",
     "Itauna",
     "Santanense"
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.133,
-    "lon": -44.392,
+    "lat": -20.0,
+    "lon": -44.0,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "Mineração Morro do Ipê (MMI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.195823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T10:54:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.woodmac.com/reports/metals-serra-azul-arcelormittal-iron-ore-mine-16538999/. The coordinates are approximate based on the description of the mine's location relative to Belo Horizonte"
   },
   "canonical_name": "Serra Azul Mine",
   "canonical_slug": "serra-azul-mine",
@@ -58,5 +61,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:54:10.000000Z",
+      "operators": [
+        "ArcelorMittal",
+        "Mineração Morro do Ipê (MMI)"
+      ],
+      "owners": [
+        "ArcelorMittal",
+        "Mineração Morro do Ipê (MMI)"
+      ],
+      "notes": "ArcelorMittal operates the Serra Azul mine, while MMI is a joint venture involving Trafigura and Mubadala."
+    }
+  }
 }

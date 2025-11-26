@@ -1,11 +1,11 @@
 {
   "facility_id": "bra-gua-fac",
-  "name": "GuaÃ",
+  "name": "GuaÃƒ",
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -30.015,
-    "lon": -51.532,
+    "lat": -30.032414016835297,
+    "lon": -51.38070605491055,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copelmi Mineração Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,15 +30,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.230964Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:36:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Porto Alegre (https://www.gem.wiki/Gua%C3%ADba_Coal_Mine). The Guaíba Mine is proposed to be located approximately 9 miles (14.5 km) from downtown Porto Alegre"
   },
-  "canonical_name": "Guaã Mine",
+  "canonical_name": "GuaÃ£ Mine",
   "canonical_slug": "guaa-mine",
-  "display_name": "Guaã",
+  "display_name": "GuaÃ£",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -49,11 +51,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "Guaà Mine",
+      "name": "GuaÃ  Mine",
       "from": "2025-10-20T15:27:43.885733",
       "to": "2025-11-04T19:18:47.230962Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande do Sul",
+  "town": "Porto Alegre",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:36:41.000000Z",
+      "operators": [
+        "Copelmi Mineração Ltda"
+      ],
+      "owners": [
+        "Copelmi Mineração Ltda"
+      ],
+      "notes": "Copelmi Mineração Ltda is Brazil’s largest private coal mining company, controlling over 80% of the country's industrial coal market."
+    }
+  }
 }

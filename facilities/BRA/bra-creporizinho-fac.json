@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.807,
-    "lon": -56.611,
+    "lat": -6.7976,
+    "lon": -56.6038,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altamira Gold Corp",
+    "Mineracao do Para Ltda."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.206597Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:30:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://altamiragold.com/altamira-gold-sells-crepori-project-to-private-gold-producer-for-c500000-and-retains-4-nsr/. Creporizinho is a mining village in the Tapajós region, known for artisanal gold mining"
   },
   "canonical_name": "Creporizinho Mine",
   "canonical_slug": "creporizinho-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:30:40.000000Z",
+      "operators": [
+        "Mineracao do Para Ltda."
+      ],
+      "owners": [
+        "Altamira Gold Corp"
+      ],
+      "notes": "Altamira Gold sold the Crepori project to Mineracao do Para Ltda."
+    }
+  }
 }

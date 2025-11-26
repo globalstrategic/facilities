@@ -4,12 +4,12 @@
   "aliases": [
     "Caraiba Copper Deposit",
     "Caraiba",
-    "CaraÃ"
+    "CaraÃƒ"
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -9.865,
-    "lon": -39.867,
+    "lat": -10.510009105981775,
+    "lon": -40.967533200404695,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ero Copper Corp",
+    "Mineração Caraíba S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +59,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.219285Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:27:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Salvador (https://investingnews.com/ero-copper-files-technical-report-for-caraiba-operations/). The Caraíba Operations are located in the Curaçá Valley, Bahia State, Brazil, approximately 385 kilometers north-northwest of Salvador"
   },
   "canonical_name": "Caraiba Mine",
   "canonical_slug": "caraiba-mine",
@@ -75,5 +78,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bahia",
+  "town": "Salvador",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:27:26.000000Z",
+      "operators": [
+        "Ero Copper Corp",
+        "Mineração Caraíba S.A."
+      ],
+      "owners": [
+        "Ero Copper Corp",
+        "Mineração Caraíba S.A."
+      ],
+      "notes": "Ero Copper Corp holds a 99.6% interest in Mineração Caraíba S.A., which is the 100% owner of the Caraíba Operations."
+    }
+  }
 }

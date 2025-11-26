@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -8.015,
-    "lon": -61.849,
+    "lat": -6.0868112,
+    "lon": -61.7550524,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.198716Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:49:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://bz.utc.city/886533. Coordinates correspond to the location of Marmelos, which is associated with the Rio Marmelos Mafui facility"
   },
   "canonical_name": "Rio Marmelos Mafui Mine",
   "canonical_slug": "rio-marmelos-mafui-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amazonas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:49:29.000000Z",
+      "operators": [
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A."
+      ],
+      "notes": "Vale S.A. is a major player in the mining sector in Brazil and is likely involved in operations related to the Rio Marmelos Mafui facility."
+    }
+  }
 }

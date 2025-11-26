@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -22.914,
-    "lon": -46.649,
+    "lat": -20.5,
+    "lon": -46.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "MMG Limited",
+    "MMG Singapore Resources Pte. Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.208280Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:42:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mineralienatlas.de/lexikon/index.php/Brasilien/Südosten+(Região+Sudeste)/Minas+Gerais/Pratápolis/Morro+do+Niquel+Mine. Coordinates are approximate based on the location of Morro do Niquel Mine in Pratápolis, Minas Gerais"
   },
   "canonical_name": "Morro Do Niquel Mine",
   "canonical_slug": "morro-do-niquel-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:42:59.000000Z",
+      "operators": [
+        "Anglo American plc",
+        "MMG Singapore Resources Pte. Ltd"
+      ],
+      "owners": [
+        "Anglo American plc",
+        "MMG Limited"
+      ],
+      "notes": "Anglo American is selling its nickel business to MMG, which includes the Morro do Niquel Mine."
+    }
+  }
 }

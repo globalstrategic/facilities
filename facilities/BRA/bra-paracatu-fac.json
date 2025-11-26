@@ -12,8 +12,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -17.201,
-    "lon": -46.875,
+    "lat": -17.193,
+    "lon": -46.8804,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kinross Gold",
+    "Rio Paracatu Mineração (RPM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.215528Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:44:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Paracatu_mine. The Paracatu mine is one of the largest gold surface mines in Brazil, located in the Minas Gerais state"
   },
   "canonical_name": "Paracatu Mine",
   "canonical_slug": "paracatu-mine",
@@ -59,5 +62,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:44:53.000000Z",
+      "operators": [
+        "Rio Paracatu Mineração (RPM)",
+        "Kinross Gold"
+      ],
+      "owners": [
+        "Kinross Gold"
+      ],
+      "notes": "Kinross Gold is the sole owner and operator of the Paracatu mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -25.563,
-    "lon": -49.419,
+    "lat": -25.494133990078016,
+    "lon": -49.582652216221476,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.212261Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:34:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Curitiba (https://www.gem.wiki/Gerdau_Gua%C3%ADra_Arauc%C3%A1ria_steel_plant). The Gerdau Guaíra Araucária steel plant is located near Curitiba, Paraná, Brazil"
   },
   "canonical_name": "Gerdau Guaira Smelter",
   "canonical_slug": "gerdau-guaira-smelter",
@@ -48,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Paraná",
+  "town": "Curitiba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:34:53.000000Z",
+      "operators": [
+        "Gerdau S.A."
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau is the sole operator and owner of the Guaíra Araucária steel plant."
+    }
+  }
 }

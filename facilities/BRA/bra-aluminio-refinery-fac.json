@@ -8,8 +8,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -23.532,
-    "lon": -47.268,
+    "lat": -1.6003,
+    "lon": -48.5634,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Companhia Brasileira de Alumínio",
+    "Glencore",
+    "Norsk Hydro"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.226059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:21:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.hydro.com/en/global/sustainability/operating-in-the-brazilian-amazon/managing-our-operations/. Alunorte is the world's largest alumina refinery located in Barcarena, Pará, Brazil"
   },
   "canonical_name": "Aluminio Smelter",
   "canonical_slug": "aluminio-smelter",
@@ -52,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:21:18.000000Z",
+      "operators": [
+        "Norsk Hydro"
+      ],
+      "owners": [
+        "Norsk Hydro",
+        "Glencore",
+        "Companhia Brasileira de Alumínio"
+      ],
+      "notes": "Norsk Hydro operates Alunorte, with Glencore acquiring a stake in the facility."
+    }
+  }
 }

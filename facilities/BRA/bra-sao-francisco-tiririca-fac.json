@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -9.215,
-    "lon": -61.416,
+    "lat": -14.879749162487071,
+    "lon": -59.696353656367336,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aura Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.214864Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:52:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pontes e Lacerda (https://miningdataonline.com/property/504/Sao-Francisco-Mine.aspx). The São Francisco Gold Mine is currently in care and maintenance and was previously operated by Aura Minerals Inc"
   },
   "canonical_name": "Sao Francisco, Tiririca Mine",
   "canonical_slug": "sao-francisco-tiririca-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mato Grosso",
+  "town": "Pontes e Lacerda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:52:47.000000Z",
+      "operators": [
+        "Aura Minerals Inc."
+      ],
+      "owners": [
+        "Aura Minerals Inc."
+      ],
+      "notes": "Aura Minerals Inc. has a 100% indirect ownership interest in the São Francisco Mine."
+    }
+  }
 }

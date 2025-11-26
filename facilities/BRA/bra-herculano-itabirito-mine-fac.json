@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.25,
-    "lon": -43.927,
+    "lat": -20.250236,
+    "lon": -43.926911,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Herculano Mineração Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.203581Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:36:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Herculano_Itabirito_Mine. The Herculano Itabirito Mine is an iron ore mine located in Itabirito, Minas Gerais, Brazil"
   },
   "canonical_name": "Herculano Itabirito Mine",
   "canonical_slug": "herculano-itabirito-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:36:50.000000Z",
+      "operators": [
+        "Herculano Mineração Ltda"
+      ],
+      "owners": [
+        "Herculano Mineração Ltda"
+      ],
+      "notes": "Herculano Mineração Ltda is the sole operator and owner of the Herculano Itabirito Mine."
+    }
+  }
 }

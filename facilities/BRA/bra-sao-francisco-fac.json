@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -14.85,
-    "lon": -59.65,
+    "lat": -15.5,
+    "lon": -58.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aura Minerals Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.220472Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:52:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/20/AuraMineralsInc_Presentation_08082020.pdf. The São Francisco Mine is located in the municipality of Vila Bela da Santíssima Trindade, Mato Grosso, Brazil"
   },
   "canonical_name": "Sao Francisco Mine",
   "canonical_slug": "sao-francisco-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mato Grosso",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:52:35.000000Z",
+      "operators": [
+        "Aura Minerals Inc"
+      ],
+      "owners": [
+        "Aura Minerals Inc"
+      ],
+      "notes": "Aura Minerals owns and operates the São Francisco Mine."
+    }
+  }
 }

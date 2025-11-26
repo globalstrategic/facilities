@@ -5,7 +5,7 @@
   "country_iso3": "BRA",
   "location": {
     "lat": -1.5,
-    "lon": -48.667,
+    "lon": -48.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aluminio Brasileiro S. A. (Albras)",
+    "Nippon Amazon Aluminum Company (NAAC)",
+    "Norsk Hydro ASA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.207284Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T10:24:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10134317. Albras is located in Barcarena, Pará, Brazil, and is the largest producer of primary aluminum in the country"
   },
   "canonical_name": "Belem Smelter",
   "canonical_slug": "belem-smelter",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:24:47.000000Z",
+      "operators": [
+        "Aluminio Brasileiro S. A. (Albras)"
+      ],
+      "owners": [
+        "Norsk Hydro ASA",
+        "Nippon Amazon Aluminum Company (NAAC)"
+      ],
+      "notes": "Albras is a joint venture with Norsk Hydro holding 51% and NAAC holding 49%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.301,
-    "lon": -43.911,
+    "lat": -20.301255,
+    "lon": -43.910692,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "South American Ferro Metals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.205590Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:51:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SAFM_Ponto_Verde_Mine. The SAFM Ponto Verde Mine is located in Itabirito, Minas Gerais, Brazil, and is part of the Iron Ore Quadrilateral"
   },
   "canonical_name": "Safm Ponto Verde Mine",
   "canonical_slug": "safm-ponto-verde-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:51:17.000000Z",
+      "operators": [
+        "South American Ferro Metals Ltd"
+      ],
+      "owners": [
+        "South American Ferro Metals Ltd"
+      ],
+      "notes": "South American Ferro Metals Ltd owns and operates the Ponto Verde Iron Ore Project."
+    }
+  }
 }

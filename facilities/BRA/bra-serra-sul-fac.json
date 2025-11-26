@@ -9,8 +9,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.398,
-    "lon": -50.331,
+    "lat": -6.40331,
+    "lon": -50.324008,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.234025Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:55:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vale_Serra_Sul_Complex_Mine. The Serra Sul iron ore mine is part of Vale's Northern System mining complex in Carajás"
   },
   "canonical_name": "Serra Sul Mine",
   "canonical_slug": "serra-sul-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:55:08.000000Z",
+      "operators": [
+        "Vale SA"
+      ],
+      "owners": [
+        "Vale SA"
+      ],
+      "notes": "Vale is the sole owner and operator of the Serra Sul iron ore mine."
+    }
+  }
 }

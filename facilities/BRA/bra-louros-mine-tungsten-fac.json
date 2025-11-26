@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -5.965,
-    "lon": -36.066,
+    "lat": -6.5,
+    "lon": -36.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Largo Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.213019Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T10:39:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.proactiveinvestors.com.au/companies/news/74165/largo-resources-receives-installation-permit-appoints-site-manager-for-currais-novos-project-in-brazil-8980.html. The Currais Novos Tungsten project is located approximately 160 kilometers west-southwest of Natal"
   },
   "canonical_name": "Louros Tungsten Mine",
   "canonical_slug": "louros-tungsten-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande do Norte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:39:34.000000Z",
+      "operators": [
+        "Largo Resources"
+      ],
+      "owners": [
+        "Largo Resources"
+      ],
+      "notes": "Largo Resources holds a 100% interest in the Currais Novos Tungsten Tailing Project."
+    }
+  }
 }

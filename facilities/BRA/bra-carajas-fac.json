@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.053,
-    "lon": -50.175,
+    "lat": -6.05861,
+    "lon": -50.17694,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Amazonias Mineração (AMZA)",
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.224674Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:27:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Caraj%C3%A1s_mine. The Carajás Mine is the largest iron ore mine in the world, located in the Carajás Mountains"
   },
   "canonical_name": "Carajas Mine",
   "canonical_slug": "carajas-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:27:36.000000Z",
+      "operators": [
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A.",
+        "Amazonias Mineração (AMZA)"
+      ],
+      "notes": "Vale S.A. is the primary operator and owner of the mine, with a historical joint venture with Amazonias Mineração."
+    }
+  }
 }

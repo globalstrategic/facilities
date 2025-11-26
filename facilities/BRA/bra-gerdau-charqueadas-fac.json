@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -29.951,
-    "lon": -51.616,
+    "lat": -29.9,
+    "lon": -51.6,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.226830Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:34:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www2.gerdau.com.br/en/about-us/. Gerdau operates a steel mill in Charqueadas, Rio Grande do Sul, Brazil"
   },
   "canonical_name": "Gerdau Charqueadas Steel Plant",
   "canonical_slug": "gerdau-charqueadas-steel-plant",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande do Sul",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:34:13.000000Z",
+      "operators": [
+        "Gerdau S.A."
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau is both the operator and owner of the facility."
+    }
+  }
 }

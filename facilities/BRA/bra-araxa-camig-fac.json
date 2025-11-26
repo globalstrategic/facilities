@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.544,
-    "lon": -46.896,
+    "lat": -19.6668444,
+    "lon": -46.9086806,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chinese consortium",
+    "Companhia Brasileira de Metalurgia e Mineração (CBMM)",
+    "Japanese/Korean consortium",
+    "Moreira Salles family"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.196192Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:22:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Companhia_Brasileira_de_Metalurgia_e_Minera%C3%A7%C3%A3o. The coordinates correspond to the location of the Companhia Brasileira de Metalurgia e Mineração (CBMM) facility, which specializes in niobium extraction in Araxá"
   },
   "canonical_name": "Araxa Camig Mine",
   "canonical_slug": "araxa-camig-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:28.000000Z",
+      "operators": [
+        "Companhia Brasileira de Metalurgia e Mineração (CBMM)"
+      ],
+      "owners": [
+        "Moreira Salles family",
+        "Japanese/Korean consortium",
+        "Chinese consortium"
+      ],
+      "notes": "CBMM is the primary operator and owner of the niobium mine in Araxá."
+    }
+  }
 }

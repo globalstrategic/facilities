@@ -11,8 +11,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -1.548,
-    "lon": -48.733,
+    "lat": -1.5,
+    "lon": -48.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ALBRAS - Alumínio Brasileiro S.A.",
+    "Nippon Amazon Aluminum Co.",
+    "Norsk Hydro ASA"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.229856Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:21:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://martini.ai/pages/research/ALBRAS%20-%20Alum%C3%ADnio%20Brasileiro%20S.A-ca9f91d9071e00e0ad994509ce55f6da. ALBRAS is located in Barcarena, Pará, Brazil, and is the largest primary aluminum producer in the country"
   },
   "canonical_name": "Albras Refinery",
   "canonical_slug": "albras-refinery",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:21:00.000000Z",
+      "operators": [
+        "ALBRAS - Alumínio Brasileiro S.A."
+      ],
+      "owners": [
+        "Norsk Hydro ASA",
+        "Nippon Amazon Aluminum Co."
+      ],
+      "notes": "ALBRAS is a joint venture primarily owned by Norsk Hydro ASA (51%) and Nippon Amazon Aluminum Co. (49%)."
+    }
+  }
 }

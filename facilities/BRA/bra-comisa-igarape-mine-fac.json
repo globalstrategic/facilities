@@ -3,7 +3,7 @@
   "name": "Comisa Igarape Mine",
   "aliases": [
     "Comisa Igarape Mine",
-    "MMI Ipê Mine",
+    "MMI IpÃª Mine",
     "MMI Tico Tico Mine",
     "Itatiaiucu",
     "Ipe",
@@ -11,8 +11,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.115,
-    "lon": -44.29,
+    "lat": -20.115494,
+    "lon": -44.319135,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Companhia de Mineração Serra Azul"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.229001Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:29:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Comisa_Igarape_Mine. The Comisa Igarape Mine is an iron ore mine located in Igarapé, Minas Gerais, Brazil"
   },
   "canonical_name": "Comisa Igarape Mine",
   "canonical_slug": "comisa-igarape-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:29:48.000000Z",
+      "operators": [
+        "Companhia de Mineração Serra Azul"
+      ],
+      "owners": [
+        "Companhia de Mineração Serra Azul"
+      ],
+      "notes": "Companhia de Mineração Serra Azul owns 100% of the mine."
+    }
+  }
 }

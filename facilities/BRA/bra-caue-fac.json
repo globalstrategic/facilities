@@ -12,8 +12,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.605,
-    "lon": -43.231,
+    "lat": -20.3175,
+    "lon": -43.0081,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Companhia Brasileira de Mineração e Siderurgia",
+    "Companhia Vale do Rio Doce"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.216525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:28:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://vale.com/history-center. The Cauê Mine is located in the Pico do Cauê region, in Itabira, Minas Gerais"
   },
   "canonical_name": "Caue Mine",
   "canonical_slug": "caue-mine",
@@ -56,5 +59,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:28:33.000000Z",
+      "operators": [
+        "Companhia Vale do Rio Doce"
+      ],
+      "owners": [
+        "Companhia Brasileira de Mineração e Siderurgia"
+      ],
+      "notes": "The Cauê Mine is operated by Vale and was historically associated with Companhia Brasileira de Mineração e Siderurgia."
+    }
+  }
 }

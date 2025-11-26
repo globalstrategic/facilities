@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -18.164,
-    "lon": -47.881,
+    "lat": -18.050829818124278,
+    "lon": -47.86602403898481,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copebrás Limitada",
+    "Mosaic Fertilizantes P&K S.A.",
+    "The Mosaic Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.233277Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:28:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1509/Catalao-Mine.aspx. The Catalão Mine is a large open-pit mining complex primarily extracting phosphate ore"
   },
   "canonical_name": "Catalao Phosphate Mine",
   "canonical_slug": "catalao-phosphate-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goiás",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:28:24.000000Z",
+      "operators": [
+        "Mosaic Fertilizantes P&K S.A."
+      ],
+      "owners": [
+        "The Mosaic Company",
+        "Copebrás Limitada"
+      ],
+      "notes": "Mosaic Fertilizantes operates the mine, while The Mosaic Company owns it. Copebrás Limitada is also involved in phosphate production in the region."
+    }
+  }
 }

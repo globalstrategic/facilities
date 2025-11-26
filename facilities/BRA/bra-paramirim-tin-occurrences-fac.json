@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -13.598,
-    "lon": -42.216,
+    "lat": -13.41667,
+    "lon": -42.13333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Companhia Estanifera do Brasil",
+    "Mineração Taboca",
+    "Minsur"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.209256Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:45:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/1974/0333/report.pdf. Coordinates extracted from the report indicating proximity to the Paramirim Tin Occurrences"
   },
   "canonical_name": "Paramirim Tin Occurrences Mine",
   "canonical_slug": "paramirim-tin-occurrences-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bahia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:45:13.000000Z",
+      "operators": [
+        "Companhia Estanifera do Brasil"
+      ],
+      "owners": [
+        "Minsur",
+        "Mineração Taboca"
+      ],
+      "notes": "Minsur owns Mineração Taboca, which operates in the region."
+    }
+  }
 }

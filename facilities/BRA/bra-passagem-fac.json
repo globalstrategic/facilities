@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.315,
-    "lon": -43.429,
+    "lat": -20.3733,
+    "lon": -43.4203,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ouro Preto Gold Mines Company",
+    "Sociedade Mineradora de Passagem",
+    "St. John d'el Rey Mining Company, Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.231838Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:45:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.clickpetroleoegas.com.br/a-maior-descoberta-de-jazida-de-ouro-do-mundo-e-no-brasil-foram-extraidos-mais-de-355-toneladas-de-ouro-e-produziu-quase-a-metade-de-todo-este-mineral-no-planeta/. Mina da Passagem is a historical gold mine located near Mariana, Minas Gerais, Brazil"
   },
   "canonical_name": "Passagem Mine",
   "canonical_slug": "passagem-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:45:50.000000Z",
+      "operators": [
+        "Ouro Preto Gold Mines Company",
+        "St. John d'el Rey Mining Company, Limited"
+      ],
+      "owners": [
+        "Sociedade Mineradora de Passagem"
+      ],
+      "notes": "The mine has had various owners over the years, including historical British companies."
+    }
+  }
 }
