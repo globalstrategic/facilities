@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAF",
   "location": {
-    "lat": 6.1928,
-    "lon": 20.7292,
+    "lat": 6.15944,
+    "lon": 20.79333,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "AXMIN Inc.",
+    "Midas Ressources",
+    "Wagner Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.051884Z",
-    "checked_by": "import_pipeline",
-    "notes": "The sole industrialized mine in CAR. Controlled by a Wagner Group affiliate. License was stripped from legal owner AXMIN Inc. 3 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:39:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "The sole industrialized mine in CAR. Controlled by a Wagner Group affiliate. License was stripped from legal owner AXMIN Inc. 3 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ndassima. Ndassima is the only industrialized gold mine in the Central African Republic, located in the Ouaka prefecture"
   },
   "canonical_name": "Ndassima Mine",
   "canonical_slug": "ndassima-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ouaka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:39:54.000000Z",
+      "operators": [
+        "Midas Ressources",
+        "Wagner Group"
+      ],
+      "owners": [
+        "AXMIN Inc."
+      ],
+      "notes": "AXMIN Inc. was the original owner before being seized during the civil war. Midas Ressources, linked to the Wagner Group, has been operating the mine since 2020."
+    }
+  }
 }

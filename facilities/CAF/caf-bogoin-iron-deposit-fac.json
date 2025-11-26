@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAF",
   "location": {
-    "lat": 6.5,
-    "lon": 19.3,
+    "lat": 5.560774,
+    "lon": 17.933099,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Global Energy Monitor",
+    "unknown"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.052864Z",
-    "checked_by": "import_pipeline",
-    "notes": "Estimated 3.5 million tonnes at high grade. Historical exploitation has ceased; no current production. 8 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:38:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Estimated 3.5 million tonnes at high grade. Historical exploitation has ceased; no current production. 8 | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bogoin_Mine. The Bogoin Iron Deposit is a proposed iron ore mine located in Bogoin, Central African Republic"
   },
   "canonical_name": "Bogoin Iron Facility",
   "canonical_slug": "bogoin-iron-facility",
@@ -68,5 +71,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central African Republic",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:38:52.000000Z",
+      "operators": [
+        "Global Energy Monitor"
+      ],
+      "owners": [
+        "unknown"
+      ],
+      "notes": "Ownership details are not fully specified; the mine is listed as proposed."
+    }
+  }
 }
