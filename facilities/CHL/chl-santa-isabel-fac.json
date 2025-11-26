@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -30.194,
-    "lon": -71.089,
+    "lat": -22.053,
+    "lon": -69.597,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SunPower Co",
+    "Total Eren"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.908400Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:47:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Santa_Isabel_solar_farm_(Chile). Coordinates are for the Santa Isabel solar farm, which is located in the Antofagasta Region of Chile"
   },
   "canonical_name": "Santa Isabel Mine",
   "canonical_slug": "santa-isabel-mine",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:47:41.000000Z",
+      "operators": [
+        "Total Eren",
+        "SunPower Co"
+      ],
+      "owners": [
+        "Total Eren",
+        "SunPower Co"
+      ],
+      "notes": "The Santa Isabel solar farm is jointly owned and operated by Total Eren and SunPower Co."
+    }
+  }
 }

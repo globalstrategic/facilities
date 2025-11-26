@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -33.445,
-    "lon": -70.93,
+    "lat": -33.446325,
+    "lon": -70.921325,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anaconda Copper",
+    "Nueva Pudahuel",
+    "Santiago Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.923454Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:37:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Lo_Aguirre. The Lo Aguirre Mine is a former copper mine located near Santiago, Chile"
   },
   "canonical_name": "Lo Aguirre Mine",
   "canonical_slug": "lo-aguirre-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santiago Metropolitan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:37:46.000000Z",
+      "operators": [
+        "Nueva Pudahuel"
+      ],
+      "owners": [
+        "Santiago Mining Co",
+        "Anaconda Copper"
+      ],
+      "notes": "The mine was owned by Santiago Mining Co, a subsidiary of Anaconda Copper during its last eight years of operation."
+    }
+  }
 }

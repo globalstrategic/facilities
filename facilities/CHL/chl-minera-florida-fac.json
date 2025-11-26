@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -34.035,
-    "lon": -71.027,
+    "lat": -34.5,
+    "lon": -70.5,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Meridian Gold Inc.",
+    "Minera Florida Limitada",
+    "Yamana Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.899745Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:40:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.bus-ex.com/article/minera-florida-yamana-chile. Minera Florida is located 73 km south of Santiago, Chile"
   },
   "canonical_name": "Minera Florida Mine",
   "canonical_slug": "minera-florida-mine",
@@ -63,5 +67,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Metropolitan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:40:32.000000Z",
+      "operators": [
+        "Minera Florida Limitada"
+      ],
+      "owners": [
+        "Yamana Gold Inc.",
+        "Meridian Gold Inc."
+      ],
+      "notes": "Minera Florida is operated by Minera Florida Limitada, which is a subsidiary of Yamana Gold Inc. The mine was previously owned by Meridian Gold Inc."
+    }
+  }
 }

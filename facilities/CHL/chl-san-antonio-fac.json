@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -28.739,
-    "lon": -70.611,
+    "lat": -32.74937519129682,
+    "lon": -71.31183625242974,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.921590Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:46:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Potrerillos (https://www.globalminingreview.com/mining/13052025/codelco-and-rio-tinto-to-develop-mining-district-in-the-atacama-region/). San Antonio is a Codelco mining property adjacent to the Nuevo Cobre project, which is a joint venture with Rio Tinto"
   },
   "canonical_name": "San Antonio Mine",
   "canonical_slug": "san-antonio-mine-2",
@@ -47,5 +50,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Potrerillos",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:46:41.000000Z",
+      "operators": [
+        "Codelco",
+        "Rio Tinto"
+      ],
+      "owners": [
+        "Codelco",
+        "Rio Tinto"
+      ],
+      "notes": "Codelco owns approximately 42.26% and Rio Tinto owns about 57.74% of the Nuevo Cobre project."
+    }
+  }
 }

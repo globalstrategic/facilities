@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -24.261,
-    "lon": -69.079,
+    "lat": -22.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Ltd",
+    "JECO 2 Ltd",
+    "JECO Corporation",
+    "Rio Tinto Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.923295Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:33:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Minera_Escondida. Escondida is the largest copper mine in the world, located in the Atacama Desert"
   },
   "canonical_name": "Escondida Mine",
   "canonical_slug": "escondida-mine",
@@ -57,5 +62,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:33:15.000000Z",
+      "operators": [
+        "BHP Billiton Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Ltd",
+        "Rio Tinto Group",
+        "JECO Corporation",
+        "JECO 2 Ltd"
+      ],
+      "notes": "BHP Billiton is the majority operator with a 57.5% stake, followed by Rio Tinto with 30% and JECO Corporation with 12.5%."
+    }
+  }
 }

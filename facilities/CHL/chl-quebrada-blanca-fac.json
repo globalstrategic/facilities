@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -21.002,
-    "lon": -68.8,
+    "lat": -21.0043417,
+    "lon": -68.8009667,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco Corp.",
+    "Compañía Minera Teck Quebrada Blanca S.A.",
+    "Sumitomo Corporation",
+    "Sumitomo Metal Mining Co., Ltd.",
+    "Teck Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.908943Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:44:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Quebrada_Blanca. Quebrada Blanca is an open-pit copper mine located in the Atacama Desert of northern Chile"
   },
   "canonical_name": "Quebrada Blanca Mine",
   "canonical_slug": "quebrada-blanca-mine",
@@ -60,5 +66,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tarapacá Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:44:20.000000Z",
+      "operators": [
+        "Teck Resources Ltd."
+      ],
+      "owners": [
+        "Compañía Minera Teck Quebrada Blanca S.A.",
+        "Sumitomo Metal Mining Co., Ltd.",
+        "Sumitomo Corporation",
+        "Codelco Corp."
+      ],
+      "notes": "Teck holds a 60% indirect interest, while Sumitomo Metal Mining and Sumitomo Corporation collectively hold 30%, and Codelco holds 10%."
+    }
+  }
 }

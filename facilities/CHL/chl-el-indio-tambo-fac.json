@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -29.74,
-    "lon": -69.967,
+    "lat": -29.7451,
+    "lon": -69.96635,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.921784Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:32:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/El_Indio_mine. El Indio is a closed gold mine located in the Andes of Coquimbo Region, Chile"
   },
   "canonical_name": "El Indio/tambo Mine",
   "canonical_slug": "el-indio-tambo-mine",
@@ -73,5 +75,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coquimbo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:32:17.000000Z",
+      "operators": [
+        "Barrick Gold"
+      ],
+      "owners": [
+        "Barrick Gold"
+      ],
+      "notes": "Barrick Gold acquired the mine in 1994 as a result of its purchase of Lac Minerals."
+    }
+  }
 }

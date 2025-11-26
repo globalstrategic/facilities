@@ -1,11 +1,11 @@
 {
   "facility_id": "chl-zald-var-mine-fac",
-  "name": "Zaldívar Mine",
+  "name": "ZaldÃ­var Mine",
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.2030472,
+    "lon": -69.0672111,
     "precision": "unknown"
   },
   "types": [
@@ -22,14 +22,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Antofagasta Minerals, Barrick Gold",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.406338",
-      "evidence": "Extracted from operator column: Antofagasta Minerals (50%), Barrick Gold (50%)"
-    }
+    "Antofagasta Minerals",
+    "Antofagasta Minerals, Barrick Gold",
+    "Barrick Gold",
+    "Minera Zaldívar"
   ],
   "products": [],
   "sources": [
@@ -40,15 +36,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.919003Z",
-    "checked_by": "import_pipeline",
-    "notes": "Antofagasta is the operator.28 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:52:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Antofagasta is the operator.28 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Zald%C3%ADvar_mine. The Zaldívar mine is an open pit copper mine located in the Atacama Desert of northern Chile"
   },
-  "canonical_name": "Zaldívar Mine",
+  "canonical_name": "ZaldÃ­var Mine",
   "canonical_slug": "zaldivar-mine",
-  "display_name": "Zaldívar",
+  "display_name": "ZaldÃ­var",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -59,5 +55,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:52:13.000000Z",
+      "operators": [
+        "Minera Zaldívar"
+      ],
+      "owners": [
+        "Antofagasta Minerals",
+        "Barrick Gold"
+      ],
+      "notes": "Antofagasta Minerals owns 50% of the mine, while Barrick Gold also holds a 50% stake."
+    }
+  }
 }

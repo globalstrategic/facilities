@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -33.5,
+    "lon": -70.7,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Molymet",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.445680",
-      "evidence": "Extracted from operator column: Molymet"
-    }
+    "Molibdenos y Metales S.A.",
+    "Molymet"
   ],
   "products": [],
   "sources": [
@@ -45,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.916757Z",
-    "checked_by": "import_pipeline",
-    "notes": "Processes molybdenum concentrate from various copper mines.45 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:40:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Processes molybdenum concentrate from various copper mines.45 | Canonical name+slug generated. Web search geocoded. Source: https://molymet.com/wp-content/uploads/2024/06/Memoria-Molymet-2023-ING-v4-compressed.pdf. The MolymetNos Plant is located in Nos, San Bernardo, which is part of the Metropolitan Region of Santiago, Chile"
   },
   "canonical_name": "Molymetnos Facility",
   "canonical_slug": "molymetnos-facility",
@@ -72,5 +66,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Metropolitan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:40:49.000000Z",
+      "operators": [
+        "Molibdenos y Metales S.A."
+      ],
+      "owners": [
+        "Molibdenos y Metales S.A."
+      ],
+      "notes": "Molibdenos y Metales S.A. is both the operator and owner of the MolymetNos Plant."
+    }
+  }
 }

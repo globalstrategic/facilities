@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.249,
-    "lon": -69.569,
+    "lat": -26.24748,
+    "lon": -69.56622,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Nacional del Cobre de Chile (Codelco)"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.920792Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:46:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/20/Codelco-El-Salvador-mining-2020.pdf. The Salvador copper mine is located in the Atacama region of Chile and is operated by Codelco"
   },
   "canonical_name": "Salvador Mine",
   "canonical_slug": "salvador-mine",
@@ -61,5 +63,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chañaral",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:46:15.000000Z",
+      "operators": [
+        "Corporación Nacional del Cobre de Chile (Codelco)"
+      ],
+      "owners": [
+        "Corporación Nacional del Cobre de Chile (Codelco)"
+      ],
+      "notes": "Codelco is a state-owned company and the world's largest copper producer."
+    }
+  }
 }

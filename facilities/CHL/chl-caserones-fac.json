@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -28.176,
-    "lon": -69.539,
+    "lat": -24.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JX Nippon Mining & Metals",
+    "Lundin Mining Corporation",
+    "SCM Minera Lumina Copper Chile"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.927914Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:29:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://lundinmining.com/operations/caserones-project/. Caserones is located in the Atacama Region of Chile, approximately 125 km southeast of Copiapó"
   },
   "canonical_name": "Caserones Mine",
   "canonical_slug": "caserones-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:29:34.000000Z",
+      "operators": [
+        "SCM Minera Lumina Copper Chile"
+      ],
+      "owners": [
+        "Lundin Mining Corporation",
+        "JX Nippon Mining & Metals"
+      ],
+      "notes": "Lundin Mining holds a 70% interest in SCM Minera Lumina Copper Chile, which operates the Caserones mine."
+    }
+  }
 }

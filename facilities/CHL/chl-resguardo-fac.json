@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.456,
-    "lon": -69.79,
+    "lat": -26.758588106873248,
+    "lon": -69.65692654797584,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alturas Minerals Corp.",
+    "CP Group Chile Limitada",
+    "Inversiones Mineras El Refugio S.A.",
+    "Sociedad Contractual Minera Resguardo",
+    "Sociedad de Inversiones Gema Limitada"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.919507Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:45:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Copiapo (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3169-tsx-venture/alt/124236-alturas-minerals-signs-loi-for-the-resguardo-copper-gold-project-in-the-paleocene-eocene-metallogenic-belt-of-northern-chile.html). The Resguardo Copper-Gold Project is located approximately 95 km northeast of Copiapo in northern Chile"
   },
   "canonical_name": "Resguardo Mine",
   "canonical_slug": "resguardo-mine",
@@ -47,5 +53,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Region III",
+  "town": "Copiapo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:45:16.000000Z",
+      "operators": [
+        "Alturas Minerals Corp."
+      ],
+      "owners": [
+        "Sociedad Contractual Minera Resguardo",
+        "Sociedad de Inversiones Gema Limitada",
+        "Inversiones Mineras El Refugio S.A.",
+        "CP Group Chile Limitada"
+      ],
+      "notes": "Minera Resguardo is a mining exploration company controlled by Sociedad de Inversiones Gema Limitada, with significant ownership by Peruvian investors."
+    }
+  }
 }

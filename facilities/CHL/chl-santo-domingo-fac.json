@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -25.074,
-    "lon": -70.363,
+    "lat": -26.167485864183227,
+    "lon": -69.79838010537229,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Capstone Copper"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.899348Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:48:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Diego de Almagro (https://capstonecopper.com/operations/santo-domingo/). The Santo Domingo project is a fully permitted copper-iron project located near Diego de Almagro in the Atacama region of Chile"
   },
   "canonical_name": "Santo Domingo Mine",
   "canonical_slug": "santo-domingo-mine-2",
@@ -49,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Diego de Almagro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:48:27.000000Z",
+      "operators": [
+        "Capstone Copper"
+      ],
+      "owners": [
+        "Capstone Copper"
+      ],
+      "notes": "Capstone Copper is the sole owner and operator of the Santo Domingo project."
+    }
+  }
 }

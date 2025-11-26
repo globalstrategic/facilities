@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.438,
-    "lon": -69.48,
+    "lat": -26.342891333563546,
+    "lon": -69.42024399183326,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Nacional del Cobre de Chile (Codelco)",
+    "Republic of Chile"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.916282Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:43:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chañaral (https://www.codelco.com/prontus_codelco/site/docs/20160205/20160205192417/codelco_rr_2016.pdf). The Potrerillos Refinery is part of the Salvador Division of Codelco, located in the Atacama Desert"
   },
   "canonical_name": "Potrerillos Mine",
   "canonical_slug": "potrerillos-mine",
@@ -53,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Chañaral",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:43:27.000000Z",
+      "operators": [
+        "Corporación Nacional del Cobre de Chile (Codelco)"
+      ],
+      "owners": [
+        "Republic of Chile"
+      ],
+      "notes": "Codelco is a state-owned enterprise, fully owned by the Republic of Chile."
+    }
+  }
 }

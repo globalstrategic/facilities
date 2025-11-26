@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.769,
-    "lon": -69.32,
+    "lat": -27.23441664524103,
+    "lon": -70.3549802,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.903300Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:41:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cerro Casale (https://www.goldfields.com/news-article.php?articleID=8720). Norte Abierto is a joint venture project between Barrick Gold and Newmont Goldcorp, located in the Atacama Region of Chile, specifically involving the Cerro Casale and Caspiche deposits"
   },
   "canonical_name": "Norte Abierto Mine",
   "canonical_slug": "norte-abierto-mine",
@@ -47,5 +50,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "town": "Cerro Casale",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:41:26.000000Z",
+      "operators": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "notes": "Norte Abierto is a 50:50 joint venture between Barrick Gold and Newmont Goldcorp."
+    }
+  }
 }

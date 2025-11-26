@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.1,
+    "lon": -70.4,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Molymet",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.458785",
-      "evidence": "Extracted from operator column: Molymet"
-    }
+    "Complejo Industrial Molynor S.A.",
+    "Molibdenos y Metales S.A.",
+    "Molymet"
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.903644Z",
-    "checked_by": "import_pipeline",
-    "notes": "Strategically located near northern ports and mines.45 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:40:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Strategically located near northern ports and mines.45 | Canonical name+slug generated. Web search geocoded. Source: https://www.molynor.cl/wp-content/uploads/2022/11/Sustainability-Report-2021.pdf. The Molynor Plant is part of the Mejillones Port Complex and is specifically located in Mejillones, which is 65 km from Antofagasta"
   },
   "canonical_name": "Molynor Facility",
   "canonical_slug": "molynor-facility",
@@ -72,5 +67,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:40:59.000000Z",
+      "operators": [
+        "Complejo Industrial Molynor S.A."
+      ],
+      "owners": [
+        "Molibdenos y Metales S.A."
+      ],
+      "notes": "Complejo Industrial Molynor S.A. is a subsidiary of Molibdenos y Metales S.A. (Molymet)."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -21.92,
-    "lon": -68.833,
+    "lat": -21.9205,
+    "lon": -68.8333,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco (49%)",
+    "Freeport-McMoRan",
+    "Freeport-McMoRan (51%)",
+    "Minera El Abra"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.912738Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:31:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/El_Abra_mine. El Abra is a large copper mine located in northern Chile, operated by Freeport-McMoRan and Codelco"
   },
   "canonical_name": "El Abra Mine",
   "canonical_slug": "el-abra-mine",
@@ -59,5 +64,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "El Loa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:31:39.000000Z",
+      "operators": [
+        "Freeport-McMoRan",
+        "Minera El Abra"
+      ],
+      "owners": [
+        "Freeport-McMoRan (51%)",
+        "Codelco (49%)"
+      ],
+      "notes": "Freeport-McMoRan holds a majority stake in the mine, while Codelco is a state-owned company."
+    }
+  }
 }

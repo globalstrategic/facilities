@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -32.006,
-    "lon": -70.991,
+    "lat": -30.56315210744804,
+    "lon": -71.2573637,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "HMC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.909606Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:42:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Punitaqui (https://minerahmc.cl/faena-tambo-de-oro/). The facility is located along Camino a Combarbalá Ruta D605, approximately 30 km from Punitaqui"
   },
   "canonical_name": "Ojo De Oro Oregano Mine",
   "canonical_slug": "ojo-de-oro-oregano-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coquimbo",
+  "town": "Punitaqui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:42:02.000000Z",
+      "operators": [
+        "HMC"
+      ],
+      "owners": [],
+      "notes": "HMC operates the Tambo de Oro mining facility."
+    }
+  }
 }

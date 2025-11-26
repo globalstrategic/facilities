@@ -22,8 +22,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.494,
-    "lon": -70.271,
+    "lat": -27.185975924083262,
+    "lon": -70.3322753,
     "precision": "site"
   },
   "types": [
@@ -45,7 +45,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sociedad Punta del Cobre S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -55,11 +57,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.918761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:43:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Copiapó (https://www.mining.sandvik/en/news-and-media/news-archive/2023/06/pucobre-partners-with-sandvik-for-autonomous-loaders-in-chile/). Punta del Cobre is one of the mines operated by Sociedad Punta del Cobre S.A. (Pucobre) in the Atacama region, near Copiapó"
   },
   "canonical_name": "Punta Del Cobre Mine",
   "canonical_slug": "punta-del-cobre-mine",
@@ -82,5 +84,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "town": "Copiapó",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:43:59.000000Z",
+      "operators": [
+        "Sociedad Punta del Cobre S.A."
+      ],
+      "owners": [
+        "Sociedad Punta del Cobre S.A."
+      ],
+      "notes": "Pucobre is a major player in the copper mining sector in Chile, operating multiple mines in the region."
+    }
+  }
 }

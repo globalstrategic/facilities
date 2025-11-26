@@ -11,8 +11,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.826,
-    "lon": -69.265,
+    "lat": -26.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañia Minera Mantos de Oro S.A. (MDO)",
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.910334Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:36:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.woodmac.com/reports/metals-la-coipa-mine-16180895/. La Coipa mine is located in the Atacama region of Chile, approximately 140 km northeast of Copiapó"
   },
   "canonical_name": "La Coipa Mine",
   "canonical_slug": "la-coipa-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:36:42.000000Z",
+      "operators": [
+        "Compañia Minera Mantos de Oro S.A. (MDO)"
+      ],
+      "owners": [
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Kinross Gold is the sole owner and operator of the La Coipa mine since acquiring Goldcorp's stake in 2007."
+    }
+  }
 }

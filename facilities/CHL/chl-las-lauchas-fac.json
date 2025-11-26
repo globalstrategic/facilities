@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -30.278,
-    "lon": -71.149,
+    "lat": -20.9914417,
+    "lon": -68.63861,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "Compania Minera Doña Inés de Collahuasi SCM",
+    "Glencore plc",
+    "Mitsui & Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.902356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:37:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Collahuasi_mine. Collahuasi mine is one of the largest copper mines in the world, located in northern Chile"
   },
   "canonical_name": "Las Lauchas Mine",
   "canonical_slug": "las-lauchas-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tarapacá Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:37:16.000000Z",
+      "operators": [
+        "Compania Minera Doña Inés de Collahuasi SCM"
+      ],
+      "owners": [
+        "Anglo American plc",
+        "Glencore plc",
+        "Mitsui & Co., Ltd."
+      ],
+      "notes": "The mine is a joint venture with Anglo American and Glencore each holding 44% and Mitsui & Co. holding 12%."
+    }
+  }
 }

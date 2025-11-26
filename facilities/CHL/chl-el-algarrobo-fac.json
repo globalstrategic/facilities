@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -28.812,
-    "lon": -70.989,
+    "lat": -28.808528,
+    "lon": -70.985,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera del Pacífico S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.926618Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:31:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/El_Algarrobo. El Algarrobo is a closed iron mine located in the Atacama Region of Chile"
   },
   "canonical_name": "El Algarrobo Mine",
   "canonical_slug": "el-algarrobo-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:31:48.000000Z",
+      "operators": [
+        "Compañía Minera del Pacífico S.A."
+      ],
+      "owners": [
+        "Compañía Minera del Pacífico S.A."
+      ],
+      "notes": "Compañía Minera del Pacífico S.A. is both the owner and operator of the El Algarrobo mining facility."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.016,
-    "lon": -68.888,
+    "lat": -24.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields",
+    "Minera Gold Fields Salares Norte SpA"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.902762Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:46:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/23/Salares-Norte-TR-12312021.pdf. The coordinates are approximate based on the relative location to Copiapó and the description of the facility"
   },
   "canonical_name": "Salares Norte Mine",
   "canonical_slug": "salares-norte-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:46:08.000000Z",
+      "operators": [
+        "Minera Gold Fields Salares Norte SpA"
+      ],
+      "owners": [
+        "Gold Fields"
+      ],
+      "notes": "Minera Gold Fields Salares Norte SpA is a wholly owned subsidiary of Gold Fields."
+    }
+  }
 }

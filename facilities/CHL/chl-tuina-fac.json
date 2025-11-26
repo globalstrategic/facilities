@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.538,
-    "lon": -68.424,
+    "lat": -21.775290444733145,
+    "lon": -68.9303083,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chile Metals",
+    "Cia. Minera Tuina",
+    "Minera Santa Lucia",
+    "Porvenir"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.924879Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:50:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chuquicamata (https://www.mindat.org/loc-25478.html). The Tuina Mine is a suspended, open-pit copper mine located 60 km from Chuquicamata"
   },
   "canonical_name": "Tuina Mine",
   "canonical_slug": "tuina-mine",
@@ -53,5 +58,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "El Loa Province",
+  "town": "Chuquicamata",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:50:46.000000Z",
+      "operators": [
+        "Cia. Minera Tuina"
+      ],
+      "owners": [
+        "Minera Santa Lucia",
+        "Porvenir",
+        "Chile Metals"
+      ],
+      "notes": "Cia. Minera Tuina operates the mine, while Minera Santa Lucia owns mining leases in the district. RMG Limited has agreements related to the Tuina project."
+    }
+  }
 }

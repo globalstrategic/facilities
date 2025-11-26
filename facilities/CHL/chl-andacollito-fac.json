@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.414,
-    "lon": -70.341,
+    "lat": -30.2501806,
+    "lon": -71.0939528,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera Carmen de Andacollo",
+    "Empresa Nacional de Minería (ENAMI) (10%)",
+    "Teck Resources",
+    "Teck Resources (90%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.925466Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:26:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Carmen_de_Andacollo. Carmen de Andacollo is an open-pit copper mine located next to the town of Andacollo"
   },
   "canonical_name": "Andacollito Mine",
   "canonical_slug": "andacollito-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coquimbo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:26:30.000000Z",
+      "operators": [
+        "Compañía Minera Carmen de Andacollo",
+        "Teck Resources"
+      ],
+      "owners": [
+        "Teck Resources (90%)",
+        "Empresa Nacional de Minería (ENAMI) (10%)"
+      ],
+      "notes": "Teck Resources owns 90% of the mine while ENAMI owns the remaining 10%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -32.728,
-    "lon": -71.499,
+    "lat": -32.76167,
+    "lon": -71.48028,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.926901Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:51:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Codelco%20-%20Las%20Ventanas.htm. The Ventanas refinery is a copper smelter plant located in Quintero, Chile"
   },
   "canonical_name": "Ventanas Refinery",
   "canonical_slug": "ventanas-refinery",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Valparaíso Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:51:35.000000Z",
+      "operators": [
+        "Codelco"
+      ],
+      "owners": [
+        "Codelco"
+      ],
+      "notes": "Codelco is the state-owned copper mining company of Chile."
+    }
+  }
 }

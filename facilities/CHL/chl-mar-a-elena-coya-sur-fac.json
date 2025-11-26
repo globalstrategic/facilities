@@ -1,11 +1,11 @@
 {
   "facility_id": "chl-mar-a-elena-coya-sur-fac",
-  "name": "María Elena / Coya Sur",
+  "name": "MarÃ­a Elena / Coya Sur",
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.5,
+    "lon": -68.5,
     "precision": "unknown"
   },
   "types": [
@@ -28,14 +28,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "SQM",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.504485",
-      "evidence": "Extracted from operator column: SQM"
-    }
+    "SQM",
+    "Sociedad Química y Minera de Chile S.A."
   ],
   "products": [],
   "sources": [
@@ -46,15 +40,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.928075Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces specialty plant nutrition products.63 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:39:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produces specialty plant nutrition products.63 | Canonical name+slug generated. Web search geocoded. Source: https://sqm-ynv.com/wp-content/uploads/2018/08/reporte_sustentabilidad_2010_en-1.pdf. The María Elena facility is a significant mining operation in the Antofagasta Region of Chile, known for its historical and contemporary significance in nitrate production"
   },
-  "canonical_name": "María Elena / Coya Sur Facility",
+  "canonical_name": "MarÃ­a Elena / Coya Sur Facility",
   "canonical_slug": "maria-elena-coya-sur-facility",
-  "display_name": "María Elena / Coya Sur",
+  "display_name": "MarÃ­a Elena / Coya Sur",
   "primary_type": "facility",
   "type_confidence": 1.0,
   "data_quality": {
@@ -67,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "María Elena / Coya Sur",
+      "name": "MarÃ­a Elena / Coya Sur",
       "from": "2025-10-27T13:22:28.504490",
       "to": "2025-11-04T19:19:09.928072Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:39:29.000000Z",
+      "operators": [
+        "Sociedad Química y Minera de Chile S.A."
+      ],
+      "owners": [
+        "Sociedad Química y Minera de Chile S.A."
+      ],
+      "notes": "SQM operates and owns the María Elena and Coya Sur facilities."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -32.648,
-    "lon": -71.112,
+    "lat": -32.5,
+    "lon": -71.2,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Anglo American Sur",
+    "Inversiones Mineras Becrux",
+    "Mitsubishi Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.924736Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:49:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/El_Soldado. El Soldado is an open pit copper mine located in mountainous terrain"
   },
   "canonical_name": "Soldado Mine",
   "canonical_slug": "soldado-mine",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Valparaíso Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:49:11.000000Z",
+      "operators": [
+        "Anglo American Sur"
+      ],
+      "owners": [
+        "Anglo American",
+        "Inversiones Mineras Becrux",
+        "Mitsubishi Corp."
+      ],
+      "notes": "Anglo American is the majority owner of El Soldado."
+    }
+  }
 }

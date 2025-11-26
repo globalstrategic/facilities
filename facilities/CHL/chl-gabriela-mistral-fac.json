@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -23.415,
-    "lon": -68.81,
+    "lat": -23.5,
+    "lon": -70.0,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.919775Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:34:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://godelius.com/en/cases-godelius/telecommand-service-of-large-machines-spreader-gabriela-mistral-codelco/. The Gabriela Mistral mine is located in the Antofagasta Region of Chile and is operated by Codelco"
   },
   "canonical_name": "Gabriela Mistral Mine",
   "canonical_slug": "gabriela-mistral-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:34:06.000000Z",
+      "operators": [
+        "Codelco"
+      ],
+      "owners": [
+        "Codelco"
+      ],
+      "notes": "Codelco is a state-owned company and the world's largest copper producer."
+    }
+  }
 }

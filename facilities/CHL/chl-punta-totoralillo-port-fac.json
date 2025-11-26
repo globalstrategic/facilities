@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -26.853025,
+    "lon": -70.814875,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera del Pacífico (CMP)",
+    "Compañía de Acero del Pacífico (CAP)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.911493Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:44:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.minalgroup.com/Ports.html. Punta Totoralillo Port is a multipurpose port terminal located in the Atacama Region for the transfer of bulk minerals and general cargo"
   },
   "canonical_name": "Punta Totoralillo Port Mine",
   "canonical_slug": "punta-totoralillo-port-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:44:09.000000Z",
+      "operators": [
+        "Compañía Minera del Pacífico (CMP)"
+      ],
+      "owners": [
+        "Compañía de Acero del Pacífico (CAP)"
+      ],
+      "notes": "CMP is the largest iron mining company in Chile and operates the Punta Totoralillo Port."
+    }
+  }
 }
