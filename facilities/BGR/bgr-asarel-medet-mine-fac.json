@@ -1,27 +1,39 @@
 {
   "facility_id": "bgr-asarel-medet-mine-fac",
   "name": "Asarel-Medet Mine",
-  "aliases": [],
+  "aliases": [
+    "Chelopech",
+    "Assarel",
+    "Asarel Medet"
+  ],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.488,
+    "lon": 24.073,
+    "precision": "site"
   },
   "types": [
     "open-pit mine"
   ],
-  "commodities": [],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Asarel-Medet JSC",
-      "role": "operator",
-      "source": "Bulgarian Mines and Metals Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:19:04.893162",
-      "evidence": "Extracted from operator column: Asarel-Medet JSC"
-    }
+    "Asarel-Medet JSC",
+    "Assarel-Investment JSC",
+    "Assarel-Medet JSC"
   ],
   "products": [],
   "sources": [
@@ -29,6 +41,11 @@
       "type": "csv_import",
       "id": "Bulgarian Mines and Metals Research 2025",
       "date": "2025-10-27T10:19:04.893164"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:47.034553"
     }
   ],
   "verification": {
@@ -59,5 +76,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pazardzhik Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:12:41.000000Z",
+      "operators": [
+        "Assarel-Medet JSC"
+      ],
+      "owners": [
+        "Assarel-Investment JSC"
+      ],
+      "notes": "Assarel-Medet JSC is the main operator, while Assarel-Investment JSC manages its subsidiaries."
+    }
+  }
 }

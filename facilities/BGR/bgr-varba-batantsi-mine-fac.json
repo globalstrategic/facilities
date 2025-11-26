@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "KCM 2000 Group",
-      "role": "operator",
-      "source": "Bulgarian Mines and Metals Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:19:04.892471",
-      "evidence": "Extracted from operator column: KCM 2000 Group"
-    }
+    "KCM 2000",
+    "KCM 2000 Group",
+    "Minstroy Holding",
+    "Varba-Batantsi"
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Smolyan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:16:43.000000Z",
+      "operators": [
+        "KCM 2000",
+        "Minstroy Holding"
+      ],
+      "owners": [
+        "Varba-Batantsi"
+      ],
+      "notes": "Varba-Batantsi is a joint venture between KCM 2000 and Minstroy Holding."
+    }
+  }
 }
