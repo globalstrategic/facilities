@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.381,
-    "lon": 92.967,
+    "lat": 42.380815,
+    "lon": 92.96712,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "国网能源哈密煤电有限公司 (State Grid Energy Hami Coal Power Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.602347Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:28:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%BD%E7%BD%91%E8%83%BD%E6%BA%90%E5%93%88%E5%AF%86%E7%85%A4%E7%94%B5%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%A4%A7%E5%8D%97%E6%B9%96%E4%BA%8C%E5%8F%B7%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Dananhu No. 2 Surface Mine is an open-pit coal mine located in the Hami region of Xinjiang, China"
   },
   "canonical_name": "Dananhu No 2 Surface Mine",
   "canonical_slug": "dananhu-no-2-surface-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:28:28.000000Z",
+      "operators": [
+        "国网能源哈密煤电有限公司 (State Grid Energy Hami Coal Power Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by State Grid Energy Hami Coal Power Co., Ltd."
+    }
+  }
 }

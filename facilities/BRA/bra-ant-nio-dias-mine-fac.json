@@ -1,11 +1,11 @@
 {
   "facility_id": "bra-ant-nio-dias-mine-fac",
-  "name": "AntÃ´nio Dias Mine",
+  "name": "AntÃƒÂ´nio Dias Mine",
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.548,
-    "lon": -43.019,
+    "lat": -19.547949,
+    "lon": -43.018538,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineração Marsil Ltda",
+    "Mlog SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,15 +32,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.199297Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:21:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ant%C3%B4nio_Dias_Mine. Coordinates are exact for the Antônio Dias Mine"
   },
-  "canonical_name": "Antã Nio Dias Mine",
+  "canonical_name": "AntÃ£ Nio Dias Mine",
   "canonical_slug": "anta-nio-dias-mine",
-  "display_name": "Antã Nio Dias",
+  "display_name": "AntÃ£ Nio Dias",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -50,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "Antônio Dias Mine",
+      "name": "AntÃ´nio Dias Mine",
       "from": "2025-10-20T15:29:24.463309",
       "to": "2025-11-04T19:18:47.199295Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:21:54.000000Z",
+      "operators": [
+        "Mineração Marsil Ltda"
+      ],
+      "owners": [
+        "Mlog SA"
+      ],
+      "notes": "Mlog SA owns 100% of Mineração Marsil Ltda, which operates the mine."
+    }
+  }
 }

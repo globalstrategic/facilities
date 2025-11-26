@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.492,
-    "lon": 123.619,
+    "lat": 41.492241,
+    "lon": 123.616737,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benxi Iron & Steel (Group) Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.781408Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:10:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bensteel_Waitoushan_Mine. The Bensteel Waitoushan Mine is an iron ore mine located in Benxi, Liaoning, China"
   },
   "canonical_name": "Bensteel Waitoushan Mine",
   "canonical_slug": "bensteel-waitoushan-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:10:30.000000Z",
+      "operators": [
+        "Benxi Iron & Steel (Group) Mining Co"
+      ],
+      "owners": [
+        "Benxi Iron & Steel (Group) Mining Co"
+      ],
+      "notes": "Benxi Iron & Steel (Group) Mining Co owns 100% of the mine."
+    }
+  }
 }

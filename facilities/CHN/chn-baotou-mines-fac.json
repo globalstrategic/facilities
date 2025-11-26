@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.693,
-    "lon": 110.605,
+    "lat": 41.78278,
+    "lon": 109.97361,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baogang Group (Baotou Iron and Steel Group)",
+    "China Northern Rare Earth Group High-Tech Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.841612Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:07:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/bayan-obo-rare-earth-mine/. The Bayan Obo mine is the largest rare earth element production facility in the world, located in Inner Mongolia, China. Baotou is known as the rare earth capital of China and is approximately 150 km south of the mine"
   },
   "canonical_name": "Baotou Mines Mine",
   "canonical_slug": "baotou-mines-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:07:58.000000Z",
+      "operators": [
+        "China Northern Rare Earth Group High-Tech Co., Ltd."
+      ],
+      "owners": [
+        "Baogang Group (Baotou Iron and Steel Group)"
+      ],
+      "notes": "The mine is operated by China Northern Rare Earth Group, a subsidiary of the state-owned Baogang Group."
+    }
+  }
 }

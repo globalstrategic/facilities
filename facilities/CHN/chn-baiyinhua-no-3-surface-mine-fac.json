@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.901,
-    "lon": 118.605,
+    "lat": 44.957507,
+    "lon": 118.668593,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Baiyinhua Haizhou Surface Mine Co., Ltd.",
+    "Liaoning Energy Industry Holding Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.713670Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:03:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baiyinhua_Haizhou_No.4_Surface_Mine_(Phase_II). Exact coordinates provided for Baiyinhua Haizhou No.4 Surface Mine, which is part of the Baiyinhua mining area"
   },
   "canonical_name": "Baiyinhua No 3 Surface Mine",
   "canonical_slug": "baiyinhua-no-3-surface-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:03:36.000000Z",
+      "operators": [
+        "Inner Mongolia Baiyinhua Haizhou Surface Mine Co., Ltd."
+      ],
+      "owners": [
+        "Liaoning Energy Industry Holding Group Co., Ltd."
+      ],
+      "notes": "Inner Mongolia Baiyinhua Haizhou Surface Mine Co. operates the facility, while it is owned by Liaoning Energy Industry Holding Group."
+    }
+  }
 }

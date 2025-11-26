@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 45.221,
-    "lon": 119.239,
+    "lat": 45.221363,
+    "lon": 119.239319,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xiwuzhumuqin Banner Baorihushuo Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.717040Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:06:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%A5%BF%E4%B9%8C%E7%8F%A0%E7%A9%86%E6%B2%81%E6%97%97%E5%AE%9D%E6%97%A5%E8%83%A1%E7%A1%95%E7%85%A4%E7%9F%BF. The Baorihushuo Coal Mine is an open-pit coal mine located in the Xiwuzhumuqin Banner of Inner Mongolia"
   },
   "canonical_name": "Baorihushuo Coal Mine",
   "canonical_slug": "baorihushuo-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:06:41.000000Z",
+      "operators": [
+        "Xiwuzhumuqin Banner Baorihushuo Coal Company"
+      ],
+      "owners": [
+        "Xiwuzhumuqin Banner Baorihushuo Coal Company"
+      ],
+      "notes": "The mine is operated and owned by the Xiwuzhumuqin Banner Baorihushuo Coal Company."
+    }
+  }
 }

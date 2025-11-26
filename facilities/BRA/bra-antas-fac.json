@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.24,
-    "lon": -49.753,
+    "lat": -5.931162771281804,
+    "lon": -49.556579788771536,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Avanco Resources",
+    "BHP",
+    "OZ Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.202634Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T10:22:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Parauapebas (https://www.mining-technology.com/projects/antas-north-copper-mine-carajs/). The Antas North open-pit copper mine is located in the Carajás Mineral Province of Brazil, approximately 40 km ENE of Parauapebas"
   },
   "canonical_name": "Antas Mine",
   "canonical_slug": "antas-mine",
@@ -54,5 +58,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "town": "Parauapebas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:06.000000Z",
+      "operators": [
+        "BHP",
+        "OZ Minerals"
+      ],
+      "owners": [
+        "BHP",
+        "OZ Minerals",
+        "Avanco Resources"
+      ],
+      "notes": "Avanco Resources was the original owner before being acquired by OZ Minerals in 2018, which was subsequently acquired by BHP in 2023."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.229,
-    "lon": -40.254,
+    "lat": -20.2933,
+    "lon": -40.2906,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.218068Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:22:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Tubar%C3%A3o_steel_plant. The ArcelorMittal Tubarão facility is a steel plant located in Tubarão, Serra, Espírito Santo, Brazil"
   },
   "canonical_name": "Arcelormittal Tubarao Smelter",
   "canonical_slug": "arcelormittal-tubarao-smelter",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Espírito Santo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:59.000000Z",
+      "operators": [
+        "ArcelorMittal"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal Tubarão was originally founded as Companhia Siderúrgica de Tubarão (CST) and was privatized in 1992 before being acquired by Arcelor in 2004."
+    }
+  }
 }

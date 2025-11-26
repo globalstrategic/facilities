@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.959,
-    "lon": -69.068,
+    "lat": -23.5,
+    "lon": -69.5,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Antofagasta plc",
+    "Marubeni Corporation",
+    "Minera Centinela"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.925762Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:29:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Centinela_mine. Centinela mine is located in the Atacama Desert of northern Chile, specifically in the Antofagasta Region"
   },
   "canonical_name": "Centinela Mine",
   "canonical_slug": "centinela-mine",
@@ -61,5 +65,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:29:43.000000Z",
+      "operators": [
+        "Minera Centinela"
+      ],
+      "owners": [
+        "Antofagasta plc",
+        "Marubeni Corporation"
+      ],
+      "notes": "Minera Centinela is 70% owned by Antofagasta plc and 30% by Marubeni Corporation."
+    }
+  }
 }

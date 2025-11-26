@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.848,
-    "lon": -67.28,
+    "lat": 52.909925285253934,
+    "lon": -67.0845797,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Champion Iron Ltd",
+    "Québec Iron Ore Inc.",
+    "Ressources Québec"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.743648Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:45:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fermont (https://www.championiron.com/project/bloom-lake/). The Bloom Lake Mining Complex is located approximately 13 km north of Fermont, Québec"
   },
   "canonical_name": "Bloom Lake Mine",
   "canonical_slug": "bloom-lake-mine",
@@ -53,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Québec",
+  "town": "Fermont",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:45:54.000000Z",
+      "operators": [
+        "Québec Iron Ore Inc."
+      ],
+      "owners": [
+        "Champion Iron Ltd",
+        "Ressources Québec"
+      ],
+      "notes": "Québec Iron Ore Inc. is a wholly-owned subsidiary of Champion Iron Ltd, which owns 63.2% of the project, with the remaining 36.8% owned by Ressources Québec."
+    }
+  }
 }

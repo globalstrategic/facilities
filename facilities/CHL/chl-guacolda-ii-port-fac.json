@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -28.5,
+    "lon": -71.2,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera del Pacífico (CMP)",
+    "Compañía de Acero del Pacífico (CAP)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.906856Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:34:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.cmp.cl/en/operaciones/. Guacolda II Port is located south of Santa Barbara Bay, 4 km south of Huasco Port"
   },
   "canonical_name": "Guacolda II Port Mine",
   "canonical_slug": "guacolda-ii-port-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:34:22.000000Z",
+      "operators": [
+        "Compañía Minera del Pacífico (CMP)"
+      ],
+      "owners": [
+        "Compañía de Acero del Pacífico (CAP)"
+      ],
+      "notes": "CMP operates the port and is a subsidiary of CAP, which is the parent company."
+    }
+  }
 }

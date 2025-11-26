@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.934,
-    "lon": 112.916,
+    "lat": 39.934983,
+    "lon": 112.915365,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Datong Coal Mining Group Wangcun",
+    "Jinneng Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.780985Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:31:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%90%8C%E7%85%A4%E7%9F%BF%E9%9B%86%E5%9B%A2%E7%8E%8B%E6%9D%91%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Datong Wangcun Coal Mine is an underground coal mine located in the Wangcun area of Datong City, Shanxi Province"
   },
   "canonical_name": "Datong Wangcun Coal Mine",
   "canonical_slug": "datong-wangcun-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:31:06.000000Z",
+      "operators": [
+        "Datong Coal Mining Group Wangcun"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is operated by Datong Coal Mining Group Wangcun, which is a subsidiary of Jinneng Group."
+    }
+  }
 }

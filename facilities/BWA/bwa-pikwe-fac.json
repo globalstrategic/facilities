@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BWA",
   "location": {
-    "lat": -21.947,
-    "lon": 27.864,
+    "lat": -26.0,
+    "lon": 27.0,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BCL Copper Mine Limited",
+    "Bcl Ltd.",
+    "Botswana Government",
+    "Botswana Rst Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.631833Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:33:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10256133. The Pikwe facility is located in Selebi-Phikwe, which is approximately 94 km southeast of Francistown"
   },
   "canonical_name": "Pikwe Mine",
   "canonical_slug": "pikwe-mine",
@@ -67,5 +72,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:33:57.000000Z",
+      "operators": [
+        "BCL Copper Mine Limited"
+      ],
+      "owners": [
+        "Botswana Rst Ltd.",
+        "Bcl Ltd.",
+        "Botswana Government"
+      ],
+      "notes": "BCL Copper Mine Limited operates the facility, while ownership is shared among Botswana Rst Ltd., Bcl Ltd., and the Botswana Government."
+    }
+  }
 }

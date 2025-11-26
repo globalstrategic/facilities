@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.933,
-    "lon": -117.31,
+    "lat": 53.03963114135107,
+    "lon": -117.5886772,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cardinal River Coals, Ltd.",
+    "Consolidation Coal, Co. of Canada",
+    "Glencore plc",
+    "Luscar, Ltd.",
+    "Teck Coal Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.753872Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:47:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hinton (https://www.cclmportal.ca/resource/reclamation-operations-cardinal-river-coals-ltd). The Cardinal River facility is located approximately 40 kilometers south of Hinton, Alberta"
   },
   "canonical_name": "Cardinal River Mine",
   "canonical_slug": "cardinal-river-mine",
@@ -51,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "town": "Hinton",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:47:52.000000Z",
+      "operators": [
+        "Teck Coal Ltd.",
+        "Cardinal River Coals, Ltd."
+      ],
+      "owners": [
+        "Luscar, Ltd.",
+        "Consolidation Coal, Co. of Canada",
+        "Glencore plc"
+      ],
+      "notes": "Cardinal River Coals, Ltd. is a joint venture owned 50% by Luscar, Ltd. and 50% by Consolidation Coal, Co. of Canada. Teck Coal Ltd. is involved in reclamation operations."
+    }
+  }
 }

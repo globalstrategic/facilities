@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -45.036,
-    "lon": -71.943,
+    "lat": -45.03472,
+    "lon": -71.94278,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Laguna Gold",
+    "Nyrstar",
+    "Sociedad Contractual Minera El Toqui",
+    "Sociedad Minera Pacifico del Sur SpA"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.912411Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:33:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/El_Toqui_mine. El Toqui is a polymetallic zinc-gold mine located in the Aysén Region of Chile"
   },
   "canonical_name": "El Toqui Mine",
   "canonical_slug": "el-toqui-mine",
@@ -61,5 +66,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Aysén Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:33:04.000000Z",
+      "operators": [
+        "Sociedad Minera Pacifico del Sur SpA",
+        "Sociedad Contractual Minera El Toqui"
+      ],
+      "owners": [
+        "Laguna Gold",
+        "Nyrstar"
+      ],
+      "notes": "Laguna Gold owns the mine through its subsidiary, while Nyrstar previously owned it before selling to Laguna Gold."
+    }
+  }
 }

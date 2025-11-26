@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.065,
-    "lon": -67.303,
+    "lat": 55.064648,
+    "lon": -67.303085,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Labrador Iron Mines Ltd",
+    "Schefferville Mines Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.754025Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:17:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Schefferville_Kivivic_Mine. Exact coordinates for the Schefferville Kivivic Mine are provided"
   },
   "canonical_name": "Schefferville Kivivic Mine",
   "canonical_slug": "schefferville-kivivic-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Newfoundland and Labrador",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:17:15.000000Z",
+      "operators": [
+        "Labrador Iron Mines Ltd"
+      ],
+      "owners": [
+        "Schefferville Mines Inc"
+      ],
+      "notes": "Labrador Iron Mines Ltd is the operator and owner of the Kivivic Mine."
+    }
+  }
 }

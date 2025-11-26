@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.253,
-    "lon": -68.149,
+    "lat": 49.2167,
+    "lon": -68.1533,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alcoa Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.749377Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:44:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_aluminium_smelters. Coordinates for the Baie Comeau Aluminium Smelter are derived from the Wikipedia list of aluminium smelters"
   },
   "canonical_name": "Baie Comeau Aluminium Smelter",
   "canonical_slug": "baie-comeau-aluminium-smelter",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:44:31.000000Z",
+      "operators": [
+        "Alcoa Corporation"
+      ],
+      "owners": [
+        "Alcoa Corporation"
+      ],
+      "notes": "Alcoa operates and owns the Baie Comeau smelter."
+    }
+  }
 }

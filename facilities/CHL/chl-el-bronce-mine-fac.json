@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -32.185,
-    "lon": -70.94,
+    "lat": -33.145,
+    "lon": -70.27111,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Sur S.A.",
+    "Anglo American plc",
+    "Codelco",
+    "Mitsubishi Materials Corp.",
+    "Mitsui & Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.901693Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:31:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Los_Bronces_mine. Los Bronces mine is a large copper mine located in central Chile, on the border of the Santiago Metropolitan Region and the Valparaíso Region"
   },
   "canonical_name": "El Bronce Mine",
   "canonical_slug": "el-bronce-mine",
@@ -58,5 +64,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santiago Metropolitan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:31:59.000000Z",
+      "operators": [
+        "Anglo American Sur S.A."
+      ],
+      "owners": [
+        "Anglo American plc",
+        "Codelco",
+        "Mitsubishi Materials Corp.",
+        "Mitsui & Co., Ltd."
+      ],
+      "notes": "Anglo American Sur S.A. operates the mine, with ownership shared among Anglo American, Codelco, Mitsubishi, and Mitsui."
+    }
+  }
 }

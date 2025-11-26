@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 53.6931,
+    "lon": -113.2187,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Sherritt Int'l",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.255039",
-      "evidence": "Extracted from operator column: Sherritt Int'l"
-    }
+    "Sherritt Int'l",
+    "Sherritt International Corporation"
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.767189Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://sherritt.com/about-us/. The refinery is located in Fort Saskatchewan, Alberta, which is explicitly mentioned in the source"
   },
   "canonical_name": "Fort Saskatchewan Mine",
   "canonical_slug": "fort-saskatchewan-mine",
@@ -51,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:32.000000Z",
+      "operators": [
+        "Sherritt International Corporation"
+      ],
+      "owners": [
+        "Sherritt International Corporation"
+      ],
+      "notes": "Sherritt operates and owns the refinery in Fort Saskatchewan."
+    }
+  }
 }

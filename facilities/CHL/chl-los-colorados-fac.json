@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -28.301,
-    "lon": -70.811,
+    "lat": -28.177620559990007,
+    "lon": -70.89676542539516,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera del Pacífico",
+    "Mitsubishi Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.900707Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:38:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Huasco (https://en.wikipedia.org/wiki/Los_Colorados_mine). Los Colorados is an open-pit iron mine located about 45 km northeast of the port of Huasco"
   },
   "canonical_name": "Los Colorados Mine",
   "canonical_slug": "los-colorados-mine",
@@ -52,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Huasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:38:33.000000Z",
+      "operators": [
+        "Compañía Minera del Pacífico"
+      ],
+      "owners": [
+        "Compañía Minera del Pacífico",
+        "Mitsubishi Corporation"
+      ],
+      "notes": "The mine is owned by Compañía Minera del Pacífico (CMP), which was formerly operated through a joint venture with Mitsubishi Corporation."
+    }
+  }
 }

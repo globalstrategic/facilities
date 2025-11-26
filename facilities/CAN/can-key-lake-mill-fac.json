@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 57.21,
-    "lon": null,
+    "lat": 57.252285834412895,
+    "lon": -106.660767,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Cameco",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.549642",
-      "evidence": "Extracted from operator column: Cameco"
-    }
+    "Cameco",
+    "Cameco Corporation",
+    "Orano Canada Inc."
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.775135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:02:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Saskatoon (https://en.wikipedia.org/wiki/Key_Lake_mine). The Key Lake Mill is located 570 km north of Saskatoon, Saskatchewan. Exact coordinates were not provided in the search results"
   },
   "canonical_name": "Key Lake Mill",
   "canonical_slug": "key-lake-mill",
@@ -58,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saskatchewan",
+  "town": "Saskatoon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:02:00.000000Z",
+      "operators": [
+        "Cameco Corporation"
+      ],
+      "owners": [
+        "Cameco Corporation",
+        "Orano Canada Inc."
+      ],
+      "notes": "Cameco Corporation owns 83.33% and operates the facility, while Orano Canada Inc. owns 16.67%."
+    }
+  }
 }

@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Vale",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.258055",
-      "evidence": "Extracted from operator column: Vale"
-    }
+    "Vale",
+    "Vale Canada Limited",
+    "Vale S.A."
   ],
   "products": [],
   "sources": [
@@ -51,5 +46,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Newfoundland and Labrador",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:05:38.000000Z",
+      "operators": [
+        "Vale Canada Limited"
+      ],
+      "owners": [
+        "Vale S.A."
+      ],
+      "notes": "Vale Canada Limited operates the facility, which is part of Vale S.A.'s global operations."
+    }
+  }
 }

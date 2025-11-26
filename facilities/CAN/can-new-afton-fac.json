@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 50.661,
-    "lon": -120.512,
+    "lat": 50.659813,
+    "lon": -120.513437,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.774846Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:12:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/New_Afton_mine. The New Afton mine is an underground gold and copper mine located 10 km west of Kamloops"
   },
   "canonical_name": "New Afton Mine",
   "canonical_slug": "new-afton-mine",
@@ -58,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:12:08.000000Z",
+      "operators": [
+        "New Gold Inc."
+      ],
+      "owners": [
+        "New Gold Inc."
+      ],
+      "notes": "New Gold Inc. owns and operates the New Afton mine."
+    }
+  }
 }

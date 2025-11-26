@@ -14,8 +14,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.455,
-    "lon": -81.255,
+    "lat": 48.4627,
+    "lon": -81.2412,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Discovery Silver Corp.",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.775861Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:14:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Porcupine_mine. The Porcupine mine is one of the largest gold mines in Canada, located in Timmins, Ontario"
   },
   "canonical_name": "Porcupine Mine",
   "canonical_slug": "porcupine-mine",
@@ -57,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:14:42.000000Z",
+      "operators": [
+        "Discovery Silver Corp."
+      ],
+      "owners": [
+        "Newmont Corporation",
+        "Discovery Silver Corp."
+      ],
+      "notes": "Discovery Silver acquired the Porcupine mine from Newmont Corporation."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.029,
-    "lon": 123.109,
+    "lat": 41.020954,
+    "lon": 123.094155,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benxi Mining Co (本溪矿业有限责任公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.755231Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:10:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Benxi_Mining_Lishugou_Iron_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Benxi Mining Lishugou Iron Mine",
   "canonical_slug": "benxi-mining-lishugou-iron-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:10:49.000000Z",
+      "operators": [
+        "Benxi Mining Co (本溪矿业有限责任公司)"
+      ],
+      "owners": [
+        "Benxi Mining Co (本溪矿业有限责任公司)"
+      ],
+      "notes": "Benxi Mining Co is the sole operator and owner of the facility."
+    }
+  }
 }

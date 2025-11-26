@@ -11,8 +11,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.099,
-    "lon": 123.138,
+    "lat": 41.104209,
+    "lon": 123.137299,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ansteel Group",
+    "Ansteel Group Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.674910Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:59:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ansteel_Hujiamiaozi_Mine. The Ansteel Hujiamiaozi Mine is a surface iron ore mine located in Anshan, Liaoning, China"
   },
   "canonical_name": "Ansteel Hujiamiaozi Mine",
   "canonical_slug": "ansteel-hujiamiaozi-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:59:29.000000Z",
+      "operators": [
+        "Ansteel Group Mining Co"
+      ],
+      "owners": [
+        "Ansteel Group"
+      ],
+      "notes": "Ansteel Group is a state-owned enterprise in China."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 50.2,
-    "lon": -114.916,
+    "lat": 50.199,
+    "lon": -114.844,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elk Valley Resources",
+    "Fording Canadian Coal Trust",
+    "Teck Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.751878Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fording_River_coal_mine. The Fording River coal mine is one of the largest coal reserves in Canada, producing metallurgical coal"
   },
   "canonical_name": "Fording River Mine",
   "canonical_slug": "fording-river-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:25.000000Z",
+      "operators": [
+        "Elk Valley Resources"
+      ],
+      "owners": [
+        "Teck Resources Ltd",
+        "Fording Canadian Coal Trust"
+      ],
+      "notes": "Elk Valley Resources is a subsidiary of Teck Resources Ltd, which is the full owner of the Fording River operations."
+    }
+  }
 }

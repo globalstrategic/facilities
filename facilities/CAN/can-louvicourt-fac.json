@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.098,
-    "lon": -77.516,
+    "lat": 50.899149777641696,
+    "lon": -73.5698065,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aur Resources Inc",
+    "Glencore Canada Corporation",
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.745142Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:06:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Montreal (https://www.ausimm.com/publications/conference-proceedings/eighth-underground-operators-conference-2002/swedish-slot-raise-drilling-method-at-the-louvicourt-mine/). The Louvicourt Mine is located 600 km north of Montreal in Quebec, Canada"
   },
   "canonical_name": "Louvicourt Mine",
   "canonical_slug": "louvicourt-mine",
@@ -57,5 +61,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Montreal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:06:06.000000Z",
+      "operators": [
+        "Teck Resources Limited"
+      ],
+      "owners": [
+        "Teck Resources Limited",
+        "Glencore Canada Corporation",
+        "Aur Resources Inc"
+      ],
+      "notes": "Teck Resources holds a 55% interest and is the operator, while Glencore Canada Corporation holds 45%. Aur Resources was previously involved before being taken over by Teck."
+    }
+  }
 }

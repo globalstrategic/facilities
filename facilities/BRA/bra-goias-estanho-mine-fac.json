@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -16.003,
-    "lon": -49.591,
+    "lat": -14.169929354083528,
+    "lon": -49.3104990343398,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.212036Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:36:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Alto Horizonte (http://lundinmining.com/operations/chapada/). The Chapada Mine is located approximately 4 km northeast of the town of Alto Horizonte in Goiás State, Brazil"
   },
   "canonical_name": "Goias Estanho Mine",
   "canonical_slug": "goias-estanho-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goiás",
+  "town": "Alto Horizonte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:36:17.000000Z",
+      "operators": [
+        "Lundin Mining"
+      ],
+      "owners": [
+        "Lundin Mining"
+      ],
+      "notes": "Lundin Mining operates and owns the Chapada Mine."
+    }
+  }
 }

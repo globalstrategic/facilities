@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.193,
-    "lon": 114.092,
+    "lat": 41.408356,
+    "lon": 109.973436,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dazhong Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.872476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:32:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dazhong_Mining_Hejiao_Mine. Coordinates are exact as per the mining report"
   },
   "canonical_name": "Dazhong Coal Mine",
   "canonical_slug": "dazhong-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:32:55.000000Z",
+      "operators": [
+        "Dazhong Mining Co"
+      ],
+      "owners": [
+        "Dazhong Mining Co"
+      ],
+      "notes": "Dazhong Mining Co is both the operator and owner of the Dazhong Coal Mine."
+    }
+  }
 }

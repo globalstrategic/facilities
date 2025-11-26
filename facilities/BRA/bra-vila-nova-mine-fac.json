@@ -8,8 +8,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": 0.4,
-    "lon": -51.755,
+    "lat": 0.04013768524097192,
+    "lon": -52.62901093046514,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ECO Mining Oil & Gaz Drilling and Exploration (EIRELI)",
+    "Eldorado Gold Corporation",
+    "Unamgen Mineracao e Metalurgia"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.218511Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:59:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Macapa (https://www.mining-technology.com/projects/vilanova-ironoremine/). The Vila Nova iron ore mine is located 175km west of Macapa in the state of Amapa, Brazil"
   },
   "canonical_name": "Vila Nova Mine",
   "canonical_slug": "vila-nova-mine",
@@ -52,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amapa",
+  "town": "Macapa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:59:32.000000Z",
+      "operators": [
+        "Unamgen Mineracao e Metalurgia",
+        "ECO Mining Oil & Gaz Drilling and Exploration (EIRELI)"
+      ],
+      "owners": [
+        "Eldorado Gold Corporation"
+      ],
+      "notes": "Eldorado Gold Corporation owns the mine indirectly through its subsidiary Unamgen Mineracao e Metalurgia."
+    }
+  }
 }

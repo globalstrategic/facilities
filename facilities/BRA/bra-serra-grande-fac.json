@@ -8,8 +8,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -14.574,
-    "lon": -49.967,
+    "lat": -14.497263664879528,
+    "lon": -49.9694813,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti",
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.233427Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:54:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Crixás (https://www.anglogoldashanti.com/portfolio/americas/serra-grande/). The Serra Grande Gold Mine is located about 5 km from the city of Crixás in Goiás, Brazil"
   },
   "canonical_name": "Serra Grande Mine",
   "canonical_slug": "serra-grande-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goiás",
+  "town": "Crixás",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:54:28.000000Z",
+      "operators": [
+        "AngloGold Ashanti"
+      ],
+      "owners": [
+        "AngloGold Ashanti",
+        "Kinross Gold Corporation"
+      ],
+      "notes": "AngloGold Ashanti operates the mine and owns 100% after acquiring the remaining stake from Kinross Gold."
+    }
+  }
 }

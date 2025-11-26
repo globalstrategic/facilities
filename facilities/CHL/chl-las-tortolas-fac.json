@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.6,
-    "lon": -70.39,
+    "lat": -33.5,
+    "lon": -70.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Codelco",
+    "Mitsubishi"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.929490Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:37:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/los-bronces-copper-mine/. Las Tórtolas flotation plant is part of the Los Bronces mining operation"
   },
   "canonical_name": "Las Tortolas Mine",
   "canonical_slug": "las-tortolas-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santiago Metropolitan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:37:34.000000Z",
+      "operators": [
+        "Anglo American"
+      ],
+      "owners": [
+        "Anglo American",
+        "Mitsubishi",
+        "Codelco"
+      ],
+      "notes": "Anglo American owns 50.1% of Los Bronces, Mitsubishi owns 20.4%, and Codelco owns 29.5%."
+    }
+  }
 }

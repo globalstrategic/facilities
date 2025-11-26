@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 53.72,
-    "lon": -113.188,
+    "lat": 53.6915,
+    "lon": -113.2187,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sherritt International Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.762029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sherritt_International. The Fort Site is located in Fort Saskatchewan, Alberta, Canada, and is associated with Sherritt International's operations"
   },
   "canonical_name": "Fort Site Refinery",
   "canonical_slug": "fort-site-refinery",
@@ -58,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:39.000000Z",
+      "operators": [
+        "Sherritt International Corporation"
+      ],
+      "owners": [
+        "Sherritt International Corporation"
+      ],
+      "notes": "Sherritt operates the Fort Site facilities, which are involved in fertilizer production and provide inputs for the Moa Joint Venture."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.496,
-    "lon": 109.975,
+    "lat": 39.495115,
+    "lon": 109.973302,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CHN Energy Shendong Coal Group Co., Ltd.",
+    "China Shenhua Energy Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.822722Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:12:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%AD%E5%9B%BD%E7%A5%9E%E5%8D%8E%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%B8%83%E5%B0%94%E5%8F%B0%E7%85%A4%E7%9F%BF. Buertai Coal Mine is a coal mine located in the Ordos region of Inner Mongolia, China"
   },
   "canonical_name": "Buertai Coal Mine",
   "canonical_slug": "buertai-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:12:25.000000Z",
+      "operators": [
+        "CHN Energy Shendong Coal Group Co., Ltd."
+      ],
+      "owners": [
+        "China Shenhua Energy Co Ltd"
+      ],
+      "notes": "The mine is part of the Shendong operations and utilizes longwall mining methods."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -14.361,
-    "lon": -42.538,
+    "lat": -14.361357,
+    "lon": -42.537808,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bahia Mineração S.A. (BAMIN)",
+    "Eurasian Resources Group S.a r.l."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.206029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:24:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BAMIN_Pedra_de_Ferro_Mine. The Pedra de Ferro Mine is an iron ore mine located in Caetité, Bahia, Brazil"
   },
   "canonical_name": "Bamin Pedra De Ferro Mine",
   "canonical_slug": "bamin-pedra-de-ferro-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bahia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:24:01.000000Z",
+      "operators": [
+        "Bahia Mineração S.A. (BAMIN)"
+      ],
+      "owners": [
+        "Eurasian Resources Group S.a r.l."
+      ],
+      "notes": "BAMIN is a wholly-owned subsidiary of Eurasian Resources Group."
+    }
+  }
 }

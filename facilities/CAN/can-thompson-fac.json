@@ -11,8 +11,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.71,
-    "lon": -97.885,
+    "lat": 55.7431,
+    "lon": -97.8551,
     "precision": "site"
   },
   "types": [
@@ -43,7 +43,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale Base Metals Ltd.",
+    "Vale Canada Limited",
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -53,11 +57,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.755374Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:19:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.cbc.ca/news/canada/manitoba/thompson-vale-mine-sale-1.7447594. Thompson is a city in northern Manitoba, Canada, where Vale operates its mining facilities"
   },
   "canonical_name": "Thompson Mine",
   "canonical_slug": "thompson-mine",
@@ -72,5 +76,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manitoba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:19:40.000000Z",
+      "operators": [
+        "Vale Canada Limited"
+      ],
+      "owners": [
+        "Vale S.A.",
+        "Vale Base Metals Ltd."
+      ],
+      "notes": "Vale Canada Limited is a wholly-owned subsidiary of Vale S.A., which owns the majority of the mining assets in Thompson."
+    }
+  }
 }

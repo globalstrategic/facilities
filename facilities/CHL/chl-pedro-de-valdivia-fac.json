@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.5,
+    "lon": -69.25,
     "precision": "unknown"
   },
   "types": [
@@ -20,14 +20,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "SQM",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.486380",
-      "evidence": "Extracted from operator column: SQM"
-    }
+    "Anglo-Lautaro Nitrate Corporation",
+    "SQM"
   ],
   "products": [],
   "sources": [
@@ -38,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.925612Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historic nitrate town, now a major iodine producer.63 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:42:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historic nitrate town, now a major iodine producer.63 | Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/1963/0031/report.pdf. The Pedro de Valdivia facility is located in the Antofagasta region of Chile, near the town of Tocopilla"
   },
   "canonical_name": "Pedro De Valdivia Facility",
   "canonical_slug": "pedro-de-valdivia-facility",
@@ -65,5 +59,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:42:49.000000Z",
+      "operators": [
+        "Anglo-Lautaro Nitrate Corporation"
+      ],
+      "owners": [],
+      "notes": "The facility is associated with nitrate production and operated by the Anglo-Lautaro Nitrate Corporation."
+    }
+  }
 }

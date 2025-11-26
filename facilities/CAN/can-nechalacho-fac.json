@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 62.5,
+    "lon": -113.5,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cheetah Resources",
+    "Cheetah Resources, a Vital Metals company",
+    "Vital Metals"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.765740Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produced REE concentrate (Nd/Pr) in 2021-22; currently paused | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:12:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produced REE concentrate (Nd/Pr) in 2021-22; currently paused | Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/nechalacho-rare-earth-mining-project/. Nechalacho is located approximately 100 kilometers southeast of Yellowknife, Northwest Territories, Canada"
   },
   "canonical_name": "Nechalacho Mine",
   "canonical_slug": "nechalacho-mine",
@@ -53,5 +57,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northwest Territories",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:12:00.000000Z",
+      "operators": [
+        "Cheetah Resources, a Vital Metals company"
+      ],
+      "owners": [
+        "Vital Metals",
+        "Cheetah Resources"
+      ],
+      "notes": "Vital Metals is the parent company of Cheetah Resources, which operates the Nechalacho mine project."
+    }
+  }
 }

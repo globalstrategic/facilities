@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.842,
-    "lon": -46.852,
+    "lat": -19.6668444,
+    "lon": -46.9086806,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Itafos Araxá Mineracao E Fertilizantes S.A",
+    "Itafos Inc.",
+    "St George Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.215041Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:22:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Companhia_Brasileira_de_Metalurgia_e_Minera%C3%A7%C3%A3o. The coordinates correspond to the location of the Companhia Brasileira de Metalurgia e Mineração (CBMM) in Araxá, which is a significant player in niobium mining"
   },
   "canonical_name": "Araxa Mine",
   "canonical_slug": "araxa-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:47.000000Z",
+      "operators": [
+        "St George Mining Limited",
+        "Itafos Araxá Mineracao E Fertilizantes S.A"
+      ],
+      "owners": [
+        "St George Mining Limited",
+        "Itafos Inc."
+      ],
+      "notes": "Itafos previously owned the Araxá project before selling it to St George Mining Limited."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.666,
-    "lon": -46.91,
+    "lat": -19.6668444,
+    "lon": -46.9086806,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chinese consortium (15%)",
+    "Companhia Brasileira de Metalurgia e Mineração (CBMM)",
+    "Japanese/Korean consortium (15%)",
+    "Moreira Salles family (70%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.214668Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:22:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Companhia_Brasileira_de_Metalurgia_e_Minera%C3%A7%C3%A3o. The Araxá facility is the largest niobium operation in the world, operated by CBMM"
   },
   "canonical_name": "Araxa Cbbm Plant",
   "canonical_slug": "araxa-cbbm-plant",
@@ -55,5 +60,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:39.000000Z",
+      "operators": [
+        "Companhia Brasileira de Metalurgia e Mineração (CBMM)"
+      ],
+      "owners": [
+        "Moreira Salles family (70%)",
+        "Japanese/Korean consortium (15%)",
+        "Chinese consortium (15%)"
+      ],
+      "notes": "CBMM is the primary operator and owner of the facility, with significant stakes held by international consortiums."
+    }
+  }
 }

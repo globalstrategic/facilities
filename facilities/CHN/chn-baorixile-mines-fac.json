@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 49.392,
-    "lon": 119.743,
+    "lat": 48.85249870945271,
+    "lon": 116.8185708,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Shenhua Energy Company Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.611719Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T13:07:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hulun Buir (https://miningdataonline.com/property/1905/Baorixile-Mine.aspx). The Baorixile Mine is located 20 km north of Hulun Buir, one of the largest open-pit coal mines in China"
   },
   "canonical_name": "Baorixile Mines Mine",
   "canonical_slug": "baorixile-mines-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "town": "Hulun Buir",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:07:03.000000Z",
+      "operators": [
+        "China Shenhua Energy Company Ltd."
+      ],
+      "owners": [
+        "China Shenhua Energy Company Ltd."
+      ],
+      "notes": "China Shenhua Energy Company Ltd. holds a 56.61% indirect ownership interest in the Baorixile Mine."
+    }
+  }
 }

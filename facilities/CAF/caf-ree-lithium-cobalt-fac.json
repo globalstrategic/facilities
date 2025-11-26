@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 45.13917,
+    "lon": -114.35194,
     "precision": "unknown"
   },
   "types": [
@@ -35,7 +35,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ecobalt Solutions",
+    "Jervois Global"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.055232Z",
-    "checked_by": "import_pipeline",
-    "notes": "No known economic deposits. African exploration and production for these critical minerals are in other countries. 40 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:40:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "No known economic deposits. African exploration and production for these critical minerals are in other countries. 40 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Idaho_Cobalt_Operations. The Idaho Cobalt Operations is the only active cobalt mine in the United States, reopened in 2022"
   },
   "canonical_name": "REE / Lithium / Cobalt Facility",
   "canonical_slug": "ree-lithium-cobalt-facility",
@@ -72,5 +75,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:44.000000Z",
+      "operators": [
+        "Jervois Global"
+      ],
+      "owners": [
+        "Jervois Global",
+        "Ecobalt Solutions"
+      ],
+      "notes": "Jervois Global acquired Ecobalt Solutions in 2019."
+    }
+  }
 }

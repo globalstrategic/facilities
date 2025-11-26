@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.393,
-    "lon": 107.065,
+    "lat": 39.392767,
+    "lon": 107.064987,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Ordos Coal Company",
+    "Inner Mongolia Ordos Investment Holding Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.723087Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:54:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%98%BF%E5%B0%94%E5%B7%B4%E6%96%AF%E7%85%A4%E7%9F%BF%EF%BC%88%E4%BA%8C%E4%BA%95%EF%BC%89. The A'erbasi No. 2 Well Coal Mine is an underground coal mine located in the industrial park of Qipanjing Town, Etokqi, Inner Mongolia"
   },
   "canonical_name": "A'erbasi No 2 Well Coal Mine",
   "canonical_slug": "a-erbasi-no-2-well-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:54:25.000000Z",
+      "operators": [
+        "Inner Mongolia Ordos Coal Company"
+      ],
+      "owners": [
+        "Inner Mongolia Ordos Investment Holding Company"
+      ],
+      "notes": "The mine is operated by Inner Mongolia Ordos Coal Company, which is fully owned by Inner Mongolia Ordos Investment Holding Company."
+    }
+  }
 }

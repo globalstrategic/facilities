@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.229,
-    "lon": -78.283,
+    "lat": 48.03379306559358,
+    "lon": -78.40062188940944,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico Eagle Mines Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.778672Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:04:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from LaRonde (https://en.wikipedia.org/wiki/Agnico_Eagle). Lapa is located about 11 km away from the LaRonde mine in the Rivière-Héva municipality"
   },
   "canonical_name": "Lapa Mine",
   "canonical_slug": "lapa-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "LaRonde",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:04:39.000000Z",
+      "operators": [
+        "Agnico Eagle Mines Limited"
+      ],
+      "owners": [
+        "Agnico Eagle Mines Limited"
+      ],
+      "notes": "Agnico Eagle is both the operator and owner of the Lapa facility."
+    }
+  }
 }

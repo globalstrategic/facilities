@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BWA",
   "location": {
-    "lat": -23.609,
-    "lon": 26.775,
+    "lat": -23.609295,
+    "lon": 26.774952,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jindal Energy (Botswana) Pty Ltd",
+    "Jindal Steel and Power",
+    "Maatla Energy",
+    "Maatla Resources Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.628448Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:32:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mmamabula. The Mmamabula coal mine is a proposed mine located near Gaborone and Francistown"
   },
   "canonical_name": "Mmamabula Coal Mine",
   "canonical_slug": "mmamabula-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:32:54.000000Z",
+      "operators": [
+        "Jindal Energy (Botswana) Pty Ltd",
+        "Maatla Energy"
+      ],
+      "owners": [
+        "Jindal Steel and Power",
+        "Maatla Resources Pty Ltd"
+      ],
+      "notes": "Jindal Steel and Power is involved in the development of the coal mine and associated power projects."
+    }
+  }
 }

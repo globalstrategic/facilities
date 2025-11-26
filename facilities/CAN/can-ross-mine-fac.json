@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.5,
-    "lon": -80.283,
+    "lat": 63.5486777596821,
+    "lon": -138.2938947999804,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jon Rudolph",
+    "Norm Ross",
+    "Pamour Porcupine Mines, Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.766166Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:16:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dawson City (https://www.mindat.org/loc-19861.html). The Ross Mine is located in Hislop Township, Cochrane District, Ontario, Canada. It was operational from 1934 to 1988 and produced over 1 million ounces of gold"
   },
   "canonical_name": "Ross Mine",
   "canonical_slug": "ross-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Dawson City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:16:57.000000Z",
+      "operators": [
+        "Pamour Porcupine Mines, Ltd."
+      ],
+      "owners": [
+        "Jon Rudolph",
+        "Norm Ross"
+      ],
+      "notes": "The mine has changed ownership multiple times, with Norm Ross being a former owner and Jon Rudolph being the current owner as of the latest reports."
+    }
+  }
 }

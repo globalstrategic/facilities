@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -18.894,
-    "lon": -43.42,
+    "lat": -18.893909,
+    "lon": -43.419568,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Minerio de Ferro Brasil SA",
+    "Anglo American PLC",
+    "Vale SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.229143Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:49:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anglo_American_Minas-Rio_Mine. The Minas-Rio Mine is an iron ore mine operated by Anglo American in the state of Minas Gerais, Brazil"
   },
   "canonical_name": "Rio Mine",
   "canonical_slug": "rio-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:49:56.000000Z",
+      "operators": [
+        "Anglo American PLC"
+      ],
+      "owners": [
+        "Anglo American Minerio de Ferro Brasil SA",
+        "Vale SA"
+      ],
+      "notes": "Anglo American owns 85% of the mine, while Vale holds a 15% stake."
+    }
+  }
 }

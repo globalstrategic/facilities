@@ -1,11 +1,11 @@
 {
   "facility_id": "bra-gerdau-v-rzea-do-lopes-mine-fac",
-  "name": "Gerdau VÃ¡rzea do Lopes Mine",
+  "name": "Gerdau VÃƒÂ¡rzea do Lopes Mine",
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.288,
-    "lon": -43.94,
+    "lat": -20.287618,
+    "lon": -43.939659,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau S.A.",
+    "Grupo Avante",
+    "Várzea do Lopes Mineração S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,15 +33,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.210390Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:36:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gerdau_V%C3%A1rzea_do_Lopes_Mine. The Gerdau Várzea do Lopes Mine is located in Itabirito, Minas Gerais, Brazil, and is a mid-sized surface iron ore mine"
   },
-  "canonical_name": "Gerdau VÃ Rzea Do Lopes Mine",
+  "canonical_name": "Gerdau VÃƒ Rzea Do Lopes Mine",
   "canonical_slug": "gerdau-varzea-do-lopes-mine",
-  "display_name": "Gerdau VÃ Rzea Do Lopes",
+  "display_name": "Gerdau VÃƒ Rzea Do Lopes",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -50,11 +54,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "Gerdau Várzea do Lopes Mine",
+      "name": "Gerdau VÃ¡rzea do Lopes Mine",
       "from": "2025-10-20T15:29:18.408018",
       "to": "2025-11-04T19:18:47.210388Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:36:04.000000Z",
+      "operators": [
+        "Gerdau S.A.",
+        "Várzea do Lopes Mineração S.A."
+      ],
+      "owners": [
+        "Gerdau S.A.",
+        "Grupo Avante"
+      ],
+      "notes": "Gerdau was the original operator and owner, but the mining rights have been transferred to Várzea do Lopes Mineração S.A., which is controlled by Grupo Avante."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -24.964,
-    "lon": -70.394,
+    "lat": -25.22728744587568,
+    "lon": -70.4858424,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lux Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.909117Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:41:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Taltal (https://luxmining.cl/en/). The Montecristo Mine is located 20 km north of the Santo Domingo Plant in the Taltal commune"
   },
   "canonical_name": "Montecristo Mine",
   "canonical_slug": "montecristo-mine",
@@ -56,5 +58,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Taltal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:41:11.000000Z",
+      "operators": [
+        "Lux Mining"
+      ],
+      "owners": [],
+      "notes": "Lux Mining is the company operating the Montecristo Mine."
+    }
+  }
 }

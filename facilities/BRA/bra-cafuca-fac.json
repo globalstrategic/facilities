@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -5.744,
-    "lon": -36.354,
+    "lat": -5.8,
+    "lon": -36.5,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.209913Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:26:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-446.html. Cafuca Mine is located in Bodó, Rio Grande do Norte, Brazil"
   },
   "canonical_name": "Cafuca Mine",
   "canonical_slug": "cafuca-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande do Norte"
 }

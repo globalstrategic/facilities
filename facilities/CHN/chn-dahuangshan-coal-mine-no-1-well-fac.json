@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.044,
-    "lon": 88.642,
+    "lat": 44.044349,
+    "lon": 88.642221,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Province Pingyao Coal Chemistry Group",
+    "Xinjiang Dahuangshan Yuxin Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.616028Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:25:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E5%A4%A7%E9%BB%84%E5%B1%B1%E8%B1%AB%E6%96%B0%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%B8%80%E5%8F%B7%E4%BA%95. The Dahuangshan Coal Mine No.1 Well is a coal mine located in the Xinjiang region of China"
   },
   "canonical_name": "Dahuangshan Coal No 1 Well Mine",
   "canonical_slug": "dahuangshan-coal-no-1-well-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:25:57.000000Z",
+      "operators": [
+        "Xinjiang Dahuangshan Yuxin Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Province Pingyao Coal Chemistry Group"
+      ],
+      "notes": "The mine is operated by Xinjiang Dahuangshan Yuxin Coal Industry Company and owned by Shanxi Province Pingyao Coal Chemistry Group."
+    }
+  }
 }

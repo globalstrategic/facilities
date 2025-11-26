@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.758,
-    "lon": null,
+    "lat": 52.88296730924975,
+    "lon": -67.0845797,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "ArcelorMittal",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.455185",
-      "evidence": "Extracted from operator column: ArcelorMittal"
-    }
+    "ArcelorMittal",
+    "ArcelorMittal Mining Canada G.P.",
+    "ArcelorMittal SA",
+    "China Steel Corp",
+    "POSCO Holdings Inc"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.780427Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:09:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fermont (https://www.e-mj.com/leading-developments/arcelormittal-expanding-at-mont-wright/). The Mont-Wright mine is located approximately 10 km north of Fermont, Quebec"
   },
   "canonical_name": "Mont Wright Mine",
   "canonical_slug": "mont-wright-mine-2",
@@ -66,5 +63,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Fermont",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:09:50.000000Z",
+      "operators": [
+        "ArcelorMittal Mining Canada G.P."
+      ],
+      "owners": [
+        "ArcelorMittal SA",
+        "China Steel Corp",
+        "POSCO Holdings Inc"
+      ],
+      "notes": "ArcelorMittal Mining Canada G.P. is the primary operator of the Mont-Wright mine."
+    }
+  }
 }

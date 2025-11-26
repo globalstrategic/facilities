@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.012,
-    "lon": -77.25,
+    "lat": 48.10074729503371,
+    "lon": -77.18337578284178,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cartier Resources Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.764631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:48:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Val-d'Or (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/371-tsx-venture/ecr/127048-cartier-increases-resources-of-chimo-mine-project-to-720-000-oz-indicated-and-to-1-633-000-oz-inferred.html). The Chimo Mine Project is located 45 km east of Val-d'Or, Quebec"
   },
   "canonical_name": "Chimo Mine",
   "canonical_slug": "chimo-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Val-d'Or",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:48:54.000000Z",
+      "operators": [
+        "Cartier Resources Inc."
+      ],
+      "owners": [
+        "Cartier Resources Inc."
+      ],
+      "notes": "Cartier Resources Inc. is the owner and operator of the Chimo Mine Project."
+    }
+  }
 }

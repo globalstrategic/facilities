@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.816,
-    "lon": 123.929,
+    "lat": 40.816121,
+    "lon": 123.929016,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benxi Steel Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.776945Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:10:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bensteel_Tongyuanpu_Mine. The Bensteel Tongyuanpu Mine is an iron ore mine that has been mothballed"
   },
   "canonical_name": "Bensteel Tongyuanpu Mine",
   "canonical_slug": "bensteel-tongyuanpu-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:10:20.000000Z",
+      "operators": [
+        "Benxi Steel Group"
+      ],
+      "owners": [
+        "Benxi Steel Group"
+      ],
+      "notes": "Benxi Steel Group owns 100% of the mine."
+    }
+  }
 }

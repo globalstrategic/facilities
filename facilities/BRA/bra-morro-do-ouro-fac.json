@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -24.515,
-    "lon": -48.832,
+    "lat": -17.2244,
+    "lon": -46.5056,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.215207Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:43:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://justice-project.org/wp-content/uploads/2018/07/Kinross-License-to-harm-report.pdf. The Morro do Ouro mine is located on the outskirts of Paracatu, Minas Gerais, and is the largest gold mine in Brazil"
   },
   "canonical_name": "Morro Do Ouro Mine",
   "canonical_slug": "morro-do-ouro-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:43:09.000000Z",
+      "operators": [
+        "Kinross Gold Corporation"
+      ],
+      "owners": [
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Kinross Gold acquired full ownership of the mine in 2004."
+    }
+  }
 }

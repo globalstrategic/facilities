@@ -10,8 +10,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -10.545,
-    "lon": -40.412,
+    "lat": -11.19194,
+    "lon": -37.67389,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineração Comisa Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.221042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:46:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pedrinhas. The coordinates correspond to the municipality of Pedrinhas in Sergipe, Brazil, where the mining facility is located"
   },
   "canonical_name": "Pedrinhas Comisa Coitzeiros Mine",
   "canonical_slug": "pedrinhas-comisa-coitzeiros-mine",
@@ -53,5 +55,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sergipe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:46:13.000000Z",
+      "operators": [
+        "Mineração Comisa Ltda"
+      ],
+      "owners": [],
+      "notes": "Mineração Comisa Ltda is mentioned as an operator in the context of the Pedrinhas mining facility."
+    }
+  }
 }

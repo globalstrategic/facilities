@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.559,
-    "lon": 105.17,
+    "lat": 26.559478,
+    "lon": 105.169551,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Guineng Investment Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.726066Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:11:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E8%B4%B5%E8%83%BD%E6%8A%95%E8%B5%84%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%B0%B4%E5%9F%8E%E5%8E%BF%E6%AF%94%E5%BE%B7%E8%85%BE%E5%BA%86%E7%85%A4%E7%9F%BF. The Bide Tengqing Coal Mine is an underground coal mine located in the Bijie region of Guizhou province"
   },
   "canonical_name": "Bide Tengqing Coal Mine",
   "canonical_slug": "bide-tengqing-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:11:29.000000Z",
+      "operators": [
+        "Guizhou Guineng Investment Company"
+      ],
+      "owners": [
+        "Guizhou Guineng Investment Company"
+      ],
+      "notes": "The mine is operated and owned by Guizhou Guineng Investment Company."
+    }
+  }
 }

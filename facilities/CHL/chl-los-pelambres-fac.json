@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -31.716,
-    "lon": -70.492,
+    "lat": -31.716691,
+    "lon": -70.490446,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Antofagasta Minerals",
+    "Antofagasta PLC",
+    "JX Nippon Mining & Metals",
+    "Marubeni Corporation",
+    "Minera Los Pelambres",
+    "Mitsubishi Corporation",
+    "Mitsubishi Materials Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.909275Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:38:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Los_Pelambres. Los Pelambres is one of the largest copper mines in Chile, located in the Coquimbo Region"
   },
   "canonical_name": "Los Pelambres Mine",
   "canonical_slug": "los-pelambres-mine",
@@ -60,5 +68,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coquimbo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:38:57.000000Z",
+      "operators": [
+        "Minera Los Pelambres",
+        "Antofagasta Minerals"
+      ],
+      "owners": [
+        "Antofagasta PLC",
+        "JX Nippon Mining & Metals",
+        "Marubeni Corporation",
+        "Mitsubishi Materials Corporation",
+        "Mitsubishi Corporation"
+      ],
+      "notes": "Antofagasta Minerals is the project developer, with a 60% ownership stake."
+    }
+  }
 }

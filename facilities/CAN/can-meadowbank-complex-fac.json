@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 65.023,
-    "lon": -96.07,
+    "lat": 65.01861,
+    "lon": -96.07389,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico-Eagle Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.749110Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:08:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Meadowbank_Gold_Mine. The Meadowbank Gold Mine is located in the Kivalliq district of Nunavut, Canada, approximately 75 km north of Baker Lake"
   },
   "canonical_name": "Meadowbank Mine",
   "canonical_slug": "meadowbank-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nunavut",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:08:44.000000Z",
+      "operators": [
+        "Agnico-Eagle Mines Ltd."
+      ],
+      "owners": [
+        "Agnico-Eagle Mines Ltd."
+      ],
+      "notes": "Agnico-Eagle Mines Ltd. is the sole owner and operator of the Meadowbank Complex."
+    }
+  }
 }

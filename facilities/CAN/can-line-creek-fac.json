@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.94,
-    "lon": -114.768,
+    "lat": 49.95803691320815,
+    "lon": -114.885847,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Teck Coal Limited",
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.777399Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:05:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sparwood (https://mininglifeonline.net/company-page/line-creek-operations/7544). The Line Creek operation is located approximately 25 kilometers north of Sparwood in southeastern British Columbia"
   },
   "canonical_name": "Line Creek Mine",
   "canonical_slug": "line-creek-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Sparwood",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:05:09.000000Z",
+      "operators": [
+        "Teck Coal Limited"
+      ],
+      "owners": [
+        "Teck Resources Limited"
+      ],
+      "notes": "Teck Coal Limited operates the Line Creek facility, which is owned by Teck Resources."
+    }
+  }
 }

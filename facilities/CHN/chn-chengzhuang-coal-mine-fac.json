@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.622,
-    "lon": 112.729,
+    "lat": 35.612799,
+    "lon": 112.72638,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "晋城蓝焰煤业股份有限公司 (Jincheng Lanyan Coal Industry Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.777105Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:19:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%99%8B%E5%9F%8E%E8%93%9D%E7%84%B0%E7%85%A4%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%88%90%E5%BA%84%E7%85%A4%E7%9F%BF. Chengzhuang Coal Mine is an underground coal mine with a production capacity of 8 million tons per year"
   },
   "canonical_name": "Chengzhuang Coal Mine",
   "canonical_slug": "chengzhuang-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:19:33.000000Z",
+      "operators": [
+        "晋城蓝焰煤业股份有限公司 (Jincheng Lanyan Coal Industry Co., Ltd.)"
+      ],
+      "owners": [
+        "晋城蓝焰煤业股份有限公司 (Jincheng Lanyan Coal Industry Co., Ltd.)"
+      ],
+      "notes": "The mine is operated and owned by Jincheng Lanyan Coal Industry Co., Ltd."
+    }
+  }
 }

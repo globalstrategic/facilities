@@ -1,15 +1,15 @@
 {
   "facility_id": "bra-avg-esperan-a-mine-fac",
-  "name": "AVG EsperanÃ§a Mine",
+  "name": "AVG EsperanÃƒÂ§a Mine",
   "aliases": [
-    "AVG Esperança Mine",
+    "AVG EsperanÃ§a Mine",
     "Esperanca",
     "GVA Mineracao"
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.111,
-    "lon": -44.229,
+    "lat": -20.110936,
+    "lon": -44.225151,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo AVG"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,15 +35,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.198062Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:23:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/AVG_Esperan%C3%A7a_Mine. The AVG Esperança Mine is an iron ore mine located in Brumadinho, Minas Gerais, Brazil"
   },
-  "canonical_name": "AVG Esperanã A Mine",
+  "canonical_name": "AVG EsperanÃ£ A Mine",
   "canonical_slug": "avg-esperanaa-mine",
-  "display_name": "AVG Esperanã A",
+  "display_name": "AVG EsperanÃ£ A",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -54,11 +56,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "AVG Esperança Mine",
+      "name": "AVG EsperanÃ§a Mine",
       "from": "2025-10-20T15:29:21.289485",
       "to": "2025-11-04T19:18:47.198060Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:23:30.000000Z",
+      "operators": [
+        "Grupo AVG"
+      ],
+      "owners": [
+        "Grupo AVG"
+      ],
+      "notes": "Grupo AVG is the sole owner and operator of the AVG Esperança Mine."
+    }
+  }
 }

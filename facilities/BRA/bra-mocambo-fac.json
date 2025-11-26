@@ -6,8 +6,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.851,
-    "lon": -51.995,
+    "lat": -19.170625,
+    "lon": -57.6363361,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineracao Sao Francisco de Assis Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.193521Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:42:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.internationaltin.org/canadian-listing-for-brazilian-tin-mine/. The Mocambo tin mine is located about 30 km north of Corumbá"
   },
   "canonical_name": "Mocambo Mine",
   "canonical_slug": "mocambo-mine",
@@ -49,5 +51,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mato Grosso do Sul",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:42:18.000000Z",
+      "operators": [
+        "Mineracao Sao Francisco de Assis Ltda"
+      ],
+      "owners": [],
+      "notes": "Mineracao Sao Francisco de Assis Ltda is the sole owner and operator of the Mocambo tin mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -14.9,
+    "lon": -46.0,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Denham Capital",
+    "Energy and Minerals Group",
+    "Serra Verde Pesquisa e Mineração Ltda.",
+    "Vision Blue Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:47.204844Z",
-    "checked_by": "import_pipeline",
-    "notes": "Ionic-clay mine; commercial production began 2024 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:55:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Ionic-clay mine; commercial production began 2024 | Canonical name+slug generated. Web search geocoded. Source: https://ewsdata.rightsindevelopment.org/projects/DFC-SERRAVERDE/. The facility is located in Minaçu County, State of Goiás, Brazil"
   },
   "canonical_name": "Serra Verde Mine",
   "canonical_slug": "serra-verde-mine",
@@ -53,5 +58,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goiás",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:55:16.000000Z",
+      "operators": [
+        "Serra Verde Pesquisa e Mineração Ltda."
+      ],
+      "owners": [
+        "Denham Capital",
+        "Vision Blue Resources",
+        "Energy and Minerals Group"
+      ],
+      "notes": "Serra Verde is the operating company and is backed by major investors including Denham Capital and Vision Blue Resources."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -0.761,
-    "lon": -60.106,
+    "lat": -0.753472,
+    "lon": -60.10139,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CNMC Trade Company Limited",
+    "Mineração Taboca SA",
+    "Minsur SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.232680Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:46:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pitinga_mine. The Pitinga mine is located in the Amazonas state of Brazil and is known for being one of the richest tin deposits in the world"
   },
   "canonical_name": "Pitinga Mine",
   "canonical_slug": "pitinga-mine",
@@ -65,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amazonas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:46:50.000000Z",
+      "operators": [
+        "Mineração Taboca SA"
+      ],
+      "owners": [
+        "Minsur SA",
+        "CNMC Trade Company Limited"
+      ],
+      "notes": "Mineração Taboca operates the mine and is a subsidiary of Minsur, which was recently sold to CNMC."
+    }
+  }
 }

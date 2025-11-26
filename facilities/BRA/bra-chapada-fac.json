@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -14.233,
-    "lon": -49.371,
+    "lat": -14.159341809619713,
+    "lon": -49.3366993,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining Corporation",
+    "Mineração Maracá Indústria e Comércio S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.204990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:29:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Alto Horizonte (https://www.nsenergybusiness.com/projects/chapada-copper-gold-mine/). The Chapada mine is located just 4km from the community of Alto Horizonte"
   },
   "canonical_name": "Chapada Mine",
   "canonical_slug": "chapada-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goiás",
+  "town": "Alto Horizonte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:29:06.000000Z",
+      "operators": [
+        "Mineração Maracá Indústria e Comércio S.A."
+      ],
+      "owners": [
+        "Lundin Mining Corporation"
+      ],
+      "notes": "Lundin Mining owns the mine through its subsidiary Mineração Maracá Indústria e Comércio S.A."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -25.796,
-    "lon": -69.93,
+    "lat": -24.5,
+    "lon": -69.1,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining Corporation",
+    "Sumitomo Corporation",
+    "Sumitomo Metal Mining Co., Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.901338Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:28:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://lundinmining.com/operations/candelaria-mine/. The Candelaria Copper Mining Complex includes the Candelaria and Ojos del Salado operations, which are located in the Atacama Region of Chile"
   },
   "canonical_name": "Candelaria Iii, Sara Ii, Vieja Sara, Peggy Ii Mine",
   "canonical_slug": "candelaria-iii-sara-ii-vieja-sara-peggy-ii-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:28:50.000000Z",
+      "operators": [
+        "Lundin Mining Corporation"
+      ],
+      "owners": [
+        "Lundin Mining Corporation",
+        "Sumitomo Metal Mining Co., Ltd",
+        "Sumitomo Corporation"
+      ],
+      "notes": "Lundin Mining holds an 80% interest in the Candelaria mining operations, while Sumitomo holds the remaining 20%."
+    }
+  }
 }

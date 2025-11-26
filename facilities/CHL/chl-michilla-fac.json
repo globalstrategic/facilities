@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.678,
-    "lon": -70.172,
+    "lat": -22.7272,
+    "lon": -70.2358,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anaconda Chile Ltd.",
+    "Cia Minera Carolina De Michilla",
+    "Haldeman Mining Company SA",
+    "Minera Michilla SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.916592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:40:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/19031. Coordinates extracted directly from the mining report"
   },
   "canonical_name": "Michilla Mine",
   "canonical_slug": "michilla-mine",
@@ -53,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:40:22.000000Z",
+      "operators": [
+        "Minera Michilla SA",
+        "Haldeman Mining Company SA"
+      ],
+      "owners": [
+        "Anaconda Chile Ltd.",
+        "Cia Minera Carolina De Michilla"
+      ],
+      "notes": "Minera Michilla SA was previously owned by Antofagasta plc before being sold to Haldeman Mining Company SA."
+    }
+  }
 }

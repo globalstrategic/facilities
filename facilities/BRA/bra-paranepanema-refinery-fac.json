@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -12.697,
-    "lon": -38.322,
+    "lat": -12.0,
+    "lon": -38.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Paranapanema S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.214231Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:45:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ri.paranapanema.com.br/en/profile/fact-sheet/. Paranepanema refinery is located in Dias d’Ávila, Bahia, Brazil"
   },
   "canonical_name": "Paranepanema Smelter",
   "canonical_slug": "paranepanema-smelter",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bahia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:45:27.000000Z",
+      "operators": [
+        "Paranapanema S.A."
+      ],
+      "owners": [
+        "Paranapanema S.A."
+      ],
+      "notes": "Paranapanema S.A. is the largest non-integrated producer of refined copper in Brazil."
+    }
+  }
 }

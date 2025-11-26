@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.55,
-    "lon": null,
+    "lat": 48.4,
+    "lon": -71.1,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Magris Performance Materials",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.464107",
-      "evidence": "Extracted from operator column: Magris Performance Materials"
-    }
+    "IAMGOLD Corporation",
+    "Magris Performance Materials",
+    "Magris Resources Inc.",
+    "Mazarin Inc."
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.766410Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:12:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/niobec-niobium-mine-quebec/. Niobec Mine is located in the municipality of Saint-Honoré, approximately 25 km northwest of the Saguenay region"
   },
   "canonical_name": "Niobec Mine",
   "canonical_slug": "niobec-mine",
@@ -58,5 +54,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:12:35.000000Z",
+      "operators": [
+        "Magris Resources Inc.",
+        "Mazarin Inc."
+      ],
+      "owners": [
+        "IAMGOLD Corporation",
+        "Magris Resources Inc."
+      ],
+      "notes": "The mine was previously owned by IAMGOLD and is now operated by Magris Resources, which acquired it in 2015."
+    }
+  }
 }

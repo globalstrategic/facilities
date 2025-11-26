@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.525,
-    "lon": -77.691,
+    "lat": 48.54507099772517,
+    "lon": -77.6382217,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Abcourt Mines Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.748959Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:42:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Barraute (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/857-tsx-venture/abi/159173-abcourt-acquires-nine-9-claims-contiguous-to-its-abcourt-barvue-property-in-abitibi-temiscamingue.html). The Abcourt-Barvue property is located 12 km north of Barraute, Quebec"
   },
   "canonical_name": "Abcourt Barvue/pershcourt Frebert Mine",
   "canonical_slug": "abcourt-barvue-pershcourt-frebert-mine",
@@ -55,5 +57,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Barraute",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:42:39.000000Z",
+      "operators": [
+        "Abcourt Mines Inc."
+      ],
+      "owners": [
+        "Abcourt Mines Inc."
+      ],
+      "notes": "Abcourt Mines Inc. is the 100% owner of the Abcourt-Barvue property."
+    }
+  }
 }

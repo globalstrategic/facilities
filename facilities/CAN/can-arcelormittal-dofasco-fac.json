@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 43.265,
-    "lon": null,
+    "lat": 43.2491,
+    "lon": -79.8494,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "ArcelorMittal",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.470965",
-      "evidence": "Extracted from operator column: ArcelorMittal"
-    }
+    "ArcelorMittal",
+    "ArcelorMittal Dofasco G.P."
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.742224Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:43:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://northamerica.arcelormittal.com/our-operations/arcelormittal-dofasco/. ArcelorMittal Dofasco is located in Hamilton, Ontario, and is a major flat steel producer in Canada"
   },
   "canonical_name": "Arcelormittal Dofasco Steel Plant",
   "canonical_slug": "arcelormittal-dofasco-steel-plant",
@@ -66,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:43:31.000000Z",
+      "operators": [
+        "ArcelorMittal Dofasco G.P."
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal Dofasco is a subsidiary of ArcelorMittal, which is the parent company."
+    }
+  }
 }

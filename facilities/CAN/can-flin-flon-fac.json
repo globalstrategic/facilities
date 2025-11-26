@@ -11,8 +11,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 54.773,
-    "lon": -101.882,
+    "lat": 54.7667,
+    "lon": -101.6,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canadian Gold Corp.",
+    "Hudbay Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.776001Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://canadiangoldcorp.com/news-releases-2025/. The Tartan Mine is located near Flin Flon, Manitoba, and is 100% owned by Canadian Gold Corp"
   },
   "canonical_name": "Flin Flon Mine",
   "canonical_slug": "flin-flon-mine",
@@ -63,5 +66,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manitoba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:16.000000Z",
+      "operators": [
+        "Canadian Gold Corp."
+      ],
+      "owners": [
+        "Canadian Gold Corp.",
+        "Hudbay Minerals Inc."
+      ],
+      "notes": "Canadian Gold Corp. is actively exploring and developing the Tartan Mine, while Hudbay Minerals Inc. has a historical connection to the property."
+    }
+  }
 }

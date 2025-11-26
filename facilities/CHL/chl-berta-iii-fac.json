@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -26.713,
-    "lon": -70.052,
+    "lat": -23.012366786626213,
+    "lon": -70.2219448,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coro Mining Corp.",
+    "SCM Berta",
+    "Santiago Metals Proyecto 4 Limitada"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.920625Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:27:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marimaca (https://www.newsfilecorp.com/release/28570/Coro-Mining-Provides-an-Update-on-its-SCM-Berta-Operation-in-Chile). The Berta facility is located near Marimaca, approximately 19 km from the town"
   },
   "canonical_name": "Berta Iii Mine",
   "canonical_slug": "berta-iii-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "town": "Marimaca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:27:47.000000Z",
+      "operators": [
+        "Coro Mining Corp.",
+        "SCM Berta"
+      ],
+      "owners": [
+        "Coro Mining Corp.",
+        "Santiago Metals Proyecto 4 Limitada"
+      ],
+      "notes": "Coro Mining owns 100% of SCM Berta after acquiring the remaining shares."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 47.55,
-    "lon": -81.936,
+    "lat": 47.67646683363093,
+    "lon": -82.50750875010432,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "IAMGOLD Corporation",
+    "Sumitomo Metal Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.750619Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:51:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Timmins (https://www.iamgold.com/English/investors/news-releases/news-releases-details/2024/IAMGOLD-Announces-Commercial-Production-at-Ct-Gold/default.aspx). Côté Gold Mine is located approximately 125 km southwest of Timmins, Ontario"
   },
   "canonical_name": "Cote Mine",
   "canonical_slug": "cote-mine",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Timmins",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:51:16.000000Z",
+      "operators": [
+        "IAMGOLD Corporation"
+      ],
+      "owners": [
+        "IAMGOLD Corporation",
+        "Sumitomo Metal Mining Co., Ltd."
+      ],
+      "notes": "Côté Gold Mine is a joint venture between IAMGOLD (70%) and Sumitomo Metal Mining (30%)."
+    }
+  }
 }

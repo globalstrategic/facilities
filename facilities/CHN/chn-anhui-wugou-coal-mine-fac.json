@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 33.553,
-    "lon": 116.637,
+    "lat": 33.552505,
+    "lon": 116.636984,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anhui Hengyuan Coal Power Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.673439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:57:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%AE%89%E5%BE%BD%E6%81%92%E6%BA%90%E7%85%A4%E7%94%B5%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BA%94%E6%B2%9F%E7%85%A4%E7%9F%BF. The Anhui Wugou Coal Mine is an underground coal mine located in the village of Miao Qian in Suixi County, Huaibei City, Anhui Province"
   },
   "canonical_name": "Anhui Wugou Coal Mine",
   "canonical_slug": "anhui-wugou-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:57:50.000000Z",
+      "operators": [
+        "Anhui Hengyuan Coal Power Co Ltd"
+      ],
+      "owners": [],
+      "notes": "Anhui Hengyuan Coal Power Co Ltd is the operator of the mine."
+    }
+  }
 }

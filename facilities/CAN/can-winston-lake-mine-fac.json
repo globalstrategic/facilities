@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.974,
-    "lon": -87.385,
+    "lat": 49.12836397905469,
+    "lon": -87.74717115553017,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Quantum Minerals Ltd",
+    "Metallum Resources Inc.",
+    "Panther Metals Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.759865Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:22:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Schreiber (https://investornews.com/member_news/panther-metals-plc-winston-high-grade-brownfield-critical-minerals-project/). The Winston Lake Mine is located approximately 50 km east of Thunder Bay, Ontario, near Schreiber"
   },
   "canonical_name": "Winston Lake Mine",
   "canonical_slug": "winston-lake-mine",
@@ -58,5 +62,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Schreiber",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:22:26.000000Z",
+      "operators": [
+        "Panther Metals Plc",
+        "Metallum Resources Inc."
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd"
+      ],
+      "notes": "The Winston Lake Mine was originally developed by Inmet Mining Limited and is currently associated with Panther Metals and Metallum Resources for redevelopment and exploration."
+    }
+  }
 }

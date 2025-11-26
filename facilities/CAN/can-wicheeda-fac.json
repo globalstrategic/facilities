@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 54.41795055216843,
+    "lon": -121.87396315916557,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Defense Metals Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.748327Z",
-    "checked_by": "import_pipeline",
-    "notes": "LREE (Nd/Pr) carbonatite project | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:21:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "LREE (Nd/Pr) carbonatite project | Canonical name+slug generated. Web search geocoded. Source: Calculated from Prince George (https://investornews.com/critical-minerals-rare-earths/defense-metals-mark-tory-on-why-wicheeda-stands-out-as-one-of-the-worlds-best-rare-earths-projects/). The Wicheeda REE Project is located on the traditional territory of the McLeod Lake Indian Band"
   },
   "canonical_name": "Wicheeda Mine",
   "canonical_slug": "wicheeda-mine",
@@ -53,5 +55,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Prince George",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:21:41.000000Z",
+      "operators": [
+        "Defense Metals Corp."
+      ],
+      "owners": [
+        "Defense Metals Corp."
+      ],
+      "notes": "Defense Metals Corp. owns 100% of the Wicheeda REE Project."
+    }
+  }
 }

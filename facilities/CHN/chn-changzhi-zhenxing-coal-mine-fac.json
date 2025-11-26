@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.892,
-    "lon": 113.115,
+    "lat": 35.891816,
+    "lon": 113.121427,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Changzhi County Zhenxing Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.779546Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:17:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E9%95%BF%E6%B2%BB%E5%8E%BF%E6%8C%AF%E5%85%B4%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Changzhi Zhenxing Coal Mine is an underground coal mine located in the Shanxi province of China"
   },
   "canonical_name": "Changzhi Zhenxing Coal Mine",
   "canonical_slug": "changzhi-zhenxing-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:17:57.000000Z",
+      "operators": [
+        "Changzhi County Zhenxing Coal Industry Company"
+      ],
+      "owners": [
+        "Changzhi County Zhenxing Coal Industry Company"
+      ],
+      "notes": "The facility is operated and owned by Changzhi County Zhenxing Coal Industry Company."
+    }
+  }
 }

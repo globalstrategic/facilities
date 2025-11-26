@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.409,
-    "lon": 110.583,
+    "lat": 39.409271,
+    "lon": 110.582975,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Yidong Investment Group",
+    "内蒙古伊东集团东圪堵煤炭有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.800385Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:35:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E4%BC%8I%E4%B8%9C%E9%9B%86%E5%9B%A2%E4%B8%9C%E5%9C%AA%E5%A0%B5%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Donggedu Coal Mine is an underground coal mine located in the Ordos City of Inner Mongolia"
   },
   "canonical_name": "Donggedu Coal Mine",
   "canonical_slug": "donggedu-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:35:07.000000Z",
+      "operators": [
+        "内蒙古伊东集团东圪堵煤炭有限责任公司"
+      ],
+      "owners": [
+        "Inner Mongolia Yidong Investment Group"
+      ],
+      "notes": "The mine is operated by Inner Mongolia Yidong Investment Group."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 54.995,
-    "lon": -120.992,
+    "lat": 54.94654524255406,
+    "lon": -120.998067,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Conuma Resources Ltd.",
+    "Teck Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.756024Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:15:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tumbler Ridge (https://www.mining-technology.com/news/canadas-conuma-restarts-quintette-coal-mine-after-24-years/). The Quintette Coal Mine is located approximately 20 kilometers south of Tumbler Ridge, British Columbia"
   },
   "canonical_name": "Quintette Coal Mine",
   "canonical_slug": "quintette-coal-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Tumbler Ridge",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:15:34.000000Z",
+      "operators": [
+        "Conuma Resources Ltd."
+      ],
+      "owners": [
+        "Teck Resources Ltd.",
+        "Conuma Resources Ltd."
+      ],
+      "notes": "Conuma Resources acquired the mine from Teck Resources in February 2023."
+    }
+  }
 }

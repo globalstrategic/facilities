@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.028,
-    "lon": -43.592,
+    "lat": -20.027693,
+    "lon": -43.591602,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FLAPA Engenharia e Mineração Ltda"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.222774Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:32:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/FLAPA_Barra_Mine. Coordinates provided directly in the source"
   },
   "canonical_name": "Flapa Barra Mine",
   "canonical_slug": "flapa-barra-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:32:26.000000Z",
+      "operators": [
+        "FLAPA Engenharia e Mineração Ltda"
+      ],
+      "owners": [
+        "FLAPA Engenharia e Mineração Ltda"
+      ],
+      "notes": "FLAPA Engenharia e Mineração Ltda is both the operator and owner of the FLAPA Barra Mine."
+    }
+  }
 }

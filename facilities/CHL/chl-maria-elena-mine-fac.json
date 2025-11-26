@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.314,
-    "lon": -69.666,
+    "lat": -22.6339861,
+    "lon": -69.8764833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sociedad Química y Minera (SQM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.921138Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:39:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Antucoya. The María Elena Mine is located near the border between Maria Elena and Mejillones in the Antofagasta Region"
   },
   "canonical_name": "Maria Elena Mine",
   "canonical_slug": "maria-elena-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:39:47.000000Z",
+      "operators": [
+        "Sociedad Química y Minera (SQM)"
+      ],
+      "owners": [
+        "Sociedad Química y Minera (SQM)"
+      ],
+      "notes": "SQM is the primary operator and owner of the María Elena Mine."
+    }
+  }
 }

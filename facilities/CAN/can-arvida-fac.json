@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.429,
-    "lon": -71.168,
+    "lat": 48.4,
+    "lon": -71.0667,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto Alcan"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.750897Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:43:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Arvida,_Quebec. Arvida is located approximately 240 km north of Quebec City, south of the Saguenay River"
   },
   "canonical_name": "Arvida Smelter",
   "canonical_slug": "arvida-smelter",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:43:48.000000Z",
+      "operators": [
+        "Rio Tinto Alcan"
+      ],
+      "owners": [
+        "Rio Tinto Alcan"
+      ],
+      "notes": "Rio Tinto Alcan operates and owns the Arvida aluminum production facility."
+    }
+  }
 }

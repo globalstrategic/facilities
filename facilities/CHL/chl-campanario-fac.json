@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -32.014,
-    "lon": -71.108,
+    "lat": -37.106303,
+    "lon": -72.292882,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "I Squared Capital Advisors LLC",
+    "Nautilus Inkia Holdings LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.915820Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:28:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Yungay_power_station. Coordinates are for the Yungay power station, which is also known as Campanario power station"
   },
   "canonical_name": "Campanario Mine",
   "canonical_slug": "campanario-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Biobío",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:28:30.000000Z",
+      "operators": [
+        "Nautilus Inkia Holdings LLC"
+      ],
+      "owners": [
+        "I Squared Capital Advisors LLC"
+      ],
+      "notes": "Nautilus Inkia Holdings LLC operates the power station, owned by I Squared Capital Advisors LLC."
+    }
+  }
 }

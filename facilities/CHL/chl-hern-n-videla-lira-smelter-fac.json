@@ -1,13 +1,13 @@
 {
   "facility_id": "chl-hern-n-videla-lira-smelter-fac",
-  "name": "Hernán Videla Lira Smelter",
+  "name": "HernÃ¡n Videla Lira Smelter",
   "aliases": [
     "Paipote"
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -27.41778,
+    "lon": -70.25639,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "ENAMI",
-      "role": "operator",
-      "source": "Research Import CHL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:28.432159",
-      "evidence": "Extracted from operator column: ENAMI (100%)"
-    }
+    "ENAMI",
+    "Empresa Nacional de Mineria – ENAMI"
   ],
   "products": [],
   "sources": [
@@ -39,15 +33,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.913878Z",
-    "checked_by": "import_pipeline",
-    "notes": "State-owned smelter serving small and medium-scale miners.24 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:34:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "State-owned smelter serving small and medium-scale miners.24 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fundici%C3%B3n_Paipote. The Hernán Videla Lira Smelter is located 8 km southeast of Copiapó in the Atacama Region of Chile"
   },
-  "canonical_name": "Hernán Videla Lira Smelter",
+  "canonical_name": "HernÃ¡n Videla Lira Smelter",
   "canonical_slug": "hernan-videla-lira-smelter",
-  "display_name": "Hernán Videla Lira",
+  "display_name": "HernÃ¡n Videla Lira",
   "primary_type": "smelter",
   "type_confidence": 1.0,
   "data_quality": {
@@ -58,5 +52,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:34:52.000000Z",
+      "operators": [
+        "Empresa Nacional de Mineria – ENAMI"
+      ],
+      "owners": [
+        "Empresa Nacional de Mineria – ENAMI"
+      ],
+      "notes": "ENAMI is the state-owned company that operates and owns the smelter."
+    }
+  }
 }

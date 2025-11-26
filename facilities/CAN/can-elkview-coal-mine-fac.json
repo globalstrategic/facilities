@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.75,
-    "lon": -114.822,
+    "lat": 49.752273,
+    "lon": -114.877327,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Nippon Steel",
+    "POSCO",
+    "Teck Coal Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.764793Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:54:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Elkview_coal_mine. The Elkview Coal Mine is located in Sparwood, British Columbia, and is one of the largest coal reserves in Canada"
   },
   "canonical_name": "Elkview Coal Mine",
   "canonical_slug": "elkview-coal-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:54:07.000000Z",
+      "operators": [
+        "Teck Coal Limited"
+      ],
+      "owners": [
+        "Glencore",
+        "Nippon Steel",
+        "POSCO"
+      ],
+      "notes": "Glencore owns a 77% stake, Nippon Steel holds 20%, and POSCO has a 3% stake in the Elkview Coal Mine."
+    }
+  }
 }

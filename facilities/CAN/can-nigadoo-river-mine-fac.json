@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 47.733,
-    "lon": -65.802,
+    "lat": 47.7332,
+    "lon": -65.8047,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nigadoo River Mines Ltd",
+    "Sullivan Mining Group Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.755862Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:12:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10073127. The Nigadoo River Mine is located in New Brunswick, Canada, and has historical significance as a copper, lead, zinc, and silver producer"
   },
   "canonical_name": "Nigadoo River Mine",
   "canonical_slug": "nigadoo-river-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Brunswick",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:12:25.000000Z",
+      "operators": [
+        "Sullivan Mining Group Ltd"
+      ],
+      "owners": [
+        "Nigadoo River Mines Ltd",
+        "Sullivan Mining Group Ltd"
+      ],
+      "notes": "Sullivan Mining Group Ltd is the owner-operator of the facility."
+    }
+  }
 }

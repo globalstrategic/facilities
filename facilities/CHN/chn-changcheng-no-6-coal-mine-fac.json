@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.299,
-    "lon": 106.534,
+    "lat": 38.299084,
+    "lon": 106.53429,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Beijing Huirong Shengjing Equity Investment Fund Management Center",
+    "Inner Mongolia Shuangxin Energy Chemical Company",
+    "Ordos Antel Investment Company",
+    "Shandong Energy",
+    "State Grid Corporation of China",
+    "鄂托克前旗长城六号矿业有限公司 (Otog Front Banner Changcheng No.6 Mining Company)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.617557Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:15:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E6%89%98%E5%85%8B%E5%89%8D%E6%97%97%E9%95%BF%E5%9F%8E%E5%85%AD%E5%8F%B7%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%95%BF%E5%9F%8E%E5%85%AD%E5%8F%B7%E7%85%A4%E7%9F%BF. The Changcheng No. 6 Coal Mine is an underground coal mine located in the Otog Front Banner of Ordos City, Inner Mongolia"
   },
   "canonical_name": "Changcheng No 6 Coal Mine",
   "canonical_slug": "changcheng-no-6-coal-mine",
@@ -55,5 +62,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区 (Inner Mongolia Autonomous Region)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:15:18.000000Z",
+      "operators": [
+        "鄂托克前旗长城六号矿业有限公司 (Otog Front Banner Changcheng No.6 Mining Company)"
+      ],
+      "owners": [
+        "Shandong Energy",
+        "State Grid Corporation of China",
+        "Inner Mongolia Shuangxin Energy Chemical Company",
+        "Beijing Huirong Shengjing Equity Investment Fund Management Center",
+        "Ordos Antel Investment Company"
+      ],
+      "notes": "The mine is operated by Otog Front Banner Changcheng No.6 Mining Company, which is fully owned by Shandong Energy."
+    }
+  }
 }

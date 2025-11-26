@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 45.383,
-    "lon": 119.487,
+    "lat": 45.382698,
+    "lon": 119.486564,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "内蒙古吉煤矿业有限公司 (Inner Mongolia Jimei Mining Co., Ltd.)",
+    "吉林省煤炭工业集团 (Jilin Province Coal Industry Group)",
+    "福德人寿保险公司 (Fude Life Insurance Company)",
+    "西藏恒益盛投资公司 (Tibet Hengyisheng Investment Company)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.814173Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:26:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E5%90%89%E7%85%A4%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%BE%BE%E6%9D%A5%E8%83%A1%E7%A1%95%EF%BC%88%E9%9C%8D%E6%9E%97%E6%B2%B3%E4%BA%8C%E5%8F%B7%EF%BC%89%E7%9F%BF%E4%BA%95. The Dalaihushuo Coal Mine, also known as the Hohlin River No. 2 Mine, is located in Hohhot, Inner Mongolia, with a construction scale of 6 million tons per year"
   },
   "canonical_name": "Dalaihushuo Coal Mine",
   "canonical_slug": "dalaihushuo-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区 (Inner Mongolia)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:26:46.000000Z",
+      "operators": [
+        "内蒙古吉煤矿业有限公司 (Inner Mongolia Jimei Mining Co., Ltd.)"
+      ],
+      "owners": [
+        "吉林省煤炭工业集团 (Jilin Province Coal Industry Group)",
+        "西藏恒益盛投资公司 (Tibet Hengyisheng Investment Company)",
+        "福德人寿保险公司 (Fude Life Insurance Company)"
+      ],
+      "notes": "The mine is operated by Inner Mongolia Jimei Mining Co., Ltd. and has multiple owners with significant stakes."
+    }
+  }
 }

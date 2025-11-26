@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -23.824,
-    "lon": -70.315,
+    "lat": -23.5,
+    "lon": -70.4,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.914059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:26:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fundici%C3%B3n_Altonorte. Altonorte is a copper smelter located 25 km southeast of Antofagasta"
   },
   "canonical_name": "Altonorte Smelter",
   "canonical_slug": "altonorte-smelter",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:26:12.000000Z",
+      "operators": [
+        "Glencore"
+      ],
+      "owners": [
+        "Glencore"
+      ],
+      "notes": "Glencore owns and operates the Altonorte smelter."
+    }
+  }
 }

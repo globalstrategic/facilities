@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.153,
-    "lon": -44.878,
+    "lat": -20.1394,
+    "lon": -44.8881,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau Aços Longos Divinópolis",
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.218977Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:34:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gerdau_Divin%C3%B3polis_steel_plant. The Gerdau Divinópolis steel plant is located in Divinópolis, Minas Gerais, Brazil"
   },
   "canonical_name": "Gerdau Divinopolis Smelter",
   "canonical_slug": "gerdau-divinopolis-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:34:41.000000Z",
+      "operators": [
+        "Gerdau Aços Longos Divinópolis"
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau acquired the plant in 1994 and has been operating it since."
+    }
+  }
 }

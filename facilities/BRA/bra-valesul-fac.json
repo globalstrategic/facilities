@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -22.899,
-    "lon": -43.651,
+    "lat": -6.40331,
+    "lon": -50.324008,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.222195Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:58:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vale_Serra_Sul_Complex_Mine. The coordinates correspond to the Vale Serra Sul Complex Mine, which is part of Vale's operations in Brazil"
   },
   "canonical_name": "Valesul Mine",
   "canonical_slug": "valesul-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:58:25.000000Z",
+      "operators": [
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A."
+      ],
+      "notes": "Vale S.A. is the sole operator and owner of the Vale Serra Sul Complex Mine."
+    }
+  }
 }

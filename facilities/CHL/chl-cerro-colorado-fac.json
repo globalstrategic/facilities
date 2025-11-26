@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -20.048,
-    "lon": -69.26,
+    "lat": -20.0498556,
+    "lon": -69.2601806,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Ltd.",
+    "BHP Group Ltd.",
+    "Compania Minera Cerro Colorado Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.914227Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:29:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cerro_Colorado_mine. Cerro Colorado mine is located in the Atacama Desert, east of Iquique, Chile"
   },
   "canonical_name": "Cerro Colorado Mine",
   "canonical_slug": "cerro-colorado-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tarapacá Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:29:54.000000Z",
+      "operators": [
+        "Compania Minera Cerro Colorado Ltd.",
+        "BHP Group Ltd."
+      ],
+      "owners": [
+        "BHP Billiton Ltd."
+      ],
+      "notes": "BHP is the owner and operator of the mine, holding a 100% interest."
+    }
+  }
 }

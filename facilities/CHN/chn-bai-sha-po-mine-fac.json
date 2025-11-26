@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 23.253,
-    "lon": 103.154,
+    "lat": 25.985,
+    "lon": 117.204,
     "precision": "site"
   },
   "types": [
@@ -41,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.767375Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:00:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/2014/1219/pdf/of2014-1219.pdf. Coordinates extracted directly from the mining report"
   },
   "canonical_name": "Bai Sha Po Mine",
   "canonical_slug": "bai-sha-po-mine",
@@ -60,5 +60,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Fujian Province"
 }

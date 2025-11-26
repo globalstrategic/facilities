@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 58.07,
-    "lon": null,
+    "lat": 58.06039156527967,
+    "lon": -106.660767,
     "precision": "unknown"
   },
   "types": [
@@ -21,22 +21,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Cameco",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.532234",
-      "evidence": "Extracted from operator column: Cameco / Orano"
-    },
-    {
-      "name": "Orano",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.532240",
-      "evidence": "Extracted from operator column: Cameco / Orano"
-    }
+    "Cameco",
+    "Cameco Corporation",
+    "Idemitsu Canada Resources Ltd.",
+    "Orano",
+    "Orano Canada Inc.",
+    "Tokyo Electric Power Company (TEPCO) Resources Inc."
   ],
   "products": [],
   "sources": [
@@ -47,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.770874Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T11:49:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Saskatoon (https://en.wikipedia.org/wiki/Cigar_Lake_mine). Cigar Lake mine is one of the largest high-grade uranium mines in the world, located in northern Saskatchewan"
   },
   "canonical_name": "Cigar Lake Mine",
   "canonical_slug": "cigar-lake-mine",
@@ -66,5 +56,22 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saskatchewan",
+  "town": "Saskatoon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:49:08.000000Z",
+      "operators": [
+        "Cameco Corporation"
+      ],
+      "owners": [
+        "Cameco Corporation",
+        "Orano Canada Inc.",
+        "Idemitsu Canada Resources Ltd.",
+        "Tokyo Electric Power Company (TEPCO) Resources Inc."
+      ],
+      "notes": "Cameco is the majority owner and operator of the Cigar Lake mine."
+    }
+  }
 }

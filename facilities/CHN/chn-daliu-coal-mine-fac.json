@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.139,
-    "lon": 106.924,
+    "lat": 35.140384,
+    "lon": 106.919919,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Huaneng Group Co. Ltd.",
+    "Huating Coal Daliu Coal Mine Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.845848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:27:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%8D%8E%E4%BA%AD%E7%85%A4%E4%B8%9A%E5%A4%A7%E6%9F%B3%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. Daliu Coal Mine is an underground coal mine located in Gansu Province, China"
   },
   "canonical_name": "Daliu Coal Mine",
   "canonical_slug": "daliu-coal-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:27:06.000000Z",
+      "operators": [
+        "Huating Coal Daliu Coal Mine Company"
+      ],
+      "owners": [
+        "China Huaneng Group Co. Ltd."
+      ],
+      "notes": "The mine is operated by Huating Coal, which is a subsidiary of China Huaneng Group."
+    }
+  }
 }

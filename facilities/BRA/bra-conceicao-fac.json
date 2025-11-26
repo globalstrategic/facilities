@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.654,
-    "lon": -43.283,
+    "lat": -18.893909,
+    "lon": -43.419568,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Cia Vale Do Rio Doce (Cvrd)",
+    "Itabira Iron Ore Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.211011Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:30:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anglo_American_Minas-Rio_Mine. The coordinates are for the Anglo American Minas-Rio Mine located in Conceição do Mato Dentro, Minas Gerais, Brazil"
   },
   "canonical_name": "Conceicao Mine",
   "canonical_slug": "conceicao-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:30:01.000000Z",
+      "operators": [
+        "Anglo American"
+      ],
+      "owners": [
+        "Cia Vale Do Rio Doce (Cvrd)",
+        "Itabira Iron Ore Company"
+      ],
+      "notes": "Anglo American operates the Minas-Rio Mine, which is part of a larger ownership structure including Vale."
+    }
+  }
 }

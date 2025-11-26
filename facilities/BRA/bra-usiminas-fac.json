@@ -3,15 +3,15 @@
   "name": "Usiminas",
   "aliases": [
     "Itatiaiucu",
-    "Usiminas West (Mineração Usiminas Mining Complex) Mine",
+    "Usiminas West (MineraÃ§Ã£o Usiminas Mining Complex) Mine",
     "Usiminas",
     "Serra Azul",
     "Samambaia"
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.164,
-    "lon": -44.452,
+    "lat": -20.139024,
+    "lon": -44.410261,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineração Usiminas S.A.",
+    "Sumitomo Corporation",
+    "Usinas Siderúrgicas de Minas Gerais S.A. - USIMINAS"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.227143Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:57:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Usiminas_Central_(Minera%C3%A7%C3%A3o_Usiminas_Mining_Complex)_Mine. Usiminas Central (Mineração Usiminas Mining Complex) is an iron ore mine located in Itatiaiuçu, Minas Gerais, Brazil"
   },
   "canonical_name": "Usiminas Mine",
   "canonical_slug": "usiminas-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:57:17.000000Z",
+      "operators": [
+        "Mineração Usiminas S.A."
+      ],
+      "owners": [
+        "Usinas Siderúrgicas de Minas Gerais S.A. - USIMINAS",
+        "Sumitomo Corporation"
+      ],
+      "notes": "Mineração Usiminas is fully owned by Usinas Siderúrgicas de Minas Gerais S.A. and Sumitomo Corporation holds a 30% stake."
+    }
+  }
 }

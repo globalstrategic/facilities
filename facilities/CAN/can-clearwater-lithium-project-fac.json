@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 51.77365632950755,
+    "lon": -114.057541,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "1975293 Alberta Ltd.",
+    "E3 Lithium Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.772979Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:49:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Calgary (https://miningdataonline.com/property/898/Clearwater-Project.aspx). The Clearwater Lithium Project is located 81 km north of Calgary, Alberta, Canada"
   },
   "canonical_name": "Clearwater Lithium Refinery",
   "canonical_slug": "clearwater-lithium-refinery",
@@ -42,5 +45,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "town": "Calgary",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:49:19.000000Z",
+      "operators": [
+        "E3 Lithium Ltd."
+      ],
+      "owners": [
+        "E3 Lithium Ltd.",
+        "1975293 Alberta Ltd."
+      ],
+      "notes": "E3 Lithium Ltd. owns 100% of the project indirectly through its subsidiary, 1975293 Alberta Ltd."
+    }
+  }
 }

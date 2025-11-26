@@ -21,22 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Eastport Ventures",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.588739",
-      "evidence": "Extracted from operator column: Eastport Ventures / ZCI Limited"
-    },
-    {
-      "name": "ZCI Limited",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.588742",
-      "evidence": "Extracted from operator column: Eastport Ventures / ZCI Limited"
-    }
+    "Eastport Ventures",
+    "Matsitama Minerals (Pty) Limited",
+    "ZCI Limited"
   ],
   "products": [],
   "sources": [
@@ -74,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Botswana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:32:43.000000Z",
+      "operators": [
+        "Matsitama Minerals (Pty) Limited",
+        "ZCI Limited"
+      ],
+      "owners": [
+        "ZCI Limited"
+      ],
+      "notes": "ZCI Limited owns 100% of Matsitama Minerals, which operates the Matsitama Project."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 47.985,
-    "lon": -85.464,
+    "lat": 47.99097490520871,
+    "lon": -85.44392507156564,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Wesdome Gold Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.777049Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:53:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Wawa (https://s203.q4cdn.com/643390454/files/doc_downloads/technical_reports/technical-report-eagle-river.pdf). The Eagle River mine is located 50 kilometers west of Wawa, Ontario, Canada"
   },
   "canonical_name": "Eagle River Mine",
   "canonical_slug": "eagle-river-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Wawa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:53:20.000000Z",
+      "operators": [
+        "Wesdome Gold Mines Ltd."
+      ],
+      "owners": [
+        "Wesdome Gold Mines Ltd."
+      ],
+      "notes": "Wesdome Gold Mines Ltd. owns 100% of the Eagle River mine."
+    }
+  }
 }

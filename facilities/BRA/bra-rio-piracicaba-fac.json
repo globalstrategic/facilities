@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.174,
-    "lon": -43.408,
+    "lat": -19.929584,
+    "lon": -43.230107,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.232850Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:50:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vale_Minas_Centrais_Complex_Mine. The coordinates are directly provided for the Vale Minas Centrais Complex Mine located in Rio Piracicaba"
   },
   "canonical_name": "Rio Piracicaba Mine",
   "canonical_slug": "rio-piracicaba-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:50:22.000000Z",
+      "operators": [
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A."
+      ],
+      "notes": "Vale S.A. operates and owns the Minas Centrais Complex Mine in Rio Piracicaba."
+    }
+  }
 }

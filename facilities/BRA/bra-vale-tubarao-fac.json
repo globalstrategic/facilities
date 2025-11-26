@@ -3,7 +3,7 @@
   "name": "Vale Tubarao",
   "aliases": [
     "Vale Tubarao",
-    "Tubarão Pellets",
+    "TubarÃ£o Pellets",
     "Kobrasco Pellet Plant",
     "Nibrasco Pellet Plant",
     "Hispanobras Pellet Plant",
@@ -14,8 +14,8 @@
   ],
   "country_iso3": "BRA",
   "location": {
-    "lat": -20.274,
-    "lon": -40.243,
+    "lat": -20.28611,
+    "lon": -40.24417,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.220620Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:58:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Port_of_Tubar%C3%A3o. The Port of Tubarão is owned and operated by Vale S.A., and is the largest iron ore embarking port in the world"
   },
   "canonical_name": "Vale Tubarao Mine",
   "canonical_slug": "vale-tubarao-mine",
@@ -59,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Espírito Santo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:58:09.000000Z",
+      "operators": [
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A."
+      ],
+      "notes": "Vale S.A. is a Brazilian multinational corporation engaged in metals and mining."
+    }
+  }
 }

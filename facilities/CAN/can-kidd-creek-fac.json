@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.688,
-    "lon": -81.371,
+    "lat": 48.68889,
+    "lon": -81.36528,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canada Development Corporation",
+    "Falconbridge Ltd.",
+    "Glencore Inc.",
+    "Texas Gulf Sulfur Company",
+    "Xstrata plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.756178Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:02:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kidd_Mine. Kidd Creek Mine is located 24 km north of Timmins, Ontario, and is known as the world's deepest base-metal mine"
   },
   "canonical_name": "Kidd Creek Mine",
   "canonical_slug": "kidd-creek-mine",
@@ -64,5 +70,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:02:10.000000Z",
+      "operators": [
+        "Glencore Inc."
+      ],
+      "owners": [
+        "Glencore Inc.",
+        "Xstrata plc",
+        "Falconbridge Ltd.",
+        "Canada Development Corporation",
+        "Texas Gulf Sulfur Company"
+      ],
+      "notes": "Glencore Inc. is the current operator and owner, having acquired Xstrata in 2013, which previously owned the mine after Falconbridge."
+    }
+  }
 }

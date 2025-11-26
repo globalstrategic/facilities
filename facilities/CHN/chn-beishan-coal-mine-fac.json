@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.539,
-    "lon": 90.367,
+    "lat": 37.840097,
+    "lon": 112.755881,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinzhong Yuci Wujin Materials Trading Company",
+    "Shanxi Yuci Beishan Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.869145Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T13:09:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%A6%86%E6%AC%A1%E5%8C%97%E5%B1%B1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The coordinates are for the Yuci Beishan Coal Mine located in Shanxi Province"
   },
   "canonical_name": "Beishan Coal Mine",
   "canonical_slug": "beishan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T13:09:05.000000Z",
+      "operators": [
+        "Shanxi Yuci Beishan Coal Industry Company"
+      ],
+      "owners": [
+        "Jinzhong Yuci Wujin Materials Trading Company"
+      ],
+      "notes": "The mine is operated by Shanxi Yuci Beishan Coal Industry Company and owned by Jinzhong Yuci Wujin Materials Trading Company."
+    }
+  }
 }

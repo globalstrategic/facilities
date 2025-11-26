@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.12,
-    "lon": -124.019,
+    "lat": 54.88558535547729,
+    "lon": -124.45328031883969,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centerra Gold Inc.",
+    "Thompson Creek Metals Company Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.773545Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:10:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Prince George (https://www.miningdoc.tech/question/lets-talk-about-the-mount-milligan-mine/). Mount Milligan is a large-scale open-pit copper-gold mine located 155 km northwest of Prince George, British Columbia"
   },
   "canonical_name": "Mount Milligan Mine",
   "canonical_slug": "mount-milligan-mine",
@@ -54,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Prince George",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:10:38.000000Z",
+      "operators": [
+        "Centerra Gold Inc.",
+        "Thompson Creek Metals Company Inc."
+      ],
+      "owners": [
+        "Centerra Gold Inc."
+      ],
+      "notes": "Centerra Gold Inc. is the owner and operator of the Mount Milligan Mine."
+    }
+  }
 }

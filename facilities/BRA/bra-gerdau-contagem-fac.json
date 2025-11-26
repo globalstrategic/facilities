@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -19.962,
-    "lon": -44.024,
+    "lat": -20.442239,
+    "lon": -43.784064,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.226501Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:34:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gerdau_Miguel_Burnier_Mine. The Gerdau Miguel Burnier Mine is an iron ore mine located in Miguel Burnier, Minas Gerais, Brazil"
   },
   "canonical_name": "Gerdau Contagem Smelter",
   "canonical_slug": "gerdau-contagem-smelter",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:34:22.000000Z",
+      "operators": [
+        "Gerdau S.A."
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau S.A. is both the operator and owner of the Miguel Burnier Mine."
+    }
+  }
 }

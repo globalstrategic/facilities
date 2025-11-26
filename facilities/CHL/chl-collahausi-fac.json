@@ -13,8 +13,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -20.98,
-    "lon": -68.713,
+    "lat": -20.9914417,
+    "lon": -68.63861,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "Compañía Minera Doña Inés de Collahuasi SCM",
+    "Glencore plc",
+    "Japan Collahuasi Resources B.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.923991Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:31:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Collahuasi_mine. Collahuasi copper mine is one of the largest copper mines in the world, located at a high altitude"
   },
   "canonical_name": "Collahausi Mine",
   "canonical_slug": "collahausi-mine",
@@ -64,5 +69,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tarapacá Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:31:22.000000Z",
+      "operators": [
+        "Compañía Minera Doña Inés de Collahuasi SCM"
+      ],
+      "owners": [
+        "Anglo American plc",
+        "Glencore plc",
+        "Japan Collahuasi Resources B.V."
+      ],
+      "notes": "The mine is jointly owned by Anglo American (44%), Glencore (44%), and Japan Collahuasi Resources (12%)."
+    }
+  }
 }

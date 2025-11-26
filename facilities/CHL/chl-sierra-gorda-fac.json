@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.852,
-    "lon": -69.341,
+    "lat": -22.5,
+    "lon": -68.5,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KGHM Polska Miedź S.A.",
+    "Sierra Gorda SCM",
+    "South32 Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.904711Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:49:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sierra_Gorda_mine. Sierra Gorda is located in the Atacama Desert in the Antofagasta region, approximately 60 km south-west of Calama"
   },
   "canonical_name": "Sierra Gorda Mine",
   "canonical_slug": "sierra-gorda-mine",
@@ -65,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:49:03.000000Z",
+      "operators": [
+        "Sierra Gorda SCM"
+      ],
+      "owners": [
+        "KGHM Polska Miedź S.A.",
+        "South32 Limited"
+      ],
+      "notes": "Sierra Gorda SCM is a joint venture between KGHM (55%) and South32 (45%)."
+    }
+  }
 }

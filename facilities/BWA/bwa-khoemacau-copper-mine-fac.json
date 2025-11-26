@@ -24,22 +24,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "MMG Limited",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.558394",
-      "evidence": "Extracted from operator column: MMG Limited (55%) / CNIC Corp. (45%)"
-    },
-    {
-      "name": "CNIC Corp.",
-      "role": "operator",
-      "source": "Research Import BWA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T11:57:05.558399",
-      "evidence": "Extracted from operator column: MMG Limited (55%) / CNIC Corp. (45%)"
-    }
+    "CNIC Corp.",
+    "Cupric Canyon Capital LP",
+    "Cuprous Capital Ltd",
+    "MMG Limited"
   ],
   "products": [],
   "sources": [
@@ -77,5 +65,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ngamiland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:31:53.000000Z",
+      "operators": [
+        "MMG Limited"
+      ],
+      "owners": [
+        "Cuprous Capital Ltd",
+        "Cupric Canyon Capital LP"
+      ],
+      "notes": "Khoemacau Copper Mining (Pty) Ltd operates the mine, which is owned by Cuprous Capital, majority-owned by Cupric Canyon Capital."
+    }
+  }
 }

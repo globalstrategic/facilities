@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.416,
-    "lon": -70.254,
+    "lat": -27.3667,
+    "lon": -70.3333,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ENAMI (Empresa Nacional de Minería)"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.915530Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:42:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fundici%C3%B3n_Paipote. The Paipote refinery is a copper smelter plant located 8 km southeast of Copiapó"
   },
   "canonical_name": "Paipote Smelter",
   "canonical_slug": "paipote-smelter",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:42:21.000000Z",
+      "operators": [
+        "ENAMI (Empresa Nacional de Minería)"
+      ],
+      "owners": [
+        "ENAMI (Empresa Nacional de Minería)"
+      ],
+      "notes": "ENAMI is a state-owned mining company in Chile."
+    }
+  }
 }
