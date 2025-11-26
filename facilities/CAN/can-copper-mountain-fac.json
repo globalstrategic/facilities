@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.336,
-    "lon": -120.526,
+    "lat": 49.5,
+    "lon": -120.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copper Mountain Mine (BC) Ltd.",
+    "Hudbay Minerals Inc.",
+    "Mitsubishi Materials Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.773750Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:50:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/copper-montain/. The Copper Mountain mine is located in the Similkameen Valley, approximately 15 km southwest of Princeton, BC"
   },
   "canonical_name": "Copper Mountain Mine",
   "canonical_slug": "copper-mountain-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:50:54.000000Z",
+      "operators": [
+        "Copper Mountain Mine (BC) Ltd."
+      ],
+      "owners": [
+        "Hudbay Minerals Inc.",
+        "Mitsubishi Materials Corporation"
+      ],
+      "notes": "Hudbay Minerals Inc. is the sole owner of the Copper Mountain mine after acquiring Mitsubishi Materials' interest."
+    }
+  }
 }

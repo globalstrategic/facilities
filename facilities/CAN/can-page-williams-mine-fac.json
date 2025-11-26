@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.667,
-    "lon": -86.317,
+    "lat": 48.66667,
+    "lon": -85.88333,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corp.",
+    "Barrick Mining Corporation",
+    "Teck Cominco Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.780897Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:13:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://cyanidecode.org/wp-content/uploads/2025/03/BarrickHemloAuditSum_0.pdf. The Williams Mine is part of the Barrick Hemlo mining complex, which includes the David Bell Mine"
   },
   "canonical_name": "Page Williams Mine",
   "canonical_slug": "page-williams-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:13:56.000000Z",
+      "operators": [
+        "Teck Cominco Ltd.",
+        "Barrick Gold Corp."
+      ],
+      "owners": [
+        "Barrick Mining Corporation"
+      ],
+      "notes": "The Williams Mine is jointly owned by Teck Cominco Ltd. and Barrick Gold Corp., with Barrick as the operator."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 57.733,
-    "lon": -129.767,
+    "lat": 58.0184742711555,
+    "lon": -129.987488,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Imperial Metals Corporation",
+    "Newcrest Mining Ltd",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.761741Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:16:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Iskut (https://en.wikipedia.org/wiki/Imperial_Metals). The Red Chris Mine is located outside of Iskut, British Columbia, with the Klappan River flowing through the property less than 20 km from its confluence with the Stikine River"
   },
   "canonical_name": "Red Chris Mine",
   "canonical_slug": "red-chris-mine",
@@ -53,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Iskut",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:16:04.000000Z",
+      "operators": [
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Imperial Metals Corporation",
+        "Newcrest Mining Ltd"
+      ],
+      "notes": "The mine is operated by Newmont Corporation, which holds a 70% interest, while Imperial Metals Corporation retains a 30% stake."
+    }
+  }
 }

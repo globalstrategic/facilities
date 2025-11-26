@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 45.148,
-    "lon": -63.301,
+    "lat": 44.12295182011292,
+    "lon": -65.71815317557513,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Avalon Advanced Materials Inc.",
+    "Avalon Rare Metals Inc.",
+    "Rio Algom Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.748173Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:53:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yarmouth (https://www.innovationnewsnetwork.com/developing-canadas-critical-mineral-supply-chain-in-nova-scotia/40221/). The East Kemptville Tin-Indium Project is located approximately 45 km northeast of Yarmouth, Nova Scotia"
   },
   "canonical_name": "East Kemptville Mine",
   "canonical_slug": "east-kemptville-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nova Scotia",
+  "town": "Yarmouth",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:53:31.000000Z",
+      "operators": [
+        "Avalon Advanced Materials Inc.",
+        "Avalon Rare Metals Inc."
+      ],
+      "owners": [
+        "Avalon Advanced Materials Inc.",
+        "Rio Algom Limited"
+      ],
+      "notes": "Avalon Advanced Materials Inc. holds a 100% interest in the East Kemptville Project. Rio Algom Limited was the previous owner before Avalon."
+    }
+  }
 }

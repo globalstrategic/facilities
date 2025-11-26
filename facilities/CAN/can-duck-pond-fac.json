@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.637,
-    "lon": -56.488,
+    "lat": 48.5625859122187,
+    "lon": -56.5405084,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aur Resources",
+    "Teck Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.772059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:52:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Millertown (https://en.wikipedia.org/wiki/Duck_Pond_mine). The Duck Pond Mine is located 28 km south of Millertown, Newfoundland"
   },
   "canonical_name": "Duck Pond Mine",
   "canonical_slug": "duck-pond-mine",
@@ -63,5 +66,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Newfoundland",
+  "town": "Millertown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:52:48.000000Z",
+      "operators": [
+        "Teck Resources"
+      ],
+      "owners": [
+        "Teck Resources",
+        "Aur Resources"
+      ],
+      "notes": "Teck Resources acquired Aur Resources in 2007, which was the original owner of the Duck Pond Mine."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.703,
-    "lon": -76.077,
+    "lat": 51.30012375314158,
+    "lon": -78.3004409,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dhilmar Ltd",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.745305Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:54:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Eeyou Istchee (https://financialpost.com/globe-newswire/sirios-resources-congratulates-dhilmar-for-successfully-acquiring-the-eleonore-gold-mine). The Eleonore Mine is located 15 km from Sirios’ Cheechoo gold deposit in the Opinaca area"
   },
   "canonical_name": "Eleonore Mine",
   "canonical_slug": "eleonore-mine",
@@ -51,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Eeyou Istchee",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:54:00.000000Z",
+      "operators": [
+        "Dhilmar Ltd",
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Dhilmar Ltd",
+        "Newmont Corporation"
+      ],
+      "notes": "Dhilmar Ltd has acquired the Eleonore Mine from Newmont Corporation."
+    }
+  }
 }

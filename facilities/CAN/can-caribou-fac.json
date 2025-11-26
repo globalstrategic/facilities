@@ -7,7 +7,7 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 47.564,
+    "lat": 47.565,
     "lon": -66.293,
     "precision": "site"
   },
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Trevali Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.779122Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:48:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Caribou_zinc_mine. The Caribou mine is currently owned by Trevali Mining Corporation and is on care and maintenance"
   },
   "canonical_name": "Caribou Mine",
   "canonical_slug": "caribou-mine",
@@ -62,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Brunswick",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:48:01.000000Z",
+      "operators": [
+        "Trevali Mining Corporation"
+      ],
+      "owners": [
+        "Trevali Mining Corporation"
+      ],
+      "notes": "Trevali Mining Corporation filed for bankruptcy and the mine is currently under the care of the New Brunswick government."
+    }
+  }
 }

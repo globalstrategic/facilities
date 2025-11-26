@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.731,
-    "lon": -114.86,
+    "lat": 49.742507,
+    "lon": -114.823906,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nippon Steel Corporation (2.5%)",
+    "POSCO (2.5%)",
+    "Teck Coal",
+    "Teck Coal (95%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.766747Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:54:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Elkview_Coal_Mine. Elkview Mine is a surface coal mine primarily producing steelmaking coal"
   },
   "canonical_name": "Elkview Mine",
   "canonical_slug": "elkview-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:54:17.000000Z",
+      "operators": [
+        "Teck Coal"
+      ],
+      "owners": [
+        "Teck Coal (95%)",
+        "Nippon Steel Corporation (2.5%)",
+        "POSCO (2.5%)"
+      ],
+      "notes": "Teck Coal operates the mine with a majority interest, while Nippon Steel and POSCO hold minority stakes."
+    }
+  }
 }

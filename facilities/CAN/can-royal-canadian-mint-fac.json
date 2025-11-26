@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 45.424,
-    "lon": null,
+    "lat": 45.4295,
+    "lon": -75.6885,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Government of Canada",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.442330",
-      "evidence": "Extracted from operator column: Government of Canada"
-    }
+    "Government of Canada",
+    "Royal Canadian Mint"
   ],
   "products": [],
   "sources": [
@@ -45,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.750165Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:17:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.wealthprofessional.ca/company-profiles/royal-canadian-mint/221465. The Royal Canadian Mint is located at 320 Sussex Drive, Ottawa, Ontario"
   },
   "canonical_name": "Royal Canadian Mint Refinery",
   "canonical_slug": "royal-canadian-mint-refinery",
@@ -64,5 +58,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:17:05.000000Z",
+      "operators": [
+        "Royal Canadian Mint"
+      ],
+      "owners": [
+        "Government of Canada"
+      ],
+      "notes": "The Royal Canadian Mint is a Crown corporation owned by the Government of Canada."
+    }
+  }
 }

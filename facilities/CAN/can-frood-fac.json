@@ -12,8 +12,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 46.541,
-    "lon": -80.999,
+    "lat": 46.533,
+    "lon": -81.0,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "International Nickel Company of Canada",
+    "Mond Nickel Company",
+    "Vale Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.749933Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Frood_Mine. The Frood Mine is a nickel mine located in Greater Sudbury, Ontario, Canada"
   },
   "canonical_name": "Frood Mine",
   "canonical_slug": "frood-mine",
@@ -71,5 +75,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:48.000000Z",
+      "operators": [
+        "Vale Limited"
+      ],
+      "owners": [
+        "International Nickel Company of Canada",
+        "Mond Nickel Company"
+      ],
+      "notes": "Vale Limited announced the suspension of production at the mine in 2012."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.152,
-    "lon": -78.051,
+    "lat": 48.19763606063271,
+    "lon": -77.93024865792509,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico Eagle Mines",
+    "Monarch Gold Corporation",
+    "Yamana Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.778526Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:47:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Val-d'Or (https://www.metallaroyalty.com/royalties/exploration/camflo-northwest/). The Camflo property is located 15 kilometers northwest of Val-d'Or, Quebec"
   },
   "canonical_name": "Camflo Mine",
   "canonical_slug": "camflo-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Val-d'Or",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:47:28.000000Z",
+      "operators": [
+        "Agnico Eagle Mines"
+      ],
+      "owners": [
+        "Yamana Gold Inc.",
+        "Monarch Gold Corporation"
+      ],
+      "notes": "Yamana Gold acquired the Camflo property and mill from Monarch Gold Corporation."
+    }
+  }
 }

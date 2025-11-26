@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.665,
-    "lon": -82.094,
+    "lat": 48.889090344399314,
+    "lon": -81.95716265971235,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Mink Ventures Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.772225Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:10:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Timmins (https://minkventures.com/projects/montcalm-project/overview/). The Montcalm project is located adjacent to Glencore’s historical Montcalm Mine, which is 65 km northwest of Timmins, Ontario"
   },
   "canonical_name": "Montcalm Mine",
   "canonical_slug": "montcalm-mine",
@@ -54,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Timmins",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:10:13.000000Z",
+      "operators": [
+        "Mink Ventures Corporation"
+      ],
+      "owners": [
+        "Mink Ventures Corporation",
+        "Glencore"
+      ],
+      "notes": "Mink Ventures is the operator and owner of the Montcalm project, while Glencore is mentioned as the owner of the historical Montcalm Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.308,
-    "lon": -79.062,
+    "lat": 49.958693476661566,
+    "lon": -74.3713954,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SOQUEM",
+    "TomaGold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.769159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:03:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chibougamau (https://www.morningstar.com/news/business-wire/20251120317737/tomagold-completes-initial-two-year-soquem-option-commitments-and-provides-corporate-update). The Dufault property is located 5 km north of Chibougamau and is part of TomaGold's project portfolio"
   },
   "canonical_name": "Lake Dufault Mine",
   "canonical_slug": "lake-dufault-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Chibougamau",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:03:34.000000Z",
+      "operators": [
+        "TomaGold Corporation"
+      ],
+      "owners": [
+        "SOQUEM"
+      ],
+      "notes": "TomaGold holds an option to acquire a 100% interest from SOQUEM."
+    }
+  }
 }

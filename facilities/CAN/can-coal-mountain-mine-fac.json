@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.506,
-    "lon": -114.658,
+    "lat": 49.510316,
+    "lon": -114.654458,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc.",
+    "Nippon Steel & Sumitomo Metal Corp.",
+    "Posco Group Inc.",
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.770704Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:49:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Coal_Mountain_Mine. The Coal Mountain Mine is located in British Columbia, Canada, and has been closed since 2019"
   },
   "canonical_name": "Coal Mountain Mine",
   "canonical_slug": "coal-mountain-mine-2",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:49:40.000000Z",
+      "operators": [
+        "Teck Resources Limited"
+      ],
+      "owners": [
+        "Teck Resources Limited",
+        "Glencore plc.",
+        "Posco Group Inc.",
+        "Nippon Steel & Sumitomo Metal Corp."
+      ],
+      "notes": "Teck Resources Limited was the primary operator and owner before the mine was closed."
+    }
+  }
 }

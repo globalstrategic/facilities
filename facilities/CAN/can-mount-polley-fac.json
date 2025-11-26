@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.549,
-    "lon": -121.639,
+    "lat": 52.483697273479024,
+    "lon": -121.55684591933282,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Imperial Metals Corporation",
+    "Mount Polley Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.754828Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:11:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Williams Lake (https://en.wikipedia.org/wiki/Mount_Polley_mine). Mount Polley mine is located 56 kilometers northeast of Williams Lake, British Columbia"
   },
   "canonical_name": "Mount Polley Mine",
   "canonical_slug": "mount-polley-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Williams Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:11:10.000000Z",
+      "operators": [
+        "Mount Polley Mining Corporation"
+      ],
+      "owners": [
+        "Imperial Metals Corporation"
+      ],
+      "notes": "Mount Polley Mining Corporation is a wholly owned subsidiary of Imperial Metals Corporation."
+    }
+  }
 }

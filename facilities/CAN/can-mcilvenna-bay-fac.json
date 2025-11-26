@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 54.65,
-    "lon": -102.834,
+    "lat": 54.32994158483679,
+    "lon": -102.61534198550768,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Foran Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.759363Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:08:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Creighton (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/466-tsx/fom/191539-foran-advances-development-at-mcilvenna-bay-in-october-2025.html). The McIlvenna Bay project is located within the traditional territory of the Peter Ballantyne Cree Nation and is approximately 65 km southwest of Creighton, Saskatchewan"
   },
   "canonical_name": "Mcilvenna Bay Mine",
   "canonical_slug": "mcilvenna-bay-mine",
@@ -69,5 +71,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saskatchewan",
+  "town": "Creighton",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:08:36.000000Z",
+      "operators": [
+        "Foran Mining Corporation"
+      ],
+      "owners": [
+        "Foran Mining Corporation"
+      ],
+      "notes": "Foran Mining Corporation is the sole owner and operator of the McIlvenna Bay project."
+    }
+  }
 }

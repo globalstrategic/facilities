@@ -13,8 +13,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.101,
-    "lon": -117.717,
+    "lat": 49.1,
+    "lon": -117.7,
     "precision": "site"
   },
   "types": [
@@ -56,7 +56,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Teck Cominco Metals",
+    "Teck Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -66,11 +69,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.760177Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:20:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Teck_Cominco_smelter. The Trail Pb Smelter is located in Trail, British Columbia, Canada, and is one of the largest integrated lead-zinc smelters in the world"
   },
   "canonical_name": "Trail Pb Smelter",
   "canonical_slug": "trail-pb-smelter",
@@ -85,5 +88,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:20:13.000000Z",
+      "operators": [
+        "Teck Cominco Metals"
+      ],
+      "owners": [
+        "Teck Resources Ltd"
+      ],
+      "notes": "Teck Resources Ltd. is the major owner and operator of the Trail Pb Smelter."
+    }
+  }
 }

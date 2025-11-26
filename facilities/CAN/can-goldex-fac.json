@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.092,
-    "lon": -77.867,
+    "lat": 48.1167,
+    "lon": -77.7833,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico Eagle Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.752615Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:57:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.agnicoeagle.com/English/operations-and-projects/global-operations-and-development-projects/goldex-complex/default.aspx. Goldex is located just outside Val-d'Or, Quebec, Canada"
   },
   "canonical_name": "Goldex Mine",
   "canonical_slug": "goldex-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:57:58.000000Z",
+      "operators": [
+        "Agnico Eagle Mines Ltd."
+      ],
+      "owners": [
+        "Agnico Eagle Mines Ltd."
+      ],
+      "notes": "Agnico Eagle is both the operator and owner of the Goldex mine."
+    }
+  }
 }

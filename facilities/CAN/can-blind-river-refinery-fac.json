@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 46.18,
-    "lon": null,
+    "lat": 46.18836965365316,
+    "lon": -83.0211568378713,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Cameco",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.567614",
-      "evidence": "Extracted from operator column: Cameco"
-    }
+    "Cameco",
+    "Cameco Corporation"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.774168Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:45:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Blind River (https://www.camecofuel.com/sites/default/files/documents/BRR-2020-Facility-Licensing-Manual.pdf). The Blind River Refinery is located about 5 km to the west of the Town of Blind River"
   },
   "canonical_name": "Blind River Refinery",
   "canonical_slug": "blind-river-refinery",
@@ -58,5 +52,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Blind River",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:45:43.000000Z",
+      "operators": [
+        "Cameco Corporation"
+      ],
+      "owners": [
+        "Cameco Corporation"
+      ],
+      "notes": "Cameco Corporation is both the operator and owner of the Blind River Refinery."
+    }
+  }
 }

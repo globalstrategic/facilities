@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.246,
-    "lon": -76.673,
+    "lat": 49.502960145399264,
+    "lon": -76.9805438,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Breakwater Resources Limited",
+    "Nyrstar"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.767756Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:04:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lebel-sur-Quévillon (https://minedocs.com/17/Langlois_Fact%20Sheet_2018.pdf). The Langlois mine is located in Bay James Territory, approximately 50 kilometers north of Lebel-sur-Quévillon"
   },
   "canonical_name": "Langlois Mine",
   "canonical_slug": "langlois-mine",
@@ -62,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Québec",
+  "town": "Lebel-sur-Quévillon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:04:27.000000Z",
+      "operators": [
+        "Nyrstar"
+      ],
+      "owners": [
+        "Nyrstar",
+        "Breakwater Resources Limited"
+      ],
+      "notes": "Nyrstar acquired the Langlois mine through the acquisition of Breakwater Resources."
+    }
+  }
 }

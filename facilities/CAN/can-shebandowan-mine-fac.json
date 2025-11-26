@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.598,
-    "lon": -90.249,
+    "lat": 48.399993380594324,
+    "lon": -90.47529673662947,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Benton Resources Inc.",
+    "Golden Share Mining Corporation",
+    "Impala Canada",
+    "International Nickel Company of Canada Ltd. (INCO)",
+    "Vale Canada Ltd.",
+    "White Metal Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.756796Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:18:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Thunder Bay (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/1974-tsx-venture/tgol/27719-white-metal-resources-signs-loi-to-acquire-shebandowan-gold-property.html). The Shebandowan Mine is located in the Shebandowan Greenstone Belt, approximately 90 kilometers west of Thunder Bay"
   },
   "canonical_name": "Shebandowan Mine",
   "canonical_slug": "shebandowan-mine",
@@ -62,5 +69,25 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Thunder Bay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:18:03.000000Z",
+      "operators": [
+        "International Nickel Company of Canada Ltd. (INCO)",
+        "White Metal Resources Corp.",
+        "Benton Resources Inc."
+      ],
+      "owners": [
+        "White Metal Resources Corp.",
+        "Benton Resources Inc.",
+        "Golden Share Mining Corporation",
+        "Impala Canada",
+        "Vale Canada Ltd."
+      ],
+      "notes": "The Shebandowan Mine has had various operators and ownership changes over the years, including INCO and current interests from multiple companies."
+    }
+  }
 }

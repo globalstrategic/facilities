@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.001,
-    "lon": -120.83,
+    "lat": 55.000742,
+    "lon": -120.829716,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Colonial Coal International Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.778037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:00:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Huguenot_Surface_Coal_Mine. The Huguenot Surface Coal Mine is a proposed coal mine located near Quintette, British Columbia"
   },
   "canonical_name": "Huguenot Surface Coal Mine",
   "canonical_slug": "huguenot-surface-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:00:43.000000Z",
+      "operators": [
+        "Colonial Coal International Corp"
+      ],
+      "owners": [
+        "Colonial Coal International Corp"
+      ],
+      "notes": "The mine is 100% owned by Colonial Coal International Corp."
+    }
+  }
 }

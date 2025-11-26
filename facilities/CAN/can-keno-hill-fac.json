@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 63.908,
-    "lon": -135.328,
+    "lat": 45.99583736094497,
+    "lon": -74.85731149951346,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.759712Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:01:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mayo (https://www.cbc.ca/news/canada/north/keno-hill-silver-district-new-owners-hecla-mining-company-1.6582077). Keno Hill is located approximately 50 kilometers northeast of Mayo, Yukon"
   },
   "canonical_name": "Keno Hill Mine",
   "canonical_slug": "keno-hill-mine",
@@ -57,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yukon",
+  "town": "Mayo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:01:38.000000Z",
+      "operators": [
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "Hecla Mining Company"
+      ],
+      "notes": "Hecla Mining Company owns a 100% interest in the Keno Hill mine through its subsidiaries."
+    }
+  }
 }

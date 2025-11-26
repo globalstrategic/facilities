@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.29,
-    "lon": -77.1,
+    "lat": 51.10605613843878,
+    "lon": -77.6300251,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allkem Ltd.",
+    "Rio Tinto Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.757094Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:01:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Matagami (https://www.lithiumroyaltycorp.com/investor-relations/news/news-details/2023/Lithium-Royalty-Corp.-Acquires-Royalty-Interest-on-the-James-Bay-Lithium-Project-in-Qubec/default.aspx). The James Bay lithium project is located in northern Quebec, Canada, but exact coordinates are not provided in the sources"
   },
   "canonical_name": "James Bay Mine",
   "canonical_slug": "james-bay-mine",
@@ -47,5 +50,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "town": "Matagami",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:01:06.000000Z",
+      "operators": [
+        "Allkem Ltd.",
+        "Rio Tinto Group"
+      ],
+      "owners": [
+        "Allkem Ltd.",
+        "Rio Tinto Group"
+      ],
+      "notes": "Allkem is the primary owner and operator of the James Bay Lithium Project, while Rio Tinto has acquired the Galaxy lithium project, also known as the James Bay project."
+    }
+  }
 }

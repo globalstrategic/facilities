@@ -15,8 +15,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 48.253,
-    "lon": -78.462,
+    "lat": 48.248417,
+    "lon": -78.4416694,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico-Eagle Mines Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.774687Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:04:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/LaRonde_mine. LaRonde mine is a gold mine located in Quebec, Canada, operated by Agnico-Eagle Mines"
   },
   "canonical_name": "Laronde Mine",
   "canonical_slug": "laronde-mine",
@@ -78,5 +80,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:04:47.000000Z",
+      "operators": [
+        "Agnico-Eagle Mines Limited"
+      ],
+      "owners": [
+        "Agnico-Eagle Mines Limited"
+      ],
+      "notes": "Agnico-Eagle Mines is both the operator and owner of the LaRonde mine."
+    }
+  }
 }

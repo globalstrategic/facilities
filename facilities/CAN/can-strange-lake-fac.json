@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 56.0,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Torngat Metals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.760340Z",
-    "checked_by": "import_pipeline",
-    "notes": "HREE project with some Nd/Pr content | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:19:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "HREE project with some Nd/Pr content | Canonical name+slug generated. Web search geocoded. Source: https://www.keqc-cqek.ca/en/projets/strange-lake-rare-earth-mining-project/. The Strange Lake Rare Earth Mining Project is located near Brisson Lake, Nunavik, approximately 235 km northeast of Schefferville"
   },
   "canonical_name": "Strange Lake Mine",
   "canonical_slug": "strange-lake-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec and Labrador",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:19:02.000000Z",
+      "operators": [
+        "Torngat Metals Ltd."
+      ],
+      "owners": [
+        "Torngat Metals Ltd."
+      ],
+      "notes": "Torngat Metals Ltd. is the proponent and operator of the Strange Lake project."
+    }
+  }
 }

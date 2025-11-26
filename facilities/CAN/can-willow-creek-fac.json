@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.604,
-    "lon": -122.246,
+    "lat": 46.1742948,
+    "lon": -59.83383,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Conuma Coal Resources Limited",
+    "ERP Compliant Fuels"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.775719Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:21:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Willow_Creek_Coal_Mine. The Willow Creek Mine is an operational surface coal mine located near Chetwynd, British Columbia"
   },
   "canonical_name": "Willow Creek Mine",
   "canonical_slug": "willow-creek-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:21:58.000000Z",
+      "operators": [
+        "Conuma Coal Resources Limited"
+      ],
+      "owners": [
+        "ERP Compliant Fuels"
+      ],
+      "notes": "Conuma Coal Resources Limited acquired the mine from Walter Energy in September 2016."
+    }
+  }
 }

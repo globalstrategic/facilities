@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 46.671,
-    "lon": -80.911,
+    "lat": 57.25681872766414,
+    "lon": -101.04538,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alamos Gold Inc.",
+    "Carlisle Goldfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.779866Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:06:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lynn Lake (https://www.mining-technology.com/projects/lynn-lake-gold-project-manitoba/). The Maclennan Mine is part of the Lynn Lake Gold Project, which includes the MacLellan property and the Gordon Mine deposit"
   },
   "canonical_name": "Maclennan Mine",
   "canonical_slug": "maclennan-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manitoba",
+  "town": "Lynn Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:06:33.000000Z",
+      "operators": [
+        "Alamos Gold Inc."
+      ],
+      "owners": [
+        "Alamos Gold Inc.",
+        "Carlisle Goldfields Limited"
+      ],
+      "notes": "Alamos Gold is the owner and operator of the Lynn Lake Gold Project, which includes the MacLellan Mine."
+    }
+  }
 }

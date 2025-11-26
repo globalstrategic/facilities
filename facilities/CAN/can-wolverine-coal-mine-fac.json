@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 55.061,
-    "lon": -121.253,
+    "lat": 55.12597387475111,
+    "lon": -121.23320120855908,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Conuma Coal Resources Ltd",
+    "ERP Compliant Fuels"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.753066Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:22:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tumbler Ridge (https://www.gem.wiki/Wolverine_Coal_Mine). Wolverine Coal Mine is located approximately 15 kilometers west of Tumbler Ridge"
   },
   "canonical_name": "Wolverine Coal Mine",
   "canonical_slug": "wolverine-coal-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Tumbler Ridge",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:22:36.000000Z",
+      "operators": [
+        "Conuma Coal Resources Ltd"
+      ],
+      "owners": [
+        "Conuma Coal Resources Ltd",
+        "ERP Compliant Fuels"
+      ],
+      "notes": "Conuma Coal Resources Ltd is the operator and owner of the Wolverine Coal Mine, which was previously owned by Western Canadian Coal Corporation."
+    }
+  }
 }

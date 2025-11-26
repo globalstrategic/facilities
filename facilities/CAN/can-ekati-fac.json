@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 64.721,
-    "lon": -110.604,
+    "lat": 64.5,
+    "lon": -113.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arctic Canadian Diamond Company Ltd.",
+    "Burgundy Diamond Mines",
+    "Dominion Diamond Mines"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.778362Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:53:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ekati_Diamond_Mine. The Ekati Diamond Mine is located approximately 310 km northeast of Yellowknife, NT"
   },
   "canonical_name": "Ekati Mine",
   "canonical_slug": "ekati-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northwest Territories",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:53:40.000000Z",
+      "operators": [
+        "Burgundy Diamond Mines"
+      ],
+      "owners": [
+        "Burgundy Diamond Mines",
+        "Arctic Canadian Diamond Company Ltd.",
+        "Dominion Diamond Mines"
+      ],
+      "notes": "Burgundy Diamond Mines is the current owner, having acquired the mine from Arctic Canadian Diamond Company Ltd."
+    }
+  }
 }

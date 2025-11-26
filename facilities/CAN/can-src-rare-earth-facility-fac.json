@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.11,
-    "lon": null,
+    "lat": 52.1332,
+    "lon": -106.6702,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Saskatchewan Research Council",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.517931",
-      "evidence": "Extracted from operator column: Saskatchewan Research Council"
-    }
+    "Saskatchewan Research Council",
+    "Saskatchewan Research Council (SRC)"
   ],
   "products": [],
   "sources": [
@@ -41,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.755182Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:18:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.src.sk.ca/campaigns/rare-earth-processing-facility. The SRC Rare Earth Processing Facility is located in Saskatoon, Saskatchewan, and is the first of its kind in Canada"
   },
   "canonical_name": "SRC Rare Earth Facility Processing Plant",
   "canonical_slug": "src-rare-earth-facility-processing-plant",
@@ -60,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saskatchewan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:18:35.000000Z",
+      "operators": [
+        "Saskatchewan Research Council (SRC)"
+      ],
+      "owners": [
+        "Saskatchewan Research Council (SRC)"
+      ],
+      "notes": "SRC is a government-funded scientific research and development institution."
+    }
+  }
 }

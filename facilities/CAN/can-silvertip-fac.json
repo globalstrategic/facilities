@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 59.928,
-    "lon": -130.337,
+    "lat": 59.48636008620972,
+    "lon": -129.829969372644,
     "precision": "site"
   },
   "types": [
@@ -40,7 +40,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coeur Mining, Inc.",
+    "Coeur Silvertip Holdings Ltd.",
+    "Imperial Metals Corporation",
+    "JDS Silver Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -50,11 +55,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.748002Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:18:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Watson Lake (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/1975-tsx/mmx/31034-maverix-metals-acquires-silvertip-mine-royalty-from-silvercorp-metals.html). The Silvertip Mine is located approximately 90 km southwest of Watson Lake, near the Yukon border"
   },
   "canonical_name": "Silvertip Mine",
   "canonical_slug": "silvertip-mine",
@@ -69,5 +74,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Watson Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:18:26.000000Z",
+      "operators": [
+        "Coeur Silvertip Holdings Ltd.",
+        "JDS Silver Inc."
+      ],
+      "owners": [
+        "Coeur Mining, Inc.",
+        "Imperial Metals Corporation"
+      ],
+      "notes": "The Silvertip Mine was previously owned by JDS Silver Inc. before being acquired by Coeur Mining, Inc. in 2017."
+    }
+  }
 }

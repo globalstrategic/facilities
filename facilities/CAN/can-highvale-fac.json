@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 53.528,
-    "lon": -114.711,
+    "lat": 53.5,
+    "lon": -114.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fording Inc.",
+    "SunHills Mining Limited Partnership",
+    "TransAlta Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.751169Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:59:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.cbc.ca/news/canada/edmonton/transalta-coal-mine-highvale-1.5789197. Highvale Mine is located about 70 km west of Edmonton, Alberta, and is known as Canada's largest surface strip coal mine"
   },
   "canonical_name": "Highvale Mine",
   "canonical_slug": "highvale-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:59:29.000000Z",
+      "operators": [
+        "TransAlta Corp.",
+        "SunHills Mining Limited Partnership",
+        "Fording Inc."
+      ],
+      "owners": [
+        "TransAlta Corp."
+      ],
+      "notes": "TransAlta Corp. is the owner of the Highvale Mine, with operational control previously held by Fording Inc. and currently by its subsidiary SunHills Mining."
+    }
+  }
 }

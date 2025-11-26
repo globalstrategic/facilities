@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 53.32,
-    "lon": -114.285,
+    "lat": 53.343,
+    "lon": -114.303,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Capital Power LP",
+    "Westmoreland Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.771031Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:56:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Genesee_Coal_Mine. The Genesee Coal Mine is a surface coal mine located near Warburg, Alberta, Canada, and is part of a joint venture supplying coal to the Genesee Generating Station"
   },
   "canonical_name": "Genesee Coal Mine",
   "canonical_slug": "genesee-coal-mine",
@@ -52,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:56:58.000000Z",
+      "operators": [
+        "Capital Power LP",
+        "Westmoreland Mining LLC"
+      ],
+      "owners": [
+        "Capital Power LP",
+        "Westmoreland Mining LLC"
+      ],
+      "notes": "The mine is a 50/50 joint venture between Capital Power LP and Westmoreland Mining LLC."
+    }
+  }
 }

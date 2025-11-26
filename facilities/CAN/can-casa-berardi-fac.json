@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.572,
-    "lon": -79.231,
+    "lat": 48.9333,
+    "lon": -79.3667,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company",
+    "Hecla Quebec"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.742053Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:48:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/casa-berardi-gold-mine-quebec-canada/. Casa Berardi is located in western Quebec, approximately 95 km north of La Sarre"
   },
   "canonical_name": "Casa Berardi Mine",
   "canonical_slug": "casa-berardi-mine",
@@ -49,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:48:10.000000Z",
+      "operators": [
+        "Hecla Quebec"
+      ],
+      "owners": [
+        "Hecla Mining Company"
+      ],
+      "notes": "Hecla Mining Company is the sole owner and operator of the Casa Berardi Mine."
+    }
+  }
 }

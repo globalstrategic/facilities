@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.5,
+    "lon": -73.9,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nouveau Monde Graphite Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.754446Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:07:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/matawinie-graphite-project-quebec/. The Matawinie Mine is located in Saint-Michel-des-Saints, approximately 130 km north of Montreal"
   },
   "canonical_name": "Matawinie Mine",
   "canonical_slug": "matawinie-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:07:35.000000Z",
+      "operators": [
+        "Nouveau Monde Graphite Inc."
+      ],
+      "owners": [
+        "Nouveau Monde Graphite Inc."
+      ],
+      "notes": "Nouveau Monde Graphite is the sole operator and owner of the Matawinie Mine."
+    }
+  }
 }

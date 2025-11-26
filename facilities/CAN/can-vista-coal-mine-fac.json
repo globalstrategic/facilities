@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 53.396,
-    "lon": -117.648,
+    "lat": 53.218325,
+    "lon": -117.088389,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bighorn Mining Ltd.",
+    "Coalspur Mines (Operations) Ltd.",
+    "Coalspur Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.773410Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:20:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vista_Coal_Mine. The Vista Coal Mine is an open-pit mine located near Hinton, Alberta, Canada"
   },
   "canonical_name": "Vista Coal Mine",
   "canonical_slug": "vista-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alberta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:20:51.000000Z",
+      "operators": [
+        "Coalspur Mines (Operations) Ltd."
+      ],
+      "owners": [
+        "Coalspur Mines Ltd.",
+        "Bighorn Mining Ltd."
+      ],
+      "notes": "The mine is operated by Coalspur Mines (Operations) Ltd. and owned by Coalspur Mines Ltd. and Bighorn Mining Ltd."
+    }
+  }
 }

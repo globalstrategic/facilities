@@ -11,8 +11,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 46.462,
-    "lon": -81.184,
+    "lat": 48.0395823071444,
+    "lon": -79.86059275324995,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northstar Gold Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.752920Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:13:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kirkland Lake (https://www.newsfilecorp.com/release/259713/Northstar-Novamera-Sign-Letter-of-Intent-to-Surgically-Mine-HighGrade-Copper-at-Miller-CopperGold-Property). The facility is located 18 km southeast of Kirkland Lake, Ontario"
   },
   "canonical_name": "North Star Mine",
   "canonical_slug": "north-star-mine",
@@ -62,5 +64,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Kirkland Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:13:00.000000Z",
+      "operators": [
+        "Northstar Gold Corp."
+      ],
+      "owners": [
+        "Northstar Gold Corp."
+      ],
+      "notes": "Northstar Gold Corp. is the owner and operator of the Miller Copper-Gold Property."
+    }
+  }
 }

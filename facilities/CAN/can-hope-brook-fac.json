@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 47.717,
-    "lon": -58.066,
+    "lat": 47.572099516145094,
+    "lon": -58.01266603950329,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Big Ridge Gold Corp",
+    "First Mining Gold Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.773123Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:00:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Port aux Basques (https://mininghub.com/article/elemental-royalty-corp/tsxv-ele/hope-brook-2604/elemental-altus-to-acquire-gold-royalty-portfolio-from-first-mining-30770). Hope Brook is an advanced stage, high-grade gold project located 85 km east of Port aux Basques"
   },
   "canonical_name": "Hope Brook Mine",
   "canonical_slug": "hope-brook-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Newfoundland and Labrador",
+  "town": "Port aux Basques",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:00:25.000000Z",
+      "operators": [
+        "Big Ridge Gold Corp"
+      ],
+      "owners": [
+        "Big Ridge Gold Corp",
+        "First Mining Gold Corp"
+      ],
+      "notes": "Big Ridge Gold Corp is the operator and owner of an 80% interest in the Hope Brook Gold Project."
+    }
+  }
 }

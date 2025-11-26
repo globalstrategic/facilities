@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 45.627,
-    "lon": -73.506,
+    "lat": 45.5881,
+    "lon": -73.5255,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Canada",
+    "Glencore Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.752764Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:48:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.ca/en/ccr/qui-nous-sommes/filiere-metallurgique-cuivre-du-quebec. The CCR Refinery is located in Montréal-Est, Quebec, and is part of the Glencore Group"
   },
   "canonical_name": "CCR Refinery",
   "canonical_slug": "ccr-refinery",
@@ -70,5 +73,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:48:19.000000Z",
+      "operators": [
+        "Glencore Canada"
+      ],
+      "owners": [
+        "Glencore Group"
+      ],
+      "notes": "Glencore Canada operates the CCR Refinery, which is an integral part of its copper operations."
+    }
+  }
 }

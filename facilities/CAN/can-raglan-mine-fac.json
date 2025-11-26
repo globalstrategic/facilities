@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 61.689,
-    "lon": null,
+    "lat": 61.6875,
+    "lon": -73.67806,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Glencore",
-      "role": "operator",
-      "source": "Research Import CAN 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:22:01.366533",
-      "evidence": "Extracted from operator column: Glencore"
-    }
+    "Glencore",
+    "Glencore Canada Corporation",
+    "Glencore plc"
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.766584Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:15:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Raglan_Mine. Raglan Mine is a large nickel mining complex located in the Nunavik region of northern Quebec, Canada"
   },
   "canonical_name": "Raglan Mine",
   "canonical_slug": "raglan-mine",
@@ -64,5 +59,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:15:41.000000Z",
+      "operators": [
+        "Glencore Canada Corporation"
+      ],
+      "owners": [
+        "Glencore plc"
+      ],
+      "notes": "Glencore Canada Corporation operates the mine, which is fully owned by Glencore plc."
+    }
+  }
 }

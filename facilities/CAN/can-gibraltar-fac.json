@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 52.518,
-    "lon": -122.29,
+    "lat": 52.39887442200744,
+    "lon": -122.1397259,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dowa Metals & Mining",
+    "Furukawa Co., Ltd.",
+    "Sojitz Corporation",
+    "Taseko Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.750755Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:57:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Williams Lake (https://www.careermine.com/minisites/taseko-gibraltar/). The Gibraltar Mine is located north of the City of Williams Lake in south-central British Columbia"
   },
   "canonical_name": "Gibraltar Mine",
   "canonical_slug": "gibraltar-mine",
@@ -59,5 +64,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Williams Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:57:42.000000Z",
+      "operators": [
+        "Taseko Mines Ltd."
+      ],
+      "owners": [
+        "Taseko Mines Ltd.",
+        "Sojitz Corporation",
+        "Dowa Metals & Mining",
+        "Furukawa Co., Ltd."
+      ],
+      "notes": "Taseko Mines owns 75% of the Gibraltar Mine and is the operator. It is in the process of acquiring the remaining stakes from Sojitz, Dowa, and Furukawa."
+    }
+  }
 }

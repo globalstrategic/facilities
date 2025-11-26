@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 54.006,
-    "lon": -128.699,
+    "lat": 54.117036999391544,
+    "lon": -128.76218595138104,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aluminum Company of Canada (Alcan)",
+    "Copper Quest Exploration Inc.",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.779722Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T12:03:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kitimat (https://www.stocktitan.net/news/IMIMF/copper-quest-to-acquire-100-interest-in-the-kitimat-copper-gold-bysv5e49i2c8.html). The Kitimat Copper-Gold Project is located approximately 10 kilometers northwest of Kitimat"
   },
   "canonical_name": "Kitimat Smelter",
   "canonical_slug": "kitimat-smelter",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Kitimat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:03:08.000000Z",
+      "operators": [
+        "Copper Quest Exploration Inc."
+      ],
+      "owners": [
+        "Rio Tinto",
+        "Aluminum Company of Canada (Alcan)"
+      ],
+      "notes": "Rio Tinto owns the smelter in Kitimat, while Copper Quest is acquiring the Kitimat Copper-Gold Project."
+    }
+  }
 }

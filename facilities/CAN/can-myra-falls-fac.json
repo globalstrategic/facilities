@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.575,
-    "lon": -125.596,
+    "lat": 50.83215218829803,
+    "lon": -125.244153,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Myra Falls Mine Ltd.",
+    "Nyrstar",
+    "Trafigura Group Pte Ltd.",
+    "Trafigura Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.752316Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T12:11:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Campbell River (https://mininglifeonline.net/company/myra-falls-mine/7551). The Myra Falls mine is located on central Vancouver Island, near Campbell River, British Columbia"
   },
   "canonical_name": "Myra Falls Mine",
   "canonical_slug": "myra-falls-mine",
@@ -62,5 +67,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "British Columbia",
+  "town": "Campbell River",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:11:51.000000Z",
+      "operators": [
+        "Myra Falls Mine Ltd.",
+        "Nyrstar",
+        "Trafigura Mining"
+      ],
+      "owners": [
+        "Nyrstar",
+        "Trafigura Group Pte Ltd."
+      ],
+      "notes": "Nyrstar acquired the mine in 2011, and Trafigura holds a 100% interest through its subsidiary Myra Falls Mine Ltd."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 50.196,
-    "lon": -66.344,
+    "lat": 50.2,
+    "lon": -66.3833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMAG Austria Metall AG",
+    "Aluminerie Alouette Inc.",
+    "Hydro Aluminium",
+    "Marubeni Metals & Minerals",
+    "QUALIUM",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.771882Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:43:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/web/rio-tinto-backed-aluminum-firm-to-invest-1-1-billion-in-canada-project/. Aluminerie Alouette is located in Sept-Îles, Quebec, Canada, and is known for its aluminum production"
   },
   "canonical_name": "Alouette Smelter",
   "canonical_slug": "alouette-smelter",
@@ -47,5 +54,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quebec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:43:13.000000Z",
+      "operators": [
+        "Aluminerie Alouette Inc."
+      ],
+      "owners": [
+        "Rio Tinto",
+        "AMAG Austria Metall AG",
+        "Hydro Aluminium",
+        "Marubeni Metals & Minerals",
+        "QUALIUM"
+      ],
+      "notes": "Aluminerie Alouette is a consortium with Rio Tinto holding a 40% stake."
+    }
+  }
 }
