@@ -21,8 +21,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.04,
-    "lon": 117.8,
+    "lat": -28.5,
+    "lon": 117.0,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ramelius Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.300378Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:39:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.rameliusresources.com.au/mt-magnet-gold-mine/. The Mt Magnet Gold Mine is located immediately adjacent to the town of Mt Magnet, 500km north-east of Perth"
   },
   "canonical_name": "Mt Magnet Mine",
   "canonical_slug": "mt-magnet-mine",
@@ -64,5 +66,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:39:24.000000Z",
+      "operators": [
+        "Ramelius Resources Ltd"
+      ],
+      "owners": [
+        "Ramelius Resources Ltd"
+      ],
+      "notes": "Ramelius Resources owns and operates the Mt Magnet Gold Mine."
+    }
+  }
 }

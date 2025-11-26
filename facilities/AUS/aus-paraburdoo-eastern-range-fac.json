@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.234,
-    "lon": 117.611,
+    "lat": -23.241,
+    "lon": 117.6572,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto",
+    "Rio Tinto Iron Ore",
+    "Shanghai Baosteel Group Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.248637Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:47:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rio_Tinto_Eastern_Range_Mine. The Eastern Range mine is located 10 kilometers southeast of Paraburdoo"
   },
   "canonical_name": "Paraburdoo/eastern Range Mine",
   "canonical_slug": "paraburdoo-eastern-range-mine",
@@ -60,5 +64,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:47:42.000000Z",
+      "operators": [
+        "Rio Tinto Iron Ore"
+      ],
+      "owners": [
+        "Rio Tinto",
+        "Shanghai Baosteel Group Corporation"
+      ],
+      "notes": "Rio Tinto holds 54% ownership, while Shanghai Baosteel owns 46%."
+    }
+  }
 }

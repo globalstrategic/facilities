@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.575,
-    "lon": 145.716,
+    "lat": -41.2,
+    "lon": 145.9,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EV Equity Holdings",
+    "EnviroGold Global",
+    "Hellyer Metals Ltd",
+    "NQ Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.293952Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:14:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.australiaminerals.gov.au/__data/assets/pdf_file/0006/145554/Hellyer-Investment-Fact-Sheet.pdf. The Hellyer Tailings facility is located near Waratah, Tasmania, and is part of the Hellyer Gold Mine"
   },
   "canonical_name": "Hellyer Tailings Mine",
   "canonical_slug": "hellyer-tailings-mine",
@@ -63,5 +68,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:14:37.000000Z",
+      "operators": [
+        "Hellyer Metals Ltd",
+        "EnviroGold Global"
+      ],
+      "owners": [
+        "NQ Minerals",
+        "EV Equity Holdings"
+      ],
+      "notes": "Hellyer Metals Ltd operates the facility, while NQ Minerals and EV Equity Holdings are involved in ownership."
+    }
+  }
 }

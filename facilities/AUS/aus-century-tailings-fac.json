@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -18.779,
-    "lon": 138.643,
+    "lat": -18.5,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Century Resources",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.293216Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:33:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Century_Mine. The Century Tailings facility is located at Lawn Hill, which is 250 km northwest of Mount Isa"
   },
   "canonical_name": "Century Tailings Mine",
   "canonical_slug": "century-tailings-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:33:04.000000Z",
+      "operators": [
+        "New Century Resources",
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Sibanye-Stillwater"
+      ],
+      "notes": "New Century Resources operates the facility, while Sibanye-Stillwater acquired ownership in 2023."
+    }
+  }
 }

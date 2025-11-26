@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -24.643,
-    "lon": 118.587,
+    "lat": -26.5,
+    "lon": 117.0,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Abra Mining Pty Ltd",
+    "Galena Mining Ltd",
+    "Toho Zinc Co. Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.289173Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T09:58:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.jbic.go.jp/ja/business-areas/environment/projects/image/61383_27.pdf. The Abra Base Metals Project is located in the East Gascoyne area of Western Australia, approximately 170 km southwest of Newman"
   },
   "canonical_name": "Abra Mine",
   "canonical_slug": "abra-mine",
@@ -42,5 +46,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:58:46.000000Z",
+      "operators": [
+        "Galena Mining Ltd",
+        "Abra Mining Pty Ltd"
+      ],
+      "owners": [
+        "Galena Mining Ltd",
+        "Toho Zinc Co. Limited"
+      ],
+      "notes": "The project is a joint venture with Galena owning 60% and Toho owning 40%."
+    }
+  }
 }

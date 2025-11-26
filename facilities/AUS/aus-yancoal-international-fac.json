@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.65,
-    "lon": 150.338,
+    "lat": -32.5,
+    "lon": 150.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Coal Australia",
+    "Yancoal Australia Ltd",
+    "Yankuang Energy Group Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.285023Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T14:20:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.yancoal.com.au/our-sites/hunter-valley-operations/. Yancoal operates the Hunter Valley Operations located 24 km NW of Singleton"
   },
   "canonical_name": "Yancoal International Mine",
   "canonical_slug": "yancoal-international-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:20:48.000000Z",
+      "operators": [
+        "Yancoal Australia Ltd",
+        "Glencore Coal Australia"
+      ],
+      "owners": [
+        "Yankuang Energy Group Company Limited"
+      ],
+      "notes": "Yancoal is majority owned by Yankuang Energy Group, a Chinese state-owned enterprise."
+    }
+  }
 }

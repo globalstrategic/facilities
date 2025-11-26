@@ -10,8 +10,8 @@
     "lat": 11.8,
     "lon": -3.28333,
     "precision": "region",
-    "town": "Safané",
-    "region": "Balé"
+    "town": "SafanÃ©",
+    "region": "BalÃ©"
   },
   "types": [
     "mine"
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fortuna Mining Corp.",
+    "Roxgold Sanu",
+    "Soleil Resources International"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,9 +42,9 @@
     "last_checked": "2025-11-04T19:35:07.415677Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated",
-    "geocoding_source": "Mine location ~42 km S of Safané; mine TR."
+    "geocoding_source": "Mine location ~42 km S of SafanÃ©; mine TR."
   },
-  "canonical_name": "Safané Fortuna Silver Mines Yaramoko Mine",
+  "canonical_name": "SafanÃ© Fortuna Silver Mines Yaramoko Mine",
   "canonical_slug": "safan-yaramoko-mine",
   "display_name": "Yaramoko",
   "primary_type": "mine",
@@ -62,11 +66,25 @@
       "reason": "data_correction"
     },
     {
-      "name": "Safané area Fortuna Silver Mines Yaramoko Mine",
+      "name": "SafanÃ© area Fortuna Silver Mines Yaramoko Mine",
       "from": "2025-11-04T17:40:20.533533Z",
       "to": "2025-11-04T17:58:50.033540Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Boucle du Mouhoun",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T15:50:16.000000Z",
+      "operators": [
+        "Roxgold Sanu"
+      ],
+      "owners": [
+        "Fortuna Mining Corp.",
+        "Soleil Resources International"
+      ],
+      "notes": "Fortuna Mining is divesting its ownership in Roxgold Sanu, which operates the Yaramoko mine."
+    }
+  }
 }

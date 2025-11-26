@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -27.666,
-    "lon": 122.345,
+    "lat": -41.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anchor Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.327129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:14:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-132824.html. The Anchor Mine is located in the Blue Tier district, near Lottah, Tasmania"
   },
   "canonical_name": "Anchor N Mine",
   "canonical_slug": "anchor-n-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:14:11.000000Z",
+      "operators": [
+        "Anchor Resources Limited"
+      ],
+      "owners": [
+        "Anchor Resources Limited"
+      ],
+      "notes": "Anchor Resources Limited is both the operator and owner of the Anchor Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.477,
-    "lon": 148.525,
+    "lat": -23.5,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Idemitsu Kosan",
+    "LX International",
+    "Thungela Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.336301Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:00:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.thungela.com/sens-regulatory/pdf/acquisition-of-controlling-shareholding-in-the-ensham-coal-mine-and-related-assets. The Ensham coal mine is located in Queensland's Bowen Basin region"
   },
   "canonical_name": "Ensham Mine",
   "canonical_slug": "ensham-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:00:23.000000Z",
+      "operators": [
+        "Thungela Resources Limited"
+      ],
+      "owners": [
+        "Idemitsu Kosan",
+        "LX International"
+      ],
+      "notes": "Thungela Resources Limited acquired the remaining stake in the Ensham business, which includes the Ensham coal mine."
+    }
+  }
 }

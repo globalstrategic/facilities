@@ -10,8 +10,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.125,
-    "lon": 146.869,
+    "lat": -41.1,
+    "lon": 146.9,
     "precision": "site"
   },
   "types": [
@@ -45,7 +45,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GFG Alliance",
+    "Liberty Bell Bay"
+  ],
   "products": [],
   "sources": [
     {
@@ -55,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.325209Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:21:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bell_Bay,_Tasmania. The Bell Bay facility is known for its manganese alloy smelting operations"
   },
   "canonical_name": "Bell Bay Smelter",
   "canonical_slug": "bell-bay-smelter",
@@ -74,5 +77,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:21:09.000000Z",
+      "operators": [
+        "Liberty Bell Bay"
+      ],
+      "owners": [
+        "GFG Alliance"
+      ],
+      "notes": "Liberty Bell Bay was formerly known as TEMCO, which was originally built by BHP."
+    }
+  }
 }

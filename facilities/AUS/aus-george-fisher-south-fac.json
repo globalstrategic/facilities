@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.563,
-    "lon": 139.473,
+    "lat": -20.7333,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.238248Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:06:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com.au/operations-and-projects/qld-metals/resourceful/resourceful-september-2020/the-remarkable-and-turbulent-history-of-hilton-and-george-fisher-mine. The George Fisher Mine is located near Mount Isa, Queensland, Australia"
   },
   "canonical_name": "George Fisher South Mine",
   "canonical_slug": "george-fisher-south-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:06:37.000000Z",
+      "operators": [
+        "Glencore plc"
+      ],
+      "owners": [
+        "Glencore plc"
+      ],
+      "notes": "Glencore operates and owns the George Fisher Mine."
+    }
+  }
 }

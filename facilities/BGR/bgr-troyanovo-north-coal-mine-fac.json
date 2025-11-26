@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": 42.274,
-    "lon": 26.014,
+    "lat": 42.2737,
+    "lon": 26.0138,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bulgarian Energy Holding EAD",
+    "Mini Maritsa Iztok EAD"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:58.770301Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:16:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Troyanovo-North_Coal_Mine. Troyanovo-North Coal Mine is a surface mine located near Lyubenovo, Stara Zagora Province, Bulgaria"
   },
   "canonical_name": "Troyanovo North Coal Mine",
   "canonical_slug": "troyanovo-north-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Stara Zagora",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:16:20.000000Z",
+      "operators": [
+        "Mini Maritsa Iztok EAD"
+      ],
+      "owners": [
+        "Bulgarian Energy Holding EAD"
+      ],
+      "notes": "Mini Maritsa Iztok EAD is the operator and is fully owned by Bulgarian Energy Holding EAD."
+    }
+  }
 }

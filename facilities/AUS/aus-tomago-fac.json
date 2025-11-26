@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.826,
-    "lon": 151.723,
+    "lat": -32.8833,
+    "lon": 151.6167,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gove Aluminium Finance Limited",
+    "Hydro Aluminium",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.272723Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:04:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.riotinto.com/en/operations/non-managed-operations. Tomago Aluminium is Australia's largest aluminium smelter, producing 590,000 tonnes of aluminium annually"
   },
   "canonical_name": "Tomago Smelter",
   "canonical_slug": "tomago-smelter",
@@ -65,5 +69,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:04:56.000000Z",
+      "operators": [
+        "Rio Tinto",
+        "Gove Aluminium Finance Limited",
+        "Hydro Aluminium"
+      ],
+      "owners": [
+        "Rio Tinto",
+        "Gove Aluminium Finance Limited",
+        "Hydro Aluminium"
+      ],
+      "notes": "Tomago Aluminium is a joint venture with Rio Tinto holding a 51.55% stake."
+    }
+  }
 }

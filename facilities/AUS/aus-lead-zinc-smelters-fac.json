@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -33.185,
+    "lon": 138.003,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nyrstar",
+    "Trafigura"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.332206Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:24:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.afr.com/companies/manufacturing/smelter-owners-say-government-should-force-miners-to-sell-local-20251124-p5nhxb. The Port Pirie lead smelter is one of the largest multi-metals smelters in the world, processing lead, silver, and zinc"
   },
   "canonical_name": "Lead & Zinc Smelters Mine",
   "canonical_slug": "lead-zinc-smelters-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:24:56.000000Z",
+      "operators": [
+        "Nyrstar"
+      ],
+      "owners": [
+        "Trafigura"
+      ],
+      "notes": "Nyrstar operates the smelters and is a subsidiary of Trafigura."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.725,
+    "lon": 139.5,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Glencore Metals Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.329465Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:37:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/web/australia-launches-395-million-rescue-of-glencore-copper-smelter/. The Mount Isa copper smelter is a significant facility in Queensland, Australia, operated by Glencore"
   },
   "canonical_name": "Copper Smelters & Refineries Mine",
   "canonical_slug": "copper-smelters-refineries-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:37:27.000000Z",
+      "operators": [
+        "Glencore Metals Australia"
+      ],
+      "owners": [
+        "Glencore"
+      ],
+      "notes": "Glencore is both the operator and owner of the Mount Isa copper smelter and Townsville refinery."
+    }
+  }
 }

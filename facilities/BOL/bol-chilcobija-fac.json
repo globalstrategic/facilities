@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -21.398,
-    "lon": -66.099,
+    "lat": -21.4,
+    "lon": -66.1,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empresa Minera San Juan Ltda.",
+    "Empresa Minera Unificada S.A. (EMUSA)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.453181Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:56:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ia800200.us.archive.org/4/items/antimonyavailabi00pale/antimonyavailabi00pale.pdf. Chilcobija Mine is situated in the southern section of Bolivia"
   },
   "canonical_name": "Chilcobija Mine",
   "canonical_slug": "chilcobija-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Potosí Department",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:56:34.000000Z",
+      "operators": [
+        "Empresa Minera San Juan Ltda."
+      ],
+      "owners": [
+        "Empresa Minera Unificada S.A. (EMUSA)"
+      ],
+      "notes": "EMUSA acquired the mine in 1946 and has been involved in its operation."
+    }
+  }
 }

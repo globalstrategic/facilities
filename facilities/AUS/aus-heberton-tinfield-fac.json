@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -17.367,
-    "lon": 145.379,
+    "lat": -17.3837,
+    "lon": 145.3901,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Consolidated Tin Mines Limited",
+    "Kagara Limited",
+    "Koba Resources Limited",
+    "Monto Minerals",
+    "Snow Peak Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.325594Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:14:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Great_Northern_Mine. Coordinates for the Great Northern Mine, which is part of the Herberton Tinfield"
   },
   "canonical_name": "Heberton Tinfield Mine",
   "canonical_slug": "heberton-tinfield-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:14:26.000000Z",
+      "operators": [
+        "Koba Resources Limited",
+        "Consolidated Tin Mines Limited",
+        "Kagara Limited"
+      ],
+      "owners": [
+        "Snow Peak Mining",
+        "Monto Minerals"
+      ],
+      "notes": "Koba Resources Limited is involved in the Herberton Tinfield area, while Snow Peak Mining and its subsidiary Consolidated Tin Mines Limited have been mentioned in relation to operations in the area."
+    }
+  }
 }

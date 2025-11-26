@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.666,
-    "lon": 147.955,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centurion Coal Mining Pty Ltd",
+    "Peabody Energy Australia Pty Ltd",
+    "Peabody Energy Corporation",
+    "Peabody Energy, Inc.",
+    "Sumitomo Pty Ltd",
+    "White Mining Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.292475Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:45:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Centurion_Coal_Mine. North Goonyella is located near Moranbah in the Bowen Basin, Queensland, Australia"
   },
   "canonical_name": "North Goonyella Mine",
   "canonical_slug": "north-goonyella-mine",
@@ -51,5 +58,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:45:34.000000Z",
+      "operators": [
+        "Peabody Energy, Inc."
+      ],
+      "owners": [
+        "Centurion Coal Mining Pty Ltd",
+        "Peabody Energy Australia Pty Ltd",
+        "Peabody Energy Corporation",
+        "White Mining Ltd",
+        "Sumitomo Pty Ltd"
+      ],
+      "notes": "Peabody Energy operates the mine, which is owned by its subsidiary Centurion Coal Mining Pty Ltd. White Mining Ltd and Sumitomo Pty Ltd are also involved in ownership."
+    }
+  }
 }

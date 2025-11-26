@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -15.877,
-    "lon": 143.467,
+    "lat": -15.8986,
+    "lon": 143.5312,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Clive Palmer's Mineralogy",
+    "Palmer River Gold Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.255769Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:47:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Palmer_River_Gold_Company_Dredge. The Palmer River Gold Company Dredge is a heritage-listed dredge located on the Palmer River"
   },
   "canonical_name": "Palmer River Mine",
   "canonical_slug": "palmer-river-mine",
@@ -49,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:47:21.000000Z",
+      "operators": [
+        "Palmer River Gold Company"
+      ],
+      "owners": [
+        "Clive Palmer's Mineralogy"
+      ],
+      "notes": "Clive Palmer is a notable figure associated with mining in the Palmer River area."
+    }
+  }
 }

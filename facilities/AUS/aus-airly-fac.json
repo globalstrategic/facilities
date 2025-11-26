@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.113,
-    "lon": 150.018,
+    "lat": -33.5,
+    "lon": 150.1,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centennial Airly Pty Limited",
+    "Centennial Coal Company Pty Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.250571Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:59:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ipcn.nsw.gov.au/sites/default/files/pac/projects/2023/11/airly-mine-modification-5/case-referral-documents-from-dpe/assessment-report.pdf. Airly Mine is located approximately 25 kilometers north-west of Lithgow"
   },
   "canonical_name": "Airly Mine",
   "canonical_slug": "airly-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:59:59.000000Z",
+      "operators": [
+        "Centennial Airly Pty Limited"
+      ],
+      "owners": [
+        "Centennial Coal Company Pty Limited"
+      ],
+      "notes": "Centennial Airly is a wholly owned subsidiary of Centennial Coal Company."
+    }
+  }
 }

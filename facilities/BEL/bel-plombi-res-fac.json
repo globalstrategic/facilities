@@ -1,6 +1,6 @@
 {
   "facility_id": "bel-plombi-res-fac",
-  "name": "Plombières (Bleiberg)",
+  "name": "PlombiÃ¨res (Bleiberg)",
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Battery Age Minerals",
+    "Bleiberger Bergwerksunion"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     "confidence": 0.9,
     "last_checked": "2025-11-20T17:17:14.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://tt.maptons.com/64774. Coordinates extracted directly from the search results for Plombières, Belgium"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://tt.maptons.com/64774. Coordinates extracted directly from the search results for PlombiÃ¨res, Belgium"
   },
-  "canonical_name": "Plombières Mine",
+  "canonical_name": "PlombiÃ¨res Mine",
   "canonical_slug": "plombires-mine",
-  "display_name": "Plombières",
+  "display_name": "PlombiÃ¨res",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -52,5 +55,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Liège"
+  "province": "Carinthia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:18:24.000000Z",
+      "operators": [
+        "Battery Age Minerals"
+      ],
+      "owners": [
+        "Bleiberger Bergwerksunion"
+      ],
+      "notes": "The Bleiberg mine was managed by the state-owned Bleiberger Bergwerksunion until 1992."
+    }
+  }
 }

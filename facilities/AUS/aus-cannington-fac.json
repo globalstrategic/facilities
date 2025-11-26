@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.864,
-    "lon": 140.916,
+    "lat": -21.8564,
+    "lon": 140.907,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "South32"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.253278Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:30:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cannington_Mine. Cannington Mine is an underground silver and lead mine located in north-west Queensland, Australia"
   },
   "canonical_name": "Cannington Mine",
   "canonical_slug": "cannington-mine",
@@ -56,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:30:25.000000Z",
+      "operators": [
+        "South32"
+      ],
+      "owners": [
+        "South32"
+      ],
+      "notes": "South32 is the sole owner and operator of the Cannington mine."
+    }
+  }
 }

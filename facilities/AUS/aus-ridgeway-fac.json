@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.436,
-    "lon": 148.975,
+    "lat": -33.467,
+    "lon": 148.993,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Newcrest Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.246928Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:53:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cadia-Ridgeway_mine. The Ridgeway underground mine is located in the Cadia Valley province, which is known for its mineral wealth"
   },
   "canonical_name": "Ridgeway Mine",
   "canonical_slug": "ridgeway-mine",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:53:51.000000Z",
+      "operators": [
+        "Newcrest Mining Limited"
+      ],
+      "owners": [
+        "Newcrest Mining Limited"
+      ],
+      "notes": "Newcrest Mining Limited is the sole owner and operator of the Ridgeway mine."
+    }
+  }
 }

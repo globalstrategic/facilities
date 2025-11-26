@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.113,
-    "lon": 117.805,
+    "lat": -28.9667,
+    "lon": 117.1333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mt Magnet Gold Pty Ltd",
+    "Ramelius Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.263098Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:58:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/27/Ramelius-MR-2024.pdf. The Eclipse Mount Magnet facility is associated with the Mt Magnet Gold Project, which is operated by Mt Magnet Gold Pty Ltd, a subsidiary of Ramelius Resources"
   },
   "canonical_name": "Eclipse Mount Magnet Mine",
   "canonical_slug": "eclipse-mount-magnet-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:58:52.000000Z",
+      "operators": [
+        "Mt Magnet Gold Pty Ltd"
+      ],
+      "owners": [
+        "Ramelius Resources Limited"
+      ],
+      "notes": "Mt Magnet Gold Pty Ltd is a wholly owned subsidiary of Ramelius Resources, which operates the Mt Magnet Gold Project."
+    }
+  }
 }

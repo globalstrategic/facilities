@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.113,
-    "lon": 115.606,
+    "lat": -28.113671,
+    "lon": 115.612865,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mount Gibson Iron Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.236824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:02:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tallering_Peak. Tallering Peak Mine was operational from 2004 to 2014 and is located in the Mid West region of Western Australia"
   },
   "canonical_name": "Tallering Peak Mine",
   "canonical_slug": "tallering-peak-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:02:43.000000Z",
+      "operators": [
+        "Mount Gibson Iron Limited"
+      ],
+      "owners": [
+        "Mount Gibson Iron Limited"
+      ],
+      "notes": "Mount Gibson Iron Limited is the owner and operator of the Tallering Peak Mine."
+    }
+  }
 }

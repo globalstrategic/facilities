@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.418,
-    "lon": 121.143,
+    "lat": -28.5,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "IGO Ltd",
+    "Independence Group NL"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.334574Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:18:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.safescape.com/projects/jaguar-mine. The Jaguar Operation is located within the Eastern Goldfields of Western Australia, specifically 60km north of Leonora"
   },
   "canonical_name": "Jaguar Mine",
   "canonical_slug": "jaguar-mine",
@@ -62,5 +65,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:18:23.000000Z",
+      "operators": [
+        "IGO Ltd"
+      ],
+      "owners": [
+        "Independence Group NL"
+      ],
+      "notes": "The Jaguar Operation was acquired by IGO in 2011 and was previously owned by Independence Group NL."
+    }
+  }
 }

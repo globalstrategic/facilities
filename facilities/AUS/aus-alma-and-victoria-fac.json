@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.293,
-    "lon": 139.442,
+    "lat": -32.5,
+    "lon": 139.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alma Metals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.247620Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:13:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://data.environment.sa.gov.au/Content/Publications/10316_Research.pdf. The Alma and Victoria gold mines are located in the Waukaringa Goldfield, which is known for its historical gold production"
   },
   "canonical_name": "Alma AND Victoria Mine",
   "canonical_slug": "alma-and-victoria-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:13:18.000000Z",
+      "operators": [
+        "Alma Metals Limited"
+      ],
+      "owners": [
+        "Alma Metals Limited"
+      ],
+      "notes": "Alma Metals Limited is associated with the management and operation of the Alma and Victoria gold mines."
+    }
+  }
 }

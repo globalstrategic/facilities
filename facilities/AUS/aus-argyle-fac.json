@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.72,
-    "lon": 128.385,
+    "lat": -16.712222,
+    "lon": 128.3975,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto Group",
+    "Rio Tinto Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.241836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:16:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://dlab.epfl.ch/wikispeedia/wpcd/wp/a/Argyle_diamond_mine.htm. The Argyle diamond mine is located in the East Kimberley region of Western Australia and was one of the largest diamond producers in the world"
   },
   "canonical_name": "Argyle Mine",
   "canonical_slug": "argyle-mine",
@@ -49,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:16:54.000000Z",
+      "operators": [
+        "Rio Tinto Ltd"
+      ],
+      "owners": [
+        "Rio Tinto Group"
+      ],
+      "notes": "Rio Tinto owns and operates the Argyle diamond mine."
+    }
+  }
 }

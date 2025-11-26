@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.2951,
+    "lon": 14.2862,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "voestalpine AG",
+    "voestalpine Stahl GmbH"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.397167Z",
-    "checked_by": "import_pipeline",
-    "notes": "Flagship integrated steelworks of voestalpine; primary consumer of Erzberg iron ore. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:09:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Flagship integrated steelworks of voestalpine; primary consumer of Erzberg iron ore. | Canonical name+slug generated. Web search geocoded. Source: https://cisma-project.eu/partner/voestalpine-stahl-gmbh/. voestalpine Stahl GmbH operates a fully integrated steel mill in Linz, Austria"
   },
   "canonical_name": "Voestalpine Stahl Linz Steel Plant",
   "canonical_slug": "voestalpine-stahl-linz-steel-plant",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Upper Austria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:09:03.000000Z",
+      "operators": [
+        "voestalpine Stahl GmbH"
+      ],
+      "owners": [
+        "voestalpine AG"
+      ],
+      "notes": "voestalpine Stahl GmbH is a business unit of voestalpine AG."
+    }
+  }
 }

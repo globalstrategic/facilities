@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.68,
-    "lon": 119.937,
+    "lat": -26.679789,
+    "lon": 119.93837,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Valley West Wiluna Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.262511Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:08:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gold_Valley_Wiluna_West_Mine. Gold Valley Wiluna West Mine is an iron ore mine operating in Wiluna, Western Australia"
   },
   "canonical_name": "Gold Valley Wiluna West Mine",
   "canonical_slug": "gold-valley-wiluna-west-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:08:04.000000Z",
+      "operators": [
+        "Gold Valley West Wiluna Pty Ltd"
+      ],
+      "owners": [
+        "Gold Valley West Wiluna Pty Ltd"
+      ],
+      "notes": "Gold Valley West Wiluna Pty Ltd owns and operates the Gold Valley Wiluna West Mine."
+    }
+  }
 }

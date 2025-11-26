@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 43.17,
-    "lon": 18.51,
+    "lat": 43.17278,
+    "lon": 18.51306,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda Republike Srpske"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.135304Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:44:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Gacko_coal_mine. Gacko Coal Mine is one of the largest coal reserves in Europe, located in Bosnia and Herzegovina"
   },
   "canonical_name": "Gacko Coal Mine",
   "canonical_slug": "gacko-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Republika Srpska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:44:55.000000Z",
+      "operators": [
+        "Elektroprivreda Republike Srpske"
+      ],
+      "owners": [
+        "Elektroprivreda Republike Srpske"
+      ],
+      "notes": "The facility is owned and operated by the state-owned utility company Elektroprivreda Republike Srpske."
+    }
+  }
 }

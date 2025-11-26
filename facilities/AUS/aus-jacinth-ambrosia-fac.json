@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.908,
-    "lon": 132.223,
+    "lat": -30.9,
+    "lon": 132.21,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Iluka Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.252561Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:18:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Jacinth-Ambrosia_Mine. The Jacinth-Ambrosia Mine is located in the Eucla Basin and is known for its zircon production"
   },
   "canonical_name": "Jacinth Ambrosia Mine",
   "canonical_slug": "jacinth-ambrosia-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:18:07.000000Z",
+      "operators": [
+        "Iluka Resources"
+      ],
+      "owners": [
+        "Iluka Resources"
+      ],
+      "notes": "Iluka Resources is both the operator and owner of the Jacinth-Ambrosia Mine."
+    }
+  }
 }

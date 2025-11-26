@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.875,
-    "lon": 121.313,
+    "lat": -28.7361,
+    "lon": 121.9603,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genesis Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.287224Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:13:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://genesisminerals.com.au/our-assets/leonora-operations/harbour-lights-project/. The Harbour Lights Deposit is located 1.5 kilometres north-west of Leonora, situated between the Goldfields Highway and Leonora Airport"
   },
   "canonical_name": "Harbour Lights Mine",
   "canonical_slug": "harbour-lights-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:13:54.000000Z",
+      "operators": [
+        "Genesis Minerals Limited"
+      ],
+      "owners": [
+        "Genesis Minerals Limited"
+      ],
+      "notes": "Genesis Minerals Limited is the operator and owner of the Harbour Lights Project."
+    }
+  }
 }

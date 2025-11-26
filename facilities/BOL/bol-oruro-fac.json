@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -17.998,
-    "lon": -67.1,
+    "lat": -17.9665,
+    "lon": -66.8292,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Minera de Bolivia (COMIBOL)",
+    "Glencore Plc",
+    "Sinchi Wayra S.A.",
+    "Sociedad Miner Illapa S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.447633Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:06:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/25/Bolivar-TR-12212021.pdf. Bolívar Mine is located in the state of Oruro, specifically in the municipality of Antequera"
   },
   "canonical_name": "Oruro Mine",
   "canonical_slug": "oruro-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:06:53.000000Z",
+      "operators": [
+        "Sociedad Miner Illapa S.A.",
+        "Sinchi Wayra S.A."
+      ],
+      "owners": [
+        "Corporación Minera de Bolivia (COMIBOL)",
+        "Glencore Plc"
+      ],
+      "notes": "Bolívar Mine is owned by the Bolivian government (COMIBOL) with exclusive mining rights granted to Sociedad Miner Illapa S.A., a partnership with Sinchi Wayra S.A., a subsidiary of Glencore Plc."
+    }
+  }
 }

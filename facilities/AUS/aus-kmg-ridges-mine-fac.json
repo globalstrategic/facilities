@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.599,
-    "lon": 128.273,
+    "lat": -16.599104,
+    "lon": 128.273183,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Habrok Mining",
+    "Indus Mining Pty Ltd",
+    "Kimberley Metals Group (KMG)",
+    "Ridges Iron Ore Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.233026Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:23:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KMG_Ridges_Mine. The KMG Ridges Mine is located in Lake Argyle, approximately 170 kilometers south of Kununurra"
   },
   "canonical_name": "KMG Ridges Mine",
   "canonical_slug": "kmg-ridges-mine",
@@ -48,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:23:10.000000Z",
+      "operators": [
+        "Indus Mining Pty Ltd",
+        "Habrok Mining",
+        "Ridges Iron Ore Pty Ltd"
+      ],
+      "owners": [
+        "Kimberley Metals Group (KMG)"
+      ],
+      "notes": "KMG is the owner of the Ridges Iron Ore Project and operates it in partnership with Indus Mining and other joint venture partners."
+    }
+  }
 }

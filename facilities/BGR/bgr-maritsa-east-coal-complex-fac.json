@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.167,
+    "lon": 26.037577,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Bulgarian Energy Holding",
-      "role": "operator",
-      "source": "Bulgarian Mines and Metals Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:19:04.894633",
-      "evidence": "Extracted from operator column: Bulgarian Energy Holding"
-    }
+    "Bulgarian Energy Holding",
+    "Bulgarian Energy Holding EAD",
+    "Mini Maritsa Iztok EAD"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.768761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:14:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Maritsa_Coal_Mines. The Maritsa East Coal Complex is a significant lignite coal mining facility in Bulgaria, contributing to the country's energy production"
   },
   "canonical_name": "Maritsa East Coal Mine",
   "canonical_slug": "maritsa-east-coal-mine",
@@ -51,5 +46,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Stara Zagora Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:14:30.000000Z",
+      "operators": [
+        "Mini Maritsa Iztok EAD"
+      ],
+      "owners": [
+        "Bulgarian Energy Holding EAD"
+      ],
+      "notes": "Mini Maritsa Iztok EAD is a subsidiary of Bulgarian Energy Holding, which is owned by the Ministry of Energy of Bulgaria."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "bel-tellier-des-pr-s-quarry-fac",
-  "name": "Tellier-des-Prés Quarry",
+  "name": "Tellier-des-PrÃ©s Quarry",
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.5361,
+    "lon": 4.1047,
+    "precision": "exact"
   },
   "types": [
     "mine"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Les Carrières de la Pierre Bleue",
+    "Pierre Bleue Belge"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,9 +37,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Tellier Des Prés Quarry Mine",
+  "canonical_name": "Tellier Des PrÃ©s Quarry Mine",
   "canonical_slug": "tellier-des-prs-quarry-mine",
-  "display_name": "Tellier Des Prés Quarry",
+  "display_name": "Tellier Des PrÃ©s Quarry",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -49,11 +52,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "Tellier-des-Prés Quarry Mine",
+      "name": "Tellier-des-PrÃ©s Quarry Mine",
       "from": "2025-10-21T09:23:56.038107",
       "to": "2025-11-04T17:40:20.516118Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hainaut",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:19:41.000000Z",
+      "operators": [
+        "Les Carrières de la Pierre Bleue"
+      ],
+      "owners": [
+        "Pierre Bleue Belge"
+      ],
+      "notes": "Les Carrières de la Pierre Bleue is a leading company in the mining, sawing, and shaping of blue stone in Europe."
+    }
+  }
 }

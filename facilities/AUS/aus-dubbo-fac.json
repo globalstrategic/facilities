@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -32.5,
+    "lon": 148.6,
     "precision": "unknown"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Australian Strategic Materials",
+    "Bechtel Mining and Metals, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.236209Z",
-    "checked_by": "import_pipeline",
-    "notes": "Polymetallic (REE+Zr); construction-ready | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:57:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Polymetallic (REE+Zr); construction-ready | Canonical name+slug generated. Web search geocoded. Source: https://asm-au.com/mines/the-dubbo-project/. The Dubbo Project is located near the town of Toongi, which is 25 km south of Dubbo"
   },
   "canonical_name": "Dubbo Mine",
   "canonical_slug": "dubbo-mine",
@@ -57,5 +60,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:57:42.000000Z",
+      "operators": [
+        "Bechtel Mining and Metals, Inc."
+      ],
+      "owners": [
+        "Australian Strategic Materials"
+      ],
+      "notes": "The Dubbo Project is wholly owned by Australian Strategic Materials."
+    }
+  }
 }

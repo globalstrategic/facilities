@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.85,
-    "lon": 119.272,
+    "lat": -29.849684,
+    "lon": 119.271851,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineral Resources Ltd",
+    "Yilgarn Iron Investments Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.244707Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:31:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MinRes_Deception_(Yilgarn_Hub)_Mine. The MinRes Deception (Yilgarn Hub) Mine is an iron ore mine that has been mothballed"
   },
   "canonical_name": "Minres Deception Mine",
   "canonical_slug": "minres-deception-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:31:50.000000Z",
+      "operators": [
+        "Mineral Resources Ltd"
+      ],
+      "owners": [
+        "Yilgarn Iron Investments Pty Ltd"
+      ],
+      "notes": "Mineral Resources Ltd was the operator before the sale to Yilgarn Iron Investments."
+    }
+  }
 }

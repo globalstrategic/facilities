@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.409,
-    "lon": 145.799,
+    "lat": -31.5,
+    "lon": 145.5,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Harmony Gold",
+    "Metals Acquisition",
+    "Polymetals Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.274646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:35:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/CSA_Mine. The CSA Mine is a copper mine located near Cobar, New South Wales"
   },
   "canonical_name": "Cobar Mine",
   "canonical_slug": "cobar-mine",
@@ -60,5 +64,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:35:19.000000Z",
+      "operators": [
+        "Metals Acquisition"
+      ],
+      "owners": [
+        "Polymetals Resources Ltd",
+        "Harmony Gold"
+      ],
+      "notes": "The CSA Mine has changed ownership recently, with Metals Acquisition being the current operator."
+    }
+  }
 }

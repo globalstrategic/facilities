@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.59,
-    "lon": 148.217,
+    "lat": -32.5,
+    "lon": 148.6,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alkane Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.314453Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:05:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.stocktitan.net/news/ALKEF/alkane-resources-limited-appointment-of-non-executive-l6a2d7y3pf9n.html. Tomingley Gold Operations is located southwest of Dubbo in Central West New South Wales"
   },
   "canonical_name": "Tomingley Mine",
   "canonical_slug": "tomingley-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:05:05.000000Z",
+      "operators": [
+        "Alkane Resources Limited"
+      ],
+      "owners": [
+        "Alkane Resources Limited"
+      ],
+      "notes": "Alkane Resources is both the operator and owner of the Tomingley Gold Operations."
+    }
+  }
 }

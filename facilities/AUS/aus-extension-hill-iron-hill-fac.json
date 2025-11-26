@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.572,
-    "lon": 117.151,
+    "lat": -28.5,
+    "lon": 116.5,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Extension Hill Pty Ltd",
+    "Fenix Resources Ltd",
+    "Mount Gibson Iron",
+    "Terra Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.283646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:01:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mtgibsoniron.com.au/our-profile/company-background/. The Extension Hill mine is located approximately 260 km east of Geraldton in the Mid West region of Western Australia"
   },
   "canonical_name": "Extension Hill/iron Hill Mine",
   "canonical_slug": "extension-hill-iron-hill-mine",
@@ -60,5 +65,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:01:46.000000Z",
+      "operators": [
+        "Terra Mining",
+        "Extension Hill Pty Ltd"
+      ],
+      "owners": [
+        "Mount Gibson Iron",
+        "Fenix Resources Ltd"
+      ],
+      "notes": "Mount Gibson Iron is the original owner and operator of the Extension Hill mine, while Terra Mining is currently operating the Extension Hill Magnetite Project under an arrangement with Extension Hill Pty Ltd."
+    }
+  }
 }

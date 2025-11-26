@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BIH",
   "location": {
-    "lat": 44.159,
-    "lon": 18.34,
+    "lat": 44.30706022932747,
+    "lon": 18.4126147,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Adriatic Metals plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.134548Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T09:46:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sarajevo (https://dpmmetals.com/assets/producing/vares-operation/). The Vareš Lead and Zinc Mine is located approximately 50 kilometers north of Sarajevo in the municipality of Vareš"
   },
   "canonical_name": "Vares Lead And Zinc Mine",
   "canonical_slug": "vares-lead-and-zinc-mine",
@@ -83,5 +85,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Federation of Bosnia and Herzegovina",
+  "town": "Sarajevo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:46:37.000000Z",
+      "operators": [
+        "Adriatic Metals plc"
+      ],
+      "owners": [
+        "Adriatic Metals plc"
+      ],
+      "notes": "Adriatic Metals owns 100% of the Vareš Silver Operation."
+    }
+  }
 }

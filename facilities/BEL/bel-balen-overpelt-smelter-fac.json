@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BEL",
   "location": {
-    "lat": 51.236,
-    "lon": 5.395,
+    "lat": 51.215508388154156,
+    "lon": 5.544705391215545,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NN2 Newco Ltd.",
+    "Nyrstar N.V.",
+    "Trafigura Group Pte. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.140742Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-25T16:09:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Antwerp (https://pubs.usgs.gov/myb/vol3/2020-21/myb3-2020-21-belgium.pdf). The Balen smelter and Overpelt casthouse are located approximately 80 km east of Antwerp, Belgium"
   },
   "canonical_name": "Balen/overpelt Smelter",
   "canonical_slug": "balen-overpelt-smelter",
@@ -70,5 +74,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Flanders",
+  "town": "Antwerp",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:09:34.000000Z",
+      "operators": [
+        "Nyrstar N.V."
+      ],
+      "owners": [
+        "Trafigura Group Pte. Ltd.",
+        "NN2 Newco Ltd."
+      ],
+      "notes": "Nyrstar N.V. is operated by Trafigura Group Pte. Ltd. (98.5% equity interest) and NN2 Newco Ltd. (1.5% equity interest)."
+    }
+  }
 }

@@ -10,8 +10,8 @@
   ],
   "country_iso3": "BOL",
   "location": {
-    "lat": -19.814,
-    "lon": -65.985,
+    "lat": 21.787302855907285,
+    "lon": -101.31771006198467,
     "precision": "site"
   },
   "types": [
@@ -40,7 +40,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "COMIBOL",
+    "Santacruz Silver Mining Ltd.",
+    "Sinchi Wayra"
+  ],
   "products": [],
   "sources": [
     {
@@ -50,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.447056Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:07:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Potosí City (https://santacruzsilver.com/operations/producing/bolivia/porco-mine-bolivia/). The Porco mine is located in the Porco Municipality of the Antonio Quijarro Province, approximately 50 km southwest of Potosí City"
   },
   "canonical_name": "Porco Mine",
   "canonical_slug": "porco-mine",
@@ -69,5 +73,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Potosí Department",
+  "town": "Potosí City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:07:52.000000Z",
+      "operators": [
+        "Sinchi Wayra",
+        "Santacruz Silver Mining Ltd."
+      ],
+      "owners": [
+        "COMIBOL",
+        "Santacruz Silver Mining Ltd."
+      ],
+      "notes": "Santacruz Silver Mining Ltd. operates the mine under a joint operation agreement with COMIBOL, where Santacruz receives 45% of profits."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 44.382,
-    "lon": 19.101,
+    "lat": 44.41944,
+    "lon": 19.11278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energoinvest",
+    "Energoinvest Alumina"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.134394Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:44:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_alumina_refineries. Birac is known for its alumina refinery and is located near Zvornik"
   },
   "canonical_name": "Birac Refinery",
   "canonical_slug": "birac-refinery",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Republika Srpska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:44:26.000000Z",
+      "operators": [
+        "Energoinvest Alumina"
+      ],
+      "owners": [
+        "Energoinvest"
+      ],
+      "notes": "Energoinvest operates the alumina refinery at Birac."
+    }
+  }
 }

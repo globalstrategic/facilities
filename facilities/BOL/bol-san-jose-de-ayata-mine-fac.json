@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -15.198,
-    "lon": -68.966,
+    "lat": -2.5358946157634574,
+    "lon": -84.98647668675872,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hochschild Mining Argentina",
+    "McEwen Mining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.446921Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T10:11:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Buenos Aires (https://www.hochschildmining.com/where-we-operate/current-operations/san-jose/). The San Jose mine is located in the Santa Cruz province of Argentina, approximately 1,750 km southwest of Buenos Aires"
   },
   "canonical_name": "San Jose De Ayata Mine",
   "canonical_slug": "san-jose-de-ayata-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "town": "Buenos Aires",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:11:49.000000Z",
+      "operators": [
+        "Hochschild Mining Argentina"
+      ],
+      "owners": [
+        "McEwen Mining Inc.",
+        "Hochschild Mining Argentina"
+      ],
+      "notes": "The mine is operated by Hochschild Mining Argentina, which holds a 51% interest, while McEwen Mining Inc. holds a 49% interest."
+    }
+  }
 }

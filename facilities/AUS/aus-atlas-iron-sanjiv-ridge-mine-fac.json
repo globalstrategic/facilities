@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.474,
-    "lon": 119.665,
+    "lat": -21.473998,
+    "lon": 119.664944,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Atlas Iron Pty Ltd",
+    "Hancock Prospecting Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.235112Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:17:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Atlas_Iron_Sanjiv_Ridge_Mine. The Sanjiv Ridge mine is an iron ore mine operated by Atlas Iron, located in the Pilbara region of Western Australia"
   },
   "canonical_name": "Atlas Iron Sanjiv Ridge Mine",
   "canonical_slug": "atlas-iron-sanjiv-ridge-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:17:35.000000Z",
+      "operators": [
+        "Atlas Iron Pty Ltd"
+      ],
+      "owners": [
+        "Hancock Prospecting Pty Ltd",
+        "Atlas Iron Pty Ltd"
+      ],
+      "notes": "Atlas Iron operates the mine and is fully owned by Hancock Prospecting."
+    }
+  }
 }

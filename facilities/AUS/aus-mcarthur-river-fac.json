@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -16.433,
-    "lon": 136.095,
+    "lat": -16.0,
+    "lon": 136.0,
     "precision": "site"
   },
   "types": [
@@ -39,7 +39,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Plc",
+    "McArthur River Mining Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -49,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.262040Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:29:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/McArthur_River_zinc_mine. The McArthur River mine is located approximately 70 km southwest of Borroloola"
   },
   "canonical_name": "Mcarthur River Mine",
   "canonical_slug": "mcarthur-river-mine",
@@ -76,5 +79,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:29:20.000000Z",
+      "operators": [
+        "McArthur River Mining Pty Ltd"
+      ],
+      "owners": [
+        "Glencore Plc"
+      ],
+      "notes": "McArthur River Mining is a subsidiary of Glencore."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.25,
-    "lon": 139.5,
+    "lat": -30.0,
+    "lon": 138.0,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "General Atomics",
+    "Heathgate Resources Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.277037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:24:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Beverley_Uranium_Mine. The Beverley Uranium Mine is located in the gazetted locality of Wooltana, approximately 35 km from Lake Frome"
   },
   "canonical_name": "Beverley Mine",
   "canonical_slug": "beverley-mine",
@@ -42,5 +45,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:24:05.000000Z",
+      "operators": [
+        "Heathgate Resources Pty Ltd"
+      ],
+      "owners": [
+        "Heathgate Resources Pty Ltd",
+        "General Atomics"
+      ],
+      "notes": "Heathgate Resources is a wholly owned subsidiary of General Atomics."
+    }
+  }
 }

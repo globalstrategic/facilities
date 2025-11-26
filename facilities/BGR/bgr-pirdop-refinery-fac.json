@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BGR",
   "location": {
-    "lat": 42.7,
-    "lon": 24.183,
+    "lat": 42.717,
+    "lon": 24.167,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurubis AG",
+    "Aurubis Bulgaria AD"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:58.769213Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:15:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pirdop_copper_smelter_and_refinery. The Pirdop copper smelter and refinery is the largest facility for smelting and refining of copper in South-Eastern Europe"
   },
   "canonical_name": "Pirdop Smelter",
   "canonical_slug": "pirdop-smelter",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sofia Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:15:13.000000Z",
+      "operators": [
+        "Aurubis Bulgaria AD"
+      ],
+      "owners": [
+        "Aurubis AG"
+      ],
+      "notes": "Aurubis AG is a leading global supplier of non-ferrous metals and one of the largest copper recycling companies in the world."
+    }
+  }
 }

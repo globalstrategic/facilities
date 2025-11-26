@@ -10,8 +10,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -18.417,
-    "lon": 127.358,
+    "lat": -18.2,
+    "lon": 127.4,
     "precision": "site"
   },
   "types": [
@@ -72,7 +72,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bulletin Resources",
+    "Pacific Niugini",
+    "Pantoro Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -82,11 +86,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.294843Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:44:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/marketdata/newspacific-niugini-gets-approval-for-nicolsons-mine-in-western-australia-4491402/. The Nicolsons Find gold project is located approximately 35 km southwest of Halls Creek in the East Kimberley region"
   },
   "canonical_name": "Nicolsons Find Mine",
   "canonical_slug": "nicolsons-find-mine",
@@ -101,5 +105,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:44:31.000000Z",
+      "operators": [
+        "Pacific Niugini"
+      ],
+      "owners": [
+        "Bulletin Resources",
+        "Pantoro Limited"
+      ],
+      "notes": "Pacific Niugini currently holds a 65% ownership of the Nicolsons Project, which will grow to 80%."
+    }
+  }
 }

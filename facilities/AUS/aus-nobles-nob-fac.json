@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -19.6,
-    "lon": 134.2,
+    "lat": -19.6333,
+    "lon": 134.2167,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Excalibur Mining",
+    "Tennant Consolidated Mining Group Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.282292Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:45:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/rural/2024-06-15/nobles-nob-gold-mine-restarting-at-tennant-creek-nt/103962484. Coordinates are approximate based on the facility's description as being 14 kilometers southeast of Tennant Creek"
   },
   "canonical_name": "Nobles Nob Mine",
   "canonical_slug": "nobles-nob-mine",
@@ -42,5 +45,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:45:01.000000Z",
+      "operators": [
+        "Tennant Consolidated Mining Group Pty Ltd"
+      ],
+      "owners": [
+        "Excalibur Mining"
+      ],
+      "notes": "Tennant Mining is currently operating the facility, while Excalibur Mining is listed as the owner."
+    }
+  }
 }

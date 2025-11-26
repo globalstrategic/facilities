@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": 47.799,
-    "lon": 13.035,
+    "lat": 47.2259806,
+    "lon": 12.4887111,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metallgesellschaft AG",
+    "Wolfram Bergbau und Hütten AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:53.400971Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:01:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mittersill_mine. The Mittersill mine, also known as Felbertal Mine, is a significant tungsten deposit located in the Eastern Alps"
   },
   "canonical_name": "Felbertal Mine",
   "canonical_slug": "felbertal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Salzburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:01:46.000000Z",
+      "operators": [
+        "Wolfram Bergbau und Hütten AG"
+      ],
+      "owners": [
+        "Wolfram Bergbau und Hütten AG",
+        "Metallgesellschaft AG"
+      ],
+      "notes": "Wolfram Bergbau und Hütten AG is the primary operator and owner of the Felbertal tungsten deposit."
+    }
+  }
 }

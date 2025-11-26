@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.109,
-    "lon": 146.325,
+    "lat": -31.5,
+    "lon": 145.5,
     "precision": "site"
   },
   "types": [
@@ -37,7 +37,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurelia Metals Ltd",
+    "CBH Resources Ltd",
+    "YTC Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -47,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.304572Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:15:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.proactiveinvestors.com/companies/news/132417/ytc-resources-to-expand-hera-dfs-to-include-ore-from-nymagee-copper-mine-10764.html. The Hera Project is located approximately 100km southeast of Cobar in New South Wales"
   },
   "canonical_name": "Hera , Hera , Far West Lens, Main Lens, Main South Lens, 1530 Lens, East Lens, West Lens Mine",
   "canonical_slug": "hera-hera-far-west-lens-main-lens-main-south-lens-1530-lens-east-lens-west-lens-mine",
@@ -74,5 +78,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:15:09.000000Z",
+      "operators": [
+        "YTC Resources Ltd",
+        "Aurelia Metals Ltd"
+      ],
+      "owners": [
+        "CBH Resources Ltd",
+        "Aurelia Metals Ltd"
+      ],
+      "notes": "YTC Resources acquired an 80% interest in the Nymagee Mine JV from CBH Resources as part of the Hera Project purchase transaction."
+    }
+  }
 }

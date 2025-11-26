@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.0,
+    "lon": 115.0,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hastings Technology Metals Ltd",
+    "Wyloo Metals"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.279355Z",
-    "checked_by": "import_pipeline",
-    "notes": "NdPr-focused hard-rock project advancing toward production | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T14:21:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "NdPr-focused hard-rock project advancing toward production | Canonical name+slug generated. Web search geocoded. Source: https://hastingstechmetals.com/yangibana-project/. The Yangibana Project is located approximately 250 kilometers northeast of Carnarvon in Western Australia"
   },
   "canonical_name": "Yangibana Mine",
   "canonical_slug": "yangibana-mine",
@@ -53,5 +56,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:21:26.000000Z",
+      "operators": [
+        "Wyloo Metals",
+        "Hastings Technology Metals Ltd"
+      ],
+      "owners": [
+        "Hastings Technology Metals Ltd",
+        "Wyloo Metals"
+      ],
+      "notes": "The Yangibana project is a joint venture between Wyloo (60%) and Hastings (40%)."
+    }
+  }
 }

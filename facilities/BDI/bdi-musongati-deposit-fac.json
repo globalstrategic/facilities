@@ -53,14 +53,12 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "License revoked from Burundi Musongati Mining in 2022\\.",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.034122",
-      "evidence": "Extracted from operator column: License revoked from Burundi Musongati Mining (BMM) in 2022\\."
-    }
+    "BMM International",
+    "Burundi Mining and Metallurgy",
+    "Burundi Musongati Mining (BMM-SM)",
+    "Kermas South Africa",
+    "License revoked from Burundi Musongati Mining in 2022\\.",
+    "Samancor Nickel"
   ],
   "products": [],
   "sources": [
@@ -98,5 +96,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Burundi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:55:15.000000Z",
+      "operators": [
+        "Burundi Musongati Mining (BMM-SM)",
+        "BMM International"
+      ],
+      "owners": [
+        "Burundi Mining and Metallurgy",
+        "Samancor Nickel",
+        "Kermas South Africa"
+      ],
+      "notes": "BMM International holds 85% of the shares in the joint venture with the state of Burundi owning 15%."
+    }
+  }
 }

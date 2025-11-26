@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.36,
-    "lon": 119.675,
+    "lat": -23.361111,
+    "lon": 1,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton",
+    "BHP Group Ltd",
+    "Itochu Minerals & Energy of Australia Pty Ltd",
+    "Mitsui & Co. Ltd",
+    "Mitsui-Itochu Iron Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.286053Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:36:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BHP_Mount_Newman_Mine. The Mount Newman project is primarily associated with the Mount Whaleback mine, which is located 6 kilometers west of Newman"
   },
   "canonical_name": "Mount Newman Mine",
   "canonical_slug": "mount-newman-mine",
@@ -51,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:36:38.000000Z",
+      "operators": [
+        "BHP Group Ltd",
+        "Mitsui-Itochu Iron Pty Ltd",
+        "Itochu Minerals & Energy of Australia Pty Ltd"
+      ],
+      "owners": [
+        "BHP Billiton",
+        "Mitsui & Co. Ltd",
+        "Itochu Minerals & Energy of Australia Pty Ltd"
+      ],
+      "notes": "BHP is the majority owner and operator of the Mount Newman project."
+    }
+  }
 }

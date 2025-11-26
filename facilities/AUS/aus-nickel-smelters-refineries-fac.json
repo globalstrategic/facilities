@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.2875,
+    "lon": 146.6881,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,12 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Clive Palmer",
+    "QNI Metals Pty Ltd",
+    "QNI Resources Pty Ltd",
+    "Queensland Nickel"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.287836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:44:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Queensland_Nickel. The Palmer Nickel and Cobalt Refinery is located in Yabulu, near Townsville"
   },
   "canonical_name": "Nickel Smelters & Refineries Mine",
   "canonical_slug": "nickel-smelters-refineries-mine",
@@ -42,5 +47,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:44:00.000000Z",
+      "operators": [
+        "QNI Resources Pty Ltd",
+        "QNI Metals Pty Ltd"
+      ],
+      "owners": [
+        "Queensland Nickel",
+        "Clive Palmer"
+      ],
+      "notes": "Queensland Nickel is owned by Clive Palmer and operates the refinery as a joint venture."
+    }
+  }
 }

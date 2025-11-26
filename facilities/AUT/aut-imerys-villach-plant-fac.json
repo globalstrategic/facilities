@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.6199118,
+    "lon": 13.8706384,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Imerys",
+    "Imerys Villach GmbH"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.396852Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces fused minerals for abrasives/refractories; hosts the Imerys Technology Center. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:06:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produces fused minerals for abrasives/refractories; hosts the Imerys Technology Center. | Canonical name+slug generated. Web search geocoded. Source: https://www.imerys.com/node/3900. Coordinates extracted directly from the source"
   },
   "canonical_name": "Imerys Villach Processing Plant",
   "canonical_slug": "imerys-villach-processing-plant",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kärnten",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:06:01.000000Z",
+      "operators": [
+        "Imerys Villach GmbH"
+      ],
+      "owners": [
+        "Imerys"
+      ],
+      "notes": "Imerys Villach GmbH operates the facility, which is part of the larger Imerys Group."
+    }
+  }
 }

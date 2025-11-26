@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.936,
-    "lon": 150.779,
+    "lat": -26.5,
+    "lon": 151.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aberdare Collieries",
+    "CS Energy",
+    "Golding Contractors Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.272189Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:23:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.golding.com.au/wp-content/uploads/2019/12/projects_kogan-creek-mine_sheet_201912.pdf. Kogan Creek Coal Mine is located approximately 15km south of Brigalow in the Surat Basin"
   },
   "canonical_name": "Kogan Creek Coal Mine",
   "canonical_slug": "kogan-creek-coal-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:23:21.000000Z",
+      "operators": [
+        "Golding Contractors Pty Ltd"
+      ],
+      "owners": [
+        "CS Energy",
+        "Aberdare Collieries"
+      ],
+      "notes": "CS Energy is the primary owner, with Aberdare Collieries being a subsidiary."
+    }
+  }
 }

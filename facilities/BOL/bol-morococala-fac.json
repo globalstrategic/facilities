@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.178,
-    "lon": -66.8,
+    "lat": -17.45856175861717,
+    "lon": -68.9757532,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpayana S.A.",
+    "Compañia Minera Argentum S.A.",
+    "Pan American Silver"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.431759Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T10:05:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Oruro (https://www.businesswire.com/news/home/20230731543821/en/Pan-American-Announces-Divestment-of-MARA-Morococha-Agua-de-la-Falda-and-Non-Controlling-Equity-Interests). The Morococala facility is mentioned in the context of mining operations in Bolivia, but specific coordinates are not provided"
   },
   "canonical_name": "Morococala Mine",
   "canonical_slug": "morococala-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "town": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:05:34.000000Z",
+      "operators": [
+        "Pan American Silver",
+        "Alpayana S.A."
+      ],
+      "owners": [
+        "Compañia Minera Argentum S.A."
+      ],
+      "notes": "Pan American Silver is divesting its interest in the Morococha mine, which is related to the Morococala facility."
+    }
+  }
 }

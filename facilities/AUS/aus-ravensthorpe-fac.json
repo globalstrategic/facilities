@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.676,
-    "lon": 120.314,
+    "lat": -33.5,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Quantum Minerals Ltd",
+    "POSCO"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.250902Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:52:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.first-quantum.com/operations/ravensthorpe/. The Ravensthorpe Nickel Operation is located in the Esperance region, approximately 550 km southeast of Perth"
   },
   "canonical_name": "Ravensthorpe Mine",
   "canonical_slug": "ravensthorpe-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:52:19.000000Z",
+      "operators": [
+        "First Quantum Minerals Ltd"
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd",
+        "POSCO"
+      ],
+      "notes": "First Quantum Minerals owns 70% of the Ravensthorpe Nickel Operation and operates it. POSCO holds a 30% stake."
+    }
+  }
 }

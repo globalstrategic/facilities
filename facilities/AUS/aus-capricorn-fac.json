@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -19.477,
-    "lon": 139.388,
+    "lat": -20.5,
+    "lon": 140.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "29Metals Limited",
+    "Capricorn Copper",
+    "EMR Capital",
+    "Lighthouse Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.301103Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:30:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.felix.net/project-news/former-mount-gordon-copper-mine-in-qld-to-restart-operations. The Capricorn Copper mine is located 125 kilometers north of Mount Isa"
   },
   "canonical_name": "Capricorn Mine",
   "canonical_slug": "capricorn-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:30:55.000000Z",
+      "operators": [
+        "Capricorn Copper"
+      ],
+      "owners": [
+        "Lighthouse Minerals",
+        "EMR Capital",
+        "29Metals Limited"
+      ],
+      "notes": "Capricorn Copper is a joint venture between Lighthouse Minerals and EMR Capital. The mine was acquired by Capricorn Copper Pty Ltd in 2015 and later by 29Metals Limited in 2021."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.53,
-    "lon": 122.149,
+    "lat": -28.486819,
+    "lon": 122.238466,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Poseidon Nickel Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.296262Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T14:19:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Windarra_Nickel_Mine. The Windarra Nickel Project includes the historic Mount Windarra underground mine and is located near Laverton"
   },
   "canonical_name": "Windarra Mine",
   "canonical_slug": "windarra-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:19:04.000000Z",
+      "operators": [
+        "Poseidon Nickel Limited"
+      ],
+      "owners": [
+        "Poseidon Nickel Limited"
+      ],
+      "notes": "Poseidon Nickel Limited acquired the Windarra Nickel Project from BHP in 2005."
+    }
+  }
 }

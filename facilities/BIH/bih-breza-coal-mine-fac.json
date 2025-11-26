@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 44.002,
-    "lon": 18.256,
+    "lat": 44.005,
+    "lon": 18.27833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda BiH d.d. Sarajevo",
+    "RMU Breza doo"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.133486Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:44:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Breza_coal_mine. Breza Coal Mine is a brown coal mine located in Breza, Bosnia and Herzegovina, with significant lignite reserves"
   },
   "canonical_name": "Breza Coal Mine",
   "canonical_slug": "breza-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zenica-Doboj Canton",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:44:37.000000Z",
+      "operators": [
+        "RMU Breza doo"
+      ],
+      "owners": [
+        "Elektroprivreda BiH d.d. Sarajevo"
+      ],
+      "notes": "The mine is owned by Elektroprivreda BiH, which is a state-owned utility company."
+    }
+  }
 }

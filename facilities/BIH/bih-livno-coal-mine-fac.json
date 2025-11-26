@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BIH",
   "location": {
-    "lat": 43.793,
-    "lon": 16.871,
+    "lat": 43.82583,
+    "lon": 17.00417,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda BiH",
+    "JP RU Tusnica d.o.o."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.135008Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:45:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Livno_coal_mine. The Livno Coal Mine is one of the largest coal reserves in Europe, with significant lignite reserves"
   },
   "canonical_name": "Livno Coal Mine",
   "canonical_slug": "livno-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Canton 10, Federation of Bosnia and Herzegovina",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:45:37.000000Z",
+      "operators": [
+        "JP RU Tusnica d.o.o."
+      ],
+      "owners": [
+        "Elektroprivreda BiH"
+      ],
+      "notes": "The mine is operated by JP RU Tusnica d.o.o. and owned by Elektroprivreda BiH."
+    }
+  }
 }

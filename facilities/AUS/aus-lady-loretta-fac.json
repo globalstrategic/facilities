@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -19.764,
-    "lon": 139.049,
+    "lat": -20.5,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc",
+    "Redpath Mining Australia",
+    "Xstrata Zinc Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.239234Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:24:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mininglink.com.au/mine-details/lady-loretta. The Lady Loretta mine is located approximately 140 kilometers northwest of Mt Isa in Queensland"
   },
   "canonical_name": "Lady Loretta Mine",
   "canonical_slug": "lady-loretta-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:24:17.000000Z",
+      "operators": [
+        "Redpath Mining Australia"
+      ],
+      "owners": [
+        "Glencore plc",
+        "Xstrata Zinc Australia"
+      ],
+      "notes": "Glencore is the current owner, while Redpath Mining Australia operates the mine under contract."
+    }
+  }
 }

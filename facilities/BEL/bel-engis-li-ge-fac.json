@@ -1,6 +1,6 @@
 {
   "facility_id": "bel-engis-li-ge-fac",
-  "name": "Engis, Liège",
+  "name": "Engis, LiÃ¨ge",
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metallo Belgium S.A.",
+    "N.V. Umicore S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,9 +32,9 @@
     "checked_by": "web_search_llm",
     "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gh.2markers.com/18456. Coordinates extracted directly from the search results for Engis, Belgium"
   },
-  "canonical_name": "Engis, Liège Mine",
+  "canonical_name": "Engis, LiÃ¨ge Mine",
   "canonical_slug": "engis-lige-mine",
-  "display_name": "Engis, Liège",
+  "display_name": "Engis, LiÃ¨ge",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -43,5 +46,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Liège"
+  "province": "Liège",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:13:09.000000Z",
+      "operators": [
+        "N.V. Umicore S.A."
+      ],
+      "owners": [
+        "Metallo Belgium S.A."
+      ],
+      "notes": "Umicore operates the mines and plant at Engis, while Metallo Belgium S.A. is mentioned in relation to the facility."
+    }
+  }
 }

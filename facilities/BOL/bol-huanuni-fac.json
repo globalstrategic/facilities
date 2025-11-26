@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.228,
-    "lon": -66.8,
+    "lat": -17.5,
+    "lon": -66.9,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Minera de Bolivia (COMIBOL)",
+    "Empresa Minera Huanuni"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.440090Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:01:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Huanuni_tin_mine. The Huanuni tin mine is located approximately 60 km south of Oruro, Bolivia"
   },
   "canonical_name": "Huanuni Mine",
   "canonical_slug": "huanuni-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:01:06.000000Z",
+      "operators": [
+        "Corporación Minera de Bolivia (COMIBOL)",
+        "Empresa Minera Huanuni"
+      ],
+      "owners": [
+        "Corporación Minera de Bolivia (COMIBOL)"
+      ],
+      "notes": "The mine is 100% owned by COMIBOL through its subsidiary Empresa Minera Huanuni."
+    }
+  }
 }

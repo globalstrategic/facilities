@@ -1,11 +1,11 @@
 {
   "facility_id": "bel-olne-li-ge-fac",
-  "name": "Olne, Liège",
+  "name": "Olne, LiÃ¨ge",
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 50.5900502,
-    "lon": 5.7466036,
+    "lat": 50.6101241,
+    "lon": 5.6123829,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Holcim Granulats (Belgique) SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -25,13 +27,13 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T17:12:47.000000Z",
+    "last_checked": "2025-11-25T16:18:03.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gh.2markers.com/427574. Coordinates extracted from multiple sources confirm the location of Olne, Belgium"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gh.2markers.com/427574. Coordinates extracted from multiple sources confirm the location of Olne, Belgium. Web search geocoded. Source: https://www.mindat.org/loc-145983.html. The facility is intermittently operated by Holcim Granulats (Belgique) SA and is located southeast of Liège along the Vesdre River"
   },
-  "canonical_name": "Olne, Liège Mine",
+  "canonical_name": "Olne, LiÃ¨ge Mine",
   "canonical_slug": "olne-lige-mine",
-  "display_name": "Olne, Liège",
+  "display_name": "Olne, LiÃ¨ge",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -43,5 +45,15 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Liège"
+  "province": "Liège",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:18:03.000000Z",
+      "operators": [
+        "Holcim Granulats (Belgique) SA"
+      ],
+      "owners": [],
+      "notes": "Holcim Granulats (Belgique) SA is the operator of the Trooz quarry in Olne."
+    }
+  }
 }

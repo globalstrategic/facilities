@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.233,
-    "lon": 115.769,
+    "lat": -32.2,
+    "lon": 115.8,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Ltd",
+    "BHP Nickel West Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.261713Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:44:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kwinana_Nickel_Refinery. The Kwinana Nickel Refinery is located in East Rockingham and Kwinana Beach, Western Australia"
   },
   "canonical_name": "Nickel West Kwinana Refinery",
   "canonical_slug": "nickel-west-kwinana-refinery",
@@ -61,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:44:21.000000Z",
+      "operators": [
+        "BHP Nickel West Pty Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Ltd"
+      ],
+      "notes": "The refinery was originally built by WMC Resources, which was acquired by BHP in 2005."
+    }
+  }
 }

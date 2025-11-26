@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.5585,
+    "lon": 13.6466,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Salzwelten GmbH",
+    "Österreichische Salinen AG (ÖSAG)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.401951Z",
-    "checked_by": "import_pipeline",
-    "notes": "World's oldest salt mine; now primarily a tourist site but still part of the brine network. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:01:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "World's oldest salt mine; now primarily a tourist site but still part of the brine network. | Canonical name+slug generated. Web search geocoded. Source: https://www.salzwelten.at/en/hallstatt. The Hallstatt Mine is located in Hallstatt, Austria, known for being the oldest salt mine in the world"
   },
   "canonical_name": "Hallstatt Mine",
   "canonical_slug": "hallstatt-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Upper Austria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:01:56.000000Z",
+      "operators": [
+        "Salzwelten GmbH"
+      ],
+      "owners": [
+        "Österreichische Salinen AG (ÖSAG)"
+      ],
+      "notes": "Salzwelten GmbH operates the Hallstatt salt mine, while Österreichische Salinen AG is the owner."
+    }
+  }
 }

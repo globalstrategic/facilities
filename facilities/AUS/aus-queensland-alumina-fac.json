@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.87,
-    "lon": 151.281,
+    "lat": -23.8433,
+    "lon": 151.2569,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Queensland Alumina Limited",
+    "Rio Tinto Alcan",
+    "Rusal"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.314606Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:51:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Queensland_Alumina_Limited. Queensland Alumina Limited is located in Gladstone, Queensland, Australia"
   },
   "canonical_name": "Queensland Alumina Refinery",
   "canonical_slug": "queensland-alumina-refinery",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:51:41.000000Z",
+      "operators": [
+        "Queensland Alumina Limited"
+      ],
+      "owners": [
+        "Rio Tinto Alcan",
+        "Rusal"
+      ],
+      "notes": "Rio Tinto owns 80% and Rusal owns 20% of Queensland Alumina Limited."
+    }
+  }
 }

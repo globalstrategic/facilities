@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.585,
-    "lon": 141.807,
+    "lat": -30.0,
+    "lon": 150.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AusGold Mining Group",
+    "Sally Zou"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.330552Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:09:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.abc.net.au/news/2019-02-16/lease-suspended-on-sally-zou-ausgold-mine-site/10816914. The Good Friday Gold Mine is located approximately 380 km north of Sydney, New South Wales"
   },
   "canonical_name": "Good Friday Mine",
   "canonical_slug": "good-friday-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:09:17.000000Z",
+      "operators": [
+        "AusGold Mining Group"
+      ],
+      "owners": [
+        "Sally Zou"
+      ],
+      "notes": "Sally Zou is the businesswoman behind AusGold Mining Group, which operates the Good Friday Gold Mine."
+    }
+  }
 }

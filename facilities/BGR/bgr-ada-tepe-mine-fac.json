@@ -1,25 +1,39 @@
 {
   "facility_id": "bgr-ada-tepe-mine-fac",
   "name": "**Ada Tepe Mine**",
-  "aliases": [],
+  "aliases": [
+    "Ada Tepe"
+  ],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.435,
+    "lon": 25.655,
+    "precision": "site"
   },
   "types": [
     "open-pit mine"
   ],
-  "commodities": [],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dundee Precious Metals Inc."
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Bulgarian Mines and Metals Research 2025",
       "date": "2025-10-27T10:22:19.391422"
+    },
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:28.487700"
     }
   ],
   "verification": {
@@ -50,5 +64,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kardzhali",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:12:23.000000Z",
+      "operators": [
+        "Dundee Precious Metals Inc."
+      ],
+      "owners": [
+        "Dundee Precious Metals Inc."
+      ],
+      "notes": "Dundee Precious Metals holds 100% ownership of the Ada Tepe Mine."
+    }
+  }
 }

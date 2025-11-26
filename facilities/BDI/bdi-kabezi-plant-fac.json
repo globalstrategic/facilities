@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.4,
+    "lon": 29.4,
     "precision": "unknown"
   },
   "types": [
@@ -24,14 +24,8 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "Rainbow Rare Earths",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:54.994753",
-      "evidence": "Extracted from operator column: Rainbow Rare Earths"
-    }
+    "Rainbow Mining Burundi",
+    "Rainbow Rare Earths"
   ],
   "products": [],
   "sources": [
@@ -42,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.897319Z",
-    "checked_by": "import_pipeline",
-    "notes": "A gravity separation plant built to process ore from the Gakara mine. It produces a concentrate of approximately 52-58% TREO for export. 5 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:43:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "A gravity separation plant built to process ore from the Gakara mine. It produces a concentrate of approximately 52-58% TREO for export. 5 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Rainbow_Mining_Burundi. The Kabezi Plant is located approximately 15 km south of Bujumbura, near Lake Tanganyika"
   },
   "canonical_name": "Kabezi Processing Plant",
   "canonical_slug": "kabezi-processing-plant",
@@ -69,5 +63,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bujumbura Mairie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:43:37.000000Z",
+      "operators": [
+        "Rainbow Mining Burundi"
+      ],
+      "owners": [],
+      "notes": "Rainbow Mining Burundi operates the Kabezi Plant."
+    }
+  }
 }

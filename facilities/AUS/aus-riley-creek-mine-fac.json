@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.746,
-    "lon": 145.416,
+    "lat": -41.740193,
+    "lon": 145.416323,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Goldvalley Brown Stone Pty Ltd",
+    "Venture Minerals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.277769Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:54:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Riley_Creek_Mine. Riley Creek Mine is an iron ore mine that has been mothballed"
   },
   "canonical_name": "Riley Creek Mine",
   "canonical_slug": "riley-creek-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:54:01.000000Z",
+      "operators": [
+        "Venture Minerals Ltd",
+        "Goldvalley Brown Stone Pty Ltd"
+      ],
+      "owners": [
+        "Goldvalley Brown Stone Pty Ltd"
+      ],
+      "notes": "Goldvalley Brown Stone Pty Ltd acquired the mine from Venture Minerals Ltd."
+    }
+  }
 }

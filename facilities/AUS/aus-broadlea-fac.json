@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.854,
-    "lon": 148.173,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMCI",
+    "Fitzroy Australia Resources",
+    "Vale"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.331348Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:27:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Broadlea_North_Mine. Broadlea North is approximately 30 kilometers northeast of Moranbah, Queensland"
   },
   "canonical_name": "Broadlea Mine",
   "canonical_slug": "broadlea-mine",
@@ -49,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:27:53.000000Z",
+      "operators": [
+        "Fitzroy Australia Resources"
+      ],
+      "owners": [
+        "Vale",
+        "AMCI"
+      ],
+      "notes": "Fitzroy Australia Resources operates the Broadlea North mine, which was previously owned by AMCI and Vale."
+    }
+  }
 }

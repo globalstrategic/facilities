@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.976,
-    "lon": 148.363,
+    "lat": -22.5,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CITIC Australia Coppabella Pty Ltd",
+    "Coppabella and Moorvale Joint Venture (CMJV)",
+    "Peabody Energy",
+    "Winchester Coal Operations Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.285907Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:33:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Moorvale_Coal_Mine. The Moorvale coal mine is a surface mine located in Coppabella, Queensland, Australia"
   },
   "canonical_name": "Moorvale Mine",
   "canonical_slug": "moorvale-mine",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:33:28.000000Z",
+      "operators": [
+        "Coppabella and Moorvale Joint Venture (CMJV)"
+      ],
+      "owners": [
+        "Peabody Energy",
+        "CITIC Australia Coppabella Pty Ltd",
+        "Winchester Coal Operations Pty Ltd"
+      ],
+      "notes": "The mine is operated by CMJV, a subsidiary of Peabody Energy."
+    }
+  }
 }

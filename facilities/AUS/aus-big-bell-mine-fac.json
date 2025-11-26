@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -27.318,
-    "lon": 117.654,
+    "lat": -27.0,
+    "lon": 117.7,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aragon Resources Limited",
+    "Big Bell Gold Operations Pty Ltd",
+    "Harmony Gold Mining Company Limited",
+    "New Hampton Goldfields Limited",
+    "Normandy Mining",
+    "Westgold Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.309660Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:25:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Big_Bell_Gold_Mine. The Big Bell Gold Mine is located 24 km north-west of Cue, Western Australia"
   },
   "canonical_name": "Big Bell Mine",
   "canonical_slug": "big-bell-mine",
@@ -50,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:25:26.000000Z",
+      "operators": [
+        "Big Bell Gold Operations Pty Ltd"
+      ],
+      "owners": [
+        "Westgold Resources Ltd",
+        "Aragon Resources Limited",
+        "Harmony Gold Mining Company Limited",
+        "New Hampton Goldfields Limited",
+        "Normandy Mining"
+      ],
+      "notes": "The mine has changed ownership multiple times, with Westgold Resources currently operating it through its subsidiary."
+    }
+  }
 }

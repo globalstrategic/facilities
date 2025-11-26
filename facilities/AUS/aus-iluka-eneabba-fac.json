@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -29.0,
+    "lon": 115.0,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Iluka Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.301914Z",
-    "checked_by": "import_pipeline",
-    "notes": "Re-processing stockpiled monazite/xenotime toward separated REOs | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:16:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Re-processing stockpiled monazite/xenotime toward separated REOs | Canonical name+slug generated. Web search geocoded. Source: https://www.iluka.com/operations-resource-development/operations/western-australia/. Iluka is building a rare earths refinery at Eneabba, which is approximately 280 km north of Perth"
   },
   "canonical_name": "Iluka Eneabba Mine",
   "canonical_slug": "iluka-eneabba-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:16:48.000000Z",
+      "operators": [
+        "Iluka Resources Ltd"
+      ],
+      "owners": [
+        "Iluka Resources Ltd"
+      ],
+      "notes": "Iluka Resources is both the operator and owner of the Eneabba facility."
+    }
+  }
 }

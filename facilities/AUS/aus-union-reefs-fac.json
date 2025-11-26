@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -13.817,
-    "lon": 131.825,
+    "lat": -13.5,
+    "lon": 131.9,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti",
+    "Kirkland Lake Gold Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.311202Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T13:06:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/web/kirkland-lake-gold-to-axe-two-australian-projects/. The Union Reefs processing plant is located near Pine Creek in the Northern Territory"
   },
   "canonical_name": "Union Reefs Mine",
   "canonical_slug": "union-reefs-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:06:36.000000Z",
+      "operators": [
+        "Kirkland Lake Gold Ltd"
+      ],
+      "owners": [
+        "Kirkland Lake Gold Ltd",
+        "AngloGold Ashanti"
+      ],
+      "notes": "Kirkland Lake Gold is the current operator and owner of the Union Reefs facility, having acquired it from AngloGold Ashanti."
+    }
+  }
 }

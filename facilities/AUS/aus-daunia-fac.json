@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.06,
-    "lon": 148.298,
+    "lat": -22.0,
+    "lon": 148.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Mitsubishi Alliance (BMA)",
+    "Whitehaven Coal Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.294246Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:56:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://whitehavencoal.com.au/our-business/our-assets/daunia-mine/. The Daunia mine is located approximately 30 km southeast of Moranbah"
   },
   "canonical_name": "Daunia Mine",
   "canonical_slug": "daunia-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:56:03.000000Z",
+      "operators": [
+        "Whitehaven Coal Limited"
+      ],
+      "owners": [
+        "Whitehaven Coal Limited",
+        "BHP Billiton Mitsubishi Alliance (BMA)"
+      ],
+      "notes": "Whitehaven Coal acquired 100% ownership of the Daunia mine in April 2024."
+    }
+  }
 }

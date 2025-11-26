@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.0,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -16,6 +16,7 @@
   "company_mentions": [
     "Eramet",
     "Eramine Sudamerica",
+    "Eramine Sudamérica SA",
     "Tsingshan Holding Group"
   ],
   "products": [],
@@ -27,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.169716Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-11-25T14:53:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.eramet.com/en/news/eramet-inaugurates-its-direct-lithium-extraction-plant-in-argentina-becoming-the-first-european-company-to-produce-battery-grade-lithium-carbonate-at-industrial-scale/. The Centenario-Ratones deposit is located in the Lithium Triangle of Argentina, Bolivia, and Chile"
   },
   "canonical_name": "Centenario Ratones Mine",
   "canonical_slug": "centenario-ratones-mine",
@@ -58,16 +59,15 @@
   "province": "Salta",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T09:26:31.000000Z",
+      "timestamp": "2025-11-25T14:53:35.000000Z",
       "operators": [
         "Eramet",
-        "Eramine Sudamerica"
+        "Eramine Sudamérica SA"
       ],
       "owners": [
-        "Eramet",
-        "Tsingshan Holding Group"
+        "Eramet"
       ],
-      "notes": "Eramet is the primary operator and owner of the Centenario-Ratones facility, having recently regained full ownership from Tsingshan Holding Group."
+      "notes": "Eramet is the primary operator and owner of the Centenario-Ratones facility, with a joint venture previously involving Tsingshan."
     }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -34.58,
-    "lon": 137.6,
+    "lat": -34.54,
+    "lon": 137.87,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rex Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.308740Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:15:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Hillside_mine. The Hillside mine is a proposed copper-gold project located 12 km south of Ardrossan on the Yorke Peninsula"
   },
   "canonical_name": "Hillside Mine",
   "canonical_slug": "hillside-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:15:38.000000Z",
+      "operators": [
+        "Rex Minerals"
+      ],
+      "owners": [
+        "Rex Minerals"
+      ],
+      "notes": "Rex Minerals is the sole owner and operator of the Hillside Project."
+    }
+  }
 }

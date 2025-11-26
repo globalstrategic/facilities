@@ -13,8 +13,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.913,
-    "lon": 121.328,
+    "lat": -28.9,
+    "lon": 121.5,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genesis Minerals Limited",
+    "Macmahon"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.326309Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:25:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://genesisminerals.com.au/our-assets/leonora-operations/gwalia-operations/. The Gwalia Gold Mine is located a few kilometers south of Leonora, Western Australia"
   },
   "canonical_name": "Leonora Mine",
   "canonical_slug": "leonora-mine",
@@ -56,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:25:47.000000Z",
+      "operators": [
+        "Genesis Minerals Limited",
+        "Macmahon"
+      ],
+      "owners": [
+        "Genesis Minerals Limited"
+      ],
+      "notes": "Genesis Minerals acquired the Gwalia mine from St Barbara Ltd in June 2023."
+    }
+  }
 }

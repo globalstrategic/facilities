@@ -14,8 +14,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -25.329,
-    "lon": 118.359,
+    "lat": -26.5,
+    "lon": 117.0,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aragon Resources Pty Ltd",
+    "Westgold Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.290864Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:04:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3363-tsx/wgx/172328-fortnum-expansion-study-starlight-updated-mineral-resource-estimate-of-12-9mt-2-7g-t-au-for-1-13moz-1-highlights-potential-10-year-project-life.html. The Fortnum Gold operation is located approximately 140 km north of Meekatharra, Western Australia"
   },
   "canonical_name": "Fortnum Mine",
   "canonical_slug": "fortnum-mine",
@@ -57,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:04:15.000000Z",
+      "operators": [
+        "Westgold Resources Ltd."
+      ],
+      "owners": [
+        "Aragon Resources Pty Ltd",
+        "Westgold Resources Ltd."
+      ],
+      "notes": "Aragon Resources is a 100% owned subsidiary of Westgold Resources Ltd."
+    }
+  }
 }

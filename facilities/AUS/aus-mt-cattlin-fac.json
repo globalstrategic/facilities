@@ -10,8 +10,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.563,
-    "lon": 120.027,
+    "lat": -33.562528,
+    "lon": 120.035194,
     "precision": "site"
   },
   "types": [
@@ -52,7 +52,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arcadium Lithium",
+    "Galaxy Lithium Pty Ltd",
+    "Rio Tinto plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -62,11 +66,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.300016Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:37:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mt_Cattlin_mine. The Mt Cattlin mine is an open-pit spodumene mining operation located near Ravensthorpe, Western Australia"
   },
   "canonical_name": "Mt Cattlin Mine",
   "canonical_slug": "mt-cattlin-mine",
@@ -81,5 +85,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:37:45.000000Z",
+      "operators": [
+        "Arcadium Lithium"
+      ],
+      "owners": [
+        "Galaxy Lithium Pty Ltd",
+        "Rio Tinto plc"
+      ],
+      "notes": "The mine was previously operated by Galaxy Resources before being acquired by Arcadium Lithium, which is now a subsidiary of Rio Tinto."
+    }
+  }
 }

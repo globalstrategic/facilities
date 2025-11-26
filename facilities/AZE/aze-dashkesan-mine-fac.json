@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AZE",
   "location": {
-    "lat": 40.512,
-    "lon": 46.075,
+    "lat": 40.513605,
+    "lon": 46.076773,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AzerGold CJSC",
+    "Dashkasan Iron Ore LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.540031Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:03:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dashkesan_Mine. The Dashkesan Mine is an iron ore mine located in the Dashkasan district of Azerbaijan"
   },
   "canonical_name": "Dashkesan Mine",
   "canonical_slug": "dashkesan-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dashkasan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:03:52.000000Z",
+      "operators": [
+        "Dashkasan Iron Ore LLC",
+        "AzerGold CJSC"
+      ],
+      "owners": [
+        "AzerGold CJSC"
+      ],
+      "notes": "AzerGold CJSC is responsible for the development and management of the Dashkasan iron ore deposits."
+    }
+  }
 }

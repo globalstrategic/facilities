@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -23.716,
-    "lon": 148.889,
+    "lat": -24.5,
+    "lon": 149.25,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bounty Mining",
+    "Constellation Mining",
+    "QCoal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.272039Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:36:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.srk.com/en/publications/caledons-revolutionary-cook-colliery. Cook Colliery is located approximately 30 kilometers south of Blackwater in Central Queensland"
   },
   "canonical_name": "Cook Colliery Coal Mine",
   "canonical_slug": "cook-colliery-coal-mine",
@@ -49,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:36:48.000000Z",
+      "operators": [
+        "QCoal Group",
+        "Constellation Mining"
+      ],
+      "owners": [
+        "QCoal Group",
+        "Bounty Mining"
+      ],
+      "notes": "QCoal Group acquired the Cook Colliery from Bounty Mining in 2020."
+    }
+  }
 }

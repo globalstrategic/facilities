@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.442,
-    "lon": 140.707,
+    "lat": -20.4476,
+    "lon": 140.7136,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ernest Henry Mining Pty Ltd",
+    "Evolution Mining Limited",
+    "Glencore"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.246790Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:00:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ernest_Henry_mine. The Ernest Henry mine is a large copper-gold-silver operation located 36 km north-east of Cloncurry, Queensland"
   },
   "canonical_name": "Ernest Henry Mine",
   "canonical_slug": "ernest-henry-mine",
@@ -65,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:00:56.000000Z",
+      "operators": [
+        "Evolution Mining Limited"
+      ],
+      "owners": [
+        "Ernest Henry Mining Pty Ltd",
+        "Glencore"
+      ],
+      "notes": "Evolution Mining acquired 100% ownership of Ernest Henry Mining in 2022 from Glencore."
+    }
+  }
 }

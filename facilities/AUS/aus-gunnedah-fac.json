@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.632,
-    "lon": 150.194,
+    "lat": -30.0,
+    "lon": 150.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ICRA MC Pty Ltd",
+    "J-Power Australia Pty Ltd",
+    "Whitehaven Coal Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.334029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:12:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Maules_Creek_coal_mine. The Maules Creek coal mine is located in the Gunnedah Basin, near Boggabri"
   },
   "canonical_name": "Gunnedah Mine",
   "canonical_slug": "gunnedah-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:12:39.000000Z",
+      "operators": [
+        "Whitehaven Coal Limited"
+      ],
+      "owners": [
+        "Whitehaven Coal Limited",
+        "ICRA MC Pty Ltd",
+        "J-Power Australia Pty Ltd"
+      ],
+      "notes": "Whitehaven Coal operates the Maules Creek mine and holds a 75% interest in it."
+    }
+  }
 }

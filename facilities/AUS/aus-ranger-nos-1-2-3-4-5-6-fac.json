@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -12.683,
-    "lon": 132.912,
+    "lat": -12.6642,
+    "lon": 132.8431,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy Resources of Australia Ltd",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.249667Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:52:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.riotinto.com/en/operations/australia/era. The Ranger Uranium Mine is located near Jabiru in the Northern Territory of Australia"
   },
   "canonical_name": "Ranger Nos 1 , 2 , 3 , 4 , 5 , 6 Mine",
   "canonical_slug": "ranger-nos-1-2-3-4-5-6-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:52:10.000000Z",
+      "operators": [
+        "Energy Resources of Australia Ltd"
+      ],
+      "owners": [
+        "Rio Tinto"
+      ],
+      "notes": "Energy Resources of Australia Ltd operates the mine, with Rio Tinto as the majority owner."
+    }
+  }
 }

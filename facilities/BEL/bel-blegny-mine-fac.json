@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 50.688,
-    "lon": 5.722,
+    "lat": 50.6075,
+    "lon": 5.6881,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blegny-Mine Association",
+    "Société anonyme des Charbonnages d'Argenteau"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.145585Z",
-    "checked_by": "import_pipeline",
-    "notes": "Last Walloon coal mine to close (1980). | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T16:10:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Last Walloon coal mine to close (1980). | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Blegny-Mine. Blegny-Mine is preserved as an industrial heritage site and show mine, located near Liège"
   },
   "canonical_name": "Blegny Mine",
   "canonical_slug": "blegny-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liège",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:10:20.000000Z",
+      "operators": [
+        "Société anonyme des Charbonnages d'Argenteau"
+      ],
+      "owners": [
+        "Blegny-Mine Association"
+      ],
+      "notes": "The Blegny-Mine Association manages the site."
+    }
+  }
 }

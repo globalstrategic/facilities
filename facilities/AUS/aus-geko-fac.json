@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.863,
-    "lon": 120.9,
+    "lat": -30.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Beacon Minerals Pty Ltd",
+    "Geko Pit Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.256945Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:05:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/28/Geko-MR-05312023.pdf. The Geko deposit is located on Mining Lease M15/621, which is 100% owned by Beacon Minerals Pty Ltd"
   },
   "canonical_name": "Geko Mine",
   "canonical_slug": "geko-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:05:58.000000Z",
+      "operators": [
+        "Beacon Minerals Pty Ltd"
+      ],
+      "owners": [
+        "Geko Pit Pty Ltd",
+        "Beacon Minerals Pty Ltd"
+      ],
+      "notes": "Geko Pit Pty Ltd has a 4% net smelter royalty on all production up to a maximum of $3.0M AUD."
+    }
+  }
 }

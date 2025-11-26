@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -38.235,
-    "lon": 146.564,
+    "lat": -38.2,
+    "lon": 146.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AGL Energy",
+    "AGL's subsidiary, Loy Yang Power"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.262360Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:27:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Loy_Yang_Coal_Mine. The Loy Yang Coal Mine is located in the Latrobe Valley, near Traralgon, Victoria"
   },
   "canonical_name": "Loy Yang Coal Mine",
   "canonical_slug": "loy-yang-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Victoria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:27:18.000000Z",
+      "operators": [
+        "AGL's subsidiary, Loy Yang Power"
+      ],
+      "owners": [
+        "AGL Energy"
+      ],
+      "notes": "AGL Energy owns and operates the Loy Yang Coal Mine."
+    }
+  }
 }

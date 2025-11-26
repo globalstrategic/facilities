@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.557,
-    "lon": 147.815,
+    "lat": -20.5567302,
+    "lon": 147.8148229,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Itochu",
+    "Sumitomo Group",
+    "Xstrata"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.283811Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:36:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Collinsville_Coal_Mine. Collinsville Coal Mine is an open cut mine located in Collinsville, Queensland, Australia, producing thermal and metallurgical coal"
   },
   "canonical_name": "Collinsville Coal Mine",
   "canonical_slug": "collinsville-coal-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:36:08.000000Z",
+      "operators": [
+        "Glencore"
+      ],
+      "owners": [
+        "Glencore",
+        "Xstrata",
+        "Itochu",
+        "Sumitomo Group"
+      ],
+      "notes": "Glencore is the current operator and owner of the Collinsville Coal Mine, having acquired it through various transactions."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.513605,
+    "lon": 46.076773,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AzerGold CJSC",
+    "Dashkasan Demir Filiz LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.539570Z",
-    "checked_by": "import_pipeline",
-    "notes": "Planned Stage 2 of megaproject. Target commissioning by mid-2027. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:04:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Planned Stage 2 of megaproject. Target commissioning by mid-2027. | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dashkesan_Mine. The Dashkesan Pelletizing Plant is part of the Dashkesan iron ore mine, which is operated by Dashkasan Demir Filiz LLC, a subsidiary of AzerGold"
   },
   "canonical_name": "Dashkesan Pelletizing Processing Plant",
   "canonical_slug": "dashkesan-pelletizing-processing-plant",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dashkesan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:04:05.000000Z",
+      "operators": [
+        "Dashkasan Demir Filiz LLC"
+      ],
+      "owners": [
+        "AzerGold CJSC"
+      ],
+      "notes": "Dashkasan Demir Filiz LLC is a subsidiary of AzerGold CJSC."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -34.186,
-    "lon": 150.995,
+    "lat": -34.184912,
+    "lon": 150.996569,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy",
+    "Peabody Energy Australia"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.316717Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:29:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Metropolitan_Coal_Mine. The Metropolitan Mine is an underground coal mine located in Helensburgh, New South Wales, Australia"
   },
   "canonical_name": "Metropolitan Mine",
   "canonical_slug": "metropolitan-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:29:59.000000Z",
+      "operators": [
+        "Peabody Energy"
+      ],
+      "owners": [
+        "Peabody Energy Australia",
+        "Peabody Energy"
+      ],
+      "notes": "Peabody Energy operates and owns the Metropolitan Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.41,
-    "lon": 150.738,
+    "lat": -32.409645,
+    "lon": 150.737875,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Malabar Resources Ltd",
+    "Spur Hill Management"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.313215Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:01:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Spur_Hill_Coal_Mine. Spur Hill Coal Mine is a shelved coal mine located in New South Wales, Australia"
   },
   "canonical_name": "Spur Hill Coal Mine",
   "canonical_slug": "spur-hill-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:01:25.000000Z",
+      "operators": [
+        "Spur Hill Management"
+      ],
+      "owners": [
+        "Malabar Resources Ltd"
+      ],
+      "notes": "Malabar Resources Ltd owns 100% of Spur Hill Management."
+    }
+  }
 }

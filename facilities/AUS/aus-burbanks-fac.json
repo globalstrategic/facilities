@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.375,
-    "lon": 121.488,
+    "lat": -31.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Auric Mining Limited",
+    "Barra Resources Limited",
+    "Greenstone Resources",
+    "Mineral Ventures"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.280929Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:29:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://auricmining.com.au/news/auric-commits-to-burbanks-buy/. The Burbanks facility is located approximately 10 km south of Coolgardie"
   },
   "canonical_name": "Burbanks Mine",
   "canonical_slug": "burbanks-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:05.000000Z",
+      "operators": [
+        "Auric Mining Limited"
+      ],
+      "owners": [
+        "Greenstone Resources",
+        "Mineral Ventures",
+        "Barra Resources Limited"
+      ],
+      "notes": "Auric Mining is in the process of acquiring the Burbanks mill, while Greenstone Resources owns the mine and Mineral Ventures owns the process plant."
+    }
+  }
 }

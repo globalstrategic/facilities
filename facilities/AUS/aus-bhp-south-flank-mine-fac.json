@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -22.993,
-    "lon": 118.996,
+    "lat": -22.990875,
+    "lon": 118.878686,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.277182Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:25:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/South_Flank_mine. The South Flank mine is an iron ore mine located in the Pilbara region of Western Australia, 156 kilometres northwest of Newman"
   },
   "canonical_name": "BHP South Flank Mine",
   "canonical_slug": "bhp-south-flank-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:25:15.000000Z",
+      "operators": [
+        "BHP"
+      ],
+      "owners": [
+        "BHP"
+      ],
+      "notes": "BHP is both the operator and owner of the South Flank mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.794,
-    "lon": 151.899,
+    "lat": -26.5,
+    "lon": 151.9,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BUMA Australia",
+    "Downer Mining",
+    "Stanwell Corporation Limited",
+    "Tarong Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.256442Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:03:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.stanwell.com/Meandu-mine. Meandu Mine is located near Kingaroy and is associated with the Tarong Power Stations"
   },
   "canonical_name": "Tarong Mine",
   "canonical_slug": "tarong-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:03:02.000000Z",
+      "operators": [
+        "BUMA Australia",
+        "Downer Mining"
+      ],
+      "owners": [
+        "Stanwell Corporation Limited",
+        "Tarong Energy"
+      ],
+      "notes": "Stanwell Corporation Limited owns the Meandu Mine, which was previously owned by Tarong Energy."
+    }
+  }
 }

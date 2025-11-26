@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -12.831,
-    "lon": 131.549,
+    "lat": -12.5,
+    "lon": 130.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GBS Gold International Inc",
+    "Primary Gold Ltd",
+    "Renison",
+    "Tom's Gully Holdings Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.323489Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T13:04:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.hankingmining.com/static/upload/file/20240822/1724317200540885.pdf. The Tom's Gully gold mine is located approximately 100 km ESE of Darwin"
   },
   "canonical_name": "Tom's Gully Mine",
   "canonical_slug": "tom-s-gully-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:04:45.000000Z",
+      "operators": [
+        "GBS Gold International Inc",
+        "Primary Gold Ltd"
+      ],
+      "owners": [
+        "Tom's Gully Holdings Pty Ltd",
+        "Renison"
+      ],
+      "notes": "Tom's Gully Holdings Pty Ltd is a subsidiary of Renison, which owns the mining tenements and associated equipment."
+    }
+  }
 }

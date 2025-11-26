@@ -13,8 +13,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.444,
-    "lon": 136.872,
+    "lat": -30.44,
+    "lon": 136.87306,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.307132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:46:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://kids.kiddle.co/Olympic_Dam_mine. Olympic Dam is a significant mining facility known for its copper, uranium, gold, and silver production"
   },
   "canonical_name": "Olympic Dam Mine",
   "canonical_slug": "olympic-dam-mine",
@@ -70,5 +72,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:46:59.000000Z",
+      "operators": [
+        "BHP Billiton Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Ltd"
+      ],
+      "notes": "BHP acquired the mine from Western Mining Corporation in 2005."
+    }
+  }
 }

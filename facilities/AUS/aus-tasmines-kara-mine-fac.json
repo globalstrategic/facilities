@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.312,
-    "lon": 145.777,
+    "lat": -41.05,
+    "lon": 145.88,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kanji Group Pty Ltd",
+    "Tasmania Mines Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.288151Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:03:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.tasmines.com.au/about. The Kara Mine is located 35km south of the Port of Burnie in North West Tasmania"
   },
   "canonical_name": "Tasmines Kara Mine",
   "canonical_slug": "tasmines-kara-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:03:22.000000Z",
+      "operators": [
+        "Tasmania Mines Pty Ltd"
+      ],
+      "owners": [
+        "Kanji Group Pty Ltd"
+      ],
+      "notes": "Tasmania Mines Pty Ltd operates the Kara Mine, which is owned by Kanji Group Pty Ltd."
+    }
+  }
 }

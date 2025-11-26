@@ -11,8 +11,8 @@
   ],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.472,
-    "lon": -66.842,
+    "lat": 19.5,
+    "lon": -66.1,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporación Minera de Bolivia (COMIBOL)",
+    "Glencore Plc",
+    "Santacruz Silver Mining Ltd.",
+    "Sinchi Wayra S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.436310Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:54:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/25/Bolivar-TR-12212021.pdf. Bolívar Mine is located in the municipality of Antequera, Oruro, Bolivia. The coordinates are provided in UTM format, which corresponds to approximately 19.5°S, 66.1°W"
   },
   "canonical_name": "Bolivar Mine",
   "canonical_slug": "bolivar-mine",
@@ -62,5 +67,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:54:00.000000Z",
+      "operators": [
+        "Sinchi Wayra S.A.",
+        "Santacruz Silver Mining Ltd."
+      ],
+      "owners": [
+        "Corporación Minera de Bolivia (COMIBOL)",
+        "Glencore Plc"
+      ],
+      "notes": "Bolívar Mine is owned by the Bolivian government (COMIBOL) with exclusive mining rights granted to the partnership between Sinchi Wayra S.A. and COMIBOL. Sinchi Wayra is a subsidiary of Glencore."
+    }
+  }
 }

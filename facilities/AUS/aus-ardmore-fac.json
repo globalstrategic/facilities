@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.647,
-    "lon": 139.17,
+    "lat": -20.5,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centrex",
+    "PRL Global Limited",
+    "PRL Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.303806Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:16:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.linkedin.com/posts/wa-business-news_prl-global-closes-on-centrex-deal-activity-7369276934024790016-p1nK. The Ardmore phosphate mine is located south of Mount Isa in North West Queensland"
   },
   "canonical_name": "Ardmore Mine",
   "canonical_slug": "ardmore-mine",
@@ -42,5 +46,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:16:44.000000Z",
+      "operators": [
+        "PRL Group"
+      ],
+      "owners": [
+        "PRL Global Limited",
+        "Centrex"
+      ],
+      "notes": "PRL Group has taken over the operations from Centrex, which entered voluntary administration."
+    }
+  }
 }

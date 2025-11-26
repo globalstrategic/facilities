@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.618,
-    "lon": 150.355,
+    "lat": -26.5,
+    "lon": 151.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Syntech Resources Pty Ltd",
+    "Yancoal Australia Ltd",
+    "Yanzhou Coal Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.299231Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:30:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cameby_Downs_coal_mine. The Cameby Downs Coal Mine is located 16 km south-east of Miles on the Darling Downs in Queensland"
   },
   "canonical_name": "Cameby Downs Coal Mine",
   "canonical_slug": "cameby-downs-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:30:02.000000Z",
+      "operators": [
+        "Syntech Resources Pty Ltd"
+      ],
+      "owners": [
+        "Yancoal Australia Ltd",
+        "Yanzhou Coal Mining Company"
+      ],
+      "notes": "Yancoal Australia Ltd operates the mine, which is ultimately owned by Yanzhou Coal Mining Company."
+    }
+  }
 }

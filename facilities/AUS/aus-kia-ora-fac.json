@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -30.637,
-    "lon": 121.036,
+    "lat": -19.6333,
+    "lon": 134.2333,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kia Ora Gold Corporation NL",
+    "Mawson Pacific Limited",
+    "Reynolds Australia Gold Operations Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.270474Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:21:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-292751.html. The Kia Ora Gold Mine is located near Tennant Creek in the Barkly Region of Northern Territory, Australia"
   },
   "canonical_name": "Kia Ora Mine",
   "canonical_slug": "kia-ora-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:21:49.000000Z",
+      "operators": [
+        "Kia Ora Gold Corporation NL"
+      ],
+      "owners": [
+        "Mawson Pacific Limited",
+        "Reynolds Australia Gold Operations Ltd"
+      ],
+      "notes": "Kia Ora Gold Corporation NL was involved in the operation of the mine, which has changed ownership multiple times."
+    }
+  }
 }

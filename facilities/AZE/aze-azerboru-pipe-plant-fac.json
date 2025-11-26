@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.5892,
+    "lon": 49.6728,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Azerboru JSC",
+    "Baku Steel Company CJSC",
+    "Targol Investment"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.536657Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces seamless steel pipes for the oil and gas industry. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T10:02:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produces seamless steel pipes for the oil and gas industry. | Canonical name+slug generated. Web search geocoded. Source: http://eng.infomine.ru/page1039. Azerboru Pipe Plant is located in Sumgayit, Azerbaijan"
   },
   "canonical_name": "Azerboru Pipe Processing Plant",
   "canonical_slug": "azerboru-pipe-processing-plant",
@@ -56,5 +60,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sumgayit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T10:02:22.000000Z",
+      "operators": [
+        "Baku Steel Company CJSC"
+      ],
+      "owners": [
+        "Targol Investment",
+        "Azerboru JSC"
+      ],
+      "notes": "Targol Investment previously owned shares of Azerboru JSC."
+    }
+  }
 }

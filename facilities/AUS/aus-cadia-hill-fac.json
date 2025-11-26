@@ -11,8 +11,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.461,
-    "lon": 149.001,
+    "lat": -33.467,
+    "lon": 148.993,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Newcrest Mining Limited",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.288850Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:29:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cadia-Ridgeway_mine. Cadia Hill is part of the Cadia Valley Operations, which includes multiple mines and processing facilities"
   },
   "canonical_name": "Cadia Hill Mine",
   "canonical_slug": "cadia-hill-mine",
@@ -62,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:35.000000Z",
+      "operators": [
+        "Newcrest Mining Limited",
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Newcrest Mining Limited",
+        "Newmont Corporation"
+      ],
+      "notes": "Newcrest Mining Limited was the original owner and operator until its acquisition by Newmont Corporation in November 2023."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -28.852,
-    "lon": 116.937,
+    "lat": -28.5,
+    "lon": 116.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fenix Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.305830Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:02:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Fenix_Resources_Shine_Mine. The Shine Mine is located approximately 295 km east of Geraldton, Western Australia"
   },
   "canonical_name": "Fenix Resources Shine Mine",
   "canonical_slug": "fenix-resources-shine-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:02:21.000000Z",
+      "operators": [
+        "Fenix Resources Limited"
+      ],
+      "owners": [
+        "Fenix Resources Limited"
+      ],
+      "notes": "Fenix Resources Limited is the sole owner and operator of the Shine Iron Ore Mine."
+    }
+  }
 }

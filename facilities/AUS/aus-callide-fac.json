@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -24.315,
-    "lon": 150.624,
+    "lat": -24.0,
+    "lon": 151.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "Batchfire Resources Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.254147Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:29:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Callide_Coal_Mine. The Callide coal mine is located near Gladstone in Central Queensland, Australia"
   },
   "canonical_name": "Callide Mine",
   "canonical_slug": "callide-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:53.000000Z",
+      "operators": [
+        "Batchfire Resources Pty Ltd"
+      ],
+      "owners": [
+        "Batchfire Resources Pty Ltd",
+        "Anglo American plc"
+      ],
+      "notes": "Batchfire Resources Pty Ltd currently operates and owns the Callide coal mine, having purchased it from Anglo American in 2016."
+    }
+  }
 }

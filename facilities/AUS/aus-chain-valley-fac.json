@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.17,
-    "lon": 151.546,
+    "lat": -33.095,
+    "lon": 151.57,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Delta Coal",
+    "Great Southern Energy Pty Ltd",
+    "LakeCoal",
+    "Sev.en Global Investments"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.291907Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:33:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Chain_Valley_Coal_Mine. Chain Valley is located beneath south Lake Macquarie"
   },
   "canonical_name": "Chain Valley Mine",
   "canonical_slug": "chain-valley-mine",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:33:14.000000Z",
+      "operators": [
+        "Great Southern Energy Pty Ltd",
+        "LakeCoal"
+      ],
+      "owners": [
+        "Sev.en Global Investments",
+        "Delta Coal"
+      ],
+      "notes": "Delta Coal is a subsidiary of Great Southern Energy."
+    }
+  }
 }

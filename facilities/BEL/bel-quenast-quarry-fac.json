@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BEL",
   "location": {
-    "lat": 50.665,
-    "lon": 4.156,
+    "lat": 50.66472,
+    "lon": 4.15556,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heidelberg Materials",
+    "Sagrex"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.143830Z",
-    "checked_by": "import_pipeline",
-    "notes": "Europe's largest open-pit porphyry quarry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T16:18:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Europe's largest open-pit porphyry quarry. | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Quenast_quarry. Quenast Quarry is a significant porphyry quarry located in Belgium"
   },
   "canonical_name": "Quenast Quarry Mine",
   "canonical_slug": "quenast-quarry-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Walloon Brabant",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:18:33.000000Z",
+      "operators": [
+        "Sagrex"
+      ],
+      "owners": [
+        "Heidelberg Materials"
+      ],
+      "notes": "Sagrex is a subsidiary of Heidelberg Materials."
+    }
+  }
 }

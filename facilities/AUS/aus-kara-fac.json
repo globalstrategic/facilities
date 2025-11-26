@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -41.346,
-    "lon": 145.782,
+    "lat": -41.313513,
+    "lon": 145.780299,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tasmania Mines Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.240546Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:20:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tasmines_Kara_Mine. The Kara mine is the primary source of magnetite for Tasmania Mines Pty Ltd"
   },
   "canonical_name": "Kara Mine",
   "canonical_slug": "kara-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:20:59.000000Z",
+      "operators": [
+        "Tasmania Mines Pty Ltd"
+      ],
+      "owners": [
+        "Tasmania Mines Pty Ltd"
+      ],
+      "notes": "Tasmania Mines Pty Ltd is a privately owned company."
+    }
+  }
 }

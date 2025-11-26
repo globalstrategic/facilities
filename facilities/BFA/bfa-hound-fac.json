@@ -1,12 +1,12 @@
 {
   "facility_id": "bfa-hound-fac",
-  "name": "Houndé",
+  "name": "HoundÃ©",
   "aliases": [],
   "country_iso3": "BFA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 11.427,
+    "lon": -3.516,
+    "precision": "exact"
   },
   "types": [
     "mine"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Endeavour Mining",
+    "Government of Burkina Faso"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,9 +41,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
   },
-  "canonical_name": "Houndé Mine",
+  "canonical_name": "HoundÃ© Mine",
   "canonical_slug": "hound-mine",
-  "display_name": "Houndé",
+  "display_name": "HoundÃ©",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tuy Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T15:48:41.000000Z",
+      "operators": [
+        "Endeavour Mining"
+      ],
+      "owners": [
+        "Endeavour Mining",
+        "Government of Burkina Faso"
+      ],
+      "notes": "Endeavour Mining owns 90% of the Houndé Mine, while the Government of Burkina Faso owns the remaining 10%."
+    }
+  }
 }

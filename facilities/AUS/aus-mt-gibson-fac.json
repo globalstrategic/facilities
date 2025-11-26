@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.753,
-    "lon": 117.165,
+    "lat": -16.0,
+    "lon": 123.0,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "APAC Resources Limited",
+    "Mount Gibson Iron Limited",
+    "Shougang Fushan Resources Group Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.236497Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:38:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mtgibsoniron.com.au/operations/. Koolan Island, Mount Gibson's flagship operation, is located in the Buccaneer Archipelago, 140km north of Derby"
   },
   "canonical_name": "Mt Gibson Mine",
   "canonical_slug": "mt-gibson-mine",
@@ -62,5 +66,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:38:25.000000Z",
+      "operators": [
+        "Mount Gibson Iron Limited"
+      ],
+      "owners": [
+        "Mount Gibson Iron Limited",
+        "Shougang Fushan Resources Group Limited",
+        "APAC Resources Limited"
+      ],
+      "notes": "Mount Gibson Iron is the primary operator and owner of the Koolan Island mine, with significant shareholders including Shougang Fushan and APAC Resources."
+    }
+  }
 }

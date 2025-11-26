@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.321,
-    "lon": 147.855,
+    "lat": -20.5,
+    "lon": 147.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Byerwen Coal Pty Ltd",
+    "JFE Steel",
+    "Macmahon",
+    "QCoal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.238667Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:29:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.felix.net/project-news/macmahon-contract-extension-byerwen-mine-operations. The Byerwen mine is located within the Bowen Basin, approximately 20 kilometres west of Glenden"
   },
   "canonical_name": "Byerwen Mine",
   "canonical_slug": "byerwen-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:29:25.000000Z",
+      "operators": [
+        "Macmahon"
+      ],
+      "owners": [
+        "Byerwen Coal Pty Ltd",
+        "QCoal Group",
+        "JFE Steel"
+      ],
+      "notes": "Byerwen Coal is a joint venture between QCoal Group and JFE Steel."
+    }
+  }
 }

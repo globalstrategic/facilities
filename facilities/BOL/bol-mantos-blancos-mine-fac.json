@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -21.642,
-    "lon": -67.053,
+    "lat": -23.4315,
+    "lon": -70.0572,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc (previously)",
+    "Capstone Copper"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.443699Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:04:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mantos_Blancos. Mantos Blancos is one of the largest copper reserves in Chile"
   },
   "canonical_name": "Mantos Blancos Mine",
   "canonical_slug": "mantos-blancos-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:04:47.000000Z",
+      "operators": [
+        "Capstone Copper"
+      ],
+      "owners": [
+        "Capstone Copper",
+        "Anglo American plc (previously)"
+      ],
+      "notes": "Capstone Copper operates the mine and owns it following a merger with Mantos Copper."
+    }
+  }
 }

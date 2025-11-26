@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -37.001,
-    "lon": 147.872,
+    "lat": -38.8,
+    "lon": 143.5,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Seduli",
+    "Sutter Gold Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.273277Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T13:02:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://seduli.com.au/wp-content/uploads/2020/03/Seduli-Sutter-Gold-Mine-IM.pdf. The facility is associated with the Lincoln-Comet Gold Project, previously owned by Sutter Gold Mining Corporation"
   },
   "canonical_name": "Sutters Mine",
   "canonical_slug": "sutters-mine",
@@ -60,5 +63,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Victoria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T13:02:23.000000Z",
+      "operators": [
+        "Seduli"
+      ],
+      "owners": [
+        "Sutter Gold Mining Corporation"
+      ],
+      "notes": "Seduli has purchased the assets, leases, and licenses from Sutter Gold Mining Corporation."
+    }
+  }
 }

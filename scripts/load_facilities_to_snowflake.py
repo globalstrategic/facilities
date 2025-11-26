@@ -15,6 +15,36 @@ from pathlib import Path
 import pandas as pd
 import snowflake.connector
 from snowflake.connector.pandas_tools import write_pandas
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import serialization
+
+
+def get_snowflake_connection():
+    """Get Snowflake connection using 'tal' connection config."""
+    # Read private key
+    key_path = Path.home() / ".snowsql" / "rsa_key.p8"
+    with open(key_path, "rb") as key_file:
+        p_key = serialization.load_pem_private_key(
+            key_file.read(),
+            password=None,
+            backend=default_backend()
+        )
+
+    pkb = p_key.private_bytes(
+        encoding=serialization.Encoding.DER,
+        format=serialization.PrivateFormat.PKCS8,
+        encryption_algorithm=serialization.NoEncryption()
+    )
+
+    return snowflake.connector.connect(
+        account="HDHACZZ-AE73585",
+        user="WILLIAM.BRODHEAD",
+        private_key=pkb,
+        warehouse="GSMC_WH_XS",
+        database="MIKHAIL",
+        schema="ENTITY",
+        role="ACCOUNTADMIN"
+    )
 
 
 def get_latest_parquet() -> Path:
@@ -71,11 +101,7 @@ def load_facilities(parquet_path: Path, dry_run: bool = False):
 
     # Connect to Snowflake
     print("\nConnecting to Snowflake...")
-    conn = snowflake.connector.connect(
-        connection_name='talsis',
-        database='MIKHAIL',
-        schema='ENTITY'
-    )
+    conn = get_snowflake_connection()
 
     try:
         cur = conn.cursor()

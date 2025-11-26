@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -26.713,
-    "lon": 118.429,
+    "lat": -26.5,
+    "lon": 117.5,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Meeka Metals",
+    "Silver Lake Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.247486Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:41:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/murchison-goldfield/. The Murchison Gold Project is located in the Murchison region of Western Australia, approximately 40 km southeast of Meekatharra"
   },
   "canonical_name": "Murchison Mine",
   "canonical_slug": "murchison-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:41:07.000000Z",
+      "operators": [
+        "Meeka Metals"
+      ],
+      "owners": [
+        "Meeka Metals",
+        "Silver Lake Resources"
+      ],
+      "notes": "Meeka Metals is the current operator and owner of the Murchison Gold Project, having acquired it from Silver Lake Resources."
+    }
+  }
 }

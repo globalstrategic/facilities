@@ -8,8 +8,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -24.446,
-    "lon": 148.413,
+    "lat": -24.445389,
+    "lon": 148.41625611,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.236356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:56:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Rolleston_coal_mine. The Rolleston Coal Mine is located 16 km west of Rolleston, Queensland"
   },
   "canonical_name": "Rolleston Mine",
   "canonical_slug": "rolleston-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:56:01.000000Z",
+      "operators": [
+        "Glencore"
+      ],
+      "owners": [
+        "Glencore"
+      ],
+      "notes": "Glencore is the sole owner and operator of the Rolleston Coal Mine."
+    }
+  }
 }

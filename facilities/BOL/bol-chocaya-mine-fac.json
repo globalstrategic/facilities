@@ -9,8 +9,8 @@
   ],
   "country_iso3": "BOL",
   "location": {
-    "lat": -20.951,
-    "lon": -66.299,
+    "lat": 7.060890787039796,
+    "lon": -72.07076344670605,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "COMIBOL",
+    "Empresa Minera Quechisla"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:57.437610Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T09:56:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Potosi (https://documents1.worldbank.org/curated/en/134351468211183234/pdf/multi-page.pdf). The Chocaya Mine is mentioned as part of the operations of Empresa Minera Quechisla, which is a subsidiary of COMIBOL"
   },
   "canonical_name": "Chocaya Mine",
   "canonical_slug": "chocaya-mine",
@@ -56,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Potosi",
+  "town": "Potosi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:56:44.000000Z",
+      "operators": [
+        "Empresa Minera Quechisla"
+      ],
+      "owners": [
+        "COMIBOL"
+      ],
+      "notes": "COMIBOL is the state-owned mining company of Bolivia."
+    }
+  }
 }

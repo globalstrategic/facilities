@@ -8,7 +8,7 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -33.352,
+    "lat": -33.5,
     "lon": 150.1,
     "precision": "site"
   },
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Angus Place Pty Limited",
+    "Boulder Mining Pty Ltd",
+    "Centennial Coal Company Limited",
+    "Centennial Springvale Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.265218Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:15:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.centennialcoal.com.au/operations/angus-place. Angus Place is located approximately 15 km northwest of Lithgow, New South Wales"
   },
   "canonical_name": "Angus Place Mine",
   "canonical_slug": "angus-place-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:15:03.000000Z",
+      "operators": [
+        "Centennial Coal Company Limited",
+        "Angus Place Pty Limited"
+      ],
+      "owners": [
+        "Centennial Springvale Pty Ltd",
+        "Boulder Mining Pty Ltd"
+      ],
+      "notes": "Angus Place is operated by a joint venture between Centennial Coal and Springvale SK Kores."
+    }
+  }
 }

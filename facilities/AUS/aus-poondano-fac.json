@@ -6,8 +6,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -20.453,
-    "lon": 118.835,
+    "lat": -20.5,
+    "lon": 118.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Macro Metals Limited",
+    "Mineral Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.275051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T12:50:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-273089.html. The Poondano Mine is located approximately 30 kilometers southeast of Port Hedland"
   },
   "canonical_name": "Poondano Mine",
   "canonical_slug": "poondano-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:50:13.000000Z",
+      "operators": [
+        "Macro Metals Limited"
+      ],
+      "owners": [
+        "Mineral Resources Limited"
+      ],
+      "notes": "Macro Metals Limited is involved in mining, processing, and exporting from the Poondano Iron Ore Mine."
+    }
+  }
 }

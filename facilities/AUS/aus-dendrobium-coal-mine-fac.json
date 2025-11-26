@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -34.425,
-    "lon": 150.817,
+    "lat": -34.419776,
+    "lon": 151.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dendrobium Coal Pty Ltd",
+    "Illawarra Coal",
+    "Illawarra Coal Holdings Pty Ltd",
+    "South32"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.235702Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:56:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dendrobium_Coal_Mine. Dendrobium Coal Mine is an existing underground coal mine located near Wollongong"
   },
   "canonical_name": "Dendrobium Coal Mine",
   "canonical_slug": "dendrobium-coal-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New South Wales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:56:54.000000Z",
+      "operators": [
+        "Illawarra Coal"
+      ],
+      "owners": [
+        "South32",
+        "Dendrobium Coal Pty Ltd",
+        "Illawarra Coal Holdings Pty Ltd"
+      ],
+      "notes": "Illawarra Coal is a subsidiary of South32, and Dendrobium Coal Pty Ltd is a subsidiary of Illawarra Coal Holdings Pty Ltd."
+    }
+  }
 }
