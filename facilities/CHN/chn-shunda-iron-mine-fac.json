@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.891,
-    "lon": 118.198,
+    "lat": 36.8993,
+    "lon": 118.2036,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zibo Shunda Mining Co Ltd (淄博顺达矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.875964Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:35:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shunda_Iron_Mine. The Shunda Iron Mine is located in Zibo, Shandong, China"
   },
   "canonical_name": "Shunda Iron Mine",
   "canonical_slug": "shunda-iron-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:35:37.000000Z",
+      "operators": [
+        "Zibo Shunda Mining Co Ltd (淄博顺达矿业有限公司)"
+      ],
+      "owners": [
+        "Zibo Shunda Mining Co Ltd (淄博顺达矿业有限公司)"
+      ],
+      "notes": "Zibo Shunda Mining Co Ltd is the sole owner and operator of the Shunda Iron Mine."
+    }
+  }
 }

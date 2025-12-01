@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.133,
-    "lon": 111.025,
+    "lat": 36.132762,
+    "lon": 111.024928,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huajin Coking Coal Co Ltd",
+    "Shanxi Coking Coal Energy Group Co Ltd",
+    "Shanxi Huajin Mingzhu Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.630254Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:43:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E5%8D%8E%E6%99%8B%E6%98%8E%E7%8F%A0%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Huajin Mingzhu Coal Mine is an underground coal mine located in Wangjiahe Village, Tunli Town, Jixian County, Linfen City, Shanxi Province"
   },
   "canonical_name": "Huajin Mingzhu Coal Mine",
   "canonical_slug": "huajin-mingzhu-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:43:16.000000Z",
+      "operators": [
+        "Shanxi Huajin Mingzhu Coal Industry Company"
+      ],
+      "owners": [
+        "Huajin Coking Coal Co Ltd",
+        "Shanxi Coking Coal Energy Group Co Ltd"
+      ],
+      "notes": "The mine is operated by Shanxi Huajin Mingzhu Coal Industry Company, which is owned by Huajin Coking Coal Co Ltd and Shanxi Coking Coal Energy Group Co Ltd."
+    }
+  }
 }

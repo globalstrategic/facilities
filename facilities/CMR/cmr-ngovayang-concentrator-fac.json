@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 3.079358,
+    "lon": 10.422408,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Camina",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.497424",
-      "evidence": "Extracted from operator column: Camina (Jindal Group)"
-    }
+    "Camina",
+    "Camina SA",
+    "Jindal Steel & Power Ltd"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.020166Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T07:40:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Camina_Ngovayang_Mine. The Ngovayang Concentrator is part of the proposed Camina Ngovayang Mine, which is located in the South Region of Cameroon"
   },
   "canonical_name": "Ngovayang Concentrator",
   "canonical_slug": "ngovayang-concentrator",
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:40:44.000000Z",
+      "operators": [
+        "Jindal Steel & Power Ltd"
+      ],
+      "owners": [
+        "Camina SA"
+      ],
+      "notes": "Jindal Steel & Power Ltd holds a 90% stake in the project, while Camina SA is the owner."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.924,
-    "lon": 112.234,
+    "lat": 37.924082,
+    "lon": 112.233877,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gujiao Qianfeng Clean Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.860249Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:20:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%8F%A4%E4%BA%A4%E5%B8%82%E5%8D%83%E5%B3%B0%E7%B2%BE%E7%85%A4%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Guojiao Qianfeng Coal Mine is an underground coal mine with a production capacity of 1.2 million tons per year, located in the village of Majia Tan, Dongqu Office, Gujiao City"
   },
   "canonical_name": "Guojiao Qianfeng Coal Mine",
   "canonical_slug": "guojiao-qianfeng-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:20:13.000000Z",
+      "operators": [
+        "Gujiao Qianfeng Clean Coal Company"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Gujiao Qianfeng Clean Coal Company, which is a local entity."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.961,
-    "lon": 111.164,
+    "lat": 39.99639063014038,
+    "lon": 113.17091073828632,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Datong Coal Mine Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.734852Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T20:40:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Datong (https://www.chinadaily.com.cn/business/2016-08/12/content_26444609.htm). Tashan Coal Mine is located 15 kilometers to the southwest of Datong, Shanxi province"
   },
   "canonical_name": "Taishan Long'an Coal Mine",
   "canonical_slug": "taishan-long-an-coal-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Datong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:40:53.000000Z",
+      "operators": [
+        "Shanxi Datong Coal Mine Group"
+      ],
+      "owners": [
+        "Shanxi Datong Coal Mine Group"
+      ],
+      "notes": "Shanxi Datong Coal Mine Group is the third-largest mining company in China."
+    }
+  }
 }

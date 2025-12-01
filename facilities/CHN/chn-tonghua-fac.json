@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.664,
-    "lon": 125.715,
+    "lat": 42.8792,
+    "lon": 127.4611,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tonghua Iron and Steel Group",
+    "Tonghua Iron and Steel Group Huadian Mining Co Ltd",
+    "Tonghua Mining (Group) Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.641065Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:50:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tonghua_Iron_and_Steel_Group_Laoniugou_Mine. Coordinates are for the Tonghua Iron and Steel Group Laoniugou Mine, which is part of the Tonghua mining operations"
   },
   "canonical_name": "Tonghua Mine",
   "canonical_slug": "tonghua-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jilin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:50:31.000000Z",
+      "operators": [
+        "Tonghua Iron and Steel Group Huadian Mining Co Ltd"
+      ],
+      "owners": [
+        "Tonghua Iron and Steel Group",
+        "Tonghua Mining (Group) Co Ltd"
+      ],
+      "notes": "Tonghua Mining Industry Company Limited operates the Songshu Mine, while Tonghua Iron and Steel Group is involved in iron and steel production."
+    }
+  }
 }

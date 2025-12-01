@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.173,
-    "lon": 105.876,
+    "lat": 27.17316,
+    "lon": 105.875982,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Jinxin Coal Industry Co Ltd",
+    "Guizhou Qianxin Enterprise Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.834131Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:15:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E9%87%91%E9%91%AB%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%B4%B5%E5%B7%9E%E7%99%BE%E9%87%8C%E6%9D%9C%E9%B9%83%E7%BA%A2%E6%9E%97%E4%B9%A1%E9%BB%94%E9%91%AB. The Guizhou Qianxin Coal Mine is located in the Bijie region of Guizhou Province"
   },
   "canonical_name": "Guizhou Qianxin Coal Mine",
   "canonical_slug": "guizhou-qianxin-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:15:44.000000Z",
+      "operators": [
+        "Guizhou Jinxin Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Guizhou Qianxin Enterprise Group Co., Ltd."
+      ],
+      "notes": "Guizhou Qianxin Enterprise Group Co., Ltd. is the parent company of Guizhou Jinxin Coal Industry Co Ltd."
+    }
+  }
 }

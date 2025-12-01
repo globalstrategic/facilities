@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.782,
-    "lon": 112.064,
+    "lat": 34.781979,
+    "lon": 112.063908,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yimei Group Xin'an County Yunding Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.643470Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:29:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B9%89%E7%85%A4%E9%9B%86%E5%9B%A2%E6%96%B0%E5%AE%89%E5%8E%BF%E4%BA%91%E9%A1%B6%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Yuannan Xin'an Yunding Coal Mine is an underground coal mine located in Xinan County, Henan Province"
   },
   "canonical_name": "Yuannan Xin'an Yunding Coal Mine",
   "canonical_slug": "yuannan-xin-an-yunding-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:29:41.000000Z",
+      "operators": [
+        "Yimei Group Xin'an County Yunding Coal Industry Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Yimei Group, which is fully owned by the company."
+    }
+  }
 }

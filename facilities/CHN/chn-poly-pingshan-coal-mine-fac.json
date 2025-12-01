@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.666,
-    "lon": 112.64,
+    "lat": 35.666099,
+    "lon": 112.640025,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Coal",
+    "山西保利平山煤业股份有限公司 (Poly Pingshan Coal Mine)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.809463Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:50:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E4%BF%9D%E5%88%A9%E5%B9%B3%E5%B1%B1%E7%85%A4%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Poly Pingshan Coal Mine is an underground coal mine located in Shanxi Province, China"
   },
   "canonical_name": "Poly Pingshan Coal Mine",
   "canonical_slug": "poly-pingshan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:50:46.000000Z",
+      "operators": [
+        "山西保利平山煤业股份有限公司 (Poly Pingshan Coal Mine)"
+      ],
+      "owners": [
+        "China Coal"
+      ],
+      "notes": "The mine is operated by Poly Pingshan Coal Mine and owned by China Coal."
+    }
+  }
 }

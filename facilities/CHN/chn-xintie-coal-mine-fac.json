@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 45.751,
-    "lon": 131.115,
+    "lat": 35.633975,
+    "lon": 116.673106,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Dongshan Xinyi Coal Mine Company",
+    "Shandong Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.810768Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:16:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E4%B8%9C%E4%B8%9C%E5%B1%B1%E6%96%B0%E9%A9%BF%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Xintie Coal Mine is operated by Shandong Dongshan Xinyi Coal Mine Company, which is a subsidiary of Shandong Energy"
   },
   "canonical_name": "Xintie Coal Mine",
   "canonical_slug": "xintie-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:16:18.000000Z",
+      "operators": [
+        "Shandong Dongshan Xinyi Coal Mine Company"
+      ],
+      "owners": [
+        "Shandong Energy"
+      ],
+      "notes": "Shandong Dongshan Xinyi Coal Mine Company operates the facility and is fully owned by Shandong Energy."
+    }
+  }
 }

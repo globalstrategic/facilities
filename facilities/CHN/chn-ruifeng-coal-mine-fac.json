@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.272,
-    "lon": 110.489,
+    "lat": 40.72237113969453,
+    "lon": 113.2951122,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Qinfa",
+    "Ruifeng Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.681714Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:58:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Datong (https://www.nextinsight.net/story-archive-mainmenu-60/904-2010-chinahk-companies/2920-china-qinfa-hk-listed-firms-1h-net-up-nearly-19-fold-on-coal-trading-blitz). Ruifeng Coal Mine is located near Datong in Shanxi province, with a production capacity of 900,000 tonnes annually"
   },
   "canonical_name": "Ruifeng Coal Mine",
   "canonical_slug": "ruifeng-coal-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Datong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:58:30.000000Z",
+      "operators": [
+        "Ruifeng Coal"
+      ],
+      "owners": [
+        "China Qinfa"
+      ],
+      "notes": "China Qinfa acquired an 87.88% equity stake in Ruifeng Coal."
+    }
+  }
 }

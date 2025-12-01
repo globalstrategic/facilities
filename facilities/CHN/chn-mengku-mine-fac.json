@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 47.522,
-    "lon": 89.014,
+    "lat": 47.521857,
+    "lon": 89.01,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fuyun Mengku Iron Ore Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.672457Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:40:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mengku_Mine. Mengku Mine is an iron ore mine located in Altay Prefecture, Xinjiang, China"
   },
   "canonical_name": "Mengku Mine",
   "canonical_slug": "mengku-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:40:07.000000Z",
+      "operators": [
+        "Fuyun Mengku Iron Ore Co"
+      ],
+      "owners": [
+        "Fuyun Mengku Iron Ore Co"
+      ],
+      "notes": "Fuyun Mengku Iron Ore Co is a wholly-owned subsidiary of Baowu Steel Group."
+    }
+  }
 }

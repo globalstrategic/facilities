@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.38,
-    "lon": 109.852,
+    "lat": 38.376336,
+    "lon": 109.858997,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yulin City Yongle Coal Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.725217Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:11:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%A6%86%E6%9E%97%E5%B8%82%E6%B0%B8%E4%B9%90%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Shaanxi Yulin Yongle Coal Mine is an underground coal mine located in the Yuyang District of Yulin City, Shaanxi Province"
   },
   "canonical_name": "Shaanxi Yulin Yongle Coal Mine",
   "canonical_slug": "shaanxi-yulin-yongle-coal-mine",
@@ -52,5 +54,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:11:10.000000Z",
+      "operators": [
+        "Yulin City Yongle Coal Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Yulin City Yongle Coal Mine Co Ltd, with no specific ownership details provided."
+    }
+  }
 }

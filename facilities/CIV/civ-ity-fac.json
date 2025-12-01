@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CIV",
   "location": {
-    "lat": 6.872,
-    "lon": -8.11,
+    "lat": 6.967017538145086,
+    "lon": -8.028720529887217,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Endeavour Mining Corporation",
+    "Government of Côte d'Ivoire",
+    "SODEMI"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.463351Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:23:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://singlemineorigin.com/pages/about-ity-mine). The Ity mine is located in western Côte d'Ivoire, approximately 480 km west-northwest of Abidjan"
   },
   "canonical_name": "Ity Mine",
   "canonical_slug": "ity-mine",
@@ -50,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zouan-Hounien",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:23:08.000000Z",
+      "operators": [
+        "Endeavour Mining Corporation"
+      ],
+      "owners": [
+        "Endeavour Mining Corporation",
+        "Government of Côte d'Ivoire",
+        "SODEMI"
+      ],
+      "notes": "Endeavour Mining Corporation owns 85% of the Ity mine, with the Government of Côte d'Ivoire owning 10% and SODEMI owning 5%."
+    }
+  }
 }

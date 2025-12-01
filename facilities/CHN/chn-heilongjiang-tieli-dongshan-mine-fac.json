@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 47.189,
-    "lon": 128.37,
+    "lat": 47.189015,
+    "lon": 128.370453,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Qitaihe Xiangyuan Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.667890Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:29:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Heilongjiang_Tieli-Dongshan_Mine. The Heilongjiang Tieli-Dongshan Mine is an iron ore mine located in Yichun, Heilongjiang, China"
   },
   "canonical_name": "Heilongjiang Tieli Dongshan Mine",
   "canonical_slug": "heilongjiang-tieli-dongshan-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:29:31.000000Z",
+      "operators": [
+        "Qitaihe Xiangyuan Mining Co Ltd"
+      ],
+      "owners": [
+        "Qitaihe Xiangyuan Mining Co Ltd"
+      ],
+      "notes": "Qitaihe Xiangyuan Mining Co Ltd owns 100% of the mine."
+    }
+  }
 }

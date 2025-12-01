@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.258,
-    "lon": 104.065,
+    "lat": 25.201695,
+    "lon": 104.63952,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Huaneng",
+    "HKSCC NOMINEES LIMITED",
+    "HeBei Construction & Investment Group CO.",
+    "Huaneng Diandong Mining Co.",
+    "Shanghua Investment Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.698595Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:34:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bailongshan_No.1_Coal_Mine. The coordinates provided are for the Bailongshan No.1 Coal Mine, which is located in Yunnan Province, China"
   },
   "canonical_name": "Yunnan Ludong Coal Mine",
   "canonical_slug": "yunnan-ludong-coal-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yunnan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:34:43.000000Z",
+      "operators": [
+        "Huaneng Diandong Mining Co."
+      ],
+      "owners": [
+        "China Huaneng",
+        "Shanghua Investment Co.",
+        "HKSCC NOMINEES LIMITED",
+        "HeBei Construction & Investment Group CO."
+      ],
+      "notes": "Huaneng Diandong Mining Co. is the operator, while China Huaneng is the parent company with significant ownership."
+    }
+  }
 }

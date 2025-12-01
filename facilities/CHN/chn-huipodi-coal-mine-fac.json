@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.444,
-    "lon": 111.519,
+    "lat": 36.44403,
+    "lon": 111.519976,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coking Coal Group",
+    "Shanxi Fenhe Coking Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.641212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:48:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%B1%BE%E6%B2%B3%E7%84%A6%E7%85%A4%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9B%9E%E5%9D%A1%E5%BA%95%E7%85%A4%E7%9F%BF. The Huipodi Coal Mine is an underground coal mine located in the village of Huipodi, in the Hongtong County of Linfen City, Shanxi Province"
   },
   "canonical_name": "Huipodi Coal Mine",
   "canonical_slug": "huipodi-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:48:15.000000Z",
+      "operators": [
+        "Shanxi Fenhe Coking Coal Company"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Fenhe Coking Coal Company, which is a subsidiary of Shanxi Coking Coal Group."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.382,
-    "lon": 106.162,
+    "lat": 27.245833,
+    "lon": 106.125,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Longfeng Coal Mine Guizhou Lindong Coal Industry Development Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.658525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:28:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nature.com/articles/s41598-025-24321-z. Longfeng Coal Mine is situated in the southwest of Jinsha County, Guizhou Province, China"
   },
   "canonical_name": "Longfeng Coal Mine",
   "canonical_slug": "longfeng-coal-mine",
@@ -52,5 +54,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:28:22.000000Z",
+      "operators": [
+        "Longfeng Coal Mine Guizhou Lindong Coal Industry Development Co. Ltd."
+      ],
+      "owners": [],
+      "notes": "The company operates coal mining services and distributes coal products."
+    }
+  }
 }

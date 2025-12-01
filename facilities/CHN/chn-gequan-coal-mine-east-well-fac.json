@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.945,
-    "lon": 114.379,
+    "lat": 37.1,
+    "lon": 114.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yankuang Energy Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.626990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:07:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nature.com/articles/s41598-022-23063-6. Gequan Coal Mine is located approximately 18 kms south-southwest of Xingtai City"
   },
   "canonical_name": "Gequan Coal East Well Mine",
   "canonical_slug": "gequan-coal-east-well-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:07:48.000000Z",
+      "operators": [
+        "Yankuang Energy Group Co., Ltd."
+      ],
+      "owners": [
+        "Yankuang Energy Group Co., Ltd."
+      ],
+      "notes": "Yankuang Energy Group is a major player in the coal industry in China."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 47.479,
-    "lon": 88.979,
+    "lat": 47.479262,
+    "lon": 88.978962,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xinjiang Jinbao Mining Co., Ltd.",
+    "Zijin Mining Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.654643Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:04:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jinbao_Mine. The Jinbao Mine is an iron ore mine located in Altay Prefecture, Xinjiang, China"
   },
   "canonical_name": "Jinbao Mine",
   "canonical_slug": "jinbao-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uyghur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:04:06.000000Z",
+      "operators": [
+        "Xinjiang Jinbao Mining Co., Ltd."
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd."
+      ],
+      "notes": "Xinjiang Jinbao Mining Co., Ltd. is the operator of the mine, while Zijin Mining Group Co., Ltd. has a significant ownership stake."
+    }
+  }
 }

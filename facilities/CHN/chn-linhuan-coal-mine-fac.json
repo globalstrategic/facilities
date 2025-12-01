@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 33.631,
-    "lon": 116.633,
+    "lat": 28.204999314648575,
+    "lon": 103.55730935542555,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Linhua Mines Co., Ltd",
+    "Guizhou Nengfa Fuel and Power Development Co., Ltd",
+    "Lindong Mining Bureau"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.817135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:24:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Jinsha County (https://www.epa.gov/sites/default/files/2016-03/documents/nengfa_feasibilitystudy.pdf). The Linhua Coal Mine is located seven km southwest of Jinsha County and is involved in supplying power plants"
   },
   "canonical_name": "Linhuan Coal Mine",
   "canonical_slug": "linhuan-coal-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "town": "Jinsha County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:24:43.000000Z",
+      "operators": [
+        "Guizhou Linhua Mines Co., Ltd"
+      ],
+      "owners": [
+        "Guizhou Nengfa Fuel and Power Development Co., Ltd",
+        "Lindong Mining Bureau"
+      ],
+      "notes": "Guizhou Linhua Mines Co., Ltd was chosen as the feasibility study partner and is nearing production stage."
+    }
+  }
 }

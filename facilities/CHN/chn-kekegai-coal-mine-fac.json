@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.431,
-    "lon": 109.315,
+    "lat": 38.431304,
+    "lon": 109.315019,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Yanchang Petroleum Group",
+    "Shaanxi Yanchang Petroleum Yulin Kekegai Coal Industry Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.811519Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:16:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E5%BB%B6%E9%95%BF%E7%9F%B3%E6%B2%B9%E6%A6%AC%E6%9E%97%E5%8F%AF%E5%8F%AF%E7%9B%96%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Kekegai Coal Mine is a new coal mining project approved in February 2021, located in the Yuyang District of Yulin City, Shaanxi Province"
   },
   "canonical_name": "Kekegai Coal Mine",
   "canonical_slug": "kekegai-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:16:02.000000Z",
+      "operators": [
+        "Shaanxi Yanchang Petroleum Yulin Kekegai Coal Industry Limited"
+      ],
+      "owners": [
+        "Shaanxi Yanchang Petroleum Group"
+      ],
+      "notes": "The mine is operated by Shaanxi Yanchang Petroleum Yulin Kekegai Coal Industry Limited, which is a subsidiary of Shaanxi Yanchang Petroleum Group."
+    }
+  }
 }

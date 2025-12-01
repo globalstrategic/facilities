@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.111,
-    "lon": 112.419,
+    "lat": 39.110654,
+    "lon": 112.420311,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Group",
+    "Shanxi Coal Transportation and Marketing Group Shijieyu Coal Industry",
+    "Shanxi Shuozhou Shijieyu Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.870285Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:35:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E7%9F%B3%E7%A2%A3%E5%B3%AA%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shuozhou Shijieyu Coal Mine is an underground coal mine located in Shuozhou, Shanxi Province, China"
   },
   "canonical_name": "Shuozhou Shijieyu Coal Mine",
   "canonical_slug": "shuozhou-shijieyu-coal-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:35:55.000000Z",
+      "operators": [
+        "Shanxi Shuozhou Shijieyu Coal Industry Co Ltd",
+        "Shanxi Coal Transportation and Marketing Group Shijieyu Coal Industry"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is operated by Shanxi Shuozhou Shijieyu Coal Industry Co Ltd, which is a subsidiary of the Shanxi Coal Transportation and Marketing Group."
+    }
+  }
 }

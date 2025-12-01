@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Phoenix Mining",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.493571",
-      "evidence": "Extracted from operator column: Phoenix Mining (prev. Geovic)"
-    }
+    "African Battery Metals Plc",
+    "Geovic Cameroon PLC",
+    "Geovic Mining Corporation",
+    "Phoenix Mining"
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:41:08.000000Z",
+      "operators": [
+        "Phoenix Mining",
+        "African Battery Metals Plc"
+      ],
+      "owners": [
+        "Geovic Mining Corporation",
+        "Geovic Cameroon PLC"
+      ],
+      "notes": "Phoenix Mining acquired the Nkamouna project from Geovic Mining Corporation, which historically held majority ownership."
+    }
+  }
 }

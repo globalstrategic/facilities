@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 49.5,
-    "lon": 121.423,
+    "lat": 43.958205787512405,
+    "lon": 116.0789127,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Datang Corporation",
+    "China Shenhua Energy Company Ltd.",
+    "Inner Mongolia Datang International Xilinhaote Mining Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.629782Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:20:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Xilinhaote City (https://miningdataonline.com/property/1810/Shengli-Mine.aspx). The Shengli Coalfield is located approximately 3 km from the outskirts of Xilinhaote City"
   },
   "canonical_name": "Yakeshi Shengli Coal Mine",
   "canonical_slug": "yakeshi-shengli-coal-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "town": "Xilinhaote City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:20:07.000000Z",
+      "operators": [
+        "Inner Mongolia Datang International Xilinhaote Mining Co."
+      ],
+      "owners": [
+        "China Datang Corporation",
+        "China Shenhua Energy Company Ltd."
+      ],
+      "notes": "The facility is managed by Inner Mongolia Datang International Xilinhaote Mining Co., a subsidiary of China Datang Corporation. China Shenhua Energy Company Ltd. has an indirect ownership interest."
+    }
+  }
 }

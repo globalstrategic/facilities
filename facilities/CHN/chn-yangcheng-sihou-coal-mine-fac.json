@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.532,
-    "lon": 112.293,
+    "lat": 35.46694,
+    "lon": 112.5725,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Datang International Power Generation Company",
+    "Yangcheng International Power Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.654154Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:20:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Yangcheng_Power_Station. Coordinates extracted from the Yangcheng Power Station, which is associated with coal mining in the region"
   },
   "canonical_name": "Yangcheng Sihou Coal Mine",
   "canonical_slug": "yangcheng-sihou-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:20:57.000000Z",
+      "operators": [
+        "Yangcheng International Power Company"
+      ],
+      "owners": [
+        "Datang International Power Generation Company"
+      ],
+      "notes": "Yangcheng International Power Company is a joint venture between AES Corp and four Chinese groups."
+    }
+  }
 }

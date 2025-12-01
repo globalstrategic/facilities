@@ -12,8 +12,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.142,
-    "lon": 110.248,
+    "lat": 39.947803,
+    "lon": 118.564647,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Qian'an City Jiujiang Wire Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.741491Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:51:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Qian%27an_City_Jiujiang_Wire_Co.,_Ltd._power_project. Coordinates are for the Qian'an City Jiujiang Wire Co., Ltd. power project, which is located in Qian'an City, Hebei Province"
   },
   "canonical_name": "Qian'an Coal Mine",
   "canonical_slug": "qian-an-coal-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:51:35.000000Z",
+      "operators": [
+        "Qian'an City Jiujiang Wire Co., Ltd."
+      ],
+      "owners": [
+        "Qian'an City Jiujiang Wire Co., Ltd."
+      ],
+      "notes": "The company is both the operator and owner of the facility."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.777,
-    "lon": 113.603,
+    "lat": 37.780264,
+    "lon": 113.598505,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huayang New Material Technology Group",
+    "Yangquan Coal Industry Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.789615Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:01:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%98%B3%E6%B3%89%E7%85%A4%E4%B8%9A%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%BA%94%E7%9F%BF%E8%B4%B5%E7%9F%B3%E6%B2%9F%E4%BA%95. The Wukuang Guishigou Coal Mine is an underground coal mine located in Pingding County, Yangquan City, Shanxi Province"
   },
   "canonical_name": "Wukuang Guishigou Coal Mine",
   "canonical_slug": "wukuang-guishigou-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:01:39.000000Z",
+      "operators": [
+        "Yangquan Coal Industry Group"
+      ],
+      "owners": [
+        "Huayang New Material Technology Group"
+      ],
+      "notes": "Yangquan Coal Industry Group operates the mine, which is owned by Huayang New Material Technology Group."
+    }
+  }
 }

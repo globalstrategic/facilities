@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.102,
-    "lon": 88.337,
+    "lat": 43.101652,
+    "lon": 88.336769,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "新疆同泰煤业有限公司 (Xinjiang Tongtai Coal Industry Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.699957Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:15:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E5%90%8C%E6%B3%B0%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%89%98%E5%85%8B%E9%80%8A%E6%B2%BC%E5%92%8C%E6%B3%89%E7%85%A4%E7%9F%BF%E4%B8%80%E5%8F%B7%E4%BA%95. The facility is a coal mine located in the Xinjiang Uygur Autonomous Region, specifically in the city of Turpan"
   },
   "canonical_name": "Xinjiang Zhaohequan Coal No 1 Well Mine",
   "canonical_slug": "xinjiang-zhaohequan-coal-no-1-well-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:15:18.000000Z",
+      "operators": [
+        "新疆同泰煤业有限公司 (Xinjiang Tongtai Coal Industry Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Xinjiang Tongtai Coal Industry Co., Ltd."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.15,
-    "lon": 92.414,
+    "lat": 43.5,
+    "lon": 80.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xukuang Group",
+    "Xukuang Group Tianshan Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.736689Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-30T21:14:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.coalzoom.com/article.cfm?articleid=36776. The facility is located 69 kilometers north of Kuqa county in Xinjiang's Aksu Prefecture"
   },
   "canonical_name": "Xinjiang Tianshun Coal Mine",
   "canonical_slug": "xinjiang-tianshun-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:14:09.000000Z",
+      "operators": [
+        "Xukuang Group Tianshan Mining Company"
+      ],
+      "owners": [
+        "Xukuang Group"
+      ],
+      "notes": "The coal mine is operated by Tianshan Coal Mining Company Limited, a wholly owned subsidiary of Xukuang Group."
+    }
+  }
 }

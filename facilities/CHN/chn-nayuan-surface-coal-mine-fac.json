@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.801,
-    "lon": 110.305,
+    "lat": 39.801343,
+    "lon": 110.305378,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bayin Mengke Investment",
+    "Jinfa Materials",
+    "鄂尔多斯市巴音孟克纳源煤炭有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.588923Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:44:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E5%B7%B4%E9%9F%B3%E5%AD%9F%E5%85%8B%E7%BA%B3%E6%BA%90%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%EF%BC%88%E7%BA%B3%E6%BA%90%E9%9C%B2%E5%A4%A9%E7%9F%BF%EF%BC%89. The Nayuan Surface Coal Mine is located in the Ordos region of Inner Mongolia, China"
   },
   "canonical_name": "Nayuan Surface Coal Mine",
   "canonical_slug": "nayuan-surface-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:44:06.000000Z",
+      "operators": [
+        "鄂尔多斯市巴音孟克纳源煤炭有限责任公司"
+      ],
+      "owners": [
+        "Bayin Mengke Investment",
+        "Jinfa Materials"
+      ],
+      "notes": "Bayin Mengke Investment holds a significant equity interest in the mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.657,
-    "lon": 101.929,
+    "lat": 27.656944,
+    "lon": 101.928889,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yanyuan County Xiwei Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.707837Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:43:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Huangcaoping_Mine. Huangcaoping Mine is an iron ore mine located in Liangshan Yi Autonomous Prefecture, Sichuan, China"
   },
   "canonical_name": "Huangcaoping Mine",
   "canonical_slug": "huangcaoping-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:43:37.000000Z",
+      "operators": [
+        "Yanyuan County Xiwei Mining Co Ltd"
+      ],
+      "owners": [
+        "Yanyuan County Xiwei Mining Co Ltd"
+      ],
+      "notes": "Yanyuan County Xiwei Mining Co Ltd owns 100% of the mine."
+    }
+  }
 }

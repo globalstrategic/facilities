@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.705,
-    "lon": 110.562,
+    "lat": 40.710661,
+    "lon": 110.557282,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tumed Right Banner Manqiaogou Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.693827Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:56:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9C%9F%E9%BB%98%E7%89%B9%E5%8F%B3%E6%97%97%E6%9B%BC%E5%B7%A7%E6%B2%9F%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The facility is an open-pit coal mine located in the Tumed Right Banner area"
   },
   "canonical_name": "Inner Mongolia Tumut Right Banner Manqiaogou Coal Mine",
   "canonical_slug": "inner-mongolia-tumut-right-banner-manqiaogou-coal-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:56:30.000000Z",
+      "operators": [
+        "Tumed Right Banner Manqiaogou Mining Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The company operates the coal mine and is fully owned."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.467,
-    "lon": 110.889,
+    "lat": 37.407629,
+    "lon": 110.77575,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Liulin Jucai Coal Industry Co. Ltd.",
+    "Puda Resources Group Co., Ltd.",
+    "Shougang Holding (Hong Kong) Limited",
+    "Shougang Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.814465Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:26:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Liulin_Liansheng_power_station. Coordinates are for the Liulin Liansheng power station, which is located in Liulin County, Shanxi Province, China"
   },
   "canonical_name": "Liulin Coal Mine",
   "canonical_slug": "liulin-coal-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:26:12.000000Z",
+      "operators": [
+        "Shougang Resources",
+        "Liulin Jucai Coal Industry Co. Ltd."
+      ],
+      "owners": [
+        "Shougang Holding (Hong Kong) Limited",
+        "Puda Resources Group Co., Ltd."
+      ],
+      "notes": "Shougang Resources operates multiple coal mines in Liulin County, including the Xingwu, Jinjiazhuang, and Zhaiyadi coal mines."
+    }
+  }
 }

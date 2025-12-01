@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.188,
-    "lon": 103.957,
+    "lat": 37.187574,
+    "lon": 103.957299,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gansu Energy Chemical Investment Group",
+    "Jingtai Coal Industry Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.866883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:06:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%9D%96%E7%85%A4%E9%9B%86%E5%9B%A2%E6%99%AF%E6%B3%B0%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%99%BD%E5%B2%A9%E5%AD%90%E7%85%A4%E7%9F%BF. The Jingtai Baiyanzi Coal Mine is an underground coal mine with a designed production capacity of 900,000 tons/year"
   },
   "canonical_name": "Jingtai Baiyanzi Coal Mine",
   "canonical_slug": "jingtai-baiyanzi-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:06:58.000000Z",
+      "operators": [
+        "Jingtai Coal Industry Co., Ltd."
+      ],
+      "owners": [
+        "Gansu Energy Chemical Investment Group"
+      ],
+      "notes": "Jingtai Coal Industry is a subsidiary of Gansu Energy Chemical Investment Group."
+    }
+  }
 }

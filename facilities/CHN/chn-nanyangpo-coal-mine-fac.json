@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.754,
-    "lon": 112.731,
+    "lat": 39.7728708590616,
+    "lon": 112.541339,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Coal First Construction Co., Ltd",
+    "China National Coal Group Co., Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.815944Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:43:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Shuozhou (https://yijian.chinacoal.com/col/col3851/index.html). The Nanyangpo Coal Mine is located in Maying, Shanyin, Shuozhou, Shanxi, China"
   },
   "canonical_name": "Nanyangpo Coal Mine",
   "canonical_slug": "nanyangpo-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Shuozhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:43:41.000000Z",
+      "operators": [
+        "China Coal First Construction Co., Ltd"
+      ],
+      "owners": [
+        "China National Coal Group Co., Ltd"
+      ],
+      "notes": "The Nanyangpo Coal Mine is a branch of China Coal First Construction Co., Ltd, which is a subsidiary of China National Coal Group."
+    }
+  }
 }

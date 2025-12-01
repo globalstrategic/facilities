@@ -14,8 +14,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.417,
-    "lon": 110.876,
+    "lat": 32.385,
+    "lon": 115.95575,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minmetals Handxing Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.813022Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:22:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Minmetals_Lilou_Mine-Huoqiu_Mine. The Minmetals Lilou Mine-Huoqiu Mine is an iron ore mine located in Liuan, Anhui, China"
   },
   "canonical_name": "Liliu Mine",
   "canonical_slug": "liliu-mine",
@@ -57,5 +59,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:22:36.000000Z",
+      "operators": [
+        "Minmetals Handxing Mining Co"
+      ],
+      "owners": [
+        "Minmetals Handxing Mining Co"
+      ],
+      "notes": "Minmetals Handxing Mining Co owns and operates the facility."
+    }
+  }
 }

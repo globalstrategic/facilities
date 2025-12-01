@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.438,
-    "lon": 112.79,
+    "lat": 35.438319,
+    "lon": 112.789793,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "山西省晋城晋普山煤业有限责任公司 (Shanxi Jincheng Jinpushan Coal Industry Company)",
+    "山西郑华实业集团 (Shanxi Zhenghua Industrial Group)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.826810Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:11:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%9C%81%E6%99%8B%E5%9F%8E%E6%99%8B%E6%99%AE%E5%B1%B1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Jinpushan Coal Mine is an underground coal mine located in Shanxi Province, China"
   },
   "canonical_name": "Jinpushan Coal Mine",
   "canonical_slug": "jinpushan-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:11:07.000000Z",
+      "operators": [
+        "山西省晋城晋普山煤业有限责任公司 (Shanxi Jincheng Jinpushan Coal Industry Company)"
+      ],
+      "owners": [
+        "山西省晋城晋普山煤业有限责任公司 (Shanxi Jincheng Jinpushan Coal Industry Company)",
+        "山西郑华实业集团 (Shanxi Zhenghua Industrial Group)"
+      ],
+      "notes": "The mine is operated by Shanxi Jincheng Jinpushan Coal Industry Company, which is fully owned by Shanxi Zhenghua Industrial Group."
+    }
+  }
 }

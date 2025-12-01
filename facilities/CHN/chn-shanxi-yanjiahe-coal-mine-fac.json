@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.046,
-    "lon": 111.025,
+    "lat": 36.045586,
+    "lon": 111.025065,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Xiangning Coke Coal Group",
+    "Shanxi Yanjiahe Coal Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.670151Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:23:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E4%B9%A1%E5%AE%81%E7%84%A6%E7%85%A4%E9%9B%86%E5%9B%A2%E7%87%95%E5%AE%B6%E6%B2%B3%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shanxi Yanjiahe Coal Mine is an underground coal mine located in the village of Yanjiahe, Xiangning County, Linfen City, Shanxi Province"
   },
   "canonical_name": "Shanxi Yanjiahe Coal Mine",
   "canonical_slug": "shanxi-yanjiahe-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:23:56.000000Z",
+      "operators": [
+        "Shanxi Yanjiahe Coal Mine"
+      ],
+      "owners": [
+        "Shanxi Xiangning Coke Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Yanjiahe Coal Mine, which is part of the Shanxi Xiangning Coke Coal Group."
+    }
+  }
 }

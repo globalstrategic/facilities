@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 32.833,
-    "lon": 116.163,
+    "lat": 32.833342,
+    "lon": 116.162687,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "中煤新集能源股份有限公司 (China Coal Xinji Energy)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.710226Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:17:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%AD%E7%85%A4%E6%96%B0%E9%9B%86%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%8F%A3%E5%AD%9C%E4%B8%9C%E7%9F%BF. The Kouzi East Coal Mine is an underground coal mine with a production capacity of 5 million tons per year"
   },
   "canonical_name": "Kouzi East Coal Mine",
   "canonical_slug": "kouzi-east-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "安徽省 (Anhui)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:17:03.000000Z",
+      "operators": [
+        "中煤新集能源股份有限公司 (China Coal Xinji Energy)"
+      ],
+      "owners": [
+        "中煤新集能源股份有限公司 (China Coal Xinji Energy)"
+      ],
+      "notes": "The mine is fully owned and operated by China Coal Xinji Energy."
+    }
+  }
 }

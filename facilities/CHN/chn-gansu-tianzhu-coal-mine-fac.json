@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.926,
-    "lon": 102.688,
+    "lat": 36.968,
+    "lon": 102.658,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Cinda Asset Management Company",
+    "China Huarong Asset Management Company",
+    "Gansu Provincial Government",
+    "Gansu Yaojie Coal Electricity Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.803284Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:04:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/2014/1219/pdf/of2014-1219.pdf. Coordinates extracted from a USGS compilation of geographic information"
   },
   "canonical_name": "Gansu Tianzhu Coal Mine",
   "canonical_slug": "gansu-tianzhu-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:04:35.000000Z",
+      "operators": [
+        "Gansu Yaojie Coal Electricity Company"
+      ],
+      "owners": [
+        "Gansu Provincial Government",
+        "China Cinda Asset Management Company",
+        "China Huarong Asset Management Company"
+      ],
+      "notes": "Gansu Yaojie Coal Electricity Company operates the facility and is a shareholding company with multiple stakeholders."
+    }
+  }
 }

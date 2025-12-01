@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.195,
-    "lon": 110.134,
+    "lat": 35.195374,
+    "lon": 110.134069,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Coal and Chemical Industry Group Co., Ltd.",
+    "陕西澄合合阳煤炭开发有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.797401Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:01:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E6%BE%84%E5%90%88%E5%90%88%E9%98%B3%E7%85%A4%E7%82%AD%E5%BC%80%E5%8F%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%89%E9%98%B3%E7%85%A4%E7%9F%BF. The Shaanxi Anyang Coal Mine is an underground coal mine with a production capacity of 1.2 million tons per year"
   },
   "canonical_name": "Shaanxi Anyang Coal Mine",
   "canonical_slug": "shaanxi-anyang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:01:10.000000Z",
+      "operators": [
+        "陕西澄合合阳煤炭开发有限公司"
+      ],
+      "owners": [
+        "Shaanxi Coal and Chemical Industry Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by Shaanxi Anyang Coal Mine, a subsidiary of Shaanxi Coal and Chemical Industry Group."
+    }
+  }
 }

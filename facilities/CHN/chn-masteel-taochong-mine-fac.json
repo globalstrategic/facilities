@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 31.105,
-    "lon": 118.083,
+    "lat": 31.698884,
+    "lon": 118.468194,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Baowu Steel Group",
+    "Maanshan Iron & Steel Company Limited",
+    "Masteel Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.727963Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:38:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Maanshan_Iron_and_Steel_Co_Ltd. Coordinates are exact for the Maasteel Taochong Mine"
   },
   "canonical_name": "Masteel Taochong Mine",
   "canonical_slug": "masteel-taochong-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:38:25.000000Z",
+      "operators": [
+        "Maanshan Iron & Steel Company Limited"
+      ],
+      "owners": [
+        "China Baowu Steel Group",
+        "Masteel Group"
+      ],
+      "notes": "Masteel is a subsidiary of Masteel Group, which is jointly owned by China Baowu Steel Group and the Anhui Provincial Government."
+    }
+  }
 }

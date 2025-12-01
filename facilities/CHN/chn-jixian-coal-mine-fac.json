@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 46.766,
-    "lon": 131.265,
+    "lat": 46.870094,
+    "lon": 131.466341,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heilongjiang Longmay Mining Holding Group Co., Ltd.",
+    "Heilongjiang Longmei Mining Group Co., Ltd. Shuangyashan Branch"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.862825Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:14:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dongrong_No.2_Coal_Mine. The Jixian Coal Mine is located in Jixian County, Shuangyashan City, Heilongjiang Province, China"
   },
   "canonical_name": "Jixian Coal Mine",
   "canonical_slug": "jixian-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:14:23.000000Z",
+      "operators": [
+        "Heilongjiang Longmei Mining Group Co., Ltd. Shuangyashan Branch"
+      ],
+      "owners": [
+        "Heilongjiang Longmay Mining Holding Group Co., Ltd."
+      ],
+      "notes": "The facility is operated by a branch of Heilongjiang Longmei Mining Group and owned by Heilongjiang Longmay Mining Holding Group."
+    }
+  }
 }

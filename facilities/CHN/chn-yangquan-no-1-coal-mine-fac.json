@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.914,
-    "lon": 113.515,
+    "lat": 37.907856,
+    "lon": 113.517665,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huayang New Material Technology Group Co., Ltd.",
+    "Yangquan Coal Industry Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.694812Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:22:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E5%8D%8E%E9%98%B3%E9%9B%86%E5%9B%A2%E6%96%B0%E8%83%BD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%80%E7%9F%BF. The facility is known as Yangquan No. 1 Coal Mine and has a production capacity of 8.5 million tons per year"
   },
   "canonical_name": "Yangquan No 1 Coal Mine",
   "canonical_slug": "yangquan-no-1-coal-mine",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:22:06.000000Z",
+      "operators": [
+        "Yangquan Coal Industry Group"
+      ],
+      "owners": [
+        "Huayang New Material Technology Group Co., Ltd."
+      ],
+      "notes": "The facility was formerly known as Yangquan Coal Industry (Group) Co., Ltd."
+    }
+  }
 }

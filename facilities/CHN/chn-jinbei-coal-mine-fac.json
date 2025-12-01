@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.292,
-    "lon": 112.024,
+    "lat": 39.911857779557145,
+    "lon": 113.2951122,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Datong Coal Mine Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.837941Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:04:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Datong (https://fortune.com/2014/07/11/coal-china/). The Jinbei Coal Mine is part of the larger Jinbei coal cluster in Shanxi Province, which includes various industrial facilities"
   },
   "canonical_name": "Jinbei Coal Mine",
   "canonical_slug": "jinbei-coal-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Datong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:04:30.000000Z",
+      "operators": [
+        "Datong Coal Mine Group"
+      ],
+      "owners": [],
+      "notes": "The facility is part of a conglomeration of industrial facilities owned by Datong Coal Mine Group."
+    }
+  }
 }

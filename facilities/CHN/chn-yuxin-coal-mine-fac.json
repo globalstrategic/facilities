@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.996,
-    "lon": 84.593,
+    "lat": 43.814672811455424,
+    "lon": 86.1223140250614,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dahuangshan Yuxin Coal Mining Co. Ltd.",
+    "Xinjiang Production and Construction Corps"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.691675Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:36:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Urumqi (https://www.cbc.ca/news/world/explosion-in-china-kills-17-coal-miners-1.2698367). The Yuxin Coal Mine is operated by Dahuangshan Yuxin Coal Mining Co. Ltd., which is owned by the sixth agricultural division of the Xinjiang Production and Construction Corps"
   },
   "canonical_name": "Yuxin Coal Mine",
   "canonical_slug": "yuxin-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "town": "Urumqi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:36:32.000000Z",
+      "operators": [
+        "Dahuangshan Yuxin Coal Mining Co. Ltd."
+      ],
+      "owners": [
+        "Xinjiang Production and Construction Corps"
+      ],
+      "notes": "The operator is a subsidiary of a paramilitary organization involved in regional development."
+    }
+  }
 }

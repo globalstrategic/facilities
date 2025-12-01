@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.032,
-    "lon": 113.355,
+    "lat": 37.028703,
+    "lon": 113.356536,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Cinda Asset Management Company",
+    "Jinzhong Ruiteli Eco-Development Company",
+    "Jizhong Energy Group",
+    "Shanxi Antai Group",
+    "Shanxi Coking Coal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.623914Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:40:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%B1%BE%E8%A5%BF%E7%91%9E%E6%B3%B0%E4%BA%95%E7%9F%BF%E6%AD%A3%E6%98%8E%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Zhengming Coal Mine is located in the Jindong coal base Wuxia mining area"
   },
   "canonical_name": "Zhengming Coal Mine",
   "canonical_slug": "zhengming-coal-mine",
@@ -50,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:40:47.000000Z",
+      "operators": [],
+      "owners": [
+        "Jizhong Energy Group",
+        "Shanxi Coking Coal Group",
+        "China Cinda Asset Management Company",
+        "Jinzhong Ruiteli Eco-Development Company",
+        "Shanxi Antai Group"
+      ],
+      "notes": "The mine is part of a joint venture with multiple stakeholders."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.601,
-    "lon": 101.843,
+    "lat": 26.600815,
+    "lon": 101.84315,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Long Bai Panzhihua Mineral Products Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.686688Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:38:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Hongge-Panjiatian-Anningcun_Mine. The Hongge Panjiatian Anningcun Mine is an iron ore mine operating in Panzhihua, Sichuan, China"
   },
   "canonical_name": "Hongge Panjiatian Anningcun Mine",
   "canonical_slug": "hongge-panjiatian-anningcun-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:38:33.000000Z",
+      "operators": [
+        "Long Bai Panzhihua Mineral Products Co"
+      ],
+      "owners": [
+        "Long Bai Panzhihua Mineral Products Co"
+      ],
+      "notes": "The mine is fully owned and operated by Long Bai Panzhihua Mineral Products Co."
+    }
+  }
 }

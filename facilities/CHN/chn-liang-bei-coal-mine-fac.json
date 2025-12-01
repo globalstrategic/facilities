@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.091,
-    "lon": 113.465,
+    "lat": 34.093458,
+    "lon": 113.515956,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Pingmei Shenma Energy and Chemical Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.848438Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:19:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%AD%E5%9B%BD%E5%B9%B3%E7%85%A4%E7%A5%9E%E9%A9%AC%E9%9B%86%E5%9B%A2%E6%A2%81%E5%8C%97%E4%BA%8C%E4%BA%95. The Liang Bei Coal Mine is located in Yuzhou City, Henan Province, China, and is operated by China Pingmei Shenma Energy and Chemical Group"
   },
   "canonical_name": "Liang Bei Coal Mine",
   "canonical_slug": "liang-bei-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:19:52.000000Z",
+      "operators": [
+        "China Pingmei Shenma Energy and Chemical Group"
+      ],
+      "owners": [
+        "China Pingmei Shenma Energy and Chemical Group"
+      ],
+      "notes": "The mine is both operated and owned by China Pingmei Shenma Energy and Chemical Group."
+    }
+  }
 }

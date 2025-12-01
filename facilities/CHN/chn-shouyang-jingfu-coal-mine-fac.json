@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.908,
-    "lon": 112.847,
+    "lat": 37.908132,
+    "lon": 112.846801,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yang Quan Coal Industry Group Shouyang Jingfu Coal Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.633832Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:32:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%98%B3%E7%85%A4%E9%9B%86%E5%9B%A2%E5%AF%BF%E9%98%B3%E6%99%AF%E7%A6%8F%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shouyang Jingfu Coal Mine is an underground coal mine located in Nanzhuang Village, Shouyang County, Jinzhong City, Shanxi province, China"
   },
   "canonical_name": "Shouyang Jingfu Coal Mine",
   "canonical_slug": "shouyang-jingfu-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:32:42.000000Z",
+      "operators": [
+        "Yang Quan Coal Industry Group Shouyang Jingfu Coal Co., Ltd."
+      ],
+      "owners": [
+        "Yang Quan Coal Industry Group Shouyang Jingfu Coal Co., Ltd."
+      ],
+      "notes": "The company exploits and sells anthracite and other coal products throughout China."
+    }
+  }
 }

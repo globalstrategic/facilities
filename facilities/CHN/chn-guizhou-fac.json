@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.798,
-    "lon": 106.612,
+    "lat": 25.14861,
+    "lon": 105.87111,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China National Gold Group Corporation",
+    "Eldorado Gold"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.656029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:11:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Jinfeng_Gold_Mine. The Jinfeng Gold Mine is a significant gold mining operation in Guizhou province, China"
   },
   "canonical_name": "Guizhou Plant",
   "canonical_slug": "guizhou-plant",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:11:59.000000Z",
+      "operators": [
+        "China National Gold Group Corporation"
+      ],
+      "owners": [
+        "China National Gold Group Corporation",
+        "Eldorado Gold"
+      ],
+      "notes": "The mine was originally owned by Sino Gold Mining and then acquired by Eldorado Gold in 2009. Eldorado Gold sold its 82% stake in the Jinfeng Gold Mine to China National Gold Group in 2016."
+    }
+  }
 }

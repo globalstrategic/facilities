@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.967,
-    "lon": 112.237,
+    "lat": 38.966783,
+    "lon": 112.237425,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Lu'an Group Luning Mengjiayao Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.685232Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:39:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%BD%9E%E5%AE%89%E9%9B%86%E5%9B%A2%E6%BD%9E%E5%AE%81%E5%AD%9F%E5%AE%B6%E7%AA%91%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Mengjiayao Coal Mine is an underground coal mine located in Mengjiayao Village, Ningwu County, Xinzhou City, Shanxi Province"
   },
   "canonical_name": "Mengjiayao Coal Mine",
   "canonical_slug": "mengjiayao-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:39:51.000000Z",
+      "operators": [
+        "Shanxi Lu'an Group Luning Mengjiayao Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Lu'an Group Luning Mengjiayao Coal Industry Company"
+      ],
+      "notes": "The company is fully owned by Shanxi Lu'an Group."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.813,
-    "lon": 112.649,
+    "lat": 39.812747,
+    "lon": 112.649011,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Datong Coal Mine Group Tongsheng Shu'erli Coal Industry Company",
+    "Jinneng Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.611002Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:33:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%90%8C%E7%85%A4%E7%9F%BF%E9%9B%86%E5%9B%A2%E5%90%8C%E7%94%9F%E6%A0%91%E5%84%BF%E9%87%8C%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shu'erli Coal Mine is an underground coal mine operated by Datong Coal Mine Group Tongsheng Shu'erli Coal Industry Company"
   },
   "canonical_name": "Shu'erli Coal Mine",
   "canonical_slug": "shu-erli-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:33:03.000000Z",
+      "operators": [
+        "Datong Coal Mine Group Tongsheng Shu'erli Coal Industry Company"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is fully owned by Datong Coal Mine Group Tongsheng Shu'erli Coal Industry Company, which is a subsidiary of Jinneng Group."
+    }
+  }
 }

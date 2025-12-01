@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 10.745470745743143,
+    "lon": -4.016107,
     "precision": "unknown"
   },
   "types": [
@@ -27,22 +27,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Sama Resources",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:35.991517",
-      "evidence": "Extracted from operator column: Sama Resources / Ivanhoe Electric"
-    },
-    {
-      "name": "Ivanhoe Electric",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:35.991522",
-      "evidence": "Extracted from operator column: Sama Resources / Ivanhoe Electric"
-    }
+    "Ivanhoe Electric",
+    "Ivanhoe Electric Inc.",
+    "Sama Resources",
+    "Sama Resources Inc."
   ],
   "products": [],
   "sources": [
@@ -53,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.462608Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:24:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://www.mining.com/ivanhoe-electric-earns-into-60-of-nickel-copper-project-in-cote-divoire/). The Samapleu-Grata Project is located approximately 600 km from the capital city, Abidjan"
   },
   "canonical_name": "Samapleu Grata Development",
   "canonical_slug": "samapleu-grata-development",
@@ -80,5 +68,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lagunes",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:24:49.000000Z",
+      "operators": [
+        "Ivanhoe Electric Inc.",
+        "Sama Resources Inc."
+      ],
+      "owners": [
+        "Ivanhoe Electric Inc.",
+        "Sama Resources Inc."
+      ],
+      "notes": "The project is a 60/40 joint venture between Ivanhoe Electric and Sama Resources."
+    }
+  }
 }

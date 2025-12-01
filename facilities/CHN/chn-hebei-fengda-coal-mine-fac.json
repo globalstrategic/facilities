@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.325,
-    "lon": 114.693,
+    "lat": 40.17521556592309,
+    "lon": 114.52295387768395,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China National Coal Group",
+    "Hebei Fengda Coal Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.752646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-30T18:25:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Beijing (https://www.heraldtribune.com/story/news/2009/04/11/truths-about-chinas-mines-get-buried-by-bureaucrats/28704218007/). The Hebei Fengda Coal Mine is located in Hebei province, approximately 100 miles west of Beijing"
   },
   "canonical_name": "Hebei Fengda Coal Mine",
   "canonical_slug": "hebei-fengda-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "town": "Beijing",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:25:05.000000Z",
+      "operators": [
+        "Hebei Fengda Coal Mine"
+      ],
+      "owners": [
+        "China National Coal Group"
+      ],
+      "notes": "The mine is associated with the China National Coal Group, a major player in the coal industry."
+    }
+  }
 }

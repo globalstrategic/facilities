@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 31.638,
-    "lon": 118.561,
+    "lat": 31.630919,
+    "lon": 118.562339,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Masteel Nanshan Mining Co (马钢集团南山矿业公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.735442Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:38:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Masteel_Heshangqiao_(Daweishan/Matang)_Mine. Coordinates are exact as provided in the source"
   },
   "canonical_name": "Masteel Heshangqiao Mine",
   "canonical_slug": "masteel-heshangqiao-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:38:02.000000Z",
+      "operators": [
+        "Masteel Nanshan Mining Co (马钢集团南山矿业公司)"
+      ],
+      "owners": [
+        "Masteel Nanshan Mining Co (马钢集团南山矿业公司)"
+      ],
+      "notes": "Masteel Nanshan Mining Co is the sole operator and owner of the facility."
+    }
+  }
 }

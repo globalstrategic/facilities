@@ -13,8 +13,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 32.41,
-    "lon": 115.972,
+    "lat": 32.433333,
+    "lon": 116.0,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Global Energy Monitor",
+    "unknown"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.784417Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:00:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Zhouji_Mine-Huoqiu_Mine. The Zhouji Mine-Huoqiu Mine is an iron ore mine operating in Liuan, Anhui, China"
   },
   "canonical_name": "Wuji Huoqiu Mine",
   "canonical_slug": "wuji-huoqiu-mine",
@@ -57,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:00:43.000000Z",
+      "operators": [
+        "unknown"
+      ],
+      "owners": [
+        "Global Energy Monitor"
+      ],
+      "notes": "Ownership details are not fully specified; the operator is listed as unknown."
+    }
+  }
 }

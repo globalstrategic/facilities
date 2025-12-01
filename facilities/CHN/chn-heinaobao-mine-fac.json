@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.643,
-    "lon": 110.192,
+    "lat": 41.6425,
+    "lon": 110.192222,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Damao Banner Leixin Mining Co (达茂旗磊鑫矿业有限责任公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.795518Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:29:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Heinaobao_Mine. Heinaobao Mine is an iron ore mine located in Baotou, Inner Mongolia, China"
   },
   "canonical_name": "Heinaobao Mine",
   "canonical_slug": "heinaobao-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:29:40.000000Z",
+      "operators": [
+        "Damao Banner Leixin Mining Co (达茂旗磊鑫矿业有限责任公司)"
+      ],
+      "owners": [
+        "Damao Banner Leixin Mining Co (达茂旗磊鑫矿业有限责任公司)"
+      ],
+      "notes": "Damao Banner Leixin Mining Co owns 100% of the Heinaobao Mine."
+    }
+  }
 }

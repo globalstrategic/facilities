@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.351,
-    "lon": 116.798,
+    "lat": 35.35113,
+    "lon": 116.798306,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yankuang Energy Group",
+    "山东里能里彦矿业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.847508Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:46:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E4%B8%9C%E9%87%8C%E8%83%BD%E9%87%8C%E5%BD%A6%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Zoucheng Liyan Coal Mine is located in Taiping Town, Zoucheng City, Shandong Province"
   },
   "canonical_name": "Zoucheng Liyan Coal Mine",
   "canonical_slug": "zoucheng-liyan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:46:42.000000Z",
+      "operators": [
+        "山东里能里彦矿业有限公司"
+      ],
+      "owners": [
+        "Yankuang Energy Group"
+      ],
+      "notes": "Yankuang Energy Group is the parent company of the operator."
+    }
+  }
 }

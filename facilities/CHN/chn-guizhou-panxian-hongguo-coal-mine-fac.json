@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.81,
-    "lon": 104.471,
+    "lat": 25.810151,
+    "lon": 104.470631,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "贵州久泰邦达能源开发有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.691087Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:15:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E4%B9%85%E6%B3%B0%E9%82%A6%E8%BE%BE%E8%83%BD%E6%BA%90%E5%BC%80%E5%8F%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%9B%98%E5%8E%BF%E7%BA%A2%E6%9E%9C%E9%95%87%E7%BA%A2%E6%9E%9C%E7%85%A4%E7%9F%BF. The Guizhou Panxian Hongguo Coal Mine is an underground coal mine located in Panzhou, Guizhou province"
   },
   "canonical_name": "Guizhou Panxian Hongguo Coal Mine",
   "canonical_slug": "guizhou-panxian-hongguo-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:15:00.000000Z",
+      "operators": [
+        "贵州久泰邦达能源开发有限公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Guizhou Jiutai Bangda Energy Development Co., Ltd."
+    }
+  }
 }

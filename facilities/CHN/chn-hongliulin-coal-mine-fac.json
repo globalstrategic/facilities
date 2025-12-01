@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.936,
-    "lon": 110.402,
+    "lat": 36.1,
+    "lon": 109.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Development Bank Corp",
+    "Fugu County State-owned Assets Operation Co Ltd",
+    "Shaanxi Coal Industry Co Ltd",
+    "Shaanxi Yulin Energy Group Co Ltd",
+    "Shenmu County State-owned Assets Operation Co",
+    "Shenmu Hongliulin Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.864490Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:39:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shaanxi_Hongliulin_power_station. Coordinates are approximate for the Hongliulin Coal Mine located in the Shenfu mining area"
   },
   "canonical_name": "Hongliulin Coal Mine",
   "canonical_slug": "hongliulin-coal-mine",
@@ -50,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:39:10.000000Z",
+      "operators": [
+        "Shenmu Hongliulin Mining Co Ltd"
+      ],
+      "owners": [
+        "Shaanxi Coal Industry Co Ltd",
+        "Shenmu County State-owned Assets Operation Co",
+        "Shaanxi Yulin Energy Group Co Ltd",
+        "Fugu County State-owned Assets Operation Co Ltd",
+        "China Development Bank Corp"
+      ],
+      "notes": "The Hongliulin Coal Mine is operated by Shenmu Hongliulin Mining Co Ltd, which is fully owned by Shaanxi Coal Industry Co Ltd."
+    }
+  }
 }

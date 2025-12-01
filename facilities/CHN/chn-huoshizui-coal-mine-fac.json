@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.062,
-    "lon": 108.048,
+    "lat": 35.068148,
+    "lon": 108.06339,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hebei Zhongda Group",
+    "Shaanxi Huoshizui Coal Mine Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.740382Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:50:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E7%81%AB%E7%9F%B3%E5%92%80%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. Huoshizui Coal Mine is an underground coal mine with a production capacity of 3 million tons per year"
   },
   "canonical_name": "Huoshizui Coal Mine",
   "canonical_slug": "huoshizui-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:50:54.000000Z",
+      "operators": [
+        "Shaanxi Huoshizui Coal Mine Company"
+      ],
+      "owners": [
+        "Hebei Zhongda Group"
+      ],
+      "notes": "The mine is operated by Shaanxi Huoshizui Coal Mine Company, which is fully owned by Hebei Zhongda Group."
+    }
+  }
 }

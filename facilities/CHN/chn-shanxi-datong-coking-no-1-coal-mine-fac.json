@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.842,
-    "lon": 113.016,
+    "lat": 40.109769,
+    "lon": 113.16219,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Coal Mine Group Co., Ltd.",
+    "Jinneng Holding Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.754936Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:14:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jinhuagong_Coal_Mine. The facility is located in the Yungang District of Datong City, Shanxi province, China"
   },
   "canonical_name": "Shanxi Datong Coking No 1 Coal Mine",
   "canonical_slug": "shanxi-datong-coking-no-1-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:14:55.000000Z",
+      "operators": [
+        "Jinneng Coal Mine Group Co., Ltd."
+      ],
+      "owners": [
+        "Jinneng Holding Group"
+      ],
+      "notes": "The operator was formerly known as Datong Coal Mine Group."
+    }
+  }
 }

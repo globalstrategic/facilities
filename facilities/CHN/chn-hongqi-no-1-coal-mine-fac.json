@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.718,
-    "lon": 113.092,
+    "lat": 34.718457,
+    "lon": 113.092253,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Henan Hongqi Coal Industry Company",
+    "Zhengzhou Ketai Laser Machinery Equipment Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.695759Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:39:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%B2%B3%E5%8D%97%E7%BA%A2%E6%97%97%E7%85%A4%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%80%E7%9F%BF. Hongqi No. 1 Coal Mine is an underground coal mine located in Zhengzhou, Henan Province, China"
   },
   "canonical_name": "Hongqi No 1 Coal Mine",
   "canonical_slug": "hongqi-no-1-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "河南省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:39:22.000000Z",
+      "operators": [
+        "Henan Hongqi Coal Industry Company"
+      ],
+      "owners": [
+        "Zhengzhou Ketai Laser Machinery Equipment Company"
+      ],
+      "notes": "Henan Hongqi Coal Industry Company operates the mine, which is fully owned by Zhengzhou Ketai Laser Machinery Equipment Company."
+    }
+  }
 }

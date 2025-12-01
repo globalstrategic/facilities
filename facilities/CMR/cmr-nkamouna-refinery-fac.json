@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Phoenix Mining",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.496911",
-      "evidence": "Extracted from operator column: Phoenix Mining"
-    }
+    "Geovic Cameroon PLC",
+    "Geovic Ltd.",
+    "Geovic Mining Corporation",
+    "National Investment Corporation of Cameroon (SNI)",
+    "Phoenix Mining"
   ],
   "products": [],
   "sources": [
@@ -59,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:41:39.000000Z",
+      "operators": [
+        "Geovic Cameroon PLC"
+      ],
+      "owners": [
+        "Geovic Ltd.",
+        "Geovic Mining Corporation",
+        "National Investment Corporation of Cameroon (SNI)"
+      ],
+      "notes": "Geovic Ltd. is a 100% held subsidiary of Geovic Mining Corporation. The National Investment Corporation of Cameroon (SNI) holds 20%."
+    }
+  }
 }

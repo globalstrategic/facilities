@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.816,
-    "lon": 110.621,
+    "lat": 35.81591,
+    "lon": 110.621302,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yantai Guofeng Investment Holding Group",
+    "山西天润煤化集团德通煤业有限公司 (Shanxi Tianrun Coal Chemical Group Detong Coal Industry Company)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.876571Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:47:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E5%A4%A9%E6%B6%A6%E7%85%A4%E5%8C%96%E9%9B%86%E5%9B%A2%E5%BE%B7%E9%80%9A%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Tianrun Detong Coal Mine is an underground coal mine located in Shanxi Province, China"
   },
   "canonical_name": "Tianrun Detong Coal Mine",
   "canonical_slug": "tianrun-detong-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:47:16.000000Z",
+      "operators": [
+        "山西天润煤化集团德通煤业有限公司 (Shanxi Tianrun Coal Chemical Group Detong Coal Industry Company)"
+      ],
+      "owners": [
+        "Yantai Guofeng Investment Holding Group"
+      ],
+      "notes": "The mine is operated by Shanxi Tianrun Coal Chemical Group and owned by Yantai Guofeng Investment Holding Group."
+    }
+  }
 }

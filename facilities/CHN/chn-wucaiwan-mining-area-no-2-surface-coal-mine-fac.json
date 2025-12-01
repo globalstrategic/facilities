@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.863,
-    "lon": 89.194,
+    "lat": 44.8625,
+    "lon": 89.193889,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy",
+    "Xinjiang Tianlong Hope Energy Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.671610Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:58:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E5%A4%A9%E9%9A%86%E5%B8%8C%E6%9C%9B%E8%83%BD%E6%BA%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BA%94%E5%BD%A9%E6%B9%BE%E7%9F%BF%E5%8C%BA%E4%BA%8C%E5%8F%B7%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Wucaiwan Mining Area No.2 Surface Coal Mine is an open-pit coal mine located in the Changji Prefecture, specifically in Jimusar County"
   },
   "canonical_name": "Wucaiwan Mining Area No 2 Surface Coal Mine",
   "canonical_slug": "wucaiwan-mining-area-no-2-surface-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:58:58.000000Z",
+      "operators": [
+        "Xinjiang Tianlong Hope Energy Company Limited"
+      ],
+      "owners": [
+        "China Energy"
+      ],
+      "notes": "The mine is operated by Xinjiang Tianlong Hope Energy Company Limited and owned by China Energy."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.925,
-    "lon": 111.28,
+    "lat": 39.047968,
+    "lon": 109.500809,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Coal (38.75%)",
+    "Manshi Group (10%)",
+    "Shenergy (12.5%)",
+    "Sinopec (38.75%)",
+    "Zhongtian Hechuang Energy Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.758442Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:47:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Hulusu_Coal_Mine. The coordinates are for the Hulusu Coal Mine, which is located in Ordos, Inner Mongolia, China"
   },
   "canonical_name": "Ordos Boligou Coal Mine",
   "canonical_slug": "ordos-boligou-coal-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:47:25.000000Z",
+      "operators": [
+        "Zhongtian Hechuang Energy Co."
+      ],
+      "owners": [
+        "China Coal (38.75%)",
+        "Sinopec (38.75%)",
+        "Shenergy (12.5%)",
+        "Manshi Group (10%)"
+      ],
+      "notes": "The mine is sponsored and operated by Zhongtian Hechuang Energy Co., with multiple ownership stakes from various companies."
+    }
+  }
 }

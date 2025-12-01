@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.889,
-    "lon": 112.424,
+    "lat": 38.889072,
+    "lon": 112.423547,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "大同煤矿集团 (Datong Coal Mine Group)",
+    "大同煤矿集团轩岗煤电有限责任公司 (Datong Coal Mine Group Xuangang Coal and Power Company)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.662237Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:26:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%90%8C%E7%85%A4%E7%9F%BF%E9%9B%86%E5%9B%A2%E8%BD%A9%E5%B2%97%E7%85%A4%E7%94%B5%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%88%98%E5%AE%B6%E6%A2%81%E7%85%A4%E7%9F%BF. The Liujialiang Coal Mine is an underground coal mine operated by the Datong Coal Mine Group"
   },
   "canonical_name": "Liujialiang Coal Mine",
   "canonical_slug": "liujialiang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:26:01.000000Z",
+      "operators": [
+        "大同煤矿集团轩岗煤电有限责任公司 (Datong Coal Mine Group Xuangang Coal and Power Company)"
+      ],
+      "owners": [
+        "大同煤矿集团 (Datong Coal Mine Group)"
+      ],
+      "notes": "The mine is owned and operated by the Datong Coal Mine Group."
+    }
+  }
 }

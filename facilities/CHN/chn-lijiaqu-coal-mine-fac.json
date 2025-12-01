@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.72,
-    "lon": 110.244,
+    "lat": 39.713723,
+    "lon": 110.243661,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zhungeer Qichuanzhang Lijiaqu Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.840201Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:22:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%87%86%E6%A0%BC%E5%B0%94%E6%97%97%E5%B7%9D%E6%8E%8C%E6%9D%8E%E5%AE%B6%E6%B8%A0%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Lijiaqu Coal Mine is an open-pit coal mine with a designed production capacity of 1.2 million tonnes per year"
   },
   "canonical_name": "Lijiaqu Coal Mine",
   "canonical_slug": "lijiaqu-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:22:15.000000Z",
+      "operators": [
+        "Zhungeer Qichuanzhang Lijiaqu Coal Company"
+      ],
+      "owners": [
+        "Zhungeer Qichuanzhang Lijiaqu Coal Company"
+      ],
+      "notes": "The company operates and owns the Lijiaqu Coal Mine."
+    }
+  }
 }

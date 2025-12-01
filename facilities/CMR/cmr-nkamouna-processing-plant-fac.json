@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 3.8399125163196604,
+    "lon": 15.157094033142917,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Phoenix Mining",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.496434",
-      "evidence": "Extracted from operator column: Phoenix Mining"
-    }
+    "Geovic Cameroon PLC (GeoCam)",
+    "Geovic Ltd",
+    "Geovic Mining Corporation",
+    "National Investment Corporation of Cameroon (SNI)",
+    "Phoenix Mining"
   ],
   "products": [],
   "sources": [
@@ -32,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019767Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:41:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yaounde (https://www.mining-technology.com/projects/nkamouna-cobalt-nickel-manganese-project-haut-nyong-cameroon/). The Nkamouna Processing Plant is part of the Nkamouna Cobalt-Nickel-Manganese Project located in the Haut Nyong Division"
   },
   "canonical_name": "Nkamouna Processing Concentrator",
   "canonical_slug": "nkamouna-processing-concentrator",
@@ -59,5 +56,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Province",
+  "town": "Yaounde",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:41:25.000000Z",
+      "operators": [
+        "Geovic Cameroon PLC (GeoCam)"
+      ],
+      "owners": [
+        "Geovic Mining Corporation",
+        "Geovic Ltd",
+        "National Investment Corporation of Cameroon (SNI)"
+      ],
+      "notes": "Geovic Cameroon PLC is a subsidiary of Geovic Mining Corporation, with ownership stakes held by Geovic Ltd and SNI."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 30.327,
-    "lon": 114.908,
+    "lat": 30.3232,
+    "lon": 114.911,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Baowu Steel Group",
+    "China Baowu Steel Group Chengchao Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.680438Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:44:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baowu_Chengchao_Mine. The Baowu Chengchao Mine is an iron ore mine located in Ezhou, Hubei, China"
   },
   "canonical_name": "Baowu Chengchao Mine",
   "canonical_slug": "baowu-chengchao-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hubei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:44:19.000000Z",
+      "operators": [
+        "China Baowu Steel Group Chengchao Mining Co"
+      ],
+      "owners": [
+        "China Baowu Steel Group"
+      ],
+      "notes": "The mine is fully owned by China Baowu Steel Group through its subsidiary Chengchao Mining Co."
+    }
+  }
 }

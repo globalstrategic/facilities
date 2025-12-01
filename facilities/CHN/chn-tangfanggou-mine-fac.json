@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.646,
-    "lon": 101.892,
+    "lat": 27.645833,
+    "lon": 101.891667,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yanyuan County Zhongya Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.691812Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:42:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tangfanggou_Mine. The Tangfanggou Mine is an iron ore mine located in Liangshan Yi Autonomous Prefecture, Sichuan, China"
   },
   "canonical_name": "Tangfanggou Mine",
   "canonical_slug": "tangfanggou-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:42:22.000000Z",
+      "operators": [
+        "Yanyuan County Zhongya Mining Co Ltd"
+      ],
+      "owners": [
+        "Yanyuan County Zhongya Mining Co Ltd"
+      ],
+      "notes": "Yanyuan County Zhongya Mining Co Ltd owns 100% of the mine."
+    }
+  }
 }

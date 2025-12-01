@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.956,
-    "lon": 113.217,
+    "lat": 37.955791,
+    "lon": 113.217014,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "山西平舒煤业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.649527Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:57:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E5%B9%B3%E8%88%92%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%B8%A9%E5%AE%B6%E5%BA%84%E7%85%A4%E7%9F%BF. The Wenjiazhuang Coal Mine is an underground coal mine located in Shouyang County, Jinzhong City, Shanxi Province, China"
   },
   "canonical_name": "Wenjiazhuang Coal Mine",
   "canonical_slug": "wenjiazhuang-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:57:37.000000Z",
+      "operators": [
+        "山西平舒煤业有限公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Shanxi Pingshu Coal Industry Co., Ltd."
+    }
+  }
 }

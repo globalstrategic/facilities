@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.15,
-    "lon": 88.115,
+    "lat": 43.150432,
+    "lon": 88.115078,
     "precision": "site"
   },
   "types": [
@@ -31,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.588132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:49:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%89%98%E5%85%8B%E9%80%8A%E5%8E%BF%E7%9B%98%E5%90%89%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%85%A4%E7%9F%BF. The Toksun Panji Coal Mine is an underground coal mine located in Toksun County, Turpan City, Xinjiang"
   },
   "canonical_name": "Toksun Panji Coal Mine",
   "canonical_slug": "toksun-panji-coal-mine",
@@ -54,14 +54,18 @@
   "province": "Xinjiang",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T18:00:36.000000Z",
+      "timestamp": "2025-11-30T20:49:38.000000Z",
       "operators": [
         "Toksun County Panji Coal Industry Company"
       ],
       "owners": [
         "Xinjiang Zhongtai Group"
       ],
+<<<<<<< HEAD
       "notes": "The Toksun County Panji Coal Industry Company operates the mine, which is fully owned by Xinjiang Zhongtai Group."
+=======
+      "notes": "The mine is fully owned by Toksun County Panji Coal Industry Company, which is a subsidiary of Xinjiang Zhongtai Group."
+>>>>>>> 607014802c5cd44630a889ec8413e9aa4f2ad898
     }
   }
 }

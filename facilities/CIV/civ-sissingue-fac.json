@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CIV",
   "location": {
-    "lat": 10.431,
-    "lon": -6.183,
+    "lat": 10.697811172557481,
+    "lon": -6.4084029,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Côte d'Ivoire",
+    "Perseus Mining Côte d’Ivoire S.A.",
+    "Perseus Mining Ltd",
+    "Société Minière de Côte d'Ivoire (SOMICI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.460470Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T07:25:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tengrela (https://www.nsenergybusiness.com/projects/sissingue-gold-project/). The Sissingue gold project is located approximately 24 km from the commercial town of Tengrela in northern Côte d'Ivoire"
   },
   "canonical_name": "Sissingue Mine",
   "canonical_slug": "sissingue-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Savanes",
+  "town": "Tengrela",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:25:13.000000Z",
+      "operators": [
+        "Perseus Mining Côte d’Ivoire S.A."
+      ],
+      "owners": [
+        "Perseus Mining Ltd",
+        "Société Minière de Côte d'Ivoire (SOMICI)",
+        "Government of Côte d'Ivoire"
+      ],
+      "notes": "Perseus Mining holds an 86% ownership stake in the Sissingue gold project, with the government owning 10% and SOMICI holding 4%."
+    }
+  }
 }

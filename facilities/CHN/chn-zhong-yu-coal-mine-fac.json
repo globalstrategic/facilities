@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.453,
-    "lon": 112.238,
+    "lat": 36.45315,
+    "lon": 112.238487,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Cinda Asset Management Company",
+    "Shanxi Coking Coal Group",
+    "霍州煤电集团沁安煤电有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.688991Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:42:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%9C%8D%E5%B7%9E%E7%85%A4%E7%94%B5%E9%9B%86%E5%9B%A2%E6%B2%81%E5%AE%89%E7%85%A4%E7%94%B5%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%B8%AD%E5%B3%AA%E7%85%A4%E7%9F%BF. Zhong Yu Coal Mine is a shaft coal mine located in Qinyuan County, Changzhi City, Shanxi Province"
   },
   "canonical_name": "Zhong Yu Coal Mine",
   "canonical_slug": "zhong-yu-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:42:17.000000Z",
+      "operators": [
+        "霍州煤电集团沁安煤电有限责任公司"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group",
+        "China Cinda Asset Management Company"
+      ],
+      "notes": "The mine is operated by Huozhou Coal Electricity Group Qinan Coal Electricity Co., Ltd. and owned by Shanxi Coking Coal Group and China Cinda Asset Management Company."
+    }
+  }
 }

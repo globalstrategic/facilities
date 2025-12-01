@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.345,
-    "lon": 114.222,
+    "lat": 36.344748,
+    "lon": 114.222453,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jizhong Energy Fengfeng Group",
+    "Jizhong Energy Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.724041Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:02:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%80%E4%B8%AD%E8%83%BD%E6%BA%90%E5%B3%B0%E5%B3%B0%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%A2%A7%E6%A1%90%E5%BA%84%E7%9F%BF. The Wutongzhuang Coal Mine is an underground coal mine located in Cixian, Hebei Province, China"
   },
   "canonical_name": "Wutongzhuang Coal Mine",
   "canonical_slug": "wutongzhuang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:02:50.000000Z",
+      "operators": [
+        "Jizhong Energy Fengfeng Group"
+      ],
+      "owners": [
+        "Jizhong Energy Group"
+      ],
+      "notes": "Jizhong Energy Fengfeng Group operates the mine, which is fully owned by Jizhong Energy Group."
+    }
+  }
 }

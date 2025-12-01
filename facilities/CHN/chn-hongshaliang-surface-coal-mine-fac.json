@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.746,
-    "lon": 96.634,
+    "lat": 41.745912,
+    "lon": 96.634134,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "窑街煤电集团酒泉天宝煤业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.808322Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:40:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E7%AA%92%E8%A1%97%E7%85%A4%E7%94%B5%E9%9B%86%E5%9B%A2%E9%85%92%E6%B3%89%E5%A4%A9%E5%AE%9D%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%BA%A2%E6%B2%99%E6%A2%81%E9%9C%B2%E5%A4%A9%E7%9F%BF. The Hongshaliang Surface Coal Mine is an open-pit coal mine located in the Su Bei Mongolian Autonomous County of Jiuquan City, Gansu Province"
   },
   "canonical_name": "Hongshaliang Surface Coal Mine",
   "canonical_slug": "hongshaliang-surface-coal-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "甘肃省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:40:02.000000Z",
+      "operators": [
+        "窑街煤电集团酒泉天宝煤业有限公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by the Jiuquan Tianbao Coal Industry Co., Ltd., which is part of the Yaojie Coal and Electricity Group."
+    }
+  }
 }

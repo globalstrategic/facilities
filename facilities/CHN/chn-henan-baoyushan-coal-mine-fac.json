@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.352,
-    "lon": 112.641,
+    "lat": 34.352132,
+    "lon": 112.640824,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Henan Baoyushan Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.713851Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:30:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%B2%B3%E5%8D%97%E5%AE%9D%E9%9B%A8%E5%B1%B1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%9D%E9%9B%A8%E5%B1%B1%E7%85%A4%E7%9F%BF. The Henan Baoyushan Coal Mine is an underground coal mine located in Baisha Town, Yichuan County, Henan Province"
   },
   "canonical_name": "Henan Baoyushan Coal Mine",
   "canonical_slug": "henan-baoyushan-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:30:29.000000Z",
+      "operators": [
+        "Henan Baoyushan Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Henan Baoyushan Coal Industry Co Ltd"
+      ],
+      "notes": "The mine is operated and owned by Henan Baoyushan Coal Industry Co Ltd."
+    }
+  }
 }

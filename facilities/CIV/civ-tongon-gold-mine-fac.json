@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 10.99860373942694,
+    "lon": -4.016107,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Atlantic Group",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:35.945072",
-      "evidence": "Extracted from operator column: Atlantic Group (formerly Barrick Gold)"
-    }
+    "Atlantic Group",
+    "Barrick Mining Corporation",
+    "Ivorian investors",
+    "Société des Mines de Tongon SA",
+    "State of Côte d'Ivoire"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.460311Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T07:25:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://www.barrick.com/English/operations/tongon/default.aspx). The Tongon Gold Mine is located 628 kilometers north of Abidjan, within the Nielle mining permit"
   },
   "canonical_name": "Tongon Gold Mine",
   "canonical_slug": "tongon-gold-mine",
@@ -66,5 +63,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Côte d'Ivoire",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:25:52.000000Z",
+      "operators": [
+        "Barrick Mining Corporation",
+        "Société des Mines de Tongon SA"
+      ],
+      "owners": [
+        "Barrick Mining Corporation",
+        "State of Côte d'Ivoire",
+        "Ivorian investors"
+      ],
+      "notes": "Barrick holds an 89.7% interest in the mine, with the State of Côte d'Ivoire owning 10% and local investors holding 0.3%."
+    }
+  }
 }

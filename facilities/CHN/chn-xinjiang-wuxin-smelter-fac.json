@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.966,
-    "lon": 87.711,
+    "lat": 44.639326057350075,
+    "lon": 88.275146,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xinjiang Wuxin Copper Industry Company Limited",
+    "Xinjiang Xinxin Mining Industry Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.871392Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:14:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fukang (https://www.industrialinfo.com/news/article/eia-of-xinjiang-wuxin-copper-industrys-fukang-smelter-calls-for-third-public-participation--231494). The Xinjiang Wuxin smelter is located in Fukang, Xinjiang, approximately 15 km from the town center"
   },
   "canonical_name": "Xinjiang Wuxin Smelter",
   "canonical_slug": "xinjiang-wuxin-smelter",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "town": "Fukang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:14:36.000000Z",
+      "operators": [
+        "Xinjiang Wuxin Copper Industry Company Limited"
+      ],
+      "owners": [
+        "Xinjiang Xinxin Mining Industry Company Limited"
+      ],
+      "notes": "Wuxin Copper is 66% controlled by Xinjiang Xinxin Mining."
+    }
+  }
 }

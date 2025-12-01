@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.279,
-    "lon": 110.184,
+    "lat": 39.278553,
+    "lon": 110.183639,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy",
+    "Shendong Tianlong Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.632957Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:01:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E7%A5%9E%E4%B8%9C%E5%A4%A9%E9%9A%86%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%AD%A6%E5%AE%B6%E5%A1%94%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. Wujiata Surface Mine is an open-pit coal mine with a production capacity of 3 million tons per year"
   },
   "canonical_name": "Wujiata Surface Mine",
   "canonical_slug": "wujiata-surface-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:01:20.000000Z",
+      "operators": [
+        "Shendong Tianlong Group"
+      ],
+      "owners": [
+        "China Energy"
+      ],
+      "notes": "The mine is owned by China Energy and operated by Shendong Tianlong Group."
+    }
+  }
 }

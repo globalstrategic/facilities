@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CIV",
   "location": {
-    "lat": 9.935,
-    "lon": -5.709,
+    "lat": 10.99860373942694,
+    "lon": -4.016107,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Mining Corporation",
+    "Ivorian investors",
+    "Société des Mines de Tongon SA",
+    "State of Côte d'Ivoire"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.459666Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:25:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://www.barrick.com/English/operations/tongon/default.aspx). The Tongon gold mine is located within the Nielle mining permit, 628 kilometers north of Abidjan"
   },
   "canonical_name": "Tongon Mine",
   "canonical_slug": "tongon-mine",
@@ -51,5 +56,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Savanes District",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:25:39.000000Z",
+      "operators": [
+        "Barrick Mining Corporation"
+      ],
+      "owners": [
+        "Société des Mines de Tongon SA",
+        "Barrick Mining Corporation",
+        "State of Côte d'Ivoire",
+        "Ivorian investors"
+      ],
+      "notes": "Barrick holds an 89.7% interest in the mine, with the State of Côte d'Ivoire owning 10% and Ivorian investors holding 0.3%."
+    }
+  }
 }

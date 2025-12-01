@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.551,
-    "lon": 123.3,
+    "lat": 41.544628,
+    "lon": 123.305099,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shenyang Coal Industry Group",
+    "Shenyang Coking Coal Company Hongyang No.2 Coal Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.765860Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:41:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%B2%88%E9%98%B3%E7%84%A6%E7%85%A4%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%BA%A2%E9%98%B3%E4%BA%8C%E7%9F%BF. The Hongyang No. 2 Coal Mine is an underground coal mine located in the Sujiatun District of Shenyang, Liaoning Province"
   },
   "canonical_name": "Hongyang No 2 Coal Mine",
   "canonical_slug": "hongyang-no-2-coal-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:41:32.000000Z",
+      "operators": [
+        "Shenyang Coking Coal Company Hongyang No.2 Coal Mine"
+      ],
+      "owners": [
+        "Shenyang Coal Industry Group"
+      ],
+      "notes": "The mine is operated by Shenyang Coking Coal Company, which is a subsidiary of Shenyang Coal Industry Group."
+    }
+  }
 }

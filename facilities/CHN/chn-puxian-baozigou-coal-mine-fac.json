@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.234,
-    "lon": 111.266,
+    "lat": 36.234356,
+    "lon": 111.265782,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coal Import and Export Group Puxian Baozigou Coal Industry Co Ltd",
+    "Shanxi Coking Coal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.698865Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:51:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%9B%E5%87%BA%E5%8F%A3%E9%9B%86%E5%9B%A2%E8%92%B2%E5%8E%BF%E8%B1%B9%E5%AD%90%E6%B2%9F%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Puxian Baozigou Coal Mine is an underground coal mine located in the village of Niangou, Heilongguan Town, Pu County, Linfen City, Shanxi Province"
   },
   "canonical_name": "Puxian Baozigou Coal Mine",
   "canonical_slug": "puxian-baozigou-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:51:13.000000Z",
+      "operators": [
+        "Shanxi Coal Import and Export Group Puxian Baozigou Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Coal Import and Export Group and owned by Shanxi Coking Coal Group."
+    }
+  }
 }

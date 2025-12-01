@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.952,
-    "lon": 115.911,
+    "lat": 43.954677,
+    "lon": 115.91126,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chaoyang Hongwen Investment Company",
+    "China Energy",
+    "Xilin Gol Mengdong Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.843206Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:27:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%94%A1%E6%9E%97%E9%83%AD%E5%8B%92%E7%9B%9F%E8%92%99%E4%B8%9C%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E8%83%9C%E5%88%A9%E8%A5%BF%E4%BA%8C%E5%8F%B7%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Shengli West No.2 Coal Mine is an open-pit coal mine operated by Xilin Gol Mengdong Mining Company"
   },
   "canonical_name": "Shengli West No 2 Coal Mine",
   "canonical_slug": "shengli-west-no-2-coal-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:27:19.000000Z",
+      "operators": [
+        "Xilin Gol Mengdong Mining Company"
+      ],
+      "owners": [
+        "China Energy",
+        "Chaoyang Hongwen Investment Company"
+      ],
+      "notes": "Xilin Gol Mengdong Mining Company operates the mine, which is owned by China Energy (51%) and Chaoyang Hongwen Investment Company (49%)."
+    }
+  }
 }

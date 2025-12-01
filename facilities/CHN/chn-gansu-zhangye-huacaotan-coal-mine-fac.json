@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.59,
-    "lon": 101.43,
+    "lat": 38.59004,
+    "lon": 101.429648,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zhangye City Hongneng Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.798255Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:04:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%BC%A0%E6%8E%96%E5%B8%82%E5%AE%8F%E8%83%BD%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%8A%B1%E8%8D%89%E6%BB%A9%E7%85%A4%E7%9F%BF. The Gansu Zhangye Huacaotan Coal Mine is located in Shandan County, Zhangye City, Gansu Province"
   },
   "canonical_name": "Gansu Zhangye Huacaotan Coal Mine",
   "canonical_slug": "gansu-zhangye-huacaotan-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:04:45.000000Z",
+      "operators": [
+        "Zhangye City Hongneng Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Zhangye City Hongneng Coal Industry Co Ltd"
+      ],
+      "notes": "The mine is operated and owned by Zhangye City Hongneng Coal Industry Co Ltd."
+    }
+  }
 }

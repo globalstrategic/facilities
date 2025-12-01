@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.398,
-    "lon": 104.985,
+    "lat": 26.397868,
+    "lon": 104.985349,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Shuicheng Mining Co Ltd",
+    "Guizhou Shuikuang Holding Group Co Ltd",
+    "Guizhou Water City Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.754775Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:34:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E6%B0%B4%E5%9F%8E%E7%9F%BF%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%B0%B4%E5%9F%8E%E5%8E%BF%E7%B1%B3%E7%AE%A9%E7%85%A4%E7%9F%BF. The Shuicheng Miluo Coal Mine is an underground coal mine located in the village of Luoma, Shuicheng County, Liupanshui City, Guizhou Province"
   },
   "canonical_name": "Shuicheng Miluo Coal Mine",
   "canonical_slug": "shuicheng-miluo-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:34:48.000000Z",
+      "operators": [
+        "Guizhou Shuicheng Mining Co Ltd",
+        "Guizhou Water City Mining Co Ltd"
+      ],
+      "owners": [
+        "Guizhou Shuikuang Holding Group Co Ltd"
+      ],
+      "notes": "The mine is operated by Guizhou Shuicheng Mining Co Ltd, which is a subsidiary of Guizhou Water City Mining Co Ltd."
+    }
+  }
 }

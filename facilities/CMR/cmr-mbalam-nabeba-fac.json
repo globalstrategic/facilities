@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 2.223633,
+    "lon": 13.817843,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,12 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Cameroon Mining Company",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.493257",
-      "evidence": "Extracted from operator column: Cameroon Mining Company (CMC)"
-    }
+    "Aust-Sino Resources Group Ltd",
+    "Cameroon Mining Company",
+    "Sichuan Hanlong Group Co Ltd",
+    "Sundance Resources Ltd",
+    "natural person(s)",
+    "small shareholder(s)"
   ],
   "products": [],
   "sources": [
@@ -32,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.018450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T07:39:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sundance_Resources_Mbalam_(Mbarga)_Mine. Coordinates are approximate for the Mbalam-Nabeba iron ore project"
   },
   "canonical_name": "Mbalam Nabeba Mine",
   "canonical_slug": "mbalam-nabeba-mine",
@@ -59,5 +57,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:39:28.000000Z",
+      "operators": [
+        "Sundance Resources Ltd"
+      ],
+      "owners": [
+        "Sichuan Hanlong Group Co Ltd",
+        "Aust-Sino Resources Group Ltd",
+        "small shareholder(s)",
+        "natural person(s)"
+      ],
+      "notes": "Sundance Resources Ltd is the primary operator, with various shareholders including Sichuan Hanlong Group Co Ltd and Aust-Sino Resources Group Ltd."
+    }
+  }
 }
