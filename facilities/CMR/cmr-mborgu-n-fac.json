@@ -1,6 +1,6 @@
 {
   "facility_id": "cmr-mborgu-n-fac",
-  "name": "**Mborguéné**",
+  "name": "**MborguÃ©nÃ©**",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
@@ -14,14 +14,7 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "CAMINCO S.A.",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.495010",
-      "evidence": "Extracted from operator column: CAMINCO S.A."
-    }
+    "CAMINCO S.A."
   ],
   "products": [],
   "sources": [
@@ -38,9 +31,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Mborguéné Mine",
+  "canonical_name": "MborguÃ©nÃ© Mine",
   "canonical_slug": "mborguene-mine",
-  "display_name": "Mborguéné",
+  "display_name": "MborguÃ©nÃ©",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -53,11 +46,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mborguéné** Mine",
+      "name": "**MborguÃ©nÃ©** Mine",
       "from": "2025-10-27T14:11:30.495012",
       "to": "2025-11-04T19:19:08.019095Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:39:45.000000Z",
+      "operators": [
+        "CAMINCO S.A."
+      ],
+      "owners": [],
+      "notes": "CAMINCO S.A. is authorized to operate the Bétaré Oya mine for gold."
+    }
+  }
 }

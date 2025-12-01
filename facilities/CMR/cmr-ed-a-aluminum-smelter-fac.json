@@ -1,6 +1,6 @@
 {
   "facility_id": "cmr-ed-a-aluminum-smelter-fac",
-  "name": "**Edéa Aluminum Smelter**",
+  "name": "**EdÃ©a Aluminum Smelter**",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Alucam",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.495996",
-      "evidence": "Extracted from operator column: Alucam"
-    }
+    "Alcan Inc.",
+    "Alucam",
+    "Government of Cameroon",
+    "Societe Camérounaise d’Aluminium (Alucam)"
   ],
   "products": [],
   "sources": [
@@ -38,9 +34,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Edéa Aluminum Smelter",
+  "canonical_name": "EdÃ©a Aluminum Smelter",
   "canonical_slug": "edea-aluminum-smelter",
-  "display_name": "Edéa Aluminum",
+  "display_name": "EdÃ©a Aluminum",
   "primary_type": "smelter",
   "type_confidence": 1.0,
   "data_quality": {
@@ -53,11 +49,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Edéa Aluminum ** Smelter",
+      "name": "**EdÃ©a Aluminum ** Smelter",
       "from": "2025-10-27T14:11:30.495999",
       "to": "2025-11-04T19:19:08.019258Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Littoral",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:38:41.000000Z",
+      "operators": [
+        "Societe Camérounaise d’Aluminium (Alucam)"
+      ],
+      "owners": [
+        "Alcan Inc.",
+        "Government of Cameroon"
+      ],
+      "notes": "Alcan Inc. and the Government of Cameroon each own a 46.7% interest in Alucam."
+    }
+  }
 }

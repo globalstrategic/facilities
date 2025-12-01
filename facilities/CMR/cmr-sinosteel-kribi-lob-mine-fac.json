@@ -1,11 +1,11 @@
 {
   "facility_id": "cmr-sinosteel-kribi-lob-mine-fac",
-  "name": "Sinosteel Kribi LobÃ© Mine",
+  "name": "Sinosteel Kribi LobÃƒÂ© Mine",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": 2.6,
-    "lon": 10.0,
+    "lat": 2.599911,
+    "lon": 10.000005,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sinosteel Cam S.A.",
+    "Sinosteel Corporation Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,15 +32,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.021092Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T07:42:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sinosteel_Kribi-Lob%C3%A9_Mine. The Sinosteel Kribi Lobé Mine is an iron ore mining facility located in Kribi, South Province, Cameroon"
   },
-  "canonical_name": "Sinosteel Kribi Lobã Mine",
+  "canonical_name": "Sinosteel Kribi LobÃ£ Mine",
   "canonical_slug": "sinosteel-kribi-loba-mine",
-  "display_name": "Sinosteel Kribi Lobã",
+  "display_name": "Sinosteel Kribi LobÃ£",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -50,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "Sinosteel Kribi Lobé Mine",
+      "name": "Sinosteel Kribi LobÃ© Mine",
       "from": "2025-10-20T15:29:18.756874",
       "to": "2025-11-04T19:19:08.021089Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:42:08.000000Z",
+      "operators": [
+        "Sinosteel Cam S.A."
+      ],
+      "owners": [
+        "Sinosteel Corporation Ltd"
+      ],
+      "notes": "Sinosteel Cam S.A. is a subsidiary of the state-owned Sinosteel Corporation Ltd."
+    }
+  }
 }

@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Camalco",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.493149",
-      "evidence": "Extracted from operator column: Camalco (Canyon Resources)"
-    }
+    "Camalco",
+    "Camalco Cameroon",
+    "Canyon Resources Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Adamawa Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:39:54.000000Z",
+      "operators": [
+        "Canyon Resources Ltd."
+      ],
+      "owners": [
+        "Camalco Cameroon"
+      ],
+      "notes": "Camalco is the local subsidiary of Canyon Resources, holding 100% ownership of the project."
+    }
+  }
 }

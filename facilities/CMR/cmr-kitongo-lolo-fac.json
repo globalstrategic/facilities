@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Lion Rock Minerals",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.495268",
-      "evidence": "Extracted from operator column: Lion Rock Minerals (prev. Peak)"
-    }
+    "Lion Rock Minerals",
+    "Lion Rock Minerals Ltd",
+    "Mega Uranium Ltd",
+    "Peak Minerals"
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:38:53.000000Z",
+      "operators": [
+        "Lion Rock Minerals Ltd",
+        "Peak Minerals"
+      ],
+      "owners": [
+        "Mega Uranium Ltd"
+      ],
+      "notes": "Lion Rock Minerals Ltd is engaged in exploration and development, while Peak Minerals has acquired an 80% interest in the Kitongo and Lolo projects."
+    }
+  }
 }
