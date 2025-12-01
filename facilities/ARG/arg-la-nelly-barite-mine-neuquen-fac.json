@@ -1,0 +1,59 @@
+{
+  "facility_id": "arg-la-nelly-barite-mine-neuquen-fac",
+  "name": "La Nelly Barite Mine",
+  "aliases": [
+    "Mina La Nelly (baritina)",
+    "La Nelly, Loncopue"
+  ],
+  "country_iso3": "ARG",
+  "province": "Neuquén",
+  "location": {
+    "lat": -37.89,
+    "lon": -70.05,
+    "precision": "district"
+  },
+  "types": [
+    "mine"
+  ],
+  "primary_type": "mine",
+  "commodities": [
+    {
+      "metal": "baryte",
+      "primary": true
+    },
+    {
+      "metal": "celestine",
+      "primary": false
+    }
+  ],
+  "status": "historic",
+  "parent_district_id": "arg-churriaca-t-g-san-juan-la-nelly-fac",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "manual_entry",
+      "id": "barite_district_split",
+      "date": "2025-12-01T00:00:00.000000Z",
+      "notes": "Created from district split. Individual mine within Chorriaca Barite District."
+    }
+  ],
+  "verification": {
+    "status": "llm_validated",
+    "confidence": 0.4,
+    "last_checked": "2025-12-01T00:00:00.000000Z",
+    "checked_by": "manual_correction",
+    "notes": "Historic barite(-celestine) concession in the Neuquen barite belt (district around Chorriaca / Loncopue). Individual claim mentioned in provincial mining bulletins; no modern operator disclosed."
+  },
+  "canonical_name": "La Nelly Barite Mine",
+  "canonical_slug": "la-nelly-barite-mine-neuquen",
+  "display_name": "La Nelly Barite Mine",
+  "display_name_source": "manual",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.4,
+    "flags": {
+      "operator_unresolved": true
+    }
+  }
+}

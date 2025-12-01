@@ -1,23 +1,33 @@
 {
   "facility_id": "arg-churriaca-t-g-san-juan-la-nelly-fac",
-  "name": "Churriaca T.G., San Juan, La Nelly",
-  "aliases": [],
+  "name": "Chorriaca Barite District",
+  "aliases": [
+    "Churriaca T.G., San Juan, La Nelly",
+    "Chorriaca Barite District",
+    "Casa Nuestra Barite District"
+  ],
   "country_iso3": "ARG",
+  "province": "Neuquén",
   "location": {
-    "lat": -37.864,
-    "lon": -70.025,
-    "precision": "site"
+    "lat": -37.901389,
+    "lon": -70.065556,
+    "precision": "district"
   },
   "types": [
-    "mine"
+    "district"
   ],
+  "primary_type": "district",
   "commodities": [
     {
       "metal": "baryte",
       "primary": true
+    },
+    {
+      "metal": "celestine",
+      "primary": false
     }
   ],
-  "status": "unknown",
+  "status": "historic",
   "company_mentions": [],
   "products": [],
   "sources": [
@@ -25,26 +35,30 @@
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:26:24.711148"
+    },
+    {
+      "type": "manual_correction",
+      "id": "barite_district_restructure",
+      "date": "2025-12-01T00:00:00.000000Z",
+      "notes": "Converted from single mine to district. Coords from Hoja Geologica 3769-31 Chorriaca (baritina Churriaca T.G., Casa Nuestra 70°03'56\"W 37°54'05\"S). Individual mines split into separate facilities."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.177675Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_validated",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T00:00:00.000000Z",
+    "checked_by": "manual_correction",
+    "notes": "Barite-celestine district near Chorriaca (Casa Nuestra), incl. Churriaca T.G., San Juan, La Nelly etc. Coordinates from Hoja Geologica 3769-31 Chorriaca (baritina Churriaca T.G.). No modern industrial operator identified."
   },
-  "canonical_name": "Churriaca T G , San Juan, La Nelly Mine",
-  "canonical_slug": "churriaca-t-g-san-juan-la-nelly-mine",
-  "display_name": "Churriaca T G , San Juan, La Nelly",
-  "primary_type": "mine",
+  "canonical_name": "Chorriaca Barite District",
+  "canonical_slug": "chorriaca-barite-district",
+  "display_name": "Chorriaca Barite District",
+  "display_name_source": "manual",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.7,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": false,
-      "canonical_name_incomplete": true
+      "operator_unresolved": true
     }
   },
   "canonical_name_history": [
@@ -53,7 +67,12 @@
       "from": "2025-10-20T15:26:24.711153",
       "to": "2025-11-04T19:19:01.177670Z",
       "reason": "data_correction"
+    },
+    {
+      "name": "Churriaca T G , San Juan, La Nelly Mine",
+      "from": "2025-11-04T19:19:01.177670Z",
+      "to": "2025-12-01T00:00:00.000000Z",
+      "reason": "data_correction"
     }
-  ],
-  "display_name_source": "auto"
+  ]
 }

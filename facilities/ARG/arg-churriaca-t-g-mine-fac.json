@@ -1,0 +1,60 @@
+{
+  "facility_id": "arg-churriaca-t-g-mine-fac",
+  "name": "Churriaca T.G. Barite Mine",
+  "aliases": [
+    "Churriaca T.G.",
+    "Churriaca Barite",
+    "Baritina Churriaca T.G."
+  ],
+  "country_iso3": "ARG",
+  "province": "Neuquén",
+  "location": {
+    "lat": -37.901389,
+    "lon": -70.065556,
+    "precision": "district"
+  },
+  "types": [
+    "mine"
+  ],
+  "primary_type": "mine",
+  "commodities": [
+    {
+      "metal": "baryte",
+      "primary": true
+    },
+    {
+      "metal": "celestine",
+      "primary": false
+    }
+  ],
+  "status": "historic",
+  "parent_district_id": "arg-churriaca-t-g-san-juan-la-nelly-fac",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "manual_entry",
+      "id": "barite_district_split",
+      "date": "2025-12-01T00:00:00.000000Z",
+      "notes": "Created from district split. Individual mine within Chorriaca Barite District."
+    }
+  ],
+  "verification": {
+    "status": "llm_validated",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T00:00:00.000000Z",
+    "checked_by": "manual_correction",
+    "notes": "Matches 'Baritina Churriaca T.G., Casa Nuestra' in Hoja Geologica 3769-31 Chorriaca (Neuquen) with open pit and underground workings; barite-celestine, no active operator."
+  },
+  "canonical_name": "Churriaca T.G. Barite Mine",
+  "canonical_slug": "churriaca-t-g-barite-mine",
+  "display_name": "Churriaca T.G.",
+  "display_name_source": "manual",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.7,
+    "flags": {
+      "operator_unresolved": true
+    }
+  }
+}

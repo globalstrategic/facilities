@@ -522,11 +522,32 @@ def interactive_review_extraction(
 
     name = facility.get("name", "")
     facility_id = facility.get("facility_id", "")
+    country_iso3 = facility.get("country_iso3", "")
+
+    # Get existing facility data
+    existing_location = facility.get("location", {})
+    existing_lat = existing_location.get("lat")
+    existing_lon = existing_location.get("lon")
+    existing_companies = facility.get("company_mentions", [])
+    existing_status = facility.get("status", "unknown")
 
     print(f"\n{'='*70}")
     print(f"REVIEW: {name}")
     print(f"ID: {facility_id}")
+    print(f"Country: {country_iso3}")
     print('='*70)
+
+    # Show existing facility data first
+    print("\n📂 EXISTING DATA:")
+    if existing_lat and existing_lon:
+        print(f"  Coordinates: {existing_lat:.6f}, {existing_lon:.6f}")
+    else:
+        print(f"  Coordinates: MISSING ⚠️")
+    if existing_companies:
+        print(f"  Companies: {', '.join(existing_companies[:3])}")
+    else:
+        print(f"  Companies: MISSING")
+    print(f"  Status: {existing_status}")
 
     # Initialize result from extraction or empty
     result = extraction.copy() if extraction else {
@@ -535,53 +556,69 @@ def interactive_review_extraction(
         "companies": {"operators": [], "owners": []},
     }
 
-    # Show what was found
-    print("\n📋 EXTRACTED DATA:")
-
+    # Show what was found from web search
     lat = result.get("lat")
     lon = result.get("lon")
-    if lat and lon:
-        print(f"  Coordinates: {lat:.6f}, {lon:.6f}")
-    else:
-        print(f"  Coordinates: NOT FOUND")
-
     companies = result.get("companies", {})
     operators = companies.get("operators", [])
     owners = companies.get("owners", [])
-    if operators or owners:
-        print(f"  Operators: {', '.join(operators) if operators else 'None'}")
-        print(f"  Owners: {', '.join(owners) if owners else 'None'}")
-    else:
-        print(f"  Companies: NOT FOUND")
-
     status = result.get("status", "unknown")
-    print(f"  Status: {status}")
-
     confidence = result.get("confidence", 0.0)
-    print(f"  Confidence: {confidence:.0%}")
+
+    nothing_found = not lat and not lon and not operators and not owners
+
+    if nothing_found:
+        print("\n🔍 WEB SEARCH: Nothing found")
+    else:
+        print("\n🔍 WEB SEARCH FOUND:")
+        if lat and lon:
+            print(f"  Coordinates: {lat:.6f}, {lon:.6f}")
+        if operators or owners:
+            print(f"  Operators: {', '.join(operators) if operators else 'None'}")
+            print(f"  Owners: {', '.join(owners) if owners else 'None'}")
+        if status != "unknown":
+            print(f"  Status: {status}")
+        print(f"  Confidence: {confidence:.0%}")
 
     if result.get("notes"):
         print(f"  Notes: {result['notes']}")
 
-    # Ask if user wants to process this facility
-    print()
-    action = validator.ask_user(
-        "What would you like to do?",
-        ["Accept as-is", "Edit/Add data", "Skip this facility"],
-        default="Accept as-is" if confidence >= 0.7 else "Edit/Add data"
-    )
+    # Determine if we need manual input
+    needs_coords = not lat and not lon and not existing_lat
+    needs_companies = not operators and not owners and not existing_companies
 
-    if action == "Skip this facility":
-        print("  → Skipped")
-        return None
+    # If nothing found and missing critical data, go straight to manual input
+    if nothing_found and needs_coords:
+        print("\n⚠️  NO DATA FOUND - Manual input required for coordinates")
+        action = validator.ask_user(
+            "What would you like to do?",
+            ["Enter data manually", "Skip this facility"],
+            default="Enter data manually"
+        )
+        if action == "Skip this facility":
+            print("  → Skipped")
+            return None
+        action = "Edit/Add data"  # Force edit mode
+    else:
+        # Ask if user wants to process this facility
+        print()
+        action = validator.ask_user(
+            "What would you like to do?",
+            ["Accept as-is", "Edit/Add data", "Skip this facility"],
+            default="Accept as-is" if confidence >= 0.7 else "Edit/Add data"
+        )
 
-    if action == "Edit/Add data":
+        if action == "Skip this facility":
+            print("  → Skipped")
+            return None
+
+    if action == "Edit/Add data" or action == "Enter data manually":
         print("\n📝 MANUAL INPUT (press Enter to keep current value)")
         print("-"*50)
 
-        # Coordinates
+        # Coordinates - directly prompt when missing
         if lat and lon:
-            print(f"  Current coords: {lat:.6f}, {lon:.6f}")
+            print(f"  Extracted coords: {lat:.6f}, {lon:.6f}")
             if validator.confirm("Change coordinates?", default=False):
                 new_lat = validator.get_text_input("Latitude", default=str(lat))
                 new_lon = validator.get_text_input("Longitude", default=str(lon))
@@ -591,61 +628,151 @@ def interactive_review_extraction(
                     print(f"  → Updated to: {result['lat']:.6f}, {result['lon']:.6f}")
                 except (ValueError, TypeError):
                     print("  → Invalid format, keeping original")
+        elif existing_lat and existing_lon:
+            print(f"  Using existing coords: {existing_lat:.6f}, {existing_lon:.6f}")
+            if validator.confirm("Change coordinates?", default=False):
+                new_lat = validator.get_text_input("Latitude", default=str(existing_lat))
+                new_lon = validator.get_text_input("Longitude", default=str(existing_lon))
+                try:
+                    result["lat"] = float(new_lat)
+                    result["lon"] = float(new_lon)
+                    print(f"  → Updated to: {result['lat']:.6f}, {result['lon']:.6f}")
+                except (ValueError, TypeError):
+                    print("  → Invalid format, keeping existing")
         else:
-            print("  No coordinates found.")
-            if validator.confirm("Enter coordinates manually?", default=True):
-                new_lat = validator.get_text_input("Latitude")
-                new_lon = validator.get_text_input("Longitude")
-                if new_lat and new_lon:
-                    try:
-                        result["lat"] = float(new_lat)
-                        result["lon"] = float(new_lon)
-                        result["confidence"] = 0.9  # High confidence for manual entry
-                        print(f"  → Set to: {result['lat']:.6f}, {result['lon']:.6f}")
-                    except (ValueError, TypeError):
-                        print("  → Invalid format, skipping coordinates")
+            # No coordinates anywhere - must enter manually
+            print("  ⚠️  COORDINATES REQUIRED")
+            print("  Tip: Search Google Maps for the facility name + country")
+            new_lat = validator.get_text_input("Latitude (required)")
+            new_lon = validator.get_text_input("Longitude (required)")
+            if new_lat and new_lon:
+                try:
+                    result["lat"] = float(new_lat)
+                    result["lon"] = float(new_lon)
+                    result["confidence"] = 0.9  # High confidence for manual entry
+                    print(f"  → Set to: {result['lat']:.6f}, {result['lon']:.6f}")
+                except (ValueError, TypeError):
+                    print("  → Invalid format - coordinates not set")
+            else:
+                print("  → No coordinates provided")
 
-        # Companies
+        # Companies - use existing as defaults if nothing from web search
         print()
-        current_ops = ', '.join(operators) if operators else 'None'
-        print(f"  Current operators: {current_ops}")
-        new_ops = validator.get_text_input("Operators (comma-separated)", default=current_ops if operators else None)
-        if new_ops and new_ops != 'None':
+        default_ops = operators if operators else existing_companies[:3] if existing_companies else []
+        current_ops = ', '.join(default_ops) if default_ops else ''
+        print(f"  Current operators: {current_ops if current_ops else 'None'}")
+        new_ops = validator.get_text_input("Operators (comma-separated)", default=current_ops if current_ops else None)
+        if new_ops:
             result.setdefault("companies", {})["operators"] = [op.strip() for op in new_ops.split(",") if op.strip()]
 
-        current_owners = ', '.join(owners) if owners else 'None'
-        print(f"  Current owners: {current_owners}")
-        new_owners = validator.get_text_input("Owners (comma-separated)", default=current_owners if owners else None)
-        if new_owners and new_owners != 'None':
+        default_owners = owners if owners else []
+        current_owners = ', '.join(default_owners) if default_owners else ''
+        print(f"  Current owners: {current_owners if current_owners else 'None'}")
+        new_owners = validator.get_text_input("Owners (comma-separated)", default=current_owners if current_owners else None)
+        if new_owners:
             result.setdefault("companies", {})["owners"] = [ow.strip() for ow in new_owners.split(",") if ow.strip()]
 
         # Status
         print()
+        default_status = status if status != "unknown" else existing_status if existing_status != "unknown" else "operating"
         new_status = validator.ask_user(
-            f"Facility status? (current: {status})",
+            f"Facility status?",
             ["operating", "closed", "care_and_maintenance", "development", "unknown"],
-            default=status if status != "unknown" else "operating"
+            default=default_status
         )
         result["status"] = new_status
 
-    # Final confirmation
-    print("\n" + "="*70)
-    print("FINAL DATA TO SAVE:")
-    print("="*70)
-    if result.get("lat") and result.get("lon"):
-        print(f"  Coordinates: {result['lat']:.6f}, {result['lon']:.6f}")
-    companies = result.get("companies", {})
-    if companies.get("operators") or companies.get("owners"):
-        print(f"  Operators: {', '.join(companies.get('operators', []))}")
-        print(f"  Owners: {', '.join(companies.get('owners', []))}")
-    print(f"  Status: {result.get('status', 'unknown')}")
+    # Final confirmation with edit loop
+    while True:
+        print("\n" + "="*70)
+        print("FINAL DATA TO SAVE:")
+        print("="*70)
 
-    if validator.confirm("Save these changes?", default=True):
-        result["found"] = True
-        return result
-    else:
-        print("  → Cancelled")
-        return None
+        has_new_coords = result.get("lat") is not None and result.get("lon") is not None
+        has_any_coords = has_new_coords or (existing_lat is not None and existing_lon is not None)
+
+        if has_new_coords:
+            print(f"  [1] Coordinates: {result['lat']:.6f}, {result['lon']:.6f}")
+        elif has_any_coords:
+            print(f"  [1] Coordinates: (keeping existing: {existing_lat:.6f}, {existing_lon:.6f})")
+        else:
+            print(f"  [1] Coordinates: ⚠️  STILL MISSING")
+
+        companies = result.get("companies", {})
+        ops_list = companies.get("operators", [])
+        owners_list = companies.get("owners", [])
+        if ops_list or owners_list:
+            print(f"  [2] Operators: {', '.join(ops_list) if ops_list else 'None'}")
+            print(f"  [3] Owners: {', '.join(owners_list) if owners_list else 'None'}")
+        elif existing_companies:
+            print(f"  [2] Operators: (keeping existing)")
+            print(f"  [3] Owners: {', '.join(existing_companies[:3])}")
+        else:
+            print(f"  [2] Operators: None")
+            print(f"  [3] Owners: None")
+
+        print(f"  [4] Status: {result.get('status', 'unknown')}")
+
+        # Warn if coords still missing
+        if not has_any_coords:
+            print("\n  ⚠️  WARNING: Coordinates still missing!")
+
+        print()
+        action = validator.ask_user(
+            "What would you like to do?",
+            ["Save", "Edit coordinates", "Edit operators", "Edit owners", "Edit status", "Skip/Cancel"],
+            default="Save"
+        )
+
+        if action == "Save":
+            result["found"] = True
+            return result
+
+        elif action == "Skip/Cancel":
+            print("  → Cancelled")
+            return None
+
+        elif action == "Edit coordinates":
+            current_lat = result.get("lat") or existing_lat
+            current_lon = result.get("lon") or existing_lon
+            default_lat = str(current_lat) if current_lat else None
+            default_lon = str(current_lon) if current_lon else None
+            new_lat = validator.get_text_input("Latitude", default=default_lat)
+            new_lon = validator.get_text_input("Longitude", default=default_lon)
+            if new_lat and new_lon:
+                try:
+                    result["lat"] = float(new_lat)
+                    result["lon"] = float(new_lon)
+                    print(f"  → Updated to: {result['lat']:.6f}, {result['lon']:.6f}")
+                except (ValueError, TypeError):
+                    print("  → Invalid format, not changed")
+
+        elif action == "Edit operators":
+            current = ', '.join(ops_list) if ops_list else ''
+            new_ops = validator.get_text_input("Operators (comma-separated)", default=current if current else None)
+            if new_ops:
+                result.setdefault("companies", {})["operators"] = [op.strip() for op in new_ops.split(",") if op.strip()]
+            else:
+                result.setdefault("companies", {})["operators"] = []
+            print(f"  → Updated operators")
+
+        elif action == "Edit owners":
+            current = ', '.join(owners_list) if owners_list else ''
+            new_owners = validator.get_text_input("Owners (comma-separated)", default=current if current else None)
+            if new_owners:
+                result.setdefault("companies", {})["owners"] = [ow.strip() for ow in new_owners.split(",") if ow.strip()]
+            else:
+                result.setdefault("companies", {})["owners"] = []
+            print(f"  → Updated owners")
+
+        elif action == "Edit status":
+            new_status = validator.ask_user(
+                "Facility status?",
+                ["operating", "closed", "care_and_maintenance", "development", "unknown"],
+                default=result.get("status", "operating")
+            )
+            result["status"] = new_status
+            print(f"  → Updated status to: {new_status}")
 
 
 def update_facility_json(facility: Dict, location: Dict) -> bool:

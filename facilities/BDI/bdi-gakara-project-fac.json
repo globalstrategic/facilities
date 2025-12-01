@@ -6,8 +6,8 @@
   ],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.4,
+    "lon": 29.4,
     "precision": "unknown"
   },
   "types": [
@@ -28,6 +28,7 @@
   "company_mentions": [
     "Burundi State",
     "Rainbow Rare Earths",
+    "Rainbow Rare Earths Ltd",
     "Rainbow Rare Earths, State of Burundi"
   ],
   "products": [],
@@ -39,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.898197Z",
-    "checked_by": "import_pipeline",
-    "notes": "One of the world's highest-grade REE deposits, rich in high-value magnet metals (Nd/Pr). Operations halted due to a dispute with the government over concentrate pricing. 5 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T11:58:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "One of the world's highest-grade REE deposits, rich in high-value magnet metals (Nd/Pr). Operations halted due to a dispute with the government over concentrate pricing. 5 | Canonical name+slug generated. Web search geocoded. Source: https://www.rainbowrareearths.com/project/gakara/. Gakara Project is located approximately 20km south-southeast of Bujumbura"
   },
   "canonical_name": "Gakara Mine",
   "canonical_slug": "gakara-mine-2",
@@ -67,17 +68,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Burundi",
+  "province": "Bujumbura Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T10:54:29.000000Z",
+      "timestamp": "2025-12-01T11:58:33.000000Z",
       "operators": [
-        "Rainbow Rare Earths"
+        "Rainbow Rare Earths Ltd"
       ],
       "owners": [
-        "Burundi State"
+        "Rainbow Rare Earths Ltd"
       ],
-      "notes": "Rainbow Rare Earths has a 90% interest in the Gakara Project, with a non-dilutable 10% owned by the Burundi State."
+      "notes": "Rainbow Rare Earths is the primary operator and owner of the Gakara Project."
     }
   }
 }
