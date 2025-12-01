@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.5942515225405,
+    "lon": 45.7935497,
     "precision": "unknown"
   },
   "types": [
@@ -20,6 +20,7 @@
   "status": "unknown",
   "company_mentions": [
     "Anglo Asian Mining PLC",
+    "Anglo Asian Mining Plc",
     "AzerGold CJSC"
   ],
   "products": [],
@@ -31,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.537429Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large copper deposit. JORC resource of 119,100 tonnes Cu. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:34:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Large copper deposit. JORC resource of 119,100 tonnes Cu. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Gedabek (https://www.mining.com/anglo-asian-releases-initial-copper-resource-for-xarxar-deposit/). The Xarxar Project is located 1.5 km from the northern boundary of the Gedabek contract area"
   },
   "canonical_name": "Xarxar Mine",
   "canonical_slug": "xarxar-mine",
@@ -54,14 +55,15 @@
   "province": "Azerbaijan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T11:56:40.000000Z",
+      "timestamp": "2025-12-01T14:34:55.000000Z",
       "operators": [
-        "Anglo Asian Mining PLC"
+        "Anglo Asian Mining Plc"
       ],
       "owners": [
-        "Anglo Asian Mining PLC"
+        "Anglo Asian Mining Plc"
       ],
-      "notes": "Anglo Asian Mining has been operating in Azerbaijan for over 20 years and has acquired the Xarxar Project as part of its growth strategy."
+      "notes": "Anglo Asian Mining is actively developing the Xarxar Project and has acquired historical exploration data from the previous owner."
     }
-  }
+  },
+  "town": "Gedabek"
 }

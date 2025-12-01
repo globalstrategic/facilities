@@ -6,16 +6,19 @@
   ],
   "country_iso3": "DOM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.9396,
+    "lon": -70.1753,
     "precision": "unknown"
   },
   "types": [
-    "mine & refractory sulfide processing plant"
+    "plant"
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:12.633524Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:06:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pueblo_Viejo_mine. Pueblo Viejo is the largest gold mine in Latin America and is operated by a joint venture"
   },
   "canonical_name": "Pueblo Viejo & Processing Plant",
   "canonical_slug": "pueblo-viejo-processing-plant",
@@ -44,5 +47,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sánchez Ramírez",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:06:30.000000Z",
+      "operators": [
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "notes": "Barrick operates the mine with a 60% interest, while Newmont holds the remaining 40%."
+    }
+  }
 }

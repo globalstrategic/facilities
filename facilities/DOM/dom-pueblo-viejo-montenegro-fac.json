@@ -11,8 +11,8 @@
   ],
   "country_iso3": "DOM",
   "location": {
-    "lat": 18.937,
-    "lon": -70.178,
+    "lat": 18.9396,
+    "lon": -70.1753,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:12.634117Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:06:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pueblo_Viejo_mine. Pueblo Viejo is the largest gold mine in Latin America and is currently operational"
   },
   "canonical_name": "Pueblo Viejo/montenegro Mine",
   "canonical_slug": "pueblo-viejo-montenegro-mine",
@@ -70,5 +73,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sánchez Ramírez",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:06:40.000000Z",
+      "operators": [
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "notes": "Barrick operates the mine with a 60% interest, while Newmont holds the remaining 40%."
+    }
+  }
 }

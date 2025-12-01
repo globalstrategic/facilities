@@ -7,8 +7,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 7.084,
-    "lon": -74.712,
+    "lat": 7.419300817901681,
+    "lon": -74.449677675295,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aris Mining Corporation",
+    "Gran Colombia Gold Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.738807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:58:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Medellin (https://www.nsenergybusiness.com/projects/segovia-gold-project-antioquia/). The Segovia gold project is located in the Segovia-Remedios mining district, which has been operational for over 150 years"
   },
   "canonical_name": "Segovia Mine",
   "canonical_slug": "segovia-mine",
@@ -58,5 +61,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Medellin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:58:48.000000Z",
+      "operators": [
+        "Gran Colombia Gold Corp",
+        "Aris Mining Corporation"
+      ],
+      "owners": [
+        "Gran Colombia Gold Corp",
+        "Aris Mining Corporation"
+      ],
+      "notes": "Gran Colombia Gold is the owner and developer of the mine, which is operated by Aris Mining."
+    }
+  }
 }

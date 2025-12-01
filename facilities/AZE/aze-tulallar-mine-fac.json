@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.81315295201289,
+    "lon": 46.3240227,
     "precision": "unknown"
   },
   "types": [
@@ -30,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.539274Z",
-    "checked_by": "import_pipeline",
-    "notes": "Commenced mining in Feb 2023. Ore processed at CIRPA. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:36:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Commenced mining in Feb 2023. Ore processed at CIRPA. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Goygol (https://www.trend.az/azerbaijan/business/3710092.html). The Tulallar gold deposit is located near the village of Tulallar in the Goygol region, approximately 45 km from the region's center"
   },
   "canonical_name": "Tulallar Mine",
   "canonical_slug": "tulallar-mine",
@@ -50,15 +50,16 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Goygol District",
+  "province": "Goygol",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:02:13.000000Z",
+      "timestamp": "2025-12-01T14:36:06.000000Z",
       "operators": [
         "AzerGold CJSC"
       ],
       "owners": [],
-      "notes": "AzerGold CJSC is the state-owned company responsible for mining operations at the Tulallar deposit."
+      "notes": "AzerGold is actively mining at the Tulallar gold deposit, which was discovered during the Soviet period."
     }
-  }
+  },
+  "town": "Goygol"
 }

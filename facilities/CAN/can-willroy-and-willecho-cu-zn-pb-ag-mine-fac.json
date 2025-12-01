@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": 49.21682128679209,
-    "lon": -85.98399361035666,
+    "lat": 49.2169,
+    "lon": -85.8861,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Willroy Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,10 +35,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.45,
-    "last_checked": "2025-11-26T12:22:14.000000Z",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:48:34.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Manitouwadge (https://geotech.ca/palladium-one-mining-announces-multiple-drill-ready-targets-on-the-tyko-ii-nickel-copper-project-ontario-canada/). The Willroy and Willecho mines are mentioned as part of the historical production in the area, but exact coordinates are not provided"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Manitouwadge (https://geotech.ca/palladium-one-mining-announces-multiple-drill-ready-targets-on-the-tyko-ii-nickel-copper-project-ontario-canada/). The Willroy and Willecho mines are mentioned as part of the historical production in the area, but exact coordinates are not provided. Web search geocoded. Source: https://thediggings.com/mines/usgs10073140. The Willecho mine is located 5 km northwest of Willroy"
   },
   "canonical_name": "Willroy And Willecho Cu, Zn, Pb, Ag Mine",
   "canonical_slug": "willroy-and-willecho-cu-zn-pb-ag-mine",
@@ -61,5 +63,17 @@
   ],
   "display_name_source": "auto",
   "province": "Ontario",
-  "town": "Manitouwadge"
+  "town": "Manitouwadge",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:48:34.000000Z",
+      "operators": [
+        "Willroy Mines Ltd."
+      ],
+      "owners": [
+        "Willroy Mines Ltd."
+      ],
+      "notes": "Willroy Mines Ltd. is the owner and operator of the facility."
+    }
+  }
 }

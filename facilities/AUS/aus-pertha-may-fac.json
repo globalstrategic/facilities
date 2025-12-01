@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.275,
-    "lon": 118.652,
+    "lat": -31.9505,
+    "lon": 115.8605,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Albemarle Corporation",
+    "IGO Limited",
+    "Talison Lithium",
+    "Tianqi Lithium Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.284870Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:32:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.talisonlithium.com/. Talison Lithium is headquartered in Perth and operates the Greenbushes lithium mine, which is a significant mining facility in the region"
   },
   "canonical_name": "Pertha May Mine",
   "canonical_slug": "pertha-may-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:32:26.000000Z",
+      "operators": [
+        "Talison Lithium"
+      ],
+      "owners": [
+        "Tianqi Lithium Corporation",
+        "IGO Limited",
+        "Albemarle Corporation"
+      ],
+      "notes": "Talison Lithium is a joint venture between Tianqi Lithium Corporation (51%) and Albemarle Corporation (49%)."
+    }
+  }
 }

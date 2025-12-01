@@ -9,7 +9,7 @@
     "precision": "unknown"
   },
   "types": [
-    "iron ore pelletizer"
+    "plant"
   ],
   "commodities": [
     {
@@ -20,7 +20,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHR Partners",
+    "China Molybdenum",
+    "Lundin Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,7 +43,7 @@
   "canonical_name": "Pelletizing No 1 Facility",
   "canonical_slug": "pelletizing-no-1-facility",
   "display_name": "Pelletizing No 1",
-  "primary_type": "facility",
+  "primary_type": "plant",
   "type_confidence": 1.0,
   "data_quality": {
     "canonicalization_confidence": 0.615,
@@ -57,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:39:50.000000Z",
+      "operators": [
+        "BHR Partners"
+      ],
+      "owners": [
+        "China Molybdenum",
+        "Lundin Mining"
+      ],
+      "notes": "BHR acted as a minority stakeholder in a deal involving Lundin Mining and China Molybdenum."
+    }
+  }
 }

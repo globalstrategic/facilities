@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "BHR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 26.198152,
+    "lon": 50.679893,
     "precision": "unknown"
   },
   "types": [
-    "direct reduced iron plant"
+    "plant"
   ],
   "commodities": [
     {
@@ -20,7 +20,9 @@
   "status": "operating",
   "company_mentions": [
     "Foulath Holding Company",
+    "SULB Company B.S.C.",
     "United Steel Company (SULB)",
+    "Yamato Kogyo",
     "Yamato Kogyo Company"
   ],
   "products": [],
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.073100Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:40:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sulb_Bahrain_Al_Hidd_steel_plant. SULB DRI Plant is located in the Al Hidd Industrial Area and is part of a joint venture"
   },
   "canonical_name": "Sulb DRI Plant",
   "canonical_slug": "sulb-dri-plant",
@@ -63,15 +65,15 @@
   "province": "Muharraq",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T09:37:14.000000Z",
+      "timestamp": "2025-12-01T14:40:36.000000Z",
       "operators": [
-        "United Steel Company (SULB)"
+        "SULB Company B.S.C."
       ],
       "owners": [
         "Foulath Holding Company",
-        "Yamato Kogyo Company"
+        "Yamato Kogyo"
       ],
-      "notes": "The plant is a joint venture between Foulath Holding Company and Yamato Kogyo Company."
+      "notes": "SULB is a joint venture between Foulath (51%) and Yamato Kogyo (49%)."
     }
   }
 }

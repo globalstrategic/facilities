@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -26.0,
+    "lon": 27.0,
     "precision": "unknown"
   },
   "types": [
-    "underground mines"
+    "plant"
   ],
   "commodities": [
     {
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.633006Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T14:45:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/premium-nickel-aims-to-re-open-selebi-mine-in-botswana/. The Selebi and Selebi North Mines are located approximately 6 km apart, with the company aiming to redevelop the mines"
   },
   "canonical_name": "Selebi & Selebi North Mines Mine",
   "canonical_slug": "selebi-selebi-north-mines-mine",
@@ -67,14 +67,14 @@
   "province": "Botswana",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:57:36.000000Z",
+      "timestamp": "2025-12-01T14:45:28.000000Z",
       "operators": [
-        "Premium Nickel Resources Ltd."
+        "Premium Nickel Resources"
       ],
       "owners": [
-        "Premium Nickel Resources Ltd."
+        "Premium Nickel Resources"
       ],
-      "notes": "Premium Nickel Resources Ltd. is the owner and operator of the Selebi and Selebi North Mines."
+      "notes": "Premium Nickel Resources acquired the mines from BCL Limited."
     }
   }
 }

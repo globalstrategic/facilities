@@ -28,8 +28,10 @@ Usage:
     # Focus on low-quality facility names
     python scripts/enrich_facilities.py --low-quality-names --limit 10
 
-    # Interactive enrichment: web search + ask user to confirm/fill gaps
+    # Interactive enrichment: batch auto-processing + manual review at end
     python scripts/enrich_facilities.py --interactive-enrich --country MDG --limit 5
+    # Phase 1: Auto-processes all facilities (press ] + Enter to skip)
+    # Phase 2: Manual review for failures (optional at end)
 
     # Assess and report without making changes
     python scripts/enrich_facilities.py --assess-only --country USA
@@ -72,11 +74,30 @@ import sys
 import time
 import re
 import csv
+import threading
 from pathlib import Path
 from datetime import datetime
 from typing import Optional, Dict, List, Tuple
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Global flag for skip signal
+_skip_current = threading.Event()
+_listener_active = False
+
+def keyboard_listener():
+    """Background thread that listens for ] key to skip current facility."""
+    global _listener_active
+    _listener_active = True
+    while _listener_active:
+        try:
+            key = input()
+            if key.strip() == ']':
+                _skip_current.set()
+                print("\n  [SKIP] Skipping current facility...")
+        except (EOFError, KeyboardInterrupt):
+            break
+    _listener_active = False
 
 # Import name quality assessment
 try:
@@ -438,6 +459,11 @@ def geocode_single_facility(
     # Try each query until we get results
     all_results = []
     for query in queries:
+        # Check if user requested skip during search
+        if _skip_current.is_set():
+            print(f"  Search aborted - skip requested")
+            return None
+
         print(f"  Searching: {query[:60]}...")
         results = search_func(query)
         if results:
@@ -773,6 +799,106 @@ def interactive_review_extraction(
             )
             result["status"] = new_status
             print(f"  → Updated status to: {new_status}")
+
+
+def manual_review_failed_facilities(failed_facilities: List[Tuple[Dict, str]]) -> int:
+    """
+    Manual review phase for facilities that failed automation.
+
+    Args:
+        failed_facilities: List of (facility, reason) tuples
+
+    Returns:
+        Number of facilities successfully updated
+    """
+    if not failed_facilities:
+        return 0
+
+    global _listener_active
+    _listener_active = False  # Stop the skip listener for manual input
+
+    print(f"\n{'='*60}")
+    print(f"MANUAL REVIEW PHASE")
+    print(f"{'='*60}")
+    print(f"{len(failed_facilities)} facilities need manual review\n")
+
+    updated = 0
+
+    for i, (facility, reason) in enumerate(failed_facilities, 1):
+        print(f"\n{'='*60}")
+        print(f"[{i}/{len(failed_facilities)}] {facility['name']}")
+        print(f"ID: {facility.get('facility_id', 'Unknown')}")
+        print(f"Country: {facility.get('country_iso3', 'Unknown')}")
+        print(f"Reason: {reason}")
+        print(f"{'='*60}")
+
+        # Show existing data
+        existing_location = facility.get('location', {})
+        existing_lat = existing_location.get('lat')
+        existing_lon = existing_location.get('lon')
+        if existing_lat and existing_lon:
+            print(f"Current coords: {existing_lat:.6f}, {existing_lon:.6f}")
+        else:
+            print("Missing coords")
+
+        existing_companies = facility.get('company_mentions', [])
+        if existing_companies:
+            print(f"Companies: {', '.join(existing_companies[:3])}")
+        else:
+            print("Missing companies")
+
+        print()
+
+        # Get manual input
+        try:
+            action = input("Action [c=coords, o=operator, s=skip, q=quit]: ").strip().lower()
+
+            if action == 'q':
+                print("Quitting manual review")
+                break
+            elif action == 's':
+                print("  → Skipped")
+                continue
+            elif action == 'c':
+                lat_str = input("  Latitude: ").strip()
+                lon_str = input("  Longitude: ").strip()
+
+                if lat_str and lon_str:
+                    try:
+                        lat = float(lat_str)
+                        lon = float(lon_str)
+
+                        result = {
+                            'lat': lat,
+                            'lon': lon,
+                            'confidence': 0.95,
+                            'source': 'manual_review'
+                        }
+
+                        if update_facility_json(facility, result):
+                            print(f"  ✓ Updated coordinates")
+                            updated += 1
+                    except ValueError:
+                        print(f"  ✗ Invalid coordinates")
+
+            elif action == 'o':
+                operator = input("  Operator name: ").strip()
+                if operator:
+                    result = {
+                        'companies': {
+                            'operators': [operator],
+                            'owners': []
+                        }
+                    }
+                    if update_facility_json(facility, result):
+                        print(f"  ✓ Updated operator")
+                        updated += 1
+
+        except (KeyboardInterrupt, EOFError):
+            print("\n\nManual review interrupted")
+            break
+
+    return updated
 
 
 def update_facility_json(facility: Dict, location: Dict) -> bool:
@@ -1181,7 +1307,7 @@ def main():
     # Web search options
     search_group = parser.add_argument_group("Web search options")
     search_group.add_argument("--start-from", help="ISO3 country code to start from")
-    search_group.add_argument("--limit", type=int, default=10, help="Max facilities per country")
+    search_group.add_argument("--limit", type=int, default=None, help="Max facilities per country (default: all)")
     search_group.add_argument("--limit-total", type=int, help="Max total facilities across all countries")
     search_group.add_argument("--search-engine", default="tavily", choices=["tavily", "brave"])
     search_group.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing)")
@@ -1264,7 +1390,17 @@ def main():
     # Initialize interactive validator if needed
     interactive = InteractiveValidator(enabled=args.interactive_enrich)
     if args.interactive_enrich:
-        print("Interactive mode: will ask for confirmation/input on each facility")
+        print("\n" + "="*60)
+        print("BATCH PROCESSING MODE")
+        print("="*60)
+        print("Phase 1: Auto-processing with skip capability")
+        print("  → Press ] + Enter anytime to skip current facility")
+        print("Phase 2: Manual review for failures (at end)")
+        print("="*60 + "\n")
+
+        # Start background keyboard listener
+        listener_thread = threading.Thread(target=keyboard_listener, daemon=True)
+        listener_thread.start()
 
     # Country names mapping
     country_names = {
@@ -1315,6 +1451,7 @@ def main():
     total_failed = 0
     total_processed = 0
     countries_processed = 0
+    all_failed_facilities = []  # Collect failures for manual review
 
     for country_iso3 in countries_to_process:
         country_name = country_names.get(country_iso3, country_iso3)
@@ -1419,49 +1556,66 @@ def main():
         country_success = 0
         country_failed = 0
 
-        for i, facility in enumerate(to_process, 1):
-            print(f"\n[{i}/{len(to_process)}] {facility['name']}")
-
-            result = geocode_single_facility(facility, country_name, search_func, openai_client)
-
-            # Interactive mode: let user review and modify extraction results
-            if args.interactive_enrich:
-                result = interactive_review_extraction(facility, result, interactive)
-                if result is None:
-                    # User chose to skip
+        try:
+            for i, facility in enumerate(to_process, 1):
+                # Check if skip was requested
+                if _skip_current.is_set():
+                    print(f"\n[{i}/{len(to_process)}] {facility['name']}")
+                    print("  [SKIP] User skipped")
+                    _skip_current.clear()
+                    all_failed_facilities.append((facility, "skipped_by_user"))
                     country_failed += 1
                     continue
 
-            if result:
-                has_coords = result.get("lat") is not None and result.get("lon") is not None
-                has_companies = bool(result.get("companies", {}).get("operators") or result.get("companies", {}).get("owners"))
-                has_status = result.get("status") and result.get("status") != "unknown"
+                print(f"\n[{i}/{len(to_process)}] {facility['name']}")
 
-                if has_coords or has_companies or has_status:
-                    if not args.dry_run:
-                        if update_facility_json(facility, result):
-                            update_msg = []
-                            if has_coords:
-                                update_msg.append(f"coords: {result['lat']:.6f}, {result['lon']:.6f}")
-                            if has_companies:
-                                update_msg.append(f"companies: {len(result['companies'].get('operators', []) + result['companies'].get('owners', []))}")
-                            if has_status:
-                                update_msg.append(f"status: {result['status']}")
-                            print(f"  → Updated ({', '.join(update_msg)})")
-                            country_success += 1
+                # Show brief status if in interactive mode
+                if args.interactive_enrich:
+                    print(f"  {facility.get('facility_id', 'Unknown')}")
+
+                # Try automatic enrichment
+                result = geocode_single_facility(facility, country_name, search_func, openai_client)
+
+                # Process results automatically (no prompts)
+                if result:
+                    has_coords = result.get("lat") is not None and result.get("lon") is not None
+                    has_companies = bool(result.get("companies", {}).get("operators") or result.get("companies", {}).get("owners"))
+                    has_status = result.get("status") and result.get("status") != "unknown"
+
+                    if has_coords or has_companies or has_status:
+                        if not args.dry_run:
+                            if update_facility_json(facility, result):
+                                update_msg = []
+                                if has_coords:
+                                    update_msg.append(f"coords: {result['lat']:.6f}, {result['lon']:.6f}")
+                                if has_companies:
+                                    update_msg.append(f"companies: {len(result['companies'].get('operators', []) + result['companies'].get('owners', []))}")
+                                if has_status:
+                                    update_msg.append(f"status: {result['status']}")
+                                print(f"  ✓ Auto-updated ({', '.join(update_msg)})")
+                                country_success += 1
+                            else:
+                                print(f"  ✗ Update failed")
+                                all_failed_facilities.append((facility, "update_failed"))
+                                country_failed += 1
                         else:
-                            country_failed += 1
+                            print(f"  [DRY RUN] Would update")
+                            country_success += 1
                     else:
-                        print(f"  [DRY RUN] Would update")
-                        country_success += 1
+                        print(f"  → No useful data found")
+                        all_failed_facilities.append((facility, "no_useful_data"))
+                        country_failed += 1
                 else:
-                    print(f"  ✗ No info found")
+                    print(f"  → No search results")
+                    all_failed_facilities.append((facility, "no_search_results"))
                     country_failed += 1
-            else:
-                print(f"  ✗ No info found")
-                country_failed += 1
 
-            time.sleep(1)  # Rate limiting
+                time.sleep(1)  # Rate limiting
+
+        except KeyboardInterrupt:
+            print("\n\n→ Keyboard interrupt detected - stopping country processing")
+            print(f"Processed {i}/{len(to_process)} facilities for {country_iso3}")
+            # Continue to summary for this country
 
         total_success += country_success
         total_failed += country_failed
@@ -1472,15 +1626,31 @@ def main():
 
     # Final summary
     print(f"\n{'='*60}")
-    print("FINAL RESULTS")
+    print("BATCH PROCESSING COMPLETE")
     print(f"{'='*60}")
     print(f"Countries processed: {countries_processed}")
     print(f"Total facilities processed: {total_processed}")
     print(f"Successfully enriched: {total_success}")
-    print(f"Failed: {total_failed}")
+    print(f"Failed/Needs review: {total_failed}")
     if args.limit_total:
         print(f"Total limit: {args.limit_total}")
     print(f"{'='*60}")
+
+    # Manual review phase for failed facilities
+    if all_failed_facilities and args.interactive_enrich and not args.dry_run:
+        print(f"\n{len(all_failed_facilities)} facilities need manual review")
+        response = input("Start manual review? [y/N]: ").strip().lower()
+
+        if response == 'y':
+            manually_updated = manual_review_failed_facilities(all_failed_facilities)
+            print(f"\n{'='*60}")
+            print(f"MANUAL REVIEW COMPLETE")
+            print(f"{'='*60}")
+            print(f"Manually updated: {manually_updated}")
+            print(f"{'='*60}")
+    elif all_failed_facilities and not args.interactive_enrich:
+        print(f"\n{len(all_failed_facilities)} facilities failed but --interactive-enrich not set")
+        print("Run with --interactive-enrich to enable manual review")
 
 
 if __name__ == "__main__":

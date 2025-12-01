@@ -9,8 +9,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 7.921,
-    "lon": -75.55,
+    "lat": 7.852160841048997,
+    "lon": -75.544955075804,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cerro Matoso S.A.",
+    "CoreX Holding",
+    "South32"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.737890Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:57:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Montelibano (https://en.wikipedia.org/wiki/Cerro_Matoso_mine). Cerro Matoso is one of the largest open-pit ferronickel mines in the world, located in the Córdoba department of Colombia"
   },
   "canonical_name": "Cerro Matoso Mine",
   "canonical_slug": "cerro-matoso-mine",
@@ -54,5 +58,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Córdoba",
+  "town": "Montelibano",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:57:45.000000Z",
+      "operators": [
+        "Cerro Matoso S.A.",
+        "South32"
+      ],
+      "owners": [
+        "South32",
+        "CoreX Holding"
+      ],
+      "notes": "Cerro Matoso is currently operated by Cerro Matoso S.A., which is owned by South32. A sale to CoreX Holding is in progress."
+    }
+  }
 }

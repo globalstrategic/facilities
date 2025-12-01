@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.1288809604191155,
+    "lon": -4.016107,
     "precision": "unknown"
   },
   "types": [
-    "mine-producing"
+    "plant"
   ],
   "commodities": [
     {
@@ -19,7 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "Lagune Exploitation Bongouanou"
+    "Lagune Exploitation Bongouanou",
+    "Lagune Exploration"
   ],
   "products": [],
   "sources": [
@@ -30,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.462193Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:53:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (http://www.leb-ci.com/en/leb/). The Benene Mine is the only producer and exporter of bauxite ore in Côte d'Ivoire, located in the Moronou region, approximately 200 km north of Abidjan"
   },
   "canonical_name": "Benene Mine",
   "canonical_slug": "benene-mine",
@@ -61,12 +62,15 @@
   "province": "Moronou",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:21:19.000000Z",
+      "timestamp": "2025-12-01T14:53:15.000000Z",
       "operators": [
         "Lagune Exploitation Bongouanou"
       ],
-      "owners": [],
-      "notes": "Lagune Exploitation Bongouanou is the company responsible for the Benene Mine."
+      "owners": [
+        "Lagune Exploration"
+      ],
+      "notes": "Moumouni Bictogo is a key figure associated with the mine's development and certification."
     }
-  }
+  },
+  "town": "Abidjan"
 }

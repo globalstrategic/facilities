@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 9.141808608169983,
+    "lon": -7.873246438304308,
     "precision": "unknown"
   },
   "types": [
-    "project-exploration"
+    "plant"
   ],
   "commodities": [
     {
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.461266Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T14:52:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://awaleresources.ca/projects/project-odienne/). The Odienné Project is located in the northwest Denguélé Region of Côte d'Ivoire, approximately 600 kilometers northwest of the commercial capital, Abidjan"
   },
   "canonical_name": "OdiennÃ© Exploration",
   "canonical_slug": "odienne-exploration",
@@ -71,15 +71,15 @@
   "province": "Denguélé Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:24:26.000000Z",
+      "timestamp": "2025-12-01T14:52:42.000000Z",
       "operators": [
         "Awalé Resources Limited"
       ],
       "owners": [
-        "Awalé Resources Limited",
-        "Newmont Corporation"
+        "Awalé Resources Limited"
       ],
-      "notes": "Awalé Resources Limited is the primary operator, with Newmont Corporation as a significant partner through a joint venture."
+      "notes": "Awalé Resources is focused on exploring and developing the Odienné Project."
     }
-  }
+  },
+  "town": "Abidjan"
 }

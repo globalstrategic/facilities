@@ -7,8 +7,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -32.912,
-    "lon": 115.917,
+    "lat": -32.8,
+    "lon": 115.9,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alcoa Corporation",
+    "Alcoa of Australia Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:52.280113Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:32:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.alcoa.com/australia/en/pdf/2024-alcoa-wagerup-refinery-annual-audit-compliance-report.pdf. Wagerup Alumina Refinery is located 120 km south of Perth, 2 km north of Yarloop, and 7.5 km south of Waroona"
   },
   "canonical_name": "Wagerup Alumina Refinery",
   "canonical_slug": "wagerup-alumina-refinery",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:32:18.000000Z",
+      "operators": [
+        "Alcoa of Australia Limited"
+      ],
+      "owners": [
+        "Alcoa Corporation"
+      ],
+      "notes": "Alcoa owns 100% of the mining rights and assets involved with bauxite mining and alumina refining in Australia."
+    }
+  }
 }
