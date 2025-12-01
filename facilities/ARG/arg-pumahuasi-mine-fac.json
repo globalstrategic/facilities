@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -22.281,
-    "lon": -65.587,
+    "lat": -23.5,
+    "lon": -65.5,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.183427Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T14:31:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10004467. The La Pulpera Mine is located approximately 13 km SSE of the train station Pumahuasi. Web search geocoded. Source: https://thediggings.com/mines/usgs10004467. The La Pulpera Mine is located approximately 13 km SSE of the train station Pumahuasi"
   },
   "canonical_name": "Pumahuasi Mine",
   "canonical_slug": "pumahuasi-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jujuy"
 }

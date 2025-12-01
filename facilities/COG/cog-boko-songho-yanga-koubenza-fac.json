@@ -9,19 +9,16 @@
     "precision": "unknown"
   },
   "types": [
-    "mine & processing plant"
+    "plant"
   ],
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "SOREMI",
-      "role": "operator",
-      "source": "Research Import COG 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:09:58.845769",
-      "evidence": "Extracted from operator column: SOREMI (China National Gold Group Corp.)"
-    }
+    "China National Gold Group Corp.",
+    "SOREMI",
+    "Société de Recherche et d'Exploitation Minière Boko-Songho and Yanga-Koubenza (SOREMI)",
+    "Société de Recherche et d'Exploitation Minière Boko-Songho and Yanga-Koubenza 12 e (SOREMI)",
+    "Soremi Investment Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bouenza Department",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:57:06.000000Z",
+      "operators": [
+        "Société de Recherche et d'Exploitation Minière Boko-Songho and Yanga-Koubenza 12 e (SOREMI)"
+      ],
+      "owners": [
+        "China National Gold Group Corp.",
+        "Soremi Investment Ltd."
+      ],
+      "notes": "SOREMI is a joint venture with the government and other investors."
+    }
+  }
 }

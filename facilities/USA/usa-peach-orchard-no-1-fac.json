@@ -1,0 +1,70 @@
+{
+  "facility_id": "usa-peach-orchard-no-1-fac",
+  "name": "Peach Orchard No 1",
+  "aliases": [
+    "#57 Miner Coal Mine",
+    "No. 7 (Coalburg)",
+    "No. 7",
+    "Peach Orchard No 1"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.947,
+    "lon": -82.597,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:31.424511"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:45.930505Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Peach Orchard No 1",
+  "canonical_slug": "peach-orchard-no-1",
+  "display_name": "57 Miner Coal",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "#57 Miner Coal Mine",
+      "from": "2025-10-20T15:28:31.424519",
+      "to": "2025-11-04T19:18:45.930503Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "#57 Miner Coal Mine",
+      "from": "2025-10-20T15:28:31.424511",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
+    }
+  ],
+  "display_name_source": "auto"
+}

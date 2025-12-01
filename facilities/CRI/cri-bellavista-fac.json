@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CRI",
   "location": {
-    "lat": 10.14,
-    "lon": -84.737,
+    "lat": 19.304598405837016,
+    "lon": -97.56060266030471,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canarc Resource Corp.",
+    "Glencairn Gold Corporation",
+    "Wheaton River Minerals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:16.957735Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:59:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from San Jose (https://www.sec.gov/Archives/edgar/data/1311967/000091228205000189/ex99_1.htm). The Bellavista Mine is located 70 kilometers northwest of San Jose, Costa Rica"
   },
   "canonical_name": "Bellavista Mine",
   "canonical_slug": "bellavista-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San José",
+  "town": "San Jose",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:59:35.000000Z",
+      "operators": [
+        "Glencairn Gold Corporation"
+      ],
+      "owners": [
+        "Canarc Resource Corp.",
+        "Wheaton River Minerals Ltd."
+      ],
+      "notes": "Glencairn Gold is the owner/operator of the Bellavista mine, while Canarc Resource Corp. has an interest in it."
+    }
+  }
 }

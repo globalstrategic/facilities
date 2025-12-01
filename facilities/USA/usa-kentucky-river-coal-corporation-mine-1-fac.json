@@ -1,0 +1,75 @@
+{
+  "facility_id": "usa-kentucky-river-coal-corporation-mine-1-fac",
+  "name": "Kentucky River Coal Corporation Mine #1",
+  "aliases": [
+    "#1 (KY RCC)",
+    "KY RCC Mine #1"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.712,
+    "lon": -82.881,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Kentucky River Coal Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:05.800474"
+    },
+    {
+      "type": "web_research",
+      "id": "Kentucky River Coal Corporation identification",
+      "date": "2025-12-01T00:00:00Z"
+    }
+  ],
+  "verification": {
+    "status": "web_validated",
+    "confidence": 0.85,
+    "last_checked": "2025-12-01T00:00:00Z",
+    "checked_by": "web_search_validation",
+    "notes": "Identified KY RCC as Kentucky River Coal Corporation through web search. Company established circa 1920s by John CC Mayo."
+  },
+  "canonical_name": "Kentucky River Coal Corporation Mine 1",
+  "canonical_slug": "kentucky-river-coal-corporation-mine-1",
+  "display_name": "Kentucky River Coal Corporation Mine #1",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.85,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "#1 Mine",
+      "from": "2025-10-20T15:29:05.800479",
+      "to": "2025-11-04T19:18:45.924060Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "#1 (KY RCC) Mine",
+      "from": "2025-11-04T19:18:45.924060Z",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "operator_identified_via_web_search"
+    }
+  ],
+  "display_name_source": "auto"
+}

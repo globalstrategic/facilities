@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.0,
+    "lon": -68.0,
     "precision": "unknown"
   },
   "types": [
@@ -15,7 +15,11 @@
   "status": "unknown",
   "company_mentions": [
     "Aclara Resources",
+    "BHP Billiton Ltd",
     "Denarius Metals Corp.",
+    "International Finance Corporation",
+    "Japanese consortium",
+    "Rio Tinto Group",
     "Steadright Critical Minerals"
   ],
   "products": [],
@@ -27,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.903905Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T14:49:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/escondida-mine-supervisors-extend-talks/. The Escondida mine is a significant copper-gold-silver mine in Chile, which is part of the critical minerals sector"
   },
   "canonical_name": "Strategic & Critical Minerals Mine",
   "canonical_slug": "strategic-critical-minerals-mine",
@@ -55,18 +59,21 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Santiago Metropolitan Region",
+  "province": "Antofagasta Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T12:49:39.000000Z",
+      "timestamp": "2025-12-01T14:49:13.000000Z",
       "operators": [
-        "Aclara Resources"
+        "BHP Billiton Ltd",
+        "Rio Tinto Group"
       ],
       "owners": [
-        "Steadright Critical Minerals",
-        "Denarius Metals Corp."
+        "BHP Billiton Ltd",
+        "Rio Tinto Group",
+        "Japanese consortium",
+        "International Finance Corporation"
       ],
-      "notes": "Aclara Resources is mentioned in relation to rare earth elements, while Steadright Critical Minerals and Denarius Metals Corp. are involved in strategic mineral projects."
+      "notes": "Escondida is a joint venture with multiple stakeholders."
     }
   }
 }

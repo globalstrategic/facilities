@@ -9,7 +9,7 @@
     "precision": "site"
   },
   "types": [
-    "prospect"
+    "plant"
   ],
   "commodities": [
     {
@@ -17,8 +17,11 @@
       "primary": true
     }
   ],
-  "status": "historic",
-  "company_mentions": [],
+  "status": "closed",
+  "company_mentions": [
+    "McEwen Copper",
+    "McEwen Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:48:45.000000Z",
+      "operators": [
+        "McEwen Mining",
+        "McEwen Copper"
+      ],
+      "owners": [
+        "McEwen Mining"
+      ],
+      "notes": "McEwen Mining is actively involved in various projects in Argentina, including Los Azules and San José."
+    }
+  }
 }

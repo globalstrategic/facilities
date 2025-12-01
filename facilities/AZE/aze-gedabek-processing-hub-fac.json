@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.175069520792384,
+    "lon": 46.3597178,
     "precision": "unknown"
   },
   "types": [
-    "processing plant"
+    "plant"
   ],
   "commodities": [
     {
@@ -28,6 +28,7 @@
   "status": "operating",
   "company_mentions": [
     "Anglo Asian Mining PLC",
+    "Anglo Asian Mining plc",
     "Azerbaijan International Mining Company Limited (AIMC)"
   ],
   "products": [],
@@ -39,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.538652Z",
-    "checked_by": "import_pipeline",
-    "notes": "Centralized hub with Agitation Leaching, Flotation, SART, and Heap Leach facilities. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:35:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Centralized hub with Agitation Leaching, Flotation, SART, and Heap Leach facilities. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Ganja (https://www.angloasianmining.com/operations/gedabek-contract-area/). Gedabek Processing Hub is located 55 kilometers from Ganja, Azerbaijan's second largest city"
   },
   "canonical_name": "Gedabek Processing Hub Processing Plant",
   "canonical_slug": "gedabek-processing-hub-processing-plant",
@@ -59,18 +60,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Azerbaijan",
+  "province": "Ganja",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:00:37.000000Z",
+      "timestamp": "2025-12-01T14:35:56.000000Z",
       "operators": [
-        "Anglo Asian Mining PLC",
-        "Azerbaijan International Mining Company Limited (AIMC)"
+        "Anglo Asian Mining plc"
       ],
       "owners": [
-        "Anglo Asian Mining PLC"
+        "Anglo Asian Mining plc"
       ],
-      "notes": "Anglo Asian Mining PLC is the parent company of AIMC, which operates the Gedabek Processing Hub."
+      "notes": "Anglo Asian Mining plc is the sole owner and operator of the Gedabek Processing Hub."
     }
-  }
+  },
+  "town": "Ganja"
 }

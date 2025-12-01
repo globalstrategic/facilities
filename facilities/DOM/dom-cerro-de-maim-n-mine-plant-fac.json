@@ -6,16 +6,20 @@
   ],
   "country_iso3": "DOM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.716623828587522,
+    "lon": -70.18492736969786,
     "precision": "unknown"
   },
   "types": [
-    "mine & polymetallic flotation plant"
+    "plant"
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dominican Mining Corp. (Cormidom)",
+    "GlobeStar Mining Corporation",
+    "Perilya Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:12.634667Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:07:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Santo Domingo (http://www.nafinance.com/Listed_Co/english/GlobeStar_e.htm). The Cerro de Maimón mine is located in the municipality of Maimon, which is part of the Monseñor Nouel province, approximately 40 km northwest of Santo Domingo"
   },
   "canonical_name": "Cerro De Maimón & Mine",
   "canonical_slug": "cerro-de-maimon-mine",
@@ -52,5 +56,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Monseñor Nouel",
+  "town": "Santo Domingo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:07:12.000000Z",
+      "operators": [
+        "Perilya Ltd.",
+        "Dominican Mining Corp. (Cormidom)"
+      ],
+      "owners": [
+        "Perilya Ltd.",
+        "GlobeStar Mining Corporation"
+      ],
+      "notes": "Perilya owns the mine through its subsidiary, Cormidom. The mine was previously owned by GlobeStar Mining Corporation."
+    }
+  }
 }

@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.595629,
+    "lon": 23.093095,
     "precision": "unknown"
   },
   "types": [
-    "steel mill"
+    "plant"
   ],
   "commodities": [],
   "status": "operating",
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.772338Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:39:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Stomana_Industry_Pernik_steel_plant. Stomana Industry is a steel plant located in Pernik, Bulgaria, and is known for its scrap-based steel production"
   },
   "canonical_name": "Stomana Industry Steel Plant",
   "canonical_slug": "stomana-industry-steel-plant",
@@ -51,15 +51,14 @@
   "province": "Pernik",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T09:15:58.000000Z",
+      "timestamp": "2025-12-01T14:39:13.000000Z",
       "operators": [
         "Stomana Industry AD"
       ],
       "owners": [
-        "Sidenor S.A.",
         "Viohalco SA"
       ],
-      "notes": "Stomana Industry is a subsidiary of Sidenor S.A., which is part of the Viohalco group."
+      "notes": "Stomana Industry is a subsidiary of Viohalco SA and has been operational since its incorporation into the Sidenor Group in 2001."
     }
   }
 }

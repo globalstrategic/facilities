@@ -10,7 +10,7 @@
   },
   "types": [
     "mine",
-    "processing plant"
+    "plant"
   ],
   "commodities": [
     {
@@ -22,14 +22,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Minera El Roble S.A.",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.142877",
-      "evidence": "Extracted from operator column: Minera El Roble S.A."
-    }
+    "Atico Mining Corporation",
+    "Minera El Roble S.A."
   ],
   "products": [],
   "sources": [
@@ -59,5 +53,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chocó",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:57:55.000000Z",
+      "operators": [
+        "Minera El Roble S.A."
+      ],
+      "owners": [
+        "Atico Mining Corporation",
+        "Minera El Roble S.A."
+      ],
+      "notes": "Atico Mining Corporation owns 90% of Minera El Roble S.A., which operates the mine."
+    }
+  }
 }

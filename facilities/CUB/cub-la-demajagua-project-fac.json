@@ -9,7 +9,7 @@
     "precision": "unknown"
   },
   "types": [
-    "project (mine development)"
+    "plant"
   ],
   "commodities": [
     {
@@ -33,22 +33,10 @@
   ],
   "status": "construction",
   "company_mentions": [
-    {
-      "name": "Minera La Victoria SA (51% Geominera S.A.",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.859960",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    },
-    {
-      "name": "49% Antilles Gold)",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.859970",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    }
+    "49% Antilles Gold)",
+    "Antilles Gold Limited",
+    "GeoMinera S.A.",
+    "Minera La Victoria SA (51% Geominera S.A."
   ],
   "products": [],
   "sources": [
@@ -86,5 +74,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Isla de la Juventud",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:01:45.000000Z",
+      "operators": [
+        "Antilles Gold Limited",
+        "GeoMinera S.A."
+      ],
+      "owners": [
+        "GeoMinera S.A.",
+        "Antilles Gold Limited"
+      ],
+      "notes": "Antilles Gold is in a joint venture with GeoMinera S.A. for the development of the La Demajagua Project."
+    }
+  }
 }

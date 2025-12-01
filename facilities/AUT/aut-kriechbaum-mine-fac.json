@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.30559181933619,
+    "lon": 14.555800035294807,
     "precision": "unknown"
   },
   "types": [
-    "open-pit mine"
+    "plant"
   ],
   "commodities": [
     {
@@ -24,6 +24,7 @@
   "status": "operating",
   "company_mentions": [
     "Osterreichische Kaolin und Coal",
+    "Osterreichische Kaolin und Montanindustrie AG",
     "Osterreichische Kaolin- und Montanindustrie AG"
   ],
   "products": [],
@@ -35,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.398458Z",
-    "checked_by": "import_pipeline",
-    "notes": "Austria's only economic kaolin deposit. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:54:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Austria's only economic kaolin deposit. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Linz (https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/mineral-pubs/country/1994/9403094.pdf). The Kriechbaum Mine is located 20 km east of Linz, but exact coordinates are not provided"
   },
   "canonical_name": "Kriechbaum Mine",
   "canonical_slug": "kriechbaum-mine",
@@ -58,14 +59,15 @@
   "province": "Upper Austria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:06:33.000000Z",
+      "timestamp": "2025-12-01T11:54:06.000000Z",
       "operators": [
-        "Osterreichische Kaolin und Coal"
+        "Osterreichische Kaolin und Montanindustrie AG"
       ],
       "owners": [
-        "Osterreichische Kaolin- und Montanindustrie AG"
+        "Osterreichische Kaolin und Montanindustrie AG"
       ],
-      "notes": "The mine is operated by Osterreichische Kaolin und Coal and owned by Osterreichische Kaolin- und Montanindustrie AG."
+      "notes": "The mine is mentioned as being owned by Osterreichische Kaolin und Montanindustrie AG."
     }
-  }
+  },
+  "town": "Linz"
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.752,
-    "lon": 25.418,
+    "lat": -10.7514,
+    "lon": 25.4249,
     "precision": "site"
   },
   "types": [
@@ -27,9 +27,14 @@
   ],
   "status": "unknown",
   "company_mentions": [
+<<<<<<< HEAD
     "Government of the Democratic Republic of the Congo",
     "La Compagnie Minière de Musonoie Global Société par Actions Simplifiée (COMMUS)",
     "La Générale des Carrières et des Mines (Gecamines S.A.)",
+=======
+    "Compagnie Minière de Musonoï (COMMUS)",
+    "Gecamine",
+>>>>>>> 1bedb361c98ae5f85367ce0ea39b0e8a75401b04
     "Zijin Mining Group Co., Ltd"
   ],
   "products": [],
@@ -41,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.792779Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T18:02:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/COMMUS.htm. Coordinates extracted from the mining facility's report"
   },
   "canonical_name": "Kolwezi Mine",
   "canonical_slug": "kolwezi-mine",
@@ -61,6 +66,7 @@
     }
   },
   "display_name_source": "auto",
+<<<<<<< HEAD
   "province": "Lualaba",
   "enrichment_notes": {
     "web_search_companies": {
@@ -75,6 +81,20 @@
         "Government of the Democratic Republic of the Congo"
       ],
       "notes": "Zijin Mining Group Co., Ltd holds a 67% interest, while Gecamines S.A. holds 28% and the government has a 5% indirect interest."
+=======
+  "province": "Lualaba Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:02:36.000000Z",
+      "operators": [
+        "Compagnie Minière de Musonoï (COMMUS)"
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd",
+        "Gecamine"
+      ],
+      "notes": "COMMUS is a subsidiary of Zijin Mining, which holds a 72% stake."
+>>>>>>> 1bedb361c98ae5f85367ce0ea39b0e8a75401b04
     }
   }
 }

@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "CAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.5,
+    "lon": -43.5,
     "precision": "unknown"
   },
   "types": [
-    "geological occurrence"
+    "plant"
   ],
   "commodities": [
     {
@@ -32,7 +32,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "AMG Advanced Metallurgical Group N.V.",
     "Cambior Inc.",
+    "Companhia Industrial Fluminense Mineracao S.A. (CIF)",
     "Sequoia Minerals Inc."
   ],
   "products": [],
@@ -44,16 +46,16 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.053631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Minor showing noted on USGS map, but no economic deposits. Regional production is in DRC/Rwanda. 10 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:46:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Minor showing noted on USGS map, but no economic deposits. Regional production is in DRC/Rwanda. 10 | Canonical name+slug generated. Web search geocoded. Source: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/mineral-pubs/niobium/myb1-2013-niobi.pdf. The facility is located near Nazareno in the Minas Gerais State, specifically at the Mibra (Volta Grande) Mine"
   },
   "canonical_name": "Tantalum / Niobium Occurrences Facility",
   "canonical_slug": "tantalum-niobium-occurrences-facility",
   "display_name": "Tantalum / Niobium Occurrences",
-  "primary_type": "facility",
+  "primary_type": "plant",
   "type_confidence": 1.0,
   "data_quality": {
     "canonicalization_confidence": 0.51,
@@ -72,17 +74,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Quebec",
+  "province": "Minas Gerais",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:41:02.000000Z",
+      "timestamp": "2025-12-01T14:46:21.000000Z",
       "operators": [
-        "Sequoia Minerals Inc."
+        "Companhia Industrial Fluminense Mineracao S.A. (CIF)"
       ],
       "owners": [
-        "Cambior Inc."
+        "AMG Advanced Metallurgical Group N.V."
       ],
-      "notes": "Sequoia Minerals Inc. operates the Niobec Mine, which is a joint venture with Cambior Inc."
+      "notes": "CIF is owned by AMG Advanced Metallurgical Group N.V."
     }
   }
 }

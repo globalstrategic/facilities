@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 7.868,
-    "lon": -74.839,
+    "lat": 9.415628909935458,
+    "lon": -74.6222028,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineros S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.738520Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T14:58:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from El Bagre (https://www.mineros.com.co/operations/overview). Operations are centered near El Bagre, which is 190 km north of Medellín"
   },
   "canonical_name": "Mineros Mine",
   "canonical_slug": "mineros-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "El Bagre",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:58:25.000000Z",
+      "operators": [
+        "Mineros S.A."
+      ],
+      "owners": [
+        "Mineros S.A."
+      ],
+      "notes": "Mineros S.A. is both the operator and owner of the facility."
+    }
+  }
 }

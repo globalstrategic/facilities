@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -19.772,
-    "lon": 139.889,
+    "lat": -20.0,
+    "lon": 140.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cape Lambert Resources Ltd",
+    "Malaco Leichhardt Pty Ltd",
+    "Matrix Metals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.269163Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T11:52:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ga.gov.au/bigobj/GA5705.pdf. The Mt Watson project is located 100 km northwest of Cloncurry, Queensland"
   },
   "canonical_name": "Mount Watson Mine",
   "canonical_slug": "mount-watson-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:52:09.000000Z",
+      "operators": [
+        "Matrix Metals Ltd",
+        "Malaco Leichhardt Pty Ltd"
+      ],
+      "owners": [
+        "Cape Lambert Resources Ltd"
+      ],
+      "notes": "Malaco Leichhardt Pty Ltd acquired the Mt Watson project as part of the Leichardt Copper Project."
+    }
+  }
 }

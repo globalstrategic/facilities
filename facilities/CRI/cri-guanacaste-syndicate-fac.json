@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CRI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 10.0,
+    "lon": -84.0,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.958967Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-01T14:59:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/cri/guanacaste-cri787. Guanacaste has multiple identified mines, including iron, manganese, and gold"
   },
   "canonical_name": "Guanacaste Syndicate Mine",
   "canonical_slug": "guanacaste-syndicate-mine",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guanacaste"
 }

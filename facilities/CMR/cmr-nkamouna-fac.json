@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 3.26667,
+    "lon": 13.84528,
     "precision": "unknown"
   },
   "types": [
@@ -16,7 +16,9 @@
   "company_mentions": [
     "African Battery Metals Plc",
     "Geovic Cameroon PLC",
+    "Geovic Ltd",
     "Geovic Mining Corporation",
+    "National Investment Corporation of Cameroon (SNI)",
     "Phoenix Mining"
   ],
   "products": [],
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019426Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:54:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-210801.html. Nkamouna is a laterite-type nickel-cobalt-manganese deposit located about 30km NE of Lomié"
   },
   "canonical_name": "Nkamouna Mine",
   "canonical_slug": "nkamouna-mine",
@@ -56,19 +58,19 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "East Region",
+  "province": "Haut-Nyong",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:41:08.000000Z",
+      "timestamp": "2025-12-01T14:54:34.000000Z",
       "operators": [
-        "Phoenix Mining",
-        "African Battery Metals Plc"
+        "Geovic Mining Corporation"
       ],
       "owners": [
-        "Geovic Mining Corporation",
-        "Geovic Cameroon PLC"
+        "Geovic Cameroon PLC",
+        "Geovic Ltd",
+        "National Investment Corporation of Cameroon (SNI)"
       ],
-      "notes": "Phoenix Mining acquired the Nkamouna project from Geovic Mining Corporation, which historically held majority ownership."
+      "notes": "Geovic Cameroon PLC is the operator, with ownership stakes held by Geovic Ltd and SNI."
     }
   }
 }

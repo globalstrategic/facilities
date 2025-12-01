@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -22.078,
-    "lon": -70.183,
+    "lat": -22.08825942710845,
+    "lon": -69.80846136033341,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empressa Nacional De Mineria (Enami)",
+    "Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.901856Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T17:59:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tocopilla (https://thediggings.com/mines/usgs10068485). The Tocopilla Copper Mine is located in a historical mining region, approximately 40 km east of the port of Tocopilla"
   },
   "canonical_name": "Tocopilla Cu Mine",
   "canonical_slug": "tocopilla-cu-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta",
+  "town": "Tocopilla",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:59:30.000000Z",
+      "operators": [],
+      "owners": [
+        "Empressa Nacional De Mineria (Enami)",
+        "Government"
+      ],
+      "notes": "The mine is currently owned by the state-owned company Enami and the government of Chile."
+    }
+  }
 }

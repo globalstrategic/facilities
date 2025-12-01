@@ -1,0 +1,62 @@
+{
+  "facility_id": "usa-baumgardner-operation-fac",
+  "name": "Baumgardner Operation",
+  "aliases": [
+    "6 Mile Coal Mine",
+    "Baumgardner Operation"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 40.903,
+    "lon": -78.259,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:06.022765"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:45.720546Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Baumgardner Operation",
+  "canonical_slug": "baumgardner-operation",
+  "display_name": "6 Mile Coal",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "canonical_name_history": [
+    {
+      "name": "6 Mile Coal Mine",
+      "from": "2025-10-20T15:29:06.022765",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
+    }
+  ]
+}

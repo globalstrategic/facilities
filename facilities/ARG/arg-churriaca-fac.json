@@ -1,51 +1,97 @@
 {
   "facility_id": "arg-churriaca-fac",
-  "name": "Churriaca",
-  "aliases": [],
+  "name": "Agua Rica Mine",
+  "aliases": [
+    "Agua Rica Project",
+    "MARA Project",
+    "Minera Agua Rica Alumbrera",
+    "Churriaca"
+  ],
   "country_iso3": "ARG",
+  "province": "Catamarca",
   "location": {
-    "lat": -37.839,
-    "lon": -70.166,
+    "lat": -27.370556,
+    "lon": -66.28,
     "precision": "site"
   },
   "types": [
-    "mine"
+    "mine",
+    "development"
   ],
+  "primary_type": "mine",
   "commodities": [
     {
-      "metal": "baryte",
+      "metal": "copper",
       "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "silver",
+      "primary": false
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "construction",
+  "company_mentions": [
+    "Agnico Eagle Mines",
+    "Glencore",
+    "Newmont",
+    "Pan American Silver",
+    "Yamana Gold"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
       "date": "2025-10-20T15:26:24.687239"
+    },
+    {
+      "type": "manual_correction",
+      "id": "churriaca_agua_rica_correction",
+      "date": "2025-12-01T00:00:00.000000Z",
+      "notes": "Corrected from mis-named 'Churriaca' to Agua Rica copper-gold project. Original import incorrectly matched to barite site name."
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.178900Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "llm_validated",
+    "confidence": 0.95,
+    "last_checked": "2025-12-01T00:00:00.000000Z",
+    "checked_by": "manual_correction",
+    "notes": "Agua Rica copper-gold-moly porphyry deposit near Andalgalá, Catamarca (MARA project). Coords from Mindat/technical reports. Historically owned by Yamana Gold; now controlled by Glencore via Minera Agua Rica Alumbrera S.A."
   },
-  "canonical_name": "Churriaca Mine",
-  "canonical_slug": "churriaca-mine",
-  "display_name": "Churriaca",
-  "primary_type": "mine",
+  "canonical_name": "Agua Rica Mine",
+  "canonical_slug": "agua-rica-mine",
+  "display_name": "Agua Rica",
+  "display_name_source": "manual",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.51,
+    "canonicalization_confidence": 0.95,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": false,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false,
+      "operator_unresolved": false
     }
   },
-  "display_name_source": "auto"
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:49:47.000000Z",
+      "operators": [
+        "Minera Agua Rica Alumbrera S.A."
+      ],
+      "owners": [
+        "Glencore",
+        "Yamana Gold (historical)",
+        "Newmont (historical)",
+        "Pan American Silver (historical)",
+        "Agnico Eagle Mines (historical)"
+      ],
+      "notes": "Agua Rica integrated with Alumbrera as MARA JV; Glencore subsequently acquired partner stakes from Newmont and Pan American Silver."
+    }
+  }
 }

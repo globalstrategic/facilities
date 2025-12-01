@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -31.785,
-    "lon": 141.751,
+    "lat": -28.0,
+    "lon": 121.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Red 5 Limited",
+    "Saracen Mineral Holdings Limited",
+    "Vault Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.237051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T11:50:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/King_of_the_Hills_Gold_Mine. The facility is known as King of the Hills Gold Mine, located near Leonora"
   },
   "canonical_name": "Golden King Mine",
   "canonical_slug": "golden-king-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:50:39.000000Z",
+      "operators": [
+        "Red 5 Limited",
+        "Vault Minerals Limited"
+      ],
+      "owners": [
+        "Saracen Mineral Holdings Limited",
+        "Red 5 Limited"
+      ],
+      "notes": "Red 5 Limited is the current operator after acquiring the mine from Saracen Mineral Holdings."
+    }
+  }
 }

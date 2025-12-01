@@ -1,0 +1,69 @@
+{
+  "facility_id": "usa-falcon-gob-pile-fac",
+  "name": "Falcon Gob Pile",
+  "aliases": [
+    "#2 Surface Mine",
+    "Falcon Gob Pile",
+    "No. 29 Strip"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.028,
+    "lon": -82.659,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:50.287702"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:45.725201Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Falcon Gob Pile",
+  "canonical_slug": "falcon-gob-pile",
+  "display_name": "2 Surface",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "#2 Surface Mine",
+      "from": "2025-10-20T15:28:50.287709",
+      "to": "2025-11-04T19:18:45.725199Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "#2 Surface Mine",
+      "from": "2025-10-20T15:28:50.287702",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
+    }
+  ],
+  "display_name_source": "auto"
+}

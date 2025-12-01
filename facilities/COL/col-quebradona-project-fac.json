@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 6.11,
+    "lon": -75.55,
     "precision": "unknown"
   },
   "types": [
-    "porphyry deposit"
+    "plant"
   ],
   "commodities": [
     {
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "AngloGold Ashanti Colombia S.A.",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.165906",
-      "evidence": "Extracted from operator column: AngloGold Ashanti Colombia S.A."
-    }
+    "AngloGold Ashanti Colombia S.A.",
+    "AngloGold Ashanti plc",
+    "Minera de Cobre Quebradona S.A.S."
   ],
   "products": [],
   "sources": [
@@ -39,16 +34,16 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.738219Z",
-    "checked_by": "import_pipeline",
-    "notes": "**Stalled/On Hold.** Environmental license shelved since 2021 due to regulatory and community opposition. 13 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T14:58:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "**Stalled/On Hold.** Environmental license shelved since 2021 due to regulatory and community opposition. 13 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Quebradona. The Quebradona project is a copper mining venture located in Jericó, Antioquia, Colombia"
   },
   "canonical_name": "Quebradona Facility",
   "canonical_slug": "quebradona-facility",
   "display_name": "Quebradona",
-  "primary_type": "facility",
+  "primary_type": "plant",
   "type_confidence": 1.0,
   "data_quality": {
     "canonicalization_confidence": 0.615,
@@ -66,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T14:58:06.000000Z",
+      "operators": [
+        "Minera de Cobre Quebradona S.A.S."
+      ],
+      "owners": [
+        "AngloGold Ashanti plc"
+      ],
+      "notes": "AngloGold Ashanti is the owner and operator of the Quebradona project."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CAN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 56.222628520298905,
+    "lon": -62.26653814661639,
     "precision": "unknown"
   },
   "types": [
@@ -27,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:50.753725Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T17:58:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Nain (https://www.canadianminingjournal.com/news/nickel-ceremony-opens-vales-long-harbour-hydromet-plant/). The Long Harbour Plant processes concentrates from the Voisey's Bay mine, which is located near Nain"
   },
   "canonical_name": "Long Harbour Mine",
   "canonical_slug": "long-harbour-mine",
@@ -50,14 +50,15 @@
   "province": "Newfoundland and Labrador",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T12:05:38.000000Z",
+      "timestamp": "2025-11-26T17:58:47.000000Z",
       "operators": [
-        "Vale Canada Limited"
+        "Vale S.A."
       ],
       "owners": [
         "Vale S.A."
       ],
-      "notes": "Vale Canada Limited operates the facility, which is part of Vale S.A.'s global operations."
+      "notes": "Vale S.A. is both the operator and owner of the Long Harbour Plant."
     }
-  }
+  },
+  "town": "Nain"
 }

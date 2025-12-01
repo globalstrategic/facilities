@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.213,
-    "lon": 26.706,
+    "lat": -26.5,
+    "lon": 26.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Beisa Mining Ltd.",
+    "Neo Energy Metals",
+    "Sibanye Gold",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.696627Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T17:47:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://world-nuclear.org/information-library/country-profiles/countries-o-s/south-africa. The facility is located approximately 20 km south of Welkom in the Free State province"
   },
   "canonical_name": "Oryx/beisa Mine",
   "canonical_slug": "oryx-beisa-mine",
@@ -55,5 +60,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:47:17.000000Z",
+      "operators": [
+        "Sibanye Gold",
+        "Neo Energy Metals"
+      ],
+      "owners": [
+        "Beisa Mining Ltd.",
+        "Sibanye-Stillwater",
+        "Neo Energy Metals"
+      ],
+      "notes": "Sibanye Gold operates the facility, while Beisa Mining Ltd. is noted as the owner. Neo Energy Metals is involved in the acquisition and development of the Beisa projects."
+    }
+  }
 }

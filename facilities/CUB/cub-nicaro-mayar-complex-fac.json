@@ -9,7 +9,7 @@
     "precision": "unknown"
   },
   "types": [
-    "mining complex"
+    "plant"
   ],
   "commodities": [
     {
@@ -33,14 +33,9 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Formerly Cubaníquel",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.896041",
-      "evidence": "Extracted from operator column: Formerly Cubaníquel (State-Owned)"
-    }
+    "Cuban government",
+    "Formerly Cubaníquel",
+    "Sherritt International Corp."
   ],
   "products": [],
   "sources": [
@@ -60,7 +55,7 @@
   "canonical_name": "Nicaro Mayarí Facility",
   "canonical_slug": "nicaro-mayari-facility",
   "display_name": "Nicaro Mayarí",
-  "primary_type": "facility",
+  "primary_type": "plant",
   "type_confidence": 1.0,
   "data_quality": {
     "canonicalization_confidence": 0.615,
@@ -78,5 +73,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guantánamo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:01:08.000000Z",
+      "operators": [
+        "Sherritt International Corp."
+      ],
+      "owners": [
+        "Cuban government"
+      ],
+      "notes": "Sherritt operates the Moa mine in a joint venture with the Cuban government."
+    }
+  }
 }

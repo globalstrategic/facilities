@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.838758052126906,
+    "lon": 15.107383031326895,
     "precision": "unknown"
   },
   "types": [
@@ -28,7 +28,10 @@
   "status": "unknown",
   "company_mentions": [
     "Critical Metals Corp",
-    "European Lithium"
+    "Critical Metals Corp.",
+    "ECM Lithium AT GmbH",
+    "European Lithium",
+    "European Lithium Limited"
   ],
   "products": [],
   "sources": [
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.396244Z",
-    "checked_by": "import_pipeline",
-    "notes": "Austria's most advanced battery metal project, targeting the European EV market. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T17:51:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Austria's most advanced battery metal project, targeting the European EV market. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Wolfsberg (https://www.nsenergybusiness.com/projects/wolfsberg-lithium-project/). The Wolfsberg Lithium Project is located approximately 270 km south of Vienna, Austria, and 20 km east of the town of Wolfsberg"
   },
   "canonical_name": "Wolfsberg Lithium Mine",
   "canonical_slug": "wolfsberg-lithium-mine",
@@ -62,15 +65,17 @@
   "province": "Carinthia",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:09:46.000000Z",
+      "timestamp": "2025-11-26T17:51:33.000000Z",
       "operators": [
-        "Critical Metals Corp",
-        "European Lithium"
+        "European Lithium Limited",
+        "ECM Lithium AT GmbH"
       ],
       "owners": [
-        "European Lithium"
+        "European Lithium Limited",
+        "Critical Metals Corp."
       ],
-      "notes": "European Lithium is focused on the development of the project, while Critical Metals Corp is involved in its commercial approval and financing."
+      "notes": "European Lithium Limited owns the project through its subsidiary ECM Lithium AT GmbH. Critical Metals Corp. is expected to own the project following a business combination."
     }
-  }
+  },
+  "town": "Wolfsberg"
 }

@@ -1,0 +1,74 @@
+{
+  "facility_id": "arg-la-nelly-barite-mine-neuquen-fac",
+  "name": "La Nelly Barite Mine",
+  "aliases": [
+    "Mina La Nelly (baritina)",
+    "La Nelly, Loncopue"
+  ],
+  "country_iso3": "ARG",
+  "province": "San Juan",
+  "location": {
+    "lat": -31.2,
+    "lon": -68.5,
+    "precision": "approximate"
+  },
+  "types": [
+    "mine"
+  ],
+  "primary_type": "mine",
+  "commodities": [
+    {
+      "metal": "baryte",
+      "primary": true
+    },
+    {
+      "metal": "celestine",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "parent_district_id": "arg-churriaca-t-g-san-juan-la-nelly-fac",
+  "company_mentions": [
+    "Austral Gold Limited",
+    "Troy Resources Argentina"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "manual_entry",
+      "id": "barite_district_split",
+      "date": "2025-12-01T00:00:00.000000Z",
+      "notes": "Created from district split. Individual mine within Chorriaca Barite District."
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T13:47:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historic barite(-celestine) concession in the Neuquen barite belt (district around Chorriaca / Loncopue). Individual claim mentioned in provincial mining bulletins; no modern operator disclosed.. Web search geocoded. Source: https://australgold.com/wp-content/uploads/2023/03/RPA-Austral-Gold-Casposo-NI43-101-Report-Sept-21-2016.pdf. The mine is situated approximately 150 km northwest of the city of San Juan"
+  },
+  "canonical_name": "La Nelly Barite Mine",
+  "canonical_slug": "la-nelly-barite-mine-neuquen",
+  "display_name": "La Nelly Barite Mine",
+  "display_name_source": "manual",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.4,
+    "flags": {
+      "operator_unresolved": true
+    }
+  },
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T13:47:27.000000Z",
+      "operators": [
+        "Austral Gold Limited"
+      ],
+      "owners": [
+        "Troy Resources Argentina"
+      ],
+      "notes": "Austral Gold Limited purchased a 51% interest in Troy Resources Argentina and became the mine operator."
+    }
+  }
+}

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.923896422278321,
+    "lon": -6.6463922,
     "precision": "unknown"
   },
   "types": [
@@ -23,7 +23,13 @@
   "company_mentions": [
     "A",
     "N",
+<<<<<<< HEAD
+    "Pan African Minerals",
+    "SODEMI",
+    "Tata Steel"
+=======
     "Pan African Minerals"
+>>>>>>> 607014802c5cd44630a889ec8413e9aa4f2ad898
   ],
   "products": [],
   "sources": [
@@ -34,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.458635Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T18:01:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from San-Pédro (https://www.africaintelligence.com/west-africa/2014/10/28/frank-timis-on-stand-by-on-mount-klahoyo,108044555-bre). The Mount Klahoyo Project is located in western Ivory Coast, with significant iron ore reserves"
   },
   "canonical_name": "Mt Klahoyo Exploration",
   "canonical_slug": "mt-klahoyo-exploration",
@@ -62,6 +68,21 @@
     }
   ],
   "display_name_source": "auto",
+<<<<<<< HEAD
+  "province": "Sassandra-Marahoué",
+  "town": "San-Pédro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:01:08.000000Z",
+      "operators": [
+        "Pan African Minerals"
+      ],
+      "owners": [
+        "SODEMI",
+        "Tata Steel"
+      ],
+      "notes": "Pan African Minerals is associated with Frank Timis, while SODEMI retains equity interest in the project."
+=======
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-01T07:24:17.000000Z",
@@ -70,6 +91,7 @@
       ],
       "owners": [],
       "notes": "Pan African Minerals is the primary company mentioned in relation to the Mt Klahoyo Project."
+>>>>>>> 607014802c5cd44630a889ec8413e9aa4f2ad898
     }
   }
 }

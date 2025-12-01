@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "BHR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 26.198152,
+    "lon": 50.679893,
     "precision": "unknown"
   },
   "types": [
-    "integrated steel mill"
+    "plant"
   ],
   "commodities": [
     {
@@ -25,7 +25,9 @@
   "company_mentions": [
     "Foulath Holding Company",
     "SULB Company",
-    "Yamato Kogyo Co., Ltd"
+    "United Steel Company (SULB)",
+    "Yamato Kogyo Co., Ltd",
+    "Yamato Kogyo Co., Ltd."
   ],
   "products": [],
   "sources": [
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.071532Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T17:55:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sulb_Bahrain_Al_Hidd_steel_plant. The SULB Integrated Steel Plant is located in the Hidd Industrial Area, which is part of the Muharraq Governorate in Bahrain"
   },
   "canonical_name": "Sulb Integrated Steel Steel Plant",
   "canonical_slug": "sulb-integrated-steel-steel-plant",
@@ -67,15 +69,15 @@
   "province": "Muharraq",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T09:37:24.000000Z",
+      "timestamp": "2025-11-26T17:55:10.000000Z",
       "operators": [
-        "SULB Company"
+        "United Steel Company (SULB)"
       ],
       "owners": [
         "Foulath Holding Company",
-        "Yamato Kogyo Co., Ltd"
+        "Yamato Kogyo Co., Ltd."
       ],
-      "notes": "SULB is a joint venture between Foulath (51%) and Yamato Kogyo (49%)."
+      "notes": "SULB is a joint venture between Foulath and Yamato Kogyo."
     }
   }
 }

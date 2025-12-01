@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.560003064248622,
+    "lon": 27.1952118,
     "precision": "unknown"
   },
   "types": [
-    "exploration project"
+    "plant"
   ],
   "commodities": [
     {
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.680242Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T17:46:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kafue (https://antlergold.com/projects/global-projects/kesya-ree-project/). The Kesya REE Project is located near Kafue, approximately 90 km from Lusaka via sealed road"
   },
   "canonical_name": "Kesya REE Exploration",
   "canonical_slug": "kesya-ree-exploration",
@@ -54,7 +54,7 @@
   "display_name_source": "auto",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:40:23.000000Z",
+      "timestamp": "2025-11-26T17:46:09.000000Z",
       "operators": [
         "Antler Gold Inc."
       ],
@@ -63,5 +63,7 @@
       ],
       "notes": "Antler Gold holds up to 95% ownership of the project."
     }
-  }
+  },
+  "province": "Lusaka",
+  "town": "Kafue"
 }

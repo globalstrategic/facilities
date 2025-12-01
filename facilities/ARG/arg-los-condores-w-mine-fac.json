@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -32.647,
-    "lon": -65.299,
+    "lat": -32.5825,
+    "lon": -65.4166,
     "precision": "site"
   },
   "types": [
@@ -17,8 +17,10 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "closed",
+  "company_mentions": [
+    "None"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.175058Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-01T13:07:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-44541.html. Los Cóndores mine is located in the Chacabuco Department of San Luis Province, Argentina"
   },
   "canonical_name": "Los Condores W Mine",
   "canonical_slug": "los-condores-w-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Luis",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T13:07:33.000000Z",
+      "operators": [
+        "None"
+      ],
+      "owners": [
+        "None"
+      ],
+      "notes": "No specific operators or owners mentioned in the search results."
+    }
+  }
 }

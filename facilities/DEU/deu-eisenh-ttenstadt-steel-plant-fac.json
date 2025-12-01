@@ -4,12 +4,12 @@
   "aliases": [],
   "country_iso3": "DEU",
   "location": {
-    "lat": 52.163,
-    "lon": 14.631,
+    "lat": 52.163948,
+    "lon": 14.63934,
     "precision": "site"
   },
   "types": [
-    "steel plant"
+    "plant"
   ],
   "commodities": [
     {
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Eisenhüttenstadt GmbH",
+    "ArcelorMittal SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.633492Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:05:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Eisenh%C3%BCttenstadt_steel_plant. The facility is known as ArcelorMittal Eisenhüttenstadt and has been operating since 2006 under ArcelorMittal"
   },
   "canonical_name": "Eisenhã¼ttenstadt Steel Steel Plant",
   "canonical_slug": "eisenha14ttenstadt-steel-steel-plant",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Brandenburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:05:57.000000Z",
+      "operators": [
+        "ArcelorMittal Eisenhüttenstadt GmbH"
+      ],
+      "owners": [
+        "ArcelorMittal SA"
+      ],
+      "notes": "ArcelorMittal has owned the facility since 2006."
+    }
+  }
 }
