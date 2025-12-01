@@ -28,6 +28,9 @@ Usage:
     # Focus on low-quality facility names
     python scripts/web_search_geocode.py --low-quality-names --limit 10
 
+    # Interactive enrichment: web search + ask user to confirm/fill gaps
+    python scripts/web_search_geocode.py --interactive-enrich --country MDG --limit 5
+
     # Assess and report without making changes
     python scripts/web_search_geocode.py --assess-only --country USA
 
@@ -55,11 +58,12 @@ Flags:
     --all: Process ALL facilities (not just missing coords)
     --missing-companies: Process facilities with empty company_mentions
     --low-quality-names: Only process facilities with low name quality scores
+    --interactive-enrich: Web search + ask user to confirm/fill gaps for each facility
     --assess-only: Dry-run that shows what WOULD be processed
     --dry-run: Don't update files, just show what would be done
     --list-missing: List facilities missing coordinates
     --import-csv: Import coordinates from CSV file
-    --interactive: Interactive coordinate entry mode
+    --interactive: Interactive coordinate entry mode (manual, no web search)
 """
 
 import json
@@ -502,6 +506,148 @@ def geocode_single_facility(
     return None
 
 
+def interactive_review_extraction(
+    facility: Dict,
+    extraction: Optional[Dict],
+    validator: InteractiveValidator
+) -> Optional[Dict]:
+    """
+    Interactive review of LLM extraction results.
+    Allows user to confirm, modify, or fill in missing data.
+
+    Returns the final result dict (possibly modified) or None to skip.
+    """
+    if not validator.enabled:
+        return extraction
+
+    name = facility.get("name", "")
+    facility_id = facility.get("facility_id", "")
+
+    print(f"\n{'='*70}")
+    print(f"REVIEW: {name}")
+    print(f"ID: {facility_id}")
+    print('='*70)
+
+    # Initialize result from extraction or empty
+    result = extraction.copy() if extraction else {
+        "found": False,
+        "confidence": 0.0,
+        "companies": {"operators": [], "owners": []},
+    }
+
+    # Show what was found
+    print("\n📋 EXTRACTED DATA:")
+
+    lat = result.get("lat")
+    lon = result.get("lon")
+    if lat and lon:
+        print(f"  Coordinates: {lat:.6f}, {lon:.6f}")
+    else:
+        print(f"  Coordinates: NOT FOUND")
+
+    companies = result.get("companies", {})
+    operators = companies.get("operators", [])
+    owners = companies.get("owners", [])
+    if operators or owners:
+        print(f"  Operators: {', '.join(operators) if operators else 'None'}")
+        print(f"  Owners: {', '.join(owners) if owners else 'None'}")
+    else:
+        print(f"  Companies: NOT FOUND")
+
+    status = result.get("status", "unknown")
+    print(f"  Status: {status}")
+
+    confidence = result.get("confidence", 0.0)
+    print(f"  Confidence: {confidence:.0%}")
+
+    if result.get("notes"):
+        print(f"  Notes: {result['notes']}")
+
+    # Ask if user wants to process this facility
+    print()
+    action = validator.ask_user(
+        "What would you like to do?",
+        ["Accept as-is", "Edit/Add data", "Skip this facility"],
+        default="Accept as-is" if confidence >= 0.7 else "Edit/Add data"
+    )
+
+    if action == "Skip this facility":
+        print("  → Skipped")
+        return None
+
+    if action == "Edit/Add data":
+        print("\n📝 MANUAL INPUT (press Enter to keep current value)")
+        print("-"*50)
+
+        # Coordinates
+        if lat and lon:
+            print(f"  Current coords: {lat:.6f}, {lon:.6f}")
+            if validator.confirm("Change coordinates?", default=False):
+                new_lat = validator.get_text_input("Latitude", default=str(lat))
+                new_lon = validator.get_text_input("Longitude", default=str(lon))
+                try:
+                    result["lat"] = float(new_lat)
+                    result["lon"] = float(new_lon)
+                    print(f"  → Updated to: {result['lat']:.6f}, {result['lon']:.6f}")
+                except (ValueError, TypeError):
+                    print("  → Invalid format, keeping original")
+        else:
+            print("  No coordinates found.")
+            if validator.confirm("Enter coordinates manually?", default=True):
+                new_lat = validator.get_text_input("Latitude")
+                new_lon = validator.get_text_input("Longitude")
+                if new_lat and new_lon:
+                    try:
+                        result["lat"] = float(new_lat)
+                        result["lon"] = float(new_lon)
+                        result["confidence"] = 0.9  # High confidence for manual entry
+                        print(f"  → Set to: {result['lat']:.6f}, {result['lon']:.6f}")
+                    except (ValueError, TypeError):
+                        print("  → Invalid format, skipping coordinates")
+
+        # Companies
+        print()
+        current_ops = ', '.join(operators) if operators else 'None'
+        print(f"  Current operators: {current_ops}")
+        new_ops = validator.get_text_input("Operators (comma-separated)", default=current_ops if operators else None)
+        if new_ops and new_ops != 'None':
+            result.setdefault("companies", {})["operators"] = [op.strip() for op in new_ops.split(",") if op.strip()]
+
+        current_owners = ', '.join(owners) if owners else 'None'
+        print(f"  Current owners: {current_owners}")
+        new_owners = validator.get_text_input("Owners (comma-separated)", default=current_owners if owners else None)
+        if new_owners and new_owners != 'None':
+            result.setdefault("companies", {})["owners"] = [ow.strip() for ow in new_owners.split(",") if ow.strip()]
+
+        # Status
+        print()
+        new_status = validator.ask_user(
+            f"Facility status? (current: {status})",
+            ["operating", "closed", "care_and_maintenance", "development", "unknown"],
+            default=status if status != "unknown" else "operating"
+        )
+        result["status"] = new_status
+
+    # Final confirmation
+    print("\n" + "="*70)
+    print("FINAL DATA TO SAVE:")
+    print("="*70)
+    if result.get("lat") and result.get("lon"):
+        print(f"  Coordinates: {result['lat']:.6f}, {result['lon']:.6f}")
+    companies = result.get("companies", {})
+    if companies.get("operators") or companies.get("owners"):
+        print(f"  Operators: {', '.join(companies.get('operators', []))}")
+        print(f"  Owners: {', '.join(companies.get('owners', []))}")
+    print(f"  Status: {result.get('status', 'unknown')}")
+
+    if validator.confirm("Save these changes?", default=True):
+        result["found"] = True
+        return result
+    else:
+        print("  → Cancelled")
+        return None
+
+
 def update_facility_json(facility: Dict, location: Dict) -> bool:
     """Update facility JSON file with new coordinates, company mentions, and status."""
     path = Path(f"facilities/{facility['country_iso3']}/{facility['facility_id']}.json")
@@ -919,6 +1065,8 @@ def main():
     search_group.add_argument("--assess-only", action="store_true",
                              help="Dry-run that shows what WOULD be processed (no changes)")
     search_group.add_argument("--reverse", action="store_true", help="Process countries Z to A")
+    search_group.add_argument("--interactive-enrich", action="store_true",
+                             help="Interactive mode: web search + ask user to confirm/fill gaps")
 
     args = parser.parse_args()
 
@@ -985,6 +1133,11 @@ def main():
             sys.exit(1)
         name_assessor = NameQualityAssessor()
         print("Using name quality assessment to filter facilities")
+
+    # Initialize interactive validator if needed
+    interactive = InteractiveValidator(enabled=args.interactive_enrich)
+    if args.interactive_enrich:
+        print("Interactive mode: will ask for confirmation/input on each facility")
 
     # Country names mapping
     country_names = {
@@ -1143,6 +1296,14 @@ def main():
             print(f"\n[{i}/{len(to_process)}] {facility['name']}")
 
             result = geocode_single_facility(facility, country_name, search_func, openai_client)
+
+            # Interactive mode: let user review and modify extraction results
+            if args.interactive_enrich:
+                result = interactive_review_extraction(facility, result, interactive)
+                if result is None:
+                    # User chose to skip
+                    country_failed += 1
+                    continue
 
             if result:
                 has_coords = result.get("lat") is not None and result.get("lon") is not None
