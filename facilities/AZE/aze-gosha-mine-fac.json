@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.898360004197094,
+    "lon": 45.373973510690504,
     "precision": "unknown"
   },
   "types": [
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.535104Z",
-    "checked_by": "import_pipeline",
-    "notes": "Small, high-grade underground mine. Ore transported to Gedabek for processing. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T17:51:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Small, high-grade underground mine. Ore transported to Gedabek for processing. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Gedabek (https://www.nasdaq.com/articles/azerbaijan-approves-anglo-asian-mining-gold-devt-plans-gosha-mine-2012-05-16). The Gosha Mine is located in western Azerbaijan, approximately 50 kilometers northwest of Gedabek"
   },
   "canonical_name": "Gosha Mine",
   "canonical_slug": "gosha-mine",
@@ -57,7 +57,7 @@
   "province": "Azerbaijan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:01:11.000000Z",
+      "timestamp": "2025-11-26T17:51:52.000000Z",
       "operators": [
         "Anglo Asian Mining PLC"
       ],
@@ -66,5 +66,6 @@
       ],
       "notes": "Anglo Asian Mining PLC is the primary operator and owner of the Gosha Mine."
     }
-  }
+  },
+  "town": "Gedabek"
 }

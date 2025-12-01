@@ -7,8 +7,8 @@
   ],
   "country_iso3": "BGD",
   "location": {
-    "lat": 25.547,
-    "lon": 88.959,
+    "lat": 25.547556,
+    "lon": 88.960722,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barapukuria Coal Mining Company Limited",
+    "China National Machinery Import and Export Corporation",
+    "Petrobangla",
+    "Xuzhou Coal Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.031258Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T17:54:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Barapukuria_coal_mine. Barapukuria Coal Mine is the only active coal mine in Bangladesh, located in the Dinajpur District"
   },
   "canonical_name": "Barapukuria Coal Mine",
   "canonical_slug": "barapukuria-coal-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dinajpur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:54:08.000000Z",
+      "operators": [
+        "Barapukuria Coal Mining Company Limited",
+        "Xuzhou Coal Mining Group",
+        "China National Machinery Import and Export Corporation"
+      ],
+      "owners": [
+        "Barapukuria Coal Mining Company Limited",
+        "Petrobangla"
+      ],
+      "notes": "Barapukuria Coal Mining Company Limited is a subsidiary of the state-owned Petrobangla."
+    }
+  }
 }

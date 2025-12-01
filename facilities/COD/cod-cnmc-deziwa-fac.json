@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.794,
-    "lon": 25.763,
+    "lat": -10.79345565555149,
+    "lon": 25.7816583969706,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Nonferrous Metal Mining Group",
+    "Gécamines",
+    "Société Miniere De Deziwa (Somidez)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.793129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T18:02:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Deziwa_mine. The Deziwa mine is a copper and cobalt mining facility located in the Lualaba province of the Democratic Republic of the Congo"
   },
   "canonical_name": "Cnmc Deziwa Mine",
   "canonical_slug": "cnmc-deziwa-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lualaba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:02:45.000000Z",
+      "operators": [
+        "Société Miniere De Deziwa (Somidez)"
+      ],
+      "owners": [
+        "China Nonferrous Metal Mining Group",
+        "Gécamines"
+      ],
+      "notes": "The mine is operated by a joint venture between CNMC (51%) and Gécamines (49%)."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.752,
-    "lon": 25.418,
+    "lat": -10.7514,
+    "lon": 25.4249,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compagnie Minière de Musonoï (COMMUS)",
+    "Gecamine",
+    "Zijin Mining Group Co., Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.792779Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T18:02:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/COMMUS.htm. Coordinates extracted from the mining facility's report"
   },
   "canonical_name": "Kolwezi Mine",
   "canonical_slug": "kolwezi-mine",
@@ -55,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lualaba Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:02:36.000000Z",
+      "operators": [
+        "Compagnie Minière de Musonoï (COMMUS)"
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd",
+        "Gecamine"
+      ],
+      "notes": "COMMUS is a subsidiary of Zijin Mining, which holds a 72% stake."
+    }
+  }
 }

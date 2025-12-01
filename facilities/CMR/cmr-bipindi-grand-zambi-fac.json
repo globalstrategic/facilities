@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "G-Stones Resources S.A.",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.493904",
-      "evidence": "Extracted from operator column: G-Stones Resources S.A."
-    }
+    "G-Stones Resources S.A.",
+    "G-Stones Resources SA",
+    "Groupe BOCOM"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:02:26.000000Z",
+      "operators": [
+        "G-Stones Resources SA"
+      ],
+      "owners": [
+        "Groupe BOCOM"
+      ],
+      "notes": "G-Stones Resources SA is the operator of the mine, while Groupe BOCOM is the parent company."
+    }
+  }
 }

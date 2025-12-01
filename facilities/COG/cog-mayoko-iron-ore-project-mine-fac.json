@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COG",
   "location": {
-    "lat": -4.258,
-    "lon": 15.273,
+    "lat": -4.258367,
+    "lon": 15.27287,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Iron",
+    "Paul Obambi",
+    "Sapro Mayoko SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.008478Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T18:03:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mayoko_Iron_Ore_Project_Mine. The Mayoko Iron Ore Project Mine is located in Brazzaville, Republic of the Congo"
   },
   "canonical_name": "Mayoko Iron Ore Mine",
   "canonical_slug": "mayoko-iron-ore-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Brazzaville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:03:37.000000Z",
+      "operators": [
+        "African Iron",
+        "Sapro Mayoko SA"
+      ],
+      "owners": [
+        "Paul Obambi"
+      ],
+      "notes": "Sapro Mayoko SA acquired the Mayoko deposit in 2016 from Exxaro."
+    }
+  }
 }

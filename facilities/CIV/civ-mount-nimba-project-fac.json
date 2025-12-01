@@ -21,22 +21,16 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.023116",
-      "evidence": "Extracted from operator column: N/A"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.023119",
-      "evidence": "Extracted from operator column: N/A"
-    }
+    "A",
+    "Areva",
+    "BHP Billiton",
+    "Euronimba Ltd",
+    "High-Power-Exploration",
+    "N",
+    "Newmont",
+    "Nimba Development Company",
+    "SMFG",
+    "Tata Steel Ltd"
   ],
   "products": [],
   "sources": [
@@ -74,5 +68,25 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "N/A",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T18:00:57.000000Z",
+      "operators": [
+        "Tata Steel Ltd",
+        "High-Power-Exploration"
+      ],
+      "owners": [
+        "Tata Steel Ltd",
+        "Nimba Development Company",
+        "Euronimba Ltd",
+        "Areva",
+        "BHP Billiton",
+        "Newmont",
+        "SMFG"
+      ],
+      "notes": "Tata Steel is a major shareholder in the joint venture for the Mount Nimba Project. Other companies involved include High-Power-Exploration and various stakeholders in Euronimba Ltd."
+    }
+  }
 }

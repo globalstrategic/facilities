@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.689,
-    "lon": 27.269,
+    "lat": -26.360174541315896,
+    "lon": 26.80077432254608,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sibanye-Stillwater",
+    "Sibanye-Stillwater Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.696476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-waterkloof-waterval-west-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-26T17:47:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-waterkloof-waterval-west-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Carletonville (https://www.nsenergybusiness.com/projects/kloof-gold-mine/). Kloof Gold Mine is located in the Far West Rand Goldfield, approximately 60 km west of Johannesburg"
   },
   "canonical_name": "Waterkloof Mine",
   "canonical_slug": "waterkloof-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "town": "Carletonville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:47:07.000000Z",
+      "operators": [
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Sibanye-Stillwater Ltd"
+      ],
+      "notes": "Sibanye-Stillwater is the owner and operator of the Kloof Gold Mine."
+    }
+  }
 }

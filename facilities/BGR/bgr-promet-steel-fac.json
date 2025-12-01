@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Metinvest Group",
-      "role": "operator",
-      "source": "Bulgarian Mines and Metals Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:19:04.893746",
-      "evidence": "Extracted from operator column: Metinvest Group"
-    }
+    "Metinvest Group",
+    "Metinvest Holding",
+    "Promet Steel"
   ],
   "products": [],
   "sources": [
@@ -51,5 +46,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:54:29.000000Z",
+      "operators": [
+        "Promet Steel"
+      ],
+      "owners": [
+        "Metinvest Holding"
+      ],
+      "notes": "Promet Steel was acquired by Metinvest Holding in 2009."
+    }
+  }
 }
