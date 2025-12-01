@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-Unified geocoding for mining facilities - web search, manual entry, and CSV import.
+Unified geocoding and enrichment for mining facilities.
 
-Uses real web searches (Tavily, Brave) + LLM to extract:
-1. Coordinates (lat/lon)
-2. Company mentions (operators/owners)
-3. Location metadata (province, town)
+Combines web search, manual entry, CSV import, and intelligent data smoothing.
 
-Also supports manual coordinate entry and CSV import for bulk updates.
+Features:
+1. Web search geocoding (Tavily, Brave) + LLM extraction
+2. Coordinates (lat/lon) extraction
+3. Company mentions (operators/owners) extraction
+4. Facility status extraction (operating/closed/unknown)
+5. Location metadata (province, town)
+6. Name quality assessment
+7. Interactive validation for uncertain cases
 
 Usage:
     # Web search geocoding (default mode)
@@ -20,6 +24,12 @@ Usage:
 
     # Process ALL facilities (regardless of missing data)
     python scripts/web_search_geocode.py --all --limit 3
+
+    # Focus on low-quality facility names
+    python scripts/web_search_geocode.py --low-quality-names --limit 10
+
+    # Assess and report without making changes
+    python scripts/web_search_geocode.py --assess-only --country USA
 
     # With Brave Search instead
     export BRAVE_API_KEY="your-key"
@@ -44,6 +54,8 @@ Environment:
 Flags:
     --all: Process ALL facilities (not just missing coords)
     --missing-companies: Process facilities with empty company_mentions
+    --low-quality-names: Only process facilities with low name quality scores
+    --assess-only: Dry-run that shows what WOULD be processed
     --dry-run: Don't update files, just show what would be done
     --list-missing: List facilities missing coordinates
     --import-csv: Import coordinates from CSV file
@@ -61,6 +73,13 @@ from datetime import datetime
 from typing import Optional, Dict, List, Tuple
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Import name quality assessment
+try:
+    from scripts.utils.name_quality import NameQualityAssessor
+    HAS_NAME_QUALITY = True
+except ImportError:
+    HAS_NAME_QUALITY = False
 
 # Import validation functions from geocoding utils
 try:
@@ -100,6 +119,85 @@ try:
 except ImportError:
     HAS_GEOPY = False
 
+
+# =============================================================================
+# INTERACTIVE VALIDATION
+# =============================================================================
+
+class InteractiveValidator:
+    """Handle interactive validation with human input."""
+
+    def __init__(self, enabled: bool = False):
+        self.enabled = enabled
+        self.decisions_cache = {}
+
+    def ask_user(self, question: str, options: List[str], default: Optional[str] = None) -> str:
+        """
+        Ask user a question with multiple choice options.
+
+        Args:
+            question: The question to ask
+            options: List of valid options
+            default: Default option if user presses Enter
+
+        Returns:
+            Selected option
+        """
+        if not self.enabled:
+            return default or options[0]
+
+        print(f"\n{'='*70}")
+        print(f"QUESTION: {question}")
+        print('='*70)
+        for i, opt in enumerate(options, 1):
+            marker = " (default)" if opt == default else ""
+            print(f"  [{i}] {opt}{marker}")
+
+        while True:
+            try:
+                response = input(f"\nYour choice [1-{len(options)}]: ").strip()
+                if not response and default:
+                    print(f"Using default: {default}")
+                    return default
+                idx = int(response) - 1
+                if 0 <= idx < len(options):
+                    return options[idx]
+                print(f"Please enter a number between 1 and {len(options)}")
+            except (ValueError, KeyboardInterrupt):
+                if default:
+                    print(f"\nUsing default: {default}")
+                    return default
+                print("Invalid input. Please try again.")
+
+    def confirm(self, message: str, default: bool = True) -> bool:
+        """Ask for yes/no confirmation."""
+        if not self.enabled:
+            return default
+
+        default_str = "Y/n" if default else "y/N"
+        while True:
+            response = input(f"\n{message} [{default_str}]: ").strip().lower()
+            if not response:
+                return default
+            if response in ['y', 'yes']:
+                return True
+            if response in ['n', 'no']:
+                return False
+            print("Please answer 'y' or 'n'")
+
+    def get_text_input(self, prompt: str, default: Optional[str] = None) -> Optional[str]:
+        """Get free-form text input from user."""
+        if not self.enabled:
+            return default
+
+        default_str = f" [{default}]" if default else ""
+        response = input(f"\n{prompt}{default_str}: ").strip()
+        return response if response else default
+
+
+# =============================================================================
+# WEB SEARCH AND LLM EXTRACTION
+# =============================================================================
 
 def _should_retry(status_code: Optional[int]) -> bool:
     """Return True if status indicates a transient issue."""
@@ -205,7 +303,7 @@ def extract_coordinates_with_llm(
         results_text += f"URL: {result.get('url', 'N/A')}\n"
         results_text += f"Content: {result.get('content', 'N/A')[:1000]}\n"
 
-    prompt = f"""Extract location AND company information for this mining facility from the search results:
+    prompt = f"""Extract location, company information, and status for this mining facility from the search results:
 
 FACILITY: {facility_name}
 COUNTRY: {country}
@@ -225,6 +323,7 @@ Extract and return JSON with:
     "source_url": "URL where you found the info",
     "confidence": 0.0-1.0,
     "notes": "relevant context about the location",
+    "status": "operating|closed|care_and_maintenance|development|unknown",
     "companies": {{
         "operators": ["Company Name 1", "Company Name 2"],
         "owners": ["Owner Company 1", "Owner Company 2"],
@@ -245,7 +344,14 @@ IMPORTANT FOR COMPANIES:
 - Include joint venture partners separately
 - Include parent companies if mentioned
 - Use "operators" for companies actively running the facility
-- Use "owners" for companies that own equity/assets"""
+- Use "owners" for companies that own equity/assets
+
+IMPORTANT FOR STATUS:
+- "operating" = currently producing/active
+- "closed" = permanently shut down or abandoned
+- "care_and_maintenance" = temporarily suspended but maintained
+- "development" = under construction or planned
+- "unknown" = no clear status information in search results"""
 
     try:
         response = client.chat.completions.create(
@@ -397,7 +503,7 @@ def geocode_single_facility(
 
 
 def update_facility_json(facility: Dict, location: Dict) -> bool:
-    """Update facility JSON file with new coordinates AND company mentions."""
+    """Update facility JSON file with new coordinates, company mentions, and status."""
     path = Path(f"facilities/{facility['country_iso3']}/{facility['facility_id']}.json")
 
     if not path.exists():
@@ -426,6 +532,10 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
         data["province"] = location["province"]
     if location.get("town"):
         data["town"] = location["town"]
+
+    # Update facility status
+    if location.get("status") and location["status"] != "unknown":
+        data["status"] = location["status"]
 
     # Update company mentions
     companies = location.get("companies", {})
@@ -804,6 +914,10 @@ def main():
     search_group.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing)")
     search_group.add_argument("--missing-companies", action="store_true",
                              help="Process facilities missing company_mentions")
+    search_group.add_argument("--low-quality-names", action="store_true",
+                             help="Only process facilities with low name quality scores")
+    search_group.add_argument("--assess-only", action="store_true",
+                             help="Dry-run that shows what WOULD be processed (no changes)")
     search_group.add_argument("--reverse", action="store_true", help="Process countries Z to A")
 
     args = parser.parse_args()
@@ -862,6 +976,15 @@ def main():
         search_func = lambda q: brave_search(q, brave_key)
 
     openai_client = OpenAI(api_key=openai_key)
+
+    # Initialize name quality assessor if needed
+    name_assessor = None
+    if args.low_quality_names:
+        if not HAS_NAME_QUALITY:
+            print("ERROR: NameQualityAssessor not available. Install required dependencies.")
+            sys.exit(1)
+        name_assessor = NameQualityAssessor()
+        print("Using name quality assessment to filter facilities")
 
     # Country names mapping
     country_names = {
@@ -944,7 +1067,13 @@ def main():
             # Determine if we should process this facility
             should_process = False
 
-            if args.all:
+            if args.low_quality_names:
+                # Process ONLY if name quality is low
+                if name_assessor:
+                    assessment = name_assessor.assess_name(data.get("name", ""))
+                    if assessment['quality_score'] < 0.5 or assessment['is_generic']:
+                        should_process = True
+            elif args.all:
                 # Process everything
                 should_process = True
             elif args.missing_companies:
@@ -963,7 +1092,15 @@ def main():
             if should_process:
                 to_process.append(data)
 
-        mode = "ALL facilities" if args.all else "missing companies" if args.missing_companies else "missing coords/companies"
+        # Determine mode description
+        if args.low_quality_names:
+            mode = "low-quality names"
+        elif args.all:
+            mode = "ALL facilities"
+        elif args.missing_companies:
+            mode = "missing companies"
+        else:
+            mode = "missing coords/companies"
 
         if not to_process:
             print(f"✓ No facilities need processing ({mode})")
@@ -983,6 +1120,22 @@ def main():
 
         print(f"Found {original_count} {mode}, processing {len(to_process)}")
 
+        # If assess-only mode, just list and continue
+        if args.assess_only:
+            print("\n[ASSESS-ONLY MODE] Would process:")
+            for i, facility in enumerate(to_process, 1):
+                name = facility.get('name', 'Unknown')
+                fac_id = facility.get('facility_id', 'Unknown')
+                print(f"  [{i}] {fac_id}: {name}")
+
+                # Show name quality if available
+                if name_assessor:
+                    assessment = name_assessor.assess_name(name)
+                    print(f"      Quality: {assessment['quality_score']:.2f} | Generic: {assessment['is_generic']}")
+                    if assessment['issues']:
+                        print(f"      Issues: {', '.join(assessment['issues'][:3])}")
+            continue
+
         country_success = 0
         country_failed = 0
 
@@ -994,8 +1147,9 @@ def main():
             if result:
                 has_coords = result.get("lat") is not None and result.get("lon") is not None
                 has_companies = bool(result.get("companies", {}).get("operators") or result.get("companies", {}).get("owners"))
+                has_status = result.get("status") and result.get("status") != "unknown"
 
-                if has_coords or has_companies:
+                if has_coords or has_companies or has_status:
                     if not args.dry_run:
                         if update_facility_json(facility, result):
                             update_msg = []
@@ -1003,6 +1157,8 @@ def main():
                                 update_msg.append(f"coords: {result['lat']:.6f}, {result['lon']:.6f}")
                             if has_companies:
                                 update_msg.append(f"companies: {len(result['companies'].get('operators', []) + result['companies'].get('owners', []))}")
+                            if has_status:
+                                update_msg.append(f"status: {result['status']}")
                             print(f"  → Updated ({', '.join(update_msg)})")
                             country_success += 1
                         else:
