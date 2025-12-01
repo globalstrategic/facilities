@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.24574121605915,
+    "lon": 14.971478889595828,
     "precision": "unknown"
   },
   "types": [
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.397484Z",
-    "checked_by": "import_pipeline",
-    "notes": "One of the world's largest underground magnesite mines; critical for refractory production. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:53:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "One of the world's largest underground magnesite mines; critical for refractory production. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Vienna (https://investingnews.com/how-austrias-mining-sector-could-be-invaluable-to-europe-and-to-investors/). Breitenau Mine is one of the largest underground magnesite mines in the world"
   },
   "canonical_name": "Breitenau Mine",
   "canonical_slug": "breitenau-mine",
@@ -56,14 +56,15 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:05:28.000000Z",
+      "timestamp": "2025-12-01T11:53:32.000000Z",
       "operators": [
         "Veitsch-Radex"
       ],
       "owners": [
         "RHI Magnesita"
       ],
-      "notes": "Veitsch-Radex is a subsidiary of RHI Magnesita, which owns and operates the Breitenau Mine."
+      "notes": "Veitsch-Radex is a subsidiary of RHI Magnesita."
     }
-  }
+  },
+  "town": "Vienna"
 }

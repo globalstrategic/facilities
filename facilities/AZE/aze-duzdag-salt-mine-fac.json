@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.32558498231871,
+    "lon": 45.4069671,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "Duzdag Health Resort"
+    "Azerbaijan International Mineral Resources Operating Company",
+    "Duzdag Health Resort",
+    "Duzdag Physiotherapy Center"
   ],
   "products": [],
   "sources": [
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.535908Z",
-    "checked_by": "import_pipeline",
-    "notes": "Major rock salt deposit. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:54:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Major rock salt deposit. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Nakhchivan (https://www.cnn.com/travel/duzdag-salt-caves-wellness). Duzdag Salt Mine is known for its therapeutic properties and operates as a health spa"
   },
   "canonical_name": "Duzdag Salt Mine",
   "canonical_slug": "duzdag-salt-mine",
@@ -53,12 +55,15 @@
   "province": "Nakhchivan Autonomous Republic",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:52:01.000000Z",
+      "timestamp": "2025-12-01T11:54:56.000000Z",
       "operators": [
-        "Duzdag Health Resort"
+        "Duzdag Physiotherapy Center"
       ],
-      "owners": [],
-      "notes": "The facility is primarily operated as a health resort for therapeutic purposes."
+      "owners": [
+        "Azerbaijan International Mineral Resources Operating Company"
+      ],
+      "notes": "The Duzdag Physiotherapy Center operates within the former salt mine, which has been in use since the 12th century."
     }
-  }
+  },
+  "town": "Nakhchivan"
 }

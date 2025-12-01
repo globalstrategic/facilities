@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -38.554,
-    "lon": -70.62,
+    "lat": -48.38583,
+    "lon": -68.26361,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "historic",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti plc",
+    "Cerro Vanguardia S.A.",
+    "Fomento Minero de Santa Cruz"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.6,
-    "last_checked": "2025-11-04T19:19:01.169008Z",
-    "checked_by": "import_pipeline",
-    "notes": "No current private owner identified. Only historic state/academic studies of the barite deposit are available."
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T11:48:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "No current private owner identified. Only historic state/academic studies of the barite deposit are available.. Web search geocoded. Source: https://miningdataonline.com/property/240/Cerro-Vanguardia-Operation.aspx. Cerro Vanguardia is a gold and silver mine located 107 km NW from Puerto San Julián"
   },
   "canonical_name": "Cerro Mallin Quemado Mine",
   "canonical_slug": "cerro-mallin-quemado-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:48:58.000000Z",
+      "operators": [
+        "Cerro Vanguardia S.A."
+      ],
+      "owners": [
+        "AngloGold Ashanti plc",
+        "Fomento Minero de Santa Cruz"
+      ],
+      "notes": "Cerro Vanguardia S.A. is operated by AngloGold Ashanti (92.5%) and Fomicruz SE (7.5%)."
+    }
+  }
 }

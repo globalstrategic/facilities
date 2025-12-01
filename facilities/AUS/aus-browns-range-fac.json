@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.250791047365247,
+    "lon": 128.74480849519674,
     "precision": "unknown"
   },
   "types": [
@@ -25,6 +25,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Northern Minerals",
     "Northern Minerals Limited"
   ],
   "products": [],
@@ -36,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:52.266239Z",
-    "checked_by": "import_pipeline",
-    "notes": "HREE-rich xenotime (Dy/Tb) with Nd/Pr; DFS completed 2025 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:51:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "HREE-rich xenotime (Dy/Tb) with Nd/Pr; DFS completed 2025 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Halls Creek (https://www.mining-technology.com/projects/browns-range-rare-earths-project/). The Browns Range project is located approximately 160km southeast of Halls Creek"
   },
   "canonical_name": "Browns Range Mine",
   "canonical_slug": "browns-range-mine",
@@ -59,14 +60,15 @@
   "province": "Western Australia",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:53:54.000000Z",
+      "timestamp": "2025-12-01T11:51:57.000000Z",
       "operators": [
-        "Northern Minerals Limited"
+        "Northern Minerals"
       ],
       "owners": [
-        "Northern Minerals Limited"
+        "Northern Minerals"
       ],
-      "notes": "Northern Minerals is both the operator and owner of the Browns Range project."
+      "notes": "Northern Minerals holds 100% ownership of the Browns Range project."
     }
-  }
+  },
+  "town": "Halls Creek"
 }

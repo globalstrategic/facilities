@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.261336414261784,
+    "lon": 15.718563872804951,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "Imerys Talc Austria GmbH"
+    "Imerys S.A.",
+    "Imerys Talc Austria GmbH",
+    "Naintsch Mineralwerke GmbH",
+    "Rio Tinto",
+    "Talc de Luzenac"
   ],
   "products": [],
   "sources": [
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.398003Z",
-    "checked_by": "import_pipeline",
-    "notes": "Largest talc mine in Central Europe; supplies high-quality talc for various industries. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:53:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Largest talc mine in Central Europe; supplies high-quality talc for various industries. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Graz (https://aaltodoc.aalto.fi/bitstreams/b97b1b8e-d134-48e0-8ca4-20864929ca09/download). Rabenwald Mine is the largest talc operation in Central Europe, with a significant operational history and multiple ownership changes"
   },
   "canonical_name": "Rabenwald Mine",
   "canonical_slug": "rabenwald-mine",
@@ -53,12 +57,18 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:07:41.000000Z",
+      "timestamp": "2025-12-01T11:53:45.000000Z",
       "operators": [
         "Imerys Talc Austria GmbH"
       ],
-      "owners": [],
-      "notes": "Imerys Talc Austria GmbH is the primary operator of the Rabenwald Mine."
+      "owners": [
+        "Imerys S.A.",
+        "Naintsch Mineralwerke GmbH",
+        "Rio Tinto",
+        "Talc de Luzenac"
+      ],
+      "notes": "The mine has changed ownership several times, with the current operator being Imerys Talc Austria GmbH."
     }
-  }
+  },
+  "town": "Graz"
 }

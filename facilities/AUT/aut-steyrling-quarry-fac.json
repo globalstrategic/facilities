@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.191734892153,
+    "lon": 14.1573375,
     "precision": "unknown"
   },
   "types": [
@@ -20,6 +20,7 @@
   "status": "operating",
   "company_mentions": [
     "BT-Wolfgang Binder GmbH",
+    "voestalpine AG",
     "voestalpine Stahl GmbH"
   ],
   "products": [],
@@ -31,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.395631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Captive quarry supplying essential limestone flux for voestalpine's steel plants. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:52:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Captive quarry supplying essential limestone flux for voestalpine's steel plants. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Klaus an der Pyhrnbahn (https://www.mindat.org/loc-216101.html). Active limestone quarry located near Kremsmauer Mountain"
   },
   "canonical_name": "Steyrling Quarry Mine",
   "canonical_slug": "steyrling-quarry-mine",
@@ -54,14 +55,15 @@
   "province": "Upper Austria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:08:13.000000Z",
+      "timestamp": "2025-12-01T11:52:46.000000Z",
       "operators": [
-        "BT-Wolfgang Binder GmbH"
-      ],
-      "owners": [
         "voestalpine Stahl GmbH"
       ],
-      "notes": "voestalpine Stahl GmbH is the owner and operator involved in the quarry logistics project."
+      "owners": [
+        "voestalpine AG"
+      ],
+      "notes": "voestalpine AG owns 100% of voestalpine Stahl GmbH."
     }
-  }
+  },
+  "town": "Klaus an der Pyhrnbahn"
 }

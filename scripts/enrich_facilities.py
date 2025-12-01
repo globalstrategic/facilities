@@ -14,36 +14,36 @@ Features:
 7. Interactive validation for uncertain cases
 
 Usage:
-    # Web search geocoding (default mode)
+    # Web search enrichment (default mode)
     export TAVILY_API_KEY="your-key"
     export OPENAI_API_KEY="your-key"
-    python scripts/web_search_geocode.py --limit 10
+    python scripts/enrich_facilities.py --limit 10
 
     # Process specific country
-    python scripts/web_search_geocode.py --country MAR --limit 20
+    python scripts/enrich_facilities.py --country MAR --limit 20
 
     # Process ALL facilities (regardless of missing data)
-    python scripts/web_search_geocode.py --all --limit 3
+    python scripts/enrich_facilities.py --all --limit 3
 
     # Focus on low-quality facility names
-    python scripts/web_search_geocode.py --low-quality-names --limit 10
+    python scripts/enrich_facilities.py --low-quality-names --limit 10
 
     # Interactive enrichment: web search + ask user to confirm/fill gaps
-    python scripts/web_search_geocode.py --interactive-enrich --country MDG --limit 5
+    python scripts/enrich_facilities.py --interactive-enrich --country MDG --limit 5
 
     # Assess and report without making changes
-    python scripts/web_search_geocode.py --assess-only --country USA
+    python scripts/enrich_facilities.py --assess-only --country USA
 
     # With Brave Search instead
     export BRAVE_API_KEY="your-key"
-    python scripts/web_search_geocode.py --search-engine brave --limit 5
+    python scripts/enrich_facilities.py --search-engine brave --limit 5
 
     # Manual/CSV modes (no API keys needed)
-    python scripts/web_search_geocode.py --list-missing              # List facilities needing coords
-    python scripts/web_search_geocode.py --list-missing --country ZAF
-    python scripts/web_search_geocode.py --import-csv coords.csv     # Import from CSV
-    python scripts/web_search_geocode.py --interactive               # Interactive entry
-    python scripts/web_search_geocode.py --interactive --country ZAF
+    python scripts/enrich_facilities.py --list-missing              # List facilities needing coords
+    python scripts/enrich_facilities.py --list-missing --country ZAF
+    python scripts/enrich_facilities.py --import-csv coords.csv     # Import from CSV
+    python scripts/enrich_facilities.py --interactive               # Manual entry mode
+    python scripts/enrich_facilities.py --interactive --country ZAF
 
 CSV Format:
     facility_id,lat,lon,precision,source,notes

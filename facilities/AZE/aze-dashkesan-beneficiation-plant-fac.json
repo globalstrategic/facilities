@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.31959154290043,
+    "lon": 46.3597178,
     "precision": "unknown"
   },
   "types": [
@@ -24,6 +24,7 @@
     "AzerGold CJSC",
     "Azerbaijan Metal Company LLC",
     "Dashkasan Iron Ore LLC",
+    "Dashkesan Demir Filiz LLC",
     "Fonte GreenMet Investments Fund OEIC LLC"
   ],
   "products": [],
@@ -35,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.536807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Planned Stage 1 of megaproject. Target commissioning by mid-2027. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T11:55:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Planned Stage 1 of megaproject. Target commissioning by mid-2027. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Ganja (https://interfax.com/newsroom/top-stories/98909/). The Dashkesan Beneficiation Plant is part of the Dashkesan iron ore field, which has been under development by AzerGold and its subsidiary Dashkesan Demir Filiz LLC"
   },
   "canonical_name": "Dashkesan Beneficiation Plant",
   "canonical_slug": "dashkesan-beneficiation-plant",
@@ -55,18 +56,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Dashkasan District",
+  "province": "Ganja",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:52:25.000000Z",
+      "timestamp": "2025-12-01T11:55:28.000000Z",
       "operators": [
-        "Dashkasan Iron Ore LLC",
+        "Dashkesan Demir Filiz LLC",
         "AzerGold CJSC"
       ],
       "owners": [
         "AzerGold CJSC"
       ],
-      "notes": "Dashkasan Iron Ore LLC is a subsidiary of AzerGold CJSC, which manages the iron ore deposits."
+      "notes": "AzerGold is a state-owned company responsible for the development of the Dashkesan iron ore field."
     }
-  }
+  },
+  "town": "Ganja"
 }

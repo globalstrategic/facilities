@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": -37.839,
-    "lon": -70.166,
+    "lat": -27.3733,
+    "lon": -66.3128,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico Eagle Mines",
+    "Glencore",
+    "Newmont",
+    "Pan American Silver",
+    "Yamana Gold"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:01.178900Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T11:49:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Agua_Rica_mine. The Agua Rica mine is a large copper mine located in northwest Argentina, in Catamarca Province"
   },
   "canonical_name": "Churriaca Mine",
   "canonical_slug": "churriaca-mine",
@@ -47,5 +53,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Catamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T11:49:47.000000Z",
+      "operators": [
+        "Yamana Gold"
+      ],
+      "owners": [
+        "Glencore",
+        "Newmont",
+        "Yamana Gold",
+        "Agnico Eagle Mines",
+        "Pan American Silver"
+      ],
+      "notes": "Glencore has taken complete ownership of the project after acquiring stakes from Newmont and Pan American Silver."
+    }
+  }
 }
