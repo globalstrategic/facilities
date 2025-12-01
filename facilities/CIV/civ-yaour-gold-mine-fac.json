@@ -1,11 +1,11 @@
 {
   "facility_id": "civ-yaour-gold-mine-fac",
-  "name": "**Yaouré Gold Mine**",
+  "name": "**YaourÃ© Gold Mine**",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.043741374327311,
+    "lon": -5.501603918194438,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Perseus Mining",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:35.950832",
-      "evidence": "Extracted from operator column: Perseus Mining"
-    }
+    "Perseus Mining",
+    "Perseus Mining Ltd"
   ],
   "products": [],
   "sources": [
@@ -39,15 +33,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.460788Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T07:26:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yamoussoukro (https://www.byrnecut.com/projects/africa/yaoure/). Yaouré Gold Mine is located approximately 35 km northwest of Yamoussoukro, the capital of Côte d'Ivoire"
   },
-  "canonical_name": "Yaouré Gold Mine",
+  "canonical_name": "YaourÃ© Gold Mine",
   "canonical_slug": "yaoure-gold-mine",
-  "display_name": "Yaouré Gold",
+  "display_name": "YaourÃ© Gold",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -60,11 +54,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Yaouré Gold ** Mine",
+      "name": "**YaourÃ© Gold ** Mine",
       "from": "2025-10-27T13:21:35.950842",
       "to": "2025-11-04T19:19:04.460786Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lacs",
+  "town": "Yamoussoukro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:26:13.000000Z",
+      "operators": [
+        "Perseus Mining Ltd"
+      ],
+      "owners": [],
+      "notes": "Perseus Mining is the operator of the Yaouré Gold Mine."
+    }
+  }
 }

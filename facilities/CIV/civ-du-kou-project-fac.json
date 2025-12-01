@@ -1,6 +1,6 @@
 {
   "facility_id": "civ-du-kou-project-fac",
-  "name": "**Duékoué Project**",
+  "name": "**DuÃ©kouÃ© Project**",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Oscillate PLC",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.087683",
-      "evidence": "Extracted from operator column: Oscillate PLC"
-    }
+    "La Miniere de L'Elephant SARL",
+    "Oscillate PLC",
+    "Oscillate Plc"
   ],
   "products": [],
   "sources": [
@@ -51,9 +46,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Duékoué Exploration",
+  "canonical_name": "DuÃ©kouÃ© Exploration",
   "canonical_slug": "duekoue-exploration",
-  "display_name": "Duékoué",
+  "display_name": "DuÃ©kouÃ©",
   "primary_type": "exploration",
   "type_confidence": 1.0,
   "data_quality": {
@@ -66,11 +61,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Duékoué ** Exploration",
+      "name": "**DuÃ©kouÃ© ** Exploration",
       "from": "2025-10-27T13:21:36.087690",
       "to": "2025-11-04T19:19:04.463947Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Ivory Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:22:21.000000Z",
+      "operators": [
+        "La Miniere de L'Elephant SARL",
+        "Oscillate Plc"
+      ],
+      "owners": [],
+      "notes": "The Duékoué Project is part of a joint venture partnership and earn-in agreement with La Miniere de L'Elephant SARL."
+    }
+  }
 }

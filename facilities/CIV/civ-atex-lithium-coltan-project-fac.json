@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Firering PLC",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.040742",
-      "evidence": "Extracted from operator column: Firering PLC (Atex Mining Resources)"
-    }
+    "Atex Mining Resources",
+    "Firering Holdings Limited",
+    "Firering PLC"
   ],
   "products": [],
   "sources": [
@@ -72,5 +67,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Côte d'Ivoire",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:20:57.000000Z",
+      "operators": [
+        "Firering Holdings Limited"
+      ],
+      "owners": [
+        "Firering Holdings Limited",
+        "Atex Mining Resources"
+      ],
+      "notes": "Firering holds a 90% interest in Atex Mining Resources, which owns the Atex Project."
+    }
+  }
 }

@@ -21,22 +21,12 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.023116",
-      "evidence": "Extracted from operator column: N/A"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.023119",
-      "evidence": "Extracted from operator column: N/A"
-    }
+    "A",
+    "High Power Exploration (HPX)",
+    "N",
+    "Nimba Development Company (NDC)",
+    "Société de Développement Nimba (SDN)",
+    "Société des Mines de Fer de Guinée (SMFG)"
   ],
   "products": [],
   "sources": [
@@ -74,5 +64,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "N/A",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:24:08.000000Z",
+      "operators": [
+        "High Power Exploration (HPX)",
+        "Nimba Development Company (NDC)"
+      ],
+      "owners": [
+        "Société de Développement Nimba (SDN)",
+        "Société des Mines de Fer de Guinée (SMFG)"
+      ],
+      "notes": "HPX is the operator of the Mount Nimba project, while NDC and the Guinean government hold stakes in SDN, which is responsible for the development of the project."
+    }
+  }
 }

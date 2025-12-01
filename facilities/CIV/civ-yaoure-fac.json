@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CIV",
   "location": {
-    "lat": 7.028,
-    "lon": -5.539,
+    "lat": 7.0912774848646745,
+    "lon": -5.2776034,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Amara Mining Côte d’Ivoire",
+    "Perseus Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.460145Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:26:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yamoussoukro (https://www.nsenergybusiness.com/projects/yaoure-gold-project/). Coordinates not explicitly mentioned in the search results, but the mine is located near Yamoussoukro"
   },
   "canonical_name": "Yaoure Mine",
   "canonical_slug": "yaoure-mine",
@@ -49,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lacs",
+  "town": "Yamoussoukro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:26:25.000000Z",
+      "operators": [
+        "Perseus Mining"
+      ],
+      "owners": [
+        "Perseus Mining",
+        "Amara Mining Côte d’Ivoire"
+      ],
+      "notes": "Perseus Mining acquired Amara Mining, which previously developed the mine."
+    }
+  }
 }

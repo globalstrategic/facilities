@@ -1,6 +1,6 @@
 {
   "facility_id": "civ-odienn-project-fac",
-  "name": "**Odienné Project**",
+  "name": "**OdiennÃ© Project**",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Awalé Resources",
-      "role": "operator",
-      "source": "Research Import CIV 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T13:21:36.110929",
-      "evidence": "Extracted from operator column: Awalé Resources"
-    }
+    "AwalÃ© Resources",
+    "Awalé Resources Limited",
+    "Newmont Corporation"
   ],
   "products": [],
   "sources": [
@@ -51,9 +46,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Odienné Exploration",
+  "canonical_name": "OdiennÃ© Exploration",
   "canonical_slug": "odienne-exploration",
-  "display_name": "Odienné",
+  "display_name": "OdiennÃ©",
   "primary_type": "exploration",
   "type_confidence": 1.0,
   "data_quality": {
@@ -66,11 +61,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Odienné ** Exploration",
+      "name": "**OdiennÃ© ** Exploration",
       "from": "2025-10-27T13:21:36.110937",
       "to": "2025-11-04T19:19:04.461263Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Denguélé Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:24:26.000000Z",
+      "operators": [
+        "Awalé Resources Limited"
+      ],
+      "owners": [
+        "Awalé Resources Limited",
+        "Newmont Corporation"
+      ],
+      "notes": "Awalé Resources Limited is the primary operator, with Newmont Corporation as a significant partner through a joint venture."
+    }
+  }
 }

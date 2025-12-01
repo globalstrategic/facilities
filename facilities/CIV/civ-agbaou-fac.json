@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CIV",
   "location": {
-    "lat": 6.097,
-    "lon": -5.225,
+    "lat": 6.597760764517163,
+    "lon": -5.294825741635483,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Endeavour Mining Corporation",
+    "Government of Côte d'Ivoire",
+    "SODEMI"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.463800Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T07:20:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://www.mining-technology.com/projects/agbaou-gold-mine/). Agbaou Gold Mine is located approximately 200km northwest of the port city of Abidjan"
   },
   "canonical_name": "Agbaou Mine",
   "canonical_slug": "agbaou-mine",
@@ -50,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Côte d'Ivoire",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:20:21.000000Z",
+      "operators": [
+        "Endeavour Mining Corporation"
+      ],
+      "owners": [
+        "Endeavour Mining Corporation",
+        "Government of Côte d'Ivoire",
+        "SODEMI"
+      ],
+      "notes": "Endeavour Mining owns an 85% stake in the Agbaou mine, with the Government of Côte d'Ivoire holding 10% and SODEMI holding 5%."
+    }
+  }
 }
