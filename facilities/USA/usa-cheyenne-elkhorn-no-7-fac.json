@@ -1,15 +1,22 @@
 {
-  "facility_id": "usa-20-strip-job-fac",
-  "name": "#20 Strip Job",
+  "facility_id": "usa-cheyenne-elkhorn-no-7-fac",
+  "name": "Cheyenne Elkhorn No 7",
   "aliases": [
-    "#20 Strip Job",
-    "Wiley Miller Mine",
-    "Pine Branch"
+    "#7 Coal Mine",
+    "Mine #2",
+    "Premier Elkhorn",
+    "Lower Elkhorn",
+    "PE No 2",
+    "Job No 45",
+    "Job No 47",
+    "S A M No 11",
+    "Cheyenne Elkhorn No 7",
+    "PE No 4"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.341,
-    "lon": -83.301,
+    "lat": 37.222,
+    "lon": -82.627,
     "precision": "site"
   },
   "types": [
@@ -28,19 +35,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:29:05.921170"
+      "date": "2025-10-20T15:29:05.996244"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.770298Z",
+    "last_checked": "2025-11-04T19:18:45.827060Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "20 Strip Job Mine",
-  "canonical_slug": "20-strip-job-mine",
-  "display_name": "20 Strip Job",
+  "canonical_name": "Cheyenne Elkhorn No 7",
+  "canonical_slug": "cheyenne-elkhorn-no-7",
+  "display_name": "7 Coal",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -53,10 +60,16 @@
   },
   "canonical_name_history": [
     {
-      "name": "#20 Strip Job Mine",
-      "from": "2025-10-20T15:29:05.921178",
-      "to": "2025-11-04T19:18:45.770296Z",
+      "name": "#7 Coal Mine",
+      "from": "2025-10-20T15:29:05.996253",
+      "to": "2025-11-04T19:18:45.827058Z",
       "reason": "data_correction"
+    },
+    {
+      "name": "#7 Coal Mine",
+      "from": "2025-10-20T15:29:05.996244",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
     }
   ],
   "display_name_source": "auto"

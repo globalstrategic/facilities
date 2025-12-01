@@ -1,16 +1,15 @@
 {
-  "facility_id": "usa-57-miner-coal-mine-fac",
-  "name": "#57 Miner Coal Mine",
+  "facility_id": "usa-long-branch-surface-mine-fac",
+  "name": "Long Branch Surface Mine",
   "aliases": [
-    "#57 Miner Coal Mine",
-    "No. 7 (Coalburg)",
-    "No. 7",
-    "Peach Orchard No 1"
+    "88 Strip Coal Mine",
+    "Long Branch Surface Mine",
+    "Waterfall"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.947,
-    "lon": -82.597,
+    "lat": 37.072,
+    "lon": -82.15,
     "precision": "site"
   },
   "types": [
@@ -29,19 +28,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:28:31.424511"
+      "date": "2025-10-20T15:28:06.387226"
     }
   ],
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.930505Z",
+    "last_checked": "2025-11-04T19:18:45.955672Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "57 Miner Coal Mine",
-  "canonical_slug": "57-miner-coal-mine",
-  "display_name": "57 Miner Coal",
+  "canonical_name": "Long Branch Surface Mine",
+  "canonical_slug": "long-branch-surface-mine",
+  "display_name": "88 Strip Coal",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -52,13 +51,13 @@
       "canonical_name_incomplete": true
     }
   },
+  "display_name_source": "auto",
   "canonical_name_history": [
     {
-      "name": "#57 Miner Coal Mine",
-      "from": "2025-10-20T15:28:31.424519",
-      "to": "2025-11-04T19:18:45.930503Z",
-      "reason": "data_correction"
+      "name": "88 Strip Coal Mine",
+      "from": "2025-10-20T15:28:06.387226",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
     }
-  ],
-  "display_name_source": "auto"
+  ]
 }

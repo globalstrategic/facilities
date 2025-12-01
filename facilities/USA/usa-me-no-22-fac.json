@@ -1,14 +1,14 @@
 {
-  "facility_id": "usa-6-mile-coal-mine-fac",
-  "name": "6 Mile Coal Mine",
+  "facility_id": "usa-me-no-22-fac",
+  "name": "ME No 22",
   "aliases": [
-    "6 Mile Coal Mine",
-    "Baumgardner Operation"
+    "#2 (KY RC)",
+    "ME No 22"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.903,
-    "lon": -78.259,
+    "lat": 37.571,
+    "lon": -82.52,
     "precision": "site"
   },
   "types": [
@@ -27,19 +27,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:29:06.022765"
+      "date": "2025-10-20T15:29:05.872790"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.720546Z",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:45.837074Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "6 Mile Coal Mine",
-  "canonical_slug": "6-mile-coal-mine",
-  "display_name": "6 Mile Coal",
+  "canonical_name": "ME No 22",
+  "canonical_slug": "me-no-22",
+  "display_name": "2",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -50,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
+  "canonical_name_history": [
+    {
+      "name": "#2 Mine",
+      "from": "2025-10-20T15:29:05.872796",
+      "to": "2025-11-04T19:18:45.837073Z",
+      "reason": "data_correction"
+    },
+    {
+      "name": "#2 (KY RC)",
+      "from": "2025-10-20T15:29:05.872790",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
+    }
+  ],
   "display_name_source": "auto"
 }

@@ -1,15 +1,15 @@
 {
-  "facility_id": "usa-5-mine-fac",
-  "name": "# 5 Mine",
+  "facility_id": "usa-wiley-miller-mine-fac",
+  "name": "Wiley Miller Mine",
   "aliases": [
-    "# 5 Mine",
-    "No. 5 Coal Mine (KY)",
-    "Grapevine Mine"
+    "#20 Strip Job",
+    "Wiley Miller Mine",
+    "Pine Branch"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.45,
-    "lon": -82.339,
+    "lat": 37.341,
+    "lon": -83.301,
     "precision": "site"
   },
   "types": [
@@ -28,19 +28,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:29:01.621716"
+      "date": "2025-10-20T15:29:05.921170"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.791184Z",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:45.770298Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "5 Mine",
-  "canonical_slug": "5-mine",
-  "display_name": "5",
+  "canonical_name": "Wiley Miller Mine",
+  "canonical_slug": "wiley-miller-mine",
+  "display_name": "20 Strip Job",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -53,10 +53,16 @@
   },
   "canonical_name_history": [
     {
-      "name": "# 5 Mine",
-      "from": "2025-10-20T15:29:01.621721",
-      "to": "2025-11-04T19:18:45.791182Z",
+      "name": "#20 Strip Job Mine",
+      "from": "2025-10-20T15:29:05.921178",
+      "to": "2025-11-04T19:18:45.770296Z",
       "reason": "data_correction"
+    },
+    {
+      "name": "#20 Strip Job",
+      "from": "2025-10-20T15:29:05.921170",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
     }
   ],
   "display_name_source": "auto"

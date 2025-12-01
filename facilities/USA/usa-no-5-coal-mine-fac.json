@@ -1,15 +1,15 @@
 {
-  "facility_id": "usa-2-surface-mine-fac",
-  "name": "#2 Surface Mine",
+  "facility_id": "usa-no-5-coal-mine-fac",
+  "name": "No. 5 Coal Mine (KY)",
   "aliases": [
-    "#2 Surface Mine",
-    "Falcon Gob Pile",
-    "No. 29 Strip"
+    "# 5 Mine",
+    "No. 5 Coal Mine (KY)",
+    "Grapevine Mine"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.028,
-    "lon": -82.659,
+    "lat": 37.45,
+    "lon": -82.339,
     "precision": "site"
   },
   "types": [
@@ -28,19 +28,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:28:50.287702"
+      "date": "2025-10-20T15:29:01.621716"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.725201Z",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:45.791184Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "2 Surface Mine",
-  "canonical_slug": "2-surface-mine",
-  "display_name": "2 Surface",
+  "canonical_name": "No. 5 Coal Mine (KY)",
+  "canonical_slug": "no-5-coal-mine",
+  "display_name": "5",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -53,10 +53,16 @@
   },
   "canonical_name_history": [
     {
-      "name": "#2 Surface Mine",
-      "from": "2025-10-20T15:28:50.287709",
-      "to": "2025-11-04T19:18:45.725199Z",
+      "name": "# 5 Mine",
+      "from": "2025-10-20T15:29:01.621721",
+      "to": "2025-11-04T19:18:45.791182Z",
       "reason": "data_correction"
+    },
+    {
+      "name": "# 5 Mine",
+      "from": "2025-10-20T15:29:01.621716",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
     }
   ],
   "display_name_source": "auto"

@@ -1,22 +1,14 @@
 {
-  "facility_id": "usa-7-coal-mine-fac",
-  "name": "#7 Coal Mine",
+  "facility_id": "usa-baumgardner-operation-fac",
+  "name": "Baumgardner Operation",
   "aliases": [
-    "#7 Coal Mine",
-    "Mine #2",
-    "Premier Elkhorn",
-    "Lower Elkhorn",
-    "PE No 2",
-    "Job No 45",
-    "Job No 47",
-    "S A M No 11",
-    "Cheyenne Elkhorn No 7",
-    "PE No 4"
+    "6 Mile Coal Mine",
+    "Baumgardner Operation"
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.222,
-    "lon": -82.627,
+    "lat": 40.903,
+    "lon": -78.259,
     "precision": "site"
   },
   "types": [
@@ -35,19 +27,19 @@
     {
       "type": "csv_import",
       "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:29:05.996244"
+      "date": "2025-10-20T15:29:06.022765"
     }
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.827060Z",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:45.720546Z",
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "7 Coal Mine",
-  "canonical_slug": "7-coal-mine-2",
-  "display_name": "7 Coal",
+  "canonical_name": "Baumgardner Operation",
+  "canonical_slug": "baumgardner-operation",
+  "display_name": "6 Mile Coal",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -58,13 +50,13 @@
       "canonical_name_incomplete": true
     }
   },
+  "display_name_source": "auto",
   "canonical_name_history": [
     {
-      "name": "#7 Coal Mine",
-      "from": "2025-10-20T15:29:05.996253",
-      "to": "2025-11-04T19:18:45.827058Z",
-      "reason": "data_correction"
+      "name": "6 Mile Coal Mine",
+      "from": "2025-10-20T15:29:06.022765",
+      "to": "2025-12-01T00:00:00Z",
+      "reason": "renamed_from_generic"
     }
-  ],
-  "display_name_source": "auto"
+  ]
 }
