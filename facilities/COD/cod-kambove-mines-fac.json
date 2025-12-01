@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -10.812868,
+    "lon": 26.585745,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Nonferrous Metal Mining (Group) Co., Ltd. (CNMC)",
+    "Eurasian Resources Group (ERG)",
+    "Gécamines"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:19.803426Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:14:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kambove_mines. Kambove mines are a group of active or abandoned copper mines located near Kambove in the Democratic Republic of the Congo"
   },
   "canonical_name": "Kambove Mines Mine",
   "canonical_slug": "kambove-mines-mine",
@@ -42,5 +46,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Katanga Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:14:23.000000Z",
+      "operators": [
+        "Gécamines",
+        "China Nonferrous Metal Mining (Group) Co., Ltd. (CNMC)"
+      ],
+      "owners": [
+        "Gécamines",
+        "Eurasian Resources Group (ERG)"
+      ],
+      "notes": "Gécamines is a state-owned mining company, while CNMC and ERG are involved in various operations and expansions in the area."
+    }
+  }
 }

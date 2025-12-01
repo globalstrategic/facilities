@@ -10,8 +10,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.956,
-    "lon": 26.776,
+    "lat": -11.012645,
+    "lon": 26.750765,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gécamines",
+    "Pengxin Mining Holdings",
+    "Shituru Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.801044Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:20:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Shituru. Shituru is a town and commune in the city of Likasi, known for its copper mine and smelter"
   },
   "canonical_name": "Shituru Mine",
   "canonical_slug": "shituru-mine",
@@ -61,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Haut-Katanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:20:57.000000Z",
+      "operators": [
+        "Shituru Mining Corporation",
+        "Gécamines"
+      ],
+      "owners": [
+        "Pengxin Mining Holdings",
+        "Gécamines"
+      ],
+      "notes": "Shituru Mining Corporation is a subsidiary of Pengxin Mining Holdings, which operates the facility."
+    }
+  }
 }

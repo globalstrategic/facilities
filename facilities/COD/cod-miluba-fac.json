@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COD",
   "location": {
-    "lat": -2.948,
-    "lon": 27.31,
+    "lat": -2.9481,
+    "lon": 27.3096,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cobelmin-Zaire",
+    "Societe Miniere Du Lualaba (Miluba)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:19.803929Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:19:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10158663. The Miluba Tin Mine is located in the Sud-Kivu province of the Democratic Republic of the Congo, primarily utilizing surface mining techniques for tin extraction"
   },
   "canonical_name": "Miluba Mine",
   "canonical_slug": "miluba-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sud-Kivu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:19:28.000000Z",
+      "operators": [
+        "Cobelmin-Zaire",
+        "Societe Miniere Du Lualaba (Miluba)"
+      ],
+      "owners": [
+        "Cobelmin-Zaire",
+        "Societe Miniere Du Lualaba (Miluba)"
+      ],
+      "notes": "Both companies are mentioned as owners and operators of the Miluba Tin Mine."
+    }
+  }
 }
