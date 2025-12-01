@@ -6,11 +6,11 @@
     "San Juan, Chorriaca"
   ],
   "country_iso3": "ARG",
-  "province": "Neuquén",
+  "province": "San Juan",
   "location": {
-    "lat": -37.89,
-    "lon": -70.05,
-    "precision": "district"
+    "lat": -29.4092,
+    "lon": -69.895,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -26,9 +26,12 @@
       "primary": false
     }
   ],
-  "status": "historic",
+  "status": "closed",
   "parent_district_id": "arg-churriaca-t-g-san-juan-la-nelly-fac",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Shandong Gold Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "llm_validated",
-    "confidence": 0.4,
-    "last_checked": "2025-12-01T00:00:00.000000Z",
-    "checked_by": "manual_correction",
-    "notes": "Barite-celestine concession in the Chorriaca / Colipilli barite district (Neuquen). Treated as separate mine from Churriaca T.G. and La Nelly; no modern operator found in SEGEMAR/Neuquen production docs."
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T13:35:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Barite-celestine concession in the Chorriaca / Colipilli barite district (Neuquen). Treated as separate mine from Churriaca T.G. and La Nelly; no modern operator found in SEGEMAR/Neuquen production docs.. Web search geocoded. Source: https://en.wikipedia.org/wiki/Veladero_mine. The Veladero mine is a large industrial gold and silver mine located in the San Juan province of Argentina"
   },
   "canonical_name": "San Juan Barite Mine",
   "canonical_slug": "san-juan-barite-mine-neuquen",
@@ -54,6 +57,20 @@
     "canonicalization_confidence": 0.4,
     "flags": {
       "operator_unresolved": true
+    }
+  },
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T13:35:35.000000Z",
+      "operators": [
+        "Barrick Gold Corporation",
+        "Shandong Gold Mining Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Shandong Gold Mining Corporation"
+      ],
+      "notes": "The mine is operated by Barrick Gold through a joint venture with Shandong Gold."
     }
   }
 }
