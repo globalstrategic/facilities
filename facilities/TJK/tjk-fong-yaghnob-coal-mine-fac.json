@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TJK",
   "location": {
-    "lat": 39.176,
-    "lon": 68.616,
+    "lat": 39.17585592,
+    "lon": 68.61616158,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GUP Angishti Tojik",
+    "Mine Fong-Yaghnob"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.597517Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:51:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Fong-Yaghnob_Coal_Mine. Fong-Yaghnob Coal Mine is a surface and underground mine located in the Soghd region of Tajikistan"
   },
   "canonical_name": "Fong Yaghnob Coal Mine",
   "canonical_slug": "fong-yaghnob-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sughd",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:51:50.000000Z",
+      "operators": [
+        "Mine Fong-Yaghnob"
+      ],
+      "owners": [
+        "GUP Angishti Tojik"
+      ],
+      "notes": "GUP Angishti Tojik is a state-owned company with a 57.7% ownership stake."
+    }
+  }
 }

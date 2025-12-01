@@ -407,14 +407,17 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
         owners = companies.get("owners", [])
 
         # Merge with existing company_mentions (deduplicate)
+        # Handle both string and dict formats in company_mentions
         raw_mentions = data.get("company_mentions", [])
         existing_mentions = set()
         for mention in raw_mentions:
             if isinstance(mention, dict):
+                # Extract name from structured format
                 if "name" in mention:
                     existing_mentions.add(mention["name"])
             elif isinstance(mention, str):
                 existing_mentions.add(mention)
+
         new_mentions = set(operators + owners)
         all_mentions = sorted(list(existing_mentions | new_mentions))
 
@@ -442,13 +445,19 @@ def main():
 
     parser = argparse.ArgumentParser(description="Web search-based geocoding and company enrichment")
     parser.add_argument("--country", help="ISO3 country code (omit to process ALL countries)")
+    parser.add_argument("--start-from", help="ISO3 country code to start from (processes this country and all subsequent ones)")
     parser.add_argument("--limit", type=int, default=10, help="Max facilities per country")
     parser.add_argument("--limit-total", type=int, help="Max total facilities across all countries")
     parser.add_argument("--search-engine", default="tavily", choices=["tavily", "brave"])
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing coords)")
     parser.add_argument("--missing-companies", action="store_true", help="Process facilities missing company_mentions")
+    parser.add_argument("--reverse", action="store_true", help="Process countries in reverse order (Z to A)")
     args = parser.parse_args()
+
+    # Validate arguments
+    if args.country and args.start_from:
+        parser.error("Cannot use both --country and --start-from together")
 
     # Check dependencies
     if not HAS_REQUESTS:
@@ -500,8 +509,26 @@ def main():
     else:
         # Process all countries
         facilities_base = Path("facilities")
-        countries_to_process = sorted([d.name for d in facilities_base.iterdir() if d.is_dir()])
-        print(f"Processing ALL countries: {len(countries_to_process)} found\n")
+        all_countries = sorted([d.name for d in facilities_base.iterdir() if d.is_dir()])
+
+        # If start-from specified, skip countries until we reach it
+        if args.start_from:
+            start_country = args.start_from.upper()
+            if start_country in all_countries:
+                start_idx = all_countries.index(start_country)
+                countries_to_process = all_countries[start_idx:]
+                print(f"Starting from {start_country}: {len(countries_to_process)} countries to process\n")
+            else:
+                print(f"WARNING: Start country {start_country} not found. Processing all countries.")
+                countries_to_process = all_countries
+        else:
+            countries_to_process = all_countries
+            print(f"Processing ALL countries: {len(countries_to_process)} found\n")
+
+    # Apply reverse order if requested
+    if args.reverse:
+        countries_to_process = list(reversed(countries_to_process))
+        print(f"Processing in REVERSE order (Z→A)\n")
 
     print(f"\n{'='*60}")
     print(f"WEB SEARCH GEOCODING + COMPANY ENRICHMENT")

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 3.232108826035103,
+    "lon": 33.8982170012945,
     "precision": "unknown"
   },
   "types": [
@@ -67,22 +67,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Ionic Rare Earths",
-      "role": "operator",
-      "source": "Uganda Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.516922",
-      "evidence": "Extracted from operator column: Ionic Rare Earths / Rwenzori Rare Metals Ltd."
-    },
-    {
-      "name": "Rwenzori Rare Metals Ltd.",
-      "role": "operator",
-      "source": "Uganda Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.516935",
-      "evidence": "Extracted from operator column: Ionic Rare Earths / Rwenzori Rare Metals Ltd."
-    }
+    "Ionic Rare Earths",
+    "Ionic Rare Earths Limited",
+    "Rwenzori Rare Metals (RRM)",
+    "Rwenzori Rare Metals Ltd."
   ],
   "products": [],
   "sources": [
@@ -93,11 +81,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:12.124476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:46:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kampala (https://www.nsenergybusiness.com/projects/makuutu-rare-earths-project/). The Makuutu Rare Earths Project is located approximately 120 km east of Kampala"
   },
   "canonical_name": "Makuutu Facility",
   "canonical_slug": "makuutu-facility",
@@ -120,5 +108,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Eastern Uganda",
+  "town": "Kampala",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:46:45.000000Z",
+      "operators": [
+        "Rwenzori Rare Metals (RRM)"
+      ],
+      "owners": [
+        "Ionic Rare Earths Limited",
+        "Rwenzori Rare Metals (RRM)"
+      ],
+      "notes": "Ionic Rare Earths holds a 60% stake in Rwenzori Rare Metals, which fully owns the Makuutu Project."
+    }
+  }
 }

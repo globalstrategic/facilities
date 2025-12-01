@@ -9,8 +9,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 41.242,
-    "lon": 36.46,
+    "lat": 41.243333,
+    "lon": 36.460556,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cengiz Holding",
+    "Eti Bakir A.S."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.292668Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:48:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Eti%20Bakir%20-%20Samsun.htm. The facility is a copper smelter operated by Eti Bakir A.S., part of Cengiz Holding"
   },
   "canonical_name": "Samsun Smelter",
   "canonical_slug": "samsun-smelter",
@@ -53,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Samsun",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:48:29.000000Z",
+      "operators": [
+        "Eti Bakir A.S."
+      ],
+      "owners": [
+        "Eti Bakir A.S.",
+        "Cengiz Holding"
+      ],
+      "notes": "Eti Bakir A.S. was privatized in 2004 and is the largest copper mining company in Turkey."
+    }
+  }
 }

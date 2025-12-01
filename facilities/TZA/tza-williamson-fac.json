@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.5,
+    "lon": 33.4,
     "precision": "unknown"
   },
   "types": [
@@ -25,14 +25,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Petra Diamonds, Govt. of Tanzania",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.317467",
-      "evidence": "Extracted from operator column: Petra Diamonds (75%), Govt. of Tanzania (25%)"
-    }
+    "Government of Tanzania",
+    "Petra Diamonds Ltd",
+    "Petra Diamonds, Govt. of Tanzania",
+    "Pink Diamonds Investments"
   ],
   "products": [],
   "sources": [
@@ -43,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.975563Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:47:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Williamson_diamond_mine. The Williamson Diamond Mine is located 23 kilometers northeast of Shinyanga"
   },
   "canonical_name": "Williamson Mine",
   "canonical_slug": "williamson-mine",
@@ -62,5 +58,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shinyanga Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:47:25.000000Z",
+      "operators": [
+        "Pink Diamonds Investments"
+      ],
+      "owners": [
+        "Petra Diamonds Ltd",
+        "Government of Tanzania"
+      ],
+      "notes": "Petra Diamonds owns 75% and the Government of Tanzania owns 25% of the mine."
+    }
+  }
 }

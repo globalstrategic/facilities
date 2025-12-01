@@ -745,6 +745,62 @@ Success rate: 16.1%
 ============================================================
 ```
 
+### Web Search Geocoding & Company Enrichment
+
+Advanced geocoding and company discovery using web search APIs (Tavily or Brave):
+
+```bash
+# Process a single country
+python scripts/web_search_geocode.py --country ECU
+
+# Resume from a specific country (processes that country and all subsequent ones)
+python scripts/web_search_geocode.py --start-from ECU
+
+# Process all countries with limits
+python scripts/web_search_geocode.py --limit 10 --limit-total 100
+
+# Target facilities missing coordinates
+python scripts/web_search_geocode.py --country USA --limit 20
+
+# Target facilities missing company information
+python scripts/web_search_geocode.py --country IND --missing-companies --limit 15
+
+# Process all facilities (not just missing data)
+python scripts/web_search_geocode.py --country CHN --all --limit 50
+
+# Dry run (preview without saving)
+python scripts/web_search_geocode.py --country ZAF --dry-run
+
+# Choose search engine
+python scripts/web_search_geocode.py --country BRA --search-engine brave
+```
+
+**Command-line Options:**
+
+| Option | Description | Example |
+|--------|-------------|---------|
+| `--country ISO3` | Process a single country | `--country ECU` |
+| `--start-from ISO3` | Resume from country (processes it and all subsequent ones) | `--start-from ECU` |
+| `--limit N` | Max facilities per country (default: 10) | `--limit 20` |
+| `--limit-total N` | Max total facilities across all countries | `--limit-total 100` |
+| `--search-engine` | Choose `tavily` or `brave` (default: tavily) | `--search-engine brave` |
+| `--missing-companies` | Only process facilities missing company_mentions | `--missing-companies` |
+| `--all` | Process all facilities (not just missing data) | `--all` |
+| `--dry-run` | Preview changes without saving | `--dry-run` |
+
+**Features:**
+- Automatically handles both string and structured dict formats in `company_mentions`
+- Rate-limited to prevent API throttling
+- Provides detailed per-country and final summaries
+- Adds geocoding precision levels and company role information
+- Cannot use `--country` and `--start-from` together (mutually exclusive)
+
+**Use Cases:**
+- **Resume after crash**: `--start-from` picks up where you left off
+- **Batch processing**: Process multiple countries alphabetically
+- **Targeted enrichment**: Use `--missing-companies` or default (missing coords)
+- **Testing**: `--dry-run` to preview before committing changes
+
 ### Industrial Zones Database
 
 Pre-configured coordinates for common industrial zones:

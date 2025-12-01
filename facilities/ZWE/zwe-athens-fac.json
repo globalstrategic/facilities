@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -19.293,
-    "lon": 30.521,
+    "lat": -19.0833,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duration Gold Limited",
+    "Duration Investments (Pvt) Ltd",
+    "Independence Mining (Pvt.) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.945320Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:40:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10158904. The Athens Gold Mine is located in the Midlands province of Zimbabwe, near the town of Mvuma"
   },
   "canonical_name": "Athens Mine",
   "canonical_slug": "athens-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:14.000000Z",
+      "operators": [
+        "Duration Investments (Pvt) Ltd",
+        "Independence Mining (Pvt.) Ltd."
+      ],
+      "owners": [
+        "Duration Gold Limited"
+      ],
+      "notes": "Duration Investments (Pvt) Ltd owns the Athens Mine and has been involved in mining operations in Zimbabwe for 50 years."
+    }
+  }
 }

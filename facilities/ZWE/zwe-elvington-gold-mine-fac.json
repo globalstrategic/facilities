@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.5,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kuvimba Mining (Pvt) Ltd",
+    "Zimbabwe Mining Development Corporation (ZMDC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.944428Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:39:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.l2b.co.za/Project/Elvington-Gold-Mine-Zimbabwe/21650. Elvington Gold Mine is located near Chegutu, approximately 106 km south of Harare"
   },
   "canonical_name": "Elvington Gold Mine",
   "canonical_slug": "elvington-gold-mine",
@@ -50,5 +53,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:39:35.000000Z",
+      "operators": [
+        "Kuvimba Mining (Pvt) Ltd",
+        "Zimbabwe Mining Development Corporation (ZMDC)"
+      ],
+      "owners": [
+        "Zimbabwe Mining Development Corporation (ZMDC)"
+      ],
+      "notes": "Elvington Gold Mine is a joint venture between ZMDC and Kuvimba Mining."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -15.5,
+    "lon": 28.5,
     "precision": "unknown"
   },
   "types": [
@@ -40,14 +40,10 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "\\-",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.728550",
-      "evidence": "Extracted from operator column: \\-"
-    }
+    "Anglo American plc",
+    "Zambia Broken Hill Development Company Limited (ZBHDC)",
+    "Zambia Consolidated Copper Mines Limited (ZCCM)",
+    "\\-"
   ],
   "products": [],
   "sources": [
@@ -58,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.680907Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:40:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kabwe_mine. The Kabwe mine, also known as the Broken Hill mine, is located near Kabwe, Zambia. It was a significant lead producer until its closure in 1994"
   },
   "canonical_name": "Kabwe Mine",
   "canonical_slug": "kabwe-mine",
@@ -77,5 +73,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:51.000000Z",
+      "operators": [
+        "Zambia Broken Hill Development Company Limited (ZBHDC)",
+        "Zambia Consolidated Copper Mines Limited (ZCCM)"
+      ],
+      "owners": [
+        "Anglo American plc"
+      ],
+      "notes": "Anglo American had an indirect minority shareholding in the mine's operator until nationalization in 1971."
+    }
+  }
 }

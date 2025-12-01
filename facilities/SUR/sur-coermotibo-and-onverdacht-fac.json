@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SUR",
   "location": {
-    "lat": 5.572,
-    "lon": -54.306,
+    "lat": -23.677012995086105,
+    "lon": -50.26590924730139,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alcoa Inc.",
+    "BHP Billiton Ltd",
+    "N.V. Alcoa Minerals of Suriname",
+    "Suralco"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.399633Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T11:57:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Paramaribo (https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PermitInformation/AR0000531_Form%2010-K_20160617.pdf). The Coermotibo and Onverdacht mining areas are located approximately 100 kilometers east-southeast of Paramaribo"
   },
   "canonical_name": "Coermotibo And Onverdacht Mine",
   "canonical_slug": "coermotibo-and-onverdacht-mine",
@@ -55,5 +60,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Para and Marowijne",
+  "town": "Paramaribo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:57:41.000000Z",
+      "operators": [
+        "N.V. Alcoa Minerals of Suriname"
+      ],
+      "owners": [
+        "Alcoa Inc.",
+        "BHP Billiton Ltd",
+        "Suralco"
+      ],
+      "notes": "Alcoa operates the mines, which were formerly part of a joint venture with BHP Billiton."
+    }
+  }
 }

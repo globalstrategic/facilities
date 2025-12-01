@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TUN",
   "location": {
-    "lat": 37.034,
-    "lon": 9.035,
+    "lat": 37.034007,
+    "lon": 9.035449,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Société Djebel Djerissa SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:58.248000Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:50:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SDD_Maktaa_El_Haddid_Mine. Coordinates are approximate for the SDD Maktaa El Haddid Mine"
   },
   "canonical_name": "SDD Maktaa El Haddid Mine",
   "canonical_slug": "sdd-maktaa-el-haddid-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Béja Governorate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:50:22.000000Z",
+      "operators": [
+        "Société Djebel Djerissa SA"
+      ],
+      "owners": [
+        "Société Djebel Djerissa SA"
+      ],
+      "notes": "Société Djebel Djerissa SA is the sole owner and operator of the mine."
+    }
+  }
 }

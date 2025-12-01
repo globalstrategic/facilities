@@ -8,8 +8,8 @@
   ],
   "country_iso3": "SWE",
   "location": {
-    "lat": 67.636,
-    "lon": 21.017,
+    "lat": 67.633063,
+    "lon": 21.022233,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Sweden",
+    "Luossavaara-Kiirunavaara AB (LKAB)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.599423Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:55:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/LKAB_Levianiemi_Mine. The coordinates are for the LKAB Levianiemi Mine located in Svappavaara"
   },
   "canonical_name": "Svappavaara Mine",
   "canonical_slug": "svappavaara-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Norrbotten County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:55:18.000000Z",
+      "operators": [
+        "Luossavaara-Kiirunavaara AB (LKAB)"
+      ],
+      "owners": [
+        "Government of Sweden"
+      ],
+      "notes": "LKAB is a state-owned company that operates the mine."
+    }
+  }
 }

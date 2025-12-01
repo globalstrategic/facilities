@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SVK",
   "location": {
-    "lat": 48.624,
-    "lon": 21.188,
+    "lat": 48.612001,
+    "lon": 21.191401,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "U. S. Steel Košice, s.r.o.",
+    "United States Steel Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:09.643300Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:56:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/U._S._Steel_Ko%C5%A1ice_steel_plant. U. S. Steel Košice is an integrated steelmaking facility located in Šaca, Košice, Slovakia"
   },
   "canonical_name": "U S Steel Kosice Smelter",
   "canonical_slug": "u-s-steel-kosice-smelter",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Košice Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:56:39.000000Z",
+      "operators": [
+        "U. S. Steel Košice, s.r.o."
+      ],
+      "owners": [
+        "United States Steel Corporation"
+      ],
+      "notes": "U. S. Steel Košice was privatized in 2000 when U.S. Steel acquired the former Východoslovenské železiarne."
+    }
+  }
 }
