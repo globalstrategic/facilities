@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.269,
-    "lon": 107.818,
+    "lat": 35.268672,
+    "lon": 107.818112,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Zhengtong Coal Industry",
+    "Shandong Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.687347Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:05:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E6%AD%A3%E9%80%9A%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%AB%98%E5%AE%B6%E5%A0%A1%E7%85%A4%E7%9F%BF. The Gaojiabao Coal Mine is located in the northwest part of the Binchang mining area, which is one of the thirteen large coal bases planned by the state"
   },
   "canonical_name": "Gaojiabao Coal Mine",
   "canonical_slug": "gaojiabao-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:05:30.000000Z",
+      "operators": [
+        "Shaanxi Zhengtong Coal Industry"
+      ],
+      "owners": [
+        "Shandong Energy"
+      ],
+      "notes": "Shaanxi Zhengtong Coal Industry is a subsidiary of Shandong Energy."
+    }
+  }
 }

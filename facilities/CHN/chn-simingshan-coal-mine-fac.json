@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.77,
-    "lon": 113.08,
+    "lat": 35.770434,
+    "lon": 113.080246,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gaoping Xingbei Investment and Consulting Service Center",
+    "Gaoping Xingning Asset Management Service Center",
+    "Jinneng Group",
+    "Shanxi Coal Transportation and Sales Group Simingshan Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.757443Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:38:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E5%9B%9B%E6%98%8E%E5%B1%B1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Simingshan Coal Mine is an underground coal mine operated by Shanxi Coal Transportation and Sales Group Simingshan Coal Industry Company"
   },
   "canonical_name": "Simingshan Coal Mine",
   "canonical_slug": "simingshan-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:38:40.000000Z",
+      "operators": [
+        "Shanxi Coal Transportation and Sales Group Simingshan Coal Industry Company"
+      ],
+      "owners": [
+        "Jinneng Group",
+        "Gaoping Xingning Asset Management Service Center",
+        "Gaoping Xingbei Investment and Consulting Service Center"
+      ],
+      "notes": "The mine is fully operated by Shanxi Coal Transportation and Sales Group, with Jinneng Group as the majority owner."
+    }
+  }
 }

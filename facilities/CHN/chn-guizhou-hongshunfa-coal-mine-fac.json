@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.201,
-    "lon": 105.238,
+    "lat": 26.201175,
+    "lon": 105.237888,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Luxinxiyi Industrial and Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.737125Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:13:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%85%AD%E6%9E%9D%E7%89%B9%E5%8C%BA%E5%AE%8F%E9%A1%BA%E5%8F%91%E7%85%A4%E7%9F%BF. The Guizhou Hongshunfa Coal Mine is an underground coal mine located in the Liupanshui area of Guizhou province"
   },
   "canonical_name": "Guizhou Hongshunfa Coal Mine",
   "canonical_slug": "guizhou-hongshunfa-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:13:17.000000Z",
+      "operators": [
+        "Guizhou Luxinxiyi Industrial and Mining Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Guizhou Luxinxiyi Industrial and Mining Co Ltd."
+    }
+  }
 }

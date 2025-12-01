@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.334,
-    "lon": 93.275,
+    "lat": 44.333899,
+    "lon": 93.274989,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Changchun Jiaye Investment Company",
+    "Shi Zhonglin",
+    "巴里坤县鑫源煤炭有限责任公司 (Baqin County Xinyuan Coal Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.684706Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:48:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B7%B4%E9%87%8C%E5%9D%A4%E5%8E%BF%E9%91%AB%E6%BA%90%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E6%9D%A1%E6%B9%96%E4%B8%89%E5%8F%B7%E7%9F%BF%E4%BA%95. The Tiaohu No.3 Coal Mine is a coal mine located in the Hami region of Xinjiang, China"
   },
   "canonical_name": "Tiaohu No 3 Coal Mine",
   "canonical_slug": "tiaohu-no-3-coal-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uygur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:48:07.000000Z",
+      "operators": [
+        "巴里坤县鑫源煤炭有限责任公司 (Baqin County Xinyuan Coal Co., Ltd.)"
+      ],
+      "owners": [
+        "Changchun Jiaye Investment Company",
+        "Shi Zhonglin"
+      ],
+      "notes": "The mine is operated by Baqin County Xinyuan Coal Co., Ltd. and has ownership stakes from Changchun Jiaye Investment Company and Shi Zhonglin."
+    }
+  }
 }

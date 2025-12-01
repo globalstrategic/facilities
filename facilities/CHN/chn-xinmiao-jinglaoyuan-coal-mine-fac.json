@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.377,
-    "lon": 110.384,
+    "lat": 39.380376,
+    "lon": 110.393091,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "铁煤集团内蒙古东新煤炭有限责任公司 (Tiem Coal Group Inner Mongolia Dongxin Coal Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.686502Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:15:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%93%81%E7%85%A4%E9%9B%86%E5%9B%A2%E5%86%85%E8%92%99%E5%8F%A4%E4%B8%9C%E6%96%B0%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%BC%8A%E9%87%91%E9%9C%8D%E6%B4%9B%E6%97%97%E6%96%B0%E5%BA%99%E9%95%87%E6%95%AC%E8%80%81%E9%99%A2%E7%85%A4%E7%9F%BF. The Xinmiao Jinglaoyuan Coal Mine is an underground coal mine located in the Ordos City, Inner Mongolia"
   },
   "canonical_name": "Xinmiao Jinglaoyuan Coal Mine",
   "canonical_slug": "xinmiao-jinglaoyuan-coal-mine",
@@ -53,5 +55,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区 (Inner Mongolia Autonomous Region)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:15:51.000000Z",
+      "operators": [
+        "铁煤集团内蒙古东新煤炭有限责任公司 (Tiem Coal Group Inner Mongolia Dongxin Coal Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine was originally a private enterprise and was restructured in 2010 to form a joint venture with Liaoning Tifa Coal Industry Group."
+    }
+  }
 }

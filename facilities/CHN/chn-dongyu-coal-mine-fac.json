@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.615,
-    "lon": 112.254,
+    "lat": 36.78160916986331,
+    "lon": 111.6632218046803,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Meijin Energy",
+    "Shanxi Meijin Group Dongyu Coal Industry Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.628282Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T17:55:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fenxi (https://news.futunn.com/en/post/48641096/shanxi-meijin-energy-acquires-three-coal-mine-resources-from-its). The Dongyu Coal Mine is part of the Shanxi Meijin Energy's coal mining operations"
   },
   "canonical_name": "Dongyu Coal Mine",
   "canonical_slug": "dongyu-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Fenxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:55:56.000000Z",
+      "operators": [
+        "Shanxi Meijin Group Dongyu Coal Industry Co., Ltd."
+      ],
+      "owners": [
+        "Shanxi Meijin Energy"
+      ],
+      "notes": "Shanxi Meijin Energy owns and operates the Dongyu Coal Mine."
+    }
+  }
 }

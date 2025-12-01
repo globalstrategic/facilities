@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.923,
-    "lon": 117.11,
+    "lat": 34.924789,
+    "lon": 117.108422,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Energy",
+    "Zaozhuang Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.872029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:46:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%9E%A3%E5%BA%84%E7%9F%BF%E4%B8%9A%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%94%B0%E9%99%88%E7%85%A4%E7%9F%BF. The Tianchen Coal Mine is a coal mine located in Shandong Province, specifically in Zaozhuang City, Tengzhou, Zhangwang Town"
   },
   "canonical_name": "Tianchen Coal Mine",
   "canonical_slug": "tianchen-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:46:34.000000Z",
+      "operators": [
+        "Zaozhuang Mining Group"
+      ],
+      "owners": [
+        "Shandong Energy"
+      ],
+      "notes": "The Tianchen Coal Mine is operated by Zaozhuang Mining Group, which is a subsidiary of Shandong Energy."
+    }
+  }
 }

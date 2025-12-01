@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.863,
-    "lon": 107.844,
+    "lat": 34.862799,
+    "lon": 107.844317,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "陕西永陇能源开发建设有限责任公司 (Shaanxi Yonglong Energy Development Construction Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.646576Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:25:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E6%B0%B8%E9%99%87%E8%83%BD%E6%BA%90%E5%BC%80%E5%8F%91%E5%BB%BA%E8%AE%BE%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%B4%94%E6%9C%A8%E7%85%A4%E7%9F%BF. The Linyou Cuimu Coal Mine is a shaft coal mine located in Linyou County, Shaanxi Province, China, with an annual production capacity of 4 million tons"
   },
   "canonical_name": "Linyou Cuimu Coal Mine",
   "canonical_slug": "linyou-cuimu-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:25:16.000000Z",
+      "operators": [
+        "陕西永陇能源开发建设有限责任公司 (Shaanxi Yonglong Energy Development Construction Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Shaanxi Yonglong Energy Development Construction Co., Ltd."
+    }
+  }
 }

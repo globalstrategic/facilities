@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.146,
-    "lon": 108.463,
+    "lat": 35.112,
+    "lon": 108.34,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Majestic Gold Corp.",
+    "Yantai Dahedong Processing Co. Ltd.",
+    "Yantai Zhongjia Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.596574Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:19:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Xunyi_County. The coordinates are for Xunyi County, where the Songjiagou Coal Mine is located"
   },
   "canonical_name": "Xunyi County Songjiagou Coal Mine",
   "canonical_slug": "xunyi-county-songjiagou-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:19:30.000000Z",
+      "operators": [
+        "Yantai Zhongjia Mining Co., Ltd."
+      ],
+      "owners": [
+        "Majestic Gold Corp.",
+        "Yantai Dahedong Processing Co. Ltd."
+      ],
+      "notes": "Majestic Gold Corp. holds a 52.875% interest in the SJG Project through its subsidiary, which holds a 75% interest in the project."
+    }
+  }
 }

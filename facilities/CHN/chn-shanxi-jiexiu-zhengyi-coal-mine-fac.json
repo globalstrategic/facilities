@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.008,
-    "lon": 112.089,
+    "lat": 37.007639,
+    "lon": 112.089297,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coking Coal Group",
+    "Shanxi Coking Coal Group Jiexiu Zhengyi Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.701046Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:16:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%84%A6%E7%85%A4%E9%9B%86%E5%9B%A2%E4%BB%8B%E4%BC%91%E6%AD%A3%E7%9B%8A%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shanxi Jiexiu Zhengyi Coal Mine is an underground coal mine located in the village of Gancao Ling, Lianfu Town, Jiexiu City, Jinzhong Prefecture"
   },
   "canonical_name": "Shanxi Jiexiu Zhengyi Coal Mine",
   "canonical_slug": "shanxi-jiexiu-zhengyi-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:16:32.000000Z",
+      "operators": [
+        "Shanxi Coking Coal Group Jiexiu Zhengyi Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Coking Coal Group Jiexiu Zhengyi Coal Industry Co Ltd, which is a subsidiary of the state-owned Shanxi Coking Coal Group."
+    }
+  }
 }

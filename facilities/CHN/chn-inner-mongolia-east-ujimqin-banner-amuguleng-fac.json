@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 45.204,
-    "lon": 115.644,
+    "lat": 45.203807,
+    "lon": 115.643676,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "东乌珠穆沁旗阿木古楞矿业有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.881584Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:52:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%9C%E4%B9%8C%E7%8F%A0%E7%A9%86%E6%B2%81%E6%97%97%E9%98%BF%E6%9C%A8%E5%8F%A4%E6%A5%9E%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The facility is an open-pit coal mine located in the East Ujimqin Banner"
   },
   "canonical_name": "Inner Mongolia East Ujimqin Banner Amuguleng Mine",
   "canonical_slug": "inner-mongolia-east-ujimqin-banner-amuguleng-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:52:28.000000Z",
+      "operators": [
+        "东乌珠穆沁旗阿木古楞矿业有限责任公司"
+      ],
+      "owners": [],
+      "notes": "The company operates the coal mine in the region."
+    }
+  }
 }

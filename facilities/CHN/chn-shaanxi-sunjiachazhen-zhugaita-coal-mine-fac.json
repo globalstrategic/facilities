@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.195,
-    "lon": 110.306,
+    "lat": 39.185154,
+    "lon": 110.268131,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Sunjiachazhen Zhugaita Coal Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.853942Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:09:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E7%A5%9E%E6%9C%A8%E5%8E%BF%E5%AD%99%E5%AE%B6%E5%B2%94%E9%95%87%E6%9C%B1%E6%A6%82%E5%A1%94%E7%85%A4%E7%9F%BF. Coordinates are provided in WGS 84 format"
   },
   "canonical_name": "Shaanxi Sunjiachazhen Zhugaita Coal Mine",
   "canonical_slug": "shaanxi-sunjiachazhen-zhugaita-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:09:08.000000Z",
+      "operators": [
+        "Shaanxi Sunjiachazhen Zhugaita Coal Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by the listed company."
+    }
+  }
 }

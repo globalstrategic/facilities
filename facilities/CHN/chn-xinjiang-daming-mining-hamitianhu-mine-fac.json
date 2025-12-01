@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.688,
-    "lon": 94.667,
+    "lat": 41.6875,
+    "lon": 94.6667,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xinjiang Daming Mining Group Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.887141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:11:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Xinjiang_Daming_Mining_Hamitianhu_Mine. The Xinjiang Daming Mining Hamitianhu Mine is an iron ore mine located in Hami, Xinjiang, China"
   },
   "canonical_name": "Xinjiang Daming Mining Hamitianhu Mine",
   "canonical_slug": "xinjiang-daming-mining-hamitianhu-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:11:13.000000Z",
+      "operators": [
+        "Xinjiang Daming Mining Group Co Ltd"
+      ],
+      "owners": [
+        "Xinjiang Daming Mining Group Co Ltd"
+      ],
+      "notes": "The mine is fully owned by Xinjiang Daming Mining Group Co Ltd."
+    }
+  }
 }

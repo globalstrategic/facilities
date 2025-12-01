@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.231,
-    "lon": 82.984,
+    "lat": 42.231219,
+    "lon": 82.984297,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xuzhou Mining Group",
+    "Xuzhou Mining Group Xinjiang Tianshan Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.643623Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:47:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%BE%90%E5%B7%9E%E7%9F%BF%E5%8A%A1(%E9%9B%86%E5%9B%A2)%E6%96%B0%E7%96%86%E5%A4%A9%E5%B1%B1%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%BF%84%E9%9C%8D%E5%B8%83%E6%8B%89%E5%85%8B%E7%85%A4%E7%9F%BF. The Okhobrak Coal Mine is an underground coal mine located in the Xinjiang Uyghur Autonomous Region"
   },
   "canonical_name": "Okhobrak Coal Mine",
   "canonical_slug": "okhobrak-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uyghur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:47:07.000000Z",
+      "operators": [
+        "Xuzhou Mining Group Xinjiang Tianshan Mining Company"
+      ],
+      "owners": [
+        "Xuzhou Mining Group"
+      ],
+      "notes": "The mine is operated by Xuzhou Mining Group Xinjiang Tianshan Mining Company, which is a subsidiary of Xuzhou Mining Group."
+    }
+  }
 }

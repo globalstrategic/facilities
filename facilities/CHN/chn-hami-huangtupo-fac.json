@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.89,
-    "lon": 93.938,
+    "lat": 41.6875,
+    "lon": 94.6667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xinjiang Daming Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.810143Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:22:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Xinjiang_Daming_Mining_Hamitianhu_Mine. The coordinates are for the Xinjiang Daming Mining Hamitianhu Mine located in Hami, Xinjiang, China"
   },
   "canonical_name": "Hami Huangtupo Mine",
   "canonical_slug": "hami-huangtupo-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uygur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:22:59.000000Z",
+      "operators": [
+        "Xinjiang Daming Mining"
+      ],
+      "owners": [],
+      "notes": "The mine is part of the Global Iron Ore Mines Tracker."
+    }
+  }
 }

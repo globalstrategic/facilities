@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.434,
-    "lon": 123.694,
+    "lat": 42.434234,
+    "lon": 123.693907,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tieling County Shuangshuzi Coal Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.618779Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:21:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%93%81%E5%B2%AD%E5%8E%BF%E5%8F%8C%E6%A0%91%E5%AD%90%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The facility is a coal mine located in Tieling County, Liaoning Province, China"
   },
   "canonical_name": "Liaoning Tieling Shuangshuzi Coal Mine",
   "canonical_slug": "liaoning-tieling-shuangshuzi-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liaoning",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:21:36.000000Z",
+      "operators": [
+        "Tieling County Shuangshuzi Coal Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Tieling County Shuangshuzi Coal Mine Co Ltd."
+    }
+  }
 }

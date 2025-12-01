@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.335,
-    "lon": 104.664,
+    "lat": 26.335378,
+    "lon": 104.663728,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Jiuyi Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.784257Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:34:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E4%B9%85%E7%9B%8A%E7%9F%BF%E4%B8%9A%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%B0%B4%E5%9F%8E%E5%8E%BF%E9%83%BD%E6%A0%BC%E4%B9%A1%E4%BF%9D%E5%85%B6%E7%85%A4%E7%9F%BF. The Shuicheng Baoxing Coal Mine is an underground coal mine located in the New Pan Village of Dugexiang, Shuicheng County, Liupanshui City, Guizhou Province"
   },
   "canonical_name": "Shuicheng Baoxing Coal Mine",
   "canonical_slug": "shuicheng-baoxing-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:34:20.000000Z",
+      "operators": [
+        "Guizhou Jiuyi Mining Co Ltd"
+      ],
+      "owners": [
+        "Guizhou Jiuyi Mining Co Ltd"
+      ],
+      "notes": "The mine is operated and owned by Guizhou Jiuyi Mining Co Ltd."
+    }
+  }
 }

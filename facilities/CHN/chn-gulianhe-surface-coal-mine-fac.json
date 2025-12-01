@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 52.944,
-    "lon": 122.34,
+    "lat": 52.944374,
+    "lon": 122.339997,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Daxing'anling Forestry Administration"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.595920Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:19:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%85%B4%E5%AE%89%E5%B2%AD%E5%8F%A4%E8%8E%B2%E6%B2%B3%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Gulianhe Surface Coal Mine is an open-pit coal mine located in the Daxing'anling region of Heilongjiang Province"
   },
   "canonical_name": "Gulianhe Surface Coal Mine",
   "canonical_slug": "gulianhe-surface-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:19:31.000000Z",
+      "operators": [
+        "Daxing'anling Forestry Administration"
+      ],
+      "owners": [
+        "Daxing'anling Forestry Administration"
+      ],
+      "notes": "The mine is operated and owned by the Daxing'anling Forestry Administration."
+    }
+  }
 }

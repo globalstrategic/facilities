@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.59,
-    "lon": 105.039,
+    "lat": 26.484308,
+    "lon": 105.619091,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Biyun Construction Investment of Zhijin Bijie",
+    "Guizhou Shuicheng Mining Group",
+    "Sinopec"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.637026Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:34:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shuicheng_Feitian_Coal_Mine_(Phase_I). Coordinates for the Shuicheng Feitian Coal Mine, which is part of the Shuicheng mining area"
   },
   "canonical_name": "Shuicheng Dongfeng Coal Mine",
   "canonical_slug": "shuicheng-dongfeng-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:34:31.000000Z",
+      "operators": [
+        "Guizhou Shuicheng Mining Group"
+      ],
+      "owners": [
+        "Sinopec",
+        "Biyun Construction Investment of Zhijin Bijie"
+      ],
+      "notes": "Sinopec holds a 49% stake, while Biyun Construction Investment holds 51%."
+    }
+  }
 }

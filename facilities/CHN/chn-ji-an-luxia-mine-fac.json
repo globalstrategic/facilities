@@ -1,11 +1,11 @@
 {
   "facility_id": "chn-ji-an-luxia-mine-fac",
-  "name": "Jiâ€™an Luxia Mine",
+  "name": "JiÃ¢â‚¬â„¢an Luxia Mine",
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.217,
-    "lon": 115.178,
+    "lat": 27.216667,
+    "lon": 115.178333,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jishui County Yida Materials Co (吉水县谊达物资有限责任公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,15 +31,15 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.694155Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:57:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ji%E2%80%99an-Luxia_Mine. Ji’an-Luxia Mine is an iron ore mine that has been mothballed"
   },
-  "canonical_name": "Jiâ An Luxia Mine",
+  "canonical_name": "JiÃ¢ An Luxia Mine",
   "canonical_slug": "jiatman-luxia-mine",
-  "display_name": "Jiâ An Luxia",
+  "display_name": "JiÃ¢ An Luxia",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -56,5 +58,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jiangxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:57:42.000000Z",
+      "operators": [],
+      "owners": [
+        "Jishui County Yida Materials Co (吉水县谊达物资有限责任公司)"
+      ],
+      "notes": "The mine is owned 100% by Jishui County Yida Materials Co."
+    }
+  }
 }

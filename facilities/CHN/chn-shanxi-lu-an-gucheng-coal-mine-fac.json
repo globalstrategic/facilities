@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.256,
-    "lon": 112.92,
+    "lat": 36.25626,
+    "lon": 112.918649,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lu'an Group",
+    "Lu'an Gucheng Coal Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.828369Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:18:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shanxi_Lu%27an_Gucheng_Coal_Mine. The Shanxi Lu'an Gucheng Coal Mine is located in Ligao Town, Tunliu, Changzhi, Shanxi Province, China"
   },
   "canonical_name": "Shanxi Lu'an Gucheng Coal Mine",
   "canonical_slug": "shanxi-lu-an-gucheng-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:18:36.000000Z",
+      "operators": [
+        "Lu'an Gucheng Coal Mine"
+      ],
+      "owners": [
+        "Lu'an Group"
+      ],
+      "notes": "Lu'an Group is the parent company of the Lu'an Gucheng Coal Mine."
+    }
+  }
 }

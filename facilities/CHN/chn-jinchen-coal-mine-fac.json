@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.664,
-    "lon": 112.886,
+    "lat": 35.566919,
+    "lon": 112.866931,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jincheng Lanyan Coal Industry Co., Ltd.",
+    "Jinneng Holding Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.642332Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:04:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Fenghuangshan_Coal_Mine. The coordinates are exact for the Fenghuangshan Coal Mine, which is operated by Jincheng Lanyan Coal Industry Co., Ltd"
   },
   "canonical_name": "Jinchen Coal Mine",
   "canonical_slug": "jinchen-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:04:55.000000Z",
+      "operators": [
+        "Jincheng Lanyan Coal Industry Co., Ltd."
+      ],
+      "owners": [
+        "Jinneng Holding Group"
+      ],
+      "notes": "Jinneng Holding Group is the owner, previously known as Datong Coal Mining Group."
+    }
+  }
 }

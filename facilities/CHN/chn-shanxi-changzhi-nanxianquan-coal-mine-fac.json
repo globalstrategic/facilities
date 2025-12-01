@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.028,
-    "lon": 113.103,
+    "lat": 36.027702,
+    "lon": 113.102662,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Changzhi Yangtouling Nanxianquan Coal Industry Co Ltd",
+    "Shanxi Jinmei Group Changzhi Xianquan Coal Industry"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.609603Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:14:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E9%95%BF%E6%B2%BB%E7%BE%8A%E5%A4%B4%E5%B2%AD%E5%8D%97%E4%BB%99%E6%B3%89%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shanxi Changzhi Nanxianquan Coal Mine is an underground coal mine located in Shanxi Province, China"
   },
   "canonical_name": "Shanxi Changzhi Nanxianquan Coal Mine",
   "canonical_slug": "shanxi-changzhi-nanxianquan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:14:49.000000Z",
+      "operators": [
+        "Shanxi Changzhi Yangtouling Nanxianquan Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Shanxi Jinmei Group Changzhi Xianquan Coal Industry"
+      ],
+      "notes": "The mine is operated by Shanxi Changzhi Yangtouling Nanxianquan Coal Industry Co Ltd and owned by Shanxi Jinmei Group."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.018,
-    "lon": 110.566,
+    "lat": 39.018146,
+    "lon": 110.566039,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bandunyan Village"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.809993Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:43:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E7%A5%9E%E6%9C%A8%E5%B8%82%E5%BA%97%E5%A1%94%E9%95%87%E6%9D%BF%E5%A2%A9%E7%84%85%E6%9D%91%E5%8A%9E%E7%85%A4%E7%9F%BF. The Bandunyan Coal Mine is an underground coal mine located in Bandunyan Village, Shenmu City, Shaanxi Province, China"
   },
   "canonical_name": "Bandunyan Coal Mine",
   "canonical_slug": "bandunyan-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:43:42.000000Z",
+      "operators": [
+        "Bandunyan Village"
+      ],
+      "owners": [
+        "Bandunyan Village"
+      ],
+      "notes": "The facility is fully owned and operated by Bandunyan Village."
+    }
+  }
 }

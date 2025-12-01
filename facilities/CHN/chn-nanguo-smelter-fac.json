@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 22.53,
-    "lon": 107.799,
+    "lat": 24.296895951069356,
+    "lon": 107.328244,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guangxi Nanguo Copper Co.",
+    "Nanfang Nonferrous Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.665989Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:43:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chongzuo (https://www.woodmac.com/reports/metals-nanguo-copper-smelter-150049910/). The Nanguo smelter is located in Chongzuo city, approximately 200 km from Fangchenggang port"
   },
   "canonical_name": "Nanguo Smelter",
   "canonical_slug": "nanguo-smelter",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guangxi",
+  "town": "Chongzuo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:43:01.000000Z",
+      "operators": [
+        "Guangxi Nanguo Copper Co."
+      ],
+      "owners": [
+        "Nanfang Nonferrous Group"
+      ],
+      "notes": "Nanfang Nonferrous Group is a private company that owns the smelter."
+    }
+  }
 }

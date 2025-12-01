@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.156,
-    "lon": 111.588,
+    "lat": 38.145568,
+    "lon": 111.593017,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Taiyuan Iron and Steel (Group) Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.592389Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:49:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TISCO_Yuanjiacun_Mine. The TISCO Yuanjiacun Mine is the largest open-pit metallurgical mine in Asia, with significant geological reserves"
   },
   "canonical_name": "Tisco Yuanjiacun Mine",
   "canonical_slug": "tisco-yuanjiacun-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:49:22.000000Z",
+      "operators": [
+        "Taiyuan Iron and Steel (Group) Co., Ltd."
+      ],
+      "owners": [
+        "Taiyuan Iron and Steel (Group) Co., Ltd."
+      ],
+      "notes": "Taiyuan Iron and Steel (Group) Co., Ltd. is a major player in the steel industry and operates the mine."
+    }
+  }
 }

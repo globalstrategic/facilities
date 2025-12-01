@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.749,
-    "lon": 105.104,
+    "lat": 26.749163,
+    "lon": 105.104197,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Yongji Mining Investment Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.621135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:14:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E6%B0%B8%E5%9F%BA%E7%9F%BF%E4%B8%9A%E6%8A%95%E8%B5%84%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%BA%B3%E9%9B%8D%E5%8E%BF%E7%8C%AA%E5%9C%BA%E4%B9%A1%E6%96%B0%E6%98%A5%E7%85%A4%E7%9F%BF. The Guizhou Nayong Xinchun Coal Mine is an underground coal mine located in the village of Luoboming, Nayong County, Bijie City, Guizhou Province"
   },
   "canonical_name": "Guizhou Nayong Xinchun Coal Mine",
   "canonical_slug": "guizhou-nayong-xinchun-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:14:39.000000Z",
+      "operators": [
+        "Guizhou Yongji Mining Investment Co., Ltd."
+      ],
+      "owners": [],
+      "notes": "The operator is the only company mentioned in relation to the mine."
+    }
+  }
 }

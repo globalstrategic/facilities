@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.893,
-    "lon": 104.873,
+    "lat": 27.892792,
+    "lon": 104.873478,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "云南能投威信煤炭有限公司 (Yunnan Energy Investment Weixin Coal Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.736983Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:09:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%BA%91%E5%8D%97%E8%83%BD%E6%8A%95%E5%A8%81%E4%BF%A1%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%A7%82%E9%9F%B3%E5%B1%B1%E7%85%A4%E7%9F%BF%E4%B8%80%E4%BA%95. The Guanyinshan No. 1 Coal Mine is an underground coal mine with a production capacity of 1.8 million tons per year"
   },
   "canonical_name": "Guanyinshan No 1 Coal Mine",
   "canonical_slug": "guanyinshan-no-1-coal-mine",
@@ -58,5 +60,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yunnan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:09:31.000000Z",
+      "operators": [
+        "云南能投威信煤炭有限公司 (Yunnan Energy Investment Weixin Coal Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Yunnan Energy Investment Weixin Coal Co., Ltd."
+    }
+  }
 }

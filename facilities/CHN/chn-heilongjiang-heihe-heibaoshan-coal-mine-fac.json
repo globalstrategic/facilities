@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 50.103,
-    "lon": 125.667,
+    "lat": 48.12495266401865,
+    "lon": 125.45506804134672,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heilongjiang Tong Gong Mining Co., Ltd.",
+    "Songzai International Holding Group, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.632449Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T18:28:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Heihe (https://www.sec.gov/Archives/edgar/data/0001145761/000121465909002804/s11249110ka1.htm). The Tong Gong coal mine is located approximately 175 kilometers southwest of Heihe in Heilongjiang Province"
   },
   "canonical_name": "Heilongjiang Heihe Heibaoshan Coal Mine",
   "canonical_slug": "heilongjiang-heihe-heibaoshan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang",
+  "town": "Heihe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:28:27.000000Z",
+      "operators": [
+        "Songzai International Holding Group, Inc.",
+        "Heilongjiang Tong Gong Mining Co., Ltd."
+      ],
+      "owners": [],
+      "notes": "Songzai International Holding Group, Inc. is engaged in coal production and operates the Tong Gong coal mine through its subsidiary."
+    }
+  }
 }

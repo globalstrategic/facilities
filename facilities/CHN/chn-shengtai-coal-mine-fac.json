@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.871,
-    "lon": 113.079,
+    "lat": 35.870832,
+    "lon": 113.079349,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Group",
+    "Shanxi Coal Transportation and Marketing Group Jincheng Company",
+    "山西煤炭运销集团盛泰煤业有限公司 (Shangtai Coal Mine)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.872619Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:27:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E7%9B%9B%E6%B3%B0%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Shengtai Coal Mine is an underground coal mine operated by Shanxi Coal Transportation and Marketing Group"
   },
   "canonical_name": "Shengtai Coal Mine",
   "canonical_slug": "shengtai-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:27:31.000000Z",
+      "operators": [
+        "山西煤炭运销集团盛泰煤业有限公司 (Shangtai Coal Mine)"
+      ],
+      "owners": [
+        "Shanxi Coal Transportation and Marketing Group Jincheng Company",
+        "Jinneng Group"
+      ],
+      "notes": "The mine is part of the Shanxi Coal Transportation and Marketing Group and is owned by Jinneng Group."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.407,
-    "lon": 110.353,
+    "lat": 39.5647,
+    "lon": 109.7477,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy Investment Corporation",
+    "China Energy Shendong Coal Group Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.650599Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:52:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ejin_Horo_Banner. Coordinates for Ejin Horo Banner, where the Zhenxing Coal Mine is located"
   },
   "canonical_name": "Inner Mongolia Ejin Horo Banner Zhenxing Coal Mine",
   "canonical_slug": "inner-mongolia-ejin-horo-banner-zhenxing-coal-mine",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:52:49.000000Z",
+      "operators": [
+        "China Energy Investment Corporation",
+        "China Energy Shendong Coal Group Co Ltd"
+      ],
+      "owners": [
+        "China Energy Investment Corporation",
+        "China Energy Shendong Coal Group Co Ltd"
+      ],
+      "notes": "China Energy Investment Corporation is mentioned as the operator of coal mines in the area."
+    }
+  }
 }

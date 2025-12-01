@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.531,
-    "lon": 109.872,
+    "lat": 38.530798,
+    "lon": 109.871886,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Yanchang Petroleum Group",
+    "Shaanxi Youse Yulin Coal Industry Company",
+    "Shaanxi Youser Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.850632Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:23:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E6%9C%89%E8%89%B2%E6%A6%86%E6%9E%97%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%9D%AD%E6%9D%A5%E6%B9%BE%E7%85%A4%E7%9F%BF. The Hanglaiwan Coal Mine is an underground coal mine located in Yulin, Shaanxi Province, China"
   },
   "canonical_name": "Hanglaiwan Coal Mine",
   "canonical_slug": "hanglaiwan-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:23:11.000000Z",
+      "operators": [
+        "Shaanxi Youse Yulin Coal Industry Company"
+      ],
+      "owners": [
+        "Shaanxi Youser Group",
+        "Shaanxi Yanchang Petroleum Group"
+      ],
+      "notes": "Shaanxi Youse Yulin Coal Industry Company operates the mine, which is owned by Shaanxi Youser Group and Shaanxi Yanchang Petroleum Group."
+    }
+  }
 }

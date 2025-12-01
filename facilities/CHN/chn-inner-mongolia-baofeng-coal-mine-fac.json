@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.371,
-    "lon": 106.906,
+    "lat": 38.598103,
+    "lon": 108.837663,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Baofeng Coal-based New Materials Co Ltd",
+    "Ningxia Baofeng Energy Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.728756Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:51:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Inner_Mongolia_Baofeng_Energy_Coal-to-Olefins_Plant. The coordinates are approximate for the Inner Mongolia Baofeng Energy Coal-to-Olefins Plant located in Ordos, Inner Mongolia, China"
   },
   "canonical_name": "Inner Mongolia Baofeng Coal Mine",
   "canonical_slug": "inner-mongolia-baofeng-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:51:19.000000Z",
+      "operators": [
+        "Inner Mongolia Baofeng Coal-based New Materials Co Ltd"
+      ],
+      "owners": [
+        "Ningxia Baofeng Energy Group Co., Ltd."
+      ],
+      "notes": "Inner Mongolia Baofeng Coal-based New Materials Co Ltd is a wholly owned subsidiary of Ningxia Baofeng Energy Group."
+    }
+  }
 }

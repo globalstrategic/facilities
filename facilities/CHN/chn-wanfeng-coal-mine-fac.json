@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.046,
-    "lon": 111.795,
+    "lat": 37.045757,
+    "lon": 111.794793,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jizhong Energy Group",
+    "Shanxi Jinhui Wanfeng Coal Mine Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.816711Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:53:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E9%87%91%E6%99%96%E4%B8%87%E5%B3%B0%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Wanfeng Coal Mine is an underground coal mine located in Wangma Village, Xiazha Township, Xiaoyi City, Luliang City, Shanxi Province"
   },
   "canonical_name": "Wanfeng Coal Mine",
   "canonical_slug": "wanfeng-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:53:06.000000Z",
+      "operators": [
+        "Shanxi Jinhui Wanfeng Coal Mine Company"
+      ],
+      "owners": [
+        "Jizhong Energy Group"
+      ],
+      "notes": "Shanxi Jinhui Wanfeng Coal Mine Company operates the mine and is fully owned by Jizhong Energy Group."
+    }
+  }
 }

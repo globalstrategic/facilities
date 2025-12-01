@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.549,
-    "lon": 101.512,
+    "lat": 36.5497,
+    "lon": 101.5203,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Qinghai Western Mining Co., Ltd.",
+    "Western Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.841745Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:54:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Qinghai-Western-Mining.htm. Coordinates extracted from the location of Qinghai Western Mining's facilities"
   },
   "canonical_name": "Qinghai Smelter",
   "canonical_slug": "qinghai-smelter",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Qinghai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:54:59.000000Z",
+      "operators": [
+        "Qinghai Western Mining Co., Ltd."
+      ],
+      "owners": [
+        "Western Mining Co., Ltd."
+      ],
+      "notes": "Qinghai Western Mining operates the facility and is a subsidiary of Western Mining Co., Ltd."
+    }
+  }
 }

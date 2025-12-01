@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.676,
-    "lon": 118.753,
+    "lat": 39.687007,
+    "lon": 118.752413,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "HBIS Group Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.863461Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:24:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/HBIS_Sijiaying_Mine. The HBIS Sijiaying Mine is an iron ore mine located in Tangshan, Hebei, China"
   },
   "canonical_name": "Hbis Sijiaying Mine",
   "canonical_slug": "hbis-sijiaying-mine",
@@ -61,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:24:32.000000Z",
+      "operators": [
+        "HBIS Group Mining Co"
+      ],
+      "owners": [
+        "HBIS Group Mining Co"
+      ],
+      "notes": "HBIS Group Mining Co owns and operates the HBIS Sijiaying Mine."
+    }
+  }
 }

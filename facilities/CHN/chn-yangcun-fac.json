@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.468,
-    "lon": 116.797,
+    "lat": 34.845009705056434,
+    "lon": 112.4477046,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yanzhou Coal Mining Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.659781Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:21:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Luoyang (https://www.alamy.com/file-a-chinese-miner-works-underground-in-a-coal-mine-in-yangcun-village-guxian-town-luoyang-city-central-chinas-henan-province-25-march-2014-image263659247.html). Yangcun Coal Mine is located in Yangcun Village, Guxian Town, Luoyang City, Henan Province"
   },
   "canonical_name": "Yangcun Mine",
   "canonical_slug": "yangcun-mine",
@@ -52,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "town": "Luoyang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:21:15.000000Z",
+      "operators": [
+        "Yanzhou Coal Mining Company Limited"
+      ],
+      "owners": [
+        "Yanzhou Coal Mining Company Limited"
+      ],
+      "notes": "Yanzhou Coal Mining Company Limited owns and operates the Yangcun Coal Mine."
+    }
+  }
 }

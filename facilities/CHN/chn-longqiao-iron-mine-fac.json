@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 31.118,
-    "lon": 117.459,
+    "lat": 31.1167,
+    "lon": 117.4583,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anhui Lujiang Longqiao Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.610782Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:28:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Longqiao_Iron_Mine. The Longqiao Iron Mine is located in Hefei, Anhui, China"
   },
   "canonical_name": "Longqiao Iron Mine",
   "canonical_slug": "longqiao-iron-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:28:56.000000Z",
+      "operators": [
+        "Anhui Lujiang Longqiao Mining Co Ltd"
+      ],
+      "owners": [
+        "Anhui Lujiang Longqiao Mining Co Ltd"
+      ],
+      "notes": "Anhui Lujiang Longqiao Mining Co Ltd owns and operates the Longqiao Iron Mine."
+    }
+  }
 }

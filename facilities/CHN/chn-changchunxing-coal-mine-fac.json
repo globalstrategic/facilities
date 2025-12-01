@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.774,
-    "lon": 112.674,
+    "lat": 39.773688,
+    "lon": 112.677731,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coal Import and Export Group Co., Ltd.",
+    "Shanxi Coal International"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.638053Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:45:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%9B%E5%87%BA%E5%8F%A3%E9%9B%86%E5%9B%A2%E5%B7%A6%E4%BA%91%E9%95%BF%E6%98%A5%E5%85%B4%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Changchunxing Coal Mine is an underground coal mine located in the southern part of Suan Ci He Village, Zuoyun County, Datong City, Shanxi Province"
   },
   "canonical_name": "Changchunxing Coal Mine",
   "canonical_slug": "changchunxing-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:45:46.000000Z",
+      "operators": [
+        "Shanxi Coal International"
+      ],
+      "owners": [
+        "Shanxi Coal Import and Export Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by Shanxi Coal International, which is a subsidiary of Shanxi Coal Import and Export Group."
+    }
+  }
 }

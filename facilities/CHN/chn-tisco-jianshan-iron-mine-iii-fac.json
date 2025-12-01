@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.022,
-    "lon": 111.664,
+    "lat": 38.018235,
+    "lon": 111.66465,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Taiyuan Iron and Steel (Group) Co., Ltd.",
+    "Taiyuan Iron and Steel (Group) Co., Ltd. Mining Branch"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.887289Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:49:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TISCO_Jianshan_Iron_Mine_III. TISCO Jianshan Iron Mine III is an iron ore mine located in Taiyuan, Shanxi, China"
   },
   "canonical_name": "Tisco Jianshan Iron III Mine",
   "canonical_slug": "tisco-jianshan-iron-iii-mine",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:49:13.000000Z",
+      "operators": [
+        "Taiyuan Iron and Steel (Group) Co., Ltd. Mining Branch"
+      ],
+      "owners": [
+        "Taiyuan Iron and Steel (Group) Co., Ltd."
+      ],
+      "notes": "The mine is fully owned by Taiyuan Iron and Steel (Group) Co., Ltd."
+    }
+  }
 }

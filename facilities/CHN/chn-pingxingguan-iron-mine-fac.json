@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.303,
-    "lon": 113.93,
+    "lat": 39.303056,
+    "lon": 113.9296,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Pingxingguan Iron Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.893771Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:50:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Pingxingguan_Iron_Mine. Pingxingguan Iron Mine is an iron ore mine that has been mothballed"
   },
   "canonical_name": "Pingxingguan Iron Mine",
   "canonical_slug": "pingxingguan-iron-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:50:24.000000Z",
+      "operators": [
+        "Shanxi Pingxingguan Iron Mining Co"
+      ],
+      "owners": [
+        "Shanxi Pingxingguan Iron Mining Co"
+      ],
+      "notes": "The company owns 100% of the mine."
+    }
+  }
 }

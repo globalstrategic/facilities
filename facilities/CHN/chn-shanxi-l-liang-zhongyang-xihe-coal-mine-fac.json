@@ -1,6 +1,6 @@
 {
   "facility_id": "chn-shanxi-l-liang-zhongyang-xihe-coal-mine-fac",
-  "name": "Shanxi LÃ¼liang Zhongyang Xihe Coal Mine",
+  "name": "Shanxi LÃƒÂ¼liang Zhongyang Xihe Coal Mine",
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coking Coal Group Co., Ltd.",
+    "Shanxi Government",
+    "Shanxi Zhongyang Steel Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,9 +38,9 @@
     "checked_by": "import_pipeline",
     "notes": "Canonical name+slug generated"
   },
-  "canonical_name": "Shanxi Lã¼liang Zhongyang Xihe Coal Mine",
+  "canonical_name": "Shanxi LÃ£Â¼liang Zhongyang Xihe Coal Mine",
   "canonical_slug": "shanxi-la14liang-zhongyang-xihe-coal-mine",
-  "display_name": "Shanxi Lã¼liang Zhongyang Xihe Coal",
+  "display_name": "Shanxi LÃ£Â¼liang Zhongyang Xihe Coal",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
@@ -49,11 +53,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "Shanxi Lüliang Zhongyang Xihe Coal Mine",
+      "name": "Shanxi LÃ¼liang Zhongyang Xihe Coal Mine",
       "from": "2025-10-20T15:28:51.927568",
       "to": "2025-11-04T19:18:46.648896Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:17:23.000000Z",
+      "operators": [
+        "Shanxi Zhongyang Steel Co., Ltd.",
+        "Shanxi Coking Coal Group Co., Ltd."
+      ],
+      "owners": [
+        "Shanxi Government"
+      ],
+      "notes": "Shanxi Zhongyang Steel Co., Ltd. is involved in coal mining and related activities."
+    }
+  }
 }

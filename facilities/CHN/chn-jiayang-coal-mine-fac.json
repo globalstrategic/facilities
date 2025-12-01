@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 29.267,
-    "lon": 103.817,
+    "lat": 29.266922,
+    "lon": 103.81697,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sichuan Coal Industry Group",
+    "Sichuan Jiayang Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.853492Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:01:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%9B%E5%B7%9D%E5%98%89%E9%98%B3%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%98%89%E9%98%B3%E7%85%A4%E7%9F%BF. The Jiayang Coal Mine is located in Bajiaogou, Qianwei County, Leshan City, Sichuan Province"
   },
   "canonical_name": "Jiayang Coal Mine",
   "canonical_slug": "jiayang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:01:49.000000Z",
+      "operators": [
+        "Sichuan Jiayang Group"
+      ],
+      "owners": [
+        "Sichuan Coal Industry Group"
+      ],
+      "notes": "Sichuan Jiayang Group operates the Jiayang Coal Mine, which is fully owned by Sichuan Coal Industry Group."
+    }
+  }
 }

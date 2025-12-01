@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.487,
-    "lon": 110.151,
+    "lat": 39.483497,
+    "lon": 110.148355,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ordos City Saimonter Investment Company",
+    "Ordos City Tianan Investment Company",
+    "内蒙古赛蒙特尔煤业有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.766592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:59:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E8%B5%9B%E8%92%99%E7%89%B9%E5%B0%94%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E8%B5%9B%E8%92%99%E7%89%B9%E5%B0%94%E7%85%A4%E7%9F%BF. The Sai Mengte'er Coal Mine is an underground coal mine with a production capacity of 3 million tons per year"
   },
   "canonical_name": "Sai Mengte'er Coal Mine",
   "canonical_slug": "sai-mengte-er-coal-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:59:19.000000Z",
+      "operators": [
+        "内蒙古赛蒙特尔煤业有限责任公司"
+      ],
+      "owners": [
+        "Ordos City Saimonter Investment Company",
+        "Ordos City Tianan Investment Company"
+      ],
+      "notes": "The mine is operated by Sai Mengte'er Coal Industry Company, which is fully owned by Ordos City Saimonter Investment Company and Ordos City Tianan Investment Company."
+    }
+  }
 }

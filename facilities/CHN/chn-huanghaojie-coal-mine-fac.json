@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.226,
-    "lon": 109.484,
+    "lat": 38.226356,
+    "lon": 109.483759,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Taifaxiang Industrial Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.662882Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:43:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E6%A6%86%E6%A8%AA%E7%9F%BF%E5%8C%BA%E5%8D%97%E5%8C%BA%E9%BB%84%E8%92%BF%E7%95%8C%E7%85%A4%E7%9F%BF. Coordinates are approximate for the Huanghaojie Coal Mine located in the Shaanxi Yuheng mining area"
   },
   "canonical_name": "Huanghaojie Coal Mine",
   "canonical_slug": "huanghaojie-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:43:46.000000Z",
+      "operators": [],
+      "owners": [
+        "Shaanxi Taifaxiang Industrial Group"
+      ],
+      "notes": "The mine is operated by Shaanxi Taifaxiang Industrial Group, which is the parent company."
+    }
+  }
 }

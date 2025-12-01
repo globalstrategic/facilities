@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 46.392,
+    "lat": 46.391667,
     "lon": 130.655,
     "precision": "site"
   },
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huainan Jianlong Mining (桦南建龙矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.634174Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:59:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jianlong_Mining_Huananmengjiagang_Mine. Coordinates are approximate for the Jianlong Mining Huananmengjiagang Mine located in Mudanjiang, Heilongjiang, China"
   },
   "canonical_name": "Jianlong Mining Huananmengjiagang Mine",
   "canonical_slug": "jianlong-mining-huananmengjiagang-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:59:54.000000Z",
+      "operators": [
+        "Huainan Jianlong Mining (桦南建龙矿业有限公司)"
+      ],
+      "owners": [
+        "Huainan Jianlong Mining (桦南建龙矿业有限公司)"
+      ],
+      "notes": "Huainan Jianlong Mining is the sole owner and operator of the facility."
+    }
+  }
 }

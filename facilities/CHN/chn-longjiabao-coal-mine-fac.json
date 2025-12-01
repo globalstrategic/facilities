@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.005,
-    "lon": 125.647,
+    "lat": 44.004556,
+    "lon": 125.646836,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jilin Energy Investment Group",
+    "Jilin Province Longjiabao Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.735753Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:28:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%90%89%E6%9E%97%E7%9C%81%E9%BE%99%E5%AE%B6%E5%A0%A1%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Longjiabao Coal Mine is an underground coal mine located in Jilin Province, China"
   },
   "canonical_name": "Longjiabao Coal Mine",
   "canonical_slug": "longjiabao-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jilin Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:28:39.000000Z",
+      "operators": [
+        "Jilin Province Longjiabao Mining Company"
+      ],
+      "owners": [
+        "Jilin Energy Investment Group"
+      ],
+      "notes": "The Longjiabao Coal Mine is operated by Jilin Province Longjiabao Mining Company, which is fully owned by Jilin Energy Investment Group."
+    }
+  }
 }

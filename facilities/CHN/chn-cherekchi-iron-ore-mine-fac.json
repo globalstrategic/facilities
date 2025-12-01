@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.525,
-    "lon": 74.907,
+    "lat": 38.52528,
+    "lon": 74.90653,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aketao Qiansheng Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.818311Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:47:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Cherekchi_Iron_Ore_Mine. Cherekchi Iron Ore Mine is located in Kizilsu Kyrgyz Autonomous Prefecture, Xinjiang, China"
   },
   "canonical_name": "Cherekchi Iron Ore Mine",
   "canonical_slug": "cherekchi-iron-ore-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:47:10.000000Z",
+      "operators": [
+        "Aketao Qiansheng Mining Co"
+      ],
+      "owners": [
+        "Aketao Qiansheng Mining Co"
+      ],
+      "notes": "Aketao Qiansheng Mining Co holds 100% ownership of the mine."
+    }
+  }
 }

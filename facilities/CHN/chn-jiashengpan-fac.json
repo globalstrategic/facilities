@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 41.227,
-    "lon": 109.218,
+    "lat": 39.39100600188336,
+    "lon": 107.3819572,
     "precision": "site"
   },
   "types": [
@@ -37,7 +37,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "巴盟烏中旗甲勝盤鉛鋅硫鐵礦業開發有限責任公司 (Jiashengpan)"
+  ],
   "products": [],
   "sources": [
     {
@@ -47,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.710850Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:01:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bayannaoer (https://www.woodmac.com/reports/metals-jiashengpan-zinc-mine-16318879/). The Jiashengpan zinc mine is an underground polymetallic mine producing zinc and lead concentrates, located 150 km from Bayannaoer"
   },
   "canonical_name": "Jiashengpan Mine",
   "canonical_slug": "jiashengpan-mine",
@@ -66,5 +68,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia Autonomous Region",
+  "town": "Bayannaoer",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:01:23.000000Z",
+      "operators": [
+        "巴盟烏中旗甲勝盤鉛鋅硫鐵礦業開發有限責任公司 (Jiashengpan)"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Jiashengpan, a wholly-owned subsidiary of First Create."
+    }
+  }
 }

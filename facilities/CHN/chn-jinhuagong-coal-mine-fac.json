@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.107,
-    "lon": 113.159,
+    "lat": 40.109769,
+    "lon": 113.16219,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Coal Mine Group Co., Ltd.",
+    "Jinneng Holding Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.714308Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:07:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jinhuagong_Coal_Mine. The Jinhuagong Coal Mine is an underground mine located in the Yungang District of Datong City, Shanxi province, China"
   },
   "canonical_name": "Jinhuagong Coal Mine",
   "canonical_slug": "jinhuagong-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:07:36.000000Z",
+      "operators": [
+        "Jinneng Coal Mine Group Co., Ltd."
+      ],
+      "owners": [
+        "Jinneng Holding Group"
+      ],
+      "notes": "The mine was formerly operated by Datong Coal Mine Group Co., Ltd."
+    }
+  }
 }

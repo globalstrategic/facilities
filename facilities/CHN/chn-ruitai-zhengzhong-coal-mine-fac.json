@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.945,
-    "lon": 111.883,
+    "lat": 36.945425,
+    "lon": 111.883214,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coking Coal Group",
+    "Shanxi Fenxi Ruitai Zhengzhong Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.869000Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:58:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%B1%BE%E8%A5%BF%E7%91%9E%E6%B3%B0%E6%AD%A3%E4%B8%AD%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. Ruitai Zhengzhong Coal Mine is an underground coal mine located in Shanxi Province"
   },
   "canonical_name": "Ruitai Zhengzhong Coal Mine",
   "canonical_slug": "ruitai-zhengzhong-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:58:47.000000Z",
+      "operators": [
+        "Shanxi Fenxi Ruitai Zhengzhong Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Fenxi Ruitai Zhengzhong Coal Industry Company, which is fully owned by Shanxi Coking Coal Group."
+    }
+  }
 }

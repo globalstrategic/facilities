@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.642,
-    "lon": 118.437,
+    "lat": 39.646399,
+    "lon": 118.432769,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kailuan Energy Chemical Company",
+    "Kailuan Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.590547Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:58:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%BC%80%E6%BB%A6%E8%83%BD%E6%BA%90%E5%8C%96%E5%B7%A5%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%8C%83%E5%90%84%E5%BA%84%E7%9F%BF%E4%B8%9A%E5%88%86%E5%85%AC%E5%8F%B8. Fangezhuang Coal Mine is an underground coal mine located in the Guye District of Tangshan, Hebei Province"
   },
   "canonical_name": "Fangezhuang Coal Mine",
   "canonical_slug": "fangezhuang-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:58:55.000000Z",
+      "operators": [
+        "Kailuan Energy Chemical Company"
+      ],
+      "owners": [
+        "Kailuan Group"
+      ],
+      "notes": "Kailuan Energy Chemical Company is a subsidiary of Kailuan Group, which is a state-owned enterprise."
+    }
+  }
 }

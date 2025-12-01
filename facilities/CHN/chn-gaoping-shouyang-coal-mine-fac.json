@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.905,
-    "lon": 112.955,
+    "lat": 35.905418,
+    "lon": 112.954671,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Coal Transportation and Marketing Group Shouyang Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.778860Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:06:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E9%A6%96%E9%98%B3%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Gaoping Shouyang Coal Mine is an underground coal mine located in the village of Dongshayuan, Shennong Town, Gaoping City, Jinzhong, Shanxi Province"
   },
   "canonical_name": "Gaoping Shouyang Coal Mine",
   "canonical_slug": "gaoping-shouyang-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:06:13.000000Z",
+      "operators": [
+        "Shanxi Coal Transportation and Marketing Group Shouyang Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Coal Transportation and Marketing Group Shouyang Coal Industry Company"
+      ],
+      "notes": "The mine is operated and owned by Shanxi Coal Transportation and Marketing Group Shouyang Coal Industry Company."
+    }
+  }
 }

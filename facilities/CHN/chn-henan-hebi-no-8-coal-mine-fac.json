@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.877,
-    "lon": 114.192,
+    "lat": 35.876915,
+    "lon": 114.192062,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hebi Coal Power Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.855404Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:32:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%B9%A4%E5%A3%81%E7%85%A4%E7%94%B5%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%AC%AC%E5%85%AB%E7%85%A4%E7%9F%BF. The coordinates are provided in the report for the Henan Hebi No.8 Coal Mine"
   },
   "canonical_name": "Henan Hebi No 8 Coal Mine",
   "canonical_slug": "henan-hebi-no-8-coal-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:32:15.000000Z",
+      "operators": [
+        "Hebi Coal Power Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Hebi Coal Power Co Ltd."
+    }
+  }
 }

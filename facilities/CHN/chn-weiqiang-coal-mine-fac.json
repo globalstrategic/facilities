@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.027,
-    "lon": 109.286,
+    "lat": 38.026939,
+    "lon": 109.285876,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Hengshan Imp.and EXP Co Ltd",
+    "Shaanxi Yanchang Petroleum Group",
+    "Shaanxi Yanchang Petroleum Group Hengshan Weiqiang Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.868693Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:55:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E5%BB%B6%E9%95%BF%E7%9F%B3%E6%B2%B9%E9%9B%86%E5%9B%A2%E6%A8%AA%E5%B1%B1%E9%AD%8F%E5%A2%99%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Weiqiang Coal Mine is a shaft coal mine located in the Hengshan area of Yulin City, Shaanxi Province, with an annual construction scale of 6 million tons"
   },
   "canonical_name": "Weiqiang Coal Mine",
   "canonical_slug": "weiqiang-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:55:59.000000Z",
+      "operators": [
+        "Shaanxi Yanchang Petroleum Group Hengshan Weiqiang Coal Industry Company"
+      ],
+      "owners": [
+        "Shaanxi Yanchang Petroleum Group",
+        "Shaanxi Hengshan Imp.and EXP Co Ltd"
+      ],
+      "notes": "Shaanxi Yanchang Petroleum Group holds a 51% stake in the operation."
+    }
+  }
 }

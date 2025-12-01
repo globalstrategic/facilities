@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.332,
-    "lon": 113.141,
+    "lat": 34.331911,
+    "lon": 113.141389,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zhongmei Dengfeng Teaching Third Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.707513Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:34:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%AD%E7%85%A4%E7%99%BB%E5%B0%81%E6%95%99%E5%AD%A6%E4%B8%89%E7%9F%BF. The facility is a coal mine located in the town of Gaopo, Xuzhuang, Dengfeng City, Zhengzhou, Henan Province"
   },
   "canonical_name": "Henan Zhongmei Jiaoxue No 3 Coal Mine",
   "canonical_slug": "henan-zhongmei-jiaoxue-no-3-coal-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:34:45.000000Z",
+      "operators": [
+        "Zhongmei Dengfeng Teaching Third Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Zhongmei Dengfeng Teaching Third Mine Co Ltd."
+    }
+  }
 }

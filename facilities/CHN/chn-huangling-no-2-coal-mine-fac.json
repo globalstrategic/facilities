@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.659,
-    "lon": 108.916,
+    "lat": 35.661062,
+    "lon": 108.91871,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Industrial and Commercial Bank of China",
+    "Jiangsu Yueda Group",
+    "Shaanxi Coal and Chemical Industry Group",
+    "Shaanxi Huangling No.2 Coal Mine Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.840496Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:44:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E9%BB%84%E9%99%B5%E4%BA%8C%E5%8F%B7%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. Coordinates are provided in WGS 84 format"
   },
   "canonical_name": "Huangling No 2 Coal Mine",
   "canonical_slug": "huangling-no-2-coal-mine",
@@ -58,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:44:35.000000Z",
+      "operators": [
+        "Shaanxi Huangling No.2 Coal Mine Company"
+      ],
+      "owners": [
+        "Shaanxi Coal and Chemical Industry Group",
+        "Jiangsu Yueda Group",
+        "Industrial and Commercial Bank of China"
+      ],
+      "notes": "The mine is operated by Shaanxi Huangling No.2 Coal Mine Company, which is fully owned by Shaanxi Coal and Chemical Industry Group, with additional ownership stakes from Jiangsu Yueda Group and Industrial and Commercial Bank of China."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.753,
-    "lon": 86.666,
+    "lat": 43.752991,
+    "lon": 86.666407,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hutubi County Shitizi West Gou Coal Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.718353Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:12:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%91%BC%E5%9B%BE%E5%A3%81%E5%8E%BF%E7%9F%B3%E6%A2%AF%E5%AD%90%E8%A5%BF%E6%B2%9F%E7%85%A4%E7%9F%BF. The Xinjiang Hutubi Xigou Coal Mine is located in Hutubi County, Changji Prefecture, Xinjiang, China"
   },
   "canonical_name": "Xinjiang Hutubi Xigou Coal Mine",
   "canonical_slug": "xinjiang-hutubi-xigou-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:12:08.000000Z",
+      "operators": [
+        "Hutubi County Shitizi West Gou Coal Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Hutubi County Shitizi West Gou Coal Mine Co Ltd."
+    }
+  }
 }

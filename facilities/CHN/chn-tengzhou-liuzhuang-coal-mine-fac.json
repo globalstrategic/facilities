@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.052,
-    "lon": 116.969,
+    "lat": 35.052257,
+    "lon": 116.969329,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Zhongtai Coal Industry Group Co Ltd",
+    "Zaozhuang Liuzhuang Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.856109Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:45:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%9E%A3%E5%BA%84%E5%B8%82%E7%95%99%E5%BA%84%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Tengzhou Liuzhuang Coal Mine is an underground coal mine located in the city of Zaozhuang, Shandong Province, China"
   },
   "canonical_name": "Tengzhou Liuzhuang Coal Mine",
   "canonical_slug": "tengzhou-liuzhuang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:45:02.000000Z",
+      "operators": [
+        "Zaozhuang Liuzhuang Coal Industry Co Ltd"
+      ],
+      "owners": [
+        "Shandong Zhongtai Coal Industry Group Co Ltd"
+      ],
+      "notes": "Zaozhuang Liuzhuang Coal Industry Co Ltd operates the mine and is fully owned by Shandong Zhongtai Coal Industry Group Co Ltd."
+    }
+  }
 }

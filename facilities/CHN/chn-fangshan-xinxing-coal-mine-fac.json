@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.786,
-    "lon": 111.141,
+    "lat": 37.775401,
+    "lon": 111.138799,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Fangshan Huifeng Xinxing Coal Industry Company",
+    "Shanxi Huifeng Industrial Coking Coal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.772450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:59:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%96%B9%E5%B1%B1%E6%B1%87%E4%B8%B0%E6%96%B0%E6%98%9F%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Fangshan Xinxing Coal Mine is an underground coal mine located in the village of Haojiayan, Yukou Town, Fangshan County, Luliang City, Shanxi Province"
   },
   "canonical_name": "Fangshan Xinxing Coal Mine",
   "canonical_slug": "fangshan-xinxing-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:59:30.000000Z",
+      "operators": [
+        "Shanxi Fangshan Huifeng Xinxing Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Huifeng Industrial Coking Coal Group"
+      ],
+      "notes": "The mine is operated by Shanxi Fangshan Huifeng Xinxing Coal Industry Company, which is fully owned by Shanxi Huifeng Industrial Coking Coal Group."
+    }
+  }
 }

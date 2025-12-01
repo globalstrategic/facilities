@@ -10,8 +10,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.612,
-    "lon": 110.88,
+    "lat": 37.627097,
+    "lon": 110.887468,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Liliu Coking Coal Group",
+    "Shanxi Liliu Xinrui Coal Industry Company",
+    "Shanxi Xinmin Energy Investment Group",
+    "Shanxi Yuhang Investment Management Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.776582Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:22:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%A6%BB%E6%9F%B6%E9%91%AB%E7%91%9E%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%91%AB%E7%91%9E%E7%85%A4%E7%9F%BF. The Liliu Xinrui Coal Mine is an underground coal mine with an annual production capacity of 1.2 million tons"
   },
   "canonical_name": "Liliu Xinrui Coal Mine",
   "canonical_slug": "liliu-xinrui-coal-mine",
@@ -53,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:22:47.000000Z",
+      "operators": [
+        "Shanxi Liliu Xinrui Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Liliu Coking Coal Group",
+        "Shanxi Xinmin Energy Investment Group",
+        "Shanxi Yuhang Investment Management Company"
+      ],
+      "notes": "The mine is operated by Shanxi Liliu Xinrui Coal Industry Company, which is a subsidiary of Shanxi Liliu Coking Coal Group."
+    }
+  }
 }

@@ -10,7 +10,7 @@
   "country_iso3": "CHN",
   "location": {
     "lat": 35.087,
-    "lon": 112.553,
+    "lon": 112.554,
     "precision": "site"
   },
   "types": [
@@ -44,7 +44,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Henan Yuguang Gold and Lead Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -54,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.868530Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:31:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Henan-Yuguang-Gold-and-Lead.htm. Coordinates extracted from the facility's location details"
   },
   "canonical_name": "Yuguang Smelter",
   "canonical_slug": "yuguang-smelter-2",
@@ -73,5 +75,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:31:41.000000Z",
+      "operators": [
+        "Henan Yuguang Gold and Lead Co., Ltd."
+      ],
+      "owners": [
+        "Henan Yuguang Gold and Lead Co., Ltd."
+      ],
+      "notes": "The company is both the operator and owner of the facility."
+    }
+  }
 }

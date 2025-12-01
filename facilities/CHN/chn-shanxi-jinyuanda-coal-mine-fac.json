@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.166,
-    "lon": 111.183,
+    "lat": 37.677145,
+    "lon": 110.849801,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Cinda Asset Management Co.",
+    "Meijin Energy Group",
+    "Shandong Energy Group",
+    "Shanxi Linxian Jinyuan Coal Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.597221Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:17:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shanxi_Jinyuan_Coal_Mine. The Shanxi Jinyuan Coal Mine is located in Nangeduo Village, Linjiaping Town, Lin County, Luliang, Shanxi"
   },
   "canonical_name": "Shanxi Jinyuanda Coal Mine",
   "canonical_slug": "shanxi-jinyuanda-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:17:14.000000Z",
+      "operators": [
+        "Shanxi Linxian Jinyuan Coal Co."
+      ],
+      "owners": [
+        "Meijin Energy Group",
+        "Shandong Energy Group",
+        "China Cinda Asset Management Co."
+      ],
+      "notes": "The mine is operated by Shanxi Linxian Jinyuan Coal Co. and owned by a consortium including Meijin Energy Group, Shandong Energy Group, and China Cinda Asset Management Co."
+    }
+  }
 }

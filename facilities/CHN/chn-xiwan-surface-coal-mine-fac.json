@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.605,
-    "lon": 110.064,
+    "lat": 38.82565228597948,
+    "lon": 109.7290052,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CHN Energy",
+    "China Energy Investment Corporation (CEIC)",
+    "Shaanxi Shenyan Coal",
+    "Shaanxi Shenyan Coal Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.652899Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:18:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yulin (https://www.ceic.com/gjnyjtwwEn/xwzx/202303/7427c0eb7a4a4112951e3a2425fb7ecd.shtml). The Xiwan coal mine is located approximately 60 kilometers from the Yellow River in Shaanxi province"
   },
   "canonical_name": "Xiwan Surface Coal Mine",
   "canonical_slug": "xiwan-surface-coal-mine",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "town": "Yulin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:18:23.000000Z",
+      "operators": [
+        "Shaanxi Shenyan Coal Co., Ltd.",
+        "CHN Energy"
+      ],
+      "owners": [
+        "Shaanxi Shenyan Coal",
+        "China Energy Investment Corporation (CEIC)"
+      ],
+      "notes": "Shaanxi Shenyan Coal was established as a joint venture between Shenhua Shendong Coal Group Company Limited and Shaanxi Yanchang Petroleum Group Company Limited."
+    }
+  }
 }

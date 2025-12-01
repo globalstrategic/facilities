@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.228,
-    "lon": 108.856,
+    "lat": 35.384008654659716,
+    "lon": 108.9403845,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.705299Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:06:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tongchuan (https://www.mdpi.com/2076-3417/12/17/8439). The Xiashijie Coal Mine is located in Yaoqu town, Tongchuan City, Shaanxi Province, China, approximately 54 km away from Tongchuan city"
   },
   "canonical_name": "Xiashijie Coal Mine",
   "canonical_slug": "xiashijie-coal-mine",
@@ -47,5 +47,7 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "town": "Tongchuan"
 }

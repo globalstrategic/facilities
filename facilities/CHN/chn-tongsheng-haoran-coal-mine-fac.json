@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.842,
-    "lon": 112.367,
+    "lat": 38.84191,
+    "lon": 112.366993,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Group",
+    "大同煤矿集团同生浩然煤业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.694610Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:51:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%90%8C%E7%85%A4%E7%9F%BF%E9%9B%86%E5%9B%A2%E5%90%8C%E7%94%9F%E6%B5%A9%E7%84%B6%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Tongsheng Haoran Coal Mine is a shaft coal mine located in the village of 羊圈沟村, 长梁沟镇, 原平市, 忻州市, 山西省"
   },
   "canonical_name": "Tongsheng Haoran Coal Mine",
   "canonical_slug": "tongsheng-haoran-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:51:19.000000Z",
+      "operators": [
+        "大同煤矿集团同生浩然煤业有限公司"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is operated by Tongsheng Haoran Coal Industry Co., Ltd., which is a subsidiary of Jinneng Group."
+    }
+  }
 }

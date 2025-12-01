@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.71,
-    "lon": 104.916,
+    "lat": 36.711438,
+    "lon": 104.915286,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gansu Energy Chemical Investment Group",
+    "Gansu Huating Coal and Electricity Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.731679Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:55:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E7%94%98%E8%82%83%E9%9D%96%E8%BF%9C%E7%85%A4%E7%94%B5%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%AD%8F%E5%AE%B6%E5%9C%B0%E7%85%A4%E7%9F%BF. The Weijiadi Coal Mine is an underground coal mine located in the Pingchuan District of Baiyin City, Gansu Province"
   },
   "canonical_name": "Weijiadi Coal Mine",
   "canonical_slug": "weijiadi-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:55:46.000000Z",
+      "operators": [
+        "Gansu Huating Coal and Electricity Company"
+      ],
+      "owners": [
+        "Gansu Energy Chemical Investment Group"
+      ],
+      "notes": "The Weijiadi Coal Mine is operated by Gansu Huating Coal and Electricity Company, which is fully owned by Gansu Energy Chemical Investment Group."
+    }
+  }
 }

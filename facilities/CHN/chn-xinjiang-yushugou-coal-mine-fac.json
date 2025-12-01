@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.903,
-    "lon": 85.78,
+    "lat": 43.89918,
+    "lon": 85.773606,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "沙湾市宏业煤炭有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.880794Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:14:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%B2%99%E6%B9%BE%E5%B8%82%E5%AE%8F%E4%B8%9A%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E6%A6%86%E6%A0%91%E6%B2%9F%E7%85%A4%E7%9F%BF. The Xinjiang Yushugou Coal Mine is an underground coal mine located in the Tacheng region of Xinjiang, China"
   },
   "canonical_name": "Xinjiang Yushugou Coal Mine",
   "canonical_slug": "xinjiang-yushugou-coal-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "新疆",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:14:59.000000Z",
+      "operators": [
+        "沙湾市宏业煤炭有限责任公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by 沙湾市宏业煤炭有限责任公司 (Shawan Hongye Coal Co., Ltd.)."
+    }
+  }
 }

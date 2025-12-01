@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.481,
-    "lon": 104.996,
+    "lat": 26.912263219945462,
+    "lon": 104.8279652,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Shuicheng Mining Co Ltd",
+    "Guizhou Zisenyuan Group Investment Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.589306Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T18:16:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Liupanshui City (http://en.zsyjt.cn/about/15.html). The Guizhou Shuicheng Xiaoniu Coal Mine is associated with Guizhou Shuicheng Mining Co Ltd, which is a legal entity in China"
   },
   "canonical_name": "Guizhou Shuicheng Xiaoniu Coal Mine",
   "canonical_slug": "guizhou-shuicheng-xiaoniu-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "town": "Liupanshui City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:16:51.000000Z",
+      "operators": [
+        "Guizhou Shuicheng Mining Co Ltd"
+      ],
+      "owners": [
+        "Guizhou Zisenyuan Group Investment Co., Ltd."
+      ],
+      "notes": "Guizhou Zisenyuan Group Investment Co., Ltd. acquired the Chaoyang Coal Mine in Shuicheng District, which is part of the same region."
+    }
+  }
 }

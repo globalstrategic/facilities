@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.649,
-    "lon": 90.152,
+    "lat": 44.648912,
+    "lon": 90.152365,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tebian Electric Apparatus (TBEA)",
+    "Xinjiang Joinworld Company",
+    "Xinjiang Tianchi Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.605785Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:58:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E5%A4%A9%E6%B1%A0%E8%83%BD%E6%BA%90%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%B0%86%E5%86%9B%E6%88%88%E5%A3%81%E4%BA%8C%E5%8F%B7%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Jiangjun Gebi No. 2 Coal Mine is an open-pit coal mine located in Xinjiang Uygur Autonomous Region"
   },
   "canonical_name": "Jiangjun Gebi No 2 Coal Mine",
   "canonical_slug": "jiangjun-gebi-no-2-coal-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:58:46.000000Z",
+      "operators": [
+        "Xinjiang Tianchi Energy"
+      ],
+      "owners": [
+        "Tebian Electric Apparatus (TBEA)",
+        "Xinjiang Joinworld Company"
+      ],
+      "notes": "Xinjiang Tianchi Energy operates the mine, which is owned by TBEA and Xinjiang Joinworld Company."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.511,
-    "lon": 90.305,
+    "lat": 44.502378,
+    "lon": 90.296864,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy",
+    "China Energy Xinjiang Hongshaquan Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.859499Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:40:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%BD%E8%83%BD%E6%96%B0%E7%96%86%E7%BA%A2%E6%B2%99%E6%B3%89%E8%83%BD%E6%BA%90%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%BA%A2%E6%B2%99%E6%B3%89%E4%B8%80%E5%8F%B7%E9%9C%B2%E5%A4%A9%E7%85%A4%E7%9F%BF. The Hongshaquan No. 1 Surface Mine is an open-pit coal mine located in Xinjiang, China"
   },
   "canonical_name": "Hongshaquan No 1 Surface Mine",
   "canonical_slug": "hongshaquan-no-1-surface-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang Uygur Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:40:28.000000Z",
+      "operators": [
+        "China Energy Xinjiang Hongshaquan Energy Company"
+      ],
+      "owners": [
+        "China Energy"
+      ],
+      "notes": "The mine is operated by China Energy Xinjiang Hongshaquan Energy Company, which is a subsidiary of China Energy."
+    }
+  }
 }

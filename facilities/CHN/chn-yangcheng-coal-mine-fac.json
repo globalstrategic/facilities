@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.77,
-    "lon": 116.32,
+    "lat": 35.772746,
+    "lon": 116.319352,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Chengtong Holdings Group Ltd",
+    "China Guoxin Holding Corp",
+    "Jining Energy Development Group Co Ltd",
+    "Luneng Coal and Electricity Co., Ltd.",
+    "Shandong Caixin Asset Operation Co Ltd",
+    "State Grid Corporation of China",
+    "Yangcheng Power Plant of Shandong Jinkuang Luneng Coal Power Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.601490Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:20:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jining_Yangcheng_power_station. The coordinates are for the Yangcheng Power Plant, which supplies energy to the Yangcheng Coal Mine"
   },
   "canonical_name": "Yangcheng Coal Mine",
   "canonical_slug": "yangcheng-coal-mine",
@@ -47,5 +55,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:20:49.000000Z",
+      "operators": [
+        "Yangcheng Power Plant of Shandong Jinkuang Luneng Coal Power Co Ltd"
+      ],
+      "owners": [
+        "Luneng Coal and Electricity Co., Ltd.",
+        "Jining Energy Development Group Co Ltd",
+        "China Chengtong Holdings Group Ltd",
+        "China Guoxin Holding Corp",
+        "State Grid Corporation of China",
+        "Shandong Caixin Asset Operation Co Ltd"
+      ],
+      "notes": "The Yangcheng Coal Mine is owned by Luneng Coal and Electricity Co., Ltd."
+    }
+  }
 }

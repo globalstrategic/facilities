@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.022,
-    "lon": 109.633,
+    "lat": 40.019808,
+    "lon": 109.639961,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "内蒙古北联电能源开发有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.824803Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:07:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E5%8C%97%E8%81%94%E7%94%B5%E8%83%BD%E6%BA%90%E5%BC%80%E5%8F%91%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%AB%98%E5%A4%B4%E7%AA%91%E7%85%A4%E7%9F%BF. The Gaotouyao Coal Mine is an underground coal mine located in the Ordos City of Inner Mongolia, China"
   },
   "canonical_name": "Gaotouyao Coal Mine",
   "canonical_slug": "gaotouyao-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:07:03.000000Z",
+      "operators": [
+        "内蒙古北联电能源开发有限责任公司"
+      ],
+      "owners": [
+        "内蒙古北联电能源开发有限责任公司"
+      ],
+      "notes": "The mine is developed and operated by Inner Mongolia Beilian Electric Energy Development Co., Ltd."
+    }
+  }
 }

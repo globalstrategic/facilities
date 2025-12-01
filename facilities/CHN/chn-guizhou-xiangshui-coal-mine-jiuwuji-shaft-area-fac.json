@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.516,
-    "lon": 104.659,
+    "lat": 25.516008,
+    "lon": 104.658882,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "贵州盘南煤炭旧屋基井区有限责任公司响水矿旧屋基井区"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.874042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:17:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E7%9B%98%E5%8D%97%E7%85%A4%E7%82%AD%E6%97%A7%E5%B1%8B%E5%9F%BA%E4%BA%95%E5%8C%BA%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%93%8D%E6%B0%B4%E7%9F%BF%E6%97%A7%E5%B1%8B%E5%9F%BA%E4%BA%95%E5%8C%BA%EF%BC%88%E6%B7%B7%E5%90%88%E4%BA%95%E5%8C%BA%EF%BC%89. The Guizhou Xiangshui Coal Mine Jiuwuji Shaft Area is a coal mine located in the Panzhou area of Guizhou province"
   },
   "canonical_name": "Guizhou Xiangshui Coal Jiuwuji Area Mine",
   "canonical_slug": "guizhou-xiangshui-coal-jiuwuji-area-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:17:24.000000Z",
+      "operators": [
+        "贵州盘南煤炭旧屋基井区有限责任公司响水矿旧屋基井区"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Guizhou Panan Coal Co., Ltd."
+    }
+  }
 }

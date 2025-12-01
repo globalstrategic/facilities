@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.365,
-    "lon": 111.009,
+    "lat": 37.29899160501699,
+    "lon": 110.74238669812769,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shougang Fushan Resources Group Ltd",
+    "Shougang Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.768164Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T21:37:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Liulin County (https://www.shougang.com.cn/en/p1/InternationalBusiness/20170329/858.html). The Zhaiyadi Coal Mine is located in Liulin County, Shanxi Province, China, approximately 16 km southwest of the town"
   },
   "canonical_name": "Zhaiyadi Coal Mine",
   "canonical_slug": "zhaiyadi-coal-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi Province",
+  "town": "Liulin County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:37:03.000000Z",
+      "operators": [
+        "Shougang Fushan Resources Group Ltd"
+      ],
+      "owners": [
+        "Shougang Resources"
+      ],
+      "notes": "Shougang Fushan Resources Group Ltd operates the mine and is involved in coking coal mining and processing."
+    }
+  }
 }

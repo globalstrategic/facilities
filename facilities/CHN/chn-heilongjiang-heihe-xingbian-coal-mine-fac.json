@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 50.156,
-    "lon": 125.97,
+    "lat": 50.155555,
+    "lon": 125.970278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heihe City Xingbian Mining Co Ltd",
+    "Heilongjiang Longmay Mining Holding Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.840061Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:28:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%BB%91%E6%B2%B3%E5%B8%82%E5%85%B4%E8%BE%B9%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Heilongjiang Heihe Xingbian Coal Mine is located in the Aihui District of Heihe City, Heilongjiang Province"
   },
   "canonical_name": "Heilongjiang Heihe Xingbian Coal Mine",
   "canonical_slug": "heilongjiang-heihe-xingbian-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:28:47.000000Z",
+      "operators": [
+        "Heihe City Xingbian Mining Co Ltd"
+      ],
+      "owners": [
+        "Heilongjiang Longmay Mining Holding Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by Heihe City Xingbian Mining Co Ltd and owned by Heilongjiang Longmay Mining Holding Group Co., Ltd."
+    }
+  }
 }

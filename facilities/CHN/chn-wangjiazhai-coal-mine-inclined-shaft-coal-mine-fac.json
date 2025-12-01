@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.705,
-    "lon": 104.801,
+    "lat": 25.055,
+    "lon": 113.582,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Feishang Anthracite Resources Limited 飛尚無煙煤資源有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.662739Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:53:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/2014/1219/pdf/of2014-1219.pdf. Coordinates correspond to the location of the Wangjiazhai Coal Mine"
   },
   "canonical_name": "Wangjiazhai Coal Inclined Coal Mine",
   "canonical_slug": "wangjiazhai-coal-inclined-coal-mine",
@@ -52,5 +54,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guangdong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:53:53.000000Z",
+      "operators": [
+        "Feishang Anthracite Resources Limited 飛尚無煙煤資源有限公司"
+      ],
+      "owners": [],
+      "notes": "Feishang Anthracite Resources Limited is mentioned in relation to coal mining operations."
+    }
+  }
 }

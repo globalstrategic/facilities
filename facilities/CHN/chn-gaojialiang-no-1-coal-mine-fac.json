@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.722,
-    "lon": 110.071,
+    "lat": 39.724671,
+    "lon": 110.065041,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "鄂尔多斯市昊华精煤有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.593317Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:05:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E6%98%8A%E5%8D%8E%E7%B2%BE%E7%85%A4%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%AB%98%E5%AE%B6%E6%A2%81%E4%B8%80%E5%8F%B7%E7%9F%BF. Gaojialiang No.1 Coal Mine is an underground coal mine located in the Ordos region of Inner Mongolia"
   },
   "canonical_name": "Gaojialiang No 1 Coal Mine",
   "canonical_slug": "gaojialiang-no-1-coal-mine",
@@ -58,5 +60,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:05:41.000000Z",
+      "operators": [
+        "鄂尔多斯市昊华精煤有限责任公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Ordos Haohua Premium Coal Co., Ltd."
+    }
+  }
 }

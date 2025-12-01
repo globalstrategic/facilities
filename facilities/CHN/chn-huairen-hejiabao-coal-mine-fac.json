@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.843,
-    "lon": 112.959,
+    "lat": 39.842966,
+    "lon": 112.958588,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Jardine Energy Group",
+    "Shanxi Huairen Zhongneng Luzigou Coal Industry Company",
+    "Shanxi Huairen Zhongneng Luzigou Hejiabao Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.748754Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:42:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%80%80%E4%BB%81%E4%B8%AD%E8%83%BD%E8%8A%A6%E5%AD%90%E6%B2%9F%E4%BD%95%E5%AE%B6%E5%A0%A1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The facility is a coal mine located in the Huairen area of Shanxi Province"
   },
   "canonical_name": "Huairen Hejiabao Coal Mine",
   "canonical_slug": "huairen-hejiabao-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:42:59.000000Z",
+      "operators": [
+        "Shanxi Huairen Zhongneng Luzigou Hejiabao Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Huairen Zhongneng Luzigou Coal Industry Company",
+        "Inner Mongolia Jardine Energy Group"
+      ],
+      "notes": "The mine is operated by Shanxi Huairen Zhongneng Luzigou Hejiabao Coal Industry Company, which is a joint venture with Inner Mongolia Jardine Energy Group."
+    }
+  }
 }

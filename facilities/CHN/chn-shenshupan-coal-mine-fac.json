@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.519,
-    "lon": 110.024,
+    "lat": 38.518986,
+    "lon": 110.02418,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Dongfang Energy Investment Company",
+    "Shaanxi Shengcheng Property Company",
+    "Xi’an Langyi Technology Development Company",
+    "Yulin Shenshupan Mining Investment Company",
+    "Yuyang Mahuangliang Industry"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.844266Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:29:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%A6%86%E6%9E%97%E5%B8%82%E7%A5%9E%E6%A0%91%E7%95%94%E7%9F%BF%E4%B8%9A%E6%8A%95%E8%B5%84%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%A5%9E%E6%A0%91%E7%95%94%E7%85%A4%E7%9F%BF. The Shenshupan Coal Mine is an underground coal mine located in Mahuangliang, Shaanxi province"
   },
   "canonical_name": "Shenshupan Coal Mine",
   "canonical_slug": "shenshupan-coal-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:29:00.000000Z",
+      "operators": [
+        "Yulin Shenshupan Mining Investment Company"
+      ],
+      "owners": [
+        "Yuyang Mahuangliang Industry",
+        "Shaanxi Dongfang Energy Investment Company",
+        "Xi’an Langyi Technology Development Company",
+        "Shaanxi Shengcheng Property Company"
+      ],
+      "notes": "The mine is operated by Yulin Shenshupan Mining Investment Company, which is a joint venture with several other companies."
+    }
+  }
 }

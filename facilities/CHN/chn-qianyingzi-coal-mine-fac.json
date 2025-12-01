@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 33.507,
-    "lon": 116.924,
+    "lat": 31.4067367020379,
+    "lon": 120.73282321370256,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anhui Hengyuan Coal and Electric Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.682304Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T19:53:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Suzhou City (https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.1014918/full). The Qianyingzi Coal Mine is located in the west of the Suxian Mining District in the Huaibei Coalfield, approximately 15 km from Suzhou City to the northeast"
   },
   "canonical_name": "Qianyingzi Coal Mine",
   "canonical_slug": "qianyingzi-coal-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anhui",
+  "town": "Suzhou City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:53:18.000000Z",
+      "operators": [
+        "Anhui Hengyuan Coal and Electric Co., Ltd."
+      ],
+      "owners": [
+        "Anhui Hengyuan Coal and Electric Co., Ltd."
+      ],
+      "notes": "The mine is operated by Anhui Hengyuan Coal and Electric Co., Ltd."
+    }
+  }
 }

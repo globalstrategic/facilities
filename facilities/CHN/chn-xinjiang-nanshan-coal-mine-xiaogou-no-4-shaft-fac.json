@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.934,
-    "lon": 85.683,
+    "lat": 43.933538,
+    "lon": 85.683446,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "新疆天富集团有限责任公司 (Xinjiang Tianfu Group Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.645978Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:13:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%96%B0%E7%96%86%E5%A4%A9%E5%AF%8C%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%8D%97%E5%B1%B1%E7%85%A4%E7%9F%BF%E5%B0%8F%E6%B2%9F%E5%9B%9B%E5%8F%B7%E6%96%9C%E4%BA%95. The coordinates provided are approximate for the Xinjiang Nanshan Coal Mine Xiaogou No. 4 Shaft"
   },
   "canonical_name": "Xinjiang Nanshan Coal Xiaogou No 4 Mine",
   "canonical_slug": "xinjiang-nanshan-coal-xiaogou-no-4-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:13:23.000000Z",
+      "operators": [
+        "新疆天富集团有限责任公司 (Xinjiang Tianfu Group Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Xinjiang Tianfu Group Co., Ltd."
+    }
+  }
 }

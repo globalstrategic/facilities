@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.649,
-    "lon": 114.923,
+    "lat": 27.648642,
+    "lon": 114.923191,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Rare Earth Group",
+    "Liangshan Mining Co Ltd",
+    "Yunnan Copper Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.886380Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:20:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Liangshan_Mine. Coordinates for the Liangshan Mine are provided directly in the source"
   },
   "canonical_name": "Liangshan Mine",
   "canonical_slug": "liangshan-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jiangxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:20:28.000000Z",
+      "operators": [
+        "Liangshan Mining Co Ltd"
+      ],
+      "owners": [
+        "Yunnan Copper Co., Ltd.",
+        "China Rare Earth Group"
+      ],
+      "notes": "Yunnan Copper is acquiring a stake in Liangshan Mining, which is involved in copper mining."
+    }
+  }
 }

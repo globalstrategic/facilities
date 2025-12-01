@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 49.418,
-    "lon": 119.861,
+    "lat": 49.418292,
+    "lon": 119.860641,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hulunbuir Mengxi Coal Industry",
+    "Shenyang Coal Industry Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.792708Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:40:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%91%BC%E4%BC%A6%E8%B4%9B%E5%B0%94%E8%92%99%E8%A5%BF%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%92%99%E8%A5%BF%E4%B8%80%E4%BA%95. Mengxin Coal Mine No.1 Well is an underground coal mine located in Hailar District, Hulunbuir City, Inner Mongolia"
   },
   "canonical_name": "Mengxin Coal No 1 Well Mine",
   "canonical_slug": "mengxin-coal-no-1-well-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:40:30.000000Z",
+      "operators": [
+        "Hulunbuir Mengxi Coal Industry"
+      ],
+      "owners": [
+        "Shenyang Coal Industry Group"
+      ],
+      "notes": "Hulunbuir Mengxi Coal Industry is a subsidiary of Shenyang Coal Industry Group."
+    }
+  }
 }

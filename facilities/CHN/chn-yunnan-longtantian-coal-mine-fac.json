@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.264,
-    "lon": 104.097,
+    "lat": 25.264085,
+    "lon": 104.096796,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "曲靖市麒麟区龙源达有限公司 (Qujing Qilin District Longyuanda Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.607613Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:34:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%9B%B2%E9%9D%96%E5%B8%82%E9%BA%92%E9%BA%9F%E5%8C%BA%E9%BE%99%E6%BA%90%E8%BE%BE%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%BE%99%E6%BD%AD%E7%94%B0%E7%85%A4%E7%9F%BF. The Yunnan Longtantian Coal Mine is an open-pit coal mine located in the Beishe Village of Dongshan Town, Qujing City"
   },
   "canonical_name": "Yunnan Longtantian Coal Mine",
   "canonical_slug": "yunnan-longtantian-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "云南省 (Yunnan)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:34:36.000000Z",
+      "operators": [
+        "曲靖市麒麟区龙源达有限公司 (Qujing Qilin District Longyuanda Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is currently under construction and is being expanded."
+    }
+  }
 }

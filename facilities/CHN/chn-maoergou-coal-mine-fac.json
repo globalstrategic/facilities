@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.165,
-    "lon": 111.202,
+    "lat": 39.163923,
+    "lon": 111.193783,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Group",
+    "山西煤炭运销集团猫儿沟煤业有限公司 (Shanxi Coal Transportation and Marketing Group Maoergou Coal Industry Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.860516Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:36:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E9%9B%86%E5%9B%A2%E7%8C%AB%E5%84%BF%E6%B2%9F%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Maoergou Coal Mine is an open-pit coal mine located in Shanxi Province, specifically in Hequ County"
   },
   "canonical_name": "Maoergou Coal Mine",
   "canonical_slug": "maoergou-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:36:55.000000Z",
+      "operators": [
+        "山西煤炭运销集团猫儿沟煤业有限公司 (Shanxi Coal Transportation and Marketing Group Maoergou Coal Industry Co., Ltd.)"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is operated by Shanxi Coal Transportation and Marketing Group and owned by Jinneng Group."
+    }
+  }
 }

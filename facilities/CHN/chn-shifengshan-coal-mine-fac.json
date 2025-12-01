@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.78,
-    "lon": 112.841,
+    "lat": 39.784722,
+    "lon": 112.833216,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanghai Qianchang Investment Company",
+    "Shanxi Huairen Zhifengshan Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.626838Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:29:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%80%80%E4%BB%81%E5%B3%B0%E5%B1%B1%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Shifengshan Coal Mine is an underground coal mine located in Shanxi Province, specifically in Huairen County"
   },
   "canonical_name": "Shifengshan Coal Mine",
   "canonical_slug": "shifengshan-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:29:56.000000Z",
+      "operators": [
+        "Shanghai Qianchang Investment Company"
+      ],
+      "owners": [
+        "Shanxi Huairen Zhifengshan Coal Industry Company"
+      ],
+      "notes": "The mine is operated by Shanghai Qianchang Investment Company and owned by Shanxi Huairen Zhifengshan Coal Industry Company."
+    }
+  }
 }

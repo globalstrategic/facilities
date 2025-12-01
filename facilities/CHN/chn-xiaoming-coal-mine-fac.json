@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.473,
-    "lon": 123.594,
+    "lat": 42.472755,
+    "lon": 123.59306,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "辽宁能源产业控股集团 (Liaoning Energy Industry Holding Group)",
+    "铁法煤业（集团）有限责任公司晓明矿 (Tiefa Coal Industry Group Xiaoming Coal Mine)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.838085Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:05:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%93%81%E6%B3%95%E7%85%A4%E4%B8%9A%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E6%99%93%E6%98%8E%E7%9F%BF. The Xiaoming Coal Mine is an underground coal mine operated by Tiefa Coal Industry Group"
   },
   "canonical_name": "Xiaoming Coal Mine",
   "canonical_slug": "xiaoming-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "辽宁省 (Liaoning Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:05:24.000000Z",
+      "operators": [
+        "铁法煤业（集团）有限责任公司晓明矿 (Tiefa Coal Industry Group Xiaoming Coal Mine)"
+      ],
+      "owners": [
+        "辽宁能源产业控股集团 (Liaoning Energy Industry Holding Group)"
+      ],
+      "notes": "The Xiaoming Coal Mine is owned by Liaoning Energy Industry Holding Group and operated by Tiefa Coal Industry Group."
+    }
+  }
 }

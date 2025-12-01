@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.4,
-    "lon": 114.141,
+    "lat": 36.400458,
+    "lon": 114.140872,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Handan City Sunzhuang Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.782514Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:25:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%82%AF%E9%83%B8%E5%B8%82%E5%AD%99%E5%BA%84%E9%87%87%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. Hebei Sunzhuang Coal Mine is an underground coal mine located in Handan City, Hebei Province"
   },
   "canonical_name": "Hebei Sunzhuang Coal Mine",
   "canonical_slug": "hebei-sunzhuang-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:25:43.000000Z",
+      "operators": [
+        "Handan City Sunzhuang Mining Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Handan City Sunzhuang Mining Co Ltd."
+    }
+  }
 }

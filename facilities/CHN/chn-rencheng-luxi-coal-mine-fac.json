@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Lineng Luxi Mine Industry Co Ltd",
+    "Yankuang Group Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.842018Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:57:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E4%B8%9C%E9%87%8C%E8%83%BD%E9%B2%81%E8%A5%BF%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Rencheng Luxi Coal Mine is an underground coal mine located in Shandong Province, specifically in the city of Jining, Rencheng District"
   },
   "canonical_name": "Rencheng Luxi Coal Mine",
   "canonical_slug": "rencheng-luxi-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:57:32.000000Z",
+      "operators": [
+        "Shandong Lineng Luxi Mine Industry Co Ltd"
+      ],
+      "owners": [
+        "Yankuang Group Co Ltd"
+      ],
+      "notes": "Shandong Lineng Luxi Mine Industry Co Ltd operates the mine, which is fully owned by Yankuang Group Co Ltd."
+    }
+  }
 }

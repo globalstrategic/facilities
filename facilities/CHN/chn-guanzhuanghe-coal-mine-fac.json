@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.479,
-    "lon": 111.352,
+    "lat": 36.478742,
+    "lon": 111.352071,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "山西宏源集团",
+    "山西蒲县宏源集团官庄河煤业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.892476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:09:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E8%92%B2%E5%8E%BF%E5%AE%8F%E6%BA%90%E9%9B%86%E5%9B%A2%E5%AE%98%E5%BA%84%E6%B2%B3%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Guanzhuanghe Coal Mine is an underground coal mine located in 东开府村, 太林乡, 蒲县, 临汾市, 山西省"
   },
   "canonical_name": "Guanzhuanghe Coal Mine",
   "canonical_slug": "guanzhuanghe-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:09:44.000000Z",
+      "operators": [
+        "山西蒲县宏源集团官庄河煤业有限公司"
+      ],
+      "owners": [
+        "山西宏源集团"
+      ],
+      "notes": "The mine is operated by Shanxi Pu County Hongyuan Group Guanzhuanghe Coal Industry Company, which is a subsidiary of Shanxi Hongyuan Group."
+    }
+  }
 }

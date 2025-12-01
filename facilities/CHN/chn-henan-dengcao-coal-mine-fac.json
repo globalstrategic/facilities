@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.325,
-    "lon": 112.983,
+    "lat": 34.318405,
+    "lon": 113.003915,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zhengzhou Coal Industry Group Co Ltd Dengcao Mining Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.891724Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:31:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%83%91%E5%B7%9E%E7%85%A4%E7%82%AD%E5%B7%A5%E4%B8%9A%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E7%A3%B4%E6%A7%BD%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Henan Dengcao Coal Mine is an underground coal mine located in Dengfeng, Henan Province"
   },
   "canonical_name": "Henan Dengcao Coal Mine",
   "canonical_slug": "henan-dengcao-coal-mine",
@@ -52,5 +54,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:31:22.000000Z",
+      "operators": [
+        "Zhengzhou Coal Industry Group Co Ltd Dengcao Mining Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Zhengzhou Coal Industry Group Co Ltd Dengcao Mining Co Ltd."
+    }
+  }
 }

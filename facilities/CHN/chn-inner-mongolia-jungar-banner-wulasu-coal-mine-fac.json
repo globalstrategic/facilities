@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.313,
-    "lon": 110.686,
+    "lat": 39.047968,
+    "lon": 109.500809,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Coal",
+    "Manshi Group",
+    "Shenergy",
+    "Sinopec",
+    "Zhongtian Hechuang Energy Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.647784Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:53:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Hulusu_Coal_Mine. The facility is located in Ordos, Inner Mongolia, China"
   },
   "canonical_name": "Inner Mongolia Jungar Banner Wulasu Coal Mine",
   "canonical_slug": "inner-mongolia-jungar-banner-wulasu-coal-mine",
@@ -50,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:53:55.000000Z",
+      "operators": [
+        "Zhongtian Hechuang Energy Co."
+      ],
+      "owners": [
+        "China Coal",
+        "Sinopec",
+        "Shenergy",
+        "Manshi Group"
+      ],
+      "notes": "Zhongtian Hechuang Energy Co. operates the mine, while ownership is shared among several companies."
+    }
+  }
 }

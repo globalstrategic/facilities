@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 46.272,
-    "lon": 132.574,
+    "lat": 46.271618,
+    "lon": 132.573834,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baoqing County State Owned Asset Management Company (10%)",
+    "China Energy (90%)",
+    "Guoneng Baoqing Coal Electricity Chemical Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.846157Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:44:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baoqing_Chaoyang_Surface_Mine. The Baoqing Chaoyang Surface Coal Mine is a permitted coal mine located in Chaoyang Town, Baoqing, Shuangyashan, Heilongjiang Province"
   },
   "canonical_name": "Baoqing Chaoyang Surface Coal Mine",
   "canonical_slug": "baoqing-chaoyang-surface-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:44:05.000000Z",
+      "operators": [
+        "Guoneng Baoqing Coal Electricity Chemical Company"
+      ],
+      "owners": [
+        "China Energy (90%)",
+        "Baoqing County State Owned Asset Management Company (10%)"
+      ],
+      "notes": "The mine is operated by Guoneng Baoqing Coal Electricity Chemical Company, which is a subsidiary of China Energy."
+    }
+  }
 }

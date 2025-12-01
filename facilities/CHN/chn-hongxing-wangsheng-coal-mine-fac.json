@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.931,
-    "lon": 111.567,
+    "lat": 36.930927,
+    "lon": 111.566849,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lingshi Hongxing Energy Company",
+    "Shanxi Lingshi Hongxing Wangsheng Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.792994Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:41:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E7%81%B5%E7%9F%B3%E7%BA%A2%E6%9D%8F%E6%97%BA%E7%9B%9B%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Hongxing Wangsheng Coal Mine is an underground coal mine located in Lingshi County, Shanxi Province"
   },
   "canonical_name": "Hongxing Wangsheng Coal Mine",
   "canonical_slug": "hongxing-wangsheng-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:41:21.000000Z",
+      "operators": [
+        "Shanxi Lingshi Hongxing Wangsheng Coal Industry Company"
+      ],
+      "owners": [
+        "Lingshi Hongxing Energy Company"
+      ],
+      "notes": "The mine is operated by Shanxi Lingshi Hongxing Wangsheng Coal Industry Company, which is a subsidiary of Lingshi Hongxing Energy Company."
+    }
+  }
 }

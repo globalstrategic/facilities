@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.715,
-    "lon": 105.253,
+    "lat": 25.714694,
+    "lon": 105.253294,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Qianxinan Qinglong Anbao Coal Mine Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.777251Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:16:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%BB%94%E8%A5%BF%E5%8D%97%E5%B7%9E%E6%99%B4%E9%9A%86%E5%AE%89%E5%AE%9D%E7%85%A4%E7%9F%BF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%99%B4%E9%9A%86%E5%8E%BF%E4%B8%89%E5%AE%9D%E7%85%A4%E7%9F%BF. The Guizhou Sanbao Coal Mine is located in the Qianxinan Buyei and Miao Autonomous Prefecture, specifically in Qinglong County"
   },
   "canonical_name": "Guizhou Sanbao Coal Mine",
   "canonical_slug": "guizhou-sanbao-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:16:16.000000Z",
+      "operators": [
+        "Qianxinan Qinglong Anbao Coal Mine Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Qianxinan Qinglong Anbao Coal Mine Co Ltd."
+    }
+  }
 }

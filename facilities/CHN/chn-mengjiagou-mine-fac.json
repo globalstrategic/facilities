@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.167,
-    "lon": 118.53,
+    "lat": 40.1667,
+    "lon": 118.5297,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hebei Province Qian'an City Longyu Industry and Trade Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.692684Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T19:39:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mengjiagou_Mine. Mengjiagou Mine is an iron ore mine located in Tangshan, Hebei, China"
   },
   "canonical_name": "Mengjiagou Mine",
   "canonical_slug": "mengjiagou-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T19:39:35.000000Z",
+      "operators": [
+        "Hebei Province Qian'an City Longyu Industry and Trade Co"
+      ],
+      "owners": [
+        "Hebei Province Qian'an City Longyu Industry and Trade Co"
+      ],
+      "notes": "The company operates and owns 100% of the Mengjiagou Mine."
+    }
+  }
 }

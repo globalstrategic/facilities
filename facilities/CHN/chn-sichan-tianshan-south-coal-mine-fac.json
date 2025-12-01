@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 31.025,
-    "lon": 107.279,
+    "lat": 31.025112,
+    "lon": 107.279023,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "四川达竹煤电（集团）有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.815530Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:36:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%9B%9B%E5%B7%9D%E8%BE%BE%E7%AB%B9%E7%85%A4%E7%94%B5%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%93%81%E5%B1%B1%E5%8D%97%E7%85%A4%E7%9F%BF. The Sichan Tianshan South Coal Mine is an underground coal mine located in the Dazhou area of Sichuan Province"
   },
   "canonical_name": "Sichan Tianshan South Coal Mine",
   "canonical_slug": "sichan-tianshan-south-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "四川省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:36:08.000000Z",
+      "operators": [
+        "四川达竹煤电（集团）有限责任公司"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Sichuan Dazhu Coal and Electricity Group Co., Ltd."
+    }
+  }
 }

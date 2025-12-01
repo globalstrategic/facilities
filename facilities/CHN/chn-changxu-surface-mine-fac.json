@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.459,
-    "lon": 110.49,
+    "lat": 39.458886,
+    "lon": 110.486821,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "准格尔旗昶旭煤炭有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.827278Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T17:46:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%87%86%E6%A0%BC%E5%B0%94%E6%97%97%E6%98%B6%E6%97%AD%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%85%A4%E7%9F%BF. Changxu Surface Mine is an open-pit coal mine operated by the company mentioned"
   },
   "canonical_name": "Changxu Surface Mine",
   "canonical_slug": "changxu-surface-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T17:46:24.000000Z",
+      "operators": [
+        "准格尔旗昶旭煤炭有限责任公司"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by a limited liability company focused on coal mining."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.577,
-    "lon": 110.291,
+    "lat": 39.576853,
+    "lon": 110.29099,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ejin Horo Banner Yucai Coal Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.757277Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:52:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%BC%8A%E9%87%91%E9%9C%8D%E6%B4%9B%E6%97%97%E8%82%B2%E6%89%8D%E7%85%A4%E7%82%AD%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%85%A4%E7%9F%BF. The Inner Mongolia Ejin Horo Banner Yucai Coal Mine is an underground coal mine located in the Ejin Horo Banner area"
   },
   "canonical_name": "Inner Mongolia Ejin Horo Banner Yucai Coal Mine",
   "canonical_slug": "inner-mongolia-ejin-horo-banner-yucai-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:52:40.000000Z",
+      "operators": [
+        "Ejin Horo Banner Yucai Coal Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Ejin Horo Banner Yucai Coal Co Ltd."
+    }
+  }
 }

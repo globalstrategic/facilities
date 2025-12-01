@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.254,
-    "lon": 102.001,
+    "lat": 38.2401,
+    "lon": 101.9701,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gansu Fuhe New Energy Technology Co Ltd (甘肃富合新能源技术有限公司)",
+    "Yongchang County Taihe Wind Power (永昌县泰合风力发电有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.663962Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:28:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gansu_Yongchang_Xitan_wind_farm. Coordinates are approximate for the Gansu Yongchang Xitan wind farm"
   },
   "canonical_name": "Yongchang Mine",
   "canonical_slug": "yongchang-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gansu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:28:29.000000Z",
+      "operators": [
+        "Yongchang County Taihe Wind Power (永昌县泰合风力发电有限公司)"
+      ],
+      "owners": [
+        "Gansu Fuhe New Energy Technology Co Ltd (甘肃富合新能源技术有限公司)"
+      ],
+      "notes": "The wind farm is operated by a local company and owned by a new energy technology firm."
+    }
+  }
 }

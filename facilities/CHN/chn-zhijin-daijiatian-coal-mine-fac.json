@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.836,
-    "lon": 105.836,
+    "lat": 26.835833,
+    "lon": 105.835833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Qiansheng State-Owned Assets Management Company",
+    "毕节中城能源有限责任公司 (Bijie Zhongcheng Energy Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.790878Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:41:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%AF%95%E8%8A%82%E4%B8%AD%E5%9F%8E%E8%83%BD%E6%BA%90%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%BB%87%E9%87%91%E5%8E%BF%E6%88%B4%E5%AE%B6%E7%94%B0%E7%85%A4%E7%9F%BF. The Zhijin Daijiatian Coal Mine is an approved underground coal mine with a designed production capacity of 900,000 tons per year"
   },
   "canonical_name": "Zhijin Daijiatian Coal Mine",
   "canonical_slug": "zhijin-daijiatian-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:41:41.000000Z",
+      "operators": [
+        "毕节中城能源有限责任公司 (Bijie Zhongcheng Energy Co., Ltd.)"
+      ],
+      "owners": [
+        "Guizhou Qiansheng State-Owned Assets Management Company"
+      ],
+      "notes": "The mine is operated by Bijie Zhongcheng Energy Co., Ltd., which is part of the Guizhou Qiansheng State-Owned Assets Management Company."
+    }
+  }
 }

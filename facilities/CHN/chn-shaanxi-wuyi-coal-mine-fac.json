@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.062,
-    "lon": 111.046,
+    "lat": 38.9763110967597,
+    "lon": 110.13119234290856,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Coal Group",
+    "Shaanxi Coal and Chemical Industry Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.880038Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T20:09:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Shenmu (https://www.reuters.com/markets/commodities/china-automating-mines-improve-safety-coal-output-grows-2023-04-28/). The Shaanxi Wuyi Coal Mine is located in the northwestern Shaanxi province, near the city of Shenmu"
   },
   "canonical_name": "Shaanxi Wuyi Coal Mine",
   "canonical_slug": "shaanxi-wuyi-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "town": "Shenmu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:09:44.000000Z",
+      "operators": [
+        "Shaanxi Coal Group"
+      ],
+      "owners": [
+        "Shaanxi Coal and Chemical Industry Group Co., Ltd."
+      ],
+      "notes": "Shaanxi Coal Group operates the mine, while it is owned by Shaanxi Coal and Chemical Industry Group."
+    }
+  }
 }

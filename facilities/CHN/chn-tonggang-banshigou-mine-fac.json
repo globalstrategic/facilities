@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.0,
-    "lon": 126.415,
+    "lat": 42.000319,
+    "lon": 126.415078,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tonghua Iron and Steel Group Banshi Mining (通化钢铁集团板石矿业有限责任公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.856828Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T20:49:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tonggang_Banshigou_Mine. Tonggang Banshigou Mine is an iron ore mine operating in Baishan, Jilin, China"
   },
   "canonical_name": "Tonggang Banshigou Mine",
   "canonical_slug": "tonggang-banshigou-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jilin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:49:52.000000Z",
+      "operators": [
+        "Tonghua Iron and Steel Group Banshi Mining (通化钢铁集团板石矿业有限责任公司)"
+      ],
+      "owners": [
+        "Tonghua Iron and Steel Group Banshi Mining (通化钢铁集团板石矿业有限责任公司)"
+      ],
+      "notes": "The mine is fully owned by Tonghua Iron and Steel Group Banshi Mining."
+    }
+  }
 }

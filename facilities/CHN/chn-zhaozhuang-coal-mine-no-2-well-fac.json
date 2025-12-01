@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.013,
-    "lon": 112.93,
+    "lat": 36.012508,
+    "lon": 112.930231,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Group",
+    "Shanxi Jinmei Group Zhaozhuang Coal Industry Company No. 2 Well"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.874180Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:39:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Zhaozhuang_Coal_Mine_No.2_Well. Zhaozhuang Coal Mine No. 2 Well is an underground coal mine located in Bu Village, Cilin Town, Changzi County, Changzhi City"
   },
   "canonical_name": "Zhaozhuang Coal No 2 Well Mine",
   "canonical_slug": "zhaozhuang-coal-no-2-well-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:39:43.000000Z",
+      "operators": [
+        "Shanxi Jinmei Group Zhaozhuang Coal Industry Company No. 2 Well"
+      ],
+      "owners": [
+        "Jinneng Group"
+      ],
+      "notes": "The mine is operated by Shanxi Jinmei Group and owned by Jinneng Group."
+    }
+  }
 }

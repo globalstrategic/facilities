@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.756,
-    "lon": 109.894,
+    "lat": 38.756195,
+    "lon": 109.893889,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Coal and Chemical Industry Group",
+    "Shaanxi Investment Group",
+    "Shaanxi Xiaobaodang Mining Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.883839Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T21:04:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Xiaobaodang_No.1_Mine. Xiaobaodang No.1 Coal Mine is located in Dabaodang Town, Shenmu, Yulin, Shaanxi Province, China"
   },
   "canonical_name": "Xiaobaodang No 1 Coal Mine",
   "canonical_slug": "xiaobaodang-no-1-coal-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:04:38.000000Z",
+      "operators": [
+        "Shaanxi Xiaobaodang Mining Co."
+      ],
+      "owners": [
+        "Shaanxi Investment Group",
+        "Shaanxi Coal and Chemical Industry Group"
+      ],
+      "notes": "The mine is operated by Shaanxi Xiaobaodang Mining Co., which is part of the Shaanxi Coal and Chemical Industry Group."
+    }
+  }
 }

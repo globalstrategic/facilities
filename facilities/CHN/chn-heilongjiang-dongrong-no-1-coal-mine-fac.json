@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 46.818,
-    "lon": 131.493,
+    "lat": 46.870094,
+    "lon": 131.466341,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heilongjiang Longmay Mining Holding Group Co., Ltd.",
+    "Heilongjiang Longmei Mining Group Co., Ltd. Shuangyashan Branch"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.643138Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:28:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dongrong_No.2_Coal_Mine. Coordinates are for Dongrong No.2 Coal Mine, which is operated by the same company as Heilongjiang Dongrong No. 1 Coal Mine"
   },
   "canonical_name": "Heilongjiang Dongrong No 1 Coal Mine",
   "canonical_slug": "heilongjiang-dongrong-no-1-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:28:14.000000Z",
+      "operators": [
+        "Heilongjiang Longmei Mining Group Co., Ltd. Shuangyashan Branch"
+      ],
+      "owners": [
+        "Heilongjiang Longmay Mining Holding Group Co., Ltd."
+      ],
+      "notes": "Heilongjiang Longmay Mining Holding Group Co., Ltd. is the parent company."
+    }
+  }
 }

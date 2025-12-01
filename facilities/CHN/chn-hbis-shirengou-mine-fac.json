@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 40.236,
-    "lon": 117.881,
+    "lat": 40.2361,
+    "lon": 117.8806,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hebei Iron & Steel Group Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.887892Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:24:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/HBIS_Shirengou_Mine. The HBIS Shirengou Mine is an iron ore mine located in Tangshan, Hebei, China"
   },
   "canonical_name": "Hbis Shirengou Mine",
   "canonical_slug": "hbis-shirengou-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:24:24.000000Z",
+      "operators": [
+        "Hebei Iron & Steel Group Mining Co"
+      ],
+      "owners": [
+        "Hebei Iron & Steel Group Mining Co"
+      ],
+      "notes": "The mine is fully owned by Hebei Iron & Steel Group Mining Co."
+    }
+  }
 }

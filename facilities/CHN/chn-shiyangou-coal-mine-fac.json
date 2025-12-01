@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.092,
-    "lon": 110.471,
+    "lat": 40.04405031451773,
+    "lon": 111.2298472,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Shenhua Energy Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.855694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-30T20:31:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Xuejiawan (https://www.mdpi.com/2073-4441/14/14/2150). The Shiyangou Coal Mine is located near the Huangyuchuan coal mine, which is referenced in the document"
   },
   "canonical_name": "Shiyangou Coal Mine",
   "canonical_slug": "shiyangou-coal-mine",
@@ -52,5 +54,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "town": "Xuejiawan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T20:31:12.000000Z",
+      "operators": [],
+      "owners": [
+        "China Shenhua Energy Co Ltd"
+      ],
+      "notes": "China Shenhua Energy Co Ltd is mentioned as the owner of the Shiyangou Coal Mine."
+    }
+  }
 }

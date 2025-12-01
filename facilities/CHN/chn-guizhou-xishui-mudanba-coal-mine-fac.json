@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 28.32,
-    "lon": 106.155,
+    "lat": 28.320202,
+    "lon": 106.154626,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "贵州能发电力燃料开发有限公司 (Guizhou Energy Development Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.623051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-30T18:18:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E8%83%BD%E5%8F%91%E7%94%B5%E5%8A%9B%E7%87%83%E6%96%99%E5%BC%80%E5%8F%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B9%A0%E6%B0%B4%E5%8E%BF%E4%B8%9C%E7%9A%87%E9%95%87%E6%9C%A8%E6%8B%85%E5%9D%9D%E7%85%A4%E7%9F%BF. The Guizhou Xishui Mudanba Coal Mine is an underground coal mine located in Xishui County, Guizhou Province"
   },
   "canonical_name": "Guizhou Xishui Mudanba Coal Mine",
   "canonical_slug": "guizhou-xishui-mudanba-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T18:18:07.000000Z",
+      "operators": [
+        "贵州能发电力燃料开发有限公司 (Guizhou Energy Development Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Guizhou Energy Development Co., Ltd."
+    }
+  }
 }
