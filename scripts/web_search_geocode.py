@@ -1,28 +1,22 @@
 #!/usr/bin/env python3
 """
-Web search-based geocoding AND company enrichment for mining facilities.
+Unified geocoding for mining facilities - web search, manual entry, and CSV import.
 
 Uses real web searches (Tavily, Brave) + LLM to extract:
 1. Coordinates (lat/lon)
 2. Company mentions (operators/owners)
 3. Location metadata (province, town)
 
-This actually searches the web, unlike pure LLM approaches.
+Also supports manual coordinate entry and CSV import for bulk updates.
 
 Usage:
-    # Process ALL countries (10 facilities per country)
+    # Web search geocoding (default mode)
     export TAVILY_API_KEY="your-key"
     export OPENAI_API_KEY="your-key"
     python scripts/web_search_geocode.py --limit 10
 
-    # Process ALL countries with total limit (stop after 100 total facilities)
-    python scripts/web_search_geocode.py --limit 10 --limit-total 100
-
     # Process specific country
     python scripts/web_search_geocode.py --country MAR --limit 20
-
-    # Only process facilities missing companies across all countries
-    python scripts/web_search_geocode.py --missing-companies --limit 5 --limit-total 50
 
     # Process ALL facilities (regardless of missing data)
     python scripts/web_search_geocode.py --all --limit 3
@@ -30,6 +24,17 @@ Usage:
     # With Brave Search instead
     export BRAVE_API_KEY="your-key"
     python scripts/web_search_geocode.py --search-engine brave --limit 5
+
+    # Manual/CSV modes (no API keys needed)
+    python scripts/web_search_geocode.py --list-missing              # List facilities needing coords
+    python scripts/web_search_geocode.py --list-missing --country ZAF
+    python scripts/web_search_geocode.py --import-csv coords.csv     # Import from CSV
+    python scripts/web_search_geocode.py --interactive               # Interactive entry
+    python scripts/web_search_geocode.py --interactive --country ZAF
+
+CSV Format:
+    facility_id,lat,lon,precision,source,notes
+    zaf-karee-mine-fac,-25.7234,27.2156,site,Google Maps,"Main shaft coordinates"
 
 Environment:
     TAVILY_API_KEY: For Tavily search API (https://tavily.com/)
@@ -40,6 +45,9 @@ Flags:
     --all: Process ALL facilities (not just missing coords)
     --missing-companies: Process facilities with empty company_mentions
     --dry-run: Don't update files, just show what would be done
+    --list-missing: List facilities missing coordinates
+    --import-csv: Import coordinates from CSV file
+    --interactive: Interactive coordinate entry mode
 """
 
 import json
@@ -47,10 +55,29 @@ import os
 import sys
 import time
 import re
+import csv
 from pathlib import Path
+from datetime import datetime
 from typing import Optional, Dict, List, Tuple
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Import validation functions from geocoding utils
+try:
+    from scripts.utils.geocoding import is_valid_coord, in_country_bbox, is_sentinel_coord
+    HAS_VALIDATION = True
+except ImportError:
+    HAS_VALIDATION = False
+    # Fallback implementations
+    def is_valid_coord(lat, lon):
+        try:
+            return -90 <= float(lat) <= 90 and -180 <= float(lon) <= 180
+        except (TypeError, ValueError):
+            return False
+    def in_country_bbox(lat, lon, country_iso3):
+        return True  # Permissive fallback
+    def is_sentinel_coord(lat, lon):
+        return (round(float(lat), 4), round(float(lon), 4)) == (0.0, 0.0)
 
 try:
     import requests
@@ -440,20 +467,366 @@ def update_facility_json(facility: Dict, location: Dict) -> bool:
     return True
 
 
+# =============================================================================
+# MANUAL ENTRY / CSV IMPORT FUNCTIONS
+# =============================================================================
+
+ROOT = Path(__file__).parent.parent
+FACILITIES_DIR = ROOT / "facilities"
+
+
+def load_facility(facility_id: str) -> Optional[Dict]:
+    """Load facility JSON by ID."""
+    if len(facility_id) < 3:
+        return None
+
+    country = facility_id[:3].upper()
+    json_file = FACILITIES_DIR / country / f"{facility_id}.json"
+
+    if not json_file.exists():
+        print(f"  Facility not found: {json_file}")
+        return None
+
+    with open(json_file, 'r') as f:
+        return json.load(f)
+
+
+def save_facility(facility: Dict) -> None:
+    """Save facility JSON."""
+    facility_id = facility['facility_id']
+    country = facility['country_iso3']
+    json_file = FACILITIES_DIR / country / f"{facility_id}.json"
+
+    with open(json_file, 'w') as f:
+        json.dump(facility, f, indent=2, ensure_ascii=False)
+
+
+def validate_coordinates(lat: float, lon: float, country_iso3: str, interactive: bool = False) -> bool:
+    """Validate coordinates with multiple checks."""
+    if is_sentinel_coord(lat, lon):
+        print(f"  Rejected: Sentinel coordinates ({lat}, {lon})")
+        return False
+
+    if not is_valid_coord(lat, lon):
+        print(f"  Rejected: Invalid coordinates ({lat}, {lon})")
+        return False
+
+    if not in_country_bbox(lat, lon, country_iso3):
+        print(f"  Warning: Coordinates ({lat}, {lon}) outside {country_iso3} bbox")
+        if interactive:
+            response = input("  Continue anyway? (y/N): ")
+            if response.lower() != 'y':
+                return False
+        else:
+            return False
+
+    return True
+
+
+def add_manual_coordinates(
+    facility_id: str,
+    lat: float,
+    lon: float,
+    precision: str = "site",
+    source: str = "manual_entry",
+    notes: str = None,
+    dry_run: bool = False,
+    interactive: bool = False
+) -> bool:
+    """Add coordinates to a facility with validation."""
+    facility = load_facility(facility_id)
+    if not facility:
+        return False
+
+    country_iso3 = facility['country_iso3']
+
+    # Validation gates
+    if not validate_coordinates(lat, lon, country_iso3, interactive):
+        return False
+
+    # Update facility
+    old_lat = facility.get('location', {}).get('lat')
+    old_lon = facility.get('location', {}).get('lon')
+
+    facility['location'] = {
+        'lat': lat,
+        'lon': lon,
+        'precision': precision
+    }
+
+    # Update verification
+    if 'verification' not in facility:
+        facility['verification'] = {}
+
+    facility['verification']['last_checked'] = datetime.now().isoformat()
+
+    note_parts = [f"Manual coordinate entry: {source}"]
+    if notes:
+        note_parts.append(notes)
+    if old_lat is not None and old_lon is not None:
+        note_parts.append(f"(replaced: {old_lat}, {old_lon})")
+
+    facility['verification']['notes'] = " | ".join(note_parts)
+
+    # Display change
+    action = "Would update" if dry_run else "Updated"
+    if old_lat is not None and old_lon is not None:
+        print(f"  {action}: {facility['name']}")
+        print(f"    Old: {old_lat}, {old_lon}")
+        print(f"    New: {lat}, {lon}")
+    else:
+        print(f"  {action}: {facility['name']}")
+        print(f"    Coordinates: {lat}, {lon}")
+
+    # Save
+    if not dry_run:
+        save_facility(facility)
+
+    return True
+
+
+def import_from_csv(csv_path: str, dry_run: bool = False) -> None:
+    """Import coordinates from CSV file."""
+    csv_file = Path(csv_path)
+    if not csv_file.exists():
+        print(f"CSV file not found: {csv_file}")
+        return
+
+    with open(csv_file, 'r') as f:
+        reader = csv.DictReader(f)
+
+        # Validate headers
+        required = {'facility_id', 'lat', 'lon'}
+        if not required.issubset(set(reader.fieldnames or [])):
+            print(f"CSV missing required columns: {required}")
+            print(f"  Found: {reader.fieldnames}")
+            return
+
+        stats = {"success": 0, "failed": 0}
+
+        for i, row in enumerate(reader, start=1):
+            facility_id = row['facility_id'].strip()
+
+            try:
+                lat = float(row['lat'])
+                lon = float(row['lon'])
+            except (ValueError, KeyError) as e:
+                print(f"Row {i}: Invalid lat/lon - {e}")
+                stats['failed'] += 1
+                continue
+
+            precision = row.get('precision', 'site').strip() or 'site'
+            source = row.get('source', 'csv_import').strip() or 'csv_import'
+            notes = row.get('notes', '').strip() or None
+
+            print(f"\n[{i}] {facility_id}")
+            success = add_manual_coordinates(
+                facility_id, lat, lon, precision, source, notes, dry_run
+            )
+
+            if success:
+                stats['success'] += 1
+            else:
+                stats['failed'] += 1
+
+        print("\n" + "=" * 60)
+        print("CSV IMPORT SUMMARY")
+        print("=" * 60)
+        print(f"Successful: {stats['success']}")
+        print(f"Failed: {stats['failed']}")
+
+
+def find_missing_coordinates(country: str = None) -> List[Dict]:
+    """Find all facilities missing coordinates, optionally filtered by country."""
+    missing = []
+
+    if country:
+        country_dir = FACILITIES_DIR / country.upper()
+        if not country_dir.exists():
+            print(f"Country not found: {country}")
+            return []
+
+        for json_file in sorted(country_dir.glob("*.json")):
+            with open(json_file, 'r') as f:
+                facility = json.load(f)
+
+            lat = facility.get('location', {}).get('lat')
+            lon = facility.get('location', {}).get('lon')
+
+            if lat is None or lon is None:
+                missing.append(facility)
+    else:
+        for country_dir in sorted(FACILITIES_DIR.iterdir()):
+            if not country_dir.is_dir():
+                continue
+
+            for json_file in sorted(country_dir.glob("*.json")):
+                with open(json_file, 'r') as f:
+                    facility = json.load(f)
+
+                lat = facility.get('location', {}).get('lat')
+                lon = facility.get('location', {}).get('lon')
+
+                if lat is None or lon is None:
+                    missing.append(facility)
+
+    return missing
+
+
+def list_missing_coords(country: str = None) -> None:
+    """List facilities missing coordinates."""
+    missing = find_missing_coordinates(country)
+
+    if not missing:
+        print("No facilities missing coordinates!")
+        return
+
+    print(f"Found {len(missing)} facilities missing coordinates")
+    if country:
+        print(f"Country: {country.upper()}\n")
+    else:
+        print()
+
+    for facility in missing[:100]:  # Show first 100
+        commodities = facility.get('commodities', [])
+        metals = [c.get('metal', '') for c in commodities if c.get('metal')]
+        metals_str = f" ({', '.join(metals[:3])})" if metals else ""
+
+        print(f"{facility['facility_id']:<40} {facility['name'][:50]}{metals_str}")
+
+    if len(missing) > 100:
+        print(f"\n... and {len(missing) - 100} more")
+
+
+def interactive_add(country: str = None, dry_run: bool = False) -> None:
+    """Interactive mode for adding coordinates."""
+    print("Manual Coordinate Entry (Interactive Mode)")
+    print("=" * 60)
+
+    missing = find_missing_coordinates(country)
+
+    if not missing:
+        print("No facilities missing coordinates!")
+        return
+
+    print(f"Found {len(missing)} facilities missing coordinates")
+    if country:
+        print(f"Country: {country.upper()}")
+    print()
+
+    stats = {"added": 0, "skipped": 0}
+
+    for i, facility in enumerate(missing, start=1):
+        print("=" * 60)
+        print(f"[{i}/{len(missing)}] {facility['facility_id']}")
+        print(f"Name: {facility['name']}")
+        print(f"Country: {facility['country_iso3']}")
+
+        commodities = facility.get('commodities', [])
+        if commodities:
+            metals = [c.get('metal', '') for c in commodities if c.get('metal')]
+            if metals:
+                print(f"Commodities: {', '.join(metals)}")
+
+        print()
+
+        try:
+            lat_input = input("Latitude (or 's' to skip, 'q' to quit): ").strip()
+
+            if lat_input.lower() == 'q':
+                print("\nQuitting...")
+                break
+            elif lat_input.lower() == 's':
+                print("Skipped")
+                stats['skipped'] += 1
+                continue
+
+            lat = float(lat_input)
+            lon = float(input("Longitude: ").strip())
+
+        except ValueError:
+            print("Invalid lat/lon - skipping")
+            stats['skipped'] += 1
+            continue
+        except (KeyboardInterrupt, EOFError):
+            print("\n\nInterrupted - exiting")
+            break
+
+        precision = input("Precision (site/mine/town/region) [site]: ").strip() or "site"
+        source = input("Source [manual_entry]: ").strip() or "manual_entry"
+        notes = input("Notes (optional): ").strip() or None
+
+        print()
+        success = add_manual_coordinates(
+            facility['facility_id'], lat, lon, precision, source, notes, dry_run, interactive=True
+        )
+
+        if success:
+            stats['added'] += 1
+
+        print()
+
+    print("\n" + "=" * 60)
+    print("SESSION SUMMARY")
+    print("=" * 60)
+    print(f"Coordinates added: {stats['added']}")
+    print(f"Skipped: {stats['skipped']}")
+    print(f"Remaining: {len(missing) - stats['added'] - stats['skipped']}")
+
+
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(description="Web search-based geocoding and company enrichment")
+    parser = argparse.ArgumentParser(
+        description="Unified geocoding: web search, manual entry, and CSV import",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+
+    # Mode selection (mutually exclusive)
+    mode_group = parser.add_argument_group("Mode selection (pick one)")
+    mode_group.add_argument("--list-missing", action="store_true",
+                           help="List facilities missing coordinates (no API keys needed)")
+    mode_group.add_argument("--import-csv", metavar="FILE",
+                           help="Import coordinates from CSV file (no API keys needed)")
+    mode_group.add_argument("--interactive", action="store_true",
+                           help="Interactive coordinate entry mode (no API keys needed)")
+
+    # Common options
     parser.add_argument("--country", help="ISO3 country code (omit to process ALL countries)")
-    parser.add_argument("--start-from", help="ISO3 country code to start from (processes this country and all subsequent ones)")
-    parser.add_argument("--limit", type=int, default=10, help="Max facilities per country")
-    parser.add_argument("--limit-total", type=int, help="Max total facilities across all countries")
-    parser.add_argument("--search-engine", default="tavily", choices=["tavily", "brave"])
-    parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing coords)")
-    parser.add_argument("--missing-companies", action="store_true", help="Process facilities missing company_mentions")
-    parser.add_argument("--reverse", action="store_true", help="Process countries in reverse order (Z to A)")
+    parser.add_argument("--dry-run", action="store_true", help="Preview changes without saving")
+
+    # Web search options
+    search_group = parser.add_argument_group("Web search options")
+    search_group.add_argument("--start-from", help="ISO3 country code to start from")
+    search_group.add_argument("--limit", type=int, default=10, help="Max facilities per country")
+    search_group.add_argument("--limit-total", type=int, help="Max total facilities across all countries")
+    search_group.add_argument("--search-engine", default="tavily", choices=["tavily", "brave"])
+    search_group.add_argument("--all", action="store_true", help="Process ALL facilities (not just missing)")
+    search_group.add_argument("--missing-companies", action="store_true",
+                             help="Process facilities missing company_mentions")
+    search_group.add_argument("--reverse", action="store_true", help="Process countries Z to A")
+
     args = parser.parse_args()
+
+    # ==========================================================================
+    # Handle non-API modes first (no API keys needed)
+    # ==========================================================================
+
+    if args.list_missing:
+        list_missing_coords(args.country)
+        return
+
+    if args.import_csv:
+        import_from_csv(args.import_csv, args.dry_run)
+        return
+
+    if args.interactive:
+        interactive_add(args.country, args.dry_run)
+        return
+
+    # ==========================================================================
+    # Web search mode - requires API keys
+    # ==========================================================================
 
     # Validate arguments
     if args.country and args.start_from:
