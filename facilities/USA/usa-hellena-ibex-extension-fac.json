@@ -17,8 +17,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.238,
-    "lon": -106.231,
+    "lat": 39.25226407806172,
+    "lon": -106.2925238,
     "precision": "site"
   },
   "types": [
@@ -53,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.782847Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:08:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Leadville (https://thediggings.com/mines/usgs10009794). The Hellena-Ibex Extension Zinc Mine is located near Leadville, Colorado"
   },
   "canonical_name": "Hellena Ibex Extension Mine",
   "canonical_slug": "hellena-ibex-extension-mine",
@@ -72,5 +72,7 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Leadville"
 }

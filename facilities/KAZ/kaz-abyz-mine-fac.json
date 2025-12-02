@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 52.322985450696464,
+    "lon": 74.1811272,
     "precision": "unknown"
   },
   "types": [
@@ -30,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.735551Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:09:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Karaganda (https://www.metalmarket.eu/en/blog/far-over-in-misty-mountains-cold-on-central-asian-gold-mining-part-2-1727440364). The Abyz Mine is located in the Karaganda region, specifically in the Karkaralinsky district, near Abyz village"
   },
   "canonical_name": "Abyz Mine",
   "canonical_slug": "abyz-mine",
@@ -50,10 +50,10 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Karagandy",
+  "province": "Karaganda",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T23:34:02.000000Z",
+      "timestamp": "2025-12-02T09:09:53.000000Z",
       "operators": [
         "Kazakhmys Holding Group"
       ],
@@ -62,5 +62,6 @@
       ],
       "notes": "Kazakhmys Holding Group is both the operator and owner of the Abyz Mine."
     }
-  }
+  },
+  "town": "Karaganda"
 }

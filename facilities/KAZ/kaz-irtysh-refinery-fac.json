@@ -7,8 +7,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.1,
-    "lon": 82.317,
+    "lat": 50.12611509209541,
+    "lon": 82.350601050586,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "East Mineral Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.740308Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:11:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ust-Kamenogorsk (https://2024.minexkazakhstan.com/2024/01/09/east-mineral-resources-plans-to-extract-zinc-and-copper-from-waste-from-the-irtysh-copper-smelter/). The East Mineral Resources company plans to extract zinc and copper from waste from the Irtysh copper smelter, located 28 km northwest of Ust-Kamenogorsk"
   },
   "canonical_name": "Irtysh Smelter",
   "canonical_slug": "irtysh-smelter",
@@ -51,5 +53,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan",
+  "town": "Ust-Kamenogorsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:11:33.000000Z",
+      "operators": [
+        "East Mineral Resources"
+      ],
+      "owners": [],
+      "notes": "East Mineral Resources is developing the site for extraction."
+    }
+  }
 }

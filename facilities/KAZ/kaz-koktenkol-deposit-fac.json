@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.603333,
+    "lon": 72.225278,
     "precision": "unknown"
   },
   "types": [
@@ -31,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.738029Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:10:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10182622. The Koktenkol deposit is primarily known for molybdenum and tungsten mining"
   },
   "canonical_name": "Koktenkol Mine",
   "canonical_slug": "koktenkol-mine",
@@ -54,14 +54,14 @@
   "province": "Karaganda Oblast",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T23:36:18.000000Z",
+      "timestamp": "2025-12-02T09:10:51.000000Z",
       "operators": [
         "Dala Mining LLP"
       ],
       "owners": [
         "Government of Kazakhstan"
       ],
-      "notes": "Dala Mining LLP is the copyright holder of the contract for the development of tungsten and tungsten-molybdenum ores of the Koktenkol deposit."
+      "notes": "Dala Mining LLP is the private company responsible for the development of tungsten and tungsten-molybdenum ores."
     }
   }
 }
