@@ -6,8 +6,8 @@
   ],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 19.61669370992459,
+    "lon": 36.25839750706194,
     "precision": "unknown"
   },
   "types": [
@@ -22,6 +22,8 @@
   "status": "unknown",
   "company_mentions": [
     "Alliance For Mining Co. Ltd.",
+    "Alliance for Mining Co. Ltd.",
+    "Emiral Resources",
     "Government of Sudan",
     "Kush for Exploration and Production Co. Ltd."
   ],
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.163550Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:32:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Port Sudan (https://emiral.com/alliance-for-mining-co-ltd-temporarily-suspends-operations-in-sudan/). The Block 30 Mine is located in the Red Sea State of Sudan, approximately 100 kilometers from Port Sudan. Operations have been temporarily suspended due to ongoing armed conflict"
   },
   "canonical_name": "Block 30 Processing Plant",
   "canonical_slug": "block-30-processing-plant",
@@ -57,15 +59,16 @@
   "province": "Red Sea State",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T06:11:15.000000Z",
+      "timestamp": "2025-12-02T08:32:38.000000Z",
       "operators": [
-        "Alliance For Mining Co. Ltd."
+        "Alliance for Mining Co. Ltd.",
+        "Kush for Exploration and Production Co. Ltd."
       ],
       "owners": [
-        "Kush for Exploration and Production Co. Ltd.",
-        "Government of Sudan"
+        "Emiral Resources"
       ],
-      "notes": "Alliance was created in 2014 by an agreement between the Government and Kush for Exploration and Production Co. Ltd. to develop gold resources in Block 30."
+      "notes": "Alliance for Mining Co. Ltd. is a subsidiary of Emiral Resources, which is based in the UAE."
     }
-  }
+  },
+  "town": "Port Sudan"
 }

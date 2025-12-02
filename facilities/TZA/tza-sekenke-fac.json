@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.95,
+    "lon": 34.25,
     "precision": "unknown"
   },
   "types": [
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.979196Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:50:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sekenke_Gold_Mine. The Sekenke Gold Mine was the largest single producer of gold in Tanzania before World War II and is now inactive"
   },
   "canonical_name": "Sekenke Mine",
   "canonical_slug": "sekenke-mine",
@@ -60,18 +60,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Singida Region",
+  "province": "Singida",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T02:13:58.000000Z",
+      "timestamp": "2025-12-02T08:50:44.000000Z",
       "operators": [
-        "Sekenke Exploration Limited",
-        "Barrick Gold Corporation"
+        "Sekenke Exploration Limited"
       ],
       "owners": [
-        "Barrick Gold Corporation"
+        "Barrick Gold"
       ],
-      "notes": "Exploration rights are currently held by Barrick Gold through its subsidiary."
+      "notes": "Exploration rights are held by Barrick Gold through its subsidiary."
     }
   }
 }

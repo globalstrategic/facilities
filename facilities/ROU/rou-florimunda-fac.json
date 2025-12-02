@@ -9,8 +9,8 @@
   ],
   "country_iso3": "ROU",
   "location": {
-    "lat": 44.737,
-    "lon": 21.69,
+    "lat": 46.30472,
+    "lon": 23.11472,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gabriel Resources",
+    "Roșia Montană Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.780459Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:24:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ro%C8%99ia_Montan%C4%83_Project. Coordinates for the Roșia Montană Project, which is related to the Florimunda facility"
   },
   "canonical_name": "Florimunda Mine",
   "canonical_slug": "florimunda-mine",
@@ -64,5 +67,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Transylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:24:52.000000Z",
+      "operators": [
+        "Roșia Montană Gold Corporation"
+      ],
+      "owners": [
+        "Gabriel Resources"
+      ],
+      "notes": "The project was cancelled after significant protests and legislative rejection."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.7275,
+    "lon": 21.7617,
     "precision": "unknown"
   },
   "types": [
@@ -31,8 +31,12 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Binani Group",
+    "Bulmak 2016",
     "Bulmak 2016 D.O.O.E.L",
+    "Indo Minerals",
     "Indo Minerals and Metals",
+    "Minstroy",
     "Minstroy Holding AG"
   ],
   "products": [],
@@ -44,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.910995Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:53:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/MHK%20Zletovo%20-%20Veles.htm. The Zletovo mine is located in the eastern part of the Kratovo-Zletovo volcanic complex"
   },
   "canonical_name": "Zletovo Mine",
   "canonical_slug": "zletovo-mine",
@@ -64,19 +68,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Kratovo",
+  "province": "Vardar",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T05:57:38.000000Z",
+      "timestamp": "2025-12-02T08:53:58.000000Z",
       "operators": [
-        "Bulmak 2016 D.O.O.E.L",
-        "Minstroy Holding AG"
+        "Bulmak 2016",
+        "Minstroy"
       ],
       "owners": [
-        "Indo Minerals and Metals",
-        "Minstroy Holding AG"
+        "Indo Minerals",
+        "Binani Group"
       ],
-      "notes": "The mine was previously owned by Indo Minerals and is currently operated by Bulmak 2016, a subsidiary of Minstroy."
+      "notes": "The mine was previously operated by Indo Minerals and is currently managed by Bulmak 2016, a subsidiary of Minstroy."
     }
   }
 }

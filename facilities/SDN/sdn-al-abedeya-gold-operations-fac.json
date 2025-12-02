@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 21.109313858570403,
+    "lon": 33.9550754,
     "precision": "unknown"
   },
   "types": [
@@ -30,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.164819Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:33:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Al-Ibediyya (https://ridagroup.com/blog/gold-mining-companies-in-sudan/). Al-Abedeya Gold Operations is located in a gold-rich area known as Al-Ibediyya, which is referenced in multiple sources"
   },
   "canonical_name": "Al Abedeya Gold Heap Leach",
   "canonical_slug": "al-abedeya-gold-heap-leach",
@@ -58,15 +58,16 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Nile State",
+  "province": "Nile River State",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T06:12:13.000000Z",
+      "timestamp": "2025-12-02T08:33:32.000000Z",
       "operators": [
         "Rida Group"
       ],
       "owners": [],
       "notes": "Rida Group is the first private mining company in Sudan and operates the Al-Abedeya heap leach facility."
     }
-  }
+  },
+  "town": "Al-Ibediyya"
 }

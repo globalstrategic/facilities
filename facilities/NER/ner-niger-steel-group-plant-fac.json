@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 17.324917223677673,
+    "lon": 6.098315695850746,
     "precision": "unknown"
   },
   "types": [
@@ -19,6 +19,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Niger Steel Group Company Ltd",
     "Office National des Ressources Minières du Niger (ONAREM)",
     "Orano"
   ],
@@ -31,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.801788Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:30:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Niamey (https://www.facebook.com/PowerOfAfrica/posts/the-niger-government-has-inaugurated-a-new-rebar-steel-rod-manufacturing-plant-b/564005496240833/). The Niger Steel Group Plant is located within the Badaguichiri cement facility in the Illéla Department"
   },
   "canonical_name": "Niger Steel Group Smelter",
   "canonical_slug": "niger-steel-group-smelter",
@@ -51,18 +52,16 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Niger",
+  "province": "Tahoua Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T07:04:31.000000Z",
+      "timestamp": "2025-12-02T08:30:18.000000Z",
       "operators": [
-        "Orano"
+        "Niger Steel Group Company Ltd"
       ],
-      "owners": [
-        "Orano",
-        "Office National des Ressources Minières du Niger (ONAREM)"
-      ],
-      "notes": "Orano is the primary operator and has faced nationalization of its operations in Niger."
+      "owners": [],
+      "notes": "The plant was financed by the Niger government and has an annual production capacity of 20,000 tonnes."
     }
-  }
+  },
+  "town": "Niamey"
 }

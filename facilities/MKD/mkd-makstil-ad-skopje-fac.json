@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.016228,
+    "lon": 21.46605,
     "precision": "unknown"
   },
   "types": [
@@ -20,6 +20,7 @@
   "status": "unknown",
   "company_mentions": [
     "Duferco International",
+    "Duferco Skop Investment Ltd.",
     "Hesteel Group Co Ltd",
     "Makstil AD Skopje"
   ],
@@ -32,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.909975Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:53:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Makstil_Skopje_Steel_plant. Coordinates extracted directly from the source"
   },
   "canonical_name": "Makstil AD Skopje Steel Plant",
   "canonical_slug": "makstil-ad-skopje-steel-plant",
@@ -55,15 +56,15 @@
   "province": "Skopje",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T05:57:01.000000Z",
+      "timestamp": "2025-12-02T08:53:23.000000Z",
       "operators": [
         "Makstil AD Skopje"
       ],
       "owners": [
-        "Hesteel Group Co Ltd",
+        "Duferco Skop Investment Ltd.",
         "Duferco International"
       ],
-      "notes": "Makstil AD Skopje operates the facility and is owned by Hesteel Group Co Ltd and Duferco International."
+      "notes": "Makstil AD is the only producer of steel hot rolled plates in North Macedonia."
     }
   }
 }

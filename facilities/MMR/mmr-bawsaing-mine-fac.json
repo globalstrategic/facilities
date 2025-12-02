@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.9495,
+    "lon": 96.8331,
     "precision": "unknown",
     "description": ""
   },
@@ -21,7 +21,9 @@
   "status": "unknown",
   "company_mentions": [
     "Ministry of Natural Resources and Environmental Conservation",
-    "Myanmar Ivanhoe Copper Company Ltd."
+    "Myanmar Ivanhoe Copper Company Ltd.",
+    "No. 1 Mining Corporation",
+    "Top Ten Star Production Co. Ltd."
   ],
   "products": [],
   "sources": [
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.860472Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:46:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10118218. The Bawsaing Lead Mine is characterized as an underground mining operation primarily targeting lead resources"
   },
   "canonical_name": "Bawsaing Mine",
   "canonical_slug": "bawsaing-mine",
@@ -55,14 +57,14 @@
   "province": "Southern Shan State",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T06:03:01.000000Z",
+      "timestamp": "2025-12-02T08:46:50.000000Z",
       "operators": [
-        "Ministry of Natural Resources and Environmental Conservation"
+        "Top Ten Star Production Co. Ltd."
       ],
       "owners": [
-        "Myanmar Ivanhoe Copper Company Ltd."
+        "No. 1 Mining Corporation"
       ],
-      "notes": "The mine is operated in conjunction with the Ministry of Natural Resources and Environmental Conservation."
+      "notes": "No. 1 Mining Corporation holds a majority stake."
     }
   }
 }
