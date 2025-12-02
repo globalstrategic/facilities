@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.4294,
+    "lon": 129.3453,
     "precision": "unknown"
   },
   "types": [
@@ -16,6 +16,8 @@
   "company_mentions": [
     "Korea Zinc Co., Ltd.",
     "S-Oil",
+    "S-Oil Corporation",
+    "Saudi Arabian Oil Company",
     "Saudi Aramco"
   ],
   "products": [],
@@ -27,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.756037Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The nation's primary hub for non-ferrous smelting and strategic metal by-product recovery. 1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:02:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The nation's primary hub for non-ferrous smelting and strategic metal by-product recovery. 1 | Canonical name+slug generated. Web search geocoded. Source: https://www.offshore-technology.com/marketdata/onsan-refinery-cracking-south-korea/. Onsan Refinery is an integrated cracking refinery operated by S-Oil, located in Ulsan, South Korea"
   },
   "canonical_name": "Onsan Smelter",
   "canonical_slug": "onsan-smelter",
@@ -58,14 +60,14 @@
   "province": "Ulsan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T01:59:39.000000Z",
+      "timestamp": "2025-12-02T09:02:13.000000Z",
       "operators": [
-        "S-Oil"
+        "S-Oil Corporation"
       ],
       "owners": [
-        "Saudi Aramco"
+        "Saudi Arabian Oil Company"
       ],
-      "notes": "S-Oil is a subsidiary of Saudi Aramco, which holds a 63.45% stake."
+      "notes": "S-Oil is a subsidiary of Aramco Overseas Company BV."
     }
   }
 }

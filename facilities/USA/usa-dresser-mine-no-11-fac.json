@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.12,
-    "lon": -90.697,
+    "lat": 38.111111,
+    "lon": -90.6675,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dresser Minerals",
+    "First Reserve Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.766883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:06:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://semspub.epa.gov/work/07/40154872.pdf. Dresser Mine No. 11 is a past producer of tiff and barium"
   },
   "canonical_name": "Dresser No 11 Mine",
   "canonical_slug": "dresser-no-11-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Missouri",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:06:04.000000Z",
+      "operators": [
+        "Dresser Minerals"
+      ],
+      "owners": [
+        "First Reserve Corporation"
+      ],
+      "notes": "Dresser Minerals is now known as Dresser, Inc. and has eliminated its mining division."
+    }
+  }
 }

@@ -278,8 +278,14 @@ def get_companies(facility: Dict) -> List[str]:
     # Check company_mentions
     if facility.get("company_mentions"):
         for mention in facility["company_mentions"]:
-            if mention.get("name") and mention["name"] not in companies:
-                companies.append(mention["name"])
+            # company_mentions is an array of strings, not objects
+            if isinstance(mention, str):
+                if mention and mention not in companies:
+                    companies.append(mention)
+            # Handle legacy object format if it exists
+            elif isinstance(mention, dict):
+                if mention.get("name") and mention["name"] not in companies:
+                    companies.append(mention["name"])
 
     # Legacy fields
     if facility.get("operator") and facility["operator"] not in companies:

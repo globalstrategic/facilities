@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.683,
-    "lon": -115.968,
+    "lat": 42.27623040318238,
+    "lon": -115.3272864,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Homestake Mining Co.",
+    "Independence Mining Company Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.739796Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:02:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Elko (https://westernmininghistory.com/mine-detail/10310517/). The Wood Gulch Mine is a past producer of gold located in Elko County, Nevada"
   },
   "canonical_name": "Wood Gulch Mine",
   "canonical_slug": "wood-gulch-mine",
@@ -59,5 +62,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Elko",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:02:43.000000Z",
+      "operators": [
+        "Independence Mining Company Inc.",
+        "Homestake Mining Co."
+      ],
+      "owners": [
+        "Independence Mining Company Inc.",
+        "Homestake Mining Co."
+      ],
+      "notes": "Independence Mining Company Inc. was the owner in 1993, while Homestake Mining Co. owned it from 1987 to 1991."
+    }
+  }
 }
