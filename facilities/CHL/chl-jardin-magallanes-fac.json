@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -23.981,
-    "lon": -69.491,
+    "lat": -26.22083684078014,
+    "lon": -70.6504502,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alejandro Bohn",
+    "Marcelo Kemeny",
+    "San Esteban Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.912932Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T10:54:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Santiago (https://theworld.org/stories/2016/08/02/poor-safety-standards-led-chilean-mine-disaster). The facility is located 500 miles north of Santiago, but exact coordinates are not provided"
   },
   "canonical_name": "Jardin Magallanes Mine",
   "canonical_slug": "jardin-magallanes-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "town": "Santiago",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:54:01.000000Z",
+      "operators": [
+        "San Esteban Mining Company"
+      ],
+      "owners": [
+        "Alejandro Bohn",
+        "Marcelo Kemeny"
+      ],
+      "notes": "The mine has been associated with safety violations and legal issues."
+    }
+  }
 }

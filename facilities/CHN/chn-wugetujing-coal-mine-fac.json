@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.661,
-    "lon": 110.354,
+    "lat": 39.660819,
+    "lon": 110.354533,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Rixin Energy Group",
+    "Zhang Bin",
+    "鄂尔多斯市西部煤炭运销有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.851162Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:51:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E8%A5%BF%E9%83%A8%E7%85%A4%E7%82%AD%E8%BF%90%E9%94%80%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E4%BA%94%E5%9C%AA%E5%9B%BE%E7%B2%BE%E7%85%A4%E7%9F%BF. Wugetujing Coal Mine is an open-pit coal mine with a production capacity of 1.2 million tons per year"
   },
   "canonical_name": "Wugetujing Coal Mine",
   "canonical_slug": "wugetujing-coal-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:51:06.000000Z",
+      "operators": [
+        "鄂尔多斯市西部煤炭运销有限责任公司"
+      ],
+      "owners": [
+        "Inner Mongolia Rixin Energy Group",
+        "Zhang Bin"
+      ],
+      "notes": "The mine is operated by a company that is partially owned by Inner Mongolia Rixin Energy Group and Zhang Bin."
+    }
+  }
 }

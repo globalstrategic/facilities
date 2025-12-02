@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 33.778,
-    "lon": 113.266,
+    "lat": 39.8019794317424,
+    "lon": 113.2951122,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tian'an Coal Mining Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.618944Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T10:28:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Datong (https://fortune.com/2014/07/11/coal-china/). The Tian'an No.4 Coal Mine is part of the coal mining operations in the Datong area, which is known for its coal production"
   },
   "canonical_name": "Tian'an No 4 Coal Mine",
   "canonical_slug": "tian-an-no-4-coal-mine",
@@ -55,5 +57,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "town": "Datong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:28:12.000000Z",
+      "operators": [
+        "Tian'an Coal Mining Co. Ltd."
+      ],
+      "owners": [
+        "Tian'an Coal Mining Co. Ltd."
+      ],
+      "notes": "The specific ownership structure and operational status of the Tian'an No.4 Coal Mine are not detailed in the search results."
+    }
+  }
 }

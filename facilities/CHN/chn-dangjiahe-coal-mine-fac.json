@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.83,
-    "lon": 109.019,
+    "lat": 35.830022,
+    "lon": 109.019092,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "河南能源化工集团有限公司",
+    "陕西富源煤业有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.705563Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:32:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E5%AF%8C%E6%BA%90%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%85%9A%E5%AE%B6%E6%B2%B3%E7%85%A4%E7%9F%BF. The Dangjiahe Coal Mine is an underground coal mine located in Zhangcunyi Town, Fuxian County, Yan'an City, Shaanxi Province"
   },
   "canonical_name": "Dangjiahe Coal Mine",
   "canonical_slug": "dangjiahe-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:32:38.000000Z",
+      "operators": [
+        "陕西富源煤业有限责任公司"
+      ],
+      "owners": [
+        "河南能源化工集团有限公司"
+      ],
+      "notes": "The mine is operated by Shaanxi Fuyuan Coal Industry Co., Ltd. and owned by Henan Energy and Chemical Industry Group Co., Ltd."
+    }
+  }
 }

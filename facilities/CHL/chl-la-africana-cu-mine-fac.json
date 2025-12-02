@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -33.459,
-    "lon": -70.823,
+    "lat": -33.34363667976548,
+    "lon": -70.8633561,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.924162Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T10:54:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pudahuel (https://www.mindat.org/loc-109713.html). The La Africana Cu Mine is located near Pudahuel in Santiago Province, Chile. The mine was last checked in 2018 and is backfilled"
   },
   "canonical_name": "La Africana Cu Mine",
   "canonical_slug": "la-africana-cu-mine",
@@ -47,5 +47,7 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santiago Province",
+  "town": "Pudahuel"
 }
