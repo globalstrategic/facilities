@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -18.410220693051983,
+    "lon": 30.631795185601515,
     "precision": "unknown"
   },
   "types": [
@@ -15,7 +15,10 @@
   "status": "unknown",
   "company_mentions": [
     "Generation Minerals",
-    "Tharisa PLC"
+    "Government of Zimbabwe",
+    "Karo Mining Holdings",
+    "Tharisa PLC",
+    "Tharisa Plc"
   ],
   "products": [],
   "sources": [
@@ -26,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.959969Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:43:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chegutu (https://fmdrc-zambia.com/30mwp-to-be-built-at-karo-platinum-mine/). The Karo Platinum Project is located approximately 80 km southwest of Harare and 35 km southeast of Chegutu"
   },
   "canonical_name": "Karo Platinum Mine",
   "canonical_slug": "karo-platinum-mine",
@@ -57,15 +60,17 @@
   "province": "Mashonaland West",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T16:43:44.000000Z",
+      "timestamp": "2025-12-02T09:43:15.000000Z",
       "operators": [
-        "Tharisa PLC"
+        "Karo Mining Holdings",
+        "Tharisa Plc"
       ],
       "owners": [
-        "Tharisa PLC",
-        "Generation Minerals"
+        "Karo Mining Holdings",
+        "Government of Zimbabwe"
       ],
-      "notes": "Tharisa PLC owns 70% of Karo Mining Holdings, which owns 85% of the Karo Platinum Project, with the Government of Zimbabwe holding the remaining 15%."
+      "notes": "Tharisa owns 70% of Karo Mining Holdings, which indirectly owns 85% of the Karo Platinum Project."
     }
-  }
+  },
+  "town": "Chegutu"
 }

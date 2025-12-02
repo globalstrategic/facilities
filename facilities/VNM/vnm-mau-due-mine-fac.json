@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.07889,
+    "lon": 105.24778,
     "precision": "unknown"
   },
   "types": [
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.277445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:33:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-259133.html. The Mau Due mine is an open pit antimony mine located in a mountainous region in northern Vietnam, close to the Chinese border"
   },
   "canonical_name": "Mau Due Mine",
   "canonical_slug": "mau-due-mine",
@@ -61,17 +61,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Ha Giang",
+  "province": "Hà Giang Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T18:25:14.000000Z",
+      "timestamp": "2025-12-02T09:33:12.000000Z",
       "operators": [
         "HGM - Ha Giang Mineral Mechanics JLC"
       ],
       "owners": [
         "HGM - Ha Giang Mineral Mechanics JLC"
       ],
-      "notes": "The mine is operated by HGM, which also owns an antimony plant and smelter in the same area."
+      "notes": "HGM is the leading antimony producer in Vietnam."
     }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.5,
+    "lon": -39.6,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy Fuels Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:20.595239Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:49:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.oecd-nea.org/upload/docs/application/pdf/2019-12/7059-uranium-2011.pdf. Coordinates extracted from the document indicate a location in the Falea-North Guinea Basin"
   },
   "canonical_name": "Falea North Guinea Basin Exploration",
   "canonical_slug": "falea-north-guinea-basin-exploration",
@@ -67,5 +69,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "not specified",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:49:27.000000Z",
+      "operators": [
+        "Energy Fuels Resources, Inc."
+      ],
+      "owners": [],
+      "notes": "Energy Fuels Resources, Inc. is mentioned in relation to the mine's operations."
+    }
+  }
 }

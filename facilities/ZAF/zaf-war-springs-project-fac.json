@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.2607243,
-    "lon": 28.4630376,
+    "lat": -26.5,
+    "lon": 27.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "National Union of Mineworkers (NUM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +31,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:24:01.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T09:37:54.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mw.maptons.com/1971221. Coordinates extracted directly from the content related to Springs, Gauteng, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mw.maptons.com/1971221. Coordinates extracted directly from the content related to Springs, Gauteng, South Africa. Web search geocoded. Source: https://www.africanews.com/2023/12/09/south-africa-hundreds-of-miners-trapped-underground-by-protesters//. The facility is located in the Springs Gold Mine, east of Johannesburg"
   },
   "canonical_name": "War Springs Mine",
   "canonical_slug": "war-springs-mine",
@@ -48,5 +50,15 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gauteng"
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:37:54.000000Z",
+      "operators": [
+        "National Union of Mineworkers (NUM)"
+      ],
+      "owners": [],
+      "notes": "The operator mentioned is involved in the labor dispute but not the mine owner."
+    }
+  }
 }

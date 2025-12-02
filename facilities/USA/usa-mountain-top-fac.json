@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.971,
-    "lon": -107.746,
+    "lat": 31.79673446638736,
+    "lon": -83.8365961,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Natural Resources",
+    "Massey Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.920227Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:19:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sylvester (https://www.desmog.com/2011/06/10/massey-energy-not-only-mountaintop-removal-mining-villain/). The facility is associated with mountaintop removal mining, which is prevalent in West Virginia"
   },
   "canonical_name": "Mountain Top Mine",
   "canonical_slug": "mountain-top-mine",
@@ -65,5 +68,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Sylvester",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:19:00.000000Z",
+      "operators": [
+        "Massey Energy",
+        "Alpha Natural Resources"
+      ],
+      "owners": [
+        "Massey Energy",
+        "Alpha Natural Resources"
+      ],
+      "notes": "Massey Energy was acquired by Alpha Natural Resources."
+    }
+  }
 }

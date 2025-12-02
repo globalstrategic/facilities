@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.50651874507949,
+    "lon": 31.17411308186539,
     "precision": "unknown"
   },
   "types": [
@@ -14,7 +14,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
+    "Chengxin Lithium Group",
+    "Max Mind Investments",
     "Max Minds Investments",
+    "Power China",
     "Shenzhen Chengxin Lithium Group"
   ],
   "products": [],
@@ -26,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.955691Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:42:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Buhera (https://www.business-humanrights.org/en/latest-news/zimbabwe-chinese-owned-sabi-star-lithium-mine-linked-to-education-disruption-displacement-unfulfilled-compensation-agreements/). The Sabi Star Mine is linked to various social and environmental issues, including displacement of families and disruption of education"
   },
   "canonical_name": "Sabi Star Mine",
   "canonical_slug": "sabi-star-mine",
@@ -57,14 +60,16 @@
   "province": "Manicaland",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T16:40:23.000000Z",
+      "timestamp": "2025-12-02T09:42:12.000000Z",
       "operators": [
-        "Max Minds Investments"
+        "Max Mind Investments",
+        "Power China"
       ],
       "owners": [
-        "Shenzhen Chengxin Lithium Group"
+        "Chengxin Lithium Group"
       ],
-      "notes": "Max Minds Investments operates the mine, which is owned by Chengxin Lithium Group."
+      "notes": "Max Mind Investments is a subsidiary of Chengxin Lithium Group, which is a major player in the lithium market."
     }
-  }
+  },
+  "town": "Buhera"
 }

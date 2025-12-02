@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.3866,
+    "lon": 44.3935,
     "precision": "unknown"
   },
   "types": [
@@ -29,6 +29,7 @@
   "company_mentions": [
     "RMG Copper",
     "RMG Gold",
+    "RMG Gold (Rich Metals Group)",
     "RMG Holding"
   ],
   "products": [],
@@ -40,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.723080Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:50:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sakdrisi. Sakdrisi is known as one of the world's oldest gold mines and is also an archaeological site"
   },
   "canonical_name": "Sakdrisi Mine",
   "canonical_slug": "sakdrisi-mine",
@@ -68,18 +69,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Bolnisi District",
+  "province": "Kvemo Kartli",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T19:46:47.000000Z",
+      "timestamp": "2025-12-02T09:50:36.000000Z",
       "operators": [
-        "RMG Gold"
+        "RMG Gold (Rich Metals Group)"
       ],
       "owners": [
-        "RMG Gold",
-        "RMG Holding"
+        "RMG Gold (Rich Metals Group)"
       ],
-      "notes": "RMG Gold is a subsidiary of RMG Holding, which is the largest gold and copper mining group in Georgia."
+      "notes": "RMG Gold holds the license to mine the Sakdrisi deposit."
     }
   }
 }

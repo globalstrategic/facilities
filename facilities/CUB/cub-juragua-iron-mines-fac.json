@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 38.22325100716286,
+    "lon": -7.7080014129697405,
     "precision": "unknown"
   },
   "types": [
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.452587Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T10:15:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Santiago de Cuba (https://www.redciencia.cu/geobiblio/paper/1898_Robert%20Hill_Cuba%20y%20Puerto%20Rico.pdf). The Juragua Iron Mines are located near Cienfuegos, approximately 12 miles east of Santiago de Cuba"
   },
   "canonical_name": "Juragua Iron Mines Mine",
   "canonical_slug": "juragua-iron-mines-mine",
@@ -67,17 +67,20 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Santiago de Cuba Province",
+  "province": "Santiago de Cuba",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T18:03:48.000000Z",
+      "timestamp": "2025-12-02T10:15:25.000000Z",
       "operators": [
-        "Juragua Iron Company"
-      ],
-      "owners": [
+        "Juragua Iron Company",
         "Bethlehem Steel Company"
       ],
-      "notes": "The Juragua Iron Company was controlled by the Bethlehem Steel Company."
+      "owners": [
+        "Juragua Iron Company",
+        "Bethlehem Steel Company"
+      ],
+      "notes": "Juragua Iron Company became a subsidiary of Bethlehem Steel Company around 1894."
     }
-  }
+  },
+  "town": "Santiago de Cuba"
 }

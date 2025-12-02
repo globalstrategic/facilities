@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 4.936272622214206,
+    "lon": -53.4078386849143,
     "precision": "unknown"
   },
   "types": [
@@ -21,8 +21,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Auplata S.A.",
     "Chinese entrepreneurs",
-    "Numerous informal groups"
+    "Compagnie Minière Dorlin S.A.S.",
+    "Numerous informal groups",
+    "Société Minière Yaou Dorlin S.A.S."
   ],
   "products": [],
   "sources": [
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.677461Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:57:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cayenne (https://www.azomining.com/Article.aspx?ArticleID=78). Illegal mining is prevalent in French Guiana, with an estimated 400-500 illegal mining sites extracting nearly 10 tons of gold annually"
   },
   "canonical_name": "Illegal Mining Sector Mine",
   "canonical_slug": "illegal-mining-sector-mine",
@@ -56,12 +59,15 @@
   "province": "French Guiana",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T19:37:51.000000Z",
+      "timestamp": "2025-12-02T09:57:37.000000Z",
       "operators": [
-        "Chinese entrepreneurs"
+        "Auplata S.A.",
+        "Société Minière Yaou Dorlin S.A.S.",
+        "Compagnie Minière Dorlin S.A.S."
       ],
       "owners": [],
-      "notes": "Chinese players are reported to support illegal gold mining activities."
+      "notes": "These companies are involved in the legal gold mining sector, while illegal mining operations are widespread."
     }
-  }
+  },
+  "town": "Cayenne"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 5.957,
-    "lon": null,
+    "lat": 5.5,
+    "lon": -73.5,
     "precision": "unknown"
   },
   "types": [
@@ -35,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.743622Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-02T10:19:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Acerias_Paz_del_Rio. Coordinates are approximate based on the location of the facility in Paz de Río"
   },
   "canonical_name": "Acerías Paz Del Río Steel Steel Plant",
   "canonical_slug": "acerias-paz-del-rio-steel-steel-plant",
@@ -66,7 +66,7 @@
   "province": "Boyacá",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T17:59:54.000000Z",
+      "timestamp": "2025-12-02T10:19:35.000000Z",
       "operators": [
         "Acerías Paz del Río S.A."
       ],
@@ -75,7 +75,7 @@
         "Structure S.A.",
         "IDEBOY"
       ],
-      "notes": "Acerías Paz del Río is controlled by Grupo Trinity S.A. and has undergone ownership changes in recent years."
+      "notes": "Acerías Paz del Río is controlled by Grupo Trinity S.A. and has undergone ownership changes recently."
     }
   }
 }

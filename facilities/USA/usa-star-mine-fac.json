@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.286,
-    "lon": -87.245,
+    "lat": 38.209107154174355,
+    "lon": -107.7414887,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Star Mine Operations, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.957326Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:23:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ouray (http://www.msha.gov/data-reports/fatality-reports/2013/fatality-16-17-november-17-2013/final-report). The Revenue Mine is owned and operated by Star Mine Operations, LLC, and is located near Ouray, Colorado"
   },
   "canonical_name": "Star Mine",
   "canonical_slug": "star-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Ouray",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:23:40.000000Z",
+      "operators": [
+        "Star Mine Operations, LLC"
+      ],
+      "owners": [
+        "Star Mine Operations, LLC"
+      ],
+      "notes": "Star Mine Operations, LLC is the sole operator and owner mentioned."
+    }
+  }
 }

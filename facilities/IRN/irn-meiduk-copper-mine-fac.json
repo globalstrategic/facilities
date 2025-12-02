@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 30.42056,
+    "lon": 55.16722,
     "precision": "unknown"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.443574Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:24:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-205749.html. The Meiduk Copper Mine is located in the Shahr-Babak area of Kerman province, Iran"
   },
   "canonical_name": "Meiduk Copper Mine",
   "canonical_slug": "meiduk-copper-mine",
@@ -51,14 +51,14 @@
   "province": "Kerman Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T23:05:06.000000Z",
+      "timestamp": "2025-12-02T09:24:30.000000Z",
       "operators": [
         "National Iranian Copper Industries Company (NICICO)"
       ],
       "owners": [
         "National Iranian Copper Industries Company (NICICO)"
       ],
-      "notes": "NICICO operates the Miduk Copper Mine and is a state-owned entity."
+      "notes": "NICICO operates and owns the Miduk Copper Mine."
     }
   }
 }

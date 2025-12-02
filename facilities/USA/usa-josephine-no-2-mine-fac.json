@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.597,
-    "lon": -81.248,
+    "lat": 37.5,
+    "lon": -80.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pocahontas Coal Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.879141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:16:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minesafety.wv.gov/PDFs/Annual%20Reports/2022%20Spreadsheets/74%20DANNDIR_2022.pdf. The Josephine No. 2 Mine is located approximately 1 mile southeast of Josephine, West Virginia"
   },
   "canonical_name": "Josephine No 2 Mine",
   "canonical_slug": "josephine-no-2-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:16:57.000000Z",
+      "operators": [
+        "Pocahontas Coal Company, LLC"
+      ],
+      "owners": [],
+      "notes": "Only the operator is mentioned in the search results."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.533,
-    "lon": -79.983,
+    "lat": 49.460695608,
+    "lon": -87.722850953,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "COAL LOADERS INC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.872680Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:15:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.pasda.psu.edu/spreadsheet/CoalMiningOperations2023_10.csv. Coordinates extracted from the mining operation data"
   },
   "canonical_name": "Marco Gfcc Mine",
   "canonical_slug": "marco-gfcc-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:15:58.000000Z",
+      "operators": [
+        "COAL LOADERS INC"
+      ],
+      "owners": [
+        "COAL LOADERS INC"
+      ],
+      "notes": "The facility is actively operated by COAL LOADERS INC."
+    }
+  }
 }

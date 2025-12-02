@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -16.36873510283322,
+    "lon": 30.655517104322502,
     "precision": "unknown"
   },
   "types": [
@@ -15,6 +15,7 @@
   "status": "operating",
   "company_mentions": [
     "Dallaglio Investments (Pvt) Limited",
+    "Delta Gold Zimbabwe (DGZ)",
     "Delta Gold Zimbabwe (Pvt) Ltd",
     "Vast Resources PLC"
   ],
@@ -27,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.958807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:42:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guruve (https://solarcenturyafrica.cargodev.co.uk/solarcentury-africa-and-dallaglio-sign-agreement-to-build-a-7-mwp-solar-plant-for-eureka-gold-mine-in-zimbabwe/). Eureka Gold Mine is one of the largest gold mines in Zimbabwe, located approximately 150km northwest of Harare"
   },
   "canonical_name": "Eureka Gold Mine",
   "canonical_slug": "eureka-gold-mine",
@@ -58,15 +59,16 @@
   "province": "Mashonaland Central",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T16:42:49.000000Z",
+      "timestamp": "2025-12-02T09:42:36.000000Z",
       "operators": [
         "Dallaglio Investments (Pvt) Limited"
       ],
       "owners": [
-        "Delta Gold Zimbabwe (Pvt) Ltd",
-        "Vast Resources PLC"
+        "Delta Gold Zimbabwe (DGZ)",
+        "Dallaglio Investments (Pvt) Limited"
       ],
-      "notes": "Dallaglio Investments operates the mine, while Delta Gold Zimbabwe owns it. Vast Resources has an economic interest in the mine."
+      "notes": "Dallaglio acquired DGZ in 2018 and is investing in bringing the mine back into production."
     }
-  }
+  },
+  "town": "Guruve"
 }

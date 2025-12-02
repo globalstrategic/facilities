@@ -6,8 +6,8 @@
   ],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 29.732071922212775,
+    "lon": 31.4852259,
     "precision": "unknown"
   },
   "types": [
@@ -16,6 +16,7 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
+    "Egyptian Iron & Steel Company",
     "Egyptian Iron and Steel Company (Hadisolb)",
     "Ministry of Public Business Sector"
   ],
@@ -28,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.179823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T10:05:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cairo (https://www.gem.wiki/Egyptian_Iron_%26_Steel_Company_Cairo_plant). Hadisolb is located in Helwan, south of Cairo, Egypt. The facility has been undergoing liquidation and has halted operations except for the oxygen plant"
   },
   "canonical_name": "Hadisolb Mine",
   "canonical_slug": "hadisolb-mine",
@@ -51,14 +52,15 @@
   "province": "Cairo",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T18:21:23.000000Z",
+      "timestamp": "2025-12-02T10:05:17.000000Z",
       "operators": [
-        "Egyptian Iron and Steel Company (Hadisolb)"
+        "Egyptian Iron & Steel Company"
       ],
       "owners": [
-        "Ministry of Public Business Sector"
+        "Egyptian Iron & Steel Company"
       ],
-      "notes": "Hadisolb is a subsidiary of the Ministry of Public Business Sector."
+      "notes": "Hadisolb is a subsidiary of the Holding Company for Metallurgical Industries."
     }
-  }
+  },
+  "town": "Cairo"
 }

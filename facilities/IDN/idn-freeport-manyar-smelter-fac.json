@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -7.1667,
+    "lon": 112.6333,
     "precision": "unknown"
   },
   "types": [
@@ -25,6 +25,9 @@
   "status": "unknown",
   "company_mentions": [
     "Freeport McMoRan",
+    "Freeport-McMoRan",
+    "Indonesian Government",
+    "MIND ID",
     "PT Freeport Indonesia"
   ],
   "products": [],
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.251212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:36:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.pwc.com/id/en/media-centre/infrastructure-news/may-2025/fcx-monitors-initial-operations-of-manyar-smelter.html. The Manyar Smelter is located in Gresik, East Java, Indonesia"
   },
   "canonical_name": "Freeport Manyar Smelter",
   "canonical_slug": "freeport-manyar-smelter",
@@ -67,14 +70,16 @@
   "province": "East Java",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T20:51:27.000000Z",
+      "timestamp": "2025-12-02T09:36:15.000000Z",
       "operators": [
+        "Freeport-McMoRan",
         "PT Freeport Indonesia"
       ],
       "owners": [
-        "Freeport McMoRan"
+        "MIND ID",
+        "Indonesian Government"
       ],
-      "notes": "Freeport McMoRan holds a 49% stake in PT Freeport Indonesia and is the operator of the facility."
+      "notes": "Freeport-McMoRan holds a 49% stake in PT Freeport Indonesia, which is majority-owned by the Indonesian government."
     }
   }
 }

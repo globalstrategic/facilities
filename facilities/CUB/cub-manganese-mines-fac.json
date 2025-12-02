@@ -6,8 +6,8 @@
   ],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.26611,
+    "lon": -114.95639,
     "precision": "unknown"
   },
   "types": [
@@ -28,6 +28,7 @@
   "company_mentions": [
     "Cooperative Mineral Resources",
     "Crow Wing Power",
+    "Cuban American Manganese Corporation",
     "North Star Manganese",
     "\\-"
   ],
@@ -40,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.451964Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:15:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10037313/. The Cuba Mine is a manganese mine located in White Pine County, Nevada"
   },
   "canonical_name": "Manganese Mines Mine",
   "canonical_slug": "manganese-mines-mine",
@@ -68,18 +69,15 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Minnesota",
+  "province": "Nevada",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T18:03:12.000000Z",
-      "operators": [
-        "North Star Manganese"
-      ],
+      "timestamp": "2025-12-02T10:15:01.000000Z",
+      "operators": [],
       "owners": [
-        "Crow Wing Power",
-        "Cooperative Mineral Resources"
+        "Cuban American Manganese Corporation"
       ],
-      "notes": "Crow Wing Power owns the land and mineral rights through its subsidiary Cooperative Mineral Resources."
+      "notes": "The mine is on private property and the operational status is not clearly defined."
     }
   }
 }

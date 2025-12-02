@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 3.9277935932946635,
+    "lon": -5.728548450660983,
     "precision": "unknown"
   },
   "types": [
@@ -21,6 +21,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Falcon Energy Materials plc",
     "SRG Mining Inc.",
     "Sama Resources Guinea SARL",
     "Sama Resources Inc."
@@ -34,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:20.596025Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:49:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Conakry (https://www.nsenergybusiness.com/projects/lola-graphite-project/). The Lola Graphite Project is located approximately 1,000 kilometers southeast of Conakry, the capital of Guinea"
   },
   "canonical_name": "Lola Graphite Facility",
   "canonical_slug": "lola-graphite-facility",
@@ -65,16 +66,17 @@
   "province": "N/A",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T19:54:38.000000Z",
+      "timestamp": "2025-12-02T09:49:39.000000Z",
       "operators": [
-        "SRG Mining Inc.",
-        "Sama Resources Guinea SARL"
+        "Sama Resources Guinea SARL",
+        "SRG Mining Inc."
       ],
       "owners": [
-        "SRG Mining Inc.",
+        "Falcon Energy Materials plc",
         "Sama Resources Inc."
       ],
-      "notes": "The project is owned by SRG Mining through its subsidiary Sama Resources Guinea SARL."
+      "notes": "Sama Resources Guinea SARL is a subsidiary of Sama Resources Inc. The project is owned by Falcon Energy Materials plc."
     }
-  }
+  },
+  "town": "Conakry"
 }

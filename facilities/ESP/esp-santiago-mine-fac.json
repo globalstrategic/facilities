@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ESP",
   "location": {
-    "lat": 43.178,
-    "lon": -5.757,
+    "lat": 30.45472258197124,
+    "lon": -97.6774959,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bank Investment Company",
+    "Santiago Mining Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.868394Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T10:03:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://santiagomill.com/history/). The Santiago Mine is historically linked to the Santiago Mill, which was operational in the early 1900s and had its machinery sold in 1942. The mine's current operational status is unclear"
   },
   "canonical_name": "Santiago Mine",
   "canonical_slug": "santiago-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Georgetown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:03:12.000000Z",
+      "operators": [
+        "Santiago Mining Company, LLC"
+      ],
+      "owners": [
+        "Bank Investment Company"
+      ],
+      "notes": "Santiago Mining Company, LLC is mentioned as the mine owner."
+    }
+  }
 }

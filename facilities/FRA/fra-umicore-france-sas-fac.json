@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.865,
+    "lon": 2.349,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.676772Z",
-    "checked_by": "import_pipeline",
-    "notes": "Commercial and logistical hub; coordinates collection of materials for refining at facilities outside France. 38 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:57:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Commercial and logistical hub; coordinates collection of materials for refining at facilities outside France. 38 | Canonical name+slug generated. Web search geocoded. Source: https://ums.umicore.com/en/local-presence/france. Umicore France SAS is located in the jeweler’s quarter of downtown Paris, serving its core businesses locally"
   },
   "canonical_name": "Umicore France SAS Mine",
   "canonical_slug": "umicore-france-sas-mine",
@@ -63,14 +63,14 @@
   "province": "Île-de-France",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T19:37:17.000000Z",
+      "timestamp": "2025-12-02T09:57:12.000000Z",
       "operators": [
         "Umicore France SAS"
       ],
       "owners": [
         "Umicore N.V."
       ],
-      "notes": "Umicore France SAS is a subsidiary of Umicore N.V."
+      "notes": "Umicore France SAS is a subsidiary of Umicore N.V., a Belgian-French multinational materials technology company."
     }
   }
 }

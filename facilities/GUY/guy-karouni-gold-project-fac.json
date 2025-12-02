@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GUY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 38.48267969052458,
+    "lon": -88.42427373525659,
     "precision": "unknown"
   },
   "types": [
@@ -23,6 +23,7 @@
   "company_mentions": [
     "Pharsalus Gold Incorporated",
     "Troy Resources",
+    "Troy Resources Guyana Inc.",
     "Troy Resources Limited"
   ],
   "products": [],
@@ -34,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.985823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:42:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://mining.com.au/troy-resources-reports-gold-intercepts-from-karouni-guyana/). The Karouni Gold Project is located in the central-northern part of Guyana, approximately 180km south-south-west of Georgetown"
   },
   "canonical_name": "Karouni Gold Mine",
   "canonical_slug": "karouni-gold-mine",
@@ -62,19 +63,19 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Region Seven",
+  "province": "Guyana",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T20:04:55.000000Z",
+      "timestamp": "2025-12-02T09:42:46.000000Z",
       "operators": [
         "Troy Resources Limited",
-        "Pharsalus Gold Incorporated"
+        "Troy Resources Guyana Inc."
       ],
       "owners": [
-        "Troy Resources Limited",
-        "Pharsalus Gold Incorporated"
+        "Troy Resources Limited"
       ],
-      "notes": "Troy Resources Limited was the operator and owner before the termination of the license."
+      "notes": "Troy Resources Limited is the parent company, and Troy Resources Guyana Inc. is a wholly owned subsidiary."
     }
-  }
+  },
+  "town": "Georgetown"
 }
