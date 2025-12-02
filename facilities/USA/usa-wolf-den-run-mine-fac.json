@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.424,
-    "lon": -79.244,
+    "lat": 43.17638344512789,
+    "lon": -71.458043,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Keith Barrett",
+    "Pembroke & Timberlands, LLC",
+    "Walter Hryniw",
+    "Wolfden Big Silver LLC",
+    "Wolfden Resources Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.747445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:24:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pembroke (https://www.themainemonitor.org/wp-content/uploads/2022/04/Big-Silver-Work-Proposal_Pembroke-ME_DEP_June-9-2021-002.pdf). The Wolf Den Run Mine is associated with Wolfden Resources, which has an agreement for mineral rights in the area"
   },
   "canonical_name": "Wolf Den Run Mine",
   "canonical_slug": "wolf-den-run-mine",
@@ -47,5 +53,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maine",
+  "town": "Pembroke",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:24:00.000000Z",
+      "operators": [
+        "Wolfden Resources Corporation",
+        "Wolfden Big Silver LLC"
+      ],
+      "owners": [
+        "Walter Hryniw",
+        "Pembroke & Timberlands, LLC",
+        "Keith Barrett"
+      ],
+      "notes": "Wolfden Resources is pursuing mining rights and exploration in the area."
+    }
+  }
 }

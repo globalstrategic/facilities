@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.127,
-    "lon": -81.578,
+    "lat": 38.126944,
+    "lon": -81.578333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kanawha Eagle Mining, LLC",
+    "Sev.en Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.955828Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:21:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-4609258. The Winchester Peerless Rachel Mine is an operating coal mine in West Virginia, United States"
   },
   "canonical_name": "Winchester Peerless Rachel Mine",
   "canonical_slug": "winchester-peerless-rachel-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:21:09.000000Z",
+      "operators": [
+        "Kanawha Eagle Mining, LLC"
+      ],
+      "owners": [
+        "Sev.en Energy"
+      ],
+      "notes": "Sev.en Energy is the parent company of Kanawha Eagle Mining."
+    }
+  }
 }

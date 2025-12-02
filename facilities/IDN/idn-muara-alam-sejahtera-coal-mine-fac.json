@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.751,
-    "lon": 103.666,
+    "lat": -3.751454,
+    "lon": 103.665651,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Muara Alam Sejahtera"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.233341Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:37:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Muara_Alam_Sejahtera_Coal_Mine. The Muara Alam Sejahtera Coal Mine is an operating coal mine located in Merapi, Lahat, South Sumatra, Indonesia"
   },
   "canonical_name": "Muara Alam Sejahtera Coal Mine",
   "canonical_slug": "muara-alam-sejahtera-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:00.000000Z",
+      "operators": [
+        "PT Muara Alam Sejahtera"
+      ],
+      "owners": [
+        "PT Muara Alam Sejahtera"
+      ],
+      "notes": "PT Muara Alam Sejahtera is a subsidiary of Baramulti Group."
+    }
+  }
 }

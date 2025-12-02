@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.956,
-    "lon": -93.423,
+    "lat": 40.488233230552304,
+    "lon": -82.5154471,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Electric Power Co Inc",
+    "Cleco Power LLC",
+    "Dolet Hills Lignite Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.761856Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:37:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mansfield (https://www.gem.wiki/Dolet_Hills_Lignite_Coal_Mine). The Dolet Hills Lignite Company operates the lignite mine which is the fuel source for the Dolet Hills Power Station"
   },
   "canonical_name": "Dolet Hills Lignite Company Mine",
   "canonical_slug": "dolet-hills-lignite-company-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Louisiana",
+  "town": "Mansfield",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:08.000000Z",
+      "operators": [
+        "Dolet Hills Lignite Company"
+      ],
+      "owners": [
+        "American Electric Power Co Inc",
+        "Cleco Power LLC"
+      ],
+      "notes": "Dolet Hills Lignite Company is a subsidiary of SWEPCO, which is part of American Electric Power."
+    }
+  }
 }

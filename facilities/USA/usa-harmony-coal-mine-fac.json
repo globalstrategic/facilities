@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.779,
-    "lon": -78.715,
+    "lat": 40.779167,
+    "lon": -78.711389,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rosebud Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.703859Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:46:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Harmony_Coal_Mine. Harmony Coal Mine is an operating coal mine located in Clearfield County, Pennsylvania"
   },
   "canonical_name": "Harmony Coal Mine",
   "canonical_slug": "harmony-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:46:50.000000Z",
+      "operators": [
+        "Rosebud Mining Co"
+      ],
+      "owners": [
+        "Rosebud Mining Co"
+      ],
+      "notes": "Rosebud Mining Co owns and operates the Harmony Coal Mine."
+    }
+  }
 }

@@ -10,8 +10,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.23,
-    "lon": 29.534,
+    "lat": -26.23771897,
+    "lon": 29.52799148,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Overlooked Colliery (Pty) Ltd",
+    "Overlooked Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.778176Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:05:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Overlooked_Mine. Overlooked Mine is an operating coal mine in Mpumalanga, South Africa"
   },
   "canonical_name": "Overlooked Mine",
   "canonical_slug": "overlooked-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:05:28.000000Z",
+      "operators": [
+        "Overlooked Colliery (Pty) Ltd"
+      ],
+      "owners": [
+        "Overlooked Group"
+      ],
+      "notes": "Overlooked is a 100% black-owned mining entity."
+    }
+  }
 }

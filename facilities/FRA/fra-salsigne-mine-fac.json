@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 43.30304661133974,
+    "lon": 2.3491069,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,13 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Mine d'Or de Salsigne",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.783364",
-      "evidence": "Extracted from operator column: Mine d'Or de Salsigne (MOS)"
-    }
+    "Bureau de Recherches Géologiques et Minières (BRGM)",
+    "Eltin Minerals Pty. Ltd",
+    "Mine d'Or de Salsigne",
+    "Mines d’or de Salsigne (MOS)",
+    "Orion Resources",
+    "SEPS",
+    "Société des Mines et Produits Chimiques de Salsigne (SMPCS)"
   ],
   "products": [],
   "sources": [
@@ -39,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.668476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Closed in 2004\\. Site of major, persistent arsenic pollution. 47 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:18:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Closed in 2004\\. Site of major, persistent arsenic pollution. 47 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Carcassonne (https://www.showcaves.com/english/fr/mines/Salsigne.html). The Salsigne Mine was France's leading gold mine and the world's leading arsenic mine for over a century, closed in 2004"
   },
   "canonical_name": "Salsigne Mine",
   "canonical_slug": "salsigne-mine-2",
@@ -66,5 +65,23 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Aude",
+  "town": "Carcassonne",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:18:47.000000Z",
+      "operators": [
+        "Société des Mines et Produits Chimiques de Salsigne (SMPCS)",
+        "Bureau de Recherches Géologiques et Minières (BRGM)",
+        "Mines d’or de Salsigne (MOS)",
+        "SEPS"
+      ],
+      "owners": [
+        "Eltin Minerals Pty. Ltd",
+        "Orion Resources"
+      ],
+      "notes": "The mine has changed ownership multiple times and was last operated by an Australian consortium before its closure."
+    }
+  }
 }

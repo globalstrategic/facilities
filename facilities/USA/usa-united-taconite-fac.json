@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.486,
-    "lon": -92.545,
+    "lat": 47.5,
+    "lon": -92.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cleveland-Cliffs Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.856019Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:38:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.clevelandcliffs.com/news/news-releases/detail/130/cleveland-cliffs-acquires-minority-partners-interest-in. United Taconite is located in and around the city of Eveleth, Minnesota, on the Mesabi Iron Range"
   },
   "canonical_name": "United Taconite Mine",
   "canonical_slug": "united-taconite-mine",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minnesota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:38:18.000000Z",
+      "operators": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "owners": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "notes": "Cleveland-Cliffs owns 100% of United Taconite."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.628,
-    "lon": -83.716,
+    "lat": 32.798494,
+    "lon": -83.410839,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Imerys Kaolin, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.864883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:47:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://geos.epd.georgia.gov/GA/GEOS/Public/EnSuite/Shared/pages/util/StreamDoc.ashx?id=1058831&type=PERMIT_FILLED_OBJECT. Coordinates extracted from the permit fact sheet for Imerys Kaolin, Inc. located in Dry Branch, Georgia"
   },
   "canonical_name": "Dry Branch Mine",
   "canonical_slug": "dry-branch-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Georgia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:47:09.000000Z",
+      "operators": [
+        "Imerys Kaolin, Inc."
+      ],
+      "owners": [
+        "Imerys Kaolin, Inc."
+      ],
+      "notes": "Imerys Kaolin, Inc. is both the operator and owner of the facility."
+    }
+  }
 }

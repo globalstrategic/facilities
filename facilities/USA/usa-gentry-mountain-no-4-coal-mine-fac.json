@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.33,
-    "lon": -110.965,
+    "lat": 38.45745986232039,
+    "lon": -82.49376128440798,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gentry Mountain Mining",
+    "Gentry Mountain Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.911768Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:45:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Huntington (https://utahrails.net/utahcoal/bear-canyon-mine.php). Gentry Mountain No. 4 Coal Mine is located about six miles northwest of Huntington, Utah. It has been non-productive since the second quarter of 2020"
   },
   "canonical_name": "Gentry Mountain No 4 Coal Mine",
   "canonical_slug": "gentry-mountain-no-4-coal-mine",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "Huntington",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:45:10.000000Z",
+      "operators": [
+        "Gentry Mountain Mining LLC"
+      ],
+      "owners": [
+        "Gentry Mountain Mining"
+      ],
+      "notes": "Gentry Mountain Mining LLC acquired the mine in 2020 from Castle Valley Mining LLC."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.7243269,
-    "lon": 31.2792035,
+    "lat": -25.71667,
+    "lon": 31.28333,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barbrook Mines Limited",
+    "Caledonia Mining Corporation",
+    "Real Win Investments"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:57:14.585119",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Barbrook Mine, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:50:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Barbrook Mine, South Africa. Web search geocoded. Source: https://wp-caledoniamining-2020.s3.eu-west-2.amazonaws.com/media/2019/02/Barbrook_Absa_Venmyn_050207_Final.pdf. Barbrook Mine is located in the Barberton area, which is known for its gold deposits"
   },
   "canonical_name": "Barbrook Mine",
   "canonical_slug": "barbrook-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:50:10.000000Z",
+      "operators": [
+        "Barbrook Mines Limited",
+        "Caledonia Mining Corporation"
+      ],
+      "owners": [
+        "Caledonia Mining Corporation",
+        "Real Win Investments"
+      ],
+      "notes": "Barbrook Mines Limited is a subsidiary of Caledonia Mining Corporation, which is in the process of disposing of its interest in the mine."
+    }
+  }
 }

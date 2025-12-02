@@ -8,8 +8,8 @@
   ],
   "country_iso3": "FIN",
   "location": {
-    "lat": 67.691,
-    "lon": 26.952,
+    "lat": 67.693992,
+    "lon": 26.928048,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Boliden AB",
+    "First Quantum Minerals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.189846Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:16:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kevitsa_mine. The Kevitsa mine is a large nickel-copper mine located in northern Finland"
   },
   "canonical_name": "Kevitsa Mine",
   "canonical_slug": "kevitsa-mine",
@@ -67,5 +70,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:16:59.000000Z",
+      "operators": [
+        "Boliden AB"
+      ],
+      "owners": [
+        "Boliden AB",
+        "First Quantum Minerals Ltd"
+      ],
+      "notes": "Boliden AB acquired the mine from First Quantum Minerals in 2016."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.913,
-    "lon": -111.417,
+    "lat": 39.15803809685707,
+    "lon": -97.20237707303714,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arch Coal",
+    "Bowie Resources",
+    "Wolverine Fuels"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.943817Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:09:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Salina (https://www.mining-technology.com/projects/sufco/). The Sufco Mine is an underground coal mine located approximately 50 km northeast of Salina, Utah"
   },
   "canonical_name": "Sufco Mine",
   "canonical_slug": "sufco-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "Salina",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:09:44.000000Z",
+      "operators": [
+        "Wolverine Fuels"
+      ],
+      "owners": [
+        "Bowie Resources",
+        "Arch Coal"
+      ],
+      "notes": "The mine is currently owned and operated by Wolverine Fuels, which was formerly known as Bowie Resources."
+    }
+  }
 }

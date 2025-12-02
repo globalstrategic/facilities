@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": -22.57,
-    "lon": 144.547,
+    "lat": -20.7333,
+    "lon": 139.5,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:56.371424Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:00:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com.au/operations-and-projects/qld-metals/who-we-are/mount-isa-mines-100-years. Mount Isa Mine is a significant mining facility in Queensland, Australia, operated by Glencore"
   },
   "canonical_name": "Mt Isa Mine",
   "canonical_slug": "mt-isa-mine",
@@ -67,5 +69,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:00:23.000000Z",
+      "operators": [
+        "Glencore plc"
+      ],
+      "owners": [
+        "Glencore plc"
+      ],
+      "notes": "Glencore is the sole operator and owner of Mount Isa Mines."
+    }
+  }
 }

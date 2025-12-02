@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": 7.962,
-    "lon": 98.339,
+    "lat": 8.185269945874593,
+    "lon": 98.3058153,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aokam Thai Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:18.495122Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:35:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Phuket (https://thediggings.com/mines/usgs10134202). The Aokam Thai Ltd Tin Mine is located in close proximity to Phuket, Thailand"
   },
   "canonical_name": "Aokam Thai Mine",
   "canonical_slug": "aokam-thai-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Phuket",
+  "town": "Phuket",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:40.000000Z",
+      "operators": [
+        "Aokam Thai Ltd."
+      ],
+      "owners": [
+        "Aokam Thai Ltd."
+      ],
+      "notes": "Aokam Thai Ltd. is both the operator and owner of the mine."
+    }
+  }
 }

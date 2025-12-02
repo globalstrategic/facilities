@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 18.75,
-    "lon": 79.25,
+    "lat": 18.86236,
+    "lon": 79.50125,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Singareni Collieries Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.092632Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:52:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Srirampur-III_%26_III_A_Coal_Mine. Coordinates extracted from environmental monitoring data related to the mine"
   },
   "canonical_name": "Srirampur III And III A Coal Mine",
   "canonical_slug": "srirampur-iii-and-iii-a-coal-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Telangana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:52:10.000000Z",
+      "operators": [
+        "Singareni Collieries Company Limited"
+      ],
+      "owners": [
+        "Singareni Collieries Company Limited"
+      ],
+      "notes": "Singareni Collieries Company Limited is a subsidiary of Coal India."
+    }
+  }
 }

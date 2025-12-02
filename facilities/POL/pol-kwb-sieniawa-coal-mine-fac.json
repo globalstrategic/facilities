@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 52.377,
-    "lon": 15.37,
+    "lat": 52.378364,
+    "lon": 15.369152,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kopalnia Węgla Brunatnego Sieniawa Sp. z o.o."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.931051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:45:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KWB_Sieniawa_Coal_Mine. KWB Sieniawa is an operating coal mine located in the Lubusz Voivodeship of Poland"
   },
   "canonical_name": "KWB Sieniawa Coal Mine",
   "canonical_slug": "kwb-sieniawa-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lubusz Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:45:56.000000Z",
+      "operators": [
+        "Kopalnia Węgla Brunatnego Sieniawa Sp. z o.o."
+      ],
+      "owners": [
+        "Kopalnia Węgla Brunatnego Sieniawa Sp. z o.o."
+      ],
+      "notes": "The mine is fully owned and operated by Kopalnia Węgla Brunatnego Sieniawa Sp. z o.o."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -16.046,
-    "lon": -72.247,
+    "lat": -15.585554583496076,
+    "lon": -71.5369607,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera Zafranal S.A.C.",
+    "Minera AQM Copper Peru (MAQM)",
+    "Minera AQM Copper Peru S.A.C.",
+    "Mitsubishi Materials Corporation",
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.324706Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:14:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Arequipa (https://ax.legal/2023/05/23/peru-project-spotlight-usd1-2b-zafranal-project/). The Zafranal Copper-Gold Project is located approximately 90km from Arequipa, in the Southern Peru Porphyry Copper Belt. Web search geocoded. Source: Calculated from Arequipa (https://ax.legal/2023/05/23/peru-project-spotlight-usd1-2b-zafranal-project/). The Zafranal Copper-Gold Project is located approximately 90km from Arequipa"
   },
   "canonical_name": "Zafranal Mine",
   "canonical_slug": "zafranal-mine",
@@ -47,5 +53,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arequipa",
+  "town": "Arequipa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:14:06.000000Z",
+      "operators": [
+        "Teck Resources Limited",
+        "Minera AQM Copper Peru S.A.C."
+      ],
+      "owners": [
+        "Compañía Minera Zafranal S.A.C.",
+        "Teck Resources Limited",
+        "Mitsubishi Materials Corporation"
+      ],
+      "notes": "Teck owns 80% of Compañía Minera Zafranal S.A.C. and Mitsubishi Materials Corporation owns 20%."
+    }
+  }
 }

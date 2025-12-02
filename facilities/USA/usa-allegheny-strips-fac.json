@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.864,
-    "lon": -79.534,
+    "lat": 39.1964049144998,
+    "lon": -80.2561981,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AMCI",
+    "Allegheny Metallurgical",
+    "ITOCHU",
+    "JAZ Ventures LLC",
+    "North Central Resources LLC",
+    "Taurus Mining Finance Fund II"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.770916Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:45:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bridgeport, WV (https://northamericanmining.com/index.php/2024/04/01/americas-newest-longwall-allegheny-metallurgicals-longview/). The facility is located near Bridgeport, WV, just south of Morgantown"
   },
   "canonical_name": "Allegheny Strips Mine",
   "canonical_slug": "allegheny-strips-mine",
@@ -47,5 +54,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Bridgeport, WV",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:45:18.000000Z",
+      "operators": [
+        "Allegheny Metallurgical"
+      ],
+      "owners": [
+        "AMCI",
+        "JAZ Ventures LLC",
+        "ITOCHU",
+        "Taurus Mining Finance Fund II",
+        "North Central Resources LLC"
+      ],
+      "notes": "Allegheny Metallurgical is a joint venture involving multiple companies."
+    }
+  }
 }

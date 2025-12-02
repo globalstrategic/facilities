@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "POSCO CNGR Nickel Solution",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.516517",
-      "evidence": "Extracted from operator column: POSCO CNGR Nickel Solution"
-    }
+    "Korea Zinc",
+    "POSCO CNGR Nickel Solution",
+    "Trafigura"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:59:02.000000Z",
+      "operators": [
+        "Korea Zinc",
+        "Trafigura"
+      ],
+      "owners": [
+        "Korea Zinc"
+      ],
+      "notes": "Korea Zinc is the primary owner and operator, with Trafigura as a partner for investment and supply."
+    }
+  }
 }

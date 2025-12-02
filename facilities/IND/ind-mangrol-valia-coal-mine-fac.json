@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.424,
-    "lon": 73.106,
+    "lat": 21.374167,
+    "lon": 73.087222,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gujarat Industries Power Company Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.081553Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:42:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gipcl.com/mangrol-valia-lignite-mine.aspx. Coordinates extracted from the mining lease area description"
   },
   "canonical_name": "Mangrol Valia Coal Mine",
   "canonical_slug": "mangrol-valia-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gujarat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:42:35.000000Z",
+      "operators": [
+        "Gujarat Industries Power Company Ltd."
+      ],
+      "owners": [
+        "Gujarat Industries Power Company Ltd."
+      ],
+      "notes": "Gujarat Industries Power Company Ltd. operates and owns the Mangrol-Valia Lignite Mine."
+    }
+  }
 }

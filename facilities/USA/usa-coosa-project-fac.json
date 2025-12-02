@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 32.849666519631185,
+    "lon": -87.13150975547026,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Westwater Resources",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:33.895621",
-      "evidence": "Extracted from operator column: Westwater Resources"
-    }
+    "Alabama Graphite Corp.",
+    "Westwater Resources",
+    "Westwater Resources, Inc."
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.981844Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T01:48:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Birmingham (https://www.resource-capital.ch/en/news/view/alabama-graphite-corp-awards-coosa-graphite-project-feasibility-study-to-agp-mining/). The Coosa Graphite Project is located in Coosa County, Alabama, in the historic Alabama Graphite Belt"
   },
   "canonical_name": "Coosa Mine",
   "canonical_slug": "coosa-mine",
@@ -51,5 +46,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "town": "Birmingham",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:48:04.000000Z",
+      "operators": [
+        "Alabama Graphite Corp.",
+        "Westwater Resources, Inc."
+      ],
+      "owners": [
+        "Alabama Graphite Corp.",
+        "Westwater Resources, Inc."
+      ],
+      "notes": "Alabama Graphite Corp. is the primary owner and operator, with Westwater Resources having entered into an agreement to acquire Alabama Graphite Corp."
+    }
+  }
 }

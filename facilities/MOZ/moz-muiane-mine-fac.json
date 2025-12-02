@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -15.875241021923083,
+    "lon": 38.45555117244556,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Highland African Mining",
+    "Novak Holdings",
+    "Pacific Wildcat Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:02.805476Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:25:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Nampula (https://www.voanews.com/a/mozambique-rioters-attack-canada-owned-mine/3060358.html). The Muiane Mine has experienced violence and attacks, and its operational status is uncertain due to these events"
   },
   "canonical_name": "Muiane Mine",
   "canonical_slug": "muiane-mine",
@@ -59,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zambezia",
+  "town": "Nampula",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:25:29.000000Z",
+      "operators": [
+        "Pacific Wildcat Resources",
+        "Highland African Mining"
+      ],
+      "owners": [
+        "Novak Holdings"
+      ],
+      "notes": "Pacific Wildcat Resources sold the mine to Novak Holdings. Highland African Mining is currently running the mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.177,
-    "lon": 87.19,
+    "lat": 54.177275,
+    "lon": 87.10364,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SUEK Kuzbass JSC",
+    "Siberian Coal Energy Company JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.617768Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:43:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Taldinskaya-Zapadnaya_Coal_Mine_No._1. Taldinskaya-Zapadnaya Coal Mine No. 1 is an underground mine in Kemerovo Oblast, Russia"
   },
   "canonical_name": "Taldinsky Coal Mine",
   "canonical_slug": "taldinsky-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:43:00.000000Z",
+      "operators": [
+        "SUEK Kuzbass JSC"
+      ],
+      "owners": [
+        "Siberian Coal Energy Company JSC"
+      ],
+      "notes": "SUEK Kuzbass JSC is a subsidiary of Siberian Coal Energy Company JSC."
+    }
+  }
 }

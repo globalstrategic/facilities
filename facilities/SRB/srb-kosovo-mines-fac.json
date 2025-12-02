@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SRB",
   "location": {
-    "lat": 42.465,
-    "lon": 21.052,
+    "lat": 42.93917,
+    "lon": 20.91806,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Kosovo"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:19.516736Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:06:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Trep%C3%A7a_Mines. The Trepça Mines are a significant mining complex in Kosovo, with a history of ownership disputes"
   },
   "canonical_name": "Kosovo Mines Mine",
   "canonical_slug": "kosovo-mines-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kosovo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:06:40.000000Z",
+      "operators": [
+        "Government of Kosovo"
+      ],
+      "owners": [
+        "Government of Kosovo"
+      ],
+      "notes": "The mine has been nationalized and is currently under the control of the Government of Kosovo."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.579,
-    "lon": -80.581,
+    "lat": 33.205,
+    "lon": -87.322,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Warrior Met Coal Mining, LLC",
+    "Warrior Met Coal, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.770133Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:44:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.msha.gov/data-reports/fatality-reports/2023/august-30-2023-fatality/final-report. The No. 4 Mine is an underground bituminous coal mine located in Brookwood, Tuscaloosa County, Alabama"
   },
   "canonical_name": "No 4 Mine",
   "canonical_slug": "no-4-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:44:41.000000Z",
+      "operators": [
+        "Warrior Met Coal Mining, LLC"
+      ],
+      "owners": [
+        "Warrior Met Coal, Inc."
+      ],
+      "notes": "Warrior Met Coal Mining, LLC operates the mine, which is owned by Warrior Met Coal, Inc."
+    }
+  }
 }

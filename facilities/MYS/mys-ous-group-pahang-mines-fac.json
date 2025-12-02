@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MYS",
   "location": {
-    "lat": 4.07,
-    "lon": 102.467,
+    "lat": 4.070126,
+    "lon": 102.467122,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ous Group Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:55.006187Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:36:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ous_Group_Pahang_Mines. Coordinates are approximate for the Ous Group Pahang Mines"
   },
   "canonical_name": "Ous Group Pahang Mines Mine",
   "canonical_slug": "ous-group-pahang-mines-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pahang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:36:21.000000Z",
+      "operators": [
+        "Ous Group Ltd"
+      ],
+      "owners": [
+        "Ous Group Ltd"
+      ],
+      "notes": "OUS Group Ltd owns 100% of the facility."
+    }
+  }
 }

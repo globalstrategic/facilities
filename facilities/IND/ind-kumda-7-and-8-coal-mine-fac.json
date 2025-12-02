@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.206,
-    "lon": 82.995,
+    "lat": 23.2074,
+    "lon": 83.0056,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Ltd",
+    "South Eastern Coalfields Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.122531Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:48:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kumda_7%268_Coal_Mine. Coordinates are approximate for the Kumda 7&8 Coal Mine"
   },
   "canonical_name": "Kumda 7 And 8 Coal Mine",
   "canonical_slug": "kumda-7-and-8-coal-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:48:32.000000Z",
+      "operators": [
+        "South Eastern Coalfields Ltd"
+      ],
+      "owners": [
+        "Coal India Ltd"
+      ],
+      "notes": "South Eastern Coalfields Ltd operates the mine, which is fully owned by Coal India Ltd."
+    }
+  }
 }

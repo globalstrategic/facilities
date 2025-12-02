@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SVN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.423994,
+    "lon": 14.094645,
     "precision": "unknown"
   },
   "types": [
@@ -23,7 +23,9 @@
   ],
   "status": "operating",
   "company_mentions": [
+    "Dilon d.o.o.",
     "Dilon doo",
+    "Republic of Slovenia",
     "SIJ Acroni doo",
     "Slovenian Steel Group",
     "Slovenska industrija jekla dd"
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.496120Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:56:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SIJ_Acroni_Jesenice_steel_plant. The SIJ Acroni Steel Plant is located in Koroška Bela, Jesenice, Slovenia and operates electric arc furnace technology"
   },
   "canonical_name": "SIJ Acroni Steel Smelter",
   "canonical_slug": "sij-acroni-steel-smelter",
@@ -60,15 +62,16 @@
   "province": "Upper Carniola",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:55:39.000000Z",
+      "timestamp": "2025-12-02T05:56:40.000000Z",
       "operators": [
         "SIJ Acroni doo"
       ],
       "owners": [
-        "Slovenska industrija jekla dd",
-        "Dilon doo"
+        "Dilon d.o.o.",
+        "Republic of Slovenia",
+        "Slovenska industrija jekla dd"
       ],
-      "notes": "SIJ Acroni is part of the SIJ Group, which is the largest Slovenian vertically integrated steel group."
+      "notes": "SIJ Acroni is part of the SIJ Group, which is the largest Slovenian vertically integrated metallurgical group."
     }
   }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.805,
-    "lon": 93.314,
+    "lat": 46.807231,
+    "lon": 93.309621,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Leighton Asia",
+    "Mongolia Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.459162Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:20:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Khushuut_Coal_Mine. The Khushuut coal mine is an operating coal mine located in the Khovd Province of western Mongolia"
   },
   "canonical_name": "Khushuut Coal Mine",
   "canonical_slug": "khushuut-coal-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khovd Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:48.000000Z",
+      "operators": [
+        "Leighton Asia"
+      ],
+      "owners": [
+        "Mongolia Energy Corporation"
+      ],
+      "notes": "The mine is operated by Leighton Asia and owned by Mongolia Energy Corporation, a Hong Kong listed public company."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.439,
-    "lon": 110.319,
+    "lat": 39.442733,
+    "lon": 110.30777,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ordos Ulan Coal Group",
+    "Ordos Ulan Development Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.601954Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:00:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E4%B9%8C%E5%85%B0%E7%85%A4%E7%82%AD%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%90%8E%E6%B8%A9%E5%AE%B6%E6%A2%81%E7%85%A4%E7%9F%BF. The Houwenjialiang Coal Mine is an open-pit coal mine operated by Ordos Ulan Coal Group"
   },
   "canonical_name": "Houwenjialiang Coal Mine",
   "canonical_slug": "houwenjialiang-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:00:34.000000Z",
+      "operators": [
+        "Ordos Ulan Coal Group"
+      ],
+      "owners": [
+        "Ordos Ulan Development Group"
+      ],
+      "notes": "The mine is fully owned by Ordos Ulan Coal Group, which is a subsidiary of Ordos Ulan Development Group."
+    }
+  }
 }

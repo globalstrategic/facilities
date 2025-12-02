@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.807,
-    "lon": -75.961,
+    "lat": 40.804775,
+    "lon": -75.977771,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lehigh Anthracite Coal LLC",
+    "Robindale Energy Services"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.684726Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:33:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tamaqua_Coal_Mine. Tamaqua Coal Mine is an operating coal mine located in Schuylkill County, Pennsylvania"
   },
   "canonical_name": "Tamaqua Coal Mine",
   "canonical_slug": "tamaqua-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:33:05.000000Z",
+      "operators": [
+        "Lehigh Anthracite Coal LLC"
+      ],
+      "owners": [
+        "Robindale Energy Services"
+      ],
+      "notes": "Lehigh Anthracite is a joint venture between BET Investments and Robindale Energy."
+    }
+  }
 }

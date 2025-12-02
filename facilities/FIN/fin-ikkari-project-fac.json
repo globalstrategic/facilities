@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Rupert Resources Ltd.",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.783224",
-      "evidence": "Extracted from operator column: Rupert Resources Ltd."
-    }
+    "Rupert Finland Exploration Oy",
+    "Rupert Finland Oy",
+    "Rupert Resources Ltd",
+    "Rupert Resources Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:13.000000Z",
+      "operators": [
+        "Rupert Resources Ltd"
+      ],
+      "owners": [
+        "Rupert Resources Ltd",
+        "Rupert Finland Exploration Oy",
+        "Rupert Finland Oy"
+      ],
+      "notes": "Rupert Resources Ltd owns 100% of the Ikkari Project through its subsidiaries."
+    }
+  }
 }

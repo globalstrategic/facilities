@@ -14,8 +14,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.641,
-    "lon": 86.179,
+    "lat": 54.652327,
+    "lon": 86.152629,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SUEK-Kuzbass JSC",
+    "Siberian Coal Energy Company (SUEK)"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.597658Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:24:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kirova_Coal_Mine. Kirova Coal Mine is an underground mine located in Kemerovo Oblast, Russia"
   },
   "canonical_name": "Kirova Coal Mine",
   "canonical_slug": "kirova-coal-mine",
@@ -58,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:24:11.000000Z",
+      "operators": [
+        "SUEK-Kuzbass JSC"
+      ],
+      "owners": [
+        "Siberian Coal Energy Company (SUEK)"
+      ],
+      "notes": "SUEK-Kuzbass JSC is a subsidiary of the Siberian Coal Energy Company (SUEK)."
+    }
+  }
 }

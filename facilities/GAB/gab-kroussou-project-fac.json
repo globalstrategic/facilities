@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -1.5651062630754105,
+    "lon": 9.4609934,
     "precision": "unknown"
   },
   "types": [
@@ -39,14 +39,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Apollo Minerals Limited",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.271158",
-      "evidence": "Extracted from operator column: Apollo Minerals Limited"
-    }
+    "Apollo Minerals Limited"
   ],
   "products": [],
   "sources": [
@@ -57,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.389401Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T15:20:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Libreville (https://apollominerals.com/kroussou/). The Kroussou Project is located approximately 220km south of Libreville in Gabon"
   },
   "canonical_name": "Kroussou Exploration",
   "canonical_slug": "kroussou-exploration",
@@ -76,5 +69,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ngounié Province",
+  "town": "Libreville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:20:41.000000Z",
+      "operators": [
+        "Apollo Minerals Limited"
+      ],
+      "owners": [
+        "Apollo Minerals Limited"
+      ],
+      "notes": "Apollo Minerals has secured 100% ownership of the Kroussou Project."
+    }
+  }
 }

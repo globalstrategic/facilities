@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 17.375528,
+    "lon": 101.797146,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "P.T.K. Mining Co., Ltd.",
+    "Siam Steel Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:18.493997Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:34:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PTK_Mining_Phu_Ang_Mine. Coordinates are exact as per the Global Energy Monitor"
   },
   "canonical_name": "Phu Ang Iron Ore Mine",
   "canonical_slug": "phu-ang-iron-ore-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Loei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:34:47.000000Z",
+      "operators": [
+        "P.T.K. Mining Co., Ltd."
+      ],
+      "owners": [
+        "P.T.K. Mining Co., Ltd.",
+        "Siam Steel Co., Ltd."
+      ],
+      "notes": "The mine was originally granted to Siam Steel Co., Ltd. and later transferred to P.T.K. Mining Co., Ltd."
+    }
+  }
 }

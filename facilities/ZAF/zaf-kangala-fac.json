@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.189,
-    "lon": 28.67,
+    "lat": -26.203529644523414,
+    "lon": 28.70008525520154,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mountain Rush",
+    "Universal Coal",
+    "Universal Coal and Energy Holdings South Africa (Pty) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.710696Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:04:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Johannesburg (https://www.mining-technology.com/projects/kangala-coal-mine/). Kangala is an open pit coal mine located in the Witbank region of Mpumalanga Province, South Africa"
   },
   "canonical_name": "Kangala Mine",
   "canonical_slug": "kangala-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Johannesburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:04:15.000000Z",
+      "operators": [
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd."
+      ],
+      "owners": [
+        "Universal Coal",
+        "Mountain Rush"
+      ],
+      "notes": "Universal Coal owns a 70.5% stake in the Kangala mine while Mountain Rush holds the remaining 29.5%."
+    }
+  }
 }

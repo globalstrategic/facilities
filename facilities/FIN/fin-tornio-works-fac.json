@@ -15,14 +15,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Outokumpu Oyj",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.780720",
-      "evidence": "Extracted from operator column: Outokumpu Oyj"
-    }
+    "Outokumpu Chrome Oy",
+    "Outokumpu Oyj",
+    "Outokumpu Stainless Oy"
   ],
   "products": [],
   "sources": [
@@ -60,5 +55,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:59.000000Z",
+      "operators": [
+        "Outokumpu Chrome Oy",
+        "Outokumpu Stainless Oy"
+      ],
+      "owners": [
+        "Outokumpu Oyj"
+      ],
+      "notes": "Outokumpu is the primary operator and owner of the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.561,
-    "lon": 78.03,
+    "lat": 15.560844,
+    "lon": 78.029812,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BV Joshi Mines & Minerals Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.062064Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:26:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BV_Joshi_Ganigattu_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "BV Joshi Ganigattu Mine",
   "canonical_slug": "bv-joshi-ganigattu-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Andhra Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:26:01.000000Z",
+      "operators": [
+        "BV Joshi Mines & Minerals Pvt Ltd"
+      ],
+      "owners": [
+        "BV Joshi Mines & Minerals Pvt Ltd"
+      ],
+      "notes": "The company is fully owned by BV Joshi Mines & Minerals Pvt Ltd."
+    }
+  }
 }

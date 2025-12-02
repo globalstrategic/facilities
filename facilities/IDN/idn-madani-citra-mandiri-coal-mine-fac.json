@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 0.265,
-    "lon": 115.873,
+    "lat": 0.264755,
+    "lon": 115.872831,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Madani Citra Mandiri"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.306505Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:17:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Madani_Citra_Mandiri_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Madani Citra Mandiri Coal Mine",
   "canonical_slug": "madani-citra-mandiri-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:17:53.000000Z",
+      "operators": [
+        "Madani Citra Mandiri"
+      ],
+      "owners": [
+        "Madani Citra Mandiri"
+      ],
+      "notes": "Madani Citra Mandiri owns and operates the coal mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.402,
-    "lon": 101.76,
+    "lat": -1.401951,
+    "lon": 101.760224,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Golden Energy Mines Tbk",
+    "PT Kuansing Inti Makmur"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.243750Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:45:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KIM_Coal_Mine. KIM Coal Mine is an operating coal mine located in Jujuhan, Jambi, Indonesia"
   },
   "canonical_name": "KIM Coal Mine",
   "canonical_slug": "kim-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jambi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:45:00.000000Z",
+      "operators": [
+        "PT Kuansing Inti Makmur"
+      ],
+      "owners": [
+        "PT Golden Energy Mines Tbk"
+      ],
+      "notes": "PT Kuansing Inti Makmur is a subsidiary of PT Golden Energy Mines Tbk."
+    }
+  }
 }

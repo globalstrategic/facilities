@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -20.832,
-    "lon": 28.578,
+    "lat": -20.1,
+    "lon": 29.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Caledonia Mining Corporation plc",
+    "Management and Employee Trust",
+    "National Indigenisation and Economic Empowerment Fund",
+    "identified indigenous Zimbabweans"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.947371Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:35:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/766011/000117184317007779/exh_991.htm. The Blanket Mine is located approximately 15 km northwest of Gwanda, the provincial capital"
   },
   "canonical_name": "Blanket Mine",
   "canonical_slug": "blanket-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland South",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:35:38.000000Z",
+      "operators": [
+        "Caledonia Mining Corporation plc"
+      ],
+      "owners": [
+        "Caledonia Mining Corporation plc",
+        "National Indigenisation and Economic Empowerment Fund",
+        "Management and Employee Trust",
+        "identified indigenous Zimbabweans"
+      ],
+      "notes": "Caledonia Mining Corporation owns 64% of the Blanket Mine, with the remaining 36% owned by local Zimbabwean shareholders."
+    }
+  }
 }

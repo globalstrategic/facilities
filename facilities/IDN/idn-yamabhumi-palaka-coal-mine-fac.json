@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.269,
-    "lon": 113.087,
+    "lat": -1.268723,
+    "lon": 113.086535,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yamabhumi Palaka"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.199298Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:12:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Yamabhumi_Palaka_Coal_Mine. Yamabhumi Palaka Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Yamabhumi Palaka Coal Mine",
   "canonical_slug": "yamabhumi-palaka-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:12:12.000000Z",
+      "operators": [
+        "Yamabhumi Palaka"
+      ],
+      "owners": [
+        "Yamabhumi Palaka"
+      ],
+      "notes": "Yamabhumi Palaka owns 100% of the facility."
+    }
+  }
 }

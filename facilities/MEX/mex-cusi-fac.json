@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 28.245,
-    "lon": -106.841,
+    "lat": 16.206143369498108,
+    "lon": -93.27110391454687,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera San Bernabé, S.A. de C.V.",
+    "Sierra Metals Inc.",
+    "Silverco Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.962077Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:38:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Los Gatos (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3328-tsx-venture/q/182770-quetzal-copper-corp-announces-acquisition-of-silverco-mining-corp-and-bridge-loan-financing.html). Cusi Mine is located in the Sierra Madre Occidental belt and has been placed on care and maintenance since September 2023"
   },
   "canonical_name": "Cusi Mine",
   "canonical_slug": "cusi-mine",
@@ -62,5 +66,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "town": "Los Gatos",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:38:27.000000Z",
+      "operators": [
+        "Silverco Mining Corp."
+      ],
+      "owners": [
+        "Sierra Metals Inc.",
+        "Minera San Bernabé, S.A. de C.V."
+      ],
+      "notes": "Silverco Mining Corp. acquired the Cusi Mine from Sierra Metals, which had previously placed it on care and maintenance."
+    }
+  }
 }

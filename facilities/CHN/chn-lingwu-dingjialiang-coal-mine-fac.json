@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.135,
-    "lon": 106.534,
+    "lat": 38.135344,
+    "lon": 106.534209,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ningxia Baofeng Energy Group Co., Ltd.",
+    "Ningxia Baofeng Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.625065Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:05:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%AE%81%E5%A4%8F%E5%AE%9D%E4%B8%B0%E8%83%BD%E6%BA%90%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%81%E5%AE%B6%E6%A2%81%E7%85%A4%E7%9F%BF. The Lingwu Dingjialiang Coal Mine is an approved underground coal mine with a designed production capacity of 900,000 tons/year"
   },
   "canonical_name": "Lingwu Dingjialiang Coal Mine",
   "canonical_slug": "lingwu-dingjialiang-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ningxia Hui Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:05:32.000000Z",
+      "operators": [
+        "Ningxia Baofeng Energy Group Co., Ltd."
+      ],
+      "owners": [
+        "Ningxia Baofeng Group Co., Ltd."
+      ],
+      "notes": "The mine is undergoing construction with an expected completion date in March 2026."
+    }
+  }
 }

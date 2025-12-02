@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.15881,
-    "lon": 29.71528,
+    "lat": -26.21893211,
+    "lon": 29.78208549,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Operations South Africa (Pty) Ltd",
+    "Umcebo Mining (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:34:37.000000Z",
+    "last_checked": "2025-12-01T18:11:39.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/hendrina. Coordinates extracted directly from the GPS coordinates of Hendrina, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/hendrina. Coordinates extracted directly from the GPS coordinates of Hendrina, South Africa. Web search geocoded. Source: https://www.gem.wiki/Hendrina_Coal_Mine. The Hendriena Ermelo Project is located approximately 3.3 km southeast of Hendrina in the Ermelo Coalfield"
   },
   "canonical_name": "Hendriena Ermelo Mine",
   "canonical_slug": "hendriena-ermelo-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:11:39.000000Z",
+      "operators": [
+        "Umcebo Mining (Pty) Ltd"
+      ],
+      "owners": [
+        "Glencore Operations South Africa (Pty) Ltd"
+      ],
+      "notes": "Umcebo Mining is a subsidiary of Glencore Operations South Africa."
+    }
+  }
 }

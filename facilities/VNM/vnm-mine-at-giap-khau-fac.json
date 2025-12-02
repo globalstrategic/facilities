@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": 20.972,
-    "lon": 107.045,
+    "lat": 20.971528,
+    "lon": 107.044548,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Giap Khau Coal Enterprise",
+    "Vietnam National Coal (Vinacomin)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.278399Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:26:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_at_Giap_Khau. The mine is located in Ha Long City, Quang Ninh Province, Vietnam"
   },
   "canonical_name": "At Giap Khau Mine",
   "canonical_slug": "at-giap-khau-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Ninh Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:26:02.000000Z",
+      "operators": [
+        "Giap Khau Coal Enterprise"
+      ],
+      "owners": [
+        "Vietnam National Coal (Vinacomin)"
+      ],
+      "notes": "Giap Khau Coal Enterprise is a 100% owned subsidiary of Vietnam National Coal (Vinacomin)."
+    }
+  }
 }

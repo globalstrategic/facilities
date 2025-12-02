@@ -21,30 +21,13 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "APPAK LLP (Kazatomprom",
-      "role": "operator",
-      "source": "Kazakhstan Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:13:13.050406",
-      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
-    },
-    {
-      "name": "Sumitomo",
-      "role": "operator",
-      "source": "Kazakhstan Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:13:13.050422",
-      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
-    },
-    {
-      "name": "Kansai Electric)",
-      "role": "operator",
-      "source": "Kazakhstan Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:13:13.050425",
-      "evidence": "Extracted from operator column: APPAK LLP (Kazatomprom / Sumitomo / Kansai Electric)"
-    }
+    "APPAK LLP",
+    "APPAK LLP (Kazatomprom",
+    "Kansai Electric Power Co., Inc.",
+    "Kansai Electric)",
+    "Kazatomprom",
+    "Sumitomo",
+    "Sumitomo Corporation"
   ],
   "products": [],
   "sources": [
@@ -82,5 +65,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Turkistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:50:50.000000Z",
+      "operators": [
+        "APPAK LLP"
+      ],
+      "owners": [
+        "Kazatomprom",
+        "Sumitomo Corporation",
+        "Kansai Electric Power Co., Inc."
+      ],
+      "notes": "APPAK LLP is a joint venture with 65% ownership by Kazatomprom, 25% by Sumitomo, and 10% by Kansai Electric Power."
+    }
+  }
 }

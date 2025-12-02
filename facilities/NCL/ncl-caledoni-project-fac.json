@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "**Société Le Nickel** 39",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.572878",
-      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 39"
-    }
+    "**Société Le Nickel** 39",
+    "Eramet",
+    "Société Le Nickel (SLN)"
   ],
   "products": [],
   "sources": [
@@ -72,5 +67,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:56:16.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "SLN is the operator and a major stakeholder in New Caledonia's nickel industry, owned by Eramet."
+    }
+  }
 }

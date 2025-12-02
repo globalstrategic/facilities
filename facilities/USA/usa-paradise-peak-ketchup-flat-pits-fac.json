@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.749,
-    "lon": -117.969,
+    "lat": 38.81041715463874,
+    "lon": -117.86573271294164,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arimetco Incorporated",
+    "Arimetco International, Inc.",
+    "Fmc Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.736456Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:15:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gabbs (https://westernmininghistory.com/mine-detail/10198457/). The Paradise Peak / Ketchup Flat Pits are located near Gabbs, Nevada, with historical operations noted"
   },
   "canonical_name": "Paradise Peak / Ketchup Flat Pits Mine",
   "canonical_slug": "paradise-peak-ketchup-flat-pits-mine",
@@ -58,5 +62,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Gabbs",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:15:24.000000Z",
+      "operators": [
+        "Arimetco International, Inc.",
+        "Fmc Gold Corporation"
+      ],
+      "owners": [
+        "Arimetco Incorporated",
+        "Fmc Gold Corporation"
+      ],
+      "notes": "FMC Gold sold the facility to Arimetco International, Inc. in October 1995. The site has been under reclamation since 1997."
+    }
+  }
 }

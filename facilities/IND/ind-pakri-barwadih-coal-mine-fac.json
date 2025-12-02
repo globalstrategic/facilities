@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.881,
-    "lon": 85.232,
+    "lat": 24.312407189968795,
+    "lon": 85.4912231,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NTPC Ltd",
+    "Thiess Minecs India Private Limited",
+    "Thriveni Sainik Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.095985Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:55:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hazaribagh (https://www.gem.wiki/Pakri_Barwadih_Coal_Mine). Pakri Barwadih coal mine is one of the largest captive coal blocks allotted to NTPC"
   },
   "canonical_name": "Pakri Barwadih Coal Mine",
   "canonical_slug": "pakri-barwadih-coal-mine",
@@ -50,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "town": "Hazaribagh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:55:16.000000Z",
+      "operators": [
+        "NTPC Ltd",
+        "Thiess Minecs India Private Limited",
+        "Thriveni Sainik Mining"
+      ],
+      "owners": [
+        "NTPC Ltd"
+      ],
+      "notes": "NTPC is the owner and operator of the mine, with Thiess and Thriveni Sainik involved in development and operations."
+    }
+  }
 }

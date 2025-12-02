@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": -24.33,
-    "lon": 17.002,
+    "lat": -23.394973515229147,
+    "lon": 17.0857421,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Namibian private company",
+    "QGC",
+    "Unicorn Mineral Resources Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:14.552426Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:47:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Windhoek (https://theextractormagazine.com/2025/11/13/irish-company-wants-75-stake-in-klein-aub-copper-mine-for-n26-5m/). The Klein Aub Copper Mine is located about 90 kilometers south of Windhoek and 45 kilometers south-west of Rehoboth"
   },
   "canonical_name": "Klein Aub Mine",
   "canonical_slug": "klein-aub-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hardap Region",
+  "town": "Windhoek",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:47:19.000000Z",
+      "operators": [
+        "Unicorn Mineral Resources Plc"
+      ],
+      "owners": [
+        "Namibian private company",
+        "QGC"
+      ],
+      "notes": "Unicorn Mineral Resources Plc is acquiring a 75% stake in the mine, while a Namibian private company retains a 25% interest."
+    }
+  }
 }

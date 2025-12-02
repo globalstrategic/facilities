@@ -35,14 +35,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Critical Metals Corp",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.134033",
-      "evidence": "Extracted from operator column: Critical Metals Corp"
-    }
+    "Critical Metals Corp",
+    "Critical Metals Corp.",
+    "Tanbreez Mining Greenland A/S"
   ],
   "products": [],
   "sources": [
@@ -80,5 +75,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:58:48.000000Z",
+      "operators": [
+        "Tanbreez Mining Greenland A/S"
+      ],
+      "owners": [
+        "Tanbreez Mining Greenland A/S",
+        "Critical Metals Corp."
+      ],
+      "notes": "Tanbreez is in the process of handing over ownership to Critical Metals Corp."
+    }
+  }
 }

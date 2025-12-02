@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.272,
-    "lon": -79.227,
+    "lat": 40.271667,
+    "lon": -79.226944,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal Loaders Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.974716Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:37:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mellon_5_Coal_Mine. Mellon 5 Coal Mine is an operating coal mine located in Westmoreland County, Pennsylvania"
   },
   "canonical_name": "Mellon 5 Coal Mine",
   "canonical_slug": "mellon-5-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:37:47.000000Z",
+      "operators": [
+        "Coal Loaders Inc"
+      ],
+      "owners": [
+        "Coal Loaders Inc"
+      ],
+      "notes": "Coal Loaders Inc owns and operates the facility."
+    }
+  }
 }

@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.835,
+    "lat": 40.834722,
     "lon": -78.4,
     "precision": "site"
   },
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hilltop Coal Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.827753Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:15:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shawver_Operation_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Shawver Mine",
   "canonical_slug": "shawver-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:15:49.000000Z",
+      "operators": [
+        "Hilltop Coal Co"
+      ],
+      "owners": [
+        "Hilltop Coal Co"
+      ],
+      "notes": "Hilltop Coal Co is both the owner and operator of the Shawver Operation Mine."
+    }
+  }
 }

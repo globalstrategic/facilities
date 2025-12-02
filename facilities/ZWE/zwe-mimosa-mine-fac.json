@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.3,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Impala Platinum Holdings Ltd.",
+    "Mimosa Mining Company (PVT) Ltd.",
+    "Sibanye-Stillwater Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.953646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:38:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.implats.co.za/pdf/fact-sheets/mimosa-fact-sheet-nov-2016.pdf. Mimosa Mine is located on the Wedza Geological Complex on the Zimbabwean Great Dyke, approximately 20 kilometers west of Zvishavane"
   },
   "canonical_name": "Mimosa Mine",
   "canonical_slug": "mimosa-mine-2",
@@ -50,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:38:06.000000Z",
+      "operators": [
+        "Mimosa Mining Company (PVT) Ltd."
+      ],
+      "owners": [
+        "Sibanye-Stillwater Ltd.",
+        "Impala Platinum Holdings Ltd."
+      ],
+      "notes": "Mimosa is a 50:50 joint venture between Sibanye-Stillwater and Impala Platinum."
+    }
+  }
 }

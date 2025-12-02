@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -23.6645721,
-    "lon": 27.5391633,
+    "lat": -23.67167,
+    "lon": 27.52889,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-05T14:56:03.049523",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Forward geocoded via Nominatim: Grootegeluk Mine, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:41:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Grootegeluk Mine, South Africa. Web search geocoded. Source: https://en.wikipedia.org/wiki/Grootegeluk_Coal_Mine. Grootegeluk Coal Mine is an open cast coal mine located in the Waterberg Coalfield"
   },
   "canonical_name": "Grootegeluk Mine",
   "canonical_slug": "grootegeluk-mine-zaf",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:41:12.000000Z",
+      "operators": [
+        "Exxaro Resources Ltd"
+      ],
+      "owners": [
+        "Exxaro Resources Ltd"
+      ],
+      "notes": "Exxaro is both the owner and operator of the Grootegeluk Coal Mine."
+    }
+  }
 }

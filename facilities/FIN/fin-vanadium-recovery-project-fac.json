@@ -16,14 +16,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Recycling Industries Scandinavia AB",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.782059",
-      "evidence": "Extracted from operator column: Recycling Industries Scandinavia AB"
-    }
+    "Critical Metals Ltd",
+    "Neometals Ltd",
+    "Recycling Industries Scandinavia AB"
   ],
   "products": [],
   "sources": [
@@ -61,5 +56,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Satakunta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:21.000000Z",
+      "operators": [
+        "Neometals Ltd",
+        "Recycling Industries Scandinavia AB"
+      ],
+      "owners": [
+        "Neometals Ltd",
+        "Critical Metals Ltd"
+      ],
+      "notes": "Neometals holds an 86.1% interest in Recycling Industries Scandinavia, which is responsible for the project."
+    }
+  }
 }

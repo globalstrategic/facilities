@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.724,
-    "lon": -78.967,
+    "lat": 39.261602,
+    "lon": -79.331152,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dominion Energy Inc",
+    "Virginia Electric and Power Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.861150Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/North_Branch_Station. The North Branch Station was retired in 2012 and is located in Bayard, West Virginia"
   },
   "canonical_name": "North Branch Mine",
   "canonical_slug": "north-branch-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:48.000000Z",
+      "operators": [
+        "Virginia Electric and Power Co"
+      ],
+      "owners": [
+        "Dominion Energy Inc"
+      ],
+      "notes": "Virginia Electric and Power Co is a subsidiary of Dominion Energy Inc."
+    }
+  }
 }

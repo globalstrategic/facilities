@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 0.237,
-    "lon": 99.628,
+    "lat": 0.236595,
+    "lon": 99.627639,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Gamindra Mitra Kesuma"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.222186Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:29:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PT_Gamindra_Mitra_Kesuma_West_Pasaman_Mine. Coordinates are approximate for the PT Gamindra Mitra Kesuma West Pasaman Mine"
   },
   "canonical_name": "PT Gamindra Mitra Kesuma West Pasaman Mine",
   "canonical_slug": "pt-gamindra-mitra-kesuma-west-pasaman-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:29:38.000000Z",
+      "operators": [
+        "PT Gamindra Mitra Kesuma"
+      ],
+      "owners": [
+        "PT Gamindra Mitra Kesuma"
+      ],
+      "notes": "PT Gamindra Mitra Kesuma owns 100% of the mine."
+    }
+  }
 }

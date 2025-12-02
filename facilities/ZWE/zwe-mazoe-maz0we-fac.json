@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.487,
-    "lon": 30.922,
+    "lat": -17.766351509834124,
+    "lon": 31.0601584,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields of Mazowe Ltd.",
+    "Metallon Corporation",
+    "Namib Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.955141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:39:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Harare (https://miningdataonline.com/property/1253/Mazowe-Mine.aspx). The Mazowe mine is located approximately 10 km north of Harare"
   },
   "canonical_name": "Mazoe Maz0we Mine",
   "canonical_slug": "mazoe-maz0we-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland East",
+  "town": "Harare",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:43.000000Z",
+      "operators": [
+        "Gold Fields of Mazowe Ltd."
+      ],
+      "owners": [
+        "Namib Minerals",
+        "Metallon Corporation"
+      ],
+      "notes": "Namib Minerals acquired the Mazowe mine from Metallon Corporation Limited in 2024."
+    }
+  }
 }

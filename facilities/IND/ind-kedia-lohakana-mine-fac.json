@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 27.479,
-    "lon": 76.098,
+    "lat": 27.479277,
+    "lon": 76.097649,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kedia Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.093469Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:52:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kedia_Lohakana_Mine. Kedia Lohakana Mine is an iron ore mine operating in Lohakana, Rajasthan, India"
   },
   "canonical_name": "Kedia Lohakana Mine",
   "canonical_slug": "kedia-lohakana-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:52:47.000000Z",
+      "operators": [
+        "Kedia Minerals"
+      ],
+      "owners": [
+        "Kedia Minerals"
+      ],
+      "notes": "Kedia Minerals owns 100% of the mine."
+    }
+  }
 }

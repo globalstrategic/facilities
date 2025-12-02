@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DZA",
   "location": {
-    "lat": 35.756,
-    "lon": 8.043,
+    "lat": 35.756195,
+    "lon": 8.042579,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Manal SpA",
+    "SIDER El Hadjar SpA",
+    "Societe des Mines de Fer de l'Est SpA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.575450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:09:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MFE_Boukhdra_Mine. The MFE Boukhdra Mine is an iron ore mine located in Bou Khadra, Tébessa, Algeria"
   },
   "canonical_name": "MFE Boukhdra Mine",
   "canonical_slug": "mfe-boukhdra-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tébessa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:09:24.000000Z",
+      "operators": [
+        "Manal SpA",
+        "SIDER El Hadjar SpA"
+      ],
+      "owners": [
+        "Societe des Mines de Fer de l'Est SpA"
+      ],
+      "notes": "Manal SpA holds 79% ownership, while SIDER El Hadjar SpA holds 21%."
+    }
+  }
 }

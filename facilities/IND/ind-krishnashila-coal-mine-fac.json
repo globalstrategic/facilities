@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.124,
-    "lon": 82.743,
+    "lat": 24.124351951776,
+    "lon": 82.742500305176,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northern Coal Limited (NCL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.089100Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:49:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/40957. The coordinates are directly provided in the source"
   },
   "canonical_name": "Krishnashila Coal Mine",
   "canonical_slug": "krishnashila-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:49:07.000000Z",
+      "operators": [
+        "Northern Coal Limited (NCL)"
+      ],
+      "owners": [
+        "Northern Coal Limited (NCL)"
+      ],
+      "notes": "NCL is both the operator and owner of the Krishnashila Coal Mine."
+    }
+  }
 }

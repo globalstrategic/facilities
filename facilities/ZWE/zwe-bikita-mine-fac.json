@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.92019598193951,
+    "lon": 33.25468395863556,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bikita Minerals (Private) Limited",
+    "Sinomine Resource Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.957283Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:41:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Harare (https://en.sinomine.cn/25/93.html). Bikita Mine is located within the Masvingo greenstone belt, approximately 325 km southeast of Harare"
   },
   "canonical_name": "Bikita Mine",
   "canonical_slug": "bikita-mine-2",
@@ -50,5 +53,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Masvingo",
+  "town": "Harare",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:41:27.000000Z",
+      "operators": [
+        "Bikita Minerals (Private) Limited",
+        "Sinomine Resource Group"
+      ],
+      "owners": [
+        "Sinomine Resource Group"
+      ],
+      "notes": "Bikita Minerals was acquired by Sinomine Resource Group in early 2022."
+    }
+  }
 }

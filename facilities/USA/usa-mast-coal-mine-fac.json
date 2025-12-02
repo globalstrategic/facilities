@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.003,
-    "lon": -79.001,
+    "lat": 39.996067,
+    "lon": -79.000104,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heritage Coal & Natural Resources",
+    "Heritage Coal & Natural Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.704156Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:47:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mast_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Mast Coal Mine",
   "canonical_slug": "mast-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:47:08.000000Z",
+      "operators": [
+        "Heritage Coal & Natural Resources LLC"
+      ],
+      "owners": [
+        "Heritage Coal & Natural Resources"
+      ],
+      "notes": "Heritage Coal & Natural Resources LLC is the operator and owner of the Mast Coal Mine."
+    }
+  }
 }

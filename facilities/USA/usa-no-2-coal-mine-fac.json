@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.504,
-    "lon": -82.632,
+    "lat": 37.534167,
+    "lon": -82.222778,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Age Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.748934Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:25:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/No._2_Coal_Mine_(New_Age_Mining). The No. 2 Coal Mine (New Age Mining) is a mothballed coal mine"
   },
   "canonical_name": "No 2 Coal Mine",
   "canonical_slug": "no-2-coal-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:25:23.000000Z",
+      "operators": [
+        "New Age Mining LLC"
+      ],
+      "owners": [
+        "New Age Mining LLC"
+      ],
+      "notes": "The mine is currently mothballed and not in operation."
+    }
+  }
 }

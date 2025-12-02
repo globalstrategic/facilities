@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.234,
-    "lon": 110.609,
+    "lat": 23.608692,
+    "lon": 114.941147,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guangdong Tiangao Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.883671Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:44:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baoshan_Iron_Mine. Coordinates extracted from the Baoshan Iron Mine report"
   },
   "canonical_name": "Fugu Baoshan Coal Mine",
   "canonical_slug": "fugu-baoshan-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guangdong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:44:54.000000Z",
+      "operators": [
+        "Guangdong Tiangao Mining Co"
+      ],
+      "owners": [
+        "Guangdong Tiangao Mining Co"
+      ],
+      "notes": "Guangdong Tiangao Mining Co owns 100% of the Baoshan Iron Mine."
+    }
+  }
 }

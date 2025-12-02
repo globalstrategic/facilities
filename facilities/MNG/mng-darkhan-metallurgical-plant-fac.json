@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 49.651322,
+    "lon": 106.870158,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Darkhan Metallurgical Plant LLC",
+    "Erdenes Mongol LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.457554Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:19:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Darkhan_Hust-ul_Mine. Coordinates extracted from the Global Energy Monitor for the Darkhan Metallurgical Plant"
   },
   "canonical_name": "Darkhan Metallurgical Processing Plant",
   "canonical_slug": "darkhan-metallurgical-processing-plant",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Darkhan-Uul",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:19:52.000000Z",
+      "operators": [
+        "Darkhan Metallurgical Plant LLC"
+      ],
+      "owners": [
+        "Erdenes Mongol LLC"
+      ],
+      "notes": "The plant is state-owned and was previously operated under a concession agreement."
+    }
+  }
 }

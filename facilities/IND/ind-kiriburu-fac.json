@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.072,
-    "lon": 85.267,
+    "lat": 22.072726,
+    "lon": 85.267298,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Steel Authority of India Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.107325Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:05:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SAIL_Kiriburu_Mine. Coordinates extracted from Global Energy Monitor"
   },
   "canonical_name": "Kiriburu Mine",
   "canonical_slug": "kiriburu-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:05:54.000000Z",
+      "operators": [
+        "Steel Authority of India Ltd"
+      ],
+      "owners": [
+        "Steel Authority of India Ltd"
+      ],
+      "notes": "Steel Authority of India Ltd is both the operator and owner of the Kiriburu Iron Ore Mine."
+    }
+  }
 }

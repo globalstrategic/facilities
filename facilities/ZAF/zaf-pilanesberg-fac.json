@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.106,
-    "lon": 26.992,
+    "lat": -25.5,
+    "lon": 27.3,
     "precision": "site"
   },
   "types": [
@@ -48,7 +48,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pilanesberg Platinum Mines (Pty) Ltd",
+    "Sedibelo Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -63,11 +66,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.782756Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-pilanesberg-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:09:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-pilanesberg-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/671/Pilanesberg-PPM-Mine.aspx. The Pilanesberg Platinum Mine is located in the North West Province of South Africa, approximately 66 km north of Rustenburg"
   },
   "canonical_name": "Pilanesberg Mine",
   "canonical_slug": "pilanesberg-mine",
@@ -82,5 +85,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:09:55.000000Z",
+      "operators": [
+        "Pilanesberg Platinum Mines (Pty) Ltd"
+      ],
+      "owners": [
+        "Sedibelo Resources Ltd."
+      ],
+      "notes": "Pilanesberg Platinum Mines (PPM) is a subsidiary of Sedibelo Resources Ltd. The mine suspended all operations on December 1, 2023, due to financial difficulties."
+    }
+  }
 }

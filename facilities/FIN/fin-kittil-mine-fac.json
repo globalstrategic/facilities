@@ -6,8 +6,8 @@
   ],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 67.91389,
+    "lon": 25.4,
     "precision": "unknown"
   },
   "types": [
@@ -17,14 +17,8 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Agnico Eagle Finland Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.777367",
-      "evidence": "Extracted from operator column: Agnico Eagle Finland Oy"
-    }
+    "Agnico Eagle Finland Oy",
+    "Agnico-Eagle Mines Limited"
   ],
   "products": [],
   "sources": [
@@ -35,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.195694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:30:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kittil%C3%A4_mine. Kittilä mine is the largest gold mine in Europe, located in the Lapland region of Finland"
   },
   "canonical_name": "Kittilä Mine",
   "canonical_slug": "kittila-mine",
@@ -62,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:30:36.000000Z",
+      "operators": [
+        "Agnico-Eagle Mines Limited",
+        "Agnico Eagle Finland Oy"
+      ],
+      "owners": [
+        "Agnico-Eagle Mines Limited"
+      ],
+      "notes": "Agnico Eagle Finland Oy is a subsidiary of Agnico-Eagle Mines Limited."
+    }
+  }
 }

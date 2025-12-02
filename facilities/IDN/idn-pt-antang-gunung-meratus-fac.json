@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.944,
-    "lon": 115.227,
+    "lat": -3.5,
+    "lon": 114.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Antang Gunung Meratus",
+    "PT Baramulti Suksessarana Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.234811Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:38:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PT_Antang_Gunung_Meratus. The mine is located approximately 100 km northeast of Banjarmasin, near the Barito River"
   },
   "canonical_name": "PT Antang Gunung Meratus Mine",
   "canonical_slug": "pt-antang-gunung-meratus-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:38:04.000000Z",
+      "operators": [
+        "PT Antang Gunung Meratus"
+      ],
+      "owners": [
+        "PT Baramulti Suksessarana Tbk"
+      ],
+      "notes": "PT Antang Gunung Meratus is a wholly owned subsidiary of PT Baramulti Suksessarana."
+    }
+  }
 }

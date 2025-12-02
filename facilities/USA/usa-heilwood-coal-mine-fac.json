@@ -9,7 +9,7 @@
   "country_iso3": "USA",
   "location": {
     "lat": 40.615,
-    "lon": -78.909,
+    "lon": -78.909167,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rosebud Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.800179Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:10:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Heilwood_Coal_Mine. Heilwood Coal Mine is an operating underground coal mine located in Indiana County, Pennsylvania"
   },
   "canonical_name": "Heilwood Coal Mine",
   "canonical_slug": "heilwood-coal-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:10:08.000000Z",
+      "operators": [
+        "Rosebud Mining Company"
+      ],
+      "owners": [
+        "Rosebud Mining Company"
+      ],
+      "notes": "Rosebud Mining Company operates and owns the Heilwood Coal Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.304,
-    "lon": -96.463,
+    "lat": 31.3038,
+    "lon": -96.46265,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Luminant Mining Company LLC",
+    "Vistra Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.885857Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:05:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kosse_Coal_Mine. The Kosse Coal Mine is an operating coal mine supplying fuel to the Oak Grove Steam Electric Station"
   },
   "canonical_name": "Kosse Coal Mine",
   "canonical_slug": "kosse-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:05:02.000000Z",
+      "operators": [
+        "Luminant Mining Company LLC"
+      ],
+      "owners": [
+        "Vistra Corp"
+      ],
+      "notes": "Luminant Mining Company LLC operates the mine and is fully owned by Vistra Corp."
+    }
+  }
 }

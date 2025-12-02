@@ -14,8 +14,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.482,
-    "lon": -80.643,
+    "lat": 38.404339236140615,
+    "lon": -79.45237675015403,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "International Coal Group (ICG)"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.933577Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:02:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cowen (https://www.gem.wiki/Birch_River_Mine_Complex). The Birch River Mine Complex is located near Cowen, West Virginia, approximately 60 miles east of Charleston"
   },
   "canonical_name": "Birch River Mine",
   "canonical_slug": "birch-river-mine",
@@ -57,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Cowen",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:02:53.000000Z",
+      "operators": [
+        "International Coal Group (ICG)"
+      ],
+      "owners": [
+        "International Coal Group (ICG)"
+      ],
+      "notes": "ICG owns about 14.9 million tons of coal reserves, with approximately 79% leased."
+    }
+  }
 }

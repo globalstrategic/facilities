@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 33.015,
-    "lon": 130.449,
+    "lat": 33.0,
+    "lon": 130.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mitsui & Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.025824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:23:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Miike_coal_mine. Miike coal mine, also known as Mitsui Miike Coal Mine, was the largest coal mine in Japan"
   },
   "canonical_name": "Miike Mine",
   "canonical_slug": "miike-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Fukuoka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:23:21.000000Z",
+      "operators": [
+        "Mitsui & Co., Ltd."
+      ],
+      "owners": [
+        "Mitsui & Co., Ltd."
+      ],
+      "notes": "Mitsui took over the mine in 1889 and operated it until its closure in 1997."
+    }
+  }
 }

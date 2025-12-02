@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.875,
-    "lon": 100.679,
+    "lat": -0.875451,
+    "lon": 100.678977,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Karya Usaha Aneka Tambang"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.283962Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:02:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PT_Karya_Usaha_Aneka_Tambang_Solok_Mine. The coordinates are approximate for the PT Karya Usaha Aneka Tambang Solok Mine"
   },
   "canonical_name": "PT Karya Usaha Aneka Tambang Solok Mine",
   "canonical_slug": "pt-karya-usaha-aneka-tambang-solok-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:02:03.000000Z",
+      "operators": [
+        "PT Karya Usaha Aneka Tambang"
+      ],
+      "owners": [
+        "PT Karya Usaha Aneka Tambang"
+      ],
+      "notes": "The mine is fully owned by PT Karya Usaha Aneka Tambang."
+    }
+  }
 }

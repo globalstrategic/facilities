@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.793,
-    "lon": 102.989,
+    "lat": -1.792756,
+    "lon": 102.988805,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bara Batin Pratama"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.216740Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:26:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bara_Batin_Pratama_Coal_Mine. Bara Batin Pratama Coal Mine is an operating coal mine"
   },
   "canonical_name": "Bara Batin Pratama Coal Mine",
   "canonical_slug": "bara-batin-pratama-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jambi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:26:08.000000Z",
+      "operators": [
+        "Bara Batin Pratama"
+      ],
+      "owners": [
+        "Bara Batin Pratama"
+      ],
+      "notes": "The mine is 100% owned and operated by Bara Batin Pratama."
+    }
+  }
 }

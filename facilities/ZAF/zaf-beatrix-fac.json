@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.266,
-    "lon": 26.78,
+    "lat": -27.84182995321045,
+    "lon": 26.895893161025313,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Neo Energy",
+    "Sibanye-Stillwater Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.703225Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-beatrix-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:57:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-beatrix-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Welkom (https://iol.co.za/business-report/companies/2024-12-10-sibanye-stillwater-divests-beatrix-4-shaft-for-r500-million-to-focus-on-development-projects/). Beatrix 4 Shaft is located in the Free State gold fields and has been placed under care and maintenance due to depleting gold reserves"
   },
   "canonical_name": "Beatrix Mine",
   "canonical_slug": "beatrix-mine",
@@ -62,5 +65,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State",
+  "town": "Welkom",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:57:11.000000Z",
+      "operators": [
+        "Sibanye-Stillwater Limited",
+        "Neo Energy"
+      ],
+      "owners": [
+        "Sibanye-Stillwater Limited",
+        "Neo Energy"
+      ],
+      "notes": "Sibanye-Stillwater is divesting the Beatrix 4 Shaft to Neo Energy, which will assume responsibility for rehabilitation and environmental liabilities."
+    }
+  }
 }

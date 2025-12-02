@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.824,
-    "lon": -77.461,
+    "lat": -13.491595634100731,
+    "lon": -71.17798834467239,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empresas Copec",
+    "Marcobre S.A.C.",
+    "Minsur S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.315204Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:07:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from San Salvador (https://discoveryalert.com.au/minsurs-copper-mine-expansion-peru-2025/). Mina Justa is a significant copper mining operation in Peru, but specific coordinates were not provided in the search results. Web search geocoded. Source: Calculated from San Salvador (https://discoveryalert.com.au/minsurs-copper-mine-expansion-peru-2025/). Mina Justa is a significant copper mining operation in Peru, with a focus on expansion and sustainability"
   },
   "canonical_name": "San Salvador, Mina Mine",
   "canonical_slug": "san-salvador-mina-mine",
@@ -51,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lima",
+  "town": "San Salvador",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:07:20.000000Z",
+      "operators": [
+        "Minsur S.A.",
+        "Marcobre S.A.C."
+      ],
+      "owners": [
+        "Minsur S.A.",
+        "Empresas Copec"
+      ],
+      "notes": "Mina Justa is majority-owned by Minsur (60%) and Empresas Copec (40%)."
+    }
+  }
 }

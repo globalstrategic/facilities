@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.68,
-    "lon": 29.73,
+    "lat": -25.5,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canyon Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.722807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:15:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.canyoncoal.com/rehabilitation. Singani Colliery is located 30 km east of Middelburg, Mpumalanga, and has been in the rehabilitation phase since the resources were depleted in 2019"
   },
   "canonical_name": "Singani Colliery Mine",
   "canonical_slug": "singani-colliery-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:06.000000Z",
+      "operators": [
+        "Canyon Coal"
+      ],
+      "owners": [],
+      "notes": "Canyon Coal is actively rehabilitating the site after mining operations ceased."
+    }
+  }
 }

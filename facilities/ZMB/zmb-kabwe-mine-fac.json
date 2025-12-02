@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -13.45,
-    "lon": 27.8,
+    "lat": -14.42219536318571,
+    "lon": 28.2818414,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BMR Group",
+    "Jubilee Metals Group",
+    "Leopard Exploration and Mining Limited",
+    "Shuka Minerals Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.683614Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:47:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lusaka (https://www.mining-technology.com/projects/kabwe-mine/). The Kabwe Mine is located approximately 110 km north of Lusaka, Zambia's capital"
   },
   "canonical_name": "Kabwe Mine",
   "canonical_slug": "kabwe-mine-2",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Province",
+  "town": "Lusaka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:47:17.000000Z",
+      "operators": [
+        "Jubilee Metals Group",
+        "BMR Group"
+      ],
+      "owners": [
+        "Shuka Minerals Plc",
+        "Leopard Exploration and Mining Limited"
+      ],
+      "notes": "The mine was previously operated by Anglo American and Zambia Consolidated Copper Mines until its closure in 1994."
+    }
+  }
 }

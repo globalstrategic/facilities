@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.232,
-    "lon": 127.366,
+    "lat": 39.24898370875463,
+    "lon": 127.33012627327834,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Korea Zinc Industry Group (KZIG)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:11.365023Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:43:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Wonsan (https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/mineral-pubs/country/2001/knmyb01.pdf). The Munpyong Pb smelter is located approximately 12 km northwest of Wonsan"
   },
   "canonical_name": "Munpyong Pb Mine",
   "canonical_slug": "munpyong-pb-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kangwon Province",
+  "town": "Wonsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:43:01.000000Z",
+      "operators": [
+        "Korea Zinc Industry Group (KZIG)"
+      ],
+      "owners": [
+        "Korea Zinc Industry Group (KZIG)"
+      ],
+      "notes": "KZIG was seeking international investors to modernize its facilities."
+    }
+  }
 }

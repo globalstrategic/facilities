@@ -16,8 +16,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.526,
-    "lon": -117.137,
+    "lat": 40.5042,
+    "lon": -117.1681,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duval Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.911204Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:44:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10295563/. The Battle Mountain Copper Basin is a copper, gold, and silver mine located in Lander County, Nevada"
   },
   "canonical_name": "Battle Mountain Copper Basin Mine",
   "canonical_slug": "battle-mountain-copper-basin-mine",
@@ -71,5 +73,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:44:52.000000Z",
+      "operators": [
+        "Duval Corporation"
+      ],
+      "owners": [
+        "Duval Corporation"
+      ],
+      "notes": "Duval Corporation owns 100% of the facility."
+    }
+  }
 }

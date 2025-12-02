@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.948,
-    "lon": 29.626,
+    "lat": -26.93333,
+    "lon": 29.61667,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal of Africa Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.758655Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-woestalleen-colliery-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:48:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-woestalleen-colliery-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39334. Woestalleen Colliery is a surface coal mine located near Middelburg, Mpumalanga, South Africa"
   },
   "canonical_name": "Woestalleen Colliery Mine",
   "canonical_slug": "woestalleen-colliery-mine",
@@ -56,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:48:21.000000Z",
+      "operators": [
+        "Coal of Africa Limited"
+      ],
+      "owners": [
+        "Coal of Africa Limited"
+      ],
+      "notes": "Coal of Africa Limited is the current owner and operator of the Woestalleen Colliery."
+    }
+  }
 }

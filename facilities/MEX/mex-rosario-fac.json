@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.049,
-    "lon": -101.213,
+    "lat": 23.037923069446343,
+    "lon": -105.48367142578817,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Impulsora Minera Santacruz, S.A. de C.V.",
+    "Santacruz Silver Mining Ltd.",
+    "private Mexican group"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.946907Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:26:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from La Rastra (https://miningdataonline.com/property/1954/Rosario-Mine.aspx). The Rosario Project was placed on care and maintenance in August 2021 and was sold in November 2023"
   },
   "canonical_name": "Rosario Mine",
   "canonical_slug": "rosario-mine-4",
@@ -57,5 +61,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sinaloa",
+  "town": "La Rastra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:26:09.000000Z",
+      "operators": [
+        "Santacruz Silver Mining Ltd.",
+        "Impulsora Minera Santacruz, S.A. de C.V."
+      ],
+      "owners": [
+        "Santacruz Silver Mining Ltd.",
+        "private Mexican group"
+      ],
+      "notes": "Santacruz Silver Mining sold its interest in the Rosario Project to a private Mexican group."
+    }
+  }
 }

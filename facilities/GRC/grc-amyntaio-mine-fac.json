@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GRC",
   "location": {
-    "lat": 40.621,
-    "lon": 21.633,
+    "lat": 40.61889,
+    "lon": 21.68389,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Public Power Corporation (PPC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:58.507706Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:56:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Amyntaio_Power_Plant. The Amyntaio Mine is adjacent to the Amyntaio Power Plant, both owned and operated by Public Power Corporation"
   },
   "canonical_name": "Amyntaio Mine",
   "canonical_slug": "amyntaio-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Macedonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:56:10.000000Z",
+      "operators": [
+        "Public Power Corporation (PPC)"
+      ],
+      "owners": [
+        "Public Power Corporation (PPC)"
+      ],
+      "notes": "Both the power plant and the adjacent mine are owned and operated by PPC."
+    }
+  }
 }

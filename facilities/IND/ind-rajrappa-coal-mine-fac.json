@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.618,
-    "lon": 85.685,
+    "lat": 23.590044,
+    "lon": 85.677131,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Coalfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.075847Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:37:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Rajrappa_Area. Rajrappa Coal Mine is part of the Rajrappa Area, which is operational and managed by Central Coalfields Limited"
   },
   "canonical_name": "Rajrappa Coal Mine",
   "canonical_slug": "rajrappa-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:37:34.000000Z",
+      "operators": [
+        "Central Coalfields Limited"
+      ],
+      "owners": [
+        "Central Coalfields Limited"
+      ],
+      "notes": "Central Coalfields Limited is a subsidiary of Coal India Limited."
+    }
+  }
 }

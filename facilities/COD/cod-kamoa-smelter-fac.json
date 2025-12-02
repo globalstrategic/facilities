@@ -7,8 +7,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.886,
-    "lon": 25.19,
+    "lat": -9.5,
+    "lon": 25.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Crystal River Global Limited",
+    "Government of the Democratic Republic of Congo",
+    "Ivanhoe Mines",
+    "Zijin Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.802820Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:53:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-announces-africas-largest-and-greenest-copper-smelter-has-commenced-heat-up/. The Kamoa Smelter is part of the Kamoa-Kakula Copper Complex, which is located approximately 25 kilometers west of Kolwezi"
   },
   "canonical_name": "Kamoa Mine",
   "canonical_slug": "kamoa-mine",
@@ -51,5 +56,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lualaba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:53:36.000000Z",
+      "operators": [
+        "Ivanhoe Mines",
+        "Zijin Mining Group"
+      ],
+      "owners": [
+        "Ivanhoe Mines",
+        "Zijin Mining Group",
+        "Crystal River Global Limited",
+        "Government of the Democratic Republic of Congo"
+      ],
+      "notes": "The Kamoa-Kakula Copper Mine is a joint venture with significant ownership by Ivanhoe Mines and Zijin Mining Group."
+    }
+  }
 }

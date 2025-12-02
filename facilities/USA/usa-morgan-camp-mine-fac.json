@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.746,
-    "lon": -80.048,
+    "lat": 38.745175,
+    "lon": -80.046265,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Carter Roag Coal Company",
+    "Metinvest BV",
+    "United Coal Co LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.860537Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Morgan_Camp_Mine. The Morgan Camp Mine is located in West Virginia and has been reported as abandoned as of September 29, 2023"
   },
   "canonical_name": "Morgan Camp Mine",
   "canonical_slug": "morgan-camp-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:13.000000Z",
+      "operators": [
+        "Carter Roag Coal Company"
+      ],
+      "owners": [
+        "Metinvest BV",
+        "United Coal Co LLC"
+      ],
+      "notes": "Carter Roag Coal Company operates the mine, which is owned by Metinvest BV and United Coal Co LLC."
+    }
+  }
 }

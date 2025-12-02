@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 45.873,
-    "lon": -106.774,
+    "lat": 45.78286415514738,
+    "lon": -107.46731107171647,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Avista Corporation",
+    "NorthWestern Energy",
+    "PacifiCorp",
+    "Portland General Electric Company",
+    "Puget Sound Energy",
+    "Talen Energy",
+    "Talen Montana"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.777472Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:51:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Billings (https://www.powermag.com/colstrip-power-plant-operator-talen-looks-toward-the-exits/). The Colstrip Power Plant is located east of Billings, Montana"
   },
   "canonical_name": "Colstrip Mine",
   "canonical_slug": "colstrip-mine",
@@ -50,5 +58,25 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Billings",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:51:04.000000Z",
+      "operators": [
+        "Talen Energy",
+        "Talen Montana"
+      ],
+      "owners": [
+        "Talen Energy",
+        "Puget Sound Energy",
+        "Portland General Electric Company",
+        "Avista Corporation",
+        "PacifiCorp",
+        "NorthWestern Energy"
+      ],
+      "notes": "Talen Energy operates the plant but is planning to exit as operator. Ownership is shared among multiple companies."
+    }
+  }
 }

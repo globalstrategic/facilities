@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 19.625,
-    "lon": 80.366,
+    "lat": 19.625395,
+    "lon": 80.365504,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lloyds Metals and Energy Ltd",
+    "Thriveni Earthmovers Pvt. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.131155Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:56:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/LMEL_Surjagarh_Mine. The LMEL Surjagarh Mine is an iron ore mine located in Surjagarh, Maharashtra, India, with significant reserves and production capacity"
   },
   "canonical_name": "Lmel Surjagarh Mine",
   "canonical_slug": "lmel-surjagarh-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:56:26.000000Z",
+      "operators": [
+        "Thriveni Earthmovers Pvt. Ltd."
+      ],
+      "owners": [
+        "Lloyds Metals and Energy Ltd"
+      ],
+      "notes": "Lloyds Metals and Energy Ltd is the owner of the mine, while Thriveni Earthmovers Pvt. Ltd. is the Mine Development Operator."
+    }
+  }
 }

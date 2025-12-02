@@ -15,8 +15,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.886,
-    "lon": 85.177,
+    "lat": 21.878309,
+    "lon": 85.181972,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Penguin Trading & Agencies Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.076148Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:37:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PTAL_Raikela_%26_Tantra_Mine. The mine is located in a mineral-rich area of Odisha, India"
   },
   "canonical_name": "Ptal Raikela And Tantra Mine",
   "canonical_slug": "ptal-raikela-and-tantra-mine",
@@ -68,5 +70,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:37:53.000000Z",
+      "operators": [
+        "Penguin Trading & Agencies Ltd"
+      ],
+      "owners": [
+        "Penguin Trading & Agencies Ltd"
+      ],
+      "notes": "Penguin Trading & Agencies Ltd is the sole owner and operator of the mine."
+    }
+  }
 }

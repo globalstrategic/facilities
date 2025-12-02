@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.486,
-    "lon": 117.122,
+    "lat": -0.484809,
+    "lon": 117.116261,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Belayan Internasional Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.230806Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:34:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BIC_Coal_Mine. BIC Coal Mine is an operating coal mine located in Samarinda, East Kalimantan, Indonesia"
   },
   "canonical_name": "BIC Coal Mine",
   "canonical_slug": "bic-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:34:59.000000Z",
+      "operators": [
+        "Belayan Internasional Coal"
+      ],
+      "owners": [
+        "Belayan Internasional Coal"
+      ],
+      "notes": "Belayan Internasional Coal is both the operator and owner of the BIC Coal Mine."
+    }
+  }
 }

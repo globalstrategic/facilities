@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.031,
-    "lon": -82.092,
+    "lat": 37.031435,
+    "lon": -82.091672,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Justice Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.749914Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:26:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Red_Fox_Surface_Mine. Red Fox Surface Mine is a mothballed coal mine"
   },
   "canonical_name": "Red Fox Surface Mine",
   "canonical_slug": "red-fox-surface-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:26:04.000000Z",
+      "operators": [
+        "Justice Energy Company"
+      ],
+      "owners": [
+        "Justice Energy Company"
+      ],
+      "notes": "Justice Energy Company is both the operator and owner of the mine."
+    }
+  }
 }

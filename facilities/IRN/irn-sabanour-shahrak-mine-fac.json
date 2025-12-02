@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": 36.375,
-    "lon": 47.547,
+    "lat": 36.374534,
+    "lon": 47.546894,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sabanour Mining and Industrial Development Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:16.440269Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:02:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sabanour_Shahrak_Mine. The Sabanour Shahrak Mine is an iron ore mine located in Agh Kand, Kurdistan, Iran"
   },
   "canonical_name": "Sabanour Shahrak Mine",
   "canonical_slug": "sabanour-shahrak-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kurdistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:02:48.000000Z",
+      "operators": [
+        "Sabanour Mining and Industrial Development Co"
+      ],
+      "owners": [
+        "Sabanour Mining and Industrial Development Co"
+      ],
+      "notes": "Sabanour Mining and Industrial Development Co owns 100% of the mine."
+    }
+  }
 }

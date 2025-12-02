@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.035,
-    "lon": 29.128,
+    "lat": -26.0,
+    "lon": 28.0,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Thungela Operations Proprietary Limited",
+    "Thungela Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.763910Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-khwezela-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:52:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-khwezela-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1289/Khwezela-Operation.aspx. Khwezela is located approximately 5 km southwest of Emalahleni"
   },
   "canonical_name": "Khwezela Mine",
   "canonical_slug": "khwezela-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:52:55.000000Z",
+      "operators": [
+        "Thungela Operations Proprietary Limited"
+      ],
+      "owners": [
+        "Thungela Resources Limited"
+      ],
+      "notes": "Thungela Resources Limited holds a 90% interest in the operation."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.799966,
-    "lon": 32.054008,
+    "lat": -28.7365,
+    "lon": 32.3874,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Liberty Coal Terminal (RF) (Pty) Ltd",
+    "Optimum Coal Terminal (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:38:58.000000Z",
+    "last_checked": "2025-12-01T18:18:58.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://commons.wikimedia.org/wiki/File:Richards_Bay_Coal_Terminal_(RBCT).jpg. Coordinates extracted from a Wikimedia Commons file depicting the Richards Bay Coal Terminal"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://commons.wikimedia.org/wiki/File:Richards_Bay_Coal_Terminal_(RBCT).jpg. Coordinates extracted from a Wikimedia Commons file depicting the Richards Bay Coal Terminal. Web search geocoded. Source: https://www.liberty-coal.com/about-us/. Richards Bay Coal Terminal (RBCT) is a major coal export terminal located at a deep-sea port in Richards Bay, South Africa"
   },
   "canonical_name": "Rbct Richards Bay Coal Terminal Mine",
   "canonical_slug": "rbct-richards-bay-coal-terminal-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "KwaZulu-Natal"
+  "province": "KwaZulu-Natal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:18:58.000000Z",
+      "operators": [
+        "Liberty Coal Terminal (RF) (Pty) Ltd"
+      ],
+      "owners": [
+        "Liberty Coal Terminal (RF) (Pty) Ltd",
+        "Optimum Coal Terminal (Pty) Ltd"
+      ],
+      "notes": "Liberty Coal holds a 7.74% equity stake in RBCT and is involved in the operation and management of the terminal."
+    }
+  }
 }

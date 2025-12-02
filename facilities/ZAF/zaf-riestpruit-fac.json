@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.141,
-    "lon": 29.198,
+    "lat": -26.13375,
+    "lon": 29.20524,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duiker Mining Limited",
+    "Ingwe Coal Corporation",
+    "Rietspruit Mine Services (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.748103Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:38:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39075. Rietspruit Mine is located in Mpumalanga, South Africa and has been closed"
   },
   "canonical_name": "Riestpruit Mine",
   "canonical_slug": "riestpruit-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:38:39.000000Z",
+      "operators": [
+        "Rietspruit Mine Services (Pty) Ltd"
+      ],
+      "owners": [
+        "Ingwe Coal Corporation",
+        "Duiker Mining Limited"
+      ],
+      "notes": "Rietspruit Mine Services is a joint venture between Ingwe Coal Corporation and Duiker Mining Limited."
+    }
+  }
 }

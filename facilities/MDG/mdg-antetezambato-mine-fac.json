@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.50767,
+    "lon": 48.5442,
     "precision": "unknown"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fine Gemstones Madagascar",
+    "Joint venture of Italian, German, and Malagasy mining operators"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:06.106231Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:18:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gia.edu/doc/Demantoid-Topazolite-from-Antetezambato-Review-and-Data.pdf. The Antetezambato Mine is located approximately 2.5 km west of the village of Antetezambato, in a mangrove swamp area"
   },
   "canonical_name": "Antetezambato Mine",
   "canonical_slug": "antetezambato-mine",
@@ -58,5 +61,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antsiranana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:18:47.000000Z",
+      "operators": [
+        "Fine Gemstones Madagascar"
+      ],
+      "owners": [
+        "Joint venture of Italian, German, and Malagasy mining operators"
+      ],
+      "notes": "The mine is operated by a joint venture involving multiple international and local companies."
+    }
+  }
 }

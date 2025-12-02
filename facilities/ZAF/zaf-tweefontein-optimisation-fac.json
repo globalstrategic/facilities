@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.352,
-    "lon": 28.829,
+    "lat": -26.0038236129596,
+    "lon": 29.06873663725598,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Ltd.",
+    "Glencore Operations South Africa Proprietary Ltd.",
+    "Glencore plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:00:30.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:03:22.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.tageo.com/index-e-sf-v-07-d-557487.htm. Coordinates extracted from a reliable source indicating the location of Tweefontein in Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.tageo.com/index-e-sf-v-07-d-557487.htm. Coordinates extracted from a reliable source indicating the location of Tweefontein in Mpumalanga, South Africa. Web search geocoded. Source: Calculated from Emalahleni (https://miningdataonline.com/property/729/Tweefontein-Mine.aspx). The Tweefontein Complex includes both surface and underground coal mines, with current operations focused on the Tweefontein North site"
   },
   "canonical_name": "Tweefontein Optimisation Mine",
   "canonical_slug": "tweefontein-optimisation-mine",
@@ -48,5 +52,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "town": "Emalahleni",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:03:22.000000Z",
+      "operators": [
+        "Glencore Operations South Africa Proprietary Ltd."
+      ],
+      "owners": [
+        "Glencore plc",
+        "African Rainbow Minerals Ltd."
+      ],
+      "notes": "Glencore holds a majority stake and operates the mine, while African Rainbow Minerals has a minority interest."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -17.817,
-    "lon": -69.806,
+    "lat": -17.553063549671325,
+    "lon": -70.2511032,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minsur S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.302300Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:55:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tacna (https://www.wencomine.com/news/peruvian-mine-pucamarca-set-for-an-open-interoperable-future-with-wenco-system-subscription). Pucamarca is an open pit gold and silver mine located 51 kilometres from the city of Tacna, near Peru's southern border"
   },
   "canonical_name": "Pucamarca Mine",
   "canonical_slug": "pucamarca-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tacna",
+  "town": "Tacna",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:55:18.000000Z",
+      "operators": [
+        "Minsur S.A."
+      ],
+      "owners": [
+        "Minsur S.A."
+      ],
+      "notes": "Minsur S.A. is a Peruvian mining corporation that owns and operates the Pucamarca mine."
+    }
+  }
 }

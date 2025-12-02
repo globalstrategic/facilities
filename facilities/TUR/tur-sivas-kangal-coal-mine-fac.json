@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 39.078,
-    "lon": 37.296,
+    "lat": 39.0777,
+    "lon": 37.2952,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anadolu Birlik Holding",
+    "Demir Export (Koç Holding subsidiary)",
+    "EÜAŞ",
+    "Konya Şeker"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.309872Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:26:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sivas_Kangal_Coal_Mine. Coordinates extracted from the Kangal power station, which is associated with the Sivas Kangal Coal Mine"
   },
   "canonical_name": "Sivas Kangal Coal Mine",
   "canonical_slug": "sivas-kangal-coal-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sivas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:26:59.000000Z",
+      "operators": [
+        "Demir Export (Koç Holding subsidiary)",
+        "EÜAŞ"
+      ],
+      "owners": [
+        "Anadolu Birlik Holding",
+        "Konya Şeker"
+      ],
+      "notes": "EÜAŞ signed a contract with Demir Export to operate the mine and transport coal to the Kangal power station."
+    }
+  }
 }

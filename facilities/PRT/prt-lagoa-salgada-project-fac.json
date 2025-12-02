@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.428362464075754,
+    "lon": -9.1365919,
     "precision": "unknown"
   },
   "types": [
@@ -34,7 +34,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ascendant Resources Inc.",
+    "Empresa de Desenvolvimento Mineiro S.A.",
+    "Mineral & Financial Investment AG",
+    "Redcorp - Empreendimentos Mineiros, Lda"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.664099Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:29:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lisbon (https://www.globenewswire.com/news-release/2022/05/25/2450070/0/en/Ascendant-Resources-Acquires-50-Ownership-of-Lagoa-Salgada-VMS-Project-Portugal.html). The Lagoa Salgada Project is located on the Iberian Pyrite Belt in Portugal, approximately 80 km from Lisbon"
   },
   "canonical_name": "Lagoa Salgada Facility",
   "canonical_slug": "lagoa-salgada-facility",
@@ -71,5 +76,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lisbon",
+  "town": "Lisbon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:29:02.000000Z",
+      "operators": [
+        "Redcorp - Empreendimentos Mineiros, Lda"
+      ],
+      "owners": [
+        "Ascendant Resources Inc.",
+        "Mineral & Financial Investment AG",
+        "Empresa de Desenvolvimento Mineiro S.A."
+      ],
+      "notes": "Ascendant Resources holds a 50% interest in Redcorp, which operates the project and holds an 85% interest in it."
+    }
+  }
 }

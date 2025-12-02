@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DZA",
   "location": {
-    "lat": 36.402,
-    "lon": 8.129,
+    "lat": 36.402136,
+    "lon": 8.12888,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Groupe SONAREM",
+    "Société des Mines de Fer d'Algérie SpA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.574161Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:07:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SOMIFER_Chaabet_el_Ballout_Mine. The SOMIFER Chaabet el Ballout Mine is an iron ore mine located in Aïn Zana, Souk Ahras, Algeria"
   },
   "canonical_name": "Somifer Chaabet El Ballout Mine",
   "canonical_slug": "somifer-chaabet-el-ballout-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Souk Ahras",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:07:59.000000Z",
+      "operators": [
+        "Société des Mines de Fer d'Algérie SpA"
+      ],
+      "owners": [
+        "Groupe SONAREM"
+      ],
+      "notes": "The mine is operated by Société des Mines de Fer d'Algérie SpA, which is fully owned by Groupe SONAREM."
+    }
+  }
 }

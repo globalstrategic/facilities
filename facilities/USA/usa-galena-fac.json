@@ -32,8 +32,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.493,
-    "lon": -116.014,
+    "lat": 38.99746286349016,
+    "lon": -101.7565099,
     "precision": "site"
   },
   "types": [
@@ -66,7 +66,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Americas Gold and Silver Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -76,11 +78,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.762436Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:37:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Wallace (https://americas-gold.com/operations/galena-complex/). The Galena Complex is located in Idaho's Silver Valley, a historic mining district"
   },
   "canonical_name": "Galena Mine",
   "canonical_slug": "galena-mine",
@@ -95,5 +97,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "town": "Wallace",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:45.000000Z",
+      "operators": [
+        "Americas Gold and Silver Corporation"
+      ],
+      "owners": [
+        "Americas Gold and Silver Corporation"
+      ],
+      "notes": "Americas Gold and Silver Corporation owns 100% of the Galena Complex."
+    }
+  }
 }

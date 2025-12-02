@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.96363385651165,
+    "lon": 49.6100979689914,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Etablissements Gallois S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.107569Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:20:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tamatave (https://www.anfre.com/refractory-raw-material-market-spotlighted-in-seville/). Gallois Operations is located 30 km from the port of Tamatave in the north-east of Madagascar"
   },
   "canonical_name": "Gallois Mine",
   "canonical_slug": "gallois-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tamatave",
+  "town": "Tamatave",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:20:06.000000Z",
+      "operators": [
+        "Etablissements Gallois S.A."
+      ],
+      "owners": [
+        "Etablissements Gallois S.A."
+      ],
+      "notes": "Etablissements Gallois S.A. has significantly increased its output and has plans for further expansion."
+    }
+  }
 }

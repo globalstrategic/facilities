@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.288,
-    "lon": -87.256,
+    "lat": 38.61139,
+    "lon": -122.32361,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allen Lewis",
+    "Glenn C. Griffen"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.836530Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:22:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10031617/. The Lewis Mine is located in Napa County, California, and is associated with manganese"
   },
   "canonical_name": "Lewis Mine",
   "canonical_slug": "lewis-mine",
@@ -50,5 +53,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:22:14.000000Z",
+      "operators": [],
+      "owners": [
+        "Allen Lewis",
+        "Glenn C. Griffen"
+      ],
+      "notes": "Ownership is attributed to Allen Lewis and Glenn C. Griffen."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 49.764,
-    "lon": 72.618,
+    "lat": 49.75044,
+    "lon": 72.563474,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Temirtau JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.748688Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:48:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kazakhstanskaya_Coal_Mine. The Shakhtinskaya Coal Mine is part of the ArcelorMittal's Karaganda Mine Complex"
   },
   "canonical_name": "Shakhtinskaya Coal Mine",
   "canonical_slug": "shakhtinskaya-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:48:32.000000Z",
+      "operators": [
+        "ArcelorMittal Temirtau JSC"
+      ],
+      "owners": [
+        "ArcelorMittal Temirtau JSC"
+      ],
+      "notes": "The mine is owned and operated by ArcelorMittal Temirtau, a subsidiary of ArcelorMittal."
+    }
+  }
 }

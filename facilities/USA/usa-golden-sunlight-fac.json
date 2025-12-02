@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 45.903,
-    "lon": -112.014,
+    "lat": 39.6501597620903,
+    "lon": -120.9450227523692,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.780505Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:53:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Butte (https://www.barrick.com/English/news/news-details/2019/Update-on-Operations-at-Golden-Sunlight/default.aspx). The Golden Sunlight mine is located approximately 55 km east of Butte, Montana. It has been approaching the end of its operational life, with mining activities limited to existing areas only"
   },
   "canonical_name": "Golden Sunlight Mine",
   "canonical_slug": "golden-sunlight-mine",
@@ -56,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Butte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:53:37.000000Z",
+      "operators": [
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Barrick Gold Corporation is the sole operator and owner of the Golden Sunlight mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.299,
-    "lon": 26.5,
+    "lat": -18.299298,
+    "lon": 26.499745,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chilota Colliery",
+    "Jin An Coal",
+    "Jingan Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.953796Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:38:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Chilota_Coal_Mine. Chilota Coal Mine is an operating coal mine located in Hwange, producing coking and thermal coal"
   },
   "canonical_name": "Chilota Coal Mine",
   "canonical_slug": "chilota-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland North Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:38:14.000000Z",
+      "operators": [
+        "Chilota Colliery"
+      ],
+      "owners": [
+        "Jin An Coal",
+        "Jingan Corp"
+      ],
+      "notes": "Chilota Colliery is a subsidiary of Jin An Coal, which is fully owned by Jingan Corp."
+    }
+  }
 }

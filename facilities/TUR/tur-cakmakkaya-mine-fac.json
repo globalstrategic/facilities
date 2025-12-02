@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TUR",
   "location": {
-    "lat": 41.111,
-    "lon": 41.812,
+    "lat": 41.247611,
+    "lon": 41.5817194,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Etibank"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:59.310492Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:27:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/%C3%87akmakkaya_mine. The Çakmakkaya mine is one of the largest copper reserves in Turkey"
   },
   "canonical_name": "Cakmakkaya Mine",
   "canonical_slug": "cakmakkaya-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Artvin Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:27:26.000000Z",
+      "operators": [
+        "Etibank"
+      ],
+      "owners": [
+        "Etibank"
+      ],
+      "notes": "Etibank is the primary company associated with the mine."
+    }
+  }
 }

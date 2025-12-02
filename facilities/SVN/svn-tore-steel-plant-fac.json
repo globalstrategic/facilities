@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SVN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.226,
+    "lon": 15.29855,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,7 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Štore Steel d.o.o.",
-      "role": "operator",
-      "source": "Research Import METALLURGICAL 2025-10-21",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T17:19:41.205674",
-      "evidence": "Extracted from operator column: Štore Steel d.o.o. (Current)"
-    }
+    "Štore Steel d.o.o."
   ],
   "products": [],
   "sources": [
@@ -41,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.498077Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:57:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.store-steel.si/EN/enDefault.aspx. Coordinates extracted from the company's website"
   },
   "canonical_name": "Štore Steel Smelter",
   "canonical_slug": "store-steel-smelter",
@@ -60,5 +53,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Savinja",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:57:36.000000Z",
+      "operators": [
+        "Štore Steel d.o.o."
+      ],
+      "owners": [
+        "Štore Steel d.o.o."
+      ],
+      "notes": "Štore Steel d.o.o. is both the operator and owner of the facility."
+    }
+  }
 }

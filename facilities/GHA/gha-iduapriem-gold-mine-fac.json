@@ -8,8 +8,8 @@
   ],
   "country_iso3": "GHA",
   "location": {
-    "lat": 5.243,
-    "lon": -2.042,
+    "lat": 5.3,
+    "lon": -1.983,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.607667Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:51:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Iduapriem_Gold_Mine. Iduapriem Gold Mine is an open-pit gold mine located 10 km south of Tarkwa"
   },
   "canonical_name": "Iduapriem Gold Mine",
   "canonical_slug": "iduapriem-gold-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:51:27.000000Z",
+      "operators": [
+        "AngloGold Ashanti"
+      ],
+      "owners": [
+        "AngloGold Ashanti"
+      ],
+      "notes": "AngloGold Ashanti owns 100% of the Iduapriem Gold Mine."
+    }
+  }
 }

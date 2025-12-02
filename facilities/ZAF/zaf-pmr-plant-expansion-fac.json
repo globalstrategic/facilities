@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.9443,
+    "lon": 31.1353,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hebei Iron and Steel Group (HBIS Group)",
+    "Industrial Development Corporation of South Africa Ltd (IDC)",
+    "Palabora Copper (Pty) Ltd",
+    "Palabora Mining Company (PMC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.766014Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:54:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/palabora/. The Palabora copper mine is a leading copper producer in South Africa, located near Phalaborwa"
   },
   "canonical_name": "Pmr Expansion Mine",
   "canonical_slug": "pmr-expansion-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:54:32.000000Z",
+      "operators": [
+        "Palabora Copper (Pty) Ltd"
+      ],
+      "owners": [
+        "Palabora Mining Company (PMC)",
+        "Hebei Iron and Steel Group (HBIS Group)",
+        "Industrial Development Corporation of South Africa Ltd (IDC)"
+      ],
+      "notes": "Palabora Copper is a subsidiary of the Palabora Mining Company, with significant ownership by HBIS Group and IDC."
+    }
+  }
 }

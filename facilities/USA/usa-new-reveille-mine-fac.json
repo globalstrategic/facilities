@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.006,
-    "lon": -116.193,
+    "lat": 38.09711579549226,
+    "lon": -116.3928232600201,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bates (of Los Angeles)",
+    "River Mountain Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.957751Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:22:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tonopah (https://www.forgottennevada.org/sites/Reveille.html). The New Reveille Mine is located in the Reveille district of Nye County, approximately 73 miles east of Tonopah"
   },
   "canonical_name": "New Reveille Mine",
   "canonical_slug": "new-reveille-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Tonopah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:22:54.000000Z",
+      "operators": [
+        "Bates (of Los Angeles)"
+      ],
+      "owners": [
+        "River Mountain Resources"
+      ],
+      "notes": "Bates has taken over the Antimonial group of claims under bond and lease."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.411,
-    "lon": -86.972,
+    "lat": 37.85919630806895,
+    "lon": -84.02875943516813,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Armstrong"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.738294Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:16:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Clay City (https://www.miningmagazine.com/management/news/1263118/mines-seams-partnership). Lewis Creek Coal Mine is mentioned as currently operating with a fleet of mining equipment"
   },
   "canonical_name": "Lewis Creek Coal Mine",
   "canonical_slug": "lewis-creek-coal-mine",
@@ -51,5 +53,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Clay City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:16:34.000000Z",
+      "operators": [
+        "Armstrong"
+      ],
+      "owners": [],
+      "notes": "Armstrong is actively operating the Lewis Creek Coal Mine."
+    }
+  }
 }

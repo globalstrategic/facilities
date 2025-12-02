@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.558,
-    "lon": -92.52,
+    "lat": 47.557383,
+    "lon": -92.519403,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cleveland-Cliffs Inc.",
+    "Cleveland-Cliffs Minorca Mine Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.768051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:43:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Cleveland-Cliffs_Minorca_Mine. The Minorca mine is located in Virginia, Minnesota, and is currently idled"
   },
   "canonical_name": "Minorca Mine",
   "canonical_slug": "minorca-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minnesota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:43:07.000000Z",
+      "operators": [
+        "Cleveland-Cliffs Minorca Mine Inc.",
+        "Cleveland-Cliffs Inc."
+      ],
+      "owners": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "notes": "Cleveland-Cliffs Inc. is the sole owner and operator of the Minorca mine."
+    }
+  }
 }

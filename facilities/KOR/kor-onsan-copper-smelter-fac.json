@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.3153,
+    "lon": 129.3489,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "LS MnM Inc.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515472",
-      "evidence": "Extracted from operator column: LS MnM Inc."
-    }
+    "Korea Mining & Smelting",
+    "LS Group",
+    "LS MnM Inc.",
+    "LS-Nikko Copper"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.754958Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] South Korea's largest copper smelter and a major global producer of precious metals and rhenium as by-products. 1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:58:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] South Korea's largest copper smelter and a major global producer of precious metals and rhenium as by-products. 1 | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10183243. The Onsan Copper Smelter is a significant processing facility for copper located near Ulsan, South Korea"
   },
   "canonical_name": "Onsan Copper Smelter",
   "canonical_slug": "onsan-copper-smelter",
@@ -59,5 +55,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:58:28.000000Z",
+      "operators": [
+        "LS-Nikko Copper"
+      ],
+      "owners": [
+        "Korea Mining & Smelting",
+        "LS Group"
+      ],
+      "notes": "LS-Nikko Copper is a major operator and owner of the Onsan Copper Smelter."
+    }
+  }
 }

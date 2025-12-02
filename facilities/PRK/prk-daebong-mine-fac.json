@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.834080599380556,
+    "lon": 128.3021922,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Daesung Administration",
+    "Hyesan-China Joint Venture Mineral Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.351158Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:33:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Rojung-Ri (https://nautilus.org/napsnet/napsnet-special-reports/recent-activities-in-the-dprk-minerals-sector/). Daebong Mine is reported to produce high-quality gold, tungsten, and quartz. It is located near the border with China"
   },
   "canonical_name": "Daebong Mine",
   "canonical_slug": "daebong-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yangkang Province",
+  "town": "Rojung-Ri",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:33:27.000000Z",
+      "operators": [
+        "Hyesan-China Joint Venture Mineral Co."
+      ],
+      "owners": [
+        "Daesung Administration"
+      ],
+      "notes": "Daebong Mine is controlled by the Room No. 39 of the Labor Party, which manages secret funds."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 17.9864,
-    "lon": null,
+    "lat": 18.060364,
+    "lon": -102.360564,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "ArcelorMittal Mexico"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.960074Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:36:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Las_Truchas_Complex_Mine. The facility is part of the ArcelorMittal Las Truchas Complex Mine, which is an iron ore mine operating in Lázaro Cárdenas"
   },
   "canonical_name": "Arcelormittal Lázaro Cárdenas Steel Plant",
   "canonical_slug": "arcelormittal-lazaro-cardenas-steel-plant",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michoacán",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:29.000000Z",
+      "operators": [
+        "ArcelorMittal Mexico"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal is the primary operator and owner of the facility."
+    }
+  }
 }

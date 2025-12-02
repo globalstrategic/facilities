@@ -7,8 +7,8 @@
   ],
   "country_iso3": "GRC",
   "location": {
-    "lat": 40.604,
-    "lon": 23.75,
+    "lat": 40.6007,
+    "lon": 23.7486,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eldorado Gold Corporation",
+    "Hellas Gold S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:58.508727Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:56:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Olympias_mine. The Olympias mine is located in the Halkidiki Peninsula in northern Greece and is currently under redevelopment"
   },
   "canonical_name": "Olympias Mine",
   "canonical_slug": "olympias-mine",
@@ -58,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Macedonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:56:48.000000Z",
+      "operators": [
+        "Eldorado Gold Corporation"
+      ],
+      "owners": [
+        "Eldorado Gold Corporation",
+        "Hellas Gold S.A."
+      ],
+      "notes": "Eldorado Gold holds a 95% interest in the Olympias mine through its subsidiary Hellas Gold."
+    }
+  }
 }

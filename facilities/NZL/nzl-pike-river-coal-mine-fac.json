@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -42.206,
-    "lon": 171.483,
+    "lat": -42.5,
+    "lon": 171.2,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Department of Conservation (New Zealand)",
+    "Gujarat NRE Coke Limited",
+    "New Zealand Oil & Gas",
+    "Pike River Coal Limited",
+    "Saurashtra Fuels Private Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.225607Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:28:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pike_River_Mine. The Pike River Mine is located 46 km north-northeast of Greymouth"
   },
   "canonical_name": "Pike River Coal Mine",
   "canonical_slug": "pike-river-coal-mine",
@@ -50,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:28:48.000000Z",
+      "operators": [
+        "Pike River Coal Limited"
+      ],
+      "owners": [
+        "Department of Conservation (New Zealand)",
+        "New Zealand Oil & Gas",
+        "Gujarat NRE Coke Limited",
+        "Saurashtra Fuels Private Limited"
+      ],
+      "notes": "The mine was formerly operated by Pike River Coal and is now owned by the Department of Conservation."
+    }
+  }
 }

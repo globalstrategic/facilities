@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.741,
-    "lon": 30.62,
+    "lat": -25.5,
+    "lon": 30.5,
     "precision": "site"
   },
   "types": [
@@ -44,7 +44,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals",
+    "Norilsk Nickel"
+  ],
   "products": [],
   "sources": [
     {
@@ -59,11 +62,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.780759Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-nkomati-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:07:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-nkomati-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.bizcommunity.com/article/african-rainbow-minerals-takes-full-ownership-of-nkomati-816553a. Nkomati Mine is a significant nickel producer located in Mpumalanga, South Africa"
   },
   "canonical_name": "Nkomati Mine",
   "canonical_slug": "nkomati-mine",
@@ -78,5 +81,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:07:48.000000Z",
+      "operators": [
+        "African Rainbow Minerals"
+      ],
+      "owners": [
+        "African Rainbow Minerals",
+        "Norilsk Nickel"
+      ],
+      "notes": "African Rainbow Minerals has recently acquired full ownership of the mine, which is currently under care and maintenance."
+    }
+  }
 }

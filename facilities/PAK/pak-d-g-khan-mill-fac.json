@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 30.0583,
+    "lon": 70.6342,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "D.G. Khan Cement Company Limited",
+    "Nishat Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.336824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:37:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/DG_Cement. D.G. Khan Cement Company Limited operates a cement plant in Dera Ghazi Khan, Punjab, Pakistan"
   },
   "canonical_name": "D G Khan Mill",
   "canonical_slug": "d-g-khan-mill",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Punjab",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:37:22.000000Z",
+      "operators": [
+        "D.G. Khan Cement Company Limited"
+      ],
+      "owners": [
+        "Nishat Group"
+      ],
+      "notes": "D.G. Khan Cement is owned by Nishat Group, which is one of the largest business groups in Pakistan."
+    }
+  }
 }

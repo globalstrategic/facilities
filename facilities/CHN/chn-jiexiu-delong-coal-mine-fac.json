@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.051,
-    "lon": 112.115,
+    "lat": 37.057967,
+    "lon": 112.140925,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "山西介休鑫峪沟德隆煤业有限公司",
+    "山西路鑫能源集团有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.881210Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:44:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E4%BB%8B%E4%BC%91%E9%91%AB%E5%B3%AA%E6%B2%9F%E5%BE%B7%E9%9A%86%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Jiexiu Delong Coal Mine is an underground coal mine located in Shanxi Province, China, with a production capacity of 90,000 tons per year"
   },
   "canonical_name": "Jiexiu Delong Coal Mine",
   "canonical_slug": "jiexiu-delong-coal-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:44:33.000000Z",
+      "operators": [
+        "山西介休鑫峪沟德隆煤业有限公司"
+      ],
+      "owners": [
+        "山西路鑫能源集团有限公司"
+      ],
+      "notes": "The mine is operated by Jiexiu Delong Coal Industry Co., Ltd., which is owned by Shanxi Luxin Energy Group Co., Ltd."
+    }
+  }
 }

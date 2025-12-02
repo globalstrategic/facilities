@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.303,
-    "lon": 29.932,
+    "lat": -18.3303,
+    "lon": 29.9819,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rio Tinto Zimbabwe Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.949791Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:13:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10280273. Coordinates are derived from the nearby Cam And Motor Gold Mine, which is located close to the Eiffel Flats Tailings Project"
   },
   "canonical_name": "Eiffel Flats Tailings Mine",
   "canonical_slug": "eiffel-flats-tailings-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:13:08.000000Z",
+      "operators": [
+        "Rio Tinto Zimbabwe Ltd"
+      ],
+      "owners": [
+        "Rio Tinto Zimbabwe Ltd"
+      ],
+      "notes": "Rio Tinto Zimbabwe Ltd is the majority owner and operator of the facility."
+    }
+  }
 }

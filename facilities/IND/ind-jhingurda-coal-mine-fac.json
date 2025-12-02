@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.212,
-    "lon": 82.698,
+    "lat": 24.196,
+    "lon": 82.7,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Limited",
+    "Northern Coalfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.092923Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:52:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Jhingrudah. Jhingurda Coal Mine is part of the Jhingurdah coalfields operated by Northern Coalfields Limited"
   },
   "canonical_name": "Jhingurda Coal Mine",
   "canonical_slug": "jhingurda-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:52:28.000000Z",
+      "operators": [
+        "Northern Coalfields Limited"
+      ],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "Northern Coalfields Limited is a subsidiary of Coal India Limited."
+    }
+  }
 }

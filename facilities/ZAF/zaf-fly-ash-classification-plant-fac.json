@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.124238,
-    "lon": 29.004242,
+    "lat": -26.2515,
+    "lon": 29.1817,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "PPC Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +32,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T16:59:12.000000Z",
+    "last_checked": "2025-12-01T17:18:58.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://cer.org.za/wp-content/uploads/2017/12/Annexure-Q.pdf. Coordinates extracted from the Khutala Colliery, which is located in the Mpumalanga region, relevant to the Fly Ash Classification Plant"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://cer.org.za/wp-content/uploads/2017/12/Annexure-Q.pdf. Coordinates extracted from the Khutala Colliery, which is located in the Mpumalanga region, relevant to the Fly Ash Classification Plant. Web search geocoded. Source: https://www.ppc.co.za/products/fly-ash. The facility is associated with PPC's operations at the Kriel Power Station"
   },
   "canonical_name": "Fly Ash Classification Mine",
   "canonical_slug": "fly-ash-classification-mine",
@@ -48,5 +50,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:18:58.000000Z",
+      "operators": [
+        "PPC Ltd"
+      ],
+      "owners": [
+        "PPC Ltd"
+      ],
+      "notes": "PPC operates the Kriel Fly Ash plant under a long-term contract with Eskom."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.12511,
-    "lon": 28.88278,
+    "lat": -25.6167,
+    "lon": 30.0333,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Izimbiwa Coal",
+    "Phembani"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:27:31.000000Z",
+    "last_checked": "2025-12-01T17:57:26.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6808. Coordinates extracted from the Global Energy Observatory for the Middelburg Townlands Colliery"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6808. Coordinates extracted from the Global Energy Observatory for the Middelburg Townlands Colliery. Web search geocoded. Source: https://www.gem.wiki/Middelburg_Complex_(MBO). Middelburg Townlands Colliery is part of the Middelburg Complex, which includes several collieries"
   },
   "canonical_name": "Middelburg Townlands Colliery Mine",
   "canonical_slug": "middelburg-townlands-colliery-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:57:26.000000Z",
+      "operators": [
+        "Izimbiwa Coal"
+      ],
+      "owners": [
+        "Phembani",
+        "Glencore"
+      ],
+      "notes": "Izimbiwa Coal operates the mine, which is owned by Phembani (50.1%) and Glencore (49.9%)."
+    }
+  }
 }

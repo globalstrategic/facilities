@@ -6,8 +6,8 @@
   ],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 75.0,
+    "lon": -56.0,
     "precision": "unknown"
   },
   "types": [
@@ -16,14 +16,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Historic",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.223057",
-      "evidence": "Extracted from operator column: Historic"
-    }
+    "Amaroq Minerals",
+    "FBC Mining (BA) Limited",
+    "Historic"
   ],
   "products": [],
   "sources": [
@@ -34,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.631098Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T19:58:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/press-release?id=6912df536fc9d8d2d5ed6f2e. The Black Angel mine is located in the Avannaata municipality in northwestern Greenland, approximately 24 km northeast of Ukkusissat"
   },
   "canonical_name": "Black Angel Mine",
   "canonical_slug": "black-angel-mine",
@@ -61,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Avannaata",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:58:35.000000Z",
+      "operators": [
+        "Amaroq Minerals"
+      ],
+      "owners": [
+        "Amaroq Minerals",
+        "FBC Mining (BA) Limited"
+      ],
+      "notes": "Amaroq Minerals has acquired Black Angel Mining A/S and is planning to develop the mine."
+    }
+  }
 }

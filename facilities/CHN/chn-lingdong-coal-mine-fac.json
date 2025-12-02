@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 49.393,
-    "lon": 117.767,
+    "lat": 29.1866175,
+    "lon": 119.5068449,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Xiao Lidong"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.859980Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:42:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Lanxi_power_station. Coordinates extracted from the location of the Lanxi power station in Lingdong, which is in the vicinity of the Lingdong Coal Mine"
   },
   "canonical_name": "Lingdong Coal Mine",
   "canonical_slug": "lingdong-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zhejiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:42:00.000000Z",
+      "operators": [],
+      "owners": [
+        "Xiao Lidong"
+      ],
+      "notes": "Xiao Lidong is mentioned as the mine owner who was detained following a disaster."
+    }
+  }
 }

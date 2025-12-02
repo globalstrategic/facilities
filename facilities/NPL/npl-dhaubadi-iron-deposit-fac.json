@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 27.720987,
+    "lon": 84.05854,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dhaubadi Iron Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.483439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:25:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/DICL_Dhaubadi_Mine. The Dhaubadi Iron Deposit is located in Hupsekot Rural Municipality, East Nawalparasi, Nepal"
   },
   "canonical_name": "Dhaubadi Iron Development",
   "canonical_slug": "dhaubadi-iron-development",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gandaki Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:25:43.000000Z",
+      "operators": [
+        "Dhaubadi Iron Company Limited"
+      ],
+      "owners": [
+        "Dhaubadi Iron Company Limited"
+      ],
+      "notes": "Dhaubadi Iron Company Limited was established in 2019 and is conducting exploration and development activities."
+    }
+  }
 }

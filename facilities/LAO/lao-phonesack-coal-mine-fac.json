@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LAO",
   "location": {
-    "lat": 15.752,
-    "lon": 106.69,
+    "lat": 15.75156009,
+    "lon": 106.689565,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Phonesack Group Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.213750Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:05:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Phonesack_Coal_Mine. The Phonesack Coal Mine is an operating coal mine located in Xekong Province, Laos"
   },
   "canonical_name": "Phonesack Coal Mine",
   "canonical_slug": "phonesack-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xekong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:05:53.000000Z",
+      "operators": [
+        "Phonesack Group Co. Ltd."
+      ],
+      "owners": [
+        "Phonesack Group Co. Ltd."
+      ],
+      "notes": "Phonesack Group is both the operator and owner of the mine."
+    }
+  }
 }

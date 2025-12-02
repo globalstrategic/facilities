@@ -26,14 +26,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Delcom Pte. Ltd.",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.384773",
-      "evidence": "Extracted from operator column: Delcom (Kampuchea) Pte. Ltd."
-    }
+    "Delcom (Kampuchea) Pte. Ltd",
+    "Delcom Pte. Ltd."
   ],
   "products": [],
   "sources": [
@@ -71,5 +65,15 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:55:55.000000Z",
+      "operators": [
+        "Delcom (Kampuchea) Pte. Ltd"
+      ],
+      "owners": [],
+      "notes": "Only the operator is mentioned; no ownership details are provided."
+    }
+  }
 }

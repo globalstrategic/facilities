@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ROU",
   "location": {
-    "lat": 45.274,
-    "lon": 21.7505,
+    "lat": 45.2739111,
+    "lon": 21.750528,
     "precision": "site"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:47.777228Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. 24 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:24:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historical iron ore mine. Production data from 2008 suggests inactivity. 24 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Dognecea_mine. The Dognecea mine is one of the largest iron ore reserves in Romania. Web search geocoded. Source: https://en.wikipedia.org/wiki/Dognecea_mine. The Dognecea mine is one of the largest iron ore reserves in Romania"
   },
   "canonical_name": "Dognecea Mine",
   "canonical_slug": "dognecea-mine",
@@ -51,5 +51,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Caraș-Severin County"
 }

@@ -10,8 +10,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.695,
-    "lon": 30.011,
+    "lat": -25.694582,
+    "lon": 30.013851,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ndalamo Resources (Pty) Ltd",
+    "TerraCom Resources",
+    "Universal Coal and Energy Holdings South Africa (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.775891Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:03:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/North_Block_Complex. The North Block Complex is an operational mining facility located near Belfast in Mpumalanga Province, South Africa"
   },
   "canonical_name": "North Block Mine",
   "canonical_slug": "north-block-mine",
@@ -53,5 +57,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:03:43.000000Z",
+      "operators": [
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd",
+        "TerraCom Resources"
+      ],
+      "owners": [
+        "Ndalamo Resources (Pty) Ltd",
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd",
+        "TerraCom Resources"
+      ],
+      "notes": "Ndalamo Resources holds a 51% interest, while Universal Coal and Energy Holdings holds 49%. TerraCom Resources is the ultimate owner."
+    }
+  }
 }

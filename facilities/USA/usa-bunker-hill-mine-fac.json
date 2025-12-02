@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.663,
-    "lon": -123.443,
+    "lat": 47.5,
+    "lon": -116.1,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bunker Hill Mining Corp.",
+    "Placer Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.740718Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:18:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.bunkerhillmining.com/. The Bunker Hill Mine is located in the Coeur d'Alene Mining District, near Kellogg, Idaho"
   },
   "canonical_name": "Bunker Hill Mine",
   "canonical_slug": "bunker-hill-mine-2",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:18:30.000000Z",
+      "operators": [
+        "Bunker Hill Mining Corp."
+      ],
+      "owners": [
+        "Placer Mining Corporation"
+      ],
+      "notes": "Bunker Hill Mining Corp. is focused on revitalizing the historic Bunker Hill Mine, which is currently under development."
+    }
+  }
 }

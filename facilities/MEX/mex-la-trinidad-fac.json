@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 22.7,
-    "lon": -105.517,
+    "lat": 22.499401135975543,
+    "lon": -105.66493395566044,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GR Silver Mining",
+    "Mako Mining Corp.",
+    "Marlin Gold Mining Ltd.",
+    "Oro Gold de Mexico, S.A. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.941461Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:22:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mazatlan (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/772-tsx-venture/mln/25706-marlin-gold-announces-operating-results-from-la-trinidad-mine.html). La Trinidad mine is located in Sinaloa, Mexico, and was declared commercial production on November 1, 2014. It ceased operations in 2019"
   },
   "canonical_name": "La Trinidad Mine",
   "canonical_slug": "la-trinidad-mine",
@@ -49,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sinaloa",
+  "town": "Mazatlan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:22:13.000000Z",
+      "operators": [
+        "Marlin Gold Mining Ltd.",
+        "Mako Mining Corp."
+      ],
+      "owners": [
+        "Oro Gold de Mexico, S.A. de C.V.",
+        "GR Silver Mining"
+      ],
+      "notes": "Marlin Gold Mining Ltd. owned the La Trinidad mine until it was acquired by GR Silver Mining. The mine is currently decommissioned."
+    }
+  }
 }

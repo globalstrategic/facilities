@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.7,
-    "lon": 125.95,
+    "lat": 40.478696,
+    "lon": 128.906914,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ministry of Metallurgical Industry (North Korea)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.355979Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:37:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MMI_Tanchon_Mine. Coordinates are approximate for the MMI Tanchon Mine, which is part of the Kaechon Area Coal Mining Complex"
   },
   "canonical_name": "MMI Kaecheon Mine",
   "canonical_slug": "mmi-kaecheon-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Hamgyong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:37:00.000000Z",
+      "operators": [
+        "Ministry of Metallurgical Industry (North Korea)"
+      ],
+      "owners": [
+        "Ministry of Metallurgical Industry (North Korea)"
+      ],
+      "notes": "The mine is owned and operated by the North Korean government."
+    }
+  }
 }

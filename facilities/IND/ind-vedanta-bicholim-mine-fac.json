@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.606,
-    "lon": 73.911,
+    "lat": 15.605424,
+    "lon": 73.916491,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sesa Goa",
+    "Vedanta Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.125045Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:51:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vedanta_Bicholim_Mine. Vedanta Bicholim Mine is an iron ore mine operating in Mulgaon, Goa, India"
   },
   "canonical_name": "Vedanta Bicholim Mine",
   "canonical_slug": "vedanta-bicholim-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:51:15.000000Z",
+      "operators": [
+        "Vedanta Ltd",
+        "Sesa Goa"
+      ],
+      "owners": [
+        "Vedanta Ltd"
+      ],
+      "notes": "Vedanta Ltd operates the mine and is the sole owner."
+    }
+  }
 }

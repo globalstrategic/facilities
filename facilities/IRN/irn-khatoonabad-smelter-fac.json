@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IRN",
   "location": {
-    "lat": 29.961,
-    "lon": 55.9,
+    "lat": 30.080833,
+    "lon": 55.395556,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "National Iranian Copper Industries Company - NICICo"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:16.452975Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:09:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/NICICo%20-%20Khatoon%20Abad.htm. Coordinates extracted directly from the source"
   },
   "canonical_name": "Khatoonabad Smelter",
   "canonical_slug": "khatoonabad-smelter",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kerman",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:09:29.000000Z",
+      "operators": [
+        "National Iranian Copper Industries Company - NICICo"
+      ],
+      "owners": [
+        "National Iranian Copper Industries Company - NICICo"
+      ],
+      "notes": "NICICo is both the operator and owner of the facility."
+    }
+  }
 }

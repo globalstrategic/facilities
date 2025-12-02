@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -13.19,
-    "lon": -75.65,
+    "lat": -13.753223326846342,
+    "lon": -75.2785685975031,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nexa Resources S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.295997Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:49:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (https://www.sec.gov/Archives/edgar/data/1713930/000129281421004207/ex15_1.htm). Cerro Lindo is located in the Chavín District, Chincha Province, Ica Department of Peru, approximately 268 km southeast of Lima"
   },
   "canonical_name": "Chavin Lead Zinc 34 Mine",
   "canonical_slug": "chavin-lead-zinc-34-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chincha",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:49:51.000000Z",
+      "operators": [
+        "Nexa Resources S.A."
+      ],
+      "owners": [
+        "Nexa Resources S.A."
+      ],
+      "notes": "Nexa owns a total of 80.16% in the Mine."
+    }
+  }
 }

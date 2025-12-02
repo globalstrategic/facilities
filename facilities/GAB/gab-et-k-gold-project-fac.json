@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.373809996201995,
+    "lon": 9.4609934,
     "precision": "unknown"
   },
   "types": [
@@ -26,14 +26,8 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Managem Group",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.192609",
-      "evidence": "Extracted from operator column: Managem Group"
-    }
+    "Managem",
+    "Managem Group"
   ],
   "products": [],
   "sources": [
@@ -44,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.388713Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:20:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Libreville (http://www.managemgroup.com/en/eteke-project-0). The Etéké Gold Project is located in the Ngounié province, 420 km from the capital Libreville"
   },
   "canonical_name": "Etéké Gold Development",
   "canonical_slug": "eteke-gold-development",
@@ -63,5 +57,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ngounié",
+  "town": "Libreville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:20:22.000000Z",
+      "operators": [
+        "Managem"
+      ],
+      "owners": [
+        "Managem"
+      ],
+      "notes": "Managem owns 80% of the Etéké Gold Project."
+    }
+  }
 }

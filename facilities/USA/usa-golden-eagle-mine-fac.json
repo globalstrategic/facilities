@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.019,
-    "lon": -89.454,
+    "lat": 34.38889,
+    "lon": -112.47972,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Golden Eagle Mining Co.",
+    "Hansen And Zander"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.733671Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:12:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10048240/. The Golden Eagle Mine is located in the Hassayampa District of Yavapai County, Arizona"
   },
   "canonical_name": "Golden Eagle Mine",
   "canonical_slug": "golden-eagle-mine-2",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:12:48.000000Z",
+      "operators": [
+        "Hansen And Zander",
+        "Golden Eagle Mining Co."
+      ],
+      "owners": [
+        "Hansen And Zander",
+        "Golden Eagle Mining Co."
+      ],
+      "notes": "The mine was operational from 1926 to 1936."
+    }
+  }
 }

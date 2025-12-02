@@ -7,8 +7,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 49.998,
-    "lon": 84.0,
+    "lat": 49.9978,
+    "lon": 84.0003,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Kazakhstan"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.745006Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:45:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10206746. The Strezhanskoe Zinc Mine is located near Zyryanovsk, Kazakhstan"
   },
   "canonical_name": "Strezhanskoe Mine",
   "canonical_slug": "strezhanskoe-mine",
@@ -62,5 +64,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:45:31.000000Z",
+      "operators": [],
+      "owners": [
+        "Government of Kazakhstan"
+      ],
+      "notes": "Ownership is held by the Government of Kazakhstan."
+    }
+  }
 }

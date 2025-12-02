@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LAO",
   "location": {
-    "lat": 17.308,
-    "lon": 105.919,
+    "lat": 17.308229,
+    "lon": 105.919497,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vietnam Company of Economic Cooperation (Coecco)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.213497Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:05:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vietnam_Company_of_Economic_Cooperation_Khammouane_Mine. The mine is located in Boualapha district, Khammouane province, Laos"
   },
   "canonical_name": "Vietnam Company Of Economic Cooperation Khammouane Mine",
   "canonical_slug": "vietnam-company-of-economic-cooperation-khammouane-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khammouane",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:05:43.000000Z",
+      "operators": [
+        "Vietnam Company of Economic Cooperation (Coecco)"
+      ],
+      "owners": [
+        "Vietnam Company of Economic Cooperation (Coecco)"
+      ],
+      "notes": "The mine has been mothballed since 2021 due to environmental concerns."
+    }
+  }
 }

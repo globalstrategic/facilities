@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.75,
-    "lon": 29.652,
+    "lat": -25.8,
+    "lon": 29.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canyon Coal",
+    "Menar Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.706564Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-hakhano-colliery-brummersheim-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:00:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-hakhano-colliery-brummersheim-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.canyoncoal.com/rehabilitation. Hakhano Colliery is located 20 km east of Middelburg, Mpumalanga. The mine was operational until 2019, and rehabilitation is currently underway"
   },
   "canonical_name": "Hakhano Colliery Mine",
   "canonical_slug": "hakhano-colliery-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:00:08.000000Z",
+      "operators": [
+        "Canyon Coal"
+      ],
+      "owners": [
+        "Menar Holdings"
+      ],
+      "notes": "Canyon Coal operates the facility, and Menar is the controlling shareholder."
+    }
+  }
 }

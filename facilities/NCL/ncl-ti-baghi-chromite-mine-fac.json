@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.44472,
+    "lon": 164.21722,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,11 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Various 42",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.538704",
-      "evidence": "Extracted from operator column: Various (incl. Inco) 42"
-    }
+    "Eramet SA",
+    "Nippon Steel Nisshin Co Ltd",
+    "Société Le Nickel (SLN)",
+    "Société Territoriale Calédonienne de Participation Industrielle",
+    "Various 42"
   ],
   "products": [],
   "sources": [
@@ -45,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.368799Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:57:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tiebaghi. The Tiébaghi Chromite Mine is located in the Tiébaghi Massif and has a history of production primarily focused on chromium"
   },
   "canonical_name": "Tiébaghi Chromite Mine",
   "canonical_slug": "tiebaghi-chromite-mine",
@@ -72,5 +69,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:57:46.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet SA",
+        "Société Territoriale Calédonienne de Participation Industrielle",
+        "Nippon Steel Nisshin Co Ltd"
+      ],
+      "notes": "The mine has had various ownership structures over the years, with current operations involving SLN, a subsidiary of Eramet."
+    }
+  }
 }

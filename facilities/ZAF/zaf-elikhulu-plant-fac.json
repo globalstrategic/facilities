@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.4748497,
-    "lon": 29.0890668,
+    "lat": -26.5,
+    "lon": 29.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pan African Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:51:37.027772",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Elikhulu Plant, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:10:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Elikhulu Plant, South Africa. Web search geocoded. Source: https://www.panafricanresources.com/news/elikhulu-the-value-of-tailings/. Elikhulu Plant is located in Evander, Mpumalanga, South Africa, and is a tailings retreatment operation"
   },
   "canonical_name": "Elikhulu Mine",
   "canonical_slug": "elikhulu-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:10:43.000000Z",
+      "operators": [
+        "Pan African Resources"
+      ],
+      "owners": [
+        "Pan African Resources"
+      ],
+      "notes": "Pan African Resources is both the operator and owner of the Elikhulu Plant."
+    }
+  }
 }

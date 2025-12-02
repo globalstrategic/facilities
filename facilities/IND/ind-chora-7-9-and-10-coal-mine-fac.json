@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.192,
-    "lon": 86.515,
+    "lat": 23.1917713,
+    "lon": 86.5147689,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Limited",
+    "Eastern Coalfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.102255Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:00:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Chora_7,9%2610_Coal_Mine. Chora 7, 9, and 10 Coal Mine is part of Cluster No. 11 operated by Eastern Coalfields Limited"
   },
   "canonical_name": "Chora 7,9 And 10 Coal Mine",
   "canonical_slug": "chora-7-9-and-10-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Bengal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:00:49.000000Z",
+      "operators": [
+        "Eastern Coalfields Limited"
+      ],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "Eastern Coalfields Limited is a subsidiary of Coal India Limited."
+    }
+  }
 }

@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 48.883,
-    "lon": -117.361,
+    "lat": 48.9994,
+    "lon": -117.1942,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.926798Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:56:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.teck.com/media/2008_Teck_Sustainability_Report_-Pend_Oreille.pdf. The Pend Oreille Mine is located approximately 2 km north of Metaline Falls, Washington"
   },
   "canonical_name": "Pend Oreille Mine",
   "canonical_slug": "pend-oreille-mine",
@@ -62,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Washington",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:56:48.000000Z",
+      "operators": [
+        "Teck Resources Limited"
+      ],
+      "owners": [
+        "Teck Resources Limited"
+      ],
+      "notes": "Teck Resources Limited is the sole owner and operator of the Pend Oreille Mine."
+    }
+  }
 }

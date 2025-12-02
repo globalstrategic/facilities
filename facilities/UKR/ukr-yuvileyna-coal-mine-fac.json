@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.362,
-    "lon": 36.426,
+    "lat": 48.031829,
+    "lon": 33.466107,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sukha Balka PrJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.717426Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:56:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sukha_Balka_Yuvileyna_Mine. The Yuvileyna Coal Mine is an underground coal mine operated by Sukha Balka, which specializes in iron ore mining"
   },
   "canonical_name": "Yuvileyna Coal Mine",
   "canonical_slug": "yuvileyna-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:56:45.000000Z",
+      "operators": [
+        "Sukha Balka PrJSC"
+      ],
+      "owners": [
+        "Sukha Balka PrJSC"
+      ],
+      "notes": "Sukha Balka is part of DCH Steel Group."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.96,
-    "lon": -120.669,
+    "lat": 42.404219779691196,
+    "lon": -70.79673582677495,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Atlantic Richfield Company",
+    "British Petroleum",
+    "Calicopia Corporation",
+    "Cedar Point Properties Inc.",
+    "International Smelting and Refining Company",
+    "Walker Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.744124Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:21:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Quincy (https://www.waterboards.ca.gov/centralvalley/water_issues/mining/region5_success_stories/walker_mine/). The Walker Mine is an inactive underground copper mine located about 15 miles northeast of Quincy"
   },
   "canonical_name": "Walker Mine",
   "canonical_slug": "walker-mine",
@@ -51,5 +58,27 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "town": "Quincy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:21:25.000000Z",
+      "operators": [
+        "Walker Mining Company",
+        "International Smelting and Refining Company",
+        "Calicopia Corporation",
+        "Cedar Point Properties Inc."
+      ],
+      "owners": [
+        "Walker Mining Company",
+        "International Smelting and Refining Company",
+        "Calicopia Corporation",
+        "Cedar Point Properties Inc.",
+        "Atlantic Richfield Company",
+        "British Petroleum"
+      ],
+      "notes": "Ownership has changed multiple times, with the mine being abandoned after a Cleanup and Abatement Order."
+    }
+  }
 }

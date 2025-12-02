@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.78,
-    "lon": 31.322,
+    "lat": -17.856612256461688,
+    "lon": 31.248855040613694,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "TN Gold",
+    "TN Securities (Pvt) Ltd.",
+    "Tawanda Nyambirai"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.954545Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Harare (https://www.newsday.co.zw/business/article/66597/arcturus-mine-to-increase-production-output-of-gold-ore). Arcturus Mine is located near Harare and is one of the oldest operating mines in Zimbabwe"
   },
   "canonical_name": "Arcturus Mine",
   "canonical_slug": "arcturus-mine",
@@ -49,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland East",
+  "town": "Harare",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:12.000000Z",
+      "operators": [
+        "TN Gold"
+      ],
+      "owners": [
+        "TN Securities (Pvt) Ltd.",
+        "Tawanda Nyambirai"
+      ],
+      "notes": "Tawanda Nyambirai acquired the mine from Metallon Corporation and is investing in its development."
+    }
+  }
 }

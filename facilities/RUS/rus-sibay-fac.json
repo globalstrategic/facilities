@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 52.693,
-    "lon": 58.638,
+    "lat": 52.683,
+    "lon": 58.633,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Polymetal",
+    "Uchalinsky GOK JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.607099Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:32:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://tadviser.com/index.php/Company:Sibay_Mining_and_Processing_Plant. The Sibay Mining and Processing Plant is located in Bashkortostan, Russia, and is known for its copper reserves"
   },
   "canonical_name": "Sibay Mine",
   "canonical_slug": "sibay-mine",
@@ -63,5 +66,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bashkortostan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:32:40.000000Z",
+      "operators": [
+        "Polymetal"
+      ],
+      "owners": [
+        "Uchalinsky GOK JSC",
+        "Polymetal"
+      ],
+      "notes": "Polymetal acquired a 100% stake in the Sibay Mining and Processing Plant from Uchalinsky GOK JSC."
+    }
+  }
 }

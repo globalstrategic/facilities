@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.183,
-    "lon": -96.543,
+    "lat": 31.30763730907131,
+    "lon": -96.53044854268329,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Luminant Mining Company LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.729838Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:09:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kosse, TX (https://portalvhdskzlfb8q9lqr9.blob.core.windows.net/media/54062/c18-0015-pfd.pdf). The facility is located approximately 6 miles east of Kosse, Texas"
   },
   "canonical_name": "Bremond Strip Mine",
   "canonical_slug": "bremond-strip-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "town": "Kosse, TX",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:09:36.000000Z",
+      "operators": [
+        "Luminant Mining Company LLC"
+      ],
+      "owners": [],
+      "notes": "Luminant Mining Company LLC is the current operator of the Bremond Strip mine."
+    }
+  }
 }

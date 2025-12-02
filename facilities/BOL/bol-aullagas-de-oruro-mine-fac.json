@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -18.045,
-    "lon": -66.518,
+    "lat": -19.28222850178945,
+    "lon": -70.18655958488928,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bolivian nationals",
+    "New Pacific Metals Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.433368Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:44:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Oruro (https://www.newpacificmetals.com/wp-content/uploads/2025/09/NUAG-FY2025-AIF.final_.pdf). The Aullagas De Oruro Mine is located approximately 180 km southwest of the city of Oruro"
   },
   "canonical_name": "Aullagas De Oruro Mine",
   "canonical_slug": "aullagas-de-oruro-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "town": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:44:19.000000Z",
+      "operators": [
+        "New Pacific Metals Corp."
+      ],
+      "owners": [
+        "Bolivian nationals"
+      ],
+      "notes": "The mine is owned by a private Bolivian company that is 100% owned by Bolivian nationals."
+    }
+  }
 }

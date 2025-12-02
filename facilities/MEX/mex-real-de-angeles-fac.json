@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.5,
-    "lon": -103.0,
+    "lat": 31.075764561269597,
+    "lon": -110.39262958795649,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo Carso",
+    "Industrias Peñoles",
+    "Minera Frisco S.A.B. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.963979Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:40:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cananea (https://www.americas.org/mexicos-three-mining-giants/). Minera Real de Ángeles is affiliated with Grupo Frisco, which is owned by Carlos Slim's Grupo Carso"
   },
   "canonical_name": "Real De Angeles Mine",
   "canonical_slug": "real-de-angeles-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Cananea",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:40:29.000000Z",
+      "operators": [
+        "Minera Frisco S.A.B. de C.V."
+      ],
+      "owners": [
+        "Grupo Carso",
+        "Industrias Peñoles"
+      ],
+      "notes": "Minera Real de Ángeles is a subsidiary of Grupo Frisco."
+    }
+  }
 }

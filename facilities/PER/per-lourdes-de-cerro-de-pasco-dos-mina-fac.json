@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -12.368,
-    "lon": -74.8,
+    "lat": -9.11,
+    "lon": -76.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empresa Administradora Cerro S.A.C.",
+    "Glencore",
+    "Volcan Compania Minera S.A.A.",
+    "Volcan Compañía Minera S.A.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.323263Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:12:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://humanrights.berkeley.edu/projects/mining-in-cerro-de-pasco/. Cerro de Pasco is a significant mining area with multiple companies operating in the region"
   },
   "canonical_name": "Lourdes De Cerro De Pasco Dos, Mina Mine",
   "canonical_slug": "lourdes-de-cerro-de-pasco-dos-mina-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:12:37.000000Z",
+      "operators": [
+        "Empresa Administradora Cerro S.A.C.",
+        "Volcan Compañía Minera S.A.A."
+      ],
+      "owners": [
+        "Volcan Compañía Minera S.A.A.",
+        "Glencore"
+      ],
+      "notes": "Volcan is the primary operator and owner, with Glencore holding a significant stake."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 32.683,
-    "lon": -4.715,
+    "lat": 32.817,
+    "lon": -4.95,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Artemis MM Resources London Ltd",
+    "SOCUMA SARL"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:48.327734Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:11:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Zaida,_Morocco. The Zeida Mine is located in the Upper Moulouya watershed in north-eastern Morocco"
   },
   "canonical_name": "Zeida Mine",
   "canonical_slug": "zeida-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midelt Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:11:46.000000Z",
+      "operators": [
+        "SOCUMA SARL"
+      ],
+      "owners": [
+        "Artemis MM Resources London Ltd"
+      ],
+      "notes": "SOCUMA SARL is a subsidiary of Artemis MM Resources."
+    }
+  }
 }

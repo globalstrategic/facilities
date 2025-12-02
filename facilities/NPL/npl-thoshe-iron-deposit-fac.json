@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 27.576844,
+    "lon": 86.286578,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "N & C Minerals Pvt. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.481776Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:24:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/N_%26_C_Minerals_Thoshe_Mine. Thoshe Iron Deposit is located in Ramechhap, Madhesh, Nepal. The mine has been mothballed and is not currently operational"
   },
   "canonical_name": "Thoshe Iron Facility",
   "canonical_slug": "thoshe-iron-facility",
@@ -63,5 +65,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:24:14.000000Z",
+      "operators": [
+        "N & C Minerals Pvt. Ltd."
+      ],
+      "owners": [],
+      "notes": "N & C Minerals Pvt. Ltd. obtained a mining license but has not yet developed the mine."
+    }
+  }
 }

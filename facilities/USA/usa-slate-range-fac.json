@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.817,
-    "lon": -117.284,
+    "lat": 35.81667,
+    "lon": -117.28333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Bottom Mines, Inc.",
+    "Slate Range Consolidated Mining Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.853971Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:36:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10072417/. The Slate Range Mine is located in the Slate Range of mountains, specifically noted for lead and silver production"
   },
   "canonical_name": "Slate Range Mine",
   "canonical_slug": "slate-range-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:36:50.000000Z",
+      "operators": [
+        "Gold Bottom Mines, Inc."
+      ],
+      "owners": [
+        "Slate Range Consolidated Mining Co."
+      ],
+      "notes": "Slate Range Consolidated Mining Co. is the owner, while Gold Bottom Mines, Inc. is under lease and bond."
+    }
+  }
 }

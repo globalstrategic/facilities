@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.684,
-    "lon": -80.128,
+    "lat": 38.683889,
+    "lon": -80.128333,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Knox Operating"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.978447Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:44:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Beech_Mountain_Coal_Mine. Beech Mountain Coal Mine is a retired coal mine"
   },
   "canonical_name": "Beech Mountain Coal Mine",
   "canonical_slug": "beech-mountain-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:44:21.000000Z",
+      "operators": [
+        "Knox Operating"
+      ],
+      "owners": [
+        "Knox Operating"
+      ],
+      "notes": "Knox Operating is both the operator and owner of the mine."
+    }
+  }
 }

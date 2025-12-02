@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DZA",
   "location": {
-    "lat": 36.982,
-    "lon": 7.568,
+    "lat": 36.990306,
+    "lon": 7.557472,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sonarem"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.574694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:08:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/A%C3%AFn_Barbar_mine. The Ain Barbar Copper Mine is an active underground mining operation significant for copper extraction"
   },
   "canonical_name": "Ain Barbar Mine",
   "canonical_slug": "ain-barbar-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Annaba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:08:26.000000Z",
+      "operators": [
+        "Sonarem"
+      ],
+      "owners": [
+        "Sonarem"
+      ],
+      "notes": "Sonarem is the owner and operator of the Ain Barbar Copper Mine."
+    }
+  }
 }

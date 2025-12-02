@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 25.038,
-    "lon": 87.354,
+    "lat": 25.04306,
+    "lon": 87.34417,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Limited",
+    "Eastern Coalfields Limited",
+    "Essel Mining and Industries Limited (EMIL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.076301Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:38:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Rajmahal_coalfield. The Rajmahal Coal Mine is part of the Rajmahal coalfield, which is operated by Eastern Coalfields Limited"
   },
   "canonical_name": "Rajmahal Coal Mine",
   "canonical_slug": "rajmahal-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:38:03.000000Z",
+      "operators": [
+        "Essel Mining and Industries Limited (EMIL)",
+        "Eastern Coalfields Limited"
+      ],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "EMIL has a contract to operate the Rajmahal mines and expand production."
+    }
+  }
 }

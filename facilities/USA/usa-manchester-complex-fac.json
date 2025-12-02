@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.116,
-    "lon": -83.737,
+    "lat": 37.115556,
+    "lon": -83.736667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blue Diamond Coal Company",
+    "Lipari Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.783988Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:56:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Manchester_Complex. The Manchester Complex is a mothballed coal mine"
   },
   "canonical_name": "Manchester Mine",
   "canonical_slug": "manchester-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:56:22.000000Z",
+      "operators": [
+        "Blue Diamond Coal Company"
+      ],
+      "owners": [
+        "Lipari Energy"
+      ],
+      "notes": "Blue Diamond Coal Company owns 100% of the facility, which is under Lipari Energy."
+    }
+  }
 }

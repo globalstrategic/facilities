@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.204,
-    "lon": -71.862,
+    "lat": -15.21667,
+    "lon": -71.81667,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compania Minera Bateas S.A.C.",
+    "Fortuna Silver Mines Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.293939Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:48:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://staging.mininghub.com/project-profile?gid=3069&isEmbeded=false. The Caylloma Mine is located in the Caylloma District, which has a long history of silver mining"
   },
   "canonical_name": "Caylloma Mine",
   "canonical_slug": "caylloma-mine",
@@ -63,5 +66,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arequipa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:48:22.000000Z",
+      "operators": [
+        "Compania Minera Bateas S.A.C."
+      ],
+      "owners": [
+        "Fortuna Silver Mines Inc."
+      ],
+      "notes": "The mine is operated by Compania Minera Bateas S.A.C., a subsidiary of Fortuna Silver Mines Inc."
+    }
+  }
 }

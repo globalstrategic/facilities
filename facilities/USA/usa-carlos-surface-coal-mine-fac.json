@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.636,
-    "lon": -78.957,
+    "lat": 39.62069,
+    "lon": -78.96863,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heritage Coal & Natural Resources",
+    "Heritage Coal & Natural Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.801602Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:11:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Carlos_Surface_Coal_Mine. The Carlos Surface Coal Mine is an operating coal mine located in Allegany County, Maryland"
   },
   "canonical_name": "Carlos Surface Coal Mine",
   "canonical_slug": "carlos-surface-coal-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maryland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:11:29.000000Z",
+      "operators": [
+        "Heritage Coal & Natural Resources LLC"
+      ],
+      "owners": [
+        "Heritage Coal & Natural Resources"
+      ],
+      "notes": "Heritage Coal & Natural Resources LLC is the operator and owner of the mine."
+    }
+  }
 }

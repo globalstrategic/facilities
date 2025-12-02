@@ -10,8 +10,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 56.707,
-    "lon": 124.592,
+    "lat": 56.6688889,
+    "lon": 124.8533306,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mechel",
+    "Yakutugol Holding Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.644110Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:59:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Neryungrinsky_Coal_Mine. The Neryungrinsky coal mine is located six kilometers west of Neryungri, one of the main industrial centers of Yakutia"
   },
   "canonical_name": "Neryungrinsky Mine",
   "canonical_slug": "neryungrinsky-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sakha Republic",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:59:24.000000Z",
+      "operators": [
+        "Yakutugol Holding Company"
+      ],
+      "owners": [
+        "Mechel"
+      ],
+      "notes": "Yakutugol is a subsidiary of Mechel, which acquired the mines in October 2007."
+    }
+  }
 }

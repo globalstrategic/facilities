@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.181,
-    "lon": -115.67,
+    "lat": 47.89962381588014,
+    "lon": -91.18852212371029,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alta Bay Joint Venture",
+    "Alta Gold Co.",
+    "Echo Bay, Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.949321Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:14:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ely (https://westernmininghistory.com/mine-detail/10047584/). The Nighthawk Ridge Mine is located in White Pine County, Nevada, but exact coordinates are not provided"
   },
   "canonical_name": "Nighthawk Ridge Mine",
   "canonical_slug": "nighthawk-ridge-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Ely",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:14:57.000000Z",
+      "operators": [],
+      "owners": [
+        "Alta Bay Joint Venture",
+        "Alta Gold Co.",
+        "Echo Bay, Ltd."
+      ],
+      "notes": "Alta Gold Co. owns 60% and Echo Bay, Ltd. owns 40% of the Nighthawk Ridge Mine."
+    }
+  }
 }

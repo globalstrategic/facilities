@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 4.520616193653711,
+    "lon": 34.27915226575776,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Akobo Minerals AB",
-      "role": "operator",
-      "source": "Research Import ETH 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:04:41.198167",
-      "evidence": "Extracted from operator column: Akobo Minerals AB"
-    }
+    "Akobo Minerals AB",
+    "IW Mining",
+    "IW Mining (Pty) Ltd"
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.280766Z",
-    "checked_by": "import_pipeline",
-    "notes": "New high-grade mine, commenced operations in late 2024\\.25 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T18:28:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "New high-grade mine, commenced operations in late 2024\\.25 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Addis Ababa (https://news.cision.com/akobo-minerals-ab/r/akobo-minerals-and-ethiopian-prime-minister-abiy-ahmed-inaugurate-the-segele-mine,c4069196). The Segele mine is a significant project in Ethiopia's gold exploration and production sector, inaugurated on November 20, 2024"
   },
   "canonical_name": "Segele Mine",
   "canonical_slug": "segele-mine",
@@ -58,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gambella",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:28:54.000000Z",
+      "operators": [
+        "IW Mining (Pty) Ltd",
+        "Akobo Minerals AB"
+      ],
+      "owners": [
+        "Akobo Minerals AB"
+      ],
+      "notes": "Akobo Minerals is a Scandinavian-based company focused on gold exploration and mining in Ethiopia."
+    }
+  },
+  "town": "Addis Ababa"
 }

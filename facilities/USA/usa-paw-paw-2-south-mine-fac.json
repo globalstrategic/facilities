@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.281,
-    "lon": -82.066,
+    "lat": 37.280594,
+    "lon": -82.066448,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Banner Blue Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.900451Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:34:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Paw_Paw_2_South_Mine. The Paw Paw 2 South Mine is an operating coal mine located in Buchanan County, Virginia"
   },
   "canonical_name": "Paw Paw 2 South Mine",
   "canonical_slug": "paw-paw-2-south-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:34:11.000000Z",
+      "operators": [
+        "Banner Blue Coal Company"
+      ],
+      "owners": [
+        "Banner Blue Coal Company"
+      ],
+      "notes": "The mine is a non-union operation and is not represented by a labor organization."
+    }
+  }
 }

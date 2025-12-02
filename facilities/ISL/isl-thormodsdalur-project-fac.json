@@ -14,14 +14,12 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Iceland Resources",
-      "role": "operator",
-      "source": "Research Import ISL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:51:44.788007",
-      "evidence": "Extracted from operator column: Iceland Resources (St-Georges Eco-Mining Corp.)"
-    }
+    "Gold Ísland Limited",
+    "Iceland Resources",
+    "Iceland Resources EHF",
+    "Melmi ehf",
+    "Málmís hf",
+    "St-Georges Eco-Mining Corp."
   ],
   "products": [],
   "sources": [
@@ -51,5 +49,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Reykjavik",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:10:20.000000Z",
+      "operators": [
+        "St-Georges Eco-Mining Corp.",
+        "Iceland Resources EHF"
+      ],
+      "owners": [
+        "Melmi ehf",
+        "Málmís hf",
+        "Gold Ísland Limited"
+      ],
+      "notes": "St-Georges Eco-Mining Corp. has acquired control over the mineral licenses in Iceland, including the Thormodsdalur Project, through its acquisition of Melmi ehf."
+    }
+  }
 }

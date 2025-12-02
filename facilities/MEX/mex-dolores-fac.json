@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 28.996,
-    "lon": -108.534,
+    "lat": 28.989389,
+    "lon": -108.536194,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera Dolores S.A. de C.V.",
+    "Pan American Silver Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.960354Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:36:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.royalgold.com/our-portfolio/producing-properties/dolores/default.aspx. The mine has reached the end of its life, with mining concluded in July 2024"
   },
   "canonical_name": "Dolores Mine",
   "canonical_slug": "dolores-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:55.000000Z",
+      "operators": [
+        "Pan American Silver Corporation"
+      ],
+      "owners": [
+        "Compañía Minera Dolores S.A. de C.V.",
+        "Pan American Silver Corporation"
+      ],
+      "notes": "Pan American Silver Corporation operates the mine through its subsidiary."
+    }
+  }
 }

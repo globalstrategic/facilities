@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 27.93094,
+    "lon": 83.8235,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nepal Electricity Authority"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.482073Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:24:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kaligandaki_A_Hydroelectric_Power_Station. Coordinates are derived from the location of the Kaligandaki A Hydroelectric Power Station, which is associated with the Kali Gandaki Graphite facility"
   },
   "canonical_name": "Kali Gandaki Graphite Mine",
   "canonical_slug": "kali-gandaki-graphite-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gandaki Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:24:29.000000Z",
+      "operators": [
+        "Nepal Electricity Authority"
+      ],
+      "owners": [
+        "Nepal Electricity Authority"
+      ],
+      "notes": "The facility is operated and owned by the Nepal Electricity Authority."
+    }
+  }
 }

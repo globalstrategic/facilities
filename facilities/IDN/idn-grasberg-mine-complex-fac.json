@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -4.5,
+    "lon": 137.1,
     "precision": "unknown"
   },
   "types": [
@@ -24,14 +24,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Freeport Indonesia",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.490321",
-      "evidence": "Extracted from operator column: PT Freeport Indonesia (PTFI)"
-    }
+    "Freeport-McMoRan",
+    "MIND ID",
+    "PT Freeport Indonesia",
+    "PT Indonesia Asahan Aluminium (Inalum)"
   ],
   "products": [],
   "sources": [
@@ -42,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.202121Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:14:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Grasberg_mine. Grasberg Mine is one of the largest gold and copper mines in the world, located in the remote highlands of the Sudirman Mountain Range"
   },
   "canonical_name": "Grasberg Mine",
   "canonical_slug": "grasberg-mine-2",
@@ -69,5 +65,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:14:03.000000Z",
+      "operators": [
+        "PT Freeport Indonesia"
+      ],
+      "owners": [
+        "Freeport-McMoRan",
+        "PT Indonesia Asahan Aluminium (Inalum)",
+        "MIND ID"
+      ],
+      "notes": "PT Freeport Indonesia is a joint venture with the Indonesian government holding a majority stake."
+    }
+  }
 }

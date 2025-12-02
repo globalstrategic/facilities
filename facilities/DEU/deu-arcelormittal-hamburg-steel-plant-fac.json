@@ -9,8 +9,8 @@
   ],
   "country_iso3": "DEU",
   "location": {
-    "lat": 53.518,
-    "lon": 9.897,
+    "lat": 53.522601,
+    "lon": 9.900749,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Hamburg GmbH",
+    "ArcelorMittal SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.635311Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:10:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Hamburg_steel_plant. ArcelorMittal Hamburg is one of Germany’s largest wire rod producers and operates direct reduced iron (DRI) and electric arc furnace (EAF) technology"
   },
   "canonical_name": "Arcelormittal Hamburg Steel Smelter",
   "canonical_slug": "arcelormittal-hamburg-steel-smelter",
@@ -62,5 +65,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hamburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:10:30.000000Z",
+      "operators": [
+        "ArcelorMittal Hamburg GmbH"
+      ],
+      "owners": [
+        "ArcelorMittal SA"
+      ],
+      "notes": "ArcelorMittal Hamburg is owned and operated by the ArcelorMittal Group."
+    }
+  }
 }

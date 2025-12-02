@@ -10,8 +10,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.49,
-    "lon": 74.044,
+    "lat": 15.495227,
+    "lon": 74.047044,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "VM Salgaocar and Brother Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.109296Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:07:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/VMS_Velguem/Surla_Mine. Coordinates are approximate for the VMS Velguem/Surla Mine located in Sanquelim, Goa, India"
   },
   "canonical_name": "VMS Velguem/surla Mine",
   "canonical_slug": "vms-velguem-surla-mine",
@@ -62,5 +64,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:07:27.000000Z",
+      "operators": [
+        "VM Salgaocar and Brother Pvt Ltd"
+      ],
+      "owners": [
+        "VM Salgaocar and Brother Pvt Ltd"
+      ],
+      "notes": "VM Salgaocar and Brother Pvt Ltd owns and operates the mine."
+    }
+  }
 }

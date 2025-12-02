@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": 34.115,
-    "lon": 73.484,
+    "lat": 34.09917,
+    "lon": 73.49639,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CWE Investment Corp",
+    "China Three Gorges Corporation (CTG)",
+    "China Three Gorges South Asia Investment Limited",
+    "Kohala Hydro Company (Pvt.) Limited (KHCL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:03.337495Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:37:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kohala_Hydropower_Project. The Kohala Hydropower Project is being developed on the Jhelum River and is one of the major hydropower projects in the region"
   },
   "canonical_name": "Kohala Mine",
   "canonical_slug": "kohala-mine",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Azad Jammu Kashmir",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:37:51.000000Z",
+      "operators": [
+        "Kohala Hydro Company (Pvt.) Limited (KHCL)",
+        "CWE Investment Corp",
+        "China Three Gorges South Asia Investment Limited"
+      ],
+      "owners": [
+        "China Three Gorges Corporation (CTG)",
+        "Kohala Hydro Company (Pvt.) Limited (KHCL)"
+      ],
+      "notes": "The project is a joint venture involving multiple companies, primarily led by China Three Gorges Corporation."
+    }
+  }
 }

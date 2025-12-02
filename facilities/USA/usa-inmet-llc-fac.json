@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.966,
-    "lon": -82.927,
+    "lat": 36.876984,
+    "lon": -83.011339,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "INMET Mining, LLC.",
+    "Industrial Minerals Group, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.962345Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:26:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/D-29_Darby_Fork_Coal_Mine. D-29 Darby Fork mine is an underground bituminous coal mine operated by INMET Mining, a subsidiary of Industrial Minerals Group"
   },
   "canonical_name": "Inmet LLC Mine",
   "canonical_slug": "inmet-llc-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:26:29.000000Z",
+      "operators": [
+        "INMET Mining, LLC."
+      ],
+      "owners": [
+        "Industrial Minerals Group, LLC"
+      ],
+      "notes": "INMET Mining is a subsidiary of Industrial Minerals Group."
+    }
+  }
 }

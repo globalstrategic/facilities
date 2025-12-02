@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.402,
-    "lon": -81.563,
+    "lat": 40.401944,
+    "lon": -81.563056,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CCU Coal and Construction"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.919174Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:51:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-3304179. Coordinates and operational details extracted from multiple sources confirming the mine's status and ownership"
   },
   "canonical_name": "CCU Tuscarawas Strip Mine",
   "canonical_slug": "ccu-tuscarawas-strip-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ohio",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:51:14.000000Z",
+      "operators": [
+        "CCU Coal and Construction"
+      ],
+      "owners": [
+        "CCU Coal and Construction"
+      ],
+      "notes": "CCU Coal and Construction is both the operator and owner of the facility."
+    }
+  }
 }

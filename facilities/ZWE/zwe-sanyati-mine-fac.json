@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -18.094764890602896,
+    "lon": 29.42471017926293,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zimbabwe Mining Development Corporation (ZMDC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.958178Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:42:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chinhoyi (https://www.zmdc.co.zw/copper.html). The mine is situated about 115 kilometers South West of Chinhoyi town, Zimbabwe"
   },
   "canonical_name": "Sanyati Mine",
   "canonical_slug": "sanyati-mine",
@@ -50,5 +52,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "town": "Chinhoyi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:42:31.000000Z",
+      "operators": [
+        "Zimbabwe Mining Development Corporation (ZMDC)"
+      ],
+      "owners": [
+        "Zimbabwe Mining Development Corporation (ZMDC)"
+      ],
+      "notes": "Sanyati Mine is a 100% owned subsidiary of ZMDC."
+    }
+  }
 }

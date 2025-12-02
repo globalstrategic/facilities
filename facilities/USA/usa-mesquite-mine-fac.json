@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.056,
-    "lon": -114.985,
+    "lat": 33.060318,
+    "lon": -114.994413,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Equinox Gold Corp.",
+    "New Gold Inc.",
+    "Western Mesquite Mines, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.772026Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:46:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mesquite_Mine. The Mesquite Mine is one of the largest gold mines in the United States, located near Glamis in Imperial County"
   },
   "canonical_name": "Mesquite Mine",
   "canonical_slug": "mesquite-mine",
@@ -56,5 +60,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:46:16.000000Z",
+      "operators": [
+        "Equinox Gold Corp.",
+        "Western Mesquite Mines, Inc."
+      ],
+      "owners": [
+        "Equinox Gold Corp.",
+        "New Gold Inc."
+      ],
+      "notes": "Equinox Gold operates the mine through its subsidiary Western Mesquite Mines, Inc."
+    }
+  }
 }

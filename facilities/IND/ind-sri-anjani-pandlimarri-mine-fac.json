@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 14.481,
-    "lon": 78.593,
+    "lat": 14.480641,
+    "lon": 78.590759,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sri Anjani Mines & Minerals Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.079214Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:40:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sri_Anjani_Pandlimarri_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Sri Anjani Pandlimarri Mine",
   "canonical_slug": "sri-anjani-pandlimarri-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Andhra Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:40:32.000000Z",
+      "operators": [
+        "Sri Anjani Mines & Minerals Pvt Ltd"
+      ],
+      "owners": [
+        "Sri Anjani Mines & Minerals Pvt Ltd"
+      ],
+      "notes": "The company owns 100% of the mine."
+    }
+  }
 }

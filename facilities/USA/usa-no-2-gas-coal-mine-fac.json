@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.656,
-    "lon": -81.861,
+    "lat": 37.6562,
+    "lon": -81.861038,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ramaco Resources Inc",
+    "Ramaco Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.983103Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:49:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/No._2_Gas_Coal_Mine. The No. 2 Gas Coal Mine is an operating coal mine located in Logan County, West Virginia"
   },
   "canonical_name": "No 2 Gas Coal Mine",
   "canonical_slug": "no-2-gas-coal-mine",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:49:21.000000Z",
+      "operators": [
+        "Ramaco Resources LLC"
+      ],
+      "owners": [
+        "Ramaco Resources LLC",
+        "Ramaco Resources Inc"
+      ],
+      "notes": "Ramaco Resources LLC is the operator and owner of the mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 43.869,
-    "lon": -103.627,
+    "lat": 43.8689,
+    "lon": -103.6261,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Part of Tin Plate Gp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.837403Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:23:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10251614/. The mine is located in the Oreville District of Pennington County"
   },
   "canonical_name": "Part Of Tin Plate Gp Mine",
   "canonical_slug": "part-of-tin-plate-gp-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Dakota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:23:01.000000Z",
+      "operators": [
+        "Part of Tin Plate Gp"
+      ],
+      "owners": [
+        "Part of Tin Plate Gp"
+      ],
+      "notes": "The mine is listed under the primary name 'Part of Tin Plate Gp' and has a secondary name 'Sally Cavanaugh'."
+    }
+  }
 }

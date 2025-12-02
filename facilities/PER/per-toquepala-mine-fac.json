@@ -11,8 +11,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -17.254,
-    "lon": -70.613,
+    "lat": -17.0,
+    "lon": -70.0,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo Mexico",
+    "Grupo Mexico S.A.B de CV",
+    "Southern Copper Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +55,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.330054Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:18:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Toquepala_mine. The Toquepala mine is a large porphyry copper mine located in the Tacna Province of Peru"
   },
   "canonical_name": "Toquepala Mine",
   "canonical_slug": "toquepala-mine",
@@ -70,5 +74,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tacna Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:18:14.000000Z",
+      "operators": [
+        "Southern Copper Corporation"
+      ],
+      "owners": [
+        "Grupo Mexico S.A.B de CV"
+      ],
+      "notes": "The mine is wholly owned by Southern Copper Corporation, which is a subsidiary of Grupo Mexico."
+    }
+  }
 }

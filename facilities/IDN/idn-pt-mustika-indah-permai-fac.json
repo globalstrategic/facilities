@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.8,
-    "lon": 103.407,
+    "lat": -3.800844,
+    "lon": 103.40783,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Adaro Energy Indonesia Tbk",
+    "PT Mustika Indah Permai"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.210449Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:21:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MIP_Adaro_Coal_Mine. The facility is operated by PT Mustika Indah Permai, a subsidiary of Adaro Energy"
   },
   "canonical_name": "PT Mustika Indah Permai Mine",
   "canonical_slug": "pt-mustika-indah-permai-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:21:12.000000Z",
+      "operators": [
+        "PT Mustika Indah Permai"
+      ],
+      "owners": [
+        "PT Adaro Energy Indonesia Tbk"
+      ],
+      "notes": "PT Mustika Indah Permai is a 100% owned subsidiary of PT Adaro Energy Indonesia Tbk."
+    }
+  }
 }

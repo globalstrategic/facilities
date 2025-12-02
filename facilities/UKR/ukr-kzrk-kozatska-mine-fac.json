@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.06,
-    "lon": 33.479,
+    "lat": 48.059533,
+    "lon": 33.479325,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kryvbaszalizrudkom JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.717580Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:56:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KZRK_Kozatska_Mine. The KZRK Kozatska Mine is mothballed and located in Kryvyi Rih"
   },
   "canonical_name": "Kzrk Kozatska Mine",
   "canonical_slug": "kzrk-kozatska-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:56:54.000000Z",
+      "operators": [
+        "Kryvbaszalizrudkom JSC"
+      ],
+      "owners": [
+        "Kryvbaszalizrudkom JSC"
+      ],
+      "notes": "Kryvbaszalizrudkom JSC owns 100% of the mine."
+    }
+  }
 }

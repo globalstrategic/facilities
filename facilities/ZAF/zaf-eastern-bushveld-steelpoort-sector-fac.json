@@ -11,8 +11,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.762,
-    "lon": 30.177,
+    "lat": -25.0,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genorah Resources (Pty) Limited",
+    "Nkwe Platinum Limited",
+    "Zijin Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -53,11 +57,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.778863Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-eastern-bushveld-steelpoort-sector-tubatse-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:06:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-eastern-bushveld-steelpoort-sector-tubatse-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.nkweplatinum.com/. The Zijin Garatau Platinum Mine is located about 25 km north-west of Steelpoort"
   },
   "canonical_name": "Eastern Bushveld Steelpoort Sector Mine",
   "canonical_slug": "eastern-bushveld-steelpoort-sector-mine",
@@ -80,5 +84,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:06:13.000000Z",
+      "operators": [
+        "Nkwe Platinum Limited"
+      ],
+      "owners": [
+        "Zijin Mining Group",
+        "Genorah Resources (Pty) Limited"
+      ],
+      "notes": "Nkwe Platinum Limited holds a 74% share in the mining right."
+    }
+  }
 }

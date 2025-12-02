@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nacco Industries Inc",
+    "North American Coal Corporation",
+    "Sabine Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.903638Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:36:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/South_Hallsville_No_1_Mine. The South Hallsville No. 1 Mine is a lignite surface mine that has been in operation since 1984"
   },
   "canonical_name": "South Hallsville No 1 Mine",
   "canonical_slug": "south-hallsville-no-1-mine-2",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:36:24.000000Z",
+      "operators": [
+        "Sabine Mining Company"
+      ],
+      "owners": [
+        "North American Coal Corporation",
+        "Nacco Industries Inc"
+      ],
+      "notes": "The mine ceased deliveries in the first quarter of 2023 and commenced final reclamation on April 1, 2023."
+    }
+  }
 }

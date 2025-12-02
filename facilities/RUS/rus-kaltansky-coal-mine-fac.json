@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.414,
-    "lon": 87.414,
+    "lat": 53.414239,
+    "lon": 87.414436,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kuzbassrazrezugol",
+    "Ural Mining Metallurgical Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.596040Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:22:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kaltansky_Coal_Mine. The Kaltansky Coal Mine is an operating surface coal mine in Kemerovo Oblast, Russia"
   },
   "canonical_name": "Kaltansky Coal Mine",
   "canonical_slug": "kaltansky-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:22:36.000000Z",
+      "operators": [
+        "Kuzbassrazrezugol"
+      ],
+      "owners": [
+        "Ural Mining Metallurgical Company"
+      ],
+      "notes": "Kuzbassrazrezugol is a subsidiary of Ural Mining Metallurgical Company."
+    }
+  }
 }

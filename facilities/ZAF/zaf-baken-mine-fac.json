@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.4805136,
-    "lon": 16.7786847,
+    "lat": -28.70754575842041,
+    "lon": 16.870833,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lower Orange River Diamonds Proprietary Ltd. (LOR)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:52:13.914833",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Baken Mine, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:13:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Baken Mine, South Africa. Web search geocoded. Source: Calculated from Port Nolloth (https://www.miningweekly.com/article/community-mining-project-a-diamond-in-the-rough-2021-11-05). Baken Mine is part of the Lower Orange River Operations, which includes several other mines"
   },
   "canonical_name": "Baken Mine",
   "canonical_slug": "baken-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "town": "Port Nolloth",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:13:43.000000Z",
+      "operators": [
+        "Lower Orange River Diamonds Proprietary Ltd. (LOR)"
+      ],
+      "owners": [],
+      "notes": "LOR is the lessee of the mining area."
+    }
+  }
 }

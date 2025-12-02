@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.534,
-    "lon": -116.294,
+    "lat": 41.53417,
+    "lon": -116.29278,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "James Dodge",
+    "Mine Tek",
+    "Roy Pike",
+    "Scott Jolcover",
+    "Standard Ag Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.936738Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:04:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10106928/. The Cornucopia mine is a gold and silver mine located in Elko County, Nevada"
   },
   "canonical_name": "Cornucopia Mine",
   "canonical_slug": "cornucopia-mine",
@@ -50,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:04:56.000000Z",
+      "operators": [
+        "Mine Tek",
+        "Scott Jolcover"
+      ],
+      "owners": [
+        "James Dodge",
+        "Roy Pike",
+        "Standard Ag Inc"
+      ],
+      "notes": "Mine Tek is listed as the general manager."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.361,
-    "lon": 29.644,
+    "lat": -26.2,
+    "lon": 28.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Goldplat PLC",
+    "New Kleinfontein Goldmine (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:36:37.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:14:53.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kleinfontein,_KwaZulu-Natal. Coordinates extracted from the Wikipedia page for Kleinfontein in KwaZulu-Natal, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kleinfontein,_KwaZulu-Natal. Coordinates extracted from the Wikipedia page for Kleinfontein in KwaZulu-Natal, South Africa. Web search geocoded. Source: https://www.goldoresa.com/operations. The Kleinfontein Deeps Project is associated with the New Kleinfontein Goldmine and is located in the Benoni area of Gauteng"
   },
   "canonical_name": "Kleinfontein Deeps Mine",
   "canonical_slug": "kleinfontein-deeps-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "KwaZulu-Natal"
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:14:53.000000Z",
+      "operators": [
+        "Goldplat PLC"
+      ],
+      "owners": [
+        "New Kleinfontein Goldmine (Pty) Ltd"
+      ],
+      "notes": "Goldplat PLC is involved in operations, while New Kleinfontein Goldmine (Pty) Ltd holds ownership."
+    }
+  }
 }

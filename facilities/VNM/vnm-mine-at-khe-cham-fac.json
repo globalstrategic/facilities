@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Khe Cham Coal Company",
+    "Vietnam National Coal and Mineral Industries Holding Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.282670Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:28:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_at_Khe_Cham_3. The mine is currently operating and is part of the Khe Cham Coal Company"
   },
   "canonical_name": "At Khe Cham Mine",
   "canonical_slug": "at-khe-cham-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Ninh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:28:12.000000Z",
+      "operators": [
+        "Khe Cham Coal Company"
+      ],
+      "owners": [
+        "Vietnam National Coal and Mineral Industries Holding Corp Ltd"
+      ],
+      "notes": "Khe Cham Coal Company is a subsidiary of Vietnam National Coal and Mineral Industries Holding Corp Ltd."
+    }
+  }
 }

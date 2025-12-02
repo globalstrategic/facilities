@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.792,
-    "lon": 112.777,
+    "lat": 39.791933,
+    "lon": 112.777005,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jinneng Holding Group Co., Ltd.",
+    "Shanghai Jiyou Energy Co., Ltd.",
+    "Shanxi Coal Transportation and Marketing Group Datong Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.811215Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:35:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E5%A4%A7%E5%90%8C%E6%9D%8E%E5%AE%B6%E7%AA%92%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. Lijiayao Coal Mine is an underground coal mine located in the village of Lijiayao, Xiaojingzhuang Township, Zuoyun County, Datong City"
   },
   "canonical_name": "Lijiayao Coal Mine",
   "canonical_slug": "lijiayao-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:35:07.000000Z",
+      "operators": [
+        "Shanxi Coal Transportation and Marketing Group Datong Co., Ltd.",
+        "Shanghai Jiyou Energy Co., Ltd."
+      ],
+      "owners": [
+        "Jinneng Holding Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by a joint venture with 70% ownership by Shanxi Coal Transportation and Marketing Group and 30% by Shanghai Jiyou Energy."
+    }
+  }
 }

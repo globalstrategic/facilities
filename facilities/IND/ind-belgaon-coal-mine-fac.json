@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.33,
-    "lon": 78.958,
+    "lat": 20.329522,
+    "lon": 78.95774,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sunflag Iron and Steel Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.129827Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:55:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Belgaon_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Belgaon Coal Mine",
   "canonical_slug": "belgaon-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:55:20.000000Z",
+      "operators": [
+        "Sunflag Iron and Steel Co Ltd"
+      ],
+      "owners": [
+        "Sunflag Iron and Steel Co Ltd"
+      ],
+      "notes": "Sunflag Iron and Steel Co Ltd owns and operates the mine."
+    }
+  }
 }

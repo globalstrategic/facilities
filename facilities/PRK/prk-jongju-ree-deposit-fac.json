@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.96557320511801,
+    "lon": 124.50592116861122,
     "precision": "unknown"
   },
   "types": [
@@ -62,7 +62,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Korea Natural Resources Trading Corporation",
+    "Pacific Century Rare Earth Mineral Limited",
+    "SRE Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -72,11 +76,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.361012Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:40:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pyongyang (https://investingnews.com/daily/resource-investing/critical-metals-investing/rare-earth-investing/jv-to-develop-worlds-largest-known-ree-deposit-in-north-korea/). The Jongju REE Deposit is described as potentially the largest known rare earth deposit in the world, located northwest of Pyongyang"
   },
   "canonical_name": "Jongju REE Mine",
   "canonical_slug": "jongju-ree-mine",
@@ -91,5 +95,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Pyongan Province",
+  "town": "Pyongyang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:40:09.000000Z",
+      "operators": [
+        "Pacific Century Rare Earth Mineral Limited"
+      ],
+      "owners": [
+        "SRE Minerals Limited",
+        "Korea Natural Resources Trading Corporation"
+      ],
+      "notes": "The facility is operated by a joint venture between SRE Minerals Limited and the Korea Natural Resources Trading Corporation."
+    }
+  }
 }

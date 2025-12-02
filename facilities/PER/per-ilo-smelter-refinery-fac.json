@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.7,
+    "lon": -70.5,
     "precision": "unknown"
   },
   "types": [
@@ -20,14 +20,7 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Southern Copper Corporation",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.740982",
-      "evidence": "Extracted from operator column: Southern Copper Corporation"
-    }
+    "Southern Copper Corporation"
   ],
   "products": [],
   "sources": [
@@ -38,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.293106Z",
-    "checked_by": "import_pipeline",
-    "notes": "High. *Only* source for Se, Te, Re. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:47:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "High. *Only* source for Se, Te, Re. | Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Southern%20Copper%20-%20Ilo.htm. The Ilo Smelter & Refinery is located approximately 17 kilometers north of the city of Ilo"
   },
   "canonical_name": "Ilo & Smelter",
   "canonical_slug": "ilo-smelter-2",
@@ -65,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Moquegua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:47:42.000000Z",
+      "operators": [
+        "Southern Copper Corporation"
+      ],
+      "owners": [
+        "Southern Copper Corporation"
+      ],
+      "notes": "Southern Copper Corporation operates and owns the facility."
+    }
+  }
 }

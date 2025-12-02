@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MLI",
   "location": {
-    "lat": 14.084,
-    "lon": -11.753,
+    "lat": 14.083,
+    "lon": -11.75,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti",
+    "Government of Mali",
+    "IAMGOLD"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.879876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:01:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Yatela_Mine. The Yatela mine is located in the Kayes region of Mali and was abandoned in 2016. It is now under the control of the Malian government"
   },
   "canonical_name": "Yatela Mine",
   "canonical_slug": "yatela-mine",
@@ -50,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kayes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:01:49.000000Z",
+      "operators": [
+        "AngloGold Ashanti",
+        "IAMGOLD"
+      ],
+      "owners": [
+        "AngloGold Ashanti",
+        "IAMGOLD",
+        "Government of Mali"
+      ],
+      "notes": "The mine was previously operated by a joint venture between AngloGold Ashanti and IAMGOLD."
+    }
+  }
 }

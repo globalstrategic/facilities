@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": -22.414,
-    "lon": 15.018,
+    "lat": -22.48417,
+    "lon": 15.04889,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China National Uranium Corporation Limited (CNUC)",
+    "Government of Iran",
+    "Government of Namibia",
+    "IDC of South Africa",
+    "Rio Tinto Group",
+    "Rössing Uranium Limited",
+    "local individual shareholders"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:14.553197Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:48:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/R%C3%B6ssing_uranium_mine. Rössing Mine is the world's longest running open pit uranium mine, contributing to Namibia's economy"
   },
   "canonical_name": "Rössing Mine",
   "canonical_slug": "rossing-mine",
@@ -47,5 +55,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:48:15.000000Z",
+      "operators": [
+        "China National Uranium Corporation Limited (CNUC)"
+      ],
+      "owners": [
+        "Rössing Uranium Limited",
+        "Rio Tinto Group",
+        "Government of Iran",
+        "IDC of South Africa",
+        "Government of Namibia",
+        "local individual shareholders"
+      ],
+      "notes": "CNUC is the majority owner with a 68.6% equity stake following the sale from Rio Tinto in 2018."
+    }
+  }
 }

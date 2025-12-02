@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.189,
-    "lon": -86.954,
+    "lat": 33.196942,
+    "lon": -86.942593,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Resource Capital Fund"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.735013Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:14:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Murry_Creek_Surface_Mine. Murry Creek Surface Mine is a retired coal mine"
   },
   "canonical_name": "Murry Creek Surface Mine",
   "canonical_slug": "murry-creek-surface-mine",
@@ -55,5 +57,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:14:08.000000Z",
+      "operators": [],
+      "owners": [
+        "Resource Capital Fund"
+      ],
+      "notes": "Resource Capital Fund is the sole owner."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.28333,
-    "lon": 26.08333,
+    "lat": -21.19673451462082,
+    "lon": 29.4613889,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Caledonia Mining Corporation",
+    "Eersteling Gold Mining Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T14:59:28.000000Z",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T17:01:22.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://geographic.org/geographic_names//name.php?uni=-1794917&fid=5684. Coordinates extracted from geographic reference; the facility is located near the village of Marabastad, southeast of Polokwane"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://geographic.org/geographic_names//name.php?uni=-1794917&fid=5684. Coordinates extracted from geographic reference; the facility is located near the village of Marabastad, southeast of Polokwane. Web search geocoded. Source: Calculated from Polokwane (https://wp-caledoniamining-2020.s3.eu-west-2.amazonaws.com/media/2019/02/Eersteling_Absa_Venmyn_050207_Final.pdf). The Eersteling Gold Project is located between Polokwane and Mokopane in Limpopo Province"
   },
   "canonical_name": "Eersteling Gold Mine",
   "canonical_slug": "eersteling-gold-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "town": "Polokwane",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:01:22.000000Z",
+      "operators": [
+        "Eersteling Gold Mining Company Limited"
+      ],
+      "owners": [
+        "Caledonia Mining Corporation"
+      ],
+      "notes": "Caledonia owns 100% of Eersteling Gold Mining Company Limited."
+    }
+  }
 }

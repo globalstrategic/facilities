@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 24.417,
-    "lon": -111.501,
+    "lat": 27.847340328154747,
+    "lon": -109.9022075,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.947214Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:26:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cajeme (https://mundominero.mx/wp-content/uploads/2021/10/Directorio-2021-webPage_compressed.pdf). The facility is located on Carretera Internacional 15 Km. 203, Ejido El Henequén, Cajeme, Sonora"
   },
   "canonical_name": "Negociacion Minera Beltran Mine",
   "canonical_slug": "negociacion-minera-beltran-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Cajeme",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:26:28.000000Z",
+      "operators": [
+        "ArcelorMittal"
+      ],
+      "owners": [],
+      "notes": "Lic. César Beltrán Luna is mentioned as Subdirector de Operaciones."
+    }
+  }
 }

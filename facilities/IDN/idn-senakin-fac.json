@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.936,
-    "lon": 116.264,
+    "lat": -0.15349367219081164,
+    "lon": 114.5925828,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Arutmin Indonesia",
+    "PT Bumi Resources Tbk",
+    "PT Thiess Contractor Indonesia"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.300598Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:14:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Banjarmasin (https://www.arutmin.com/). Senakin Site is one of the coal production areas operated by PT Arutmin Indonesia, located approximately 350 km from Banjarmasin"
   },
   "canonical_name": "Senakin Mine",
   "canonical_slug": "senakin-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "town": "Banjarmasin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:14:26.000000Z",
+      "operators": [
+        "PT Thiess Contractor Indonesia"
+      ],
+      "owners": [
+        "PT Arutmin Indonesia",
+        "PT Bumi Resources Tbk"
+      ],
+      "notes": "PT Arutmin Indonesia is a subsidiary of PT Bumi Resources Tbk, which holds an 80% stake."
+    }
+  }
 }

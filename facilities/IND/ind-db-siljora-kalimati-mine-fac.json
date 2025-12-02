@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.885,
-    "lon": 85.377,
+    "lat": 21.885452,
+    "lon": 85.376302,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Debabrata Behera"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.111680Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:10:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/DB_Siljora-Kalimati_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "DB Siljora Kalimati Mine",
   "canonical_slug": "db-siljora-kalimati-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:10:02.000000Z",
+      "operators": [
+        "Debabrata Behera"
+      ],
+      "owners": [
+        "Debabrata Behera"
+      ],
+      "notes": "Debabrata Behera is both the operator and owner of the mine."
+    }
+  }
 }

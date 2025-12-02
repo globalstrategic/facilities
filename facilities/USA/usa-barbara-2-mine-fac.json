@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.956,
-    "lon": -78.922,
+    "lat": 44.7742,
+    "lon": -118.1091,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Joshua Haynes"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.698601Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:42:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/ormc176074. The Barbara II mine is an active mining claim owned by Joshua Haynes"
   },
   "canonical_name": "Barbara 2 Mine",
   "canonical_slug": "barbara-2-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oregon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:42:58.000000Z",
+      "operators": [
+        "Joshua Haynes"
+      ],
+      "owners": [
+        "Joshua Haynes"
+      ],
+      "notes": "Ownership and use overseen by the Bureau of Land Management's Vale Baker Field Office."
+    }
+  }
 }

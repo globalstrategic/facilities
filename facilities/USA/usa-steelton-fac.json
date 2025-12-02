@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.233,
-    "lon": -76.836,
+    "lat": 40.17625216125567,
+    "lon": -76.8861122,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cleveland-Cliffs Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.853511Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:36:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Harrisburg (https://www.clevelandcliffs.com/operations/steelmaking/steelton). Steelton is located along the Susquehanna River near Harrisburg, Pennsylvania"
   },
   "canonical_name": "Steelton Smelter",
   "canonical_slug": "steelton-smelter",
@@ -48,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "town": "Harrisburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:36:22.000000Z",
+      "operators": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "owners": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "notes": "Cleveland-Cliffs is the operator and owner of the Steelton facility."
+    }
+  }
 }

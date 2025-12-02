@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.5,
-    "lon": 24.5,
+    "lat": -28.38222,
+    "lon": 23.44611,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "De Beers Consolidated Mines Limited",
+    "Petra Diamonds Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.7,
-    "last_checked": "2025-11-17T15:32:45.000000Z",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:07:39.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/17/PetraDiamonds_Finsch_mine_description_2012.pdf. The Finsch mine is located approximately 165 km west of Kimberley in the Northern Cape province"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/17/PetraDiamonds_Finsch_mine_description_2012.pdf. The Finsch mine is located approximately 165 km west of Kimberley in the Northern Cape province. Web search geocoded. Source: https://en.wikipedia.org/wiki/Finsch_diamond_mine. The Finsch diamond mine is located near Lime Acres, 160 km northwest of Kimberley"
   },
   "canonical_name": "Finsch Pre 79 Tailings Treatment Mine",
   "canonical_slug": "finsch-pre-79-tailings-treatment-mine",
@@ -56,5 +59,18 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:07:39.000000Z",
+      "operators": [
+        "Petra Diamonds Pty Ltd"
+      ],
+      "owners": [
+        "Petra Diamonds Pty Ltd",
+        "De Beers Consolidated Mines Limited"
+      ],
+      "notes": "Petra Diamonds acquired the mine from De Beers in 2011."
+    }
+  }
 }

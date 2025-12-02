@@ -16,8 +16,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -23.987,
-    "lon": 31.134,
+    "lat": -23.9443,
+    "lon": 31.1356,
     "precision": "site"
   },
   "types": [
@@ -76,7 +76,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "HBIS Group",
+    "Industrial Development Corporation of South Africa Ltd",
+    "Leolo Trust",
+    "Palabora Copper (Pty) Ltd",
+    "Palabora Employee Trust",
+    "Strategic Empowerment Local Business Trust"
+  ],
   "products": [],
   "sources": [
     {
@@ -86,11 +93,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.789609Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:16:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Palabora. Palabora Copper is located in the town of Phalaborwa, Limpopo province, South Africa"
   },
   "canonical_name": "Palabora Mine",
   "canonical_slug": "palabora-mine",
@@ -105,5 +112,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:16:09.000000Z",
+      "operators": [
+        "Palabora Copper (Pty) Ltd"
+      ],
+      "owners": [
+        "HBIS Group",
+        "Industrial Development Corporation of South Africa Ltd",
+        "Leolo Trust",
+        "Palabora Employee Trust",
+        "Strategic Empowerment Local Business Trust"
+      ],
+      "notes": "Palabora Copper is a subsidiary of the Palabora Mining Company, which was previously owned by Rio Tinto and Anglo American."
+    }
+  }
 }

@@ -18,8 +18,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.915,
-    "lon": -83.11,
+    "lat": 38.3,
+    "lon": -81.46,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Midland Trail Energy LLC",
+    "Patriot Coal Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.977132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:43:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Campbells_Creek_7_Mine. The K 7 Coal Mine is also referred to as Campbells Creek No 7 Mine"
   },
   "canonical_name": "K 7 Coal Mine",
   "canonical_slug": "k-7-coal-mine",
@@ -61,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:43:02.000000Z",
+      "operators": [
+        "Midland Trail Energy LLC"
+      ],
+      "owners": [
+        "Patriot Coal Corporation"
+      ],
+      "notes": "Midland Trail Energy operates the mine, which is owned by Patriot Coal."
+    }
+  }
 }

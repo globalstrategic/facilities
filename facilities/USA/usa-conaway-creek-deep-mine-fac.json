@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.314,
-    "lon": -82.241,
+    "lat": 37.316389,
+    "lon": -82.235833,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Conaway Creek Deep Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.756154Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:31:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Conaway_Creek_Deep_Mine. Conaway Creek Deep Mine is a retired coal mine"
   },
   "canonical_name": "Conaway Creek Deep Mine",
   "canonical_slug": "conaway-creek-deep-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:31:27.000000Z",
+      "operators": [
+        "Conaway Creek Deep Mine"
+      ],
+      "owners": [
+        "Conaway Creek Deep Mine"
+      ],
+      "notes": "The mine is fully owned by Conaway Creek Deep Mine."
+    }
+  }
 }

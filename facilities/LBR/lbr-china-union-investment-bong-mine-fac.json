@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LBR",
   "location": {
-    "lat": 6.812,
-    "lon": -10.282,
+    "lat": 7.286196547206478,
+    "lon": -9.837319786907157,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Baowu Steel Group",
+    "China Union (Hong Kong) Mining Co., Ltd.",
+    "China Union Investment (Liberia) Bong Mines Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.724602Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.81,
+    "last_checked": "2025-12-02T02:08:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Monrovia (https://www.gem.wiki/China_Union_Investment_Bong_Mine). The mine is located approximately 150km northeast of Monrovia, in Bong County"
   },
   "canonical_name": "China Union Investment Bong Mine",
   "canonical_slug": "china-union-investment-bong-mine",
@@ -48,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bong County",
+  "town": "Monrovia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:08:17.000000Z",
+      "operators": [
+        "China Union Investment (Liberia) Bong Mines Co"
+      ],
+      "owners": [
+        "China Baowu Steel Group",
+        "China Union (Hong Kong) Mining Co., Ltd."
+      ],
+      "notes": "China Union is a subsidiary of China Baowu Steel Group, a state-owned enterprise."
+    }
+  }
 }

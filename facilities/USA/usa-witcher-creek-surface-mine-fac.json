@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.283,
+    "lat": 38.282778,
     "lon": -81.475,
     "precision": "site"
   },
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Age Mining",
+    "Silver Horse Services LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.760239Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:35:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Witcher_Creek_Surface_Mine. Witcher Creek Surface Mine is an operating coal mine located in Kanawha County, West Virginia"
   },
   "canonical_name": "Witcher Creek Surface Mine",
   "canonical_slug": "witcher-creek-surface-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:35:26.000000Z",
+      "operators": [
+        "Silver Horse Services LLC"
+      ],
+      "owners": [
+        "New Age Mining"
+      ],
+      "notes": "Silver Horse Services LLC is the operator and is fully owned by New Age Mining."
+    }
+  }
 }

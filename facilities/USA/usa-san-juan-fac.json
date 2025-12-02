@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.799,
-    "lon": -108.431,
+    "lat": 36.7281,
+    "lon": -108.2187,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Westmoreland Coal Company",
+    "Westmoreland San Juan Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.854741Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:37:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/San_Juan_Mine_1. The San Juan Mine is the sole provider of coal to the San Juan Generating Station and is located 25 kilometers west of Farmington, New Mexico"
   },
   "canonical_name": "San Juan Mine",
   "canonical_slug": "san-juan-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Mexico",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:37:25.000000Z",
+      "operators": [
+        "Westmoreland San Juan Mining LLC"
+      ],
+      "owners": [
+        "Westmoreland Coal Company"
+      ],
+      "notes": "Westmoreland filed for bankruptcy and the mine is now in the reclamation phase."
+    }
+  }
 }

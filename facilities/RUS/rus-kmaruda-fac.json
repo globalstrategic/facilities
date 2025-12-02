@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 51.29,
-    "lon": 37.555,
+    "lat": 51.289987,
+    "lon": 37.548924,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KOKS PJSC",
+    "Kombinat KMaruda JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.613990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:39:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KMAruda_Korobkovskoye_Gubkin_Mine. The KMAruda Korobkovskoye Gubkin Mine is located in Gubkin, Belgorod Oblast, Russia"
   },
   "canonical_name": "Kmaruda Mine",
   "canonical_slug": "kmaruda-mine",
@@ -60,5 +63,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Belgorod Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:39:43.000000Z",
+      "operators": [
+        "Kombinat KMaruda JSC"
+      ],
+      "owners": [
+        "KOKS PJSC",
+        "Kombinat KMaruda JSC"
+      ],
+      "notes": "Kombinat KMaruda JSC is fully owned by KOKS PJSC."
+    }
+  }
 }

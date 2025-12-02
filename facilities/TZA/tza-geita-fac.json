@@ -8,8 +8,8 @@
   ],
   "country_iso3": "TZA",
   "location": {
-    "lat": -2.87,
-    "lon": 32.181,
+    "lat": -2.95,
+    "lon": 32.2,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AngloGold Ashanti plc.",
+    "Geita Gold Mining Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.980674Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:15:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.anglogoldashanti.com/portfolio/africa/geita/. Geita Gold Mine is located in the Lake Victoria goldfields, approximately 120km from Mwanza and 4km west of the town of Geita"
   },
   "canonical_name": "Geita Mine",
   "canonical_slug": "geita-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Geita Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:15:13.000000Z",
+      "operators": [
+        "Geita Gold Mining Ltd.",
+        "AngloGold Ashanti plc."
+      ],
+      "owners": [
+        "AngloGold Ashanti plc.",
+        "Geita Gold Mining Ltd."
+      ],
+      "notes": "Geita Gold Mining Ltd. operates the mine and is wholly owned by AngloGold Ashanti plc."
+    }
+  }
 }

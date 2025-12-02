@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": 14.849787,
-    "lon": 98.7976,
+    "lat": 15.0167,
+    "lon": 100.0165,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kanchanaburi Exploration and Mining Co. (KEMCO)",
+    "Klipbua Family",
+    "Metall Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:18.495876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:36:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10208311. The Song Toh Mine is located in the vicinity of Chainat, Thailand, and predominantly focuses on underground mining techniques"
   },
   "canonical_name": "Song Toh Mine",
   "canonical_slug": "song-toh-mine",
@@ -55,5 +59,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chainat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:18.000000Z",
+      "operators": [
+        "Metall Mining Corporation"
+      ],
+      "owners": [
+        "Klipbua Family",
+        "Kanchanaburi Exploration and Mining Co. (KEMCO)"
+      ],
+      "notes": "KEMCO is a subsidiary of the former German mining and smelting company Metallgesellschaft AG."
+    }
+  }
 }

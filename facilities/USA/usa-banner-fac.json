@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.019,
-    "lon": -115.533,
+    "lat": 44.35889529088302,
+    "lon": -115.6206632,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Banner Mining Company",
+    "Silver Chief Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.952087Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:17:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lowman, Idaho (https://thediggings.com/mines/19678). The Banner Mine is located near Lowman, Idaho, approximately 19 miles north of Idaho City"
   },
   "canonical_name": "Banner Mine",
   "canonical_slug": "banner-mine",
@@ -62,5 +65,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "town": "Lowman, Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:17:34.000000Z",
+      "operators": [
+        "Banner Mining Company",
+        "Silver Chief Mining Company"
+      ],
+      "owners": [],
+      "notes": "No specific ownership details provided."
+    }
+  }
 }

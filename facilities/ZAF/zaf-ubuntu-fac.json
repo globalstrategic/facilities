@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.194,
-    "lon": 28.863,
+    "lat": -26.101897462655597,
+    "lon": 29.2099962,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ndalamo Resources (Pty) Ltd",
+    "TerraCom Ltd",
+    "Universal Coal PLC",
+    "Universal Coal and Energy Holdings South Africa (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.746431Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:37:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Emalahleni (https://www.gem.wiki/Ubuntu_Colliery). The Ubuntu colliery is located approximately 25 kilometers south of the Kangala Colliery"
   },
   "canonical_name": "Ubuntu Mine",
   "canonical_slug": "ubuntu-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Emalahleni",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:37:11.000000Z",
+      "operators": [
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd",
+        "TerraCom Ltd"
+      ],
+      "owners": [
+        "Ndalamo Resources (Pty) Ltd",
+        "Universal Coal PLC"
+      ],
+      "notes": "The colliery is jointly owned by TerraCom and Ndalamo Resources."
+    }
+  }
 }

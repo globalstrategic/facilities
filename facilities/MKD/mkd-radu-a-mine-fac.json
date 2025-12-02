@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.08444,
+    "lon": 21.22639,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chemico-Electrometallurgical Combine „Jugokrom“"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.907443Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:55:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Radu%C5%A1a_chromium_mine. The Raduša Mine was a former chromium ore mine crucial for Yugoslavia"
   },
   "canonical_name": "Raduša Mine",
   "canonical_slug": "radusa-mine",
@@ -51,5 +53,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Skopje",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:55:17.000000Z",
+      "operators": [
+        "Chemico-Electrometallurgical Combine „Jugokrom“"
+      ],
+      "owners": [],
+      "notes": "The mine is no longer operational."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 27.409,
-    "lon": 106.126,
+    "lat": 27.409051,
+    "lon": 106.125569,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guizhou Liming Energy Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.748893Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:23:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E9%BB%8E%E6%98%8E%E8%83%BD%E6%BA%90%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E9%87%91%E6%B2%99%E5%8E%BF%E6%96%B0%E5%8C%96%E4%B9%A1%E9%B8%A1%E7%88%AC%E5%9D%8E%E7%85%A4%E7%9F%BF. The Guizhou Jipakan Coal Mine is an underground coal mine operated by Guizhou Liming Energy Group Co., Ltd"
   },
   "canonical_name": "Guizhou Jipakan Coal Mine",
   "canonical_slug": "guizhou-jipakan-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:23:46.000000Z",
+      "operators": [
+        "Guizhou Liming Energy Group Co., Ltd."
+      ],
+      "owners": [
+        "Guizhou Liming Energy Group Co., Ltd."
+      ],
+      "notes": "The mine is owned and operated by Guizhou Liming Energy Group."
+    }
+  }
 }

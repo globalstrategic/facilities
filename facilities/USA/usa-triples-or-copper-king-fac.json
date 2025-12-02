@@ -40,8 +40,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.424,
-    "lon": -112.467,
+    "lat": 37.90965358110789,
+    "lon": -121.83078966589724,
     "precision": "site"
   },
   "types": [
@@ -70,7 +70,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Majuba Hill Copper Corp.",
+    "Ruby Hollow, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -80,11 +83,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.852566Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:35:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Reno (https://giantminingcorp.com/news/majuba-hill-copper-to-acquire-copper-king-and-desert-mountain-claims-and-leases-including-the-historical-cayote-mine-sw-of-tintic-mining-district/). The Copper King Mine is part of a claim group being acquired by Majuba Hill Copper Corp"
   },
   "canonical_name": "Triples Or Copper King Mine",
   "canonical_slug": "triples-or-copper-king-mine",
@@ -99,5 +102,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "Reno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:35:47.000000Z",
+      "operators": [
+        "Majuba Hill Copper Corp."
+      ],
+      "owners": [
+        "Ruby Hollow, LLC"
+      ],
+      "notes": "Majuba Hill Copper is acquiring a 100% interest in the Copper King and Desert Mountain Claim Group."
+    }
+  }
 }

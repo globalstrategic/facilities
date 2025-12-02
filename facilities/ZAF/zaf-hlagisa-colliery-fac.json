@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.773,
-    "lon": 29.816,
+    "lat": -25.794651,
+    "lon": 29.737834,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro",
+    "Hlagisa Mining",
+    "Mafube Coal Mining",
+    "Thungela Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.737997Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:29:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mafube_Colliery. Coordinates are exact for the Mafube Colliery, which includes operations by Hlagisa Mining"
   },
   "canonical_name": "Hlagisa Colliery Mine",
   "canonical_slug": "hlagisa-colliery-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:29:43.000000Z",
+      "operators": [
+        "Mafube Coal Mining",
+        "Hlagisa Mining"
+      ],
+      "owners": [
+        "Exxaro",
+        "Thungela Resources Limited"
+      ],
+      "notes": "Exxaro and Thungela Resources each hold 50% ownership."
+    }
+  }
 }

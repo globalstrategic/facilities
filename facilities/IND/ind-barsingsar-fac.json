@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 27.826,
-    "lon": 73.221,
+    "lat": 27.850308,
+    "lon": 73.20116,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NLC India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.106221Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:04:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Barsingsar_Thermal_Power_Station. Barsingsar coal mine is an opencast mine supplying lignite to the Barsingsar Thermal Power Project"
   },
   "canonical_name": "Barsingsar Mine",
   "canonical_slug": "barsingsar-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:04:41.000000Z",
+      "operators": [
+        "NLC India Limited"
+      ],
+      "owners": [
+        "NLC India Limited"
+      ],
+      "notes": "NLC India Limited is a central public sector undertaking under the Ministry of Coal, Government of India."
+    }
+  }
 }

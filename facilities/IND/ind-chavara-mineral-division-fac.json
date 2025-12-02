@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 8.9403,
-    "lon": 76.5336,
+    "lat": 8.977468355482007,
+    "lon": 76.5906696,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "IREL (India) Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "llm_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-20T16:45:05.000000Z",
-    "checked_by": "llm_web_search",
-    "notes": "Canonical name+slug generated. LLM geocoded from: Indian Rare Earths Limited (IREL) official website and geological survey data. Chavara Mineral Division is located in the Kollam district of Kerala, India. The coordinates are approximate and based on the general location of the facility as described in various sources"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:21:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Indian Rare Earths Limited (IREL) official website and geological survey data. Chavara Mineral Division is located in the Kollam district of Kerala, India. The coordinates are approximate and based on the general location of the facility as described in various sources. Web search geocoded. Source: Calculated from Kollam (https://www.irel.co.in/chavara-mineral-division). Chavara Mineral Division is located 10 km north of Kollam, Kerala"
   },
   "canonical_name": "Chavara Mineral Division Mine",
   "canonical_slug": "chavara-mineral-division-mine",
@@ -43,5 +45,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Kerala"
+  "province": "Kerala",
+  "town": "Kollam",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:21:50.000000Z",
+      "operators": [
+        "IREL (India) Limited"
+      ],
+      "owners": [
+        "IREL (India) Limited"
+      ],
+      "notes": "IREL is a government undertaking under the Department of Atomic Energy."
+    }
+  }
 }

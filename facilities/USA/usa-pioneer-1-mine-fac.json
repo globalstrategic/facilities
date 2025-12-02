@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.111,
-    "lon": -77.961,
+    "lat": 35.01861,
+    "lon": -114.40667,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "German-American Mining Company",
+    "Gold Road Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.704295Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:47:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10027915/. The Pioneer Mine is located about 1.5 miles southwest of Oatman, Arizona"
   },
   "canonical_name": "Pioneer 1 Mine",
   "canonical_slug": "pioneer-1-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:47:17.000000Z",
+      "operators": [
+        "German-American Mining Company"
+      ],
+      "owners": [
+        "Gold Road Company"
+      ],
+      "notes": "The mine was previously operated by the German-American Mining Company and developed by the Gold Road Company."
+    }
+  }
 }

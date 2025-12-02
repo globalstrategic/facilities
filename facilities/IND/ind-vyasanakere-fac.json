@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.171,
-    "lon": 76.381,
+    "lat": 15.210529,
+    "lon": 76.392217,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MSPL Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.076454Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:38:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.prnewswire.com/in/news-releases/mspl-limiteds-vyasanakere-iron-ore-mine-resumes-mining-207851111.html. The Vyasanakere Iron Ore Mine is one of the largest iron ore mines in the private sector in India"
   },
   "canonical_name": "Vyasanakere Mine",
   "canonical_slug": "vyasanakere-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:38:13.000000Z",
+      "operators": [
+        "MSPL Limited"
+      ],
+      "owners": [
+        "MSPL Limited"
+      ],
+      "notes": "MSPL Limited is a flagship company of the Baldota Group of Companies."
+    }
+  }
 }

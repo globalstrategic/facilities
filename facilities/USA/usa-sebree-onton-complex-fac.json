@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.583,
-    "lon": -87.48,
+    "lat": 37.5642,
+    "lon": -87.4903,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners L.P.",
+    "Sebree Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.984969Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:50:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.msha.gov/data-reports/fatality-reports/2015/fatality-9-september-16-2015/final-report. The Onton #9 Mine is located at 3603 State Route 370 E in Sebree, Kentucky"
   },
   "canonical_name": "Sebree Onton Mine",
   "canonical_slug": "sebree-onton-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:50:52.000000Z",
+      "operators": [
+        "Sebree Mining LLC"
+      ],
+      "owners": [
+        "Alliance Resource Partners L.P."
+      ],
+      "notes": "Sebree Mining LLC is a subsidiary of Alliance Resource Partners L.P."
+    }
+  }
 }

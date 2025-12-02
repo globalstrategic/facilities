@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GUY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 38.600677239712724,
+    "lon": -89.38005302568502,
     "precision": "unknown"
   },
   "types": [
@@ -33,14 +33,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Aris Mining",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.959940",
-      "evidence": "Extracted from operator column: Aris Mining"
-    }
+    "Aris Mining",
+    "Aris Mining Corporation",
+    "GCM Mining"
   ],
   "products": [],
   "sources": [
@@ -51,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.986281Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:05:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://aris-mining.com/operation/toroparu/). The Toroparu Project is located approximately 215 km southwest of Georgetown, the capital of Guyana"
   },
   "canonical_name": "Toroparu Development",
   "canonical_slug": "toroparu-development",
@@ -78,5 +73,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cuyuni-Mazaruni",
+  "town": "Georgetown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:05:28.000000Z",
+      "operators": [
+        "Aris Mining Corporation"
+      ],
+      "owners": [
+        "Aris Mining Corporation",
+        "GCM Mining"
+      ],
+      "notes": "Aris Mining Corporation owns 100% of the Toroparu Project, which is managed by GCM Mining."
+    }
+  }
 }

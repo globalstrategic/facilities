@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": 42.766,
-    "lon": 1.185,
+    "lat": 42.43427428700065,
+    "lon": 1.4442433,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Apollo Minerals Limited",
+    "Variscan Mines Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.675022Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:35:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Toulouse (https://www.brrmedia.co.uk/broadcasts/5a1439013b59b604fb0b6cc5/apollo-minerals-increase-ownership-of-couflens-to-100/). The Salau Mine is part of the Couflens Project, which includes historical mining operations and is located in the Pyrenees region"
   },
   "canonical_name": "Salau Mine",
   "canonical_slug": "salau-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Occitanie",
+  "town": "Toulouse",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:35:31.000000Z",
+      "operators": [
+        "Apollo Minerals Limited"
+      ],
+      "owners": [
+        "Apollo Minerals Limited",
+        "Variscan Mines Limited"
+      ],
+      "notes": "Apollo Minerals is in the process of acquiring full ownership of the Couflens Project, which includes the Salau Mine."
+    }
+  }
 }

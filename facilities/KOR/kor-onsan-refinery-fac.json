@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Korea Zinc Co., Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515076",
-      "evidence": "Extracted from operator column: Korea Zinc Co., Ltd."
-    }
+    "Korea Zinc Co., Ltd.",
+    "S-Oil",
+    "Saudi Aramco"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:59:39.000000Z",
+      "operators": [
+        "S-Oil"
+      ],
+      "owners": [
+        "Saudi Aramco"
+      ],
+      "notes": "S-Oil is a subsidiary of Saudi Aramco, which holds a 63.45% stake."
+    }
+  }
 }

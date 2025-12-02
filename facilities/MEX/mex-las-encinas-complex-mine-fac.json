@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 19.254,
-    "lon": -103.532,
+    "lat": 19.253612,
+    "lon": -103.5337,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Las Encinas S.A. de C.V.",
+    "Ternium Argentina SA",
+    "Ternium SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.966593Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:52:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Las_Encinas_Complex_Mine. The Las Encinas Complex Mine is an iron ore mine located in Alzada, Colima, Mexico"
   },
   "canonical_name": "Las Encinas Mine",
   "canonical_slug": "las-encinas-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:52:07.000000Z",
+      "operators": [
+        "Las Encinas S.A. de C.V."
+      ],
+      "owners": [
+        "Ternium Argentina SA",
+        "Ternium SA"
+      ],
+      "notes": "Ternium has a 100% equity interest in Las Encinas."
+    }
+  }
 }

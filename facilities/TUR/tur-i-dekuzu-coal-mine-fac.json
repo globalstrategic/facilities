@@ -9,8 +9,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 39.639,
-    "lon": 29.453,
+    "lat": 39.628937,
+    "lon": 29.459739,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ciner Group",
+    "Garp Linyitleri İşletmesi Müdürlüğü",
+    "Park Teknik"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.310653Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:27:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/I%C4%9Fdekuzu_Coal_Mine. The Iğdekuzu coal mine is an underground mine operated by Park Teknik"
   },
   "canonical_name": "Iäÿdekuzu Coal Mine",
   "canonical_slug": "iaydekuzu-coal-mine",
@@ -60,5 +64,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kütahya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:27:37.000000Z",
+      "operators": [
+        "Park Teknik"
+      ],
+      "owners": [
+        "Garp Linyitleri İşletmesi Müdürlüğü",
+        "Ciner Group"
+      ],
+      "notes": "Park Teknik is a subsidiary of the Ciner Group, and the mine is owned by Garp Linyitleri İşletmesi Müdürlüğü, a subsidiary of TKI."
+    }
+  }
 }

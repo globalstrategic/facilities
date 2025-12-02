@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 58.687901,
+    "lon": 7.081094,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "A/S Knaben Molybdæn Gruber",
+    "A/S Knaben Molybdængruber",
+    "Avesta Järnverks AB",
+    "Blackwells Develop. Corp. Ltd.",
+    "Cammel, Laird & Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.721100Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:23:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://aps.ngu.no/pls/oradb/minres_deposit_fakta_NY_KS.Main?p_objid=5086&p_spraak=E. The Knaben Molybdenum Mine was the largest molybdenum mine in Europe and operated from 1885 to 1973"
   },
   "canonical_name": "Knaben Molybdenum Mine",
   "canonical_slug": "knaben-molybdenum-mine",
@@ -47,5 +53,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agder",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:23:27.000000Z",
+      "operators": [
+        "A/S Knaben Molybdængruber",
+        "Avesta Järnverks AB"
+      ],
+      "owners": [],
+      "notes": "The mine was operated by various companies over its history, with A/S Knaben Molybdængruber being a significant operator."
+    }
+  }
 }

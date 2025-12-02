@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ROU",
   "location": {
-    "lat": 46.315,
-    "lon": 23.17,
+    "lat": 46.31472,
+    "lon": 23.17139,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cupru Min Abrud S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:47.785122Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:25:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ro%C8%99ia_Poieni_copper_mine. The Rosia Poieni copper mine is the largest copper reserve in Romania and is located in the Metalliferi Mountains"
   },
   "canonical_name": "Rosia Poieni Mine",
   "canonical_slug": "rosia-poieni-mine-2",
@@ -58,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alba County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:25:41.000000Z",
+      "operators": [
+        "Cupru Min Abrud S.A."
+      ],
+      "owners": [
+        "Cupru Min Abrud S.A."
+      ],
+      "notes": "Cupru Min is a state-owned company that operates the mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.33,
-    "lon": 29.501,
+    "lat": -22.5,
+    "lon": 29.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lonmin",
+    "Messina (Transvaal) Development Company Ltd.",
+    "Messina Ltd.",
+    "SouthernEra Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.701095Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:54:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/19341. The Messina Transvaal Development Corporation Mine is located near Musina, South Africa"
   },
   "canonical_name": "Messina Platinum Mine",
   "canonical_slug": "messina-platinum-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:54:51.000000Z",
+      "operators": [
+        "Messina (Transvaal) Development Company Ltd.",
+        "Messina Ltd."
+      ],
+      "owners": [
+        "SouthernEra Resources Ltd.",
+        "Lonmin"
+      ],
+      "notes": "Lonmin has taken over control of the Messina mine operations."
+    }
+  }
 }

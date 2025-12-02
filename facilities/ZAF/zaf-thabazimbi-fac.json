@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.612,
-    "lon": 27.384,
+    "lat": -24.610118,
+    "lon": 27.387873,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal South Africa Ltd",
+    "Kumba Iron Ore Ltd",
+    "Thabazimbi Iron Ore Mine Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.711592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-thabazimbi-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:05:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-thabazimbi-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Thabazimbi_Mine. The coordinates are directly provided in the source"
   },
   "canonical_name": "Thabazimbi Mine",
   "canonical_slug": "thabazimbi-mine",
@@ -56,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:05:17.000000Z",
+      "operators": [
+        "ArcelorMittal South Africa Ltd"
+      ],
+      "owners": [
+        "Thabazimbi Iron Ore Mine Pty Ltd",
+        "Kumba Iron Ore Ltd"
+      ],
+      "notes": "The mine was transferred to ArcelorMittal South Africa and ceased operations in September 2016."
+    }
+  }
 }

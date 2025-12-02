@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.114,
-    "lon": 29.92,
+    "lat": -25.5,
+    "lon": 30.5,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Highveld Steel & Vanadium Corporation Ltd.",
+    "International Resources Limited (IRL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.782026Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:09:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.engineeringnews.co.za/article/tribunal-approves-irls-buyout-of-mapochs-mine-with-conditions-2020-10-27. The Mapochs Mine is located approximately 5 km from Roossenekal, Mpumalanga"
   },
   "canonical_name": "Mapochs Mine",
   "canonical_slug": "mapochs-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:09:12.000000Z",
+      "operators": [
+        "International Resources Limited (IRL)"
+      ],
+      "owners": [
+        "Highveld Steel & Vanadium Corporation Ltd."
+      ],
+      "notes": "IRL is actively investing in the refurbishment and operation of the mine."
+    }
+  }
 }

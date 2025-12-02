@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -42.7,
+    "lon": 170.96,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Westland Mineral Sands"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.373726Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:02:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.wmsnz.com/mananui/. The Mananui Project is located 7 km south of Hokitika, New Zealand"
   },
   "canonical_name": "Mananui Mine",
   "canonical_slug": "mananui-mine",
@@ -59,5 +61,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:02:44.000000Z",
+      "operators": [
+        "Westland Mineral Sands"
+      ],
+      "owners": [],
+      "notes": "Westland Mineral Sands has been granted resource consent for the project."
+    }
+  }
 }

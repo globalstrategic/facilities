@@ -8,8 +8,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 49.717,
-    "lon": 81.582,
+    "lat": 50.62858986405613,
+    "lon": 82.10409513736789,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altynalmas Gold",
+    "Bakyrchik Mining Venture LLP",
+    "Polymetal International PLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.729479Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:30:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Astana (https://www.mining-technology.com/projects/kyzyl-gold-project/). The Kyzyl gold project comprises two gold deposits, Bakyrchik and Bolshevik, located in northeastern Kazakhstan"
   },
   "canonical_name": "Kyzyl Mine",
   "canonical_slug": "kyzyl-mine",
@@ -51,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan",
+  "town": "Astana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:30:24.000000Z",
+      "operators": [
+        "Polymetal International PLC",
+        "Bakyrchik Mining Venture LLP"
+      ],
+      "owners": [
+        "Polymetal International PLC",
+        "Altynalmas Gold"
+      ],
+      "notes": "Polymetal acquired Altynalmas Gold, the holding company of the Kyzyl gold project, in September 2014."
+    }
+  }
 }

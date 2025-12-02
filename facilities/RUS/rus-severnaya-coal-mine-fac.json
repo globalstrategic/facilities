@@ -9,8 +9,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 67.587,
-    "lon": 64.077,
+    "lat": 51.170873,
+    "lon": 133.027726,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Siberian Coal Energy Company JSC",
+    "Urgalugol JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.611652Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:37:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Severnaya_Coal_Mine. Severnaya Coal Mine is an underground coal mine located in the Khabarovsk Region of Russia"
   },
   "canonical_name": "Severnaya Coal Mine",
   "canonical_slug": "severnaya-coal-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khabarovsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:37:24.000000Z",
+      "operators": [
+        "Urgalugol JSC"
+      ],
+      "owners": [
+        "Siberian Coal Energy Company JSC"
+      ],
+      "notes": "Urgalugol JSC is a subsidiary of SUEK."
+    }
+  }
 }

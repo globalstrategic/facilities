@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GUY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.61813860307257,
+    "lon": -89.84071530226845,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Guyana Manganese Inc.",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.943193",
-      "evidence": "Extracted from operator column: Guyana Manganese Inc. (Bosai Group)"
-    }
+    "Bosai Minerals Group",
+    "Guyana Manganese Inc."
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.985357Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:04:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://kaieteurnewsonline.com/2023/10/09/manganese-plant-sifting-manganese-and-gold-non-stop-glenn-lall/). The Matthews Ridge Manganese Mine is located in the North West District of Guyana, approximately 260 km northwest of Georgetown. The mine is currently operated by Guyana Manganese Inc. (GMI), a subsidiary of Bosai Minerals Group"
   },
   "canonical_name": "Matthews Ridge Manganese Mine",
   "canonical_slug": "matthews-ridge-manganese-mine",
@@ -64,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West District",
+  "town": "Georgetown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:04:24.000000Z",
+      "operators": [
+        "Guyana Manganese Inc."
+      ],
+      "owners": [
+        "Bosai Minerals Group"
+      ],
+      "notes": "GMI is a subsidiary of the Chinese state-owned Bosai Minerals Group, which acquired the rights to operate the mine in 2016."
+    }
+  }
 }

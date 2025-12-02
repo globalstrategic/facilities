@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NZL",
   "location": {
-    "lat": -44.852,
-    "lon": 168.421,
+    "lat": -45.3,
+    "lon": 168.2,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:22.228774Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:31:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/locentry-1217063.html. The Bonnie Jean Mine is located in Glenorchy, Queenstown-Lakes District, Otago Region, New Zealand"
   },
   "canonical_name": "Glenorchy Mine",
   "canonical_slug": "glenorchy-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Otago Region"
 }

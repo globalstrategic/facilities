@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.74,
-    "lon": -109.306,
+    "lat": 23.000143508545744,
+    "lon": -105.58225632117163,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Mexico S.A. de C.V.",
+    "ArcelorMittal SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.955353Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:32:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Rosario (https://miningdataonline.com/property/1016/El-Volcan---San-Jose-Mine.aspx). The El Volcan mine is located 14 km southeast of Rosario, Sonora, Mexico"
   },
   "canonical_name": "El Volcan Mine",
   "canonical_slug": "el-volcan-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Rosario",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:32:51.000000Z",
+      "operators": [
+        "ArcelorMittal Mexico S.A. de C.V."
+      ],
+      "owners": [
+        "ArcelorMittal SA"
+      ],
+      "notes": "ArcelorMittal operates the mine and holds 100% ownership."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -7.11095078948263,
+    "lon": 146.60266298115326,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Harmony Gold Mining Company Limited",
+    "Newcrest Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.313129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:54:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lae City (https://www.business-humanrights.org/en/companies/wafi-golpu-copper-mine-joint-venture-between-harmony-and-newcrest/). The Wafi-Golpu Project is an advanced copper and gold exploration project located in the Morobe Province of Papua New Guinea"
   },
   "canonical_name": "Wafi Golpu Facility",
   "canonical_slug": "wafi-golpu-facility",
@@ -67,5 +70,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Morobe Province",
+  "town": "Lae City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:54:44.000000Z",
+      "operators": [
+        "Newcrest Mining Limited",
+        "Harmony Gold Mining Company Limited"
+      ],
+      "owners": [
+        "Newcrest Mining Limited",
+        "Harmony Gold Mining Company Limited"
+      ],
+      "notes": "The project is a joint venture between Newcrest and Harmony, each holding 50%."
+    }
+  }
 }

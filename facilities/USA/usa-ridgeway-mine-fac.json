@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.272,
-    "lon": -80.885,
+    "lat": 34.0,
+    "lon": -80.0,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Galactic Resources Ltd.",
+    "Kennecott Corporation",
+    "Rtz-Cra Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.905035Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T22:39:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/18371. The Ridgeway Mine is located near Ridgeway, South Carolina, and has historically been a part of the Blythewood Area"
   },
   "canonical_name": "Ridgeway Mine",
   "canonical_slug": "ridgeway-mine-2",
@@ -51,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Carolina",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:39:39.000000Z",
+      "operators": [
+        "Galactic Resources Ltd.",
+        "Kennecott Corporation",
+        "Rtz-Cra Corporation"
+      ],
+      "owners": [],
+      "notes": "Multiple companies have been associated with the operation of the mine."
+    }
+  }
 }

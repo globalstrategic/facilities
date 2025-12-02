@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.796,
-    "lon": -82.158,
+    "lat": 37.8075,
+    "lon": -82.1689,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal-Mac",
+    "Coal-Mac LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.958765Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:23:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609075&iframe=yes. The Twin Branch No 1 Coal Mine is an active surface mine located in Mingo County, West Virginia"
   },
   "canonical_name": "Twin Branch No 1 Coal Mine",
   "canonical_slug": "twin-branch-no-1-coal-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:23:45.000000Z",
+      "operators": [
+        "Coal-Mac LLC"
+      ],
+      "owners": [
+        "Coal-Mac"
+      ],
+      "notes": "Coal-Mac is the sole owner and operator of the mine."
+    }
+  }
 }

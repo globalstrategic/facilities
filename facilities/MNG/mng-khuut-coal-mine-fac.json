@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.957,
-    "lon": 114.831,
+    "lat": 46.967,
+    "lon": 114.833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Buman-Olz LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.458431Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:20:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Khuut_Coal_Mine. Khuut Coal Mine is a surface lignite coal mine owned and operated by Buman-Olz LLC"
   },
   "canonical_name": "Khuut Coal Mine",
   "canonical_slug": "khuut-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dornod",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:18.000000Z",
+      "operators": [
+        "Buman-Olz LLC"
+      ],
+      "owners": [
+        "Buman-Olz LLC"
+      ],
+      "notes": "Buman-Olz LLC is a Mongolian-owned private company."
+    }
+  }
 }

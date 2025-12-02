@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PHL",
   "location": {
-    "lat": 6.71,
-    "lon": 126.235,
+    "lat": 6.709565,
+    "lon": 126.235313,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genluiching Mining Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:04.747796Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:00:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Genluiching_Davao_Mine. The Genluiching Davao Mine is an iron ore mine located in Mati City, Davao Oriental, Philippines"
   },
   "canonical_name": "Genluiching Davao Mine",
   "canonical_slug": "genluiching-davao-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Davao Oriental",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:00:43.000000Z",
+      "operators": [
+        "Genluiching Mining Corp"
+      ],
+      "owners": [
+        "Genluiching Mining Corp"
+      ],
+      "notes": "Genluiching Mining Corp owns 100% of the mine."
+    }
+  }
 }

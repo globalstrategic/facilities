@@ -15,8 +15,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.756,
-    "lon": -83.525,
+    "lat": 36.75,
+    "lon": -83.561111,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nally & Hamilton Enterprises",
+    "Nally & Hamilton Enterprises Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.925490Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:55:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Balkan_Coal_Mine. Balkan Coal Mine is an operating coal mine located in Bell, Kentucky"
   },
   "canonical_name": "Balkan Coal Mine",
   "canonical_slug": "balkan-coal-mine",
@@ -58,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:55:37.000000Z",
+      "operators": [
+        "Nally & Hamilton Enterprises Inc"
+      ],
+      "owners": [
+        "Nally & Hamilton Enterprises"
+      ],
+      "notes": "Nally & Hamilton Enterprises Inc owns and operates the Balkan Coal Mine."
+    }
+  }
 }

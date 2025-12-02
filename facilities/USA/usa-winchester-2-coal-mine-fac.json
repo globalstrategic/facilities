@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.312,
-    "lon": -81.587,
+    "lat": 38.3115205,
+    "lon": -81.5869362,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Panther Creek Mining LLC",
+    "Sev.en Global Investments AS"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.863365Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:45:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Winchester_2_Coal_Mine. Coordinates are approximate for the Winchester 2 Coal Mine located in Kanawha County"
   },
   "canonical_name": "Winchester 2 Coal Mine",
   "canonical_slug": "winchester-2-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:45:39.000000Z",
+      "operators": [
+        "Panther Creek Mining LLC"
+      ],
+      "owners": [
+        "Sev.en Global Investments AS"
+      ],
+      "notes": "Panther Creek Mining LLC is a subsidiary of Sev.en Global Investments AS."
+    }
+  }
 }

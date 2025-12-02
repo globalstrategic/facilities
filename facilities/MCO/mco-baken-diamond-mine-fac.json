@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MCO",
   "location": {
-    "lat": null,
-    "lon": -28.452,
+    "lat": -28.4827,
+    "lon": 16.777,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lower Orange River Diamonds"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.151212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:17:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Baken_diamond_mine. The Baken diamond mine is located along the lower Orange River in South Africa"
   },
   "type_confidence": 0.0,
   "canonical_name": "Baken Diamond",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     },
     "canonicalization_confidence": 0.315
+  },
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:17:33.000000Z",
+      "operators": [
+        "Lower Orange River Diamonds"
+      ],
+      "owners": [
+        "Lower Orange River Diamonds"
+      ],
+      "notes": "Lower Orange River Diamonds owns and operates the Baken diamond mine."
+    }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 43.417,
-    "lon": -114.334,
+    "lat": 45.0,
+    "lon": -110.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anaconda Company",
+    "Mineral Hill Mining Company",
+    "TVX Mineral Hill Incorporated"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.728344Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:07:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/26953. The Mineral Hill Mine is also known as the Jardine Mine and is currently active"
   },
   "canonical_name": "Mineral Hill Mine",
   "canonical_slug": "mineral-hill-mine-2",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:07:56.000000Z",
+      "operators": [
+        "Mineral Hill Mining Company",
+        "TVX Mineral Hill Incorporated"
+      ],
+      "owners": [
+        "Anaconda Company",
+        "Mineral Hill Mining Company",
+        "TVX Mineral Hill Incorporated"
+      ],
+      "notes": "Mineral Hill Mining Company is the owner-operator with a majority stake."
+    }
+  }
 }

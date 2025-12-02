@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 49.6585,
-    "lon": 83.3473,
+    "lat": 49.66111,
+    "lon": 83.34778,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kazzinc",
+    "Samruk-Energy JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T18:18:07.000000Z",
+    "last_checked": "2025-12-01T23:32:30.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/41809. Coordinates extracted from multiple sources confirm the location of the Bukhtarma Hydro Power Complex"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/41809. Coordinates extracted from multiple sources confirm the location of the Bukhtarma Hydro Power Complex. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bukhtarma_Hydroelectric_Power_Plant. The Bukhtarma Hydroelectric Power Plant is located on the Irtysh River, 5 km upstream of Serebryansk"
   },
   "canonical_name": "Bukhtarma Hydro Power Plant",
   "canonical_slug": "bukhtarma-hydro-power-plant",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "East Kazakhstan Region"
+  "province": "East Kazakhstan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:32:30.000000Z",
+      "operators": [
+        "Kazzinc"
+      ],
+      "owners": [
+        "Samruk-Energy JSC",
+        "Kazzinc"
+      ],
+      "notes": "Kazzinc operates the plant under a long-term concession agreement."
+    }
+  }
 }

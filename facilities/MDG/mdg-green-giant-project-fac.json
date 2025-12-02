@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": -24.08,
-    "lon": 45.01417,
+    "lat": -24.01,
+    "lon": 45.05,
     "precision": "region",
     "region": "Atsimo-Andrefana"
   },
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energizer Resources Inc.",
+    "NextSource Materials Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "unverified",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.107712Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated",
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:20:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Green_Giant_mine. The Green Giant Project is located in the Atsimo-Andrefana region of Madagascar",
     "geocoding_source": "Green Giant vanadium project near Fotadrevo/Betioky Sud; Mindat estimated coords"
   },
   "data_quality": {
@@ -56,5 +59,19 @@
   "display_name": "Green Giant",
   "primary_type": "exploration",
   "type_confidence": 1.0,
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atsimo-Andrefana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:20:15.000000Z",
+      "operators": [
+        "Energizer Resources Inc."
+      ],
+      "owners": [
+        "NextSource Materials Inc.",
+        "Energizer Resources Inc."
+      ],
+      "notes": "Energizer Resources Inc. is developing the project, which is 100% owned by them."
+    }
+  }
 }

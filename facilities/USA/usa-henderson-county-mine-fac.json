@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.852,
-    "lon": -87.56,
+    "lat": 37.8520655,
+    "lon": -87.5600417,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners L.P.",
+    "River View Coal, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.966836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:30:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.yahoo.com/news/alliance-coal-celebrates-grand-opening-191723399.html. The Henderson County Mine is an expansion of the River View Mine and is located on Sulphur Springs Road in Corydon"
   },
   "canonical_name": "Henderson County Mine",
   "canonical_slug": "henderson-county-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:30:49.000000Z",
+      "operators": [
+        "River View Coal, LLC"
+      ],
+      "owners": [
+        "Alliance Resource Partners L.P."
+      ],
+      "notes": "River View Coal is a subsidiary of Alliance Coal, which is part of Alliance Resource Partners."
+    }
+  }
 }

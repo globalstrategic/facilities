@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.906,
-    "lon": -116.65,
+    "lat": 36.90639,
+    "lon": -116.64917,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gexa Gold Corp.",
+    "N. A. Degerstrom, Inc.",
+    "U.S. Precious Metals, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.925640Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:55:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10055087/. The Mother Lode Mine is a gold and silver mine located in Nye County, Nevada"
   },
   "canonical_name": "Mother Lode Mine",
   "canonical_slug": "mother-lode-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:55:45.000000Z",
+      "operators": [
+        "U.S. Precious Metals, Inc.",
+        "Gexa Gold Corp."
+      ],
+      "owners": [
+        "N. A. Degerstrom, Inc."
+      ],
+      "notes": "Multiple companies are associated with ownership and operation."
+    }
+  }
 }

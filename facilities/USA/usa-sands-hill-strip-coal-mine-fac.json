@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.117,
-    "lon": -82.419,
+    "lat": 39.116389,
+    "lon": -82.401667,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Carbon River Coal",
+    "Sands Hill Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.950684Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:16:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sands_Hill_Strip_Coal_Mine. Sands Hill Strip Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Sands Hill Strip Coal Mine",
   "canonical_slug": "sands-hill-strip-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ohio",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:16:23.000000Z",
+      "operators": [
+        "Carbon River Coal"
+      ],
+      "owners": [
+        "Sands Hill Mining"
+      ],
+      "notes": "Carbon River Coal owns 100% of the mine, which is operated by Sands Hill Mining."
+    }
+  }
 }

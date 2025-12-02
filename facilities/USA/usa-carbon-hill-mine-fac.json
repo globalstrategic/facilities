@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.889,
-    "lon": -87.548,
+    "lat": 33.886934,
+    "lon": -87.547895,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Clas Coal Co",
+    "Clas Coal Co Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.732826Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:11:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Carbon_Hill_Mine. The Carbon Hill Mine is an operating coal mine located in Walker County, Alabama"
   },
   "canonical_name": "Carbon Hill Mine",
   "canonical_slug": "carbon-hill-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:11:43.000000Z",
+      "operators": [
+        "Clas Coal Co Inc"
+      ],
+      "owners": [
+        "Clas Coal Co"
+      ],
+      "notes": "Clas Coal Co Inc is the operator and owner of the Carbon Hill Mine."
+    }
+  }
 }

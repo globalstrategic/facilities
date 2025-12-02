@@ -6,8 +6,8 @@
   ],
   "country_iso3": "SRB",
   "location": {
-    "lat": 42.5274,
-    "lon": 22.24334,
+    "lat": 44.79672254708453,
+    "lon": 17.3441285,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Trepca Lead Zinc Mining Complex"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.513529Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:03:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Vranje (https://www.mindat.org/loc-62233.html). The Grot Mine is located near Vranje, specifically in Kriva Feja Village"
   },
   "canonical_name": "Grot Mine",
   "canonical_slug": "grot-mine",
@@ -53,5 +55,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pčinja District",
+  "town": "Vranje",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:03:48.000000Z",
+      "operators": [
+        "Trepca Lead Zinc Mining Complex"
+      ],
+      "owners": [],
+      "notes": "The mine was developed by the Trepca Lead Zinc Mining Complex in Kosovo."
+    }
+  }
 }

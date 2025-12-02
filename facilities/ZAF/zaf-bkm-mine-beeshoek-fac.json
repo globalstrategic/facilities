@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.38333,
-    "lon": 22.975,
+    "lat": -28.28421,
+    "lon": 23.0,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Ltd",
+    "Assmang Pty Ltd",
+    "Assore Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,9 +35,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:36:45.000000Z",
+    "last_checked": "2025-12-01T18:15:20.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Beeshoek_mine. Coordinates extracted from Wikipedia, indicating the location of Beeshoek mine in South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Beeshoek_mine. Coordinates extracted from Wikipedia, indicating the location of Beeshoek mine in South Africa. Web search geocoded. Source: https://www.mining.com/web/south-african-iron-ore-mine-to-close-after-arcelormittal-halts-purchases/. The Beeshoek mine is currently placed on care and maintenance after ceasing operations due to the loss of its primary customer"
   },
   "canonical_name": "Bkm / Beeshoek Mine",
   "canonical_slug": "bkm-beeshoek-mine",
@@ -49,5 +53,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:15:20.000000Z",
+      "operators": [
+        "Assmang Pty Ltd"
+      ],
+      "owners": [
+        "African Rainbow Minerals Ltd",
+        "Assore Ltd"
+      ],
+      "notes": "Beeshoek is operated by Assmang, a joint venture between African Rainbow Minerals and Assore."
+    }
+  }
 }

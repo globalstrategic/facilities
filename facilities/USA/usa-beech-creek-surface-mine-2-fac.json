@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.484,
-    "lon": -82.124,
+    "lat": 37.49,
+    "lon": -82.135,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FR Performance",
+    "FR Performance LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.694780Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:39:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Beech_Creek_Surface_Mine_2. Exact coordinates provided in the source"
   },
   "canonical_name": "Beech Creek Surface 2 Mine",
   "canonical_slug": "beech-creek-surface-2-mine",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:39:49.000000Z",
+      "operators": [
+        "FR Performance LLC"
+      ],
+      "owners": [
+        "FR Performance"
+      ],
+      "notes": "FR Performance LLC is the operator and owner of the mine."
+    }
+  }
 }

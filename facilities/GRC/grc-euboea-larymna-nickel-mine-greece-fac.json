@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GRC",
   "location": {
-    "lat": 38.666,
-    "lon": 23.535,
+    "lat": 38.4655,
+    "lon": 23.285,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hellenic Chemical Products & Fertilizer Company",
+    "Larco SA",
+    "Societe Anonyme Le Nickel"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:58.508578Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:56:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs60000599. The Euboea Larymna Nickel Mine is located near Chalkida, Greece, and is known for its nickel deposits"
   },
   "canonical_name": "Euboea Larymna Nickel Greece Mine",
   "canonical_slug": "euboea-larymna-nickel-greece-mine",
@@ -47,5 +51,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Euboea",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:56:39.000000Z",
+      "operators": [
+        "Hellenic Chemical Products & Fertilizer Company",
+        "Larco SA",
+        "Societe Anonyme Le Nickel"
+      ],
+      "owners": [
+        "Hellenic Chemical Products & Fertilizer Company",
+        "Larco SA",
+        "Societe Anonyme Le Nickel"
+      ],
+      "notes": "Larco SA is the primary operator and owner of the mine."
+    }
+  }
 }

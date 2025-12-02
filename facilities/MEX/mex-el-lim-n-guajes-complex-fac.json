@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.278820516131855,
+    "lon": -100.33683750340157,
     "precision": "unknown"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera Media Luna, S.A. de C.V.",
+    "Torex Gold Resources Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.951263Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:29:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mexico City (https://www.gold.org/news-and-events/press-releases/world-gold-council-welcomes-torex-gold-new-member). The El Limón Guajes Complex is located in the Guerrero Gold Belt, approximately 180 km southwest of Mexico City"
   },
   "canonical_name": "El Limón Guajes Mine",
   "canonical_slug": "el-limon-guajes-mine",
@@ -65,5 +68,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guerrero",
+  "town": "Mexico City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:29:50.000000Z",
+      "operators": [
+        "Torex Gold Resources Inc.",
+        "Minera Media Luna, S.A. de C.V."
+      ],
+      "owners": [
+        "Torex Gold Resources Inc."
+      ],
+      "notes": "Torex Gold is the primary operator and owner of the El Limón Guajes mining complex."
+    }
+  }
 }

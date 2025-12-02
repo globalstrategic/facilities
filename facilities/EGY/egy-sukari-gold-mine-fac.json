@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 24.95694,
+    "lon": 34.71,
     "precision": "unknown"
   },
   "types": [
@@ -21,22 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "AngloGold Ashanti",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.153021",
-      "evidence": "Extracted from operator column: AngloGold Ashanti / EMRA"
-    },
-    {
-      "name": "EMRA",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.153033",
-      "evidence": "Extracted from operator column: AngloGold Ashanti / EMRA"
-    }
+    "AngloGold Ashanti",
+    "AngloGold Ashanti plc",
+    "EMRA",
+    "Egyptian Mineral Resources Authority",
+    "Sukari Gold Mining Company"
   ],
   "products": [],
   "sources": [
@@ -47,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.179491Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:21:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sukari_mine. Sukari Gold Mine is Egypt's first modern gold mine, located in the Nubian Desert/Eastern Desert"
   },
   "canonical_name": "Sukari Gold Processing Plant",
   "canonical_slug": "sukari-gold-processing-plant",
@@ -74,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Red Sea Governorate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:21:06.000000Z",
+      "operators": [
+        "AngloGold Ashanti plc",
+        "Sukari Gold Mining Company"
+      ],
+      "owners": [
+        "AngloGold Ashanti plc",
+        "Egyptian Mineral Resources Authority"
+      ],
+      "notes": "The mine is a joint venture with a 50% stake held by AngloGold Ashanti and a 50% stake held by EMRA."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.883,
-    "lon": 115.294,
+    "lat": -1.882847,
+    "lon": 115.294311,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Titian Utama Tanah Bumbu"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.221324Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:29:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TUTB_Coal_Mine. TUTB Coal Mine is an operating coal mine located in South Kalimantan, Indonesia"
   },
   "canonical_name": "Tutb Coal Mine",
   "canonical_slug": "tutb-coal-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:29:13.000000Z",
+      "operators": [
+        "Titian Utama Tanah Bumbu"
+      ],
+      "owners": [
+        "Titian Utama Tanah Bumbu"
+      ],
+      "notes": "The mine is fully owned by Titian Utama Tanah Bumbu."
+    }
+  }
 }

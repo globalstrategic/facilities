@@ -9,8 +9,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -14.23,
-    "lon": -70.331,
+    "lat": -14.20611,
+    "lon": -70.31639,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Manuel De La Cruz Huahuacondori Lopez"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.327533Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:16:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Quenamari. Quenamari Copper 88 is located in the Andes of Peru, specifically in the Puno Region"
   },
   "canonical_name": "Quenamari Copper 88 Mine",
   "canonical_slug": "quenamari-copper-88-mine",
@@ -64,5 +66,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:16:03.000000Z",
+      "operators": [],
+      "owners": [
+        "Manuel De La Cruz Huahuacondori Lopez"
+      ],
+      "notes": "Owner information extracted from The Diggings™."
+    }
+  }
 }

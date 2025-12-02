@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.266,
-    "lon": -89.884,
+    "lat": 39.20726052854897,
+    "lon": -89.8817662,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cline Group",
+    "Exxon Coal USA, Inc.",
+    "MaRyan Mining LLC",
+    "Macoupin Energy LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.755193Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:30:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Carlinville (https://miningconnection.com/longwall/news/article/foresight_energy_to_shut_down_shay_no._1_coal_mine_complex_illinois). The Shay #1 Mine is located approximately 5 miles south of Carlinville, Illinois"
   },
   "canonical_name": "Shay 1 Mine",
   "canonical_slug": "shay-1-mine",
@@ -55,5 +60,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Illinois",
+  "town": "Carlinville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:32.000000Z",
+      "operators": [
+        "MaRyan Mining LLC"
+      ],
+      "owners": [
+        "Macoupin Energy LLC",
+        "Cline Group",
+        "Exxon Coal USA, Inc."
+      ],
+      "notes": "The mine was previously owned by Exxon and was sold to Macoupin Energy in 2009. It is currently closed due to bankruptcy of its owner."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.971,
-    "lon": -83.174,
+    "lat": 37.971111,
+    "lon": -83.173889,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NEV LLC",
+    "Option Land Development"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.913789Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:46:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Advanced_Restoration_Technologies_-1_Coal_Mine. The mine is located in Elk Fork, Morgan County, Kentucky"
   },
   "canonical_name": "Advanced Restoration Technologies 1 Coal Mine",
   "canonical_slug": "advanced-restoration-technologies-1-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:46:47.000000Z",
+      "operators": [
+        "NEV LLC"
+      ],
+      "owners": [
+        "Option Land Development"
+      ],
+      "notes": "NEV LLC became the operator on June 7, 2023, after the mine was placed in non-producing status by the previous operator."
+    }
+  }
 }

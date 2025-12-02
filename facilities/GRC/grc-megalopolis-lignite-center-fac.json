@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GRC",
   "location": {
-    "lat": 37.428,
-    "lon": 22.098,
+    "lat": 37.427554,
+    "lon": 22.097807,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lignitiki Megalopolis SA",
+    "Public Power Corporation SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:58.506329Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:55:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Megalopolis_Lignite_Center. The Megalopolis Lignite Center is a network of surface coal mines located in the Peloponnese region of Greece"
   },
   "canonical_name": "Megalopolis Lignite Center Mine",
   "canonical_slug": "megalopolis-lignite-center-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arcadia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:55:06.000000Z",
+      "operators": [
+        "Lignitiki Megalopolis SA"
+      ],
+      "owners": [
+        "Public Power Corporation SA"
+      ],
+      "notes": "Lignitiki Megalopolis SA is a subsidiary of the Public Power Corporation of Greece."
+    }
+  }
 }

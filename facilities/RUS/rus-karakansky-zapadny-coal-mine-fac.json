@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.358,
-    "lon": 86.747,
+    "lat": 54.358257,
+    "lon": 86.746502,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Karakan Invest LLC",
+    "Shakhta Belovskaya CJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.612396Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:38:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Karakansky-Zapadny_Coal_Mine. The Karakansky Zapadny Coal Mine is an operating surface mine located in the Belovo district"
   },
   "canonical_name": "Karakansky Zapadny Coal Mine",
   "canonical_slug": "karakansky-zapadny-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:38:19.000000Z",
+      "operators": [
+        "Shakhta Belovskaya CJSC"
+      ],
+      "owners": [
+        "Karakan Invest LLC"
+      ],
+      "notes": "Shakhta Belovskaya CJSC is fully owned by Karakan Invest LLC, which was acquired by EcoCarbonInvest."
+    }
+  }
 }

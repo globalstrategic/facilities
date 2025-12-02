@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.323,
-    "lon": -87.159,
+    "lat": 33.322836,
+    "lon": -87.158843,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "RJR Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.835513Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:21:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-0103523. Coordinates and operational status confirmed from multiple sources"
   },
   "canonical_name": "Shannon No 3 Coal Mine",
   "canonical_slug": "shannon-no-3-coal-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:21:23.000000Z",
+      "operators": [
+        "RJR Mining Company"
+      ],
+      "owners": [
+        "RJR Mining Company"
+      ],
+      "notes": "RJR Mining Company is both the operator and owner of the facility."
+    }
+  }
 }

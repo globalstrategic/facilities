@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 46.746,
-    "lon": -87.882,
+    "lat": 46.74639,
+    "lon": -87.88056,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.860992Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Eagle_Mine_(Michigan). Eagle Mine is the only primary nickel mine in the United States, located on the Yellow Dog Plains"
   },
   "canonical_name": "Eagle Mine",
   "canonical_slug": "eagle-mine",
@@ -71,5 +73,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michigan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:40.000000Z",
+      "operators": [
+        "Lundin Mining"
+      ],
+      "owners": [
+        "Lundin Mining"
+      ],
+      "notes": "Lundin Mining acquired the Eagle project from Rio Tinto in 2013."
+    }
+  }
 }

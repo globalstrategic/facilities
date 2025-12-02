@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
-    "lat": 9.111,
-    "lon": -79.456,
+    "lat": 51.28617190930437,
+    "lon": 0.009878495126718623,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Equinox Gold Corp.",
+    "Minera Alamos Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.426841Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:43:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Eureka (https://mineraalamos.com/news/2025/minera-alamos-completes-acquisition-of-pan-gold-mining-complex/). The Pan Mine is an open-pit, heap leach gold operation located in east-central Nevada"
   },
   "canonical_name": "San Juan De Peq Mine",
   "canonical_slug": "san-juan-de-peq-mine",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Eureka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:43:38.000000Z",
+      "operators": [
+        "Minera Alamos Inc."
+      ],
+      "owners": [
+        "Equinox Gold Corp."
+      ],
+      "notes": "Minera Alamos has recently acquired the Pan Gold Mine from Equinox Gold."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -22.173,
-    "lon": 29.68,
+    "lat": -22.17306,
+    "lon": 29.68028,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal of Africa Limited",
+    "Hlalethembeni Outsourcing Services",
+    "MC Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.750778Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:41:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Vele_Colliery. Vele Colliery is a coking coal mine project located in Limpopo Province, South Africa. It has been on care and maintenance since 2013"
   },
   "canonical_name": "Vele Colliery Mine",
   "canonical_slug": "vele-colliery-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:41:22.000000Z",
+      "operators": [
+        "Hlalethembeni Outsourcing Services"
+      ],
+      "owners": [
+        "MC Mining",
+        "Coal of Africa Limited"
+      ],
+      "notes": "MC Mining is the primary owner and operator, with a contract mining agreement with Hlalethembeni Outsourcing Services for operations."
+    }
+  }
 }

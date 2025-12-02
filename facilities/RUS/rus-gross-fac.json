@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 57.653,
-    "lon": 119.917,
+    "lat": 56.6579264196927,
+    "lon": 124.77752655128833,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nord Gold SE"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.660104Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:15:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Neryungri (https://nordgold.com/media/news/nordgold-s-gross-mine-launched-during-eastern-economic-forum-in-vladivostok/). Gross mine is located 4 km east of the Neryungri mine in Yakutia"
   },
   "canonical_name": "Gross Mine",
   "canonical_slug": "gross-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yakutia",
+  "town": "Neryungri",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:15:00.000000Z",
+      "operators": [
+        "Nord Gold SE"
+      ],
+      "owners": [
+        "Nord Gold SE"
+      ],
+      "notes": "Nordgold is the operator and owner of the Gross mine."
+    }
+  }
 }

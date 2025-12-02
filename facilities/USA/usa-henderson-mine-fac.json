@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.772,
-    "lon": -105.845,
+    "lat": 39.76104803578619,
+    "lon": -105.7996967217142,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Climax Molybdenum Co., Division Of American Metal Climax Inc.",
+    "Climax Molybdenum Company",
+    "Freeport-McMoRan Copper and Gold Inc.",
+    "Freeport-McMoRan Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.689386Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:36:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Empire (https://en.wikipedia.org/wiki/Henderson_molybdenum_mine). The Henderson mine is located approximately 42 miles west of Denver and 10 miles west of Empire, Colorado"
   },
   "canonical_name": "Henderson Mine",
   "canonical_slug": "henderson-mine",
@@ -60,5 +65,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Empire",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:36:01.000000Z",
+      "operators": [
+        "Climax Molybdenum Company",
+        "Freeport-McMoRan Inc."
+      ],
+      "owners": [
+        "Freeport-McMoRan Copper and Gold Inc.",
+        "Climax Molybdenum Co., Division Of American Metal Climax Inc."
+      ],
+      "notes": "The mine is owned by Freeport-McMoRan, with Climax Molybdenum Company as the operator."
+    }
+  }
 }

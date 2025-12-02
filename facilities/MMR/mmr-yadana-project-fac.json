@@ -19,7 +19,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chevron Corporation",
+    "Myanma Oil and Gas Enterprise (MOGE)",
+    "PTT Exploration and Production Public Company Limited (PTTEP)",
+    "TotalEnergies"
+  ],
   "products": [],
   "sources": [
     {
@@ -56,5 +61,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mon State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:06:14.000000Z",
+      "operators": [
+        "PTT Exploration and Production Public Company Limited (PTTEP)"
+      ],
+      "owners": [
+        "TotalEnergies",
+        "Chevron Corporation",
+        "PTT Exploration and Production Public Company Limited (PTTEP)",
+        "Myanma Oil and Gas Enterprise (MOGE)"
+      ],
+      "notes": "PTTEP is the current operator as of July 20, 2022, following TotalEnergies' withdrawal."
+    }
+  }
 }

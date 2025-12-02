@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.403,
-    "lon": -80.364,
+    "lat": 39.403471,
+    "lon": -80.364603,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources, Inc.",
+    "Harrison County Coal Company",
+    "Murray Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.872001Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:52:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Harrison_County_Coal_Mine. The Harrison County Coal Mine is an underground coal mine operated by Harrison County Coal Company, a subsidiary of Murray Energy Corporation"
   },
   "canonical_name": "Harrison County Coal Mine",
   "canonical_slug": "harrison-county-coal-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:52:46.000000Z",
+      "operators": [
+        "Harrison County Coal Company"
+      ],
+      "owners": [
+        "Murray Energy Corporation",
+        "American Consolidated Natural Resources, Inc."
+      ],
+      "notes": "Harrison County Coal Company is a direct operator, while American Consolidated Natural Resources, Inc. has indirect ownership."
+    }
+  }
 }

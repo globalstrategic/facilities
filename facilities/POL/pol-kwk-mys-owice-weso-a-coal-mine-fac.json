@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 50.179,
-    "lon": 19.094,
+    "lat": 50.2245694,
+    "lon": 19.0489833,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Polska Grupa Górnicza SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.931626Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:46:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mys%C5%82owice-Weso%C5%82a_Coal_Mine. The Mysłowice-Wesoła coal mine is one of the largest coal reserves in Poland with an annual production of around 3 million tonnes"
   },
   "canonical_name": "KWK Myså Owice Wesoå A Coal Mine",
   "canonical_slug": "kwk-mysaowice-wesoaa-coal-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Silesian Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:46:35.000000Z",
+      "operators": [
+        "Polska Grupa Górnicza SA"
+      ],
+      "owners": [
+        "Polska Grupa Górnicza SA"
+      ],
+      "notes": "The mine is operated and fully owned by Polska Grupa Górnicza."
+    }
+  }
 }

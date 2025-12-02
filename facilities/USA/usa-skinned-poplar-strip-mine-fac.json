@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.825,
-    "lon": -81.19,
+    "lat": 36.10802252457586,
+    "lon": -82.36156284752299,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Horizon 30, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.756792Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:31:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Poplar, NC (https://spectrumlocalnews.com/nc/charlotte/news/2025/08/08/ncdol-investigating-mining-operation-in-mitchell-county). The mine is located about two miles northwest of Poplar, NC, and is currently under investigation for operating without a permit"
   },
   "canonical_name": "Skinned Poplar Strip Mine",
   "canonical_slug": "skinned-poplar-strip-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Carolina",
+  "town": "Poplar, NC",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:31:53.000000Z",
+      "operators": [
+        "Horizon 30, LLC"
+      ],
+      "owners": [],
+      "notes": "Horizon 30, LLC is operating the mine but is currently facing legal issues regarding its permit status."
+    }
+  }
 }

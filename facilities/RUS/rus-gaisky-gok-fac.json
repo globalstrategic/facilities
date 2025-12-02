@@ -9,8 +9,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 51.473,
-    "lon": 58.495,
+    "lat": 51.5,
+    "lon": 58.5,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ural Mining and Metallurgical Company (UMMC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.654920Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:09:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.woodmac.com/reports/metals-gaisky-gok-copper-mine-16162949/. Gaisky GOK is the largest source of ore for Ural Mining Metallurgical Company (UMMC)"
   },
   "canonical_name": "Gaisky GOK Mine",
   "canonical_slug": "gaisky-gok-mine",
@@ -60,5 +62,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Orenburg Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:09:36.000000Z",
+      "operators": [
+        "Ural Mining and Metallurgical Company (UMMC)"
+      ],
+      "owners": [
+        "Ural Mining and Metallurgical Company (UMMC)"
+      ],
+      "notes": "UMMC is a vertically integrated metals producer contributing roughly 40% of Russia's total copper cathode production."
+    }
+  }
 }

@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.433,
-    "lon": -114.723,
+    "lat": 44.35877369740439,
+    "lon": -114.7341728,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company",
+    "J.R. Simplot"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.914495Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:47:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sunbeam, Idaho (https://www.sec.gov/Archives/edgar/data/101538/0000101538-98-000009.txt). The Preachers Cove mill is located six miles north of Sunbeam, Idaho on the Yankee Fork of the Salmon River"
   },
   "canonical_name": "Yankee Fork Mine",
   "canonical_slug": "yankee-fork-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "town": "Sunbeam, Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:47:15.000000Z",
+      "operators": [
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "J.R. Simplot"
+      ],
+      "notes": "The Preachers Cove mill has been dismantled and is undergoing environmental remediation."
+    }
+  }
 }

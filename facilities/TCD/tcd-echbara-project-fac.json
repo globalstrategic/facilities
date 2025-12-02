@@ -14,22 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Ricca Resources Ltd. (via acquisition from Tekton",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.444444",
-      "evidence": "Extracted from operator column: Ricca Resources Ltd. (via acquisition from Tekton/IronRidge)"
-    },
-    {
-      "name": "IronRidge)",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.444446",
-      "evidence": "Extracted from operator column: Ricca Resources Ltd. (via acquisition from Tekton/IronRidge)"
-    }
+    "IronRidge Resources Limited",
+    "IronRidge)",
+    "Ricca Resources Ltd. (via acquisition from Tekton",
+    "Tekton Minerals Pte Ltd"
   ],
   "products": [],
   "sources": [
@@ -59,5 +47,19 @@
       "canonical_name_incomplete": false
     },
     "canonicalization_confidence": 0.6
+  },
+  "province": "Sila Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:41:36.000000Z",
+      "operators": [
+        "IronRidge Resources Limited"
+      ],
+      "owners": [
+        "IronRidge Resources Limited",
+        "Tekton Minerals Pte Ltd"
+      ],
+      "notes": "IronRidge acquired 100% of Tekton Minerals, which includes the Echbara Project."
+    }
   }
 }

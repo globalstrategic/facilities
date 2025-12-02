@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.748889,
+    "lon": 126.118889,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "General Bureau of the Tanchon Area"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.364832Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:22:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://beyondparallel.csis.org/pakchon-uranium-concentrate-pilot-plant/. The Sunchon-Wolbisan Mine is also referred to as the Wolbisan Uranium Mine, which is known to be located near Wŏlbong-san. Web search geocoded. Source: https://beyondparallel.csis.org/pakchon-uranium-concentrate-pilot-plant/. The Sunchon-Wolbisan Mine is also referred to as the Wolbisan Uranium Mine, which is known to be located near Wŏlbong-san"
   },
   "canonical_name": "Sunchon Wolbisan Mine",
   "canonical_slug": "sunchon-wolbisan-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Pyongan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:22:13.000000Z",
+      "operators": [],
+      "owners": [
+        "General Bureau of the Tanchon Area"
+      ],
+      "notes": "The mine is associated with the General Bureau of the Tanchon Area, which is part of North Korea's mining industry."
+    }
+  }
 }

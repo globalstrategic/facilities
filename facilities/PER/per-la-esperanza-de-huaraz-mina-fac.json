@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.498,
-    "lon": -77.883,
+    "lat": -4.529470965692463,
+    "lon": -77.5289981,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "La Esperanza De Huaraz S.M.R.L."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.305307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:58:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Huaraz (https://thediggings.com/mines/usgs10004026). The mine is located in Ancash, Peru, and is accessible via a long road trip from Lima"
   },
   "canonical_name": "La Esperanza De Huaraz, Mina Mine",
   "canonical_slug": "la-esperanza-de-huaraz-mina-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ancash",
+  "town": "Huaraz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:58:01.000000Z",
+      "operators": [
+        "La Esperanza De Huaraz S.M.R.L."
+      ],
+      "owners": [
+        "La Esperanza De Huaraz S.M.R.L."
+      ],
+      "notes": "La Esperanza De Huaraz S.M.R.L. is both the owner and operator of the mine."
+    }
+  }
 }

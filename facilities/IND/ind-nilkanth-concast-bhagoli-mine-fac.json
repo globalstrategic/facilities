@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 27.755,
-    "lon": 75.702,
+    "lat": 27.757783,
+    "lon": 75.695179,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nilkanth Concast Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.107170Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:05:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nilkanth_Concast_Bhagoli_Mine. The mine is located in Sikar, Rajasthan, India"
   },
   "canonical_name": "Nilkanth Concast Bhagoli Mine",
   "canonical_slug": "nilkanth-concast-bhagoli-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:05:46.000000Z",
+      "operators": [
+        "Nilkanth Concast Pvt Ltd"
+      ],
+      "owners": [
+        "Nilkanth Concast Pvt Ltd"
+      ],
+      "notes": "Nilkanth Concast Pvt Ltd owns and operates the mine."
+    }
+  }
 }

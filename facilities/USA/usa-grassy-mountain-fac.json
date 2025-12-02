@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 43.767,
-    "lon": -117.55,
+    "lat": 43.66345632175771,
+    "lon": -117.238456,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Calico Resources USA Corp.",
+    "Paramount Gold Nevada Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.965552Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:29:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Vale (https://miningdataonline.com/property/1605/Grassy-Mountain-Project.aspx). The Grassy Mountain Project is located approximately 22 miles south-southwest of Vale, Oregon"
   },
   "canonical_name": "Grassy Mountain Mine",
   "canonical_slug": "grassy-mountain-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oregon",
+  "town": "Vale",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:29:51.000000Z",
+      "operators": [
+        "Calico Resources USA Corp."
+      ],
+      "owners": [
+        "Paramount Gold Nevada Corp."
+      ],
+      "notes": "Calico Resources USA Corp. is the operator and holds a 100% interest in the project, which is owned indirectly by Paramount Gold Nevada Corp."
+    }
+  }
 }

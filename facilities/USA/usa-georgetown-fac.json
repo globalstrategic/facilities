@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.368,
-    "lon": -79.292,
+    "lat": 38.88222,
+    "lon": -120.74806,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fee Land And Open Ground",
+    "Georgetown Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.887123Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:06:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10033776/. Coordinates extracted from the Georgetown Area mine information"
   },
   "canonical_name": "Georgetown Smelter",
   "canonical_slug": "georgetown-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:06:18.000000Z",
+      "operators": [
+        "Georgetown Coal Company"
+      ],
+      "owners": [
+        "Fee Land And Open Ground"
+      ],
+      "notes": "Georgetown Coal Company operated the Georgetown Mine, but the current status is unclear."
+    }
+  }
 }

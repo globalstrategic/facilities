@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.814,
-    "lon": 115.298,
+    "lat": -1.8136492,
+    "lon": 115.297827,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altura Mining Ltd",
+    "PT Suryaraya Permata Khatulistiwa"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.231703Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:35:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SPK_Coal_Mine. SPK Coal Mine is a proposed coal mine"
   },
   "canonical_name": "SPK Coal Mine",
   "canonical_slug": "spk-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:35:40.000000Z",
+      "operators": [
+        "PT Suryaraya Permata Khatulistiwa"
+      ],
+      "owners": [
+        "Altura Mining Ltd"
+      ],
+      "notes": "PT Suryaraya Permata Khatulistiwa is a subsidiary of Altura Mining Ltd."
+    }
+  }
 }

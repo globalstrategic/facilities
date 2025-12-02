@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.472,
-    "lon": 115.585,
+    "lat": -4.5,
+    "lon": 137.1,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan",
+    "PT Freeport Indonesia (PTFI)",
+    "PT Indonesia Papua Metal & Mineral",
+    "PT Mineral Industri Indonesia (MIND ID)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.232317Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:36:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Grasberg_mine. Grasberg mine is one of the largest gold and copper mines in the world, located in the province of Papua, Indonesia"
   },
   "canonical_name": "GBR Coal Mine",
   "canonical_slug": "gbr-coal-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:36:02.000000Z",
+      "operators": [
+        "PT Freeport Indonesia (PTFI)"
+      ],
+      "owners": [
+        "Freeport-McMoRan",
+        "PT Mineral Industri Indonesia (MIND ID)",
+        "PT Indonesia Papua Metal & Mineral"
+      ],
+      "notes": "PTFI is a joint venture with the Indonesian government owning a majority stake."
+    }
+  }
 }

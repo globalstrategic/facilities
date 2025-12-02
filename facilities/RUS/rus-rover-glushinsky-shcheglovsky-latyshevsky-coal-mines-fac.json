@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 55.709,
-    "lon": 86.076,
+    "lat": 55.708642,
+    "lon": 86.076336,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rover LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.629558Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:57:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rover_Glushinsky-Shcheglovsky-Latyshevsky_Coal_Mines. The facility is part of a group of surface mines in Kemerovo Oblast, Russia"
   },
   "canonical_name": "Rover Glushinsky Shcheglovsky Latyshevsky Coal Mines Mine",
   "canonical_slug": "rover-glushinsky-shcheglovsky-latyshevsky-coal-mines-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:57:15.000000Z",
+      "operators": [
+        "Rover LLC"
+      ],
+      "owners": [
+        "Rover LLC"
+      ],
+      "notes": "Rover LLC was announced bankrupt in November 2021, but the facility is still listed as operating."
+    }
+  }
 }

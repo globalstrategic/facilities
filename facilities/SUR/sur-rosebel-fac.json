@@ -6,8 +6,8 @@
   ],
   "country_iso3": "SUR",
   "location": {
-    "lat": 5.079,
-    "lon": -55.156,
+    "lat": -24.056424722211005,
+    "lon": -51.1716376,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grassalco",
+    "Zijin Mining Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.401681Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:00:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Paramaribo (https://en.zijingoldintl.com/global/program-detail-71981.htm). The Rosebel Gold Mine is located in the Brokopondo and Sipaliwini Districts in northern Suriname, approximately 80 kilometers south of Paramaribo"
   },
   "canonical_name": "Rosebel Mine",
   "canonical_slug": "rosebel-mine",
@@ -49,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Brokopondo and Sipaliwini Districts",
+  "town": "Paramaribo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:00:33.000000Z",
+      "operators": [
+        "Zijin Mining Group Co., Ltd."
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd.",
+        "Grassalco"
+      ],
+      "notes": "Zijin Mining holds a 95% interest in the Rosebel Gold Mine, while the remaining 5% is owned by the state-owned enterprise Grassalco."
+    }
+  }
 }

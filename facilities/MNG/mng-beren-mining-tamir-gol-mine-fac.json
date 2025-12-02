@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 47.586,
-    "lon": 102.252,
+    "lat": 47.58889,
+    "lon": 102.25,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Beren Group LLC",
+    "Beren Mining Co., Ltd",
+    "Sor Metal"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.463829Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:24:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Beren_Mining_Tamir_Gol_Mine. The mine is located in the Tüvshrüülekh sum of Arkhangai aimag"
   },
   "canonical_name": "Beren Mining Tamir Gol Mine",
   "canonical_slug": "beren-mining-tamir-gol-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arkhangai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:24:17.000000Z",
+      "operators": [
+        "Beren Mining Co., Ltd"
+      ],
+      "owners": [
+        "Beren Group LLC",
+        "Sor Metal"
+      ],
+      "notes": "Beren Mining Co., Ltd is 100% Mongolian owned and operates the mine."
+    }
+  }
 }

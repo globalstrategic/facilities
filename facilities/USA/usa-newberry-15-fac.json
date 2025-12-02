@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.218,
-    "lon": -83.715,
+    "lat": 37.539092685916366,
+    "lon": -83.1933893,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Locust Grove, Inc.",
+    "Pine Branch Mining, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.763544Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:38:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hazard (https://www.eia.gov/coal/data/public/xls/coalpublic2015.xls). The facility is mentioned in a list of coal mines in Kentucky, but exact coordinates are not provided"
   },
   "canonical_name": "Newberry 15 Mine",
   "canonical_slug": "newberry-15-mine",
@@ -55,5 +58,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Hazard",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:38:57.000000Z",
+      "operators": [
+        "Locust Grove, Inc.",
+        "Pine Branch Mining, LLC"
+      ],
+      "owners": [
+        "Locust Grove, Inc.",
+        "Pine Branch Mining, LLC"
+      ],
+      "notes": "Multiple companies are listed in association with the Newberry #15 facility."
+    }
+  }
 }

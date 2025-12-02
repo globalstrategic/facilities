@@ -65,7 +65,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Nevada Gold Mines LLC",
+    "Newmont Gold Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -102,5 +106,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:37:37.000000Z",
+      "operators": [
+        "Newmont Gold Co.",
+        "Nevada Gold Mines LLC"
+      ],
+      "owners": [
+        "Newmont Gold Co.",
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Newmont owns 100% of the Newmont Carlin Mill #1, but is also a minority owner in the joint venture Nevada Gold Mines with Barrick."
+    }
+  }
 }

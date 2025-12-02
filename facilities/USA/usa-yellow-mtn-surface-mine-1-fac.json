@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.421,
-    "lon": -82.929,
+    "lat": 37.7432587,
+    "lon": -82.2639004,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bens Creek Group PLC",
+    "Mega Highwall Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.815826Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:12:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Surface_Mine_1. The facility is an operating coal mine located in Mingo County, West Virginia"
   },
   "canonical_name": "Yellow Mtn Surface 1 Mine",
   "canonical_slug": "yellow-mtn-surface-1-mine",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:12:12.000000Z",
+      "operators": [
+        "Mega Highwall Mining LLC"
+      ],
+      "owners": [
+        "Bens Creek Group PLC"
+      ],
+      "notes": "Mega Highwall Mining LLC operates the mine, which is fully owned by Bens Creek Group PLC."
+    }
+  }
 }

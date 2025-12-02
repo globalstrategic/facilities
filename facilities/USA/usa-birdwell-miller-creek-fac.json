@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.029,
-    "lon": -87.07,
+    "lat": 39.028552,
+    "lon": -87.071521,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Beauty Coal Company",
+    "Peabody Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.941024Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:08:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Miller_Creek_Mine. Miller Creek Mine is a surface and underground mining operation"
   },
   "canonical_name": "Birdwell/miller Creek Mine",
   "canonical_slug": "birdwell-miller-creek-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:08:11.000000Z",
+      "operators": [
+        "Black Beauty Coal Company"
+      ],
+      "owners": [
+        "Peabody Energy"
+      ],
+      "notes": "Peabody Energy is the parent company of Black Beauty Coal Company."
+    }
+  }
 }

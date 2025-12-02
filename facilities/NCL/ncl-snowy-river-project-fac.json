@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -42.0,
+    "lon": 171.0,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Federation Mining Ltd",
+    "OceanaGold (New Zealand) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.371717Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:00:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.beehive.govt.nz/release/large-scale-mining-track-2026. The Snowy River Project is located near Reefton on the West Coast of New Zealand"
   },
   "canonical_name": "Snowy River Mine",
   "canonical_slug": "snowy-river-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:00:41.000000Z",
+      "operators": [
+        "Federation Mining Ltd"
+      ],
+      "owners": [
+        "OceanaGold (New Zealand) Ltd",
+        "Federation Mining Ltd"
+      ],
+      "notes": "Federation Mining is the operator, while OceanaGold is the previous owner."
+    }
+  }
 }

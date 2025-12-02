@@ -11,8 +11,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.207,
-    "lon": 28.447,
+    "lat": -26.178282489339576,
+    "lon": 28.4373147,
     "precision": "site"
   },
   "types": [
@@ -53,7 +53,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurora Empowerment Systems",
+    "Grootvlei Proprietary Mines Limited",
+    "Khulubuse Zuma",
+    "Petrex (Pty) Ltd",
+    "Zondwa Mandela"
+  ],
   "products": [],
   "sources": [
     {
@@ -68,11 +74,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.745714Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-grootvlei-springs-refinery-impala-refinery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T17:36:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-grootvlei-springs-refinery-impala-refinery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Springs (https://www.imwa.info/docs/imwa_2003/imwa_2003_441-449.pdf). Grootvlei is one of the last remaining operating gold mines in the East Rand Mining Basin"
   },
   "canonical_name": "Grootvlei Refinery",
   "canonical_slug": "grootvlei-refinery",
@@ -87,5 +93,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "town": "Springs",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:36:17.000000Z",
+      "operators": [
+        "Grootvlei Proprietary Mines Limited",
+        "Aurora Empowerment Systems"
+      ],
+      "owners": [
+        "Petrex (Pty) Ltd",
+        "Khulubuse Zuma",
+        "Zondwa Mandela"
+      ],
+      "notes": "Grootvlei is operated by Grootvlei Proprietary Mines Limited, a subsidiary of Petrex. Aurora Empowerment Systems has also been involved in the operations."
+    }
+  }
 }

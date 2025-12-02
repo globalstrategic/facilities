@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Barrett Steel",
-      "role": "operator",
-      "source": "Research Import IRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:38:14.045930",
-      "evidence": "Extracted from operator column: Barrett Steel"
-    }
+    "Barrett Steel",
+    "Barrett Steel Group",
+    "Barrett Steel Limited"
   ],
   "products": [],
   "sources": [
@@ -51,5 +46,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ireland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:59:23.000000Z",
+      "operators": [
+        "Barrett Steel Limited"
+      ],
+      "owners": [
+        "Barrett Steel Group"
+      ],
+      "notes": "Barrett Steel is part of Barrett Steel Group, established in 1866."
+    }
+  }
 }

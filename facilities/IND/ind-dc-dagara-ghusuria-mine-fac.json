@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.772,
-    "lon": 86.766,
+    "lat": 21.772136,
+    "lon": 86.765598,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "natural person(s)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.104354Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:02:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/DC_Dagara_Ghusuria_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "DC Dagara Ghusuria Mine",
   "canonical_slug": "dc-dagara-ghusuria-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:02:57.000000Z",
+      "operators": [
+        "natural person(s)"
+      ],
+      "owners": [
+        "natural person(s)"
+      ],
+      "notes": "Ownership is attributed to natural persons."
+    }
+  }
 }

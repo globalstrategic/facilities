@@ -16,22 +16,11 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Sider",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025459",
-      "evidence": "Extracted from operator column: Sider/Imetal Group"
-    },
-    {
-      "name": "Imetal Group",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025461",
-      "evidence": "Extracted from operator column: Sider/Imetal Group"
-    }
+    "ArcelorMittal Annaba",
+    "Groupe Industriel Sider SpA",
+    "IMETAL Group",
+    "Imetal Group",
+    "Sider"
   ],
   "products": [],
   "sources": [
@@ -61,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Annaba Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:16:52.000000Z",
+      "operators": [
+        "Groupe Industriel Sider SpA",
+        "ArcelorMittal Annaba"
+      ],
+      "owners": [
+        "IMETAL Group"
+      ],
+      "notes": "The facility has undergone changes in ownership and management, with ArcelorMittal previously involved."
+    }
+  }
 }

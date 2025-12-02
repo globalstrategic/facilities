@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 51.258,
-    "lon": 37.653,
+    "lat": 51.28274,
+    "lon": 37.631296,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metalloinvest JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.606223Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:31:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Metalloinvest_Lebedinsky_Mine. Lebedinsky GOK is one of Russia's largest iron ore producers"
   },
   "canonical_name": "Lebedinsky GOK Plant",
   "canonical_slug": "lebedinsky-gok-plant",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Belgorod Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:31:38.000000Z",
+      "operators": [
+        "Metalloinvest JSC"
+      ],
+      "owners": [
+        "Metalloinvest JSC"
+      ],
+      "notes": "Metalloinvest is the parent company and sole owner of Lebedinsky GOK."
+    }
+  }
 }

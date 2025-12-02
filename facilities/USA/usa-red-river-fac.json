@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.009,
-    "lon": -93.4,
+    "lat": 32.0203,
+    "lon": -93.4003,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Red River Mining Company",
+    "The North American Coal Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.704439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:47:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Red_River_Mine. The mine is located in Coushatta, Louisiana and is actively producing coal"
   },
   "canonical_name": "Red River Mine",
   "canonical_slug": "red-river-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Louisiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:47:26.000000Z",
+      "operators": [
+        "Red River Mining Company"
+      ],
+      "owners": [
+        "The North American Coal Corporation"
+      ],
+      "notes": "Red River Mining Company is a subsidiary of The North American Coal Corporation."
+    }
+  }
 }

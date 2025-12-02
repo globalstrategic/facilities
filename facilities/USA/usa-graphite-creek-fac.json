@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 64.5,
+    "lon": -165.0,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Graphite One",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:33.873344",
-      "evidence": "Extracted from operator column: Graphite One"
-    }
+    "Aleut Corporation",
+    "Bering Straits Native Corporation",
+    "Doyon Limited",
+    "Graphite One",
+    "Graphite One Inc."
   ],
   "products": [],
   "sources": [
@@ -32,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.897320Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T22:13:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://beringstraits.com/graphite-one/. Graphite Creek is located approximately 35 miles north of Nome, Alaska"
   },
   "canonical_name": "Graphite Creek Mine",
   "canonical_slug": "graphite-creek-mine",
@@ -51,5 +48,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:13:33.000000Z",
+      "operators": [
+        "Graphite One Inc."
+      ],
+      "owners": [
+        "Graphite One Inc.",
+        "Bering Straits Native Corporation",
+        "Doyon Limited",
+        "Aleut Corporation"
+      ],
+      "notes": "Graphite One is the primary operator and owner, with investments from Alaska Native corporations."
+    }
+  }
 }

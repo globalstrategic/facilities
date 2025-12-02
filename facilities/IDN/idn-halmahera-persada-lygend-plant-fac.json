@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -1.536,
+    "lon": 127.4203,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Halmahera Persada Lygend",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.589748",
-      "evidence": "Extracted from operator column: PT Halmahera Persada Lygend"
-    }
+    "Harita Nickel",
+    "Kang Xuan Pte. Ltd",
+    "Lygend Resources & Technology Co., Ltd",
+    "PT Halmahera Persada Lygend"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.209047Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:20:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/PT-Halmahera-Persada.htm. The facility is located on Obi Island, specifically in Kawasi village, South Halmahera regency"
   },
   "canonical_name": "Halmahera Persada Lygend Plant",
   "canonical_slug": "halmahera-persada-lygend-plant",
@@ -66,5 +62,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Maluku",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:20:07.000000Z",
+      "operators": [
+        "PT Halmahera Persada Lygend"
+      ],
+      "owners": [
+        "Harita Nickel",
+        "Lygend Resources & Technology Co., Ltd",
+        "Kang Xuan Pte. Ltd"
+      ],
+      "notes": "Joint venture between Indonesia’s Harita Group and China’s Ningbo Lygend."
+    }
+  }
 }

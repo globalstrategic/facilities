@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SUR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 5.6272,
+    "lon": -54.8825,
     "precision": "unknown"
   },
   "types": [
@@ -38,7 +38,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alcoa",
+    "BHP Billiton",
+    "N.V. Grasshopper Aluminum Company (Grassalco)",
+    "Suralco"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.401072Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:59:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn734. The Bakhuis Mountains are known for their bauxite deposits, and the area is under exploration and development"
   },
   "canonical_name": "Bakhuis Mountains Deposits Facility",
   "canonical_slug": "bakhuis-mountains-deposits-facility",
@@ -75,5 +80,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sipaliwini District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:59:57.000000Z",
+      "operators": [
+        "Suralco",
+        "BHP Billiton"
+      ],
+      "owners": [
+        "N.V. Grasshopper Aluminum Company (Grassalco)",
+        "Alcoa"
+      ],
+      "notes": "Suralco has become the sole owner of the Bakhuis Mining Site (BMS) after Alcoa's subsidiary took over."
+    }
+  }
 }

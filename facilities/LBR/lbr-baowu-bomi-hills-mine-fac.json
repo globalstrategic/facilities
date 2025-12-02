@@ -7,8 +7,8 @@
   ],
   "country_iso3": "LBR",
   "location": {
-    "lat": 6.898,
-    "lon": -10.825,
+    "lat": 6.899497,
+    "lon": -10.82926,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baowu Resources Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.725097Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:08:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baowu_Bomi_Hills_Mine. The Baowu Bomi Hills Mine is an iron ore mine located in Senjeh, Bomi County, Liberia"
   },
   "canonical_name": "Baowu Bomi Hills Mine",
   "canonical_slug": "baowu-bomi-hills-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bomi County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:08:43.000000Z",
+      "operators": [
+        "Baowu Resources Co Ltd"
+      ],
+      "owners": [
+        "Baowu Resources Co Ltd"
+      ],
+      "notes": "Baowu Resources Co Ltd owns 100% of the mine."
+    }
+  }
 }

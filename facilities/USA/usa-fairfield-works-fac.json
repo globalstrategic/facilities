@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.484,
-    "lon": -86.924,
+    "lat": 33.5663,
+    "lon": -86.9514,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "United States Steel Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.916655Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:48:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.bhamwiki.com/w/Fairfield_Works. The facility is located in the planned industrial suburb of Fairfield, Alabama"
   },
   "canonical_name": "Fairfield Smelter",
   "canonical_slug": "fairfield-smelter",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:48:45.000000Z",
+      "operators": [
+        "United States Steel Corporation"
+      ],
+      "owners": [
+        "United States Steel Corporation"
+      ],
+      "notes": "U.S. Steel operated the facility until its closure in 2015."
+    }
+  }
 }

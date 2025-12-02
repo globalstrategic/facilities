@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 58.759,
-    "lon": 59.505,
+    "lat": 58.778709,
+    "lon": 59.385442,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EVRAZ KGOK JSC",
+    "EVRAZ PLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.593449Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:20:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/EVRAZ_Sobstvenno-Kachkanarskoye_Mine. Kachkanar GOK is a significant iron ore mining facility in the Ural mountains, part of Evraz Group"
   },
   "canonical_name": "Kachkanar GOK Mine",
   "canonical_slug": "kachkanar-gok-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sverdlovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:32.000000Z",
+      "operators": [
+        "EVRAZ KGOK JSC"
+      ],
+      "owners": [
+        "EVRAZ PLC"
+      ],
+      "notes": "EVRAZ KGOK JSC is a wholly owned subsidiary of EVRAZ PLC."
+    }
+  }
 }

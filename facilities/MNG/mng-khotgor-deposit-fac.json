@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 49.8497362,
+    "lon": 90.8978878,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Khotgor Shanaga LLC",
+    "Korea Coal Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.463654Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:24:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nuurst_Khotgor_Coal_Mine. The Nuurst Khotgor Coal Mine is an operating surface coal mine"
   },
   "canonical_name": "Khotgor Development",
   "canonical_slug": "khotgor-development",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Uvs Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:24:09.000000Z",
+      "operators": [
+        "Korea Coal Corporation",
+        "Khotgor Shanaga LLC"
+      ],
+      "owners": [
+        "Korea Coal Corporation",
+        "Khotgor Shanaga LLC"
+      ],
+      "notes": "Korea Coal Corporation owns 51% and Khotgor Shanaga LLC owns 49%."
+    }
+  }
 }

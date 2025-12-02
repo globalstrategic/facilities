@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MRT",
   "location": {
-    "lat": 18.98333,
-    "lon": null,
+    "lat": 20.8,
+    "lon": -13.7,
     "precision": "unknown"
   },
   "types": [
@@ -35,14 +35,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Not specified",
-      "role": "operator",
-      "source": "Research Import MAURITANIAN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:17:09.587044",
-      "evidence": "Extracted from operator column: Not specified (Historical)"
-    }
+    "Not specified"
   ],
   "products": [],
   "sources": [
@@ -53,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.925329Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:31:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-227742.html. The Bou Naga alkaline complex is noted for its significant deposits of rare earth elements and other minerals"
   },
   "canonical_name": "Bou Naga Alkaline Facility",
   "canonical_slug": "bou-naga-alkaline-facility",
@@ -80,5 +73,14 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Trarza Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:31:59.000000Z",
+      "operators": [],
+      "owners": [],
+      "notes": "No specific companies mentioned in the search results."
+    }
+  }
 }

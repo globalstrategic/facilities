@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.862,
-    "lon": -86.806,
+    "lat": 37.9625,
+    "lon": -86.7917,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Century Aluminum Company",
+    "Century Kentucky, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.741487Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:19:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/949157/000094915720000023/a2019123110-k.htm. Hawesville is a primary aluminum reduction facility located adjacent to the Ohio River"
   },
   "canonical_name": "Hawesville Smelter",
   "canonical_slug": "hawesville-smelter",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:19:12.000000Z",
+      "operators": [
+        "Century Kentucky, Inc."
+      ],
+      "owners": [
+        "Century Aluminum Company"
+      ],
+      "notes": "Hawesville is owned and operated by Century Kentucky, Inc., a wholly-owned subsidiary of Century Aluminum Company."
+    }
+  }
 }

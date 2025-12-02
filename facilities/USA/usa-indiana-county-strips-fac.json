@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.744,
-    "lon": -78.842,
+    "lat": 40.46378,
+    "lon": -79.37189,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Howard Drilling Inc",
+    "Phillips Exploration Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.893382Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:10:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.shalexp.com/pennsylvania/indiana-county/tunnelton-mining-co/979640. Coordinates extracted from Tunnelton Mining Co report"
   },
   "canonical_name": "Indiana County Strips Mine",
   "canonical_slug": "indiana-county-strips-mine",
@@ -47,5 +50,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:10:16.000000Z",
+      "operators": [
+        "Howard Drilling Inc",
+        "Phillips Exploration Inc"
+      ],
+      "owners": [],
+      "notes": "Various companies mentioned in relation to oil and gas production."
+    }
+  }
 }

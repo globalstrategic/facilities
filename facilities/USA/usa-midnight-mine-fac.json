@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.125,
-    "lon": -106.851,
+    "lat": 47.887808329965274,
+    "lon": -117.81419787263054,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dawn Mining Company",
+    "Midnite Mines, Inc.",
+    "Newmont USA Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.768742Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:43:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Wellpinit (https://en.wikipedia.org/wiki/Midnite_Mine). The Midnite Mine is located on the Spokane Tribe of Indians Reservation and is approximately 8 miles (13 km) from Wellpinit"
   },
   "canonical_name": "Midnight Mine",
   "canonical_slug": "midnight-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Washington",
+  "town": "Wellpinit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:43:33.000000Z",
+      "operators": [
+        "Dawn Mining Company"
+      ],
+      "owners": [
+        "Midnite Mines, Inc.",
+        "Newmont USA Limited"
+      ],
+      "notes": "Dawn Mining Company was formed as a joint venture between Newmont USA Limited (51% ownership) and Midnite Mines, Inc. (49% ownership)."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.964,
-    "lon": -87.385,
+    "lat": 37.85919630806895,
+    "lon": -84.02875943516813,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Vigo Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.798102Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:08:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Clay City (https://www.osmre.gov/programs/excellence-in-surface-coal-mining-reclamation-award-recipients). The Red Brush Mine is associated with Vigo Coal Company and is located in Indiana"
   },
   "canonical_name": "Red Brush Mine",
   "canonical_slug": "red-brush-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "town": "Clay City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:08:21.000000Z",
+      "operators": [
+        "Vigo Coal Company"
+      ],
+      "owners": [],
+      "notes": "No specific ownership details provided."
+    }
+  }
 }

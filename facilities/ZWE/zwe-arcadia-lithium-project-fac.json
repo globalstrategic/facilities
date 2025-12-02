@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.774,
+    "lon": 31.409,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Prospect Lithium Zimbabwe (pvt) ltd",
+    "Prospect Resources Limited",
+    "Zhejiang Huayou Cobalt"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.960115Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:43:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://prospectresources.com.au/wp-content/uploads/2022/07/61068491.pdf. The Arcadia Lithium Project is located within an established mining jurisdiction in Zimbabwe, specifically in the Goromonzi district"
   },
   "canonical_name": "Arcadia Lithium Mine",
   "canonical_slug": "arcadia-lithium-mine-2",
@@ -50,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland East",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:43:53.000000Z",
+      "operators": [
+        "Zhejiang Huayou Cobalt"
+      ],
+      "owners": [
+        "Prospect Resources Limited",
+        "Prospect Lithium Zimbabwe (pvt) ltd"
+      ],
+      "notes": "Zhejiang Huayou Cobalt acquired the project from Prospect Resources and minority shareholders."
+    }
+  }
 }

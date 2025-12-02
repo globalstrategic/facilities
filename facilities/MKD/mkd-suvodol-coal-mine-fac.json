@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": 41.047,
-    "lon": 21.527,
+    "lat": 41.046871,
+    "lon": 21.526862,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ESM (Elektrani na Severna Makedonija)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.911591Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:58:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Suvodol_Coal_Mine. The Suvodol coal mine is the largest in North Macedonia and provides coal to the Bitola power station"
   },
   "canonical_name": "Suvodol Coal Mine",
   "canonical_slug": "suvodol-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pelagonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:58:11.000000Z",
+      "operators": [
+        "ESM (Elektrani na Severna Makedonija)"
+      ],
+      "owners": [],
+      "notes": "ESM operates the mine and is involved in its expansion and modernization projects."
+    }
+  }
 }

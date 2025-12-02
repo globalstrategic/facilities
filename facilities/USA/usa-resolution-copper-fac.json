@@ -21,22 +21,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Rio Tinto",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.228200",
-      "evidence": "Extracted from operator column: Rio Tinto / BHP"
-    },
-    {
-      "name": "BHP",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.228209",
-      "evidence": "Extracted from operator column: Rio Tinto / BHP"
-    }
+    "BHP",
+    "BHP Copper Inc. (a BHP Billiton PLC subsidiary)",
+    "Resolution Copper Company (a Rio Tinto PLC subsidiary)",
+    "Resolution Copper Mining",
+    "Rio Tinto"
   ],
   "products": [],
   "sources": [
@@ -66,5 +55,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:07:17.000000Z",
+      "operators": [
+        "Resolution Copper Mining"
+      ],
+      "owners": [
+        "Resolution Copper Company (a Rio Tinto PLC subsidiary)",
+        "BHP Copper Inc. (a BHP Billiton PLC subsidiary)"
+      ],
+      "notes": "Resolution Copper Mining is a joint venture with Rio Tinto holding 55% and BHP holding 45%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.498,
-    "lon": 121.499,
+    "lat": -2.57361,
+    "lon": 121.37417,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mining Industri Indonesia (MIND ID)",
+    "PT Vale Indonesia Tbk",
+    "Sumitomo Metal Mining",
+    "Vale Canada Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:10.302212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:15:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sorowako_mine. The Sorowako mine is a significant nickel mining operation in Indonesia, with a history dating back to 1968"
   },
   "canonical_name": "Soroako Pt Inco Mine",
   "canonical_slug": "soroako-pt-inco-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:15:17.000000Z",
+      "operators": [
+        "PT Vale Indonesia Tbk",
+        "Mining Industri Indonesia (MIND ID)"
+      ],
+      "owners": [
+        "Vale Canada Limited",
+        "Sumitomo Metal Mining"
+      ],
+      "notes": "PT Vale Indonesia is a subsidiary of Vale S.A. and operates the mine, with ownership shared among several companies."
+    }
+  }
 }

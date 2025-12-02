@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.734,
-    "lon": 116.711,
+    "lat": 35.734204,
+    "lon": 116.711363,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "山东兴宁能源集团有限公司 (Shandong Xingning Energy Group Co., Ltd.)",
+    "山东华宁矿业集团有限公司 (Shandong Huanning Mining Group Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.873192Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:43:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E4%B8%9C%E5%8D%8E%E5%AE%81%E7%9F%BF%E4%B8%9A%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%91%AB%E5%AE%89%E7%85%A4%E7%9F%BF. The Ningyang Xin'an Coal Mine is an underground coal mine located in Shandong Province, China"
   },
   "canonical_name": "Ningyang Xin'an Coal Mine",
   "canonical_slug": "ningyang-xin-an-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:43:44.000000Z",
+      "operators": [
+        "山东华宁矿业集团有限公司 (Shandong Huanning Mining Group Co., Ltd.)"
+      ],
+      "owners": [
+        "山东兴宁能源集团有限公司 (Shandong Xingning Energy Group Co., Ltd.)"
+      ],
+      "notes": "The mine is operated by Shandong Huanning Mining Group and owned by Shandong Xingning Energy Group."
+    }
+  }
 }

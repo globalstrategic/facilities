@@ -6,8 +6,8 @@
   ],
   "country_iso3": "GHA",
   "location": {
-    "lat": 5.316,
-    "lon": -2.021,
+    "lat": 5.3183944,
+    "lon": -2.0135778,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields Ghana Limited",
+    "Gold Fields Limited",
+    "Government of Ghana",
+    "IAMGold"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.607044Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:50:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.goldfields.com/reports/annual-report-2017/minerals/tarkwa-gold-brief-history.php. The Tarkwa mine is one of the largest gold mines in Ghana, located near the town of Tarkwa"
   },
   "canonical_name": "Tarkwa Mine",
   "canonical_slug": "tarkwa-mine",
@@ -49,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:50:45.000000Z",
+      "operators": [
+        "Gold Fields Ghana Limited"
+      ],
+      "owners": [
+        "Gold Fields Limited",
+        "IAMGold",
+        "Government of Ghana"
+      ],
+      "notes": "Gold Fields Ghana Limited holds 71.1% of the issued shares, IAMGold holds 18.9%, and the Government of Ghana holds a 10% free carried interest."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 4.122,
-    "lon": 96.203,
+    "lat": 4.121573,
+    "lon": 96.202574,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ABM Investama",
+    "PT Bara Energi Lestari"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.307896Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:18:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BEL_Coal_Mine. BEL Coal Mine is an operating coal mine located in Nagan Raya, Aceh, Indonesia"
   },
   "canonical_name": "BEL Coal Mine",
   "canonical_slug": "bel-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Aceh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:18:50.000000Z",
+      "operators": [
+        "PT Bara Energi Lestari"
+      ],
+      "owners": [
+        "ABM Investama"
+      ],
+      "notes": "PT Bara Energi Lestari is a subsidiary of ABM Investama."
+    }
+  }
 }

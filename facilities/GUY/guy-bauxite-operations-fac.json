@@ -21,14 +21,9 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "Bauxite Company of Guyana Inc.",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.932025",
-      "evidence": "Extracted from operator column: Bauxite Company of Guyana Inc. (RUSAL)"
-    }
+    "Bauxite Company of Guyana Inc.",
+    "Government of Guyana",
+    "RUSAL"
   ],
   "products": [],
   "sources": [
@@ -66,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Upper Demerara-Berbice",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:05:36.000000Z",
+      "operators": [
+        "Bauxite Company of Guyana Inc."
+      ],
+      "owners": [
+        "RUSAL",
+        "Government of Guyana"
+      ],
+      "notes": "RUSAL owns 90% of the company, while the Government of Guyana owns 10%."
+    }
+  }
 }

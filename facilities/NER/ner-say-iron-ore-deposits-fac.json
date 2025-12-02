@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.23398774979741,
+    "lon": 14.888109288666962,
     "precision": "unknown"
   },
   "types": [
@@ -35,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.801146Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:03:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Agadez (https://energynews.oedigital.com/mining/2025/06/23/niger-miners-say-production-will-continue-at-nationalised-uranium-mine). The Say Iron Ore Deposits are located in Niger, but specific coordinates were not provided in the search results"
   },
   "canonical_name": "Say Iron Ore Deposits Facility",
   "canonical_slug": "say-iron-ore-deposits-facility",
@@ -62,5 +62,7 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez Region",
+  "town": "Agadez"
 }

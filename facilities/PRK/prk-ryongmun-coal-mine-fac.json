@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.851,
-    "lon": 126.095,
+    "lat": 39.85116,
+    "lon": 126.0947,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of North Korea",
+    "Gujang District Coal Mine Joint Enterprise"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.361281Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:40:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ryongdeung_Coal_Mine. The Ryongmun Coal Mine is part of a larger coal field in the Kujang area, which includes several other mines"
   },
   "canonical_name": "Ryongmun Coal Mine",
   "canonical_slug": "ryongmun-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Pyŏngan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:40:16.000000Z",
+      "operators": [
+        "Gujang District Coal Mine Joint Enterprise"
+      ],
+      "owners": [
+        "Government of North Korea"
+      ],
+      "notes": "The mine is owned by the government and operated by a joint enterprise."
+    }
+  }
 }

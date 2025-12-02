@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.41694,
-    "lon": 29.35028,
+    "lat": -25.35889,
+    "lon": 29.3225,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lonmin",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:15:15.000000Z",
+    "last_checked": "2025-12-01T17:32:44.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Loskop_Dam. Coordinates extracted from the Loskop Dam location, which is in proximity to the De Loskop Prospect"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Loskop_Dam. Coordinates extracted from the Loskop Dam location, which is in proximity to the De Loskop Prospect. Web search geocoded. Source: https://www.mindat.org/loc-404240.html. Coordinates extracted from Mindat reference for the Loskop project"
   },
   "canonical_name": "De Loskop Prospect Mine",
   "canonical_slug": "de-loskop-prospect-mine",
@@ -49,5 +52,16 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:32:44.000000Z",
+      "operators": [],
+      "owners": [
+        "Lonmin",
+        "Sibanye-Stillwater"
+      ],
+      "notes": "The facility is listed as dormant with a relinquished license."
+    }
+  }
 }

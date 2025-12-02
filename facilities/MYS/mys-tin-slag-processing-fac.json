@@ -23,14 +23,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Malaysia Smelting Corporation Berhad",
-      "role": "operator",
-      "source": "Research Import MYS 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:11:17.307367",
-      "evidence": "Extracted from operator column: Malaysia Smelting Corporation (MSC) Berhad (Affiliates)"
-    }
+    "Malaysia Smelting Corporation Berhad",
+    "PCSB",
+    "SSPC",
+    "SSS"
   ],
   "products": [],
   "sources": [
@@ -60,5 +56,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Penang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:35:12.000000Z",
+      "operators": [
+        "SSPC"
+      ],
+      "owners": [
+        "PCSB",
+        "SSS"
+      ],
+      "notes": "SSPC operates the block with a 50% interest, while PCSB and SSS hold 40% and 10% respectively."
+    }
+  }
 }

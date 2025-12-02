@@ -7,8 +7,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 47.877,
-    "lon": 33.4,
+    "lat": 47.859626,
+    "lon": 33.331092,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "ArcelorMittal Kryvyi Rih"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.719474Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:58:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Kryvyi_Rih_Mine. Coordinates are exact for the ArcelorMittal Kryvyi Rih Mine"
   },
   "canonical_name": "Kryvyi Rih Mine",
   "canonical_slug": "kryvyi-rih-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:58:42.000000Z",
+      "operators": [
+        "ArcelorMittal Kryvyi Rih"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal Kryvyi Rih is the largest steel producer in Ukraine."
+    }
+  }
 }

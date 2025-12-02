@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -14.664,
-    "lon": -69.5,
+    "lat": -14.408713571089685,
+    "lon": -70.1356177,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporacion Ananea",
+    "Corporación Minera Ananea S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.325564Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:14:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.dw.com/en/gold-garbage-and-guns-in-the-highest-town-on-earth/a-45886249. La Rinconada is known as the highest human settlement in the world and is primarily a gold mining town. Web search geocoded. Source: Calculated from Juliaca (https://www.dw.com/en/gold-garbage-and-guns-in-the-highest-town-on-earth/a-45886249). La Rinconada is known as the highest settlement on earth and is characterized by informal mining practices"
   },
   "canonical_name": "La Rinconada Mine",
   "canonical_slug": "la-rinconada-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:14:49.000000Z",
+      "operators": [
+        "Corporacion Ananea"
+      ],
+      "owners": [
+        "Corporacion Ananea"
+      ],
+      "notes": "Corporacion Ananea is the only company with a governmental license to mine in La Rinconada."
+    }
+  },
+  "town": "Juliaca"
 }

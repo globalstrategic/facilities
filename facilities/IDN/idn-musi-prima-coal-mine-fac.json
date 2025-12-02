@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.401,
-    "lon": 104.124,
+    "lat": -3.400911,
+    "lon": 104.130741,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Musi Prima Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.282159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:01:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Musi_Prima_Coal_Mine. Musi Prima Coal Mine is an operating coal mine located in Gunung Raja, Muara Enim, South Sumatra, Indonesia"
   },
   "canonical_name": "Musi Prima Coal Mine",
   "canonical_slug": "musi-prima-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:01:00.000000Z",
+      "operators": [
+        "Musi Prima Coal"
+      ],
+      "owners": [
+        "Musi Prima Coal"
+      ],
+      "notes": "Musi Prima Coal is both the operator and owner of the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 25.942,
-    "lon": 71.344,
+    "lat": 25.61759228416957,
+    "lon": 71.1924922,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barmer Lignite Mining Company Ltd",
+    "Raj West Power Limited",
+    "Rajasthan State Minerals and Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.112877Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:11:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Barmer (https://www.coalage.com/departments/operating-ideas/barmer-invests-in-modern-lignite-handling/). The Kapurdi Coal Mine is located 4 km north of the Barmer Power Plant, which sources lignite from this mine"
   },
   "canonical_name": "Kapurdi Coal Mine",
   "canonical_slug": "kapurdi-coal-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "town": "Barmer",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:11:17.000000Z",
+      "operators": [
+        "Barmer Lignite Mining Company Ltd",
+        "Raj West Power Limited"
+      ],
+      "owners": [
+        "Raj West Power Limited",
+        "Rajasthan State Minerals and Mining"
+      ],
+      "notes": "Barmer Lignite Mining Company is a joint venture between Raj West Power (49%) and Rajasthan State Minerals and Mining (51%)."
+    }
+  }
 }

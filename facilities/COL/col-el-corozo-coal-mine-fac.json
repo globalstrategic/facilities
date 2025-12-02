@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 9.497,
-    "lon": -73.492,
+    "lat": 9.496821,
+    "lon": -73.49205,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Drummond Company Inc",
+    "Drummond International LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:22.741326Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:58:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/El_Corozo_Coal_Mine. El Corozo Coal Mine is located in northern Colombia, near La Jagua de Ibírico"
   },
   "canonical_name": "El Corozo Coal Mine",
   "canonical_slug": "el-corozo-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cesar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:58:05.000000Z",
+      "operators": [
+        "Drummond International LLC"
+      ],
+      "owners": [
+        "Drummond Company Inc"
+      ],
+      "notes": "The mine is owned by Alabama-based Drummond Company Inc and operated through its Colombian subsidiary Drummond International LLC."
+    }
+  }
 }

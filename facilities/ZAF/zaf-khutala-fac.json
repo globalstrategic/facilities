@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.124,
-    "lon": 29.004,
+    "lat": -26.0,
+    "lon": 28.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Seriti Power (Pty) Ltd",
+    "Seriti Resources Holdings (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.749881Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-khutala-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:40:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-khutala-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://seritiza.com/business/seriti-power/khutala/. Khutala Colliery is located in the Witbank coalfield and produces thermal coal for Eskom’s Kendal power station"
   },
   "canonical_name": "Khutala Mine",
   "canonical_slug": "khutala-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:40:27.000000Z",
+      "operators": [
+        "Seriti Power (Pty) Ltd"
+      ],
+      "owners": [
+        "Seriti Resources Holdings (Pty) Ltd"
+      ],
+      "notes": "Seriti Resources Holdings is a broad-based, 92% black-owned and controlled South African energy company."
+    }
+  }
 }

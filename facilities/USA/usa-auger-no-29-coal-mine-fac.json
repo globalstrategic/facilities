@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.394,
-    "lon": -82.174,
+    "lat": 37.393611,
+    "lon": -82.174167,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Age Mining",
+    "RESOURCE MANAGEMENT & RECOVERY LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.787543Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:59:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Auger_No._29_Coal_Mine. Coordinates are directly provided in the search results"
   },
   "canonical_name": "Auger No 29 Coal Mine",
   "canonical_slug": "auger-no-29-coal-mine",
@@ -58,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:59:12.000000Z",
+      "operators": [
+        "New Age Mining",
+        "RESOURCE MANAGEMENT & RECOVERY LLC"
+      ],
+      "owners": [
+        "New Age Mining"
+      ],
+      "notes": "New Age Mining is both the operator and owner of the facility."
+    }
+  }
 }

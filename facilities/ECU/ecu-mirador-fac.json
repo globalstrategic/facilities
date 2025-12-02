@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ECU",
   "location": {
-    "lat": -3.579,
-    "lon": -78.433,
+    "lat": -3.57806,
+    "lon": -78.43556,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CRCC-Tongguan Investment Co. Ltd",
+    "China Railway Construction Corporation Ltd.",
+    "Ecuacorriente S.A.",
+    "Tongling Nonferrous Metals Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.547524Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:10:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mirador_mine. The Mirador mine is located in a biodiverse area and has faced significant environmental and social issues"
   },
   "canonical_name": "Mirador Mine",
   "canonical_slug": "mirador-mine",
@@ -54,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zamora-Chinchipe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:10:32.000000Z",
+      "operators": [
+        "Ecuacorriente S.A."
+      ],
+      "owners": [
+        "CRCC-Tongguan Investment Co. Ltd",
+        "Tongling Nonferrous Metals Group Co., Ltd.",
+        "China Railway Construction Corporation Ltd."
+      ],
+      "notes": "Ecuacorriente S.A. is a subsidiary of the Chinese consortium CRCC-Tongguan, which is jointly owned by Tongling Nonferrous Metals Group and China Railway Construction Corporation."
+    }
+  }
 }

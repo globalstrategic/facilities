@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.12278,
+    "lon": 128.38639,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hyesan-China Joint Venture Mineral Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.352249Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:34:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kapsan_County. Coordinates for Kapsan County, where Kapsan Mine is located"
   },
   "canonical_name": "Kapsan Mine",
   "canonical_slug": "kapsan-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ryanggang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:34:12.000000Z",
+      "operators": [
+        "Hyesan-China Joint Venture Mineral Co."
+      ],
+      "owners": [],
+      "notes": "The mine is operated by a joint venture, but ownership details are not specified."
+    }
+  }
 }

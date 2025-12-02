@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.401,
-    "lon": -87.214,
+    "lat": 35.03321219198466,
+    "lon": -110.6973463,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sun Energy Group, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.869959Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:51:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Winslow (https://minesdatabase.com/mines/view/1202424). The facility is located along State Road 61 North from Winslow"
   },
   "canonical_name": "Gray 1 Blackfoot 5 Mine",
   "canonical_slug": "gray-1-blackfoot-5-mine",
@@ -58,5 +60,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "town": "Winslow",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:51:17.000000Z",
+      "operators": [
+        "Sun Energy Group, LLC"
+      ],
+      "owners": [],
+      "notes": "Sun Energy Group, LLC is the operator of the Gray #1 - Blackfoot #5 mine."
+    }
+  }
 }

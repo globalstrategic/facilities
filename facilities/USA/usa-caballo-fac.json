@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.119,
-    "lon": -105.338,
+    "lat": 44.15674547740233,
+    "lon": -105.42485594826185,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Caballo Mining LLC",
+    "Peabody Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.732110Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:11:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gillette (https://www.gem.wiki/Caballo_Coal_Mine). The Caballo Mine is located approximately 10 miles south-southeast of Gillette, Wyoming"
   },
   "canonical_name": "Caballo Mine",
   "canonical_slug": "caballo-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "town": "Gillette",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:11:12.000000Z",
+      "operators": [
+        "Peabody Caballo Mining LLC"
+      ],
+      "owners": [
+        "Peabody Energy Corporation"
+      ],
+      "notes": "Peabody Caballo Mining LLC is a subsidiary of Peabody Energy Corporation."
+    }
+  }
 }

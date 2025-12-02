@@ -10,8 +10,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.005,
-    "lon": -76.408,
+    "lat": -11.0042,
+    "lon": -76.4128,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,16 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cie Des Mines De Huaron",
+    "Compania Minera Huaron SA",
+    "Milpo Cia. Minera",
+    "Minas De Arcata SA",
+    "Minas De Huaron (Mokta)",
+    "Pan American Silver Corp.",
+    "Pan American Silver Huaron S.A.",
+    "Penarroya of France"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +55,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.322354Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:11:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn1559. The Huaron mine is a significant silver-zinc mine located in the Pasco region of Peru. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn1559. The Huaron mine is a large polymetallic mine located in the Central Highlands of Peru"
   },
   "canonical_name": "Huaron Mine",
   "canonical_slug": "huaron-mine",
@@ -65,5 +74,24 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:11:52.000000Z",
+      "operators": [
+        "Pan American Silver Huaron S.A."
+      ],
+      "owners": [
+        "Pan American Silver Corp.",
+        "Cie Des Mines De Huaron",
+        "Compania Minera Huaron SA",
+        "Milpo Cia. Minera",
+        "Minas De Arcata SA",
+        "Minas De Huaron (Mokta)",
+        "Penarroya of France"
+      ],
+      "notes": "Pan American Silver is the current operator and majority owner."
+    }
+  }
 }

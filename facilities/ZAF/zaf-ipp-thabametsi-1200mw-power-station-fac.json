@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Resources Ltd",
+    "GDF Suez (now Engie)",
+    "Thabametsi Power Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:01:15.000000Z",
+    "last_checked": "2025-12-01T17:05:08.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Thabametsi_power_station. Coordinates are approximate for the Thabametsi power station located in Waterberg, Limpopo, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Thabametsi_power_station. Coordinates are approximate for the Thabametsi power station located in Waterberg, Limpopo, South Africa. Web search geocoded. Source: https://www.gem.wiki/Thabametsi_power_station. The Thabametsi power station is planned to be fueled by the Thabametsi coal mine, which is owned by Exxaro Resources"
   },
   "canonical_name": "Ipp Thabametsi 1200mw Power Station Mine",
   "canonical_slug": "ipp-thabametsi-1200mw-power-station-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:05:08.000000Z",
+      "operators": [
+        "Thabametsi Power Company"
+      ],
+      "owners": [
+        "Exxaro Resources Ltd",
+        "GDF Suez (now Engie)"
+      ],
+      "notes": "The Thabametsi Power Company is a special purpose vehicle owned by Marubeni and KEPCO, while Exxaro Resources owns the coal mine supplying the power station."
+    }
+  }
 }

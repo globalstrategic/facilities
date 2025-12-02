@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.468,
-    "lon": -92.815,
+    "lat": 34.46327273711987,
+    "lon": -92.8446148,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dresser Industries Inc.",
+    "Magnet Cove Barium Corporation",
+    "Union Carbide"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.733531Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:12:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Magnet Cove (https://www.adeq.state.ar.us/regs/drafts/3rdParty/reg02/16-003-R/reg02-3rdparty-docket-16-003-r-ex-f-noi-report-2014-10-29.pdf). The facility is located approximately one mile northeast of Magnet Cove, Arkansas"
   },
   "canonical_name": "Magnet Cove Barite Mine",
   "canonical_slug": "magnet-cove-barite-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arkansas",
+  "town": "Magnet Cove",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:12:39.000000Z",
+      "operators": [
+        "Magnet Cove Barium Corporation",
+        "Union Carbide"
+      ],
+      "owners": [
+        "Dresser Industries Inc."
+      ],
+      "notes": "Magnet Cove Barium Corporation was a subsidiary of Dresser Industries Inc."
+    }
+  }
 }

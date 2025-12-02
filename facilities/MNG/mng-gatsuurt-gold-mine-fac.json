@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.63583,
+    "lon": 106.63389,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centerra Gold Inc.",
+    "OZD Asia Pte Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.453744Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:17:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Gatsuurt_Gold_Mine. The Gatsuurt Gold Mine is located in Northern Mongolia and was initially developed by Centerra Gold. It has faced permitting delays and local opposition"
   },
   "canonical_name": "Gatsuurt Gold Development",
   "canonical_slug": "gatsuurt-gold-development",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khentii",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:17:20.000000Z",
+      "operators": [
+        "Centerra Gold Inc.",
+        "OZD Asia Pte Ltd"
+      ],
+      "owners": [
+        "Centerra Gold Inc.",
+        "OZD Asia Pte Ltd"
+      ],
+      "notes": "Centerra Gold sold its Mongolian business unit, including the Gatsuurt project, to OZD Asia Pte Ltd in 2018."
+    }
+  }
 }

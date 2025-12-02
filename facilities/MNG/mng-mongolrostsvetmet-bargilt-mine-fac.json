@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.319,
-    "lon": 109.275,
+    "lat": 46.331333,
+    "lon": 109.287,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mongolrostsvetmet LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.452010Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:16:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bargilt_Iron_Ore_Mine. The mine is located in Darkhan, Khentii, Mongolia"
   },
   "canonical_name": "Mongolrostsvetmet Bargilt Mine",
   "canonical_slug": "mongolrostsvetmet-bargilt-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khentii",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:16:34.000000Z",
+      "operators": [
+        "Mongolrostsvetmet LLC"
+      ],
+      "owners": [
+        "Mongolrostsvetmet LLC"
+      ],
+      "notes": "The mine is owned by Mongolrostsvetmet LLC, a joint venture company."
+    }
+  }
 }

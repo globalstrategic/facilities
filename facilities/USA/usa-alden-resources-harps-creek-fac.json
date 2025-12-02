@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.699,
-    "lon": -83.902,
+    "lat": 36.699444,
+    "lon": -83.902222,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ferroglobe PLC",
+    "Ferroglobe USA Mining, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.705582Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:48:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-1518466. The mine is located in Whitley County, Kentucky, United States"
   },
   "canonical_name": "Alden Resources Harps Creek Mine",
   "canonical_slug": "alden-resources-harps-creek-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:48:08.000000Z",
+      "operators": [
+        "Ferroglobe USA Mining, LLC"
+      ],
+      "owners": [
+        "Ferroglobe PLC"
+      ],
+      "notes": "Ferroglobe USA Mining, LLC is the current operator and Ferroglobe PLC is the current controller."
+    }
+  }
 }

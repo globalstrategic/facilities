@@ -10,8 +10,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.748,
-    "lon": 23.0,
+    "lat": -27.42510517919725,
+    "lon": 23.05,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Kumba Iron Ore",
+    "Sishen Iron Ore Company (SIOC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.723413Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:15:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Kathu (https://www.mining.com/kumba-becomes-the-sole-owner-of-sishen-mine/). Sishen Mine is one of the largest iron ore producing open pit mines in the world, located near Kathu"
   },
   "canonical_name": "Sishen Mine",
   "canonical_slug": "sishen-mine",
@@ -54,5 +58,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "town": "Kathu",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:44.000000Z",
+      "operators": [
+        "Kumba Iron Ore",
+        "Sishen Iron Ore Company (SIOC)"
+      ],
+      "owners": [
+        "Kumba Iron Ore",
+        "Anglo American"
+      ],
+      "notes": "Kumba Iron Ore is a division of Anglo American and holds a 100% stake in Sishen through SIOC."
+    }
+  }
 }

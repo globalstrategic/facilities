@@ -27,22 +27,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Al Hadeetha Resources",
-      "role": "operator",
-      "source": "Research Import OMN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T22:09:19.391707",
-      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
-    },
-    {
-      "name": "Alara Resources, Al Hadeetha Investments, Al Tasnim",
-      "role": "operator",
-      "source": "Research Import OMN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T22:09:19.391751",
-      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
-    }
+    "Al Hadeetha Resources",
+    "Al Hadeetha Resources LLC",
+    "Alara Resources Limited",
+    "Alara Resources, Al Hadeetha Investments, Al Tasnim"
   ],
   "products": [],
   "sources": [
@@ -80,5 +68,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Al Sharqiyah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:21:17.000000Z",
+      "operators": [
+        "Al Hadeetha Resources LLC"
+      ],
+      "owners": [
+        "Alara Resources Limited",
+        "Al Hadeetha Resources LLC"
+      ],
+      "notes": "Alara Resources holds a 51% interest in the joint venture company Al Hadeetha Resources, which operates the mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.599,
-    "lon": -118.55,
+    "lat": 34.2994,
+    "lon": -93.6694,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arkansas State Parks",
+    "State of Arkansas"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.931748Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:00:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Crater_of_Diamonds_State_Park. Crater of Diamonds State Park is the only diamond-producing site in the world open to the public"
   },
   "canonical_name": "Crater View Mine",
   "canonical_slug": "crater-view-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arkansas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:00:50.000000Z",
+      "operators": [
+        "Arkansas State Parks"
+      ],
+      "owners": [
+        "State of Arkansas"
+      ],
+      "notes": "The park is operated by the Arkansas State Parks system."
+    }
+  }
 }

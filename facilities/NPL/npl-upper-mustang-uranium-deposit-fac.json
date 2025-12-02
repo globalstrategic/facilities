@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 29.200879300512003,
+    "lon": 83.9563037,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Department of Mines and Geology, Nepal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.486915Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:22:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lo Manthang (https://myrepublica.nagariknetwork.com/news/presence-of-uranium-mine-confirmed-in-upper-mustang). The Upper Mustang Uranium Deposit is located 2 kms north of Lo Manthang and 10 kms south from the Nepal-China border. Web search geocoded. Source: Calculated from Lo Manthang (https://myrepublica.nagariknetwork.com/news/presence-of-uranium-mine-confirmed-in-upper-mustang). The uranium deposit is located in the Upper Mustang region, specifically 2 km north of Lo Manthang and 10 km south from the Nepal-China border"
   },
   "canonical_name": "Upper Mustang Uranium Facility",
   "canonical_slug": "upper-mustang-uranium-facility",
@@ -55,5 +57,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mustang",
+  "town": "Lo Manthang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:22:40.000000Z",
+      "operators": [
+        "Department of Mines and Geology, Nepal"
+      ],
+      "owners": [],
+      "notes": "The facility is under the oversight of the Department of Mines and Geology, with no specific private ownership mentioned."
+    }
+  }
 }

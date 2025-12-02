@@ -27,22 +27,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Minera La Victoria SA (51% Geominera S.A.",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.882326",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    },
-    {
-      "name": "49% Antilles Gold)",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.882330",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    }
+    "49% Antilles Gold)",
+    "Antilles Gold Limited",
+    "GeoMinera SA",
+    "Minera La Victoria",
+    "Minera La Victoria SA (51% Geominera S.A."
   ],
   "products": [],
   "sources": [
@@ -72,5 +61,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cuba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:02:54.000000Z",
+      "operators": [
+        "Antilles Gold Limited"
+      ],
+      "owners": [
+        "GeoMinera SA",
+        "Minera La Victoria"
+      ],
+      "notes": "Antilles Gold is planning a joint venture with GeoMinera for the El Pilar project."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.70111,
-    "lon": 27.57333,
+    "lat": -25.665111288935357,
+    "lon": 27.639855488103674,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lonmin",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:24:50.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:52:39.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: http://wikimapia.org/18904702/Hossy-Shaft. Coordinates extracted from the Wikimapia entry for Hossy Shaft, which is part of the Marikana Platinum Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: http://wikimapia.org/18904702/Hossy-Shaft. Coordinates extracted from the Wikimapia entry for Hossy Shaft, which is part of the Marikana Platinum Mine. Web search geocoded. Source: Calculated from Rustenburg (https://www.nsenergybusiness.com/projects/marikana-platinum-mine-rustenburg/). Hossy Shaft is part of the Marikana platinum mine complex, which is nearing the end of its operational life"
   },
   "canonical_name": "Hossy Marikana Mine",
   "canonical_slug": "hossy-marikana-mine",
@@ -56,5 +59,20 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "North West"
+  "province": "North West",
+  "town": "Rustenburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:52:39.000000Z",
+      "operators": [
+        "Sibanye-Stillwater",
+        "Lonmin"
+      ],
+      "owners": [
+        "Sibanye-Stillwater",
+        "Lonmin"
+      ],
+      "notes": "Sibanye-Stillwater acquired Lonmin in 2019, becoming the owner and operator of the Marikana operations."
+    }
+  }
 }

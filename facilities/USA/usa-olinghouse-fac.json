@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.659,
-    "lon": -119.422,
+    "lat": 39.52482154829589,
+    "lon": -119.25091420996712,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lake Mountain Mining LLC",
+    "Nevada Canyon Gold Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.865826Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:48:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Reno (https://nevadacanyongold.com/nevada-canyon-exercises-an-amended-olinghouse-royalty-option-to-purchase-agreement/). The Olinghouse Project is located approximately 30 miles east of Reno, Nevada"
   },
   "canonical_name": "Olinghouse Mine",
   "canonical_slug": "olinghouse-mine",
@@ -55,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Reno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:48:06.000000Z",
+      "operators": [
+        "Lake Mountain Mining LLC"
+      ],
+      "owners": [
+        "Lake Mountain Mining LLC",
+        "Nevada Canyon Gold Corp."
+      ],
+      "notes": "Lake Mountain Mining LLC is currently reviewing financing plans for additional exploration and potential production restart."
+    }
+  }
 }

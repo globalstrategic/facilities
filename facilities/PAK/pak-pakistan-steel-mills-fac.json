@@ -6,8 +6,8 @@
   ],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 24.599078442778538,
+    "lon": 67.29998608404279,
     "precision": "unknown"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Pakistan",
+    "Pakistan Steel Mills Corporation (Pvt.) Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.333281Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:35:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Karachi (https://www.gem.wiki/Pakistan_Steel_Mills_Karachi). Pakistan Steel Mills is located approximately 40 km southeast of Karachi, near Port Muhammad Bin Qasim"
   },
   "canonical_name": "Pakistan Steel Mills Smelter",
   "canonical_slug": "pakistan-steel-mills-smelter",
@@ -57,5 +60,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sindh",
+  "town": "Karachi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:35:02.000000Z",
+      "operators": [
+        "Pakistan Steel Mills Corporation (Pvt.) Limited"
+      ],
+      "owners": [
+        "Government of Pakistan"
+      ],
+      "notes": "The facility is a state-owned enterprise and has been earmarked for privatization."
+    }
+  }
 }

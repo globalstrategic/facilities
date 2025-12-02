@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -17.156,
-    "lon": 27.366,
+    "lat": -17.15,
+    "lon": 27.36,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Collum Coal Mining Industries",
+    "Zambia Consolidated Copper Mines Limited Investment Holdings Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.684027Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:47:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Collum_Coal_Mine. Collum Coal Mine is located in Sinazeze, Southern Province, Zambia. It has a history of being closed and reopened due to safety violations"
   },
   "canonical_name": "Collum Coal Mine",
   "canonical_slug": "collum-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:47:46.000000Z",
+      "operators": [
+        "Collum Coal Mining Industries"
+      ],
+      "owners": [
+        "Collum Coal Mining Industries",
+        "Zambia Consolidated Copper Mines Limited Investment Holdings Plc"
+      ],
+      "notes": "The mine is owned by Collum Coal Mining Industries, a private firm run by Chinese investors."
+    }
+  }
 }

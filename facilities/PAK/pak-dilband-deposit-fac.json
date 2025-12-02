@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 28.972300961033916,
+    "lon": 68.37929158020103,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bolan Mining Enterprises (BME)",
+    "Government of Balochistan",
+    "Pakistan Petroleum Ltd (PPL)",
+    "Pakistan Steel (PS)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:03.336044Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:36:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Quetta (https://www.dawn.com/news/125692/dilband-iron-ore-feasibility-contract). The Dilband iron ore deposit is located approximately 190 km southeast of Quetta in the Mastung District"
   },
   "canonical_name": "Dilband Mine",
   "canonical_slug": "dilband-mine",
@@ -51,5 +56,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Balochistan",
+  "town": "Quetta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:36:34.000000Z",
+      "operators": [
+        "Bolan Mining Enterprises (BME)",
+        "Pakistan Steel (PS)"
+      ],
+      "owners": [
+        "Pakistan Petroleum Ltd (PPL)",
+        "Government of Balochistan"
+      ],
+      "notes": "BME is a joint venture between the government of Balochistan and Pakistan Petroleum Ltd."
+    }
+  }
 }

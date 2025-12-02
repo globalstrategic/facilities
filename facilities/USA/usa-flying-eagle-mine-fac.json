@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.757,
-    "lon": -81.554,
+    "lat": 37.756667,
+    "lon": -81.554444,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rockwell Mining LLC",
+    "Sev.en Global Investments AS"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.754805Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:30:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609471&iframe=yes. The Flying Eagle Mine is an operating coal mine located in Wyoming County, West Virginia"
   },
   "canonical_name": "Flying Eagle Mine",
   "canonical_slug": "flying-eagle-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:11.000000Z",
+      "operators": [
+        "Rockwell Mining LLC"
+      ],
+      "owners": [
+        "Sev.en Global Investments AS"
+      ],
+      "notes": "Rockwell Mining LLC operates the mine, which is fully owned by Sev.en Global Investments AS."
+    }
+  }
 }

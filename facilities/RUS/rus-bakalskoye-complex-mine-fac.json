@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.925,
-    "lon": 58.803,
+    "lat": 54.921083,
+    "lon": 58.795114,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bakalskoye Rudoupravlenie LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.615931Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:41:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bakalskoye_Complex_Mine. The Bakalskoye Complex Mine is an iron ore mine located in Satkinsky District, Chelyabinsk Oblast, Russia"
   },
   "canonical_name": "Bakalskoye Mine",
   "canonical_slug": "bakalskoye-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chelyabinsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:41:19.000000Z",
+      "operators": [
+        "Bakalskoye Rudoupravlenie LLC"
+      ],
+      "owners": [
+        "Bakalskoye Rudoupravlenie LLC"
+      ],
+      "notes": "Bakalskoye Rudoupravlenie LLC owns 100% of the mine."
+    }
+  }
 }

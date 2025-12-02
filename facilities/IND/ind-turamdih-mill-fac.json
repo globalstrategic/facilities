@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.7375,
-    "lon": 85.3967,
+    "lat": 22.7222,
+    "lon": 86.18753,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Uranium Corporation of India Limited (UCIL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "llm_geocoded",
+    "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T16:45:15.000000Z",
-    "checked_by": "llm_web_search",
-    "notes": "Processes ore from Turamdih, Banduhurang, Mohuldih | Canonical name+slug generated. LLM geocoded from: Uranium Corporation of India Limited (UCIL) official website and various mining reports. The Turamdih Mill is located near the town of Jamshedpur in the state of Jharkhand, India. The coordinates are approximate and based on multiple sources including company reports and geographic databases"
+    "last_checked": "2025-12-01T21:28:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Processes ore from Turamdih, Banduhurang, Mohuldih | Canonical name+slug generated. LLM geocoded from: Uranium Corporation of India Limited (UCIL) official website and various mining reports. The Turamdih Mill is located near the town of Jamshedpur in the state of Jharkhand, India. The coordinates are approximate and based on multiple sources including company reports and geographic databases. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39276. Turamdih Mill is part of the Turamdeh Uranium Mine and Mill complex"
   },
   "canonical_name": "Turamdih Processing Plant",
   "canonical_slug": "turamdih-processing-plant",
@@ -43,5 +45,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Jharkhand"
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:28:30.000000Z",
+      "operators": [
+        "Uranium Corporation of India Limited (UCIL)"
+      ],
+      "owners": [
+        "Uranium Corporation of India Limited (UCIL)"
+      ],
+      "notes": "UCIL is a public sector undertaking under the Department of Atomic Energy in India."
+    }
+  }
 }

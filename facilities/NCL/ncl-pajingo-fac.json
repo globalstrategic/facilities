@@ -11,8 +11,8 @@
   ],
   "country_iso3": "NCL",
   "location": {
-    "lat": -20.534,
-    "lon": 146.453,
+    "lat": -20.45,
+    "lon": 146.46,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "North Queensland Metals Ltd",
+    "Yuxin Holdings Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.367407Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:56:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.proactiveinvestors.co.uk/companies/news/160048/north-queensland-metals-views-conquest-offer-as-inadequate-7685.html. Pajingo gold mine is operated by North Queensland Metals and has undergone ownership changes, with Yuxin Holdings being the most recent owner"
   },
   "canonical_name": "Pajingo Mine",
   "canonical_slug": "pajingo-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:56:55.000000Z",
+      "operators": [
+        "North Queensland Metals Ltd"
+      ],
+      "owners": [
+        "Yuxin Holdings Pty Ltd"
+      ],
+      "notes": "Yuxin Holdings acquired the Pajingo operation in November 2022."
+    }
+  }
 }

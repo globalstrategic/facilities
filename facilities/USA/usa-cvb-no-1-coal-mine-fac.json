@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.959,
-    "lon": -83.043,
+    "lat": 36.958056,
+    "lon": -83.038611,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rex Coal Company, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.953415Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:18:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/CVB_No._1_Coal_Mine. The CVB No. 1 Coal Mine is a retired coal mine located in Harlan County, Kentucky"
   },
   "canonical_name": "CVB No 1 Coal Mine",
   "canonical_slug": "cvb-no-1-coal-mine",
@@ -61,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:18:51.000000Z",
+      "operators": [
+        "Rex Coal Company, Inc."
+      ],
+      "owners": [
+        "Rex Coal Company, Inc."
+      ],
+      "notes": "Rex Coal Company, Inc. is both the operator and owner of the mine."
+    }
+  }
 }

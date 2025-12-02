@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 49.744667,
+    "lon": 14.343139,
     "precision": "unknown"
   },
   "types": [
@@ -14,22 +14,11 @@
   "commodities": [],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.785004",
-      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.785007",
-      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
-    }
+    "A",
+    "Astur Bohemia SRO",
+    "Astur Gold Corp.",
+    "Geoindustria (Czech Government)",
+    "N"
   ],
   "products": [],
   "sources": [
@@ -40,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.583601Z",
-    "checked_by": "import_pipeline",
-    "notes": "Largest undeveloped gold deposit in Czechia (\\~100 t Au). Development is stalled due to a moratorium on cyanide leaching and environmental opposition. 45 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:07:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Largest undeveloped gold deposit in Czechia (\\~100 t Au). Development is stalled due to a moratorium on cyanide leaching and environmental opposition. 45 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mokrsko_mine. The Mokrsko Gold Deposit is one of the largest gold mines in the Czech Republic, located in the Central Bohemian Region"
   },
   "canonical_name": "Mokrsko Gold Mine",
   "canonical_slug": "mokrsko-gold-mine",
@@ -67,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Bohemian Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:07:34.000000Z",
+      "operators": [
+        "Astur Gold Corp.",
+        "Astur Bohemia SRO"
+      ],
+      "owners": [
+        "Geoindustria (Czech Government)"
+      ],
+      "notes": "Astur Gold Corp. is actively pursuing exploration and development of the deposit."
+    }
+  }
 }

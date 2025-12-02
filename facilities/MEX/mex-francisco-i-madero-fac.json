@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 22.819,
-    "lon": -102.734,
+    "lat": 22.27028,
+    "lon": -97.80639,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PEMEX"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.950920Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:29:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Francisco_I._Madero_Refinery. The Francisco I. Madero Refinery is one of six refineries in Mexico, located in Ciudad Madero, Tamaulipas"
   },
   "canonical_name": "Francisco I Madero Mine",
   "canonical_slug": "francisco-i-madero-mine",
@@ -70,5 +72,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tamaulipas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:29:38.000000Z",
+      "operators": [
+        "PEMEX"
+      ],
+      "owners": [
+        "PEMEX"
+      ],
+      "notes": "The refinery is owned and operated by PEMEX."
+    }
+  }
 }

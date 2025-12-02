@@ -12,8 +12,8 @@
   ],
   "country_iso3": "SRB",
   "location": {
-    "lat": 44.47,
-    "lon": 20.24,
+    "lat": 44.46783578,
+    "lon": 20.26640088,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda Srbije Beograd AD",
+    "Government of Serbia"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.517699Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:07:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kolubara_G_Coal_Mine. The Kolubara G Coal Mine is part of the Kolubara mining complex and is located near Veliki Crljeni"
   },
   "canonical_name": "Kolubara G Coal Mine",
   "canonical_slug": "kolubara-g-coal-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Serbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:07:28.000000Z",
+      "operators": [
+        "Elektroprivreda Srbije Beograd AD"
+      ],
+      "owners": [
+        "Government of Serbia"
+      ],
+      "notes": "The mine is fully owned by the Government of Serbia through Elektroprivreda Srbije."
+    }
+  }
 }

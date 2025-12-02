@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 6.701,
-    "lon": null,
+    "lat": 6.756022778687121,
+    "lon": -75.9068707,
     "precision": "unknown"
   },
   "types": [
@@ -22,14 +22,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Zijin-Continental Gold S.A.S",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.136444",
-      "evidence": "Extracted from operator column: Zijin-Continental Gold S.A.S"
-    }
+    "Continental Gold Limited",
+    "Continental Gold Limited Sucursal Colombia",
+    "Zijin Mining Group Co., Ltd",
+    "Zijin-Continental Gold S.A.S"
   ],
   "products": [],
   "sources": [
@@ -40,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.738955Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:55:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Buriticá (https://www.zijinmining.com/global/program-detail-71741.htm). The Buriticá Gold Mine is recognized as Colombia’s first modern underground mine and is a project of national strategic interest"
   },
   "canonical_name": "Buriticá Mine",
   "canonical_slug": "buritica-mine",
@@ -59,5 +55,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Buriticá",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:55:29.000000Z",
+      "operators": [
+        "Continental Gold Limited Sucursal Colombia"
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd",
+        "Continental Gold Limited"
+      ],
+      "notes": "Zijin Mining acquired a majority stake in Continental Gold, which operates the mine."
+    }
+  }
 }

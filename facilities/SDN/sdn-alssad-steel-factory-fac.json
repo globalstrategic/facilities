@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 15.50373500616603,
+    "lon": 32.77894091666015,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alassad Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.165372Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:12:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Khartoum (https://alasaadgroup.com/services/alassad_steel/). The factory is located on Kilo 22, Medani Road, which is approximately 22 km east of Khartoum"
   },
   "canonical_name": "Alssad Steel Factory Processing Plant",
   "canonical_slug": "alssad-steel-factory-processing-plant",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khartoum",
+  "town": "Khartoum",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:12:45.000000Z",
+      "operators": [
+        "Alassad Group"
+      ],
+      "owners": [
+        "Alassad Group"
+      ],
+      "notes": "Alassad Steel Factory is a subsidiary of Alassad Group."
+    }
+  }
 }

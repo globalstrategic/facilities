@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.0383942,
-    "lon": 29.1613318,
+    "lat": -26.0,
+    "lon": 29.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals",
+    "Glencore PLC",
+    "Glencore South Africa"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T14:58:23.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:59:34.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tweefontein_Coal_Mine. Coordinates are exact for the Tweefontein Coal Mine located in Nkangala, Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tweefontein_Coal_Mine. Coordinates are exact for the Tweefontein Coal Mine located in Nkangala, Mpumalanga, South Africa. Web search geocoded. Source: https://www.gem.wiki/Tweefontein_Coal_Mine. The Tweefontein Complex includes both surface and underground coal mines, with only the Tweefontein North branch currently being mined"
   },
   "canonical_name": "Tweefontein Development Mine",
   "canonical_slug": "tweefontein-development-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:59:34.000000Z",
+      "operators": [
+        "Glencore South Africa"
+      ],
+      "owners": [
+        "Glencore PLC",
+        "African Rainbow Minerals"
+      ],
+      "notes": "The facility is jointly owned by Glencore and African Rainbow Minerals."
+    }
+  }
 }

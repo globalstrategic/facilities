@@ -7,8 +7,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.082,
-    "lon": 33.503,
+    "lat": 48.081507,
+    "lon": 33.505467,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kryvbaszalizrudkom JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.717264Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:56:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KZRK_Kryvorizka_Mine. The KZRK Kryvorizka Mine is located in Kryvyi Rih, which is known for its iron ore mining"
   },
   "canonical_name": "Kzrk Kryvorizka Mine",
   "canonical_slug": "kzrk-kryvorizka-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:56:34.000000Z",
+      "operators": [
+        "Kryvbaszalizrudkom JSC"
+      ],
+      "owners": [
+        "Kryvbaszalizrudkom JSC"
+      ],
+      "notes": "Kryvbaszalizrudkom JSC is the sole owner and operator of the mine."
+    }
+  }
 }

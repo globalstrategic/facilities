@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -7.645,
-    "lon": 110.027,
+    "lat": -7.645085,
+    "lon": 110.026908,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Indo Mines Limited",
+    "PT Jogja Magasa Iron",
+    "PT Jogja Magasa Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.291953Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:07:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kulon_Progo_Iron_Sand_Mine. The Kulon Progo Iron Sand Mine is located in Kulon Progo Regency, Yogyakarta, Indonesia"
   },
   "canonical_name": "Kulon Progo Iron Sand Mine",
   "canonical_slug": "kulon-progo-iron-sand-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yogyakarta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:07:49.000000Z",
+      "operators": [
+        "PT Jogja Magasa Iron"
+      ],
+      "owners": [
+        "Indo Mines Limited",
+        "PT Jogja Magasa Mining"
+      ],
+      "notes": "Indo Mines Limited owns a 70% stake in PT Jogja Magasa Iron, while PT Jogja Magasa Mining holds the remaining 30%."
+    }
+  }
 }

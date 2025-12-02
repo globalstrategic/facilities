@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.065,
-    "lon": 116.189,
+    "lat": -2.064566599,
+    "lon": 116.1889345,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Borneo Surya Abadi"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.285823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:03:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BSA_Coal_Mine. BSA Coal Mine is an operating coal mine located in Petangis village, Paser, East Kalimantan, Indonesia"
   },
   "canonical_name": "BSA Coal Mine",
   "canonical_slug": "bsa-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:03:20.000000Z",
+      "operators": [
+        "PT Borneo Surya Abadi"
+      ],
+      "owners": [
+        "PT Borneo Surya Abadi"
+      ],
+      "notes": "PT Borneo Surya Abadi is both the owner and operator of the BSA Coal Mine."
+    }
+  }
 }

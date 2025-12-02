@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -6.012,
-    "lon": -80.832,
+    "lat": -6.0698,
+    "lon": -80.8524,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Focus Ventures",
+    "Inca Terminals and Mining Inc.",
+    "Mitsui & Co., Ltd.",
+    "Mosaic",
+    "Trabajos Maritimos S.A.",
+    "Vale S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.302634Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:55:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1471603/000121716016000634/focusjune2016bayovar_techrep.htm. The Bayovar mine is located in the Sechura desert and is one of the largest phosphate reserves in Peru"
   },
   "canonical_name": "Bayovar Mine",
   "canonical_slug": "bayovar-mine",
@@ -47,5 +54,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Piura",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:55:40.000000Z",
+      "operators": [
+        "Focus Ventures",
+        "Vale S.A."
+      ],
+      "owners": [
+        "Vale S.A.",
+        "Mosaic",
+        "Mitsui & Co., Ltd.",
+        "Trabajos Maritimos S.A.",
+        "Inca Terminals and Mining Inc."
+      ],
+      "notes": "Focus Ventures owns a 70% interest in Juan Paolo Quay S.A.C, which holds the Bayovar 12 concession. Vale retains control of the project with a 40% stake."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.264,
-    "lon": -75.411,
+    "lat": 44.516848663906025,
+    "lon": -75.463028,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empire State Mines, LLC",
+    "Titan Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.869604Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:51:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gouverneur (https://www.nsenergybusiness.com/projects/empire-state-mine-us/). The Empire State Mine is located in the Balmat-Edwards mining district in northern New York"
   },
   "canonical_name": "Empire State Mines Mine",
   "canonical_slug": "empire-state-mines-mine",
@@ -62,5 +65,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New York",
+  "town": "Gouverneur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:51:05.000000Z",
+      "operators": [
+        "Empire State Mines, LLC"
+      ],
+      "owners": [
+        "Titan Mining Corp."
+      ],
+      "notes": "Titan Mining Corp. has a 100% indirect ownership interest in Empire State Mines, LLC."
+    }
+  }
 }

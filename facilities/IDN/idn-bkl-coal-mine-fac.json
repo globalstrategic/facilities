@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.016,
-    "lon": 104.783,
+    "lat": -3.01578,
+    "lon": 104.7827,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Banyan Koalindo Lestari",
+    "PT Optima Persada Energy",
+    "PT PLN Batubara Investment"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.248805Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:49:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BKL_Coal_Mine. BKL Coal Mine is an operating coal mine located in Musi Rawas, South Sumatra, Indonesia"
   },
   "canonical_name": "BKL Coal Mine",
   "canonical_slug": "bkl-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:49:31.000000Z",
+      "operators": [
+        "Banyan Koalindo Lestari"
+      ],
+      "owners": [
+        "PT PLN Batubara Investment",
+        "PT Optima Persada Energy"
+      ],
+      "notes": "Banyan Koalindo Lestari is the owner operating the mine, with PT PLN Batubara Investment and PT Optima Persada Energy as stakeholders."
+    }
+  }
 }

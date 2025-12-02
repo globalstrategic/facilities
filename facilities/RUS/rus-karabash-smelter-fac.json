@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 55.468,
-    "lon": 60.206,
+    "lat": 55.46667,
+    "lon": 60.20528,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Russian Copper Company",
+    "ZAO Karabashmed"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.601899Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:27:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/ZAO%20Karabashmed%20-%20Karabash.htm. Coordinates extracted from the facility's description"
   },
   "canonical_name": "Karabash Smelter",
   "canonical_slug": "karabash-smelter",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chelyabinsk Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:27:49.000000Z",
+      "operators": [
+        "ZAO Karabashmed"
+      ],
+      "owners": [
+        "Russian Copper Company"
+      ],
+      "notes": "ZAO Karabashmed has been part of the Russian Copper Company since 2004."
+    }
+  }
 }

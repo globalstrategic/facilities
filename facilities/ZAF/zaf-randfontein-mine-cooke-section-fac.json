@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.251,
-    "lon": 27.738,
+    "lat": -26.3,
+    "lon": 27.7,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Johannesburg Consolidated Investment Company (J. C. I.)",
+    "Randfontein Estates Gold Mining Company",
+    "Sibanye Stillwater Ltd",
+    "Witwatersrand Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.753113Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-cooke-fac, zaf-cooke-operations-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:43:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-cooke-fac, zaf-cooke-operations-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sibanyestillwater.com/business/southern-africa/gold-operations/cooke/. The Cooke operation is situated in the West Wits Line of the Witwatersrand Basin, near Randfontein"
   },
   "canonical_name": "Randfontein Cooke Section Mine",
   "canonical_slug": "randfontein-cooke-section-mine",
@@ -64,5 +69,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:43:21.000000Z",
+      "operators": [
+        "Sibanye Stillwater Ltd"
+      ],
+      "owners": [
+        "Johannesburg Consolidated Investment Company (J. C. I.)",
+        "Randfontein Estates Gold Mining Company",
+        "Witwatersrand Ltd."
+      ],
+      "notes": "Sibanye Stillwater Ltd operates the Cooke section, which includes multiple shafts and processing facilities."
+    }
+  }
 }

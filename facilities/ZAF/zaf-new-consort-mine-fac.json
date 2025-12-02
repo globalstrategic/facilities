@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.63,
-    "lon": 31.051,
+    "lat": -25.8,
+    "lon": 31.0,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barberton Mines (Pty) Ltd",
+    "Pan African Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:35:07.761575Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-e-t-cons-new-consort-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:50:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-e-t-cons-new-consort-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.panafricanresources.com/wp-content/uploads/2025/06/SLP-2019-2024-New-Consort-Mine-Final-Draft.pdf. The New Consort Mine is part of the Barberton Mines complex and is located in the Ehlanzeni District of Mpumalanga Province"
   },
   "canonical_name": "New Consort Mine",
   "canonical_slug": "new-consort-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:50:41.000000Z",
+      "operators": [
+        "Pan African Resources"
+      ],
+      "owners": [
+        "Barberton Mines (Pty) Ltd"
+      ],
+      "notes": "Pan African Resources operates the New Consort Mine, which is part of the Barberton Mines complex."
+    }
+  }
 }

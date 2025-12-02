@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 56.693,
-    "lon": 96.145,
+    "lat": 56.72109416316537,
+    "lon": 96.14860778410166,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Krasnoyarskkrayugol OJSC",
+    "Russian Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.603030Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:28:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Aban (https://www.gem.wiki/Abansky_Coal_Mine). The Abansky Coal Mine is an operating surface coal mine located near the town of Aban"
   },
   "canonical_name": "Abansky Coal Mine",
   "canonical_slug": "abansky-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Krasnoyarsk Krai",
+  "town": "Aban",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:28:43.000000Z",
+      "operators": [
+        "Krasnoyarskkrayugol OJSC"
+      ],
+      "owners": [
+        "Russian Coal"
+      ],
+      "notes": "Krasnoyarskkrayugol OJSC is a subsidiary of Russian Coal."
+    }
+  }
 }

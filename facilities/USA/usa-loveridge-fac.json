@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.608,
-    "lon": -80.288,
+    "lat": 39.60624,
+    "lon": -80.28163,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources, Inc.",
+    "Consolidation Coal Company",
+    "Marion County Coal Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.747843Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:24:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6761. Loveridge No 22 Coal Mine is located in Marion County, West Virginia"
   },
   "canonical_name": "Loveridge Mine",
   "canonical_slug": "loveridge-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:24:19.000000Z",
+      "operators": [
+        "Marion County Coal Resources, Inc."
+      ],
+      "owners": [
+        "American Consolidated Natural Resources, Inc.",
+        "Consolidation Coal Company"
+      ],
+      "notes": "Consolidation Coal Company is a subsidiary of Consol Energy, Inc."
+    }
+  }
 }

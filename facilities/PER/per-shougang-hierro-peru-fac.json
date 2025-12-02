@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -15.0,
+    "lon": -75.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,14 +20,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Shougang Group",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.649651",
-      "evidence": "Extracted from operator column: Shougang Group"
-    }
+    "Shougang Group",
+    "Shougang Group Co., Ltd.",
+    "Shougang Hierro Peru S.A.A"
   ],
   "products": [],
   "sources": [
@@ -38,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.330214Z",
-    "checked_by": "import_pipeline",
-    "notes": "High. Peru's only significant iron ore producer. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:18:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "High. Peru's only significant iron ore producer. | Canonical name+slug generated. Web search geocoded. Source: https://www.shougang.com.cn/en/p1/InternationalBusiness/20170329/857.html. Shougang Hierro Peru is located in the Marcona District on the Pacific coast, known for its iron ore operations. Web search geocoded. Source: https://www.gem.wiki/Shougang_Marcona_Mine. Shougang Hierro Peru operates the Marcona Iron Mine, which is one of Latin America's major iron ore operations"
   },
   "canonical_name": "Shougang Hierro Peru Mine",
   "canonical_slug": "shougang-hierro-peru-mine",
@@ -65,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:18:23.000000Z",
+      "operators": [
+        "Shougang Hierro Peru S.A.A"
+      ],
+      "owners": [
+        "Shougang Group Co., Ltd."
+      ],
+      "notes": "Shougang Hierro Peru is a wholly-owned subsidiary of Shougang Group."
+    }
+  }
 }

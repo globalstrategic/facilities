@@ -6,8 +6,8 @@
   ],
   "country_iso3": "DZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.38472,
+    "lon": 2.46306,
     "precision": "unknown"
   },
   "types": [
@@ -16,22 +16,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "State",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025795",
-      "evidence": "Extracted from operator column: State/GMA Resources (Historical)"
-    },
-    {
-      "name": "GMA Resources",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025797",
-      "evidence": "Extracted from operator column: State/GMA Resources (Historical)"
-    }
+    "Entreprise nationale d'exploitation des mines d'or (Enor)",
+    "GMA Resources",
+    "Sonatrach",
+    "State"
   ],
   "products": [],
   "sources": [
@@ -42,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:05.575298Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:09:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://fr.wikipedia.org/wiki/Mine_d'Amesmessa. The Amesmessa Mine is an active gold mine located in the Tamanrasset province of Algeria"
   },
   "canonical_name": "Amesmessa Mine",
   "canonical_slug": "amesmessa-mine",
@@ -61,5 +49,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tamanrasset",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:09:11.000000Z",
+      "operators": [
+        "Entreprise nationale d'exploitation des mines d'or (Enor)",
+        "GMA Resources"
+      ],
+      "owners": [
+        "GMA Resources",
+        "Sonatrach"
+      ],
+      "notes": "GMA Resources holds a 52% stake in Enor, with the remainder owned by the state-owned Sonatrach."
+    }
+  }
 }

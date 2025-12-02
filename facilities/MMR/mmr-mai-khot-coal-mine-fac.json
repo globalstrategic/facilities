@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": 20.5,
-    "lon": 99.25,
+    "lat": 21.5,
+    "lon": 98.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Golden Lake Co Ltd",
+    "Italian-Thai Development PLC",
+    "Sahakol Equipment Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.861947Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:03:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mai_Khot_power_station. Coordinates are approximate"
   },
   "canonical_name": "Mai Khot Coal Mine",
   "canonical_slug": "mai-khot-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shan State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:03:40.000000Z",
+      "operators": [
+        "Sahakol Equipment Plc",
+        "Golden Lake Co Ltd"
+      ],
+      "owners": [
+        "Italian-Thai Development PLC"
+      ],
+      "notes": "Sahakol Equipment Plc and Golden Lake Co Ltd are in a joint venture for the Mai Khot coal mine."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.307,
-    "lon": -74.581,
+    "lat": -15.2777,
+    "lon": -74.5996,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cia. Minera Cara SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.294442Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:48:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10133542. The Cobre Acari Mine is located in the Acarí District of the Caravelí Province in Arequipa, Peru"
   },
   "canonical_name": "Acari Mine",
   "canonical_slug": "acari-mine",
@@ -51,5 +53,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arequipa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:48:41.000000Z",
+      "operators": [],
+      "owners": [
+        "Cia. Minera Cara SA"
+      ],
+      "notes": "The mine was closed at the time of data entry with no current plans to reopen."
+    }
+  }
 }

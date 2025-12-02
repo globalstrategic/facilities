@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -26.5,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,10 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Panda Hill Tanzania Limited",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.405731",
-      "evidence": "Extracted from operator column: Panda Hill Tanzania Limited"
-    }
+    "Cradle Resources Limited",
+    "Panda Hill Mining Limited",
+    "Panda Hill Tanzania Limited",
+    "Tremont Investments Limited"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.978678Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:13:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/panda-hill-niobium-project-mbeya/. The Panda Hill Niobium Project is located approximately 26km from the city of Mbeya, in south-western Tanzania"
   },
   "canonical_name": "Panda Hill Development",
   "canonical_slug": "panda-hill-development",
@@ -58,5 +54,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mbeya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:13:29.000000Z",
+      "operators": [
+        "Panda Hill Mining Limited",
+        "Cradle Resources Limited"
+      ],
+      "owners": [
+        "Cradle Resources Limited",
+        "Tremont Investments Limited"
+      ],
+      "notes": "The project is a joint venture between Cradle Resources and Tremont Investments, each holding a 50% stake."
+    }
+  }
 }

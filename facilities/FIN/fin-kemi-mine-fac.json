@@ -9,7 +9,7 @@
   "country_iso3": "FIN",
   "location": {
     "lat": 65.783,
-    "lon": 24.714,
+    "lon": 24.717,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Outokumpu Chrome Oy",
+    "Outokumpu Oyj"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.194354Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:29:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kemi_mine. The Kemi Mine is the largest underground mine in Finland and is part of the integrated ferrochrome and stainless steel manufacturing chain owned by Outokumpu"
   },
   "canonical_name": "Kemi Mine",
   "canonical_slug": "kemi-mine",
@@ -63,5 +66,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:29:20.000000Z",
+      "operators": [
+        "Outokumpu Chrome Oy"
+      ],
+      "owners": [
+        "Outokumpu Oyj"
+      ],
+      "notes": "Outokumpu Chrome Oy is a subsidiary of Outokumpu Oyj."
+    }
+  }
 }

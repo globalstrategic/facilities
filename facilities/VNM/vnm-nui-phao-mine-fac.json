@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 21.64861,
+    "lon": 105.66861,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Masan High-Tech Materials Corp.",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.039667",
-      "evidence": "Extracted from operator column: Masan High-Tech Materials Corp. (Masan Group)"
-    }
+    "Masan Group",
+    "Masan High-Tech Materials",
+    "Masan High-Tech Materials Corp.",
+    "Nui Phao Mining Company"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.277159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:25:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/N%C3%BAi_Ph%C3%A1o_mine. Nui Phao mine is one of the largest tungsten mines outside China, located in Thai Nguyen province"
   },
   "canonical_name": "Nui Phao Mine",
   "canonical_slug": "nui-phao-mine",
@@ -66,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Thai Nguyen",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:25:03.000000Z",
+      "operators": [
+        "Nui Phao Mining Company",
+        "Masan High-Tech Materials"
+      ],
+      "owners": [
+        "Masan Group"
+      ],
+      "notes": "Masan High-Tech Materials operates the mine, which is a subsidiary of Masan Group."
+    }
+  }
 }

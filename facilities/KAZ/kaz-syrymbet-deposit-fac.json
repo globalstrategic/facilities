@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 53.27917409309956,
+    "lon": 68.1820715833176,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lancaster Group",
+    "Solidcore Resources",
+    "Tin One Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.749353Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:49:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kokshetau (https://en.orda.kz/company-with-russian-past-to-mine-tin-in-kazakhstan-3606/). The Syrymbet deposit is located in the North Kazakhstan region, approximately 80 kilometers from Kokshetau"
   },
   "canonical_name": "Syrymbet Mine",
   "canonical_slug": "syrymbet-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Kazakhstan",
+  "town": "Kokshetau",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:49:19.000000Z",
+      "operators": [
+        "Solidcore Resources",
+        "Tin One Mining"
+      ],
+      "owners": [
+        "Lancaster Group"
+      ],
+      "notes": "Solidcore Resources has acquired a 55% stake in the Syrymbet deposit, while Lancaster Group retains a 45% stake."
+    }
+  }
 }

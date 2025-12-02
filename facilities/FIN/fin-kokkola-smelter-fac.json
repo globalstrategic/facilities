@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 63.86389,
+    "lon": 23.05444,
     "precision": "unknown"
   },
   "types": [
@@ -15,14 +15,8 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Boliden Kokkola Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.779089",
-      "evidence": "Extracted from operator column: Boliden Kokkola Oy"
-    }
+    "Boliden Kokkola Oy",
+    "Boliden Kokkola Oyj"
   ],
   "products": [],
   "sources": [
@@ -33,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.194673Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:29:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Boliden%20Kokkola.htm. Boliden Kokkola is a zinc smelter located in Kokkola, Finland"
   },
   "canonical_name": "Kokkola Smelter",
   "canonical_slug": "kokkola-smelter-2",
@@ -60,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:29:36.000000Z",
+      "operators": [
+        "Boliden Kokkola Oyj"
+      ],
+      "owners": [
+        "Boliden Kokkola Oyj"
+      ],
+      "notes": "Boliden Kokkola Oyj is both the operator and owner of the facility."
+    }
+  }
 }

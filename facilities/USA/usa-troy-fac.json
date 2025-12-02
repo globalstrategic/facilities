@@ -6,8 +6,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 48.317,
-    "lon": -115.86,
+    "lat": 48.5667,
+    "lon": -115.3625,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company",
+    "Revett Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.927723Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:57:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Troy_Mine. The Troy Mine is located near Troy, Montana, in Lincoln County"
   },
   "canonical_name": "Troy Mine",
   "canonical_slug": "troy-mine",
@@ -53,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:57:39.000000Z",
+      "operators": [
+        "Revett Minerals Inc.",
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "Revett Minerals Inc.",
+        "Hecla Mining Company"
+      ],
+      "notes": "Revett Minerals Inc. was the original operator and owner, and Hecla Mining Company announced plans to purchase the mine."
+    }
+  }
 }

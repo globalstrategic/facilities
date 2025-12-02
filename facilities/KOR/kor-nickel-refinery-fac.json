@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Korea Zinc Co., Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515348",
-      "evidence": "Extracted from operator column: Korea Zinc Co., Ltd."
-    }
+    "Korea Zinc",
+    "Korea Zinc Co., Ltd.",
+    "Trafigura"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:02:10.000000Z",
+      "operators": [
+        "Korea Zinc",
+        "Trafigura"
+      ],
+      "owners": [
+        "Korea Zinc"
+      ],
+      "notes": "Korea Zinc is establishing the refinery through its subsidiary Korea Energy Materials (KEMCO), with Trafigura holding a 12.9% stake in KEMCO."
+    }
+  }
 }

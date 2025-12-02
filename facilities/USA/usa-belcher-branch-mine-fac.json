@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.629,
-    "lon": -81.547,
+    "lat": 37.629065,
+    "lon": -81.546855,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy Plus INC",
+    "Frontier Coal Company",
+    "Grandbridge Energy Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.892420Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:09:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609474&iframe=yes. Belcher Branch Mine is an operating coal mine located in Wyoming County, West Virginia"
   },
   "canonical_name": "Belcher Branch Mine",
   "canonical_slug": "belcher-branch-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:09:14.000000Z",
+      "operators": [
+        "Frontier Coal Company"
+      ],
+      "owners": [
+        "Energy Plus INC",
+        "Grandbridge Energy Inc"
+      ],
+      "notes": "Frontier Coal Company operates the mine, which is owned by Energy Plus INC and its parent company Grandbridge Energy Inc."
+    }
+  }
 }

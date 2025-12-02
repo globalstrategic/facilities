@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.438,
-    "lon": -87.131,
+    "lat": 33.495278,
+    "lon": -87.140556,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources Inc",
+    "Crimson Oak Grove Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.748316Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:24:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Oak_Grove_Mine. Oak Grove Mine is an operating coal mine located in Adger, Jefferson County, Alabama, producing high-quality steelmaking coal from the Blue Creek seam"
   },
   "canonical_name": "Oak Grove Mine",
   "canonical_slug": "oak-grove-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:24:48.000000Z",
+      "operators": [
+        "Crimson Oak Grove Resources LLC"
+      ],
+      "owners": [
+        "American Consolidated Natural Resources Inc"
+      ],
+      "notes": "Crimson Oak Grove Resources operates the mine under the ownership of American Consolidated Natural Resources."
+    }
+  }
 }

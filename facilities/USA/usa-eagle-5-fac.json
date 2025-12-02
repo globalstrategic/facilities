@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.456,
-    "lon": -107.629,
+    "lat": 46.74639,
+    "lon": -87.88056,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lundin Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.937156Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:05:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Eagle_Mine_(Michigan). Eagle Mine is the only primary nickel mine in the United States, located in the Upper Peninsula of Michigan"
   },
   "canonical_name": "Eagle 5 Mine",
   "canonical_slug": "eagle-5-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michigan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:05:16.000000Z",
+      "operators": [
+        "Lundin Mining"
+      ],
+      "owners": [
+        "Lundin Mining"
+      ],
+      "notes": "Lundin Mining owns and operates the Eagle Mine."
+    }
+  }
 }

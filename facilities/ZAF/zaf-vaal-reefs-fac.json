@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.924,
-    "lon": 26.792,
+    "lat": -26.836944,
+    "lon": 26.794722,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Harmony Gold Mining Company Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.784862Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-vaal-reefs-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:11:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-vaal-reefs-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://cyanidecode.org/sig-directory-type/harmony-gold-mining-company-ltd-south-africa/. Vaal Reefs is a gold-bearing reef mined near the town of Orkney"
   },
   "canonical_name": "Vaal Reefs Mine",
   "canonical_slug": "vaal-reefs-mine",
@@ -63,5 +65,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:11:57.000000Z",
+      "operators": [
+        "Harmony Gold Mining Company Ltd"
+      ],
+      "owners": [
+        "Harmony Gold Mining Company Ltd"
+      ],
+      "notes": "Harmony Gold Mining Company Ltd operates and owns the Vaal Reefs facility."
+    }
+  }
 }

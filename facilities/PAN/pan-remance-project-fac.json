@@ -19,14 +19,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Greenfield Resources Inc.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.877033",
-      "evidence": "Extracted from operator column: Greenfield Resources Inc."
-    }
+    "Greenfield Resources Inc.",
+    "Minera Clifton S.A.",
+    "Minera Verde S.A.",
+    "Pacific Rim Mining Corp."
   ],
   "products": [],
   "sources": [
@@ -64,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:09.000000Z",
+      "operators": [
+        "Pacific Rim Mining Corp.",
+        "Minera Clifton S.A."
+      ],
+      "owners": [
+        "Minera Clifton S.A."
+      ],
+      "notes": "Pacific Rim Mining Corp. is in the process of acquiring a 100% interest in the Remance project from Minera Clifton."
+    }
+  }
 }

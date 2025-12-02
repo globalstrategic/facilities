@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 30.332,
-    "lon": -110.491,
+    "lat": 30.6768602319598,
+    "lon": -109.1245833995801,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bear Creek Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.956867Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:34:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hermosillo (https://www.nsenergybusiness.com/projects/mercedes-mine-sonora-state-mexico/). The Mercedes mine is located in Sonora State, Mexico, approximately 250 km northeast of Hermosillo"
   },
   "canonical_name": "Mercedes Mine",
   "canonical_slug": "mercedes-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Hermosillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:34:10.000000Z",
+      "operators": [
+        "Bear Creek Mining Corporation"
+      ],
+      "owners": [
+        "Bear Creek Mining Corporation"
+      ],
+      "notes": "Bear Creek Mining acquired the mine from Equinox Gold in April 2022."
+    }
+  }
 }

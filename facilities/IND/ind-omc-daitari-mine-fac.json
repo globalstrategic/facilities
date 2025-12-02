@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.105,
-    "lon": 85.807,
+    "lat": 21.105561,
+    "lon": 85.806755,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Odisha Mining Corporation Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.082427Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/OMC_Daitari_Mine. Coordinates are exact as per Global Energy Monitor"
   },
   "canonical_name": "OMC Daitari Mine",
   "canonical_slug": "omc-daitari-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:33.000000Z",
+      "operators": [
+        "Odisha Mining Corporation Ltd"
+      ],
+      "owners": [
+        "Odisha Mining Corporation Ltd"
+      ],
+      "notes": "OMC is a wholly owned corporation of the Government of Odisha."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -41.914,
-    "lon": 171.433,
+    "lat": -41.914287,
+    "lon": 171.432838,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Charleston Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.227534Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:30:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Charleston_Coal_Mine. Charleston Coal Mine is an operating coal mine located in Charleston, West Coast, New Zealand"
   },
   "canonical_name": "Charleston Coal Mine",
   "canonical_slug": "charleston-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:30:06.000000Z",
+      "operators": [
+        "Charleston Coal"
+      ],
+      "owners": [
+        "Charleston Coal"
+      ],
+      "notes": "Charleston Coal owns and operates the mine."
+    }
+  }
 }

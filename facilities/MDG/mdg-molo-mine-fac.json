@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -24.0019,
+    "lon": 45.1304,
     "precision": "unknown"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NextSource Materials Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.107116Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:19:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Molo_mine. The Molo mine is one of the largest graphite mines in Madagascar, located near Fotadrevo"
   },
   "canonical_name": "Molo Processing Plant",
   "canonical_slug": "molo-processing-plant",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atsimo-Andrefana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:19:39.000000Z",
+      "operators": [
+        "NextSource Materials Inc."
+      ],
+      "owners": [
+        "NextSource Materials Inc."
+      ],
+      "notes": "NextSource Materials Inc. owns and operates the Molo mine."
+    }
+  }
 }

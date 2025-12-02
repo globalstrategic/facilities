@@ -13,8 +13,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.718,
-    "lon": -117.227,
+    "lat": 37.664905344082015,
+    "lon": -117.2250609,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centerra Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.698452Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:42:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tonopah (https://www.centerragold.com/operations/goldfield-project/default.aspx). The Goldfield Project is located on the Walker Lane trend in Esmeralda County, Nevada, approximately 30 miles south of Tonopah"
   },
   "canonical_name": "Goldfield Mine",
   "canonical_slug": "goldfield-mine",
@@ -60,5 +62,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Tonopah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:42:47.000000Z",
+      "operators": [
+        "Centerra Gold Inc."
+      ],
+      "owners": [],
+      "notes": "Centerra Gold Inc. is actively developing the Goldfield Project."
+    }
+  }
 }

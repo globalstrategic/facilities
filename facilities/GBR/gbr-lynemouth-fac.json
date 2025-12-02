@@ -8,8 +8,8 @@
   ],
   "country_iso3": "GBR",
   "location": {
-    "lat": 55.207,
-    "lon": -1.545,
+    "lat": 55.201976472,
+    "lon": -1.53966901564,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ashington Coal Company Ltd.",
+    "British Coal",
+    "National Coal Board"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.464513Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:41:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Lynemouth_Colliery. Lynemouth Colliery was one of Britain's largest collieries until it was closed due to an underground fire and subsequently demolished"
   },
   "canonical_name": "Lynemouth Smelter",
   "canonical_slug": "lynemouth-smelter",
@@ -51,5 +55,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northumberland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:41:14.000000Z",
+      "operators": [
+        "Ashington Coal Company Ltd.",
+        "National Coal Board",
+        "British Coal"
+      ],
+      "owners": [
+        "Ashington Coal Company Ltd.",
+        "National Coal Board",
+        "British Coal"
+      ],
+      "notes": "The facility had multiple owners over its operational period."
+    }
+  }
 }

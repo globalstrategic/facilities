@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.227,
-    "lon": -114.451,
+    "lat": 35.22722,
+    "lon": -114.44972,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dennis Poynter",
+    "Equitable Corporation",
+    "Tyro Mine Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.860689Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10109075/. The Tyro Mine is a gold and silver mine located in Mohave County, Arizona, with underground workings"
   },
   "canonical_name": "Tyro Mine",
   "canonical_slug": "tyro-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:23.000000Z",
+      "operators": [
+        "Tyro Mine Co.",
+        "Equitable Corporation"
+      ],
+      "owners": [
+        "Dennis Poynter"
+      ],
+      "notes": "Previous owners include W.E. Whalley, C.F. Weeks, J.R. Russell, P.F. White, S.R. Davis, and S.W. Basanko."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MYS",
   "location": {
-    "lat": 3.154,
-    "lon": 102.579,
+    "lat": 3.153686,
+    "lon": 102.578611,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gema Impak Sdn Bhd",
+    "Pacific Mining Resources Sdn Bhd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:55.011180Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:39:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gema_Impak_Ibam_Mine. Coordinates provided in the source"
   },
   "canonical_name": "Gema Impak Ibam Mine",
   "canonical_slug": "gema-impak-ibam-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pahang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:39:36.000000Z",
+      "operators": [
+        "Pacific Mining Resources Sdn Bhd",
+        "Gema Impak Sdn Bhd"
+      ],
+      "owners": [
+        "Gema Impak Sdn Bhd"
+      ],
+      "notes": "Pacific Mining Resources Sdn Bhd holds a 50% stake."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "HUN",
   "location": {
-    "lat": 47.746,
-    "lon": 20.059,
+    "lat": 47.7621048,
+    "lon": 20.0487096,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MVM Zrt.",
+    "Mátrai Erőmű Zrt."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.176196Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:09:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Visonta_coal_mine. The Visonta Coal Mine is an open pit lignite mine located near Gyöngyös, Heves County, Hungary"
   },
   "canonical_name": "Visonta Coal Mine",
   "canonical_slug": "visonta-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heves County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:09:00.000000Z",
+      "operators": [
+        "Mátrai Erőmű Zrt."
+      ],
+      "owners": [
+        "MVM Zrt."
+      ],
+      "notes": "The mine was previously owned by EP Holding and Lőrinc Mészáros until 2020."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.345,
-    "lon": -5.731,
+    "lat": 30.910673170769158,
+    "lon": -5.341721473998989,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Managem",
+    "Société métallurgique d’Imiter (SMI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.336071Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:17:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ouarzazate (https://orientxxi.info/in-morocco-the-intense-exploitation-of-miners-and-the-land-continues,1558). The Imiter mine is known for its high-quality silver ore and is one of the few mines where silver occurs in its free elemental form"
   },
   "canonical_name": "Imiter Mine",
   "canonical_slug": "imiter-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tinghir",
+  "town": "Ouarzazate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:17:24.000000Z",
+      "operators": [
+        "Société métallurgique d’Imiter (SMI)"
+      ],
+      "owners": [
+        "Managem"
+      ],
+      "notes": "SMI is a subsidiary of Managem, which is part of the National Investment Society (SNI)."
+    }
+  }
 }

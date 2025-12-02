@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 44.0128576,
-    "lon": 67.4106033,
+    "lat": 44.022222,
+    "lon": 67.416667,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JSC NMC Tau-Ken Samruk",
+    "JSC ShalkiyaZinc LTD"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-20T18:18:24.000000Z",
+    "last_checked": "2025-12-01T23:33:22.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nz.maptons.com/1428795. Coordinates for the Shalkiya Deposit are directly provided in decimal degrees"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nz.maptons.com/1428795. Coordinates for the Shalkiya Deposit are directly provided in decimal degrees. Web search geocoded. Source: https://zinc.kz/en/o-kompanii/. The Shalkiya polymetallic ore deposit is located 17 km northeast of Zhanakorgan"
   },
   "canonical_name": "Shalkiya Mine",
   "canonical_slug": "shalkiya-mine",
@@ -49,5 +52,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Kyzylorda Region"
+  "province": "Kyzylorda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:33:22.000000Z",
+      "operators": [
+        "JSC ShalkiyaZinc LTD"
+      ],
+      "owners": [
+        "JSC NMC Tau-Ken Samruk"
+      ],
+      "notes": "ShalkiyaZinc is a 100% subsidiary of JSC NMC Tau-Ken Samruk."
+    }
+  }
 }

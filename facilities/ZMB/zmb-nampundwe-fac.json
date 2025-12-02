@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -15.494,
-    "lon": 27.911,
+    "lat": -15.415851220878885,
+    "lon": 27.81603066980007,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Konkola Copper Mines Plc",
+    "Vedanta Resources",
+    "ZCCM Investments Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.683746Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:47:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lusaka (https://kcm.co.zm/our-operations/mining/nampundwe-mine/). Nampundwe Mine is located approximately 50 kilometers west of Lusaka"
   },
   "canonical_name": "Nampundwe Mine",
   "canonical_slug": "nampundwe-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Province",
+  "town": "Lusaka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:47:27.000000Z",
+      "operators": [
+        "Konkola Copper Mines Plc"
+      ],
+      "owners": [
+        "Vedanta Resources",
+        "ZCCM Investments Holdings"
+      ],
+      "notes": "KCM is 80% owned by Vedanta Resources and 20% owned by ZCCM Investments Holdings."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "LBR",
   "location": {
-    "lat": 7.003,
-    "lon": -11.139,
+    "lat": 6.96702694238988,
+    "lon": -11.437673479219864,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Avesoro Holdings Ltd.",
+    "Avesoro Resources Inc.",
+    "Bea Mountain Mining Corporation",
+    "Government of Liberia"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.722625Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:07:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Monrovia (https://www.mining-technology.com/projects/new-liberty-gold-mine/). The New Liberty mine is located approximately 100km north-west of Monrovia, Liberia"
   },
   "canonical_name": "New Liberty Mine",
   "canonical_slug": "new-liberty-mine",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Grand Cape Mount County",
+  "town": "Monrovia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:07:15.000000Z",
+      "operators": [
+        "Bea Mountain Mining Corporation"
+      ],
+      "owners": [
+        "Avesoro Resources Inc.",
+        "Avesoro Holdings Ltd.",
+        "Government of Liberia"
+      ],
+      "notes": "Aureus Mining operates the mine through its subsidiary Bea Mountain Mining Corporation."
+    }
+  }
 }

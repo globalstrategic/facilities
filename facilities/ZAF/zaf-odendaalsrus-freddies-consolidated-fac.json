@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.83,
-    "lon": 26.668,
+    "lat": -27.950534467761916,
+    "lon": 26.737969,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Corporation of South Africa",
+    "Freddies Consolidated Mines Ltd.",
+    "Free State Geduld Mines Ltd.",
+    "Western Holdings Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.773371Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-odendaalsrus-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:01:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-odendaalsrus-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Welkom (https://thediggings.com/mines/usgs10184298). The facility is associated with Freddies Consolidated Mines Ltd. and is located near Welkom"
   },
   "canonical_name": "Odendaalsrus Freddies Consolidated Mine",
   "canonical_slug": "odendaalsrus-freddies-consolidated-mine",
@@ -63,5 +68,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State",
+  "town": "Welkom",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:01:14.000000Z",
+      "operators": [
+        "Freddies Consolidated Mines Ltd."
+      ],
+      "owners": [
+        "Freddies Consolidated Mines Ltd.",
+        "Anglo American Corporation of South Africa",
+        "Free State Geduld Mines Ltd.",
+        "Western Holdings Ltd."
+      ],
+      "notes": "Freddies Consolidated Mines Ltd. is noted as both an owner and operator."
+    }
+  }
 }

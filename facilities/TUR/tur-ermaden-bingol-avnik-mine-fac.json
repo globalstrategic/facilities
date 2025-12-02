@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TUR",
   "location": {
-    "lat": 38.919,
-    "lon": 40.529,
+    "lat": 38.65,
+    "lon": 40.3330611,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdemir Madencilik Sanayi ve Ticaret AŞ",
+    "Eregli Demir ve Celik Fabrikalari AŞ"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.308546Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:25:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ermaden_Bingol-Avnik_Mine. The Ermaden Bingol-Avnik Mine is an iron ore mine located in Bingöl Province, Turkey"
   },
   "canonical_name": "Ermaden Bingol Avnik Mine",
   "canonical_slug": "ermaden-bingol-avnik-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bingöl Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:25:42.000000Z",
+      "operators": [
+        "Erdemir Madencilik Sanayi ve Ticaret AŞ"
+      ],
+      "owners": [
+        "Eregli Demir ve Celik Fabrikalari AŞ",
+        "Erdemir Madencilik Sanayi ve Ticaret AŞ"
+      ],
+      "notes": "Erdemir Madencilik is a subsidiary of Eregli Demir ve Celik Fabrikalari AŞ."
+    }
+  }
 }

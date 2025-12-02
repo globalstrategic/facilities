@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.741,
-    "lon": 29.792,
+    "lat": -25.5,
+    "lon": 29.0,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Resources Limited",
+    "Thungela Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.709096Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-nooitgedacht-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:02:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-nooitgedacht-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.thungela.com/about-us/where-we-operate. The Nooitgedacht Colliery is part of the Mafube Colliery operations"
   },
   "canonical_name": "Nooitgedacht Colliery Mine",
   "canonical_slug": "nooitgedacht-colliery-mine",
@@ -54,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:02:37.000000Z",
+      "operators": [
+        "Thungela Resources Limited",
+        "Exxaro Resources Limited"
+      ],
+      "owners": [
+        "Thungela Resources Limited",
+        "Exxaro Resources Limited"
+      ],
+      "notes": "The Mafube Colliery is a joint operation between Thungela and Exxaro."
+    }
+  }
 }

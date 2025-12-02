@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "Bluejay Mining",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.216621",
-      "evidence": "Extracted from operator column: Bluejay Mining"
-    }
+    "Bluejay Mining",
+    "Bluejay Mining Plc",
+    "Dundas Titanium A/S"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:59:42.000000Z",
+      "operators": [
+        "Dundas Titanium A/S"
+      ],
+      "owners": [
+        "Bluejay Mining Plc"
+      ],
+      "notes": "Dundas Titanium A/S is a subsidiary of Bluejay Mining Plc."
+    }
+  }
 }

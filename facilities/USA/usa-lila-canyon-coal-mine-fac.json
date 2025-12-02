@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.618,
-    "lon": -110.44,
+    "lat": 39.402696947429384,
+    "lon": -110.4149229,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources, Inc.",
+    "Emery County Coal Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.783443Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:55:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from East Carbon (https://www.sltrib.com/news/environment/2021/01/25/utahs-most-productive/). The Lila Canyon Coal Mine is located about 10 miles south of East Carbon"
   },
   "canonical_name": "Lila Canyon Coal Mine",
   "canonical_slug": "lila-canyon-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "East Carbon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:55:58.000000Z",
+      "operators": [
+        "Emery County Coal Resources, Inc."
+      ],
+      "owners": [
+        "American Consolidated Natural Resources, Inc."
+      ],
+      "notes": "Emery County Coal Resources is a subsidiary of American Consolidated Natural Resources, which was formed after the bankruptcy of Murray Energy Corp."
+    }
+  }
 }

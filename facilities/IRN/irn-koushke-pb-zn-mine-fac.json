@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": 31.799,
-    "lon": 55.634,
+    "lat": 31.66667,
+    "lon": 55.66667,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:16.449115Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:07:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://doaj.org/article/873e2c5374a54025aab708818a129855. The Kushk Pb-Zn mine is located about 167 km east of Yazd, Iran"
   },
   "canonical_name": "Koushke Pb Zn Mine",
   "canonical_slug": "koushke-pb-zn-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yazd"
 }

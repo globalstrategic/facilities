@@ -10,8 +10,8 @@
   ],
   "country_iso3": "DEU",
   "location": {
-    "lat": 50.906,
-    "lon": 13.379,
+    "lat": 50.9,
+    "lon": 13.34,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "G.E.O.S. Ingenieurgesellschaft mbH"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.635151Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:10:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Freiberg. Freiberg is a historic mining town known for its silver mining history and is part of the UNESCO World Heritage Site Erzgebirge/Krušnohoří Mining Region"
   },
   "canonical_name": "Freiberg Mine",
   "canonical_slug": "freiberg-mine",
@@ -53,5 +55,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saxony",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:10:20.000000Z",
+      "operators": [
+        "G.E.O.S. Ingenieurgesellschaft mbH"
+      ],
+      "owners": [],
+      "notes": "G.E.O.S. Ingenieurgesellschaft mbH is a planning and consulting company with historical ties to mining in the region."
+    }
+  }
 }

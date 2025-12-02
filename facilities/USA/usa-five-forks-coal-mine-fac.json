@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.164,
-    "lon": -92.969,
+    "lat": 32.16396,
+    "lon": -92.969177,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Demery Resources Company, LLC",
+    "NACCO Industries"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.956761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:22:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Five_Forks_Coal_Mine. The Five Forks Coal Mine is an operating lignite mine located in Saline, Natchitoches County, Louisiana"
   },
   "canonical_name": "Five Forks Coal Mine",
   "canonical_slug": "five-forks-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Louisiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:22:06.000000Z",
+      "operators": [
+        "Demery Resources Company, LLC"
+      ],
+      "owners": [
+        "NACCO Industries"
+      ],
+      "notes": "Demery Resources Company operates the mine as a subsidiary of NACCO Industries."
+    }
+  }
 }

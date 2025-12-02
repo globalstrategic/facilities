@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 57.525,
-    "lon": 125.139,
+    "lat": 57.5251057,
+    "lon": 125.1390855,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "LLC Yakut Ore Company",
+    "Mechel PAO"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.659357Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:14:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mechel_Yakutskaya_Sivaglinsky_Mine. The Mechel Yakutskaya Sivaglinsky Mine is an iron ore mine located in Yakutsk, Sakha Republic, Russia"
   },
   "canonical_name": "Mechel Yakutskaya Sivaglinsky Mine",
   "canonical_slug": "mechel-yakutskaya-sivaglinsky-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sakha Republic",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:14:10.000000Z",
+      "operators": [
+        "LLC Yakut Ore Company"
+      ],
+      "owners": [
+        "Mechel PAO"
+      ],
+      "notes": "The operator is part of the Mechel Group, a major mining and metallurgical company."
+    }
+  }
 }

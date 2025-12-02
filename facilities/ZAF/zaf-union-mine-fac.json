@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.937,
-    "lon": 27.158,
+    "lat": -24.95742593733074,
+    "lon": 27.117018436030417,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Platinum (85%)",
+    "Bakgatla-Ba-Kgafela community (15%)",
+    "Siyanda Bakgatla Platinum Mine (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -61,11 +65,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.704646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-union-mine-mortimer-smelter-fac | Canonical name+slug generated | Slug collision resolved: union-mine -> union-mine--fac | Canonical name+slug generated | Slug collision resolved: union-mine -> union-mine--fac | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:58:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-union-mine-mortimer-smelter-fac | Canonical name+slug generated | Slug collision resolved: union-mine -> union-mine--fac | Canonical name+slug generated | Slug collision resolved: union-mine -> union-mine--fac | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Northam (https://www.mining-technology.com/projects/union-mine/). The exact coordinates were not provided, but the mine is located 15km west of Northam"
   },
   "canonical_name": "Union Mine",
   "canonical_slug": "union-mine--fac",
@@ -80,5 +84,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo and North West",
+  "town": "Northam",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:58:15.000000Z",
+      "operators": [
+        "Siyanda Bakgatla Platinum Mine (Pty) Ltd"
+      ],
+      "owners": [
+        "Anglo American Platinum (85%)",
+        "Bakgatla-Ba-Kgafela community (15%)"
+      ],
+      "notes": "The mine is currently operated by Siyanda Bakgatla Platinum Mine and has a significant ownership stake by Anglo American Platinum."
+    }
+  }
 }

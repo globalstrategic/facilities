@@ -8,8 +8,8 @@
   ],
   "country_iso3": "FIN",
   "location": {
-    "lat": 63.658,
-    "lon": 25.051,
+    "lat": 63.5,
+    "lon": 27.3,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Quantum Minerals Ltd",
+    "Pyhäsalmi Mine Oy"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.191960Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:32:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.first-quantum.com/operations/pyhasalmi/. The Pyhäsalmi Mine is located approximately 4 km southeast of the town of Pyhäjärvi"
   },
   "canonical_name": "Pyhasalmi Mine",
   "canonical_slug": "pyhasalmi-mine-3",
@@ -59,5 +62,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:32:53.000000Z",
+      "operators": [
+        "Pyhäsalmi Mine Oy"
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd"
+      ],
+      "notes": "First Quantum Minerals acquired the mine in 2013. The mine is currently in closure phase."
+    }
+  }
 }

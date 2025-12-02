@@ -5,7 +5,7 @@
   "country_iso3": "PAN",
   "location": {
     "lat": 8.30333,
-    "lon": null,
+    "lon": -81.21222,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,9 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Vera Gold Mining Company Inc.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.856755",
-      "evidence": "Extracted from operator column: Vera Gold Mining Company Inc."
-    }
+    "Greenstone Resources, Ltd.",
+    "Vera Gold Mining Company Inc.",
+    "Veragold Mining Company Inc."
   ],
   "products": [],
   "sources": [
@@ -41,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:21.426688Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:43:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://veragold.org/panama/. The Santa Rosa Project is located in forested and hilly terrain, with elevation varying from +150 to +300m"
   },
   "canonical_name": "Santa Rosa Development",
   "canonical_slug": "santa-rosa-development",
@@ -68,5 +63,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Veraguas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:43:29.000000Z",
+      "operators": [
+        "Veragold Mining Company Inc."
+      ],
+      "owners": [
+        "Veragold Mining Company Inc.",
+        "Greenstone Resources, Ltd."
+      ],
+      "notes": "The project was previously operated by Greenstone Resources, Ltd. and is currently under the ownership of Veragold Mining Company Inc."
+    }
+  }
 }

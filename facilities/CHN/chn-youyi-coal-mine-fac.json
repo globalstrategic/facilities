@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.653,
-    "lon": 112.624,
+    "lat": 39.662988,
+    "lon": 112.637535,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shanxi Haimei Mining Industry Company",
+    "Shanxi Shuozhou Shanyin Youyi Coal Industry Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.855558Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:40:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E8%A5%BF%E6%9C%94%E5%B7%9E%E5%B1%B1%E9%98%B4%E9%85%89%E5%AE%9C%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Youyi Coal Mine is located in Shanyin County, Shuozhou City, Shanxi Province, China"
   },
   "canonical_name": "Youyi Coal Mine",
   "canonical_slug": "youyi-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:40:34.000000Z",
+      "operators": [
+        "Shanxi Shuozhou Shanyin Youyi Coal Industry Company"
+      ],
+      "owners": [
+        "Shanxi Haimei Mining Industry Company"
+      ],
+      "notes": "The mine is undergoing a reconstruction project that began in February 2022."
+    }
+  }
 }

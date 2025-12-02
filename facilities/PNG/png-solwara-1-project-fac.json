@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -2.30328779553932,
+    "lon": 150.7969482,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Deep Sea Mining Finance Ltd.",
+    "Eda Kopa Ltd",
+    "Nautilus Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.311896Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:53:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from New Ireland Province (https://www.banktrack.org/project/solwara_1). The Solwara 1 project is located approximately thirty kilometres from the nearest coast in New Ireland Province"
   },
   "canonical_name": "Solwara 1 Facility",
   "canonical_slug": "solwara-1-facility",
@@ -67,5 +71,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Ireland Province",
+  "town": "New Ireland Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:53:26.000000Z",
+      "operators": [
+        "Nautilus Minerals Inc.",
+        "Deep Sea Mining Finance Ltd."
+      ],
+      "owners": [
+        "Eda Kopa Ltd"
+      ],
+      "notes": "Nautilus Minerals was initially the developer, but after bankruptcy, Deep Sea Mining Finance Ltd. acquired its assets."
+    }
+  }
 }

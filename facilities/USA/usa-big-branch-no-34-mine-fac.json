@@ -13,8 +13,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.497,
-    "lon": -82.012,
+    "lat": 37.51642541,
+    "lon": -82.02850025,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "B&W Resources INC",
+    "Lipari Coal Holdings Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.970202Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:34:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Big_Branch_No._34_Mine. Big Branch No. 34 Mine is an operating coal mine"
   },
   "canonical_name": "Big Branch No 34 Mine",
   "canonical_slug": "big-branch-no-34-mine",
@@ -64,5 +67,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:34:09.000000Z",
+      "operators": [
+        "B&W Resources INC"
+      ],
+      "owners": [
+        "Lipari Coal Holdings Inc"
+      ],
+      "notes": "B&W Resources INC owns 100% of the mine, which is operated under Lipari Coal Holdings Inc."
+    }
+  }
 }

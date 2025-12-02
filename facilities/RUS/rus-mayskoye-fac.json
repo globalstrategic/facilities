@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 68.978,
-    "lon": 173.78,
+    "lat": 68.9825,
+    "lon": 173.7942,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Polymetal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.622902Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:47:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/mayskoye-gold-mine/. Mayskoye is one of the largest gold mines in Russia, located in the Chukotka Autonomous Territory"
   },
   "canonical_name": "Mayskoye Mine",
   "canonical_slug": "mayskoye-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chukotka Autonomous Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:47:32.000000Z",
+      "operators": [
+        "Polymetal"
+      ],
+      "owners": [
+        "Polymetal"
+      ],
+      "notes": "Polymetal acquired the mine from Highland Gold in 2009."
+    }
+  }
 }

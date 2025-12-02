@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.021,
-    "lon": 79.068,
+    "lat": 20.020678,
+    "lon": 79.0678333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Ltd",
+    "Western Coalfields Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.123075Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:49:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ukni_Deep_Coal_Mine. Ukni Deep Coal Mine is an operating coal mine located in the Wani North area of Yavatmal, Maharashtra, India"
   },
   "canonical_name": "Ukni Deep Coal Mine",
   "canonical_slug": "ukni-deep-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:49:12.000000Z",
+      "operators": [
+        "Western Coalfields Ltd"
+      ],
+      "owners": [
+        "Coal India Ltd"
+      ],
+      "notes": "Western Coalfields Ltd is a subsidiary of Coal India Ltd."
+    }
+  }
 }

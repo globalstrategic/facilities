@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.448,
-    "lon": 117.134,
+    "lat": 1.02,
+    "lon": 0.17578125,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arzara Baraindo Energitama"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.247119Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:47:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://greeninfo-network.github.io/mine-tracker/?view=9.9688506,0.17578125,3&status=operating,proposed&type=surface,underground,underground_and_surface&grade=thermal,met,thermal_and_met,unknown&maptype=plantview&basemap=photo. Coordinates extracted directly from the source"
   },
   "canonical_name": "ABE Coal Mine",
   "canonical_slug": "abe-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indonesia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:47:51.000000Z",
+      "operators": [
+        "Arzara Baraindo Energitama"
+      ],
+      "owners": [
+        "Arzara Baraindo Energitama"
+      ],
+      "notes": "The facility is operated and owned by Arzara Baraindo Energitama."
+    }
+  }
 }

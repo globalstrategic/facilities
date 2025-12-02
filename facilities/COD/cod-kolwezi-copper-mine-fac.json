@@ -6,8 +6,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -10.7134,
+    "lon": 25.4185,
     "precision": "unknown"
   },
   "types": [
@@ -15,7 +15,12 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of the Democratic Republic of the Congo",
+    "La Compagnie Minière de Musonoie Global Société par Actions Simplifiée",
+    "La Générale des Carrières et des Mines (Gecamines S.A.)",
+    "Zijin Mining Group Co., Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:19.798020Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:51:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/3046/Kolwezi-Mine.aspx. The Kolwezi Copper Mine is a large-scale copper and cobalt mining operation"
   },
   "canonical_name": "Kolwezi Copper Mine",
   "canonical_slug": "kolwezi-copper-mine",
@@ -44,5 +49,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lualaba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:51:29.000000Z",
+      "operators": [
+        "Zijin Mining Group Co., Ltd",
+        "La Compagnie Minière de Musonoie Global Société par Actions Simplifiée"
+      ],
+      "owners": [
+        "Zijin Mining Group Co., Ltd",
+        "La Générale des Carrières et des Mines (Gecamines S.A.)",
+        "Government of the Democratic Republic of the Congo"
+      ],
+      "notes": "Zijin Mining holds a 67% interest, Gecamines holds 28%, and the government holds 5%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -29.0,
-    "lon": 24.0,
+    "lat": -28.53979869155506,
+    "lon": 24.7642251,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "C-Rock Mining (Proprietary) Limited",
+    "Rockwell Diamonds Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.7,
-    "last_checked": "2025-11-17T17:02:47.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:06:03.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.miningweekly.com/article/rockwell-diamonds-wouterspan-project-recommissioning-progressing-well-2016-06-24. The Wouterspan project is located near Douglas in the Northern Cape, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.miningweekly.com/article/rockwell-diamonds-wouterspan-project-recommissioning-progressing-well-2016-06-24. The Wouterspan project is located near Douglas in the Northern Cape, South Africa. Web search geocoded. Source: Calculated from Kimberley (https://www.miningmx.com/news/diamonds/24525-rockwell-says-wouterspan-mine-economic/). The Wouterspan mine is located on the Middle Orange River, approximately 22 km north of Kimberley"
   },
   "canonical_name": "Wouterspan Mine",
   "canonical_slug": "wouterspan-mine",
@@ -48,5 +51,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "town": "Kimberley",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:06:03.000000Z",
+      "operators": [
+        "Rockwell Diamonds Inc.",
+        "C-Rock Mining (Proprietary) Limited"
+      ],
+      "owners": [
+        "Rockwell Diamonds Inc."
+      ],
+      "notes": "Rockwell Diamonds holds a 74% ownership interest in the Wouterspan Project."
+    }
+  }
 }

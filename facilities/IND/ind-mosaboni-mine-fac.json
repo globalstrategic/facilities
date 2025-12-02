@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.759,
-    "lon": 85.592,
+    "lat": 22.5,
+    "lon": 85.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindustan Copper Ltd. (Hcl)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.081843Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:42:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10304337. The Mosaboni Mine is located in the East Singhbhum District of Jharkhand, India. The coordinates are approximate based on the general area mentioned"
   },
   "canonical_name": "Mosaboni Mine",
   "canonical_slug": "mosaboni-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:42:55.000000Z",
+      "operators": [
+        "Hindustan Copper Ltd. (Hcl)"
+      ],
+      "owners": [
+        "Hindustan Copper Ltd. (Hcl)"
+      ],
+      "notes": "Hindustan Copper Ltd. is the primary operator and owner of the Mosaboni Mine."
+    }
+  }
 }

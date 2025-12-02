@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 43.5747,
+    "lon": 2.3531,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Metaleurop S.A.",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.823935",
-      "evidence": "Extracted from operator column: Metaleurop S.A."
-    }
+    "Metaleurop S.A.",
+    "Societe Miniere et Metallurgique de Penarroya"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.668653Z",
-    "checked_by": "import_pipeline",
-    "notes": "Notable for significant germanium and silver by-product recovery. 70 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:19:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Notable for significant germanium and silver by-product recovery. 70 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Noailhac,_Tarn. Coordinates extracted from Wikipedia entry for Noailhac"
   },
   "canonical_name": "Noailhac Saint Salvy Mine",
   "canonical_slug": "noailhac-saint-salvy-mine",
@@ -66,5 +60,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tarn",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:19:01.000000Z",
+      "operators": [
+        "Societe Miniere et Metallurgique de Penarroya"
+      ],
+      "owners": [],
+      "notes": "Only one operator mentioned in the context of the mine."
+    }
+  }
 }

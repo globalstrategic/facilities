@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.976892718548932,
+    "lon": 15.385930595295934,
     "precision": "unknown"
   },
   "types": [
@@ -31,14 +31,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "ReeXploration Inc.",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.719552",
-      "evidence": "Extracted from operator column: ReeXploration Inc. (formerly E-Tech Resources)"
-    }
+    "E-Tech Kalapuse Mining (Pty) Limited",
+    "E-Tech Resources Inc.",
+    "ReeXploration Inc."
   ],
   "products": [],
   "sources": [
@@ -49,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:14.553694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:50:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Windhoek (https://etech-resources.com/receives-further-high-grade-ree-assays-and-expands-the-mineralized-footprint/). The Eureka REE Project is located approximately 250 km north-west of Windhoek and 140 km east of Walvis Bay, next to the national B1 highway"
   },
   "canonical_name": "Eureka REE Exploration",
   "canonical_slug": "eureka-ree-exploration",
@@ -68,5 +63,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo Region",
+  "town": "Windhoek",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:50:53.000000Z",
+      "operators": [
+        "E-Tech Resources Inc."
+      ],
+      "owners": [
+        "E-Tech Kalapuse Mining (Pty) Limited"
+      ],
+      "notes": "E-Tech Resources Inc. owns 100% of the Eureka REE Project."
+    }
+  }
 }

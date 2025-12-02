@@ -16,22 +16,17 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "BZL (Terramin",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.026232",
-      "evidence": "Extracted from operator column: BZL (Terramin/ENOF)"
-    },
-    {
-      "name": "ENOF)",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.026233",
-      "evidence": "Extracted from operator column: BZL (Terramin/ENOF)"
-    }
+    "BZL (Terramin",
+    "ENOF)",
+    "Enterprise Nationale des Produits Miniers Non-Ferreux et des Substances Utiles Spa",
+    "Entreprise Nationale des Produits Miniers Non Ferreux et des Substances Utiles (ENOF)",
+    "Office National de Recherche Géologique et Minière",
+    "Office National de Recherche Géologique et Minière (ORGM)",
+    "Sinosteel Equipment & Engineering Co. Ltd",
+    "Terramin Australia Limited",
+    "Terramin Australia Ltd.",
+    "Western Mediterranean Zinc S.p.A. (WMZ)",
+    "Western Mediterranean Zinc Spa"
   ],
   "products": [],
   "sources": [
@@ -69,5 +64,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bejaia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:15:57.000000Z",
+      "operators": [
+        "Sinosteel Equipment & Engineering Co. Ltd",
+        "Western Mediterranean Zinc Spa"
+      ],
+      "owners": [
+        "Terramin Australia Limited",
+        "Enterprise Nationale des Produits Miniers Non-Ferreux et des Substances Utiles Spa",
+        "Office National de Recherche Géologique et Minière"
+      ],
+      "notes": "Terramin holds a 49% share in the joint venture WMZ, which operates the project."
+    }
+  }
 }

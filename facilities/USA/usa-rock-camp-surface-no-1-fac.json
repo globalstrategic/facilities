@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.283,
-    "lon": -80.916,
+    "lat": 33.3177681,
+    "lon": -87.4766097,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cahaba Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.982818Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:49:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rockcastle_Mine_No._1. Proposed surface coal mine in Tuscaloosa County"
   },
   "canonical_name": "Rock Camp Surface No 1 Mine",
   "canonical_slug": "rock-camp-surface-no-1-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:49:02.000000Z",
+      "operators": [],
+      "owners": [
+        "Cahaba Resources LLC"
+      ],
+      "notes": "Cahaba Resources is the owner of the proposed mine."
+    }
+  }
 }

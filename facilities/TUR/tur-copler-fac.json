@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 39.427,
-    "lon": 38.535,
+    "lat": 39.426,
+    "lon": 38.522,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anagold Madencilik Sanayi ve Ticaret Anonim Şirketi",
+    "Lidya Madencilik Sanayi ve Ticaret A.Ş.",
+    "SSR Mining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.306816Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:24:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/%C3%87%C3%B6pler_mine. The Çöpler mine is one of the largest gold mines in Turkey, located in Erzincan Province"
   },
   "canonical_name": "Copler Mine",
   "canonical_slug": "copler-mine",
@@ -54,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erzincan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:24:28.000000Z",
+      "operators": [
+        "Anagold Madencilik Sanayi ve Ticaret Anonim Şirketi",
+        "SSR Mining Inc."
+      ],
+      "owners": [
+        "SSR Mining Inc.",
+        "Lidya Madencilik Sanayi ve Ticaret A.Ş."
+      ],
+      "notes": "SSR Mining controls 80% of Anagold, with Lidya holding 18.5%."
+    }
+  }
 }

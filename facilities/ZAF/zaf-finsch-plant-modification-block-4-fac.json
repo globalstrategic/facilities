@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.3845,
-    "lon": 23.44531,
+    "lat": -28.38222,
+    "lon": 23.44611,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Afropean Diamonds (Pty) Limited",
+    "De Beers Consolidated Mines Limited",
+    "Petra Diamonds Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:37:32.000000Z",
+    "last_checked": "2025-12-01T18:16:52.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/14354176. Finsch Mine is located near Lime Acres, approximately 165 km west of Kimberley in the Northern Cape province of South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/14354176. Finsch Mine is located near Lime Acres, approximately 165 km west of Kimberley in the Northern Cape province of South Africa. Web search geocoded. Source: https://en.wikipedia.org/wiki/Finsch_diamond_mine. The Finsch diamond mine is located near Lime Acres, 160 km northwest of Kimberley"
   },
   "canonical_name": "Finsch Modification Block 4 Mine",
   "canonical_slug": "finsch-modification-block-4-mine",
@@ -48,5 +52,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:16:52.000000Z",
+      "operators": [
+        "Petra Diamonds Pty Ltd"
+      ],
+      "owners": [
+        "Petra Diamonds Pty Ltd",
+        "Afropean Diamonds (Pty) Limited",
+        "De Beers Consolidated Mines Limited"
+      ],
+      "notes": "Petra Diamonds operates the mine, which was previously owned by De Beers."
+    }
+  }
 }

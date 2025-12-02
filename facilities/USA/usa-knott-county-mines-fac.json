@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.321,
-    "lon": -82.803,
+    "lat": 37.41987392957328,
+    "lon": -82.8782174,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "McCoy Elkhorn Coal Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.777634Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:51:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mousie (http://www.msha.gov/data-reports/fatality-reports/2012/fatality-7-april-25-2012/final-report). The KC #1 Mine is located 0.1 mile off Kentucky E Hwy 550, at Mousie, Knott County, Kentucky. It has been in non-producing status since November 17, 2010"
   },
   "canonical_name": "Knott County Mines Mine",
   "canonical_slug": "knott-county-mines-mine",
@@ -55,5 +57,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Mousie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:51:14.000000Z",
+      "operators": [
+        "McCoy Elkhorn Coal Corp."
+      ],
+      "owners": [],
+      "notes": "The mine has been non-producing since 2010."
+    }
+  }
 }

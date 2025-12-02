@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.9333,
+    "lon": 23.9167,
     "precision": "unknown"
   },
   "types": [
@@ -15,6 +15,7 @@
   "status": "unknown",
   "company_mentions": [
     "BGR Mining & Infra Limited",
+    "BGR Mining & Infra Pvt. Ltd.",
     "Resurs 1 AD"
   ],
   "products": [],
@@ -26,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.773125Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:42:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://resurs1.bg/. The Gruncharitsa Project is a strategic mining development for tungsten in Bulgaria"
   },
   "canonical_name": "Gruncharitsa Mine",
   "canonical_slug": "gruncharitsa-mine",
@@ -46,15 +47,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Bulgaria",
+  "province": "Pazardzhik",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:39:42.000000Z",
+      "timestamp": "2025-12-01T16:42:19.000000Z",
       "operators": [
-        "BGR Mining & Infra Limited"
+        "BGR Mining & Infra Pvt. Ltd."
       ],
-      "owners": [],
-      "notes": "BGR Mining & Infra Limited is involved in the project."
+      "owners": [
+        "BGR Mining & Infra Pvt. Ltd."
+      ],
+      "notes": "BGR is involved in the development of the Gruncharitsa Tungsten Project."
     }
   }
 }

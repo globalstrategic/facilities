@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.586,
-    "lon": -81.424,
+    "lat": 37.575383,
+    "lon": -81.416087,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CONSOL Energy Inc",
+    "Core Natural Resources",
+    "Core Natural Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.943350Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:09:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609569. Coordinates and ownership details extracted from multiple sources confirm the location and operational status"
   },
   "canonical_name": "Itmann No 5 Mine",
   "canonical_slug": "itmann-no-5-mine",
@@ -63,5 +67,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:09:16.000000Z",
+      "operators": [
+        "CONSOL Energy Inc",
+        "Core Natural Resources"
+      ],
+      "owners": [
+        "CONSOL Energy Inc",
+        "Core Natural Resources, Inc."
+      ],
+      "notes": "The mine is currently operated by Core Natural Resources, but CONSOL Energy Inc. is also a significant owner."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.225,
-    "lon": -83.207,
+    "lat": 41.2247,
+    "lon": -83.2073,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Carmeuse North America"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.873645Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:54:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10249195. The Maple Grove Lime Plant is located near Bettsville, Ohio, and is a notable processing facility in the region"
   },
   "canonical_name": "Maple Grove Lime Plant",
   "canonical_slug": "maple-grove-lime-plant",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ohio",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:54:18.000000Z",
+      "operators": [
+        "Carmeuse North America"
+      ],
+      "owners": [
+        "Carmeuse North America"
+      ],
+      "notes": "Carmeuse is a global manufacturer of lime and limestone products."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.385,
-    "lon": 83.685,
+    "lat": 49.97967860419984,
+    "lon": 82.61780233351311,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore International AG",
+    "Kazzinc Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.732356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:31:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com/.rest/api/v1/documents/static/b9332ff4-ef85-4d5c-ad34-2d7e2775412f/2024+Kazzinc+Public+Responsible+Supply+Chain+Due+Diligence+Report.pdf. Kazzinc is a fully integrated zinc producer with significant copper, precious metals, and lead resources in Kazakhstan"
   },
   "canonical_name": "Kazzinc Mine",
   "canonical_slug": "kazzinc-mine",
@@ -60,5 +63,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:31:54.000000Z",
+      "operators": [
+        "Kazzinc Ltd."
+      ],
+      "owners": [
+        "Glencore International AG"
+      ],
+      "notes": "Glencore International AG holds a 69.7% stake in Kazzinc."
+    }
+  }
 }

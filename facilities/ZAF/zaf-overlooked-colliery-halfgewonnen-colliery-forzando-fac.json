@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.23,
-    "lon": 29.534,
+    "lat": -26.286869,
+    "lon": 29.527687,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Forzando Coal Mines (Pty) Ltd",
+    "Overlooked Colliery"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.787314Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:13:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Forzando_Complex. Forzando Complex is an underground coal mine operated by Forzando Coal Mines (Pty) Ltd and owned by Overlooked Colliery"
   },
   "canonical_name": "Overlooked Colliery Halfgewonnen Colliery Forzando Mine",
   "canonical_slug": "overlooked-colliery-halfgewonnen-colliery-forzando-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:13:56.000000Z",
+      "operators": [
+        "Forzando Coal Mines (Pty) Ltd"
+      ],
+      "owners": [
+        "Overlooked Colliery"
+      ],
+      "notes": "Overlooked Colliery is a 100% black-owned mining company that acquired the Forzando mine from Exxaro Resources."
+    }
+  }
 }

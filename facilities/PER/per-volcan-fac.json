@@ -25,14 +25,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Volcan Compañía Minera S.A.",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.666655",
-      "evidence": "Extracted from operator column: Volcan Compañía Minera S.A."
-    }
+    "Glencore PLC",
+    "Transition Metals AG",
+    "Volcan Compañía Minera S.A.",
+    "Volcan Compañía Minera S.A.A."
   ],
   "products": [],
   "sources": [
@@ -70,5 +66,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cerro de Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:09:14.000000Z",
+      "operators": [
+        "Volcan Compañía Minera S.A.A."
+      ],
+      "owners": [
+        "Transition Metals AG",
+        "Glencore PLC"
+      ],
+      "notes": "Transition Metals AG recently acquired a 55% stake in Volcan from Glencore."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.543,
-    "lon": -82.444,
+    "lat": 37.5429619,
+    "lon": -82.4439813,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Landmark Mining Company Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.981980Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:48:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Winns_Branch_Mine. Winns Branch Mine is a mothballed coal mine"
   },
   "canonical_name": "Winns Branch Mine",
   "canonical_slug": "winns-branch-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:48:16.000000Z",
+      "operators": [
+        "Landmark Mining Company Inc"
+      ],
+      "owners": [
+        "Landmark Mining Company Inc"
+      ],
+      "notes": "Landmark Mining Company Inc owns 100% of the facility."
+    }
+  }
 }

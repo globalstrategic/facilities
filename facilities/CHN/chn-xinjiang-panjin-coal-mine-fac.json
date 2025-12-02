@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 44.065,
-    "lon": 81.365,
+    "lat": 44.065157,
+    "lon": 81.365493,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "伊犁永宁煤业化工有限公司 (Yili Yongning Coal Industry and Chemical Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.817684Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:35:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%BC%8A%E7%8A%81%E6%B0%B8%E5%AE%81%E7%85%A4%E4%B8%9A%E5%8C%96%E5%B7%A5%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%BD%98%E6%B4%A5%E5%B7%A5%E4%B8%9A%E7%85%A4%E7%9F%BF. The Xinjiang Panjin Coal Mine is an underground coal mine located in the Ili Kazakh Autonomous Prefecture"
   },
   "canonical_name": "Xinjiang Panjin Coal Mine",
   "canonical_slug": "xinjiang-panjin-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Xinjiang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:35:59.000000Z",
+      "operators": [
+        "伊犁永宁煤业化工有限公司 (Yili Yongning Coal Industry and Chemical Co., Ltd.)"
+      ],
+      "owners": [],
+      "notes": "The mine has been operational since 1996."
+    }
+  }
 }

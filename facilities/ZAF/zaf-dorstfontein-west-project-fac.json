@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.223494,
-    "lon": 29.294597,
+    "lat": -26.0,
+    "lon": 29.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "construction",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dorstfontein Coal Mines (Pty) Ltd",
+    "Mmakau Mining (Pty) Ltd",
+    "Overlooked Colliery Proprietary Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:31:49.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:05:50.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dorstfontein_Complex. Exact coordinates for the Dorstfontein Complex coal mine located in Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dorstfontein_Complex. Exact coordinates for the Dorstfontein Complex coal mine located in Mpumalanga, South Africa. Web search geocoded. Source: https://miningdataonline.com/property/4486/Dorstfontein-Mine.aspx. The Dorstfontein West Project is part of the Dorstfontein coal complex, which includes both underground and opencast operations"
   },
   "canonical_name": "Dorstfontein West Mine",
   "canonical_slug": "dorstfontein-west-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:05:50.000000Z",
+      "operators": [
+        "Dorstfontein Coal Mines (Pty) Ltd"
+      ],
+      "owners": [
+        "Overlooked Colliery Proprietary Ltd",
+        "Mmakau Mining (Pty) Ltd"
+      ],
+      "notes": "Overlooked Colliery owns 74% and Mmakau Mining owns 26% indirectly."
+    }
+  }
 }

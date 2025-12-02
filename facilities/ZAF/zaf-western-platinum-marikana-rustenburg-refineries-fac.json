@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.681,
-    "lon": 27.52,
+    "lat": -25.5,
+    "lon": 27.0,
     "precision": "site"
   },
   "types": [
@@ -63,7 +63,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Platinum (AQPSA)",
+    "Anglo American Platinum (Amplats)",
+    "Sibanye Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -73,11 +77,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.765300Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:53:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/marikana-platinum-mine-rustenburg-south-africa/. The Marikana Platinum Mine is located approximately 40 km east of Rustenburg"
   },
   "canonical_name": "Western Platinum Marikana Rustenburg Refineries Refinery",
   "canonical_slug": "western-platinum-marikana-rustenburg-refineries-refinery",
@@ -100,5 +104,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:53:53.000000Z",
+      "operators": [
+        "Anglo American Platinum (AQPSA)",
+        "Sibanye Stillwater"
+      ],
+      "owners": [
+        "Anglo American Platinum (Amplats)",
+        "Sibanye Stillwater"
+      ],
+      "notes": "The mine is jointly owned by Anglo American Platinum and Sibanye Stillwater under a pooling-and-sharing agreement."
+    }
+  }
 }

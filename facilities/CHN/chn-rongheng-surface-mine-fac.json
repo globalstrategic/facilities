@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.586,
-    "lon": 110.332,
+    "lat": 39.586293,
+    "lon": 110.3315,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "鄂尔多斯市乌兰发展集团有限公司",
+    "鄂尔多斯市乌兰煤炭（集团）有限责任公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.830404Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:37:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E4%B9%8C%E5%85%B0%E7%85%A4%E7%82%AD%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E8%8D%A3%E6%81%92%E7%85%A4%E7%9F%BF. The Rongheng Surface Mine is an open-pit coal mine operated by the Ordos City Wulan Coal (Group) Co., Ltd"
   },
   "canonical_name": "Rongheng Surface Mine",
   "canonical_slug": "rongheng-surface-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古自治区",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:37:47.000000Z",
+      "operators": [
+        "鄂尔多斯市乌兰煤炭（集团）有限责任公司"
+      ],
+      "owners": [
+        "鄂尔多斯市乌兰发展集团有限公司"
+      ],
+      "notes": "The mine is operated by a subsidiary of the parent company, which is involved in coal production."
+    }
+  }
 }

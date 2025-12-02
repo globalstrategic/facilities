@@ -21,22 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Chinese operators",
-      "role": "operator",
-      "source": "Research Import MMR 2025-10-24",
-      "confidence": 0.7,
-      "first_seen": "2025-10-24T06:31:39.819516",
-      "evidence": "Extracted from operator column: Chinese operators (CPI, CDT); New Democratic Army-Kachin (NDA-K)"
-    },
-    {
-      "name": "New Democratic Army-Kachin",
-      "role": "operator",
-      "source": "Research Import MMR 2025-10-24",
-      "confidence": 0.7,
-      "first_seen": "2025-10-24T06:31:39.819525",
-      "evidence": "Extracted from operator column: Chinese operators (CPI, CDT); New Democratic Army-Kachin (NDA-K)"
-    }
+    "Chinese operators",
+    "GSilver",
+    "Minera Mexicana el Rosario, S.A. de C.V.",
+    "New Democratic Army-Kachin"
   ],
   "products": [],
   "sources": [
@@ -74,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guanajuato",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:10:11.000000Z",
+      "operators": [
+        "Minera Mexicana el Rosario, S.A. de C.V."
+      ],
+      "owners": [
+        "GSilver"
+      ],
+      "notes": "Minera Mexicana el Rosario is a wholly owned subsidiary of GSilver."
+    }
+  }
 }

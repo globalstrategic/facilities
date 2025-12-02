@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.61455491068991,
+    "lon": -7.1951392,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Felmica Minerais Industrias SA",
+    "Grupo Mota"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.664263Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:29:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guarda (https://www.edisongroup.com/research/drilling-tees-up-q3-q4-mineral-resource-estimates/19520/). The Alvarrões Lepidolite Mine is located near the city of Guarda in northeast Portugal, approximately 10 km south of the city"
   },
   "canonical_name": "Alvarrões Lepidolite Mine",
   "canonical_slug": "alvarroes-lepidolite-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guarda",
+  "town": "Guarda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:29:14.000000Z",
+      "operators": [
+        "Grupo Mota"
+      ],
+      "owners": [
+        "Grupo Mota",
+        "Felmica Minerais Industrias SA"
+      ],
+      "notes": "Grupo Mota is the primary operator and owner of the mine, while Felmica Minerais Industrias SA owns the mineral claim."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 48.027,
-    "lon": 70.799,
+    "lat": 48.02664,
+    "lon": 70.799279,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Orken LLP",
+    "Orken-Atasu",
+    "Qazaqstan Steel Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.737867Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:36:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Orken_Atasu_Mine. The Orken Atasu Mine is part of the Iron Ore Department of Orken LLP, involved in mining and processing iron ore"
   },
   "canonical_name": "Orken Atasu Mine",
   "canonical_slug": "orken-atasu-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:36:05.000000Z",
+      "operators": [
+        "Orken-Atasu"
+      ],
+      "owners": [
+        "Qazaqstan Steel Group",
+        "Orken LLP"
+      ],
+      "notes": "Orken-Atasu is a representative office of Orken LLP, which is part of Qazaqstan Steel Group."
+    }
+  }
 }

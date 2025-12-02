@@ -16,14 +16,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "IRALCO",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.765037",
-      "evidence": "Extracted from operator column: IRALCO"
-    }
+    "IRALCO",
+    "Iran Alumina Company (IAC)",
+    "Iranian Mines and Mining Industries Development and Renovation Organization (IMIDRO)"
   ],
   "products": [],
   "sources": [
@@ -61,5 +56,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Khorasan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:04:36.000000Z",
+      "operators": [
+        "Iran Alumina Company (IAC)"
+      ],
+      "owners": [
+        "Iranian Mines and Mining Industries Development and Renovation Organization (IMIDRO)"
+      ],
+      "notes": "IAC is a subsidiary of IMIDRO and is the sole producer of alumina powder in Iran."
+    }
+  }
 }

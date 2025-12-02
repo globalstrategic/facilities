@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.414,
-    "lon": -121.469,
+    "lat": 37.0,
+    "lon": -121.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "W. Balkan",
+    "Western Magnesite Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.834334Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:20:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10077453/. The facility is located in Santa Clara County, California, at an elevation of 3,041 feet"
   },
   "canonical_name": "Western Magnesite Co Mine",
   "canonical_slug": "western-magnesite-co-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:20:42.000000Z",
+      "operators": [
+        "Western Magnesite Company"
+      ],
+      "owners": [
+        "W. Balkan"
+      ],
+      "notes": "W. Balkan is listed as the owner of the property."
+    }
+  }
 }

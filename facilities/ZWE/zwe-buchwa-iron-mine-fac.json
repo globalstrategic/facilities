@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.4968,
+    "lon": 29.8847,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Buchwa Iron Mining Company (BIMCO)",
+    "NJZ Resources Africa",
+    "Zimbabwe Iron and Steel Company (Zisco)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.947084Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:27:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10081102. The Buchwa Iron Mine is located near Zvishavane, Zimbabwe, and is categorized as a medium-sized operation primarily extracting hematite"
   },
   "canonical_name": "Buchwa Iron Mine",
   "canonical_slug": "buchwa-iron-mine",
@@ -50,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:27:18.000000Z",
+      "operators": [
+        "Buchwa Iron Mining Company (BIMCO)",
+        "NJZ Resources Africa"
+      ],
+      "owners": [
+        "Zimbabwe Iron and Steel Company (Zisco)"
+      ],
+      "notes": "BIMCO is associated with Zisco, which has faced operational challenges. NJZ Resources Africa is planning to restart operations."
+    }
+  }
 }

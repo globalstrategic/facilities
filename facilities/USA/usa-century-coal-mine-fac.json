@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.896,
-    "lon": -81.021,
+    "lat": 39.8948,
+    "lon": -81.0234,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Belmont County Coal Resources, Inc.",
+    "Murray Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.799533Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:09:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Century_Mine_(coal_mine). The Century Mine was the last remaining coal mine in Belmont County, Ohio, before its closure"
   },
   "canonical_name": "Century Coal Mine",
   "canonical_slug": "century-coal-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ohio",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:09:38.000000Z",
+      "operators": [
+        "Belmont County Coal Resources, Inc."
+      ],
+      "owners": [
+        "Murray Energy Corporation"
+      ],
+      "notes": "Murray Energy Corporation was the owner of the mine, which was closed in June 2022."
+    }
+  }
 }

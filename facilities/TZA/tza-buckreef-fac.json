@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": -3.233,
-    "lon": 32.233,
+    "lat": -2.5,
+    "lon": 32.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Buckreef Gold Corporation Limited",
+    "State Mining Corporation (STAMICO)",
+    "Tanzanian Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.980824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:15:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/buckreef-gold-project-tanzania/. The Buckreef Gold Project is located in the Geita District, south of Lake Victoria, approximately 110 km southwest of Mwanza"
   },
   "canonical_name": "Buckreef Mine",
   "canonical_slug": "buckreef-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Geita",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:15:21.000000Z",
+      "operators": [
+        "Buckreef Gold Corporation Limited"
+      ],
+      "owners": [
+        "Tanzanian Gold Corporation",
+        "State Mining Corporation (STAMICO)"
+      ],
+      "notes": "Tanzanian Gold Corporation holds a 55% interest, while STAMICO holds 45%."
+    }
+  }
 }

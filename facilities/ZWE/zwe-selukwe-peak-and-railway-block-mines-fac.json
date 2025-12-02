@@ -9,8 +9,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -19.655,
-    "lon": 29.987,
+    "lat": -19.7135,
+    "lon": 30.018,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Union Carbide Corporation",
+    "Zimbabwe Mining & Smelting Company (Zimasco)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.947674Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:35:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10106761. The Selukwe Peak and Railway Block Mines are located near Gweru, Zimbabwe, and were initially discovered in 1904"
   },
   "canonical_name": "Selukwe Peak And Railway Block Mines Mine",
   "canonical_slug": "selukwe-peak-and-railway-block-mines-mine",
@@ -60,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:35:58.000000Z",
+      "operators": [
+        "Union Carbide Corporation",
+        "Zimbabwe Mining & Smelting Company (Zimasco)"
+      ],
+      "owners": [
+        "Union Carbide Corporation",
+        "Zimbabwe Mining & Smelting Company (Zimasco)"
+      ],
+      "notes": "Both companies are listed as owners and operators of the facility."
+    }
+  }
 }

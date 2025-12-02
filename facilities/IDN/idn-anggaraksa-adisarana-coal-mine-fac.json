@@ -9,8 +9,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.722,
-    "lon": 117.081,
+    "lat": -0.726371,
+    "lon": 117.076797,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anggaraksa Adisarana"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.286997Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:04:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anggaraksa_Adisarana_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Anggaraksa Adisarana Coal Mine",
   "canonical_slug": "anggaraksa-adisarana-coal-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:04:04.000000Z",
+      "operators": [
+        "Anggaraksa Adisarana"
+      ],
+      "owners": [
+        "Anggaraksa Adisarana"
+      ],
+      "notes": "The company operates and owns the coal mine."
+    }
+  }
 }

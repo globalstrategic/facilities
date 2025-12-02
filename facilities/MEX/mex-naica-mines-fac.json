@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.861,
-    "lon": -105.501,
+    "lat": 27.850823,
+    "lon": -105.496368,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Industrias Peñoles"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.957966Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:34:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Naica_Mine. The Naica Mine is known for its unique crystal caves and has been a significant lead, zinc, and silver producer"
   },
   "canonical_name": "Naica Mines Mine",
   "canonical_slug": "naica-mines-mine",
@@ -71,5 +73,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:34:49.000000Z",
+      "operators": [
+        "Industrias Peñoles"
+      ],
+      "owners": [
+        "Industrias Peñoles"
+      ],
+      "notes": "Industrias Peñoles is the world's largest silver producer and has operated the mine since 1952."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.175069520792384,
+    "lon": 46.3597178,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.537928Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large copper deposit. Non-JORC estimate of 324,000 tonnes Cu. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Large copper deposit. Non-JORC estimate of 324,000 tonnes Cu. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Ganja (https://www.mining.com/anglo-asian-releases-mineral-resource-estimate-for-garadag-copper-project-in-azerbaijan/). The Garadag Project is associated with Anglo Asian Mining's copper concessions in Azerbaijan"
   },
   "canonical_name": "Garadag Mine",
   "canonical_slug": "garadag-mine",
@@ -52,17 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gadabay District",
+  "province": "Ganja",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:35:20.000000Z",
+      "timestamp": "2025-12-01T16:39:11.000000Z",
       "operators": [
-        "Anglo Asian Mining"
+        "Anglo Asian Mining Plc"
       ],
       "owners": [
-        "Anglo Asian Mining"
+        "Anglo Asian Mining Plc"
       ],
-      "notes": "Anglo Asian Mining holds rights to multiple deposits in Azerbaijan."
+      "notes": "Anglo Asian Mining is expanding its copper footprint in Azerbaijan and has been awarded new concessions including Garadag."
     }
-  }
+  },
+  "town": "Ganja"
 }

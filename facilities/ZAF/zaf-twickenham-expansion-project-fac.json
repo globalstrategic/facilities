@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.0,
-    "lon": 29.0,
+    "lat": -24.0333,
+    "lon": 29.0333,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Platinum",
+    "Rustenburg Platinum Mines Ltd.",
+    "Valterra Platinum Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.7,
-    "last_checked": "2025-11-17T15:15:06.000000Z",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:32:34.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://sis-test-1.gulf.edu.sa/browse/s112KL/922333/Anglo%20American%20Platinum%20Twickenham%20Mine%20Limpopo.pdf. The Twickenham mine is located near Mokopane in the Limpopo Province"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://sis-test-1.gulf.edu.sa/browse/s112KL/922333/Anglo%20American%20Platinum%20Twickenham%20Mine%20Limpopo.pdf. The Twickenham mine is located near Mokopane in the Limpopo Province. Web search geocoded. Source: https://en.wikipedia.org/wiki/Twickenham_mine. Twickenham mine is located in Mokopane, Limpopo, South Africa"
   },
   "canonical_name": "Twickenham Expansion Mine",
   "canonical_slug": "twickenham-expansion-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:32:34.000000Z",
+      "operators": [
+        "Rustenburg Platinum Mines Ltd."
+      ],
+      "owners": [
+        "Anglo American Platinum",
+        "Valterra Platinum Ltd."
+      ],
+      "notes": "Anglo American Platinum is the parent company, and Rustenburg Platinum Mines Ltd. operates the facility."
+    }
+  }
 }

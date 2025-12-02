@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.95,
+    "lon": 34.25,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,10 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Barrick Gold",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.753479",
-      "evidence": "Extracted from operator column: Barrick Gold (Exploration Rights)"
-    }
+    "Barrick Gold",
+    "Barrick Gold Corporation",
+    "Currie Rose Resources Inc.",
+    "Sekenke Exploration Limited"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:17.977342Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:12:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kirondatal_Gold_Mine. The Kirondatal Gold Mine is located in the Shinyanga Region of Tanzania and was operational from 1934 until its closure in 1950"
   },
   "canonical_name": "Kirondatal Mine",
   "canonical_slug": "kirondatal-mine",
@@ -58,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shinyanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:12:32.000000Z",
+      "operators": [],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Sekenke Exploration Limited",
+        "Currie Rose Resources Inc."
+      ],
+      "notes": "Barrick Gold holds exploration rights in the area through its subsidiary, while Currie Rose Resources is exploring the wider area."
+    }
+  }
 }

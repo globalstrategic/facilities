@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.806,
-    "lon": -117.737,
+    "lat": 38.79,
+    "lon": -120.81,
     "precision": "site"
   },
   "types": [
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.976631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:42:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marshall%27s_Blacksmith_Shop. The Gray Eagle Mine is a lode gold mine located in the Mother Lode Country, just south of Kelsey, California"
   },
   "canonical_name": "Gray Eagle Mine",
   "canonical_slug": "gray-eagle-mine",
@@ -52,5 +52,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California"
 }

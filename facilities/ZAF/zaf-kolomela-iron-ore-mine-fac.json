@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.394321,
-    "lon": 22.959775,
+    "lat": -28.12815248099341,
+    "lon": 23.068889,
     "precision": "unknown"
   },
   "types": [
@@ -19,7 +19,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Exxaro Resources Limited",
+    "Kumba Iron Ore",
+    "Sishen Iron Ore Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,10 +35,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:13:46.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:31:12.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sishen_Iron_Kolomela_Mine. Exact coordinates provided for Kolomela Iron Ore Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sishen_Iron_Kolomela_Mine. Exact coordinates provided for Kolomela Iron Ore Mine. Web search geocoded. Source: Calculated from Postmasburg (https://www.nsenergybusiness.com/projects/kolomela-iron-ore-mine/). The Kolomela Iron Ore Mine is located near Postmasburg in the Northern Cape province of South Africa"
   },
   "canonical_name": "Kolomela Iron Ore Mine",
   "canonical_slug": "kolomela-iron-ore-mine",
@@ -49,5 +54,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "town": "Postmasburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:31:12.000000Z",
+      "operators": [
+        "Kumba Iron Ore",
+        "Sishen Iron Ore Company"
+      ],
+      "owners": [
+        "Anglo American",
+        "Exxaro Resources Limited"
+      ],
+      "notes": "Kumba Iron Ore owns 76.3% of Sishen Iron Ore Company, which operates the mine."
+    }
+  }
 }

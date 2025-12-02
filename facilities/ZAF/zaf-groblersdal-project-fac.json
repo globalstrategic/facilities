@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.167361,
-    "lon": 29.3986919,
+    "lat": -25.358844836777056,
+    "lon": 29.60352948664845,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aquarius Platinum",
+    "Imbani",
+    "Ridge Mining",
+    "Ridge Mining Ltd Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +34,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T14:57:54.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:59:05.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gb.maptons.com/1970929. Coordinates extracted from multiple sources confirm the location of Groblersdal in Limpopo, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://gb.maptons.com/1970929. Coordinates extracted from multiple sources confirm the location of Groblersdal in Limpopo, South Africa. Web search geocoded. Source: Calculated from Groblersdal (https://www.mining-technology.com/projects/blue_ridge/). The Blue Ridge PGE Project is located about 30km southeast of Groblersdal"
   },
   "canonical_name": "Groblersdal Mine",
   "canonical_slug": "groblersdal-mine",
@@ -48,5 +53,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "town": "Groblersdal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:59:05.000000Z",
+      "operators": [
+        "Ridge Mining Ltd Plc",
+        "Aquarius Platinum"
+      ],
+      "owners": [
+        "Ridge Mining",
+        "Imbani"
+      ],
+      "notes": "Ridge Mining and Imbani each own 50% of the project."
+    }
+  }
 }

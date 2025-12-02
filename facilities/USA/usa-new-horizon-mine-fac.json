@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.27,
-    "lon": -108.571,
+    "lat": 38.314478929957374,
+    "lon": -108.547869,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elk Ridge Mining and Reclamation, LLC",
+    "Tri-State Generation and Transmission Association"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.825433Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:13:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Nucla (https://tristate.coop/new-horizon-mine-reaches-agreement-miners-union-will-cease-mining-operations-and-begin-reclamation). The New Horizon Mine is located about five miles from the town of Nucla, Colorado, and has ceased coal mining operations as of 2017, currently undergoing reclamation"
   },
   "canonical_name": "New Horizon Mine",
   "canonical_slug": "new-horizon-mine",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Nucla",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:13:54.000000Z",
+      "operators": [
+        "Tri-State Generation and Transmission Association",
+        "Elk Ridge Mining and Reclamation, LLC"
+      ],
+      "owners": [
+        "Tri-State Generation and Transmission Association"
+      ],
+      "notes": "Tri-State is a not-for-profit wholesale electric power supplier and owns the New Horizon Mine."
+    }
+  }
 }

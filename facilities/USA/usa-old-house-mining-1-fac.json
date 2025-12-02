@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.926,
-    "lon": -83.332,
+    "lat": 36.930556,
+    "lon": -83.336111,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Old House Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.968370Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:32:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Old_House_Mining_1. Exact coordinates provided in the source"
   },
   "canonical_name": "Old House Mining 1 Mine",
   "canonical_slug": "old-house-mining-1-mine",
@@ -60,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:32:09.000000Z",
+      "operators": [
+        "Old House Mining LLC"
+      ],
+      "owners": [
+        "Old House Mining LLC"
+      ],
+      "notes": "Old House Mining LLC is both the owner and operator of the facility."
+    }
+  }
 }

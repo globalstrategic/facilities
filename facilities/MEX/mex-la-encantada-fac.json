@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 28.363,
-    "lon": -102.566,
+    "lat": 29.967462681104756,
+    "lon": -98.22716300304415,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Majestic Silver Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.970482Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T05:54:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Torreon (https://www.metallaroyalty.com/royalties/producing/la-encantada/). La Encantada Silver Mine is located in Coahuila, Mexico, approximately 708 km northeast of Torreon"
   },
   "canonical_name": "La Encantada Mine",
   "canonical_slug": "la-encantada-mine",
@@ -64,5 +66,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coahuila",
+  "town": "Torreon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:54:59.000000Z",
+      "operators": [
+        "First Majestic Silver Corp."
+      ],
+      "owners": [
+        "First Majestic Silver Corp."
+      ],
+      "notes": "First Majestic owns 100% of the La Encantada Silver Mine."
+    }
+  }
 }

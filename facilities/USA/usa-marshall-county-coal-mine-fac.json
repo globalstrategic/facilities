@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.825,
-    "lon": -80.795,
+    "lat": 39.8205,
+    "lon": -80.7947,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources, Inc.",
+    "Marshall County Coal Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.836381Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:22:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Marshall_County_Coal_Mine. The Marshall County Coal Mine is an operating coal mine located in Woodlands, Marshall County, West Virginia"
   },
   "canonical_name": "Marshall County Coal Mine",
   "canonical_slug": "marshall-county-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:22:06.000000Z",
+      "operators": [
+        "Marshall County Coal Resources, Inc."
+      ],
+      "owners": [
+        "American Consolidated Natural Resources, Inc.",
+        "Marshall County Coal Resources, Inc."
+      ],
+      "notes": "Marshall County Coal Resources, Inc. operates the mine and is fully owned by American Consolidated Natural Resources, Inc."
+    }
+  }
 }

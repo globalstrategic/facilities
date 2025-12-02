@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 49.693,
-    "lon": 107.302,
+    "lat": 49.691903,
+    "lon": 107.299952,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Darkhan Metallurgical Plant LLC",
+    "Erdenes Mongol LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.455507Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:18:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Darkhan_Tumurtei_Mine. The Darkhan Tumurtei Mine is an iron ore mine located in Bayantsagaan, Selenge, Mongolia"
   },
   "canonical_name": "Darkhan Tumurtei Mine",
   "canonical_slug": "darkhan-tumurtei-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Selenge",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:18:29.000000Z",
+      "operators": [
+        "Darkhan Metallurgical Plant LLC"
+      ],
+      "owners": [
+        "Erdenes Mongol LLC",
+        "Darkhan Metallurgical Plant LLC"
+      ],
+      "notes": "Darkhan Metallurgical Plant LLC owns 100% of the mine."
+    }
+  }
 }

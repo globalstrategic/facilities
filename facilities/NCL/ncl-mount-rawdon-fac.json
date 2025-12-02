@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NCL",
   "location": {
-    "lat": -25.269,
-    "lon": 151.767,
+    "lat": -25.5,
+    "lon": 152.4,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Evolution Mining Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.372625Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:01:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://evolutionmining.com/our-operations/mt-rawdon/. The facility is located at the Mount Rawdon Operations gold mine near Mount Perry, which is approximately 75km south-west of Bundaberg"
   },
   "canonical_name": "Mount Rawdon Mine",
   "canonical_slug": "mount-rawdon-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Queensland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:01:37.000000Z",
+      "operators": [
+        "Evolution Mining Ltd"
+      ],
+      "owners": [
+        "Evolution Mining Ltd"
+      ],
+      "notes": "Evolution Mining has owned and operated the facility since 2011."
+    }
+  }
 }

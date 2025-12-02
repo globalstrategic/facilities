@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.99,
-    "lon": 109.293,
+    "lat": 37.990025,
+    "lon": 109.293081,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hengshan County Zhangjiawa Coal Industry Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.747202Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:23:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%A8%AA%E5%B1%B1%E5%8E%BF%E5%BC%A0%E5%AE%B6%E6%B4%BC%E7%85%A4%E7%9F%BF. Coordinates extracted directly from the source"
   },
   "canonical_name": "Shaanxi Hengshan Zhangjiawa Coal Mine",
   "canonical_slug": "shaanxi-hengshan-zhangjiawa-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:23:14.000000Z",
+      "operators": [
+        "Hengshan County Zhangjiawa Coal Industry Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by Hengshan County Zhangjiawa Coal Industry Co Ltd."
+    }
+  }
 }

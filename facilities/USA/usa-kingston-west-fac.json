@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.36,
-    "lon": -79.386,
+    "lat": 37.974284,
+    "lon": -81.318615,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources",
+    "Kingston Mining",
+    "Kingston Mining, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.977271Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:43:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-4608932. The facility is an active coal mine operated by Kingston Mining"
   },
   "canonical_name": "Kingston West Mine",
   "canonical_slug": "kingston-west-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:43:13.000000Z",
+      "operators": [
+        "Kingston Mining, Inc."
+      ],
+      "owners": [
+        "Kingston Mining",
+        "Alpha Metallurgical Resources"
+      ],
+      "notes": "Kingston Mining is a subsidiary of Alpha Metallurgical Resources."
+    }
+  }
 }

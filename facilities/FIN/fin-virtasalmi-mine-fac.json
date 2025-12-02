@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": 61.799,
-    "lon": 26.603,
+    "lat": 63.5,
+    "lon": 27.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Quantum Minerals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:54.193658Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:58:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pyh%C3%A4salmi_Mine. The Pyhäsalmi Mine is located in the municipality of Pyhäjärvi"
   },
   "canonical_name": "Virtasalmi Mine",
   "canonical_slug": "virtasalmi-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:58:34.000000Z",
+      "operators": [
+        "First Quantum Minerals Ltd."
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd."
+      ],
+      "notes": "First Quantum Minerals acquired the mine in 2013 and it is currently in closure phase."
+    }
+  }
 }

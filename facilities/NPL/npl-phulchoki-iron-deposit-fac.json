@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 27.569303,
+    "lon": 85.4,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Department of Mines and Geology (Nepal)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.483682Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:25:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/DMG_Phulchauki_Mine. The Phulchoki Iron Deposit is located in Lalitpur, Bagmati, Nepal. It has been mothballed"
   },
   "canonical_name": "Phulchoki Iron Facility",
   "canonical_slug": "phulchoki-iron-facility",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bagmati",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:25:53.000000Z",
+      "operators": [
+        "Department of Mines and Geology (Nepal)"
+      ],
+      "owners": [
+        "Department of Mines and Geology (Nepal)"
+      ],
+      "notes": "The facility is currently not operational and is under the jurisdiction of the Department of Mines and Geology."
+    }
+  }
 }

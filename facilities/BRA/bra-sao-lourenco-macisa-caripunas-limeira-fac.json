@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -9.365,
-    "lon": -64.999,
+    "lat": -8.487244492347735,
+    "lon": -63.8735438,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Companhia de Mineracao Sao Lourenco"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.231291Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:52:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Porto Velho (https://www.emis.com/php/company-profile/BR/Companhia_de_Mineracao_Sao_Lourenco_en_1144174.html). The facility is associated with Companhia de Mineracao Sao Lourenco, which operates in the Copper, Nickel, Lead, and Zinc Mining industry"
   },
   "canonical_name": "Sao Lourenco, Macisa, Caripunas, Limeira Mine",
   "canonical_slug": "sao-lourenco-macisa-caripunas-limeira-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rondônia",
+  "town": "Porto Velho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:52:48.000000Z",
+      "operators": [
+        "Companhia de Mineracao Sao Lourenco"
+      ],
+      "owners": [],
+      "notes": "The company was established in 1968 and is located in Porto Velho, Rondônia."
+    }
+  }
 }

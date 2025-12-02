@@ -9,8 +9,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.387,
-    "lon": 22.966,
+    "lat": -28.12815248099341,
+    "lon": 23.068889,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American",
+    "Kumba Iron Ore",
+    "Sishen Iron Ore Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.701230Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:55:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Postmasburg (https://www.mining-technology.com/projects/kolomela-iron-ore-mine-northern-cape/). The Kolomela mine is located 22km from Postmasburg in the Northern Cape province of South Africa"
   },
   "canonical_name": "Kolomela Mine",
   "canonical_slug": "kolomela-mine",
@@ -53,5 +57,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "town": "Postmasburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:55:02.000000Z",
+      "operators": [
+        "Sishen Iron Ore Company",
+        "Kumba Iron Ore"
+      ],
+      "owners": [
+        "Anglo American",
+        "Kumba Iron Ore"
+      ],
+      "notes": "Sishen Iron Ore Company is a subsidiary of Kumba Iron Ore, which is 76.3% owned by Anglo American."
+    }
+  }
 }

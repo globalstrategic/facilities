@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PAK",
   "location": {
-    "lat": 26.09,
-    "lon": 66.831,
+    "lat": 26.08889,
+    "lon": 66.83611,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Huaye Group",
+    "Hunan Nonferrous Metals Holding (49%)",
+    "MCC Huaye Duddar Mining Company (MHD)",
+    "Metallurgical Corporation of China Limited (51%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.339838Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:39:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Duddar_mine. Duddar mine is Pakistan's largest underground facility for the extraction of lead and zinc"
   },
   "canonical_name": "Duddar Mine",
   "canonical_slug": "duddar-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Balochistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:39:14.000000Z",
+      "operators": [
+        "MCC Huaye Duddar Mining Company (MHD)",
+        "China Huaye Group"
+      ],
+      "owners": [
+        "Metallurgical Corporation of China Limited (51%)",
+        "Hunan Nonferrous Metals Holding (49%)"
+      ],
+      "notes": "The mine is operated by a joint venture between MCC and China Huaye Group."
+    }
+  }
 }

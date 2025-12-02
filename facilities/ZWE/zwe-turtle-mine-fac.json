@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.9833,
-    "lon": 29.05,
+    "lat": -18.92600884506579,
+    "lon": 30.763328951455453,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sinomine",
+    "Turtle Creek Mining Zimbabwe"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-26T17:45:29.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:24:42.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.getamap.net/maps/zimbabwe/zimbabwe_(general)/_turtle/. Turtle Mine is located in Midlands Province, Zimbabwe"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.getamap.net/maps/zimbabwe/zimbabwe_(general)/_turtle/. Turtle Mine is located in Midlands Province, Zimbabwe. Web search geocoded. Source: Calculated from Kwekwe (https://allafrica.com/stories/200009290276.html). Turtle Mine is located in the Silobela communal area, which is approximately 100 km east of Kwekwe"
   },
   "canonical_name": "Turtle Mine",
   "canonical_slug": "turtle-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Midlands Province"
+  "province": "Midlands",
+  "town": "Kwekwe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:24:42.000000Z",
+      "operators": [
+        "Sinomine",
+        "Turtle Creek Mining Zimbabwe"
+      ],
+      "owners": [],
+      "notes": "Sinomine acquired the mine in 2022, but the current operational status is unclear."
+    }
+  }
 }

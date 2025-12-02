@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": 1.595,
-    "lon": 125.093,
+    "lat": 1.7290942559708913,
+    "lon": 125.1084323274564,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Archi Indonesia Tbk",
+    "PT Meares Soputan Mining",
+    "PT Rajawali",
+    "PT Tambang Tondano Nusajaya"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.277736Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:57:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Manado (https://archiindonesia.com/company-overview/). The Toka Tindung Gold Mine is located approximately 35 km Northeast of Manado"
   },
   "canonical_name": "Toka Tindung Mine",
   "canonical_slug": "toka-tindung-mine",
@@ -49,5 +54,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Sulawesi",
+  "town": "Manado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:57:56.000000Z",
+      "operators": [
+        "PT Meares Soputan Mining",
+        "PT Tambang Tondano Nusajaya"
+      ],
+      "owners": [
+        "PT Archi Indonesia Tbk",
+        "PT Rajawali"
+      ],
+      "notes": "Archi owns 100% of the Toka Tindung Gold Mine through its subsidiaries."
+    }
+  }
 }

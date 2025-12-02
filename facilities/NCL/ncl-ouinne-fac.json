@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": -21.997,
-    "lon": 166.665,
+    "lat": -21.9635,
+    "lon": 166.6652,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Société G. Montagnat Et Cie."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:56.367745Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:57:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs60000630. The Ouinne Mining District is a significant site in the mining industry of New Caledonia, discovered in 1864"
   },
   "canonical_name": "Ouinne Mine",
   "canonical_slug": "ouinne-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sud",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:57:15.000000Z",
+      "operators": [
+        "Société G. Montagnat Et Cie."
+      ],
+      "owners": [
+        "Société G. Montagnat Et Cie."
+      ],
+      "notes": "The ownership and operational status are not clearly defined in the search results."
+    }
+  }
 }

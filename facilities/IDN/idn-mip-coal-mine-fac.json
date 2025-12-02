@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 3.29,
-    "lon": 117.609,
+    "lat": -3.800844,
+    "lon": 103.40783,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Adaro Energy",
+    "PT Mustika Indah Permai"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.296319Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:11:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MIP_Adaro_Coal_Mine. The MIP Coal Mine is operated by PT Mustika Indah Permai, a subsidiary of Adaro Energy"
   },
   "canonical_name": "MIP Coal Mine",
   "canonical_slug": "mip-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:11:06.000000Z",
+      "operators": [
+        "PT Mustika Indah Permai"
+      ],
+      "owners": [
+        "Adaro Energy"
+      ],
+      "notes": "MIP is majority owned by Adaro Energy, which began commercial operations in 2019."
+    }
+  }
 }

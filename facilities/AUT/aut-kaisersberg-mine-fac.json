@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.3394,
+    "lon": 14.9697,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.399472Z",
-    "checked_by": "import_pipeline",
-    "notes": "The last active graphite mine in the Alps; a European source of microcrystalline graphite. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:37:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "The last active graphite mine in the Alps; a European source of microcrystalline graphite. | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-57610.html. The Kaisersberg Mine has been actively mined since 1755 and is currently producing amorphous graphite"
   },
   "canonical_name": "Kaisersberg Mine",
   "canonical_slug": "kaisersberg-mine",
@@ -55,14 +55,14 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:33:39.000000Z",
+      "timestamp": "2025-12-01T16:37:37.000000Z",
       "operators": [
-        "Grafitbergbau Kaisersberg"
+        "Grafitbergbau Kaisersberg Ges.m.b.H."
       ],
       "owners": [
         "Grafitbergbau Kaisersberg"
       ],
-      "notes": "Grafitbergbau Kaisersberg is a privately owned business based in Kaisersberg."
+      "notes": "Grafitbergbau is a privately owned company based in the town of Kaisersberg."
     }
   }
 }

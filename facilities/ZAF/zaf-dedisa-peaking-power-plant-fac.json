@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -33.74376,
-    "lon": 25.6728,
+    "lat": -33.742364,
+    "lon": 25.672715,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dedisa Peaking Power (RF) Pty Ltd",
+    "ENGIE SA",
+    "Legend Power Solutions Pty Ltd",
+    "Mitsui & Co Ltd",
+    "The Peaker Trust"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +36,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:07:20.000000Z",
+    "last_checked": "2025-12-01T17:18:13.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/W375737664. Coordinates extracted from multiple sources confirm the location of the Dedisa Peaking Power Plant"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://mapcarta.com/W375737664. Coordinates extracted from multiple sources confirm the location of the Dedisa Peaking Power Plant. Web search geocoded. Source: https://www.powermag.com/south-africa-puts-first-large-ipp-project-online/. The Dedisa Peaking Power Plant is located in the Coega Industrial Development Zone near Port Elizabeth"
   },
   "canonical_name": "Dedisa Peaking Power Mine",
   "canonical_slug": "dedisa-peaking-power-mine",
@@ -48,5 +54,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Eastern Cape"
+  "province": "Eastern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:18:13.000000Z",
+      "operators": [
+        "Dedisa Peaking Power (RF) Pty Ltd"
+      ],
+      "owners": [
+        "ENGIE SA",
+        "Legend Power Solutions Pty Ltd",
+        "Mitsui & Co Ltd",
+        "The Peaker Trust"
+      ],
+      "notes": "The plant is owned by a consortium with ENGIE holding a 38% stake."
+    }
+  }
 }

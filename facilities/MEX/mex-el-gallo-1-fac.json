@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 25.631,
-    "lon": -107.839,
+    "lat": 25.40005465504535,
+    "lon": -107.8189378,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "McEwen Mining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.961454Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:37:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mocorito (https://www.mining-technology.com/projects/el-gallo-mine/). The El Gallo mine is located in Sinaloa, Mexico, near the town of Mocorito"
   },
   "canonical_name": "El Gallo 1 Mine",
   "canonical_slug": "el-gallo-1-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sinaloa",
+  "town": "Mocorito",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:37:47.000000Z",
+      "operators": [
+        "McEwen Mining Inc."
+      ],
+      "owners": [
+        "McEwen Mining Inc."
+      ],
+      "notes": "McEwen Mining fully owns the El Gallo mine."
+    }
+  }
 }

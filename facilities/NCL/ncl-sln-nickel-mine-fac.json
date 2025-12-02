@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NCL",
   "location": {
-    "lat": -22.259,
-    "lon": 166.438,
+    "lat": -22.3,
+    "lon": 166.5,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eramet",
+    "Société Le Nickel (SLN)"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.370147Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T06:59:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.rnz.co.nz/news/pacific/542433/top-leadership-changes-in-new-caledonia-s-nickel-stakeholder. Société Le Nickel (SLN) is the oldest nickel mine and smelter operator in New Caledonia, located near Nouméa"
   },
   "canonical_name": "Sln Nickel Mine",
   "canonical_slug": "sln-nickel-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:59:11.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)",
+        "Eramet"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "Eramet is the parent company of SLN, which is a major stakeholder in New Caledonia's nickel industry."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.159,
-    "lon": -86.959,
+    "lat": 38.1625,
+    "lon": -86.9625,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sun Energy Group",
+    "Sun Energy Group LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.848716Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:33:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Flint_Hill_Mine. Flint Hill Mine is an operating coal mine located in Dale, Spencer County, Indiana"
   },
   "canonical_name": "Flint Hill Mine",
   "canonical_slug": "flint-hill-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:33:08.000000Z",
+      "operators": [
+        "Sun Energy Group LLC"
+      ],
+      "owners": [
+        "Sun Energy Group"
+      ],
+      "notes": "Sun Energy Group LLC owns 100% of the mine and is also the parent company."
+    }
+  }
 }

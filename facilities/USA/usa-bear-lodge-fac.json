@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 44.49639364370595,
+    "lon": -104.375895,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Powermax Minerals Inc.",
+    "Rare Element Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.972700Z",
-    "checked_by": "import_pipeline",
-    "notes": "Carbonatite NdPr project | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:36:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Carbonatite NdPr project | Canonical name+slug generated. Web search geocoded. Source: Calculated from Sundance (https://argyleresourcescorp.com/argyle-resources-corp-announces-filing-of-21-mineral-lode-claims-in-crook-county-wyoming/). The Bear Lodge Critical Rare Earth Project is located in the Bear Lodge Mining District, which has been active since 1875"
   },
   "canonical_name": "Bear Lodge Mine",
   "canonical_slug": "bear-lodge-mine",
@@ -53,5 +56,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "town": "Sundance",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:36:12.000000Z",
+      "operators": [
+        "Rare Element Resources Ltd."
+      ],
+      "owners": [
+        "Rare Element Resources Ltd.",
+        "Powermax Minerals Inc."
+      ],
+      "notes": "Rare Element Resources Ltd. is focused on the Bear Lodge Rare Earth Project, while Powermax Minerals Inc. has acquired a 100% interest in the Ogden Bear Lodge REE Project."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.1,
-    "lon": 28.32,
+    "lat": -26.20468678451736,
+    "lon": 28.349891634551835,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold One Africa Limited",
+    "Gold One Group Limited",
+    "Goliath Gold Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:18:50.000000Z",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T17:42:17.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/East_Rand_Mine. Coordinates extracted directly from the East Rand Mine location"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/East_Rand_Mine. Coordinates extracted directly from the East Rand Mine location. Web search geocoded. Source: Calculated from Johannesburg (https://lexingtongold.co.uk/wp-content/uploads/2024/12/2024-12-03-Lexington-Update-re-Ventersburg-Gold-Project-South-Africa.pdf). The East Rand Target Project is located in the East Rand Goldfield, which is historically rich in gold mining"
   },
   "canonical_name": "East Rand Target Mine",
   "canonical_slug": "east-rand-target-mine",
@@ -48,5 +52,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gauteng"
+  "province": "Gauteng",
+  "town": "Johannesburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:42:17.000000Z",
+      "operators": [
+        "Gold One Group Limited",
+        "Goliath Gold Mining"
+      ],
+      "owners": [
+        "Gold One Africa Limited",
+        "Goliath Gold Mining"
+      ],
+      "notes": "Gold One Group Limited operates in the East Rand Goldfield, and Goliath Gold Mining is involved in the East Rand Target Area project."
+    }
+  }
 }

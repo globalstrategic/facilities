@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": 11.452,
-    "lon": 33.968,
+    "lat": 11.4522,
+    "lon": 33.9679,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blue Nile Chrome Corporation",
+    "Kamal Abdel Moneim Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:57.165679Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:13:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10183254. The Kreiter Chromium Mine is a prominent surface mining operation located in the Blue Nile region of Sudan, known for its substantial chromium reserves"
   },
   "canonical_name": "Kreiter Mine",
   "canonical_slug": "kreiter-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Blue Nile",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:13:07.000000Z",
+      "operators": [
+        "Blue Nile Chrome Corporation",
+        "Kamal Abdel Moneim Corporation"
+      ],
+      "owners": [
+        "Blue Nile Chrome Corporation",
+        "Kamal Abdel Moneim Corporation"
+      ],
+      "notes": "Both companies are listed as owners and operators of the Kreiter Chromium Mine."
+    }
+  }
 }

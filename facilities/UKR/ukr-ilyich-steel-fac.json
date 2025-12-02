@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UKR",
   "location": {
-    "lat": 47.168,
-    "lon": 37.553,
+    "lat": 47.0971,
+    "lon": 37.5294,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metinvest Holding",
+    "Metinvest Ilyich Iron and Steel Works"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.713003Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:52:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Metinvest_Ilyich_Iron_and_Steel_Works. The facility is located in Mariupol, Donetsk region, Ukraine"
   },
   "canonical_name": "Ilyich Steel Smelter",
   "canonical_slug": "ilyich-steel-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Donetsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:52:41.000000Z",
+      "operators": [
+        "Metinvest Ilyich Iron and Steel Works"
+      ],
+      "owners": [
+        "Metinvest Holding"
+      ],
+      "notes": "The plant has been mothballed since 2022 due to damage during the invasion of Ukraine."
+    }
+  }
 }

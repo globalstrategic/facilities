@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 38.94,
-    "lon": 37.878,
+    "lat": 38.9544389,
+    "lon": 37.8927806,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdemir Madencilik Sanayi ve Ticaret AŞ",
+    "Eregli Demir ve Celik Fabrikalari AŞ",
+    "unknown"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.309247Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:26:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ermaden_Hasancelebi_Mine. The Ermaden Hasancelebi Mine is an iron ore mine located in Hekimhan, Malatya, Türkiye"
   },
   "canonical_name": "Ermaden Hasancelebi Mine",
   "canonical_slug": "ermaden-hasancelebi-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Malatya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:26:20.000000Z",
+      "operators": [
+        "Erdemir Madencilik Sanayi ve Ticaret AŞ"
+      ],
+      "owners": [
+        "Eregli Demir ve Celik Fabrikalari AŞ",
+        "unknown"
+      ],
+      "notes": "Erdemir Madencilik Sanayi ve Ticaret AŞ is the sole owner of the mine, while Eregli Demir ve Celik Fabrikalari AŞ holds a 90% stake."
+    }
+  }
 }

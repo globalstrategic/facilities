@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "COSMO Chemical Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.526861",
-      "evidence": "Extracted from operator column: COSMO Chemical Co. Ltd."
-    }
+    "COSMO Chemical Co. Ltd.",
+    "Korea Precursor Co., Ltd (LG Chemical + Korea Zinc JV)",
+    "Korea Zinc Co., Ltd",
+    "LG Chemical + Huayou Cobalt JV",
+    "LS MnM"
   ],
   "products": [],
   "sources": [
@@ -59,5 +56,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:02:26.000000Z",
+      "operators": [
+        "LS MnM",
+        "Korea Precursor Co., Ltd (LG Chemical + Korea Zinc JV)",
+        "LG Chemical + Huayou Cobalt JV"
+      ],
+      "owners": [
+        "Korea Zinc Co., Ltd"
+      ],
+      "notes": "The facility is being developed by LS MnM and involves joint ventures with Korea Precursor Co., Ltd and LG Chemical."
+    }
+  }
 }

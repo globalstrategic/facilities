@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 42.408,
-    "lon": -123.275,
+    "lat": 31.48889,
+    "lon": -96.11944,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jewett Mine, LLC",
+    "NRG Energy Inc",
+    "Texas Westmoreland Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.727196Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:06:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.swf.usace.army.mil/Media/Public-Notices/Article/480297/swf-2012-00080-texas-westmoreland-coal-company-jewett-texas/. Coordinates are for the Jewett E/F Mine center, which is part of the Jewett Mine operations"
   },
   "canonical_name": "Jewett Mine",
   "canonical_slug": "jewett-mine-2",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:06:35.000000Z",
+      "operators": [
+        "Texas Westmoreland Coal Company"
+      ],
+      "owners": [
+        "NRG Energy Inc",
+        "Jewett Mine, LLC"
+      ],
+      "notes": "Texas Westmoreland Coal Company operates the mine, while NRG Energy Inc and Jewett Mine, LLC are involved in ownership."
+    }
+  }
 }

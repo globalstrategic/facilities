@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.767,
-    "lon": 30.951,
+    "lat": -27.76671,
+    "lon": 30.95085,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Keaton Energy Holdings",
+    "Leeuw Mining and Exploration (LME)"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.779397Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:06:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6748. Coordinates extracted from Global Energy Observatory"
   },
   "canonical_name": "Vaalkrantz Colliery Mine",
   "canonical_slug": "vaalkrantz-colliery-mine",
@@ -49,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "KwaZulu-Natal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:06:33.000000Z",
+      "operators": [
+        "Leeuw Mining and Exploration (LME)",
+        "Keaton Energy Holdings"
+      ],
+      "owners": [
+        "Keaton Energy Holdings"
+      ],
+      "notes": "Vaalkrantz Colliery is operated by LME, a subsidiary of Keaton Energy, which has placed the facility on care and maintenance."
+    }
+  }
 }

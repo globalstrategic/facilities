@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.80628,
-    "lon": 27.85592,
+    "lat": -26.7333,
+    "lon": 27.8333,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "De Beers Group",
+    "Sasol Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T13:24:18.000000Z",
+    "last_checked": "2025-12-01T16:55:34.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39102. Coordinates extracted from the Sasol/Total Natref Sasolburg Refinery location"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39102. Coordinates extracted from the Sasol/Total Natref Sasolburg Refinery location. Web search geocoded. Source: https://www.chemanalyst.com/NewsAndDeals/NewsDetails/anglo-american-de-beers-and-sasol-partner-on-400m-litre-mining-biodiesel-initiative-34349. The facility is part of Sasol's operations in Sasolburg, where they are developing biodiesel production"
   },
   "canonical_name": "Biodiesel Sasolburg Mine",
   "canonical_slug": "biodiesel-sasolburg-mine",
@@ -48,5 +52,21 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Free State"
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:55:34.000000Z",
+      "operators": [
+        "Sasol Ltd",
+        "Anglo American plc",
+        "De Beers Group"
+      ],
+      "owners": [
+        "Sasol Ltd",
+        "Anglo American plc",
+        "De Beers Group"
+      ],
+      "notes": "Sasol is the primary operator, with partnerships involving Anglo American and De Beers for the biodiesel project."
+    }
+  }
 }

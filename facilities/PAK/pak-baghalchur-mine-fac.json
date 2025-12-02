@@ -6,8 +6,8 @@
   ],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 30.286955183940847,
+    "lon": 70.34611960266153,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pakistan Atomic Energy Commission (PAEC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.340968Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:39:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dera Ghazi Khan (https://en.wikipedia.org/wiki/Baghalchur). The Baghalchur Mine was operated by the Pakistan Atomic Energy Commission (PAEC) and is located in the D.G. Khan District"
   },
   "canonical_name": "Baghalchur Mine",
   "canonical_slug": "baghalchur-mine",
@@ -53,5 +55,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Punjab",
+  "town": "Dera Ghazi Khan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:39:55.000000Z",
+      "operators": [
+        "Pakistan Atomic Energy Commission (PAEC)"
+      ],
+      "owners": [
+        "Pakistan Atomic Energy Commission (PAEC)"
+      ],
+      "notes": "The facility was closed in 2000 due to depletion of uranium deposits."
+    }
+  }
 }

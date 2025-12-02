@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.802,
-    "lon": -87.091,
+    "lat": 33.93006881674208,
+    "lon": -86.31015439934833,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allegiance Coal USA Ltd",
+    "Black Warrior Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.982964Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:49:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Birmingham (https://www.coalage.com/departments/breaking-news/allegiance-will-acquire-black-warrior-minerals/). The Black Warrior Mine No. 1 is located approximately 40 miles northeast of Birmingham, Alabama"
   },
   "canonical_name": "Black Warrior No 1 Mine",
   "canonical_slug": "black-warrior-no-1-mine",
@@ -59,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "town": "Birmingham",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:49:13.000000Z",
+      "operators": [
+        "Allegiance Coal USA Ltd"
+      ],
+      "owners": [
+        "Black Warrior Minerals Inc."
+      ],
+      "notes": "Allegiance Coal is acquiring Black Warrior Minerals, which owns and operates the mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.74,
-    "lon": 24.76,
+    "lat": -28.738,
+    "lon": 24.763,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ekapa Mining (Pty) Ltd",
+    "Petra Diamonds Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.711306Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:04:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/675/KEM-JV-Mine.aspx. The facility is located approximately 1 km southeast of Kimberley, South Africa"
   },
   "canonical_name": "Kimberley Ekapa Mining JV Mine",
   "canonical_slug": "kimberley-ekapa-mining-jv-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:04:56.000000Z",
+      "operators": [
+        "Ekapa Mining (Pty) Ltd"
+      ],
+      "owners": [
+        "Ekapa Mining (Pty) Ltd",
+        "Petra Diamonds Ltd"
+      ],
+      "notes": "Ekapa Mining is the operator and 100% owner of the Ekapa Resources and Ekapa Minerals, while Petra Diamonds was previously a partner in the joint venture."
+    }
+  }
 }

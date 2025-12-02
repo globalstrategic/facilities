@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.482,
-    "lon": 126.509,
+    "lat": 48.6696717418856,
+    "lon": 42.090115,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Petropavlovsk plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.646787Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:01:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pokrovskiy (https://petropavlovskplc.com/operation/pioneer/). Pioneer is the largest mine of Petropavlovsk plc and one of the largest gold mines in the Russian far east"
   },
   "canonical_name": "Pioneer Mine",
   "canonical_slug": "pioneer-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amur Oblast",
+  "town": "Pokrovskiy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:01:54.000000Z",
+      "operators": [
+        "Petropavlovsk plc"
+      ],
+      "owners": [
+        "Petropavlovsk plc"
+      ],
+      "notes": "Petropavlovsk plc acquired the mine in 2001 and has been operating it since commissioning in 2008."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.2546538,
-    "lon": 29.1770745,
+    "lat": -26.25417,
+    "lon": 29.17944,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eskom"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:52:09.620084",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Kriel Power Station, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:12:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Kriel Power Station, South Africa. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kriel_Power_Station. Kriel Power Station is a coal-fired power plant located in Mpumalanga, South Africa"
   },
   "canonical_name": "Kriel Power Station Mine",
   "canonical_slug": "kriel-power-station-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:12:49.000000Z",
+      "operators": [
+        "Eskom"
+      ],
+      "owners": [
+        "Eskom"
+      ],
+      "notes": "Eskom is the state-owned power utility and the largest producer of electricity in Africa."
+    }
+  }
 }

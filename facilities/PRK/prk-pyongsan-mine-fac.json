@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 38.3,
-    "lon": 126.4333,
+    "lat": 38.317933,
+    "lon": 125.5685,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hyesan-China Joint Venture Mineral Co.",
+    "Korea General Zinc Industry Group",
+    "Ministry of Atomic Energy Industry"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.360692Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:39:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nonproliferation.org/wp-content/uploads/2018/10/op40-monitoring-uranium-mining-and-milling-in-china-and-north-korea-through-remote-sensing-imagery.pdf. The Pyongsan Mine is North Korea's largest known operating uranium mine and concentration plant"
   },
   "canonical_name": "Pyongsan Mine",
   "canonical_slug": "pyongsan-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Hwanghae",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:39:48.000000Z",
+      "operators": [
+        "Korea General Zinc Industry Group",
+        "Hyesan-China Joint Venture Mineral Co."
+      ],
+      "owners": [
+        "Ministry of Atomic Energy Industry"
+      ],
+      "notes": "The facility is managed by the Ministry of Atomic Energy Industry and is under the control of the Second Economic Committee of the Korean Workers’ Party."
+    }
+  }
 }

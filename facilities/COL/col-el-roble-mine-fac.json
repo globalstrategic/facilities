@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 5.759,
-    "lon": null,
+    "lat": 5.633351432193843,
+    "lon": -76.6580839,
     "precision": "unknown"
   },
   "types": [
@@ -22,6 +22,7 @@
   ],
   "status": "operating",
   "company_mentions": [
+    "Atico Mining Corp.",
     "Atico Mining Corporation",
     "Minera El Roble S.A."
   ],
@@ -34,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.738044Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:55:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Carmen de Atrato (https://www.nsenergybusiness.com/projects/el-roble-copper-gold-mine/). The El Roble mine is the only operating copper mine in Colombia, located approximately 6km south of Carmen de Atrato"
   },
   "canonical_name": "El Roble Mine",
   "canonical_slug": "el-roble-mine",
@@ -57,15 +58,17 @@
   "province": "Chocó",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:57:55.000000Z",
+      "timestamp": "2025-12-01T17:55:18.000000Z",
       "operators": [
-        "Minera El Roble S.A."
+        "Minera El Roble S.A.",
+        "Atico Mining Corp."
       ],
       "owners": [
-        "Atico Mining Corporation",
+        "Atico Mining Corp.",
         "Minera El Roble S.A."
       ],
-      "notes": "Atico Mining Corporation owns 90% of Minera El Roble S.A., which operates the mine."
+      "notes": "Atico Mining holds a 90% interest in Minera El Roble, which operates the mine."
     }
-  }
+  },
+  "town": "Carmen de Atrato"
 }

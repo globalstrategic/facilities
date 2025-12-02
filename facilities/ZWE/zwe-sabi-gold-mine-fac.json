@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.39891966529053,
+    "lon": 30.140754545918774,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chandiwana Mining Corporation",
+    "Kimberworth Investments",
+    "Zimbabwe Mining Development Corporation (ZMDC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.954682Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Zvishavane (https://zmdc.co.zw/gold2.html). Sabi Gold Mine is located 13 km southeast of Zvishavane and is a joint venture operation"
   },
   "canonical_name": "Sabi Gold Mine",
   "canonical_slug": "sabi-gold-mine",
@@ -50,5 +54,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "town": "Zvishavane",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:23.000000Z",
+      "operators": [
+        "Chandiwana Mining Corporation",
+        "Kimberworth Investments"
+      ],
+      "owners": [
+        "Zimbabwe Mining Development Corporation (ZMDC)"
+      ],
+      "notes": "Sabi Gold Mine is operated as a joint venture between Kimberworth Investments and Chandiwana Mining Corporation, under the name Anmack Mining."
+    }
+  }
 }

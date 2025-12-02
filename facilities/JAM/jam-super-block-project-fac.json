@@ -14,22 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "C3 Metals Inc.",
-      "role": "operator",
-      "source": "Research Import JAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:22.448246",
-      "evidence": "Extracted from operator column: C3 Metals Inc. / Geophysx Jamaica Ltd."
-    },
-    {
-      "name": "Geophysx Jamaica Ltd.",
-      "role": "operator",
-      "source": "Research Import JAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:22.448248",
-      "evidence": "Extracted from operator column: C3 Metals Inc. / Geophysx Jamaica Ltd."
-    }
+    "C3 Metals Inc.",
+    "Geophysx Jamaica Limited",
+    "Geophysx Jamaica Ltd."
   ],
   "products": [],
   "sources": [
@@ -67,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jamaica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:15:19.000000Z",
+      "operators": [
+        "C3 Metals Inc."
+      ],
+      "owners": [
+        "C3 Metals Inc.",
+        "Geophysx Jamaica Limited"
+      ],
+      "notes": "C3 Metals operates the project as part of a 50/50 joint venture with Geophysx Jamaica Limited."
+    }
+  }
 }

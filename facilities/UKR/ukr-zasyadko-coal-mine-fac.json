@@ -9,8 +9,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.06,
-    "lon": 37.788,
+    "lat": 48.052222,
+    "lon": 37.789444,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Public Joint Stock Company A. F. Zasyadko Mine",
+    "State Enterprise of Donetsk People's Republic 'Mine Zasyadko'",
+    "State Unitary Enterprise of the Donetsk People's Republic 'Main Directorate for Mine Restructuring'"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.720517Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:59:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Zasyadko_Coal_Mine. The Zasyadko Coal Mine is located in Donetsk, Ukraine, and is known for its historical significance and repeated mining accidents"
   },
   "canonical_name": "Zasyadko Coal Mine",
   "canonical_slug": "zasyadko-coal-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Donetsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:59:44.000000Z",
+      "operators": [
+        "State Enterprise of Donetsk People's Republic 'Mine Zasyadko'"
+      ],
+      "owners": [
+        "Public Joint Stock Company A. F. Zasyadko Mine",
+        "State Unitary Enterprise of the Donetsk People's Republic 'Main Directorate for Mine Restructuring'"
+      ],
+      "notes": "Ownership has changed over time, especially since the conflict in Ukraine began."
+    }
+  }
 }

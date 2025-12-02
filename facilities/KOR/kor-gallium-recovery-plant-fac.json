@@ -14,14 +14,7 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Korea Zinc Co., Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515176",
-      "evidence": "Extracted from operator column: Korea Zinc Co., Ltd."
-    }
+    "Korea Zinc Co., Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +52,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:02:02.000000Z",
+      "operators": [
+        "Korea Zinc Co., Ltd."
+      ],
+      "owners": [
+        "Korea Zinc Co., Ltd."
+      ],
+      "notes": "Korea Zinc is both the operator and owner of the facility."
+    }
+  }
 }

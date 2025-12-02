@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 57.025,
-    "lon": 124.89,
+    "lat": 57.02521034,
+    "lon": 124.8899982,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Private Individual",
+    "STS-Ugol LLC",
+    "Sakhatechserviss LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.655077Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:09:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nalymakitsky_Coal_Mine. Nalymakitsky Coal Mine is a surface and underground mine located in the Neryungri district"
   },
   "canonical_name": "Nalymakitsky Coal Mine",
   "canonical_slug": "nalymakitsky-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sakha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:09:50.000000Z",
+      "operators": [
+        "STS-Ugol LLC"
+      ],
+      "owners": [
+        "Sakhatechserviss LLC",
+        "Private Individual"
+      ],
+      "notes": "STS-Ugol LLC holds a license to develop the Chulmakan coal deposit."
+    }
+  }
 }

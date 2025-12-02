@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": 8.379,
-    "lon": 35.93,
+    "lat": 8.37883,
+    "lon": 35.93015,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ethio Engineering Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:14.298618Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:30:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Yayu_Coal_Mine. Yayu Coal Mine is a shelved coal mine located in Yayu, Illubador, Oromiya, Ethiopia"
   },
   "canonical_name": "Yayu Coal Mine",
   "canonical_slug": "yayu-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oromia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:30:10.000000Z",
+      "operators": [
+        "Ethio Engineering Group"
+      ],
+      "owners": [
+        "Ethio Engineering Group"
+      ],
+      "notes": "Ethio Engineering Group is the sole owner and operator of the Yayu Coal Mine."
+    }
+  }
 }

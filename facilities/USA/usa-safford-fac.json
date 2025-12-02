@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.833,
-    "lon": -109.7,
+    "lat": 32.9303,
+    "lon": -109.7039,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan Copper & Gold Inc.",
+    "Freeport-McMoRan Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.849836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:33:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Safford_mine. The Safford Mine is an open-pit copper mine located in Graham County, Arizona, eight miles north of the city of Safford"
   },
   "canonical_name": "Safford Mine",
   "canonical_slug": "safford-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:33:48.000000Z",
+      "operators": [
+        "Freeport-McMoRan Copper & Gold Inc."
+      ],
+      "owners": [
+        "Freeport-McMoRan Inc."
+      ],
+      "notes": "Freeport-McMoRan owns and operates the Safford Mine."
+    }
+  }
 }

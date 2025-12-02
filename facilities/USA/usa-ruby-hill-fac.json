@@ -13,8 +13,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.51,
-    "lon": -115.988,
+    "lat": 39.005,
+    "lon": -115.999,
     "precision": "site"
   },
   "types": [
@@ -43,7 +43,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ruby Hill Mining Company, LLC",
+    "i-80 Gold Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -53,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.697503Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:41:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://royalgold.com/our-portfolio/producing-properties/ruby-hill05/default.aspx. Ruby Hill is an open-pit and underground operation located in Eureka County, Nevada"
   },
   "canonical_name": "Ruby Hill Mine",
   "canonical_slug": "ruby-hill-mine",
@@ -72,5 +75,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:41:52.000000Z",
+      "operators": [
+        "i-80 Gold Corp."
+      ],
+      "owners": [
+        "i-80 Gold Corp.",
+        "Ruby Hill Mining Company, LLC"
+      ],
+      "notes": "i-80 Gold Corp. is the operator and owner of the Ruby Hill Mine, having acquired it from Waterton Nevada Splitter, LLC."
+    }
+  }
 }

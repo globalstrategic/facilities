@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": 13.167,
-    "lon": 105.016,
+    "lat": 13.166884,
+    "lon": 105.016313,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Global Green (Cambodia) Energy Development Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.253672Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:54:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Global_Green_(Cambodia)_Energy_Development_Co_Ltd_Phnom_Deck_Mine. Coordinates are approximate for the Phnom Deck Mine"
   },
   "canonical_name": "Phnom Deck Mine",
   "canonical_slug": "phnom-deck-mine",
@@ -48,5 +50,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Preah Vihear",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:54:25.000000Z",
+      "operators": [
+        "Global Green (Cambodia) Energy Development Co Ltd"
+      ],
+      "owners": [],
+      "notes": "The mine is operated by Global Green (Cambodia) Energy Development Co Ltd."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.634,
-    "lon": 30.124,
+    "lat": -24.64486,
+    "lon": 30.12976,
     "precision": "site"
   },
   "types": [
@@ -52,7 +52,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Ltd.",
+    "Anglo American Platinum"
+  ],
   "products": [],
   "sources": [
     {
@@ -67,11 +70,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.723563Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-modikwa-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:15:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-modikwa-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1581/Modikwa-Mine.aspx. Modikwa platinum mine is one of the largest platinum reserves in South Africa, located in the Bushveld Igneous Complex"
   },
   "canonical_name": "Modikwa Mine",
   "canonical_slug": "modikwa-mine",
@@ -86,5 +89,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:54.000000Z",
+      "operators": [
+        "African Rainbow Minerals Ltd.",
+        "Anglo American Platinum"
+      ],
+      "owners": [
+        "African Rainbow Minerals Ltd.",
+        "Anglo American Platinum"
+      ],
+      "notes": "The mine is owned under a 50%/50% joint venture by African Rainbow Minerals and Anglo American Platinum."
+    }
+  }
 }

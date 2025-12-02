@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 37.192557,
+    "lon": 128.6716,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Handok Iron & Steel Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.519299",
-      "evidence": "Extracted from operator column: Handok Iron & Steel Co. Ltd."
-    }
+    "Handok Iron & Steel Co. Ltd.",
+    "Handuk Iron Mine & Construction Co Ltd",
+    "Korea Line Corp"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.754483Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The leading domestic iron ore mine in South Korea. 1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:58:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The leading domestic iron ore mine in South Korea. 1 | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Handuk_Sineyemi_Mine. The Sinyemi Mine is the sole iron ore mine in South Korea, located in Gangwon Province"
   },
   "canonical_name": "Sinyemi Mine",
   "canonical_slug": "sinyemi-mine",
@@ -59,5 +54,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gangwon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:58:01.000000Z",
+      "operators": [
+        "Handok Iron & Steel Co. Ltd."
+      ],
+      "owners": [
+        "Korea Line Corp",
+        "Handuk Iron Mine & Construction Co Ltd"
+      ],
+      "notes": "Handok Iron & Steel Co. Ltd. operates the mine, which is owned by Korea Line Corp and Handuk Iron Mine & Construction Co Ltd."
+    }
+  }
 }

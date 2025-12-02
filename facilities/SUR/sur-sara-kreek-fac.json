@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SUR",
   "location": {
-    "lat": 4.401,
-    "lon": -54.699,
+    "lat": -21.979569255187258,
+    "lon": -51.1716376,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Canarc Resource Corporation",
+    "Suriname Wylap Development Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.400459Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T05:59:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Paramaribo (https://www.canarc.net/_resources/financials/aif2001ccm-datedJune502.pdf). The Sara Kreek gold mine is a small open-pit placer operation in Suriname, producing gold on a break-even basis"
   },
   "canonical_name": "Sara Kreek Mine",
   "canonical_slug": "sara-kreek-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sipaliwini",
+  "town": "Paramaribo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:59:20.000000Z",
+      "operators": [
+        "Suriname Wylap Development Corp."
+      ],
+      "owners": [
+        "Canarc Resource Corporation"
+      ],
+      "notes": "Canarc owns an 80% interest in the Sara Kreek property."
+    }
+  }
 }

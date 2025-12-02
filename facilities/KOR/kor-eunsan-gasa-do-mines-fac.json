@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Sun Cement Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.520214",
-      "evidence": "Extracted from operator column: Sun Cement Co. Ltd."
-    }
+    "GoldenSun Co. Ltd.",
+    "Sun Cement Co. Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +53,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Jeolla Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:57:20.000000Z",
+      "operators": [
+        "Sun Cement Co. Ltd."
+      ],
+      "owners": [
+        "GoldenSun Co. Ltd.",
+        "Sun Cement Co. Ltd."
+      ],
+      "notes": "Sun Cement Co. Ltd. is the current operator, having taken over from GoldenSun Co. Ltd."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.511,
-    "lon": 30.108,
+    "lat": -24.502547,
+    "lon": 30.071713,
     "precision": "site"
   },
   "types": [
@@ -49,7 +49,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Economic Empowerment partners (27%)",
+    "Impala Platinum (73%)",
+    "Impala Platinum Holdings Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -64,11 +68,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.788037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-marula-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:14:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-marula-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marula_mine. Coordinates extracted directly from the Wikipedia page for Marula mine"
   },
   "canonical_name": "Marula Mine",
   "canonical_slug": "marula-mine",
@@ -83,5 +87,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:14:33.000000Z",
+      "operators": [
+        "Impala Platinum Holdings Limited"
+      ],
+      "owners": [
+        "Impala Platinum (73%)",
+        "Black Economic Empowerment partners (27%)"
+      ],
+      "notes": "Impala Platinum is the primary operator, with a majority stake. The remaining ownership is shared among three BEE partners."
+    }
+  }
 }

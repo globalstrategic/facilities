@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 69.548,
-    "lon": 88.334,
+    "lat": 72.74485512,
+    "lon": 82.67900973,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AEON Group",
+    "Severnaya Zvezda LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:15.626236Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:54:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Syradasaysky_Coal_Mine. The Syradasaysky Coal Mine is a proposed surface mine located in the Taimyr Dolgan-Nenetsky District"
   },
   "canonical_name": "Taimyr Mine",
   "canonical_slug": "taimyr-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Krasnoyarsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:54:43.000000Z",
+      "operators": [
+        "Severnaya Zvezda LLC"
+      ],
+      "owners": [
+        "AEON Group"
+      ],
+      "notes": "Severnaya Zvezda LLC is owned by AEON Group, which is associated with businessman Roman Trotsenko."
+    }
+  }
 }

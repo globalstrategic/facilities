@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Carbon New Materials Co.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.523755",
-      "evidence": "Extracted from operator column: Carbon New Materials Co. (tentative)"
-    }
+    "Carbon New Materials Co.",
+    "Posco Future M Company",
+    "Posco Holdings Inc"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Korea",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:01:14.000000Z",
+      "operators": [
+        "Posco Future M Company"
+      ],
+      "owners": [
+        "Posco Holdings Inc"
+      ],
+      "notes": "Posco Future M is a subsidiary of Posco Holdings Inc."
+    }
+  }
 }

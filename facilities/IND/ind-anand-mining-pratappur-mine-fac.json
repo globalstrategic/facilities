@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.382,
-    "lon": 80.181,
+    "lat": 23.392031,
+    "lon": 80.195154,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anand Mining Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.127365Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:53:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anand_Mining_Pratappur_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "Anand Mining Pratappur Mine",
   "canonical_slug": "anand-mining-pratappur-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:53:23.000000Z",
+      "operators": [
+        "Anand Mining Corp"
+      ],
+      "owners": [
+        "Anand Mining Corp"
+      ],
+      "notes": "Anand Mining Corp owns 100% of the facility."
+    }
+  }
 }

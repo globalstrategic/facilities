@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.74,
-    "lon": -110.483,
+    "lat": 35.8512710259761,
+    "lon": -90.2931492,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corp.",
+    "Mammoth Mining, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.972232Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:35:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cardwell (https://www.greatfallstribune.com/story/news/2018/10/27/mining-company-pays-millions-gold-dug-mine-dumps/1794109002/). The Mammoth Butte Mine is referenced in relation to mining activities in the Tobacco Root Mountains, south of Cardwell, Montana"
   },
   "canonical_name": "Mammoth Butte Mine",
   "canonical_slug": "mammoth-butte-mine",
@@ -65,5 +68,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Cardwell",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:35:52.000000Z",
+      "operators": [
+        "Mammoth Mining, LLC"
+      ],
+      "owners": [
+        "Barrick Gold Corp."
+      ],
+      "notes": "Mammoth Mining, LLC is involved in production from old tailings, while Barrick Gold Corp. owns the Golden Sunlight mine."
+    }
+  }
 }

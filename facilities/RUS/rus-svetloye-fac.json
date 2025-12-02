@@ -6,8 +6,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 58.524,
-    "lon": 139.663,
+    "lat": 57.938003731731364,
+    "lon": 140.58804214384307,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fortress Minerals Corp",
+    "JSC Polymetal",
+    "Polymetal International plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.593123Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:20:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Okhotsk (https://www.investegate.co.uk/announcement/rns/polymetal-international--poly/first-production-at-svetloye-ahead-of-schedule/4649227). Svetloye is located in the Russian Far-East in the Okhotsk district of the Khabarovsk region"
   },
   "canonical_name": "Svetloye Mine",
   "canonical_slug": "svetloye-mine",
@@ -49,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khabarovsk Territory",
+  "town": "Okhotsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:16.000000Z",
+      "operators": [
+        "Polymetal International plc"
+      ],
+      "owners": [
+        "Fortress Minerals Corp",
+        "JSC Polymetal"
+      ],
+      "notes": "Polymetal is acquiring the mining license for Svetloye from Fortress Minerals."
+    }
+  }
 }

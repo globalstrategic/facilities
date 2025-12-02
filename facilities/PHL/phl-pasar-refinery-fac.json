@@ -9,8 +9,8 @@
   ],
   "country_iso3": "PHL",
   "location": {
-    "lat": 10.898,
-    "lon": 124.434,
+    "lat": 10.89219,
+    "lon": 124.43874,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore plc",
+    "Philippine Associated Smelting and Refining Corporation (PASAR)",
+    "Villar Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:04.750248Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:01:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com/.rest/api/v1/documents/static/8e2ccaba-d4fe-4752-9a73-ca83f62e451c/2024+PASAR+Public+Responsible+Supply+Chain+Due+Diligence+Report+%281%29.pdf. PASAR is the only copper smelter and refinery in the Philippines, currently on care and maintenance"
   },
   "canonical_name": "Pasar Smelter",
   "canonical_slug": "pasar-smelter",
@@ -57,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Leyte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:01:35.000000Z",
+      "operators": [
+        "Philippine Associated Smelting and Refining Corporation (PASAR)"
+      ],
+      "owners": [
+        "Glencore plc",
+        "Villar Group"
+      ],
+      "notes": "Glencore is selling PASAR to the Villar family, which will diversify their mining business."
+    }
+  }
 }

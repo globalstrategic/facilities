@@ -6,8 +6,8 @@
   ],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 30.292778,
+    "lon": 31.410694,
     "precision": "unknown"
   },
   "types": [
@@ -15,7 +15,9 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Egyptian Atomic Energy Authority"
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.176292Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:11:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fuel_Manufacturing_Pilot_Plant. The facility is located at the Nuclear Research Center in Inshas, Egypt"
   },
   "canonical_name": "NRC Pilot Fuel Factory Mine",
   "canonical_slug": "nrc-pilot-fuel-factory-mine",
@@ -44,5 +46,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sharqia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:11:13.000000Z",
+      "operators": [
+        "Egyptian Atomic Energy Authority"
+      ],
+      "owners": [
+        "Egyptian Atomic Energy Authority"
+      ],
+      "notes": "The plant was constructed by the Argentine company INVAP."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "GRC",
   "location": {
-    "lat": 40.44,
-    "lon": 21.791,
+    "lat": 40.61889,
+    "lon": 21.68389,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Public Power Corporation S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:58.508208Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:56:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/West_Macedonia_Lignite_Centre. The West Macedonia Lignite Centre is a network of surface coal mines located in the Ptolemaida Basin, which is the largest coalfield in Greece"
   },
   "canonical_name": "West Macedonia Lignite Centre Mine",
   "canonical_slug": "west-macedonia-lignite-centre-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Macedonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:56:18.000000Z",
+      "operators": [
+        "Public Power Corporation S.A."
+      ],
+      "owners": [
+        "Public Power Corporation S.A."
+      ],
+      "notes": "The facility is wholly owned and operated by the Public Power Corporation S.A."
+    }
+  }
 }

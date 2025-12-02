@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -29.235833,
-    "lon": 18.958056,
+    "lat": -28.966400952172858,
+    "lon": 18.8406534,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "construction",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Mountain Mining (BMM)",
+    "Exxaro Resources",
+    "Vedanta Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:05:50.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:14:32.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-53701.html. Coordinates extracted from a mining location database for Gamsberg Zinc Mine, located approximately 20 km east of Aggeneys"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-53701.html. Coordinates extracted from a mining location database for Gamsberg Zinc Mine, located approximately 20 km east of Aggeneys. Web search geocoded. Source: Calculated from Aggeneys (https://blogs.agu.org/landslideblog/2020/12/02/gramsberg-1/). Gamsberg is a significant zinc mining project located near Aggeneys in the Northern Cape province of South Africa"
   },
   "canonical_name": "Gamsberg Skorpion Zinc Mine",
   "canonical_slug": "gamsberg-skorpion-zinc-mine",
@@ -56,5 +60,19 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "town": "Aggeneys",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:14:32.000000Z",
+      "operators": [
+        "Black Mountain Mining (BMM)"
+      ],
+      "owners": [
+        "Vedanta Resources",
+        "Exxaro Resources"
+      ],
+      "notes": "Vedanta Resources owns a majority stake in Black Mountain Mining, which operates the Gamsberg project."
+    }
+  }
 }

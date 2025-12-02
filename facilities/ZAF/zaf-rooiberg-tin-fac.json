@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.777,
-    "lon": 27.733,
+    "lat": -24.7633,
+    "lon": 27.7431,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields of South Africa Ltd.",
+    "Goldfields of S. Africa Ltd.",
+    "Rooiberg Minerals Development Company Ltd.",
+    "Rooiberg Tin Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.698125Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-rooiberg-tin-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:52:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-rooiberg-tin-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/21582. Coordinates directly extracted from the source"
   },
   "canonical_name": "Rooiberg Tin Mine",
   "canonical_slug": "rooiberg-tin-mine",
@@ -55,5 +60,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:52:10.000000Z",
+      "operators": [
+        "Rooiberg Minerals Development Company Ltd."
+      ],
+      "owners": [
+        "Gold Fields of South Africa Ltd.",
+        "Goldfields of S. Africa Ltd.",
+        "Rooiberg Tin Ltd."
+      ],
+      "notes": "Gold Fields of South Africa Ltd. has a significant stake, while Rooiberg Tin Ltd. holds a majority stake."
+    }
+  }
 }

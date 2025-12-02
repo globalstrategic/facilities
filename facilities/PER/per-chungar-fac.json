@@ -9,8 +9,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.037,
-    "lon": -76.417,
+    "lat": -9.5,
+    "lon": -75.0,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cia. Minera Chungar S.A.",
+    "Glencore plc",
+    "Ucovich Family",
+    "Volcan Compania Minera"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.311986Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:05:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://mng.sika.com/dms/getdocument.get/cc414878-d618-46e7-9fe8-b05d59059a00/MineraVolcanChungarZincMineinPeru.PDF. The Chungar division is located in the department of Cerro de Pasco, approximately 200 km northeast of Lima. Web search geocoded. Source: https://mng.sika.com/dms/getdocument.get/cc414878-d618-46e7-9fe8-b05d59059a00/MineraVolcanChungarZincMineinPeru.PDF. The Chungar division is located in the department of Cerro de Pasco, approximately 200 km northeast of Lima"
   },
   "canonical_name": "Chungar Mine",
   "canonical_slug": "chungar-mine",
@@ -64,5 +69,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:05:36.000000Z",
+      "operators": [
+        "Volcan Compania Minera"
+      ],
+      "owners": [
+        "Volcan Compania Minera",
+        "Cia. Minera Chungar S.A.",
+        "Ucovich Family"
+      ],
+      "notes": "Volcan Compania Minera is a major player in the zinc and lead mining sector, partly owned by Glencore plc."
+    }
+  }
 }

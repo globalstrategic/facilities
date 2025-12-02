@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -13.567,
-    "lon": 28.272,
+    "lat": -12.4974,
+    "lon": 28.2346,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "International Resources Holding (IRH)",
+    "Mopani Copper Mines Plc",
+    "ZCCM Investment Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.682311Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:46:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10134819. The Mufulira Copper Smelter is situated in close proximity to the town of Mufulira, operational since 1935"
   },
   "canonical_name": "Mufulira Smelter",
   "canonical_slug": "mufulira-smelter-2",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Copperbelt Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:46:08.000000Z",
+      "operators": [
+        "Mopani Copper Mines Plc"
+      ],
+      "owners": [
+        "International Resources Holding (IRH)",
+        "ZCCM Investment Holdings"
+      ],
+      "notes": "Mopani Copper Mines Plc is a subsidiary of International Resources Holding, which owns 51% of the company."
+    }
+  }
 }

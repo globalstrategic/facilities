@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Geophysx Jamaica Ltd.",
-      "role": "operator",
-      "source": "Research Import JAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:22.448618",
-      "evidence": "Extracted from operator column: Geophysx Jamaica Ltd."
-    }
+    "Barrick Gold Corporation",
+    "Geophysx Jamaica Ltd."
   ],
   "products": [],
   "sources": [
@@ -59,5 +53,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jamaica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:15:07.000000Z",
+      "operators": [
+        "Barrick Gold Corporation",
+        "Geophysx Jamaica Ltd."
+      ],
+      "owners": [
+        "Geophysx Jamaica Ltd."
+      ],
+      "notes": "Barrick Gold is the operator while Geophysx is the local partner and owner."
+    }
+  }
 }

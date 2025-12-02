@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.883,
-    "lon": -79.004,
+    "lat": 39.8825,
+    "lon": -79.004167,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mountaineer Mining Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.879876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:59:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mountaineer_1_Mine. Mountaineer 1 Mine is a retired coal mine"
   },
   "canonical_name": "Mountaineer 1 Mine",
   "canonical_slug": "mountaineer-1-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:59:58.000000Z",
+      "operators": [
+        "Mountaineer Mining Corp"
+      ],
+      "owners": [
+        "Mountaineer Mining Corp"
+      ],
+      "notes": "Mountaineer Mining Corp owns 100% of the mine."
+    }
+  }
 }

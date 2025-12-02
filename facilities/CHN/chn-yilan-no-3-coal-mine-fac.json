@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 46.146,
-    "lon": 129.385,
+    "lat": 46.14473,
+    "lon": 129.385463,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "中国中煤能源集团有限公司",
+    "中煤黑龙江煤炭化工（集团）有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.705113Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:17:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E4%B8%AD%E7%85%A4%E9%BB%91%E9%BE%99%E6%B1%9F%E7%85%A4%E7%82%AD%E5%8C%96%E5%B7%A5%EF%BC%88%E9%9B%86%E5%9B%A2%EF%BC%89%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BE%9D%E5%85%B0%E7%AC%AC%E4%B8%89%E7%85%A4%E7%9F%BF. The Yilan No. 3 Coal Mine is located in the southern part of Dalianhe Town, Yilan County, Heilongjiang Province"
   },
   "canonical_name": "Yilan No 3 Coal Mine",
   "canonical_slug": "yilan-no-3-coal-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "黑龙江省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:17:20.000000Z",
+      "operators": [
+        "中煤黑龙江煤炭化工（集团）有限公司"
+      ],
+      "owners": [
+        "中国中煤能源集团有限公司"
+      ],
+      "notes": "The mine is operated by Heilongjiang Coal Chemical Company and owned by China Coal Energy Group."
+    }
+  }
 }

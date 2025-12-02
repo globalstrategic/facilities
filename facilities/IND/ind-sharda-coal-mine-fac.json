@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.208,
-    "lon": 81.59,
+    "lat": 23.208242,
+    "lon": 81.589781,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Ltd",
+    "South Eastern Coalfields Ltd",
+    "Western Coalfields Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.055106Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:20:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sharda_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Sharda Coal Mine",
   "canonical_slug": "sharda-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:20:48.000000Z",
+      "operators": [
+        "South Eastern Coalfields Ltd",
+        "Western Coalfields Ltd"
+      ],
+      "owners": [
+        "Coal India Ltd"
+      ],
+      "notes": "Coal India Ltd is the parent company owning 100% of the operators."
+    }
+  }
 }

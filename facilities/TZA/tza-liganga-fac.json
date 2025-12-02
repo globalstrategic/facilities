@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -9.871205,
+    "lon": 34.931212,
     "precision": "unknown"
   },
   "types": [
@@ -31,14 +31,9 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "National Development Corporation",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.352520",
-      "evidence": "Extracted from operator column: National Development Corporation (NDC)"
-    }
+    "National Development Corporation",
+    "Sichuan Hongda Group",
+    "Tanzania China International Mineral Resources Ltd"
   ],
   "products": [],
   "sources": [
@@ -49,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.980966Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:15:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TCIMRL_Liganga_Mine. The Liganga mine is a proposed iron ore mine located in the Ludewa District of Njombe Region, Tanzania"
   },
   "canonical_name": "Liganga Development",
   "canonical_slug": "liganga-development",
@@ -68,5 +63,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Njombe Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:15:32.000000Z",
+      "operators": [
+        "Tanzania China International Mineral Resources Ltd"
+      ],
+      "owners": [
+        "Sichuan Hongda Group",
+        "National Development Corporation"
+      ],
+      "notes": "Sichuan Hongda Group holds an 80% stake, while the National Development Corporation holds 20%."
+    }
+  }
 }

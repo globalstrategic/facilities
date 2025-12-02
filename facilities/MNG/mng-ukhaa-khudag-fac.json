@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 43.689,
-    "lon": 105.507,
+    "lat": 43.56921051758493,
+    "lon": 105.18105838454687,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy Resources LLC",
+    "Mongolian Mining Corporation",
+    "Thiess"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.449641Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:14:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dalanzadgad (https://www.mmc.mn/). Ukhaa Khudag is located in the South Gobi region of Mongolia, specifically in Umnugobi aimag"
   },
   "canonical_name": "Ukhaa Khudag Mine",
   "canonical_slug": "ukhaa-khudag-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Umnugobi",
+  "town": "Dalanzadgad",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:14:39.000000Z",
+      "operators": [
+        "Energy Resources LLC",
+        "Thiess"
+      ],
+      "owners": [
+        "Mongolian Mining Corporation"
+      ],
+      "notes": "Mongolian Mining Corporation owns 100% of Energy Resources LLC, which operates the mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 38.382,
-    "lon": 39.67,
+    "lat": 38.3819,
+    "lon": 39.6681,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Etibank Sark Kromlari Isletmesi",
+    "Turkish Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.294341Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:16:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs60000513. The Kefdag Mining Area is located in the province of Elazig, Turkey. This mining site was initially discovered in the year 1936"
   },
   "canonical_name": "Kefdag Mining Area Mine",
   "canonical_slug": "kefdag-mining-area-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Elazig",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:16:08.000000Z",
+      "operators": [
+        "Etibank Sark Kromlari Isletmesi"
+      ],
+      "owners": [
+        "Turkish Government"
+      ],
+      "notes": "Etibank Sark Kromlari Isletmesi is the operating company, owned by the Turkish Government."
+    }
+  }
 }

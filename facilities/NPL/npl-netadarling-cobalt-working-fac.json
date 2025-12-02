@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 28.08333,
+    "lon": 83.1,
     "precision": "unknown"
   },
   "types": [
@@ -34,7 +34,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nepal Mines and Minerals Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.485325Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:27:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://archive.org/download/sim_mining-world_1961-04_23_4/sim_mining-world_1961-04_23_4.pdf. Netadarling is mentioned as a historical cobalt production area"
   },
   "canonical_name": "Netadarling Cobalt Working Facility",
   "canonical_slug": "netadarling-cobalt-working-facility",
@@ -71,5 +73,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gulmi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:27:25.000000Z",
+      "operators": [
+        "Nepal Mines and Minerals Company"
+      ],
+      "owners": [],
+      "notes": "Managed by R. D. Koirala of Kathmandu."
+    }
+  }
 }

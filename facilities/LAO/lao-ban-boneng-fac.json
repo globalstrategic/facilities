@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LAO",
   "location": {
-    "lat": 17.967,
-    "lon": 104.616,
+    "lat": 17.625768287936978,
+    "lon": 105.2471325,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:17.215403Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:06:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Khammouan (https://thediggings.com/mines/usgs10106705). Ban Boneng is a tin mining facility located in Khammouan province, Laos"
   },
   "canonical_name": "Ban Boneng Mine",
   "canonical_slug": "ban-boneng-mine",
@@ -47,5 +47,7 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khammouan",
+  "town": "Khammouan"
 }

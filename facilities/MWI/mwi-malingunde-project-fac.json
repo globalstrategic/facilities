@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.978,
+    "lon": 33.786,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Sovereign Metals Ltd.",
-      "role": "operator",
-      "source": "Research Import MWI 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:13:11.260496",
-      "evidence": "Extracted from operator column: Sovereign Metals Ltd."
-    }
+    "Sovereign Metals Limited",
+    "Sovereign Metals Ltd."
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.841152Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T06:32:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/malingunde-graphite-project-malawi/. The Malingunde Project is located approximately 20km southwest of Lilongwe, the capital of Malawi"
   },
   "canonical_name": "Malingunde Development",
   "canonical_slug": "malingunde-development",
@@ -56,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lilongwe District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:32:30.000000Z",
+      "operators": [
+        "Sovereign Metals Limited"
+      ],
+      "owners": [
+        "Sovereign Metals Limited"
+      ],
+      "notes": "Sovereign Metals is developing the Malingunde Project through its wholly owned subsidiary, Mc Court Mining."
+    }
+  }
 }

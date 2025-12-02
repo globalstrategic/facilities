@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -46.149,
-    "lon": 168.753,
+    "lat": -46.148431,
+    "lon": 168.75488,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Vale",
+    "New Vale & Ohai Coal",
+    "Ohai Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.229684Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:31:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Wairaki_Coal_Mine. Wairaki Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Wairakei Coal Mine",
   "canonical_slug": "wairakei-coal-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:31:48.000000Z",
+      "operators": [
+        "New Vale & Ohai Coal"
+      ],
+      "owners": [
+        "New Vale",
+        "Ohai Coal"
+      ],
+      "notes": "The mine is currently mothballed."
+    }
+  }
 }

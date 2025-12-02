@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.653,
-    "lon": -70.011,
+    "lat": -34.02988458703268,
+    "lon": -70.57227259769594,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Codelco Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.917474Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:56:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Rancagua (https://miningdataonline.com/property/160/El-Teniente-Mine.aspx). El Teniente is the world's largest underground copper mine located in the Andes Mountains of central Chile"
   },
   "canonical_name": "La Tita Mine",
   "canonical_slug": "la-tita-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "O'Higgins",
+  "town": "Rancagua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:56:44.000000Z",
+      "operators": [
+        "Codelco Corp."
+      ],
+      "owners": [
+        "Codelco Corp."
+      ],
+      "notes": "Codelco is a state-owned company that operates and owns the mine."
+    }
+  }
 }

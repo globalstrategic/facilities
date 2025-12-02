@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -22.33,
-    "lon": 30.085,
+    "lat": -22.5,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Messina (Transvaal) Development Company Ltd.",
+    "Messina Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.697819Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-messina-transvaal-development-co-ltd-fac, zaf-messina-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:51:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-messina-transvaal-development-co-ltd-fac, zaf-messina-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/19341. The Messina Transvaal Development Corporation Mine is located near Musina, South Africa, and has a history of copper mining since 1903"
   },
   "canonical_name": "Messina Development Co Mine",
   "canonical_slug": "messina-development-co-mine",
@@ -63,5 +66,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:51:49.000000Z",
+      "operators": [
+        "Messina (Transvaal) Development Company Ltd.",
+        "Messina Ltd."
+      ],
+      "owners": [
+        "Messina (Transvaal) Development Company Ltd.",
+        "Messina Ltd."
+      ],
+      "notes": "The mine was operated by Messina (Transvaal) Development Company until 1993, after which it was renamed Messina Ltd."
+    }
+  }
 }

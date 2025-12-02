@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": 38.094,
-    "lon": 128.553,
+    "lat": 38.09374,
+    "lon": 128.553149,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Daehan Mineral Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:18.759937Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:02:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Daehan_Yangyang_Mine. The Daehan Yangyang Mine is an iron ore mine located in Yangyang, Gangwon, South Korea"
   },
   "canonical_name": "Daehan Yangyang Mine",
   "canonical_slug": "daehan-yangyang-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gangwon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:02:54.000000Z",
+      "operators": [
+        "Daehan Mineral Co Ltd"
+      ],
+      "owners": [
+        "Daehan Mineral Co Ltd"
+      ],
+      "notes": "Daehan Mineral Co Ltd owns 100% of the mine."
+    }
+  }
 }

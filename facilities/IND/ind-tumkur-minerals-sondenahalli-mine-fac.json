@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 13.36,
-    "lon": 76.698,
+    "lat": 13.359674,
+    "lon": 76.698165,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tumkur Minerals Pvt Ltd",
+    "VM Salgaocar and Brother Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.083762Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:44:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tumkur_Minerals_Sondenahalli_Mine. Coordinates extracted from Global Energy Monitor"
   },
   "canonical_name": "Tumkur Minerals Sondenahalli Mine",
   "canonical_slug": "tumkur-minerals-sondenahalli-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:44:32.000000Z",
+      "operators": [
+        "Tumkur Minerals Pvt Ltd"
+      ],
+      "owners": [
+        "VM Salgaocar and Brother Pvt Ltd",
+        "Tumkur Minerals Pvt Ltd"
+      ],
+      "notes": "Tumkur Minerals Pvt Ltd is the operator and owner of the mine."
+    }
+  }
 }

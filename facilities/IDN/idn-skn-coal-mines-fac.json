@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.505,
-    "lon": 117.32,
+    "lat": -0.512412,
+    "lon": 117.314356,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sinar Kumala Naga"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.219550Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:28:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SKN_Coal_Mines. SKN Coal Mines is an operating coal mine located in Kutai Lama, Kutai Kartanegara, East Kalimantan, Indonesia"
   },
   "canonical_name": "SKN Coal Mines Mine",
   "canonical_slug": "skn-coal-mines-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:28:03.000000Z",
+      "operators": [
+        "Sinar Kumala Naga"
+      ],
+      "owners": [
+        "Sinar Kumala Naga"
+      ],
+      "notes": "Sinar Kumala Naga owns 100% of the SKN Coal Mines."
+    }
+  }
 }

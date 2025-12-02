@@ -12,8 +12,8 @@
   ],
   "country_iso3": "COD",
   "location": {
-    "lat": -10.88,
-    "lon": 26.591,
+    "lat": -10.812868,
+    "lon": 26.585745,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gécamines"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:19.804082Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:54:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kambove_mines. Kambove West Mine is part of the Kambove mines located in the Democratic Republic of the Congo"
   },
   "canonical_name": "Kambove West Mine",
   "canonical_slug": "kambove-west-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Katanga Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:54:15.000000Z",
+      "operators": [
+        "Gécamines"
+      ],
+      "owners": [
+        "Gécamines"
+      ],
+      "notes": "Gécamines is a state-owned mining company."
+    }
+  }
 }

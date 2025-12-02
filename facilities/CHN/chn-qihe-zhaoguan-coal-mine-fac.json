@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.512,
-    "lon": 116.558,
+    "lat": 36.511997,
+    "lon": 116.558471,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Xinkuang Zhaoguan Energy Co Ltd",
+    "Yankuang Group Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.666463Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:12:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%B1%B1%E4%B8%9C%E6%96%B0%E7%9F%BF%E8%B5%B5%E5%AE%98%E8%83%BD%E6%BA%90%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8. The Qihe Zhaoguan Coal Mine is an underground coal mine located in Zhaoguan Town, Qihe County, Dezhou City, Shandong Province"
   },
   "canonical_name": "Qihe Zhaoguan Coal Mine",
   "canonical_slug": "qihe-zhaoguan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:12:41.000000Z",
+      "operators": [
+        "Shandong Xinkuang Zhaoguan Energy Co Ltd"
+      ],
+      "owners": [
+        "Yankuang Group Co Ltd"
+      ],
+      "notes": "Shandong Xinkuang Zhaoguan Energy Co Ltd is a subsidiary of Yankuang Group Co Ltd."
+    }
+  }
 }

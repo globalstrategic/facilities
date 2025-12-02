@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.966,
-    "lon": -114.644,
+    "lat": 32.9708,
+    "lon": -114.64,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chemgold Incorporated",
+    "Chemgold, Inc.",
+    "Glamis Gold Inc.",
+    "Glamis Gold Incorporated"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.714719Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:55:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10139342/. The Picacho Gold Mine is located in the historic Picacho Mining District and has been operated by Chemgold, Inc. and Glamis Gold Inc"
   },
   "canonical_name": "Picacho Gold Mine",
   "canonical_slug": "picacho-gold-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:55:33.000000Z",
+      "operators": [
+        "Chemgold, Inc.",
+        "Glamis Gold Inc."
+      ],
+      "owners": [
+        "Chemgold Incorporated",
+        "Glamis Gold Incorporated"
+      ],
+      "notes": "Chemgold, Inc. is a subsidiary of Glamis Gold Ltd."
+    }
+  }
 }

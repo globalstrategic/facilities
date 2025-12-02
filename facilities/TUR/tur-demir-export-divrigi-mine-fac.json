@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 39.45,
-    "lon": 38.11,
+    "lat": 39.45102,
+    "lon": 38.108481,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Demir Export AŞ",
+    "Koç Holding AŞ"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.309406Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:26:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Demir_Export_Divrigi_Mine. The Demir Export Divrigi Mine is an iron ore mine located in Divriği, Sivas, Türkiye"
   },
   "canonical_name": "Demir Export Divrigi Mine",
   "canonical_slug": "demir-export-divrigi-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sivas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:26:30.000000Z",
+      "operators": [
+        "Demir Export AŞ"
+      ],
+      "owners": [
+        "Koç Holding AŞ",
+        "Demir Export AŞ"
+      ],
+      "notes": "Demir Export AŞ owns 100% of the mine, which is part of Koç Holding AŞ."
+    }
+  }
 }

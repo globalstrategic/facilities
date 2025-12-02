@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.05,
-    "lon": 29.03,
+    "lat": -25.875932189183782,
+    "lon": 28.910662392588705,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Seriti Power (Pty) Ltd",
+    "Seriti Resources Holdings (Pty) Ltd",
+    "South32 SA Coal Holdings Propriety Limited",
+    "Thabong Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.731225Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-klipspruit-colliery-phola-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:23:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-klipspruit-colliery-phola-plant-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Witbank (https://www.gem.wiki/Klipspruit_Coal_Mine). Klipspruit is a complex multi-seam open-pit mine located in the Witbank coalfield, approximately 30 km west of Witbank"
   },
   "canonical_name": "Klipspruit Mine",
   "canonical_slug": "klipspruit-mine",
@@ -57,5 +62,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Witbank",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:23:07.000000Z",
+      "operators": [
+        "Thabong Coal",
+        "Seriti Power (Pty) Ltd"
+      ],
+      "owners": [
+        "Seriti Resources Holdings (Pty) Ltd",
+        "South32 SA Coal Holdings Propriety Limited"
+      ],
+      "notes": "Seriti acquired Klipspruit from South32 in June 2021. The mine is currently operated by Thabong Coal, a subsidiary of Seriti Resources."
+    }
+  }
 }

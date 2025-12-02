@@ -19,8 +19,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.269,
-    "lon": -119.641,
+    "lat": 37.52696495329277,
+    "lon": -90.26326403619213,
     "precision": "site"
   },
   "types": [
@@ -61,7 +61,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Trio Resources, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -71,11 +73,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.868323Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:50:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cobalt (https://cdn2.hubspot.net/hub/150154/file-43969394-pdf/docs/TRIO-Resources-Inc-Executive-Informational-Overview-05-20-2013.pdf). The facility is located approximately three kilometers to the southeast of Cobalt, Ontario, Canada"
   },
   "canonical_name": "Trio And Mine",
   "canonical_slug": "trio-and-mine",
@@ -98,5 +100,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Cobalt",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:50:21.000000Z",
+      "operators": [
+        "Trio Resources, Inc."
+      ],
+      "owners": [
+        "Trio Resources, Inc."
+      ],
+      "notes": "Trio Resources, Inc. wholly owns the facility."
+    }
+  }
 }

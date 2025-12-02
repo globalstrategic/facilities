@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.71167,
-    "lon": 27.35556,
+    "lat": -25.6,
+    "lon": 27.2,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rustenburg Platinum Mines Limited",
+    "Sibanye-Stillwater Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:35:31.000000Z",
+    "last_checked": "2025-12-01T18:12:45.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1786909/000178690922000019/exhibit964sswkroondaltrs.htm. Coordinates are directly extracted from the mining report, indicating the precise location of the Kroondal Operations"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1786909/000178690922000019/exhibit964sswkroondaltrs.htm. Coordinates are directly extracted from the mining report, indicating the precise location of the Kroondal Operations. Web search geocoded. Source: https://draglobal.com/projects/kroondal-platinum-mine/. Kroondal is located on the Western Limb of the Bushveld complex, 12 km east of Rustenburg"
   },
   "canonical_name": "Kroondal Psa Mine",
   "canonical_slug": "kroondal-psa-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "North West Province"
+  "province": "North West Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:12:45.000000Z",
+      "operators": [
+        "Sibanye-Stillwater Limited"
+      ],
+      "owners": [
+        "Sibanye-Stillwater Limited",
+        "Rustenburg Platinum Mines Limited"
+      ],
+      "notes": "Sibanye-Stillwater has recently acquired full ownership of the Kroondal operation."
+    }
+  }
 }

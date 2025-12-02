@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": 3.139,
-    "lon": 116.458,
+    "lat": 1.8950702802756676,
+    "lon": 115.690497,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baramulti Group",
+    "PT Mitrabara Adiperdana Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.224050Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:30:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Malinau (https://www.baramultigroup.co.id/). The company operates in North Kalimantan, approximately 80 km south of Malinau"
   },
   "canonical_name": "PT Mitrabara Adiperdana Tbk Mine",
   "canonical_slug": "pt-mitrabara-adiperdana-tbk-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Kalimantan",
+  "town": "Malinau",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:56.000000Z",
+      "operators": [
+        "PT Mitrabara Adiperdana Tbk"
+      ],
+      "owners": [
+        "Baramulti Group"
+      ],
+      "notes": "PT Mitrabara Adiperdana Tbk is a subsidiary of Baramulti Group."
+    }
+  }
 }

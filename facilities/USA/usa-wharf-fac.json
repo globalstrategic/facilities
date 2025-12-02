@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.35,
-    "lon": -103.844,
+    "lat": 44.31146635027431,
+    "lon": -103.82191868415387,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coeur Mining, Inc.",
+    "Wharf Resources USA"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.892052Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:08:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lead (https://bhcleanwateralliance.org/gold/wharf-resources-gold-mine/). The Wharf Mine is located approximately four miles southwest of Lead, South Dakota"
   },
   "canonical_name": "Wharf Mine",
   "canonical_slug": "wharf-mine",
@@ -54,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Dakota",
+  "town": "Lead",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:08:54.000000Z",
+      "operators": [
+        "Wharf Resources USA",
+        "Coeur Mining, Inc."
+      ],
+      "owners": [
+        "Coeur Mining, Inc."
+      ],
+      "notes": "Coeur Mining, Inc. operates the Wharf Mine as a subsidiary through Wharf Resources USA."
+    }
+  }
 }

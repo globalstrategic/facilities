@@ -14,22 +14,11 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Blackstairs Lithium (Ganfeng",
-      "role": "operator",
-      "source": "Research Import IRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:38:14.046949",
-      "evidence": "Extracted from operator column: Blackstairs Lithium (Ganfeng/ILC JV)"
-    },
-    {
-      "name": "ILC JV)",
-      "role": "operator",
-      "source": "Research Import IRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:38:14.046951",
-      "evidence": "Extracted from operator column: Blackstairs Lithium (Ganfeng/ILC JV)"
-    }
+    "Blackstairs Lithium (Ganfeng",
+    "GFL International Co., Limited",
+    "Ganfeng Lithium Group Co., Ltd.",
+    "ILC JV)",
+    "International Lithium Corp."
   ],
   "products": [],
   "sources": [
@@ -59,5 +48,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ireland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:00:27.000000Z",
+      "operators": [
+        "GFL International Co., Limited",
+        "Ganfeng Lithium Group Co., Ltd."
+      ],
+      "owners": [
+        "International Lithium Corp."
+      ],
+      "notes": "International Lithium Corp. sold its interest in the Avalonia Project to GFL International Co., Limited, a subsidiary of Ganfeng Lithium."
+    }
+  }
 }

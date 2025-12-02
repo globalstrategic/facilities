@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 57.686,
-    "lon": 125.334,
+    "lat": 57.551101,
+    "lon": 124.511976,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alrosa PJSC",
+    "EVRAZ PLC",
+    "GMK Timir CJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.646283Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:01:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Timir_Desovskoye_Mine. The Timir Tayezhnoye Mine is part of a larger mining operation in the southern part of Yakutia, with significant iron ore deposits"
   },
   "canonical_name": "Timir Tayezhnoye Mine",
   "canonical_slug": "timir-tayezhnoye-mine",
@@ -48,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sakha Republic",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:01:32.000000Z",
+      "operators": [
+        "EVRAZ PLC",
+        "Alrosa PJSC"
+      ],
+      "owners": [
+        "GMK Timir CJSC"
+      ],
+      "notes": "EVRAZ holds a 51% stake, while Alrosa owns 49% minus one share."
+    }
+  }
 }

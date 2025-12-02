@@ -14,8 +14,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.972,
-    "lon": -82.446,
+    "lat": 37.058889,
+    "lon": -82.374167,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Paramont Contura, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.897954Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:14:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-4407308. Coordinates extracted from the Greenhouse 100 Coal Index Record for Deep Mine 44, which is associated with Toms Creek North Coal Mine"
   },
   "canonical_name": "Toms Creek North Coal Mine",
   "canonical_slug": "toms-creek-north-coal-mine",
@@ -57,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:14:05.000000Z",
+      "operators": [
+        "Paramont Contura, LLC"
+      ],
+      "owners": [
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Alpha Metallurgical Resources Inc is the current controller of the mine."
+    }
+  }
 }

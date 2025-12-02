@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 48.975,
-    "lon": 142.122,
+    "lat": 59.613718502859854,
+    "lon": 30.7861084,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Razrez Tugnuisky JSC",
+    "SUEK"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.593735Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:20:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Nikolskoye (https://www.gem.wiki/Tugnuisky_Coal_Mine). The Nikolsky Coal Mine is located 10 km south of the Tugnuisky mine and is part of a larger mining operation"
   },
   "canonical_name": "Nikolsky Coal Mine",
   "canonical_slug": "nikolsky-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sakhalin Oblast",
+  "town": "Nikolskoye",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:44.000000Z",
+      "operators": [
+        "Razrez Tugnuisky JSC"
+      ],
+      "owners": [
+        "SUEK"
+      ],
+      "notes": "SUEK is conducting mining operations at the Nikolsky Coal Mine since 2018."
+    }
+  }
 }

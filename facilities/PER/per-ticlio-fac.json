@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.598,
-    "lon": -76.21,
+    "lat": -12.041611392877313,
+    "lon": -75.46931571405574,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Volcan Compania Minera S.A.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.317496Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:08:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (https://miningdataonline.com/property/1109/Ticlio-Mine.aspx). The Ticlio underground mine is part of the Yauli operating unit and is located in the department of Junin, 170 kilometers from Lima. Web search geocoded. Source: Calculated from Lima (https://miningdataonline.com/property/1109/Ticlio-Mine.aspx). The Ticlio underground mine is part of the Yauli operating unit and is located in the department of Junin, 170 kilometers from Lima"
   },
   "canonical_name": "Ticlio Mine",
   "canonical_slug": "ticlio-mine",
@@ -59,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Junín",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:08:41.000000Z",
+      "operators": [
+        "Volcan Compania Minera S.A.A."
+      ],
+      "owners": [
+        "Volcan Compania Minera S.A.A."
+      ],
+      "notes": "Volcan Compania Minera S.A.A. owns 100% of the Ticlio Mine."
+    }
+  }
 }

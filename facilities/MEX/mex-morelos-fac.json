@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 18.007,
-    "lon": -99.739,
+    "lat": 18.278820516131855,
+    "lon": -100.33683750340157,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Torex Gold Resources Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.958469Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:35:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mexico City (https://www.nsenergybusiness.com/projects/morelos-complex-mexico/). The Morelos Complex is located approximately 180 km southwest of Mexico City in the Guerrero Gold Belt"
   },
   "canonical_name": "Morelos Mine",
   "canonical_slug": "morelos-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guerrero",
+  "town": "Mexico City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:20.000000Z",
+      "operators": [
+        "Torex Gold Resources Inc."
+      ],
+      "owners": [
+        "Torex Gold Resources Inc."
+      ],
+      "notes": "Torex Gold Resources owns and operates the Morelos Property through its subsidiary."
+    }
+  }
 }

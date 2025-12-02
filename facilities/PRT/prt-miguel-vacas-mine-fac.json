@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 38.568018395959065,
+    "lon": -7.106063892084929,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Europacific Metals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.665446Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:30:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Évora (https://www.nasdaq.com/press-release/europacific-announces-hiring-of-drill-contractors-for-miguel-vacas-copper-project). The Miguel Vacas Mine is the most advanced prospect within the Borba 2 license in the Alentejo region"
   },
   "canonical_name": "Miguel Vacas Facility",
   "canonical_slug": "miguel-vacas-facility",
@@ -55,5 +57,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alentejo",
+  "town": "Évora",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:30:29.000000Z",
+      "operators": [
+        "Europacific Metals Inc."
+      ],
+      "owners": [
+        "Europacific Metals Inc."
+      ],
+      "notes": "Europacific Metals Inc. holds a 100% equity interest in the project."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "GTM",
   "location": {
-    "lat": 14.458,
-    "lon": -90.164,
+    "lat": -34.83569856261296,
+    "lon": -58.1214709270169,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pan American Silver Corp.",
+    "Pan American Silver Guatemala S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:16.705833Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:02:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guatemala City (https://www.mining.com/indigenous-group-says-no-to-pan-americans-escobal-mine-in-guatemala/). The Escobal mine is located approximately 40 km east-southeast of Guatemala City. The mine has been suspended since 2017 due to legal and community opposition"
   },
   "canonical_name": "Escobal Mine",
   "canonical_slug": "escobal-mine",
@@ -58,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa Rosa",
+  "town": "Guatemala City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:02:12.000000Z",
+      "operators": [
+        "Pan American Silver Guatemala S.A."
+      ],
+      "owners": [
+        "Pan American Silver Corp."
+      ],
+      "notes": "Pan American Silver acquired the Escobal mine from Tahoe Resources in 2018."
+    }
+  }
 }

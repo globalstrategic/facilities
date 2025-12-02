@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.939,
-    "lon": 29.726,
+    "lat": -18.9386,
+    "lon": 29.7263,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Delta Gold NL",
+    "Tabex Mining Pvt Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.947512Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:35:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10231679. The Bell and Riverlea Gold Mine is located near Kwekwe, Zimbabwe, and operates as an underground mining venture"
   },
   "canonical_name": "Bell And Riverlea Mine",
   "canonical_slug": "bell-and-riverlea-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:35:48.000000Z",
+      "operators": [
+        "Tabex Mining Pvt Company"
+      ],
+      "owners": [
+        "Delta Gold NL"
+      ],
+      "notes": "Tabex Mining Pvt Company owned the mine at one point, and it was sold to Delta Gold NL."
+    }
+  }
 }

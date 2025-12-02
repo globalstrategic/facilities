@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.34,
-    "lon": 113.801,
+    "lat": 34.340241,
+    "lon": 113.800999,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Resources Power Holdings Company",
+    "Zhengzhou Coal Industry Group Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.772164Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:26:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%83%91%E5%B7%9E%E5%8D%8E%E8%BE%95%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%9D%8E%E7%B2%AE%E5%BA%97%E7%85%A4%E7%9F%BF. The Liliangdian Coal Mine is located in the Zhengzhou Mining Zone in Xinzheng City, Henan province"
   },
   "canonical_name": "Liliangdian Coal Mine",
   "canonical_slug": "liliangdian-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:26:53.000000Z",
+      "operators": [
+        "Zhengzhou Coal Industry Group Company Limited"
+      ],
+      "owners": [
+        "Zhengzhou Coal Industry Group Company Limited",
+        "China Resources Power Holdings Company"
+      ],
+      "notes": "Zhengzhou Coal Industry Group holds a 69.33% stake, while China Resources Power holds 30.67%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.476,
-    "lon": -94.521,
+    "lat": 32.46,
+    "lon": -94.49,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Electric Power Company, Inc.",
+    "Nacco Industries Inc",
+    "Sabine Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.985582Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:51:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/South_Hallsville_No_1_Mine. The South Hallsville No. 1 Mine is a lignite surface mine located approximately five miles south of Hallsville, Texas"
   },
   "canonical_name": "South Hallsville No 1 Mine",
   "canonical_slug": "south-hallsville-no-1-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:51:23.000000Z",
+      "operators": [
+        "Sabine Mining Company"
+      ],
+      "owners": [
+        "Nacco Industries Inc",
+        "American Electric Power Company, Inc."
+      ],
+      "notes": "The mine ceased deliveries in the first quarter of 2023 and commenced final reclamation on April 1, 2023."
+    }
+  }
 }

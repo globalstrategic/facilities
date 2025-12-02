@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "General Bureau of the Tanchon Area Mining Industry",
+    "Ministry of Mining Industry"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.353631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:35:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://beyondparallel.csis.org/mining-north-korea-magnesite-production-at-ryongyang-mine/. Ryongyang Mine is the largest magnesite mine in North Korea, located on the slopes of Paekkumsan"
   },
   "canonical_name": "Ryongyang Mine",
   "canonical_slug": "ryongyang-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Hamgyong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:35:22.000000Z",
+      "operators": [
+        "General Bureau of the Tanchon Area Mining Industry"
+      ],
+      "owners": [
+        "Ministry of Mining Industry"
+      ],
+      "notes": "The mine is managed under the General Bureau, which is subordinate to the Ministry of Mining Industry."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -18.20931121408383,
+    "lon": 32.23528804506637,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,12 @@
   ],
   "commodities": [],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coronation Syndicate, Ltd.",
+    "Corsyn Consolidated Mines Ltd.",
+    "Lonrho Ltd.",
+    "Tweefontein United Colleries Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.954089Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:38:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Headlands (https://thediggings.com/mines/usgs10207832). The mine is located approximately 21 km ENE of Headlands, a village in Manicaland"
   },
   "canonical_name": "Inyati Copper Mine",
   "canonical_slug": "inyati-copper-mine",
@@ -50,5 +55,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manicaland",
+  "town": "Headlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:38:42.000000Z",
+      "operators": [
+        "Corsyn Consolidated Mines Ltd."
+      ],
+      "owners": [
+        "Coronation Syndicate, Ltd.",
+        "Tweefontein United Colleries Ltd.",
+        "Lonrho Ltd."
+      ],
+      "notes": "Corsyn Consolidated Mines Ltd. is a wholly-owned subsidiary of Coronation Syndicate, Ltd."
+    }
+  }
 }

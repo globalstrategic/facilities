@@ -18,8 +18,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.817,
-    "lon": -81.908,
+    "lat": 37.86268585363697,
+    "lon": -81.9632255,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Aracoma Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.978301Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:44:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Stollings (https://www.gem.wiki/Aracoma_Alma_Mine_1). The mine is located approximately 1.5 miles off Route 17, near Stollings, Logan County, West Virginia"
   },
   "canonical_name": "Aracoma Alma 1 Mine",
   "canonical_slug": "aracoma-alma-1-mine",
@@ -69,5 +72,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Stollings",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:44:13.000000Z",
+      "operators": [
+        "Aracoma Coal Company"
+      ],
+      "owners": [
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "The mine was previously owned by Massey Energy before being acquired by Alpha Natural Resources."
+    }
+  }
 }

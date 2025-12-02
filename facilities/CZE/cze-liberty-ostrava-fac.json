@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Liberty Steel Group",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.784044",
-      "evidence": "Extracted from operator column: Liberty Steel Group"
-    }
+    "Liberty Steel Group",
+    "SPV NH Koksovna",
+    "SPV NH Ostrava",
+    "TAMEH Czech"
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Moravian-Silesian",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:07:05.000000Z",
+      "operators": [
+        "TAMEH Czech"
+      ],
+      "owners": [
+        "SPV NH Ostrava",
+        "SPV NH Koksovna"
+      ],
+      "notes": "The facility is being acquired by a consortium led by Martin Pecina."
+    }
+  }
 }

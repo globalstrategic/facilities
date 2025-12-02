@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.35,
-    "lon": -83.528,
+    "lat": 37.343611,
+    "lon": -83.530278,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sturgeon Mining Co., Inc.",
+    "Sturgeon Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.977859Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:43:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-1518982. The mine is located in Breathitt County, Kentucky"
   },
   "canonical_name": "Sturgeon Freeman Fork Mine",
   "canonical_slug": "sturgeon-freeman-fork-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:43:46.000000Z",
+      "operators": [
+        "Sturgeon Mining Co., Inc."
+      ],
+      "owners": [
+        "Sturgeon Mining Company"
+      ],
+      "notes": "The mine is currently listed as abandoned."
+    }
+  }
 }

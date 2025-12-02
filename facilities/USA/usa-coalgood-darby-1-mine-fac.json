@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.44,
-    "lon": -86.191,
+    "lat": 37.4400448,
+    "lon": -86.1906761,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JRL Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.707430Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:48:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Coalgood_Darby_1_Mine. Coalgood Darby 1 Mine is an operating coal mine located in Harlan County, Kentucky"
   },
   "canonical_name": "Coalgood Darby 1 Mine",
   "canonical_slug": "coalgood-darby-1-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:48:53.000000Z",
+      "operators": [
+        "JRL Coal"
+      ],
+      "owners": [
+        "JRL Coal"
+      ],
+      "notes": "JRL Coal owns and operates the Coalgood Darby 1 Mine."
+    }
+  }
 }

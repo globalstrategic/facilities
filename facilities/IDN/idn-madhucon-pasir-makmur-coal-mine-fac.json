@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.75,
-    "lon": 116.061,
+    "lat": -1.750475,
+    "lon": 116.061157,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Madhucon Pasir Makmur"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.199939Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:12:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Madhucon_Pasir_Makmur_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Madhucon Pasir Makmur Coal Mine",
   "canonical_slug": "madhucon-pasir-makmur-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:12:42.000000Z",
+      "operators": [
+        "Madhucon Pasir Makmur"
+      ],
+      "owners": [
+        "Madhucon Pasir Makmur"
+      ],
+      "notes": "Madhucon Pasir Makmur is both the operator and owner of the facility."
+    }
+  }
 }

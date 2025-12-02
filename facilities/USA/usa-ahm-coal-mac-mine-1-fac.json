@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.561,
-    "lon": -82.97,
+    "lat": 37.561111,
+    "lon": -82.970278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Appalachian Highwall Mining",
+    "Appalachian Highwall Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.721390Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:00:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/AHM_Coal_Mac_Mine_1. AHM Coal Mac Mine #1 is an operating coal mine located in Logan, West Virginia"
   },
   "canonical_name": "AHM Coal Mac 1 Mine",
   "canonical_slug": "ahm-coal-mac-1-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:00:40.000000Z",
+      "operators": [
+        "Appalachian Highwall Mining LLC"
+      ],
+      "owners": [
+        "Appalachian Highwall Mining"
+      ],
+      "notes": "Appalachian Highwall Mining LLC owns 100% of the mine."
+    }
+  }
 }

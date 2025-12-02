@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 28.056,
-    "lon": -99.67,
+    "lat": 28.32035982117627,
+    "lon": -99.3552096,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ed Rachal Foundation",
+    "Fletcher Operating LLC",
+    "Galvan Ranch Mineral Trust",
+    "Galvan Ranches LP",
+    "Lewis Petro Properties Inc",
+    "SM Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.721947Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:01:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Encinal (https://www.mindat.org/loc-273961.html). The Galvan Ranch Barite Deposit is located in Webb County, Texas, near the town of Encinal"
   },
   "canonical_name": "Galvan Ranch Barite Plant",
   "canonical_slug": "galvan-ranch-barite-plant",
@@ -47,5 +54,24 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "town": "Encinal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:01:27.000000Z",
+      "operators": [
+        "SM Energy Company",
+        "Lewis Petro Properties Inc",
+        "Fletcher Operating LLC"
+      ],
+      "owners": [
+        "SM Energy Company",
+        "Ed Rachal Foundation",
+        "Galvan Ranch Mineral Trust",
+        "Galvan Ranches LP"
+      ],
+      "notes": "Multiple companies are involved in ownership and operation of properties in the Galvan Ranch area."
+    }
+  }
 }

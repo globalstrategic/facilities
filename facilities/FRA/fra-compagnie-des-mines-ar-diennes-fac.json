@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Aquitaine Metals Corp.",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.770454",
-      "evidence": "Extracted from operator column: Aquitaine Metals Corp."
-    }
+    "Aquitaine Metals Corp.",
+    "Compagnie des Mines Arédiennes"
   ],
   "products": [],
   "sources": [
@@ -64,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nouvelle-Aquitaine",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:32:54.000000Z",
+      "operators": [
+        "Compagnie des Mines Arédiennes"
+      ],
+      "owners": [
+        "Aquitaine Metals Corp."
+      ],
+      "notes": "Compagnie des Mines Arédiennes is a subsidiary of Aquitaine Metals Corp."
+    }
+  }
 }

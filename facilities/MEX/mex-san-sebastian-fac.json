@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 24.423,
-    "lon": -103.807,
+    "lat": 25.438248622649496,
+    "lon": -104.16552505821998,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company",
+    "Minera Hecla S.A. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.962983Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:39:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Durango (https://miningdataonline.com/property/1456/San-Sebastian-Mine.aspx). The San Sebastian mine is located approximately 95 km northeast of Durango, Durango, Mexico"
   },
   "canonical_name": "San Sebastian Mine",
   "canonical_slug": "san-sebastian-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "town": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:39:27.000000Z",
+      "operators": [
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "Hecla Mining Company",
+        "Minera Hecla S.A. de C.V."
+      ],
+      "notes": "Hecla Mining Company owns the mine through its subsidiary Minera Hecla S.A. de C.V. Production ceased in the fourth quarter of 2020."
+    }
+  }
 }

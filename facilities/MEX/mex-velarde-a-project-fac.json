@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 24.8167,
-    "lon": null,
+    "lat": 27.743,
+    "lon": -632.2,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Golden Minerals Company",
+    "Minera William S.A. de R.L. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.946657Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:25:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1011509/000155837022004084/aumn-20211231xex96d2.htm. The Velardeña Project is centered on UTM grid coordinates"
   },
   "canonical_name": "Velardeña Mine",
   "canonical_slug": "velardena-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:25:59.000000Z",
+      "operators": [
+        "Golden Minerals Company"
+      ],
+      "owners": [
+        "Minera William S.A. de R.L. de C.V."
+      ],
+      "notes": "The Velardeña Project was operated by Golden Minerals through its subsidiary Minera William, but operations have been halted."
+    }
+  }
 }

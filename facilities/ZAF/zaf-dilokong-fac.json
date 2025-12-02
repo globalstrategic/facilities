@@ -9,8 +9,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.572,
-    "lon": 30.138,
+    "lat": -24.402769909994475,
+    "lon": 30.328333,
     "precision": "site"
   },
   "types": [
@@ -55,7 +55,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cheetah Chrome South Africa",
+    "Dilokong Chrome Mine Pty. Ltd.",
+    "Eastern Asia Metals Investment",
+    "Jubilee Platinum",
+    "Lebowa Development Corporation Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -70,11 +76,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.787461Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-dilokong-chrome-mine-smokey-hills-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T18:14:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-dilokong-chrome-mine-smokey-hills-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Burgersfort (https://thediggings.com/mines/5040). The Dilokong Chrome Mine is located approximately 30 kilometers from Burgersfort in Limpopo province"
   },
   "canonical_name": "Dilokong Mine",
   "canonical_slug": "dilokong-mine",
@@ -89,5 +95,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "town": "Burgersfort",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:14:06.000000Z",
+      "operators": [
+        "Dilokong Chrome Mine Pty. Ltd.",
+        "Jubilee Platinum"
+      ],
+      "owners": [
+        "Lebowa Development Corporation Ltd.",
+        "Cheetah Chrome South Africa",
+        "Eastern Asia Metals Investment"
+      ],
+      "notes": "The ownership and operational status of the mine are currently under dispute, with various companies involved in legal matters."
+    }
+  }
 }

@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Government of Mauritania",
-      "role": "operator",
-      "source": "Research Import MAURITANIAN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:17:09.594075",
-      "evidence": "Extracted from operator column: Government of Mauritania (ADFD Funded)"
-    }
+    "ADFD",
+    "Government of Mauritania"
   ],
   "products": [],
   "sources": [
@@ -64,5 +58,15 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:32:10.000000Z",
+      "operators": [
+        "ADFD"
+      ],
+      "owners": [],
+      "notes": "ADFD is mentioned as the funding entity for the project."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PAK",
   "location": {
-    "lat": 24.774,
-    "lon": 70.394,
+    "lat": 24.812,
+    "lon": 70.398,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Engro Energy Corporation",
+    "Engro Powergen Thar Ltd.",
+    "Sindh Engro Coal Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.338224Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:38:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Thar_Engro_Coal_Power_Project. Coordinates are directly mentioned in the source"
   },
   "canonical_name": "Thar Coal Mine",
   "canonical_slug": "thar-coal-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sindh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:38:12.000000Z",
+      "operators": [
+        "Sindh Engro Coal Mining Company",
+        "Engro Powergen Thar Ltd."
+      ],
+      "owners": [
+        "Sindh Engro Coal Mining Company",
+        "Engro Energy Corporation"
+      ],
+      "notes": "Sindh Engro Coal Mining Company is a joint venture between the Government of Sindh and Engro Energy Corporation."
+    }
+  }
 }

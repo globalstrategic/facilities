@@ -27,24 +27,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "SOMIDA (Société Minière de Dasa S.A.)",
-      "role": "operator",
-      "source": "Global Atomic – Dasa operations page",
-      "confidence": 0.8
-    },
-    {
-      "name": "Global Atomic Corporation",
-      "role": "80% owner of SOMIDA",
-      "source": "Global Atomic – Dasa operations page",
-      "confidence": 0.9
-    },
-    {
-      "name": "Government of Niger",
-      "role": "20% owner (10% free-carry + 10% paid)",
-      "source": "Global Atomic – Dasa operations page",
-      "confidence": 0.8
-    }
+    "Global Atomic Corporation",
+    "Government of Niger",
+    "SOMIDA (Société Minière de Dasa S.A.)",
+    "Société Minière DASA S.A. (SOMIDA)"
   ],
   "products": [],
   "sources": [
@@ -74,5 +60,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:05:20.000000Z",
+      "operators": [
+        "Société Minière DASA S.A. (SOMIDA)"
+      ],
+      "owners": [
+        "Global Atomic Corporation",
+        "Government of Niger"
+      ],
+      "notes": "Global Atomic Corporation owns 80% of SOMIDA, while the Government of Niger holds a 20% stake."
+    }
+  }
 }

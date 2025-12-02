@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.382728233012603,
+    "lon": 28.5426856,
     "precision": "unknown"
   },
   "types": [
@@ -14,6 +14,7 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
+    "Premafrimin",
     "Premier African Minerals Limited"
   ],
   "products": [],
@@ -25,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.945618Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:35:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bulawayo (https://www.facebook.com/matangira1/posts/-the-zulu-lithium-tantalum-plant-located-in-zimbabwe-and-owned-by-premafrimin-is/24121650654117907/). The Zulu Lithium Project is a significant asset in Zimbabwe's mining sector, producing spodumene concentrate"
   },
   "canonical_name": "Zulu Lithium Mine",
   "canonical_slug": "zulu-lithium-mine",
@@ -56,14 +57,15 @@
   "province": "Matabeleland South",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:45:15.000000Z",
+      "timestamp": "2025-12-01T16:35:28.000000Z",
       "operators": [
         "Premier African Minerals Limited"
       ],
       "owners": [
-        "Premier African Minerals Limited"
+        "Premafrimin"
       ],
-      "notes": "Premier African Minerals Limited is the sole operator and owner of the Zulu Lithium Project."
+      "notes": "Premier African Minerals is actively developing the project and has secured funding and offtake agreements."
     }
-  }
+  },
+  "town": "Bulawayo"
 }

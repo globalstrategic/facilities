@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.715,
-    "lon": 111.749,
+    "lat": 46.73861,
+    "lon": 111.70083,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Joint venture of Mongolia and the former East Germany"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:07.457920Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:20:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/B%C3%BCrentsogt_Tungsten_Mine. Bürentsogt Tungsten Mine is a former mine that closed around 2009"
   },
   "canonical_name": "Burentsogt Mine",
   "canonical_slug": "burentsogt-mine-2",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sükhbaatar Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:01.000000Z",
+      "operators": [
+        "Joint venture of Mongolia and the former East Germany"
+      ],
+      "owners": [],
+      "notes": "The mine was operated by a joint venture but is now closed."
+    }
+  }
 }

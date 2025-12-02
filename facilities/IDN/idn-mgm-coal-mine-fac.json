@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.585,
-    "lon": 114.793,
+    "lat": -0.586256,
+    "lon": 114.790889,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Marunda Graha Mineral"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.206688Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:17:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MGM_Coal_Mine. MGM Coal Mine is an operating coal mine located in Murung Raya, Central Kalimantan, Indonesia"
   },
   "canonical_name": "MGM Coal Mine",
   "canonical_slug": "mgm-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:17:52.000000Z",
+      "operators": [
+        "Marunda Graha Mineral"
+      ],
+      "owners": [
+        "Marunda Graha Mineral"
+      ],
+      "notes": "MGM Coal Mine is fully owned by Marunda Graha Mineral."
+    }
+  }
 }

@@ -21,14 +21,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "DOVE Equipment & Machinery Co.",
-      "role": "operator",
-      "source": "Research Import ETH 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:04:41.277919",
-      "evidence": "Extracted from operator column: DOVE Equipment & Machinery Co."
-    }
+    "DOVE Equipment & Machinery Co.",
+    "DOVE Equipment & Machinery Co., Ltd.",
+    "DOVE Group"
   ],
   "products": [],
   "sources": [
@@ -66,5 +61,15 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:29:01.000000Z",
+      "operators": [
+        "DOVE Equipment & Machinery Co., Ltd."
+      ],
+      "owners": [],
+      "notes": "DOVE is a manufacturer and may not directly operate the facility."
+    }
+  }
 }

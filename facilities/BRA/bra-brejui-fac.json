@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.315,
-    "lon": -36.582,
+    "lat": -6.248,
+    "lon": -36.5155,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mineracao Tomaz Salustino S. A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.208746Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:50:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10279653. The Brejui Tungsten Mine is located in the state of Rio Grande do Norte, Brazil, and primarily utilizes surface mining techniques for extracting tungsten"
   },
   "canonical_name": "Brejui Mine",
   "canonical_slug": "brejui-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande do Norte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:50:57.000000Z",
+      "operators": [],
+      "owners": [
+        "Mineracao Tomaz Salustino S. A."
+      ],
+      "notes": "Mineracao Tomaz Salustino S. A. is the owner of the Brejui Tungsten Mine."
+    }
+  }
 }

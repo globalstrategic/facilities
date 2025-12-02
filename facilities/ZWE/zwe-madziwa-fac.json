@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.056,
-    "lon": 31.662,
+    "lat": -16.856564444469768,
+    "lon": 31.96314379983807,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bindura Nickel Corporation Ltd.",
+    "Madziwa Mines Ltd.",
+    "Rhonickel",
+    "Trojan Nickel Mine Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.949634Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:12:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Shamva (https://thediggings.com/mines/usgs10257203). The Madziwa Nickel Mine is located near Shamva, Zimbabwe, and has been mentioned in various reports regarding its operational status"
   },
   "canonical_name": "Madziwa Mine",
   "canonical_slug": "madziwa-mine",
@@ -55,5 +60,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland Central",
+  "town": "Shamva",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:12:58.000000Z",
+      "operators": [
+        "Bindura Nickel Corporation Ltd.",
+        "Madziwa Mines Ltd."
+      ],
+      "owners": [
+        "Bindura Nickel Corporation Ltd.",
+        "Madziwa Mines Ltd.",
+        "Rhonickel",
+        "Trojan Nickel Mine Ltd."
+      ],
+      "notes": "The mine has had multiple owners and operators over the years, with Bindura Nickel Corporation being a significant player."
+    }
+  }
 }

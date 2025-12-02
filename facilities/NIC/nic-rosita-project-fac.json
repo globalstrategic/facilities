@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 13.890576269855051,
+    "lon": -84.50101028602975,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alder Resources Ltd.",
+    "CXB Nicaragua SA",
+    "Calibre Mining Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:55.277230Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:14:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Managua (https://s204.q4cdn.com/793454556/files/doc_downloads/technical-reports/rosita_mine_stockpile_report.pdf). The Rosita Project is located 275 air kilometers northeast of Managua, the national capital"
   },
   "canonical_name": "Rosita Mine",
   "canonical_slug": "rosita-mine",
@@ -63,5 +67,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Región Autónoma del Atlántico Norte",
+  "town": "Managua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:14:27.000000Z",
+      "operators": [
+        "Alder Resources Ltd."
+      ],
+      "owners": [
+        "CXB Nicaragua SA",
+        "Calibre Mining Corp"
+      ],
+      "notes": "The project is held by CXB Nicaragua SA, a wholly owned subsidiary of Calibre Mining Corp. Alder Resources is the project operator."
+    }
+  }
 }

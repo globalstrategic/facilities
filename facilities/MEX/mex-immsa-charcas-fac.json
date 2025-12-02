@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.135,
-    "lon": -101.151,
+    "lat": 23.277566359327526,
+    "lon": -101.1087574,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo México",
+    "Industrial Minera Mexico S. A. (IMMSA)"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.966069Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T04:47:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Charcas (https://thediggings.com/mines/usgs10303253). The facility is located near the town of Charcas, San Luis Potosí, Mexico"
   },
   "canonical_name": "Immsa Charcas Mine",
   "canonical_slug": "immsa-charcas-mine",
@@ -63,5 +66,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Luis Potosí",
+  "town": "Charcas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T04:47:14.000000Z",
+      "operators": [
+        "Industrial Minera Mexico S. A. (IMMSA)"
+      ],
+      "owners": [
+        "Grupo México"
+      ],
+      "notes": "IMMSA operates the Charcas Zinc Mine, which is owned by Grupo México."
+    }
+  }
 }

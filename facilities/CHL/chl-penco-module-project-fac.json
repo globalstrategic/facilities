@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -36.69190195711682,
+    "lon": -73.0502064,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,8 @@
   "status": "unknown",
   "company_mentions": [
     "Aclara Resources",
-    "Aclara Resources Inc."
+    "Aclara Resources Inc.",
+    "CAP S.A."
   ],
   "products": [],
   "sources": [
@@ -37,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.926335Z",
-    "checked_by": "import_pipeline",
-    "notes": "Ionic clay deposit targeting critical magnet metals.73 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:58:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Ionic clay deposit targeting critical magnet metals.73 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Concepción (https://blog.investchile.gob.cl/rare-earth-project-in-chile-increases-investment-to-us130-million). The Penco Module Project is located approximately 15 kilometers from Concepción in the Biobío region"
   },
   "canonical_name": "Penco Module Exploration",
   "canonical_slug": "penco-module-exploration",
@@ -57,17 +58,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Biobío Region",
+  "province": "Biobío",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T12:42:59.000000Z",
+      "timestamp": "2025-12-01T16:58:16.000000Z",
       "operators": [
         "Aclara Resources Inc."
       ],
       "owners": [
-        "Aclara Resources Inc."
+        "Aclara Resources Inc.",
+        "CAP S.A."
       ],
-      "notes": "Aclara Resources is focused on developing the Penco Module for heavy rare earth elements."
+      "notes": "Aclara Resources is the operator with an 80% interest, while CAP S.A. holds a 20% indirect interest."
     }
-  }
+  },
+  "town": "Concepción"
 }

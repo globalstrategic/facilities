@@ -6,8 +6,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 6.085,
-    "lon": null,
+    "lat": 6.07787436836241,
+    "lon": -75.79419082497999,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Zancudo Metals Corp.",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.149196",
-      "evidence": "Extracted from operator column: Zancudo Metals Corp."
-    }
+    "Denarius Metals Corp.",
+    "Zancudo Metals Corp."
   ],
   "products": [],
   "sources": [
@@ -41,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.739393Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:55:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Medellin (https://www.nsenergybusiness.com/projects/zancudo-project-colombia/). The Zancudo Project is a gold and silver deposit located approximately 30 km southwest of Medellin, in the Municipality of Titiribí"
   },
   "canonical_name": "Zancudo Mine",
   "canonical_slug": "zancudo-mine",
@@ -60,5 +54,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Medellin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:55:56.000000Z",
+      "operators": [
+        "Denarius Metals Corp."
+      ],
+      "owners": [
+        "Denarius Metals Corp."
+      ],
+      "notes": "Denarius Metals is a Canadian junior company that owns and operates the Zancudo Project."
+    }
+  }
 }

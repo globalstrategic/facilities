@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "POL",
   "location": {
-    "lat": 50.222,
-    "lon": 18.672,
+    "lat": 50.18944,
+    "lon": 18.63278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JSW Group",
+    "Jastrzębska Spółka Węglowa"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:49.938818Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:51:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Szczyg%C5%82owice_Coal_Mine. Coordinates extracted directly from the Wikipedia entry for the Szczygłowice Coal Mine"
   },
   "canonical_name": "KWK Knurã³w Szczygå Owice Coal Mine",
   "canonical_slug": "kwk-knura3w-szczygaowice-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Silesian Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:51:16.000000Z",
+      "operators": [
+        "Jastrzębska Spółka Węglowa"
+      ],
+      "owners": [
+        "JSW Group"
+      ],
+      "notes": "The mine is operated by Jastrzębska Spółka Węglowa, which is fully owned by JSW Group."
+    }
+  }
 }

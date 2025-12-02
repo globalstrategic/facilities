@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 28.3514889,
+    "lon": 28.862375,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Iron and Steel Co. for Mines & Quarries",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.167509",
-      "evidence": "Extracted from operator column: Iron and Steel Co. for Mines & Quarries (ISMQ)"
-    }
+    "Egyptian Iron and Steel Company (HADISOLB)",
+    "Iron and Steel Co. for Mines & Quarries"
   ],
   "products": [],
   "sources": [
@@ -41,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.178164Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:12:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bahariya_Oasis. Bahariya Oasis is known for its iron ore reserves, specifically the El-Gedida mine"
   },
   "canonical_name": "Bahariya Oasis Iron Mines Mine",
   "canonical_slug": "bahariya-oasis-iron-mines-mine",
@@ -68,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Giza Governorate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:12:05.000000Z",
+      "operators": [
+        "Egyptian Iron and Steel Company (HADISOLB)"
+      ],
+      "owners": [
+        "Egyptian Iron and Steel Company (HADISOLB)"
+      ],
+      "notes": "HADISOLB is the sole consumer of the ore extracted from the Bahariya Oasis."
+    }
+  }
 }

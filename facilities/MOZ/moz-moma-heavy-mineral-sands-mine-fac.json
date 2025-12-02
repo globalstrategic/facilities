@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.663719141170464,
+    "lon": 39.247802,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kenmare Resources plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.805962Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:26:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Nampula (https://www.mining-technology.com/projects/moma-titanium-minerals-mine-mozambique/). Moma is one of the world's largest titanium mineral deposits, located 160 km from Nampula"
   },
   "canonical_name": "Moma Heavy Mineral Sands Mine",
   "canonical_slug": "moma-heavy-mineral-sands-mine",
@@ -67,5 +69,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nampula",
+  "town": "Nampula",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:26:02.000000Z",
+      "operators": [
+        "Kenmare Resources plc"
+      ],
+      "owners": [
+        "Kenmare Resources plc"
+      ],
+      "notes": "Kenmare Resources owns and operates the Moma Titanium Minerals Mine."
+    }
+  }
 }

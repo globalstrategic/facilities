@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.6963695,
-    "lon": 27.8018793,
+    "lat": -25.5,
+    "lon": 27.5,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barplats Mines",
+    "Eastern Platinum Limited (Eastplats)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T15:01:48.496319",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Crocodile River Mine, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:15:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Crocodile River Mine, South Africa. Web search geocoded. Source: https://www.mining-technology.com/news/newschinas-hebei-zhongheng-to-acquire-eastplats-barplats-mines-4937708/. The Crocodile River Mine is located on the western part of the Bushveld Complex, near the town of Brits"
   },
   "canonical_name": "Crocodile River Mine",
   "canonical_slug": "crocodile-river-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:15:59.000000Z",
+      "operators": [
+        "Eastern Platinum Limited (Eastplats)",
+        "Barplats Mines"
+      ],
+      "owners": [
+        "Eastern Platinum Limited (Eastplats)"
+      ],
+      "notes": "Eastplats is currently operating the mine while it is under care and maintenance."
+    }
+  }
 }

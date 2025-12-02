@@ -7,8 +7,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 49.098,
-    "lon": 33.676,
+    "lat": 49.0999,
+    "lon": 33.6767,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ferrexpo Yeristovo Mining LLC",
+    "Ferrexpo plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.718150Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:57:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Yeristovskoye_mine. Ferrexpo Yeristovskoye Mine is one of the largest iron ore mines in Ukraine"
   },
   "canonical_name": "Ferrexpo Yeristovskoye Mine",
   "canonical_slug": "ferrexpo-yeristovskoye-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Poltava Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:57:31.000000Z",
+      "operators": [
+        "Ferrexpo Yeristovo Mining LLC"
+      ],
+      "owners": [
+        "Ferrexpo plc"
+      ],
+      "notes": "Ferrexpo plc is the parent company and operates the mine through its subsidiary."
+    }
+  }
 }

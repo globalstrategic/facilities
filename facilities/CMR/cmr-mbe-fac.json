@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Oriole Resources PLC",
-      "role": "operator",
-      "source": "Research Import CMR 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:11:30.494647",
-      "evidence": "Extracted from operator column: Oriole Resources PLC"
-    }
+    "BCM",
+    "Oriole Resources",
+    "Oriole Resources PLC"
   ],
   "products": [],
   "sources": [
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:50:02.000000Z",
+      "operators": [
+        "Oriole Resources"
+      ],
+      "owners": [
+        "Oriole Resources",
+        "BCM"
+      ],
+      "notes": "Oriole Resources is the majority owner and operator, with BCM as a joint venture partner."
+    }
+  }
 }

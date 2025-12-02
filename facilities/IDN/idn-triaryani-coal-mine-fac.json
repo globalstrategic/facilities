@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.237,
-    "lon": 102.874,
+    "lat": -3.237308,
+    "lon": 102.874071,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Geo Energy Resources Ltd",
+    "PT Golden Eagle Energy Tbk",
+    "PT Triaryani"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.223581Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:30:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Triaryani_Coal_Mine. Triaryani Coal Mine is an operating coal mine located in Musi Rawas, South Sumatra, Indonesia"
   },
   "canonical_name": "Triaryani Coal Mine",
   "canonical_slug": "triaryani-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:38.000000Z",
+      "operators": [
+        "Geo Energy Resources Ltd"
+      ],
+      "owners": [
+        "PT Triaryani",
+        "PT Golden Eagle Energy Tbk"
+      ],
+      "notes": "PT Triaryani is a subsidiary of PT Golden Eagle Energy Tbk, with Geo Energy holding a significant stake."
+    }
+  }
 }

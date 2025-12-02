@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.161,
-    "lon": -83.152,
+    "lat": 37.38411862292992,
+    "lon": -83.1933893,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Locust Grove, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.875933Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:56:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hazard (https://www.eia.gov/coal/data/public/xls/coalpublic2016.xls). Poundmill Mine No 90 is mentioned in the context of coal production facilities in Kentucky"
   },
   "canonical_name": "Poundmill No 90 Mine",
   "canonical_slug": "poundmill-no-90-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Hazard",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:56:35.000000Z",
+      "operators": [
+        "Locust Grove, Inc."
+      ],
+      "owners": [],
+      "notes": "Locust Grove, Inc. is listed as the operator associated with Poundmill Mine No 90."
+    }
+  }
 }

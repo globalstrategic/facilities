@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.002,
-    "lon": -110.774,
+    "lat": 33.02090886543931,
+    "lon": -110.974847,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ASARCO LLC",
+    "Grupo Mexico"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.766603Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:41:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tucson (https://tucson.com/business/article_f474c9fb-992a-582c-b791-39da2c018e68.html). The Hayden smelter is located about 55 miles north of Tucson, Arizona"
   },
   "canonical_name": "Hayden Smelter",
   "canonical_slug": "hayden-smelter",
@@ -57,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "town": "Tucson",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:41:45.000000Z",
+      "operators": [
+        "ASARCO LLC"
+      ],
+      "owners": [
+        "Grupo Mexico"
+      ],
+      "notes": "ASARCO is a subsidiary of Grupo Mexico."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.187,
-    "lon": -89.623,
+    "lat": 37.71048565093644,
+    "lon": -120.20703849812756,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy Corp",
+    "Peabody Gateway North Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.825915Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:14:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Coulterville (https://www.gem.wiki/Gateway_North_Coal_Mine). The mine is located in Randolph County, approximately ½ mile west of Coulterville, Illinois"
   },
   "canonical_name": "Gateway North Mine",
   "canonical_slug": "gateway-north-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Illinois",
+  "town": "Coulterville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:14:25.000000Z",
+      "operators": [
+        "Peabody Gateway North Mining LLC"
+      ],
+      "owners": [
+        "Peabody Energy Corp"
+      ],
+      "notes": "Peabody Energy is the parent company, and the mine is a non-union underground operation."
+    }
+  }
 }

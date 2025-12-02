@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.45201,
-    "lon": 27.11571,
+    "lat": -26.0,
+    "lon": 27.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Economic Empowerment (BEE) Partners",
+    "DiamondCorp plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:32:34.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:07:32.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-985031.html. Coordinates extracted from Lace Mine Dam, which is associated with the Lace Mine Expansion"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-985031.html. Coordinates extracted from Lace Mine Dam, which is associated with the Lace Mine Expansion. Web search geocoded. Source: https://miningdigital.com/smart-mining/diamondcorp-and-lace-diamond-mine. The Lace Diamond Mine is located near Kroonstad, South Africa, and is operated by DiamondCorp"
   },
   "canonical_name": "Lace Expansion Mine",
   "canonical_slug": "lace-expansion-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Free State"
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:07:32.000000Z",
+      "operators": [
+        "DiamondCorp plc"
+      ],
+      "owners": [
+        "DiamondCorp plc",
+        "Black Economic Empowerment (BEE) Partners"
+      ],
+      "notes": "DiamondCorp holds 74% ownership, with the remaining 26% held by BEE partners."
+    }
+  }
 }

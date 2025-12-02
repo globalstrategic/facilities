@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.86698770876742,
+    "lon": 46.4001881,
     "precision": "unknown"
   },
   "types": [
@@ -47,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.538505Z",
-    "checked_by": "import_pipeline",
-    "notes": "World-class polymetallic deposit. Trial operations planned for 2025. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "World-class polymetallic deposit. Trial operations planned for 2025. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Balakan (https://azergold.az/en/layihe/filizchay-deposit-filizchay-deposit). Filizchay is the largest polymetallic deposit in the region and one of the largest projects of AzerGold"
   },
   "canonical_name": "Filizchay Mine",
   "canonical_slug": "filizchay-mine",
@@ -70,12 +70,13 @@
   "province": "Balakan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:35:46.000000Z",
+      "timestamp": "2025-12-01T16:39:26.000000Z",
       "operators": [
         "AzerGold CJSC"
       ],
       "owners": [],
       "notes": "AzerGold CJSC is the main operator and developer of the Filizchay Project."
     }
-  }
+  },
+  "town": "Balakan"
 }

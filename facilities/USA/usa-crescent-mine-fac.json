@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.037,
-    "lon": -117.114,
+    "lat": 47.5,
+    "lon": -116.1,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Americas Gold and Silver Corporation",
+    "Crescent Silver, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.842892Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:27:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://financialpost.com/globe-newswire/americas-gold-and-silver-accelerates-silver-growth-in-idaho-via-the-proposed-strategic-acquisition-of-the-neighbouring-crescent-silver-mine-and-announces-concurrent-us65-million-bought-deal-financing. Crescent Mine is located approximately 4 miles southeast of Kellogg, Idaho"
   },
   "canonical_name": "Crescent Mine",
   "canonical_slug": "crescent-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:27:24.000000Z",
+      "operators": [
+        "Crescent Silver, LLC",
+        "Americas Gold and Silver Corporation"
+      ],
+      "owners": [
+        "Crescent Silver, LLC",
+        "Americas Gold and Silver Corporation"
+      ],
+      "notes": "Crescent Silver, LLC is the current owner and operator, with a recent acquisition by Americas Gold and Silver Corporation."
+    }
+  }
 }

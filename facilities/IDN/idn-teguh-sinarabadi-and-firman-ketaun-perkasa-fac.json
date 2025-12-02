@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.374,
-    "lon": 115.801,
+    "lat": -1.2,
+    "lon": 116.7833,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bayan Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.197697Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:10:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.woodmac.com/reports/coal-teguh-sinar-abadi-coal-mine-16491370/. The mine is located in the Kutai Barat Regency, East Kalimantan, and is operated as a single mine"
   },
   "canonical_name": "Teguh Sinarabadi And Firman Ketaun Perkasa Mine",
   "canonical_slug": "teguh-sinarabadi-and-firman-ketaun-perkasa-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:10:32.000000Z",
+      "operators": [
+        "Bayan Resources"
+      ],
+      "owners": [
+        "Bayan Resources"
+      ],
+      "notes": "Bayan Resources is one of Indonesia's largest coal producers and owns 100% of the facility."
+    }
+  }
 }

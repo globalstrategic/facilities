@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.146,
-    "lon": -81.251,
+    "lat": 38.083438,
+    "lon": -81.332259,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coronado Global Resources Inc",
+    "Greenbrier Minerals, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.913601Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:46:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609217. Coordinates and status are directly mentioned in the source"
   },
   "canonical_name": "Alloy Powellton Mine",
   "canonical_slug": "alloy-powellton-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:46:38.000000Z",
+      "operators": [
+        "Greenbrier Minerals, LLC"
+      ],
+      "owners": [
+        "Coronado Global Resources Inc"
+      ],
+      "notes": "Greenbrier Minerals is a subsidiary of Coronado Global Resources."
+    }
+  }
 }

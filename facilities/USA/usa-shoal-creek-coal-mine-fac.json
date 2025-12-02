@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.484,
-    "lon": -87.269,
+    "lat": 33.486937,
+    "lon": -87.265563,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy",
+    "Peabody Southeast Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.910568Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:44:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-0102901. Shoal Creek Coal Mine is an operating underground coal mine located in Oakman, Walker County, Alabama"
   },
   "canonical_name": "Shoal Creek Coal Mine",
   "canonical_slug": "shoal-creek-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:44:28.000000Z",
+      "operators": [
+        "Peabody Southeast Mining"
+      ],
+      "owners": [
+        "Peabody Energy"
+      ],
+      "notes": "Peabody Energy is the parent company and operates the mine."
+    }
+  }
 }

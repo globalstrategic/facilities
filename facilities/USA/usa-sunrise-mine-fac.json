@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.454,
-    "lon": -117.645,
+    "lat": 46.0,
+    "lon": -112.0,
     "precision": "site"
   },
   "types": [
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.720036Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T19:59:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10270402/. The Sunrise Mine is located in Lewis and Clark County, Montana"
   },
   "canonical_name": "Sunrise Mine",
   "canonical_slug": "sunrise-mine-2",
@@ -52,5 +52,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana"
 }

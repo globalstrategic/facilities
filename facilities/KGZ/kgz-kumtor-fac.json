@@ -7,8 +7,8 @@
   ],
   "country_iso3": "KGZ",
   "location": {
-    "lat": 41.855,
-    "lon": 78.191,
+    "lat": 41.867,
+    "lon": 78.2,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Centerra Gold Inc.",
+    "Kumtor Gold Company",
+    "Kyrgyz Republic"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:50.202406Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:52:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kumtor_Gold_Mine. Kumtor Gold Mine is one of the largest gold mines in the world and has been a significant contributor to Kyrgyzstan's economy"
   },
   "canonical_name": "Kumtor Mine",
   "canonical_slug": "kumtor-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Issyk-Kul Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:52:13.000000Z",
+      "operators": [
+        "Kumtor Gold Company"
+      ],
+      "owners": [
+        "Kyrgyz Republic",
+        "Centerra Gold Inc."
+      ],
+      "notes": "The mine was nationalized in 2021, and is now fully owned by the Kyrgyz Republic through Kyrgyzaltyn JSC."
+    }
+  }
 }

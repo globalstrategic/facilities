@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.51667,
+    "lon": 43.16667,
     "precision": "unknown"
   },
   "types": [
@@ -19,22 +19,8 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.235469",
-      "evidence": "Extracted from operator column: N/A"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.235475",
-      "evidence": "Extracted from operator column: N/A"
-    }
+    "A",
+    "N"
   ],
   "products": [],
   "sources": [
@@ -45,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.723907Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:47:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/of/2010/1255/pdf/USGS_ofr2010_1255_table.pdf. The Lukhumi deposit is located in the Ambrolauri region of Georgia, known for its arsenic production"
   },
   "canonical_name": "Lukhumi Mine",
   "canonical_slug": "lukhumi-mine",
@@ -72,5 +58,14 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Racha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:47:15.000000Z",
+      "operators": [],
+      "owners": [],
+      "notes": "No specific companies mentioned as operators or owners in the provided documents."
+    }
+  }
 }

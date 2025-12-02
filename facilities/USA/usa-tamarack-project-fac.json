@@ -31,22 +31,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Talon Metals",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.565893",
-      "evidence": "Extracted from operator column: Talon Metals / Rio Tinto"
-    },
-    {
-      "name": "Rio Tinto",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.565903",
-      "evidence": "Extracted from operator column: Talon Metals / Rio Tinto"
-    }
+    "Rio Tinto",
+    "Talon Metals",
+    "Talon Metals Corp",
+    "Talon Nickel (USA) LLC"
   ],
   "products": [],
   "sources": [
@@ -76,5 +64,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minnesota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:39:06.000000Z",
+      "operators": [
+        "Talon Nickel (USA) LLC"
+      ],
+      "owners": [
+        "Talon Metals Corp",
+        "Rio Tinto"
+      ],
+      "notes": "Talon Metals Corp holds a 51% stake and has the option to increase to 60% through a feasibility study."
+    }
+  }
 }

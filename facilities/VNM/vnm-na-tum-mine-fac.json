@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 22.6827,
+    "lon": 105.9163,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Not Specified",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.109984",
-      "evidence": "Extracted from operator column: Not Specified"
-    }
+    "Crowe, Schaffalitzky & Associates (Csa)",
+    "Leader Resources Nl",
+    "Not Specified"
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.278776Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:26:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10183185. The Na Tum Zinc Site is located near Cao Bang, Vietnam and has been closed with no current plans to resume operations"
   },
   "canonical_name": "Na Tum Mine",
   "canonical_slug": "na-tum-mine",
@@ -72,5 +67,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cao Bang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:26:12.000000Z",
+      "operators": [
+        "Crowe, Schaffalitzky & Associates (Csa)",
+        "Leader Resources Nl"
+      ],
+      "owners": [],
+      "notes": "Leader holds the exploration license, CSA is doing the exploration."
+    }
+  }
 }

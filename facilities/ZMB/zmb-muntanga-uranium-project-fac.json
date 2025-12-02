@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.22364322070414,
+    "lon": 28.2818414,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "GoviEx Uranium Inc.",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.793297",
-      "evidence": "Extracted from operator column: GoviEx Uranium Inc."
-    }
+    "GoviEx Uranium Inc.",
+    "GoviEx Uranium Zambia Limited",
+    "Tombador Iron Ltd."
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.682159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:45:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lusaka (https://www.world-nuclear-news.org/articles/feasibility-results-announced-for-zambia-uranium-project). The Muntanga Uranium Project is located approximately 200 km south of Lusaka, in the Siavonga and Chirundu districts"
   },
   "canonical_name": "Muntanga Uranium Mine",
   "canonical_slug": "muntanga-uranium-mine",
@@ -58,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "town": "Lusaka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:45:59.000000Z",
+      "operators": [
+        "GoviEx Uranium Inc."
+      ],
+      "owners": [
+        "GoviEx Uranium Zambia Limited",
+        "Tombador Iron Ltd."
+      ],
+      "notes": "GoviEx Uranium Zambia Limited controls the project, which is 100% owned by GoviEx Uranium Inc."
+    }
+  }
 }

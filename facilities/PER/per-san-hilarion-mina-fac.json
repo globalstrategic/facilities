@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -10.148,
-    "lon": -77.333,
+    "lat": -9.5,
+    "lon": -77.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nexa Resources SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.303330Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:56:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ri.nexaresources.com/about-nexa/operations/. The Hilarión project is in exploration stage and is accessible by paved road from Lima"
   },
   "canonical_name": "San Hilarion, Mina Mine",
   "canonical_slug": "san-hilarion-mina-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ancash",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:56:15.000000Z",
+      "operators": [
+        "Nexa Resources SA"
+      ],
+      "owners": [
+        "Nexa Resources SA"
+      ],
+      "notes": "Nexa Resources is actively developing the Hilarión project."
+    }
+  }
 }

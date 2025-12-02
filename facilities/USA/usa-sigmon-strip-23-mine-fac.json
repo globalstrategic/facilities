@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.853,
-    "lon": -82.938,
+    "lat": 36.852943,
+    "lon": -82.937825,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "A & G Coal Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.796991Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:07:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sigmon_Strip_23_Mine. Sigmon Strip #23 Mine is an operating coal mine located in Wise County, Virginia"
   },
   "canonical_name": "Sigmon Strip 23 Mine",
   "canonical_slug": "sigmon-strip-23-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:07:11.000000Z",
+      "operators": [
+        "A & G Coal Corporation"
+      ],
+      "owners": [
+        "A & G Coal Corporation"
+      ],
+      "notes": "A & G Coal Corporation is both the owner and operator of the mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.847,
-    "lon": -78.967,
+    "lat": 39.846944,
+    "lon": -78.967222,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Brooks Run Mining Company LLC",
+    "Heritage Coal & Natural Resources LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.757690Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:32:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Saylor_Coal_Mine. Saylor Coal Mine is a mothballed coal mine located in Somerset County, Pennsylvania"
   },
   "canonical_name": "Saylor Coal Mine",
   "canonical_slug": "saylor-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:32:47.000000Z",
+      "operators": [
+        "Brooks Run Mining Company LLC"
+      ],
+      "owners": [
+        "Heritage Coal & Natural Resources LLC"
+      ],
+      "notes": "Heritage Coal & Natural Resources LLC owns the mine, while Brooks Run Mining Company LLC has been the operator since 2005."
+    }
+  }
 }

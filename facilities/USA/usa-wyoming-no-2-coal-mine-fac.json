@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.603,
-    "lon": -81.61,
+    "lat": 37.6025,
+    "lon": -81.609722,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Brooks Run South Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.700561Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:44:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Wyoming_No_2_Coal_Mine. The Wyoming No 2 Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Wyoming No 2 Coal Mine",
   "canonical_slug": "wyoming-no-2-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:44:47.000000Z",
+      "operators": [
+        "Brooks Run South Mining"
+      ],
+      "owners": [
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Alpha Metallurgical Resources Inc owns 100% of the mine."
+    }
+  }
 }

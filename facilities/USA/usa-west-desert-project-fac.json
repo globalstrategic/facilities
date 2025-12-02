@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.733119677415964,
+    "lon": -113.20653737731323,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "American West Metals",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.420105",
-      "evidence": "Extracted from operator column: American West Metals"
-    }
+    "American West Metals",
+    "American West Metals Limited",
+    "West Desert Metals, Inc."
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.977411Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T01:43:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Salt Lake City (https://www.listcorp.com/asx/aw1/american-west-metals-limited/news/update-on-west-desert-3126847.html). The West Desert Project is located approximately 160 km southwest of Salt Lake City, Utah"
   },
   "canonical_name": "West Desert Mine",
   "canonical_slug": "west-desert-mine",
@@ -64,5 +59,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "Salt Lake City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:43:25.000000Z",
+      "operators": [
+        "American West Metals Limited",
+        "West Desert Metals, Inc."
+      ],
+      "owners": [
+        "American West Metals Limited"
+      ],
+      "notes": "American West Metals Limited owns 100% of the West Desert Project."
+    }
+  }
 }

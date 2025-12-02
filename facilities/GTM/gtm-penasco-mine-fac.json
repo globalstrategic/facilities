@@ -23,14 +23,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Cia. Minas de Oriente SA",
-      "role": "operator",
-      "source": "Research Import GTM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:33.509062",
-      "evidence": "Extracted from operator column: Cia. Minas de Oriente SA"
-    }
+    "Cia. Minas de Oriente SA",
+    "Minera Peñasquito S.A. de C.V.",
+    "Newmont Corporation"
   ],
   "products": [],
   "sources": [
@@ -60,5 +55,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zacatecas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:02:34.000000Z",
+      "operators": [
+        "Minera Peñasquito S.A. de C.V."
+      ],
+      "owners": [
+        "Newmont Corporation"
+      ],
+      "notes": "Newmont Corporation owns the mine through its subsidiary Minera Peñasquito S.A. de C.V."
+    }
+  }
 }

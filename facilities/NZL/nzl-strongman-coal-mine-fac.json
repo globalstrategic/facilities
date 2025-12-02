@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -42.343,
-    "lon": 171.303,
+    "lat": -42.342305,
+    "lon": 171.303234,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Birchfield Coal",
+    "Birchfield Coal Mines Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.229072Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:31:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Strongman_Coal_Mine. Strongman Coal Mine is an operating coal mine located near Rapahoe on the West Coast of New Zealand"
   },
   "canonical_name": "Strongman Coal Mine",
   "canonical_slug": "strongman-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:31:19.000000Z",
+      "operators": [
+        "Birchfield Coal Mines Ltd"
+      ],
+      "owners": [
+        "Birchfield Coal"
+      ],
+      "notes": "Birchfield Coal Mines Ltd acquired the Strongman mining licence in 2017."
+    }
+  }
 }

@@ -10,8 +10,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 50.278,
-    "lon": 19.507,
+    "lat": 50.14111,
+    "lon": 18.865,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KWK Bolesław Śmiały Branch",
+    "Polska Grupa Górnicza SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.932532Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:47:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Boles%C5%82aw_%C5%9Amia%C5%82y_Coal_Mine. Bolesław Śmiały Coal Mine is an underground mine located in Łaziska Górne, Poland"
   },
   "canonical_name": "Boleslaw Smelter",
   "canonical_slug": "boleslaw-smelter",
@@ -57,5 +60,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Silesian Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:47:26.000000Z",
+      "operators": [
+        "KWK Bolesław Śmiały Branch"
+      ],
+      "owners": [
+        "Polska Grupa Górnicza SA"
+      ],
+      "notes": "The mine is operated by KWK Bolesław Śmiały Branch and owned by Polska Grupa Górnicza."
+    }
+  }
 }

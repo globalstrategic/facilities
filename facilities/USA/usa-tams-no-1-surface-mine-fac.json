@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.667,
-    "lon": -81.292,
+    "lat": 37.666667,
+    "lon": -81.291667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tams Management, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.847829Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:32:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tams_No.1_Surface_Mine. Tams No.1 Surface Mine is an operating coal mine located in Tams, West Virginia"
   },
   "canonical_name": "Tams No 1 Surface Mine",
   "canonical_slug": "tams-no-1-surface-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:32:13.000000Z",
+      "operators": [
+        "Tams Management, Inc."
+      ],
+      "owners": [
+        "Tams Management, Inc."
+      ],
+      "notes": "Tams Management, Inc. is the sole owner and operator of the mine."
+    }
+  }
 }

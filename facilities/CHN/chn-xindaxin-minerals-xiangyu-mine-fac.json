@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.95,
-    "lon": 113.451,
+    "lat": 38.950278,
+    "lon": 113.451389,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Wutai County Xindaxin Minerals Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.797552Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:31:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Xindaxin_Minerals_Xiangyu_Mine. The mine has been retired"
   },
   "canonical_name": "Xindaxin Minerals Xiangyu Mine",
   "canonical_slug": "xindaxin-minerals-xiangyu-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:31:31.000000Z",
+      "operators": [
+        "Wutai County Xindaxin Minerals Co Ltd"
+      ],
+      "owners": [
+        "Wutai County Xindaxin Minerals Co Ltd"
+      ],
+      "notes": "The mine is fully owned by Wutai County Xindaxin Minerals Co Ltd."
+    }
+  }
 }

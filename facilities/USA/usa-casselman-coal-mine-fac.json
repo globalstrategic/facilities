@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.657,
-    "lon": -79.202,
+    "lat": 39.77,
+    "lon": -79.07,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corsa Coal Corp",
+    "J & J Svonavec Excavating, Inc.",
+    "Maryland Energy Resources LLC",
+    "Rosebud Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.723132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:02:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-3610377&iframe=yes. The Casselman Coal Mine is an active underground coal mining operation"
   },
   "canonical_name": "Casselman Coal Mine",
   "canonical_slug": "casselman-coal-mine",
@@ -50,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maryland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:02:36.000000Z",
+      "operators": [
+        "J & J Svonavec Excavating, Inc.",
+        "Rosebud Mining Company"
+      ],
+      "owners": [
+        "Maryland Energy Resources LLC",
+        "Corsa Coal Corp"
+      ],
+      "notes": "The mine was previously owned by Corsa Coal Corp before being acquired by Rosebud Mining Company."
+    }
+  }
 }

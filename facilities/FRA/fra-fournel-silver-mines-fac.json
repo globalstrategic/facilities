@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 44.785249,
+    "lon": 6.553403,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "\\-",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.796144",
-      "evidence": "Extracted from operator column: \\-"
-    }
+    "\\-"
   ],
   "products": [],
   "sources": [
@@ -39,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.672922Z",
-    "checked_by": "import_pipeline",
-    "notes": "Major medieval silver mine, now a tourist site. 59 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:34:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Major medieval silver mine, now a tourist site. 59 | Canonical name+slug generated. Web search geocoded. Source: https://www.showcaves.com/english/fr/mines/Fournel.html. The Fournel Silver Mines are located in the Vallon du Fournel, close to the village of L’Argentière-la-Bessée"
   },
   "canonical_name": "Fournel Silver Mines Mine",
   "canonical_slug": "fournel-silver-mines-mine",
@@ -66,5 +59,14 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hautes-Alpes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:34:16.000000Z",
+      "operators": [],
+      "owners": [],
+      "notes": "No specific companies mentioned in the search results."
+    }
+  }
 }

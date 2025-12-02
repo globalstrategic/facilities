@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -18.504308769636108,
+    "lon": 162.13882253730938,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "**Société Le Nickel** 19",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.471473",
-      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 19"
-    }
+    "**Société Le Nickel** 19",
+    "Eramet",
+    "Nisshin Steel",
+    "Société Le Nickel (SLN)",
+    "Société Territoriale Caledonian de Participation Industrielle"
   ],
   "products": [],
   "sources": [
@@ -45,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.365010Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T06:54:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Koumac (https://www.mindat.org/loc-2437.html). Tiébaghi Mine is part of the Tiébaghi Massif and is operated by Société Le Nickel (SLN), a subsidiary of Eramet"
   },
   "canonical_name": "SLN Tiébaghi Mine",
   "canonical_slug": "sln-tiebaghi-mine",
@@ -72,5 +69,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Province",
+  "town": "Koumac",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:54:49.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet",
+        "Société Territoriale Caledonian de Participation Industrielle",
+        "Nisshin Steel"
+      ],
+      "notes": "Eramet is the major stakeholder with a 56% ownership in SLN."
+    }
+  }
 }

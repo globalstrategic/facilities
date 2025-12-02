@@ -7,8 +7,8 @@
   ],
   "country_iso3": "JPN",
   "location": {
-    "lat": 35.224,
-    "lon": 134.691,
+    "lat": 35.283,
+    "lon": 134.667,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mitsubishi"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.020534Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:19:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_mines_in_Japan. The Akenobe Mine was a dominant tin producer in Japan and was closed in 1987"
   },
   "canonical_name": "Akenobe Sn Zn Pb Mine",
   "canonical_slug": "akenobe-sn-zn-pb-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hyōgo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:19:08.000000Z",
+      "operators": [
+        "Mitsubishi"
+      ],
+      "owners": [],
+      "notes": "Mitsubishi took over the mine in 1898."
+    }
+  }
 }

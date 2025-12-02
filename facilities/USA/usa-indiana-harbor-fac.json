@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.655,
-    "lon": -87.449,
+    "lat": 41.6167,
+    "lon": -87.5,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cleveland-Cliffs Inc.",
+    "Cleveland-Cliffs LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.770605Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:45:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.clevelandcliffs.com/operations/steelmaking/indiana-harbor. The Indiana Harbor complex is one of the largest integrated steelmaking facilities in North America"
   },
   "canonical_name": "Indiana Harbor Smelter",
   "canonical_slug": "indiana-harbor-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:45:00.000000Z",
+      "operators": [
+        "Cleveland-Cliffs Inc."
+      ],
+      "owners": [
+        "Cleveland-Cliffs LLC"
+      ],
+      "notes": "Cleveland-Cliffs acquired the Indiana Harbor plant from ArcelorMittal in 2020."
+    }
+  }
 }

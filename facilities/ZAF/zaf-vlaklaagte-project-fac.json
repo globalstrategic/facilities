@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.16321,
-    "lon": 29.37551,
+    "lat": -25.740843591095263,
+    "lon": 29.2099962,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton Plc",
+    "Wescoal Mining",
+    "Xstrata"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:11:50.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:26:24.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-943544.html. Coordinates extracted from a reliable mining feature database"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-943544.html. Coordinates extracted from a reliable mining feature database. Web search geocoded. Source: Calculated from Witbank (https://iol.co.za/business-report/companies/2012-07-31-wescoal-sells-vlaklaagte-rights/). The Vlaklaagte Project is located in Mpumalanga, approximately 15 km from Witbank"
   },
   "canonical_name": "Vlaklaagte Mine",
   "canonical_slug": "vlaklaagte-mine",
@@ -48,5 +52,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "town": "Witbank",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:26:24.000000Z",
+      "operators": [
+        "Wescoal Mining",
+        "Xstrata"
+      ],
+      "owners": [
+        "Wescoal Mining",
+        "BHP Billiton Plc"
+      ],
+      "notes": "Wescoal Mining acquired the prospecting rights and sold mining rights to Xstrata."
+    }
+  }
 }

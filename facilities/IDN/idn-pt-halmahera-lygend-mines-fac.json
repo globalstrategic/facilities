@@ -9,8 +9,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.536,
-    "lon": 127.422,
+    "lat": -1.535833,
+    "lon": 127.420278,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lygend Resources & Technology Co., Ltd.",
+    "PT Halmahera Persada Lygend",
+    "PT Trimegah Bangun Persada Tbk."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.301114Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:14:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/PT-Halmahera-Persada.htm. PT Halmahera Persada Lygend is a joint venture focused on nickel-cobalt production using HPAL technology"
   },
   "canonical_name": "PT Halmahera Lygend Mines Mine",
   "canonical_slug": "pt-halmahera-lygend-mines-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Maluku",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:14:43.000000Z",
+      "operators": [
+        "PT Halmahera Persada Lygend"
+      ],
+      "owners": [
+        "Lygend Resources & Technology Co., Ltd.",
+        "PT Trimegah Bangun Persada Tbk."
+      ],
+      "notes": "Joint venture between Lygend Resources and Harita Group."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 56.21667,
-    "lon": 109.81667,
+    "lat": 56.217,
+    "lon": 109.817,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MBC Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.604881Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:30:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kholodninsky_mine. Kholodninsky mine is one of the largest lead and zinc mines in Russia, located in south-eastern Russia"
   },
   "canonical_name": "Kholodninsky Facility",
   "canonical_slug": "kholodninsky-facility",
@@ -63,5 +65,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Buryatia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:30:07.000000Z",
+      "operators": [
+        "MBC Corporation"
+      ],
+      "owners": [
+        "MBC Corporation"
+      ],
+      "notes": "MBC Corporation is both the operator and owner of the Kholodninsky mine."
+    }
+  }
 }

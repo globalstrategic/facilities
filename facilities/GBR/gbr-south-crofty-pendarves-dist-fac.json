@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GBR",
   "location": {
-    "lat": 50.232,
-    "lon": -5.281,
+    "lat": 53.072541879134995,
+    "lon": 9.0462944,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baseresult Holdings Limited",
+    "Cornish Metals Inc.",
+    "Galena Special Situations Fund",
+    "Western United Mines Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.466104Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:42:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pool (https://en.wikipedia.org/wiki/South_Crofty). The South Crofty Project is a past-producing underground tin mine located in the town of Pool in Cornwall, UK"
   },
   "canonical_name": "South Crofty Pendarves Dist Mine",
   "canonical_slug": "south-crofty-pendarves-dist-mine",
@@ -55,5 +60,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cornwall",
+  "town": "Pool",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:42:58.000000Z",
+      "operators": [
+        "Cornish Metals Inc."
+      ],
+      "owners": [
+        "Cornish Metals Inc.",
+        "Baseresult Holdings Limited",
+        "Galena Special Situations Fund",
+        "Western United Mines Limited"
+      ],
+      "notes": "Cornish Metals is working to re-open the mine and has received permits for dewatering."
+    }
+  }
 }

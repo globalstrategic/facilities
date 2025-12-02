@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.864,
-    "lon": 115.235,
+    "lat": -1.864455,
+    "lon": 115.235346,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Golden Energy Mines Tbk",
+    "PT Trisula Kencana Sakti"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.226746Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:32:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TKS_Coal_Mine. TKS Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "TKS Coal Mine",
   "canonical_slug": "tks-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:32:30.000000Z",
+      "operators": [
+        "PT Trisula Kencana Sakti"
+      ],
+      "owners": [
+        "PT Golden Energy Mines Tbk"
+      ],
+      "notes": "PT Trisula Kencana Sakti is a subsidiary of PT Golden Energy Mines Tbk."
+    }
+  }
 }

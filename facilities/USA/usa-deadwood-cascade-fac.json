@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.467,
-    "lon": -115.584,
+    "lat": 47.65993878286483,
+    "lon": -111.3281242,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Deadwood Mining Company, Limited",
+    "Hall Interstate Mining Company",
+    "Lost Pilgrim Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.839300Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:24:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cascade (https://yellowpinetimes.wordpress.com/2017/09/10/idaho-history-sep-10/). The Deadwood Mine is part of a consolidation of properties owned by multiple companies, with historical production noted"
   },
   "canonical_name": "Deadwood Cascade Mine",
   "canonical_slug": "deadwood-cascade-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "town": "Cascade",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:24:35.000000Z",
+      "operators": [
+        "Lost Pilgrim Mining Company",
+        "Hall Interstate Mining Company",
+        "Deadwood Mining Company, Limited"
+      ],
+      "owners": [],
+      "notes": "The Lost Pilgrim Mining Company and Hall Interstate Mining Company owned adjacent claims, while the Deadwood Mining Company, Limited owned claims nearby."
+    }
+  }
 }

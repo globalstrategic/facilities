@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.43,
-    "lon": 115.502,
+    "lat": -3.424221,
+    "lon": 115.494102,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lestari"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.221484Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:29:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Lestari_Coal_Mine. Lestari Coal Mine is an operating coal mine located in South Kalimantan, Indonesia"
   },
   "canonical_name": "Lestari Coal Mine",
   "canonical_slug": "lestari-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:29:21.000000Z",
+      "operators": [
+        "Lestari"
+      ],
+      "owners": [
+        "Lestari"
+      ],
+      "notes": "Lestari Coal Mine is fully owned and operated by Lestari."
+    }
+  }
 }

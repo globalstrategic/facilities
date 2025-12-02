@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.627018453030583,
+    "lon": -72.8480736966282,
     "precision": "unknown"
   },
   "types": [
@@ -15,6 +15,7 @@
   "status": "unknown",
   "company_mentions": [
     "Corporación de Fomento de la Producción (CORFO)",
+    "Sociedad Química y Minera de Chile (SQM)",
     "Sociedad Química y Minera de Chile S.A. (SQM)"
   ],
   "products": [],
@@ -26,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.918152Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:56:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Antofagasta (https://en.wikipedia.org/wiki/Sociedad_Qu%C3%ADmica_y_Minera). The Salar del Carmen facility is associated with lithium production and is located near Antofagasta"
   },
   "canonical_name": "Salar Del Carmen Mine",
   "canonical_slug": "salar-del-carmen-mine",
@@ -57,14 +58,15 @@
   "province": "Antofagasta Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T12:45:46.000000Z",
+      "timestamp": "2025-12-01T16:56:58.000000Z",
       "operators": [
-        "Sociedad Química y Minera de Chile S.A. (SQM)"
+        "Sociedad Química y Minera de Chile (SQM)"
       ],
       "owners": [
-        "Corporación de Fomento de la Producción (CORFO)"
+        "Sociedad Química y Minera de Chile (SQM)"
       ],
-      "notes": "SQM operates the lithium production facilities at Salar del Carmen under a lease agreement with CORFO."
+      "notes": "SQM operates and owns the lithium production facilities at Salar del Carmen."
     }
-  }
+  },
+  "town": "Antofagasta"
 }

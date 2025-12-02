@@ -19,14 +19,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Various",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.830828",
-      "evidence": "Extracted from operator column: Various (e.g., Imperial Mining)"
-    }
+    "Forte Minerals Corp.",
+    "Minera Puno Gold, S.A.C.",
+    "Miramont Resources Corp.",
+    "Puno Gold Corporation",
+    "Various"
   ],
   "products": [],
   "sources": [
@@ -64,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:09:47.000000Z",
+      "operators": [
+        "Miramont Resources Corp.",
+        "Minera Puno Gold, S.A.C."
+      ],
+      "owners": [
+        "Puno Gold Corporation"
+      ],
+      "notes": "Minera Puno is a wholly owned subsidiary of Puno Gold Corporation."
+    }
+  }
 }

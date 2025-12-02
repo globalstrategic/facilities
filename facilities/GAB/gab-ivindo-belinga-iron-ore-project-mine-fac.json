@@ -7,8 +7,8 @@
   ],
   "country_iso3": "GAB",
   "location": {
-    "lat": 1.148,
-    "lon": 13.196,
+    "lat": 1.145437,
+    "lon": 13.200098,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Transformation and Industrialization Fund",
+    "Fortescue Metals Group Ltd",
+    "Ivindo Iron SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:09.390281Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:21:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ivindo_Belinga_Mine. Coordinates are directly provided in the source"
   },
   "canonical_name": "Ivindo Belinga Iron Ore Mine",
   "canonical_slug": "ivindo-belinga-iron-ore-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ogooué-Ivindo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:21:01.000000Z",
+      "operators": [
+        "Ivindo Iron SA"
+      ],
+      "owners": [
+        "Fortescue Metals Group Ltd",
+        "African Transformation and Industrialization Fund"
+      ],
+      "notes": "Ivindo Iron is a joint venture with Fortescue holding 80% and the African Transformation and Industrialization Fund holding 20%."
+    }
+  }
 }

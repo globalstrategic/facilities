@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -13.977,
-    "lon": -75.068,
+    "lat": -13.5,
+    "lon": -74.5,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera Sierra Antapite S.A.C.",
+    "Sierra Antapite S.A.C",
+    "Sierra Sun Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.328112Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:16:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://cyanidecode.org/wp-content/uploads/2023/06/SierraAntapiteSAR2024.pdf. The Sierra Antapite mine is located in the district of Ocoyo, province of Huaytará, department of Huancavelica"
   },
   "canonical_name": "Antapite Mine",
   "canonical_slug": "antapite-mine",
@@ -52,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Huaytará",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:16:44.000000Z",
+      "operators": [
+        "Sierra Sun Group",
+        "Sierra Antapite S.A.C"
+      ],
+      "owners": [
+        "Sierra Sun Group"
+      ],
+      "notes": "Sierra Sun Group owns the mine through its Peruvian company Sierra Antapite S.A.C."
+    }
+  }
 }

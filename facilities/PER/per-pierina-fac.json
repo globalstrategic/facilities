@@ -11,8 +11,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.463,
-    "lon": -77.585,
+    "lat": -9.5,
+    "lon": -77.5,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Minera Barrick Peru S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.301132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:54:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://cyanidecode.org/wp-content/uploads/2025/03/BarrickPierinaSAR2021.pdf. The Pierina mine is located in the Cordillera Negra of the Andes Mountains, approximately 10 kilometers northwest of Huaraz"
   },
   "canonical_name": "Pierina Mine",
   "canonical_slug": "pierina-mine",
@@ -62,5 +65,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Huaraz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:54:24.000000Z",
+      "operators": [
+        "Minera Barrick Peru S.A."
+      ],
+      "owners": [
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Barrick Gold Corporation owns and operates the Pierina mine."
+    }
+  }
 }

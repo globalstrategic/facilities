@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 12.988,
-    "lon": 76.458,
+    "lat": 12.9835,
+    "lon": 76.4587,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mysore Minerals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.089568Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:49:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10230887. The Jambur Chromium Mine is an open-pit mining operation extracting chromium mineral deposits"
   },
   "canonical_name": "Jambur Mine",
   "canonical_slug": "jambur-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:49:25.000000Z",
+      "operators": [],
+      "owners": [
+        "Mysore Minerals Ltd."
+      ],
+      "notes": "Mysore Minerals Ltd. is the owner of the Jambur Chromium Mine."
+    }
+  }
 }

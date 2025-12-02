@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.7333,
+    "lon": -76.2,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Corporación Aceros Arequipa",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.717315",
-      "evidence": "Extracted from operator column: Corporación Aceros Arequipa"
-    }
+    "Corporacion Aceros Arequipa S.A.",
+    "Corporación Aceros Arequipa"
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.315046Z",
-    "checked_by": "import_pipeline",
-    "notes": "High. Major EAF-based steelmaker. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:07:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "High. Major EAF-based steelmaker. | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Aceros_Arequipa_Pisco_steel_plant. Aceros Arequipa operates a steel plant in Pisco, Ica, Peru. Web search geocoded. Source: https://acerosarequipa.com/co/en/segments/28/mining-industry. Aceros Arequipa has operations in Pisco, Ica, Peru"
   },
   "canonical_name": "Aceros Arequipa Steel Plant",
   "canonical_slug": "aceros-arequipa-steel-plant",
@@ -64,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:07:12.000000Z",
+      "operators": [
+        "Corporacion Aceros Arequipa S.A."
+      ],
+      "owners": [
+        "Corporacion Aceros Arequipa S.A."
+      ],
+      "notes": "Aceros Arequipa is the largest steel maker in Peru and operates multiple facilities."
+    }
+  }
 }

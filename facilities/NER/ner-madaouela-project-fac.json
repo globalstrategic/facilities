@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.603563164665776,
+    "lon": 7.393331,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GoviEx Niger Holdings Ltd.",
+    "GoviEx Uranium Inc.",
+    "Niger government"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.801483Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:04:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Arlit (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/423-tsx-venture/gxu/157654-goviex-s-madaouela-uranium-project-progressing-ahead-with-commencement-of-front-end-engineering-designs.html). The Madaouela Project is located near Arlit, which is a known mining region in Niger"
   },
   "canonical_name": "Madaouela Facility",
   "canonical_slug": "madaouela-facility",
@@ -63,5 +67,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez",
+  "town": "Arlit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:04:09.000000Z",
+      "operators": [
+        "GoviEx Uranium Inc."
+      ],
+      "owners": [
+        "GoviEx Niger Holdings Ltd.",
+        "Niger government"
+      ],
+      "notes": "GoviEx holds an 80% stake in the project, with the Niger government owning 20%."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.2,
-    "lon": 28.7,
+    "lat": -25.5,
+    "lon": 28.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SepFluor Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.788536Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:15:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/sepfluor-officially-opens-nokeng-fluorspar-mine-in-south-africa/. The Nokeng Fluorspar Mine is located near Rust de Winter, approximately 80 km northeast of Pretoria"
   },
   "canonical_name": "Nokeng Fluorspar Mine",
   "canonical_slug": "nokeng-fluorspar-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:15:04.000000Z",
+      "operators": [
+        "SepFluor Ltd"
+      ],
+      "owners": [
+        "SepFluor Ltd"
+      ],
+      "notes": "Nokeng Fluorspar Mine is a wholly-owned subsidiary of SepFluor, which is partially owned by black empowerment interests."
+    }
+  }
 }

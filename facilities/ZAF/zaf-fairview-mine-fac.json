@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.713,
-    "lon": 31.101,
+    "lat": -25.202097353581223,
+    "lon": 30.9772719,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barberton Mines Ltd.",
+    "Federate Mynbou Reperk",
+    "General Mining & Finance Corporation Ltd.",
+    "General Mining Group",
+    "Pan African Resources PLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.794650Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:20:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Nelspruit (https://thediggings.com/mines/21417). Fairview Mine is part of the Barberton Mines complex, which has been operating for over 130 years"
   },
   "canonical_name": "Fairview Mine",
   "canonical_slug": "fairview-mine",
@@ -51,5 +57,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Nelspruit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:20:35.000000Z",
+      "operators": [
+        "Barberton Mines Ltd.",
+        "Pan African Resources PLC"
+      ],
+      "owners": [
+        "Federate Mynbou Reperk",
+        "General Mining & Finance Corporation Ltd.",
+        "General Mining Group"
+      ],
+      "notes": "Barberton Mines Ltd. operates the Fairview Mine, while Pan African Resources PLC is the holding company."
+    }
+  }
 }

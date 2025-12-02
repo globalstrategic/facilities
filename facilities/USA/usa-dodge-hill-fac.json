@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.554,
-    "lon": -88.039,
+    "lat": 44.559363124531004,
+    "lon": -103.509139,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Patriot Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.887553Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:06:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sturgis (https://www.sec.gov/Archives/edgar/data/1376812/000119312511047464/d10k.htm). The Dodge Hill mining complex is located in western Kentucky, specifically in Union County"
   },
   "canonical_name": "Dodge Hill Mine",
   "canonical_slug": "dodge-hill-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Sturgis",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:06:50.000000Z",
+      "operators": [
+        "Patriot Coal"
+      ],
+      "owners": [
+        "Patriot Coal"
+      ],
+      "notes": "Patriot Coal is the sole operator and owner of the Dodge Hill Mine."
+    }
+  }
 }

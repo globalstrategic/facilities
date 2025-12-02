@@ -7,8 +7,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 6.614,
-    "lon": -75.37,
+    "lat": 6.613346058996105,
+    "lon": -75.42948603032514,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Red Eagle Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:22.742969Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:59:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Santa Rosa de Osos (https://www.mining-technology.com/projects/san-ramon-gold-mine-antioquia/). The Santa Rosa project is located approximately 5km southeast of the town of Santa Rosa de Osos in the Department of Antioquia"
   },
   "canonical_name": "Santa Rosa Mine",
   "canonical_slug": "santa-rosa-mine-2",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Santa Rosa de Osos",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:59:32.000000Z",
+      "operators": [
+        "Red Eagle Mining Corporation"
+      ],
+      "owners": [
+        "Red Eagle Mining Corporation"
+      ],
+      "notes": "Red Eagle Mining Corporation was the owner and operator of the Santa Rosa Gold Project, which has ceased production since July 2018."
+    }
+  }
 }

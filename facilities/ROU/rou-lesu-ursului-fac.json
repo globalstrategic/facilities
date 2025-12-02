@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ROU",
   "location": {
-    "lat": 47.315,
-    "lon": 24.752,
+    "lat": 47.3423806,
+    "lon": 25.7070389,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minbucovina",
+    "Romanian Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.785532Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:26:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Le%C5%9Fu_Ursului_mine. Leșu Ursului mine was a large copper mine in Romania, representing one of the largest copper reserves in the country"
   },
   "canonical_name": "Lesu Ursului Mine",
   "canonical_slug": "lesu-ursului-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Suceava County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:26:00.000000Z",
+      "operators": [
+        "Minbucovina"
+      ],
+      "owners": [
+        "Romanian Government"
+      ],
+      "notes": "The mine was owned entirely by the government of Romania."
+    }
+  }
 }

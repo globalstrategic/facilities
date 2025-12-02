@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ISL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 65.6881,
+    "lon": -18.1094,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Private",
-      "role": "operator",
-      "source": "Research Import ISL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:51:44.787827",
-      "evidence": "Extracted from operator column: Private"
-    }
+    "Private",
+    "Slippurinn Akureyri ehf"
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:12.902031Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:10:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.slippurinndng.is/en-gb/copy-of-skipa%C3%BEjonusta87f20cbb. Slippurinn Akureyri is a leading shipyard located in Akureyri, Iceland"
   },
   "canonical_name": "Slippurinn Akureyri Facility",
   "canonical_slug": "slippurinn-akureyri-facility",
@@ -59,5 +53,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northeast Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:10:29.000000Z",
+      "operators": [
+        "Slippurinn Akureyri ehf"
+      ],
+      "owners": [],
+      "notes": "The company operates a ship recovery and repair facility."
+    }
+  }
 }

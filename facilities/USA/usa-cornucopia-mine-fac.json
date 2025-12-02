@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.987,
-    "lon": -117.196,
+    "lat": 44.87734662503204,
+    "lon": -117.35358013613919,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cornucopia Mining Co.",
+    "Hilco Real Estate, LLC",
+    "United Nuclear Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.971538Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:35:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Halfway (https://www.globenewswire.com/news-release/2016/02/22/812947/27952/en/HILCO-REAL-ESTATE-TO-SELL-HISTORIC-CORNCOPIA-GOLDMINE-IN-HALFWAY-OREGON.html). The Cornucopia Mine is located 12 miles west of Halfway, Oregon, and is part of a historic gold mining area"
   },
   "canonical_name": "Cornucopia Mine",
   "canonical_slug": "cornucopia-mine-2",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oregon",
+  "town": "Halfway",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:35:22.000000Z",
+      "operators": [
+        "Hilco Real Estate, LLC"
+      ],
+      "owners": [
+        "United Nuclear Corporation",
+        "Cornucopia Mining Co."
+      ],
+      "notes": "The property is currently being marketed for sale by Hilco Real Estate, and is owned by United Nuclear Corporation and Cornucopia Mining Co."
+    }
+  }
 }

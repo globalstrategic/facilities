@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.608,
-    "lon": 101.911,
+    "lat": 0.5259850503977552,
+    "lon": 103.24827849491535,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Samantaka Batubara"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.240522Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:42:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pekanbaru (https://ccsenet.org/journal/index.php/jsd/article/download/76725/42554). The facility is located in Peranap Subdistrict, with specific villages mentioned but no exact coordinates provided"
   },
   "canonical_name": "Peranap Mine",
   "canonical_slug": "peranap-mine",
@@ -50,5 +52,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Riau",
+  "town": "Pekanbaru",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:42:25.000000Z",
+      "operators": [
+        "PT Samantaka Batubara"
+      ],
+      "owners": [],
+      "notes": "Only PT Samantaka Batubara is mentioned as the operator in the context of the research study."
+    }
+  }
 }

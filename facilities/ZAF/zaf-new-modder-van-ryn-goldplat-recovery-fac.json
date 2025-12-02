@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.189,
-    "lon": 28.383,
+    "lat": -26.2,
+    "lon": 28.3,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Goldplat Recovery (Pty) Ltd",
+    "Goldplat plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.729844Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:21:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-57233.html. New Modder Gold Mine is located in the Benoni area, which is part of the City of Ekurhuleni Metropolitan Municipality"
   },
   "canonical_name": "New Modder Van Ryn Goldplat Recovery Mine",
   "canonical_slug": "new-modder-van-ryn-goldplat-recovery-mine",
@@ -75,5 +78,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:21:38.000000Z",
+      "operators": [
+        "Goldplat Recovery (Pty) Ltd"
+      ],
+      "owners": [
+        "Goldplat plc"
+      ],
+      "notes": "Goldplat Recovery is involved in precious metal recovery operations."
+    }
+  }
 }

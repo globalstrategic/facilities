@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ROU",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.6666694,
+    "lon": 22.5,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PSV Company",
+    "Verde Magnesium"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.786427Z",
-    "checked_by": "import_pipeline",
-    "notes": "EU strategic project aimed at establishing a primary magnesium metal supply chain within Europe to reduce import dependency. 8 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:26:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "EU strategic project aimed at establishing a primary magnesium metal supply chain within Europe to reduce import dependency. 8 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Budureasa_mine. Budureasa mine is the largest magnesium reserve in Romania and Europe"
   },
   "canonical_name": "Budureasa Magnesium Development",
   "canonical_slug": "budureasa-magnesium-development",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bihor County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:26:38.000000Z",
+      "operators": [
+        "Verde Magnesium"
+      ],
+      "owners": [
+        "PSV Company"
+      ],
+      "notes": "Verde Magnesium is planning to invest in the development of the facility."
+    }
+  }
 }

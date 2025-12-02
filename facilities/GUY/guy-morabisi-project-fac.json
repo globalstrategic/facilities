@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GUY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.02146018240011,
+    "lon": -88.85965449354423,
     "precision": "unknown"
   },
   "types": [
@@ -27,22 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Guyana Strategic Metals Inc.",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.970732",
-      "evidence": "Extracted from operator column: Guyana Strategic Metals Inc. / Greenpower Energy"
-    },
-    {
-      "name": "Greenpower Energy",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.970735",
-      "evidence": "Extracted from operator column: Guyana Strategic Metals Inc. / Greenpower Energy"
-    }
+    "Greenpower Energy",
+    "Greenpower Energy Ltd",
+    "Guyana Strategic Metals Inc."
   ],
   "products": [],
   "sources": [
@@ -53,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.984658Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:04:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://data-api.marketindex.com.au/api/v1/announcements/XASX:GNM:6A812548/pdf/inline/morabisi-program-yielding-results). The Morabisi Project is located in the rich mineral belt of Central Guyana, approximately 150 km southwest of Georgetown"
   },
   "canonical_name": "Morabisi Exploration",
   "canonical_slug": "morabisi-exploration",
@@ -80,5 +67,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guyana",
+  "town": "Georgetown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:04:00.000000Z",
+      "operators": [
+        "Greenpower Energy Ltd",
+        "Guyana Strategic Metals Inc."
+      ],
+      "owners": [
+        "Guyana Strategic Metals Inc."
+      ],
+      "notes": "Greenpower Energy Ltd is earning up to a 74% interest in the project from Guyana Strategic Metals Inc."
+    }
+  }
 }

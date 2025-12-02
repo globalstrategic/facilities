@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "POSCO Pilbara Lithium Solution",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.516289",
-      "evidence": "Extracted from operator column: POSCO Pilbara Lithium Solution"
-    }
+    "POSCO",
+    "POSCO Pilbara Lithium Solution",
+    "POSCO Pilbara Lithium Solution Company (PPLS)",
+    "Pilbara Minerals"
   ],
   "products": [],
   "sources": [
@@ -59,5 +55,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jeollanam-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:04:11.000000Z",
+      "operators": [
+        "POSCO Pilbara Lithium Solution Company (PPLS)"
+      ],
+      "owners": [
+        "POSCO",
+        "Pilbara Minerals"
+      ],
+      "notes": "The facility is a joint venture with 82% ownership by POSCO and 18% by Pilbara Minerals."
+    }
+  }
 }
