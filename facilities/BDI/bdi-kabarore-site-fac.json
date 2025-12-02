@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -2.82211,
+    "lon": 29.56555,
     "precision": "unknown"
   },
   "types": [
@@ -32,14 +32,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "COMEBU",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.206467",
-      "evidence": "Extracted from operator column: COMEBU"
-    }
+    "COMEBU",
+    "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
   ],
   "products": [],
   "sources": [
@@ -50,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.900437Z",
-    "checked_by": "import_pipeline",
-    "notes": "A historic coltan mining site that continues to operate under the iTSCi program. 5 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T11:11:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "A historic coltan mining site that continues to operate under the iTSCi program. 5 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Comptoirs_miniers_des_exploitations_mini%C3%A8res_du_Burundi. The facility is located in the Commune of Kabarore, Kayanza Province, where coltan and cassiterite are mined"
   },
   "canonical_name": "Kabarore Site Mine",
   "canonical_slug": "kabarore-site-mine",
@@ -77,5 +71,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kayanza Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T11:11:34.000000Z",
+      "operators": [
+        "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
+      ],
+      "owners": [
+        "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
+      ],
+      "notes": "COMEBU is a private enterprise that has been operating since 1987."
+    }
+  }
 }

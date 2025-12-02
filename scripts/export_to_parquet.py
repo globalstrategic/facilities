@@ -132,13 +132,22 @@ def flatten_facility(facility: Dict) -> Dict:
     return row
 
 
-def export_to_parquet(output_file: str = 'facilities.parquet'):
+def export_to_parquet(output_dir: str = '.'):
     """
-    Export all facilities to a parquet file.
+    Export all facilities to parquet files.
+
+    Creates three parquet files:
+    - facilities.parquet: Main facility data
+    - facility_materials.parquet: Facility-material relationships
+    - facility_companies.parquet: Facility-company relationships
 
     Args:
-        output_file: Output parquet file path (default: facilities.parquet)
+        output_dir: Output directory for parquet files (default: current directory)
     """
+    from pathlib import Path
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+
     print("Loading facilities...")
     facilities, errors = load_all_facilities()
     print(f"Loaded {len(facilities):,} facilities", end='')
@@ -147,7 +156,7 @@ def export_to_parquet(output_file: str = 'facilities.parquet'):
     else:
         print()
 
-    print("Flattening to tabular format...")
+    print("\nFlattening to tabular format...")
     rows = [flatten_facility(fac) for fac in facilities]
 
     print("Creating DataFrame...")
@@ -174,18 +183,54 @@ def export_to_parquet(output_file: str = 'facilities.parquet'):
     df['capacity_value'] = pd.to_numeric(df['capacity_value'], errors='coerce')
     df['source_count'] = df['source_count'].astype('int32')
 
-    print(f"Writing to {output_file}...")
-    df.to_parquet(output_file, index=False, engine='pyarrow', compression='snappy')
+    # Save facilities parquet
+    facilities_file = output_path / 'facilities.parquet'
+    print(f"\n[1/3] Writing {facilities_file}...")
+    df.to_parquet(facilities_file, index=False, engine='pyarrow', compression='snappy')
+    fac_size = facilities_file.stat().st_size / (1024 * 1024)
+    print(f"      ✓ {len(df):,} facilities ({fac_size:.2f} MB)")
 
-    # Print statistics
-    file_size = Path(output_file).stat().st_size / (1024 * 1024)
-    print(f"\n[OK] Exported {len(df):,} facilities to {output_file}")
-    print(f"     File size: {file_size:.2f} MB")
-    print(f"     Columns: {len(df.columns)}")
-    print(f"     Countries: {df['country_iso3'].nunique()}")
-    print(f"     With coordinates: {df['latitude'].notna().sum():,} ({df['latitude'].notna().sum()/len(df)*100:.1f}%)")
+    # Parse and save materials relationships
+    print(f"\n[2/3] Parsing facility-material relationships...")
+    from export_relationships_parquet import parse_facility_materials
+    materials_df = parse_facility_materials(df)
+    materials_file = output_path / 'facility_materials.parquet'
+    materials_df.to_parquet(materials_file, index=False, engine='pyarrow', compression='snappy')
+    mat_size = materials_file.stat().st_size / (1024 * 1024)
+    print(f"      ✓ {len(materials_df):,} relationships ({mat_size:.2f} MB)")
 
-    return df
+    # Parse and save company relationships
+    print(f"\n[3/3] Parsing facility-company relationships...")
+    from export_relationships_parquet import parse_facility_companies
+    companies_df = parse_facility_companies(df)
+    companies_file = output_path / 'facility_companies.parquet'
+    companies_df.to_parquet(companies_file, index=False, engine='pyarrow', compression='snappy')
+    comp_size = companies_file.stat().st_size / (1024 * 1024)
+    print(f"      ✓ {len(companies_df):,} relationships ({comp_size:.2f} MB)")
+
+    # Print summary
+    total_size = fac_size + mat_size + comp_size
+    print(f"\n{'='*60}")
+    print(f"EXPORT COMPLETE")
+    print(f"{'='*60}")
+    print(f"Output directory: {output_path.absolute()}")
+    print(f"\nFiles created:")
+    print(f"  • facilities.parquet          {len(df):>6,} rows  ({fac_size:>5.2f} MB)")
+    print(f"  • facility_materials.parquet  {len(materials_df):>6,} rows  ({mat_size:>5.2f} MB)")
+    print(f"  • facility_companies.parquet  {len(companies_df):>6,} rows  ({comp_size:>5.2f} MB)")
+    print(f"\nTotal: {total_size:.2f} MB")
+    print(f"\nFacilities: {len(df):,}")
+    print(f"  • With coordinates: {df['latitude'].notna().sum():,} ({df['latitude'].notna().sum()/len(df)*100:.1f}%)")
+    print(f"  • Countries: {df['country_iso3'].nunique()}")
+    print(f"\nMaterials: {materials_df['material_name'].nunique():,} unique")
+    print(f"  • Primary: {materials_df['is_primary'].sum():,}")
+    print(f"  • Secondary: {(~materials_df['is_primary']).sum():,}")
+    print(f"\nCompanies: {companies_df['company_name'].nunique():,} unique")
+    print(f"  • Operators: {(companies_df['relationship_type'] == 'operator').sum():,}")
+    print(f"  • Owners: {(companies_df['relationship_type'] == 'owner').sum():,}")
+    print(f"  • Mentions: {(companies_df['relationship_type'] == 'mention').sum():,}")
+
+    return df, materials_df, companies_df
 
 
 def main():
@@ -193,15 +238,15 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(
-        description='Export facilities database to parquet format',
+        description='Export facilities database to parquet files',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Export to default file (facilities.parquet)
+  # Export to current directory (creates facilities.parquet, etc.)
   python scripts/export_to_parquet.py
 
-  # Export to custom file
-  python scripts/export_to_parquet.py --output data/facilities.parquet
+  # Export to specific directory
+  python scripts/export_to_parquet.py --output output/parquet
 
   # Export and show preview
   python scripts/export_to_parquet.py --preview
@@ -210,8 +255,8 @@ Examples:
 
     parser.add_argument(
         '--output', '-o',
-        default='facilities.parquet',
-        help='Output parquet file path (default: facilities.parquet)'
+        default='.',
+        help='Output directory for parquet files (default: current directory)'
     )
 
     parser.add_argument(
@@ -223,14 +268,24 @@ Examples:
     args = parser.parse_args()
 
     # Export
-    df = export_to_parquet(args.output)
+    df, materials_df, companies_df = export_to_parquet(args.output)
 
     # Show preview if requested
     if args.preview:
-        print("\nPreview of first 5 rows:")
-        print(df.head().to_string())
-        print("\nColumn info:")
-        print(df.info())
+        print("\n" + "="*60)
+        print("FACILITIES PREVIEW")
+        print("="*60)
+        print(df[['facility_id', 'name', 'country_iso3', 'primary_commodity', 'latitude', 'longitude']].head().to_string())
+
+        print("\n" + "="*60)
+        print("MATERIALS PREVIEW")
+        print("="*60)
+        print(materials_df.head(10).to_string())
+
+        print("\n" + "="*60)
+        print("COMPANIES PREVIEW")
+        print("="*60)
+        print(companies_df.head(10).to_string())
 
     return 0
 
