@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.992236,
+    "lon": 127.112821,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -29,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.757426Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Produces graphite for secondary battery anodes and other industrial uses. 42 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:04:42Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Produces graphite for secondary battery anodes and other industrial uses. 42 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:04:42Z] Geocoded via web search. Coords: (36.992236, 127.112821). Confidence: 0.90. Notes: Coordinates extracted directly from Wikipedia entry for Pyeongtaek."
   },
   "canonical_name": "Pyeongtaek/asan Graphite Plants Processing Plant",
   "canonical_slug": "pyeongtaek-asan-graphite-plants-processing-plant",
@@ -57,7 +57,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Gyeonggi-do",
+  "province": "Gyeonggi",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T09:03:03.000000Z",

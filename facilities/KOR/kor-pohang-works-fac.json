@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.0321,
+    "lon": 129.417,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -26,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.762014Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] POSCO's foundational steelworks and a hub for new battery material investments. 1 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:06:40Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] POSCO's foundational steelworks and a hub for new battery material investments. 1 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:06:40Z] Geocoded via web search. Coords: (36.0321, 129.417). Confidence: 0.90. Notes: Coordinates extracted directly from the search results indicating the location of Pohang Works."
   },
   "canonical_name": "Pohang Steel Plant",
   "canonical_slug": "pohang-steel-plant",
@@ -54,7 +54,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "North Gyeongsang",
+  "province": "Gyeongsangbuk-do",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T09:05:32.000000Z",
