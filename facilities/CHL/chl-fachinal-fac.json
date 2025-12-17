@@ -1,0 +1,71 @@
+{
+  "facility_id": "chl-fachinal-fac",
+  "name": "Fachinal",
+  "aliases": [
+    "Fachinal",
+    "Cerro Bayo"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -45.5,
+    "lon": -71.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Cde Chilean Mining Corporation",
+    "Coeur Dalene Mines Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:24.964910"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:33:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/215466/0000950133-95-000152.txt. The Fachinal property is located approximately 10 miles west of Chile Chico and covers about 90 square miles"
+  },
+  "canonical_name": "Fachinal Mine",
+  "canonical_slug": "fachinal-mine",
+  "display_name": "Fachinal",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Aisen Del General Carlos Ibanez Del Campo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:33:45.000000Z",
+      "operators": [
+        "Coeur Dalene Mines Corporation"
+      ],
+      "owners": [
+        "Cde Chilean Mining Corporation"
+      ],
+      "notes": "Cde Chilean Mining Corporation is the owner-operator of the facility."
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "facility_id": "geo-filizchay-project-fac",
+  "name": "Filizchay Project",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": 41.86698770876742,
+    "lon": 46.4001881,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "AzerGold",
+    "AzerGold CJSC"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T09:23:43.582569"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "World-class polymetallic deposit. Trial operations planned for 2025. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Balakan (https://azergold.az/en/layihe/filizchay-deposit-filizchay-deposit). Filizchay is the largest polymetallic deposit in the region and one of the largest projects of AzerGold"
+  },
+  "canonical_name": "Filizchay Mine",
+  "canonical_slug": "filizchay-mine",
+  "display_name": "Filizchay",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Balakan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:26.000000Z",
+      "operators": [
+        "AzerGold CJSC"
+      ],
+      "owners": [],
+      "notes": "AzerGold CJSC is the main operator and developer of the Filizchay Project."
+    }
+  },
+  "town": "Balakan"
+}

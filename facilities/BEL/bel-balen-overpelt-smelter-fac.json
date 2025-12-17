@@ -1,0 +1,93 @@
+{
+  "facility_id": "bel-balen-overpelt-smelter-fac",
+  "name": "Balen/Overpelt Smelter",
+  "aliases": [
+    "Balen/Overpelt Smelter",
+    "Overpelt"
+  ],
+  "country_iso3": "BEL",
+  "location": {
+    "lat": 51.215508388154156,
+    "lon": 5.544705391215545,
+    "precision": "site"
+  },
+  "types": [
+    "smelter"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Cadmium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "NN2 Newco Ltd.",
+    "Nyrstar N.V.",
+    "Trafigura Group Pte. Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:47.196973"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-11-25T16:09:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Antwerp (https://pubs.usgs.gov/myb/vol3/2020-21/myb3-2020-21-belgium.pdf). The Balen smelter and Overpelt casthouse are located approximately 80 km east of Antwerp, Belgium"
+  },
+  "canonical_name": "Balen/overpelt Smelter",
+  "canonical_slug": "balen-overpelt-smelter",
+  "display_name": "Balen/overpelt",
+  "primary_type": "smelter",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Balen/Overpelt Smelter",
+      "from": "2025-10-20T15:29:47.196980",
+      "to": "2025-11-04T17:40:20.517029Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Flanders",
+  "town": "Antwerp",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T16:09:34.000000Z",
+      "operators": [
+        "Nyrstar N.V."
+      ],
+      "owners": [
+        "Trafigura Group Pte. Ltd.",
+        "NN2 Newco Ltd."
+      ],
+      "notes": "Nyrstar N.V. is operated by Trafigura Group Pte. Ltd. (98.5% equity interest) and NN2 Newco Ltd. (1.5% equity interest)."
+    }
+  }
+}

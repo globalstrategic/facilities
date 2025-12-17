@@ -1,0 +1,79 @@
+{
+  "facility_id": "nor-grong-gruber-joma-gjersvik-fac",
+  "name": "Grong Gruber Joma/Gjersvik",
+  "aliases": [],
+  "country_iso3": "NOR",
+  "location": {
+    "lat": 64.849,
+    "lon": 13.837,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bluelake Mineral AB (publ)",
+    "Grong Gruber AS",
+    "Joma Gruver AS",
+    "Vilhelmina Mineral AB (publ)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:43.184119"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:57.720788Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Grong Gruber Joma/gjersvik Mine",
+  "canonical_slug": "grong-gruber-joma-gjersvik-mine",
+  "display_name": "Grong Gruber Joma/gjersvik",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Grong Gruber Joma/Gjersvik Mine",
+      "from": "2025-10-20T15:26:43.184125",
+      "to": "2025-11-04T19:18:57.720785Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Trøndelag",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:18:51.000000Z",
+      "operators": [
+        "Grong Gruber AS",
+        "Joma Gruver AS"
+      ],
+      "owners": [
+        "Bluelake Mineral AB (publ)",
+        "Vilhelmina Mineral AB (publ)"
+      ],
+      "notes": "Bluelake Mineral is working with Joma Gruver AS on the permit process for mining operations."
+    }
+  }
+}

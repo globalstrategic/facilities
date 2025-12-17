@@ -1,0 +1,88 @@
+{
+  "facility_id": "bdi-kabarore-site-fac",
+  "name": "**Kabarore Site**",
+  "aliases": [],
+  "country_iso3": "BDI",
+  "location": {
+    "lat": -2.82211,
+    "lon": 29.56555,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Niobium",
+      "primary": true,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "COMEBU",
+    "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import BDI 2025-10-27",
+      "date": "2025-10-27T10:36:55.206476"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T11:11:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "A historic coltan mining site that continues to operate under the iTSCi program. 5 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Comptoirs_miniers_des_exploitations_mini%C3%A8res_du_Burundi. The facility is located in the Commune of Kabarore, Kayanza Province, where coltan and cassiterite are mined"
+  },
+  "canonical_name": "Kabarore Site Mine",
+  "canonical_slug": "kabarore-site-mine",
+  "display_name": "Kabarore Site",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Kabarore Site** Mine",
+      "from": "2025-10-27T10:36:55.206478",
+      "to": "2025-11-04T19:19:00.900435Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Kayanza Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T11:11:34.000000Z",
+      "operators": [
+        "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
+      ],
+      "owners": [
+        "Comptoir Minier des Exploitations du Burundi S.A. (COMEBU)"
+      ],
+      "notes": "COMEBU is a private enterprise that has been operating since 1987."
+    }
+  }
+}

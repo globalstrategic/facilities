@@ -1,0 +1,70 @@
+{
+  "facility_id": "mng-ulaan-ovoo-coal-mine-fac",
+  "name": "Ulaan Ovoo Coal Mine",
+  "aliases": [
+    "Ulaan Ovoo Coal Mine",
+    "Ulaan Ovoo"
+  ],
+  "country_iso3": "MNG",
+  "location": {
+    "lat": 50.32,
+    "lon": 104.974,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Mega Thermal Coal Corp.",
+    "Silver Elephant Mining Corp."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:21.219084"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:07.459803Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Ulaan Ovoo Coal Mine",
+  "canonical_slug": "ulaan-ovoo-coal-mine",
+  "display_name": "Ulaan Ovoo Coal",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Sukhbaatar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:21:03.000000Z",
+      "operators": [
+        "Mega Thermal Coal Corp."
+      ],
+      "owners": [
+        "Silver Elephant Mining Corp."
+      ],
+      "notes": "Silver Elephant Mining Corp. owns 100% of the Ulaan Ovoo mine through its subsidiary Mega Thermal Coal Corp."
+    }
+  }
+}

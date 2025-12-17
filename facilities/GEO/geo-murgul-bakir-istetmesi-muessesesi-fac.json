@@ -1,0 +1,72 @@
+{
+  "facility_id": "geo-murgul-bakir-istetmesi-muessesesi-fac",
+  "name": "Murgul Bakir Istetmesi Muessesesi",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": 41.499,
+    "lon": 41.668,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Cengiz Holding",
+    "Etibank",
+    "Karadeniz Bakır İşletmeleri AŞ"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:47.470831"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:19:01.724436Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Murgul Bakir Istetmesi Muessesesi Mine",
+  "canonical_slug": "murgul-bakir-istetmesi-muessesesi-mine",
+  "display_name": "Murgul Bakir Istetmesi Muessesesi",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Artvin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:47:47.000000Z",
+      "operators": [
+        "Cengiz Holding",
+        "Karadeniz Bakır İşletmeleri AŞ",
+        "Etibank"
+      ],
+      "owners": [
+        "Cengiz Holding",
+        "Karadeniz Bakır İşletmeleri AŞ",
+        "Etibank"
+      ],
+      "notes": "The mine has changed ownership multiple times, with the last known operator being Cengiz Holding."
+    }
+  }
+}

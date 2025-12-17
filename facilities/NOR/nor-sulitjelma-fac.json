@@ -1,0 +1,69 @@
+{
+  "facility_id": "nor-sulitjelma-fac",
+  "name": "Sulitjelma",
+  "aliases": [],
+  "country_iso3": "NOR",
+  "location": {
+    "lat": 67.132,
+    "lon": 16.104,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bjørnstad and other persons and companies based in Fauske municipality",
+    "Blue Moon Metals",
+    "Nye Sulitjelma Gruver"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:42.942652"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:57.726286Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Sulitjelma Mine",
+  "canonical_slug": "sulitjelma-mine",
+  "display_name": "Sulitjelma",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Nordland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:24:03.000000Z",
+      "operators": [
+        "Nye Sulitjelma Gruver"
+      ],
+      "owners": [
+        "Bjørnstad and other persons and companies based in Fauske municipality",
+        "Blue Moon Metals"
+      ],
+      "notes": "Nye Sulitjelma Gruver is owned by Størker Bjørnstad and others, and Blue Moon Metals has acquired ownership in the company."
+    }
+  }
+}

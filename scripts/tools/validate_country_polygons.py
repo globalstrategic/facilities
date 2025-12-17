@@ -122,11 +122,13 @@ def download_natural_earth(resolution: str = "10m") -> Path:
 class CountryPolygonValidator:
     """Validate coordinates against actual country polygons."""
 
-    def __init__(self, resolution: str = "10m"):
+    def __init__(self, resolution: str = "10m", coastal_buffer_km: float = 50.0):
         """Initialize validator with Natural Earth data.
 
         Args:
             resolution: Either "10m" (default, more accurate) or "110m" (faster)
+            coastal_buffer_km: Distance in km - points within this distance of their
+                declared country's coastline are considered valid (default: 50km)
         """
         if not GEOPANDAS_AVAILABLE:
             raise RuntimeError(
@@ -136,27 +138,37 @@ class CountryPolygonValidator:
         self.errors: List[ValidationError] = []
         self.stats = defaultdict(int)
         self.resolution = resolution
+        self.coastal_buffer_km = coastal_buffer_km
 
         # Load Natural Earth data
         print(f"Loading country polygons ({resolution} resolution)...")
         shapefile_path = download_natural_earth(resolution)
         self.world = gpd.read_file(shapefile_path)
 
-        # Build ISO3 lookup - Natural Earth uses 'ISO_A3' or 'ADM0_A3'
+        # Build ISO3 lookup - Natural Earth has multiple ISO3 columns
+        # ISO_A3 is preferred but some countries (France, Norway) have '-99'
+        # Fall back to ADM0_A3 or ISO_A3_EH in those cases
         self.country_polygons = {}
-        iso3_col = 'ISO_A3' if 'ISO_A3' in self.world.columns else 'ADM0_A3'
 
         for idx, row in self.world.iterrows():
-            iso3 = row.get(iso3_col, '')
-            if iso3 and iso3 not in ['-99', '-1', None]:
+            # Try multiple columns to get the ISO3 code
+            iso3 = None
+            for col in ['ISO_A3', 'ADM0_A3', 'ISO_A3_EH']:
+                if col in self.world.columns:
+                    val = row.get(col, '')
+                    if val and val not in ['-99', '-1', None, '']:
+                        iso3 = val
+                        break
+
+            if iso3:
                 if iso3 not in self.country_polygons:
                     self.country_polygons[iso3] = row.geometry
                 else:
                     # Merge multi-part countries
                     self.country_polygons[iso3] = self.country_polygons[iso3].union(row.geometry)
 
-        # Store the column name for later use
-        self.iso3_col = iso3_col
+        # Store primary column for point lookups
+        self.iso3_col = 'ADM0_A3' if 'ADM0_A3' in self.world.columns else 'ISO_A3'
 
         print(f"Loaded {len(self.country_polygons)} country polygons")
 
@@ -176,9 +188,13 @@ class CountryPolygonValidator:
 
         for idx in possible_matches_idx:
             if self.world.iloc[idx].geometry.contains(point):
-                iso3 = self.world.iloc[idx].get(self.iso3_col, '')
-                if iso3 and iso3 not in ['-99', '-1']:
-                    return iso3
+                row = self.world.iloc[idx]
+                # Try multiple columns to get the ISO3 code
+                for col in ['ISO_A3', 'ADM0_A3', 'ISO_A3_EH']:
+                    if col in self.world.columns:
+                        iso3 = row.get(col, '')
+                        if iso3 and iso3 not in ['-99', '-1', None, '']:
+                            return iso3
 
         return None
 
@@ -263,6 +279,26 @@ class CountryPolygonValidator:
         if actual_country is None:
             # Point is in ocean or unmapped area
             nearest, distance_km = self.get_nearest_country(lat, lon)
+
+            # Check if within coastal buffer of declared country
+            if self.coastal_buffer_km > 0:
+                # Check distance to declared country specifically
+                if declared_country in self.country_polygons:
+                    point = Point(lon, lat)
+                    try:
+                        dist_to_declared = point.distance(self.country_polygons[declared_country]) * 111
+                        if dist_to_declared <= self.coastal_buffer_km:
+                            # Within buffer of declared country - consider valid
+                            self.stats['coastal_buffer_ok'] += 1
+                            return None
+                    except Exception:
+                        pass
+
+                # Also accept if nearest country matches declared and within buffer
+                if self.countries_match(declared_country, nearest) and distance_km <= self.coastal_buffer_km:
+                    self.stats['coastal_buffer_ok'] += 1
+                    return None
+
             return ValidationError(
                 facility_id=facility_id,
                 name=name,
@@ -358,11 +394,15 @@ class CountryPolygonValidator:
         in_ocean = self.stats.get('in_ocean', 0)
         invalid = self.stats.get('invalid_coordinates', 0)
 
+        coastal_ok = self.stats.get('coastal_buffer_ok', 0)
+
         print(f"\nTotal facilities checked: {total}")
         print(f"Total errors: {len(self.errors)}")
         print(f"  - Wrong country: {wrong_country}")
         print(f"  - In ocean: {in_ocean}")
         print(f"  - Invalid coordinates: {invalid}")
+        if coastal_ok > 0:
+            print(f"\nCoastal buffer applied: {coastal_ok} facilities within {self.coastal_buffer_km}km of coastline accepted")
 
         if total > 0:
             error_rate = len(self.errors) / total * 100
@@ -458,6 +498,12 @@ def main():
         default='10m',
         help='Natural Earth resolution: 10m (default, more accurate) or 110m (faster)'
     )
+    parser.add_argument(
+        '--coastal-buffer', '-b',
+        type=float,
+        default=50.0,
+        help='Coastal buffer in km - points within this distance of their declared country are valid (default: 50km, use 0 to disable)'
+    )
 
     args = parser.parse_args()
 
@@ -466,7 +512,7 @@ def main():
         return 1
 
     # Create validator
-    validator = CountryPolygonValidator(resolution=args.resolution)
+    validator = CountryPolygonValidator(resolution=args.resolution, coastal_buffer_km=args.coastal_buffer)
 
     # Run validation
     if args.country:

@@ -1,0 +1,68 @@
+{
+  "facility_id": "chn-march-5-youth-mine-fac",
+  "name": "March 5 Youth Mine",
+  "aliases": [],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 41.730278,
+    "lon": 126.808056,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "molybdenum",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Kimduk Combined Mining Enterprise"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CMR 2025-10-23",
+      "date": "2025-10-23T15:16:01.535420"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:11.363698Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "March 5 Youth Mine",
+  "canonical_slug": "march-5-youth-mine",
+  "display_name": "March 5 Youth",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Chagang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:41:45.000000Z",
+      "operators": [
+        "Kimduk Combined Mining Enterprise"
+      ],
+      "owners": [],
+      "notes": "The mine is associated with the state-run mining operations in North Korea."
+    }
+  }
+}

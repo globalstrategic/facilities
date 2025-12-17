@@ -1,0 +1,73 @@
+{
+  "facility_id": "cod-lubambe-fac",
+  "name": "Lubambe",
+  "aliases": [
+    "Lubambe",
+    "Konkola Copper Mines",
+    "Lubambe"
+  ],
+  "country_iso3": "COD",
+  "location": {
+    "lat": -12.299,
+    "lon": 27.762,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "EMR Capital",
+    "JCHX Mining Management Co. Ltd",
+    "ZCCM Investments Holdings (ZCCM-IH)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:30.972643"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:21.686282Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Lubambe Mine",
+  "canonical_slug": "lubambe-mine",
+  "display_name": "Lubambe",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Copperbelt Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:48:52.000000Z",
+      "operators": [
+        "JCHX Mining Management Co. Ltd"
+      ],
+      "owners": [
+        "ZCCM Investments Holdings (ZCCM-IH)",
+        "EMR Capital"
+      ],
+      "notes": "JCHX holds an 80% stake, while ZCCM-IH owns 20%. EMR Capital previously owned the 80% stake before selling it to JCHX."
+    }
+  }
+}

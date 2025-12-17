@@ -1,0 +1,73 @@
+{
+  "facility_id": "mex-caballo-blanco-fac",
+  "name": "Caballo Blanco",
+  "aliases": [],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 19.133333,
+    "lon": -96.133333,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Candelaria Mining",
+    "Goldgroup Mining Inc.",
+    "Santacruz Silver Mining Ltd.",
+    "Sinchi Wayra S.A.",
+    "Timmins Gold Corp."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:30.616716"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:54:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.timminsgold.com/caballo_blanco/. The Caballo Blanco Project is located on the eastern coast of Mexico, specifically in the state of Veracruz"
+  },
+  "canonical_name": "Caballo Blanco Mine",
+  "canonical_slug": "caballo-blanco-mine",
+  "display_name": "Caballo Blanco",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Veracruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:54:48.000000Z",
+      "operators": [
+        "Sinchi Wayra S.A."
+      ],
+      "owners": [
+        "Timmins Gold Corp.",
+        "Santacruz Silver Mining Ltd.",
+        "Goldgroup Mining Inc.",
+        "Candelaria Mining"
+      ],
+      "notes": "Timmins Gold Corp. is the registered owner of the Caballo Blanco property, while Sinchi Wayra S.A. operates the mining complex."
+    }
+  }
+}
