@@ -57,6 +57,54 @@ KNOWN_FIXES = {
 
     # Indonesia Gosowong - coords are in Philippines, should be North Maluku
     'idn-gosowong-fac': {'lat': 1.0, 'lon': 127.9, 'source': 'Gosowong mine, Halmahera, North Maluku, Indonesia'},
+
+    # South Africa Elders Coal - lon=2 is truncated
+    'zaf-elders-coal-project-fac': {'lat': -26.239016, 'lon': 29.0, 'source': 'Mpumalanga Province, South Africa (estimated)'},
+
+    # === Round 2 fixes - remaining validation errors ===
+
+    # Bolivia - wrong hemisphere (lat should be negative)
+    'bol-bolivar-mine-fac': {'lat': -19.5, 'lon': -66.1, 'source': 'Antequera, Potosí Department, Bolivia - fixed hemisphere'},
+
+    # Colombia - wrong sign on longitude (should be western hemisphere)
+    'col-san-juaquin-coal-mine-fac': {'lat': 6.0282939, 'lon': -75.6922416, 'source': 'Colombia - fixed longitude sign'},
+
+    # Bolivia Laramcota - coords point to Caribbean, need proper Bolivia coords
+    'bol-laramcota-mine-fac': {'lat': -18.5, 'lon': -68.0, 'source': 'La Paz Department, Bolivia (estimated)'},
+
+    # Bolivia Santa Barbara - has PNG coords (!), needs proper Bolivia coords
+    'bol-santa-barbara-fac': {'lat': -17.8, 'lon': -63.2, 'source': 'Santa Cruz Department, Bolivia (estimated)'},
+
+    # USA Berwind Coal - offshore SC coords, should be in WV/VA coal country
+    'usa-berwind-coal-mine-fac': {'lat': 37.28, 'lon': -81.65, 'source': 'Berwind, McDowell County, WV'},
+
+    # USA Tonkin Springs - offshore CA, should be Nevada
+    'usa-tonkin-springs-gold-mine-fac': {'lat': 39.77, 'lon': -116.23, 'source': 'Tonkin Springs, Eureka County, Nevada'},
+
+    # Venezuela Los Pijiguaos - offshore Caribbean, should be inland Bolivar
+    'ven-los-pijiguaos-mine-fac': {'lat': 6.58, 'lon': -66.75, 'source': 'Los Pijiguaos bauxite mine, Bolivar State, Venezuela'},
+
+    # South Africa Namakwa Sands - slightly offshore, should be onshore
+    'zaf-namakwa-sands-fac': {'lat': -31.2, 'lon': 17.9, 'source': 'Namakwa Sands, West Coast, South Africa'},
+    'zaf-namakwa-sands-smelter-fac': {'lat': -32.9, 'lon': 18.0, 'source': 'Saldanha Smelter, Western Cape, South Africa'},
+
+    # Chile Salar del Carmen - slightly offshore, should be Atacama inland
+    'chl-salar-del-carmen-fac': {'lat': -23.62, 'lon': -70.35, 'source': 'Salar del Carmen, Antofagasta Region, Chile'},
+
+    # Gabon Eteke Gold - slightly offshore
+    'gab-et-k-gold-project-fac': {'lat': -1.15, 'lon': 10.85, 'source': 'Etéké Gold Project, Ogooué-Lolo Province, Gabon'},
+
+    # Indonesia AGM Coal - in strait, needs proper Sumatra coords
+    'idn-agm-coal-mine-fac': {'lat': 2.5, 'lon': 99.5, 'source': 'North Sumatra, Indonesia (estimated)'},
+
+    # Madagascar Manampotsy - south of island
+    'mdg-manampotsy-pgm-occurrence-fac': {'lat': -22.3, 'lon': 47.5, 'source': 'Manampotsy area, Madagascar (estimated)'},
+
+    # North Korea Nampo - offshore, should be on coast
+    'prk-nampo-smelting-complex-fac': {'lat': 38.73, 'lon': 125.38, 'source': 'Nampo city, South Pyongan Province, North Korea'},
+
+    # Sudan Chikay - in Red Sea, needs proper Sudan coords
+    'sdn-chikay-mine-fac': {'lat': 20.5, 'lon': 36.5, 'source': 'Red Sea State, Sudan (estimated inland)'},
 }
 
 
