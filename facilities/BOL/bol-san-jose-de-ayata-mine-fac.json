@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "BOL",
   "location": {
-    "lat": -2.5358946157634574,
-    "lon": -84.98647668675872,
-    "precision": "site"
+    "lat": -15.4594052,
+    "lon": -68.8346191,
+    "precision": "locality"
   },
   "types": [
     "mine"
@@ -31,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "web_search_geocoded",
-    "confidence": 0.45,
-    "last_checked": "2025-11-26T10:11:49.000000Z",
-    "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Buenos Aires (https://www.hochschildmining.com/where-we-operate/current-operations/san-jose/). The San Jose mine is located in the Santa Cruz province of Argentina, approximately 1,750 km southwest of Buenos Aires"
+    "status": "manually_corrected",
+    "confidence": 0.7,
+    "last_checked": "2025-12-17T00:00:00.000000Z",
+    "checked_by": "manual",
+    "notes": "CORRECTED: Previous enrichment confused this with Hochschild's San Jose mine in Argentina. This is a tin mine near Ayata, La Paz department, Bolivia."
   },
   "canonical_name": "San Jose De Ayata Mine",
   "canonical_slug": "san-jose-de-ayata-mine",
@@ -51,8 +51,8 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Santa Cruz",
-  "town": "Buenos Aires",
+  "province": "La Paz",
+  "town": "Ayata",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-11-26T10:11:49.000000Z",
