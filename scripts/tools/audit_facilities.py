@@ -26,7 +26,7 @@ from collections import defaultdict
 import re
 
 # Paths
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 FACILITIES_DIR = ROOT / "facilities"
 
 
@@ -79,6 +79,10 @@ class FacilityAuditor:
         commodities = facility.get('commodities', [])
         if not commodities:
             issues.append('no_commodities')
+        else:
+            for commodity in commodities:
+                if commodity['metal'] == 'aluminum':
+                    print(commodities)
 
         # Check for no primary commodity
         if commodities and not any(c.get('primary') for c in commodities):
@@ -170,6 +174,9 @@ class FacilityAuditor:
         print("="*70)
 
         total_facilities = sum(self.stats.values())
+        if total_facilities == 0:
+           print(f"\nNo facilities found to audit.")
+           return 
         facilities_with_issues = len(set(
             fac['facility_id'] for issue_list in self.issues.values()
             for fac in issue_list
@@ -267,6 +274,9 @@ def main():
 
     # Run audit
     auditor = FacilityAuditor()
+
+    print(ROOT)
+    print(FACILITIES_DIR)
 
     if args.country:
         auditor.audit_country(args.country)
