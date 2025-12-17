@@ -1,0 +1,80 @@
+{
+  "facility_id": "bih-timok-fac",
+  "name": "Timok",
+  "aliases": [
+    "Timok",
+    "Timok"
+  ],
+  "country_iso3": "BIH",
+  "location": {
+    "lat": 43.37652355857261,
+    "lon": 18.94130193936982,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "arsenic",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Freeport-McMoRan Exploration Corporation",
+    "Zijin Mining Group Company Limited"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:42.115995"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:03:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bor (https://www.mining-technology.com/projects/timok-upper-zone-copper-gold-deposit/). The Timok project is located approximately 5km from the Bor mining complex"
+  },
+  "canonical_name": "Timok Mine",
+  "canonical_slug": "timok-mine",
+  "display_name": "Timok",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Eastern Serbia",
+  "town": "Bor",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:03:09.000000Z",
+      "operators": [
+        "Zijin Mining Group Company Limited"
+      ],
+      "owners": [
+        "Zijin Mining Group Company Limited",
+        "Freeport-McMoRan Exploration Corporation"
+      ],
+      "notes": "Zijin owns 100% of the Cukaru Peki Upper Zone and a 60.4% stake in the Lower Zone."
+    }
+  }
+}

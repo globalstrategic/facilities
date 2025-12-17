@@ -1,0 +1,83 @@
+{
+  "facility_id": "zaf-copper-occurrences-fac",
+  "name": "Copper Occurrences",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.5,
+    "lon": 27.3,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Gécamines",
+    "Ivanhoe Mines Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAF 2025-10-27",
+      "date": "2025-10-27T10:27:55.169485"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T17:57:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Geologically present but no known economic deposits or mining operations. Regional Copperbelt is not in CAR. 11 | Canonical name+slug generated. Web search geocoded. Source: https://www.ivanhoemines.com/wp-content/uploads/20250430-Q1-2025-Financial-Results-ABF-1.pdf. The Kipushi Mine is located approximately 30 kilometers southwest of Lubumbashi on the Central African Copperbelt"
+  },
+  "canonical_name": "Copper Occurrences Facility",
+  "canonical_slug": "copper-occurrences-facility",
+  "display_name": "Copper Occurrences",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Copper Occurrences",
+      "from": "2025-10-27T10:27:55.169493",
+      "to": "2025-11-04T19:18:48.052405Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Katanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T17:57:43.000000Z",
+      "operators": [
+        "Ivanhoe Mines Ltd"
+      ],
+      "owners": [
+        "Ivanhoe Mines Ltd",
+        "Gécamines"
+      ],
+      "notes": "Ivanhoe Mines holds a 68% interest in the Kipushi Mine, with the remaining 32% held by the DRC state-owned mining company, Gécamines."
+    }
+  }
+}

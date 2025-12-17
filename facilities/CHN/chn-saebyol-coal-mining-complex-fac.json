@@ -1,0 +1,68 @@
+{
+  "facility_id": "chn-saebyol-coal-mining-complex-fac",
+  "name": "Saebyol Coal Mining Complex",
+  "aliases": [],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 42.861,
+    "lon": 130.2,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Northern Coal Mine Enterprise",
+    "Saebyol Coal Mining Enterprise"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:53.449897"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:19:11.354441Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Saebyol Coal Mining Mine",
+  "canonical_slug": "saebyol-coal-mining-mine",
+  "display_name": "Saebyol Coal Mining",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "North Hamgyong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:36:00.000000Z",
+      "operators": [
+        "Northern Coal Mine Enterprise",
+        "Saebyol Coal Mining Enterprise"
+      ],
+      "owners": [
+        "Saebyol Coal Mining Enterprise"
+      ],
+      "notes": "The facility is jointly owned by Northern Coal Mine Enterprise and Saebyol Coal Mining Enterprise, both holding 50% each."
+    }
+  }
+}

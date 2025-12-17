@@ -1,0 +1,76 @@
+{
+  "facility_id": "bra-kaloti-suriname-mint-house-fac",
+  "name": "Kaloti Suriname Mint House",
+  "aliases": [],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -5.5,
+    "lon": -55.2,
+    "precision": "unknown"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "silver",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "Chee’s Trading NV",
+    "Government of Suriname",
+    "Government of Suriname, Kaloti Jewellery Group, private investors",
+    "Kaloti Precious Metals",
+    "Kaloti Precious Metals DMCC"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SUR 2025-10-21",
+      "date": "2025-10-21T17:45:37.363882"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T05:58:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.emirates247.com/markets/gold/dubai-based-firm-opens-suriname-s-first-gold-refinery-2015-03-05-1.583197. Kaloti Suriname Mint House is the first gold refinery in Suriname, established as a joint venture"
+  },
+  "canonical_name": "Kaloti Suriname Mint House Refinery",
+  "canonical_slug": "kaloti-suriname-mint-house-refinery",
+  "display_name": "Kaloti Suriname Mint House",
+  "primary_type": "refinery",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Para",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:58:59.000000Z",
+      "operators": [
+        "Kaloti Precious Metals"
+      ],
+      "owners": [
+        "Government of Suriname",
+        "Kaloti Precious Metals DMCC",
+        "Chee’s Trading NV"
+      ],
+      "notes": "Joint venture between Kaloti, the Suriname government, and local gold traders."
+    }
+  }
+}

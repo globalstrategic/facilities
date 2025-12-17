@@ -1,0 +1,99 @@
+{
+  "facility_id": "sle-new-liberty-gold-mine-fac",
+  "name": "**New Liberty Gold Mine**",
+  "aliases": [],
+  "country_iso3": "SLE",
+  "location": {
+    "lat": 6.96702694238988,
+    "lon": -11.437673479219864,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
+    {
+      "metal": "Tungsten",
+      "primary": false,
+      "chemical_formula": "W",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Nickel",
+      "primary": false,
+      "chemical_formula": "Ni",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Copper",
+      "primary": false,
+      "chemical_formula": "Cu",
+      "category": "base_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "Avesoro Resources Inc.",
+    "Bea Mountain Mining Corp. (Avesoro Resources Inc., 90%",
+    "Bear Mountain Mining Corporation",
+    "Govt. of Liberia, 10%)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LBR 2025-10-29",
+      "date": "2025-10-29T13:09:06.588256"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:09:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Monrovia (https://www.mining-technology.com/projects/new-liberty-gold-mine/). The New Liberty Gold Mine is located approximately 100 km north-west of Monrovia, the capital city of Liberia"
+  },
+  "canonical_name": "New Liberty Gold Processing Plant",
+  "canonical_slug": "new-liberty-gold-processing-plant",
+  "display_name": "New Liberty Gold",
+  "primary_type": "processing_plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**New Liberty Gold ** Processing Plant",
+      "from": "2025-10-29T13:09:06.588258",
+      "to": "2025-11-04T19:19:17.725419Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Montserrado",
+  "town": "Monrovia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:09:05.000000Z",
+      "operators": [
+        "Bear Mountain Mining Corporation",
+        "Avesoro Resources Inc."
+      ],
+      "owners": [
+        "Avesoro Resources Inc."
+      ],
+      "notes": "Avesoro Resources Inc. operates the mine through its subsidiary Bear Mountain Mining Corporation."
+    }
+  }
+}

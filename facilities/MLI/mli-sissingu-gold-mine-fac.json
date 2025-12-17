@@ -1,0 +1,81 @@
+{
+  "facility_id": "mli-sissingu-gold-mine-fac",
+  "name": "**SissinguÃ© Gold Mine**",
+  "aliases": [],
+  "country_iso3": "MLI",
+  "location": {
+    "lat": 10.697811172557481,
+    "lon": -6.4084029,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "Perseus Mining",
+    "Perseus Mining Côte d'Ivoire S.A.",
+    "Perseus Mining Limited",
+    "Société Minière de Côte d'Ivoire SARL (SOMICI)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:35.956439"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T07:25:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tengrela (https://perseusmining.com/wp-content/uploads/2019/11/Fact-Sheet-Sissingue-DRAFT-041019-Rev5-1.pdf). The Sissingué Gold Mine is located 24 km from the local commercial town of Tengrela"
+  },
+  "canonical_name": "SissinguÃ© Gold Mine",
+  "canonical_slug": "sissingue-gold-mine",
+  "display_name": "SissinguÃ© Gold",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**SissinguÃ© Gold ** Mine",
+      "from": "2025-10-27T13:21:35.956441",
+      "to": "2025-11-04T19:19:04.459187Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Savanes",
+  "town": "Tengrela",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:25:02.000000Z",
+      "operators": [
+        "Perseus Mining Côte d'Ivoire S.A."
+      ],
+      "owners": [
+        "Perseus Mining Limited",
+        "Société Minière de Côte d'Ivoire SARL (SOMICI)"
+      ],
+      "notes": "Perseus Mining Limited owns an 86% interest in the mine, with the remaining shares held by SOMICI and the government of Côte d'Ivoire."
+    }
+  }
+}

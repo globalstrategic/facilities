@@ -1,0 +1,72 @@
+{
+  "facility_id": "rus-sokli-project-fac",
+  "name": "**Sokli Project**",
+  "aliases": [],
+  "country_iso3": "RUS",
+  "location": {
+    "lat": 68.07361,
+    "lon": 29.31528,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    "Finnish Minerals Group",
+    "Sokli Oy",
+    "Yara Suomi Oy"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FIN 2025-10-28",
+      "date": "2025-10-28T17:16:23.782638"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:17:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mineralsgroup.fi/topical/news/finnish-minerals-group-acquires-rights-to-sokli-mining-project.html. The Sokli project is located in the municipality of Savukoski, Northern Finland"
+  },
+  "canonical_name": "Sokli Mine",
+  "canonical_slug": "sokli-mine-2",
+  "display_name": "Sokli",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "**Sokli ** Mine",
+      "from": "2025-10-28T17:16:23.782639",
+      "to": "2025-11-04T19:18:54.190449Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:17:38.000000Z",
+      "operators": [
+        "Finnish Minerals Group"
+      ],
+      "owners": [
+        "Finnish Minerals Group",
+        "Yara Suomi Oy"
+      ],
+      "notes": "Finnish Minerals Group acquired the rights from Yara Suomi Oy, which previously owned the project."
+    }
+  }
+}

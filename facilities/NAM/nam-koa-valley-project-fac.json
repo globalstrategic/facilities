@@ -1,0 +1,71 @@
+{
+  "facility_id": "nam-koa-valley-project-fac",
+  "name": "Koa Valley Project",
+  "aliases": [],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": -28.9,
+    "lon": 18.1333,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "diamonds",
+      "primary": true
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    "Rockwell Diamonds Inc.",
+    "Rockwell Resources RSA (Pty) Ltd.",
+    "Trans Hex Group Limited",
+    "Trans Hex Operations (Pty) Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "South Africa Final Import",
+      "date": "2025-10-20T17:39:12.896895"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-17T16:59:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.getamap.net/maps/south_africa/northern_cape/_koavalleyriver/. Coordinates extracted from the Koa Valley River location, which is associated with the Koa Valley Project"
+  },
+  "canonical_name": "Koa Valley Mine",
+  "canonical_slug": "koa-valley-mine",
+  "display_name": "Koa Valley",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:22:06.000000Z",
+      "operators": [
+        "Rockwell Diamonds Inc.",
+        "Rockwell Resources RSA (Pty) Ltd."
+      ],
+      "owners": [
+        "Trans Hex Group Limited",
+        "Trans Hex Operations (Pty) Ltd."
+      ],
+      "notes": "Rockwell Diamonds Inc. operates through its subsidiary Rockwell Resources RSA, and has a conditional agreement with Trans Hex Group for mining rights."
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "facility_id": "nzl-mananui-project-fac",
+  "name": "Mananui Project",
+  "aliases": [],
+  "country_iso3": "NZL",
+  "location": {
+    "lat": -42.7,
+    "lon": 170.96,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "titanium (ilmenite)",
+      "primary": true
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    },
+    {
+      "metal": "zircon\\*\\*\\*\\*",
+      "primary": false
+    },
+    {
+      "metal": "rees (monazite)\\*\\*\\*\\*\\*",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Westland Mineral Sands"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-28",
+      "date": "2025-10-28T22:57:49.430688"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:02:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.wmsnz.com/mananui/. The Mananui Project is located 7 km south of Hokitika, New Zealand"
+  },
+  "canonical_name": "Mananui Mine",
+  "canonical_slug": "mananui-mine",
+  "display_name": "Mananui",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:02:44.000000Z",
+      "operators": [
+        "Westland Mineral Sands"
+      ],
+      "owners": [],
+      "notes": "Westland Mineral Sands has been granted resource consent for the project."
+    }
+  }
+}

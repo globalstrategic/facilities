@@ -1,0 +1,77 @@
+{
+  "facility_id": "col-mina-colombia-fac",
+  "name": "Mina Colombia",
+  "aliases": [
+    "Mina Colombia",
+    "Mocupia",
+    "Colombia",
+    "Sosa Mendez",
+    "Revemin Plant"
+  ],
+  "country_iso3": "COL",
+  "location": {
+    "lat": 5.922,
+    "lon": -75.745,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bellhaven Copper & Gold",
+    "Bellhaven Copper & Gold Inc",
+    "GoldMining",
+    "GoldMining Inc"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:10.013744"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:33:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.goldmining.com/projects/colombia/la-mina-project/. The La Mina project is located approximately 51 km southwest of Medellín, in the municipalities of Venecia and Fredonia"
+  },
+  "canonical_name": "Mina Colombia Mine",
+  "canonical_slug": "mina-colombia-mine",
+  "display_name": "Mina Colombia",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:50.000000Z",
+      "operators": [
+        "Bellhaven Copper & Gold Inc",
+        "GoldMining Inc"
+      ],
+      "owners": [
+        "Bellhaven Copper & Gold",
+        "GoldMining"
+      ],
+      "notes": "The project is owned through a wholly owned subsidiary of GoldMining."
+    }
+  }
+}

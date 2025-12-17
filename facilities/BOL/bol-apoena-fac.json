@@ -1,0 +1,73 @@
+{
+  "facility_id": "bol-apoena-fac",
+  "name": "Apoena (EPP)",
+  "aliases": [
+    "Apoena (EPP)",
+    "Apoena"
+  ],
+  "country_iso3": "BOL",
+  "location": {
+    "lat": -15.209490220541047,
+    "lon": -62.480853744351066,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Aura Minerals Inc.",
+    "Mineracao Apoena Limitada",
+    "Mineração Apoena S.A."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:29.254726"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:22:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pontes e Lacerda (https://miningdataonline.com/property/4715/Apoena-(EPP)-Complex.aspx). The Apoena mining complex is located in the southwest of Mato Grosso state, near Pontes e Lacerda, Brazil"
+  },
+  "canonical_name": "Apoena Mine",
+  "canonical_slug": "apoena-mine",
+  "display_name": "Apoena",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Mato Grosso",
+  "town": "Pontes e Lacerda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:22:17.000000Z",
+      "operators": [
+        "Mineracao Apoena Limitada"
+      ],
+      "owners": [
+        "Aura Minerals Inc.",
+        "Mineração Apoena S.A."
+      ],
+      "notes": "Aura Minerals Inc. owns 100% of Mineração Apoena S.A., which operates the facility."
+    }
+  }
+}

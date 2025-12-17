@@ -1,0 +1,77 @@
+{
+  "facility_id": "idn-gra-fac",
+  "name": "GraÃ„",
+  "aliases": [],
+  "country_iso3": "IDN",
+  "location": {
+    "lat": -4.5,
+    "lon": 137.0,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "thermal coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Freeport-McMoRan",
+    "Government of Indonesia",
+    "PT Freeport Indonesia (PTFI)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:28:05.432536"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:45:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.fcx.com/operations/indonesia. The Grasberg mine is located in the Grasberg minerals district in Papua, Indonesia, near the town of Timika"
+  },
+  "canonical_name": "GraÃ¤ Mine",
+  "canonical_slug": "graa-mine",
+  "display_name": "GraÃ¤",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "GraÃ„ Mine",
+      "from": "2025-10-20T15:28:05.432542",
+      "to": "2025-11-04T19:18:53.134251Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:45:06.000000Z",
+      "operators": [
+        "PT Freeport Indonesia (PTFI)"
+      ],
+      "owners": [
+        "Government of Indonesia",
+        "Freeport-McMoRan"
+      ],
+      "notes": "PTFI is a subsidiary of Freeport-McMoRan, which operates the Grasberg mine."
+    }
+  }
+}

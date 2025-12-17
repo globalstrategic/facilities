@@ -1,0 +1,74 @@
+{
+  "facility_id": "can-marco-gfcc-project-fac",
+  "name": "Marco GFCC Project",
+  "aliases": [],
+  "country_iso3": "CAN",
+  "location": {
+    "lat": 49.460695608,
+    "lon": -87.722850953,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "coal",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "COAL LOADERS INC"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:11.919564"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:15:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.pasda.psu.edu/spreadsheet/CoalMiningOperations2023_10.csv. Coordinates extracted from the mining operation data"
+  },
+  "canonical_name": "Marco Gfcc Mine",
+  "canonical_slug": "marco-gfcc-mine",
+  "display_name": "Marco Gfcc",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Marco GFCC Mine",
+      "from": "2025-10-20T15:29:11.919569",
+      "to": "2025-11-04T19:18:45.872678Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:15:58.000000Z",
+      "operators": [
+        "COAL LOADERS INC"
+      ],
+      "owners": [
+        "COAL LOADERS INC"
+      ],
+      "notes": "The facility is actively operated by COAL LOADERS INC."
+    }
+  }
+}

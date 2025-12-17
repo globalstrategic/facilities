@@ -1,0 +1,66 @@
+{
+  "facility_id": "per-warintza-fac",
+  "name": "Warintza",
+  "aliases": [
+    "Solaris"
+  ],
+  "country_iso3": "PER",
+  "location": {
+    "lat": -4.741540850129296,
+    "lon": -78.4986442,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [],
+  "status": "unknown",
+  "company_mentions": [
+    "Royal Gold, Inc.",
+    "Solaris Resources Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import ECU 2025-10-27",
+      "date": "2025-10-27T16:58:49.041110"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T15:09:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Resource 579Mt (Indicated) | Canonical name+slug generated. Web search geocoded. Source: Calculated from Quito (https://www.chemanalyst.com/NewsAndDeals/NewsDetails/royal-gold-secures-key-interests-in-ecuador-promising-warintza-copper-gold-36838). The Warintza Project is located in southeastern Ecuador, approximately 500 km south of Quito"
+  },
+  "canonical_name": "Warintza Mine",
+  "canonical_slug": "warintza-mine",
+  "display_name": "Warintza",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Morona Santiago",
+  "town": "Quito",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:09:35.000000Z",
+      "operators": [
+        "Solaris Resources Inc."
+      ],
+      "owners": [
+        "Solaris Resources Inc.",
+        "Royal Gold, Inc."
+      ],
+      "notes": "Solaris Resources is the 100% owner and operator of the Warintza Project, with Royal Gold having secured a financing agreement."
+    }
+  }
+}
