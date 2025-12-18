@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 12.136389,
+    "lon": -86.251389,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "unlocatable",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:55.277552Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:50:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:46:26Z] No geographic coordinates were found in the search results for the Nestor Antonio Padilla Perez Facility. | [GEOCODED 2025-12-18T00:50:57Z] Coordinates found via web search (using regional/city coords). Lat: 12.136389, Lon: -86.251389"
   },
   "canonical_name": "Nestor Antonio Padilla Perez Facility Steel Plant",
   "canonical_slug": "nestor-antonio-padilla-perez-facility-steel-plant",
@@ -59,5 +59,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Managua"
 }

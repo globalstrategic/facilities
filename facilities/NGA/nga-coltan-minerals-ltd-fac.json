@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.0,
+    "lon": 9.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -34,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.814450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:42:33Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:42:33Z] Geocoded via web search. Coords: (8.0, 9.0). Confidence: 0.50. Notes: Coordinates are estimated based on the mention of Coltan Minerals Ltd. in Nasarawa State."
   },
   "canonical_name": "Coltan Minerals Ltd Facility",
   "canonical_slug": "coltan-minerals-ltd-facility",
@@ -62,7 +62,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Plateau",
+  "province": "Nasarawa State",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T07:12:06.000000Z",

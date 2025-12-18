@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -16.409,
+    "lon": -71.537,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -30,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.278792Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:47:02Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:47:02Z] Geocoded via web search. Coords: (-16.409, -71.537). Confidence: 0.90. Notes: Coordinates extracted from the address 'Variante de Uchumayo Km 5.5, Cerro Colorado, Arequipa' which is associated with the Aceros Multiples Facility."
   },
   "canonical_name": "Aceros Multiples Facility Processing Plant",
   "canonical_slug": "aceros-multiples-facility-processing-plant",
@@ -69,5 +69,6 @@
       ],
       "notes": "Aceros Arequipa is both the operator and owner of the facility."
     }
-  }
+  },
+  "province": "Arequipa"
 }

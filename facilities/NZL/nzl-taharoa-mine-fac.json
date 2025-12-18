@@ -1,29 +1,35 @@
 {
   "facility_id": "nzl-taharoa-mine-fac",
   "name": "Taharoa Mine",
-  "aliases": [
-    "Taharoa Mine",
-    "Taharoa"
-  ],
+  "aliases": [],
   "country_iso3": "NZL",
   "location": {
-    "lat": -38.168,
-    "lon": 174.71,
+    "lat": -38.18,
+    "lon": 174.72,
     "precision": "site"
   },
   "types": [
-    "mine"
+    "plant"
   ],
   "commodities": [
     {
-      "metal": "Iron Ore",
-      "primary": true,
-      "chemical_formula": "Fe2O3/Fe3O4"
+      "metal": "iron ore",
+      "primary": true
+    },
+    {
+      "metal": "vanadium\\*",
+      "primary": false
+    },
+    {
+      "metal": "titanium\\*\\*",
+      "primary": false
     }
   ],
   "status": "unknown",
   "company_mentions": [
     "Melrose Private Capital Ltd",
+    "New Zealand Steel Mining Limited",
+    "Proprietors of Taharoa C Block Incorporation",
     "Taharoa Ironsands Limited",
     "Taharoa Ironsands Ltd"
   ],
@@ -31,19 +37,19 @@
   "sources": [
     {
       "type": "csv_import",
-      "id": "Mines.csv Run 1",
-      "date": "2025-10-20T15:29:27.931656"
+      "id": "Research Import NCL 2025-10-28",
+      "date": "2025-10-28T22:57:49.299547"
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.228470Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T13:09:52Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:09:52Z] BlueScope ironsand mine on west coast, north of Kawhia"
   },
   "canonical_name": "Taharoa Mine",
-  "canonical_slug": "taharoa-mine-2",
+  "canonical_slug": "taharoa-mine",
   "display_name": "Taharoa",
   "primary_type": "mine",
   "type_confidence": 1.0,
@@ -52,22 +58,23 @@
     "flags": {
       "town_missing": true,
       "operator_unresolved": false,
-      "canonical_name_incomplete": true
+      "canonical_name_incomplete": false
     }
   },
   "display_name_source": "auto",
   "province": "Waikato",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-02T07:31:01.000000Z",
+      "timestamp": "2025-12-02T08:33:59.000000Z",
       "operators": [
-        "Taharoa Ironsands Limited"
+        "Taharoa Ironsands Limited",
+        "New Zealand Steel Mining Limited"
       ],
       "owners": [
-        "Melrose Private Capital Ltd",
-        "Taharoa Ironsands Ltd"
+        "Proprietors of Taharoa C Block Incorporation",
+        "Melrose Private Capital Ltd"
       ],
-      "notes": "The mine is operated by Taharoa Ironsands Limited, which is owned by Melrose Private Capital Ltd."
+      "notes": "The mine is operated by Taharoa Ironsands Limited, which has a lease with the landowners, the Proprietors of Taharoa C Block Incorporation."
     }
   }
 }

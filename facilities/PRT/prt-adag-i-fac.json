@@ -6,9 +6,9 @@
   ],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.2333,
+    "lon": -7.1833,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -38,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.662976Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:52:37Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:52:37Z] Geocoded via web search. Coords: (41.2333, -7.1833). Confidence: 0.70. Notes: Coordinates derived from the mention of Adagói in the context of Alijó, which is a known location in the vicinity."
   },
   "canonical_name": "Adagói Facility",
   "canonical_slug": "adagoi-facility",
@@ -65,5 +65,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Douro"
 }

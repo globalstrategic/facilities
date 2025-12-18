@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.167,
+    "lon": 74.333,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -35,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.747965Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:20:56Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:20:56Z] Geocoded via web search. Coords: (46.167, 74.333). Confidence: 0.90. Notes: Coordinates extracted from the location of Lake Balkhash, which is associated with the Balkhash Thermal Power Plant."
   },
   "canonical_name": "Balkhash Thermal Power Plant",
   "canonical_slug": "balkhash-thermal-power-plant",
@@ -55,7 +55,7 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Almaty",
+  "province": "Almaty region",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T09:13:49.000000Z",

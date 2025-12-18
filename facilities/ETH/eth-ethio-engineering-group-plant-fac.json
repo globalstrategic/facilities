@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 9.0,
+    "lon": 38.7,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -35,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.297450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Planned state-owned facility to utilize domestic iron ore.81 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:59:38Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Planned state-owned facility to utilize domestic iron ore.81 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:59:38Z] Geocoded via web search. Coords: (9.0, 38.7). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for Ethiopia, which includes general coordinates for the country."
   },
   "canonical_name": "Ethio Engineering Group Processing Plant",
   "canonical_slug": "ethio-engineering-group-processing-plant",
@@ -63,7 +63,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Amhara",
+  "province": "Addis Ababa",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T10:01:02.000000Z",

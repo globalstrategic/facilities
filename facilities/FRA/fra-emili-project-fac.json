@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.0,
+    "lon": 2.6,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.675487Z",
-    "checked_by": "import_pipeline",
-    "notes": "Planned production of 34,000 t/y LiOH from 2030\\. Faces local environmental opposition. 43 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:32:26Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Planned production of 34,000 t/y LiOH from 2030\\. Faces local environmental opposition. 43 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:32:26Z] Geocoded via web search. Coords: (46.0, 2.6). Confidence: 0.70. Notes: Coordinates derived from the relative location of the facility, which is stated to be 31 km SE from Montluçon."
   },
   "canonical_name": "Emili Mine",
   "canonical_slug": "emili-mine",
@@ -61,7 +61,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Auvergne-Rhône-Alpes",
+  "province": "Allier",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T09:57:05.000000Z",

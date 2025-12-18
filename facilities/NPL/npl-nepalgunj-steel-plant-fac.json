@@ -1,23 +1,25 @@
 {
   "facility_id": "npl-nepalgunj-steel-plant-fac",
-  "name": "**Nepalgunj Steel Plant**",
-  "aliases": [],
+  "name": "Nepalgunj Steel Plant",
+  "aliases": ["Jay Ambe Steels Ltd", "Jay Ambe Steels Limited"],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 28.05,
+    "lon": 81.61667,
+    "precision": "city"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**steel**",
-      "primary": true
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe",
+      "category": "ferrous"
     }
   ],
-  "status": "unknown",
+  "status": "operating",
   "company_mentions": [
     "Ambe Group",
     "Jay Ambe Steels Ltd."
@@ -28,14 +30,20 @@
       "type": "csv_import",
       "id": "Research Import NPL 2025-10-29",
       "date": "2025-10-29T21:51:42.594262"
+    },
+    {
+      "type": "web_research",
+      "id": "Manual verification 2025-12-17",
+      "date": "2025-12-17",
+      "url": "https://ambegroup.com"
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.485081Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.7,
+    "last_checked": "2025-12-17T22:00:00Z",
+    "checked_by": "manual_research",
+    "notes": "Jay Ambe Steels Ltd in Nepalgunj. City-level coordinates (exact plant location not found). Plus Code: 4JGG+2RV (Nepalgunj 21900)"
   },
   "canonical_name": "Nepalgunj Steel Smelter",
   "canonical_slug": "nepalgunj-steel-smelter",
@@ -43,9 +51,9 @@
   "primary_type": "smelter",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.7,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
@@ -70,6 +78,11 @@
         "Ambe Group"
       ],
       "notes": "Ambe Group is a leading manufacturing conglomerate in Nepal."
+    },
+    "geocoding": {
+      "timestamp": "2025-12-17T22:00:00Z",
+      "source": "Geodatos / SearchNepal",
+      "notes": "City centroid used. Plus Code 4JGG+2RV available but exact lat/lon not decoded."
     }
   }
 }

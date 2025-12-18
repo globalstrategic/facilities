@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.56667,
+    "lon": -78.05,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.454987Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:44:59Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:44:59Z] Geocoded via web search. Coords: (21.56667, -78.05). Confidence: 0.90. Notes: Coordinates extracted from GeoNames for Sabana Nueva, which is identified as a locality in the Municipality of Camagüey, near Ciego de Ávila."
   },
   "canonical_name": "Nueva Sabana Mine",
   "canonical_slug": "nueva-sabana-mine",
@@ -56,7 +56,7 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Cuba",
+  "province": "Camagüey",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T10:16:35.000000Z",

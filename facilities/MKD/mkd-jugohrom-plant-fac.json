@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.9833,
+    "lon": 20.9333,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -37,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:06.910144Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:07:41Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:07:41Z] Geocoded via web search. Coords: (41.9833, 20.9333). Confidence: 0.90. Notes: Coordinates determined based on the facility's location described as 15 km from Tetovo."
   },
   "canonical_name": "Jugohrom Smelter",
   "canonical_slug": "jugohrom-smelter",
@@ -57,7 +57,7 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Polog",
+  "province": "Tetovo",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T08:53:36.000000Z",

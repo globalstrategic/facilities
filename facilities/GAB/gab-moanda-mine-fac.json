@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.56667,
+    "lon": 13.2,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -45,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.388526Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:46:02Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:46:02Z] Geocoded via web search. Coords: (-1.56667, 13.2). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia page for Moanda, Gabon."
   },
   "canonical_name": "Moanda Mine",
   "canonical_slug": "moanda-mine",
@@ -65,7 +65,7 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gabon",
+  "province": "Haut-Ogooué Province",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-12-02T09:53:33.000000Z",
