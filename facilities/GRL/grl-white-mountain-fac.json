@@ -1,75 +1,122 @@
 {
   "facility_id": "grl-white-mountain-fac",
-  "name": "White Mountain ",
+  "name": "White Mountain Anorthosite Mine",
   "aliases": [
-    "Qaqortorsuaq"
+    "Qaqortorsuaq",
+    "White Mountain Project",
+    "Hudson White Mountain"
   ],
   "country_iso3": "GRL",
   "location": {
-    "lat": 64.68139,
-    "lon": -163.40556,
-    "precision": "site"
+    "lat": 66.5,
+    "lon": -51.5,
+    "precision": "approximate"
   },
   "types": [
     "mine"
   ],
-  "commodities": [],
-  "status": "unknown",
-  "company_mentions": [
-    "AnorTech Inc.",
-    "Hudson Resources",
-    "Lumina Sustainable Materials",
-    "Lumina Sustainable Materials A/S",
-    "Nugget Mining Co.",
-    "Uplift Mining Co."
+  "commodities": [
+    {
+      "metal": "Anorthosite",
+      "primary": true
+    },
+    {
+      "metal": "Calcium",
+      "chemical_formula": "Ca",
+      "primary": false
+    },
+    {
+      "metal": "Aluminum",
+      "chemical_formula": "Al",
+      "primary": false
+    }
   ],
-  "products": [],
+  "status": "operating",
+  "company_mentions": [
+    "Lumina Sustainable Materials A/S",
+    "Hudson Resources",
+    "Hudson Greenland A/S",
+    "AnorTech Inc."
+  ],
+  "products": [
+    "GreenSpar calcium feldsparite",
+    "anorthositeite",
+    "fiberglass feedstock",
+    "alumina feedstock"
+  ],
   "sources": [
     {
-      "type": "csv_import",
-      "id": "Research Import GRL 2025-10-29",
-      "date": "2025-10-29T08:01:20.044841"
+      "type": "manual_correction",
+      "id": "data_quality_fix",
+      "date": "2025-12-18T00:00:00.000000Z"
+    },
+    {
+      "type": "web_reference",
+      "id": "Mining Technology",
+      "url": "https://www.mining-technology.com/projects/white-mountain-anorthosite-project/",
+      "date": "2025-12-18T00:00:00.000000Z"
     }
   ],
   "verification": {
-    "status": "web_search_geocoded",
-    "confidence": 0.5,
-    "last_checked": "2025-12-17T21:38:56Z",
-    "checked_by": "geocode_null_island",
-    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:38:56Z] Geocoded via web search. Coords: (64.68139, -163.40556). Confidence: 0.90. Notes: Coordinates were directly extracted from the mining facility's local economic development plan."
+    "status": "web_verified",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:00:00.000000Z",
+    "checked_by": "manual_review",
+    "notes": "Corrected coordinates from Alaska (64.68, -163.4) to Greenland (66.5, -51.5). Original record conflated Alaska White Mountain mining district with Greenland Qaqortorsuaq anorthosite project. Located 80km SW of Kangerlussuaq on Sondrestrom fjord."
   },
-  "canonical_name": "White Mountain Mine",
-  "canonical_slug": "white-mountain-mine",
+  "canonical_name": "White Mountain Anorthosite Mine",
+  "canonical_slug": "white-mountain-anorthosite-mine",
   "display_name": "White Mountain",
   "primary_type": "mine",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.85,
     "flags": {
-      "town_missing": true,
-      "operator_unresolved": true,
+      "town_missing": false,
+      "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
-  "canonical_name_history": [
-    {
-      "name": "White Mountain  Mine",
-      "from": "2025-10-29T08:01:20.044842",
-      "to": "2025-11-04T19:19:00.631595Z",
-      "reason": "data_correction"
-    }
-  ],
-  "display_name_source": "auto",
-  "province": "Alaska",
+  "display_name_source": "manual",
+  "province": "Qeqqata",
+  "town": "Kangerlussuaq",
   "enrichment_notes": {
+    "correction_notes": {
+      "timestamp": "2025-12-18T00:00:00.000000Z",
+      "original_coordinates": {"lat": 64.68139, "lon": -163.40556},
+      "original_province": "Alaska",
+      "issue": "Coordinates were in Alaska but facility details were for Greenland anorthosite project",
+      "resolution": "Corrected coordinates to Greenland location (80km SW of Kangerlussuaq)"
+    },
+    "project_details": {
+      "discovery_year": 1946,
+      "mining_license_year": 2015,
+      "license_duration_years": 30,
+      "production_start": 2019,
+      "mine_life_years": 100,
+      "elevation_m": 1300,
+      "access": "Boat or helicopter only",
+      "indicated_resources_mt": 27,
+      "inferred_resources_mt": 32.7,
+      "planned_production_2025_tonnes": 200000,
+      "composition": {
+        "SiO2": "50%",
+        "Al2O3": "31%",
+        "CaO": "15%",
+        "Na2O": "2.2%",
+        "Fe2O3": "1%"
+      },
+      "applications": ["fiberglass industry", "alumina source", "cement", "paint filler", "lunar simulant"]
+    },
     "web_search_companies": {
-      "timestamp": "2025-12-02T09:45:55.000000Z",
+      "timestamp": "2025-12-18T00:00:00.000000Z",
       "operators": [
-        "Uplift Mining Co.",
-        "Nugget Mining Co."
+        "Lumina Sustainable Materials A/S"
       ],
-      "owners": [],
-      "notes": "Uplift Mining Co. and Nugget Mining Co. are mentioned as operators in the area."
+      "owners": [
+        "AnorTech Inc."
+      ],
+      "notes": "Hudson Resources rebranded to AnorTech (CVE:ANOR). Operating entity rebranded to Lumina Sustainable Materials in 2022."
     }
   }
 }

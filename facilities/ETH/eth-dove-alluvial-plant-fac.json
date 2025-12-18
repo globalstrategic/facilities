@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.5,
+    "lon": 35.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -35,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "unlocatable",
-    "confidence": 0.5,
-    "last_checked": "2025-12-18T00:46:56Z",
-    "checked_by": "import_pipeline",
-    "notes": "First mechanized alluvial gold processing plant in Ethiopia, commissioned in 2018\\.52 | Canonical name+slug generated | [UNLOCATABLE 2025-12-18T00:46:56Z] No specific geographic coordinates found. DOVE equipment supplier but project location not disclosed."
+    "status": "web_search_geocoded",
+    "confidence": 0.4,
+    "last_checked": "2025-12-18T14:38:22Z",
+    "checked_by": "manual_geocoding",
+    "notes": "First mechanized alluvial gold processing plant in Ethiopia, commissioned in 2018\\.52 | Canonical name+slug generated | [UNLOCATABLE 2025-12-18T00:46:56Z] No specific geographic coordinates found. DOVE equipment supplier but project location not disclosed. | [REGIONAL-ESTIMATE 2025-12-18T14:38:22Z] First mechanized alluvial gold plant in Ethiopia (2018). Exact site undisclosed. Placed in Benishangul-Gumuz region center - major alluvial gold belt in western Ethiopia."
   },
   "canonical_name": "Dove Alluvial Processing Plant",
   "canonical_slug": "dove-alluvial-processing-plant",
@@ -74,5 +74,6 @@
       ],
       "notes": "DOVE Equipment & Machinery is a major manufacturer and supplier of mining equipment, and is part of the DOVE Group of Companies."
     }
-  }
+  },
+  "province": "Benishangul-Gumuz Region"
 }
