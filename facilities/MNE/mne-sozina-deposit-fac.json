@@ -1,12 +1,12 @@
 {
   "facility_id": "mne-sozina-deposit-fac",
-  "name": "**Sozina Deposit**",
+  "name": "Sozina Deposit",
   "aliases": [],
   "country_iso3": "MNE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.177,
+    "lon": 19.061,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:49.391761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Sozina area, near Sozina Tunnel between coast and Skadar Lake basin."
   },
   "canonical_name": "Sozina Facility",
   "canonical_slug": "sozina-facility",
@@ -49,7 +49,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sozina **",
+      "name": "Sozina ",
       "from": "2025-10-29T22:24:19.860508",
       "to": "2025-11-04T19:18:49.391758Z",
       "reason": "data_correction"

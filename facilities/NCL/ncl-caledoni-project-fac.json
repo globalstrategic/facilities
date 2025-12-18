@@ -1,33 +1,33 @@
 {
   "facility_id": "ncl-caledoni-project-fac",
-  "name": "**CaledoNi Project**",
+  "name": "CaledoNi Project",
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -22.27,
+    "lon": 166.44,
+    "precision": "city"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**nickel** (battery grade)",
+      "metal": "nickel (battery grade)",
       "primary": true
     },
     {
-      "metal": "**cobalt** (implied)",
+      "metal": "cobalt (implied)",
       "primary": false
     },
     {
-      "metal": "**nickel sulfate** (target product)",
+      "metal": "nickel sulfate (target product)",
       "primary": false
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    "**Société Le Nickel** 39",
+    "Société Le Nickel 39",
     "Eramet",
     "Société Le Nickel (SLN)"
   ],
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.366607Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:30:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:30:28Z] CaledoNi project at Doniambo area, Noumea. SLN/Eramet nickel operations."
   },
   "canonical_name": "Caledoni Processing Plant",
   "canonical_slug": "caledoni-processing-plant",
@@ -61,7 +61,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**CaledoNi ** Processing Plant",
+      "name": "CaledoNi  Processing Plant",
       "from": "2025-10-29T22:07:19.572913",
       "to": "2025-11-04T19:18:56.366604Z",
       "reason": "data_correction"

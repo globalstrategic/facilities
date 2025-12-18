@@ -1,12 +1,12 @@
 {
   "facility_id": "mne-titovo-ii-mine-fac",
-  "name": "**Štitovo II Mine**",
+  "name": "Štitovo II Mine",
   "aliases": [],
   "country_iso3": "MNE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.77,
+    "lon": 18.95,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.392097Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Štitovo II bauxite mine near Nikšić, Uniprom Metali operation."
   },
   "canonical_name": "Štitovo II Mine",
   "canonical_slug": "stitovo-ii-mine",
@@ -60,7 +60,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Štitovo II ** Mine",
+      "name": "Štitovo II  Mine",
       "from": "2025-10-29T22:24:19.826308",
       "to": "2025-11-04T19:18:49.392094Z",
       "reason": "data_correction"

@@ -1,17 +1,17 @@
 {
-  "facility_id": "ven-chocaya-mine-fac",
+  "facility_id": "bol-chocaya-mine-fac",
   "name": "Chocaya Mine",
   "aliases": [
     "Siete Suyos Mine",
-    "Chocaya Mine",
-    "Chocaya",
-    "Animas"
+    "Animas Mine",
+    "Chocaya-Animas"
   ],
-  "country_iso3": "VEN",
+  "country_iso3": "BOL",
   "location": {
-    "lat": 7.060890787039796,
-    "lon": -72.07076344670605,
-    "precision": "site"
+    "lat": -20.93,
+    "lon": -66.22,
+    "precision": "approximate",
+    "address": "Atocha Municipality, Sud Chichas Province, Potosí Department"
   },
   "types": [
     "mine"
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "web_search_geocoded",
-    "confidence": 0.45,
-    "last_checked": "2025-11-26T09:56:44.000000Z",
-    "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Potosi (https://documents1.worldbank.org/curated/en/134351468211183234/pdf/multi-page.pdf). The Chocaya Mine is mentioned as part of the operations of Empresa Minera Quechisla, which is a subsidiary of COMIBOL"
+    "status": "manually_corrected",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:00:00Z",
+    "checked_by": "manual_review",
+    "notes": "Moved from VEN to BOL. Fixed coordinates from Venezuela to Atocha, Potosí. Part of Chocaya-Animas mining district with Siete Suyos and Animas mines on same vein system."
   },
   "canonical_name": "Chocaya Mine",
   "canonical_slug": "chocaya-mine",
@@ -60,8 +60,8 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Potosi",
-  "town": "Potosi",
+  "province": "Potosí Department",
+  "town": "Atocha",
   "enrichment_notes": {
     "web_search_companies": {
       "timestamp": "2025-11-26T09:56:44.000000Z",

@@ -1,0 +1,100 @@
+{
+  "facility_id": "chl-faride-mine-fac",
+  "name": "Faride Mine",
+  "aliases": [
+    "Faride Gold Mine",
+    "Faride Epithermal Deposit"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -22.80,
+    "lon": -69.37,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Silver",
+      "chemical_formula": "Ag",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "chemical_formula": "Au",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "chemical_formula": "Pb",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "chemical_formula": "Zn",
+      "primary": false
+    }
+  ],
+  "status": "historic",
+  "company_mentions": [],
+  "products": [
+    "silver-gold ore"
+  ],
+  "sources": [
+    {
+      "type": "manual_creation",
+      "id": "data_quality_fix",
+      "date": "2025-12-18T00:00:00.000000Z"
+    },
+    {
+      "type": "literature",
+      "id": "Camus & Skewes 1991",
+      "date": "1991-01-01T00:00:00.000000Z",
+      "notes": "Camus, F. & Skewes, M.A. (1991) The Faride epithermal silver-gold deposit, Antofagasta region, Chile. Economic Geology 86:1222-1237"
+    }
+  ],
+  "verification": {
+    "status": "literature_verified",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T00:00:00.000000Z",
+    "checked_by": "manual_review",
+    "notes": "Created from mindat.org and published geological literature. Coordinates from mindat.org (22°48'S, 69°22'W). Epithermal adularia-sericite type deposit associated with eroded volcanic center."
+  },
+  "canonical_name": "Faride Mine",
+  "canonical_slug": "faride-mine",
+  "display_name": "Faride Mine",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.9,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "manual",
+  "province": "Antofagasta",
+  "enrichment_notes": {
+    "creation_notes": {
+      "timestamp": "2025-12-18T00:00:00.000000Z",
+      "origin": "Separated from conflated chl-gregoria-fac.json record",
+      "issue": "Faride was incorrectly listed as alias of Gregoria (oil refinery) in Magallanes",
+      "resolution": "Created as separate facility with correct location in Antofagasta near Sierra Gorda"
+    },
+    "geological_info": {
+      "deposit_type": "Epithermal adularia-sericite",
+      "host_rock": "Volcanic center (Upper Cretaceous to early Tertiary)",
+      "vein_system": "Eight ore shoots within E-W to N45W striking veins extending ~2km",
+      "grade_ranges": {
+        "gold": "0.5 to >650 g/t Au",
+        "lead": "1.0-4.5% Pb",
+        "zinc": "0.65-2.33% Zn"
+      },
+      "mining_method": "Underground",
+      "area_hectares": 1.5,
+      "climate": "BWk (Cold desert)"
+    }
+  }
+}

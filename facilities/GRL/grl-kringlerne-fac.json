@@ -1,14 +1,15 @@
 {
   "facility_id": "grl-kringlerne-fac",
-  "name": "**Kringlerne **",
+  "name": "Kringlerne",
   "aliases": [
     "Tanbreez"
   ],
   "country_iso3": "GRL",
   "location": {
-    "lat": -60.0,
-    "lon": -46.0,
-    "precision": "region"
+    "lat": 60.91,
+    "lon": -46.05,
+    "precision": "approximate",
+    "address": "Near Narsaq, Kujalleq Municipality, Southern Greenland"
   },
   "types": [
     "mine"
@@ -48,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "web_search_geocoded",
-    "confidence": 0.5,
-    "last_checked": "2025-12-17T21:38:49Z",
-    "checked_by": "geocode_null_island",
-    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:38:49Z] Geocoded via web search. Coords: (-60.0, -46.0). Confidence: 0.70. Notes: Coordinates are estimated based on the proximity to Narsaq, as the exact coordinates were not provided in the search results."
+    "status": "manually_corrected",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:00:00Z",
+    "checked_by": "manual_review",
+    "notes": "Fixed inverted latitude sign. Kringlerne/Tanbreez deposit is ~15km NE of Qaqortoq, near Narsaq in the Ilímaussaq intrusive complex. Coordinates based on Narsaq (60.91°N, 46.05°W)."
   },
   "canonical_name": "Kringlerne Mine",
   "canonical_slug": "kringlerne-mine",
@@ -69,9 +70,9 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kringlerne ** Mine",
+      "name": "Kringlerne Mine",
       "from": "2025-10-29T08:01:20.134043",
-      "to": "2025-11-04T19:19:00.631250Z",
+      "to": "2025-12-18T00:00:00Z",
       "reason": "data_correction"
     }
   ],
