@@ -5,6 +5,86 @@ All notable changes to the Facilities Database project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2025-12-19 (Script Consolidation & Cleanup)
+
+### Changed - Major Script Consolidation
+- **Export Scripts** → Unified `scripts/export.py`
+  - Merged `export_to_parquet.py`, `export_relationships_parquet.py`, `export_to_mines_csv.py`
+  - Single script with `--format parquet|csv` option
+  - Parquet: facilities.parquet + relationship tables
+  - CSV: Mines.csv format with country/metal/company filtering
+
+- **Geocoding Utilities** → Unified `scripts/utils/geocoding.py`
+  - Merged `geo.py` (geohash encoding) into geocoding.py
+  - Merged `geocode_cache.py` (persistent cache) into geocoding.py
+  - Single 45KB module with all geocoding functionality
+
+- **Backfill System** → Enhanced `scripts/backfill.py`
+  - Added web search geocoding strategy (`--strategy web_search|nominatim|combined`)
+  - Added `--null-island` flag for null island facilities only
+  - Replaced separate `geocode_null_island.py` functionality
+
+- **Coordinate Fixing** → Unified `scripts/tools/fix_coordinates.py`
+  - Merged `fix_coordinate_errors.py` and `fix_coordinate_issues.py`
+  - Single tool for all coordinate fixes (hemisphere, truncated longitude, null island)
+
+### Removed - Redundant Scripts
+- **Export scripts** (consolidated into export.py):
+  - `export_to_parquet.py`
+  - `export_relationships_parquet.py`
+  - `export_to_mines_csv.py`
+
+- **Geocoding utilities** (consolidated into geocoding.py):
+  - `utils/geo.py`
+  - `utils/geocode_cache.py`
+
+- **Coordinate tools** (consolidated into fix_coordinates.py):
+  - `tools/fix_coordinate_errors.py`
+  - `tools/fix_coordinate_issues.py`
+
+- **Other removed scripts**:
+  - `geocode_null_island.py` (→ backfill.py --strategy web_search)
+  - `enrich_facilities.py` (→ backfill.py)
+  - `facilities.py` (unused wrapper)
+  - `fix_merge_conflicts.py` (one-time fix)
+  - `fix_schema_violations.py` (one-time fix)
+  - `fix_romanian_country_code.py` (one-time fix)
+  - `fix_unicode_json.py` (one-time fix)
+  - `list_missing_coords.py` (unused)
+  - `verify_backfill.py` (unused)
+  - `deep_research_integration.py` (unused)
+  - `name_quality.py` (unused)
+  - `setup.py` (orphaned - referenced non-existent talloy package)
+
+### Current Script Structure
+**Main Scripts (5)**:
+- `backfill.py` - Unified enrichment (geocoding, companies, metals, web search)
+- `import_from_report.py` - Import pipeline
+- `export.py` - Unified parquet/CSV export
+- `enrich_companies.py` - Phase 2 company resolution
+- `load_facilities_to_snowflake.py` - Snowflake loader
+
+**Tools (6)**:
+- `audit_facilities.py` - Data quality audits
+- `deduplicate_facilities.py` - Duplicate cleanup
+- `fix_coordinates.py` - Coordinate error fixing
+- `fix_wrong_country.py` - Move facilities to correct country
+- `validate_country_polygons.py` - Country polygon validation
+- `validate_geocoding.py` - Geocoding quality validation
+
+**Utils (14)**:
+- `geocoding.py` (45KB) - Unified geocoding (Nominatim, Overpass, Wikidata, cache, geohash)
+- `facility_sync.py` - Parquet import/export
+- `company_resolver.py` - Company resolution with quality gates
+- `llm_extraction.py` - LLM coordinate extraction
+- `deduplication.py` - Duplicate detection
+- `web_search.py` - Tavily/Brave web search
+- `name_canonicalizer_v2.py` - Name canonicalization
+- `country_utils.py` - ISO3 normalization
+- Plus 6 smaller utility modules
+
+---
+
 ## [2.1.0] - 2025-10-31 (Canonical Naming System - Production Ready) ✅
 
 ### Added - Canonical Naming System
@@ -295,6 +375,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
+- **2.2.0** (2025-12-19): **Script Consolidation & Cleanup** - unified export, geocoding, coordinate tools; removed 15+ redundant scripts
 - **2.1.0** (2025-10-31): ✅ **Canonical Naming System (Production-Ready)**, 10,632 facilities, zero collisions validated
 - **2.1.1** (2025-10-27): Enhanced table detection, plural form support, metal formula fix
 - **2.0.1** (2025-10-21): Deduplication system, documentation consolidation

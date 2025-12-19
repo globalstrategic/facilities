@@ -74,7 +74,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from utils.geocoding import AdvancedGeocoder, GeocodingResult, GeocodeCache, encode_geohash
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
-    from utils.name_canonicalizer_v2 import FacilityNameCanonicalizer, choose_town_from_address
+    from utils.name_canonicalizer import FacilityNameCanonicalizer, choose_town_from_address
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
@@ -1264,7 +1264,7 @@ def backfill_canonical_names(
                 loc = fac2_obj.get('location', {})
                 reg = loc.get('region') or ''
                 town = loc.get('town') or ''
-                from scripts.utils.name_parts import slugify, to_ascii
+                from scripts.utils.name_canonicalizer import slugify, to_ascii
 
                 suffix = slugify(reg) if reg else (slugify(town) if town else to_ascii(fac2)[-4:].lower())
                 new_slug = f"{slug}-{suffix}"

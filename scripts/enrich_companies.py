@@ -37,15 +37,34 @@ sys.path.insert(0, str(ROOT / "scripts"))
 # Phase 2: Import unified utilities
 try:
     from utils.company_resolver import CompanyResolver
-    from utils.id_utils import to_canonical, load_alias_map
-    from utils.paths import relationships_path
     RESOLVER_AVAILABLE = True
 except ImportError as e:
     logger.error(f"Could not import CompanyResolver utilities: {e}")
     RESOLVER_AVAILABLE = False
 
-# Get canonical relationships path
-RELATIONSHIPS_FILE = relationships_path() if RESOLVER_AVAILABLE else ROOT / "tables" / "facilities" / "facility_company_relationships.parquet"
+
+def to_canonical(company_id: str, alias_map: Dict[str, str]) -> str:
+    """Convert company ID to canonical form using alias map."""
+    if not company_id:
+        return company_id
+    return alias_map.get(company_id, company_id)
+
+
+def load_alias_map(alias_file_path: str) -> Dict[str, str]:
+    """Load company alias map from JSON file."""
+    path = Path(alias_file_path)
+    if not path.exists():
+        return {}
+    try:
+        with open(path, 'r') as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning(f"Could not load alias map from {alias_file_path}: {e}")
+        return {}
+
+
+# Canonical relationships path
+RELATIONSHIPS_FILE = ROOT / "tables" / "facilities" / "facility_company_relationships.parquet"
 
 # Add entityidentity to path (for PendingCompanyTracker)
 sys.path.insert(0, str(ROOT.parent / 'entityidentity'))

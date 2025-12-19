@@ -1,22 +1,137 @@
 """
 Facility Name Canonicalization Utility - Production Grade v2
-Now using new utilities for Unicode, slugging, and type normalization.
+
+Includes:
+- Unicode-aware name normalization and slug generation
+- Global slug registry for uniqueness
+- Canonical name generation
 """
 
 from __future__ import annotations
 import re
-from typing import Dict, Any, Optional, Tuple, List
+import unicodedata
+from collections import defaultdict
+from typing import Dict, Any, Optional, List
 
-# Import new utilities
-from scripts.utils.name_parts import nfc, slugify, equal_ignoring_accents, to_ascii
-from scripts.utils.slug_registry import SlugRegistry
 from scripts.utils.type_map import normalize_type
+
+# Try to import unidecode for transliteration
+try:
+    from unidecode import unidecode
+except ImportError:
+    unidecode = None
 
 # Try to import pygeohash for geohash computation
 try:
     import pygeohash
 except ImportError:
     pygeohash = None
+
+
+# =============================================================================
+# Unicode Utilities (formerly name_parts.py)
+# =============================================================================
+
+def nfc(s: str) -> str:
+    """Normalize string to NFC (canonical composition) form."""
+    return unicodedata.normalize("NFC", s or "")
+
+
+def to_ascii(s: str) -> str:
+    """Convert Unicode string to ASCII equivalent."""
+    s = nfc(s)
+    if unidecode:
+        s = unidecode(s)
+    else:
+        # Fallback: decompose and strip accents
+        s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    return s
+
+
+def slugify(*parts: str) -> str:
+    """Create URL-safe slug from parts, handling Unicode properly."""
+    txt = " ".join([p for p in map(nfc, parts) if p])
+    base = to_ascii(txt).lower()
+    base = re.sub(r"[^a-z0-9]+", "-", base).strip("-")
+    base = re.sub(r"-{2,}", "-", base)
+    return base or "facility"
+
+
+def equal_ignoring_accents(a: str, b: str) -> bool:
+    """Check if two strings are equal ignoring accents and case."""
+    if not a or not b:
+        return False
+    return to_ascii(a).lower().strip() == to_ascii(b).lower().strip()
+
+
+# =============================================================================
+# Slug Registry (formerly slug_registry.py)
+# =============================================================================
+
+def _slugify_suffix(s: str) -> str:
+    """Helper to slugify disambiguation suffixes."""
+    s = (s or "").lower().strip()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s
+
+
+class SlugRegistry:
+    """Registry to ensure globally unique facility slugs."""
+
+    def __init__(self, preseed=()):
+        """
+        Initialize registry with optional pre-seeding.
+
+        Args:
+            preseed: Iterable of existing slugs to register upfront
+        """
+        self.seen = defaultdict(int)  # slug -> count
+        for s in preseed:
+            if s:
+                self.seen[s] = 1
+
+    def unique(self, slug: str, *, country: Optional[str] = None,
+               region: Optional[str] = None, geohash6: Optional[str] = None) -> str:
+        """
+        Get unique slug, adding deterministic disambiguator if needed.
+
+        Args:
+            slug: Base slug
+            country: Country code for disambiguation
+            region: Region name for disambiguation
+            geohash6: Geohash prefix for disambiguation
+
+        Returns:
+            Unique slug, potentially with suffix
+        """
+        if slug not in self.seen:
+            self.seen[slug] = 1
+            return slug
+
+        # Deterministic disambiguation: region -> geohash6 -> numeric suffix
+        for suffix in filter(None, [region, geohash6]):
+            s = f"{slug}-{_slugify_suffix(suffix)}"
+            if s not in self.seen:
+                self.seen[s] = 1
+                return s
+
+        # Last resort: numeric suffix
+        i = self.seen[slug] + 1
+        self.seen[slug] = i
+        unique_slug = f"{slug}-{i}"
+        self.seen[unique_slug] = 1
+        return unique_slug
+
+    def load_existing(self, slugs: list[str]):
+        """Pre-load registry with existing slugs to avoid collisions."""
+        for slug in slugs:
+            if slug:
+                self.seen[slug] = 1
+
+
+# =============================================================================
+# Name Canonicalization
+# =============================================================================
 
 # Single registry kept per run
 SLUGS = SlugRegistry()
