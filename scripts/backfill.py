@@ -74,7 +74,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from utils.geocoding import AdvancedGeocoder, GeocodingResult
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
-    from utils.name_canonicalizer import FacilityNameCanonicalizer, choose_town_from_address
+    from utils.name_canonicalizer_v2 import FacilityNameCanonicalizer, choose_town_from_address
     from utils.geocode_cache import GeocodeCache
     from utils.geo import encode_geohash
 except ImportError as e:
