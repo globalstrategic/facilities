@@ -78,8 +78,6 @@ try:
     from utils.facility_loader import (
         load_facilities_from_country,
         save_facility as save_facility_util,
-        iter_country_dirs,
-        get_facilities_dir,
     )
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")

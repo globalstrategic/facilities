@@ -39,7 +39,6 @@ from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_count
 from scripts.utils.facility_loader import (
     load_all_facilities_list,
     load_facilities_from_country,
-    get_facilities_dir,
 )
 
 # Try to import metal_identifier from entityidentity
@@ -60,7 +59,7 @@ except ImportError:
 
 
 # =============================================================================
-# Shared Utilities
+# Shared Utilities (using facility_loader)
 # =============================================================================
 
 def load_all_facilities() -> Tuple[List[Dict], int]:
@@ -69,29 +68,11 @@ def load_all_facilities() -> Tuple[List[Dict], int]:
     Returns:
         Tuple of (facilities list, error count)
     """
-    facilities_dir = Path(__file__).parent.parent / "facilities"
-    facilities = []
-    errors = 0
-
-    for country_dir in sorted(facilities_dir.iterdir()):
-        if not country_dir.is_dir() or country_dir.name.startswith('.'):
-            continue
-
-        for fac_file in sorted(country_dir.glob('*-fac.json')):
-            try:
-                with open(fac_file, 'r', encoding='utf-8') as f:
-                    facility = json.load(f)
-                    facilities.append(facility)
-            except Exception as e:
-                errors += 1
-                if errors <= 5:
-                    print(f"Warning: Skipping {fac_file.name}: {str(e)[:60]}", file=sys.stderr)
-
-    return facilities, errors
+    return load_all_facilities_list(include_path=False)
 
 
-def load_country_facilities(country: str, metal: Optional[str] = None,
-                           company: Optional[str] = None) -> Tuple[List[Dict], str]:
+def load_country_facilities_filtered(country: str, metal: Optional[str] = None,
+                                     company: Optional[str] = None) -> Tuple[List[Dict], str]:
     """Load facilities for a specific country with optional filters.
 
     Returns:
@@ -103,43 +84,33 @@ def load_country_facilities(country: str, metal: Optional[str] = None,
         return [], ""
 
     country_name = iso3_to_country_name(iso3)
-    base_dir = Path(__file__).parent.parent / "facilities"
-    country_dir = None
 
-    # Try ISO3 first (preferred)
-    if (base_dir / iso3).exists():
-        country_dir = base_dir / iso3
-    else:
+    # Use shared loader
+    all_facilities = load_facilities_from_country(iso3, include_path=False)
+
+    if not all_facilities:
         # Try ISO2 for legacy directories
         try:
             import pycountry
             country_obj = pycountry.countries.get(alpha_3=iso3)
             if country_obj:
                 iso2 = country_obj.alpha_2
-                if (base_dir / iso2).exists():
-                    country_dir = base_dir / iso2
+                all_facilities = load_facilities_from_country(iso2, include_path=False)
         except ImportError:
             pass
 
-    if not country_dir or not country_dir.exists():
-        print(f"Error: No facilities directory found for {iso3}")
+    if not all_facilities:
+        print(f"Error: No facilities found for {iso3}")
         return [], country_name
 
+    # Apply filters
     facilities = []
-    for json_file in country_dir.glob("*.json"):
-        try:
-            with open(json_file) as f:
-                facility = json.load(f)
-
-                # Apply filters
-                if metal and not facility_has_metal(facility, metal):
-                    continue
-                if company and not facility_has_company(facility, company):
-                    continue
-
-                facilities.append(facility)
-        except Exception as e:
-            print(f"Warning: Error loading {json_file}: {e}", file=sys.stderr)
+    for facility in all_facilities:
+        if metal and not facility_has_metal(facility, metal):
+            continue
+        if company and not facility_has_company(facility, company):
+            continue
+        facilities.append(facility)
 
     return facilities, country_name
 
@@ -699,7 +670,7 @@ def export_csv(output_file: Optional[str] = None, country: Optional[str] = None,
 
     # Single country export
     if country and not export_all:
-        facilities, country_name = load_country_facilities(country, metal, company)
+        facilities, country_name = load_country_facilities_filtered(country, metal, company)
         if not facilities:
             filters = []
             if metal:
