@@ -24,23 +24,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added `--null-island` flag for null island facilities only
   - Replaced separate `geocode_null_island.py` functionality
 
-- **Coordinate Fixing** → Unified `scripts/tools/fix_coordinates.py`
-  - Merged `fix_coordinate_errors.py` and `fix_coordinate_issues.py`
-  - Single tool for all coordinate fixes (hemisphere, truncated longitude, null island)
+- **Validation Tools** → Unified `scripts/tools/validate.py`
+  - Merged `validate_country_polygons.py` and `validate_geocoding.py`
+  - Subcommands: `polygons` (Natural Earth), `geocoding` (bounding boxes)
+
+- **Fixing Tools** → Unified `scripts/tools/fix.py`
+  - Merged `fix_coordinates.py` and `fix_wrong_country.py`
+  - Subcommands: `coordinates` (hemisphere, swapped, known fixes), `country` (move to correct folder)
+
+- **Name Canonicalizer** → Renamed to `name_canonicalizer.py`
+  - Merged `name_parts.py` and `slug_registry.py` into single module
+  - Removed `_v2` suffix
 
 ### Removed - Redundant Scripts
-- **Export scripts** (consolidated into export.py):
-  - `export_to_parquet.py`
-  - `export_relationships_parquet.py`
-  - `export_to_mines_csv.py`
+- **Export scripts** (→ export.py):
+  - `export_to_parquet.py`, `export_relationships_parquet.py`, `export_to_mines_csv.py`
 
-- **Geocoding utilities** (consolidated into geocoding.py):
-  - `utils/geo.py`
-  - `utils/geocode_cache.py`
+- **Geocoding utilities** (→ geocoding.py):
+  - `utils/geo.py`, `utils/geocode_cache.py`
 
-- **Coordinate tools** (consolidated into fix_coordinates.py):
-  - `tools/fix_coordinate_errors.py`
-  - `tools/fix_coordinate_issues.py`
+- **Validation tools** (→ validate.py):
+  - `validate_country_polygons.py`, `validate_geocoding.py`
+
+- **Fixing tools** (→ fix.py):
+  - `fix_coordinates.py`, `fix_wrong_country.py`
+
+- **Name utilities** (→ name_canonicalizer.py):
+  - `name_parts.py`, `slug_registry.py`, `paths.py`, `id_utils.py`
+
+- **Config/dev files**:
+  - `setup.py`, `requirements-dev.txt`, `pytest.ini`
+  - `scripts/__init__.py`, `scripts/utils/__init__.py`
 
 - **Other removed scripts**:
   - `geocode_null_island.py` (→ backfill.py --strategy web_search)
@@ -64,24 +78,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `enrich_companies.py` - Phase 2 company resolution
 - `load_facilities_to_snowflake.py` - Snowflake loader
 
-**Tools (6)**:
+**Tools (4)**:
 - `audit_facilities.py` - Data quality audits
 - `deduplicate_facilities.py` - Duplicate cleanup
-- `fix_coordinates.py` - Coordinate error fixing
-- `fix_wrong_country.py` - Move facilities to correct country
-- `validate_country_polygons.py` - Country polygon validation
-- `validate_geocoding.py` - Geocoding quality validation
+- `validate.py` - Unified validation (polygons + geocoding subcommands)
+- `fix.py` - Unified fixing (coordinates + country subcommands)
 
-**Utils (14)**:
+**Utils (9)**:
 - `geocoding.py` (45KB) - Unified geocoding (Nominatim, Overpass, Wikidata, cache, geohash)
 - `facility_sync.py` - Parquet import/export
 - `company_resolver.py` - Company resolution with quality gates
+- `name_canonicalizer.py` - Name/slug generation (includes slug registry)
 - `llm_extraction.py` - LLM coordinate extraction
 - `deduplication.py` - Duplicate detection
 - `web_search.py` - Tavily/Brave web search
-- `name_canonicalizer_v2.py` - Name canonicalization
 - `country_utils.py` - ISO3 normalization
-- Plus 6 smaller utility modules
+- `type_map.py` - Facility type mapping
 
 ---
 
