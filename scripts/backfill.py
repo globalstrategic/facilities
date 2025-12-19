@@ -75,6 +75,12 @@ try:
     from utils.geocoding import AdvancedGeocoder, GeocodingResult, GeocodeCache, encode_geohash
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
     from utils.name_canonicalizer import FacilityNameCanonicalizer, choose_town_from_address
+    from utils.facility_loader import (
+        load_facilities_from_country,
+        save_facility as save_facility_util,
+        iter_country_dirs,
+        get_facilities_dir,
+    )
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
@@ -195,43 +201,10 @@ def build_global_slug_map(root: str = "facilities") -> Dict[str, str]:
     return slug_map
 
 
-def load_facilities_for_country(country_iso3: str) -> List[Dict]:
-    """Load all facility JSONs for a country."""
-    facilities = []
-    country_dir = FACILITIES_DIR / country_iso3
-
-    if not country_dir.exists():
-        logger.error(f"No facilities directory found for {country_iso3}")
-        return facilities
-
-    for facility_file in country_dir.glob("*.json"):
-        try:
-            with open(facility_file, 'r') as f:
-                facility = json.load(f)
-                facility['_path'] = facility_file
-                facilities.append(facility)
-        except Exception as e:
-            logger.warning(f"Could not load {facility_file}: {e}")
-
-    return facilities
-
-
 def save_facility(facility: Dict, dry_run: bool = False) -> None:
-    """Save facility JSON to disk."""
-    if dry_run:
-        return
-
-    facility_path = facility.get('_path')
-    if not facility_path:
-        logger.error(f"No path for facility {facility.get('facility_id')}")
-        return
-
-    # Remove internal fields
-    facility_copy = {k: v for k, v in facility.items() if not k.startswith('_')}
-
-    with open(facility_path, 'w') as f:
-        json.dump(facility_copy, f, indent=2, ensure_ascii=False)
-        f.write('\n')
+    """Save facility JSON to disk (wrapper around shared utility)."""
+    if not save_facility_util(facility, dry_run=dry_run):
+        logger.error(f"Failed to save facility {facility.get('facility_id')}")
 
 
 def _geocode_via_web_search(

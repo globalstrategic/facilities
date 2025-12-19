@@ -414,19 +414,22 @@ ISO3_TO_ISO2 = {
 # Country bounding boxes for validation (lat_min, lat_max, lon_min, lon_max)
 # Prevents out-of-country garbage coordinates from being written
 COUNTRY_BBOX = {
-    "TCD": {"lat_min": 7.0, "lat_max": 24.0, "lon_min": 13.0, "lon_max": 24.5},
-    "USA": {"lat_min": 24.0, "lat_max": 72.0, "lon_min": -180.0, "lon_max": -66.0},
-    "CHN": {"lat_min": 18.0, "lat_max": 54.0, "lon_min": 73.0, "lon_max": 135.0},
+    "ARM": {"lat_min": 38.8, "lat_max": 41.3, "lon_min": 43.4, "lon_max": 46.6},
     "AUS": {"lat_min": -44.0, "lat_max": -10.0, "lon_min": 113.0, "lon_max": 154.0},
-    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},
-    "IND": {"lat_min": 6.0, "lat_max": 36.0, "lon_min": 68.0, "lon_max": 98.0},
-    "IDN": {"lat_min": -11.0, "lat_max": 6.0, "lon_min": 95.0, "lon_max": 141.0},
+    "BEL": {"lat_min": 49.5, "lat_max": 51.5, "lon_min": 2.5, "lon_max": 6.4},
+    "BFA": {"lat_min": 9.4, "lat_max": 15.1, "lon_min": -5.5, "lon_max": 2.4},
     "BRA": {"lat_min": -34.0, "lat_max": 6.0, "lon_min": -74.0, "lon_max": -34.0},
     "CAN": {"lat_min": 41.0, "lat_max": 84.0, "lon_min": -141.0, "lon_max": -52.0},
-    "RUS": {"lat_min": 41.0, "lat_max": 82.0, "lon_min": 19.0, "lon_max": -169.0},
+    "CHL": {"lat_min": -56.0, "lat_max": -17.0, "lon_min": -110.0, "lon_max": -66.0},
+    "CHN": {"lat_min": 18.0, "lat_max": 54.0, "lon_min": 73.0, "lon_max": 135.0},
+    "IDN": {"lat_min": -11.0, "lat_max": 6.0, "lon_min": 95.0, "lon_max": 141.0},
+    "IND": {"lat_min": 6.0, "lat_max": 36.0, "lon_min": 68.0, "lon_max": 98.0},
     "MEX": {"lat_min": 14.0, "lat_max": 33.0, "lon_min": -118.0, "lon_max": -86.0},
     "PER": {"lat_min": -19.0, "lat_max": -0.0, "lon_min": -82.0, "lon_max": -68.0},
-    "CHL": {"lat_min": -56.0, "lat_max": -17.0, "lon_min": -110.0, "lon_max": -66.0},
+    "RUS": {"lat_min": 41.0, "lat_max": 82.0, "lon_min": 19.0, "lon_max": -169.0},
+    "TCD": {"lat_min": 7.0, "lat_max": 24.0, "lon_min": 13.0, "lon_max": 24.5},
+    "USA": {"lat_min": 24.0, "lat_max": 72.0, "lon_min": -180.0, "lon_max": -66.0},
+    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},
     "ZMB": {"lat_min": -18.0, "lat_max": -8.0, "lon_min": 22.0, "lon_max": 34.0},
 }
 
@@ -1242,34 +1245,6 @@ class AdvancedGeocoder:
 
 NOMINATIM_URL = os.getenv("NOMINATIM_BASE_URL", "https://nominatim.openstreetmap.org/search")
 NOMINATIM_REVERSE_URL = os.getenv("NOMINATIM_REVERSE_URL", "https://nominatim.openstreetmap.org/reverse")
-
-COUNTRY_BBOX = {
-    # Coarse, defensible bounding boxes. Expand with proper gazetteer later.
-    "TCD": {"lat_min": 7.0, "lat_max": 24.2, "lon_min": 13.0, "lon_max": 24.2},  # Chad
-    "ARM": {"lat_min": 38.8, "lat_max": 41.3, "lon_min": 43.4, "lon_max": 46.6},  # Armenia
-    "BEL": {"lat_min": 49.5, "lat_max": 51.5, "lon_min": 2.5, "lon_max": 6.4},   # Belgium
-    "BFA": {"lat_min": 9.4, "lat_max": 15.1, "lon_min": -5.5, "lon_max": 2.4},   # Burkina Faso
-    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},  # South Africa
-    # Add others as needed
-}
-
-
-def in_country_bbox(lat: float, lon: float, iso3: str) -> bool:
-    """
-    Check if coordinates are within expected country bounding box.
-
-    Args:
-        lat: Latitude
-        lon: Longitude
-        iso3: ISO3 country code
-
-    Returns:
-        True if in bbox or bbox unknown, False if definitely out of country
-    """
-    b = COUNTRY_BBOX.get(iso3)
-    if not b or lat is None or lon is None:
-        return True  # Don't block if unknown bbox
-    return (b["lat_min"] <= lat <= b["lat_max"]) and (b["lon_min"] <= lon <= b["lon_max"])
 
 
 def _nominatim_headers():

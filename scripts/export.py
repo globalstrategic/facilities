@@ -36,6 +36,11 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
+from scripts.utils.facility_loader import (
+    load_all_facilities_list,
+    load_facilities_from_country,
+    get_facilities_dir,
+)
 
 # Try to import metal_identifier from entityidentity
 try:

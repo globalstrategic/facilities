@@ -79,8 +79,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `load_facilities_to_snowflake.py` - Snowflake loader
 
 **Tools (4)**:
-- `audit_facilities.py` - Data quality audits
-- `deduplicate_facilities.py` - Duplicate cleanup
+- `audit.py` - Data quality audits
+- `deduplicate.py` - Duplicate cleanup
 - `validate.py` - Unified validation (polygons + geocoding subcommands)
 - `fix.py` - Unified fixing (coordinates + country subcommands)
 

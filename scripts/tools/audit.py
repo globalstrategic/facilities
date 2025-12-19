@@ -79,10 +79,6 @@ class FacilityAuditor:
         commodities = facility.get('commodities', [])
         if not commodities:
             issues.append('no_commodities')
-        else:
-            for commodity in commodities:
-                if commodity['metal'] == 'aluminum':
-                    print(commodities)
 
         # Check for no primary commodity
         if commodities and not any(c.get('primary') for c in commodities):
@@ -274,9 +270,6 @@ def main():
 
     # Run audit
     auditor = FacilityAuditor()
-
-    print(ROOT)
-    print(FACILITIES_DIR)
 
     if args.country:
         auditor.audit_country(args.country)
