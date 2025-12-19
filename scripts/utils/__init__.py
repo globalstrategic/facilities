@@ -59,10 +59,26 @@ try:
 except ImportError:
     pass
 
-# Geocoding
+# Geocoding (consolidated: geocoding + geo + geocode_cache)
 try:
-    from .geocoding import AdvancedGeocoder, GeocodingResult
-    __all__.extend(['AdvancedGeocoder', 'GeocodingResult'])
+    from .geocoding import (
+        AdvancedGeocoder,
+        GeocodingResult,
+        GeocodeCache,
+        encode_geohash,
+        geocode_via_nominatim,
+        reverse_geocode_via_nominatim,
+        pick_best_town
+    )
+    __all__.extend([
+        'AdvancedGeocoder',
+        'GeocodingResult',
+        'GeocodeCache',
+        'encode_geohash',
+        'geocode_via_nominatim',
+        'reverse_geocode_via_nominatim',
+        'pick_best_town'
+    ])
 except ImportError:
     pass
 

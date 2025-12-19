@@ -72,11 +72,9 @@ logger = logging.getLogger(__name__)
 sys.path.insert(0, str(Path(__file__).parent))
 
 try:
-    from utils.geocoding import AdvancedGeocoder, GeocodingResult
+    from utils.geocoding import AdvancedGeocoder, GeocodingResult, GeocodeCache, encode_geohash
     from utils.country_utils import normalize_country_to_iso3, iso3_to_country_name
     from utils.name_canonicalizer_v2 import FacilityNameCanonicalizer, choose_town_from_address
-    from utils.geocode_cache import GeocodeCache
-    from utils.geo import encode_geohash
 except ImportError as e:
     logger.error(f"Failed to import utilities: {e}")
     sys.exit(1)
@@ -103,6 +101,15 @@ try:
 except ImportError:
     METAL_IDENTIFIER_AVAILABLE = False
     logger.warning("metal_identifier not available (entityidentity library)")
+
+# Web search + LLM extraction (for web_search strategy)
+try:
+    from utils.web_search import WebSearchClient
+    from utils.llm_extraction import extract_coordinates, resolve_extraction_coordinates
+    WEB_SEARCH_AVAILABLE = True
+except ImportError:
+    WEB_SEARCH_AVAILABLE = False
+    logger.warning("Web search/LLM extraction not available")
 
 try:
     from utils.company_resolver import CompanyResolver
@@ -227,25 +234,114 @@ def save_facility(facility: Dict, dry_run: bool = False) -> None:
         f.write('\n')
 
 
+def _geocode_via_web_search(
+    facility_name: str,
+    country_name: str,
+    country_iso3: str,
+    commodities: List[str],
+    web_search_client,
+    openai_client
+) -> Optional[Dict]:
+    """Geocode using web search + LLM extraction.
+
+    Returns dict with lat, lon, confidence, source_url, province if found.
+    """
+    import time
+
+    # Build search query
+    commodity_str = f" {commodities[0]}" if commodities else ""
+    query = f"{facility_name}{commodity_str} mine {country_name} coordinates location"
+
+    logger.debug(f"  Web search: {query}")
+
+    # Search
+    search_results = web_search_client.search(query, max_results=10)
+
+    if not search_results:
+        logger.debug("  No search results")
+        return None
+
+    # Extract coordinates with LLM
+    extraction = extract_coordinates(
+        facility_name=facility_name,
+        country=country_name,
+        search_results=search_results,
+        client=openai_client,
+        commodities=commodities,
+        extract_companies=False,
+        extract_status=False
+    )
+
+    if not extraction or not extraction.found:
+        return None
+
+    # Check validity
+    if not extraction.is_real_facility:
+        logger.debug(f"  Not a real facility according to LLM")
+        return None
+
+    # Resolve coordinates (handles reference point calculation)
+    coords = resolve_extraction_coordinates(extraction, country_name)
+
+    if not coords:
+        return None
+
+    # Rate limiting
+    time.sleep(0.5)
+
+    return {
+        'lat': coords[0],
+        'lon': coords[1],
+        'confidence': extraction.confidence,
+        'source_url': extraction.source_url,
+        'province': extraction.province,
+        'precision': 'approximate' if extraction.confidence < 0.8 else 'locality'
+    }
+
+
 def backfill_geocoding(
     facilities: List[Dict],
     country_iso3: str,
     interactive: bool = False,
-    dry_run: bool = False
+    dry_run: bool = False,
+    strategy: str = 'nominatim',
+    null_island_only: bool = False,
+    limit: int = None
 ) -> BackfillStats:
-    """Backfill missing coordinates."""
+    """Backfill missing coordinates.
+
+    Args:
+        facilities: List of facility dicts
+        country_iso3: ISO3 country code
+        interactive: Interactive prompting for confirmation
+        dry_run: Preview without saving
+        strategy: 'nominatim', 'web_search', or 'combined'
+        null_island_only: Only process (0,0) or missing coords
+        limit: Max facilities to process
+    """
     stats = BackfillStats()
     stats.total = len(facilities)
 
     country_name = iso3_to_country_name(country_iso3)
-    logger.info(f"Backfilling geocoding for {country_name} ({country_iso3})")
+    logger.info(f"Backfilling geocoding for {country_name} ({country_iso3}) using {strategy} strategy")
 
     # Filter to facilities needing geocoding
     to_geocode = []
     for facility in facilities:
         location = facility.get('location', {})
-        if location.get('lat') is None or location.get('lon') is None:
+        lat = location.get('lat')
+        lon = location.get('lon')
+
+        # Check if needs geocoding
+        if lat is None or lon is None:
             to_geocode.append(facility)
+        elif null_island_only and lat == 0 and lon == 0:
+            to_geocode.append(facility)
+
+    # Apply limit
+    if limit and len(to_geocode) > limit:
+        logger.info(f"Limiting to {limit} facilities")
+        to_geocode = to_geocode[:limit]
 
     logger.info(f"Found {len(to_geocode)}/{len(facilities)} facilities needing geocoding")
 
@@ -257,17 +353,58 @@ def backfill_geocoding(
         geocode_via_nominatim, is_valid_coord, in_country_bbox, is_sentinel_coord
     )
 
-    # Geocode each facility using simple, safe Nominatim forward geocoding
+    # Initialize web search client if needed
+    web_search_client = None
+    openai_client = None
+    if strategy in ('web_search', 'combined') and WEB_SEARCH_AVAILABLE:
+        import os
+        web_search_client = WebSearchClient()
+        try:
+            from openai import OpenAI
+            openai_client = OpenAI()
+        except Exception as e:
+            logger.warning(f"OpenAI client not available: {e}")
+            if strategy == 'web_search':
+                logger.error("web_search strategy requires OpenAI - falling back to nominatim")
+                strategy = 'nominatim'
+
+    # Geocode each facility
     for i, facility in enumerate(to_geocode):
         facility_id = facility['facility_id']
         facility_name = facility.get('name', '')
+        commodities = [c.get('metal', '') for c in facility.get('commodities', [])]
         logger.info(f"[{i+1}/{len(to_geocode)}] {facility_name}")
 
-        # Compose query: "Facility Name, Country Name"
-        query = f"{facility_name}, {country_name}"
+        result = None
+        source = None
 
-        # Try forward geocoding via Nominatim
-        result = geocode_via_nominatim(query, country_iso3)
+        # Strategy: nominatim
+        if strategy == 'nominatim':
+            query = f"{facility_name}, {country_name}"
+            result = geocode_via_nominatim(query, country_iso3)
+            source = 'nominatim'
+
+        # Strategy: web_search
+        elif strategy == 'web_search' and web_search_client and openai_client:
+            result = _geocode_via_web_search(
+                facility_name, country_name, country_iso3, commodities,
+                web_search_client, openai_client
+            )
+            source = 'web_search'
+
+        # Strategy: combined (try nominatim first, then web_search)
+        elif strategy == 'combined':
+            query = f"{facility_name}, {country_name}"
+            result = geocode_via_nominatim(query, country_iso3)
+            source = 'nominatim'
+
+            if not result and web_search_client and openai_client:
+                logger.info("  Nominatim failed, trying web search...")
+                result = _geocode_via_web_search(
+                    facility_name, country_name, country_iso3, commodities,
+                    web_search_client, openai_client
+                )
+                source = 'web_search'
 
         if result and result.get('lat') and result.get('lon'):
             lat, lon = result['lat'], result['lon']
@@ -275,7 +412,6 @@ def backfill_geocoding(
             # VALIDATION GATES - Prevent garbage coordinates
             if is_sentinel_coord(lat, lon):
                 logger.warning(f"  ✗ Sentinel coordinates detected ({lat}, {lon}) - skipping write")
-                # Mark as failed in data_quality
                 dq = facility.get('data_quality') or {}
                 dq.setdefault('flags', {})['sentinel_coords_rejected'] = True
                 facility['data_quality'] = dq
@@ -298,30 +434,43 @@ def backfill_geocoding(
                 stats.add_result(facility_id, "failed", f"Coordinates outside {country_iso3} bbox")
                 continue
 
+            # Interactive confirmation
+            if interactive:
+                confirm = input(f"  Accept ({lat}, {lon}) from {source}? [Y/n/s(kip)]: ").strip().lower()
+                if confirm == 's':
+                    stats.add_result(facility_id, "skipped", "User skipped")
+                    continue
+                if confirm == 'n':
+                    stats.add_result(facility_id, "skipped", "User rejected")
+                    continue
+
             # All validations passed - safe to write
             facility['location'] = {
                 'lat': lat,
                 'lon': lon,
-                'precision': 'town'  # Conservative default for Nominatim
+                'precision': result.get('precision', 'approximate')
             }
+            if result.get('province'):
+                facility['location']['province'] = result['province']
 
             # Update verification
             if 'verification' not in facility:
                 facility['verification'] = {}
 
             facility['verification']['last_checked'] = datetime.now().isoformat()
-            notes = f"Forward geocoded via Nominatim: {query}"
+            notes = f"Geocoded via {source}"
+            if result.get('source_url'):
+                notes += f": {result['source_url']}"
             facility['verification']['notes'] = notes
 
             # Save
             save_facility(facility, dry_run=dry_run)
 
             action = "Would update" if dry_run else "Updated"
-            logger.info(f"  ✓ {action}: {lat}, {lon}")
+            logger.info(f"  ✓ {action}: {lat}, {lon} (via {source})")
             stats.add_result(facility_id, "updated", f"{lat}, {lon}")
         else:
-            logger.warning(f"  ✗ Failed to geocode - no results from Nominatim")
-            # Mark as failed in data_quality (but don't write bad coords)
+            logger.warning(f"  ✗ Failed to geocode - no results")
             dq = facility.get('data_quality') or {}
             dq.setdefault('flags', {})['geocode_failed'] = True
             facility['data_quality'] = dq
@@ -1199,6 +1348,12 @@ def main():
     geocode_parser.add_argument('--all', action='store_true', help='Process all countries')
     geocode_parser.add_argument('--interactive', action='store_true', help='Interactive prompting')
     geocode_parser.add_argument('--dry-run', action='store_true', help='Preview changes')
+    geocode_parser.add_argument('--strategy', default='nominatim',
+                               choices=['nominatim', 'web_search', 'combined'],
+                               help='Geocoding strategy: nominatim (default), web_search (Tavily+LLM), combined (try nominatim first)')
+    geocode_parser.add_argument('--null-island', action='store_true',
+                               help='Only process facilities with null island (0,0) or missing coordinates')
+    geocode_parser.add_argument('--limit', type=int, help='Limit number of facilities to process')
 
     # Companies subcommand
     companies_parser = subparsers.add_parser('companies', help='Backfill company resolution')
@@ -1314,7 +1469,10 @@ def main():
                 facilities,
                 country_iso3,
                 interactive=args.interactive,
-                dry_run=args.dry_run
+                dry_run=args.dry_run,
+                strategy=getattr(args, 'strategy', 'nominatim'),
+                null_island_only=getattr(args, 'null_island', False),
+                limit=getattr(args, 'limit', None)
             )
             all_stats[country_iso3] = {'geocoding': stats}
 
