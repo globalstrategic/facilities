@@ -1,14 +1,14 @@
 {
   "facility_id": "fin-vanadium-recovery-project-fac",
-  "name": "**Vanadium Recovery Project **",
+  "name": "Vanadium Recovery Project ",
   "aliases": [
     "VRP"
   ],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 61.63,
+    "lon": 21.38,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -16,14 +16,12 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Recycling Industries Scandinavia AB",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.782059",
-      "evidence": "Extracted from operator column: Recycling Industries Scandinavia AB"
-    }
+    "Critical Metals",
+    "Critical Metals Ltd",
+    "Neometals",
+    "Neometals Ltd",
+    "Recycling Industries Scandinavia (RISAB)",
+    "Recycling Industries Scandinavia AB"
   ],
   "products": [],
   "sources": [
@@ -34,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.192429Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Vanadium Recovery Project, Tahkoluoto Port, Pori"
   },
   "canonical_name": "Vanadium Recovery Plant",
   "canonical_slug": "vanadium-recovery-plant",
@@ -55,11 +53,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Vanadium Recovery ** Plant",
+      "name": "Vanadium Recovery  Plant",
       "from": "2025-10-28T17:16:23.782062",
       "to": "2025-11-04T19:18:54.192427Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Satakunta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:59:17.000000Z",
+      "operators": [
+        "Recycling Industries Scandinavia (RISAB)"
+      ],
+      "owners": [
+        "Neometals",
+        "Critical Metals"
+      ],
+      "notes": "Neometals holds a 50% interest in the project through RISAB."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.3,
+    "lon": 90.367,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EAM Khukh Adar"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.452355Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:16:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kh%C3%B6kh-Adar_mine. Khökh-Adar mine is an exploration field and mine in development for copper extraction"
   },
   "canonical_name": "Khökh Adar Mine",
   "canonical_slug": "khokh-adar-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bayan-Ölgii",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:16:53.000000Z",
+      "operators": [
+        "EAM Khukh Adar"
+      ],
+      "owners": [
+        "EAM Khukh Adar"
+      ],
+      "notes": "EAM Khukh Adar is both the operator and owner of the mine."
+    }
+  }
 }

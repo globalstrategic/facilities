@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.56444,
-    "lon": 30.14278,
+    "lat": -24.999,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "ASA Metals (Pty) Ltd",
+    "Dilokong Chrome Mine Pty. Ltd.",
+    "Lebowa Development Corporation Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:29:39.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:00:53.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: http://wikimapia.org/30883894/Dilokong-Chrome-Mine. Coordinates extracted directly from the Wikimapia entry for Dilokong Chrome Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: http://wikimapia.org/30883894/Dilokong-Chrome-Mine. Coordinates extracted directly from the Wikimapia entry for Dilokong Chrome Mine. Web search geocoded. Source: https://www.globalfirstmedia.com/asa-metals-pty-ltd-the-benefits-of-overseas-partnership-2/. The mine is located roughly 30 kilometers from Burgersfort on the R37 to Polokwane"
   },
   "canonical_name": "Dilokong Chrome Mine",
   "canonical_slug": "dilokong-chrome-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:00:53.000000Z",
+      "operators": [
+        "ASA Metals (Pty) Ltd"
+      ],
+      "owners": [
+        "Dilokong Chrome Mine Pty. Ltd.",
+        "Lebowa Development Corporation Ltd."
+      ],
+      "notes": "ASA Metals operates the mine, which has a history of supplying chromite ore."
+    }
+  }
 }

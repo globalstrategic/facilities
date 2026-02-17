@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.039,
-    "lon": 126.24,
+    "lat": 39.039165,
+    "lon": 126.240288,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gangdong District Coal Mine Joint Enterprise"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.363147Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:41:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gangdong_Coal_Mining_Complex. The Gangdong Coal Mining Complex is a large-scale coal field rich in anthracite reserves located in the Gangdong district"
   },
   "canonical_name": "Gangdong Coal Mining Mine",
   "canonical_slug": "gangdong-coal-mining-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pyongan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:41:23.000000Z",
+      "operators": [
+        "Gangdong District Coal Mine Joint Enterprise"
+      ],
+      "owners": [
+        "Gangdong District Coal Mine Joint Enterprise"
+      ],
+      "notes": "The facility is fully owned and operated by the Gangdong District Coal Mine Joint Enterprise."
+    }
+  }
 }

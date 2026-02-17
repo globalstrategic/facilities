@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-ed-a-aluminum-smelter-fac",
-  "name": "**EdÃ©a Aluminum Smelter**",
+  "name": "EdÃ©a Aluminum Smelter",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 3.819185,
+    "lon": 10.124682,
+    "precision": "site"
   },
   "types": [
     "smelter"
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019260Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T12:26:47Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:26:47Z] Alucam smelter in Edéa, Littoral region, operating since 1957"
   },
   "canonical_name": "EdÃ©a Aluminum Smelter",
   "canonical_slug": "edea-aluminum-smelter",
@@ -49,7 +49,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**EdÃ©a Aluminum ** Smelter",
+      "name": "EdÃ©a Aluminum  Smelter",
       "from": "2025-10-27T14:11:30.495999",
       "to": "2025-11-04T19:19:08.019258Z",
       "reason": "data_correction"
@@ -59,7 +59,7 @@
   "province": "Littoral",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:54:24.000000Z",
+      "timestamp": "2025-12-02T10:23:05.000000Z",
       "operators": [
         "Societe Camérounaise d’Aluminium (Alucam)"
       ],
@@ -67,7 +67,7 @@
         "Alcan Inc.",
         "Government of Cameroon"
       ],
-      "notes": "Alcan Inc. and the Government of Cameroon each own a 46.7% interest in Alucam."
+      "notes": "Alcan Inc. and the Government each own a 46.7% interest in Alucam."
     }
   }
 }

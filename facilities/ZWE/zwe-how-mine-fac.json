@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-how-mine-fac",
-  "name": "**How Mine**",
+  "name": "How Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.3,
+    "lon": 28.7667,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bulawayo Mining Company Limited",
+    "Namib Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.955820Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:40:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://minedocs.com/29/How-mine-TR-12312023.pdf. How Mine has a strong history of production and is currently generating cash flow"
   },
   "canonical_name": "How Mine",
   "canonical_slug": "how-mine-2",
@@ -44,11 +47,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**How ** Mine",
+      "name": "How  Mine",
       "from": "2025-10-21T13:04:39.393910",
       "to": "2025-11-04T19:18:51.955819Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland South",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:40:32.000000Z",
+      "operators": [
+        "Bulawayo Mining Company Limited"
+      ],
+      "owners": [
+        "Namib Minerals"
+      ],
+      "notes": "How Mine is owned by Bulawayo Mining Company Limited and operated by Namib Minerals."
+    }
+  }
 }

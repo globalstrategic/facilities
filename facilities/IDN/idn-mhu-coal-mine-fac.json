@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.54,
-    "lon": 117.029,
+    "lat": -0.8854572691029232,
+    "lon": 116.75814362006892,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Multi Harapan Utama",
+    "PT Pakarti Putra Sang Fajar",
+    "Private Resources Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.272109Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:53:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Samarinda (https://www.gem.wiki/MHU_Coal_Mine). The MHU Coal Mine is located approximately 60 kilometers southwest of Samarinda, the provincial capital"
   },
   "canonical_name": "MHU Coal Mine",
   "canonical_slug": "mhu-coal-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "town": "Samarinda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:53:46.000000Z",
+      "operators": [
+        "PT Multi Harapan Utama"
+      ],
+      "owners": [
+        "PT Pakarti Putra Sang Fajar",
+        "Private Resources Pty Ltd"
+      ],
+      "notes": "PT Multi Harapan Utama is a subsidiary of Private Resources Pty Limited."
+    }
+  }
 }

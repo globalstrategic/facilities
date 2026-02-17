@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GIN",
   "location": {
-    "lat": 10.181,
-    "lon": -14.039,
+    "lat": 10.184167,
+    "lon": -14.043889,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CPI Boffa Alumina",
+    "State Power Investment Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:20.595725Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:54:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Boffa_Alumina_power_station. Coordinates are approximate for the Boffa Alumina power station"
   },
   "canonical_name": "Boffa Mine",
   "canonical_slug": "boffa-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Boffa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:54:15.000000Z",
+      "operators": [
+        "CPI Boffa Alumina"
+      ],
+      "owners": [
+        "State Power Investment Corp Ltd"
+      ],
+      "notes": "CPI Boffa Alumina is 100% owned by State Power Investment Corp Ltd."
+    }
+  }
 }

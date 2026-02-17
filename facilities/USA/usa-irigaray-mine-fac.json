@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 43.886,
-    "lon": -106.121,
+    "lat": 42.84973948923684,
+    "lon": -106.03029788175719,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rosatom",
+    "Uranium Energy Corporation (UEC)",
+    "Uranium One Americas Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.710598Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:51:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Casper (https://www.world-nuclear-news.org/articles/uec-to-restart-wyoming-uranium-operation). The Irigaray plant is part of the Willow Creek project and has been on standby since 2018, with plans to restart operations"
   },
   "canonical_name": "Irigaray Mine",
   "canonical_slug": "irigaray-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "town": "Casper",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:51:44.000000Z",
+      "operators": [
+        "Uranium Energy Corporation (UEC)"
+      ],
+      "owners": [
+        "Uranium One Americas Inc",
+        "Rosatom"
+      ],
+      "notes": "UEC acquired the Irigaray plant through its acquisition of Uranium One Americas from Rosatom."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": 37.499,
-    "lon": 126.999,
+    "lat": 37.15,
+    "lon": 128.833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Almonty Industries Inc.",
+    "Almonty Korea Tungsten Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:18.758358Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:01:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sangdong_mine. The Sangdong mine is known for tungsten production and is currently being reopened"
   },
   "canonical_name": "Sequl Mine",
   "canonical_slug": "sequl-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gangwon Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:01:43.000000Z",
+      "operators": [
+        "Almonty Korea Tungsten Corporation"
+      ],
+      "owners": [
+        "Almonty Industries Inc."
+      ],
+      "notes": "The mine is operated by Almonty Korea Tungsten Corporation, a subsidiary of Almonty Industries Inc."
+    }
+  }
 }

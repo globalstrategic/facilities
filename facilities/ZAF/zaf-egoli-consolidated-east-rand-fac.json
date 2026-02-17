@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.225,
-    "lon": 28.367,
+    "lat": -26.145017890256806,
+    "lon": 28.37,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Egoli Consolidated is Holding Co. for Nugo Mining Corp.",
+    "South Africa Land and Exploration Ltd.",
+    "Springs Dagga Gold Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.733114Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-egoli-consolidated-east-rand-brakpan-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:24:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-egoli-consolidated-east-rand-brakpan-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Brakpan (https://thediggings.com/mines/usgs10135130). The facility is involved in the treatment of tailings and is associated with several companies"
   },
   "canonical_name": "Egoli Consolidated East Rand Mine",
   "canonical_slug": "egoli-consolidated-east-rand-mine",
@@ -67,5 +71,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "town": "Brakpan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:24:53.000000Z",
+      "operators": [
+        "Egoli Consolidated is Holding Co. for Nugo Mining Corp.",
+        "Springs Dagga Gold Mines Ltd."
+      ],
+      "owners": [
+        "South Africa Land and Exploration Ltd."
+      ],
+      "notes": "The facility has undergone various operational changes and is linked to multiple companies."
+    }
+  }
 }

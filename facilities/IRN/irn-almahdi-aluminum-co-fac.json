@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 27.1631,
+    "lon": 56.0795,
+    "precision": "site"
   },
   "types": [
     "smelter"
@@ -14,14 +14,12 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Almahdi Aluminum Co.",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.766186",
-      "evidence": "Extracted from operator column: Almahdi Aluminum Co."
-    }
+    "Almahdi Aluminium Corp.",
+    "Almahdi Aluminum Co.",
+    "International Development Corporation",
+    "Iranian Mines & Mining Industries Development & Renovation Organization",
+    "Ministry of Mines and Metals",
+    "National Iranian Copper Industries Co."
   ],
   "products": [],
   "sources": [
@@ -32,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.437262Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:10:25Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:10:25Z] Almahdi smelter, Bandar Abbas. Coords: (27.1631, 56.0795)"
   },
   "canonical_name": "Almahdi Aluminum Co Smelter",
   "canonical_slug": "almahdi-aluminum-co-smelter",
@@ -59,5 +57,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hormozgan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:22:47.000000Z",
+      "operators": [
+        "Almahdi Aluminum Co.",
+        "Ministry of Mines and Metals",
+        "National Iranian Copper Industries Co."
+      ],
+      "owners": [
+        "Ministry of Mines and Metals",
+        "International Development Corporation"
+      ],
+      "notes": "Almahdi Aluminum Co. is a joint venture with 60% ownership by the Ministry of Mines and Metals/NICICO and 40% by the Dubai-based International Development Corporation."
+    }
+  }
 }

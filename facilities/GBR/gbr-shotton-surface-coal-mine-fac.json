@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GBR",
   "location": {
-    "lat": 55.093,
-    "lon": -1.637,
+    "lat": 55.089505,
+    "lon": -1.640963,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Banks Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:50.465514Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:42:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Shotton_Surface_Mine. Shotton Surface Mine was an open cast coal mine located on the estate of Blagdon Hall, Northumberland, UK"
   },
   "canonical_name": "Shotton Surface Coal Mine",
   "canonical_slug": "shotton-surface-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northumberland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:42:15.000000Z",
+      "operators": [
+        "Banks Group"
+      ],
+      "owners": [
+        "Banks Group"
+      ],
+      "notes": "Banks Group operated and owned the Shotton Surface Mine."
+    }
+  }
 }

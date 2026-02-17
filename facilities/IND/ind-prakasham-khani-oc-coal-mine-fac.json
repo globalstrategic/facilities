@@ -9,8 +9,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 17.953,
-    "lon": 80.774,
+    "lat": 17.94321332,
+    "lon": 80.77821014,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "The Singareni Collieries Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.071371Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:33:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Prakasham_Khani_OC_Coal_Mine. Prakasham Khani OC Coal Mine is an operating coal mine located in Telangana, India"
   },
   "canonical_name": "Prakasham Khani OC Coal Mine",
   "canonical_slug": "prakasham-khani-oc-coal-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Telangana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:33:39.000000Z",
+      "operators": [
+        "The Singareni Collieries Co Ltd"
+      ],
+      "owners": [
+        "The Singareni Collieries Co Ltd"
+      ],
+      "notes": "The mine is fully owned and operated by The Singareni Collieries Company Limited."
+    }
+  }
 }

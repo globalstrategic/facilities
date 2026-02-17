@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MRT",
   "location": {
-    "lat": 22.667,
-    "lon": -12.667,
+    "lat": 22.66667,
+    "lon": -12.66667,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arab Mining Co",
+    "Government of Mauritania",
+    "Kia Corp",
+    "Société Nationale Industrielle et Minière SA",
+    "small shareholder(s)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.922824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:30:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SNIM_Rouessa_Mine. The SNIM Rouessa Mine is an iron ore mine located in Fderik, Tiris Zemmour, Mauritania"
   },
   "canonical_name": "Snim Rouessa Mine",
   "canonical_slug": "snim-rouessa-mine",
@@ -56,5 +62,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tiris Zemmour",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:30:14.000000Z",
+      "operators": [
+        "Société Nationale Industrielle et Minière SA"
+      ],
+      "owners": [
+        "Government of Mauritania",
+        "Kia Corp",
+        "Arab Mining Co",
+        "small shareholder(s)"
+      ],
+      "notes": "The Government of Mauritania holds a majority stake (78.4%) in the mine."
+    }
+  }
 }

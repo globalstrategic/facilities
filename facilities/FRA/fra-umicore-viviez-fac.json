@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-umicore-viviez-fac",
-  "name": "**Umicore Viviez**",
+  "name": "Umicore Viviez",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 44.56,
+    "lon": 2.22,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Umicore",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.725144",
-      "evidence": "Extracted from operator column: Umicore"
-    }
+    "Umicore",
+    "Umicore N.V."
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "unlocatable",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.673118Z",
-    "checked_by": "import_pipeline",
-    "notes": "World's leading producer of pre-patinated zinc products for construction. 27 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:31:49Z",
+    "checked_by": "geocode_null_island",
+    "notes": "World's leading producer of pre-patinated zinc products for construction. 27 | Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:31:49Z] No specific geographic coordinates were found for the Umicore Viviez facility in the search results."
   },
   "canonical_name": "Umicore Viviez Mine",
   "canonical_slug": "umicore-viviez-mine",
@@ -60,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Umicore Viviez** Mine",
+      "name": "Umicore Viviez Mine",
       "from": "2025-10-28T17:18:38.725149",
       "to": "2025-11-04T19:18:51.673112Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Occitanie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:56:20.000000Z",
+      "operators": [
+        "Umicore N.V."
+      ],
+      "owners": [
+        "Umicore N.V."
+      ],
+      "notes": "Umicore is a Belgian-French multinational materials technology company."
+    }
+  }
 }

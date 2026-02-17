@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.8153,
+    "lon": 95.9456,
     "precision": "unknown",
     "description": ""
   },
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ivanhoe Myanmar Holding Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.866743Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:05:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mdpi.com/2071-1050/14/17/10754. The Kyauk Pa Hto Gold Mining Project is located approximately 30 km east of Kawlin"
   },
   "canonical_name": "Kyauk Pa Hto Gold Mining Facility",
   "canonical_slug": "kyauk-pa-hto-gold-mining-facility",
@@ -56,5 +58,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sagaing",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:48:07.000000Z",
+      "operators": [
+        "Ivanhoe Myanmar Holding Ltd"
+      ],
+      "owners": [],
+      "notes": "The report mentions Ivanhoe Myanmar Holding Ltd in relation to the project."
+    }
+  }
 }

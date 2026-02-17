@@ -5,7 +5,7 @@
   "country_iso3": "MEX",
   "location": {
     "lat": 25.53,
-    "lon": null,
+    "lon": -103.4425,
     "precision": "unknown"
   },
   "types": [
@@ -42,7 +42,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo BAL",
+    "Industrias Peñoles, S.A.B. de C.V.",
+    "Met-Mex Peñoles S.A. de C.V.",
+    "Metalúrgica Met-Mex Peñoles"
+  ],
   "products": [],
   "sources": [
     {
@@ -52,11 +57,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.969670Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:56:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Met-Mex%20Penoles.htm. Met-Mex Peñoles is a metallurgical complex that processes non-ferrous metals"
   },
   "canonical_name": "Met Mex Peñoles Smelter",
   "canonical_slug": "met-mex-penoles-smelter",
@@ -79,5 +84,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coahuila",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:56:15.000000Z",
+      "operators": [
+        "Met-Mex Peñoles S.A. de C.V."
+      ],
+      "owners": [
+        "Industrias Peñoles, S.A.B. de C.V.",
+        "Grupo BAL"
+      ],
+      "notes": "Met-Mex Peñoles is a subsidiary of Industrias Peñoles, which is part of Grupo BAL."
+    }
+  }
 }

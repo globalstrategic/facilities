@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.523,
-    "lon": -82.523,
+    "lat": 37.488529521658045,
+    "lon": -82.1367988,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,19 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ARC Jamboree, LLC",
+    "Anna L. Williams",
+    "Arvy B. Blackburn",
+    "Barbara Blackburn",
+    "Bobby & Gail Prater",
+    "Clayton & Elsie B.",
+    "James & Emily Justice, Jr.",
+    "Mary Alice & Norman Coleman",
+    "R.W. Collins",
+    "William & Cindy Slone",
+    "Williams Bros. Coal Co., Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.912291Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:45:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Jamboree (https://kypublicnotice.com/KYLegals/2024/70221-2024-04-05_1002.pdf). The facility is located approximately 0.7 miles south of Jamboree in Pike County"
   },
   "canonical_name": "Tollage Creek Mine",
   "canonical_slug": "tollage-creek-mine",
@@ -47,5 +59,28 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Jamboree",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:45:41.000000Z",
+      "operators": [
+        "ARC Jamboree, LLC"
+      ],
+      "owners": [
+        "R.W. Collins",
+        "James & Emily Justice, Jr.",
+        "Arvy B. Blackburn",
+        "William & Cindy Slone",
+        "Mary Alice & Norman Coleman",
+        "Bobby & Gail Prater",
+        "Clayton & Elsie B.",
+        "Barbara Blackburn",
+        "Anna L. Williams",
+        "Williams Bros. Coal Co., Inc."
+      ],
+      "notes": "ARC Jamboree, LLC is the operator applying for the permit renewal."
+    }
+  }
 }

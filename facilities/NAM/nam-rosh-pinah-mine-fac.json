@@ -10,8 +10,8 @@
   ],
   "country_iso3": "NAM",
   "location": {
-    "lat": -27.951,
-    "lon": 16.766,
+    "lat": -27.955,
+    "lon": 16.764,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Appian Capital Advisory LLP",
+    "Trevali Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.556219Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:52:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Rosh_Pinah_mine. Rosh Pinah mine is one of the largest lead and zinc mines in Namibia, located near the town of Rosh Pinah"
   },
   "canonical_name": "Rosh Pinah Mine",
   "canonical_slug": "rosh-pinah-mine",
@@ -70,5 +73,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "ǁKaras Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:52:51.000000Z",
+      "operators": [
+        "Trevali Mining Corporation"
+      ],
+      "owners": [
+        "Appian Capital Advisory LLP",
+        "Trevali Mining Corporation"
+      ],
+      "notes": "Appian Capital acquired a controlling stake of 89.96% in 2023 from Trevali Mining."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-nickel-refining-plant-fac",
-  "name": "**Nickel Refining Plant**",
+  "name": "Nickel Refining Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 34.95,
+    "lon": 126.92,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "POSCO CNGR Nickel Solution",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.516517",
-      "evidence": "Extracted from operator column: POSCO CNGR Nickel Solution"
-    }
+    "Korea Zinc",
+    "POSCO CNGR Nickel Solution",
+    "POSCO Group",
+    "Trafigura"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.755420Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Will produce high-purity nickel from matte for battery precursors, operational by 2026\\. 35 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T00:49:03Z",
+    "checked_by": "web_search_manual",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Will produce high-purity nickel from matte for battery precursors, operational by 2026\\. 35 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:49:03Z] Geocoded via web search. Coords: (34.95, 126.92). Confidence: 0.60. Source: South Jeolla Province center (POSCO Group nickel refining)"
   },
   "canonical_name": "Nickel Refining Refinery",
   "canonical_slug": "nickel-refining-refinery",
@@ -53,11 +49,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nickel Refining ** Refinery",
+      "name": "Nickel Refining  Refinery",
       "from": "2025-10-29T12:22:53.516519",
       "to": "2025-11-04T19:19:18.755417Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Jeolla Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:01:59.000000Z",
+      "operators": [
+        "POSCO Group"
+      ],
+      "owners": [
+        "POSCO Group"
+      ],
+      "notes": "POSCO is the main operator and owner of the nickel refining plant."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "VEN",
   "location": {
-    "lat": 7.456,
-    "lon": -63.386,
+    "lat": 7.455944,
+    "lon": -63.0,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CVG Ferrominera Orinoco CA",
+    "Corporación Siderúrgica de Venezuela SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.658160Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:33:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/FMO_Cerro_Bolivar_Mine. Cerro Bolivar is a significant iron ore mine with a long history of operation and reactivation"
   },
   "canonical_name": "FMO Cerro Bolivar Mine",
   "canonical_slug": "fmo-cerro-bolivar-mine",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolívar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:23.000000Z",
+      "operators": [
+        "CVG Ferrominera Orinoco CA"
+      ],
+      "owners": [
+        "Corporación Siderúrgica de Venezuela SA"
+      ],
+      "notes": "CVG Ferrominera Orinoco is the sole iron ore producer in Venezuela and operates the mine."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 49.859,
-    "lon": 73.104,
+    "lat": 49.75044,
+    "lon": 72.563474,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "ArcelorMittal Temirtau JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.743728Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:44:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kazakhstanskaya_Coal_Mine. The Kazakhstanskaya Coal Mine is part of ArcelorMittal's Karaganda Mine Complex and is currently operating"
   },
   "canonical_name": "Karaganda Mine",
   "canonical_slug": "karaganda-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:44:10.000000Z",
+      "operators": [
+        "ArcelorMittal Temirtau JSC"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "The mine was previously owned and operated by ArcelorMittal Temirtau JSC, which is the Kazakh subsidiary of ArcelorMittal."
+    }
+  }
 }

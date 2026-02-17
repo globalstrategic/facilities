@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.237,
-    "lon": -87.288,
+    "lat": 34.47571565429569,
+    "lon": -99.01896151761689,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners L.P.",
+    "Warrior Coal, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.687232Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:34:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Manitou (https://arlweb.msha.gov/fatals/2001/ftl01c19.htm). The Cardinal Mine is located approximately three miles southwest of Manitou, Kentucky"
   },
   "canonical_name": "Cardinal Mine",
   "canonical_slug": "cardinal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Manitou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:34:44.000000Z",
+      "operators": [
+        "Warrior Coal, LLC"
+      ],
+      "owners": [
+        "Alliance Resource Partners L.P."
+      ],
+      "notes": "Warrior Coal, LLC is the direct operator, while Alliance Resource Partners L.P. has indirect ownership."
+    }
+  }
 }

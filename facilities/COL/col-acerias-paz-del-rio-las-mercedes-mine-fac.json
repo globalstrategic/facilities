@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 4.764,
-    "lon": -73.478,
+    "lat": 4.763838,
+    "lon": -73.478375,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Acerias Paz del Rio SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:22.742444Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:59:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Acerias_Paz_del_Rio_Las_Mercedes_Mine. The mine is specifically located in Ubala, Cundinamarca, Colombia"
   },
   "canonical_name": "Acerias Paz Del Rio Las Mercedes Mine",
   "canonical_slug": "acerias-paz-del-rio-las-mercedes-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cundinamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:59:04.000000Z",
+      "operators": [
+        "Acerias Paz del Rio SA"
+      ],
+      "owners": [
+        "Acerias Paz del Rio SA"
+      ],
+      "notes": "Acerias Paz del Rio SA owns and operates the mine."
+    }
+  }
 }

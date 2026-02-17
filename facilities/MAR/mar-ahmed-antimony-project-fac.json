@@ -1,11 +1,11 @@
 {
   "facility_id": "mar-ahmed-antimony-project-fac",
-  "name": "**Ahmed Antimony Project**",
+  "name": "Ahmed Antimony Project",
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 33.15302688788101,
+    "lon": -6.590458117519372,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Summit Minerals",
-      "role": "operator",
-      "source": "Morocco Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T16:17:07.502466",
-      "evidence": "Extracted from operator column: Summit Minerals"
-    }
+    "Summit Minerals"
   ],
   "products": [],
   "sources": [
@@ -39,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.329078Z",
-    "checked_by": "import_pipeline",
-    "notes": "Exploration project with outcropping stibnite and anomalous gallium in stream sediments. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:12:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Exploration project with outcropping stibnite and anomalous gallium in stream sediments. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Khouribga (https://summitminerals.com.au/ahmed-antimony-project/). The project is located in a mining jurisdiction ranked in the world’s top 10, with direct access via road R311"
   },
   "canonical_name": "Ahmed Antimony Exploration",
   "canonical_slug": "ahmed-antimony-exploration",
@@ -60,11 +53,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ahmed Antimony ** Exploration",
+      "name": "Ahmed Antimony  Exploration",
       "from": "2025-10-29T16:17:07.502470",
       "to": "2025-11-04T19:18:48.329076Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Beni Mellal-Khénifra",
+  "town": "Khouribga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:12:41.000000Z",
+      "operators": [
+        "Summit Minerals"
+      ],
+      "owners": [],
+      "notes": "Summit Minerals holds six exploration licenses covering the project area."
+    }
+  }
 }

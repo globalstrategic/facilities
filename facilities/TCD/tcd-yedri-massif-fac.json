@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TCD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 22.16667,
+    "lon": 17.35,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,22 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.445654",
-      "evidence": "Extracted from operator column: N/A (Artisanal)"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.445657",
-      "evidence": "Extracted from operator column: N/A (Artisanal)"
-    }
+    "A",
+    "Chad Mining Services Sarl",
+    "N"
   ],
   "products": [],
   "sources": [
@@ -40,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:05.843452Z",
-    "checked_by": "import_pipeline",
-    "notes": "\"Small scale exploitation on record.\".5 22 tons of wolframite collected historically. 12 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "\"Small scale exploitation on record.\".5 22 tons of wolframite collected historically. 12 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Yedri Massif tungsten deposit in Tibesti Mountains"
   },
   "primary_type": "mine",
   "type_confidence": 0.95,
@@ -59,5 +46,16 @@
       "canonical_name_incomplete": false
     },
     "canonicalization_confidence": 0.495
+  },
+  "province": "Tibesti Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T03:16:22.000000Z",
+      "operators": [
+        "Chad Mining Services Sarl"
+      ],
+      "owners": [],
+      "notes": "Chad Mining Services Sarl is involved in exploration activities."
+    }
   }
 }

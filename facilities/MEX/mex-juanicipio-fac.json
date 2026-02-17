@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.131,
-    "lon": -102.952,
+    "lat": 23.181116893621212,
+    "lon": -102.93150949773994,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fresnillo plc",
+    "Industrias Peñoles S.A.B. DE C.V.",
+    "MAG Silver Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.958322Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:35:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fresnillo (https://www.mining-technology.com/projects/juanicipio-project/). The Juanicipio Mine is located approximately 6 km west of the mining city of Fresnillo in the Fresnillo district of Zacatecas state"
   },
   "canonical_name": "Juanicipio Mine",
   "canonical_slug": "juanicipio-mine",
@@ -62,5 +66,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zacatecas",
+  "town": "Fresnillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:10.000000Z",
+      "operators": [
+        "Fresnillo plc"
+      ],
+      "owners": [
+        "MAG Silver Corp.",
+        "Industrias Peñoles S.A.B. DE C.V."
+      ],
+      "notes": "The mine is a joint venture between Fresnillo (56%, operator) and MAG Silver (44%)."
+    }
+  }
 }

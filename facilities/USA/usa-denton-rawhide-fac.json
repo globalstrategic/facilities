@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.013,
-    "lon": -118.389,
+    "lat": 45.924351222501,
+    "lon": -104.4366483,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Emgold Mining Corporation",
+    "Estate of Maurice and Lorraine Castagne",
+    "Nevada Sunrise LLC",
+    "Rawhide Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.734417Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:13:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fallon (https://miningrecord.com/emgold-completes-acquisition-buckskin-rawhide-east-property/). The Denton-Rawhide Mine is located southeast of Fallon, Nevada"
   },
   "canonical_name": "Denton Rawhide Mine",
   "canonical_slug": "denton-rawhide-mine",
@@ -60,5 +65,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Fallon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:13:33.000000Z",
+      "operators": [
+        "Rawhide Mining LLC"
+      ],
+      "owners": [
+        "Emgold Mining Corporation",
+        "Nevada Sunrise LLC",
+        "Estate of Maurice and Lorraine Castagne"
+      ],
+      "notes": "Rawhide Mining LLC operates the Denton-Rawhide Mine, which has been in operation since 1989. Emgold Mining Corporation has acquired interests in the property."
+    }
+  }
 }

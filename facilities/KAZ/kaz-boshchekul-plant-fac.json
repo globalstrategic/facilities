@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 51.765,
-    "lon": 74.267,
+    "lat": 51.85,
+    "lon": 74.3,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KAZ Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:07.751042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:51:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bozshakol_mine. Bozshakol is a large copper mine located in northern Kazakhstan"
   },
   "canonical_name": "Boshchekul Plant",
   "canonical_slug": "boshchekul-plant",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pavlodar Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:51:07.000000Z",
+      "operators": [
+        "KAZ Minerals"
+      ],
+      "owners": [
+        "KAZ Minerals"
+      ],
+      "notes": "KAZ Minerals is the sole operator and owner of the Bozshakol mine."
+    }
+  }
 }

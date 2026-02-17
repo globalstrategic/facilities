@@ -7,8 +7,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 9.647,
-    "lon": -73.478,
+    "lat": 9.581323,
+    "lon": -73.286097,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Prodeco Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.742226Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:58:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Prodeco_Coal_Mine. Prodeco coal mine consists of two open pits, Mina Calenturitas and Mina La Jagua, which had their operations merged in 2017. The mine is currently on care and maintenance"
   },
   "canonical_name": "Prodeco Coal Mine",
   "canonical_slug": "prodeco-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cesar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:58:55.000000Z",
+      "operators": [
+        "Prodeco Group"
+      ],
+      "owners": [
+        "Glencore"
+      ],
+      "notes": "Glencore is the owner and operator of the Prodeco coal mine."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 9.632,
-    "lon": -73.559,
+    "lat": 9.629849,
+    "lon": -73.560634,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Colombia Natural Resources",
+    "Murray Colombian Resources, LLC",
+    "Patria Energética"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.742812Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:59:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/El_Hatillo_Coal_Mine. El Hatillo is an operating coal mine with significant reserves"
   },
   "canonical_name": "El Hatillo Mine",
   "canonical_slug": "el-hatillo-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cesar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:59:22.000000Z",
+      "operators": [
+        "Murray Colombian Resources, LLC"
+      ],
+      "owners": [
+        "Colombia Natural Resources",
+        "Patria Energética"
+      ],
+      "notes": "Murray Energy acquired the mine from Goldman Sachs."
+    }
+  }
 }

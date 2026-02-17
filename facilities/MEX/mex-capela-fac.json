@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 18.307,
-    "lon": -99.931,
+    "lat": 18.62167,
+    "lon": -99.93167,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Industrias Peñoles, S.A.B. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.967876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:53:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.penoles.com.mx/en/our-operations/mining-units/capela.html. The Capela mine is located in Guerrero, Mexico, and is operated by Peñoles"
   },
   "canonical_name": "Capela Mine",
   "canonical_slug": "capela-mine",
@@ -62,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guerrero",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:53:16.000000Z",
+      "operators": [
+        "Industrias Peñoles, S.A.B. de C.V."
+      ],
+      "owners": [
+        "Industrias Peñoles, S.A.B. de C.V."
+      ],
+      "notes": "Peñoles owns 100% of the Capela mine."
+    }
+  }
 }

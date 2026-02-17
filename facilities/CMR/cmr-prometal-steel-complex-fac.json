@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-prometal-steel-complex-fac",
-  "name": "**PROMETAL Steel Complex**",
+  "name": "PROMETAL Steel Complex",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 4.0511,
+    "lon": 9.7085,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,6 +14,7 @@
   "commodities": [],
   "status": "planned",
   "company_mentions": [
+    "PFN Group of Companies",
     "PROMETAL",
     "Prometal"
   ],
@@ -26,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.018926Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:40:44Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:40:44Z] Geocoded via web search. Coords: (4.0511, 9.7085). Confidence: 0.90. Notes: Coordinates determined based on the address Z.I – Bassa, Douala."
   },
   "canonical_name": "Prometal Steel Steel Plant",
   "canonical_slug": "prometal-steel-steel-plant",
@@ -47,7 +48,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PROMETAL Steel ** Steel Plant",
+      "name": "PROMETAL Steel  Steel Plant",
       "from": "2025-10-27T14:11:30.497961",
       "to": "2025-11-04T19:19:08.018924Z",
       "reason": "data_correction"
@@ -57,14 +58,14 @@
   "province": "Littoral",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:54:03.000000Z",
+      "timestamp": "2025-12-02T10:22:43.000000Z",
       "operators": [
         "Prometal"
       ],
       "owners": [
         "Prometal"
       ],
-      "notes": "Prometal is a Cameroonian company established in 2010."
+      "notes": "Prometal is both the operator and owner of the facility."
     }
   }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ROU",
   "location": {
-    "lat": 45.41,
-    "lon": 28.03,
+    "lat": 45.42764,
+    "lon": 27.97575,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Liberty House Group",
+    "Liberty Steel"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.785757Z",
-    "checked_by": "import_pipeline",
-    "notes": "Major steel works and a key component of Romania's industrial sector. Consumes raw materials like iron ore and ferro-alloys. 11 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:26:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Major steel works and a key component of Romania's industrial sector. Consumes raw materials like iron ore and ferro-alloys. 11 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Gala%C8%9Bi_steel_works. Liberty Galați is Romania's largest steel producer and has been facing financial difficulties"
   },
   "canonical_name": "Liberty Galați Plant",
   "canonical_slug": "liberty-galati-plant",
@@ -61,5 +64,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Galați County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:26:09.000000Z",
+      "operators": [
+        "Liberty Steel"
+      ],
+      "owners": [
+        "Liberty House Group"
+      ],
+      "notes": "The facility is currently in discussions for potential acquisition by various companies, including UMB Steel SRL and Metinvest."
+    }
+  }
 }

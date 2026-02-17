@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.724,
-    "lon": 31.873,
+    "lat": -28.7333,
+    "lon": 31.4333,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Resources Ltd",
+    "Tronox Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.768852Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:57:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.tronox.com/kzn-sands-south-africa/. KZN Sands is located near Empangeni, KwaZulu-Natal, and includes the Fairbreeze Mine"
   },
   "canonical_name": "KZN Sands Mine",
   "canonical_slug": "kzn-sands-mine",
@@ -60,5 +63,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "KwaZulu-Natal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:57:17.000000Z",
+      "operators": [
+        "Tronox Limited"
+      ],
+      "owners": [
+        "Tronox Limited",
+        "Exxaro Resources Ltd"
+      ],
+      "notes": "Tronox operates the facility and has acquired ownership from Exxaro."
+    }
+  }
 }

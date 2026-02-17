@@ -1,11 +1,11 @@
 {
   "facility_id": "fin-jervois-finland-fac",
-  "name": "**Jervois Finland**",
+  "name": "Jervois Finland",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 63.1,
+    "lon": 22.7,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Jervois Finland Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.780228",
-      "evidence": "Extracted from operator column: Jervois Finland Oy"
-    }
+    "Jervois Finland",
+    "Jervois Finland Oy",
+    "Jervois Global Limited"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.190019Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:31:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.annualreports.com/HostedData/AnnualReportArchive/j/TSX-V_JRV_2022.pdf. Jervois Finland operates a cobalt production facility in Kokkola, Finland"
   },
   "canonical_name": "Jervois Finland Plant",
   "canonical_slug": "jervois-finland-plant",
@@ -53,11 +48,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Jervois Finland** Plant",
+      "name": "Jervois Finland Plant",
       "from": "2025-10-28T17:16:23.780231",
       "to": "2025-11-04T19:18:54.190016Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:31:15.000000Z",
+      "operators": [
+        "Jervois Finland"
+      ],
+      "owners": [
+        "Jervois Global Limited"
+      ],
+      "notes": "Jervois Finland was acquired by Jervois Global in 2021."
+    }
+  }
 }

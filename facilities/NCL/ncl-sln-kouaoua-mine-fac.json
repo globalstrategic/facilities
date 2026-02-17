@@ -1,11 +1,11 @@
 {
   "facility_id": "ncl-sln-kouaoua-mine-fac",
-  "name": "**SLN \\- Kouaoua Mine**",
+  "name": "SLN \\- Kouaoua Mine",
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.59,
+    "lon": 164.4761,
     "precision": "unknown"
   },
   "types": [
@@ -13,11 +13,11 @@
   ],
   "commodities": [
     {
-      "metal": "**nickel**",
+      "metal": "nickel",
       "primary": true
     },
     {
-      "metal": "**cobalt**",
+      "metal": "cobalt",
       "primary": false
     },
     {
@@ -27,14 +27,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "**Société Le Nickel** 13",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.481855",
-      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 13"
-    }
+    "Société Le Nickel 13",
+    "Eramet",
+    "Société Le Nickel (SLN)"
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.366800Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:56:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn161. The Kouaoua Mine is one of the mining sites operated by Société Le Nickel (SLN) in New Caledonia"
   },
   "canonical_name": "SLN Kouaoua Mine",
   "canonical_slug": "sln-kouaoua-mine",
@@ -66,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**SLN \\- Kouaoua ** Mine",
+      "name": "SLN \\- Kouaoua  Mine",
       "from": "2025-10-29T22:07:19.481928",
       "to": "2025-11-04T19:18:56.366794Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:56:28.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "SLN is a subsidiary of Eramet, which is a major stakeholder in New Caledonia's nickel industry."
+    }
+  }
 }

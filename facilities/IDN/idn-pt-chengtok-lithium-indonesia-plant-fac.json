@@ -1,12 +1,12 @@
 {
   "facility_id": "idn-pt-chengtok-lithium-indonesia-plant-fac",
-  "name": "**PT ChengTok Lithium Indonesia Plant**",
+  "name": "PT ChengTok Lithium Indonesia Plant",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.8256,
+    "lon": 122.1554,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -21,14 +21,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT. ChengTok Lithium Indonesia",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.643584",
-      "evidence": "Extracted from operator column: PT. ChengTok Lithium Indonesia"
-    }
+    "Chengxin Lithium Group",
+    "PT ChengTok Lithium Indonesia",
+    "PT. ChengTok Lithium Indonesia",
+    "Shenzhen Chengxin Lithium Group Co Ltd",
+    "Stellar Investment Pte",
+    "Tsingshan Holding Group"
   ],
   "products": [],
   "sources": [
@@ -39,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.213774Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Located at Indonesia Morowali Industrial Park (IMIP), Central Sulawesi"
   },
   "canonical_name": "PT Chengtok Lithium Indonesia Refinery",
   "canonical_slug": "pt-chengtok-lithium-indonesia-refinery",
@@ -60,11 +58,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT ChengTok Lithium Indonesia ** Refinery",
+      "name": "PT ChengTok Lithium Indonesia  Refinery",
       "from": "2025-10-29T10:37:55.643588",
       "to": "2025-11-04T19:19:10.213771Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:30:35.000000Z",
+      "operators": [
+        "PT ChengTok Lithium Indonesia"
+      ],
+      "owners": [
+        "Shenzhen Chengxin Lithium Group Co Ltd",
+        "Stellar Investment Pte"
+      ],
+      "notes": "Chengxin holds a 65% stake, while Stellar Investment holds 35%."
+    }
+  },
+  "province": "Central Sulawesi"
 }

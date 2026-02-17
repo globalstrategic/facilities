@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 56.085,
-    "lon": 93.02,
+    "lat": 56.0144,
+    "lon": 92.9832,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Krasnoyarsk Aluminum Works",
+    "Rusal",
+    "Russian Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.586282Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:16:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10182546. The Krasnoyarsk Aluminium Smelter is one of the largest smelters in the world and has been operational since 1964"
   },
   "canonical_name": "Krasnoyarsk Aluminium Smelter",
   "canonical_slug": "krasnoyarsk-aluminium-smelter",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Krasnoyarsk Krai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:16:26.000000Z",
+      "operators": [
+        "Rusal"
+      ],
+      "owners": [
+        "Krasnoyarsk Aluminum Works",
+        "Russian Government"
+      ],
+      "notes": "Rusal is the primary operator and owner of the facility."
+    }
+  }
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -17.75,
+    "lon": 25.95,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -37,14 +37,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "First Africa Metals",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.826181",
-      "evidence": "Extracted from operator column: First Africa Metals"
-    }
+    "First Africa Metals",
+    "First Africa Metals Ltd"
   ],
   "products": [],
   "sources": [
@@ -55,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.682008Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Lithium pegmatite project in Southern Province, Choma Belt"
   },
   "canonical_name": "Misika Exploration",
   "canonical_slug": "misika-exploration",
@@ -74,5 +68,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:40:08.000000Z",
+      "operators": [
+        "First Africa Metals Ltd"
+      ],
+      "owners": [
+        "First Africa Metals Ltd"
+      ],
+      "notes": "First Africa Metals holds an 85% interest in the Misika Project."
+    }
+  }
 }

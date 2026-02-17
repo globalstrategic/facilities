@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.15,
+    "lat": 33.149722,
     "lon": -87.23,
     "precision": "site"
   },
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cahaba Resources, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.880445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:00:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rockcastle_Mine_No._1. The Rockcastle Mine No. 1 is a proposed surface coal mine located in Tuscaloosa County, Alabama"
   },
   "canonical_name": "Rockcastle Mine",
   "canonical_slug": "rockcastle-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:00:28.000000Z",
+      "operators": [
+        "Cahaba Resources, LLC"
+      ],
+      "owners": [
+        "Cahaba Resources, LLC"
+      ],
+      "notes": "Cahaba Resources, LLC is both the operator and owner of the Rockcastle Mine No. 1."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.802,
-    "lon": 117.087,
+    "lat": 34.802113,
+    "lon": 117.08681,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jining Energy Development Group Co., Ltd.",
+    "Weishan Jinyuan Coal Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.794623Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:48:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%BE%AE%E5%B1%B1%E9%87%91%E6%BA%90%E7%85%A4%E7%9F%BF. The Weishan Jinyuan Coal Mine is an underground coal mine located in Xiazhen, Weishan County, Zaozhuang City, Shandong Province"
   },
   "canonical_name": "Weishan Jinyuan Coal Mine",
   "canonical_slug": "weishan-jinyuan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:48:31.000000Z",
+      "operators": [
+        "Weishan Jinyuan Coal Mine"
+      ],
+      "owners": [
+        "Jining Energy Development Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by its own entity and owned by Jining Energy Development Group."
+    }
+  }
 }

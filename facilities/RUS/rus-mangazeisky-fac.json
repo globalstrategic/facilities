@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 65.674,
-    "lon": 130.091,
+    "lat": 65.6156771373022,
+    "lon": 129.7319787,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Silver Bear Resources Inc.",
+    "Silver Bear Resources Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.659960Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:14:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Yakutsk (https://www.globenewswire.com/news-release/2016/06/09/1096398/0/en/Silver-Bear-Announces-Completion-of-Positive-Feasibility-Study-at-the-Mangazeisky-Silver-Project-Yakutia-Russia.html). The Mangazeisky Silver Project is located 400 km north of Yakutsk and includes the high-grade Vertikalny deposit"
   },
   "canonical_name": "Mangazeisky Mine",
   "canonical_slug": "mangazeisky-mine",
@@ -62,5 +65,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Republic of Sakha (Yakutia)",
+  "town": "Yakutsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:14:49.000000Z",
+      "operators": [
+        "Silver Bear Resources Inc."
+      ],
+      "owners": [
+        "Silver Bear Resources Plc"
+      ],
+      "notes": "Silver Bear Resources Inc. is focused on the development of the Mangazeisky Silver Project."
+    }
+  }
 }

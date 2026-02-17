@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.787,
-    "lon": 117.129,
+    "lat": -0.787083,
+    "lon": 117.128815,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Batuah Energi Prima"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.244036Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:45:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BEP_Coal_Mine. BEP Coal Mine is an operating coal mine located in East Kalimantan, Indonesia"
   },
   "canonical_name": "BEP Coal Mine",
   "canonical_slug": "bep-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:45:20.000000Z",
+      "operators": [
+        "Batuah Energi Prima"
+      ],
+      "owners": [
+        "Batuah Energi Prima"
+      ],
+      "notes": "BEP Coal Mine is fully owned by Batuah Energi Prima."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.669,
-    "lon": -113.592,
+    "lat": 48.0,
+    "lon": -117.0,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bonanza Mining and Milling Co. Inc.",
+    "Northern Lead Mining Co., Inc.",
+    "Russell Parker"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.985423Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-02T01:51:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.dnr.wa.gov/Publications/ger_ic109_iaml_bonanza.pdf. The Bonanza Mine is located in the Bossburg Mining District, Stevens County, Washington. Exact coordinates were not provided, but it is known to be in the vicinity of Salome"
   },
   "canonical_name": "Bonanza Mine",
   "canonical_slug": "bonanza-mine-2",
@@ -58,5 +62,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Washington",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:51:15.000000Z",
+      "operators": [
+        "Bonanza Mining and Milling Co. Inc.",
+        "Northern Lead Mining Co., Inc."
+      ],
+      "owners": [
+        "Russell Parker"
+      ],
+      "notes": "The mine has had various operators historically, with no current active operations."
+    }
+  }
 }

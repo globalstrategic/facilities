@@ -1,12 +1,12 @@
 {
   "facility_id": "cze-c-novec-project-fac",
-  "name": "**Cínovec Project**",
+  "name": "Cínovec Project",
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.73,
+    "lon": 13.76,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -14,22 +14,14 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "GEOMET s.r.o. (ČEZ Group",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.782126",
-      "evidence": "Extracted from operator column: GEOMET s.r.o. (ČEZ Group / European Metals Holdings)"
-    },
-    {
-      "name": "European Metals Holdings)",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.782138",
-      "evidence": "Extracted from operator column: GEOMET s.r.o. (ČEZ Group / European Metals Holdings)"
-    }
+    "CEZ a.s.",
+    "European Metals Holdings Limited",
+    "European Metals Holdings Ltd.",
+    "European Metals Holdings)",
+    "GEOMET s.r.o. (ČEZ Group",
+    "Geomet a.s.",
+    "Geomet s.r.o.",
+    "ČEZ a.s."
   ],
   "products": [],
   "sources": [
@@ -40,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.583985Z",
-    "checked_by": "import_pipeline",
-    "notes": "Europe's largest hard rock lithium deposit. A vertically integrated project to produce battery-grade lithium chemicals. Also a globally significant Sn and W resource. 15 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Europe's largest hard rock lithium deposit. A vertically integrated project to produce battery-grade lithium chemicals. Also a globally significant Sn and W resource. 15 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Europe's largest hard rock lithium deposit, Ústí nad Labem on German border"
   },
   "canonical_name": "Cínovec Development",
   "canonical_slug": "cinovec-development",
@@ -61,11 +53,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cínovec ** Development",
+      "name": "Cínovec  Development",
       "from": "2025-10-27T15:23:26.782143",
       "to": "2025-11-04T19:19:10.583981Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ústí nad Labem",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:12:38.000000Z",
+      "operators": [
+        "Geomet s.r.o."
+      ],
+      "owners": [
+        "European Metals Holdings Ltd.",
+        "ČEZ a.s."
+      ],
+      "notes": "Geomet s.r.o. is a joint venture between European Metals Holdings Ltd. (49%) and ČEZ a.s. (51%)."
+    }
+  }
 }

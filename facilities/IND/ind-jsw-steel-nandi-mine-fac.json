@@ -13,8 +13,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.023,
-    "lon": 76.551,
+    "lat": 15.015044,
+    "lon": 76.573073,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JSW Steel Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.124068Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:50:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/JSW_Steel_Nandi_Mine. JSW Steel Nandi Mine is an iron ore mine operating in Malagolla, Karnataka, India"
   },
   "canonical_name": "JSW Steel Nandi Mine",
   "canonical_slug": "jsw-steel-nandi-mine",
@@ -57,5 +59,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:50:10.000000Z",
+      "operators": [
+        "JSW Steel Ltd"
+      ],
+      "owners": [
+        "JSW Steel Ltd"
+      ],
+      "notes": "JSW Steel Ltd owns and operates the mine."
+    }
+  }
 }

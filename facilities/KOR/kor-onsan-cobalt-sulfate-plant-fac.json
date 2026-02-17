@@ -1,11 +1,11 @@
 {
   "facility_id": "kor-onsan-cobalt-sulfate-plant-fac",
-  "name": "**Onsan Cobalt Sulfate Plant**",
+  "name": "Onsan Cobalt Sulfate Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.4353,
+    "lon": 129.3458,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,12 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "COSMO Chemical Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.526861",
-      "evidence": "Extracted from operator column: COSMO Chemical Co. Ltd."
-    }
+    "COSMO Chemical Co. Ltd.",
+    "Korea Precursor Co., Ltd (LG Chemical + Korea Zinc JV)",
+    "Korea Zinc Co., Ltd",
+    "LG Chemical + Huayou Cobalt JV",
+    "LS MnM",
+    "LS-Nikko Copper Inc."
   ],
   "products": [],
   "sources": [
@@ -32,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.759358Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A key producer of cobalt sulfate for the domestic battery industry. 37 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:04:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A key producer of cobalt sulfate for the domestic battery industry. 37 | Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/LS-Nikko%20-%20Onsan.htm. Coordinates extracted from the facility's details"
   },
   "canonical_name": "Onsan Cobalt Sulfate Plant",
   "canonical_slug": "onsan-cobalt-sulfate-plant",
@@ -53,11 +51,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Onsan Cobalt Sulfate ** Plant",
+      "name": "Onsan Cobalt Sulfate  Plant",
       "from": "2025-10-29T12:22:53.526864",
       "to": "2025-11-04T19:19:18.759356Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ulsan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:04:14.000000Z",
+      "operators": [
+        "LS-Nikko Copper Inc."
+      ],
+      "owners": [
+        "LS-Nikko Copper Inc."
+      ],
+      "notes": "LS-Nikko Copper Inc. is the owner and operator of the Onsan Cobalt Sulfate Plant."
+    }
+  }
 }

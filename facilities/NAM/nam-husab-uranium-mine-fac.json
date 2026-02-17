@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.61222,
+    "lon": 15.01417,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Swakop Uranium",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.614563",
-      "evidence": "Extracted from operator column: Swakop Uranium (CGNPC 90%, Epangelo Mining 10%)"
-    }
+    "China General Nuclear Power Corporation (CGN)",
+    "China General Nuclear Power Group",
+    "Epangelo Mining Company",
+    "Swakop Uranium",
+    "Swakop Uranium (Pty) Ltd",
+    "Taurus Minerals"
   ],
   "products": [],
   "sources": [
@@ -41,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.555672Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:35:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Husab_Mine. The Husab Mine is located in the Namib Desert, approximately 5 kilometers south of Swakopmund"
   },
   "canonical_name": "Husab Uranium Mine",
   "canonical_slug": "husab-uranium-mine",
@@ -60,5 +58,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:35:07.000000Z",
+      "operators": [
+        "Swakop Uranium (Pty) Ltd"
+      ],
+      "owners": [
+        "China General Nuclear Power Group",
+        "Epangelo Mining Company"
+      ],
+      "notes": "Swakop Uranium is 90% owned by China General Nuclear and 10% by Namibia’s Epangelo Mining."
+    }
+  }
 }

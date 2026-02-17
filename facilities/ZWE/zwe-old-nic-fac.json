@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -20.144,
-    "lon": 28.641,
+    "lat": -20.1822,
+    "lon": 28.636,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central African Gold Plc",
+    "Olympus Gold Mines Ltd.",
+    "Retinue Stars Investments"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.957883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:42:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10134896. The Old Nic Gold Mine is located near Bulawayo and operates underground"
   },
   "canonical_name": "Old Nic Mine",
   "canonical_slug": "old-nic-mine",
@@ -49,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bulawayo Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:42:10.000000Z",
+      "operators": [
+        "Olympus Gold Mines Ltd."
+      ],
+      "owners": [
+        "Central African Gold Plc",
+        "Retinue Stars Investments"
+      ],
+      "notes": "Olympus Gold Mines Ltd. operates the mine, while Central African Gold Plc and Retinue Stars Investments hold ownership interests."
+    }
+  }
 }

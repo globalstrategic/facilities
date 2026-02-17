@@ -1,12 +1,12 @@
 {
   "facility_id": "bdi-rwamirambol-buhorana-ii-mine-fac",
-  "name": "**Rwamirambol / Buhorana II Mine**",
+  "name": "Rwamirambol / Buhorana II Mine",
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.86,
+    "lon": 30.31,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -26,14 +26,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "DUKEREBUKE MW'ITERAMBERE",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.230906",
-      "evidence": "Extracted from operator column: DUKEREBUKE MW’ITERAMBERE"
-    }
+    "BDI Mining Corp.",
+    "DUKEREBUKE MW'ITERAMBERE"
   ],
   "products": [],
   "sources": [
@@ -44,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.897879Z",
-    "checked_by": "import_pipeline",
-    "notes": "An ASM site focused on the production of wolframite. 21 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.72,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "An ASM site focused on the production of wolframite. 21 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Artisanal wolframite (tungsten) mine in Buhorana area, Muyinga province"
   },
   "canonical_name": "Rwamirambol / Buhorana II Mine",
   "canonical_slug": "rwamirambol-buhorana-ii-mine",
@@ -65,11 +59,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Rwamirambol / Buhorana II ** Mine",
+      "name": "Rwamirambol / Buhorana II  Mine",
       "from": "2025-10-27T10:36:55.230914",
       "to": "2025-11-04T19:19:00.897877Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Muyinga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T11:09:32.000000Z",
+      "operators": [
+        "BDI Mining Corp."
+      ],
+      "owners": [
+        "BDI Mining Corp."
+      ],
+      "notes": "BDI Mining Corp. is focused on mining operations in the region."
+    }
+  }
 }

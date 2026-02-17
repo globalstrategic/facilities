@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 51.417,
-    "lon": 57.567,
+    "lat": 51.4146,
+    "lon": 57.568,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mednogorsk Copper Smelter",
+    "Russian Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.596917Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:23:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10304197. The Mednogorsk Copper Smelter is a crucial processing facility for copper ores, operational since 1939"
   },
   "canonical_name": "Mednogorsk Smelter",
   "canonical_slug": "mednogorsk-smelter",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chelyabinsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:23:24.000000Z",
+      "operators": [
+        "Mednogorsk Copper Smelter"
+      ],
+      "owners": [
+        "Russian Government"
+      ],
+      "notes": "The facility is owned by the Russian Government."
+    }
+  }
 }

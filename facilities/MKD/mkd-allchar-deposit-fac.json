@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.15694,
+    "lon": 21.94639,
     "precision": "unknown"
   },
   "types": [
@@ -34,7 +34,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allatini (bank institution)"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.910304Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:53:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Allchar_deposit. The Allchar deposit is a low-temperature hydrothermal gold–arsenic–antimony–thallium deposit. Web search geocoded. Source: https://en.wikipedia.org/wiki/Allchar_deposit. The Allchar deposit is a low-temperature hydrothermal gold–arsenic–antimony–thallium deposit located in Kavadarci Municipality"
   },
   "canonical_name": "Allchar Mine",
   "canonical_slug": "allchar-mine",
@@ -63,5 +65,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kavadarci Municipality",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:53:47.000000Z",
+      "operators": [],
+      "owners": [
+        "Allatini (bank institution)"
+      ],
+      "notes": "The deposit was previously mined for thallium, but current status indicates it is no longer operational."
+    }
+  }
 }

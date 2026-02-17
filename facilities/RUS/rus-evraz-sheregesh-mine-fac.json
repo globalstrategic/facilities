@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 52.917,
-    "lon": 87.995,
+    "lat": 52.913741,
+    "lon": 88.010291,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EVRAZ PLC",
+    "EVRAZ ZSMK JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.651908Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:07:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/EVRAZ_Sheregesh_Mine. The EVRAZ Sheregesh Mine is an iron ore mine located in the Tashtagol district"
   },
   "canonical_name": "Evraz Sheregesh Mine",
   "canonical_slug": "evraz-sheregesh-mine",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:07:00.000000Z",
+      "operators": [
+        "EVRAZ ZSMK JSC"
+      ],
+      "owners": [
+        "EVRAZ PLC"
+      ],
+      "notes": "EVRAZ PLC owns 100% of the mine through its subsidiary EVRAZ ZSMK JSC."
+    }
+  }
 }

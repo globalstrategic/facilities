@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.763,
-    "lon": -86.903,
+    "lat": 33.758333,
+    "lon": -86.904167,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FM Coal LLC",
+    "Iron Eagle Land Rehabilitation LLC",
+    "Iron Eagle Land Rehabilitation, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.700247Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:44:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sloan_Mountain_No._3. Sloan Mountain No. 3 is a mothballed coal mine"
   },
   "canonical_name": "Sloan Mountain No 3 Mine",
   "canonical_slug": "sloan-mountain-no-3-mine",
@@ -60,5 +64,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:44:27.000000Z",
+      "operators": [
+        "Iron Eagle Land Rehabilitation, LLC"
+      ],
+      "owners": [
+        "Iron Eagle Land Rehabilitation LLC",
+        "FM Coal LLC"
+      ],
+      "notes": "Iron Eagle Land Rehabilitation is the operator and owns 100% of the mine."
+    }
+  }
 }

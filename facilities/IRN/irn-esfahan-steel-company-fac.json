@@ -6,9 +6,9 @@
   ],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 32.42472,
+    "lon": 51.3425,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -16,14 +16,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Esfahan Steel Company",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.752339",
-      "evidence": "Extracted from operator column: Esfahan Steel Company"
-    }
+    "Esfahan Steel Company",
+    "Iranian Mines & Mining Industries Development & Renovation Organization"
   ],
   "products": [],
   "sources": [
@@ -34,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.452051Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:02:33Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:02:33Z] Geocoded via web search. Coords: (32.42472, 51.3425). Confidence: 0.90. Notes: Coordinates extracted directly from the search results for Esfahan Steel Company."
   },
   "canonical_name": "Esfahan Steel Company Mine",
   "canonical_slug": "esfahan-steel-company-mine",
@@ -53,5 +47,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Isfahan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:26:00.000000Z",
+      "operators": [
+        "Esfahan Steel Company"
+      ],
+      "owners": [
+        "Iranian Mines & Mining Industries Development & Renovation Organization"
+      ],
+      "notes": "Esfahan Steel Company is a state-owned entity and is the largest steel producer in Iran."
+    }
+  }
 }

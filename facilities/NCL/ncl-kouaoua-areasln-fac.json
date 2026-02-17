@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": -21.28,
-    "lon": 165.332,
+    "lat": -20.5,
+    "lon": 164.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eramet S.A.",
+    "Nisshin Steel Co.",
+    "Société Le Nickel (SLN)",
+    "Société Territoriale Calédonienne de Participation Industrielle (STCPI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:56.369442Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T06:58:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn161. Kouaoua is one of the mining centers operated by Société Le Nickel (SLN) in New Caledonia"
   },
   "canonical_name": "Kouaoua Areasln Mine",
   "canonical_slug": "kouaoua-areasln-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:58:27.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet S.A.",
+        "Société Territoriale Calédonienne de Participation Industrielle (STCPI)",
+        "Nisshin Steel Co."
+      ],
+      "notes": "SLN is a subsidiary of Eramet and operates multiple mines including Kouaoua."
+    }
+  }
 }

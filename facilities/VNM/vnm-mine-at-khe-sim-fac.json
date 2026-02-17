@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": 20.996,
-    "lon": 107.204,
+    "lat": 21.07,
+    "lon": 106.62,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mao Khe Coal Company",
+    "Vietnam National Coal (Vinacomin)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.274023Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:31:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_at_Mao_Khe. Coordinates are approximate for the Mao Khe mine, which is operated by Mao Khe Coal Company"
   },
   "canonical_name": "At Khe Sim Mine",
   "canonical_slug": "at-khe-sim-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Ninh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:31:44.000000Z",
+      "operators": [
+        "Mao Khe Coal Company"
+      ],
+      "owners": [
+        "Vietnam National Coal (Vinacomin)"
+      ],
+      "notes": "Mao Khe Coal Company is a subsidiary of Vietnam National Coal."
+    }
+  }
 }

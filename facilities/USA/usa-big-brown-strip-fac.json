@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.829,
-    "lon": -96.058,
+    "lat": 39.83985887248546,
+    "lon": -82.575385092567,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Luminant",
+    "Texas Utilities Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.980967Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:47:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Fairfield (https://www.gem.wiki/Big_Brown_Mine). Big Brown Mine is a surface mine supplying the Big Brown Steam Electric Station"
   },
   "canonical_name": "Big Brown Strip Mine",
   "canonical_slug": "big-brown-strip-mine",
@@ -50,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "town": "Fairfield",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:47:06.000000Z",
+      "operators": [
+        "Luminant",
+        "Texas Utilities Mining Company"
+      ],
+      "owners": [
+        "Luminant"
+      ],
+      "notes": "Luminant operates and owns the facility."
+    }
+  }
 }

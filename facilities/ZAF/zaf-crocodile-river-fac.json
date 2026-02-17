@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.705,
-    "lon": 27.8,
+    "lat": -25.5,
+    "lon": 27.0,
     "precision": "site"
   },
   "types": [
@@ -54,7 +54,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barplats Mines (Pty) Limited",
+    "Eastern Platinum Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -69,11 +72,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.748773Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-crocodile-river-mine-barplats-refinery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:39:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-crocodile-river-mine-barplats-refinery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.eastplats.com/what-we-do/crocodile-river-mine/. Crocodile River Mine is located approximately 7 km south of Brits"
   },
   "canonical_name": "Crocodile River Refinery",
   "canonical_slug": "crocodile-river-refinery",
@@ -88,5 +91,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:39:20.000000Z",
+      "operators": [
+        "Eastern Platinum Limited",
+        "Barplats Mines (Pty) Limited"
+      ],
+      "owners": [
+        "Eastern Platinum Limited"
+      ],
+      "notes": "Eastplats operates the mine and owns it through its subsidiary Barplats."
+    }
+  }
 }

@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-mina-colombia-mocupia-sosa-mendez-revemin-plant-fac",
-  "name": "**Mina Colombia; Mocupia; Sosa Mendez; Revemin Plant**",
+  "name": "Mina Colombia; Mocupia; Sosa Mendez; Revemin Plant",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 7.317,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,13 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "C.V.G. Compañía General de Minería C.A.",
+    "CVG Minerven",
+    "Crystallex International Corp.",
+    "Crystallex de Venezuela C.A.",
+    "Jinyan de Venezuela C.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,7 +40,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.656983Z",
     "checked_by": "import_pipeline",
-    "notes": "A known mine within the El Callao district. Coordinates from initial list and corroborated by Mindat.org.50 | Canonical name+slug generated"
+    "notes": "A known mine within the El Callao district. Coordinates from initial list and corroborated by Mindat.org.50 | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "Mina Colombia Mocupia Sosa Mendez Revemin Mine",
   "canonical_slug": "mina-colombia-mocupia-sosa-mendez-revemin-mine",
@@ -51,11 +57,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mina Colombia; Mocupia; Sosa Mendez; Revemin ** Mine",
+      "name": "Mina Colombia; Mocupia; Sosa Mendez; Revemin  Mine",
       "from": "2025-10-21T11:38:45.267450",
       "to": "2025-11-04T19:18:49.656977Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolivar State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:29:09.000000Z",
+      "operators": [
+        "CVG Minerven",
+        "Crystallex International Corp.",
+        "Jinyan de Venezuela C.A."
+      ],
+      "owners": [
+        "Crystallex de Venezuela C.A.",
+        "C.V.G. Compañía General de Minería C.A."
+      ],
+      "notes": "Crystallex holds a 51% stake in the Revemin plant, while CVG Minerven operates the Colombia Mine."
+    }
+  }
 }

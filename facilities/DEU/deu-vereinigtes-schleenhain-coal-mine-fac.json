@@ -7,8 +7,8 @@
   ],
   "country_iso3": "DEU",
   "location": {
-    "lat": 51.129,
-    "lon": 12.389,
+    "lat": 51.117,
+    "lon": 12.383,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energetický a průmyslový holding AS",
+    "Mitteldeutsche Braunkohlengesellschaft mbH (MIBRAG)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.634537Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:09:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/United_Schleenhain_coal_mine. The Vereinigtes Schleenhain Coal Mine is an open-cast mine located in Saxony, Germany, with significant lignite reserves"
   },
   "canonical_name": "Vereinigtes Schleenhain Coal Mine",
   "canonical_slug": "vereinigtes-schleenhain-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saxony",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:09:37.000000Z",
+      "operators": [
+        "Mitteldeutsche Braunkohlengesellschaft mbH (MIBRAG)"
+      ],
+      "owners": [
+        "Energetický a průmyslový holding AS"
+      ],
+      "notes": "MIBRAG is 100% owned by the Czech investor EPH."
+    }
+  }
 }

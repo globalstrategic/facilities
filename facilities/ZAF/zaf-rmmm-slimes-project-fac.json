@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.228,
-    "lon": 27.969,
+    "lat": -26.1633,
+    "lon": 28.0347,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barlow Rand Ltd.",
+    "Johnson Matthey (Pty.) Ltd.",
+    "Lonrho Refinery Ltd.",
+    "Rand Mines Properties Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.698402Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-rmmm-slimes-project-crown-gold-recoveries-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:52:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-rmmm-slimes-project-crown-gold-recoveries-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10255940. Coordinates are for the Wadeville Processing Plant, which is in close proximity to the Rmmm Slimes Project"
   },
   "canonical_name": "Rmmm Slimes Mine",
   "canonical_slug": "rmmm-slimes-mine",
@@ -55,5 +60,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:52:20.000000Z",
+      "operators": [
+        "Johnson Matthey (Pty.) Ltd."
+      ],
+      "owners": [
+        "Lonrho Refinery Ltd.",
+        "Barlow Rand Ltd.",
+        "Rand Mines Properties Ltd."
+      ],
+      "notes": "Various companies are mentioned in relation to nearby facilities and ownership."
+    }
+  }
 }

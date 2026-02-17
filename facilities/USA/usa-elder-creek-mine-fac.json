@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.303,
-    "lon": -116.848,
+    "lat": 40.43607125586811,
+    "lon": -116.66548086011265,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "1472886 B.C. Ltd.",
+    "Alta Gold",
+    "Element79 Gold Corp.",
+    "KEX",
+    "McEwen Copper Inc.",
+    "Minterra Resource Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.955384Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:20:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Battle Mountain (https://westernmininghistory.com/mine-detail/10310325/). The Elder Creek Mine is located in the Bullion Mining District, Lander County, Nevada. It was operated by Alta Gold and has undergone several ownership changes"
   },
   "canonical_name": "Elder Creek Mine",
   "canonical_slug": "elder-creek-mine",
@@ -47,5 +54,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Battle Mountain",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:20:52.000000Z",
+      "operators": [
+        "Alta Gold",
+        "Minterra Resource Corp.",
+        "KEX"
+      ],
+      "owners": [
+        "McEwen Copper Inc.",
+        "Element79 Gold Corp.",
+        "1472886 B.C. Ltd."
+      ],
+      "notes": "The mine was initially operated by Alta Gold until 1991, after which it changed hands multiple times. Currently, it is under the ownership of Element79 Gold Corp. and is in the process of being sold to 1472886 B.C. Ltd."
+    }
+  }
 }

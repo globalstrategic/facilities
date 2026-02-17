@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.131,
-    "lon": -117.266,
+    "lat": 34.1341,
+    "lon": -117.9442,
     "precision": "site"
   },
   "types": [
@@ -37,7 +37,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Excalibur Mineral Corp.",
+    "Southwest Scientific Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -47,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.847681Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:31:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/locentry-65309.html. The facility is identified as the Fluorite Felix Mine located in Azusa, Los Angeles County, California"
   },
   "canonical_name": "Felix Canyon Mine",
   "canonical_slug": "felix-canyon-mine",
@@ -66,5 +69,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:31:59.000000Z",
+      "operators": [
+        "Excalibur Mineral Corp.",
+        "Southwest Scientific Company"
+      ],
+      "owners": [],
+      "notes": "Various companies mentioned in historical context, but current operational status and ownership are unclear."
+    }
+  }
 }

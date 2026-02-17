@@ -8,8 +8,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 47.993,
-    "lon": 37.638,
+    "lat": 47.9922680308287,
+    "lon": 37.6405805041605,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Donetsk Coal Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.721404Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:00:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Skochinskogo_Coal_Mine. The Skochinskogo Coal Mine is located in Donetsk, Ukraine, and is mothballed"
   },
   "canonical_name": "Skochinskogo Coal Mine",
   "canonical_slug": "skochinskogo-coal-mine",
@@ -51,5 +53,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Donetsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:00:43.000000Z",
+      "operators": [],
+      "owners": [
+        "Donetsk Coal Energy Company"
+      ],
+      "notes": "The mine is owned by Donetsk Coal Energy Company, which is based in Russia."
+    }
+  }
 }

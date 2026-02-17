@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.74296,
-    "lon": 30.61667,
+    "lat": -25.8,
+    "lon": 30.5,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Limited",
+    "Norilsk Nickel"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:38:41.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:18:36.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-225030.html. Coordinates extracted from a reliable source indicating the exact location of the Nkomati Nickel Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-225030.html. Coordinates extracted from a reliable source indicating the exact location of the Nkomati Nickel Mine. Web search geocoded. Source: https://www.forbes.com/sites/mfonobongnsehe/2019/07/11/south-african-billionaire-patrice-motsepe-to-shut-down-nkomati-nickel-mine/. The Nkomati Nickel Mine is located between Badplaas and Machadodorp in Mpumalanga, South Africa"
   },
   "canonical_name": "Nkomati Nickel Mine",
   "canonical_slug": "nkomati-nickel-mine",
@@ -48,5 +51,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:18:36.000000Z",
+      "operators": [
+        "African Rainbow Minerals Limited",
+        "Norilsk Nickel"
+      ],
+      "owners": [
+        "African Rainbow Minerals Limited",
+        "Norilsk Nickel"
+      ],
+      "notes": "ARM has secured full ownership of the mine, which is currently under care and maintenance."
+    }
+  }
 }

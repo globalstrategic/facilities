@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 6.085,
-    "lon": -75.766,
+    "lat": 6.07787436836241,
+    "lon": -75.79419082497999,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Denarius Metals Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:22.741990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:58:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Medellin (https://finance.yahoo.com/news/denarius-metals-announces-start-mining-212800676.html). The Zancudo Project is a high-grade gold-silver deposit located in the municipality of Titiribí, approximately 30 km southwest of Medellin"
   },
   "canonical_name": "El Zancudo Mines Mine",
   "canonical_slug": "el-zancudo-mines-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Medellin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:58:45.000000Z",
+      "operators": [
+        "Denarius Metals Corp."
+      ],
+      "owners": [
+        "Denarius Metals Corp."
+      ],
+      "notes": "Denarius Metals owns 100% of the Zancudo Project."
+    }
+  }
 }

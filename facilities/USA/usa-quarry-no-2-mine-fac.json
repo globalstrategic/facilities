@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.339,
-    "lon": -81.544,
+    "lat": 37.34233482,
+    "lon": -81.54032286,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GMAX Quarry INC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.946692Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:12:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Quarry_No_2_Mine. Quarry No 2 Mine is an operating coal mine"
   },
   "canonical_name": "Quarry No 2 Mine",
   "canonical_slug": "quarry-no-2-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:12:22.000000Z",
+      "operators": [
+        "GMAX Quarry INC"
+      ],
+      "owners": [
+        "GMAX Quarry INC"
+      ],
+      "notes": "GMAX Quarry INC is both the owner and operator of the Quarry No 2 Mine."
+    }
+  }
 }

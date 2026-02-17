@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NOR",
   "location": {
-    "lat": 69.656,
-    "lon": 30.015,
+    "lat": 69.655768,
+    "lon": 30.014566,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grangex AB (publ)",
+    "Sydvaranger Mining AS"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:57.722692Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:20:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sydvaranger_Mining_Bj%C3%B8rnevatn_Mine. Sydvaranger Mining Bjørnevatn Mine is located in Finnmark, Norway"
   },
   "canonical_name": "Sydvaranger Mining Bjã Rnevatn Mine",
   "canonical_slug": "sydvaranger-mining-bja-rnevatn-mine",
@@ -56,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Finnmark",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:20:30.000000Z",
+      "operators": [
+        "Grangex AB (publ)"
+      ],
+      "owners": [
+        "Sydvaranger Mining AS",
+        "Grangex AB (publ)"
+      ],
+      "notes": "Grangex completed the acquisition of Sydvaranger Mining AS in November 2023 and plans to restart production."
+    }
+  }
 }

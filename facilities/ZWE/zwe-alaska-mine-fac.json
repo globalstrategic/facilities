@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-alaska-mine-fac",
-  "name": "**Alaska Mine**",
+  "name": "Alaska Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.237,
+    "lon": 30.0113,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zimbabwe Mining Development Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.950709Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:14:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10135136. The Alaska Mine is located near Chinhoyi and has a long history of mining operations"
   },
   "canonical_name": "Alaska Mine",
   "canonical_slug": "alaska-mine",
@@ -44,11 +46,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Alaska ** Mine",
+      "name": "Alaska  Mine",
       "from": "2025-10-21T13:04:39.383074",
       "to": "2025-11-04T19:18:51.950707Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:14:03.000000Z",
+      "operators": [
+        "Zimbabwe Mining Development Corporation"
+      ],
+      "owners": [
+        "Zimbabwe Mining Development Corporation"
+      ],
+      "notes": "The mine was previously operated by the Zimbabwe Mining Development Corporation and has been closed since the turn of the millennium."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.398,
-    "lon": -112.221,
+    "lat": 37.3403,
+    "lon": -118.5128,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huntley Industrial Minerals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.776034Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:49:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-5366908.html. Coordinates extracted from the Little Egypt Prospect in Inyo County, California"
   },
   "canonical_name": "Little Egypt Mine",
   "canonical_slug": "little-egypt-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:49:43.000000Z",
+      "operators": [
+        "Huntley Industrial Minerals Inc."
+      ],
+      "owners": [],
+      "notes": "Only the operator is mentioned; no current ownership details provided."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "lbr-western-cluster-mines-fac",
-  "name": "**Western Cluster Mines**",
+  "name": "Western Cluster Mines",
   "aliases": [],
   "country_iso3": "LBR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.8975,
+    "lon": -10.8223,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -26,14 +26,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Western Cluster Ltd.",
-      "role": "operator",
-      "source": "Research Import LBR 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T13:09:06.606428",
-      "evidence": "Extracted from operator column: Western Cluster Ltd. (Associated with China Baowu Steel Group)"
-    }
+    "Elenilto Minerals & Mining",
+    "Sesa Goa Limited",
+    "Vedanta Group",
+    "Western Cluster Limited",
+    "Western Cluster Ltd."
   ],
   "products": [],
   "sources": [
@@ -44,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:17.724059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Western Cluster (Bomi Hills) iron mine, Bomi County"
   },
   "canonical_name": "Western Cluster Mines Mine",
   "canonical_slug": "western-cluster-mines-mine",
@@ -65,11 +62,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Western Cluster Mines** Mine",
+      "name": "Western Cluster Mines Mine",
       "from": "2025-10-29T13:09:06.606434",
       "to": "2025-11-04T19:19:17.724055Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bomi County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:00:23.000000Z",
+      "operators": [
+        "Western Cluster Limited",
+        "Elenilto Minerals & Mining"
+      ],
+      "owners": [
+        "Vedanta Group",
+        "Elenilto Minerals & Mining"
+      ],
+      "notes": "Western Cluster Limited is a subsidiary of Elenilto Minerals & Mining, which is part of the Vedanta Group."
+    }
+  }
 }

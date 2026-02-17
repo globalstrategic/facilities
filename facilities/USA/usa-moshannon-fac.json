@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.255,
-    "lon": -78.584,
+    "lat": 41.145564529907816,
+    "lon": -78.1138962,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "River Hill Coal Co., Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.798990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:09:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Karthaus (https://arlweb.msha.gov/FATALS/1996/FTL96C16.HTM). The mine is located 1.7 miles off State Route 879 at Karthaus, Clearfield County, Pennsylvania"
   },
   "canonical_name": "Moshannon Mine",
   "canonical_slug": "moshannon-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "town": "Karthaus",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:09:18.000000Z",
+      "operators": [
+        "River Hill Coal Co., Inc."
+      ],
+      "owners": [],
+      "notes": "The mine is operated by River Hill Coal Co., Inc."
+    }
+  }
 }

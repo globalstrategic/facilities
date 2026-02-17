@@ -1,11 +1,11 @@
 {
   "facility_id": "ncl-sln-n-poui-mine-fac",
-  "name": "**SLN \\- Népoui Mine**",
+  "name": "SLN \\- Népoui Mine",
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.74167,
+    "lon": 164.47944,
     "precision": "unknown"
   },
   "types": [
@@ -13,11 +13,11 @@
   ],
   "commodities": [
     {
-      "metal": "**nickel**",
+      "metal": "nickel",
       "primary": true
     },
     {
-      "metal": "**cobalt**",
+      "metal": "cobalt",
       "primary": false
     },
     {
@@ -27,14 +27,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "**Société Le Nickel** 19",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.488201",
-      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** 19"
-    }
+    "Société Le Nickel 19",
+    "Eramet S.A.",
+    "Nisshin Steel Co., Ltd.",
+    "Société Le Nickel (SLN)",
+    "Société Territoriale Calédonienne de Participation Industrielle (STCPI)"
   ],
   "products": [],
   "sources": [
@@ -45,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.372773Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:01:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn161. The Népoui Mine is part of the Société Le Nickel (SLN) operations, which is a major nickel producer in New Caledonia"
   },
   "canonical_name": "SLN Népoui Mine",
   "canonical_slug": "sln-nepoui-mine",
@@ -66,11 +63,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**SLN \\- Népoui ** Mine",
+      "name": "SLN \\- Népoui  Mine",
       "from": "2025-10-29T22:07:19.488235",
       "to": "2025-11-04T19:18:56.372770Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Province Sud",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:01:47.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet S.A.",
+        "Société Territoriale Calédonienne de Participation Industrielle (STCPI)",
+        "Nisshin Steel Co., Ltd."
+      ],
+      "notes": "SLN is a subsidiary of Eramet, which holds a 56% interest."
+    }
+  }
 }

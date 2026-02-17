@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.451,
-    "lon": -81.584,
+    "lat": 37.450455,
+    "lon": -81.579053,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Raw Coal Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.759943Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:35:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-4609507. Coordinates are directly provided in the search results"
   },
   "canonical_name": "Edm No 1 Mine",
   "canonical_slug": "edm-no-1-mine",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:35:04.000000Z",
+      "operators": [
+        "Raw Coal Mining Company"
+      ],
+      "owners": [
+        "Raw Coal Mining Company"
+      ],
+      "notes": "Raw Coal Mining Company is both the operator and owner."
+    }
+  }
 }

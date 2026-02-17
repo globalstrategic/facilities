@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.680325083281453,
+    "lon": 14.052248686622336,
     "precision": "unknown"
   },
   "types": [
@@ -23,22 +23,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Namibia Critical Metals Inc.",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.710634",
-      "evidence": "Extracted from operator column: Namibia Critical Metals Inc. (NCMI) / JOGMEC JV"
-    },
-    {
-      "name": "JOGMEC JV",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.710684",
-      "evidence": "Extracted from operator column: Namibia Critical Metals Inc. (NCMI) / JOGMEC JV"
-    }
+    "JOGMEC JV",
+    "Japan Organization for Metals and Energy Security (JOGMEC)",
+    "Namibia Critical Metals Inc."
   ],
   "products": [],
   "sources": [
@@ -49,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.550551Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:45:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Windhoek (https://resourceworld.com/namibia-critical-metals-advancing-lofdal-rare-earths-project/). The Lofdal Heavy Rare Earth Project is located 450 km northwest of Windhoek in the Kunene region of northwestern Namibia"
   },
   "canonical_name": "Lofdal Hree Development",
   "canonical_slug": "lofdal-hree-development",
@@ -76,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kunene",
+  "town": "Windhoek",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:45:07.000000Z",
+      "operators": [
+        "Namibia Critical Metals Inc."
+      ],
+      "owners": [
+        "Namibia Critical Metals Inc.",
+        "Japan Organization for Metals and Energy Security (JOGMEC)"
+      ],
+      "notes": "Namibia Critical Metals Inc. holds a 95% interest in the Lofdal Project, with 5% reserved for historically disadvantaged Namibians. The project operates under a Joint Venture with JOGMEC."
+    }
+  }
 }

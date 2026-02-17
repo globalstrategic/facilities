@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 39.8,
+    "lon": -8.85,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Böllinghaus Steel GmbH",
+    "Böllinghaus Steel, LDA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.666136Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Hot-rolling and cold-drawing steel plant, Vieira de Leiria"
   },
   "canonical_name": "Böllinghaus Steel Plant",
   "canonical_slug": "bollinghaus-steel-plant",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Leiria",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:23:25.000000Z",
+      "operators": [
+        "Böllinghaus Steel, LDA"
+      ],
+      "owners": [
+        "Böllinghaus Steel, LDA"
+      ],
+      "notes": "Böllinghaus Steel is a family-owned company with a long history in steel production."
+    }
+  }
 }

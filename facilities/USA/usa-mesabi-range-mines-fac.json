@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.5428,
+    "lon": -92.5169,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Cleveland-Cliffs, U.S. Steel",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.468178",
-      "evidence": "Extracted from operator column: Cleveland-Cliffs, U.S. Steel"
-    }
+    "Cleveland-Cliffs, U.S. Steel",
+    "United States Steel Corporation"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.980021Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:46:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mesabi_Range. Coordinates for a crushing, concentrating and pelletizing facility near Virginia, part of the Mesabi Range"
   },
   "canonical_name": "Mesabi Range Mines Mine",
   "canonical_slug": "mesabi-range-mines-mine",
@@ -58,5 +52,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minnesota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:46:05.000000Z",
+      "operators": [
+        "United States Steel Corporation"
+      ],
+      "owners": [
+        "United States Steel Corporation"
+      ],
+      "notes": "United States Steel owns and operates the facility."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -43.461,
-    "lon": 171.928,
+    "lat": -43.4551,
+    "lon": 171.931565,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bathurst Resources Limited",
+    "Canterbury Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.225307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:28:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Malvern_Hills_Coal_Mine. The Malvern Hills Coal Mine is located near Coalgate in the Canterbury province of New Zealand's South Island"
   },
   "canonical_name": "Malvern Hills Coal Mine",
   "canonical_slug": "malvern-hills-coal-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Canterbury",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:28:38.000000Z",
+      "operators": [
+        "Bathurst Resources Limited"
+      ],
+      "owners": [
+        "Canterbury Coal",
+        "Bathurst Resources Limited"
+      ],
+      "notes": "Bathurst Resources Limited acquired the mine from Canterbury Coal in August 2013."
+    }
+  }
 }

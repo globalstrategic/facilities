@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.543,
-    "lon": 117.148,
+    "lat": -0.543458,
+    "lon": 117.148208,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bara Energi Kaltim",
+    "Geo Energy Group",
+    "PT Bumi Enggang Khatulistiwa"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.233503Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:37:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BEK_Coal_Mine. BEK Coal Mine is an operating coal mine in East Kalimantan, Indonesia"
   },
   "canonical_name": "BEK Coal Mine",
   "canonical_slug": "bek-coal-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:09.000000Z",
+      "operators": [
+        "Geo Energy Group",
+        "PT Bumi Enggang Khatulistiwa"
+      ],
+      "owners": [
+        "Geo Energy Group",
+        "Bara Energi Kaltim"
+      ],
+      "notes": "Geo Energy Group operates the mine through its subsidiary PT Bumi Enggang Khatulistiwa."
+    }
+  }
 }

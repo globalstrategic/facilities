@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "BHR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 26.089368,
+    "lon": 50.60371,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.074109Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T12:23:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:23:28Z] Part of Alba aluminum complex in Askar, one of world's largest smelters"
   },
   "canonical_name": "Alba Coke Calciner Facility",
   "canonical_slug": "alba-coke-calciner-facility",
@@ -67,16 +67,16 @@
   "province": "Bahrain",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:41:32.000000Z",
+      "timestamp": "2025-12-02T11:07:21.000000Z",
       "operators": [
         "Aluminium Bahrain B.S.C. (Alba)"
       ],
       "owners": [
-        "Bahraini Government (77%)",
-        "Saudi Arabian Public Investment Fund (20%)",
-        "Breton Investments Group (3%)"
+        "Bahrain Mumtalakat Holding Company",
+        "Saudi Arabian Mining Company (Ma'aden)",
+        "General Public"
       ],
-      "notes": "Alba is a joint venture with significant stakes held by the Bahraini government and the Saudi Arabian Public Investment Fund."
+      "notes": "Alba is primarily owned by Bahrain Mumtalakat Holding Company (69.38%) and Ma'aden (20.62%)."
     }
   }
 }

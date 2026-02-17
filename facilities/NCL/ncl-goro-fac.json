@@ -6,8 +6,8 @@
   ],
   "country_iso3": "NCL",
   "location": {
-    "lat": -22.296,
-    "lon": 166.926,
+    "lat": -22.336,
+    "lon": 166.912,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Prony Resources New Calédonie",
+    "Prony Resources New Calédonie consortium",
+    "Vale",
+    "Vale Nouvelle-Calédonie (VNC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.373861Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:02:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Goro_mine. The Goro mine is a large nickel mine located in the South Province of New Caledonia, near Yaté"
   },
   "canonical_name": "Goro Mine",
   "canonical_slug": "goro-mine",
@@ -49,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:02:56.000000Z",
+      "operators": [
+        "Vale Nouvelle-Calédonie (VNC)",
+        "Prony Resources New Calédonie"
+      ],
+      "owners": [
+        "Prony Resources New Calédonie consortium",
+        "Vale"
+      ],
+      "notes": "The mine was sold to Prony Resources in April 2021 after being owned by Vale."
+    }
+  }
 }

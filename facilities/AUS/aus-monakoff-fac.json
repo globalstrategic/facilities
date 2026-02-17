@@ -1,0 +1,80 @@
+{
+  "facility_id": "aus-monakoff-fac",
+  "name": "Monakoff",
+  "aliases": [],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -20.625,
+    "lon": 140.689,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Eramet",
+    "Société Le Nickel (SLN)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:52.323063"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:56.367030Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Monakoff Mine",
+  "canonical_slug": "monakoff-mine",
+  "display_name": "Monakoff",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:56:36.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)",
+        "Eramet"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "Eramet is the owner of SLN, which is a significant player in the nickel mining sector in New Caledonia."
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
   "facility_id": "guy-bonasika-bauxite-project-fac",
-  "name": "**Bonasika Bauxite Project**",
+  "name": "Bonasika Bauxite Project",
   "aliases": [],
   "country_iso3": "GUY",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.5,
+    "lon": -58.8,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,14 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Guyana Industrial Minerals Inc.",
-      "role": "operator",
-      "source": "Research Import GUY 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:20:21.937489",
-      "evidence": "Extracted from operator column: Guyana Industrial Minerals Inc. (First Bauxite)"
-    }
+    "First Bauxite Corporation",
+    "Guyana Industrial Minerals Inc."
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.986123Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Bonasika bauxite project. Coords: (6.5, -58.8)"
   },
   "canonical_name": "Bonasika Bauxite Mine",
   "canonical_slug": "bonasika-bauxite-mine",
@@ -58,11 +52,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Bonasika Bauxite ** Mine",
+      "name": "Bonasika Bauxite  Mine",
       "from": "2025-10-29T09:20:21.937493",
       "to": "2025-11-04T19:18:57.986121Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Essequibo Islands-West Demerara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:43:11.000000Z",
+      "operators": [
+        "First Bauxite Corporation",
+        "Guyana Industrial Minerals Inc."
+      ],
+      "owners": [
+        "First Bauxite Corporation"
+      ],
+      "notes": "First Bauxite Corporation is the parent company, and Guyana Industrial Minerals Inc. is its subsidiary responsible for the project."
+    }
+  }
 }

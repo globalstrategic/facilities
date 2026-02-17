@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": -5.465,
-    "lon": 145.082,
+    "lat": -5.5,
+    "lon": 144.3,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Barrick Niugini Limited",
+    "New Porgera Limited",
+    "Zijin Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.313445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:55:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.globalminingreview.com/mining/28042025/barrick-partners-with-sandvik-for-porgera-surface-fleet-replacement/. The Porgera gold mine is located in the highlands of Papua New Guinea"
   },
   "canonical_name": "Porgera Mine",
   "canonical_slug": "porgera-mine-2",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Enga Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:55:05.000000Z",
+      "operators": [
+        "Barrick Niugini Limited"
+      ],
+      "owners": [
+        "New Porgera Limited",
+        "Barrick Gold Corporation",
+        "Zijin Mining Group"
+      ],
+      "notes": "New Porgera Limited is 51% owned by PNG stakeholders and 49% by Barrick Niugini Limited."
+    }
+  }
 }

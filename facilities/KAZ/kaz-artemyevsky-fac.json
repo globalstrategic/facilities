@@ -7,8 +7,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.6,
-    "lon": 81.783,
+    "lat": 50.51713096386294,
+    "lon": 81.730176253939,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KAZ Minerals",
+    "Nova Resources B.V.",
+    "Vostoktsvetmet LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.743863Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:44:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ust-Kamenogorsk (https://miningdataonline.com/property/4619/Artemyevsky-Mine.aspx). The Artemyevsky Mine is located in the East Region of Kazakhstan, specifically 90 km northwest of Ust-Kamenogorsk"
   },
   "canonical_name": "Artemyevsky Mine",
   "canonical_slug": "artemyevsky-mine",
@@ -62,5 +66,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karagandy",
+  "town": "Ust-Kamenogorsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:44:20.000000Z",
+      "operators": [
+        "Vostoktsvetmet LLC"
+      ],
+      "owners": [
+        "Nova Resources B.V.",
+        "KAZ Minerals"
+      ],
+      "notes": "KAZ Minerals has been wholly acquired by Nova Resources B.V. and operates the mine through its subsidiary Vostoktsvetmet LLC."
+    }
+  }
 }

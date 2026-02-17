@@ -1,0 +1,93 @@
+{
+  "facility_id": "mex-porco-fac",
+  "name": "Porco",
+  "aliases": [
+    "San Jose De Soras",
+    "Santo Santo Mine",
+    "Porco Mine",
+    "Porco",
+    "Illapa"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 21.787302855907285,
+    "lon": -101.31771006198467,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Zinc",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "Antimony",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "COMIBOL",
+    "Santacruz Silver Mining Ltd.",
+    "Sinchi Wayra"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:20.615063"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:07:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Potosí City (https://santacruzsilver.com/operations/producing/bolivia/porco-mine-bolivia/). The Porco mine is located in the Porco Municipality of the Antonio Quijarro Province, approximately 50 km southwest of Potosí City"
+  },
+  "canonical_name": "Porco Mine",
+  "canonical_slug": "porco-mine",
+  "display_name": "Porco",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Potosí Department",
+  "town": "Potosí City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:07:52.000000Z",
+      "operators": [
+        "Sinchi Wayra",
+        "Santacruz Silver Mining Ltd."
+      ],
+      "owners": [
+        "COMIBOL",
+        "Santacruz Silver Mining Ltd."
+      ],
+      "notes": "Santacruz Silver Mining Ltd. operates the mine under a joint operation agreement with COMIBOL, where Santacruz receives 45% of profits."
+    }
+  }
+}

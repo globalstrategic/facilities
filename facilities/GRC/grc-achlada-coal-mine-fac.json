@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GRC",
   "location": {
-    "lat": 40.86,
-    "lon": 21.6,
+    "lat": 40.8604,
+    "lon": 21.5996,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Achlada Lignite Mines",
+    "Mytilineios Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:58.509028Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:57:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Achlada_Coal_Mine. The Achlada Coal Mine is a surface mine that has recently increased its activity significantly"
   },
   "canonical_name": "Achlada Coal Mine",
   "canonical_slug": "achlada-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Macedonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:57:03.000000Z",
+      "operators": [
+        "Achlada Lignite Mines"
+      ],
+      "owners": [
+        "Achlada Lignite Mines",
+        "Mytilineios Group"
+      ],
+      "notes": "Achlada Lignite Mines is a privately-owned company, and the Mytilineios Group has entered as a strategic investor."
+    }
+  }
 }

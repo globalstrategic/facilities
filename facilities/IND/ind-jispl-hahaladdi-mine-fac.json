@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.225,
-    "lon": 80.894,
+    "lat": 20.225361,
+    "lon": 80.893287,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JSW Ispat Special Products Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.086115Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:46:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/JISPL_Hahaladdi_Mine. The JISPL Hahaladdi Mine is an iron ore mine located in Durgukondal, Chhattisgarh, India"
   },
   "canonical_name": "Jispl Hahaladdi Mine",
   "canonical_slug": "jispl-hahaladdi-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:46:37.000000Z",
+      "operators": [
+        "JSW Ispat Special Products Ltd"
+      ],
+      "owners": [
+        "JSW Ispat Special Products Ltd"
+      ],
+      "notes": "JSW Ispat Special Products Ltd owns 100% of the mine."
+    }
+  }
 }

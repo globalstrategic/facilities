@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 59.6291,
+    "lon": 9.591,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kongsberg Gruppen",
+    "Kongsberg Gruppen ASA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.719641Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:22:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kongsberg_Silver_Mines. Kongsberg Silver Mines were historically significant and operated from 1623 until 1958"
   },
   "canonical_name": "Kongsberg Silver Mines Mine",
   "canonical_slug": "kongsberg-silver-mines-mine",
@@ -47,5 +50,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Buskerud",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:22:53.000000Z",
+      "operators": [],
+      "owners": [
+        "Kongsberg Gruppen"
+      ],
+      "notes": "Kongsberg Gruppen is a major company associated with the region, but the mines themselves are no longer operational."
+    }
+  }
 }

@@ -1,0 +1,76 @@
+{
+  "facility_id": "usa-matthews-ridge-manganese-mine-fac",
+  "name": "Matthews Ridge Manganese Mine",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 41.61813860307257,
+    "lon": -89.84071530226845,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "Bosai Minerals Group",
+    "Guyana Manganese Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import GUY 2025-10-29",
+      "date": "2025-10-29T09:20:21.943200"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:04:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Georgetown (https://kaieteurnewsonline.com/2023/10/09/manganese-plant-sifting-manganese-and-gold-non-stop-glenn-lall/). The Matthews Ridge Manganese Mine is located in the North West District of Guyana, approximately 260 km northwest of Georgetown. The mine is currently operated by Guyana Manganese Inc. (GMI), a subsidiary of Bosai Minerals Group"
+  },
+  "canonical_name": "Matthews Ridge Manganese Mine",
+  "canonical_slug": "matthews-ridge-manganese-mine",
+  "display_name": "Matthews Ridge Manganese",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Matthews Ridge Manganese  Mine",
+      "from": "2025-10-29T09:20:21.943201",
+      "to": "2025-11-04T19:18:57.985354Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "North West District",
+  "town": "Georgetown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:04:24.000000Z",
+      "operators": [
+        "Guyana Manganese Inc."
+      ],
+      "owners": [
+        "Bosai Minerals Group"
+      ],
+      "notes": "GMI is a subsidiary of the Chinese state-owned Bosai Minerals Group, which acquired the rights to operate the mine in 2016."
+    }
+  }
+}

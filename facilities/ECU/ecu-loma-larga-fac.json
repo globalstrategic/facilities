@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ECU",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.1037887443051204,
+    "lon": -79.19246516959248,
     "precision": "unknown"
   },
   "types": [
@@ -15,7 +15,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "DPM Metals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -25,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.547671Z",
-    "checked_by": "import_pipeline",
-    "notes": "Planned 3,000–3,400 tpd ore | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:10:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Planned 3,000–3,400 tpd ore | Canonical name+slug generated. Web search geocoded. Source: Calculated from Cuenca (https://dpmmetals.com/assets/development/loma-larga-gold-project/). The Loma Larga project is located approximately 30 kilometers southwest of Cuenca, in the Azuay province of Ecuador"
   },
   "canonical_name": "Loma Larga Mine",
   "canonical_slug": "loma-larga-mine",
@@ -44,5 +46,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Azuay",
+  "town": "Cuenca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:10:41.000000Z",
+      "operators": [
+        "DPM Metals Inc."
+      ],
+      "owners": [
+        "DPM Metals Inc."
+      ],
+      "notes": "DPM Metals acquired the Loma Larga project in 2021 and is currently in the permitting stage."
+    }
+  }
 }

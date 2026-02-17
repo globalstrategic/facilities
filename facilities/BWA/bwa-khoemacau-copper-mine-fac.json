@@ -1,14 +1,14 @@
 {
   "facility_id": "bwa-khoemacau-copper-mine-fac",
-  "name": "**Khoemacau Copper Mine **",
+  "name": "Khoemacau Copper Mine ",
   "aliases": [
     "Zone 5\\"
   ],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -20.38,
+    "lon": 22.95,
+    "precision": "site"
   },
   "types": [
     "mine",
@@ -25,8 +25,12 @@
   "status": "operating",
   "company_mentions": [
     "CNIC Corp.",
+    "Cupric Canyon Capital",
     "Cupric Canyon Capital LP",
+    "Cuprous Capital",
     "Cuprous Capital Ltd",
+    "Khoemacau Copper Mining",
+    "Khoemacau Copper Mining (Pty) Ltd",
     "MMG Limited"
   ],
   "products": [],
@@ -38,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.635512Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.82,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Zone 5 underground copper mine near Toteng, ~77km SW of Maun, Kalahari Copper Belt"
   },
   "canonical_name": "Khoemacau Copper Mine",
   "canonical_slug": "khoemacau-copper-mine",
@@ -59,25 +63,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Khoemacau Copper ** Mine",
+      "name": "Khoemacau Copper  Mine",
       "from": "2025-10-27T11:57:05.558403",
       "to": "2025-11-04T19:19:06.635507Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Ngamiland",
+  "province": "Ngamiland District",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:45:49.000000Z",
+      "timestamp": "2025-12-02T10:58:16.000000Z",
       "operators": [
+        "Khoemacau Copper Mining (Pty) Ltd",
         "MMG Limited"
       ],
       "owners": [
-        "Cuprous Capital Ltd",
-        "Cupric Canyon Capital LP"
+        "Cuprous Capital",
+        "MMG Limited"
       ],
-      "notes": "MMG Limited is acquiring Khoemacau Copper Mining, which operates the mine."
+      "notes": "MMG Limited is in the process of acquiring Khoemacau Copper Mining, which is currently owned by Cuprous Capital."
     }
   }
 }

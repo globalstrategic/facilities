@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-las-cristinas-mine-fac",
-  "name": "**Las Cristinas Mine**",
+  "name": "Las Cristinas Mine",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 6.201,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Corporacion Venezolana de Guayana (CVG)",
+    "Crystallex Corp.",
+    "Crystallex International Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -40,7 +44,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.653693Z",
     "checked_by": "import_pipeline",
-    "notes": "World-class gold-copper deposit. Part of the Siembra Minera JV, but development is stalled by political/economic conditions.28 | Canonical name+slug generated"
+    "notes": "World-class gold-copper deposit. Part of the Siembra Minera JV, but development is stalled by political/economic conditions.28 | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "Las Cristinas Development",
   "canonical_slug": "las-cristinas-development",
@@ -57,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Las Cristinas ** Development",
+      "name": "Las Cristinas  Development",
       "from": "2025-10-21T11:38:45.135733",
       "to": "2025-11-04T19:18:49.653691Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:27:43.000000Z",
+      "operators": [
+        "Crystallex International Corp."
+      ],
+      "owners": [
+        "Corporacion Venezolana de Guayana (CVG)"
+      ],
+      "notes": "CVG remains the owner of the mine, while Crystallex has faced legal and operational challenges."
+    }
+  },
+  "province": "Bolívar"
 }

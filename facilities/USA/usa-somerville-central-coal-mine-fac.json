@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.219,
-    "lon": -87.333,
+    "lat": 38.27316,
+    "lon": -87.357273,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy Corp",
+    "Peabody Midwest Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.951579Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:17:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Somerville_Central_Coal_Mine. Somerville Central Coal Mine is a surface coal mine operated by Peabody Energy"
   },
   "canonical_name": "Somerville Central Coal Mine",
   "canonical_slug": "somerville-central-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:17:04.000000Z",
+      "operators": [
+        "Peabody Midwest Mining"
+      ],
+      "owners": [
+        "Peabody Energy Corp"
+      ],
+      "notes": "Peabody Energy is the parent company and operates the mine."
+    }
+  }
 }

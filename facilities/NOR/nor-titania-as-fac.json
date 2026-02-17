@@ -6,8 +6,8 @@
   ],
   "country_iso3": "NOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 58.33444,
+    "lon": 6.42278,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "KRONOS Worldwide, Inc",
+    "Titania A/S"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.724797Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:22:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tellnes_mine. The Tellnes mine is one of the largest titanium mines in Europe, operated by Titania AS"
   },
   "canonical_name": "Titania AS Mine",
   "canonical_slug": "titania-as-mine",
@@ -49,5 +52,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rogaland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:22:25.000000Z",
+      "operators": [
+        "Titania A/S"
+      ],
+      "owners": [
+        "KRONOS Worldwide, Inc"
+      ],
+      "notes": "Titania A/S is a subsidiary of KRONOS Worldwide, Inc."
+    }
+  }
 }

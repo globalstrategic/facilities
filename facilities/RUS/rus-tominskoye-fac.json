@@ -6,8 +6,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.922,
-    "lon": 61.252,
+    "lat": 54.96173,
+    "lon": 61.18422,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ENGEN",
+    "Russian Copper Company Limited LLC",
+    "Tilia Holdings Limited LLC",
+    "Tominskiy GOK JSC",
+    "Torivent Ventures Limited LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.602216Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:28:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tominskiy_GOK_power_station. The Tominskiy GOK power station is an operating facility located in Tominskoye"
   },
   "canonical_name": "Tominskoye Mine",
   "canonical_slug": "tominskoye-mine",
@@ -61,5 +67,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chelyabinsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:28:09.000000Z",
+      "operators": [
+        "ENGEN"
+      ],
+      "owners": [
+        "Tominskiy GOK JSC",
+        "Tilia Holdings Limited LLC",
+        "Russian Copper Company Limited LLC",
+        "Torivent Ventures Limited LLC"
+      ],
+      "notes": "Tominskiy GOK JSC is the operator and 100% owner of the power station."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.718,
-    "lon": 27.959,
+    "lat": -26.5,
+    "lon": 27.3,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Seriti Resources Holdings Pty"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.751406Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-new-vaal-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:41:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-new-vaal-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/marketdata/five-largest-coal-mines-south-africa/. The New Vaal Mine is located south of Vereeniging and is a surface mine"
   },
   "canonical_name": "New Vaal Mine",
   "canonical_slug": "new-vaal-mine",
@@ -56,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:41:58.000000Z",
+      "operators": [
+        "Seriti Resources Holdings Pty"
+      ],
+      "owners": [
+        "Seriti Resources Holdings Pty"
+      ],
+      "notes": "Seriti Resources operates the New Vaal Mine, which is part of its portfolio of coal mines."
+    }
+  }
 }

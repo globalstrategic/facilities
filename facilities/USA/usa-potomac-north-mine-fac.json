@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.247,
-    "lon": -79.347,
+    "lat": 39.247222,
+    "lon": -79.347222,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Potomac-North",
+    "Potomac-North Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.826071Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:14:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Potomac-North_Mine. The Potomac-North Mine is an operating coal mine located in Grant County, West Virginia"
   },
   "canonical_name": "Potomac North Mine",
   "canonical_slug": "potomac-north-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:14:34.000000Z",
+      "operators": [
+        "Potomac-North"
+      ],
+      "owners": [
+        "Potomac-North Inc"
+      ],
+      "notes": "Potomac-North is both the operator and owner of the mine."
+    }
+  }
 }

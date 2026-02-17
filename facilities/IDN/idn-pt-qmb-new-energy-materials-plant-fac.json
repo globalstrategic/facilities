@@ -1,12 +1,12 @@
 {
   "facility_id": "idn-pt-qmb-new-energy-materials-plant-fac",
-  "name": "**PT QMB New Energy Materials Plant**",
+  "name": "PT QMB New Energy Materials Plant",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.5,
+    "lon": 120.5,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT QMB New Energy Materials",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.624004",
-      "evidence": "Extracted from operator column: PT QMB New Energy Materials"
-    }
+    "Guangdong Brunp",
+    "Guangdong Brunp Recycling Technology Co. Ltd.",
+    "Jingmen GEM",
+    "PT QMB New Energy Materials",
+    "Tsingshan Holding Group Co."
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.276765Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:47:29Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:47:29Z] Geocoded via web search. Coords: (-1.5, 120.5). Confidence: 0.90. Notes: Coordinates determined based on the facility's location in Morowali Industrial Park, Central Sulawesi."
   },
   "canonical_name": "PT QMB New Energy Materials Plant",
   "canonical_slug": "pt-qmb-new-energy-materials-plant",
@@ -60,11 +57,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT QMB New Energy Materials ** Plant",
+      "name": "PT QMB New Energy Materials  Plant",
       "from": "2025-10-29T10:37:55.624009",
       "to": "2025-11-04T19:19:10.276763Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:37:04.000000Z",
+      "operators": [
+        "PT QMB New Energy Materials"
+      ],
+      "owners": [
+        "Jingmen GEM",
+        "Guangdong Brunp Recycling Technology Co. Ltd.",
+        "Tsingshan Holding Group Co."
+      ],
+      "notes": "PT QMB operates through a consortium including major players in the battery metals investment sector."
+    }
+  }
 }

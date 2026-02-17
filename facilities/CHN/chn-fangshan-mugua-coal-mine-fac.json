@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.652,
-    "lon": 111.113,
+    "lat": 37.651937,
+    "lon": 111.113013,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huozhou Coal and Electricity Group",
+    "Shanxi Coking Coal Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.858848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:52:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%9C%8D%E5%B7%9E%E7%85%A4%E7%94%B5%E9%9B%86%E5%9B%A2%E5%90%95%E6%A2%81%E5%B1%B1%E7%85%A4%E7%94%B5%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%96%B9%E5%B1%B1%E6%9C%A8%E7%93%9C%E7%85%A4%E7%9F%BF. The Fangshan Mugua Coal Mine is an underground coal mine located in the Fangshan District of Shanxi Province"
   },
   "canonical_name": "Fangshan Mugua Coal Mine",
   "canonical_slug": "fangshan-mugua-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省 (Shanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:52:09.000000Z",
+      "operators": [
+        "Huozhou Coal and Electricity Group"
+      ],
+      "owners": [
+        "Shanxi Coking Coal Group"
+      ],
+      "notes": "The mine is fully owned by Huozhou Coal and Electricity Group, which is a subsidiary of Shanxi Coking Coal Group."
+    }
+  }
 }

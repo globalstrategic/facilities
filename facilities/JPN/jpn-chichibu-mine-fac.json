@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 35.999,
-    "lon": 139.079,
+    "lat": 36.028038,
+    "lon": 139.095128,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chichibu Taiheiyo Cement Corp",
+    "Taiheiyo Cement Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.029135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:26:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Taiheiyo_Cement_Chichibu_Cement_Plant. Coordinates are exact for the Chichibu Cement Plant"
   },
   "canonical_name": "Chichibu Mine",
   "canonical_slug": "chichibu-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Saitama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:26:52.000000Z",
+      "operators": [
+        "Chichibu Taiheiyo Cement Corp"
+      ],
+      "owners": [
+        "Taiheiyo Cement Corp"
+      ],
+      "notes": "Chichibu Taiheiyo Cement Corp is a wholly owned subsidiary of Taiheiyo Cement Corp."
+    }
+  }
 }

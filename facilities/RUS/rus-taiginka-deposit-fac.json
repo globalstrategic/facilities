@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 55.75,
-    "lon": 60.5,
+    "lat": 55.60073700118868,
+    "lon": 60.5414716,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Taiginsky Mining and Processing Plant LLC",
+    "Taiginsky Quarry LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.617929Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:27:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kyshtym (https://uralgraphite.com/en/company/about-us/). The Taiginka Deposit is the largest graphite deposit in the region and has been in operation since 1942"
   },
   "canonical_name": "Taiginka Facility",
   "canonical_slug": "taiginka-facility",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chelyabinsk Region",
+  "town": "Kyshtym",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:27:51.000000Z",
+      "operators": [
+        "Taiginsky Quarry LLC"
+      ],
+      "owners": [
+        "Taiginsky Mining and Processing Plant LLC"
+      ],
+      "notes": "The facility is operated by Taiginsky Quarry LLC and owned by Taiginsky Mining and Processing Plant LLC."
+    }
+  }
 }

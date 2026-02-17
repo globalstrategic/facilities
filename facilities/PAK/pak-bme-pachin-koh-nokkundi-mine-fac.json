@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": 29.194,
-    "lon": 62.914,
+    "lat": 29.194241,
+    "lon": 62.913803,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bolan Mining Enterprises",
+    "Pakistan Petroleum Ltd",
+    "Province of Balochistan"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:03.340777Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:39:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BME_Pachin_Koh_Nokkundi_Mine. Coordinates are approximate"
   },
   "canonical_name": "BME Pachin Koh Nokkundi Mine",
   "canonical_slug": "bme-pachin-koh-nokkundi-mine",
@@ -48,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Balochistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:39:42.000000Z",
+      "operators": [
+        "Pakistan Petroleum Ltd",
+        "Bolan Mining Enterprises"
+      ],
+      "owners": [
+        "Pakistan Petroleum Ltd",
+        "Province of Balochistan"
+      ],
+      "notes": "BME is a joint venture between the Government of Balochistan and Pakistan Petroleum Limited, each holding a 50% stake."
+    }
+  }
 }

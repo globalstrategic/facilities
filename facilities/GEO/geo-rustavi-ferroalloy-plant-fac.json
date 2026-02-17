@@ -1,11 +1,11 @@
 {
   "facility_id": "geo-rustavi-ferroalloy-plant-fac",
-  "name": "**Rustavi Ferroalloy Plant**",
+  "name": "Rustavi Ferroalloy Plant",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.54361,
+    "lon": 45.01167,
     "precision": "unknown"
   },
   "types": [
@@ -24,14 +24,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Chiaturmanganum Georgia LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.196254",
-      "evidence": "Extracted from operator column: Chiaturmanganum Georgia LLC"
-    }
+    "Chiaturmanganum Georgia LLC",
+    "Rustavi Steel LLC"
   ],
   "products": [],
   "sources": [
@@ -42,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.726316Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:49:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.hunnewellpartners.com/rustavi/. The Rustavi Ferroalloy Plant is part of the Rustavi Metallurgical Plant complex, which is one of the largest industrial facilities in Georgia"
   },
   "canonical_name": "Rustavi Ferroalloy Processing Plant",
   "canonical_slug": "rustavi-ferroalloy-processing-plant",
@@ -63,11 +57,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Rustavi Ferroalloy ** Processing Plant",
+      "name": "Rustavi Ferroalloy  Processing Plant",
       "from": "2025-10-28T21:01:00.196258",
       "to": "2025-11-04T19:19:01.726314Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kvemo Kartli",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:49:01.000000Z",
+      "operators": [
+        "Rustavi Steel LLC"
+      ],
+      "owners": [
+        "Rustavi Steel LLC"
+      ],
+      "notes": "Rustavi Steel LLC has been managing the plant since 2012 and aims to modernize its operations."
+    }
+  }
 }

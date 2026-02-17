@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.087,
-    "lon": -81.92,
+    "lat": 31.711317163891295,
+    "lon": -110.37806177633149,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "South32 Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.901462Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:35:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tucson (https://www.south32.net/what-we-do/our-locations/americas/hermosa/about-hermosa). Hermosa project is located in the Patagonia Mountains in southern Arizona"
   },
   "canonical_name": "S 32 Mine",
   "canonical_slug": "s-32-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "town": "Tucson",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:35:00.000000Z",
+      "operators": [
+        "South32 Ltd."
+      ],
+      "owners": [
+        "South32 Ltd."
+      ],
+      "notes": "Hermosa is 100% owned by South32 and is being developed as a critical minerals project."
+    }
+  }
 }

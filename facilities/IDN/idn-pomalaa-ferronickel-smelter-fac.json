@@ -1,12 +1,12 @@
 {
   "facility_id": "idn-pomalaa-ferronickel-smelter-fac",
-  "name": "**Pomalaa Ferronickel Smelter**",
+  "name": "Pomalaa Ferronickel Smelter",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -3.5,
+    "lon": 121.5,
+    "precision": "region"
   },
   "types": [
     "smelter"
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Aneka Tambang Tbk",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.730703",
-      "evidence": "Extracted from operator column: PT Aneka Tambang Tbk (Antam)"
-    }
+    "PT Aneka Tambang Tbk",
+    "PT Aneka Tambang Tbk (ANTAM)",
+    "PT Vale Indonesia",
+    "Vale S.A."
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.251397Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:47:19Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:47:19Z] Geocoded via web search. Coords: (-3.5, 121.5). Confidence: 0.70. Notes: Coordinates are estimated based on the general location of Pomalaa in Southeast Sulawesi."
   },
   "canonical_name": "Pomalaa Ferronickel Smelter",
   "canonical_slug": "pomalaa-ferronickel-smelter",
@@ -60,11 +56,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Pomalaa Ferronickel ** Smelter",
+      "name": "Pomalaa Ferronickel  Smelter",
       "from": "2025-10-29T10:37:55.730713",
       "to": "2025-11-04T19:19:10.251394Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southeast Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:36:25.000000Z",
+      "operators": [
+        "PT Aneka Tambang Tbk (ANTAM)",
+        "PT Vale Indonesia"
+      ],
+      "owners": [
+        "PT Aneka Tambang Tbk (ANTAM)",
+        "Vale S.A."
+      ],
+      "notes": "PT Vale Indonesia is involved in a joint venture for the Pomalaa project, while Antam operates the smelter."
+    }
+  }
 }

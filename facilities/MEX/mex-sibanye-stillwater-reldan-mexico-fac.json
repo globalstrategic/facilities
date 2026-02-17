@@ -5,7 +5,7 @@
   "country_iso3": "MEX",
   "location": {
     "lat": 25.6573,
-    "lon": null,
+    "lon": -102.0,
     "precision": "unknown"
   },
   "types": [
@@ -46,7 +46,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sibanye-Stillwater",
+    "Sibanye-Stillwater Limited",
+    "Sibanye-Stillwater Reldan Mexico"
+  ],
   "products": [],
   "sources": [
     {
@@ -60,7 +64,7 @@
     "confidence": 0.8,
     "last_checked": "2025-11-04T19:19:21.943952Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-102.0 (was null)"
   },
   "canonical_name": "Sibanye Stillwater Reldan Mexico Refinery",
   "canonical_slug": "sibanye-stillwater-reldan-mexico-refinery",
@@ -83,5 +87,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nuevo León",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:54:30.000000Z",
+      "operators": [
+        "Sibanye-Stillwater Reldan Mexico"
+      ],
+      "owners": [
+        "Sibanye-Stillwater"
+      ],
+      "notes": "Sibanye-Stillwater acquired Reldan Group of Companies in March 2024."
+    }
+  }
 }

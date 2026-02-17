@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KGZ",
   "location": {
-    "lat": 41.58,
-    "lon": 78.27,
+    "lat": 41.71,
+    "lon": 74.76,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kyrgyz Komur State Enterprise",
+    "Shanci Coal Investment Group LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:50.202883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:52:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Karakeche. Karakeche is a coal mining area in Jumgal District, Naryn Region, Kyrgyzstan"
   },
   "canonical_name": "Kyrgy12 Mine",
   "canonical_slug": "kyrgy12-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Naryn Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:52:42.000000Z",
+      "operators": [
+        "Kyrgyz Komur State Enterprise",
+        "Shanci Coal Investment Group LLC"
+      ],
+      "owners": [
+        "Kyrgyz Komur State Enterprise"
+      ],
+      "notes": "Joint activity agreement between Kyrgyzkomur and Shanci Coal Investment Group LLC."
+    }
+  }
 }

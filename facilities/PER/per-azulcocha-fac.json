@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.915,
-    "lon": -75.312,
+    "lat": -4.2,
+    "lon": -75.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Azure del Peru S.A.C.",
+    "Trafigura Beheer B.V.",
+    "Vena Resources Inc.",
+    "Vena’s Compañía Vena Peru S.A.C."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.320871Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:10:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.proactiveinvestors.com/companies/news/87884/vena-resources-gets-approval-to-start-milling-at-azulcocha-mine-31949.html. The Azulcocha mine is located in the Junin region of Peru, with elevations ranging from 4,200 to 4,600 meters above sea level"
   },
   "canonical_name": "Azulcocha Mine",
   "canonical_slug": "azulcocha-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Junin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:10:49.000000Z",
+      "operators": [
+        "Vena Resources Inc.",
+        "Trafigura Beheer B.V."
+      ],
+      "owners": [
+        "Vena Resources Inc.",
+        "Trafigura Beheer B.V."
+      ],
+      "notes": "The project is a joint venture between Vena Resources and Trafigura."
+    }
+  }
 }

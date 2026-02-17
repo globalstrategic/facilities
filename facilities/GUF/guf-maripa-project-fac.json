@@ -1,0 +1,74 @@
+{
+  "facility_id": "guf-maripa-project-fac",
+  "name": "Maripa Project",
+  "aliases": [],
+  "country_iso3": "GUF",
+  "location": {
+    "lat": 4.485000313448888,
+    "lon": -52.3258736,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Columbus Gold Corporation",
+    "IAMGOLD",
+    "IAMGOLD Corporation",
+    "Orea Mining Corp."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-29",
+      "date": "2025-10-29T08:01:49.022253"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T15:19:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cayenne (https://www.miningweekly.com/article/iamgold-sells-70-interest-in-french-guiana-project-to-columbus-gold-2018-08-14). The Maripa Project is located in eastern French Guiana, 50 km south of Cayenne, and comprises up to five contiguous exploration permits"
+  },
+  "canonical_name": "Maripa Mine",
+  "canonical_slug": "maripa-mine",
+  "display_name": "Maripa",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "French Guiana",
+  "town": "Cayenne",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:19:33.000000Z",
+      "operators": [
+        "Columbus Gold Corporation",
+        "IAMGOLD Corporation"
+      ],
+      "owners": [
+        "IAMGOLD Corporation",
+        "Columbus Gold Corporation"
+      ],
+      "notes": "Columbus Gold has an agreement to acquire up to a 70% interest in the Maripa project from IAMGOLD."
+    }
+  }
+}

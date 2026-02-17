@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 45.481,
-    "lon": -112.131,
+    "lat": 39.31228586615237,
+    "lon": -100.51011782416938,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Broadgauge Mine Incorporated",
+    "R. L. Holladay",
+    "Sheridan Venture"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.919031Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:51:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sheridan (https://thediggings.com/mines/19412). The Tamarack Mine is located near Sheridan, Montana, within the Sheridan Mining District"
   },
   "canonical_name": "Broadgauge Tamarack Mines Mine",
   "canonical_slug": "broadgauge-tamarack-mines-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Sheridan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:51:05.000000Z",
+      "operators": [
+        "Broadgauge Mine Incorporated"
+      ],
+      "owners": [
+        "Broadgauge Mine Incorporated",
+        "R. L. Holladay",
+        "Sheridan Venture"
+      ],
+      "notes": "Broadgauge Mine Incorporated is listed as the owner, along with R. L. Holladay and Sheridan Venture."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.6470514,
-    "lon": 27.8815513,
+    "lat": -25.6,
+    "lon": 27.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eland Platinum (wholly-owned subsidiary of Northam Platinum)",
+    "Glencore Operations South Africa",
+    "Northam Platinum Holdings Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:55:05.635647",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Eland Platinum Mine, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:33:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Eland Platinum Mine, South Africa. Web search geocoded. Source: https://miningdigital.com/supply-chain-and-operations/northam-platinum-finalises-eland-platinum-mine-acquisition-glencore. Eland Platinum Mine is located in the North West Province of South Africa, approximately 12 km east of Brits"
   },
   "canonical_name": "Eland Platinum Mine",
   "canonical_slug": "eland-platinum-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:33:31.000000Z",
+      "operators": [
+        "Eland Platinum (wholly-owned subsidiary of Northam Platinum)"
+      ],
+      "owners": [
+        "Northam Platinum Holdings Limited",
+        "Glencore Operations South Africa"
+      ],
+      "notes": "Northam Platinum has acquired full ownership of the Eland mine from Glencore and is in the process of developing its mine plan."
+    }
+  }
 }

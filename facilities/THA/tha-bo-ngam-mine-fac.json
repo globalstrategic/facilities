@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 14.43153096002349,
+    "lon": 99.6404126,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kanchanaburi Exploration and Mining Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:18.496519Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:36:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kanchanaburi (https://pubs.usgs.gov/myb/vol3/2016/myb3-2016-thailand.pdf). The Bo Ngam Mine is mentioned in the context of lead mining in Kanchanaburi Province"
   },
   "canonical_name": "Bo Ngam Mine",
   "canonical_slug": "bo-ngam-mine",
@@ -55,5 +57,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kanchanaburi Province",
+  "town": "Kanchanaburi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:54.000000Z",
+      "operators": [
+        "Kanchanaburi Exploration and Mining Co. Ltd."
+      ],
+      "owners": [],
+      "notes": "The operator is mentioned, but no ownership details are provided."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.323,
-    "lon": 107.097,
+    "lat": 39.391301,
+    "lon": 107.026713,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inner Mongolia Qipanjing Mining Company",
+    "Zhonghe Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.684876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:15:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E6%A3%8B%E7%9B%98%E4%BA%95%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E7%85%A4%E7%9F%BF. The Qipanjing Coal Mine is an underground coal mine located in the Ordos region of Inner Mongolia"
   },
   "canonical_name": "Qipanjing Coal Mine",
   "canonical_slug": "qipanjing-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:13.000000Z",
+      "operators": [
+        "Inner Mongolia Qipanjing Mining Company"
+      ],
+      "owners": [
+        "Zhonghe Energy Company"
+      ],
+      "notes": "The mine is operated by Inner Mongolia Qipanjing Mining Company, which is a subsidiary of Zhonghe Energy Company."
+    }
+  }
 }

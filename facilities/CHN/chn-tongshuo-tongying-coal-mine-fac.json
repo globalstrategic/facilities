@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.003,
-    "lon": 112.552,
+    "lat": 39.002532,
+    "lon": 112.551998,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "大同煤矿集团同朔同盈煤业有限公司",
+    "山西省国有资本运营有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.828212Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:37:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%A4%A7%E5%90%8C%E7%85%A4%E7%9F%BF%E9%9B%86%E5%9B%A2%E5%90%8C%E6%9C%94%E5%90%8C%E7%9B%88%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8. The Tongshuo Tongying Coal Mine is an underground coal mine located in Shanxi Province, China"
   },
   "canonical_name": "Tongshuo Tongying Coal Mine",
   "canonical_slug": "tongshuo-tongying-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "山西省",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:37:30.000000Z",
+      "operators": [
+        "大同煤矿集团同朔同盈煤业有限公司"
+      ],
+      "owners": [
+        "山西省国有资本运营有限公司"
+      ],
+      "notes": "The mine is operated by the Datong Coal Mine Group and is part of a larger state-owned enterprise."
+    }
+  }
 }

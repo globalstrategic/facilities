@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-pohang-works-fac",
-  "name": "**Pohang Works**",
+  "name": "Pohang Works",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.0321,
+    "lon": 129.417,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "POSCO Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515902",
-      "evidence": "Extracted from operator column: POSCO Ltd."
-    }
+    "POSCO",
+    "POSCO Ltd."
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.762014Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] POSCO's foundational steelworks and a hub for new battery material investments. 1 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:06:40Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] POSCO's foundational steelworks and a hub for new battery material investments. 1 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:06:40Z] Geocoded via web search. Coords: (36.0321, 129.417). Confidence: 0.90. Notes: Coordinates extracted directly from the search results indicating the location of Pohang Works."
   },
   "canonical_name": "Pohang Steel Plant",
   "canonical_slug": "pohang-steel-plant",
@@ -53,11 +47,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Pohang ** Steel Plant",
+      "name": "Pohang  Steel Plant",
       "from": "2025-10-29T12:22:53.515904",
       "to": "2025-11-04T19:19:18.762010Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gyeongsangbuk-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:05:32.000000Z",
+      "operators": [
+        "POSCO"
+      ],
+      "owners": [
+        "POSCO"
+      ],
+      "notes": "POSCO is both the operator and owner of the Pohang Works."
+    }
+  }
 }

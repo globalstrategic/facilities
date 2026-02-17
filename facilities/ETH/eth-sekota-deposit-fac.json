@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 12.62528,
+    "lon": 39.035,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -21,14 +21,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Sekota Mining Plc",
-      "role": "operator",
-      "source": "Research Import ETH 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:04:41.378086",
-      "evidence": "Extracted from operator column: Sekota Mining Plc (Concessionaire)"
-    }
+    "CBRF Group",
+    "Sekota Mining",
+    "Sekota Mining Plc",
+    "Sekota Mining Plc."
   ],
   "products": [],
   "sources": [
@@ -41,9 +37,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.297129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large concession granted a decade ago but project remains unexecuted.14 | Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:45:38Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Large concession granted a decade ago but project remains unexecuted.14 | Canonical name+slug generated | [GEOCODED 2025-12-18T00:45:38Z] Coordinates found via web search (manual research). Lat: 12.62528, Lon: 39.035"
   },
   "canonical_name": "Sekota Mine",
   "canonical_slug": "sekota-mine",
@@ -58,5 +54,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amhara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:00:39.000000Z",
+      "operators": [
+        "Sekota Mining"
+      ],
+      "owners": [
+        "Sekota Mining"
+      ],
+      "notes": "Sekota Mining is a joint venture between Italian and Chinese interests."
+    }
+  },
+  "town": "Sekota"
 }

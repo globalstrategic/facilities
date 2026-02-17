@@ -1,0 +1,81 @@
+{
+  "facility_id": "ecu-la-zanja-fac",
+  "name": "La Zanja",
+  "aliases": [
+    "La Zanja",
+    "La Zanja"
+  ],
+  "country_iso3": "ECU",
+  "location": {
+    "lat": -3.5,
+    "lon": -78.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Molybdenum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Compania de Minas Buenaventura S.A.A.",
+    "Minera La Zanja S.R.L.",
+    "Newmont Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:30.096102"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:00:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://buenaventura.com/en/operacion/la-zanja/. La Zanja is an open pit gold mining operation located in the District of Pulán, Province of Santa Cruz, Region of Cajamarca"
+  },
+  "canonical_name": "La Zanja Mine",
+  "canonical_slug": "la-zanja-mine",
+  "display_name": "La Zanja",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Santa Cruz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:00:14.000000Z",
+      "operators": [
+        "Minera La Zanja S.R.L."
+      ],
+      "owners": [
+        "Compania de Minas Buenaventura S.A.A.",
+        "Newmont Corporation"
+      ],
+      "notes": "La Zanja is 53% owned by Buenaventura and 47% owned by Newmont."
+    }
+  }
+}

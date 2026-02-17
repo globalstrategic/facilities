@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.934,
-    "lon": 81.365,
+    "lat": 50.93358,
+    "lon": 81.36502,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KAZ Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.744692Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:45:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-297488.html. The Orlovsky mine is located in the Borodulikha District of the East Kazakhstan Region, near Zhezkent"
   },
   "canonical_name": "Orlovsky Mine",
   "canonical_slug": "orlovsky-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:45:14.000000Z",
+      "operators": [
+        "KAZ Minerals Limited"
+      ],
+      "owners": [
+        "KAZ Minerals Limited"
+      ],
+      "notes": "KAZ Minerals operates and owns the Orlovsky mine."
+    }
+  }
 }

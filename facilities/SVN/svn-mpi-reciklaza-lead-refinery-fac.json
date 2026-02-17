@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SVN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.502,
+    "lon": 14.92,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -23,14 +23,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "MPI-Reciklaza d.o.o.",
-      "role": "operator",
-      "source": "Research Import METALLURGICAL 2025-10-21",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T17:19:41.211582",
-      "evidence": "Extracted from operator column: MPI-Reciklaza d.o.o. (Current)"
-    }
+    "MPI - Reciklaza Metalurgija, plastika in inženiring d.o.o.",
+    "MPI-RECIKLAZA D.O.O.",
+    "MPI-Reciklaza d.o.o.",
+    "TAB Group"
   ],
   "products": [],
   "sources": [
@@ -41,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.496842Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:47:50Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:47:50Z] Geocoded via web search. Coords: (46.502, 14.920). Source: Zerjav 79, 2393 Crna na Koroskem, Slovenia. Regional estimate based on settlement location"
   },
   "canonical_name": "MPI Reciklaza Lead Refinery",
   "canonical_slug": "mpi-reciklaza-lead-refinery",
@@ -68,5 +64,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zasavska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:38:31.000000Z",
+      "operators": [
+        "MPI - Reciklaza Metalurgija, plastika in inženiring d.o.o."
+      ],
+      "owners": [],
+      "notes": "No ownership details provided."
+    }
+  }
 }

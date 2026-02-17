@@ -1,12 +1,12 @@
 {
   "facility_id": "fin-keliber-lithium-project-fac",
-  "name": "**Keliber Lithium Project**",
+  "name": "Keliber Lithium Project",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 63.4716,
+    "lon": 24.2295,
+    "precision": "region"
   },
   "types": [
     "mine",
@@ -16,14 +16,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Keliber Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.781345",
-      "evidence": "Extracted from operator column: Keliber Oy"
-    }
+    "Finnish Minerals Group",
+    "Keliber Oy",
+    "Sibanye-Stillwater Ltd",
+    "Sibanye-Stillwater Ltd."
   ],
   "products": [],
   "sources": [
@@ -34,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.192595Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Keliber Lithium Project, Central Ostrobothnia"
   },
   "canonical_name": "Keliber Lithium Mine",
   "canonical_slug": "keliber-lithium-mine",
@@ -55,11 +51,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Keliber Lithium ** Mine",
+      "name": "Keliber Lithium  Mine",
       "from": "2025-10-28T17:16:23.781348",
       "to": "2025-11-04T19:18:54.192592Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:59:26.000000Z",
+      "operators": [
+        "Keliber Oy",
+        "Sibanye-Stillwater Ltd"
+      ],
+      "owners": [
+        "Sibanye-Stillwater Ltd",
+        "Finnish Minerals Group"
+      ],
+      "notes": "Sibanye-Stillwater is the majority owner, with Finnish Minerals Group holding a significant minority stake."
+    }
+  }
 }

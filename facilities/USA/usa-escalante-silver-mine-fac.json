@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.682,
-    "lon": -113.72,
+    "lat": 37.6751666175524,
+    "lon": -113.79150017074264,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company",
+    "Redco Silver, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.785683Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:57:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cedar City (https://westernmininghistory.com/mine-detail/10042299/). The Escalante Silver Mine is located in Iron County, Utah, approximately 40 miles west of Cedar City"
   },
   "canonical_name": "Escalante Silver Mine",
   "canonical_slug": "escalante-silver-mine",
@@ -62,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "town": "Cedar City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:57:18.000000Z",
+      "operators": [
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "Hecla Mining Company",
+        "Redco Silver, Inc."
+      ],
+      "notes": "Hecla Mining Company acquired the mine in 1984 and it has since been closed due to depletion of the ore body."
+    }
+  }
 }

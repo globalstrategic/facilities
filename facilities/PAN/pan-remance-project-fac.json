@@ -1,11 +1,11 @@
 {
   "facility_id": "pan-remance-project-fac",
-  "name": "**Remance Project**",
+  "name": "Remance Project",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
     "lat": 8.298,
-    "lon": null,
+    "lon": -81.0,
     "precision": "unknown"
   },
   "types": [
@@ -13,20 +13,16 @@
   ],
   "commodities": [
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": true
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Greenfield Resources Inc.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.877033",
-      "evidence": "Extracted from operator column: Greenfield Resources Inc."
-    }
+    "Greenfield Resources Inc.",
+    "Minera Clifton S.A.",
+    "Minera Verde S.A.",
+    "Pacific Rim Mining Corp."
   ],
   "products": [],
   "sources": [
@@ -41,7 +37,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:19:21.426539Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-81.0 (was null)"
   },
   "canonical_name": "Remance Development",
   "canonical_slug": "remance-development",
@@ -58,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Remance ** Development",
+      "name": "Remance  Development",
       "from": "2025-10-28T21:58:20.877063",
       "to": "2025-11-04T19:19:21.426536Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:09.000000Z",
+      "operators": [
+        "Pacific Rim Mining Corp.",
+        "Minera Clifton S.A."
+      ],
+      "owners": [
+        "Minera Clifton S.A."
+      ],
+      "notes": "Pacific Rim Mining Corp. is in the process of acquiring a 100% interest in the Remance project from Minera Clifton."
+    }
+  }
 }

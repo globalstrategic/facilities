@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.385,
-    "lon": 23.444,
+    "lat": -28.38222,
+    "lon": 23.44611,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Petra Diamonds Employee Share Trust",
+    "Petra Diamonds Pty Ltd",
+    "Senakha Diamonds Investments"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.709240Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:02:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Finsch_diamond_mine. The Finsch Diamond Mine is an underground diamond mine located near Lime Acres, 160 km northwest of Kimberley"
   },
   "canonical_name": "Finsch Diamond Mine",
   "canonical_slug": "finsch-diamond-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:02:49.000000Z",
+      "operators": [
+        "Petra Diamonds Pty Ltd"
+      ],
+      "owners": [
+        "Petra Diamonds Pty Ltd",
+        "Petra Diamonds Employee Share Trust",
+        "Senakha Diamonds Investments"
+      ],
+      "notes": "Petra Diamonds acquired the mine from De Beers in 2011."
+    }
+  }
 }

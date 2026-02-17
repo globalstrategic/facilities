@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.197,
-    "lon": 27.87,
+    "lat": -26.204860792873873,
+    "lon": 27.84960871196601,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Department of Mineral Resources",
+    "Dino Properties",
+    "West Wits Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.725040Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:17:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Johannesburg (https://www.aljazeera.com/features/2018/5/1/illicit-gold-trade-fuels-conflict-in-south-african-mining-town). Durban Deep is a mining area with ongoing illegal mining activities and a joint venture for resuscitation by West Wits Mining"
   },
   "canonical_name": "Durban Deep Mine",
   "canonical_slug": "durban-deep-mine",
@@ -54,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "town": "Johannesburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:17:15.000000Z",
+      "operators": [
+        "West Wits Mining"
+      ],
+      "owners": [
+        "Dino Properties",
+        "Department of Mineral Resources"
+      ],
+      "notes": "Dino Properties purchased the land in 2014, and West Wits Mining has been awarded a license to operate."
+    }
+  }
 }

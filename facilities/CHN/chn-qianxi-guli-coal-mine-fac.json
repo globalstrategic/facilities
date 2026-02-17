@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.99,
-    "lon": 106.099,
+    "lat": 26.990196,
+    "lon": 106.098712,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "贵州新生业投资有限公司 (Guizhou Xinshengye Investment Company)",
+    "黔西县鑫昇煤业开发有限公司 (Qianxi County Xinsheng Coal Industry Development Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.652742Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:30:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E8%B4%B5%E5%B7%9E%E7%9C%81%E9%BB%94%E8%A5%BF%E5%B8%82%E8%B0%B7%E9%87%8C%E9%95%87%E8%B0%B7%E9%87%8C%E7%85%A4%E7%9F%BF. The Qianxi Guli Coal Mine is under construction with a designed production capacity of 900,000 tons per year"
   },
   "canonical_name": "Qianxi Guli Coal Mine",
   "canonical_slug": "qianxi-guli-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:30:39.000000Z",
+      "operators": [
+        "黔西县鑫昇煤业开发有限公司 (Qianxi County Xinsheng Coal Industry Development Co., Ltd.)"
+      ],
+      "owners": [
+        "贵州新生业投资有限公司 (Guizhou Xinshengye Investment Company)"
+      ],
+      "notes": "The mine is being developed by Qianxi County Xinsheng Coal Industry Development Co., Ltd., which is a subsidiary of Guizhou Xinshengye Investment Company."
+    }
+  }
 }

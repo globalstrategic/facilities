@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.807,
-    "lon": 102.893,
+    "lat": -1.808359,
+    "lon": 102.889466,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bumi Bara Makmur Mandiri",
+    "Cokal Limited",
+    "PT Bumi Barito Mineral",
+    "PT Cipta Bersama Indonesia"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.304405Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:16:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BBMM_Coal_Mine. BBMM Coal Mine is an operating coal mine located in Jambi, Indonesia"
   },
   "canonical_name": "Bbmm Coal Mine",
   "canonical_slug": "bbmm-coal-mine",
@@ -58,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jambi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:16:48.000000Z",
+      "operators": [
+        "PT Bumi Barito Mineral",
+        "PT Cipta Bersama Indonesia"
+      ],
+      "owners": [
+        "Cokal Limited",
+        "Bumi Bara Makmur Mandiri"
+      ],
+      "notes": "Cokal Limited owns 60% of PT Bumi Barito Mineral, which operates the mine."
+    }
+  }
 }

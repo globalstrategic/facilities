@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rajasthan State Mines and Minerals limited (RSMML)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.094108Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:53:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Matasukh_%26_Kasnau_Coal_Mine. Matasukh & Kasnau Coal Mine is an operating coal mine located in Nagaur, Rajasthan, India"
   },
   "canonical_name": "Matasukh And Kasnau Coal Mine",
   "canonical_slug": "matasukh-and-kasnau-coal-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:53:23.000000Z",
+      "operators": [
+        "Rajasthan State Mines and Minerals limited (RSMML)"
+      ],
+      "owners": [
+        "Rajasthan State Mines and Minerals limited (RSMML)"
+      ],
+      "notes": "RSMML is the sole owner and operator of the mine."
+    }
+  }
 }

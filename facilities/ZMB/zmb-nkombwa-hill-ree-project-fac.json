@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -10.8,
+    "lon": 32.9,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,14 +19,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "African Inkalamo Mining Company Ltd",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.798908",
-      "evidence": "Extracted from operator column: African Inkalamo Mining Company Ltd"
-    }
+    "African Consolidated Resources plc",
+    "African Inkalamo Mining Company Ltd",
+    "Galileo Resources Plc",
+    "Rare Earth International Ltd"
   ],
   "products": [],
   "sources": [
@@ -37,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.688234Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Rare earth element deposit near Isoka, Muchinga Province"
   },
   "canonical_name": "Nkombwa Hill REE Exploration",
   "canonical_slug": "nkombwa-hill-ree-exploration",
@@ -56,5 +52,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Muchinga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:41:11.000000Z",
+      "operators": [
+        "Galileo Resources Plc",
+        "African Consolidated Resources plc"
+      ],
+      "owners": [
+        "African Consolidated Resources plc",
+        "Rare Earth International Ltd"
+      ],
+      "notes": "Galileo Resources has entered into a joint venture with African Consolidated Resources for the Nkombwa Hill project."
+    }
+  }
 }

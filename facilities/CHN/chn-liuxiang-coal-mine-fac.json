@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.469,
-    "lon": 109.972,
+    "lat": 38.468895,
+    "lon": 109.972197,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "中国华能集团有限公司",
+    "国开发展基金有限公司",
+    "神木市国有资产运营公司",
+    "陕西喜悦投资有限责任公司",
+    "陕西榆林能源集团有限公司",
+    "陕西省府谷县煤炭公司",
+    "陕西竹园嘉原矿业有限公司"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.604163Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:01:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%99%95%E8%A5%BF%E7%AB%B9%E5%9B%AD%E5%98%89%E5%8E%9F%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%9F%B3%E5%B7%B7%E7%85%A4%E7%9F%BF. The Liuxiang Coal Mine is an underground coal mine located in the Mahuangliang area"
   },
   "canonical_name": "Liuxiang Coal Mine",
   "canonical_slug": "liuxiang-coal-mine",
@@ -47,5 +55,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:01:19.000000Z",
+      "operators": [
+        "陕西竹园嘉原矿业有限公司"
+      ],
+      "owners": [
+        "中国华能集团有限公司",
+        "陕西喜悦投资有限责任公司",
+        "陕西榆林能源集团有限公司",
+        "神木市国有资产运营公司",
+        "国开发展基金有限公司",
+        "陕西省府谷县煤炭公司"
+      ],
+      "notes": "The mine is under construction and is owned by a consortium of companies."
+    }
+  }
 }

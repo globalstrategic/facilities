@@ -1,12 +1,12 @@
 {
   "facility_id": "jam-windalco-kirkvine-fac",
-  "name": "**Windalco-Kirkvine**",
+  "name": "Windalco-Kirkvine",
   "aliases": [],
   "country_iso3": "JAM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 18.35,
+    "lon": -77.45,
+    "precision": "region"
   },
   "types": [
     "mine",
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "UC Rusal"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:17.470480Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Windalco-Kirkvine alumina. Coords: (18.35, -77.45)"
   },
   "canonical_name": "Windalco Kirkvine Mine",
   "canonical_slug": "windalco-kirkvine-mine",
@@ -50,11 +52,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Windalco-Kirkvine** Mine",
+      "name": "Windalco-Kirkvine Mine",
       "from": "2025-10-29T12:22:22.447691",
       "to": "2025-11-04T19:19:17.470477Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manchester",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:20:45.000000Z",
+      "operators": [],
+      "owners": [
+        "UC Rusal"
+      ],
+      "notes": "The plant is owned by Russian aluminum conglomerate UC Rusal."
+    }
+  }
 }

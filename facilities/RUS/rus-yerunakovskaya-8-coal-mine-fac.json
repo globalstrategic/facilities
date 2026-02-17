@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.116,
-    "lon": 87.355,
+    "lat": 54.10553804629709,
+    "lon": 87.7304253443075,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Raspadskaya PJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.611367Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:37:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Novokuznetsk (https://www.gem.wiki/Yerunakovskaya-8_Coal_Mine). The mine is located 55 km northeast of Novokuznetsk in Kemerovo Oblast, Russia"
   },
   "canonical_name": "Yerunakovskaya 8 Coal Mine",
   "canonical_slug": "yerunakovskaya-8-coal-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "town": "Novokuznetsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:37:05.000000Z",
+      "operators": [
+        "Raspadskaya PJSC"
+      ],
+      "owners": [
+        "Raspadskaya PJSC"
+      ],
+      "notes": "Raspadskaya PJSC is a subsidiary of Evraz. The mine has suspended coal production due to a rock fall incident."
+    }
+  }
 }

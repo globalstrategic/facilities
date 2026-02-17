@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MYS",
   "location": {
-    "lat": 5.732,
-    "lon": 100.439,
+    "lat": 5.734189,
+    "lon": 100.437853,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Berlian Impresif Sdn Bhd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:55.016025Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:43:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Berlian_Impresif_Sungai_Petani_Mine. Berlian Impresif Sungai Petani Mine is an iron ore mine located in Kedah, Malaysia"
   },
   "canonical_name": "Berlian Impresif Sungai Petani Mine",
   "canonical_slug": "berlian-impresif-sungai-petani-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kedah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:43:51.000000Z",
+      "operators": [
+        "Berlian Impresif Sdn Bhd"
+      ],
+      "owners": [
+        "Berlian Impresif Sdn Bhd"
+      ],
+      "notes": "Berlian Impresif Sdn Bhd owns 100% of the mine."
+    }
+  }
 }

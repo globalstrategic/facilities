@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ROU",
   "location": {
-    "lat": 46.07,
-    "lon": 22.88,
+    "lat": 46.09,
+    "lon": 22.85,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Euro Sun Mining Inc.",
+    "Samax Romania S.R.L."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:47.783267Z",
-    "checked_by": "import_pipeline",
-    "notes": "Europe's second-largest gold deposit. Designed without cyanide use to address environmental concerns but has faced significant permitting delays and opposition. 1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:24:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Europe's second-largest gold deposit. Designed without cyanide use to address environmental concerns but has faced significant permitting delays and opposition. 1 | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/rovina-valley-project-hunedoara/. The Rovina Valley Project is an open-pit gold-copper mining development located in Hunedoara, Romania"
   },
   "canonical_name": "Rovina Valley Development",
   "canonical_slug": "rovina-valley-development",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hunedoara County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:24:08.000000Z",
+      "operators": [
+        "Euro Sun Mining Inc."
+      ],
+      "owners": [
+        "Samax Romania S.R.L."
+      ],
+      "notes": "Euro Sun Mining is the parent company, and Samax Romania is its wholly owned subsidiary."
+    }
+  }
 }

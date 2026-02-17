@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ISL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 64.35,
+    "lon": -21.7,
+    "precision": "city"
   },
   "types": [
     "smelter"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Elkem ASA",
-      "role": "operator",
-      "source": "Research Import ISL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:51:44.787707",
-      "evidence": "Extracted from operator column: Elkem ASA (Norway)"
-    }
+    "China National Bluestar",
+    "China National Bluestar (group) Co. Ltd",
+    "Elkem ASA",
+    "Elkem Iceland ehf"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:12.903973Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Elkem Iceland ferrosilicon smelter at Grundartangi, Hvalfjörður"
   },
   "canonical_name": "Elkem Iceland Smelter",
   "canonical_slug": "elkem-iceland-smelter",
@@ -51,5 +47,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Capital Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:22:13.000000Z",
+      "operators": [
+        "Elkem Iceland ehf"
+      ],
+      "owners": [
+        "Elkem ASA",
+        "China National Bluestar"
+      ],
+      "notes": "Elkem Iceland was fully acquired by Elkem ASA in 2003, which is owned by China National Bluestar."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.38,
-    "lon": 104.574,
+    "lat": -2.3801274,
+    "lon": 104.5735532,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Trimata Benua"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.241642Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:43:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Trimata_Benua_Coal_Mine. Trimata Benua Coal Mine is an operating coal mine located in Banyuasin, South Sumatra, Indonesia"
   },
   "canonical_name": "Trimata Benua Coal Mine",
   "canonical_slug": "trimata-benua-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:43:29.000000Z",
+      "operators": [
+        "PT Trimata Benua"
+      ],
+      "owners": [
+        "PT Trimata Benua"
+      ],
+      "notes": "PT Trimata Benua is both the operator and owner of the coal mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.133,
-    "lon": -78.059,
+    "lat": 40.1325,
+    "lon": -78.059167,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EE & S Auger Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.886971Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:06:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Auger_3152_Coal_Mine. The Auger 3152 Coal Mine is a retired coal mine"
   },
   "canonical_name": "Auger 3152 Coal Mine",
   "canonical_slug": "auger-3152-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:06:09.000000Z",
+      "operators": [
+        "EE & S Auger Mining"
+      ],
+      "owners": [
+        "EE & S Auger Mining"
+      ],
+      "notes": "EE & S Auger Mining owns 100% of the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NOR",
   "location": {
-    "lat": 59.97964,
-    "lon": 9.8653,
+    "lat": 59.02428082298556,
+    "lon": 10.7059501,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Carnaby Resources Limited",
+    "Kuniko Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.723334Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:20:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Oslo (https://carnabyresources.com.au/scandinavian-projects/skuterud-project-norway/). The Skuterud Project is located in southern Norway, approximately 100 km from Oslo port"
   },
   "canonical_name": "Skuterud Exploration",
   "canonical_slug": "skuterud-exploration",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Viken",
+  "town": "Oslo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:20:58.000000Z",
+      "operators": [
+        "Kuniko Limited"
+      ],
+      "owners": [
+        "Carnaby Resources Limited"
+      ],
+      "notes": "Kuniko is actively developing the Skuterud Cobalt Project."
+    }
+  }
 }

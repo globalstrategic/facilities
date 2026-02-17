@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LUX",
   "location": {
-    "lat": 49.53,
-    "lon": 5.905,
+    "lat": 49.504175,
+    "lon": 5.993759,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:20.093391Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:09:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Esch-Belval_steel_plant. The Belval steel plant is part of ArcelorMittal's operations in Luxembourg, focusing on electric arc furnace technology"
   },
   "canonical_name": "Belval And Differdange Steel Steel Plant",
   "canonical_slug": "belval-and-differdange-steel-steel-plant",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Luxembourg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:09:53.000000Z",
+      "operators": [
+        "ArcelorMittal"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal is the sole operator and owner of the facility."
+    }
+  }
 }

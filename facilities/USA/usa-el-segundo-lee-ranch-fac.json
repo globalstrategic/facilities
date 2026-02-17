@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.148,
-    "lon": -107.847,
+    "lat": 35.39062271417836,
+    "lon": -107.851446,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "El Segundo Coal Company LLC",
+    "Peabody Energy Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.723860Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:03:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Grants (https://www.gem.wiki/El_Segundo_Coal_Mine). The El Segundo and Lee Ranch mines are located near Grants, NM, with the Lee Ranch mine specifically mentioned as being 27 miles north of Grants"
   },
   "canonical_name": "El Segundo/lee Ranch Mine",
   "canonical_slug": "el-segundo-lee-ranch-mine",
@@ -55,5 +58,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Mexico",
+  "town": "Grants",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:03:26.000000Z",
+      "operators": [
+        "El Segundo Coal Company LLC",
+        "Peabody Energy Corp"
+      ],
+      "owners": [
+        "Peabody Energy Corp"
+      ],
+      "notes": "Peabody Energy is the primary owner and operator of both mines."
+    }
+  }
 }

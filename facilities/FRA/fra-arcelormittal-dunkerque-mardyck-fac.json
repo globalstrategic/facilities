@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-arcelormittal-dunkerque-mardyck-fac",
-  "name": "**ArcelorMittal Dunkerque/Mardyck**",
+  "name": "ArcelorMittal Dunkerque/Mardyck",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 51.0380556,
+    "lon": 2.3025472,
+    "precision": "exact"
   },
   "types": [
     "mine"
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "ArcelorMittal",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.694929",
-      "evidence": "Extracted from operator column: ArcelorMittal"
-    }
+    "ArcelorMittal",
+    "ArcelorMittal Atlantique et Lorraine SAS"
   ],
   "products": [],
   "sources": [
@@ -60,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**ArcelorMittal Dunkerque/Mardyck** Mine",
+      "name": "ArcelorMittal Dunkerque/Mardyck Mine",
       "from": "2025-10-28T17:18:38.694937",
       "to": "2025-11-04T19:18:51.670752Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:55:46.000000Z",
+      "operators": [
+        "ArcelorMittal Atlantique et Lorraine SAS"
+      ],
+      "owners": [
+        "ArcelorMittal Atlantique et Lorraine SAS"
+      ],
+      "notes": "ArcelorMittal is a leading integrated steel and mining company with operations in multiple countries."
+    }
+  }
 }

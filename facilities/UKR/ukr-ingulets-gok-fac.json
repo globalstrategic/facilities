@@ -9,8 +9,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 47.672,
-    "lon": 33.219,
+    "lat": 47.669081,
+    "lon": 33.217806,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ingulets GOK PJSC",
+    "Metinvest BV"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.720951Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:00:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Metinvest_Ingulets_Mine. Ingulets GOK is one of Ukraine's largest mining companies, located in Kryvyi Rih"
   },
   "canonical_name": "Ingulets GOK Mine",
   "canonical_slug": "ingulets-gok-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:00:12.000000Z",
+      "operators": [
+        "Ingulets GOK PJSC"
+      ],
+      "owners": [
+        "Metinvest BV"
+      ],
+      "notes": "Metinvest owns 100% of Ingulets GOK."
+    }
+  }
 }

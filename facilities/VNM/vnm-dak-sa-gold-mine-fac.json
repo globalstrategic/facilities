@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-dak-sa-gold-mine-fac",
-  "name": "**Dak Sa Gold Mine**",
+  "name": "Dak Sa Gold Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.2,
+    "lon": 107.5,
+    "precision": "district"
   },
   "types": [
     "mine"
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Phuoc Son Gold Company Ltd.",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.127907",
-      "evidence": "Extracted from operator column: Phuoc Son Gold Company Ltd."
-    }
+    "Besra Inc.",
+    "New Vietnam Mining Company",
+    "Phuoc Son Gold Co., Ltd",
+    "Phuoc Son Gold Company Ltd.",
+    "Vaco Gold Company"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.273521Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Gold mine 8km NW of Kham Duc, Phuoc Son District, Quang Nam"
   },
   "canonical_name": "Dak Sa Gold Mine",
   "canonical_slug": "dak-sa-gold-mine",
@@ -60,11 +57,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Dak Sa Gold ** Mine",
+      "name": "Dak Sa Gold  Mine",
       "from": "2025-10-21T13:04:38.127911",
       "to": "2025-11-04T19:19:02.273518Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Nam",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:31:09.000000Z",
+      "operators": [
+        "Phuoc Son Gold Company Ltd.",
+        "Besra Inc."
+      ],
+      "owners": [
+        "New Vietnam Mining Company",
+        "Vaco Gold Company"
+      ],
+      "notes": "Phuoc Son Gold is managed by the Vietnamese subsidiary of Canadian Besra Inc."
+    }
+  }
 }

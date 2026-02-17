@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 32.5,
+    "lon": -5.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elcora Advanced Materials Corp.",
+    "Elcora Advanced Materials Corporation",
+    "Ermazon SARL"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:48.331646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Atlas Fox manganese deposit, Beni Mellal-Khénifra"
   },
   "canonical_name": "Atlas Fox Exploration",
   "canonical_slug": "atlas-fox-exploration",
@@ -51,5 +55,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Beni Mellal-Khénifra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:59:06.000000Z",
+      "operators": [
+        "Elcora Advanced Materials Corp."
+      ],
+      "owners": [
+        "Elcora Advanced Materials Corp."
+      ],
+      "notes": "Elcora operates through its wholly owned subsidiary Ermazon SARL."
+    }
+  }
 }

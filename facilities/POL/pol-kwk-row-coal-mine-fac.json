@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 50.046,
-    "lon": 18.587,
+    "lat": 50.0804724,
+    "lon": 19.1614253,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Polska Grupa Górnicza SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.934709Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:48:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KWK_ROW_Coal_Mine. The KWK ROW Coal Mine is part of the underground operations in the Silesian region of Poland"
   },
   "canonical_name": "KWK ROW Coal Mine",
   "canonical_slug": "kwk-row-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Śląskie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:48:27.000000Z",
+      "operators": [
+        "Polska Grupa Górnicza SA"
+      ],
+      "owners": [
+        "Polska Grupa Górnicza SA"
+      ],
+      "notes": "Polska Grupa Górnicza is the sole owner and operator of the KWK ROW Coal Mine."
+    }
+  }
 }

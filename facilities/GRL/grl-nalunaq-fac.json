@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-nalunaq-fac",
-  "name": "**Nalunaq**",
+  "name": "Nalunaq",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 60.76417,
+    "lon": -46.06583,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -27,14 +27,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Amaroq Minerals",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.117365",
-      "evidence": "Extracted from operator column: Amaroq Minerals"
-    }
+    "Amaroq Minerals",
+    "Amaroq Minerals Ltd",
+    "Amaroq Minerals Ltd.",
+    "Nalunaq A/S"
   ],
   "products": [],
   "sources": [
@@ -45,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.632545Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:39:27Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:39:27Z] Geocoded via web search. Coords: (60.76417, -46.06583). Confidence: 0.90. Notes: Coordinates extracted from the reference to the new airport located near Qaqortoq, which is 5 km north of the town."
   },
   "canonical_name": "Nalunaq Mine",
   "canonical_slug": "nalunaq-mine",
@@ -66,11 +62,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nalunaq** Mine",
+      "name": "Nalunaq Mine",
       "from": "2025-10-29T08:01:20.117377",
       "to": "2025-11-04T19:19:00.632542Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kujalleq",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:46:42.000000Z",
+      "operators": [
+        "Amaroq Minerals Ltd."
+      ],
+      "owners": [
+        "Nalunaq A/S"
+      ],
+      "notes": "Amaroq Minerals Ltd. wholly owns Nalunaq A/S."
+    }
+  }
 }

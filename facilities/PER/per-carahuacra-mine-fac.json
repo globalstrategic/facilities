@@ -9,8 +9,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.681,
-    "lon": -76.089,
+    "lat": -11.61179214053228,
+    "lon": -75.8998811,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gildemeister Family",
+    "Volcan Compañia Minera S.A.",
+    "Volcan Compañia Minera S.A.A.",
+    "Volcan Mines Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.306680Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:59:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from La Oroya (https://thediggings.com/mines/18765). The Carahuacra Mine is located near La Oroya, approximately 10 km south of Morococha"
   },
   "canonical_name": "Carahuacra Mine",
   "canonical_slug": "carahuacra-mine-2",
@@ -60,5 +65,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Junín",
+  "town": "La Oroya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:59:15.000000Z",
+      "operators": [
+        "Volcan Compañia Minera S.A.A."
+      ],
+      "owners": [
+        "Gildemeister Family",
+        "Volcan Compañia Minera S.A.",
+        "Volcan Mines Company"
+      ],
+      "notes": "Volcan has suspended operations to adjust operating permits."
+    }
+  }
 }

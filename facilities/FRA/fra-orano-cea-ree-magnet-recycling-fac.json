@@ -1,11 +1,11 @@
 {
   "facility_id": "fra-orano-cea-ree-magnet-recycling-fac",
-  "name": "**Orano/CEA REE Magnet Recycling**",
+  "name": "Orano/CEA REE Magnet Recycling",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 45.1885,
+    "lon": 5.7245,
     "precision": "unknown"
   },
   "types": [
@@ -19,22 +19,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Orano Group",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.777083",
-      "evidence": "Extracted from operator column: Orano Group / CEA"
-    },
-    {
-      "name": "CEA",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.777088",
-      "evidence": "Extracted from operator column: Orano Group / CEA"
-    }
+    "CEA",
+    "French Alternative Energies and Atomic Energy Commission (CEA)",
+    "Orano Group"
   ],
   "products": [],
   "sources": [
@@ -45,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.677117Z",
-    "checked_by": "import_pipeline",
-    "notes": "Europe's first pilot line for 'short-loop' recycling of high-performance magnets. 46 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:37:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Europe's first pilot line for 'short-loop' recycling of high-performance magnets. 46 | Canonical name+slug generated. Web search geocoded. Source: https://rawmaterials.net/rare-earth-recyling-pilot-facility-opens-in-france/. The facility is a pilot for recycling rare-earth magnets and is part of a larger initiative to enhance recycling capabilities in Europe"
   },
   "canonical_name": "Orano/cea REE Magnet Recycling Mine",
   "canonical_slug": "orano-cea-ree-magnet-recycling-mine",
@@ -66,11 +53,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Orano/CEA REE Magnet Recycling** Mine",
+      "name": "Orano/CEA REE Magnet Recycling Mine",
       "from": "2025-10-28T17:18:38.777092",
       "to": "2025-11-04T19:18:51.677115Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Auvergne-Rhône-Alpes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:37:35.000000Z",
+      "operators": [
+        "Orano Group",
+        "French Alternative Energies and Atomic Energy Commission (CEA)"
+      ],
+      "owners": [],
+      "notes": "Orano Group is a domestic company specializing in the nuclear energy sector."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "IRN",
   "location": {
-    "lat": 38.692,
-    "lon": 46.702,
+    "lat": 38.701,
+    "lon": 46.705,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "National Iranian Copper Industries Co. (NICICO)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:16.443245Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:04:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sungun_copper_mine. Sungun is the largest open-pit copper mine in Iran, located in Varzaqan county"
   },
   "canonical_name": "Sungun Mine",
   "canonical_slug": "sungun-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Azerbaijan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:04:54.000000Z",
+      "operators": [
+        "National Iranian Copper Industries Co. (NICICO)"
+      ],
+      "owners": [
+        "National Iranian Copper Industries Co. (NICICO)"
+      ],
+      "notes": "NICICO is focused on copper mining and smelting in Iran."
+    }
+  }
 }

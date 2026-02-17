@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -16.53,
+    "lon": 28.71,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -31,22 +31,14 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Libra Group",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.843365",
-      "evidence": "Extracted from operator column: Libra Group / Kabanga Tin Mines"
-    },
-    {
-      "name": "Kabanga Tin Mines",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.843374",
-      "evidence": "Extracted from operator column: Libra Group / Kabanga Tin Mines"
-    }
+    "Apila Ltd",
+    "Daled Mining Ltd",
+    "Kabanga Tin Mines",
+    "Libra Group",
+    "Libra Minerals Ltd",
+    "Libra Pty Ltd",
+    "Plateau Minerals Ltd",
+    "Woodsman Investment Ltd"
   ],
   "products": [],
   "sources": [
@@ -57,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.686450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:30:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:30:28Z] Kabanga Tin Mines near Siavonga, Southern Province. Libra Minerals/Daled Mining JV."
   },
   "canonical_name": "Kabanga Tin Mines Exploration",
   "canonical_slug": "kabanga-tin-mines-exploration",
@@ -76,5 +68,22 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zambia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:40:39.000000Z",
+      "operators": [
+        "Daled Mining Ltd"
+      ],
+      "owners": [
+        "Libra Pty Ltd",
+        "Daled Mining Ltd",
+        "Apila Ltd",
+        "Woodsman Investment Ltd",
+        "Plateau Minerals Ltd"
+      ],
+      "notes": "Libra Pty Ltd is the mine developer, holding 85% ownership, while Daled Mining Ltd operates in Zambia."
+    }
+  }
 }

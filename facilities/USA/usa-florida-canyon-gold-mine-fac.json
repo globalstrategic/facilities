@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.579,
-    "lon": -118.237,
+    "lat": 41.380996479841315,
+    "lon": -117.19066563636036,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Argonaut Gold",
+    "Florida Canyon Gold Inc.",
+    "Integra Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.948573Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:14:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Winnemucca (https://integraresources.com/asset/florida-canyon-mine/). The Florida Canyon Mine is located 125 miles east of Reno, Nevada, and immediately south of Interstate 80. The nearest town is Winnemucca, which is 40 miles northeast"
   },
   "canonical_name": "Florida Canyon Gold Mine",
   "canonical_slug": "florida-canyon-gold-mine",
@@ -56,5 +60,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Winnemucca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:14:07.000000Z",
+      "operators": [
+        "Integra Resources Corp."
+      ],
+      "owners": [
+        "Florida Canyon Gold Inc.",
+        "Argonaut Gold"
+      ],
+      "notes": "Integra Resources acquired the Florida Canyon Mine from Florida Canyon Gold Inc., which is a spinout from Argonaut Gold."
+    }
+  }
 }

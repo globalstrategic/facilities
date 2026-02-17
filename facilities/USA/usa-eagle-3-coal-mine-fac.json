@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.783,
-    "lon": -81.478,
+    "lat": 37.773611,
+    "lon": -81.491389,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rockwell Mining",
+    "Sev.en Global Investments AS"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.826872Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:15:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609427. Coordinates extracted directly from the mining report"
   },
   "canonical_name": "Eagle 3 Coal Mine",
   "canonical_slug": "eagle-3-coal-mine",
@@ -62,5 +65,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:15:18.000000Z",
+      "operators": [
+        "Rockwell Mining"
+      ],
+      "owners": [
+        "Rockwell Mining",
+        "Sev.en Global Investments AS"
+      ],
+      "notes": "Rockwell Mining is the operator and owner, with Sev.en Global Investments AS as the parent company."
+    }
+  }
 }

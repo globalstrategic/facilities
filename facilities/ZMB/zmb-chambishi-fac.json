@@ -12,8 +12,8 @@
   ],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -12.655,
-    "lon": 28.045,
+    "lat": -12.639583190839765,
+    "lon": 28.2155973,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglovaal Mining Limited",
+    "Chambishi Metals Plc",
+    "Non-Ferrous Corporation Africa Mining PLC (NFCA)",
+    "ZCCM Investments Holdings Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.685525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:48:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kitwe (https://www.zccm-ih.com.zm/investments/mining-assets/chambishi-metals-plc/). Chambishi is located near Kitwe in the Copperbelt province of Zambia"
   },
   "canonical_name": "Chambishi Mine",
   "canonical_slug": "chambishi-mine",
@@ -59,5 +64,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Copperbelt",
+  "town": "Kitwe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:48:25.000000Z",
+      "operators": [
+        "Non-Ferrous Corporation Africa Mining PLC (NFCA)",
+        "Chambishi Metals Plc"
+      ],
+      "owners": [
+        "ZCCM Investments Holdings Plc",
+        "Anglovaal Mining Limited"
+      ],
+      "notes": "NFCA has been operating in Chambishi for 25 years and is involved in significant investments and production increases."
+    }
+  }
 }

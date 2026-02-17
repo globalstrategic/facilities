@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MAR",
   "location": {
-    "lat": 32.279,
-    "lon": -7.845,
+    "lat": 32.257105863130974,
+    "lon": -7.9891608,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Groupe Office Chérifien des Phosphates (100%)",
+    "Office Chérifien des Phosphates (OCP)"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:48.335745Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:17:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakesh (https://www.mining-technology.com/projects/benguearir/). Benguerir is the newest of Morocco’s four phosphate mining centres, having started production in 1979–80"
   },
   "canonical_name": "Benguerir Mine",
   "canonical_slug": "benguerir-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi",
+  "town": "Marrakesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:17:03.000000Z",
+      "operators": [
+        "Office Chérifien des Phosphates (OCP)"
+      ],
+      "owners": [
+        "Groupe Office Chérifien des Phosphates (100%)"
+      ],
+      "notes": "OCP is a state-owned agency responsible for phosphate mining in Morocco."
+    }
+  }
 }

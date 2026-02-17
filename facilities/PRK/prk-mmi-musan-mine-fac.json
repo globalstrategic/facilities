@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PRK",
   "location": {
-    "lat": 42.239,
-    "lon": 129.264,
+    "lat": 42.23194,
+    "lon": 129.26917,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "North Korea Ferrous Metals Export and Import Corporation",
+    "North Korea’s Ministry of Mines",
+    "Tonghua Iron and Steel",
+    "Yanbian Cheon-ji Industry Trading Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.357485Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:37:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Musan_mine. The Musan Mine is one of the largest iron ore reserves in North Korea, with significant historical production capacity"
   },
   "canonical_name": "MMI Musan Mine",
   "canonical_slug": "mmi-musan-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Hamgyong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:37:47.000000Z",
+      "operators": [
+        "North Korea’s Ministry of Mines",
+        "Yanbian Cheon-ji Industry Trading Company"
+      ],
+      "owners": [
+        "Tonghua Iron and Steel",
+        "North Korea Ferrous Metals Export and Import Corporation"
+      ],
+      "notes": "The mine has been operated by the Ministry of Mines and has had extraction rights held by Chinese companies since 2005."
+    }
+  }
 }

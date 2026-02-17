@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": 9.983,
-    "lon": 98.708,
+    "lat": 3.5218002342729093,
+    "lon": 100.7243967,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cummins Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:18.499677Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:44:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ayutthaya (https://www.cummins.com/case-studies/sub-sea-tin-mining). The Bangrim Tin Mine is referenced in relation to dredging operations that transport materials from Ayutthaya to Bangka Island, indicating a significant distance but not providing exact coordinates"
   },
   "canonical_name": "Bangrim Tin Mine",
   "canonical_slug": "bangrim-tin-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Phra Nakhon Si Ayutthaya",
+  "town": "Ayutthaya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:44:09.000000Z",
+      "operators": [
+        "Cummins Inc."
+      ],
+      "owners": [],
+      "notes": "Wanchai Wiriyajaree is mentioned as a market operator for dredges but not as an owner."
+    }
+  },
+  "notes": "[AUTO-FIX 2025-12-17T20:06:05Z] Fixed wrong_hemisphere: Changed lat from -3.5218002342729093 to 3.5218002342729093"
 }

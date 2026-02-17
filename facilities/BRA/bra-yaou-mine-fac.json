@@ -1,0 +1,72 @@
+{
+  "facility_id": "bra-yaou-mine-fac",
+  "name": "Yaou Mine",
+  "aliases": [],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -4.5,
+    "lon": -54.0,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Auplata Mining Group",
+    "Auplata S.A.",
+    "Compagnie Minière Dorlin S.A.S.",
+    "Société Minière Yaou Dorlin S.A.S."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-29",
+      "date": "2025-10-29T08:01:49.009359"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T15:19:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.azomining.com/Article.aspx?ArticleID=78. Yaou Mine is located approximately 255 km southwest of Cayenne"
+  },
+  "canonical_name": "Yaou Mine",
+  "canonical_slug": "yaou-mine",
+  "display_name": "Yaou",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "French Guiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:19:41.000000Z",
+      "operators": [
+        "Société Minière Yaou Dorlin S.A.S.",
+        "Compagnie Minière Dorlin S.A.S."
+      ],
+      "owners": [
+        "Auplata S.A."
+      ],
+      "notes": "Auplata S.A. owns the Yaou Mine through its subsidiaries."
+    }
+  }
+}

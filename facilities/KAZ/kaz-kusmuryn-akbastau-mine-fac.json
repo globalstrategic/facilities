@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 48.6437,
+    "lon": 77.7102,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kazakhmys Corporation",
+    "Kazakhmys Corporation LLP"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.735102Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:44:48Z",
+    "checked_by": "web_search_manual",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:44:48Z] Geocoded via web search. Coords: (48.6437, 77.7102). Confidence: 0.85. Source: Akbastau copper mine, Abai Region"
   },
   "canonical_name": "Kusmuryn Akbastau Mine",
   "canonical_slug": "kusmuryn-akbastau-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Abai Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:09:08.000000Z",
+      "operators": [
+        "Kazakhmys Corporation"
+      ],
+      "owners": [
+        "Kazakhmys Corporation"
+      ],
+      "notes": "Kazakhmys Corporation is the main co-owner of the Kusmuryn-Akbastau quarry."
+    }
+  }
 }

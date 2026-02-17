@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.146,
-    "lon": 114.692,
+    "lat": -1.144884,
+    "lon": 114.681569,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agritrade Resources Limited",
+    "Bunda Kandung"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.199780Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:12:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bunda_Kandung_Coal_Mine. The Bunda Kandung Coal Mine is an operating coal mine with significant reserves and an active export permit"
   },
   "canonical_name": "Bunda Kandung Coal Mine",
   "canonical_slug": "bunda-kandung-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:12:32.000000Z",
+      "operators": [
+        "Agritrade Resources Limited"
+      ],
+      "owners": [
+        "Bunda Kandung"
+      ],
+      "notes": "Agritrade Resources has an active contract as service miner for the Bunda Kandung Coal Mine."
+    }
+  }
 }

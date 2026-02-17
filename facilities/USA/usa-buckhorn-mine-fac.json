@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.188,
-    "lon": -116.491,
+    "lat": 48.5,
+    "lon": -119.5,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Crown Resources Corporation",
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.886516Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T22:05:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.union-bulletin.com/news/washington-reaches-agreement-with-buckhorn-mine-owner/article_9dbec6d9-ef3a-58e6-b034-0c5c93ed5c0c.html. The Buckhorn Mine is located near Chesaw, Washington, approximately 120 miles northwest of Spokane"
   },
   "canonical_name": "Buckhorn Mine",
   "canonical_slug": "buckhorn-mine",
@@ -59,5 +62,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Washington",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:05:39.000000Z",
+      "operators": [
+        "Crown Resources Corporation",
+        "Kinross Gold Corporation"
+      ],
+      "owners": [
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Crown Resources is a subsidiary of Kinross Gold. The mine was operational from 2008 to 2017."
+    }
+  }
 }

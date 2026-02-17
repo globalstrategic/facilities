@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.765,
-    "lon": -76.449,
+    "lat": 40.764722,
+    "lon": -76.449444,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "West Spring Energy",
+    "West Spring Energy LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.791609Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:03:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/West_Spring_Energy_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "West Spring Energy Coal Mine",
   "canonical_slug": "west-spring-energy-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:03:17.000000Z",
+      "operators": [
+        "West Spring Energy LLC"
+      ],
+      "owners": [
+        "West Spring Energy"
+      ],
+      "notes": "West Spring Energy LLC is the operating company and fully owns the mine."
+    }
+  }
 }

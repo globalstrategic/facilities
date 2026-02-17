@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.598,
-    "lon": -116.772,
+    "lat": 32.59778,
+    "lon": -116.77083,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Artery Consolidated Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.758742Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:33:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10077267/. The Donohoe Mine is a gold mine located in San Diego County, California"
   },
   "canonical_name": "Donohoe Mine",
   "canonical_slug": "donohoe-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:33:53.000000Z",
+      "operators": [
+        "Artery Consolidated Company"
+      ],
+      "owners": [
+        "Artery Consolidated Company"
+      ],
+      "notes": "The mine is owned and operated by Artery Consolidated Company."
+    }
+  }
 }

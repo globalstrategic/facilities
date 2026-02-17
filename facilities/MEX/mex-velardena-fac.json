@@ -2,15 +2,13 @@
   "facility_id": "mex-velardena-fac",
   "name": "Velardena",
   "aliases": [
-    "Velardena",
-    "Velardena",
-    "Velardena"
+    "Velardeña Project"
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 25.062,
-    "lon": -103.735,
-    "precision": "site"
+    "lat": 25.0648805,
+    "lon": -103.7354383,
+    "precision": "locality"
   },
   "types": [
     "mine"
@@ -34,7 +32,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Golden Minerals Company",
+    "Minera William S.A. de R.L. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.969356Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T05:54:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1011509/000155837022004084/aumn-20211231xex96d2.htm. Coordinates are based on UTM grid coordinates provided in the technical report"
   },
   "canonical_name": "Velardena Mine",
   "canonical_slug": "velardena-mine-2",
@@ -63,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:54:20.000000Z",
+      "operators": [
+        "Golden Minerals Company"
+      ],
+      "owners": [
+        "Minera William S.A. de R.L. de C.V."
+      ],
+      "notes": "Minera William is a wholly owned subsidiary of Golden Minerals."
+    }
+  }
 }

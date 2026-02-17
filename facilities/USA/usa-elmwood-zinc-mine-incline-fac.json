@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.196,
-    "lon": -85.934,
+    "lat": 38.11400076110578,
+    "lon": -78.1865043,
     "precision": "site"
   },
   "types": [
@@ -37,7 +37,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jersey Miniere Zinc Company",
+    "Nyrstar"
+  ],
   "products": [],
   "sources": [
     {
@@ -47,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.762733Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:38:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gordonsville (https://thediggings.com/mines/usgs10026429). The Elmwood Zinc Mine is located in the Carthage Area, near Gordonsville, Tennessee"
   },
   "canonical_name": "Elmwood Zinc Incline Mine",
   "canonical_slug": "elmwood-zinc-incline-mine",
@@ -66,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tennessee",
+  "town": "Gordonsville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:38:06.000000Z",
+      "operators": [
+        "Nyrstar"
+      ],
+      "owners": [
+        "Jersey Miniere Zinc Company"
+      ],
+      "notes": "The mine was operated by Nyrstar after reopening in 2010 but was closed again in 2015."
+    }
+  }
 }

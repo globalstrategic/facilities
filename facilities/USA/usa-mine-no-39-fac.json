@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.288,
-    "lon": -81.631,
+    "lat": 37.280237,
+    "lon": -81.637185,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cleveland-Cliffs",
+    "Twin State Mining, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.711242Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:52:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-4609261. Mine No. 39 is an underground coal mine operated by Twin State Mining, Inc"
   },
   "canonical_name": "No 39 Mine",
   "canonical_slug": "no-39-mine",
@@ -60,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:52:20.000000Z",
+      "operators": [
+        "Twin State Mining, Inc."
+      ],
+      "owners": [
+        "Cleveland-Cliffs"
+      ],
+      "notes": "Cleveland-Cliffs is the parent company of Twin State Mining."
+    }
+  }
 }

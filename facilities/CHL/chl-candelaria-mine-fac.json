@@ -1,0 +1,77 @@
+{
+  "facility_id": "chl-candelaria-mine-fac",
+  "name": "Candelaria Mine",
+  "aliases": [
+    "Candelaria Mine",
+    "Candelaria Mine"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -24.5,
+    "lon": -68.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Antimony",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Lundin Mining Corp.",
+    "Sumitomo Corporation",
+    "Sumitomo Metal Mining Co., Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:21.315695"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T09:55:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.e-mj.com/features/continuity-for-candelaria/. Candelaria Mine is located in the Atacama Region of Chile, approximately 50 km south of Copiapó"
+  },
+  "canonical_name": "Candelaria Mine",
+  "canonical_slug": "candelaria-mine-2",
+  "display_name": "Candelaria",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:55:07.000000Z",
+      "operators": [
+        "Lundin Mining Corp."
+      ],
+      "owners": [
+        "Lundin Mining Corp.",
+        "Sumitomo Corporation",
+        "Sumitomo Metal Mining Co., Ltd."
+      ],
+      "notes": "Lundin Mining holds an 80% interest in the Candelaria operations, while Sumitomo Corporation and Sumitomo Metal Mining Co., Ltd. hold the remaining 20%."
+    }
+  }
+}

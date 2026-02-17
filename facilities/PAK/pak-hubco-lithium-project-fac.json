@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 28.0,
+    "lon": 65.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hub Power Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:03.334940Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.35,
+    "last_checked": "2025-12-18T14:38:22Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:27:01Z] No specific geographic coordinates or location details were found for the Hubco Lithium Project in the search results. | [REGIONAL-ESTIMATE 2025-12-18T14:38:22Z] HUBCO/Ark Metals JV for lithium exploration. Ark Metals holds licenses in Balochistan and Gilgit-Baltistan. Exact site undisclosed. Placed at Balochistan region center."
   },
   "canonical_name": "Hubco Lithium Exploration",
   "canonical_slug": "hubco-lithium-exploration",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Baluchistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:29.000000Z",
+      "operators": [
+        "Hub Power Company Limited"
+      ],
+      "owners": [
+        "Hub Power Company Limited"
+      ],
+      "notes": "HUBCO is the largest Independent Power Producer (IPP) in Pakistan and is expanding into lithium mining."
+    }
+  }
 }

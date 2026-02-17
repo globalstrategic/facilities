@@ -1,11 +1,11 @@
 {
   "facility_id": "pan-formetal-processing-plants-fac",
-  "name": "**Formetal Processing Plants**",
+  "name": "Formetal Processing Plants",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
     "lat": 9.02778,
-    "lon": null,
+    "lon": -79.5,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,7 @@
   ],
   "commodities": [
     {
-      "metal": "**steel**",
+      "metal": "steel",
       "primary": true
     }
   ],
@@ -41,7 +41,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:19:21.426377Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-79.5 (was null)"
   },
   "canonical_name": "Formetal Processing Plants Processing Plant",
   "canonical_slug": "formetal-processing-plants-processing-plant",
@@ -58,7 +58,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Formetal Processing Plants** Processing Plant",
+      "name": "Formetal Processing Plants Processing Plant",
       "from": "2025-10-28T21:58:20.922999",
       "to": "2025-11-04T19:19:21.426375Z",
       "reason": "data_correction"

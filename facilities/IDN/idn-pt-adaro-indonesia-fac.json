@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.306,
-    "lon": 115.505,
+    "lat": -2.204484,
+    "lon": 115.527798,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Adaro Group",
+    "Adaro Indonesia",
+    "Electricity Generating Authority of Thailand (EGAT)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.250655Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:50:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tutupan_Coal_Mine. The Tutupan coal mine is operated by Adaro Indonesia and is one of the major coal mines in the region"
   },
   "canonical_name": "PT Adaro Indonesia Mine",
   "canonical_slug": "pt-adaro-indonesia-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:50:53.000000Z",
+      "operators": [
+        "Adaro Indonesia"
+      ],
+      "owners": [
+        "Adaro Group",
+        "Electricity Generating Authority of Thailand (EGAT)"
+      ],
+      "notes": "Adaro Indonesia is a subsidiary of Adaro Group, which holds an 88.5% stake."
+    }
+  }
 }

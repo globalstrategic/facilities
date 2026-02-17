@@ -1,0 +1,71 @@
+{
+  "facility_id": "bra-onverdacht-mine-fac",
+  "name": "Onverdacht Mine",
+  "aliases": [],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -23.333980126180183,
+    "lon": -50.97607403603277,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "bauxite (not on list)",
+      "primary": true
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    "Billiton/Shell",
+    "Formerly Billiton Maatschappij Suriname",
+    "Suralco"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SUR 2025-10-21",
+      "date": "2025-10-21T17:45:37.388148"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:00:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Paramaribo (https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/mineral-pubs/country/2014/myb3-2014-ns.pdf). The Onverdacht mining area is located about 20 km east of Paramaribo"
+  },
+  "canonical_name": "Onverdacht Mine",
+  "canonical_slug": "onverdacht-mine",
+  "display_name": "Onverdacht",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Para",
+  "town": "Paramaribo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:00:25.000000Z",
+      "operators": [
+        "Suralco",
+        "Billiton/Shell"
+      ],
+      "owners": [
+        "Suralco",
+        "Billiton/Shell"
+      ],
+      "notes": "The Onverdacht Mine is operated by a joint venture between Billiton/Shell (76%) and Suralco (24%)."
+    }
+  }
+}

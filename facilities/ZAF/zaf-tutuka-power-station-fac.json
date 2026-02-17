@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.7759743,
-    "lon": 29.3522454,
+    "lat": -26.77861,
+    "lon": 29.35194,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eskom",
+    "Eskom Holdings SOC Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:59:55.184542",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Tutuka Power Station, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:04:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Tutuka Power Station, South Africa. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tutuka_Power_Station. Tutuka Power Station is a coal-fired power plant operated by Eskom"
   },
   "canonical_name": "Tutuka Power Station Mine",
   "canonical_slug": "tutuka-power-station-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:04:31.000000Z",
+      "operators": [
+        "Eskom"
+      ],
+      "owners": [
+        "Eskom Holdings SOC Ltd"
+      ],
+      "notes": "Eskom is the sole owner and operator of the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.758,
-    "lon": -115.424,
+    "lat": 37.84917,
+    "lon": -107.88466,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "U.S. Forest Service",
+    "Valley View Leasing and Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.880924Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:00:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Valley_View_Leasing_and_Mining_Company_Mill. The Valley View Leasing and Mining Company Mill is a historic site listed on the U.S. National Register of Historic Places"
   },
   "canonical_name": "Valley View Mine",
   "canonical_slug": "valley-view-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:00:50.000000Z",
+      "operators": [
+        "Valley View Leasing and Mining Company"
+      ],
+      "owners": [
+        "U.S. Forest Service"
+      ],
+      "notes": "The mill was owned by the U.S. Forest Service in 2009."
+    }
+  }
 }

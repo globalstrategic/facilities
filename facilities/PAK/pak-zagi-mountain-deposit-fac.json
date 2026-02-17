@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 34.345425005386744,
+    "lon": 71.4123791183848,
     "precision": "unknown"
   },
   "types": [
@@ -46,7 +46,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Global Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:03.335256Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:35:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Peshawar (https://www.mindat.org/loc-51430.html). Zagi Mountain is located approximately 5.5 km southeast of the Warsak Dam and about 40 km NNW of Peshawar"
   },
   "canonical_name": "Zagi Mountain Mine",
   "canonical_slug": "zagi-mountain-mine",
@@ -75,5 +77,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northwest Frontier Province",
+  "town": "Peshawar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:35:51.000000Z",
+      "operators": [
+        "Global Mining Corp."
+      ],
+      "owners": [],
+      "notes": "Global Mining Corp. is mentioned in relation to mining activities in the area."
+    }
+  }
 }

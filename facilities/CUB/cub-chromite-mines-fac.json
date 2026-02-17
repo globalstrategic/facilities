@@ -1,14 +1,14 @@
 {
   "facility_id": "cub-chromite-mines-fac",
-  "name": "**Chromite Mines **",
+  "name": "Chromite Mines ",
   "aliases": [
     "Camagüey"
   ],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.388828,
+    "lon": -77.915146,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -27,14 +27,8 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "\\-",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.963860",
-      "evidence": "Extracted from operator column: \\-"
-    }
+    "Empresa Geominera S.A.",
+    "\\-"
   ],
   "products": [],
   "sources": [
@@ -47,9 +41,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.452275Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:49:08Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [GEOCODED 2025-12-18T00:49:08Z] Using Camaguey city coordinates. Lat: 21.388828, Lon: -77.915146. Note: General \"Chromite Mines\" facility, not a specific mine."
   },
   "canonical_name": "Chromite Mines Mine",
   "canonical_slug": "chromite-mines-mine",
@@ -66,11 +60,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Chromite Mines ** Mine",
+      "name": "Chromite Mines  Mine",
       "from": "2025-10-27T14:21:06.963866",
       "to": "2025-11-04T19:18:54.452271Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Camaguey",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:15:11.000000Z",
+      "operators": [
+        "Empresa Geominera S.A."
+      ],
+      "owners": [],
+      "notes": "Chinese companies have invested in the mining operations, but specific ownership details are not provided."
+    }
+  },
+  "town": "Camaguey"
 }

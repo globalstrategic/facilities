@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.4085,
+    "lon": 13.1586,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -26,22 +26,16 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.282624",
-      "evidence": "Extracted from operator column: N/A (formerly COMUF)"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.282627",
-      "evidence": "Extracted from operator column: N/A (formerly COMUF)"
-    }
+    "A",
+    "AREVA",
+    "COGEMA",
+    "COGEMA (now AREVA)",
+    "COMUF",
+    "COMUF (Compagnie des Mines d'Uranium de Franceville)",
+    "Compagnie des Mines d'Uranium de Franceville (COMUF)",
+    "Government of Gabon",
+    "N",
+    "Orano"
   ],
   "products": [],
   "sources": [
@@ -52,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.390085Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Mounana uranium mines, closed in 1999. Former COMUF operations, Haut-Ogooué"
   },
   "canonical_name": "Mounana Uranium Mines Facility",
   "canonical_slug": "mounana-uranium-mines-facility",
@@ -79,5 +73,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Haut-Ogooué",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:53:52.000000Z",
+      "operators": [
+        "Compagnie des Mines d'Uranium de Franceville (COMUF)",
+        "AREVA"
+      ],
+      "owners": [
+        "COGEMA",
+        "Government of Gabon"
+      ],
+      "notes": "COMUF was formed in 1958 and is primarily owned by COGEMA (68.4%) and the Government of Gabon (25.8%)."
+    }
+  }
 }

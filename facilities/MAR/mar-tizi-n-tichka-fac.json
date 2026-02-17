@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.5,
-    "lon": -7.439,
+    "lat": 30.958810632201917,
+    "lon": -8.30957460831628,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Moroccan National Office of Hydrocarbons and Mines (ONHYM)",
+    "Stellar AfricaGold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:48.326768Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:10:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakech (https://trendsnafrica.com/morocco-grants-four-exploration-licenses-for-gold-mines/). Stellar AfricaGold is expanding operations in Tichka, which is approximately 80 kilometers south-southwest of Marrakech"
   },
   "canonical_name": "Tizi N'tichka Mine",
   "canonical_slug": "tizi-n-tichka-mine",
@@ -55,5 +58,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi",
+  "town": "Marrakech",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:10:54.000000Z",
+      "operators": [
+        "Stellar AfricaGold Inc."
+      ],
+      "owners": [
+        "Stellar AfricaGold Inc.",
+        "Moroccan National Office of Hydrocarbons and Mines (ONHYM)"
+      ],
+      "notes": "Stellar AfricaGold holds a 90% interest in the Tichka Est project, with ONHYM holding the remaining 10%."
+    }
+  }
 }

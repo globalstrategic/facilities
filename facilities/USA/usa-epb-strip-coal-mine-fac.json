@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.686,
-    "lon": -78.683,
+    "lat": 40.675444,
+    "lon": -78.671114,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "E P Bender Coal Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.846533Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:30:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/EPB_Strip_Coal_Mine. EPB Strip Coal Mine is a retired coal mine"
   },
   "canonical_name": "EPB Strip Coal Mine",
   "canonical_slug": "epb-strip-coal-mine",
@@ -55,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:30:42.000000Z",
+      "operators": [
+        "E P Bender Coal Co"
+      ],
+      "owners": [
+        "E P Bender Coal Co"
+      ],
+      "notes": "E P Bender Coal Co owns 100% of the mine."
+    }
+  }
 }

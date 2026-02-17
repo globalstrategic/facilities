@@ -1,14 +1,14 @@
 {
   "facility_id": "idn-tin-mining-operations-fac",
-  "name": "**Tin Mining Operations **",
+  "name": "Tin Mining Operations ",
   "aliases": [
     "Bangka Belitung"
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.8477,
+    "lon": 106.1192,
+    "precision": "city"
   },
   "types": [
     "plant",
@@ -22,14 +22,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Timah Tbk",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.783912",
-      "evidence": "Extracted from operator column: PT Timah Tbk"
-    }
+    "PT Mitra Stania Prima",
+    "PT Timah TBK",
+    "PT Timah Tbk"
   ],
   "products": [],
   "sources": [
@@ -40,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.292180Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:47:37Z] No specific geographic coordinates were provided in the search results. | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Located in Sungailiat area, Bangka Island, Bangka Belitung Islands. PT Mitra Stania Prima operations."
   },
   "canonical_name": "Tin Mining Mine",
   "canonical_slug": "tin-mining-mine",
@@ -61,11 +56,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tin Mining ** Mine",
+      "name": "Tin Mining  Mine",
       "from": "2025-10-29T10:37:55.783918",
       "to": "2025-11-04T19:19:10.292176Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bangka Belitung Islands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:39:07.000000Z",
+      "operators": [
+        "PT Mitra Stania Prima"
+      ],
+      "owners": [],
+      "notes": "PT Mitra Stania Prima is the operator and is actively mining in Mapur."
+    }
+  }
 }

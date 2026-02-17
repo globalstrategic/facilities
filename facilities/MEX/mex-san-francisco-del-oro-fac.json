@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 26.846,
-    "lon": -105.863,
+    "lat": 26.0,
+    "lon": -105.0,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera Frisco S.A.B. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.965324Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:41:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1080/San-Francisco-del-Oro-Mine.aspx. The San Francisco del Oro mine is located 1 km north of the town of San Francisco del Oro"
   },
   "canonical_name": "San Francisco Del Oro Mine",
   "canonical_slug": "san-francisco-del-oro-mine",
@@ -69,5 +71,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:41:47.000000Z",
+      "operators": [
+        "Minera Frisco S.A.B. de C.V."
+      ],
+      "owners": [
+        "Minera Frisco S.A.B. de C.V."
+      ],
+      "notes": "Minera Frisco holds a 99.99% indirect ownership interest in the mine."
+    }
+  }
 }

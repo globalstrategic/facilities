@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 35.9994,
+    "lon": 71.8011,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chitral Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:03.334595Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located at Krinj village, Chitral district, Khyber Pakhtunkhwa."
   },
   "canonical_name": "Krinj Antimony Mine",
   "canonical_slug": "krinj-antimony-mine",
@@ -51,5 +53,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khyber Pakhtunkhwa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:24.000000Z",
+      "operators": [
+        "Chitral Mining Co., Ltd."
+      ],
+      "owners": [],
+      "notes": "Chitral Mining Co., Ltd. is mentioned in relation to the mine."
+    }
+  }
 }

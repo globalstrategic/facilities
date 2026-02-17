@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.738,
-    "lon": -104.11,
+    "lat": 24.34723274417435,
+    "lon": -104.3037582053664,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Majestic Silver Corporation",
+    "Silver Storm Mining Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.959751Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:36:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Durango (https://www.silverstorm.ca/la-parrilla-complex). La Parrilla Silver Mine is located approximately 76 kilometers southeast of Durango's capital"
   },
   "canonical_name": "La Parilla Mine",
   "canonical_slug": "la-parilla-mine",
@@ -62,5 +65,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "town": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:20.000000Z",
+      "operators": [
+        "Silver Storm Mining Ltd."
+      ],
+      "owners": [
+        "First Majestic Silver Corporation",
+        "Silver Storm Mining Ltd."
+      ],
+      "notes": "The mine was previously owned and operated by First Majestic Silver Corporation and is now owned by Silver Storm Mining Ltd. It was placed on care and maintenance in 2019."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.859,
-    "lon": 83.291,
+    "lat": 24.777091415887174,
+    "lon": 82.6350029,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bharat Aluminium Company Ltd (BALCO)",
+    "Government of India",
+    "Vedanta Resources plc."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.123340Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T22:49:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Korba (https://miningdataonline.com/property/3179/Mainpat-Mine.aspx). The Mainpat bauxite mine is operated by Bharat Aluminium Company Ltd (BALCO) and has faced operational challenges due to low ore quality"
   },
   "canonical_name": "Mainpat Mine",
   "canonical_slug": "mainpat-mine",
@@ -49,5 +53,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh",
+  "town": "Korba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:49:23.000000Z",
+      "operators": [
+        "Bharat Aluminium Company Ltd (BALCO)"
+      ],
+      "owners": [
+        "Vedanta Resources plc.",
+        "Government of India"
+      ],
+      "notes": "BALCO operates the mine and holds a 100% direct ownership of the operation, while Vedanta Resources and the Government of India hold indirect interests."
+    }
+  }
 }

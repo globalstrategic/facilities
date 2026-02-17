@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-tartoq-fac",
-  "name": "**Tartoq**",
+  "name": "Tartoq",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 60.0,
+    "lon": -45.0,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -27,14 +27,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Amaroq Minerals",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.204862",
-      "evidence": "Extracted from operator column: Amaroq Minerals"
-    }
+    "Amaroq Minerals",
+    "Nalunaq A/S"
   ],
   "products": [],
   "sources": [
@@ -45,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.632738Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:39:40Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:39:40Z] Geocoded via web search. Coords: (60.0, -45.0). Confidence: 0.70. Notes: Coordinates are estimated based on the proximity of the Tartoq gold prospect mentioned in the search results."
   },
   "canonical_name": "Tartoq Mine",
   "canonical_slug": "tartoq-mine",
@@ -66,11 +60,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tartoq** Mine",
+      "name": "Tartoq Mine",
       "from": "2025-10-29T08:01:20.204867",
       "to": "2025-11-04T19:19:00.632734Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:46:58.000000Z",
+      "operators": [
+        "Nalunaq A/S"
+      ],
+      "owners": [],
+      "notes": "Nalunaq A/S is a wholly owned subsidiary involved in the gold properties mentioned."
+    }
+  }
 }

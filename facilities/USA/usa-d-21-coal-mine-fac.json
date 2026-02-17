@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.252,
-    "lon": -82.14,
+    "lat": 37.252158,
+    "lon": -82.139736,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bluegrass Natural Resources LLC",
+    "INMET Mining",
+    "Industrial Minerals Group LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.870761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:51:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/D-21_Coal_Mine. D-21 Coal Mine is an operating coal mine located in Harlan County, Kentucky"
   },
   "canonical_name": "D 21 Coal Mine",
   "canonical_slug": "d-21-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:51:40.000000Z",
+      "operators": [
+        "INMET Mining"
+      ],
+      "owners": [
+        "Bluegrass Natural Resources LLC",
+        "Industrial Minerals Group LLC"
+      ],
+      "notes": "Bluegrass Natural Resources LLC is the operator, while Industrial Minerals Group LLC is the parent company."
+    }
+  }
 }

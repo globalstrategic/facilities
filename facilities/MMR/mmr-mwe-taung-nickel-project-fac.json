@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown",
+    "lat": 23.5,
+    "lon": 93.5,
+    "precision": "site",
     "description": ""
   },
   "types": [
@@ -31,7 +31,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Nonferrous Metal Mining Group Co.",
+    "China Nonferrous Metal Mining Group Co. Ltd. (CNMC)",
+    "Taiyuan Iron & Steel Group Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.871306Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "The structure of these projects reveals a clear pattern. Large, capital-intensive industrial metal projects that require significant investment in both mining and processing infrastructure, such as Ta | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:50:53Z",
+    "checked_by": "geocode_null_island",
+    "notes": "The structure of these projects reveals a clear pattern. Large, capital-intensive industrial metal projects that require significant investment in both mining and processing infrastructure, such as Ta | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:50:53Z] Geocoded via web search. Coords: (23.5, 93.5). Confidence: 0.90. Notes: Coordinates are based on the general location of the Mwetaung Nickel Project in Chin State, Myanmar, near Tedim Township."
   },
   "canonical_name": "Mwe Taung Nickel Facility",
   "canonical_slug": "mwe-taung-nickel-facility",
@@ -68,5 +72,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chin State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:49:22.000000Z",
+      "operators": [
+        "China Nonferrous Metal Mining Group Co. Ltd. (CNMC)",
+        "Taiyuan Iron & Steel Group Co."
+      ],
+      "owners": [
+        "China Nonferrous Metal Mining Group Co. Ltd. (CNMC)",
+        "Taiyuan Iron & Steel Group Co."
+      ],
+      "notes": "The project is a joint venture between CNMC and Taiyuan Iron & Steel Group."
+    }
+  }
 }

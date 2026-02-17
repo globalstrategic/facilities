@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TUR",
   "location": {
-    "lat": 38.186,
-    "lon": 36.27,
+    "lat": 38.1857,
+    "lon": 36.2686,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "E.ON",
+    "Enerjisa",
+    "Fernas İnşaat A.Ş.",
+    "Sabancı Holding"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.298592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:18:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tufanbeyli_Coal_Mine. The Tufanbeyli Coal Mine is associated with the Tufanbeyli power station, which is operational and utilizes locally mined lignite"
   },
   "canonical_name": "Tufanbeyli Coal Mine",
   "canonical_slug": "tufanbeyli-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Adana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:18:25.000000Z",
+      "operators": [
+        "Fernas İnşaat A.Ş."
+      ],
+      "owners": [
+        "Enerjisa",
+        "E.ON",
+        "Sabancı Holding"
+      ],
+      "notes": "Enerjisa operates the mine and the associated power station, with ownership shared between E.ON and Sabancı Holding."
+    }
+  }
 }

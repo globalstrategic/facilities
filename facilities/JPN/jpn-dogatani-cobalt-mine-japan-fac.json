@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 33.732,
-    "lon": 135.982,
+    "lat": 33.73278,
+    "lon": 135.98278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Unknown"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.024689Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:17:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-10751.html. The Dogatani Cobalt Mine is located in Totsukawa village, Yoshino district, Japan"
   },
   "canonical_name": "Dogatani Cobalt , Japan Mine",
   "canonical_slug": "dogatani-cobalt-japan-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nara Prefecture",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:17:45.000000Z",
+      "operators": [
+        "Unknown"
+      ],
+      "owners": [
+        "Unknown"
+      ],
+      "notes": "No specific operator or owner information was provided in the search results."
+    }
+  }
 }

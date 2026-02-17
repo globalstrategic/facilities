@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.433,
-    "lon": -87.25,
+    "lat": 38.391667,
+    "lon": -87.291667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Responsible Energy Ventures"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.893533Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:10:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Charger_Mine_East. Charger Mine East is an operating coal mine"
   },
   "canonical_name": "Charger 1 Mine",
   "canonical_slug": "charger-1-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:10:25.000000Z",
+      "operators": [
+        "Responsible Energy Ventures"
+      ],
+      "owners": [
+        "Responsible Energy Ventures"
+      ],
+      "notes": "Responsible Energy Ventures owns and operates the Charger Mine East."
+    }
+  }
 }

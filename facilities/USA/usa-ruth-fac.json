@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.853,
-    "lon": -122.185,
+    "lat": 47.90147154338746,
+    "lon": -92.00838351073746,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KGHM Polska Miedz S.A.",
+    "Robinson Nevada Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.950521Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:16:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ely (https://utahrails.net/bingham/kcc-nevada.php). The Robinson Mine, which includes the Ruth pit, is currently operated by Robinson Nevada Mining Company"
   },
   "canonical_name": "Ruth Mine",
   "canonical_slug": "ruth-mine",
@@ -63,5 +66,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Ely",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:16:15.000000Z",
+      "operators": [
+        "Robinson Nevada Mining Company"
+      ],
+      "owners": [
+        "KGHM Polska Miedz S.A."
+      ],
+      "notes": "Robinson Nevada Mining Company is a subsidiary of KGHM Polska Miedz S.A."
+    }
+  }
 }

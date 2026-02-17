@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.824,
-    "lon": -106.972,
+    "lat": 45.112308,
+    "lon": -106.905766,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Navajo Transitional Energy Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.694100Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:39:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://deq.mt.gov/files/Land/CoalUranium/Public-Notices/SpringCreekAM6DraftEA.pdf. The Spring Creek Mine is operated by the Navajo Transitional Energy Company and is located in Big Horn County, Montana"
   },
   "canonical_name": "Wolf Mountain Coal Spring Creek Mine",
   "canonical_slug": "wolf-mountain-coal-spring-creek-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:39:30.000000Z",
+      "operators": [
+        "Navajo Transitional Energy Company, LLC"
+      ],
+      "owners": [
+        "Navajo Transitional Energy Company, LLC"
+      ],
+      "notes": "Navajo Transitional Energy Company acquired the mine from Cloud Peak Energy."
+    }
+  }
 }

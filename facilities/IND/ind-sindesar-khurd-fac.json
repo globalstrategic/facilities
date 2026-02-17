@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 25.0,
-    "lon": 74.152,
+    "lat": 24.99934905937225,
+    "lon": 74.15540428617318,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindustan Zinc Limited",
+    "Vedanta Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.124211Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:50:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Rajpura Dariba (https://www.mining-technology.com/marketdata/five-largest-silver-mines-india-2020/). The Sindesar Khurd Mine is located in the Dariba-Bethumni Mineral Belt, approximately 65 km NE of Udaipur"
   },
   "canonical_name": "Sindesar Khurd Mine",
   "canonical_slug": "sindesar-khurd-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "town": "Rajpura Dariba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:50:21.000000Z",
+      "operators": [
+        "Hindustan Zinc Limited"
+      ],
+      "owners": [
+        "Vedanta Resources"
+      ],
+      "notes": "Hindustan Zinc is a subsidiary of Vedanta Limited."
+    }
+  }
 }

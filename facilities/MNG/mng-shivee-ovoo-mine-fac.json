@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.04,
-    "lon": 107.861,
+    "lat": 46.23943976832594,
+    "lon": 109.30138624313015,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdenes Mongol LLC",
+    "Shivee-Ovoo JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.454807Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:18:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ulaanbaatar (https://www.gem.wiki/Shivee-Ovoo_mine). The Shivee-Ovoo mine is an operating surface coal mine located 260 km southeast of Ulaanbaatar"
   },
   "canonical_name": "Shivee Ovoo Mine",
   "canonical_slug": "shivee-ovoo-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Govisümber",
+  "town": "Ulaanbaatar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:18:11.000000Z",
+      "operators": [
+        "Shivee-Ovoo JSC"
+      ],
+      "owners": [
+        "Shivee-Ovoo JSC",
+        "Erdenes Mongol LLC"
+      ],
+      "notes": "Shivee-Ovoo JSC is 100% owned by Erdenes Mongol LLC."
+    }
+  }
 }

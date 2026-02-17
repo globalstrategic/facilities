@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.5571,
+    "lon": -78.6002,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -27,22 +27,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Minera La Victoria SA (51% Geominera S.A.",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.882326",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    },
-    {
-      "name": "49% Antilles Gold)",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.882330",
-      "evidence": "Extracted from operator column: Minera La Victoria SA (51% Geominera S.A. / 49% Antilles Gold)"
-    }
+    "49% Antilles Gold)",
+    "Antilles Gold Limited",
+    "GeoMinera SA",
+    "Minera La Victoria",
+    "Minera La Victoria SA (51% Geominera S.A."
   ],
   "products": [],
   "sources": [
@@ -53,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.451627Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:43:59Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:43:59Z] Geocoded via web search. Coords: (21.5571, -78.6002). Confidence: 0.90. Notes: Coordinates extracted from drill hole data in the technical evaluation report."
   },
   "canonical_name": "El Pilar Porphyry System Exploration",
   "canonical_slug": "el-pilar-porphyry-system-exploration",
@@ -72,5 +61,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ciego de Ávila",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:14:40.000000Z",
+      "operators": [
+        "Antilles Gold Limited",
+        "GeoMinera SA"
+      ],
+      "owners": [
+        "Minera La Victoria"
+      ],
+      "notes": "Antilles Gold is in a joint venture with GeoMinera SA for the El Pilar project."
+    }
+  }
 }

@@ -1,14 +1,14 @@
 {
   "facility_id": "moz-tete-steel-vanadium-project-fac",
-  "name": "**Tete Steel & Vanadium Project**",
+  "name": "Tete Steel & Vanadium Project",
   "aliases": [
     "Revuboe Industrial Free Zone"
   ],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -15.724345,
+    "lon": 33.762664,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -36,7 +36,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baobab Resources",
+    "Baobab Steel"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.806882Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Baobab Steel smelter 50km north of Tete, Revuboe Industrial Free Zone"
   },
   "canonical_name": "Tete Steel & Vanadium Smelter",
   "canonical_slug": "tete-steel-vanadium-smelter",
@@ -67,11 +70,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tete Steel & Vanadium ** Smelter",
+      "name": "Tete Steel & Vanadium  Smelter",
       "from": "2025-10-29T22:19:15.828170",
       "to": "2025-11-04T19:19:02.806880Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tete",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:40:41.000000Z",
+      "operators": [
+        "Baobab Steel"
+      ],
+      "owners": [
+        "Baobab Resources"
+      ],
+      "notes": "Baobab Steel is wholly focused on the Tete Steel & Vanadium Project, which includes significant iron ore, vanadium, and titanium resources."
+    }
+  }
 }

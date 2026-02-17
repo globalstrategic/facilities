@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -9.1225,
+    "lon": 152.8033,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Geopacific Resources Limited",
+    "Woodlark Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.312059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Woodlark Project, Milne Bay Province"
   },
   "canonical_name": "Woodlark Facility",
   "canonical_slug": "woodlark-facility",
@@ -59,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Milne Bay Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:03.000000Z",
+      "operators": [
+        "Geopacific Resources Limited"
+      ],
+      "owners": [
+        "Woodlark Mining Limited"
+      ],
+      "notes": "Geopacific holds a 93% economic interest in Woodlark Mining Limited, which owns the project."
+    }
+  }
 }

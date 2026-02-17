@@ -1,11 +1,11 @@
 {
   "facility_id": "kor-seokpo-smelter-fac",
-  "name": "**Seokpo Smelter**",
+  "name": "Seokpo Smelter",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 36.766080134643275,
+    "lon": 127.96825023192271,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Young Poong Corp.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515597",
-      "evidence": "Extracted from operator column: Young Poong Corp."
-    }
+    "Young Poong Corp",
+    "Young Poong Corp.",
+    "Young Poong Group"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.759711Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The nation's second-largest zinc smelter, also recovering indium and silver. 1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:02:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] The nation's second-largest zinc smelter, also recovering indium and silver. 1 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Seoul (https://www.reuters.com/markets/commodities/family-feud-over-koreas-zinc-giant-threatens-affect-supply-chain-2024-10-04/). The Seokpo Smelter is one of the largest zinc producers in the world, but has faced legal and operational challenges recently"
   },
   "canonical_name": "Seokpo Smelter",
   "canonical_slug": "seokpo-smelter",
@@ -53,11 +48,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Seokpo ** Smelter",
+      "name": "Seokpo  Smelter",
       "from": "2025-10-29T12:22:53.515600",
       "to": "2025-11-04T19:19:18.759709Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gyeongsangbuk-do",
+  "town": "Seoul",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:02:44.000000Z",
+      "operators": [
+        "Young Poong Corp"
+      ],
+      "owners": [
+        "Young Poong Group"
+      ],
+      "notes": "Young Poong Corp operates the Seokpo Smelter and is part of the Young Poong Group, which is involved in various sectors including mining and electronics."
+    }
+  }
 }

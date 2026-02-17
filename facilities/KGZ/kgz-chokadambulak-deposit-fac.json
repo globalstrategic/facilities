@@ -1,0 +1,68 @@
+{
+  "facility_id": "kgz-chokadambulak-deposit-fac",
+  "name": "Chokadambulak Deposit",
+  "aliases": [],
+  "country_iso3": "KGZ",
+  "location": {
+    "lat": 39.9833,
+    "lon": 69.5,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "iron ore",
+      "primary": true
+    },
+    {
+      "metal": "bismuth",
+      "primary": false
+    },
+    {
+      "metal": "gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Tajik Metallurgical Plant",
+      "role": "operator",
+      "source": "Research Import TJK 2025-10-21",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T14:34:23.153290",
+      "evidence": "Extracted from operator column: Tajik Metallurgical Plant"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import TJK 2025-10-21",
+      "date": "2025-10-21T14:34:23.153311"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:08.595693Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Chokadambulak Mine",
+  "canonical_slug": "chokadambulak-mine",
+  "display_name": "Chokadambulak",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto"
+}

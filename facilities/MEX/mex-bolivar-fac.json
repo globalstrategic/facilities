@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.094,
-    "lon": -107.989,
+    "lat": 27.155226967399923,
+    "lon": -108.05399921058957,
     "precision": "site"
   },
   "types": [
@@ -39,7 +39,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpayana S.A.",
+    "Dia Bras Mexicana SA de CV",
+    "Sierra Metals Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -49,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.963698Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:40:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Urique (https://miningdataonline.com/property/1011/Bolivar-Mine.aspx). The Bolivar Mine is located approximately 10 km southwest of Urique, Chihuahua, Mexico"
   },
   "canonical_name": "Bolivar Mine",
   "canonical_slug": "bolivar-mine-2",
@@ -68,5 +72,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "town": "Urique",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:40:17.000000Z",
+      "operators": [
+        "Dia Bras Mexicana SA de CV"
+      ],
+      "owners": [
+        "Sierra Metals Inc.",
+        "Alpayana S.A."
+      ],
+      "notes": "Sierra Metals operates the mine through its subsidiary Dia Bras Mexicana. Alpayana S.A. has an indirect ownership interest."
+    }
+  }
 }

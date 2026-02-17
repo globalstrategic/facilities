@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.498,
-    "lon": -72.333,
+    "lat": -4.1,
+    "lon": -72.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Consortium of companies including others",
+    "MMG Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.325392Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:14:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.canadaperu.org/sites/default/files/web/pdac/directorio/pdf/2022-06/DIRECTORIO%20DELEGACION%20PDAC%202022.pdf. Las Bambas is one of the major copper mining operations in Peru, located in the Apurímac region"
   },
   "canonical_name": "Andalucia Y Otros, Derecho Minero Mine",
   "canonical_slug": "andalucia-y-otros-derecho-minero-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Apurímac",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:14:33.000000Z",
+      "operators": [
+        "MMG Limited"
+      ],
+      "owners": [
+        "MMG Limited",
+        "Consortium of companies including others"
+      ],
+      "notes": "MMG Limited operates Las Bambas, which is a significant investment in sustainable mining."
+    }
+  }
 }

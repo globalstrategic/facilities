@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.125,
-    "lon": 101.062,
+    "lat": -2.1252897,
+    "lon": 101.0622674,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Harner",
+    "PT Prima Perkasa Abadi"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.277082Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:57:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Prima_Perkasa_Abadi_Coal_Mine. The coordinates are approximate for the proposed coal mine"
   },
   "canonical_name": "Prima Perkasa Abadi Coal Mine",
   "canonical_slug": "prima-perkasa-abadi-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:57:11.000000Z",
+      "operators": [
+        "PT Prima Perkasa Abadi"
+      ],
+      "owners": [
+        "PT Harner"
+      ],
+      "notes": "PT Prima Perkasa Abadi is the operator and is fully owned by PT Harner."
+    }
+  }
 }

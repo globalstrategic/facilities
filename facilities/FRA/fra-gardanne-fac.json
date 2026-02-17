@@ -8,8 +8,8 @@
   ],
   "country_iso3": "FRA",
   "location": {
-    "lat": 43.452,
-    "lon": 5.459,
+    "lat": 43.46245002219746,
+    "lon": 5.464527613034154,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EPH group",
+    "GazelEnergie"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.672275Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:33:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marseille (https://www.energierecrute.com/en/energy-environment-news/8307-the-gardanne-biomass-plant-upheld-in-court). The Gardanne biomass plant is currently stopped but has plans to restart in early 2025"
   },
   "canonical_name": "Gardanne Mine",
   "canonical_slug": "gardanne-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bouches-du-Rhône",
+  "town": "Marseille",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:33:45.000000Z",
+      "operators": [
+        "GazelEnergie"
+      ],
+      "owners": [
+        "EPH group"
+      ],
+      "notes": "GazelEnergie is a subsidiary of the EPH group, which is owned by Daniel Kretinsky."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.931,
-    "lon": -78.956,
+    "lat": 39.931111,
+    "lon": -78.955556,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fieg Bros Coal Co",
+    "Fieg Brothers"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.982112Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:48:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Fieg_Bros_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Fieg Bros Coal Mine",
   "canonical_slug": "fieg-bros-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:48:24.000000Z",
+      "operators": [
+        "Fieg Bros Coal Co"
+      ],
+      "owners": [
+        "Fieg Brothers"
+      ],
+      "notes": "Fieg Bros Coal Co is 100% owned by Fieg Brothers."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.237,
-    "lon": 82.352,
+    "lat": 50.51713096386294,
+    "lon": 81.730176253939,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KAZ Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.741158Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:38:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ust-Kamenogorsk (https://www.kazminerals.com/our-business/east-region/). The Irtyshsky mine is part of a group of underground mines operated by KAZ Minerals in the East Region of Kazakhstan"
   },
   "canonical_name": "Irtyshsky Mine",
   "canonical_slug": "irtyshsky-mine",
@@ -56,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kazakhstan Region",
+  "town": "Ust-Kamenogorsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:38:31.000000Z",
+      "operators": [
+        "KAZ Minerals"
+      ],
+      "owners": [
+        "KAZ Minerals"
+      ],
+      "notes": "KAZ Minerals operates and owns the Irtyshsky mine as part of its East Region operations."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.376,
-    "lon": -87.614,
+    "lat": 38.376298,
+    "lon": -87.613541,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners, L.P.",
+    "Gibson County Coal, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.949743Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:15:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gibson_Mine. The Gibson North Coal Mine is located in Gibson County, Indiana, and is operated by Gibson County Coal, LLC"
   },
   "canonical_name": "Gibson North Coal Mine",
   "canonical_slug": "gibson-north-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:15:23.000000Z",
+      "operators": [
+        "Gibson County Coal, LLC"
+      ],
+      "owners": [
+        "Alliance Resource Partners, L.P."
+      ],
+      "notes": "Gibson County Coal, LLC is a subsidiary of Alliance Resource Partners, L.P."
+    }
+  }
 }

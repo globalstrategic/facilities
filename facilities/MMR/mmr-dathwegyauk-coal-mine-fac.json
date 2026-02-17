@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Myanmar Economic Corporation",
+    "Saraburi Coal Company",
+    "Yangon City Development Committee"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.870509Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:07:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dathwegyauk_Coal_Mine. The Dathwegyauk Coal Mine is a mothballed coal mine located near Tamu in Sagaing state, Myanmar"
   },
   "canonical_name": "Dathwegyauk Coal Mine",
   "canonical_slug": "dathwegyauk-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sagaing",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:07:47.000000Z",
+      "operators": [
+        "Saraburi Coal Company",
+        "Myanmar Economic Corporation"
+      ],
+      "owners": [
+        "Yangon City Development Committee"
+      ],
+      "notes": "The mine is operated by Saraburi Coal Company and Myanmar Economic Corporation, and owned by Yangon City Development Committee."
+    }
+  }
 }

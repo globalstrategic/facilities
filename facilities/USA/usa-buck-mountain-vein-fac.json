@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.988,
-    "lon": -76.764,
+    "lat": 39.7478,
+    "lon": -115.5236,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Amselco Minerals, Inc.",
+    "Occidental Minerals Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.902263Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:35:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10125879/. Coordinates are for the closest Buck Mountain location mentioned in the report"
   },
   "canonical_name": "Buck Mountain Vein Mine",
   "canonical_slug": "buck-mountain-vein-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:35:46.000000Z",
+      "operators": [
+        "Occidental Minerals Corporation",
+        "Amselco Minerals, Inc."
+      ],
+      "owners": [
+        "Occidental Minerals Corporation",
+        "Amselco Minerals, Inc."
+      ],
+      "notes": "Both companies hold 50% ownership as of 1979."
+    }
+  }
 }

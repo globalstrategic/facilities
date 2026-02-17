@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.896066003316985,
+    "lon": 18.888651336848014,
     "precision": "unknown"
   },
   "types": [
@@ -19,30 +19,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "MN Holdings (Rolek Resources",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.656892",
-      "evidence": "Extracted from operator column: MN Holdings (Rolek Resources / Shaw River Manganese / Premier African Minerals interest)"
-    },
-    {
-      "name": "Shaw River Manganese",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.656933",
-      "evidence": "Extracted from operator column: MN Holdings (Rolek Resources / Shaw River Manganese / Premier African Minerals interest)"
-    },
-    {
-      "name": "Premier African Minerals interest)",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.656952",
-      "evidence": "Extracted from operator column: MN Holdings (Rolek Resources / Shaw River Manganese / Premier African Minerals interest)"
-    }
+    "MN Holdings (Rolek Resources",
+    "MN Holdings Limited",
+    "Premier African Minerals Limited",
+    "Premier African Minerals interest)",
+    "Shaw River Manganese"
   ],
   "products": [],
   "sources": [
@@ -53,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.550927Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T06:45:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Walvis Bay (https://www.investegate.co.uk/announcement/rns/premier-african-minerals-ltd--prem/loan-into-otjozondu-manganese-mining-in-namibia/81781). Otjozondu Manganese Mine is located 450 km east of Walvis Bay, a port town in Namibia"
   },
   "canonical_name": "Otjosondu Manganese Mine",
   "canonical_slug": "otjosondu-manganese-mine",
@@ -72,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "town": "Walvis Bay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:45:30.000000Z",
+      "operators": [
+        "MN Holdings Limited"
+      ],
+      "owners": [
+        "MN Holdings Limited",
+        "Premier African Minerals Limited"
+      ],
+      "notes": "MN Holdings Limited is the owner and operator of the Otjozondu Manganese Mining Project."
+    }
+  }
 }

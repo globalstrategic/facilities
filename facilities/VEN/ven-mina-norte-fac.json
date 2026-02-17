@@ -1,12 +1,12 @@
 {
   "facility_id": "ven-mina-norte-fac",
-  "name": "**Mina Norte**",
+  "name": "Mina Norte",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 11.04,
+    "lon": -72.27,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -18,7 +18,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Carbones de la Guajira S.A.",
+    "Corporación Venezolana de Minería S.A.",
+    "Corporación Venezolana de Minería S.A. (CVM)",
+    "Government of Venezuela"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:49.657241Z",
-    "checked_by": "import_pipeline",
-    "notes": "Sister mine to Paso Diablo, part of the same complex in the Guasare Coal Basin.1 Coordinates are approximate based on proximity to Paso Diablo. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Sister mine to Paso Diablo, part of the same complex in the Guasare Coal Basin.1 Coordinates are approximate based on proximity to Paso Diablo. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Mina Norte coal mine in Guasare Basin, Zulia state"
   },
   "canonical_name": "Mina Norte Mine",
   "canonical_slug": "mina-norte-mine",
@@ -49,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mina Norte** Mine",
+      "name": "Mina Norte Mine",
       "from": "2025-10-21T11:38:45.063887",
       "to": "2025-11-04T19:18:49.657237Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zulia State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:29:19.000000Z",
+      "operators": [
+        "Corporación Venezolana de Minería S.A."
+      ],
+      "owners": [
+        "Government of Venezuela"
+      ],
+      "notes": "The mine is operated by CVM, which is a state-owned entity."
+    }
+  }
 }

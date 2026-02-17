@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.806,
-    "lon": -117.737,
+    "lat": 38.79,
+    "lon": -120.81,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "James W. Marshall"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.976631Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:25:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marshall%27s_Blacksmith_Shop. The Gray Eagle Mine is a lode gold mine located in the Mother Lode Country, just south of Kelsey, California. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marshall%27s_Blacksmith_Shop. The Gray Eagle Mine is a historical gold mine located in the Mother Lode Country"
   },
   "canonical_name": "Gray Eagle Mine",
   "canonical_slug": "gray-eagle-mine",
@@ -52,5 +54,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:25:36.000000Z",
+      "operators": [],
+      "owners": [
+        "James W. Marshall"
+      ],
+      "notes": "James W. Marshall was a part owner of the Gray Eagle mine."
+    }
+  }
 }

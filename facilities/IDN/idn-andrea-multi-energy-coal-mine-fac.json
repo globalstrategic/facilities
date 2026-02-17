@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.01,
-    "lon": 115.92,
+    "lat": -0.0095717,
+    "lon": 115.9195307,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Sentosa Laju Sejahtera",
+    "PT. Andrea Multi Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.215603Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:25:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Andrea_Multi_Energy_Coal_Mine. Coordinates are approximate for the Andrea Multi Energy Coal Mine"
   },
   "canonical_name": "Andrea Multi Energy Coal Mine",
   "canonical_slug": "andrea-multi-energy-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:25:21.000000Z",
+      "operators": [
+        "PT. Andrea Multi Energy"
+      ],
+      "owners": [
+        "PT. Andrea Multi Energy",
+        "PT Sentosa Laju Sejahtera"
+      ],
+      "notes": "PT. Andrea Multi Energy is a subsidiary of PT Sentosa Laju Sejahtera."
+    }
+  }
 }

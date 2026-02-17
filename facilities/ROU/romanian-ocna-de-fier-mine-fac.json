@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ROU",
   "location": {
-    "lat": 45.3419,
-    "lon": 21.7764,
+    "lat": 45.34194,
+    "lon": 21.77639,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "GRAMEX SRL",
+    "GRIVCO",
+    "Silver & Baryte Ores Mining Co. S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:47.783604Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historically the largest iron ore reserve in Romania. Production data from 2008 suggests inactivity. 24 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:24:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historically the largest iron ore reserve in Romania. Production data from 2008 suggests inactivity. 24 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ocna_de_Fier_mine. Ocna de Fier mine is the largest iron ore mine in Romania, producing around 10,000 tonnes of iron ore per year"
   },
   "canonical_name": "Ocna De Fier Mine",
   "canonical_slug": "ocna-de-fier-mine",
@@ -59,5 +63,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Caraș-Severin County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:24:27.000000Z",
+      "operators": [
+        "GRAMEX SRL",
+        "Silver & Baryte Ores Mining Co. S.A.",
+        "GRIVCO"
+      ],
+      "owners": [],
+      "notes": "Royal Gold participates in GRAMEX SRL, which is involved in the exploration of the mine."
+    }
+  }
 }

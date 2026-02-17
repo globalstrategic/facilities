@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 13.109,
-    "lon": 76.416,
+    "lat": 19.8289806,
+    "lon": 72.6612056,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nuclear Power Corporation of India Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.094424Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:53:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tarapur_Atomic_Power_Station. Coordinates and operational status extracted from the Tarapur Atomic Power Station"
   },
   "canonical_name": "Yrapur Mine",
   "canonical_slug": "yrapur-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:53:41.000000Z",
+      "operators": [
+        "Nuclear Power Corporation of India Ltd"
+      ],
+      "owners": [
+        "Nuclear Power Corporation of India Ltd"
+      ],
+      "notes": "The facility is owned and operated by the Nuclear Power Corporation of India Ltd."
+    }
+  }
 }

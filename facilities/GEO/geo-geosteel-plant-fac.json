@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-geosteel-plant-fac",
-  "name": "**Geosteel Plant**",
+  "name": "Geosteel Plant",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.6111,
+    "lon": 44.8284,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Geosteel LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.217959",
-      "evidence": "Extracted from operator column: Geosteel LLC"
-    }
+    "GeoSteel LLC",
+    "Georgian Steel Group Holding Ltd",
+    "Geosteel LLC",
+    "JSW Steel Netherlands BV"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.727315Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:58:24Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:58:24Z] Geocoded via web search. Coords: (41.6111, 44.8284). Confidence: 0.90. Notes: Coordinates determined based on the location of the GeoSteel plant in Rustavi, Georgia."
   },
   "canonical_name": "Geosteel Steel Plant",
   "canonical_slug": "geosteel-steel-plant",
@@ -60,11 +56,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Geosteel ** Steel Plant",
+      "name": "Geosteel  Steel Plant",
       "from": "2025-10-28T21:01:00.217964",
       "to": "2025-11-04T19:19:01.727312Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kvemo Kartli",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:52:30.000000Z",
+      "operators": [
+        "GeoSteel LLC"
+      ],
+      "owners": [
+        "JSW Steel Netherlands BV",
+        "Georgian Steel Group Holding Ltd"
+      ],
+      "notes": "GeoSteel is a joint venture between JSW Steel Netherlands BV and Georgian Steel Group Holding Ltd."
+    }
+  }
 }

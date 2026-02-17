@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 39.85,
+    "lon": 46.5,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -23,7 +23,9 @@
   ],
   "status": "closed",
   "company_mentions": [
-    "Anglo Asian Mining PLC"
+    "Anglo Asian Mining PLC",
+    "Anglo Asian Mining Plc",
+    "Azerbaijan International Mining Company Limited"
   ],
   "products": [],
   "sources": [
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.540199Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historic mine and plant. AAM does not currently have physical access. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Historic mine and plant. AAM does not currently have physical access. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Kyzlbulag/Demirli copper-molybdenum mine in Karabakh region. Region-level estimate. Historic mine, currently closed."
   },
   "canonical_name": "Kyzlbulag / Demirli Mine",
   "canonical_slug": "kyzlbulag-demirli-mine",
@@ -57,14 +59,14 @@
   "province": "Karabakh",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:01:41.000000Z",
+      "timestamp": "2025-12-02T11:12:47.000000Z",
       "operators": [
-        "Anglo Asian Mining PLC"
+        "Anglo Asian Mining Plc"
       ],
       "owners": [
-        "Anglo Asian Mining PLC"
+        "Anglo Asian Mining Plc"
       ],
-      "notes": "Anglo Asian Mining PLC is a British firm operating in Azerbaijan, managing both Kyzlbulag and Demirli mines."
+      "notes": "Anglo Asian Mining is actively developing the Demirli mine and has plans for production ramp-up."
     }
   }
 }

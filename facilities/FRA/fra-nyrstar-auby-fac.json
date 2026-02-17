@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-nyrstar-auby-fac",
-  "name": "**Nyrstar Auby**",
+  "name": "Nyrstar Auby",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.408333,
+    "lon": 3.076389,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Nyrstar",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.713132",
-      "evidence": "Extracted from operator column: Nyrstar (Trafigura)"
-    }
+    "Nyrstar",
+    "Trafigura"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.674857Z",
-    "checked_by": "import_pipeline",
-    "notes": "Electrolytic smelter with an indium refinery (72 t/y capacity). Produces battery-grade zinc. 23 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:32:10Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Electrolytic smelter with an indium refinery (72 t/y capacity). Produces battery-grade zinc. 23 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:32:10Z] Geocoded via web search. Coords: (50.408333, 3.076389). Confidence: 0.90. Notes: Coordinates extracted from the mining facility's detailed location information."
   },
   "canonical_name": "Nyrstar Auby Mine",
   "canonical_slug": "nyrstar-auby-mine",
@@ -60,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nyrstar Auby** Mine",
+      "name": "Nyrstar Auby Mine",
       "from": "2025-10-28T17:18:38.713140",
       "to": "2025-11-04T19:18:51.674854Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:56:42.000000Z",
+      "operators": [
+        "Nyrstar"
+      ],
+      "owners": [
+        "Trafigura"
+      ],
+      "notes": "Nyrstar is owned by Trafigura, which became the majority owner in July 2019."
+    }
+  }
 }

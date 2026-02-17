@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "COD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -7.288056,
+    "lon": 27.393888,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -15,7 +15,6 @@
   "status": "unknown",
   "company_mentions": [
     "AVZ Minerals Ltd.",
-    "Dathcom Mining SA",
     "La Congolaise d’Exploitation Minière SA",
     "Manono Lithium SAS",
     "Zijin Mining"
@@ -29,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:19.797000Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T12:23:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:23:28Z] Major lithium project in Tanganyika Province, near Manono town"
   },
   "canonical_name": "Manono Kitolo Mine",
   "canonical_slug": "manono-kitolo-mine",
@@ -60,18 +59,16 @@
   "province": "Tanganyika Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T17:19:11.000000Z",
+      "timestamp": "2025-12-01T17:51:03.000000Z",
       "operators": [
-        "AVZ Minerals Ltd.",
-        "Zijin Mining"
-      ],
-      "owners": [
-        "AVZ Minerals Ltd.",
-        "La Congolaise d’Exploitation Minière SA",
-        "Dathcom Mining SA",
         "Manono Lithium SAS"
       ],
-      "notes": "AVZ Minerals holds a 75% interest in the project, while La Congolaise d’Exploitation Minière SA holds 25%. Ownership has changed with Zijin Mining acquiring stakes in the project."
+      "owners": [
+        "Zijin Mining",
+        "La Congolaise d’Exploitation Minière SA",
+        "AVZ Minerals Ltd."
+      ],
+      "notes": "Ownership has changed recently, with Zijin Mining acquiring a stake and the project being under construction."
     }
   }
 }

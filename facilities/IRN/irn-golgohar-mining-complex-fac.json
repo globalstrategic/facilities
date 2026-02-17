@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 29.09272,
+    "lon": 55.32643,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Golgohar Mining & Industrial Co.",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.748240",
-      "evidence": "Extracted from operator column: Golgohar Mining & Industrial Co."
-    }
+    "GolGohar Mining and Industrial Company",
+    "Golgohar Mining & Industrial Co.",
+    "Omid Investment Group"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.439034Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:23:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Golgohar_Mining_and_Industrial_Company. GolGohar Mining Complex is the largest iron ore mine in Iran, located southwest of Sirjan"
   },
   "canonical_name": "Golgohar Mining Mine",
   "canonical_slug": "golgohar-mining-mine",
@@ -59,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kerman",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:23:08.000000Z",
+      "operators": [
+        "GolGohar Mining and Industrial Company"
+      ],
+      "owners": [
+        "Omid Investment Group"
+      ],
+      "notes": "The company is publicly traded and involved in mining and steel production."
+    }
+  }
 }

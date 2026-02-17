@@ -9,8 +9,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -7.948,
-    "lon": -78.245,
+    "lat": -8.109697882579024,
+    "lon": -77.75851164002981,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Boroo Pte Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.290585Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:46:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Trujillo (https://www.mining.com/boroo-completes-acquisition-of-lagunas-norte-mine-in-peru/). Lagunas Norte is located 140 km east of Trujillo, Peru. The mine was previously owned by Barrick Gold and is now owned by Boroo"
   },
   "canonical_name": "Lagunas Norte Mine",
   "canonical_slug": "lagunas-norte-mine",
@@ -52,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "La Libertad",
+  "town": "Trujillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:46:16.000000Z",
+      "operators": [
+        "Boroo Pte Ltd"
+      ],
+      "owners": [
+        "Boroo Pte Ltd",
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Boroo acquired the mine from Barrick Gold in June 2021."
+    }
+  }
 }

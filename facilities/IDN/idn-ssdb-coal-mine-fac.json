@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.397,
-    "lon": 115.456,
+    "lat": -3.5,
+    "lon": 114.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Sumber Daya Energi (SDE)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.230650Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:34:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.argusmedia.com/en/news-and-insights/latest-market-news/2520873-sde-launches-indonesia-s-first-underground-coal-mine. The SSDB Coal Mine is Indonesia's first underground coal mine, launched by Sumber Daya Energi (SDE)"
   },
   "canonical_name": "Ssdb Coal Mine",
   "canonical_slug": "ssdb-coal-mine",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:34:48.000000Z",
+      "operators": [
+        "PT Sumber Daya Energi (SDE)"
+      ],
+      "owners": [],
+      "notes": "SDE is the operator of the mine, and it has received significant investments for its development."
+    }
+  }
 }

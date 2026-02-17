@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -23.0,
+    "lon": 43.0,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cassius Mining Ltd",
+    "Soalara Calcaire SARL"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.106085Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:18:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.cassiusmining.com/operations/madagascar/. The Soalara limestone deposit is located immediately adjacent to the old Soalara Port in the south-west of Madagascar"
   },
   "canonical_name": "Soalala Development",
   "canonical_slug": "soalala-development",
@@ -55,5 +58,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Toliara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:18:36.000000Z",
+      "operators": [
+        "Cassius Mining Ltd"
+      ],
+      "owners": [
+        "Soalara Calcaire SARL"
+      ],
+      "notes": "The project is 100% owned by Cassius Mining Ltd through its Malagasy registered company."
+    }
+  }
 }

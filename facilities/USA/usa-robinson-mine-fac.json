@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 39.25917,
+    "lon": -114.97333,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KGHM Polska Miedź S.A.",
+    "Robinson Nevada Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.728208Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:07:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Robinson_Mine. The Robinson Mine is a porphyry copper deposit located in White Pine County, Nevada, and is known for its three large open pits"
   },
   "canonical_name": "Robinson Mine",
   "canonical_slug": "robinson-mine",
@@ -42,5 +45,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:07:46.000000Z",
+      "operators": [
+        "Robinson Nevada Mining Company",
+        "KGHM Polska Miedź S.A."
+      ],
+      "owners": [
+        "KGHM Polska Miedź S.A."
+      ],
+      "notes": "Robinson Nevada Mining Company is a subsidiary of KGHM Polska Miedź S.A., which owns 100% of the mine."
+    }
+  }
 }

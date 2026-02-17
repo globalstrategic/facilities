@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.424,
-    "lon": 102.744,
+    "lat": -1.43871,
+    "lon": 102.62425,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Asia Multi Investama",
+    "PT Titan Mining Indonesia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.234046Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:37:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Asia_Multi_Investama_Coal_Mine. Coordinates extracted from the Asia Multi Investama Coal Mine, which is located in Tebo"
   },
   "canonical_name": "Tebo Batubara Investama Coal Mine",
   "canonical_slug": "tebo-batubara-investama-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jambi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:35.000000Z",
+      "operators": [
+        "PT Asia Multi Investama"
+      ],
+      "owners": [
+        "PT Titan Mining Indonesia"
+      ],
+      "notes": "PT Asia Multi Investama is a subsidiary of PT Titan Mining Indonesia."
+    }
+  }
 }

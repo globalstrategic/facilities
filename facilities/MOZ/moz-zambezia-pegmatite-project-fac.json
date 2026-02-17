@@ -1,11 +1,11 @@
 {
   "facility_id": "moz-zambezia-pegmatite-project-fac",
-  "name": "**Zambezia Pegmatite Project**",
+  "name": "Zambezia Pegmatite Project",
   "aliases": [],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.0,
+    "lon": 37.0,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altona Rare Earths Plc",
+    "Highland African Mining Company",
+    "Noventa Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.804970Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:39:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marropino_mine. The Marropino mine is located in Zambezia Province, Mozambique, and is known for its tantalum production"
   },
   "canonical_name": "Zambezia Pegmatite Mine",
   "canonical_slug": "zambezia-pegmatite-mine",
@@ -57,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Zambezia Pegmatite ** Mine",
+      "name": "Zambezia Pegmatite  Mine",
       "from": "2025-10-29T22:19:15.973254",
       "to": "2025-11-04T19:19:02.804957Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zambezia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:39:12.000000Z",
+      "operators": [
+        "Highland African Mining Company"
+      ],
+      "owners": [
+        "Noventa Group"
+      ],
+      "notes": "Highland African Mining Company is owned by Noventa Group, which is based in Jersey."
+    }
+  }
 }

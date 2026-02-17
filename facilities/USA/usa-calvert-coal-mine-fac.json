@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.082,
-    "lon": -96.618,
+    "lat": 31.087575,
+    "lon": -96.618166,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Walnut Management Company",
+    "NAES Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.790320Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:02:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Calvert_Coal_Mine. The Calvert Coal Mine is an operating lignite mine located in Bremond, Texas"
   },
   "canonical_name": "Calvert Coal Mine",
   "canonical_slug": "calvert-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:02:02.000000Z",
+      "operators": [
+        "NAES Corporation"
+      ],
+      "owners": [
+        "Black Walnut Management Company"
+      ],
+      "notes": "Black Walnut Management Company is the sole owner and operator."
+    }
+  }
 }

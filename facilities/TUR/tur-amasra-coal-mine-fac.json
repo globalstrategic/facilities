@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 41.722,
-    "lon": 32.35,
+    "lat": 41.72306,
+    "lon": 32.35028,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Amasra Taşkömürü İşletme Müessesesi",
+    "Turkish Hard Coal Enterprises (TTK)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.295704Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:16:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Amasra_coal_mine. The Amasra Coal Mine is located in the Zonguldak coalfield and has been operational since 1967"
   },
   "canonical_name": "Amasra Coal Mine",
   "canonical_slug": "amasra-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bartın",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:16:28.000000Z",
+      "operators": [
+        "Amasra Taşkömürü İşletme Müessesesi"
+      ],
+      "owners": [
+        "Turkish Hard Coal Enterprises (TTK)"
+      ],
+      "notes": "The mine was operated by TTK and is currently closed as of 2022."
+    }
+  }
 }

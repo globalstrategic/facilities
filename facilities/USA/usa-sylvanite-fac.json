@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.992,
-    "lon": -106.951,
+    "lat": 42.46233260046822,
+    "lon": -123.00933435691297,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Daniel Jones",
+    "E. T. Simons",
+    "George Tulare"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.721673Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:01:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gold Hill (https://www.oregon.gov/dogami/milo/archive/HistoricalSociety/GoldHill/SylvaniteMine.pdf). The Sylvanite mine is located about 3 miles northeast of Gold Hill, Oregon"
   },
   "canonical_name": "Sylvanite Mine",
   "canonical_slug": "sylvanite-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oregon",
+  "town": "Gold Hill",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:01:04.000000Z",
+      "operators": [],
+      "owners": [
+        "E. T. Simons",
+        "George Tulare",
+        "Daniel Jones"
+      ],
+      "notes": "The mine was owned by E. T. Simons and later under sales contract to Daniel Jones from owner George Tulare."
+    }
+  }
 }

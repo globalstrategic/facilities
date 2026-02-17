@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -29.831,
-    "lon": -71.15,
+    "lat": -23.636888861317846,
+    "lon": -68.68286829171012,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cia. Minera Zaldivar S.A.",
+    "Outokumpu Copper Resources Chile B.V.",
+    "Placer Dome Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.921966Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T16:57:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Antofagasta (https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/mineral-pubs/country/1995/9506095.pdf). The Perlitas facility is located 175 km east of Antofagasta, but specific coordinates were not provided"
   },
   "canonical_name": "Perlitas Mine",
   "canonical_slug": "perlitas-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "town": "Antofagasta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:57:20.000000Z",
+      "operators": [
+        "Cia. Minera Zaldivar S.A."
+      ],
+      "owners": [
+        "Placer Dome Inc.",
+        "Outokumpu Copper Resources Chile B.V."
+      ],
+      "notes": "Cia. Minera Zaldivar S.A. is a joint venture between Placer Dome Inc. and Outokumpu Copper Resources."
+    }
+  }
 }

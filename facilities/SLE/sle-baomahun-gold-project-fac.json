@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SLE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.78861,
+    "lon": -11.6675,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FG Gold Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:59.578311Z",
-    "checked_by": "import_pipeline",
-    "notes": "Set to be Sierra Leone's first large-scale commercial gold mine. Backed by pan-African financial institutions. First gold pour expected 2025/2026. 30 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:35:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Set to be Sierra Leone's first large-scale commercial gold mine. Backed by pan-African financial institutions. First gold pour expected 2025/2026. 30 | Canonical name+slug generated. Web search geocoded. Source: https://www.mining.com/cluff-gold-significant-resource-increase-at-baomahun/. The Baomahun Gold Project is a significant gold development project in Sierra Leone, with a large resource base and expected to begin production in 2025"
   },
   "canonical_name": "Baomahun Gold Development",
   "canonical_slug": "baomahun-gold-development",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:35:35.000000Z",
+      "operators": [
+        "FG Gold Limited"
+      ],
+      "owners": [
+        "FG Gold Limited"
+      ],
+      "notes": "FG Gold Limited is focused on constructing and operating the Baomahun Gold Project."
+    }
+  }
 }

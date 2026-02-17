@@ -1,11 +1,11 @@
 {
   "facility_id": "mrt-tasiast-south-project-fac",
-  "name": "**Tasiast South Project**",
+  "name": "Tasiast South Project",
   "aliases": [],
   "country_iso3": "MRT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.58333,
+    "lon": -15.5,
     "precision": "unknown"
   },
   "types": [
@@ -31,14 +31,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Aura Energy",
-      "role": "operator",
-      "source": "Research Import MAURITANIAN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:17:09.574831",
-      "evidence": "Extracted from operator column: Aura Energy"
-    }
+    "Aura Energy",
+    "Kinross Gold Corporation",
+    "Tasiast Mauritanie Limited S.A."
   ],
   "products": [],
   "sources": [
@@ -49,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.924307Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:31:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tasiast_Gold_Mine. The Tasiast Gold Mine is an operational gold mine located in the Inchiri Wilaya of north western Mauritania"
   },
   "canonical_name": "Tasiast South Exploration",
   "canonical_slug": "tasiast-south-exploration",
@@ -70,11 +65,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tasiast South ** Exploration",
+      "name": "Tasiast South  Exploration",
       "from": "2025-10-29T22:17:09.574906",
       "to": "2025-11-04T19:19:15.924304Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inchiri",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:31:07.000000Z",
+      "operators": [
+        "Tasiast Mauritanie Limited S.A."
+      ],
+      "owners": [
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Tasiast Mauritanie Limited S.A. is a wholly owned subsidiary of Kinross Gold Corporation."
+    }
+  }
 }

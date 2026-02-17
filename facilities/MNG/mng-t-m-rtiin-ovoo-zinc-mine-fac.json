@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 46.7825,
+    "lon": 113.32639,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metallimpex LLC",
+    "NFC (China Nonferrous Metal Industry's Foreign Engineering and Construction Co. Ltd.)",
+    "Tsairt Mineral Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.461673Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:22:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/T%C3%B6m%C3%B6rtiin_Ovoo_Zinc_Mine. The Tömörtiin Ovoo Zinc Mine is a significant mining facility in Mongolia, known for its zinc production"
   },
   "canonical_name": "Tömörtiin Ovoo Zinc Mine",
   "canonical_slug": "tomortiin-ovoo-zinc-mine",
@@ -55,5 +59,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sükhbaatar Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:22:49.000000Z",
+      "operators": [
+        "Tsairt Mineral Co., Ltd.",
+        "NFC (China Nonferrous Metal Industry's Foreign Engineering and Construction Co. Ltd.)"
+      ],
+      "owners": [
+        "Tsairt Mineral Co., Ltd.",
+        "Metallimpex LLC"
+      ],
+      "notes": "Tsairt Mineral Co., Ltd. is a joint venture between NFC and Metallimpex LLC."
+    }
+  }
 }

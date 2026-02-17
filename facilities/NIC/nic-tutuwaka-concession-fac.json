@@ -1,12 +1,12 @@
 {
   "facility_id": "nic-tutuwaka-concession-fac",
-  "name": "**Tutuwaka Concession**",
+  "name": "Tutuwaka Concession",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 12.5,
+    "lon": -84.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera Internacional (COMINTSA)",
+    "Zhong Fu Development S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,9 +37,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:55.276592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:50:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [GEOCODED 2025-12-18T00:50:57Z] Coordinates found via web search (using regional/city coords). Lat: 12.5, Lon: -84.5"
   },
   "canonical_name": "Tutuwaka Concession Exploration",
   "canonical_slug": "tutuwaka-concession-exploration",
@@ -53,11 +56,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tutuwaka Concession** Exploration",
+      "name": "Tutuwaka Concession Exploration",
       "from": "2025-10-29T21:57:47.055683",
       "to": "2025-11-04T19:18:55.276589Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:24:49.000000Z",
+      "operators": [
+        "Zhong Fu Development S.A."
+      ],
+      "owners": [
+        "Compañía Minera Internacional (COMINTSA)"
+      ],
+      "notes": "COMINTSA is owned by Nicaraguan Minister of Energy and Mines, Salvador Mansell Castrillo."
+    }
+  },
+  "town": "El Rama"
 }

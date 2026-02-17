@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.481,
-    "lon": 110.021,
+    "lat": 38.48134,
+    "lon": 110.021245,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shaanxi Heilonggou Mining Company",
+    "Yulin Guozheng Investment & Development Company",
+    "Yulin Qianshuta Mining Investment Company",
+    "Yulin Yupeng Trade Company",
+    "Yulin Yuyang State-Owned Capital Operation Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.598843Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:59:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E6%A6%86%E6%9E%97%E5%B8%82%E5%8D%83%E6%A0%91%E5%A1%94%E7%9F%BF%E4%B8%9A%E6%8A%95%E8%B5%84%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%8D%83%E6%A0%91%E5%A1%94%E7%85%A4%E7%9F%BF. The Qianshuta Coal Mine is an underground coal mine operated by Yulin Qianshuta Mining Investment Company"
   },
   "canonical_name": "Qianshuta Coal Mine",
   "canonical_slug": "qianshuta-coal-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:59:26.000000Z",
+      "operators": [
+        "Yulin Qianshuta Mining Investment Company"
+      ],
+      "owners": [
+        "Yulin Yuyang State-Owned Capital Operation Company",
+        "Shaanxi Heilonggou Mining Company",
+        "Yulin Guozheng Investment & Development Company",
+        "Yulin Yupeng Trade Company"
+      ],
+      "notes": "The mine is fully owned by Yulin Qianshuta Mining Investment Company, which is a subsidiary of several state-owned enterprises."
+    }
+  }
 }

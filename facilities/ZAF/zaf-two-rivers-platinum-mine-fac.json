@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.893,
-    "lon": 30.124,
+    "lat": -24.896836219243113,
+    "lon": 30.083379472445174,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Ltd.",
+    "Impala Platinum Holdings Ltd.",
+    "Two Rivers Platinum Proprietary Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -58,11 +62,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.714006Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-two-rivers-fac, zaf-two-rivers-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:07:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-two-rivers-fac, zaf-two-rivers-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Burgersfort (https://www.trp.co.za/). The Two Rivers Platinum Mine is located on the farm Dwarsrivier in the eastern limb of the Bushveld Complex"
   },
   "canonical_name": "Two Rivers Platinum Mine",
   "canonical_slug": "two-rivers-platinum-mine",
@@ -77,5 +81,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "town": "Burgersfort",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:07:40.000000Z",
+      "operators": [
+        "Two Rivers Platinum Proprietary Ltd."
+      ],
+      "owners": [
+        "African Rainbow Minerals Ltd.",
+        "Impala Platinum Holdings Ltd."
+      ],
+      "notes": "The mine is a joint venture between African Rainbow Minerals (54%) and Impala Platinum (46%)."
+    }
+  }
 }

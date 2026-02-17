@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 29.8333,
-    "lon": -9.5833,
+    "lat": 30.156004436476806,
+    "lon": -6.334909216678771,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Managem",
+    "OCP SA",
+    "Societe Bleida Mineral Resources SARL"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "llm_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-24T11:34:16.000000Z",
-    "checked_by": "llm_web_search",
-    "notes": "Canonical name+slug generated. LLM geocoded from: Managem Group website and technical reports. Bleida Far West Mine is part of the Bou Azzer mining district, which is well-documented in mining reports and company disclosures. The coordinates provided are approximate for the district, as specific coordinates for the Bleida Far West Mine are not publicly detailed"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:11:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. LLM geocoded from: Managem Group website and technical reports. Bleida Far West Mine is part of the Bou Azzer mining district, which is well-documented in mining reports and company disclosures. The coordinates provided are approximate for the district, as specific coordinates for the Bleida Far West Mine are not publicly detailed. Web search geocoded. Source: Calculated from Bleida (https://www.mindat.org/loc-187573.html). The Bleida Far West Mine is part of the Bou Azzer mining district and is located in the Drâa-Tafilalet Region of Morocco"
   },
   "canonical_name": "Bleida Far West Mine",
   "canonical_slug": "bleida-far-west-mine",
@@ -60,5 +64,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Souss-Massa"
+  "province": "Zagora Province",
+  "town": "Bleida",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:11:06.000000Z",
+      "operators": [
+        "OCP SA",
+        "Managem"
+      ],
+      "owners": [
+        "Societe Bleida Mineral Resources SARL"
+      ],
+      "notes": "OCP SA is a state-owned company operating the mine, while Genius Metals has acquired a project from Societe Bleida Mineral Resources SARL."
+    }
+  }
 }

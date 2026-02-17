@@ -1,0 +1,73 @@
+{
+  "facility_id": "guf-illegal-mining-sector-fac",
+  "name": "Illegal Mining Sector",
+  "aliases": [],
+  "country_iso3": "GUF",
+  "location": {
+    "lat": 4.936272622214206,
+    "lon": -53.4078386849143,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Auplata S.A.",
+    "Chinese entrepreneurs",
+    "Compagnie Minière Dorlin S.A.S.",
+    "Numerous informal groups",
+    "Société Minière Yaou Dorlin S.A.S."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-29",
+      "date": "2025-10-29T08:01:49.069133"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:57:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Cayenne (https://www.azomining.com/Article.aspx?ArticleID=78). Illegal mining is prevalent in French Guiana, with an estimated 400-500 illegal mining sites extracting nearly 10 tons of gold annually"
+  },
+  "canonical_name": "Illegal Mining Sector Mine",
+  "canonical_slug": "illegal-mining-sector-mine",
+  "display_name": "Illegal Mining Sector",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "French Guiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:57:37.000000Z",
+      "operators": [
+        "Auplata S.A.",
+        "Société Minière Yaou Dorlin S.A.S.",
+        "Compagnie Minière Dorlin S.A.S."
+      ],
+      "owners": [],
+      "notes": "These companies are involved in the legal gold mining sector, while illegal mining operations are widespread."
+    }
+  },
+  "town": "Cayenne"
+}

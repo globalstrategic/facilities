@@ -1,0 +1,93 @@
+{
+  "facility_id": "usa-ree-lithium-cobalt-fac",
+  "name": "REE / Lithium / Cobalt",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 45.13917,
+    "lon": -114.35194,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "rare earths",
+      "primary": true
+    },
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Cobalt",
+      "primary": true,
+      "chemical_formula": "Co",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Ecobalt Solutions",
+    "Jervois Global"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAF 2025-10-27",
+      "date": "2025-10-27T10:27:55.438884"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:40:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "No known economic deposits. African exploration and production for these critical minerals are in other countries. 40 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Idaho_Cobalt_Operations. The Idaho Cobalt Operations is the only active cobalt mine in the United States, reopened in 2022"
+  },
+  "canonical_name": "REE / Lithium / Cobalt Facility",
+  "canonical_slug": "ree-lithium-cobalt-facility",
+  "display_name": "REE / Lithium / Cobalt",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "REE / Lithium / Cobalt",
+      "from": "2025-10-27T10:27:55.438893",
+      "to": "2025-11-04T19:18:48.055230Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:44.000000Z",
+      "operators": [
+        "Jervois Global"
+      ],
+      "owners": [
+        "Jervois Global",
+        "Ecobalt Solutions"
+      ],
+      "notes": "Jervois Global acquired Ecobalt Solutions in 2019."
+    }
+  }
+}

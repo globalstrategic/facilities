@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.768,
-    "lon": -88.388,
+    "lat": 37.7429456962642,
+    "lon": -88.343376,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy",
+    "Peabody Midwest Mining, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.739635Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:17:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Equality (https://ilmineswiki.web.illinois.edu/wiki/1044). The Wildcat Hills/Cottage Grove mine is located near Equality, Illinois, but exact coordinates are not provided"
   },
   "canonical_name": "Wildcat Hills/cottage Grove Mine",
   "canonical_slug": "wildcat-hills-cottage-grove-mine",
@@ -60,5 +63,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Illinois",
+  "town": "Equality",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:17:29.000000Z",
+      "operators": [
+        "Peabody Midwest Mining, LLC"
+      ],
+      "owners": [
+        "Peabody Energy"
+      ],
+      "notes": "Peabody Midwest Mining is a subsidiary of Peabody Energy."
+    }
+  }
 }

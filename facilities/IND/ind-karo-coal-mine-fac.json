@@ -9,8 +9,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.786,
-    "lon": 85.964,
+    "lat": 23.8,
+    "lon": 85.75,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Coalfields Limited",
+    "Coal India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.087502Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:47:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/East_Bokaro_Coalfield. Karo Coal Mine is part of the East Bokaro Coalfield"
   },
   "canonical_name": "Karo Coal Mine",
   "canonical_slug": "karo-coal-mine",
@@ -52,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:47:55.000000Z",
+      "operators": [
+        "Central Coalfields Limited"
+      ],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "Karo Coal Mine is operated by Central Coalfields Limited, a subsidiary of Coal India Limited."
+    }
+  }
 }

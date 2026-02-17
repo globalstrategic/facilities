@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.083,
-    "lon": 115.102,
+    "lat": -2.083306,
+    "lon": 115.101997,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mega Multi Energi"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.252338Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:36:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mega_Multi_Energi_Coal_Mine. The Mega Multi Energi Coal Mine is an operating coal mine located in Central Kalimantan, Indonesia"
   },
   "canonical_name": "Mega Multi Energi Coal Mine",
   "canonical_slug": "mega-multi-energi-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:36:32.000000Z",
+      "operators": [
+        "Mega Multi Energi"
+      ],
+      "owners": [
+        "Mega Multi Energi"
+      ],
+      "notes": "Mega Multi Energi owns and operates the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.805,
-    "lon": 112.823,
+    "lat": 33.0306757,
+    "lon": 112.5106333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Power Investment Corporation (CPI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.857751Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:41:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nanyang_cogen_power_station. Coordinates extracted from the ownership details of the Nanyang cogen power station, which is located in the same area as the Nanyang Coal Mine"
   },
   "canonical_name": "Nanyang Coal Mine",
   "canonical_slug": "nanyang-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Henan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:41:14.000000Z",
+      "operators": [
+        "China Power Investment Corporation (CPI)"
+      ],
+      "owners": [
+        "China Power Investment Corporation (CPI)"
+      ],
+      "notes": "CPI is the majority owner and operator of the Nanyang cogen power station."
+    }
+  }
 }

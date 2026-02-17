@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-orano-la-hague-fac",
-  "name": "**Orano La Hague**",
+  "name": "Orano La Hague",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 49.67833,
+    "lon": -1.87944,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -19,14 +19,13 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Orano Group",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.737218",
-      "evidence": "Extracted from operator column: Orano Group"
-    }
+    "CEA (1 share)",
+    "French State",
+    "Government of France (90%)",
+    "Japan Nuclear Fuel Limited (JNFL) (4.83%)",
+    "Mitsubishi Heavy Industries (MHI) (4.83%)",
+    "Orano Group",
+    "Orano SA"
   ],
   "products": [],
   "sources": [
@@ -37,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.668313Z",
-    "checked_by": "import_pipeline",
-    "notes": "World's largest reprocessing facility; separates spent fuel components. 32 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:30:40Z",
+    "checked_by": "geocode_null_island",
+    "notes": "World's largest reprocessing facility; separates spent fuel components. 32 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:30:40Z] Geocoded via web search. Coords: (49.67833, -1.87944). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia entry for the La Hague site."
   },
   "canonical_name": "Orano La Hague Mine",
   "canonical_slug": "orano-la-hague-mine",
@@ -58,11 +57,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Orano La Hague** Mine",
+      "name": "Orano La Hague Mine",
       "from": "2025-10-28T17:18:38.737225",
       "to": "2025-11-04T19:18:51.668310Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Normandy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:55:17.000000Z",
+      "operators": [
+        "Orano SA"
+      ],
+      "owners": [
+        "Government of France (90%)",
+        "CEA (1 share)",
+        "Japan Nuclear Fuel Limited (JNFL) (4.83%)",
+        "Mitsubishi Heavy Industries (MHI) (4.83%)"
+      ],
+      "notes": "Orano SA is majority owned by the French state and is involved in various nuclear activities including uranium mining and recycling."
+    }
+  }
 }

@@ -6,9 +6,9 @@
   ],
   "country_iso3": "THA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 12.7,
+    "lon": 101.1,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jiangxi Chenguang Investment Co. Ltd.",
+    "Shenghe Resources Holding Co. Ltd.",
+    "Xinyuan Rare Earth (Thailand) Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:18.497732Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Xinyuan Rare Earth separation facility under construction, Rayong Province"
   },
   "canonical_name": "Rare Earth Elements Mine",
   "canonical_slug": "rare-earth-elements-mine-2",
@@ -53,5 +57,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rayong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:43:16.000000Z",
+      "operators": [
+        "Xinyuan Rare Earth (Thailand) Co. Ltd."
+      ],
+      "owners": [
+        "Shenghe Resources Holding Co. Ltd.",
+        "Jiangxi Chenguang Investment Co. Ltd."
+      ],
+      "notes": "Shenghe Resources is negotiating to purchase Xinyuan Rare Earth from Jiangxi Chenguang."
+    }
+  }
 }

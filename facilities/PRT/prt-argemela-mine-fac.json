@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 40.1933,
+    "lon": -7.49,
+    "precision": "site"
   },
   "types": [
     "development"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo Almina",
+    "Lusorecursos Portugal Lithium, S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.665897Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:53:50Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:53:50Z] Geocoded via web search. Coords: (40.1933, -7.49). Confidence: 0.90. Notes: Coordinates extracted from the location details of the Argemela Mine in the search results."
   },
   "canonical_name": "Argemela Facility",
   "canonical_slug": "argemela-facility",
@@ -55,5 +58,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Castelo Branco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:23:19.000000Z",
+      "operators": [
+        "Grupo Almina",
+        "Lusorecursos Portugal Lithium, S.A."
+      ],
+      "owners": [],
+      "notes": "Grupo Almina is involved in preliminary work for future lithium mining at Argemela Mine."
+    }
+  }
 }

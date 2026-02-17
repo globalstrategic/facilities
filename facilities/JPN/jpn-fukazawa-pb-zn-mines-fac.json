@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 40.282,
-    "lon": 140.665,
+    "lat": 40.1784,
+    "lon": 140.3186,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dowa Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.032042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:29:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10133844. The Fukasawa Zinc Mine is located in the Akita prefecture of Japan and has been closed with no indications of reopening"
   },
   "canonical_name": "Fukazawa Pb Zn Mines Mine",
   "canonical_slug": "fukazawa-pb-zn-mines-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Akita",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:29:30.000000Z",
+      "operators": [
+        "Dowa Mining Company"
+      ],
+      "owners": [
+        "Dowa Mining Company"
+      ],
+      "notes": "Dowa Mining Company is the owner-operator with a majority stake."
+    }
+  }
 }

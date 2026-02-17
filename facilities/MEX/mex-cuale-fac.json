@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 20.374,
-    "lon": -105.113,
+    "lat": 20.66289854460395,
+    "lon": -105.11382832874642,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altius Minerals Corporation",
+    "Evrim Resources Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.953539Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:31:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guadalajara (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/1247-tsx-venture/evm/38658-evrim-resources-acquires-cuale-gold-project-in-mexico.html). The Cuale project is an early-stage exploration property for gold-silver located in Jalisco, Mexico"
   },
   "canonical_name": "Cuale Mine",
   "canonical_slug": "cuale-mine",
@@ -54,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jalisco",
+  "town": "Guadalajara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:31:48.000000Z",
+      "operators": [
+        "Evrim Resources Corp."
+      ],
+      "owners": [
+        "Altius Minerals Corporation"
+      ],
+      "notes": "Evrim Resources has acquired the Cuale project, which is subject to royalties payable to Altius Minerals."
+    }
+  }
 }

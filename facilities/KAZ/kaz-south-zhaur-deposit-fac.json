@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 47.8,
+    "lon": 72.0,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JV Saryarka Tungsten LLP"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.747400Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:48:37Z",
+    "checked_by": "web_search_manual",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:48:37Z] Geocoded via web search. Coords: (47.8, 72.0). Confidence: 0.50. Source: Karaganda Oblast"
   },
   "canonical_name": "South Zhaur Mine",
   "canonical_slug": "south-zhaur-mine",
@@ -55,5 +57,16 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:13:13.000000Z",
+      "operators": [
+        "JV Saryarka Tungsten LLP"
+      ],
+      "owners": [],
+      "notes": "JV Saryarka Tungsten LLP is the initiator of the project."
+    }
+  }
 }

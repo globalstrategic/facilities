@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ESP",
   "location": {
-    "lat": 41.047,
-    "lon": -6.667,
+    "lat": 41.04861,
+    "lon": -6.66667,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EQ Resources Limited",
+    "Oaktree Capital Management",
+    "Saloro SLU"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:52.864903Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:23:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Barruecopardo_mine. The Barruecopardo mine is a large open pit mine located in the western part of Spain in the Province of Salamanca. It has been in production since early 2019"
   },
   "canonical_name": "Barruecopardo Mine",
   "canonical_slug": "barruecopardo-mine",
@@ -49,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Salamanca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:23:57.000000Z",
+      "operators": [
+        "Saloro SLU"
+      ],
+      "owners": [
+        "EQ Resources Limited",
+        "Oaktree Capital Management"
+      ],
+      "notes": "Saloro SLU is the operator of the Barruecopardo mine, while EQ Resources Limited has acquired 100% ownership of Saloro."
+    }
+  }
 }

@@ -1,11 +1,11 @@
 {
   "facility_id": "khm-phnum-daek-gold-mining-project-fac",
-  "name": "**Phnum Daek Gold Mining Project**",
+  "name": "Phnum Daek Gold Mining Project",
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 13.30385,
+    "lon": 105.00329,
     "precision": "unknown"
   },
   "types": [
@@ -26,14 +26,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Delcom Pte. Ltd.",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.384773",
-      "evidence": "Extracted from operator column: Delcom (Kampuchea) Pte. Ltd."
-    }
+    "Delcom (Kampuchea) Pte. Ltd",
+    "Delcom Pte. Ltd."
   ],
   "products": [],
   "sources": [
@@ -44,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.255075Z",
-    "checked_by": "import_pipeline",
-    "notes": "Started trial production in 2022\\. Allegations of land grabbing and environmental damage. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:07:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Started trial production in 2022\\. Allegations of land grabbing and environmental damage. | Canonical name+slug generated. Web search geocoded. Source: https://data.opendevelopmentcambodia.net/dataset/31abcf15-901f-44ca-aa9c-8faea38f76e0/resource/15d4e535-7cdd-4810-a7bb-d6829d047585. Coordinates extracted from Mindat.org for the location of Phnum Daek"
   },
   "canonical_name": "Phnum Daek Gold Mining Mine",
   "canonical_slug": "phnum-daek-gold-mining-mine",
@@ -65,11 +59,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Phnum Daek Gold Mining ** Mine",
+      "name": "Phnum Daek Gold Mining  Mine",
       "from": "2025-10-29T12:22:07.384778",
       "to": "2025-11-04T19:18:46.255072Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:07:51.000000Z",
+      "operators": [
+        "Delcom (Kampuchea) Pte. Ltd"
+      ],
+      "owners": [],
+      "notes": "Delcom (Kampuchea) Pte. Ltd is the operator of the Phnum Daek Gold Mining Project."
+    }
+  },
+  "province": "Preah Vihear"
 }

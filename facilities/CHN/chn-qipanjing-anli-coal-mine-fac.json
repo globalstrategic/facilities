@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.422,
-    "lon": 107.059,
+    "lat": 39.424032,
+    "lon": 107.063818,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hongsen Investment Management Company",
+    "Sanya Hongsen Investment Management Company",
+    "鄂尔多斯市鸿森矿业有限责任公司 (Hongsen Mining Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.615526Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:03:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%B8%82%E9%B8%BF%E6%A3%AE%E7%9F%BF%E4%B8%9A%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E6%A3%8B%E7%9B%98%E4%BA%95%E5%AE%89%E5%88%A9%E7%85%A4%E7%9F%BF. The Qipanjing Anli Coal Mine is an open-pit coal mine with a construction scale of 1.2 million tons per year"
   },
   "canonical_name": "Qipanjing Anli Coal Mine",
   "canonical_slug": "qipanjing-anli-coal-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:03:24.000000Z",
+      "operators": [
+        "鄂尔多斯市鸿森矿业有限责任公司 (Hongsen Mining Co., Ltd.)"
+      ],
+      "owners": [
+        "Hongsen Investment Management Company",
+        "Sanya Hongsen Investment Management Company"
+      ],
+      "notes": "The mine is operated by Hongsen Mining Co., Ltd., with significant ownership by Hongsen Investment Management Company."
+    }
+  }
 }

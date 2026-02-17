@@ -6,9 +6,9 @@
   ],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.0,
+    "lon": 32.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Managem Group",
+    "Wanbao Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.165999Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:37:39Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:37:39Z] Geocoded via web search. Coords: (15.0, 32.5). Confidence: 0.70. Notes: Coordinates are estimated based on the facility's description as being located about 50 km from Khartoum."
   },
   "canonical_name": "Block 15 Processing Plant",
   "canonical_slug": "block-15-processing-plant",
@@ -49,5 +52,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khartoum",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:00.000000Z",
+      "operators": [
+        "Managem Group"
+      ],
+      "owners": [
+        "Managem Group",
+        "Wanbao Mining"
+      ],
+      "notes": "Managem holds a 65% ownership stake in Block 15, while Wanbao Mining holds 35%."
+    }
+  }
 }

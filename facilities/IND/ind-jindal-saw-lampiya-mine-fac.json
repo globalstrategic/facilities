@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 25.445,
-    "lon": 74.635,
+    "lat": 25.444551,
+    "lon": 74.634887,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jindal Saw Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.068717Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:31:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jindal_Saw_Lampiya_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Jindal Saw Lampiya Mine",
   "canonical_slug": "jindal-saw-lampiya-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:31:12.000000Z",
+      "operators": [
+        "Jindal Saw Ltd"
+      ],
+      "owners": [
+        "Jindal Saw Ltd"
+      ],
+      "notes": "Jindal Saw Ltd owns and operates the mine."
+    }
+  }
 }

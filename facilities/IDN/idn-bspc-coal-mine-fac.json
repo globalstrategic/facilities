@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.245,
-    "lon": 103.923,
+    "lat": -2.245207,
+    "lon": 103.923008,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bhumi Sriwijaya Perdana Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.247260Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:48:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BSPC_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Bspc Coal Mine",
   "canonical_slug": "bspc-coal-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:48:00.000000Z",
+      "operators": [
+        "Bhumi Sriwijaya Perdana Coal"
+      ],
+      "owners": [
+        "Bhumi Sriwijaya Perdana Coal"
+      ],
+      "notes": "The facility is fully owned and operated by Bhumi Sriwijaya Perdana Coal."
+    }
+  }
 }

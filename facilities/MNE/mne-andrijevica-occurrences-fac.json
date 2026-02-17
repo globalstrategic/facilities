@@ -1,11 +1,11 @@
 {
   "facility_id": "mne-andrijevica-occurrences-fac",
-  "name": "**Andrijevica Occurrences**",
+  "name": "Andrijevica Occurrences",
   "aliases": [],
   "country_iso3": "MNE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.66667,
+    "lon": 20.03806,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bemaks"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:49.393103Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:13:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-3204816.html. Coordinates extracted from the mining report for Andrijevica occurrences"
   },
   "canonical_name": "Andrijevica Occurrences Facility",
   "canonical_slug": "andrijevica-occurrences-facility",
@@ -49,11 +51,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Andrijevica Occurrences**",
+      "name": "Andrijevica Occurrences",
       "from": "2025-10-29T22:24:19.867414",
       "to": "2025-11-04T19:18:49.393100Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "MNE",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:13:08.000000Z",
+      "operators": [
+        "Bemaks"
+      ],
+      "owners": [],
+      "notes": "Bemaks submitted the most favorable offer for the concession contract for geological research and exploitation."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NLD",
   "location": {
-    "lat": 53.167,
-    "lon": 6.743,
+    "lat": 53.3092,
+    "lon": 6.9879,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Beijing Enterprises Ltd",
+    "EEW Energy From Waste GmbH"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.620322Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:17:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/EEW_Delfzijl_Waste-to-Energy_power_station. Coordinates are for the EEW Delfzijl Waste-to-Energy power station"
   },
   "canonical_name": "Delfzijl Smelter",
   "canonical_slug": "delfzijl-smelter",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Groningen",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:17:15.000000Z",
+      "operators": [
+        "EEW Energy From Waste GmbH"
+      ],
+      "owners": [
+        "Beijing Enterprises Ltd"
+      ],
+      "notes": "EEW Energy From Waste GmbH operates the facility, owned primarily by Beijing Enterprises Ltd."
+    }
+  }
 }

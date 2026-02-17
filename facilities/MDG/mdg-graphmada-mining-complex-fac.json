@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -18.8167,
+    "lon": 49.0667,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bass Metals Ltd",
+    "Greenwing Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:06.109006Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located near Brickaville, Atsinanana region, eastern Madagascar."
   },
   "canonical_name": "Graphmada Mining Mine",
   "canonical_slug": "graphmada-mining-mine",
@@ -55,5 +58,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sava",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:58:15.000000Z",
+      "operators": [
+        "Greenwing Resources Ltd",
+        "Bass Metals Ltd"
+      ],
+      "owners": [
+        "Greenwing Resources Ltd"
+      ],
+      "notes": "Greenwing Resources Ltd is the current owner and operator of the Graphmada Mining Complex."
+    }
+  }
 }

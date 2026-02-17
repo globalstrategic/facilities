@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.154,
-    "lon": -75.066,
+    "lat": -14.0,
+    "lon": -75.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empresas Copec",
+    "Marcobre S.A.C.",
+    "Minsur S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.304001Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-02T07:56:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/mina-justa-copper-project/. Coordinates are approximate based on the general location of Mina Justa"
   },
   "canonical_name": "Justa Mine",
   "canonical_slug": "justa-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nazca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:56:45.000000Z",
+      "operators": [
+        "Marcobre S.A.C."
+      ],
+      "owners": [
+        "Minsur S.A.",
+        "Empresas Copec"
+      ],
+      "notes": "Mina Justa is operated by Marcobre, with Minsur holding 60% and Empresas Copec holding 40%."
+    }
+  }
 }

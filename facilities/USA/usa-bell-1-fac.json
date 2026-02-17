@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.059,
-    "lon": -78.278,
+    "lat": 40.688,
+    "lon": -122.5533,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elemental Solutions LLC",
+    "Tim Neal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.774180Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:48:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/camc308864. The Bell #1 is a closed mining claim overseen by the Bureau of Land Management"
   },
   "canonical_name": "Bell 1 Mine",
   "canonical_slug": "bell-1-mine",
@@ -58,5 +61,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:48:23.000000Z",
+      "operators": [
+        "Tim Neal",
+        "Elemental Solutions LLC"
+      ],
+      "owners": [
+        "Tim Neal",
+        "Elemental Solutions LLC"
+      ],
+      "notes": "Ownership and use overseen by the Bureau of Land Management."
+    }
+  }
 }

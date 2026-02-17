@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.6111,
+    "lon": -74.9531,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Associated with Nicaro Complex",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.928938",
-      "evidence": "Extracted from operator column: Associated with Nicaro Complex"
-    }
+    "Associated with Nicaro Complex",
+    "Commercial Carribean Nickel Sa (Ccn)",
+    "Westminer Holdings Ltd."
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.452119Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:03:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-208401.html. The Pinares-de-Mayarí deposit is located in the Nikaro Nickel ore field within the Mayarí District of Holguín Province, Cuba"
   },
   "canonical_name": "Pinares De Mayarí Mine",
   "canonical_slug": "pinares-de-mayari-mine",
@@ -72,5 +67,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Holguín",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:03:22.000000Z",
+      "operators": [],
+      "owners": [
+        "Commercial Carribean Nickel Sa (Ccn)",
+        "Westminer Holdings Ltd."
+      ],
+      "notes": "An MOU has been signed for a feasibility study of the deposit, indicating potential future development."
+    }
+  }
 }

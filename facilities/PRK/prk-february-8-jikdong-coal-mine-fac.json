@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.492,
-    "lon": 125.669,
+    "lat": 39.49156275,
+    "lon": 125.668607,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ministry of Coal Industry",
+    "Suncheon District Coal Company",
+    "Suncheon District Coal Mine Association Enterprise"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.365319Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:43:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/February_8_Jikdong_Coal_Mine. The February 8 Jikdong Coal Mine is part of the Suncheon Coal mine Complex and has been in operation since 1977"
   },
   "canonical_name": "February 8 Jikdong Coal Mine",
   "canonical_slug": "february-8-jikdong-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Pyongan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:43:10.000000Z",
+      "operators": [
+        "Suncheon District Coal Mine Association Enterprise"
+      ],
+      "owners": [
+        "Suncheon District Coal Company",
+        "Ministry of Coal Industry"
+      ],
+      "notes": "The mine is managed by the Suncheon District Coal Company and the Ministry of Coal Industry holds the mining rights."
+    }
+  }
 }

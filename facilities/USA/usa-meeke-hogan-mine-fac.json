@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.837,
-    "lon": -118.742,
+    "lat": 38.69199195274735,
+    "lon": -75.51282485900695,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northwest Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.718605Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:59:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Delaware (https://www.mindat.org/loc-33662.html). The Hogan Mine is an underground copper mine that was operational between 1847 and 1861"
   },
   "canonical_name": "Meeke Hogan Mine",
   "canonical_slug": "meeke-hogan-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michigan",
+  "town": "Delaware",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:59:48.000000Z",
+      "operators": [
+        "Northwest Mining Company"
+      ],
+      "owners": [],
+      "notes": "The mine was operated by Northwest Mining Company during its operational period."
+    }
+  }
 }

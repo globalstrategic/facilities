@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-cheonan-pre-treatment-plant-fac",
-  "name": "**Cheonan Pre-treatment Plant**",
+  "name": "Cheonan Pre-treatment Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.81,
+    "lon": 127.1475,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "GRM",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.521453",
-      "evidence": "Extracted from operator column: GRM (Global Resources and Materials)"
-    }
+    "GRM",
+    "LS MnM"
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.754104Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Crushes and sorts electronic scrap as feedstock for the Danyang plant. 62 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:03:22Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Crushes and sorts electronic scrap as feedstock for the Danyang plant. 62 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:03:22Z] Geocoded via web search. Coords: (36.81, 127.1475). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia page for Cheonan."
   },
   "canonical_name": "Cheonan Pre Treatment Facility",
   "canonical_slug": "cheonan-pre-treatment-facility",
@@ -53,11 +47,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cheonan Pre-treatment **",
+      "name": "Cheonan Pre-treatment ",
       "from": "2025-10-29T12:22:53.521456",
       "to": "2025-11-04T19:19:18.754101Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chungcheongnam-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:01:26.000000Z",
+      "operators": [
+        "LS MnM"
+      ],
+      "owners": [],
+      "notes": "LS MnM operates the facility as part of its subsidiary operations."
+    }
+  }
 }

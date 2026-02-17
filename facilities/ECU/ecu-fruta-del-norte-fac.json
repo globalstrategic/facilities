@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ECU",
   "location": {
-    "lat": -3.763,
-    "lon": -78.501,
+    "lat": -3.83438931,
+    "lon": -78.60400078,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aurelian Ecuador S.A.",
+    "Lundin Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.548342Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:19:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Fruta_del_Norte_mine. Fruta del Norte is one of the highest-grade gold mines in production in the world"
   },
   "canonical_name": "Fruta Del Norte Mine",
   "canonical_slug": "fruta-del-norte-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zamora-Chinchipe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:19:38.000000Z",
+      "operators": [
+        "Aurelian Ecuador S.A."
+      ],
+      "owners": [
+        "Lundin Gold Inc."
+      ],
+      "notes": "Lundin Gold owns 100% of the mine through its subsidiary Aurelian Ecuador S.A."
+    }
+  }
 }

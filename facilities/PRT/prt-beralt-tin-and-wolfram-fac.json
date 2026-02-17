@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": 37.349,
-    "lon": -8.598,
+    "lat": 40.12101295304607,
+    "lon": -7.711570829105625,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Almonty Industries Inc.",
+    "Beralt Tin and Wolfram (Portugal) SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:53.662462Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:27:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Covilhã (https://almonty.com/project/panasqueira-mine/). The Panasqueira mine is located in the village of Panasqueira, near Covilhã, Portugal"
   },
   "canonical_name": "Beralt Tin And Wolfram Mine",
   "canonical_slug": "beralt-tin-and-wolfram-mine",
@@ -55,5 +58,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Castelo Branco",
+  "town": "Covilhã",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:27:18.000000Z",
+      "operators": [
+        "Beralt Tin and Wolfram (Portugal) SA"
+      ],
+      "owners": [
+        "Almonty Industries Inc."
+      ],
+      "notes": "Almonty Industries owns a 100% interest in the mine through its subsidiary Beralt."
+    }
+  }
 }

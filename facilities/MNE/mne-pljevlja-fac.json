@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MNE",
   "location": {
-    "lat": 43.344,
-    "lon": 19.358,
+    "lat": 43.33389,
+    "lon": 19.32694,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Elektroprivreda Crne Gore"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:49.391916Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:11:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pljevlja_Power_Station. The Pljevlja Coal Mine is associated with the Pljevlja Power Station, which is the only coal-fired power plant in Montenegro"
   },
   "canonical_name": "Pljevlja Mine",
   "canonical_slug": "pljevlja-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montenegro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:11:53.000000Z",
+      "operators": [
+        "Elektroprivreda Crne Gore"
+      ],
+      "owners": [
+        "Elektroprivreda Crne Gore"
+      ],
+      "notes": "Elektroprivreda Crne Gore is a state-owned company that fully owns the coal mine."
+    }
+  }
 }

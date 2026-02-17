@@ -1,12 +1,12 @@
 {
   "facility_id": "ven-guaniamo-diamond-fields-fac",
-  "name": "**Guaniamo Diamond Fields**",
+  "name": "Guaniamo Diamond Fields",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 5.91667,
+    "lon": -66.11667,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guaniamo Mining Co.",
+    "Teck Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:49.654172Z",
-    "checked_by": "import_pipeline",
-    "notes": "A major alluvial diamond mining region, not a single mine. Operations are entirely informal and illicit.21 Coordinates are for the general area. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "A major alluvial diamond mining region, not a single mine. Operations are entirely informal and illicit.21 Coordinates are for the general area. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Guaniamo diamond fields, Serrania Guaniamo, western Bolivar state"
   },
   "canonical_name": "Guaniamo Diamond Fields Mine",
   "canonical_slug": "guaniamo-diamond-fields-mine",
@@ -49,11 +52,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Guaniamo Diamond Fields** Mine",
+      "name": "Guaniamo Diamond Fields Mine",
       "from": "2025-10-21T11:38:45.446502",
       "to": "2025-11-04T19:18:49.654170Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolívar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:28:10.000000Z",
+      "operators": [
+        "Guaniamo Mining Co.",
+        "Teck Corp."
+      ],
+      "owners": [
+        "Guaniamo Mining Co."
+      ],
+      "notes": "Guaniamo Mining Co. is a joint venture between Canada's Teck Corp. and a group of Venezuelan investors."
+    }
+  }
 }

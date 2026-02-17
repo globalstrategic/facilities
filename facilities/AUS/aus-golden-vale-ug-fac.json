@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUS",
   "location": {
-    "lat": -29.119,
-    "lon": 120.514,
+    "lat": -28.5,
+    "lon": 120.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Valley Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.291318Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T15:22:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-269759.html. The Golden Vale Gold Mine is located in the Mount Ida Goldfield within the Menzies Shire"
   },
   "canonical_name": "Golden Vale UG Mine",
   "canonical_slug": "golden-vale-ug-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:22:50.000000Z",
+      "operators": [
+        "Gold Valley Group"
+      ],
+      "owners": [
+        "Gold Valley Group"
+      ],
+      "notes": "Gold Valley Group is a vertically integrated miner based in Perth, Western Australia."
+    }
+  }
 }

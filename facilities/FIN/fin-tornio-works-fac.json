@@ -1,12 +1,12 @@
 {
   "facility_id": "fin-tornio-works-fac",
-  "name": "**Tornio Works**",
+  "name": "Tornio Works",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 65.767115,
+    "lon": 24.176472,
+    "precision": "site"
   },
   "types": [
     "smelter",
@@ -15,14 +15,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Outokumpu Oyj",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.780720",
-      "evidence": "Extracted from operator column: Outokumpu Oyj"
-    }
+    "Outokumpu Chrome Oy",
+    "Outokumpu Oyj",
+    "Outokumpu Stainless Oy"
   ],
   "products": [],
   "sources": [
@@ -33,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.193380Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Outokumpu Tornio Works stainless steel"
   },
   "canonical_name": "Tornio Smelter",
   "canonical_slug": "tornio-smelter",
@@ -54,11 +49,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tornio ** Smelter",
+      "name": "Tornio  Smelter",
       "from": "2025-10-28T17:16:23.780723",
       "to": "2025-11-04T19:18:54.193371Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:59:33.000000Z",
+      "operators": [
+        "Outokumpu Stainless Oy"
+      ],
+      "owners": [
+        "Outokumpu Stainless Oy"
+      ],
+      "notes": "Outokumpu operates the facility and owns it."
+    }
+  }
 }

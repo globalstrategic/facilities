@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.574166666667,
-    "lon": 27.890277777778,
+    "lat": -25.5,
+    "lon": 27.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bushveld Minerals Limited",
+    "Bushveld Vametco Alloys (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:14:54.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:32:16.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/maps.php?id=203755. Coordinates extracted from locality maps for Vametco Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/maps.php?id=203755. Coordinates extracted from locality maps for Vametco Mine. Web search geocoded. Source: https://www.mining-technology.com/news/bushveld-ownership-vanadium-mine/. The Vametco Mine is located approximately 6.5 km northeast of Madibeng"
   },
   "canonical_name": "Vametco Mine",
   "canonical_slug": "vametco-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "North West"
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:32:16.000000Z",
+      "operators": [
+        "Bushveld Vametco Alloys (Pty) Ltd"
+      ],
+      "owners": [
+        "Bushveld Minerals Limited"
+      ],
+      "notes": "Bushveld Minerals has acquired 100% ownership of the Vametco mine."
+    }
+  }
 }

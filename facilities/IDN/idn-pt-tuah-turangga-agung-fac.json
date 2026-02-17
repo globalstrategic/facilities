@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.99,
-    "lon": 114.415,
+    "lat": -0.989742,
+    "lon": 114.416514,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Pamapersada Nusantara",
+    "PT Tuah Turangga Agung",
+    "Turangga Resources",
+    "United Tractors Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.222886Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:30:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ABB_Coal_Mine. The facility is part of the Asmin Bara Bronang coal mine operated by PT Tuah Turangga Agung"
   },
   "canonical_name": "PT Tuah Turangga Agung Mine",
   "canonical_slug": "pt-tuah-turangga-agung-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:03.000000Z",
+      "operators": [
+        "PT Tuah Turangga Agung",
+        "Turangga Resources"
+      ],
+      "owners": [
+        "United Tractors Tbk",
+        "PT Pamapersada Nusantara"
+      ],
+      "notes": "PT Tuah Turangga Agung is a subsidiary of United Tractors Tbk and PT Pamapersada Nusantara."
+    }
+  }
 }

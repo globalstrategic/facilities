@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 29.8,
-    "lon": null,
+    "lat": 29.882025435477512,
+    "lon": -109.1260464,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bacanora Lithium Plc",
+    "Cadence Minerals Plc",
+    "Ganfeng Lithium",
+    "Ganfeng Lithium Group Co., Ltd.",
+    "Ganfeng Lithium Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.966929Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:56:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bacadehuachi (https://www.cadenceminerals.com/projects/sonora-lithium-project/). The project is located in Sonora State, Northern Mexico, approximately 11 km from the town of Bacadehuachi"
   },
   "canonical_name": "Sonora Lithium Facility",
   "canonical_slug": "sonora-lithium-facility",
@@ -63,5 +69,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:56:07.000000Z",
+      "operators": [
+        "Ganfeng Lithium"
+      ],
+      "owners": [
+        "Cadence Minerals Plc",
+        "Ganfeng Lithium Group Co., Ltd.",
+        "Bacanora Lithium Plc"
+      ],
+      "notes": "Ganfeng Lithium is the operator, and the project is a joint venture with Bacanora Lithium and Cadence Minerals."
+    }
+  },
+  "town": "Bacadehuachi"
 }

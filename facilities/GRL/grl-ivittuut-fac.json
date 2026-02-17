@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-ivittuut-fac",
-  "name": "**Ivittuut**",
+  "name": "Ivittuut",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 61.2,
+    "lon": -45.4,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Historic",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.222653",
-      "evidence": "Extracted from operator column: Historic (Eclipse Metals exploring)"
-    }
+    "Eclipse Metals Limited",
+    "Eclipse Metals Ltd",
+    "Historic"
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.633639Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:40:12Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:40:12Z] Geocoded via web search. Coords: (61.2, -45.4). Confidence: 0.90. Notes: Coordinates extracted from the Arctic Report Card 2018, which lists the latitude and longitude for Ivittuut."
   },
   "canonical_name": "Ivittuut Mine",
   "canonical_slug": "ivittuut-mine",
@@ -60,11 +55,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ivittuut** Mine",
+      "name": "Ivittuut Mine",
       "from": "2025-10-29T08:01:20.222659",
       "to": "2025-11-04T19:19:00.633635Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sermersooq",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:47:43.000000Z",
+      "operators": [
+        "Eclipse Metals Ltd"
+      ],
+      "owners": [
+        "Eclipse Metals Ltd"
+      ],
+      "notes": "Eclipse Metals Ltd owns 100% of the Ivittuut Project."
+    }
+  }
 }

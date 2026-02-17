@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.48,
+    "lat": -17.4803,
     "lon": 30.618,
     "precision": "site"
   },
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Zimbabwe Mining & Smelting Company (Zimasco)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.947974Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:10:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10207436. The Crown-divide North Mine is classified as an underground mining operation with primary activities taking place underground"
   },
   "canonical_name": "Crown Divide North Mine",
   "canonical_slug": "crown-divide-north-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:36:14.000000Z",
+      "operators": [
+        "Zimbabwe Mining & Smelting Company (Zimasco)"
+      ],
+      "owners": [
+        "Zimbabwe Mining & Smelting Company (Zimasco)"
+      ],
+      "notes": "Zimasco is the majority owner and operator of the mine."
+    }
+  }
 }

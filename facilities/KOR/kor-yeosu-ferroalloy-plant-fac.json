@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-yeosu-ferroalloy-plant-fac",
-  "name": "**Yeosu Ferroalloy Plant**",
+  "name": "Yeosu Ferroalloy Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 34.76062,
+    "lon": 127.66215,
+    "precision": "approximate"
   },
   "types": [
     "smelter"
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "SeAH M\\&S Corp.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.526000",
-      "evidence": "Extracted from operator column: SeAH M\\&S Corp."
-    }
+    "BASF Korea",
+    "BASF SE",
+    "SeAH M\\&S Corp."
   ],
   "products": [],
   "sources": [
@@ -33,10 +28,10 @@
   ],
   "verification": {
     "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.757652Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Key domestic producer of ferroalloys for specialty steels. 1 | Canonical name+slug generated"
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T00:47:30Z",
+    "checked_by": "web_search_manual",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Key domestic producer of ferroalloys for specialty steels. 1 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:47:30Z] Geocoded via web search. Coords: (34.76062, 127.66215). Confidence: 0.70. Source: Yeosu city center, South Jeolla"
   },
   "canonical_name": "Yeosu Ferroalloy Smelter",
   "canonical_slug": "yeosu-ferroalloy-smelter",
@@ -53,11 +48,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Yeosu Ferroalloy ** Smelter",
+      "name": "Yeosu Ferroalloy  Smelter",
       "from": "2025-10-29T12:22:53.526002",
       "to": "2025-11-04T19:19:18.757649Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Jeolla",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:03:15.000000Z",
+      "operators": [
+        "BASF Korea"
+      ],
+      "owners": [
+        "BASF SE"
+      ],
+      "notes": "BASF is the only CCD production plant of BASF in the world located in Yeosu."
+    }
+  }
 }

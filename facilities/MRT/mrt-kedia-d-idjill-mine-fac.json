@@ -1,11 +1,11 @@
 {
   "facility_id": "mrt-kedia-d-idjill-mine-fac",
-  "name": "**Kedia d'Idjill Mine**",
+  "name": "Kedia d'Idjill Mine",
   "aliases": [],
   "country_iso3": "MRT",
   "location": {
     "lat": 22.64736,
-    "lon": null,
+    "lon": -10.0,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Société Nationale Industrielle et Minière",
-      "role": "operator",
-      "source": "Research Import MAURITANIAN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:17:09.490276",
-      "evidence": "Extracted from operator column: Société Nationale Industrielle et Minière (SNIM)"
-    }
+    "Société Nationale Industrielle et Minière",
+    "Société Nationale Industrielle et Minière (SNIM)",
+    "State of Mauritania"
   ],
   "products": [],
   "sources": [
@@ -41,7 +36,7 @@
     "confidence": 0.8,
     "last_checked": "2025-11-04T19:19:15.924996Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-10.0 (was null)"
   },
   "canonical_name": "Kedia D'idjill Mine",
   "canonical_slug": "kedia-d-idjill-mine",
@@ -58,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kedia d'Idjill ** Mine",
+      "name": "Kedia d'Idjill  Mine",
       "from": "2025-10-29T22:17:09.490340",
       "to": "2025-11-04T19:19:15.924994Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tiris Zemmour",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:38:40.000000Z",
+      "operators": [
+        "Société Nationale Industrielle et Minière (SNIM)"
+      ],
+      "owners": [
+        "Société Nationale Industrielle et Minière (SNIM)"
+      ],
+      "notes": "SNIM is a majority state-owned mining company."
+    }
+  }
 }

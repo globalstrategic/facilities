@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 54.617,
-    "lon": 86.371,
+    "lat": 54.616716,
+    "lon": 86.371465,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kuzbassrazrezugol JSC",
+    "Ural Mining Metallurgical Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.658445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:13:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Baykaimskaya_Coal_Mine. Baykaimskaya coal mine is an underground mine operated by Kuzbassrazrezugol"
   },
   "canonical_name": "Baykaimskaya Coal Mine",
   "canonical_slug": "baykaimskaya-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:13:12.000000Z",
+      "operators": [
+        "Kuzbassrazrezugol JSC"
+      ],
+      "owners": [
+        "Ural Mining Metallurgical Company"
+      ],
+      "notes": "Kuzbassrazrezugol is the only operator of the Baykaimskaya coal mine."
+    }
+  }
 }

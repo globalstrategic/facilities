@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -16.312,
-    "lon": -69.238,
+    "lat": -16.5,
+    "lon": -71.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "DLP Resources Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.314600Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:07:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://dlpresourcesinc.com/dlp-resources-discovers-copper-on-the-100-owned-esperanza-project-with-rock-samples-returning-up-to-4-71-cu-28-8ppm-mo-3540ppm-zn-and-383ppm-co/. The Esperanza project is located approximately 35 km southwest of the Cerro Verde Mine in Arequipa. Web search geocoded. Source: https://dlpresourcesinc.com/dlp-resources-discovers-copper-on-the-100-owned-esperanza-project-with-rock-samples-returning-up-to-4-71-cu-28-8ppm-mo-3540ppm-zn-and-383ppm-co/. The Esperanza project is located approximately 35 km southwest of the Cerro Verde Mine in Arequipa"
   },
   "canonical_name": "Esperanza Mine",
   "canonical_slug": "esperanza-mine-2",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arequipa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:07:00.000000Z",
+      "operators": [
+        "DLP Resources Inc."
+      ],
+      "owners": [
+        "DLP Resources Inc."
+      ],
+      "notes": "DLP Resources Inc. is the sole owner and operator of the Esperanza project."
+    }
+  }
 }

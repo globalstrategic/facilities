@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.5,
-    "lon": 111.0,
+    "lat": 54.4486,
+    "lon": 113.59,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JSC ARMZ Uranium Holding",
+    "JSC Khiagda"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.600574Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:26:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/JSC-Khiagda.htm. Coordinates extracted from the facility's description"
   },
   "canonical_name": "Khiagda Facility",
   "canonical_slug": "khiagda-facility",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Republic of Buryatia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:26:36.000000Z",
+      "operators": [
+        "JSC Khiagda"
+      ],
+      "owners": [
+        "JSC ARMZ Uranium Holding"
+      ],
+      "notes": "JSC Khiagda is a subsidiary of ARMZ, which is part of the state nuclear corporation Rosatom."
+    }
+  }
 }

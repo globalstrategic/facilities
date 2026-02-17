@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -23.0,
+    "lon": 44.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BlackEarth Minerals NL",
+    "Evion Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.106530Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:15:12Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:15:12Z] Geocoded via web search. Coords: (-23.0, 44.0). Confidence: 0.70. Notes: Coordinates derived from the location description of the Maniry Project being 21 km NE from Ampanihy."
   },
   "canonical_name": "Maniry Exploration",
   "canonical_slug": "maniry-exploration",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Madagascar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:57:18.000000Z",
+      "operators": [
+        "Evion Group"
+      ],
+      "owners": [
+        "BlackEarth Minerals NL"
+      ],
+      "notes": "Evion Group is developing the project, while BlackEarth Minerals holds ownership."
+    }
+  }
 }

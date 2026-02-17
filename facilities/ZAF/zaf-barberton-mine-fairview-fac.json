@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.713,
-    "lon": 31.101,
+    "lat": -25.69195624093088,
+    "lon": 31.0475,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pan African Resources PLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.786021Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:13:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Barberton (https://www.panafricanresources.com/mining-operations/barberton/). Barberton Mines includes Fairview, Sheba, and Consort mines, which are high-grade operations with a long life of mine"
   },
   "canonical_name": "Barberton Fairview Mine",
   "canonical_slug": "barberton-fairview-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Barberton",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:13:05.000000Z",
+      "operators": [
+        "Pan African Resources PLC"
+      ],
+      "owners": [
+        "Pan African Resources PLC"
+      ],
+      "notes": "Pan African Resources PLC is the holding company for Barberton Mines."
+    }
+  }
 }

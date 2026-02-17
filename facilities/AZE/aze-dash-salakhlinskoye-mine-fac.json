@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.1414,
+    "lon": 45.2661,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -20,6 +20,7 @@
   "status": "operating",
   "company_mentions": [
     "Anglo Asian Mining plc",
+    "AzRosPromInvest LLC",
     "Azerbaijan International Mineral Resources Operating Co. (AIMROC)",
     "Government of Azerbaijan",
     "JV AzRosPromInvest",
@@ -35,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.536489Z",
-    "checked_by": "import_pipeline",
-    "notes": "Primary bentonite producer in the country. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Primary bentonite producer in the country. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Primary bentonite producer in Qazax region"
   },
   "canonical_name": "Dash Salakhlinskoye Mine",
   "canonical_slug": "dash-salakhlinskoye-mine",
@@ -63,18 +64,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Gazakh region",
+  "province": "Qazax District",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:34:35.000000Z",
+      "timestamp": "2025-12-02T11:11:58.000000Z",
       "operators": [
-        "Anglo Asian Mining plc"
+        "AzRosPromInvest LLC"
       ],
       "owners": [
-        "R.V. Investment Group",
         "Government of Azerbaijan"
       ],
-      "notes": "Anglo Asian Mining plc operates the Dash-Salakhlinskoye deposit, with ownership split between R.V. Investment Group and the Government."
+      "notes": "AzRosPromInvest LLC is engaged in extracting and processing bentonite clay from the Dash-Salakhlinskoye deposit."
     }
   }
 }

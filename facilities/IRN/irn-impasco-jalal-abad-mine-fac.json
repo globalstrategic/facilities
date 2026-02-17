@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": 31.013,
-    "lon": 56.425,
+    "lat": 31.012703,
+    "lon": 56.425347,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Iranian Minerals Production and Supply Co",
+    "Iranian Mines & Mining Industries Development & Renovation Organization"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:16.444785Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:05:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/IMPASCO_Jalal_Abad_Mine. The Jalal Abad Mine is an iron ore mine operated by IMPASCO, located in Kerman Province, Iran"
   },
   "canonical_name": "Impasco Jalal Abad Mine",
   "canonical_slug": "impasco-jalal-abad-mine",
@@ -56,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kerman",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:05:53.000000Z",
+      "operators": [
+        "Iranian Minerals Production and Supply Co"
+      ],
+      "owners": [
+        "Iranian Mines & Mining Industries Development & Renovation Organization",
+        "Iranian Minerals Production and Supply Co"
+      ],
+      "notes": "IMPASCO is a subsidiary of the Iranian Mines & Mining Industries Development & Renovation Organization."
+    }
+  }
 }

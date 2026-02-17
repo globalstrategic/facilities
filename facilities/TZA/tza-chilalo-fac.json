@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -9.67,
+    "lon": 38.4,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -21,14 +21,10 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Evolution Energy Minerals",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.459975",
-      "evidence": "Extracted from operator column: Evolution Energy Minerals"
-    }
+    "Evolution Energy Minerals",
+    "Evolution Energy Minerals Ltd.",
+    "Government of Tanzania",
+    "Kudu Graphite Limited"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.979518Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Graphite project in Lindi Region"
   },
   "canonical_name": "Chilalo Development",
   "canonical_slug": "chilalo-development",
@@ -58,5 +54,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lindi Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:50:57.000000Z",
+      "operators": [
+        "Evolution Energy Minerals"
+      ],
+      "owners": [
+        "Kudu Graphite Limited",
+        "Evolution Energy Minerals",
+        "Government of Tanzania"
+      ],
+      "notes": "Kudu Graphite Limited is a joint venture company established to hold the Chilalo licences, with 84% ownership by Evolution and 16% by the Tanzanian Government."
+    }
+  }
 }

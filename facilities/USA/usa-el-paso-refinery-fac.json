@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.764,
-    "lon": -106.388,
+    "lat": 31.7619,
+    "lon": -106.485,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Marathon Petroleum Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.929876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:59:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.marathonpetroleum.com/Operations/Refining/El-Paso-Refinery/. The El Paso refinery is located approximately three miles east of downtown El Paso, Texas"
   },
   "canonical_name": "El Paso Refinery",
   "canonical_slug": "el-paso-refinery",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:59:38.000000Z",
+      "operators": [
+        "Marathon Petroleum Corporation"
+      ],
+      "owners": [
+        "Marathon Petroleum Corporation"
+      ],
+      "notes": "The refinery was previously owned by Andeavor, which was sold to Marathon Petroleum."
+    }
+  }
 }

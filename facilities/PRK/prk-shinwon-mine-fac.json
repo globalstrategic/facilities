@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 40.206216,
+    "lon": 127.538657,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ministry of Metallurgical Industry (North Korea)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.352577Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:34:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MMI_Hah-Sung_Mine. The mine is part of the Global Iron Ore Mines Tracker and is located in Shin-Won, South Hamgyong, North Korea"
   },
   "canonical_name": "Shinwon Mine",
   "canonical_slug": "shinwon-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Hamgyong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:34:32.000000Z",
+      "operators": [
+        "Ministry of Metallurgical Industry (North Korea)"
+      ],
+      "owners": [
+        "Ministry of Metallurgical Industry (North Korea)"
+      ],
+      "notes": "The mine is operated and owned by the North Korean government through its Ministry of Metallurgical Industry."
+    }
+  }
 }

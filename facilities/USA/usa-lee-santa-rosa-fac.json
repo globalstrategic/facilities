@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.417,
-    "lon": -117.718,
+    "lat": 36.41667,
+    "lon": -117.71667,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.738532Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:02:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10072410/. The Lee-Santa Rosa mine is a silver and lead mine located in Inyo County, California. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10072410/. The Lee-Santa Rosa mine is a silver and lead mine located in Inyo County, California"
   },
   "canonical_name": "Lee Santa Rosa Mine",
   "canonical_slug": "lee-santa-rosa-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California"
 }

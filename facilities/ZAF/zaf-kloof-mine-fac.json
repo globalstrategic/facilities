@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.401,
-    "lon": 27.602,
+    "lat": -26.58729888781268,
+    "lon": 27.623819086225218,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields Ltd",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.723254Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-kloof-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:15:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-kloof-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Johannesburg (https://www.nsenergybusiness.com/projects/kloof-gold-mine/). The Kloof gold mine is located approximately 60 km southwest of Johannesburg"
   },
   "canonical_name": "Kloof Mine",
   "canonical_slug": "kloof-mine",
@@ -64,5 +67,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "town": "Johannesburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:34.000000Z",
+      "operators": [
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Sibanye-Stillwater",
+        "Gold Fields Ltd"
+      ],
+      "notes": "Sibanye-Stillwater has been the owner and operator since 2013, previously owned by Gold Fields."
+    }
+  }
 }

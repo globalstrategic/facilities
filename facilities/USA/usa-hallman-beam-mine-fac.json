@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.357,
-    "lon": -81.019,
+    "lat": 39.93885228668206,
+    "lon": -74.7876624,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FMC Corporation",
+    "Lithium Corporation of America"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.907299Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:41:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mount Holly (https://thediggings.com/mines/20212). The Hallman-Beam Mine was a significant lithium producer from the 1950s until its closure in 1998"
   },
   "canonical_name": "Hallman Beam Mine",
   "canonical_slug": "hallman-beam-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Carolina",
+  "town": "Mount Holly",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:41:34.000000Z",
+      "operators": [
+        "FMC Corporation"
+      ],
+      "owners": [
+        "Lithium Corporation of America"
+      ],
+      "notes": "The mine was operated by FMC Corporation and is now owned by Lithium Corporation of America."
+    }
+  }
 }

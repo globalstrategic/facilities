@@ -9,8 +9,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.704,
-    "lon": 88.071,
+    "lat": 53.704709,
+    "lon": 88.071127,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Southern Kuzbass Coal Company PJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.616120Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:41:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/V.I._Lenin_Underground_Coal_Mine. The V.I. Lenin Underground Coal Mine is an operating coal mine located in Mezhdurechensk, Kemerovo Oblast, Russia"
   },
   "canonical_name": "V I Lenina Mine",
   "canonical_slug": "v-i-lenina-mine",
@@ -60,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:41:38.000000Z",
+      "operators": [
+        "Southern Kuzbass Coal Company PJSC"
+      ],
+      "owners": [
+        "Southern Kuzbass Coal Company PJSC"
+      ],
+      "notes": "The mine is owned by Southern Kuzbass Coal Company, a subsidiary of Mechel Group."
+    }
+  }
 }

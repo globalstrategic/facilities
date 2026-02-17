@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NGA",
   "location": {
-    "lat": 9.884,
-    "lon": 9.001,
+    "lat": 9.7608,
+    "lon": 8.8514,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bisichi PLC",
+    "Nigerian Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:14.810132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:08:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10304816. The Bisichi Tin Bukuru Operations are located in the vicinity of Jos, Nigeria, primarily focusing on surface mining techniques"
   },
   "canonical_name": "Bisichi, Amalgamated Tin Mine",
   "canonical_slug": "bisichi-amalgamated-tin-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Plateau State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:08:56.000000Z",
+      "operators": [
+        "Nigerian Mining Company"
+      ],
+      "owners": [
+        "Bisichi PLC"
+      ],
+      "notes": "Bisichi PLC is a public limited company listed on the London Stock Exchange."
+    }
+  }
 }

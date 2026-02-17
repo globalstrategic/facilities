@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.067,
+    "lon": 34.517,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "GP Resource Mining PLC",
-      "role": "operator",
-      "source": "Research Import ETH 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:04:41.336767",
-      "evidence": "Extracted from operator column: GP Resource Mining PLC"
-    }
+    "ASCOM",
+    "GP Resource Mining PLC",
+    "Tactical Environmental Response Ltd"
   ],
   "products": [],
   "sources": [
@@ -47,9 +42,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.296803Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large flake, gold-bearing graphite deposit; not in production.74 | Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:45:38Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Large flake, gold-bearing graphite deposit; not in production.74 | Canonical name+slug generated | [GEOCODED 2025-12-18T00:45:38Z] Coordinates found via web search (manual research). Lat: 10.067, Lon: 34.517"
   },
   "canonical_name": "Assosa Graphite Mine",
   "canonical_slug": "assosa-graphite-mine",
@@ -64,5 +59,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Benishangul-Gumuz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:00:28.000000Z",
+      "operators": [
+        "ASCOM"
+      ],
+      "owners": [],
+      "notes": "ASCOM is mentioned as having made a significant gold discovery in the Asosa zone."
+    }
+  },
+  "town": "Assosa"
 }

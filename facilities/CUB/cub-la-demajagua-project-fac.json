@@ -1,12 +1,12 @@
 {
   "facility_id": "cub-la-demajagua-project-fac",
-  "name": "**La Demajagua Project**",
+  "name": "La Demajagua Project",
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.8170649,
+    "lon": -82.9582213,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -36,6 +36,7 @@
     "49% Antilles Gold)",
     "Antilles Gold Limited",
     "GeoMinera S.A.",
+    "GeoMinera SA",
     "Minera La Victoria SA (51% Geominera S.A."
   ],
   "products": [],
@@ -49,9 +50,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.450795Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:48:38Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [GEOCODED 2025-12-18T00:48:38Z] Coordinates found via web search. Lat: 21.8170649, Lon: -82.9582213"
   },
   "canonical_name": "La Demajagua Mine",
   "canonical_slug": "la-demajagua-mine-2",
@@ -68,7 +69,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**La Demajagua ** Mine",
+      "name": "La Demajagua  Mine",
       "from": "2025-10-27T14:21:06.859974",
       "to": "2025-11-04T19:18:54.450792Z",
       "reason": "data_correction"
@@ -78,16 +79,17 @@
   "province": "Isla de la Juventud",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:01:45.000000Z",
+      "timestamp": "2025-12-02T10:13:57.000000Z",
       "operators": [
         "Antilles Gold Limited",
-        "GeoMinera S.A."
+        "GeoMinera SA"
       ],
       "owners": [
-        "GeoMinera S.A.",
+        "GeoMinera SA",
         "Antilles Gold Limited"
       ],
-      "notes": "Antilles Gold is in a joint venture with GeoMinera S.A. for the development of the La Demajagua Project."
+      "notes": "The project is a joint venture between Antilles Gold and the Cuban state-owned GeoMinera SA."
     }
-  }
+  },
+  "town": "Nueva Gerona"
 }

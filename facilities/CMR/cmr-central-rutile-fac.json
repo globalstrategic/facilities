@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-central-rutile-fac",
-  "name": "**Central Rutile**",
+  "name": "Central Rutile",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 4.0,
+    "lon": 11.5,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -27,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019593Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] DY6 Metals 5 exploration permits totaling 4,974km², Centre Region"
   },
   "canonical_name": "Central Rutile Mine",
   "canonical_slug": "central-rutile-mine",
@@ -48,24 +48,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Central Rutile** Mine",
+      "name": "Central Rutile Mine",
       "from": "2025-10-27T14:11:30.494507",
       "to": "2025-11-04T19:19:08.019591Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Central Region",
+  "province": "Centre Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:54:44.000000Z",
+      "timestamp": "2025-12-02T10:23:18.000000Z",
       "operators": [
-        "Gorilla Mining Ltd"
-      ],
-      "owners": [
         "DY6 Metals Ltd"
       ],
-      "notes": "Gorilla Mining Ltd is a subsidiary of EKOM, which is involved in the Central Rutile Project."
+      "owners": [],
+      "notes": "DY6 Metals Ltd is actively advancing the Central Rutile Project."
     }
   }
 }

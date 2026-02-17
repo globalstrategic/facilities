@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-ferroglobe-dunkirk-fac",
-  "name": "**Ferroglobe Dunkirk**",
+  "name": "Ferroglobe Dunkirk",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 51.025,
+    "lon": 2.30,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -20,14 +20,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Ferroglobe",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.707105",
-      "evidence": "Extracted from operator column: Ferroglobe"
-    }
+    "Ferroglobe",
+    "Ferroglobe PLC",
+    "Grupo FerroAtlántica, S.A.",
+    "Grupo Villar Mir, S.A.U."
   ],
   "products": [],
   "sources": [
@@ -59,11 +55,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ferroglobe Dunkirk** Mine",
+      "name": "Ferroglobe Dunkirk Mine",
       "from": "2025-10-28T17:18:38.707111",
       "to": "2025-11-04T19:18:51.671402Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:56:03.000000Z",
+      "operators": [
+        "Ferroglobe PLC",
+        "Grupo FerroAtlántica, S.A."
+      ],
+      "owners": [
+        "Ferroglobe PLC"
+      ],
+      "notes": "Ferroglobe acquired the facility from Glencore in 2018."
+    }
+  }
 }

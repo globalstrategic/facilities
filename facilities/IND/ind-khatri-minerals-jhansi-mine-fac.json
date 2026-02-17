@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.368,
-    "lon": 80.083,
+    "lat": 23.367923,
+    "lon": 80.082637,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Khatri Minerals and Mining Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.110198Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:08:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Khatri_Minerals_Jhansi_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Khatri Minerals Jhansi Mine",
   "canonical_slug": "khatri-minerals-jhansi-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:08:23.000000Z",
+      "operators": [
+        "Khatri Minerals and Mining Co"
+      ],
+      "owners": [
+        "Khatri Minerals and Mining Co"
+      ],
+      "notes": "Khatri Minerals and Mining Co owns 100% of the facility."
+    }
+  }
 }

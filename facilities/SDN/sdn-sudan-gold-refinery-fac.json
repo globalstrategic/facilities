@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.0,
+    "lon": 32.0,
+    "precision": "site"
   },
   "types": [
     "refinery"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Bank of Sudan",
+    "Sudan Gold Refinery Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.163974Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:37:17Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:37:17Z] Geocoded via web search. Coords: (15.0, 32.0). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for Sudan, which includes the capital city Khartoum's coordinates."
   },
   "canonical_name": "Sudan Gold Refinery",
   "canonical_slug": "sudan-gold-refinery",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khartoum",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:33:05.000000Z",
+      "operators": [
+        "Central Bank of Sudan"
+      ],
+      "owners": [
+        "Central Bank of Sudan"
+      ],
+      "notes": "All legally exported gold must pass through this refinery."
+    }
+  }
 }

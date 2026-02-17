@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 37.5,
+    "lon": -6.5,
+    "precision": "site"
   },
   "types": [
     "smelter"
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Almonty Industries Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:53.664542Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:53:29Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:53:29Z] Geocoded via web search. Coords: (37.5, -6.5). Confidence: 0.90. Notes: Coordinates derived from the location description of the Riotinto Copper Project, which is approximately 65 km northwest of Seville."
   },
   "canonical_name": "Smelter Smelter",
   "canonical_slug": "smelter-smelter-3",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Huelva Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:22:54.000000Z",
+      "operators": [
+        "Almonty Industries Inc."
+      ],
+      "owners": [
+        "Almonty Industries Inc."
+      ],
+      "notes": "Almonty owns a 100% interest in the Panasqueira Mine."
+    }
+  }
 }

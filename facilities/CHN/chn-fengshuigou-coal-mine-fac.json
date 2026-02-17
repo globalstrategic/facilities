@@ -8,8 +8,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 42.375,
-    "lon": 119.36,
+    "lat": 42.375707,
+    "lon": 119.364939,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Energy",
+    "Inner Mongolia Pingzhuang Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.651168Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:10:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%85%E8%92%99%E5%8F%A4%E5%B9%B3%E5%BA%84%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E9%A3%8E%E6%B0%B4%E6%B2%9F%E7%85%A4%E7%9F%BF. The Fengshuigou Coal Mine is an underground coal mine operated by Inner Mongolia Pingzhuang Energy Company"
   },
   "canonical_name": "Fengshuigou Coal Mine",
   "canonical_slug": "fengshuigou-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Inner Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:10:06.000000Z",
+      "operators": [
+        "Inner Mongolia Pingzhuang Energy Company"
+      ],
+      "owners": [
+        "China Energy"
+      ],
+      "notes": "The mine is fully owned by Inner Mongolia Pingzhuang Energy Company, which is a subsidiary of China Energy."
+    }
+  }
 }

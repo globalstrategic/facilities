@@ -10,8 +10,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.548,
-    "lon": -77.055,
+    "lat": -9.5372,
+    "lon": -77.0611,
     "precision": "site"
   },
   "types": [
@@ -36,7 +36,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton (33.75%)",
+    "Compañía Minera Antamina S.A.",
+    "Glencore (33.75%)",
+    "Mitsubishi Corporation (10%)",
+    "Teck Resources (22.5%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.304511Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:57:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Antamina_mine. Antamina is one of the largest copper and zinc mines in the world, located in the Andes Mountains"
   },
   "canonical_name": "Antamina Mine",
   "canonical_slug": "antamina-mine",
@@ -65,5 +71,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ancash",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:57:10.000000Z",
+      "operators": [
+        "Compañía Minera Antamina S.A."
+      ],
+      "owners": [
+        "BHP Billiton (33.75%)",
+        "Glencore (33.75%)",
+        "Teck Resources (22.5%)",
+        "Mitsubishi Corporation (10%)"
+      ],
+      "notes": "The mine is operated independently by Compañía Minera Antamina S.A., which is a joint venture among the listed owners."
+    }
+  }
 }

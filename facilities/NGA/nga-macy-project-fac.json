@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 7.0,
+    "lon": 9.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Goidel Resources Limited",
+    "Symbol Mining Limited",
+    "Symbol Mining Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.810288Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:40:50Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:40:50Z] Geocoded via web search. Coords: (7.0, 9.0). Confidence: 0.70. Notes: Coordinates are estimated based on the distance and direction from Abuja, as the exact coordinates were not provided."
   },
   "canonical_name": "Macy Mine",
   "canonical_slug": "macy-mine",
@@ -67,5 +71,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:27:14.000000Z",
+      "operators": [
+        "Symbol Mining Limited"
+      ],
+      "owners": [
+        "Symbol Mining Limited",
+        "Goidel Resources Limited"
+      ],
+      "notes": "Symbol Mining holds 60% and Goidel Resources Limited holds 40% in the joint venture."
+    }
+  },
+  "province": "Benue"
 }

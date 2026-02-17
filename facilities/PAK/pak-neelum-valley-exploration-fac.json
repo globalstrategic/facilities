@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 34.8401,
+    "lon": 74.2451,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -36,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:03.337934Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:27:50Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:27:50Z] Geocoded via web search. Coords: (34.8401, 74.2451). Confidence: 0.90. Notes: Coordinates extracted from the search results indicating the location of Neelum Valley."
   },
   "canonical_name": "Neelum Valley Exploration Exploration",
   "canonical_slug": "neelum-valley-exploration-exploration",
@@ -55,5 +55,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Azad Kashmir"
 }

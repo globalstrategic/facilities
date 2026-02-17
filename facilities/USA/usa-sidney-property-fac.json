@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 43.015,
-    "lon": -116.796,
+    "lat": 37.628032,
+    "lon": -82.369008,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Massey Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.755986Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:04:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10187730/. The Sidney Mine is a gold mine located in Kern County, California. Web search geocoded. Source: https://www.gem.wiki/Sidney_Mine. The Sidney Mining Complex includes multiple mines and a preparation plant"
   },
   "canonical_name": "Sidney Mine",
   "canonical_slug": "sidney-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:04:30.000000Z",
+      "operators": [
+        "Massey Energy"
+      ],
+      "owners": [
+        "Massey Energy"
+      ],
+      "notes": "Massey Energy owns and operates the Sidney Mining Complex."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.34,
-    "lon": 117.287,
+    "lat": -0.340196,
+    "lon": 117.287044,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cahaya Belawan Sejahtera"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.291774Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:07:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/CBS_Coal_Mine. CBS Coal Mine is an operating coal mine located in East Kalimantan, Indonesia"
   },
   "canonical_name": "CBS Coal Mine",
   "canonical_slug": "cbs-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:07:37.000000Z",
+      "operators": [
+        "Cahaya Belawan Sejahtera"
+      ],
+      "owners": [
+        "Cahaya Belawan Sejahtera"
+      ],
+      "notes": "Cahaya Belawan Sejahtera owns 100% of the mine."
+    }
+  }
 }

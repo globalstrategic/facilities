@@ -1,12 +1,12 @@
 {
   "facility_id": "fin-ikkari-project-fac",
-  "name": "**Ikkari Project**",
+  "name": "Ikkari Project",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 67.4167,
+    "lon": 26.6,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Rupert Resources Ltd.",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.783224",
-      "evidence": "Extracted from operator column: Rupert Resources Ltd."
-    }
+    "Rupert Finland Exploration Oy",
+    "Rupert Finland Oy",
+    "Rupert Resources Ltd",
+    "Rupert Resources Ltd."
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.192270Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Ikkari gold project, Sodankyla area, Lapland"
   },
   "canonical_name": "Ikkari Mine",
   "canonical_slug": "ikkari-mine-2",
@@ -53,11 +49,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ikkari ** Mine",
+      "name": "Ikkari  Mine",
       "from": "2025-10-28T17:16:23.783226",
       "to": "2025-11-04T19:18:54.192268Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:59:04.000000Z",
+      "operators": [
+        "Rupert Resources Ltd."
+      ],
+      "owners": [
+        "Rupert Resources Ltd.",
+        "Rupert Finland Exploration Oy",
+        "Rupert Finland Oy"
+      ],
+      "notes": "Rupert Resources Ltd. owns 100% of the Ikkari Project through its subsidiaries."
+    }
+  }
 }

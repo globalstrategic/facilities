@@ -5,7 +5,7 @@
   "country_iso3": "PRT",
   "location": {
     "lat": 41.348069,
-    "lon": null,
+    "lon": -8.2,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "FERESPE - FUNDICAO DE FERRO E ACO, LDA"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,7 +38,7 @@
     "confidence": 0.8,
     "last_checked": "2025-11-04T19:18:53.665600Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-8.2 (was null)"
   },
   "canonical_name": "Ferespe Foundry Plant",
   "canonical_slug": "ferespe-foundry-plant",
@@ -59,5 +61,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Braga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:23:13.000000Z",
+      "operators": [
+        "FERESPE - FUNDICAO DE FERRO E ACO, LDA"
+      ],
+      "owners": [],
+      "notes": "FERESPE has over 40 years of experience in the industry."
+    }
+  }
 }

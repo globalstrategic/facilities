@@ -17,8 +17,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.259,
-    "lon": -114.99,
+    "lat": 46.5,
+    "lon": -89.3,
     "precision": "site"
   },
   "types": [
@@ -51,7 +51,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copper Range Company",
+    "Highland Copper Company Inc.",
+    "Kinterra Copper USA"
+  ],
   "products": [],
   "sources": [
     {
@@ -61,11 +65,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.750159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:26:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/white-pine-north-project-michigan-us/. The White Pine Mine is located in Ontonagon County, Michigan, and has a history of copper production"
   },
   "canonical_name": "White Pine Mine",
   "canonical_slug": "white-pine-mine",
@@ -80,5 +84,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michigan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:26:13.000000Z",
+      "operators": [
+        "Kinterra Copper USA",
+        "Highland Copper Company Inc."
+      ],
+      "owners": [
+        "Highland Copper Company Inc.",
+        "Copper Range Company"
+      ],
+      "notes": "Kinterra Copper USA has a joint venture with Highland Copper to develop the White Pine North project."
+    }
+  }
 }

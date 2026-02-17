@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -12.773055555556,
+    "lon": 28.159166666667,
+    "precision": "site"
   },
   "types": [
     "mine",
@@ -35,14 +35,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Mopani Copper Mines Plc",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.745167",
-      "evidence": "Extracted from operator column: Mopani Copper Mines Plc (ZCCM-IH)"
-    }
+    "International Resources Holding (IRH)",
+    "Mopani Copper Mines PLC",
+    "Mopani Copper Mines Plc",
+    "ZCCM Investment Holdings"
   ],
   "products": [],
   "sources": [
@@ -53,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.687747Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:17:30Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:17:30Z] Geocoded via web search. Coords: (-12.773055555556, 28.159166666667). Confidence: 0.90. Notes: Coordinates extracted from Result 1, which provides precise latitude and longitude for the Mindola pit at Nkana Mine."
   },
   "canonical_name": "Nkana Mine",
   "canonical_slug": "nkana-mine",
@@ -72,5 +68,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Copperbelt Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:40:58.000000Z",
+      "operators": [
+        "Mopani Copper Mines PLC"
+      ],
+      "owners": [
+        "ZCCM Investment Holdings",
+        "International Resources Holding (IRH)"
+      ],
+      "notes": "Mopani Copper Mines PLC is the operator, while ZCCM and IRH are the owners."
+    }
+  }
 }

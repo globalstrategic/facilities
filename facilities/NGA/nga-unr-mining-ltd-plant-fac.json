@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 9.072,
+    "lon": 7.491,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -50,7 +50,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "UNR Mining Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -60,11 +62,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.811780Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] UNR Mining Ltd. processing plant, Federal Capital Territory, Abuja"
   },
   "canonical_name": "UNR Mining Ltd Processing Plant",
   "canonical_slug": "unr-mining-ltd-processing-plant",
@@ -87,5 +89,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Federal Capital Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:28:11.000000Z",
+      "operators": [
+        "UNR Mining Ltd."
+      ],
+      "owners": [
+        "UNR Mining Ltd."
+      ],
+      "notes": "UNR Mining Ltd. is both the operator and owner of the facility."
+    }
+  }
 }

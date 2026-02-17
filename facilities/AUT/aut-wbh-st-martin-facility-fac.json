@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.7563,
+    "lon": 15.2966,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -20,7 +20,9 @@
   "status": "operating",
   "company_mentions": [
     "Sandvik AB",
-    "Wolfram Bergbau und Hütten AG (WBH)"
+    "Wolfram Bergbau und Hütten AG (WBH)",
+    "Wolfram Bergbau- und Hütten-GmbH Nfg KG",
+    "Wolfram Bergbau- und Hütten-GmbH Nfg KG (WBH)"
   ],
   "products": [],
   "sources": [
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.400303Z",
-    "checked_by": "import_pipeline",
-    "notes": "Only integrated tungsten producer outside Asia; refines Mittersill concentrate and scrap. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Only integrated tungsten producer outside Asia; refines Mittersill concentrate and scrap. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Sankt Martin im Sulmtal tungsten facility"
   },
   "canonical_name": "WBH St Martin Facility Plant",
   "canonical_slug": "wbh-st-martin-facility-plant",
@@ -62,9 +64,10 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:34:06.000000Z",
+      "timestamp": "2025-12-02T11:14:16.000000Z",
       "operators": [
-        "Wolfram Bergbau und Hütten AG (WBH)"
+        "Wolfram Bergbau- und Hütten-GmbH Nfg KG (WBH)",
+        "Sandvik AB"
       ],
       "owners": [
         "Sandvik AB"

@@ -6,9 +6,9 @@
   ],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.0,
+    "lon": 12.0,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -28,14 +28,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Joint Venture",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.228316",
-      "evidence": "Extracted from operator column: Joint Venture"
-    }
+    "Alpha Centauri Mining (ACM)",
+    "Equatorial Mining Company (SEM)",
+    "Joint Venture",
+    "Société Équatoriale des Mines (SEM)"
   ],
   "products": [],
   "sources": [
@@ -46,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.391784Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:41:21Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:41:21Z] Geocoded via web search. Coords: (-1.0, 12.0). Confidence: 0.90. Notes: Coordinates are derived from the location of the Gabonese Gold Refinery in the Nkok Special Economic Zone near Libreville."
   },
   "canonical_name": "Gabonese Gold Processing Plant",
   "canonical_slug": "gabonese-gold-processing-plant",
@@ -65,5 +61,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Estuaire",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:54:54.000000Z",
+      "operators": [
+        "Alpha Centauri Mining (ACM)",
+        "Société Équatoriale des Mines (SEM)"
+      ],
+      "owners": [
+        "Equatorial Mining Company (SEM)",
+        "Alpha Centauri Mining (ACM)"
+      ],
+      "notes": "The refinery is a joint venture between SEM and ACM."
+    }
+  }
 }

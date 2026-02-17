@@ -1,13 +1,13 @@
 {
   "facility_id": "cub-moa-bay-complex-fac",
-  "name": "**Moa Bay Complex**",
+  "name": "Moa Bay Complex",
   "aliases": [
     "Moa Project; Moa Bay District"
   ],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 20.6111,
+    "lon": -74.9531,
     "precision": "unknown"
   },
   "types": [
@@ -35,22 +35,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Moa Nickel S.A. (50% Sherritt Int'l",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.808441",
-      "evidence": "Extracted from operator column: Moa Nickel S.A. (50% Sherritt Int'l / 50% General Nickel Co. S.A.)"
-    },
-    {
-      "name": "50% General Nickel Co. S.A.)",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:06.808453",
-      "evidence": "Extracted from operator column: Moa Nickel S.A. (50% Sherritt Int'l / 50% General Nickel Co. S.A.)"
-    }
+    "50% General Nickel Co. S.A.)",
+    "General Nickel Company S.A.",
+    "Moa Nickel S.A. (50% Sherritt Int'l",
+    "Sherritt International Corporation"
   ],
   "products": [],
   "sources": [
@@ -61,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.454347Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:04:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn167. Coordinates extracted from the PorterGeo Database, indicating the location of the Moa Bay Complex"
   },
   "canonical_name": "Moa Bay Facility",
   "canonical_slug": "moa-bay-facility",
@@ -82,11 +70,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Moa Bay **",
+      "name": "Moa Bay ",
       "from": "2025-10-27T14:21:06.808457",
       "to": "2025-11-04T19:18:54.454343Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Holguín",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:04:52.000000Z",
+      "operators": [
+        "Sherritt International Corporation",
+        "General Nickel Company S.A."
+      ],
+      "owners": [
+        "Sherritt International Corporation",
+        "General Nickel Company S.A."
+      ],
+      "notes": "The Moa Bay Complex is managed as a joint venture between Sherritt International Corporation and General Nickel Company S.A."
+    }
+  }
 }

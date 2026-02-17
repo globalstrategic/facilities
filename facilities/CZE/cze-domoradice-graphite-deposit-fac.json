@@ -1,12 +1,12 @@
 {
   "facility_id": "cze-domoradice-graphite-deposit-fac",
-  "name": "**Domoradice Graphite Deposit**",
+  "name": "Domoradice Graphite Deposit",
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 48.85,
+    "lon": 14.3,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -14,22 +14,10 @@
   "commodities": [],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.788829",
-      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.788831",
-      "evidence": "Extracted from operator column: N/A (State Reserved Deposit)"
-    }
+    "A",
+    "Czech Graphite Works",
+    "N",
+    "České tuhové závody (Czech Graphite Works)"
   ],
   "products": [],
   "sources": [
@@ -40,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.582705Z",
-    "checked_by": "import_pipeline",
-    "notes": "Significant but unexploited graphite deposit. Past mining occurred, but resumption is unlikely due to its location in a protected area. 7 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:06:27Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Significant but unexploited graphite deposit. Past mining occurred, but resumption is unlikely due to its location in a protected area. 7 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:06:27Z] Historical graphite mine in Česky Krumlov District, South Bohemian Region"
   },
   "canonical_name": "Domoradice Graphite Mine",
   "canonical_slug": "domoradice-graphite-mine",
@@ -61,11 +49,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Domoradice Graphite ** Mine",
+      "name": "Domoradice Graphite  Mine",
       "from": "2025-10-27T15:23:26.788834",
       "to": "2025-11-04T19:19:10.582701Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Bohemian Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:12:04.000000Z",
+      "operators": [],
+      "owners": [
+        "Czech Graphite Works"
+      ],
+      "notes": "Historical context indicates that the Czech Graphite Works operated in the area, but current operational status is unclear."
+    }
+  }
 }

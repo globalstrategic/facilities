@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.7944583,
-    "lon": 29.7357042,
+    "lat": -25.76749396965232,
+    "lon": 29.754584686263684,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Exxaro Coal Mpumalanga Proprietary Limited",
+    "Exxaro Resources Ltd",
+    "Nkulo Community Partnership Trust",
+    "Sisonke Employee Empowerment Scheme",
+    "South Africa Coal Operations Proprietary Limited",
+    "Thungela Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +36,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:06:09.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:15:20.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mafube_Colliery. Coordinates are for the Mafube Colliery, which is an operating coal mine in Middelburg, Nkangala, Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mafube_Colliery. Coordinates are for the Mafube Colliery, which is an operating coal mine in Middelburg, Nkangala, Mpumalanga, South Africa. Web search geocoded. Source: Calculated from Middelburg (https://www.gem.wiki/Mafube_Colliery). The Mafube Coal Mine is a 50:50 joint operation co-owned by Exxaro and Thungela Resources Limited, located 30 km east of Middelburg"
   },
   "canonical_name": "Mafube Coal Mine",
   "canonical_slug": "mafube-coal-mine",
@@ -48,5 +55,22 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "town": "Middelburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:20.000000Z",
+      "operators": [
+        "Exxaro Coal Mpumalanga Proprietary Limited",
+        "South Africa Coal Operations Proprietary Limited"
+      ],
+      "owners": [
+        "Exxaro Resources Ltd",
+        "Thungela Resources Limited",
+        "Nkulo Community Partnership Trust",
+        "Sisonke Employee Empowerment Scheme"
+      ],
+      "notes": "The mine is operated as a joint venture between Exxaro and Thungela, with additional community and employee ownership."
+    }
+  }
 }

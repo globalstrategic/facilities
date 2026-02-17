@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 51.539481201450165,
+    "lon": 72.09313345600327,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AK Altynalmas",
+    "Financial Services B.V.",
+    "Folkstand Consortium Limited",
+    "Institute Project B.V.",
+    "JSC MMC Kazakhaltyn",
+    "Polyus Gold International Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.747549Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:13:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Astana (https://sst-ts.com/zholymbet-gold-deposit/). The Zholymbet deposit is located 65 km northeast of Astana, Kazakhstan"
   },
   "canonical_name": "Zholymbet Mine",
   "canonical_slug": "zholymbet-mine",
@@ -47,5 +54,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Akmola Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:13:27.000000Z",
+      "operators": [
+        "AK Altynalmas"
+      ],
+      "owners": [
+        "AK Altynalmas"
+      ],
+      "notes": "The deposit is owned and operated by AK Altynalmas."
+    }
+  },
+  "town": "Astana"
 }

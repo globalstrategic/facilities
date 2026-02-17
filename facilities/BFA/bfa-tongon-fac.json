@@ -1,0 +1,77 @@
+{
+  "facility_id": "bfa-tongon-fac",
+  "name": "Tongon",
+  "aliases": [
+    "Tongon",
+    "Tongon",
+    "Tongon"
+  ],
+  "country_iso3": "BFA",
+  "location": {
+    "lat": 10.99860373942694,
+    "lon": -4.016107,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Barrick Mining Corporation",
+    "Ivorian investors",
+    "Société des Mines de Tongon SA",
+    "State of Côte d'Ivoire"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:40.216363"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:25:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://www.barrick.com/English/operations/tongon/default.aspx). The Tongon gold mine is located within the Nielle mining permit, 628 kilometers north of Abidjan"
+  },
+  "canonical_name": "Tongon Mine",
+  "canonical_slug": "tongon-mine",
+  "display_name": "Tongon",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Savanes District",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:25:39.000000Z",
+      "operators": [
+        "Barrick Mining Corporation"
+      ],
+      "owners": [
+        "Société des Mines de Tongon SA",
+        "Barrick Mining Corporation",
+        "State of Côte d'Ivoire",
+        "Ivorian investors"
+      ],
+      "notes": "Barrick holds an 89.7% interest in the mine, with the State of Côte d'Ivoire owning 10% and Ivorian investors holding 0.3%."
+    }
+  }
+}

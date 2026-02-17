@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.889,
-    "lon": 115.26,
+    "lat": 2.5,
+    "lon": 99.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Antang Gunung Meratus",
+    "PT Baramulti Suksessarana Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.309512Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:20:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Rantau (https://www.gem.wiki/AGM_Coal_Mine). The AGM Coal Mine is located near Rantau town, approximately 100 km northeast of Banjarmasin | [COORD-FIX 2025-12-17T20:26:38Z] Changed from (4.949037337191241, 98.7356627119427) to (2.5, 99.5). Source: North Sumatra, Indonesia (estimated)"
   },
   "canonical_name": "AGM Coal Mine",
   "canonical_slug": "agm-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "town": "Rantau",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:20:02.000000Z",
+      "operators": [
+        "PT Antang Gunung Meratus"
+      ],
+      "owners": [
+        "PT Baramulti Suksessarana Tbk"
+      ],
+      "notes": "PT Antang Gunung Meratus is a wholly owned subsidiary of PT Baramulti Suksessarana Tbk."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 25.911,
-    "lon": -105.986,
+    "lat": 25.913,
+    "lon": -105.972,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Endeavour Gold Corporation S.A. de C.V.",
+    "Endeavour Silver Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.957645Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:34:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1277866/000106299323001445/exhibit99-1.htm. The Guanaceví Project is located approximately 3.6 km west of the town of Guanaceví"
   },
   "canonical_name": "Guanacevi Mine",
   "canonical_slug": "guanacevi-mine",
@@ -58,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:34:40.000000Z",
+      "operators": [
+        "Endeavour Silver Corp."
+      ],
+      "owners": [
+        "Endeavour Silver Corp.",
+        "Endeavour Gold Corporation S.A. de C.V."
+      ],
+      "notes": "Endeavour Silver controls the project through its 100% owned Mexican subsidiary."
+    }
+  }
 }

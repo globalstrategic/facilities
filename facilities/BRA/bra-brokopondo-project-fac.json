@@ -1,0 +1,80 @@
+{
+  "facility_id": "bra-brokopondo-project-fac",
+  "name": "Brokopondo Project",
+  "aliases": [],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -24.10156763327633,
+    "lon": -51.1716376,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "cobalt",
+      "primary": true
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    },
+    {
+      "metal": "nickel",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Government of Suriname",
+    "IAMGOLD Corporation",
+    "Rosebel Gold Mines NV",
+    "ePower Metals Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SUR 2025-10-21",
+      "date": "2025-10-21T17:45:37.366336"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T05:59:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Paramaribo (https://www.mining.com/iamgold-resumes-operations-at-gold-mine-in-suriname/). The Rosebel gold mine is located in the mineral-rich Brokopondo district, approximately 85 km south of Paramaribo"
+  },
+  "canonical_name": "Brokopondo Exploration",
+  "canonical_slug": "brokopondo-exploration",
+  "display_name": "Brokopondo",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Brokopondo",
+  "town": "Paramaribo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:59:37.000000Z",
+      "operators": [
+        "IAMGOLD Corporation",
+        "Rosebel Gold Mines NV"
+      ],
+      "owners": [
+        "IAMGOLD Corporation",
+        "Government of Suriname"
+      ],
+      "notes": "IAMGOLD owns 95% of the Rosebel gold mine, with the Government of Suriname holding the remaining 5%."
+    }
+  }
+}

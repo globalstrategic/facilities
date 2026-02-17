@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.298,
-    "lon": 102.777,
+    "lat": -2.289826,
+    "lon": 102.769967,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sarolangun Prima Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.214086Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:23:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Sarolangun_Prima_Coal_Mine. The Sarolangun Prima Coal Mine is an operating coal mine located in Jambi, Indonesia"
   },
   "canonical_name": "Sarolangun Prima Coal Mine",
   "canonical_slug": "sarolangun-prima-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jambi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:23:54.000000Z",
+      "operators": [
+        "Sarolangun Prima Coal"
+      ],
+      "owners": [
+        "Sarolangun Prima Coal"
+      ],
+      "notes": "Sarolangun Prima Coal owns and operates the facility."
+    }
+  }
 }

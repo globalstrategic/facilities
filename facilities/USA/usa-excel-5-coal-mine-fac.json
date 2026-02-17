@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.661,
-    "lon": -82.481,
+    "lat": 37.661111,
+    "lon": -82.480833,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners LP",
+    "Excel Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.725615Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:05:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-1519838. Excel 5 Coal Mine is an operating coal mine located in Pike County, Kentucky"
   },
   "canonical_name": "Excel 5 Coal Mine",
   "canonical_slug": "excel-5-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:05:00.000000Z",
+      "operators": [
+        "Excel Mining"
+      ],
+      "owners": [
+        "Alliance Resource Partners LP"
+      ],
+      "notes": "Excel Mining is a subsidiary of Alliance Resource Partners."
+    }
+  }
 }

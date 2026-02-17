@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.46977,
+    "lon": 32.65934,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aarti Group",
+    "Aarti Steel Company Limited",
+    "Aarti Steel Sudan Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.166475Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Steel plant in Khartoum Al Riyad"
   },
   "canonical_name": "Aarti Steel Plant",
   "canonical_slug": "aarti-steel-plant",
@@ -47,5 +51,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khartoum",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:18.000000Z",
+      "operators": [
+        "Aarti Steel Sudan Limited"
+      ],
+      "owners": [
+        "Aarti Steel Company Limited"
+      ],
+      "notes": "Aarti Steel is a leading manufacturer of steel in Sudan."
+    }
+  }
 }

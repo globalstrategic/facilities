@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.8625,
+    "lon": 103.8467,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Badrakh Energy",
+    "Badrakh Energy LLC",
+    "MonAtom Group",
+    "Orano Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.455730Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:44:13Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:44:13Z] Geocoded via web search. Coords: (46.8625, 103.8467). Confidence: 0.90. Notes: Coordinates were directly extracted from the content of Result 1."
   },
   "canonical_name": "Zuuvch Ovoo Development",
   "canonical_slug": "zuuvch-ovoo-development",
@@ -47,5 +52,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dornogobi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:43:29.000000Z",
+      "operators": [
+        "Badrakh Energy"
+      ],
+      "owners": [
+        "Orano Group",
+        "MonAtom Group"
+      ],
+      "notes": "Badrakh Energy is a joint venture between Orano and Mongolia's state-owned MonAtom Group."
+    }
+  }
 }

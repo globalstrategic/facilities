@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.343,
-    "lon": 106.995,
+    "lat": 39.342871,
+    "lon": 106.995121,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hongxing International Development Company",
+    "鄂托克旗建元煤焦化有限责任公司 (Ordos Jianyuan Coal Coking Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.824334Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:36:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E9%84%82%E6%89%98%E5%85%8B%E6%97%97%E5%BB%BA%E5%85%83%E7%85%A4%E7%84%A6%E5%8C%96%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E5%BB%BA%E5%85%83%E7%85%A4%E7%9F%BF. The Jianyuan Coal Mine is an underground coal mine with a total construction scale of 5 million tons per year"
   },
   "canonical_name": "Jianyuan Coal Mine",
   "canonical_slug": "jianyuan-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "内蒙古 (Inner Mongolia)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:36:56.000000Z",
+      "operators": [
+        "鄂托克旗建元煤焦化有限责任公司 (Ordos Jianyuan Coal Coking Co., Ltd.)"
+      ],
+      "owners": [
+        "Hongxing International Development Company"
+      ],
+      "notes": "The mine is operated by a local company and owned by Hongxing International Development Company."
+    }
+  }
 }

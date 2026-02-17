@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.24,
-    "lon": -79.348,
+    "lat": 43.06598151580383,
+    "lon": -109.29913458551536,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "1532382 Ontario Inc.",
+    "Notre Development",
+    "Vito Gallo"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.720204Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:59:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kirkland Lake (https://www.sootoday.com/columns/back-roads-bill/back-roads-bill-the-rise-and-fall-of-the-adams-mine-landfill-project-10609227). The Adams Mine has a complex history involving ownership disputes and legal challenges, particularly regarding its status as a landfill site"
   },
   "canonical_name": "Adams Mine",
   "canonical_slug": "adams-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ontario",
+  "town": "Kirkland Lake",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:59:56.000000Z",
+      "operators": [],
+      "owners": [
+        "Vito Gallo",
+        "1532382 Ontario Inc.",
+        "Notre Development"
+      ],
+      "notes": "Vito Gallo is identified as the current owner through a numbered company, and Notre Development was previously involved."
+    }
+  }
 }

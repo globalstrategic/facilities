@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.872,
-    "lon": -78.5,
+    "lat": 58.3019,
+    "lon": -134.4197,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coeur Mining, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.701937Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:57:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ziprecruiter.com/Jobs/Mining-Mill-Operator. The facility is associated with Coeur Mining, which operates in Juneau, AK"
   },
   "canonical_name": "Job Mine",
   "canonical_slug": "job-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:57:39.000000Z",
+      "operators": [
+        "Coeur Mining, Inc."
+      ],
+      "owners": [
+        "Coeur Mining, Inc."
+      ],
+      "notes": "Coeur Mining is both the operator and owner of the facility."
+    }
+  }
 }

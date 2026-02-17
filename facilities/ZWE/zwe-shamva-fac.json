@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.323,
-    "lon": 31.573,
+    "lat": -17.0,
+    "lon": 31.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kuvimba Mining House (Pvt) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.953499Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-01T16:37:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/3161/Shamva-Mine.aspx. Shamva Mine is located in the Bindura-Shamva Greenstone Belt, approximately 90 km northeast of Harare"
   },
   "canonical_name": "Shamva Mine",
   "canonical_slug": "shamva-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland Central",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:37:56.000000Z",
+      "operators": [
+        "Kuvimba Mining House (Pvt) Ltd."
+      ],
+      "owners": [
+        "Kuvimba Mining House (Pvt) Ltd."
+      ],
+      "notes": "Kuvimba Mining House acquired Shamva Mine in 2020 and has recommenced production."
+    }
+  }
 }

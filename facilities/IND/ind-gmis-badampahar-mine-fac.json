@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.069,
-    "lon": 86.123,
+    "lat": 22.068628,
+    "lon": 86.122735,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "GM Iron & Steel Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.069037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:31:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/GMIS_Badampahar_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "Gmis Badampahar Mine",
   "canonical_slug": "gmis-badampahar-mine",
@@ -56,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:31:21.000000Z",
+      "operators": [
+        "GM Iron & Steel Co Ltd"
+      ],
+      "owners": [
+        "GM Iron & Steel Co Ltd"
+      ],
+      "notes": "GM Iron & Steel Co Ltd owns 100% of the mine."
+    }
+  }
 }

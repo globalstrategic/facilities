@@ -1,13 +1,13 @@
 {
   "facility_id": "cub-empresa-sider-rgica-jose-mart-fac",
-  "name": "**Empresa Siderúrgica Jose Martí**",
+  "name": "Empresa Siderúrgica Jose Martí",
   "aliases": [
     "Antillana de Acero"
   ],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.04,
+    "lon": -82.275,
     "precision": "unknown"
   },
   "types": [
@@ -28,6 +28,7 @@
   ],
   "status": "operating",
   "company_mentions": [
+    "Empresa Siderúrgica Jose Martí",
     "Government of Cuba",
     "Grupo Metalúrgico Acinox",
     "State-Owned"
@@ -41,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.451133Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:14:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://es.wikipedia.org/wiki/Empresa_Sider%C3%BArgica_Jos%C3%A9_Mart%C3%AD. Empresa Siderúrgica José Martí is also known as Antillana de Acero"
   },
   "canonical_name": "Empresa Siderúrgica Jose Martí Steel Plant",
   "canonical_slug": "empresa-siderurgica-jose-marti-steel-plant",
@@ -62,24 +63,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Empresa Siderúrgica Jose Martí** Steel Plant",
+      "name": "Empresa Siderúrgica Jose Martí Steel Plant",
       "from": "2025-10-27T14:21:06.997760",
       "to": "2025-11-04T19:18:54.451130Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "La Havana Province",
+  "province": "La Habana",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:02:12.000000Z",
+      "timestamp": "2025-12-02T10:14:20.000000Z",
       "operators": [
         "Grupo Metalúrgico Acinox"
       ],
       "owners": [
         "Government of Cuba"
       ],
-      "notes": "Empresa Siderúrgica Jose Martí is part of Grupo Metalúrgico Acinox, which is government-owned."
+      "notes": "The facility is government-owned and operates under Grupo Metalúrgico Acinox."
     }
   }
 }

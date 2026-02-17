@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 63.92,
-    "lon": -149.26,
+    "lat": 63.75,
+    "lon": -148.97,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Usibelli Coal Mine Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.745817Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:22:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Usibelli_Coal_Mine. Usibelli Coal Mine is located near Healy, Alaska, approximately 11 miles north of the entrance to Denali National Park"
   },
   "canonical_name": "Usibelli Coal Mine",
   "canonical_slug": "usibelli-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:22:39.000000Z",
+      "operators": [
+        "Usibelli Coal Mine Inc."
+      ],
+      "owners": [
+        "Usibelli Coal Mine Inc."
+      ],
+      "notes": "Usibelli Coal Mine Inc. is a family-owned business run by the Usibelli family."
+    }
+  }
 }

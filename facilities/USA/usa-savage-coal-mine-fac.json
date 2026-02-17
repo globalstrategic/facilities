@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.416,
-    "lon": -104.375,
+    "lat": 47.0,
+    "lon": -104.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Westmoreland Coal Company",
+    "Westmoreland Savage Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.735969Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:14:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.annualreports.com/HostedData/AnnualReportArchive/w/NASDAQ_WLB_2001.pdf. The Savage Mine is located on the Montana-North Dakota border, near Sidney, Montana"
   },
   "canonical_name": "Savage Coal Mine",
   "canonical_slug": "savage-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:14:56.000000Z",
+      "operators": [
+        "Westmoreland Savage Corporation"
+      ],
+      "owners": [
+        "Westmoreland Coal Company"
+      ],
+      "notes": "The Savage Mine is operated by Westmoreland Savage Corporation and owned by Westmoreland Coal Company."
+    }
+  }
 }

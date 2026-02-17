@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 19.018,
-    "lon": 79.511,
+    "lat": 19.091005185341537,
+    "lon": 79.4873121,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Singareni Collieries Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.114652Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:13:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Bellampalli (https://www.deccanchronicle.com/southern-states/telangana/locals-see-red-over-shanthikhani-1868990). The Shanthikhani Coal Mine is located in the Mandamarri area, approximately 3 km from Bellampalli town. There are ongoing protests regarding its expansion due to environmental concerns"
   },
   "canonical_name": "Shanthikhani Coal Mine",
   "canonical_slug": "shanthikhani-coal-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Telangana",
+  "town": "Bellampalli",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:13:05.000000Z",
+      "operators": [
+        "Singareni Collieries Company Limited"
+      ],
+      "owners": [
+        "Singareni Collieries Company Limited"
+      ],
+      "notes": "SCCL is a government-owned coal mining corporation in India."
+    }
+  }
 }

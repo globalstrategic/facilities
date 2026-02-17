@@ -1,12 +1,12 @@
 {
   "facility_id": "bdi-cimba-mine-fac",
-  "name": "**Cimba Mine**",
+  "name": "Cimba Mine",
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -3.0,
+    "lon": 29.0,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -33,6 +33,7 @@
   ],
   "status": "suspended",
   "company_mentions": [
+    "NTEGA Holding",
     "Russian oligarchs",
     "Tanganyika Mining Burundi",
     "Tanganyika Mining Company"
@@ -46,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.898840Z",
-    "checked_by": "import_pipeline",
-    "notes": "Operations were suspended by the government in July 2021, citing numerous violations of the country's mining code. 5 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:55:35Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Operations were suspended by the government in July 2021, citing numerous violations of the country's mining code. 5 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:55:35Z] Geocoded via web search. Coords: (-3.0, 29.0). Confidence: 0.70. Notes: Coordinates are estimated based on the location of Cimba in Cibitoke Province, as specific coordinates were not provided."
   },
   "canonical_name": "Cimba Mine",
   "canonical_slug": "cimba-mine",
@@ -67,7 +68,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cimba ** Mine",
+      "name": "Cimba  Mine",
       "from": "2025-10-27T10:36:55.112153",
       "to": "2025-11-04T19:19:00.898838Z",
       "reason": "data_correction"
@@ -77,14 +78,14 @@
   "province": "Cibitoke Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:37:31.000000Z",
+      "timestamp": "2025-12-02T11:10:17.000000Z",
       "operators": [
         "Tanganyika Mining Company"
       ],
       "owners": [
-        "Russian oligarchs"
+        "NTEGA Holding"
       ],
-      "notes": "The Tanganyika Mining Company is owned by Russian oligarchs."
+      "notes": "Tanganyika Mining Company is owned by Russian oligarchs, while NTEGA Holding exploits coltan in a different province."
     }
   }
 }

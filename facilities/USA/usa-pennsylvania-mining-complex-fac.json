@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.964,
-    "lon": -80.41,
+    "lat": 40.077778,
+    "lon": -80.353056,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CONSOL Energy Inc",
+    "Consol Pennsylvania Coal Company LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.734095Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:13:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-3607416. Coordinates extracted directly from the mining report"
   },
   "canonical_name": "Pennsylvania Mining Mine",
   "canonical_slug": "pennsylvania-mining-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:13:13.000000Z",
+      "operators": [
+        "Consol Pennsylvania Coal Company LLC"
+      ],
+      "owners": [
+        "CONSOL Energy Inc"
+      ],
+      "notes": "CONSOL Energy Inc is the current controller and operator of the facility."
+    }
+  }
 }

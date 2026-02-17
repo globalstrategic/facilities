@@ -1,0 +1,73 @@
+{
+  "facility_id": "arg-argentina-mine-fac",
+  "name": "Argentina Mine",
+  "aliases": [],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -27.330651,
+    "lon": -66.608403,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Goldcorp",
+    "Minera Alumbrera",
+    "Mineral Deposits of the Waters of Dionysius",
+    "Northern Orion Resources",
+    "Xstrata"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:18.029510"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:53:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bajo_de_la_Alumbrera_mine. The Bajo de la Alumbrera mine was the first open pit mine in Argentina, operational from 1997 to 2018"
+  },
+  "canonical_name": "Argentina Mine",
+  "canonical_slug": "argentina-mine",
+  "display_name": "Argentina",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Catamarca Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:53:07.000000Z",
+      "operators": [
+        "Minera Alumbrera"
+      ],
+      "owners": [
+        "Xstrata",
+        "Goldcorp",
+        "Northern Orion Resources",
+        "Mineral Deposits of the Waters of Dionysius"
+      ],
+      "notes": "Minera Alumbrera was jointly owned by several companies including Xstrata and Goldcorp."
+    }
+  }
+}

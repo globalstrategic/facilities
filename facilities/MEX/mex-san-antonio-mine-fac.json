@@ -1,0 +1,77 @@
+{
+  "facility_id": "mex-san-antonio-mine-fac",
+  "name": "San Antonio Mine",
+  "aliases": [
+    "San Antonio Mine",
+    "12 Angeles Mine",
+    "Complemento Mine",
+    "San Antonio 2"
+  ],
+  "country_iso3": "MEX",
+  "location": {
+    "lat": 28.0602189877558,
+    "lon": -109.83401448750624,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Axo Copper",
+    "Compañía Minera Pitalla S.A. de C.V.",
+    "Osisko Development",
+    "Sapuchi Minera"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:17.349690"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:10:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hermosillo (https://goldinvest.de/en/axo-copper-acquires-san-antonio-gold-project-acquisition-secures-over-1-million-ounce-gold-resource/). The San Antonio Project is located approximately 160 kilometers southeast of Hermosillo in Sonora, Mexico"
+  },
+  "canonical_name": "San Antonio Mine",
+  "canonical_slug": "san-antonio-mine",
+  "display_name": "San Antonio",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Hermosillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:10:28.000000Z",
+      "operators": [
+        "Osisko Development",
+        "Axo Copper"
+      ],
+      "owners": [
+        "Sapuchi Minera",
+        "Compañía Minera Pitalla S.A. de C.V."
+      ],
+      "notes": "The project is owned by Sapuchi Minera, which is a subsidiary of Osisko Development, and previously operated by Compañía Minera Pitalla."
+    }
+  }
+}

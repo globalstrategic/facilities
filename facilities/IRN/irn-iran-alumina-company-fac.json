@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 37.0,
+    "lon": 55.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Iran Alumina Co.",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.762838",
-      "evidence": "Extracted from operator column: Iran Alumina Co."
-    }
+    "Iran Alumina Co.",
+    "Iran Alumina Company",
+    "Iranian Mines and Mining Industries Development and Renovation Organisation (IMIDRO)"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.446546Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:01:53Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:01:53Z] Geocoded via web search. Coords: (37.0, 55.0). Confidence: 0.70. Notes: Coordinates are derived from the location description of the facility being 8 km from Sankhast Road in Jajarm."
   },
   "canonical_name": "Iran Alumina Company Refinery",
   "canonical_slug": "iran-alumina-company-refinery",
@@ -51,5 +46,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Khorasan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:24:58.000000Z",
+      "operators": [
+        "Iran Alumina Company"
+      ],
+      "owners": [
+        "Iranian Mines and Mining Industries Development and Renovation Organisation (IMIDRO)"
+      ],
+      "notes": "Iran Alumina Company is a subsidiary of IMIDRO."
+    }
+  }
 }

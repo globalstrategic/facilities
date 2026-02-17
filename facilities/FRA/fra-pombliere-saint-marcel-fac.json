@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": 46.616,
+    "lat": 46.6156,
     "lon": 1.502,
     "precision": "site"
   },
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Métaux Spéciaux S. A.",
+    "Pechiney Ugine Kuhlmann S. A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.672619Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:33:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10182147. The Pombliere Saint-Marcel; Savoie Sm. Processing Plant is a notable processing facility involved in the mining industry"
   },
   "canonical_name": "Pombliere Saint Marcel Mine",
   "canonical_slug": "pombliere-saint-marcel-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Savoie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:33:56.000000Z",
+      "operators": [
+        "Métaux Spéciaux S. A."
+      ],
+      "owners": [
+        "Pechiney Ugine Kuhlmann S. A."
+      ],
+      "notes": "Métaux Spéciaux operates the facility, while Pechiney Ugine Kuhlmann is listed as an owner."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "bdi-nyabikere-deposit-fac",
-  "name": "**Nyabikere Deposit**",
+  "name": "Nyabikere Deposit",
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -3.264,
+    "lon": 30.141,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -39,14 +39,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "CVMR Energy Minerals",
-      "role": "operator",
-      "source": "Research Import BDI 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T10:36:55.078675",
-      "evidence": "Extracted from operator column: CVMR Energy Minerals"
-    }
+    "CVMR Energy Minerals",
+    "Kermas Group"
   ],
   "products": [],
   "sources": [
@@ -57,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.900628Z",
-    "checked_by": "import_pipeline",
-    "notes": "Part of the extensive nickel laterite complex. License awarded to CVMR. 7 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Part of the extensive nickel laterite complex. License awarded to CVMR. 7 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Nickel laterite deposit in Karuzi region, part of Musongati complex"
   },
   "canonical_name": "Nyabikere Mine",
   "canonical_slug": "nyabikere-mine",
@@ -78,11 +72,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nyabikere ** Mine",
+      "name": "Nyabikere  Mine",
       "from": "2025-10-27T10:36:55.078689",
       "to": "2025-11-04T19:19:00.900626Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Burundi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T11:11:49.000000Z",
+      "operators": [
+        "Kermas Group"
+      ],
+      "owners": [
+        "Kermas Group"
+      ],
+      "notes": "Kermas Group holds the licenses for the Nyabikere deposit."
+    }
+  }
 }

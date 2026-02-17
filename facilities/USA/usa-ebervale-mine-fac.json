@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.986,
-    "lon": -75.941,
+    "lat": 40.98649761,
+    "lon": -75.94135498,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Atlantic Carbon Group Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.719848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:59:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ebervale_Mine. Ebervale Mine is an operating coal mine located in Luzerne County, Pennsylvania"
   },
   "canonical_name": "Ebervale Mine",
   "canonical_slug": "ebervale-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:59:36.000000Z",
+      "operators": [
+        "Atlantic Carbon Group Inc"
+      ],
+      "owners": [
+        "Atlantic Carbon Group Inc"
+      ],
+      "notes": "Atlantic Carbon Group Inc owns and operates the Ebervale Mine."
+    }
+  }
 }

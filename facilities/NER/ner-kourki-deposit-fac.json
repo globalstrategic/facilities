@@ -1,12 +1,12 @@
 {
   "facility_id": "ner-kourki-deposit-fac",
-  "name": "**Kourki Deposit**",
+  "name": "Kourki Deposit",
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 14.5,
+    "lon": 0.433,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -26,7 +26,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AFDG",
+    "CGAIN",
+    "McKinel Resources Limited",
+    "Societe des Mines du Liptako (SML SA)"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.801324Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Porphyry Cu-Mo deposit in Kourki village, Liptako Province, Tillabéri Region"
   },
   "canonical_name": "Kourki Facility",
   "canonical_slug": "kourki-facility",
@@ -57,11 +62,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kourki **",
+      "name": "Kourki ",
       "from": "2025-10-27T11:12:10.098683",
       "to": "2025-11-04T19:18:55.801321Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:30:09.000000Z",
+      "operators": [
+        "McKinel Resources Limited"
+      ],
+      "owners": [
+        "Societe des Mines du Liptako (SML SA)"
+      ],
+      "notes": "The facility was previously operated by McKinel Resources Limited, which is Australian-owned, and is now under the control of the Nigerien state."
+    }
+  }
 }

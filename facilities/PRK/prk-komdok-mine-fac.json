@@ -6,8 +6,8 @@
   ],
   "country_iso3": "PRK",
   "location": {
-    "lat": 40.926,
-    "lon": 128.816,
+    "lat": 40.90930701858037,
+    "lon": 128.9038646,
     "precision": "site"
   },
   "types": [
@@ -44,7 +44,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Korea General Zinc Industry Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -54,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.350495Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:32:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tanchon (https://en.wikipedia.org/wiki/Komdok_mine). The Komdok mine is one of the largest lead and zinc mines in North Korea, located in Kumgol-dong, Tanchon"
   },
   "canonical_name": "Komdok Mine",
   "canonical_slug": "komdok-mine",
@@ -73,5 +75,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Hamgyong Province",
+  "town": "Tanchon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:32:59.000000Z",
+      "operators": [
+        "Korea General Zinc Industry Group"
+      ],
+      "owners": [],
+      "notes": "The mine has been in operation since 1932."
+    }
+  }
 }

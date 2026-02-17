@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.678,
-    "lon": 117.14,
+    "lat": -0.678265,
+    "lon": 117.140294,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Bukit Asam Tbk",
+    "PT Internasional Prima Coal",
+    "PT Mega Raya Kusuma"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.222623Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:29:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/IPC_Coal_Mine. IPC Coal Mine is an operating coal mine located in East Kalimantan, Indonesia"
   },
   "canonical_name": "IPC Coal Mine",
   "canonical_slug": "ipc-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:29:54.000000Z",
+      "operators": [
+        "PT Internasional Prima Coal"
+      ],
+      "owners": [
+        "PT Bukit Asam Tbk",
+        "PT Mega Raya Kusuma"
+      ],
+      "notes": "PT Bukit Asam Tbk holds a 51% stake, while PT Mega Raya Kusuma holds a 49% stake in the mine."
+    }
+  }
 }

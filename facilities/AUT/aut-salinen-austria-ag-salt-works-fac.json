@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 47.8071,
+    "lon": 13.779,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -19,7 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "Salinen Austria AG"
+    "Salinen Austria AG",
+    "Österreichische Salinen Aktiengesellschaft"
   ],
   "products": [],
   "sources": [
@@ -30,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.402594Z",
-    "checked_by": "import_pipeline",
-    "notes": "Central processing plant for all Austrian salt, producing 1.2 million tonnes/year. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Central processing plant for all Austrian salt, producing 1.2 million tonnes/year. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Main salt processing facility in Ebensee"
   },
   "canonical_name": "Salinen Austria AG Salt Processing Plant",
   "canonical_slug": "salinen-austria-ag-salt-processing-plant",
@@ -50,17 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Upper Austria",
+  "province": "Oberösterreich",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:08:01.000000Z",
+      "timestamp": "2025-12-02T11:14:43.000000Z",
       "operators": [
         "Salinen Austria AG"
       ],
       "owners": [
-        "Salinen Austria AG"
+        "Österreichische Salinen Aktiengesellschaft"
       ],
-      "notes": "Salinen Austria AG is both the operator and owner of the salt works."
+      "notes": "Salinen Austria AG is a subsidiary of the Ministry of Finance."
     }
   }
 }

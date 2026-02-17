@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ITA",
   "location": {
-    "lat": 45.436,
-    "lon": 12.239,
+    "lat": 45.4821,
+    "lon": 12.252,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alusuisse (Swiss Aluminum Ltd.)",
+    "Eni SpA",
+    "Italian Government",
+    "Societa Alluminio Veneto Per Azioni Spa"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:00.368819Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:12:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10157876. The Porto Marghera Processing Plant is a key processing facility located near Venice, Italy, operational since 1928"
   },
   "canonical_name": "Porto Marghera Smelter",
   "canonical_slug": "porto-marghera-smelter",
@@ -52,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Veneto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:12:39.000000Z",
+      "operators": [
+        "Eni SpA"
+      ],
+      "owners": [
+        "Alusuisse (Swiss Aluminum Ltd.)",
+        "Italian Government",
+        "Societa Alluminio Veneto Per Azioni Spa"
+      ],
+      "notes": "Eni SpA is the operator of the facility, while multiple entities are listed as owners."
+    }
+  }
 }

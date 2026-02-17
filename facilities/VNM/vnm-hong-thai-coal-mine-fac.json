@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": 21.042,
-    "lon": 106.739,
+    "lat": 21.04202198,
+    "lon": 106.7394221,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hong Thai Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.278958Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:26:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Hong_Thai_Coal_Mine. The Hong Thai Coal Mine is an operating coal mine located in Tan Lap Village, Phuong Dong Ward, Uong Bi City"
   },
   "canonical_name": "Hong Thai Coal Mine",
   "canonical_slug": "hong-thai-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Ninh Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:26:21.000000Z",
+      "operators": [
+        "Hong Thai Coal Company"
+      ],
+      "owners": [
+        "Hong Thai Coal Company"
+      ],
+      "notes": "Hong Thai Coal Company owns and operates the mine."
+    }
+  }
 }

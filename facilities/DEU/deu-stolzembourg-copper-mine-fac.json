@@ -1,0 +1,72 @@
+{
+  "facility_id": "deu-stolzembourg-copper-mine-fac",
+  "name": "Stolzembourg Copper Mine",
+  "aliases": [],
+  "country_iso3": "DEU",
+  "location": {
+    "lat": 49.96549,
+    "lon": 6.16745,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "copper",
+      "primary": true
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    {
+      "name": "Société des Mines de Stolzembourg",
+      "role": "operator",
+      "source": "Research Import LUX 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T23:29:48.167531",
+      "evidence": "Extracted from operator column: Société des Mines de Stolzembourg; Neu & Stauder 34"
+    },
+    {
+      "name": "Neu & Stauder 34",
+      "role": "operator",
+      "source": "Research Import LUX 2025-10-29",
+      "confidence": 0.7,
+      "first_seen": "2025-10-29T23:29:48.167541",
+      "evidence": "Extracted from operator column: Société des Mines de Stolzembourg; Neu & Stauder 34"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import LUX 2025-10-29",
+      "date": "2025-10-29T23:29:48.167545"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:20.091962Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Stolzembourg Copper Mine",
+  "canonical_slug": "stolzembourg-copper-mine",
+  "display_name": "Stolzembourg Copper",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto"
+}

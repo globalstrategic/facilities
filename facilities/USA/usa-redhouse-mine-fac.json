@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.098,
-    "lon": -117.303,
+    "lat": 67.40006239248817,
+    "lon": -163.91639617043145,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NANA Regional Corporation",
+    "Teck Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.765694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:40:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kotzebue (https://jobs.teck.com/job/Mine-Operator-Casual-Talent-Pool/52110-en_US/). Red Dog Mine is located in northwest Alaska and is operated by Teck Resources Limited"
   },
   "canonical_name": "Redhouse Mine",
   "canonical_slug": "redhouse-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "town": "Kotzebue",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:40:48.000000Z",
+      "operators": [
+        "Teck Resources Limited"
+      ],
+      "owners": [
+        "NANA Regional Corporation"
+      ],
+      "notes": "Teck operates the mine on land owned by the NANA Regional Corporation."
+    }
+  }
 }

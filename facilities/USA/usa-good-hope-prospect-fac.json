@@ -15,8 +15,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 46.37,
-    "lon": -112.108,
+    "lat": 33.7382,
+    "lon": -117.2862,
     "precision": "site"
   },
   "types": [
@@ -45,7 +45,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "C. Vicini",
+    "Good Hope Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -55,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.769786Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:06:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10297252/. The Good Hope Prospects is located in Rio Arriba County, New Mexico, at an elevation of 9,603 feet. The exact coordinates were not provided, but the general area is known. Web search geocoded. Source: https://thediggings.com/mines/6746. The Good Hope Gold Mine is located in Jackson, California"
   },
   "canonical_name": "Good Hope Prospect Mine",
   "canonical_slug": "good-hope-prospect-mine",
@@ -74,5 +77,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:06:13.000000Z",
+      "operators": [
+        "Good Hope Mining Company"
+      ],
+      "owners": [
+        "C. Vicini"
+      ],
+      "notes": "The ownership and operational status are not clearly defined."
+    }
+  }
 }

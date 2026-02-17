@@ -1,14 +1,15 @@
 {
   "facility_id": "grl-kringlerne-fac",
-  "name": "**Kringlerne **",
+  "name": "Kringlerne",
   "aliases": [
     "Tanbreez"
   ],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 60.91,
+    "lon": -46.05,
+    "precision": "approximate",
+    "address": "Near Narsaq, Kujalleq Municipality, Southern Greenland"
   },
   "types": [
     "mine"
@@ -35,14 +36,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Critical Metals Corp",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.134033",
-      "evidence": "Extracted from operator column: Critical Metals Corp"
-    }
+    "Critical Metals Corp",
+    "Critical Metals Corp.",
+    "Tanbreez Mining Greenland A/S"
   ],
   "products": [],
   "sources": [
@@ -53,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.631252Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "manually_corrected",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:00:00Z",
+    "checked_by": "manual_review",
+    "notes": "Fixed inverted latitude sign. Kringlerne/Tanbreez deposit is ~15km NE of Qaqortoq, near Narsaq in the Ilímaussaq intrusive complex. Coordinates based on Narsaq (60.91°N, 46.05°W)."
   },
   "canonical_name": "Kringlerne Mine",
   "canonical_slug": "kringlerne-mine",
@@ -74,11 +70,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kringlerne ** Mine",
+      "name": "Kringlerne Mine",
       "from": "2025-10-29T08:01:20.134043",
-      "to": "2025-11-04T19:19:00.631250Z",
+      "to": "2025-12-18T00:00:00Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kujalleq",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:45:43.000000Z",
+      "operators": [
+        "Tanbreez Mining Greenland A/S"
+      ],
+      "owners": [
+        "Critical Metals Corp."
+      ],
+      "notes": "Tanbreez Mining Greenland A/S is in the process of transferring ownership to Critical Metals Corp."
+    }
+  }
 }

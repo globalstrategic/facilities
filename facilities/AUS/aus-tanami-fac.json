@@ -1,0 +1,71 @@
+{
+  "facility_id": "aus-tanami-fac",
+  "name": "Tanami",
+  "aliases": [
+    "Tanami Newmont",
+    "Callie",
+    "Tanami",
+    "Tanami"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -20.53915,
+    "lon": 130.31195,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Newmont Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:52.240759"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:55:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/tanami-gold-mine-northern-territory-australia/. The Tanami Gold Mine is located in the Tanami Desert and is one of Australia's largest underground gold mining operations"
+  },
+  "canonical_name": "Tanami Mine",
+  "canonical_slug": "tanami-mine-2",
+  "display_name": "Tanami",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Northern Territory",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:55:08.000000Z",
+      "operators": [
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Newmont Corporation"
+      ],
+      "notes": "Newmont has owned and operated the Tanami mine since 2002."
+    }
+  }
+}

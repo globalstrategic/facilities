@@ -1,17 +1,28 @@
 {
   "facility_id": "aus-pilgangoora-fac",
   "name": "Pilgangoora",
-  "aliases": [],
+  "aliases": [
+    "Central Far East"
+  ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.0,
-    "lon": 118.9,
+    "lat": -21.064,
+    "lon": 118.905,
     "precision": "site"
   },
   "types": [
     "mine"
   ],
-  "commodities": [],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    }
+  ],
   "status": "operating",
   "company_mentions": [
     "Pilbara Minerals Limited"

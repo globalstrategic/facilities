@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.332,
-    "lon": -103.682,
+    "lat": 44.352131084087574,
+    "lon": -103.63350397725644,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico Eagle (USA) Limited",
+    "Agnico Eagle Mines Limited",
+    "Brohm Mining Company (BMC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.909166Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:43:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lead (https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0801668). The Gilt Edge Mine is a Superfund site located approximately 6.5 miles east of Lead, South Dakota"
   },
   "canonical_name": "Gilt Edge Mine",
   "canonical_slug": "gilt-edge-mine",
@@ -59,5 +63,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Dakota",
+  "town": "Lead",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:43:28.000000Z",
+      "operators": [
+        "Brohm Mining Company (BMC)",
+        "Agnico Eagle Mines Limited",
+        "Agnico Eagle (USA) Limited"
+      ],
+      "owners": [],
+      "notes": "Brohm Mining Company was the last operator before abandonment. Agnico Eagle is exploring reopening the site."
+    }
+  }
 }

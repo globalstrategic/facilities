@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 34.829,
-    "lon": 117.823,
+    "lat": 34.814028,
+    "lon": 117.823611,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Jinxi Tai Mining Co (山东金玺泰矿业有限公司)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.806126Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:34:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dongxinxing_Iron_Mine. The Dongxinxing Iron Mine is mothballed and located in Linyi, Shandong, China"
   },
   "canonical_name": "Dongxinxing Iron Mine",
   "canonical_slug": "dongxinxing-iron-mine",
@@ -53,5 +55,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:34:11.000000Z",
+      "operators": [],
+      "owners": [
+        "Shandong Jinxi Tai Mining Co (山东金玺泰矿业有限公司)"
+      ],
+      "notes": "Shandong Jinxi Tai Mining Co owns 100% of the mine."
+    }
+  }
 }

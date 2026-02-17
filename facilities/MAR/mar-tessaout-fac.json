@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.69,
-    "lon": -7.498,
+    "lat": 30.600764042443643,
+    "lon": -6.5422547524582075,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "OCP"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:48.331830Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:14:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ouarzazate (https://africamaval.eu/wp-content/uploads/2024/06/CS_MOROCCO_FINAL.pdf). The Tessaout mine is one of the largest in Morocco, located in the Ouarzazate Province, specifically in the Amerzgane area"
   },
   "canonical_name": "Tessaout Mine",
   "canonical_slug": "tessaout-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ouarzazate Province",
+  "town": "Ouarzazate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:14:11.000000Z",
+      "operators": [
+        "OCP"
+      ],
+      "owners": [
+        "OCP"
+      ],
+      "notes": "The mine is operated by the Moroccan company OCP, which is a state-run phosphate company."
+    }
+  }
 }

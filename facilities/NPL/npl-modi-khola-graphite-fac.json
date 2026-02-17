@@ -1,11 +1,11 @@
 {
   "facility_id": "npl-modi-khola-graphite-fac",
-  "name": "**Modi-Khola Graphite**",
+  "name": "Modi-Khola Graphite",
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 28.2199,
+    "lon": 83.6991,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nepal Electricity Authority"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.484925Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:27:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Modi_Khola_Hydroelectric_Power_Plant. The facility is a hydroelectric power plant utilizing the flow from the Modi River"
   },
   "canonical_name": "Modi Khola Graphite Mine",
   "canonical_slug": "modi-khola-graphite-mine",
@@ -49,11 +51,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Modi-Khola Graphite** Mine",
+      "name": "Modi-Khola Graphite Mine",
       "from": "2025-10-29T21:51:42.459265",
       "to": "2025-11-04T19:19:22.484923Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gandaki Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:27:04.000000Z",
+      "operators": [
+        "Nepal Electricity Authority"
+      ],
+      "owners": [
+        "Nepal Electricity Authority"
+      ],
+      "notes": "The plant is owned and operated by the Nepal Electricity Authority."
+    }
+  }
 }

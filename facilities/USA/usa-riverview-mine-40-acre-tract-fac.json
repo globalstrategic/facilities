@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.795,
-    "lon": -85.789,
+    "lat": 37.74278,
+    "lon": -87.887907,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alliance Resource Partners LP",
+    "River View Coal, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.893237Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:10:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/River_View_Coal_Mine. The River View Mine is an underground coal mine complex located near Morganfield, Kentucky"
   },
   "canonical_name": "Riverview 40 Acre Tract Mine",
   "canonical_slug": "riverview-40-acre-tract-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:10:06.000000Z",
+      "operators": [
+        "River View Coal, LLC"
+      ],
+      "owners": [
+        "Alliance Resource Partners LP"
+      ],
+      "notes": "River View Coal, LLC is a subsidiary of Alliance Resource Partners LP."
+    }
+  }
 }

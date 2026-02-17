@@ -1,12 +1,12 @@
 {
   "facility_id": "bwa-selebi-phikwe-smelter-fac",
-  "name": "**Selebi-Phikwe Smelter**",
+  "name": "Selebi-Phikwe Smelter",
   "aliases": [],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -21.98,
+    "lon": 27.84,
+    "precision": "city"
   },
   "types": [
     "smelter"
@@ -24,7 +24,10 @@
     "BCL Copper Mine Limited",
     "BCL Limited",
     "PNR Botswana",
-    "Premium Nickel Resources"
+    "Premium Nickel Resources",
+    "Premium Nickel Resources (PNR)",
+    "Premium Nickel Resources (PNR) Botswana",
+    "Premium Nickel Resources Botswana"
   ],
   "products": [],
   "sources": [
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.631647Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] BCL copper-nickel smelter complex at Selebi-Phikwe, operated since 1973"
   },
   "canonical_name": "Selebi Phikwe Smelter",
   "canonical_slug": "selebi-phikwe-smelter",
@@ -56,7 +59,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Selebi-Phikwe ** Smelter",
+      "name": "Selebi-Phikwe  Smelter",
       "from": "2025-10-27T11:57:05.546022",
       "to": "2025-11-04T19:19:06.631644Z",
       "reason": "data_correction"
@@ -66,14 +69,16 @@
   "province": "Central District",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:45:09.000000Z",
+      "timestamp": "2025-12-02T10:57:52.000000Z",
       "operators": [
-        "PNR Botswana"
+        "BCL Limited",
+        "Premium Nickel Resources (PNR) Botswana"
       ],
       "owners": [
-        "BCL Limited"
+        "BCL Limited",
+        "Premium Nickel Resources (PNR)"
       ],
-      "notes": "PNR Botswana has acquired the Selebi mines, while BCL Limited was previously involved."
+      "notes": "BCL Limited was the original operator, and PNR Botswana has acquired the Selebi mines and is currently in care and maintenance."
     }
   }
 }

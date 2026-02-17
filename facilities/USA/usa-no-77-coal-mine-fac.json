@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.026,
-    "lon": -83.119,
+    "lat": 37.026195,
+    "lon": -83.118811,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blue Diamond Coal Company",
+    "Sev.en Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.729296Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:08:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/No._77_Coal_Mine. Exact coordinates provided in multiple sources"
   },
   "canonical_name": "No 77 Coal Mine",
   "canonical_slug": "no-77-coal-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:08:57.000000Z",
+      "operators": [
+        "Blue Diamond Coal Company"
+      ],
+      "owners": [
+        "Sev.en Energy"
+      ],
+      "notes": "Sev.en Energy is the parent company."
+    }
+  }
 }

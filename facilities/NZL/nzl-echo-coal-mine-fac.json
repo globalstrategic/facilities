@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -42.16,
-    "lon": 171.961,
+    "lat": -42.1,
+    "lon": 171.5,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Francis Mining Co Ltd",
+    "New Zealand Coal and Carbon Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.229883Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:31:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Echo_Coal_Mine. The Echo Coal Mine is located southeast of Reefton in the Garvey Creek coalfield"
   },
   "canonical_name": "Echo Coal Mine",
   "canonical_slug": "echo-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:31:57.000000Z",
+      "operators": [
+        "Francis Mining Co Ltd"
+      ],
+      "owners": [
+        "New Zealand Coal and Carbon Ltd"
+      ],
+      "notes": "Francis Mining is a subsidiary of New Zealand Coal and Carbon."
+    }
+  }
 }

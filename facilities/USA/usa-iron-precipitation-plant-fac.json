@@ -31,8 +31,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.411,
-    "lon": -110.886,
+    "lat": 41.414850720358245,
+    "lon": -74.9175509,
     "precision": "site"
   },
   "types": [
@@ -66,7 +66,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Iron Senergy"
+  ],
   "products": [],
   "sources": [
     {
@@ -76,11 +78,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.722603Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:02:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Alicia, PA (https://ironsenergy.com/). Iron Senergy operates a railway that transports coal to Alicia Harbor, indicating proximity to the Iron Precipitation Plant"
   },
   "canonical_name": "Iron Precipitation Mine",
   "canonical_slug": "iron-precipitation-mine",
@@ -95,5 +97,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "town": "Alicia, PA",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:02:06.000000Z",
+      "operators": [
+        "Iron Senergy"
+      ],
+      "owners": [
+        "Iron Senergy"
+      ],
+      "notes": "Iron Senergy owns and operates the facility."
+    }
+  }
 }

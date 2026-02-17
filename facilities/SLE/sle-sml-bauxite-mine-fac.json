@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SLE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 7.999,
+    "lon": -12.435,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -18,7 +18,11 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "PW Mining International",
+    "Sierra Mineral Holdings I, Ltd",
+    "Vimetco NV"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:59.578629Z",
-    "checked_by": "import_pipeline",
-    "notes": "Major bauxite operation in the Southern Province. 4 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Major bauxite operation in the Southern Province. 4 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] SML/Vimetco Gondama bauxite mine, Moyamba District, Southern Province."
   },
   "canonical_name": "SML Bauxite Mine",
   "canonical_slug": "sml-bauxite-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:35:54.000000Z",
+      "operators": [
+        "PW Mining International"
+      ],
+      "owners": [
+        "Vimetco NV",
+        "Sierra Mineral Holdings I, Ltd"
+      ],
+      "notes": "Vimetco NV owns the mine through its subsidiary Sierra Mineral Holdings I, Ltd."
+    }
+  }
 }

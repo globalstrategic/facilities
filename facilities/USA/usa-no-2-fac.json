@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.73,
-    "lon": -81.89,
+    "lat": 37.688023,
+    "lon": -81.824559,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ramaco Resources",
+    "Stonecoal Branch Mining Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.714414Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:55:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Stonecoal_Branch_No._2_Coal_Mine. The mine is an underground operation located on Elk Creek Rd, near Verner"
   },
   "canonical_name": "No 2 Mine",
   "canonical_slug": "no-2-mine-2",
@@ -63,5 +66,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:55:14.000000Z",
+      "operators": [
+        "Ramaco Resources",
+        "Stonecoal Branch Mining Inc"
+      ],
+      "owners": [
+        "Ramaco Resources"
+      ],
+      "notes": "Ramaco Resources took over as the operator in 2013 and is currently both the operator and the owner."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -10.5,
+    "lon": 152.5,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kingston Resources Ltd",
+    "Ok Tedi Mining Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.311285Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:52:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pngmining.com/ok-tedi-snaps-up-misima-gold-project/. The Misima Project is located on Misima Island in the Solomon Sea, Papua New Guinea"
   },
   "canonical_name": "Misima Development",
   "canonical_slug": "misima-development",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Milne Bay Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:52:44.000000Z",
+      "operators": [
+        "Ok Tedi Mining Limited"
+      ],
+      "owners": [
+        "Kingston Resources Ltd"
+      ],
+      "notes": "Ok Tedi Mining is acquiring the project from Kingston Resources."
+    }
+  }
 }

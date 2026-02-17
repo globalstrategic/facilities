@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.628,
-    "lon": -101.455,
+    "lat": 27.628135,
+    "lon": -101.45497,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo Mexico, S.A.B. de C.V.",
+    "Industrial Minera México S.A. de C.V.",
+    "Mineria y Energia del Noreste, de"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.955205Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:32:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Santa_Barbara_Coal_Mine. The Santa Barbara Coal Mine is a surface mine located in Coahuila, Mexico, and is one of the top coal producers in the region"
   },
   "canonical_name": "Santa Barbara Coal Mine",
   "canonical_slug": "santa-barbara-coal-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coahuila",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:32:41.000000Z",
+      "operators": [
+        "Mineria y Energia del Noreste, de"
+      ],
+      "owners": [
+        "Grupo Mexico, S.A.B. de C.V.",
+        "Industrial Minera México S.A. de C.V."
+      ],
+      "notes": "The mine is owned by Grupo Mexico through its subsidiary Industrial Minera México."
+    }
+  }
 }

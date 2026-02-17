@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.237,
-    "lon": 113.908,
+    "lat": -2.23686,
+    "lon": 113.908096,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Energi Batubara Indonesia",
+    "PT Exploitasi Energi Indonesia Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.270220Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:53:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SRI_Coal_Mine. SRI Coal Mine is an operating coal mine"
   },
   "canonical_name": "SRI Coal Mine",
   "canonical_slug": "sri-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:53:13.000000Z",
+      "operators": [
+        "PT Energi Batubara Indonesia",
+        "PT Exploitasi Energi Indonesia Tbk"
+      ],
+      "owners": [
+        "PT Exploitasi Energi Indonesia Tbk"
+      ],
+      "notes": "PT Exploitasi Energi Indonesia Tbk holds a 99.9% ownership."
+    }
+  }
 }

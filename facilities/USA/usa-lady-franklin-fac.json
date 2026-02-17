@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.621,
-    "lon": -119.781,
+    "lat": 38.0,
+    "lon": -105.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Floyd Ingraham",
+    "Sierra Properties Ltd.",
+    "U. V. Industries Incorporated"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.854592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T09:13:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10012299/. The Lady Franklin Mine is located in Custer County, Colorado, and is identified as a silver mine"
   },
   "canonical_name": "Lady Franklin Mine",
   "canonical_slug": "lady-franklin-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:13:51.000000Z",
+      "operators": [
+        "Floyd Ingraham",
+        "Sierra Properties Ltd."
+      ],
+      "owners": [
+        "U. V. Industries Incorporated"
+      ],
+      "notes": "Floyd Ingraham and Sierra Properties Ltd. are listed as operators, while U. V. Industries Incorporated is the owner."
+    }
+  }
 }

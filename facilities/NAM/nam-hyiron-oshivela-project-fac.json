@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -22.4193,
+    "lon": 14.9798,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -23,22 +23,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "German",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.758205",
-      "evidence": "Extracted from operator column: German/Namibian Consortium"
-    },
-    {
-      "name": "Namibian Consortium",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.758250",
-      "evidence": "Extracted from operator column: German/Namibian Consortium"
-    }
+    "German",
+    "HyIron Green Technologies",
+    "HyIron Green Technologies (Pty) Ltd",
+    "Namibia Hydrogen Fund Managers (Pty) Limited",
+    "Namibian Consortium"
   ],
   "products": [],
   "sources": [
@@ -49,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:14.555516Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] HyIron Oshivela Project near Arandis, Erongo"
   },
   "canonical_name": "Hyiron Oshivela Processing Plant",
   "canonical_slug": "hyiron-oshivela-processing-plant",
@@ -76,5 +65,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:57.000000Z",
+      "operators": [
+        "HyIron Green Technologies (Pty) Ltd"
+      ],
+      "owners": [
+        "Namibia Hydrogen Fund Managers (Pty) Limited"
+      ],
+      "notes": "HyIron is a green iron developer, and the project is supported by a consortium of German companies."
+    }
+  }
 }

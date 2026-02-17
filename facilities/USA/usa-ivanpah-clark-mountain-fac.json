@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.483,
-    "lon": -115.568,
+    "lat": 35.5,
+    "lon": -115.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JHL Capital Group",
+    "MP Materials",
+    "QVT Financial LP",
+    "Shenghe Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.789230Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:01:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mountain_Pass_Rare_Earth_Mine. The Mountain Pass Rare Earth Mine is located on the south flank of the Clark Mountain Range in California, approximately 53 miles southwest of Las Vegas"
   },
   "canonical_name": "Ivanpah Clark Mountain Mine",
   "canonical_slug": "ivanpah-clark-mountain-mine",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:01:02.000000Z",
+      "operators": [
+        "MP Materials"
+      ],
+      "owners": [
+        "MP Materials",
+        "JHL Capital Group",
+        "QVT Financial LP",
+        "Shenghe Resources"
+      ],
+      "notes": "MP Materials is the primary operator and owner, with significant stakes held by hedge funds and a Chinese state-owned enterprise."
+    }
+  }
 }

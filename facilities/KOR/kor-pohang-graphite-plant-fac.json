@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-pohang-graphite-plant-fac",
-  "name": "**Pohang Graphite Plant**",
+  "name": "Pohang Graphite Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.03222,
+    "lon": 129.365,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "IBIDEN Graphite Korea Co., Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.524432",
-      "evidence": "Extracted from operator column: IBIDEN Graphite Korea Co., Ltd."
-    }
+    "IBIDEN Graphite Korea Co., Ltd.",
+    "POSCO",
+    "POSCO Future M",
+    "POSCO Group"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.754298Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Produces specialized synthetic graphite products. 41 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:03:30Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Produces specialized synthetic graphite products. 41 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:03:30Z] Geocoded via web search. Coords: (36.03222, 129.365). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia page for Pohang."
   },
   "canonical_name": "Pohang Graphite Plant",
   "canonical_slug": "pohang-graphite-plant",
@@ -53,11 +49,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Pohang Graphite ** Plant",
+      "name": "Pohang Graphite  Plant",
       "from": "2025-10-29T12:22:53.524435",
       "to": "2025-11-04T19:19:18.754294Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gyeongsangbuk-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:01:36.000000Z",
+      "operators": [
+        "POSCO Future M"
+      ],
+      "owners": [
+        "POSCO Group"
+      ],
+      "notes": "POSCO Future M is a subsidiary of POSCO Group."
+    }
+  }
 }

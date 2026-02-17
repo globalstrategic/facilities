@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -5.0,
+    "lon": 38.0,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "PMM Mining Company",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.634344",
-      "evidence": "Extracted from operator column: PMM Mining Company"
-    }
+    "East Africa Metals",
+    "PMM Mining Company",
+    "PMM Tanzania Limited"
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.977627Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:12:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.thecitizen.co.tz/tanzania/news/national/pmm-asserts-full-ownership-of-magambazi-gold-mine-demands-retraction-from-east-africa-metals-4724858. The Magambazi Gold Mine is located in Handeni District, Tanga Region, and is approximately 35 km south of the town of Handeni"
   },
   "canonical_name": "Handeni Development",
   "canonical_slug": "handeni-development",
@@ -58,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tanga Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:12:50.000000Z",
+      "operators": [
+        "PMM Mining Company",
+        "PMM Tanzania Limited"
+      ],
+      "owners": [
+        "PMM Mining Company",
+        "East Africa Metals"
+      ],
+      "notes": "PMM Mining Company asserts full ownership of the Magambazi Mining Project, which has been subject to disputes regarding its operational status."
+    }
+  }
 }

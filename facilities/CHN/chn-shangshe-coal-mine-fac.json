@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China National Coal Group Co., Ltd.",
+    "Chinese central government"
+  ],
   "products": [],
   "sources": [
     {
@@ -54,5 +57,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:42:07.000000Z",
+      "operators": [
+        "China National Coal Group Co., Ltd."
+      ],
+      "owners": [
+        "Chinese central government"
+      ],
+      "notes": "China National Coal Group is a state-owned enterprise, indicating government ownership."
+    }
+  }
 }

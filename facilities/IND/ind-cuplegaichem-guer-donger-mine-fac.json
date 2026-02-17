@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.639,
-    "lon": 73.892,
+    "lat": 15.638604,
+    "lon": 73.892029,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chowgule and Company Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.096819Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:56:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Cuplegaichem_Guer_Donger_Mine. Cuplegaichem Guer Donger Mine is an iron ore mine located in Bicholim, Goa, India"
   },
   "canonical_name": "Cuplegaichem Guer Donger Mine",
   "canonical_slug": "cuplegaichem-guer-donger-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Goa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:56:16.000000Z",
+      "operators": [
+        "Chowgule and Company Pvt Ltd"
+      ],
+      "owners": [
+        "Chowgule and Company Pvt Ltd"
+      ],
+      "notes": "Chowgule and Company Pvt Ltd owns 100% of the mine."
+    }
+  }
 }

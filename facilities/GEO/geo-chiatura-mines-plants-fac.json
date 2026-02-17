@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-chiatura-mines-plants-fac",
-  "name": "**Chiatura Mines & Plants**",
+  "name": "Chiatura Mines & Plants",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.75,
+    "lon": 43.5,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -19,14 +19,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Chiaturmanganum Georgia LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.163770",
-      "evidence": "Extracted from operator column: Chiaturmanganum Georgia LLC"
-    }
+    "Chiatura Management Company",
+    "Chiaturmanganum Georgia LLC",
+    "Georgian American Alloys, Inc.",
+    "Georgian Manganese LLC",
+    "Mchale Limited",
+    "New Group"
   ],
   "products": [],
   "sources": [
@@ -37,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.725803Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:57:50Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:57:50Z] Geocoded via web search. Coords: (41.75, 43.5). Confidence: 0.90. Notes: Coordinates are based on the known location of Chiatura Mines & Plants."
   },
   "canonical_name": "Chiatura Mines & Plants Mine",
   "canonical_slug": "chiatura-mines-plants-mine",
@@ -58,11 +56,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Chiatura Mines & Plants** Mine",
+      "name": "Chiatura Mines & Plants Mine",
       "from": "2025-10-28T21:01:00.163774",
       "to": "2025-11-04T19:19:01.725800Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Imereti",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:51:51.000000Z",
+      "operators": [
+        "Georgian Manganese LLC",
+        "Chiatura Management Company"
+      ],
+      "owners": [
+        "Georgian American Alloys, Inc.",
+        "New Group",
+        "Mchale Limited"
+      ],
+      "notes": "Georgian Manganese owns the license to operate mines in Chiatura, while Chiatura Management Company manages mining activities."
+    }
+  }
 }

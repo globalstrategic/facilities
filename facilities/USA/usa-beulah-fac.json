@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.194,
-    "lon": -101.824,
+    "lat": 47.3667,
+    "lon": -100.0167,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "North American Coal Corporation",
+    "The Coteau Properties Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.871397Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:52:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://lignite.com/mine--plant/the-coteau-properties-companys-freedom-mine/. The Freedom Mine is the largest lignite mine in the United States, located near Beulah, ND"
   },
   "canonical_name": "Beulah Mine",
   "canonical_slug": "beulah-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Dakota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:52:14.000000Z",
+      "operators": [
+        "The Coteau Properties Company"
+      ],
+      "owners": [
+        "North American Coal Corporation"
+      ],
+      "notes": "The Freedom Mine is owned by North American Coal Corporation and operated by The Coteau Properties Company."
+    }
+  }
 }

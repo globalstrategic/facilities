@@ -1,19 +1,23 @@
 {
   "facility_id": "usa-gold-mines-fac",
-  "name": "**Gold Mines**",
+  "name": "Gold Mines",
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 40.240833,
+    "lon": -116.706663,
+    "precision": "site"
   },
   "types": [
     "mine"
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation",
+    "Newmont Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.972488Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:28:46Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:28:46Z] Geocoded via web search. Coords: (40.240833, -116.706663). Confidence: 0.90. Notes: Coordinates extracted from the Cortez Gold Mine entry."
   },
   "canonical_name": "Gold Mines Mine",
   "canonical_slug": "gold-mines-mine",
@@ -44,11 +48,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Gold Mines** Mine",
+      "name": "Gold Mines Mine",
       "from": "2025-10-21T11:38:55.374855",
       "to": "2025-11-04T19:18:45.972485Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:25:28.000000Z",
+      "operators": [
+        "Newmont Mining Corporation"
+      ],
+      "owners": [
+        "Newmont Mining Corporation"
+      ],
+      "notes": "The mine is an open-pit heap leach operation."
+    }
+  }
 }

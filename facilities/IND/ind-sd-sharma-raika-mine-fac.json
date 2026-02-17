@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.047,
-    "lon": 84.229,
+    "lat": 22.056935,
+    "lon": 85.420867,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "natural person(s)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.111375Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:09:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SD_Sharma_Raika_Mine. The mine is mothballed, indicating it is not currently operational"
   },
   "canonical_name": "SD Sharma Raika Mine",
   "canonical_slug": "sd-sharma-raika-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:09:43.000000Z",
+      "operators": [
+        "natural person(s)"
+      ],
+      "owners": [
+        "natural person(s)"
+      ],
+      "notes": "Ownership is attributed to natural persons, with no specific company names provided."
+    }
+  }
 }

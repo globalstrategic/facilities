@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.908,
-    "lon": -116.452,
+    "lat": 39.77,
+    "lon": -116.23,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BacTech Mining Corporation",
+    "Tonkin Springs LLC",
+    "U.S. Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.767025Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:42:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Eureka (https://www.mcewenmining.com/investor-relations/press-releases/press-release-details/2005/US-Gold-Owns-Tonkin-Springs-100/default.aspx). The Tonkin Springs Gold Mine is located in north central Nevada, approximately 45 miles northwest of Eureka | [COORD-FIX 2025-12-17T20:26:38Z] Changed from (41.261249310983374, -124.78165221647177) to (39.77, -116.23). Source: Tonkin Springs, Eureka County, Nevada"
   },
   "canonical_name": "Tonkin Springs Gold Mine",
   "canonical_slug": "tonkin-springs-gold-mine",
@@ -51,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Eureka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:42:12.000000Z",
+      "operators": [
+        "U.S. Gold Corporation",
+        "BacTech Mining Corporation"
+      ],
+      "owners": [
+        "U.S. Gold Corporation",
+        "Tonkin Springs LLC"
+      ],
+      "notes": "U.S. Gold Corporation owns 100% of the Tonkin Springs project."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.393,
-    "lon": -81.605,
+    "lat": 37.7562519,
+    "lon": -82.2031426,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Selah Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.770455Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:44:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_No._5_(WV). Mine No. 5 is an underground coal mine located in Mingo County, West Virginia"
   },
   "canonical_name": "No 5 Mine",
   "canonical_slug": "no-5-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:44:50.000000Z",
+      "operators": [
+        "Selah Corporation"
+      ],
+      "owners": [
+        "Selah Corporation"
+      ],
+      "notes": "Selah Corporation owns and operates Mine No. 5."
+    }
+  }
 }

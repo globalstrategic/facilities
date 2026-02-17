@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.069,
-    "lon": -82.244,
+    "lat": 38.93583,
+    "lon": -82.11667,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Electric Power",
+    "Lightstone Generation LLC",
+    "Southern Ohio Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.932318Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:01:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Gavin_Power_Plant. The coordinates correspond to the Gavin Power Plant, which is associated with coal supplied from the Meigs Mine"
   },
   "canonical_name": "Meigs Mine",
   "canonical_slug": "meigs-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ohio",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:01:32.000000Z",
+      "operators": [
+        "Lightstone Generation LLC"
+      ],
+      "owners": [
+        "American Electric Power",
+        "Southern Ohio Coal Company"
+      ],
+      "notes": "The coal supplier for the Gavin Power Plant was Southern Ohio Coal Company, a subsidiary of American Electric Power."
+    }
+  }
 }

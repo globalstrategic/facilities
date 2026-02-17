@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 16.0,
+    "lon": 97.0,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -32,7 +32,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SAMCON Company Limited",
+    "Star Sapphire Group",
+    "Tha Byu Mining Co. Ltd.",
+    "Tha Byu Mining Co. Ltd. (Star Sapphire Group)"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "unverified",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.872723Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:51:14Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:51:14Z] Geocoded via web search. Coords: (16.0, 97.0). Confidence: 0.70. Notes: Coordinates were derived from the general location of Tha Byu Mine in Kawkareik, Kayin State."
   },
   "canonical_name": "Tha Byu Mine",
   "canonical_slug": "tha-byu-mine",
@@ -69,5 +74,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kayin State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:49:53.000000Z",
+      "operators": [
+        "Tha Byu Mining Co. Ltd.",
+        "Star Sapphire Group",
+        "SAMCON Company Limited"
+      ],
+      "owners": [
+        "Tha Byu Mining Co. Ltd.",
+        "Star Sapphire Group"
+      ],
+      "notes": "Tha Byu Mining is controlled by Dr Tun Min Latt and has been reported to operate jointly with SAMCON."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LAO",
   "location": {
-    "lat": 17.9,
-    "lon": 104.616,
+    "lat": 18.0,
+    "lon": 105.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PanAust Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:17.214744Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:06:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10106705. The Ban Phontiou Tin Mine is located in Khammouan province, Laos"
   },
   "canonical_name": "Ban Phontiou Mine",
   "canonical_slug": "ban-phontiou-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khammouan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:06:30.000000Z",
+      "operators": [],
+      "owners": [
+        "PanAust Limited"
+      ],
+      "notes": "PanAust owns a 90% interest in the Lao-registered company, Phu Bia Mining Limited."
+    }
+  }
 }

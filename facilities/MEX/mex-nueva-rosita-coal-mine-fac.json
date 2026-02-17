@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.958,
-    "lon": -101.206,
+    "lat": 28.01262932348573,
+    "lon": -101.1518676421331,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo México SAB de CV",
+    "Industrial Minera México (IMMSA)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.951808Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:30:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sabinas (https://www.gem.wiki/Nueva_Rosita_Coal_Mine). The Nueva Rosita Coal Mine is located in Coahuila, Mexico, and is associated with Grupo México. It has been mothballed and has a stated capacity of 350,000 tonnes per annum"
   },
   "canonical_name": "Nueva Rosita Coal Mine",
   "canonical_slug": "nueva-rosita-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Coahuila",
+  "town": "Sabinas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:30:19.000000Z",
+      "operators": [
+        "Industrial Minera México (IMMSA)"
+      ],
+      "owners": [
+        "Grupo México SAB de CV"
+      ],
+      "notes": "Grupo México owns 100% of Industrial Minera México, which operates the Nueva Rosita Coal Mine."
+    }
+  }
 }

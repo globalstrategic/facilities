@@ -10,8 +10,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -12.314,
-    "lon": -75.721,
+    "lat": -13.1,
+    "lon": -75.2,
     "precision": "site"
   },
   "types": [
@@ -45,7 +45,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sierra Metals Inc.",
+    "Sociedad Minera Corona S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -55,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.287689Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:43:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/yauricocha-mine-peru/. The Yauricocha Mine is located in the Alis district, Yauyos province, department of Lima, approximately 60 km south of the Pachacayo railway station"
   },
   "canonical_name": "Yauricocha Mine",
   "canonical_slug": "yauricocha-mine",
@@ -74,5 +77,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yauyos",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:43:58.000000Z",
+      "operators": [
+        "Sociedad Minera Corona S.A."
+      ],
+      "owners": [
+        "Sierra Metals Inc.",
+        "Sociedad Minera Corona S.A."
+      ],
+      "notes": "Sierra Metals owns 82% of Minera Corona, which operates the Yauricocha Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 58.298,
-    "lon": 59.79,
+    "lat": 58.298136,
+    "lon": 59.79031,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NPRO Ural LLC",
+    "Vysokogorsky GOK JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.626877Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:55:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/VGOK_Yuzhnaya_Mine. VGOK Yuzhnaya Mine is an iron ore mine operating in Kushva, Sverdlovsk Oblast, Russia"
   },
   "canonical_name": "Vgok Yuzhnaya Mine",
   "canonical_slug": "vgok-yuzhnaya-mine",
@@ -56,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sverdlovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:55:22.000000Z",
+      "operators": [
+        "Vysokogorsky GOK JSC"
+      ],
+      "owners": [
+        "NPRO Ural LLC",
+        "Vysokogorsky GOK JSC"
+      ],
+      "notes": "Vysokogorsky GOK JSC is the owner and operator of the VGOK Yuzhnaya Mine."
+    }
+  }
 }

@@ -1,13 +1,13 @@
 {
   "facility_id": "fra-framatome-jarrie-fac",
-  "name": "**Framatome Jarrie**",
+  "name": "Framatome Jarrie",
   "aliases": [
     "Cezus"
   ],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 45.1,
+    "lon": 5.8,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Framatome",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.749851",
-      "evidence": "Extracted from operator column: Framatome"
-    }
+    "Assystem",
+    "Framatome",
+    "Framatome SAS",
+    "Mitsubishi Heavy Industries",
+    "Électricité de France (EDF)"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.674211Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces zirconium sponge for nuclear fuel; extracts hafnium salts and oxides as a by-product. 35 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:34:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Produces zirconium sponge for nuclear fuel; extracts hafnium salts and oxides as a by-product. 35 | Canonical name+slug generated. Web search geocoded. Source: https://www.framatome.com/en/implantations/jarrie/. The Jarrie plant operates at the front end of the global process of converting zirconium ore into nuclear industrial products"
   },
   "canonical_name": "Framatome Jarrie Mine",
   "canonical_slug": "framatome-jarrie-mine",
@@ -60,11 +57,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Framatome Jarrie** Mine",
+      "name": "Framatome Jarrie Mine",
       "from": "2025-10-28T17:18:38.749857",
       "to": "2025-11-04T19:18:51.674204Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Auvergne-Rhône-Alpes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:34:54.000000Z",
+      "operators": [
+        "Framatome SAS"
+      ],
+      "owners": [
+        "Électricité de France (EDF)",
+        "Mitsubishi Heavy Industries",
+        "Assystem"
+      ],
+      "notes": "Framatome is a subsidiary of EDF, with significant stakes held by Mitsubishi Heavy Industries and Assystem."
+    }
+  }
 }

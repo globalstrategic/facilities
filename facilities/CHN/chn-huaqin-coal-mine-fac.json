@@ -9,8 +9,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 39.252,
-    "lon": 110.573,
+    "lat": 22.25501,
+    "lon": 113.068334,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,16 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Huaneng Group Co Ltd",
+    "Dongfang Electric Corp",
+    "Guangdong Electric Power Development Co Ltd",
+    "Guangdong Hengjian Investment Holding Co Ltd",
+    "Guangdong Yuedian Huaqing Coal Gasification Combined Cycle Power Generation Co Ltd",
+    "Harbin Electric Co Ltd",
+    "Shanghai Electric Corp",
+    "State Power Investment Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.729389Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:33:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Huaqing_IGCC_power_station. Coordinates provided for the Huaqing IGCC power station, which is associated with the Huaqin Coal Mine"
   },
   "canonical_name": "Huaqin Coal Mine",
   "canonical_slug": "huaqin-coal-mine",
@@ -52,5 +61,24 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guangdong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:33:51.000000Z",
+      "operators": [
+        "Guangdong Yuedian Huaqing Coal Gasification Combined Cycle Power Generation Co Ltd"
+      ],
+      "owners": [
+        "Guangdong Electric Power Development Co Ltd",
+        "State Power Investment Corp Ltd",
+        "Guangdong Hengjian Investment Holding Co Ltd",
+        "China Huaneng Group Co Ltd",
+        "Shanghai Electric Corp",
+        "Dongfang Electric Corp",
+        "Harbin Electric Co Ltd"
+      ],
+      "notes": "Ownership structure includes multiple stakeholders with Guangdong Yuedian as the operator."
+    }
+  }
 }

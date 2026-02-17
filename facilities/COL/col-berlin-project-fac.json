@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 5.58570532316739,
+    "lon": -74.9975512839604,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "U3O8 Corp.",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.213844",
-      "evidence": "Extracted from operator column: U3O8 Corp."
-    }
+    "Green Shift Commodities Ltd.",
+    "Jaguar Uranium Corp.",
+    "U3O8 Corp."
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.739814Z",
-    "checked_by": "import_pipeline",
-    "notes": "**Exploration.** Historic resource defined for uranium with associated vanadium. 59 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T10:18:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Exploration. Historic resource defined for uranium with associated vanadium. 59 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Manizales (https://www.globenewswire.com/news-release/2024/04/09/2859849/0/en/Green-Shift-Closes-Previously-Announced-Sale-of-the-Berlin-Project-Colombia.html). The Berlin Project is located in Caldas Province, approximately 80 km northeast of Manizales"
   },
   "canonical_name": "Berlin Facility",
   "canonical_slug": "berlin-facility",
@@ -66,5 +61,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Caldas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:18:47.000000Z",
+      "operators": [
+        "Jaguar Uranium Corp."
+      ],
+      "owners": [
+        "Green Shift Commodities Ltd.",
+        "Jaguar Uranium Corp."
+      ],
+      "notes": "Green Shift Commodities sold the Berlin Project to Jaguar Uranium Corp."
+    }
+  },
+  "town": "Manizales"
 }

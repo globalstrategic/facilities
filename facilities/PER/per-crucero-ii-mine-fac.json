@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -17.664,
-    "lon": -70.016,
+    "lat": -14.1803,
+    "lon": -69.8267,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blue Rock Mining S.A.C.",
+    "GoldMining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.323082Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:12:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.goldmining.com/projects/peru/crucero-project/. The Crucero Project is located in the eastern Cordillera of southeastern Peru. Web search geocoded. Source: https://www.goldmining.com/projects/peru/crucero-project/. The Crucero Project is located in the Andes mountain range in Carabaya Province, southeastern Peru"
   },
   "canonical_name": "Crucero Ii Mine",
   "canonical_slug": "crucero-ii-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Carabaya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:12:27.000000Z",
+      "operators": [
+        "GoldMining Inc."
+      ],
+      "owners": [
+        "GoldMining Inc.",
+        "Blue Rock Mining S.A.C."
+      ],
+      "notes": "GoldMining Inc. owns a 100% interest in the property through its subsidiary Blue Rock Mining S.A.C."
+    }
+  }
 }

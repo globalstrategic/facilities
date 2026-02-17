@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": -10.627,
-    "lon": 34.107,
+    "lat": -10.62669536,
+    "lon": 34.1069821,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kaziwiziwi Coal Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.842488Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:32:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kaziwiziwi_Coal_Mine. The Kaziwiziwi Coal Mine is an operating coal mine located in the Northern Region of Malawi"
   },
   "canonical_name": "Kaziwiziwi Coal Mine",
   "canonical_slug": "kaziwiziwi-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:32:40.000000Z",
+      "operators": [
+        "Kaziwiziwi Coal Mining Company"
+      ],
+      "owners": [
+        "Kaziwiziwi Coal Mining Company"
+      ],
+      "notes": "The mine is fully owned and operated by Kaziwiziwi Coal Mining Company."
+    }
+  }
 }

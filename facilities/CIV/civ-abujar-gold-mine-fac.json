@@ -1,11 +1,11 @@
 {
   "facility_id": "civ-abujar-gold-mine-fac",
-  "name": "**Abujar Gold Mine**",
+  "name": "Abujar Gold Mine",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.158193416324055,
+    "lon": -6.4529859,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
   "status": "operating",
   "company_mentions": [
     "Chifeng Jilong Gold Mining",
+    "Côte D’Ivoire Government",
     "Tietto Minerals",
+    "Tietto Minerals Ltd",
+    "Zhaojin Capital",
     "Zhaojin Mining"
   ],
   "products": [],
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.464110Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:48:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Daloa (https://dabafinance.com/en/news/zhaojin-wins-control-of-ivory-coasts-abujar-gold-mine-in-475m-deal). The Abujar Gold Mine is located approximately 30 km from the city of Daloa in central-western Côte d'Ivoire"
   },
   "canonical_name": "Abujar Gold Mine",
   "canonical_slug": "abujar-gold-mine",
@@ -55,7 +58,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Abujar Gold ** Mine",
+      "name": "Abujar Gold  Mine",
       "from": "2025-10-27T13:21:35.980315",
       "to": "2025-11-04T19:19:04.464108Z",
       "reason": "data_correction"
@@ -65,16 +68,16 @@
   "province": "Côte d'Ivoire",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:20:08.000000Z",
+      "timestamp": "2025-12-01T17:48:15.000000Z",
       "operators": [
-        "Tietto Minerals"
+        "Tietto Minerals Ltd"
       ],
       "owners": [
-        "Tietto Minerals",
-        "Zhaojin Mining",
-        "Chifeng Jilong Gold Mining"
+        "Zhaojin Capital",
+        "Côte D’Ivoire Government"
       ],
-      "notes": "Tietto Minerals is the primary operator and owner of the Abujar Gold Mine, with Zhaojin Mining as a significant shareholder attempting to acquire it."
+      "notes": "Zhaojin Capital has acquired control of Tietto Minerals, which operates the Abujar Gold Mine."
     }
-  }
+  },
+  "town": "Daloa"
 }

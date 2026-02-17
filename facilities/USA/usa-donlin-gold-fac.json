@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 62.03806,
+    "lon": -158.21083,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold US Inc.",
+    "Donlin Gold LLC",
+    "NovaGold Resources Inc.",
+    "Paulson Advisers LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.691001Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:37:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Donlin_Gold_mine. The Donlin Gold project is located approximately 10 miles north of Crooked Creek"
   },
   "canonical_name": "Donlin Gold Mine",
   "canonical_slug": "donlin-gold-mine",
@@ -49,5 +54,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:37:18.000000Z",
+      "operators": [
+        "Donlin Gold LLC"
+      ],
+      "owners": [
+        "NovaGold Resources Inc.",
+        "Barrick Gold US Inc.",
+        "Paulson Advisers LLC"
+      ],
+      "notes": "The project is a joint venture between NovaGold Resources and Barrick Gold, with Paulson Advisers acquiring a stake."
+    }
+  }
 }

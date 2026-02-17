@@ -1,6 +1,6 @@
 {
   "facility_id": "mne-brskovo-project-fac",
-  "name": "**Brskovo Project**",
+  "name": "Brskovo Project",
   "aliases": [],
   "country_iso3": "MNE",
   "location": {
@@ -34,7 +34,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Brskovo Mine DOO",
+    "Tara Resources AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -65,11 +68,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Brskovo ** Development",
+      "name": "Brskovo  Development",
       "from": "2025-10-29T22:24:19.847706",
       "to": "2025-11-04T19:18:49.392941Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mojkovac Municipality",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:12:57.000000Z",
+      "operators": [
+        "Tara Resources AG",
+        "Brskovo Mine DOO"
+      ],
+      "owners": [
+        "Tara Resources AG"
+      ],
+      "notes": "Tara Resources acquired the project in 2018 and is developing the mine."
+    }
+  }
 }

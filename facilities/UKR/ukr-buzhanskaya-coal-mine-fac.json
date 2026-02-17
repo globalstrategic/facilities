@@ -7,8 +7,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 50.782,
-    "lon": 24.122,
+    "lat": 50.781905,
+    "lon": 24.122026,
     "precision": "site"
   },
   "types": [
@@ -31,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.737244Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:07:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Buzhanskaya_Coal_Mine. The mine is reported to be preparing for closure by the end of 2024"
   },
   "canonical_name": "Buzhanskaya Coal Mine",
   "canonical_slug": "buzhanskaya-coal-mine",
@@ -50,5 +50,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Volyn"
 }

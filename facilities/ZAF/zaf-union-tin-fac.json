@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.48,
-    "lon": 28.518,
+    "lat": -23.3,
+    "lon": 28.4,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields of South Africa Ltd.",
+    "Union Tin Mine Ltd.",
+    "Union Tin Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.706421Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:59:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-56207.html. The Union Tin Mine is located in the Mookgophong area of Limpopo, South Africa"
   },
   "canonical_name": "Union Tin Mine",
   "canonical_slug": "union-tin-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:59:59.000000Z",
+      "operators": [
+        "Union Tin Mine Ltd.",
+        "Union Tin Mines Ltd."
+      ],
+      "owners": [
+        "Gold Fields of South Africa Ltd.",
+        "Union Tin Mine Ltd.",
+        "Union Tin Mines Ltd."
+      ],
+      "notes": "Multiple companies are listed as owners, indicating possible joint ownership or historical changes."
+    }
+  }
 }

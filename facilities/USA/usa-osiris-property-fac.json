@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.395,
-    "lon": -105.374,
+    "lat": 41.071397351102476,
+    "lon": -73.30435672195644,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ATAC Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.948872Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:14:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Keno City (https://resourceworld.com/atac-resources-releases-maiden-osiris-resource-estimate/). The Osiris Project is part of the Rackla Gold Property and is located 55 km northeast of Keno City"
   },
   "canonical_name": "Osiris Mine",
   "canonical_slug": "osiris-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yukon",
+  "town": "Keno City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:14:28.000000Z",
+      "operators": [
+        "ATAC Resources Ltd."
+      ],
+      "owners": [
+        "ATAC Resources Ltd."
+      ],
+      "notes": "ATAC owns the property 100%."
+    }
+  }
 }

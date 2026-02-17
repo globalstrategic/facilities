@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -1.39444,
+    "lon": 13.16083,
     "precision": "unknown"
   },
   "types": [
@@ -26,22 +26,8 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.294124",
-      "evidence": "Extracted from operator column: N/A (formerly COMUF)"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.294128",
-      "evidence": "Extracted from operator column: N/A (formerly COMUF)"
-    }
+    "A",
+    "N"
   ],
   "products": [],
   "sources": [
@@ -52,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.390943Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:39:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Oklo. The Oklo site is known for its natural nuclear fission reactors discovered in 1972"
   },
   "canonical_name": "Oklo Natural Reactors / Facility",
   "canonical_slug": "oklo-natural-reactors-facility",
@@ -79,5 +65,14 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Haut-Ogooué",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:39:50.000000Z",
+      "operators": [],
+      "owners": [],
+      "notes": "No specific companies mentioned as operators or owners in the search results."
+    }
+  }
 }

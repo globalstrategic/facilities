@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.6,
-    "lon": 112.579,
+    "lat": 35.2406919,
+    "lon": 115.5334526,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yongcheng Coal and Electricity Holding Group Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.724778Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:19:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Heze_power_station. Coordinates extracted from the Heze power station located in Yuecheng Town, which is in the same region as the Yuecheng Coal Mine"
   },
   "canonical_name": "Yuecheng Coal Mine",
   "canonical_slug": "yuecheng-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:19:41.000000Z",
+      "operators": [],
+      "owners": [
+        "Yongcheng Coal and Electricity Holding Group Co. Ltd."
+      ],
+      "notes": "Yongcheng Coal is mentioned in relation to financial difficulties but specific operational status of the Yuecheng Coal Mine is not detailed."
+    }
+  }
 }

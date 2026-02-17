@@ -6,8 +6,8 @@
   ],
   "country_iso3": "DZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 36.794745,
+    "lon": 7.702875,
     "precision": "unknown"
   },
   "types": [
@@ -16,22 +16,15 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Sider",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025459",
-      "evidence": "Extracted from operator column: Sider/Imetal Group"
-    },
-    {
-      "name": "Imetal Group",
-      "role": "operator",
-      "source": "Research Import DZA 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T16:58:58.025461",
-      "evidence": "Extracted from operator column: Sider/Imetal Group"
-    }
+    "Algerian Qatari Steel (AQS)",
+    "ArcelorMittal Annaba",
+    "Danieli",
+    "Groupe Industriel Sider SpA",
+    "IMETAL",
+    "IMETAL Group",
+    "Imetal Group",
+    "SNS Group",
+    "Sider"
   ],
   "products": [],
   "sources": [
@@ -42,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:05.576154Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:08:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://aisusteel.org/en/10589/. Sider El Hadjar is a significant steel production facility located near Annaba, Algeria"
   },
   "canonical_name": "Sider El Hadjar Mine",
   "canonical_slug": "sider-el-hadjar-mine",
@@ -61,5 +54,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Annaba",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:08:25.000000Z",
+      "operators": [
+        "SNS Group",
+        "Algerian Qatari Steel (AQS)",
+        "Danieli"
+      ],
+      "owners": [
+        "IMETAL",
+        "Groupe Industriel Sider SpA"
+      ],
+      "notes": "Sider El Hadjar operates under the SNS Group, which includes AQS. IMETAL is a state-owned entity that has taken control of the facility."
+    }
+  }
 }

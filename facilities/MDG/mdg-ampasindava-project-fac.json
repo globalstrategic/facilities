@@ -1,11 +1,11 @@
 {
   "facility_id": "mdg-ampasindava-project-fac",
-  "name": "**Ampasindava Project**",
+  "name": "Ampasindava Project",
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -13.5,
+    "lon": 48.3,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "\\-",
-      "role": "operator",
-      "source": "Research Import MDG 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T16:15:59.895712",
-      "evidence": "Extracted from operator column: \\-"
-    }
+    "Harena Resources PLC",
+    "Harena Resources Plc",
+    "\\-"
   ],
   "products": [],
   "sources": [
@@ -37,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.105776Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:57:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.stockopedia.com/share-prices/harena-resources-LON:HREE/news/reg-harena-resources-plc-100-ownership-of-ampasindava-and-issue-of-shares-urn:newsml:reuters.com:20250828:nRSb0871Xa/. The project is located on the Ampasindava Peninsula, not far from Ambanja and facing Nosy Be"
   },
   "canonical_name": "Ampasindava Exploration",
   "canonical_slug": "ampasindava-exploration",
@@ -58,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ampasindava ** Exploration",
+      "name": "Ampasindava  Exploration",
       "from": "2025-10-29T16:15:59.895722",
       "to": "2025-11-04T19:19:06.105773Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sava",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:57:10.000000Z",
+      "operators": [
+        "Harena Resources PLC"
+      ],
+      "owners": [
+        "Harena Resources PLC"
+      ],
+      "notes": "Harena Resources has 100% ownership of the Ampasindava Project."
+    }
+  }
 }

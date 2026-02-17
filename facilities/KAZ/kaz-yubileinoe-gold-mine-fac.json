@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.99571038921004,
+    "lon": 59.162480170775474,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "AO AltynEx"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.742917Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:12:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Aqtobe (https://www.mindat.org/loc-208338.html). The Yubileinoe Gold Mine is located in the Mugalzhar District of Kazakhstan, approximately 200 km southeast of Aqtobe"
   },
   "canonical_name": "Yubileinoe Gold Mine",
   "canonical_slug": "yubileinoe-gold-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Aktobe Region",
+  "town": "Aqtobe",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:12:12.000000Z",
+      "operators": [
+        "AO AltynEx"
+      ],
+      "owners": [],
+      "notes": "AO AltynEx is involved in the construction of a mining and metallurgical plant at the Yubileinoe Deposit."
+    }
+  }
 }

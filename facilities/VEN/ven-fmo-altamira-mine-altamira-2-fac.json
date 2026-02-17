@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-fmo-altamira-mine-altamira-2-fac",
-  "name": "**FMO Altamira Mine; Altamira 2**",
+  "name": "FMO Altamira Mine; Altamira 2",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 7.476,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "CVG Ferrominera Orinoco CA",
+    "Corporación Siderúrgica de Venezuela SA",
+    "Grupo Minero Las Cenizas",
+    "KGHM International Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,7 +39,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.654329Z",
     "checked_by": "import_pipeline",
-    "notes": "Part of the FMO iron ore complex. Coordinates from initial list. | Canonical name+slug generated"
+    "notes": "Part of the FMO iron ore complex. Coordinates from initial list. | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "FMO Altamira Altamira 2 Mine",
   "canonical_slug": "fmo-altamira-altamira-2-mine",
@@ -51,11 +56,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**FMO Altamira ; Altamira 2** Mine",
+      "name": "FMO Altamira ; Altamira 2 Mine",
       "from": "2025-10-21T11:38:44.923560",
       "to": "2025-11-04T19:18:49.654327Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolívar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:28:19.000000Z",
+      "operators": [
+        "CVG Ferrominera Orinoco CA"
+      ],
+      "owners": [
+        "Corporación Siderúrgica de Venezuela SA"
+      ],
+      "notes": "CVG Ferrominera Orinoco CA owns 100% of the mine."
+    }
+  }
 }

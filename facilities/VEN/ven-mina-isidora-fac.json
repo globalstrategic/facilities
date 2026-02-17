@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-mina-isidora-fac",
-  "name": "**Mina Isidora (Chile Mine)**",
+  "name": "Mina Isidora (Chile Mine)",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
-    "lat": 7.312,
-    "lon": null,
+    "lat": 7.315074,
+    "lon": -61.840254,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hecla Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:49.653855Z",
-    "checked_by": "import_pipeline",
-    "notes": "A historic mine in the El Callao district, previously operated by Rusoro Mining.51 Coordinates from initial list and Mindat.org. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:29:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "A historic mine in the El Callao district, previously operated by Rusoro Mining.51 Coordinates from initial list and Mindat.org. | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-307319.html. Mina Isidora, also known as the Chile Gold Mine, was acquired by Hecla Mining Company in 2002"
   },
   "canonical_name": "Mina Isidora Mine",
   "canonical_slug": "mina-isidora-mine",
@@ -51,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mina Isidora ** Mine",
+      "name": "Mina Isidora  Mine",
       "from": "2025-10-21T11:38:45.300224",
       "to": "2025-11-04T19:18:49.653853Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolívar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:29:54.000000Z",
+      "operators": [
+        "Hecla Mining Company"
+      ],
+      "owners": [
+        "Hecla Mining Company"
+      ],
+      "notes": "Hecla Mining Company is both the operator and owner of the facility."
+    }
+  }
 }

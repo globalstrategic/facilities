@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.381,
-    "lon": 22.966,
+    "lat": -27.327358901044008,
+    "lon": 22.81413095825324,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jupiter Mines Ltd.",
+    "Ntsimbintle Mining Ltd.",
+    "Tshipi é Ntle Manganese Mining (Pty) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.781713Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:08:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Hotazel (https://www.mining-technology.com/projects/tshipi-mine/). The Tshipi Borwa Mine is located in the Kalahari Manganese Field, which is a significant area for manganese mining"
   },
   "canonical_name": "Tshipi Borwa Mine",
   "canonical_slug": "tshipi-borwa-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "town": "Hotazel",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:08:55.000000Z",
+      "operators": [
+        "Tshipi é Ntle Manganese Mining (Pty) Ltd."
+      ],
+      "owners": [
+        "Ntsimbintle Mining Ltd.",
+        "Jupiter Mines Ltd."
+      ],
+      "notes": "Ntsimbintle Mining holds a 50.1% interest, while Jupiter Mines holds 49.9%."
+    }
+  }
 }

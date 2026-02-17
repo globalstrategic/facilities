@@ -1,12 +1,12 @@
 {
   "facility_id": "idn-wetar-mine-fac",
-  "name": "**Wetar Mine**",
+  "name": "Wetar Mine",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -7.85,
+    "lon": 126.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -21,14 +21,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Batutua Tembaga Raya",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.805850",
-      "evidence": "Extracted from operator column: PT Batutua Tembaga Raya"
-    }
+    "PT Batutua Kharisma Permai",
+    "PT Batutua Tembaga Raya",
+    "PT Batutua Tembaga Raya (BKP-BTR)",
+    "PT Merdeka Copper Gold Tbk"
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.228840Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T12:26:47Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:26:47Z] Merdeka copper mine on Wetar Island, Southwest Maluku"
   },
   "canonical_name": "Wetar Mine",
   "canonical_slug": "wetar-mine-2",
@@ -60,11 +56,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Wetar ** Mine",
+      "name": "Wetar  Mine",
       "from": "2025-10-29T10:37:55.805856",
       "to": "2025-11-04T19:19:10.228837Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maluku Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:32:47.000000Z",
+      "operators": [
+        "PT Batutua Kharisma Permai",
+        "PT Batutua Tembaga Raya"
+      ],
+      "owners": [
+        "PT Merdeka Copper Gold Tbk"
+      ],
+      "notes": "The mine is operated by PT Batutua Kharisma Permai and PT Batutua Tembaga Raya, with PT Merdeka Copper Gold Tbk as the owner."
+    }
+  }
 }

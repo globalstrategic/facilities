@@ -7,8 +7,8 @@
   ],
   "country_iso3": "VNM",
   "location": {
-    "lat": 22.133,
-    "lon": 104.271,
+    "lat": 22.137046,
+    "lon": 104.266185,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kunming Iron & Steel Group Co Ltd",
+    "Laocai Mineral Exploitation and Processing JSC",
+    "Viet Nam Steel Corp",
+    "Việt-Trung Mining and Metallurgy Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.277866Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:25:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/VTM_Quy_Xa_Mine. The VTM Quy Xa Mine is an iron ore mine located in Văn Bàn District, Lào Cai Province, Vietnam"
   },
   "canonical_name": "VTM Quy Xa Mine",
   "canonical_slug": "vtm-quy-xa-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lào Cai Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:25:31.000000Z",
+      "operators": [
+        "Việt-Trung Mining and Metallurgy Co Ltd"
+      ],
+      "owners": [
+        "Kunming Iron & Steel Group Co Ltd",
+        "Laocai Mineral Exploitation and Processing JSC",
+        "Viet Nam Steel Corp"
+      ],
+      "notes": "The mine is operated by Việt-Trung Mining and Metallurgy Co Ltd, which is fully owned by the parent companies listed."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -30.946,
-    "lon": 29.302,
+    "lat": -29.22189695939641,
+    "lon": 30.28266820140785,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "BSC Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.774950Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-insizwa-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:02:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-insizwa-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Durban (https://www.yahoo.com/news/hana-signs-definitive-agreement-option-115609252.html). The Insizwa Mine is located approximately 100 kilometers from Durban in the Eastern Cape province"
   },
   "canonical_name": "Insizwa Mine",
   "canonical_slug": "insizwa-mine",
@@ -62,5 +64,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Eastern Cape",
+  "town": "Durban",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:02:45.000000Z",
+      "operators": [
+        "BSC Resources"
+      ],
+      "owners": [
+        "BSC Resources"
+      ],
+      "notes": "BSC Resources is focused on the exploration and development of the Insizwa project."
+    }
+  }
 }

@@ -14,8 +14,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.723,
-    "lon": 27.593,
+    "lat": -25.7382,
+    "lon": 27.5972,
     "precision": "site"
   },
   "types": [
@@ -53,7 +53,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Henry Gould Proprietary Ltd.",
+    "Henry Gould Pty. Ltd.",
+    "Rand Mines Ltd.",
+    "Transvaal Consolidated Land & Exploration Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -68,11 +73,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.777646Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-henry-gould-chrome-mine-mooinooi-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:04:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-henry-gould-chrome-mine-mooinooi-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/22791. Coordinates directly extracted from the mining report"
   },
   "canonical_name": "Henry Gould Mine",
   "canonical_slug": "henry-gould-mine",
@@ -87,5 +92,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:04:59.000000Z",
+      "operators": [
+        "Henry Gould Proprietary Ltd.",
+        "Henry Gould Pty. Ltd."
+      ],
+      "owners": [
+        "Rand Mines Ltd.",
+        "Transvaal Consolidated Land & Exploration Company"
+      ],
+      "notes": "Rand Mines Ltd. holds a majority stake."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "FRA",
   "location": {
-    "lat": 51.0,
-    "lon": 2.167,
+    "lat": 50.9933,
+    "lon": 2.3683,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alvance Aluminium Dunkerque SAS",
+    "Alvance Aluminium Service SAS",
+    "American Industrial Partners Capital Fund VII, L.P."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.668995Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:19:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.prnewswire.com/news-releases/aip-becomes-owner-of-aluminium-dunkerque-301389945.html. Aluminium Dunkerque is located in Loon-Plage, France, and is one of the largest aluminium smelters in Europe"
   },
   "canonical_name": "Dunkerque Smelter",
   "canonical_slug": "dunkerque-smelter",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:19:21.000000Z",
+      "operators": [
+        "Alvance Aluminium Dunkerque SAS",
+        "Alvance Aluminium Service SAS"
+      ],
+      "owners": [
+        "American Industrial Partners Capital Fund VII, L.P."
+      ],
+      "notes": "AIP acquired Aluminium Dunkerque in 2021 and continues to operate it with the existing local leadership team."
+    }
+  }
 }

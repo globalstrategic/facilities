@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.933,
-    "lon": 29.774,
+    "lat": -25.94384,
+    "lon": 29.78956,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arnot OpCo Pty Ltd",
+    "Exxaro Resources",
+    "Salungano Group Ltd",
+    "Wescoal"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.783193Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:10:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-outlook.com/corporate-stories/arnot-opco-community-coal. The Arnot Coal Mine is located in Middelburg, Mpumalanga Province, and is known for its significant coal reserves"
   },
   "canonical_name": "Arnot Mine",
   "canonical_slug": "arnot-mine",
@@ -51,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:10:27.000000Z",
+      "operators": [
+        "Arnot OpCo Pty Ltd"
+      ],
+      "owners": [
+        "Salungano Group Ltd",
+        "Wescoal",
+        "Exxaro Resources"
+      ],
+      "notes": "Arnot OpCo was established to manage the mine with significant ownership by former employees."
+    }
+  }
 }

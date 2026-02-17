@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 42.257,
-    "lon": -83.137,
+    "lat": 42.2411,
+    "lon": -83.1454,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nippon Steel Corporation",
+    "United States Steel Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.953770Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:19:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.detroitnews.com/story/business/2023/12/18/storied-us-steel-to-be-acquired-for-more-than-14-billion-by-nippon-steel/71959774007/. Great Lakes Works is located in Ecorse, Michigan, along the Detroit River"
   },
   "canonical_name": "Great Lakes Smelter",
   "canonical_slug": "great-lakes-smelter",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michigan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:19:09.000000Z",
+      "operators": [
+        "United States Steel Corporation"
+      ],
+      "owners": [
+        "United States Steel Corporation",
+        "Nippon Steel Corporation"
+      ],
+      "notes": "U.S. Steel is the operator and owner of the facility, with Nippon Steel set to acquire U.S. Steel."
+    }
+  }
 }

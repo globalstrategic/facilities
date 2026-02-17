@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.265,
-    "lon": -86.987,
+    "lat": 37.322222,
+    "lon": -87.196111,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KenAmerican Resources, Inc.",
+    "Murray Energy Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.910743Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:44:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://19january2017snapshot.epa.gov/sites/production/files/2017-01/documents/pn_sdwa-003_proposeddraftpremit_uic.pdf. Coordinates extracted from the EPA document regarding the Paradise Coal Mine"
   },
   "canonical_name": "Paradise 9 Coal Mine",
   "canonical_slug": "paradise-9-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:44:37.000000Z",
+      "operators": [
+        "KenAmerican Resources, Inc."
+      ],
+      "owners": [
+        "Murray Energy Corporation"
+      ],
+      "notes": "KenAmerican Resources is a subsidiary of Murray Energy Corporation."
+    }
+  }
 }

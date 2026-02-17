@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.763,
-    "lon": -81.327,
+    "lat": 37.611111,
+    "lon": -81.318889,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metinvest B V",
+    "Pocahontas Coal Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.868969Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:50:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609627. The Wyco Surface Mine is a surface coal mine located in Wyoming County, West Virginia, operated by Pocahontas Coal Company, LLC"
   },
   "canonical_name": "Wyco Surface Mine",
   "canonical_slug": "wyco-surface-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:50:55.000000Z",
+      "operators": [
+        "Pocahontas Coal Company, LLC"
+      ],
+      "owners": [
+        "Metinvest B V"
+      ],
+      "notes": "Pocahontas Coal Company, LLC operates the mine, while Metinvest B V controls it."
+    }
+  }
 }

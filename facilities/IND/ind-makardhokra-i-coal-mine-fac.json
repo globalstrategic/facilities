@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.865,
-    "lon": 79.286,
+    "lat": 23.907861952586597,
+    "lon": 77.029463552426,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Limited",
+    "Western Coalfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.129406Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:54:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Umrer (https://www.gem.wiki/Makardhokra_I_Coal_Mine). The Makardhokra I Coal Mine is located about 10 km NW of Umrer town"
   },
   "canonical_name": "Makardhokra I Coal Mine",
   "canonical_slug": "makardhokra-i-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "town": "Umrer",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:54:59.000000Z",
+      "operators": [
+        "Western Coalfields Limited"
+      ],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "Western Coalfields Limited is a subsidiary of Coal India Limited."
+    }
+  }
 }

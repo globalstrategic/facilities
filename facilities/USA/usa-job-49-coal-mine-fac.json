@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.293,
-    "lon": -82.642,
+    "lat": 37.4,
+    "lon": -82.5,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Falcon Coal Corporation",
+    "Jmeg Mine, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.907983Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T22:42:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.eia.gov/coal/data/public/xls/coalpublic2015.xls. Job #49 Coal Mine is located near Myra, KY"
   },
   "canonical_name": "Job 49 Coal Mine",
   "canonical_slug": "job-49-coal-mine",
@@ -63,5 +66,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:42:08.000000Z",
+      "operators": [
+        "Jmeg Mine, LLC"
+      ],
+      "owners": [
+        "Falcon Coal Corporation"
+      ],
+      "notes": "Jmeg Mine, LLC operates the Job #49 Coal Mine, which is owned by Falcon Coal Corporation."
+    }
+  }
 }

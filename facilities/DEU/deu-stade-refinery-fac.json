@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DEU",
   "location": {
-    "lat": 53.6,
-    "lon": 9.483,
+    "lat": 53.59020462982307,
+    "lon": 9.324495674018113,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dadco Alumina & Chemicals Limited",
+    "Hydro Aluminium Deutschland GmbH"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.637030Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:11:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hamburg (https://dadcoalumina.com/about/). The Stade refinery is located in the Stade-Bützfleth industrial zone, approximately 40 km west of Hamburg"
   },
   "canonical_name": "Stade Refinery",
   "canonical_slug": "stade-refinery",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lower Saxony",
+  "town": "Hamburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:11:57.000000Z",
+      "operators": [
+        "Dadco Alumina & Chemicals Limited"
+      ],
+      "owners": [
+        "Dadco Alumina & Chemicals Limited",
+        "Hydro Aluminium Deutschland GmbH"
+      ],
+      "notes": "Dadco became the sole owner of Aluminium Oxid Stade GmbH in 2004 after acquiring the remaining 50% from Norsk Hydro."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -42.391,
-    "lon": 171.266,
+    "lat": -42.4675,
+    "lon": 171.1881,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Solid Energy New Zealand Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.232620Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:33:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://solidenergy.co.nz/operations/spring-creek-mine/. Spring Creek Mine is located in the hills behind Dunollie, north of Greymouth"
   },
   "canonical_name": "Spring Creek Mine",
   "canonical_slug": "spring-creek-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:33:56.000000Z",
+      "operators": [
+        "Solid Energy New Zealand Ltd"
+      ],
+      "owners": [
+        "Solid Energy New Zealand Ltd"
+      ],
+      "notes": "Solid Energy placed the mine into care and maintenance in late 2012 and has since decided to seal and close the mine after an unsuccessful sales process."
+    }
+  }
 }

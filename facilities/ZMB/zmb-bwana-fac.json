@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZMB",
   "location": {
-    "lat": -13.02,
-    "lon": 28.668,
+    "lat": -13.04333,
+    "lon": 28.70861,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "First Quantum Minerals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.688944Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:50:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/First%20Quantum%20-%20Bwana%20Mkubwa.htm. Bwana Mkubwa is the oldest mine in the Copperbelt region of Zambia and has been operational in various capacities since its opening"
   },
   "canonical_name": "Bwana Mine",
   "canonical_slug": "bwana-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Copperbelt Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:50:54.000000Z",
+      "operators": [
+        "First Quantum Minerals Ltd."
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd."
+      ],
+      "notes": "First Quantum Minerals Ltd. owns and operates the Bwana Mkubwa SX/EW facility and sulphuric acid plants."
+    }
+  }
 }

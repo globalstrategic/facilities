@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.034,
-    "lon": -105.331,
+    "lat": 44.16589495958781,
+    "lon": -105.43010708996368,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cloud Peak Energy",
+    "Navajo Nation",
+    "Navajo Transitional Energy Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.794017Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:05:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gillette (https://www.gem.wiki/Cordero_Rojo_Coal_Mine). The Cordero Rojo Mine is located approximately 15 miles south-southeast of Gillette, Wyoming"
   },
   "canonical_name": "Cordero Rojo Mine",
   "canonical_slug": "cordero-rojo-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "town": "Gillette",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:05:31.000000Z",
+      "operators": [
+        "Navajo Transitional Energy Company"
+      ],
+      "owners": [
+        "Navajo Nation",
+        "Cloud Peak Energy"
+      ],
+      "notes": "The mine was previously owned by Rio Tinto and Cloud Peak Energy before being acquired by Navajo Transitional Energy Company."
+    }
+  }
 }

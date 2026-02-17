@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-gwangyang-works-fac",
-  "name": "**Gwangyang Works**",
+  "name": "Gwangyang Works",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 34.9492,
+    "lon": 127.7005,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "POSCO Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.515746",
-      "evidence": "Extracted from operator column: POSCO Ltd."
-    }
+    "POSCO Holdings Inc",
+    "POSCO Ltd."
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.755575Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] One of the world's largest and most advanced integrated steel mills. 1 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:04:06Z",
+    "checked_by": "geocode_null_island",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] One of the world's largest and most advanced integrated steel mills. 1 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:04:06Z] Geocoded via web search. Coords: (34.9492, 127.7005). Confidence: 0.90. Notes: Coordinates determined from the address of Gwangyang Works located in Gwangyang-si, Jeollanam-do."
   },
   "canonical_name": "Gwangyang Steel Plant",
   "canonical_slug": "gwangyang-steel-plant",
@@ -53,11 +47,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Gwangyang ** Steel Plant",
+      "name": "Gwangyang  Steel Plant",
       "from": "2025-10-29T12:22:53.515748",
       "to": "2025-11-04T19:19:18.755573Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jeollanam-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:02:06.000000Z",
+      "operators": [
+        "POSCO Holdings Inc"
+      ],
+      "owners": [
+        "POSCO Holdings Inc"
+      ],
+      "notes": "POSCO is the primary operator and owner of the Gwangyang Works."
+    }
+  }
 }

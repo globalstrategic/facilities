@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-lakota-man-biankouma-project-fac",
-  "name": "**Lakota/Man/Biankouma Project**",
+  "name": "Lakota/Man/Biankouma Project",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 7.7391,
+    "lon": -7.6138,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -29,9 +29,12 @@
     "Consolidated Trillion Resources Ltd",
     "Falconbridge International Ltd",
     "Ivoire Minerais",
+    "Ivory Coast Government",
     "NOCI",
     "SODEMI",
-    "Sama Resources"
+    "Sama Resources",
+    "Trillion Resources",
+    "Trillion Resources (Sodemi)"
   ],
   "products": [],
   "sources": [
@@ -42,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.458828Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T12:10:55Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T22:03:46Z] No specific geographic coordinates were found for the Lakota/Man/Biankouma Project in the search results. | [NULL-ISLAND-FIX 2025-12-18T12:10:55Z] Nickel laterite deposits in Biankouma area, Dix-Huit Montagnes region"
   },
   "canonical_name": "Lakota/man/biankouma Exploration",
   "canonical_slug": "lakota-man-biankouma-exploration",
@@ -63,22 +66,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Lakota/Man/Biankouma ** Exploration",
+      "name": "Lakota/Man/Biankouma  Exploration",
       "from": "2025-10-27T13:21:36.076237",
       "to": "2025-11-04T19:19:04.458826Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Montagnes District",
+  "province": "Dix-Huit Montagnes",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:51:43.000000Z",
+      "timestamp": "2025-12-02T10:24:16.000000Z",
       "operators": [
-        "NOCI"
+        "Trillion Resources (Sodemi)"
       ],
-      "owners": [],
-      "notes": "NOCI is planning significant investment in the project."
+      "owners": [
+        "Ivory Coast Government",
+        "Trillion Resources"
+      ],
+      "notes": "Trillion Resources is the majority owner-operator, while the Ivory Coast Government holds a minor stake."
     }
   }
 }

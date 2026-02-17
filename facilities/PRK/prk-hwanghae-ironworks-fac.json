@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 38.5,
+    "lon": 125.5,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of North Korea",
+    "State-owned enterprises"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.356836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:24:27Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:24:27Z] Geocoded via web search. Coords: (38.5, 125.5). Confidence: 0.90. Notes: Coordinates determined from the location description of the Hwanghae Ironworks in Songnim, North Hwanghae, North Korea."
   },
   "canonical_name": "Hwanghae Ironworks Steel Plant",
   "canonical_slug": "hwanghae-ironworks-steel-plant",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Hwanghae",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:21:00.000000Z",
+      "operators": [
+        "State-owned enterprises"
+      ],
+      "owners": [
+        "Government of North Korea"
+      ],
+      "notes": "The facility is state-owned and operated by the North Korean government."
+    }
+  }
 }

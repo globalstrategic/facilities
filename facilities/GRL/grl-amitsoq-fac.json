@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-amitsoq-fac",
-  "name": "**Amitsoq**",
+  "name": "Amitsoq",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 60.2841,
+    "lon": -45.1272,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "GreenRoc Mining",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.134205",
-      "evidence": "Extracted from operator column: GreenRoc Mining"
-    }
+    "GreenRoc Mining",
+    "GreenRoc Mining plc",
+    "GreenRoc Strategic Materials plc",
+    "Obsidian Mining Limited"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.630941Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Amitsoq graphite, South Greenland. Coords: (60.2841, -45.1272)"
   },
   "canonical_name": "Amitsoq Mine",
   "canonical_slug": "amitsoq-mine",
@@ -53,11 +49,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Amitsoq** Mine",
+      "name": "Amitsoq Mine",
       "from": "2025-10-29T08:01:20.134208",
       "to": "2025-11-04T19:19:00.630939Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:45:21.000000Z",
+      "operators": [
+        "Obsidian Mining Limited"
+      ],
+      "owners": [
+        "GreenRoc Mining plc"
+      ],
+      "notes": "A wholly owned subsidiary of GreenRoc Mining plc operates the facility."
+    }
+  }
 }

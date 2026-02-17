@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ITA",
   "location": {
-    "lat": 43.132,
-    "lon": 11.085,
+    "lat": 42.85,
+    "lon": 11.05,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nuova Solmine S.p.A.",
+    "Sta Siciliana per l'Industria ed il Commercio della Pomice di Lipari S.p.A. (Italpomice S.p.A.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:00.369125Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:13:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Siena (https://thediggings.com/mines/usgs10085346). The Campiano Mine is located near Siena and is recognized for its geological significance"
   },
   "canonical_name": "Campiano Mine",
   "canonical_slug": "campiano-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Grosseto",
+  "town": "Siena",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:13:02.000000Z",
+      "operators": [
+        "Nuova Solmine S.p.A."
+      ],
+      "owners": [
+        "Sta Siciliana per l'Industria ed il Commercio della Pomice di Lipari S.p.A. (Italpomice S.p.A.)"
+      ],
+      "notes": "Nuova Solmine S.p.A. operates the mine, while Italpomice S.p.A. is mentioned in relation to the mining activities."
+    }
+  },
+  "notes": "[AUTO-FIX 2025-12-17T20:06:05Z] Fixed wrong_hemisphere: Changed lat from -34.25456446905874 to 34.25456446905874"
 }

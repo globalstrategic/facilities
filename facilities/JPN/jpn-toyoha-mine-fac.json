@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 42.811,
-    "lon": 141.041,
+    "lat": 42.97917,
+    "lon": 141.04444,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "JX Nippon Mining & Metals Group",
+    "Toyoha Mine Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.018124Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:17:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Toyoha_mine. The Toyoha mine is one of the largest lead and zinc mines in Japan, located near an active hydrothermal system"
   },
   "canonical_name": "Toyoha Mine",
   "canonical_slug": "toyoha-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hokkaido",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:17:30.000000Z",
+      "operators": [
+        "Toyoha Mine Co., Ltd."
+      ],
+      "owners": [
+        "JX Nippon Mining & Metals Group"
+      ],
+      "notes": "The mine is operated by Toyoha Mine Co., Ltd., which is part of the JX Nippon Mining & Metals Group."
+    }
+  }
 }

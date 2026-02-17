@@ -8,8 +8,8 @@
   ],
   "country_iso3": "FRA",
   "location": {
-    "lat": 50.408,
-    "lon": 3.075,
+    "lat": 50.408333,
+    "lon": 3.076389,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nyrstar NV",
+    "Trafigura Pte. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.674681Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:35:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/nyrstar-french-operations-care/. The Auby facility is a mid-scale electrolytic zinc smelter"
   },
   "canonical_name": "Auby Smelter",
   "canonical_slug": "auby-smelter",
@@ -67,5 +70,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:35:12.000000Z",
+      "operators": [
+        "Nyrstar NV"
+      ],
+      "owners": [
+        "Trafigura Pte. Ltd."
+      ],
+      "notes": "Nyrstar is owned by Trafigura, a global commodities trader."
+    }
+  }
 }

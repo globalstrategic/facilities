@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-mindeli-dzidziguri-mines-fac",
-  "name": "**Mindeli & Dzidziguri Mines**",
+  "name": "Mindeli & Dzidziguri Mines",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.3,
+    "lon": 42.9,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,14 +19,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Saknakhshiri Ltd.",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.247049",
-      "evidence": "Extracted from operator column: Saknakhshiri Ltd. (Steel International Trading Co.)"
-    }
+    "Georgian Industrial Group (GIG)",
+    "Saknakhshiri",
+    "Saknakhshiri LLC",
+    "Saknakhshiri Ltd.",
+    "Steel International Trading Company LLC"
   ],
   "products": [],
   "sources": [
@@ -37,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.722594Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:06:27Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:06:27Z] Coal/mineral mines in Imereti region, Georgia"
   },
   "canonical_name": "Mindeli & Dzidziguri Mines Mine",
   "canonical_slug": "mindeli-dzidziguri-mines-mine",
@@ -58,11 +55,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mindeli & Dzidziguri Mines** Mine",
+      "name": "Mindeli & Dzidziguri Mines Mine",
       "from": "2025-10-28T21:01:00.247053",
       "to": "2025-11-04T19:19:01.722592Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Imereti",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:50:27.000000Z",
+      "operators": [
+        "Saknakhshiri"
+      ],
+      "owners": [
+        "Georgian Industrial Group (GIG)"
+      ],
+      "notes": "Saknakhshiri is a subsidiary of the Georgian Industrial Group, which is involved in various sectors including coal mining."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "bgr-elatsite-mine-fac",
-  "name": "**Elatsite Mine**",
+  "name": "Elatsite Mine",
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.753891,
+    "lon": 24.034314,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -27,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.772881Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.95,
+    "last_checked": "2025-12-18T12:23:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:23:28Z] Large open-pit copper mine 8km NW of Chelopech, operated by Ellatzite-Med AD"
   },
   "canonical_name": "Elatsite Mine",
   "canonical_slug": "elatsite-mine-2",
@@ -48,7 +48,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Elatsite ** Mine",
+      "name": "Elatsite  Mine",
       "from": "2025-10-27T10:22:19.392880",
       "to": "2025-11-04T19:18:58.772875Z",
       "reason": "data_correction"
@@ -58,14 +58,14 @@
   "province": "Sofia Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:39:24.000000Z",
+      "timestamp": "2025-12-02T11:08:28.000000Z",
       "operators": [
-        "Ellatzite-Med AD"
+        "Elatsite-Med AD"
       ],
       "owners": [
-        "Geotechmin Group"
+        "Elatsite-Med AD"
       ],
-      "notes": "Ellatzite-Med AD operates the mine, which is owned by Geotechmin Group."
+      "notes": "Elatsite-Med AD is a private joint stock company involved in mining and dressing of copper and gold-containing ores."
     }
   }
 }

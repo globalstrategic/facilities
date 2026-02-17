@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ITA",
   "location": {
-    "lat": 43.451,
-    "lon": 11.129,
+    "lat": 43.05,
+    "lon": 10.8167,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eni Rewind"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:00.370657Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:14:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5b6c15043&appId=PPGMS. Coordinates extracted from the European Commission document"
   },
   "canonical_name": "Fenice Capanne Mine",
   "canonical_slug": "fenice-capanne-mine-2",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Grosseto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:14:42.000000Z",
+      "operators": [
+        "Eni Rewind"
+      ],
+      "owners": [],
+      "notes": "Eni Rewind is mentioned in relation to mining sites in the area."
+    }
+  }
 }

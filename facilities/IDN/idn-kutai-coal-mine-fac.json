@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.764,
-    "lon": 117.131,
+    "lat": -0.763911,
+    "lon": 117.131417,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kutai Energi",
+    "PT Toba Bara Sejahtra Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.238391Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:34:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kutai_Coal_Mine. The Kutai Coal Mine is an operating coal mine located in Teluk Dalam, Kutai Kartanegara, East Kalimantan, Indonesia"
   },
   "canonical_name": "Kutai Coal Mine",
   "canonical_slug": "kutai-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:34:08.000000Z",
+      "operators": [
+        "Kutai Energi"
+      ],
+      "owners": [
+        "PT Toba Bara Sejahtra Tbk"
+      ],
+      "notes": "Kutai Energi is a subsidiary of PT Toba Bara Sejahtra Tbk, which is based in Singapore."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.03789,
-    "lon": 29.12749,
+    "lat": -26.0060055,
+    "lon": 29.630975,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals",
+    "Optimum Coal",
+    "Xstrata"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:39:07.000000Z",
+    "last_checked": "2025-12-01T18:19:06.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6306. Coordinates extracted from the Global Energy Observatory, indicating the location of Boschmans Colliery in Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/6306. Coordinates extracted from the Global Energy Observatory, indicating the location of Boschmans Colliery in Mpumalanga, South Africa. Web search geocoded. Source: https://minedocs.com/21/SA-Desktop-Study-2010.pdf. Coordinates extracted from a mining report indicating the location of Boschmanspoort Mine"
   },
   "canonical_name": "Boschmanspoort Mine",
   "canonical_slug": "boschmanspoort-mine",
@@ -48,5 +52,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:19:06.000000Z",
+      "operators": [
+        "Optimum Coal"
+      ],
+      "owners": [
+        "Xstrata",
+        "African Rainbow Minerals"
+      ],
+      "notes": "Optimum Coal operates the Boschmanspoort Mine, which is part of a joint venture with Xstrata and African Rainbow Minerals."
+    }
+  }
 }

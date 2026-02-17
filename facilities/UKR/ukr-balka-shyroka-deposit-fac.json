@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UKR",
   "location": {
-    "lat": 47.65,
-    "lon": 34.05,
+    "lat": 48.03333,
+    "lon": 33.46667,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "DCH (Development Construction Holding)",
+    "Oleksandr Yaroslavskyi"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.736585Z",
-    "checked_by": "import_pipeline",
-    "notes": "Gold ore block; location estimated from district. 64 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:06:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Gold ore block; location estimated from district. 64 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sukha_Balka_mine. The Balka Shyroka Deposit is likely associated with the Sukha Balka mine, which is located in the Dnipropetrovsk Oblast"
   },
   "canonical_name": "Balka Shyroka Mine",
   "canonical_slug": "balka-shyroka-mine",
@@ -49,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dnipropetrovsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:06:41.000000Z",
+      "operators": [
+        "DCH (Development Construction Holding)"
+      ],
+      "owners": [
+        "Oleksandr Yaroslavskyi"
+      ],
+      "notes": "The Sukha Balka mine is owned by DCH, which is associated with Oleksandr Yaroslavskyi."
+    }
+  }
 }

@@ -1,11 +1,11 @@
 {
   "facility_id": "pan-cobre-panam-fac",
-  "name": "**Cobre Panamá**",
+  "name": "Cobre Panamá",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
     "lat": 8.85197,
-    "lon": null,
+    "lon": -80.65,
     "precision": "unknown"
   },
   "types": [
@@ -13,32 +13,27 @@
   ],
   "commodities": [
     {
-      "metal": "**copper**",
+      "metal": "copper",
       "primary": true
     },
     {
-      "metal": "**molybdenum**",
+      "metal": "molybdenum",
       "primary": false
     },
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": false
     },
     {
-      "metal": "**silver**",
+      "metal": "silver",
       "primary": false
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Minera Panamá, S.A.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.807056",
-      "evidence": "Extracted from operator column: Minera Panamá, S.A. (Subsidiary of First Quantum Minerals Ltd.)"
-    }
+    "First Quantum Minerals Ltd.",
+    "Inmet Mining",
+    "Minera Panamá, S.A."
   ],
   "products": [],
   "sources": [
@@ -53,7 +48,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:19:21.425438Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-80.65 (was null)"
   },
   "canonical_name": "Cobre Panamá Mine",
   "canonical_slug": "cobre-panama-mine",
@@ -70,11 +65,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cobre Panamá** Mine",
+      "name": "Cobre Panamá Mine",
       "from": "2025-10-28T21:58:20.807091",
       "to": "2025-11-04T19:19:21.425435Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Panama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:18:47.000000Z",
+      "operators": [
+        "First Quantum Minerals Ltd."
+      ],
+      "owners": [
+        "First Quantum Minerals Ltd.",
+        "Inmet Mining"
+      ],
+      "notes": "First Quantum Minerals is the primary operator and owner, having acquired Inmet Mining."
+    }
+  }
 }

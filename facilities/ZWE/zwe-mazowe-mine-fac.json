@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-mazowe-mine-fac",
-  "name": "**Mazowe Mine**",
+  "name": "Mazowe Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -17.0,
+    "lon": 31.0,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,12 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gold Fields of Mazowe Ltd.",
+    "Mazowe Mining Company (MMC)",
+    "Metallon Corporation",
+    "Namib Minerals"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.958965Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T09:42:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://hntrbrk.com/killer-mine/. Mazowe Mine is located approximately 10 km north of Harare, Zimbabwe's capital"
   },
   "canonical_name": "Mazowe Mine",
   "canonical_slug": "mazowe-mine",
@@ -44,11 +49,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mazowe ** Mine",
+      "name": "Mazowe  Mine",
       "from": "2025-10-21T13:04:39.397651",
       "to": "2025-11-04T19:18:51.958963Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Harare",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:42:45.000000Z",
+      "operators": [
+        "Mazowe Mining Company (MMC)",
+        "Namib Minerals"
+      ],
+      "owners": [
+        "Metallon Corporation"
+      ],
+      "notes": "Metallon Corporation is the owner of Mazowe Mine, which is set to resume operations under the management of Namib Minerals."
+    }
+  }
 }

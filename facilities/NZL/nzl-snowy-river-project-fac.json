@@ -1,0 +1,76 @@
+{
+  "facility_id": "nzl-snowy-river-project-fac",
+  "name": "Snowy River Project",
+  "aliases": [],
+  "country_iso3": "NZL",
+  "location": {
+    "lat": -22.3,
+    "lon": 166.5,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "gold",
+      "primary": true
+    },
+    {
+      "metal": "antimony\\*\\*\\*\\*\\*\\*",
+      "primary": false
+    },
+    {
+      "metal": "\\-",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Federation Mining Ltd",
+    "OceanaGold (New Zealand) Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NCL 2025-10-28",
+      "date": "2025-10-28T22:57:49.456549"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:00:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.beehive.govt.nz/release/large-scale-mining-track-2026. The Snowy River Project is located near Reefton on the West Coast of New Zealand | [COORD-FIX 2025-12-17T20:16:44Z] Changed from (-42.0, 171.0) to (-22.3, 166.5). Source: Moved from NZ coords to New Caledonia | [COORD-FIX 2025-12-17T20:24:33Z] Changed from (-22.3, 166.5) to (-22.3, 166.5). Source: Moved from NZ coords to New Caledonia | [COORD-FIX 2025-12-17T20:26:38Z] Changed from (-22.3, 166.5) to (-22.3, 166.5). Source: Moved from NZ coords to New Caledonia"
+  },
+  "canonical_name": "Snowy River Mine",
+  "canonical_slug": "snowy-river-mine",
+  "display_name": "Snowy River",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "West Coast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:00:41.000000Z",
+      "operators": [
+        "Federation Mining Ltd"
+      ],
+      "owners": [
+        "OceanaGold (New Zealand) Ltd",
+        "Federation Mining Ltd"
+      ],
+      "notes": "Federation Mining is the operator, while OceanaGold is the previous owner."
+    }
+  }
+}

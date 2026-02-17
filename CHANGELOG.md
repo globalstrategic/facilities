@@ -5,6 +5,98 @@ All notable changes to the Facilities Database project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2025-12-19 (Script Consolidation & Cleanup)
+
+### Changed - Major Script Consolidation
+- **Export Scripts** → Unified `scripts/export.py`
+  - Merged `export_to_parquet.py`, `export_relationships_parquet.py`, `export_to_mines_csv.py`
+  - Single script with `--format parquet|csv` option
+  - Parquet: facilities.parquet + relationship tables
+  - CSV: Mines.csv format with country/metal/company filtering
+
+- **Geocoding Utilities** → Unified `scripts/utils/geocoding.py`
+  - Merged `geo.py` (geohash encoding) into geocoding.py
+  - Merged `geocode_cache.py` (persistent cache) into geocoding.py
+  - Single 45KB module with all geocoding functionality
+
+- **Backfill System** → Enhanced `scripts/backfill.py`
+  - Added web search geocoding strategy (`--strategy web_search|nominatim|combined`)
+  - Added `--null-island` flag for null island facilities only
+  - Replaced separate `geocode_null_island.py` functionality
+
+- **Validation Tools** → Unified `scripts/tools/validate.py`
+  - Merged `validate_country_polygons.py` and `validate_geocoding.py`
+  - Subcommands: `polygons` (Natural Earth), `geocoding` (bounding boxes)
+
+- **Fixing Tools** → Unified `scripts/tools/fix.py`
+  - Merged `fix_coordinates.py` and `fix_wrong_country.py`
+  - Subcommands: `coordinates` (hemisphere, swapped, known fixes), `country` (move to correct folder)
+
+- **Name Canonicalizer** → Renamed to `name_canonicalizer.py`
+  - Merged `name_parts.py` and `slug_registry.py` into single module
+  - Removed `_v2` suffix
+
+### Removed - Redundant Scripts
+- **Export scripts** (→ export.py):
+  - `export_to_parquet.py`, `export_relationships_parquet.py`, `export_to_mines_csv.py`
+
+- **Geocoding utilities** (→ geocoding.py):
+  - `utils/geo.py`, `utils/geocode_cache.py`
+
+- **Validation tools** (→ validate.py):
+  - `validate_country_polygons.py`, `validate_geocoding.py`
+
+- **Fixing tools** (→ fix.py):
+  - `fix_coordinates.py`, `fix_wrong_country.py`
+
+- **Name utilities** (→ name_canonicalizer.py):
+  - `name_parts.py`, `slug_registry.py`, `paths.py`, `id_utils.py`
+
+- **Config/dev files**:
+  - `setup.py`, `requirements-dev.txt`, `pytest.ini`
+  - `scripts/__init__.py`, `scripts/utils/__init__.py`
+
+- **Other removed scripts**:
+  - `geocode_null_island.py` (→ backfill.py --strategy web_search)
+  - `enrich_facilities.py` (→ backfill.py)
+  - `facilities.py` (unused wrapper)
+  - `fix_merge_conflicts.py` (one-time fix)
+  - `fix_schema_violations.py` (one-time fix)
+  - `fix_romanian_country_code.py` (one-time fix)
+  - `fix_unicode_json.py` (one-time fix)
+  - `list_missing_coords.py` (unused)
+  - `verify_backfill.py` (unused)
+  - `deep_research_integration.py` (unused)
+  - `name_quality.py` (unused)
+  - `setup.py` (orphaned - referenced non-existent talloy package)
+
+### Current Script Structure
+**Main Scripts (5)**:
+- `backfill.py` - Unified enrichment (geocoding, companies, metals, web search)
+- `import_from_report.py` - Import pipeline
+- `export.py` - Unified parquet/CSV export
+- `enrich_companies.py` - Phase 2 company resolution
+- `load_facilities_to_snowflake.py` - Snowflake loader
+
+**Tools (4)**:
+- `audit.py` - Data quality audits
+- `deduplicate.py` - Duplicate cleanup
+- `validate.py` - Unified validation (polygons + geocoding subcommands)
+- `fix.py` - Unified fixing (coordinates + country subcommands)
+
+**Utils (9)**:
+- `geocoding.py` (45KB) - Unified geocoding (Nominatim, Overpass, Wikidata, cache, geohash)
+- `facility_sync.py` - Parquet import/export
+- `company_resolver.py` - Company resolution with quality gates
+- `name_canonicalizer.py` - Name/slug generation (includes slug registry)
+- `llm_extraction.py` - LLM coordinate extraction
+- `deduplication.py` - Duplicate detection
+- `web_search.py` - Tavily/Brave web search
+- `country_utils.py` - ISO3 normalization
+- `type_map.py` - Facility type mapping
+
+---
+
 ## [2.1.0] - 2025-10-31 (Canonical Naming System - Production Ready) ✅
 
 ### Added - Canonical Naming System
@@ -295,6 +387,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
+- **2.2.0** (2025-12-19): **Script Consolidation & Cleanup** - unified export, geocoding, coordinate tools; removed 15+ redundant scripts
 - **2.1.0** (2025-10-31): ✅ **Canonical Naming System (Production-Ready)**, 10,632 facilities, zero collisions validated
 - **2.1.1** (2025-10-27): Enhanced table detection, plural form support, metal formula fix
 - **2.0.1** (2025-10-21): Deduplication system, documentation consolidation

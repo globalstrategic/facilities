@@ -6,9 +6,9 @@
   ],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.537,
+    "lon": 13.243,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -25,14 +25,14 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "COMILOG",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.135803",
-      "evidence": "Extracted from operator column: COMILOG"
-    }
+    "COMILOG",
+    "Compagnie Minière de l'Ogooué (Comilog)",
+    "Compagnie des Mines de l’Ogooué (COMILOG)",
+    "Eramet",
+    "Eramet Group",
+    "Eramet International S.A.",
+    "Government of Gabon",
+    "Société Equatoriale des Mines"
   ],
   "products": [],
   "sources": [
@@ -43,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.391626Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Moanda Metallurgical Complex (CMM), manganese processing facility in Moanda, Haut-Ogooué"
   },
   "canonical_name": "Moanda Metallurgical Processing Plant",
   "canonical_slug": "moanda-metallurgical-processing-plant",
@@ -62,5 +62,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Haut-Ogooué",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:54:43.000000Z",
+      "operators": [
+        "Compagnie des Mines de l’Ogooué (COMILOG)"
+      ],
+      "owners": [
+        "Eramet",
+        "Société Equatoriale des Mines"
+      ],
+      "notes": "COMILOG is a subsidiary of Eramet and has a partnership with the Gabonese government."
+    }
+  }
 }

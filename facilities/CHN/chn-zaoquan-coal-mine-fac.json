@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.927,
-    "lon": 106.534,
+    "lat": 37.068944,
+    "lon": 113.352556,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Huaneng Power International Inc",
+    "Huaneng Zuoquan Coal&Power Co Ltd",
+    "Jinneng Group Co Ltd",
+    "Shanxi State-Owned Capital Investment and Operation Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.747838Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:23:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Zuoquan_power_station. Coordinates correspond to the Zuoquan power station, which is associated with the Zaoquan Coal Mine"
   },
   "canonical_name": "Zaoquan Coal Mine",
   "canonical_slug": "zaoquan-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shanxi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:23:22.000000Z",
+      "operators": [
+        "Huaneng Zuoquan Coal&Power Co Ltd"
+      ],
+      "owners": [
+        "Huaneng Power International Inc",
+        "Shanxi State-Owned Capital Investment and Operation Co Ltd",
+        "Jinneng Group Co Ltd"
+      ],
+      "notes": "The facility is majority-owned by China Huaneng."
+    }
+  }
 }

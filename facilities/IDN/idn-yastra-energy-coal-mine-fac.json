@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.072,
-    "lon": 114.528,
+    "lat": -1.07198,
+    "lon": 114.527659,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yastra Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.209877Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:20:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Yastra_Energy_Coal_Mine. Yastra Energy Coal Mine is an operating coal mine in Central Kalimantan, Indonesia"
   },
   "canonical_name": "Yastra Energy Coal Mine",
   "canonical_slug": "yastra-energy-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:20:44.000000Z",
+      "operators": [
+        "Yastra Energy"
+      ],
+      "owners": [
+        "Yastra Energy"
+      ],
+      "notes": "Yastra Energy owns and operates the Yastra Energy Coal Mine."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "cze-kovohut-p-bram-fac",
-  "name": "**Kovohutě Příbram**",
+  "name": "Kovohutě Příbram",
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 49.68,
+    "lon": 14.0,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -15,7 +15,9 @@
   "status": "operating",
   "company_mentions": [
     "Kovohutě Příbram Nastupnická a.s.",
-    "Kovohutě Příbram nástupnická, a.s."
+    "Kovohutě Příbram nástupnická, a.s.",
+    "Montanwerke Brixlegg AG",
+    "UMCOR AG"
   ],
   "products": [],
   "sources": [
@@ -26,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.578439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Key national facility for recycling lead-acid batteries and e-waste. The only domestic producer of Pb and the only recovery center for Au, Ag, and PGMs. 42 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Key national facility for recycling lead-acid batteries and e-waste. The only domestic producer of Pb and the only recovery center for Au, Ag, and PGMs. 42 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Lead recycling facility since 1828, Příbram VI-Březové Hory"
   },
   "canonical_name": "Kovohutě Příbram Processing Plant",
   "canonical_slug": "kovohute-pribram-processing-plant",
@@ -47,22 +49,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kovohutě Příbram** Processing Plant",
+      "name": "Kovohutě Příbram Processing Plant",
       "from": "2025-10-27T15:23:26.782498",
       "to": "2025-11-04T19:19:10.578432Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Central Bohemia",
+  "province": "Středočeský",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:03:33.000000Z",
+      "timestamp": "2025-12-02T10:11:27.000000Z",
       "operators": [
-        "Kovohutě Příbram Nastupnická a.s."
+        "Kovohutě Příbram nástupnická, a.s."
       ],
-      "owners": [],
-      "notes": "No specific ownership details provided."
+      "owners": [
+        "UMCOR AG",
+        "Montanwerke Brixlegg AG"
+      ],
+      "notes": "Kovohutě Příbram is operated by Kovohutě Příbram nástupnická, a.s., which is a subsidiary of UMCOR AG."
     }
   }
 }

@@ -6,9 +6,9 @@
   ],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 28.8167,
+    "lon": 62.7667,
+    "precision": "city"
   },
   "types": [
     "mine"
@@ -24,7 +24,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Government Holdings (Private) Ltd.",
+    "Government of Balochistan",
+    "Oil & Gas Development Company Limited",
+    "Pakistan Minerals (Private) Ltd.",
+    "Pakistan Petroleum Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:03.336191Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located at Nokundi (Nok Kundi), Chagai District, Balochistan."
   },
   "canonical_name": "Nokundi Mine",
   "canonical_slug": "nokundi-mine",
@@ -53,5 +60,23 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Balochistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:42.000000Z",
+      "operators": [
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Government of Balochistan",
+        "Pakistan Minerals (Private) Ltd.",
+        "Oil & Gas Development Company Limited",
+        "Government Holdings (Private) Ltd.",
+        "Pakistan Petroleum Ltd."
+      ],
+      "notes": "Barrick Gold holds a 50% stake in the project, with the remaining 50% owned by Pakistani stakeholders, including state-owned enterprises and the provincial government."
+    }
+  }
 }

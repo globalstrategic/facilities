@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 13.0725,
+    "lon": 96.873611,
     "precision": "unknown",
     "description": ""
   },
@@ -19,7 +19,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Myanma Oil and Gas Enterprise",
+    "Nippon Oil Exploration (Myanmar)",
+    "PC Myanmar Limited (PCML)",
+    "PTTEP International Limited",
+    "Petronas Carigali"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.871619Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:08:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Yetagun_gas_field. The Yetagun gas field is located offshore in the Andaman Sea, specifically in Blocks M12, M13, and M14"
   },
   "canonical_name": "Yetagun Facility",
   "canonical_slug": "yetagun-facility",
@@ -56,5 +62,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Taninthayi Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:08:41.000000Z",
+      "operators": [
+        "PC Myanmar Limited (PCML)",
+        "Petronas Carigali"
+      ],
+      "owners": [
+        "Myanma Oil and Gas Enterprise",
+        "Nippon Oil Exploration (Myanmar)",
+        "PTTEP International Limited"
+      ],
+      "notes": "Petronas has been the operator since 2003, and there are ongoing discussions about the project's future due to recent withdrawals by some partners."
+    }
+  }
 }

@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.358,
-    "lon": 29.971,
+    "lat": -26.35992,
+    "lon": 29.97146,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Great Force Investments 178 (GFI)",
+    "Imbawula Mining",
+    "Iron Light",
+    "Xstrata Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.708829Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-spitzkop-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:02:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-spitzkop-colliery-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39198. The Spitzkop coal mine is an opencast and underground mine located in Ermelo, Mpumalanga, South Africa"
   },
   "canonical_name": "Spitzkop Mine",
   "canonical_slug": "spitzkop-mine",
@@ -54,5 +59,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:02:14.000000Z",
+      "operators": [
+        "Xstrata Coal",
+        "Imbawula Mining",
+        "Great Force Investments 178 (GFI)",
+        "Iron Light"
+      ],
+      "owners": [
+        "Great Force Investments 178 (GFI)",
+        "Iron Light"
+      ],
+      "notes": "The mine has changed ownership multiple times, with the latest acquisition by GFI and Iron Light in December 2020."
+    }
+  }
 }

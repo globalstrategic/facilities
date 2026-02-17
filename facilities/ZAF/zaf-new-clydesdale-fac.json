@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.137,
-    "lon": 29.317,
+    "lat": -24.995149629896474,
+    "lon": 29.262778,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ndalamo Resources (Pty) Ltd",
+    "TerraCom Ltd.",
+    "Universal Coal and Energy Holdings South Africa (Pty) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.739072Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:30:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Kriel (https://www.mining-technology.com/projects/new-clydesdale-colliery-ncc-thermal-coal-mine/). The New Clydesdale Colliery is located approximately 140 km from Johannesburg in the Kriel District"
   },
   "canonical_name": "New Clydesdale Mine",
   "canonical_slug": "new-clydesdale-mine",
@@ -51,5 +55,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Kriel",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:30:51.000000Z",
+      "operators": [
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd.",
+        "Ndalamo Resources (Pty) Ltd"
+      ],
+      "owners": [
+        "TerraCom Ltd.",
+        "Universal Coal and Energy Holdings South Africa (Pty) Ltd.",
+        "Ndalamo Resources (Pty) Ltd"
+      ],
+      "notes": "The colliery is co-owned by TerraCom and Ndalamo Resources, with Universal Coal being an operator."
+    }
+  }
 }

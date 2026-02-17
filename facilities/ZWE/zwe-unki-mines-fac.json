@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-unki-mines-fac",
-  "name": "**Unki Mines**",
+  "name": "Unki Mines",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.6246,
+    "lon": 30.095,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American Platinum",
+    "Valterra Platinum"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.953355Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:41:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Unki_mine. Unki Mine is one of the largest platinum reserves in Zimbabwe, producing around 64,000 oz of platinum/year"
   },
   "canonical_name": "Unki Mines Mine",
   "canonical_slug": "unki-mines-mine",
@@ -44,11 +47,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Unki Mines** Mine",
+      "name": "Unki Mines Mine",
       "from": "2025-10-21T13:04:39.410697",
       "to": "2025-11-04T19:18:51.953353Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:41:50.000000Z",
+      "operators": [
+        "Valterra Platinum"
+      ],
+      "owners": [
+        "Valterra Platinum",
+        "Anglo American Platinum"
+      ],
+      "notes": "Valterra Platinum assumed control of Unki Mine after a demerger from Anglo American Platinum."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-ndom-licence-area-fac",
-  "name": "**Ndom Licence Area**",
+  "name": "Ndom Licence Area",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.3,
+    "lon": 13.8,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -25,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019923Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Oriole Resources gold/lithium exploration, Adamawa region west of Ngaoundéré"
   },
   "canonical_name": "Ndom Licence Area Mine",
   "canonical_slug": "ndom-licence-area-mine",
@@ -46,22 +46,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ndom Licence Area** Mine",
+      "name": "Ndom Licence Area Mine",
       "from": "2025-10-27T14:11:30.495570",
       "to": "2025-11-04T19:19:08.019921Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "CMR",
+  "province": "Adamaoua",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:54:55.000000Z",
+      "timestamp": "2025-12-02T10:23:30.000000Z",
       "operators": [
         "Oriole Resources PLC"
       ],
-      "owners": [],
-      "notes": "Oriole Resources PLC is involved in exploration activities in the Ndom Licence Area."
+      "owners": [
+        "Oriole Resources PLC"
+      ],
+      "notes": "Oriole Resources PLC holds 90% ownership of the Ndom Licence Area."
     }
   }
 }

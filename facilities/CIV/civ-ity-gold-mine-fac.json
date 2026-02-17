@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-ity-gold-mine-fac",
-  "name": "**Ity Gold Mine**",
+  "name": "Ity Gold Mine",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.8711,
+    "lon": -8.1083,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -26,6 +26,7 @@
     "Government of Côte d'Ivoire",
     "Government of Ivory Coast",
     "La Mancha",
+    "La Mancha Resources Inc.",
     "SODEMI"
   ],
   "products": [],
@@ -37,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.459512Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:04:17Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:04:17Z] Geocoded via web search. Coords: (6.8711, -8.1083). Confidence: 0.90. Notes: Coordinates extracted from the annual information form, which specifies the location of the Ity Gold Mine."
   },
   "canonical_name": "Ity Gold Mine",
   "canonical_slug": "ity-gold-mine",
@@ -58,26 +59,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ity Gold ** Mine",
+      "name": "Ity Gold  Mine",
       "from": "2025-10-27T13:21:35.962578",
       "to": "2025-11-04T19:19:04.459509Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "N/A",
+  "province": "Montagnes",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:52:08.000000Z",
+      "timestamp": "2025-12-02T10:24:37.000000Z",
       "operators": [
-        "Endeavour Mining Corporation"
+        "Endeavour Mining Corporation",
+        "La Mancha Resources Inc."
       ],
       "owners": [
         "Endeavour Mining Corporation",
-        "Government of Côte d'Ivoire",
+        "Government of Ivory Coast",
         "SODEMI"
       ],
-      "notes": "Endeavour Mining owns 85% of the mine, with the Government of Côte d'Ivoire holding 10% and SODEMI 5%."
+      "notes": "Endeavour Mining has increased its stake to 85%, while the government holds 10% and SODEMI holds 5%."
     }
   }
 }

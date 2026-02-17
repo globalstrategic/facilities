@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-los-pijiguaos-mine-fac",
-  "name": "**Los Pijiguaos Mine**",
+  "name": "Los Pijiguaos Mine",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
-    "lat": 6.517,
-    "lon": null,
+    "lat": 6.58,
+    "lon": -66.75,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "CVG Bauxilum",
+    "Corporación Venezolana de Guyana (CVG)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:49.655861Z",
-    "checked_by": "import_pipeline",
-    "notes": "Venezuela's only exploited bauxite deposit. State-owned and operated. Coordinates are well-corroborated.1 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T18:32:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Venezuela's only exploited bauxite deposit. State-owned and operated. Coordinates are well-corroborated.1 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Puerto Ordaz (https://www.woodmac.com/reports/metals-los-pijiguaos-bauxite-mine-16216738/). The Los Pijiguaos Mine is the only official bauxite source in Venezuela, located in Bolivar State | [COORD-FIX 2025-12-17T20:26:38Z] Changed from (10.194460082444389, -60.81997961185781) to (6.58, -66.75). Source: Los Pijiguaos bauxite mine, Bolivar State, Venezuela"
   },
   "canonical_name": "Los Pijiguaos Mine",
   "canonical_slug": "los-pijiguaos-mine",
@@ -49,11 +52,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Los Pijiguaos ** Mine",
+      "name": "Los Pijiguaos  Mine",
       "from": "2025-10-21T11:38:44.987482",
       "to": "2025-11-04T19:18:49.655859Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolivar",
+  "town": "Puerto Ordaz",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:32:04.000000Z",
+      "operators": [
+        "CVG Bauxilum"
+      ],
+      "owners": [
+        "Corporación Venezolana de Guyana (CVG)"
+      ],
+      "notes": "CVG Bauxilum is owned by the Venezuelan government."
+    }
+  }
 }

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "AUS",
   "location": {
-    "lat": -21.863,
-    "lon": 120.322,
+    "lat": -41.0,
+    "lon": 146.0,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "All Nations company"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:52.306694Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T15:23:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mrt.tas.gov.au/mrtdoc/dominfo/download/ASR2000_03/ASR2000_03.pdf. Coordinates are derived from the AMG grid reference provided in the document"
   },
   "canonical_name": "All Nations 1 Mine",
   "canonical_slug": "all-nations-1-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tasmania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:23:06.000000Z",
+      "operators": [
+        "All Nations company"
+      ],
+      "owners": [
+        "All Nations company"
+      ],
+      "notes": "The site has historical significance and was part of various leases over the years."
+    }
+  }
 }

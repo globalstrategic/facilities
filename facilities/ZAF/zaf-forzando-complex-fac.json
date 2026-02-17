@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.287,
-    "lon": 29.528,
+    "lat": -26.32938084873875,
+    "lon": 29.608788349023122,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Forzando Coal Mines (Pty) Ltd.",
+    "Mmakau Mining (Pty) Ltd",
+    "Overlooked Colliery Proprietary Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.746094Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:36:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Bethal (https://miningdataonline.com/property/4487/Forzando-Mine.aspx). The Forzando Complex includes Forzando North and Forzando South mines, part of the Katlego Operations"
   },
   "canonical_name": "Forzando Mine",
   "canonical_slug": "forzando-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Bethal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:36:41.000000Z",
+      "operators": [
+        "Forzando Coal Mines (Pty) Ltd."
+      ],
+      "owners": [
+        "Overlooked Colliery Proprietary Ltd",
+        "Mmakau Mining (Pty) Ltd"
+      ],
+      "notes": "Overlooked Colliery owns 87% of the Katlego Operations, which includes the Forzando Complex."
+    }
+  }
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 44.0,
+    "lon": 66.8,
+    "precision": "approximate"
   },
   "types": [
     "mine"
@@ -18,7 +18,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy Asia Holdings Ltd",
+    "National Atomic Company Kazatomprom",
+    "Turanium LLP",
+    "Uranium One Utrecht B.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.750221Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T00:48:37Z",
+    "checked_by": "web_search_manual",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:48:37Z] Geocoded via web search. Coords: (44.0, 66.8). Confidence: 0.65. Source: Zhanakorgan, Kyzylorda (Turanium/Khorasan-U)"
   },
   "canonical_name": "Turanium LLP Mine",
   "canonical_slug": "turanium-llp-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kyzylorda oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:14:42.000000Z",
+      "operators": [
+        "Turanium LLP"
+      ],
+      "owners": [
+        "National Atomic Company Kazatomprom",
+        "Energy Asia Holdings Ltd",
+        "Uranium One Utrecht B.V."
+      ],
+      "notes": "Turanium LLP is a partnership involving Kazatomprom and other companies for uranium production."
+    }
+  }
 }

@@ -8,7 +8,7 @@
   "country_iso3": "USA",
   "location": {
     "lat": 36.067,
-    "lon": -83.702,
+    "lon": -83.698,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nyrstar Tennessee Mines, Strawberry Plains LLC",
+    "Nyrstar US Inc",
+    "Trafigura Group Pte Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.868178Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:50:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://enviro.epa.gov/triexplorer/release_fac_profile?TRI=37806SRCNC2160I&TRILIB=TRIQ1&V_NA_INDICATOR=.&FLD=&FLD=RELLBY&FLD=TSFDSP&OFFDISPD=&OTHDISPD=&ONDISPD=&OTHOFFD=&YEAR=2024. Coordinates and facility details extracted from the EPA TRI Explorer report"
   },
   "canonical_name": "Immel Mine",
   "canonical_slug": "immel-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tennessee",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:50:10.000000Z",
+      "operators": [
+        "Nyrstar Tennessee Mines, Strawberry Plains LLC"
+      ],
+      "owners": [
+        "Nyrstar US Inc",
+        "Trafigura Group Pte Ltd."
+      ],
+      "notes": "Nyrstar is the operator and Trafigura is the majority owner."
+    }
+  }
 }

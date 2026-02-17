@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.8,
-    "lon": 30.4,
+    "lat": -24.999,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Genorah Resources (Pty) Limited",
+    "Nkwe Platinum Limited",
+    "Zijin Mining Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:36:21.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:14:15.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.nkweplatinum.com/. The Garatau Platinum Group Metals Mine is located about 25 km northwest of Steelpoort in the Limpopo province"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.nkweplatinum.com/. The Garatau Platinum Group Metals Mine is located about 25 km northwest of Steelpoort in the Limpopo province. Web search geocoded. Source: https://www.nkweplatinum.com/. The Garatau Platinum Mine is located on the Eastern Limb of the Bushveld Complex, approximately 25 km north-west of Steelpoort"
   },
   "canonical_name": "Nkwe Garatau Mine",
   "canonical_slug": "nkwe-garatau-mine",
@@ -56,5 +60,18 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:14:15.000000Z",
+      "operators": [
+        "Nkwe Platinum Limited"
+      ],
+      "owners": [
+        "Zijin Mining Group",
+        "Genorah Resources (Pty) Limited"
+      ],
+      "notes": "Nkwe Platinum Limited is a subsidiary of Zijin Mining Group, holding a 74% interest in the mine."
+    }
+  }
 }

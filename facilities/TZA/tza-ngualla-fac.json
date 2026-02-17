@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -8.5,
+    "lon": 33.5,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Tanzania",
+    "Mamba Minerals Corporation Limited",
+    "Peak Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:17.980516Z",
-    "checked_by": "import_pipeline",
-    "notes": "Mining licence and offtake framework; NdPr project | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:15:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Mining licence and offtake framework; NdPr project | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/ngualla-rare-earth-project/. The Ngualla Rare Earth Project is located approximately 4.5km north of the village of Ngwala"
   },
   "canonical_name": "Ngualla Mine",
   "canonical_slug": "ngualla-mine",
@@ -53,5 +57,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Songwe Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:15:04.000000Z",
+      "operators": [
+        "Mamba Minerals Corporation Limited"
+      ],
+      "owners": [
+        "Peak Resources Limited",
+        "Government of Tanzania"
+      ],
+      "notes": "Mamba Minerals is 84% owned by Peak Resources, with the Government of Tanzania holding the remaining 16%."
+    }
+  }
 }

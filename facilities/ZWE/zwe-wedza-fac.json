@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.747,
-    "lon": 31.541,
+    "lat": -20.3,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Impala Platinum",
+    "Mimosa Investments Limited",
+    "Mimosa Mining Company",
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.952641Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:37:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/mimosa-platinum-mine/. Mimosa mine is located in the Wedza subchamber of the Great Dyke in Zimbabwe"
   },
   "canonical_name": "Wedza Mine",
   "canonical_slug": "wedza-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:37:00.000000Z",
+      "operators": [
+        "Mimosa Mining Company"
+      ],
+      "owners": [
+        "Mimosa Investments Limited",
+        "Impala Platinum",
+        "Sibanye-Stillwater"
+      ],
+      "notes": "Mimosa Mining Company is a joint venture between Impala Platinum and Sibanye-Stillwater."
+    }
+  }
 }

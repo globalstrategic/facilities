@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.486,
-    "lon": -113.129,
+    "lat": 38.0,
+    "lon": -112.0,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Copper King Mining Corp",
+    "Palladon Ventures Ltd",
+    "Western Utah Copper Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.970664Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:34:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10101379/. The OK Mine is a copper mine located in Beaver County, Utah"
   },
   "canonical_name": "OK Mine",
   "canonical_slug": "ok-mine",
@@ -67,5 +71,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:34:36.000000Z",
+      "operators": [
+        "Western Utah Copper Co",
+        "Copper King Mining Corp",
+        "Palladon Ventures Ltd"
+      ],
+      "owners": [
+        "Copper King Mining Corp",
+        "Palladon Ventures Ltd"
+      ],
+      "notes": "Western Utah Copper Company filed for reorganization under Chapter 11 on May 18, 2010."
+    }
+  }
 }

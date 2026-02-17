@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NAM",
   "location": {
-    "lat": -19.992,
-    "lon": 17.097,
+    "lat": -22.5,
+    "lon": 17.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "B2Gold Corp.",
+    "EVI Mining (Proprietary) Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.555999Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T06:52:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.b2gold.com/operations-projects/producing/otjikoto-mine-namibia/default.aspx. Otjikoto Mine is the largest gold producer in Namibia, located approximately 300 km north of Windhoek"
   },
   "canonical_name": "Otjikoto Mine",
   "canonical_slug": "otjikoto-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Otjozondjupa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:52:41.000000Z",
+      "operators": [
+        "B2Gold Corp."
+      ],
+      "owners": [
+        "B2Gold Corp.",
+        "EVI Mining (Proprietary) Ltd."
+      ],
+      "notes": "B2Gold holds a 90% ownership interest in the Otjikoto Mine, with the remaining 10% held by EVI Mining."
+    }
+  }
 }

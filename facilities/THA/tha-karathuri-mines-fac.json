@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": 9.917,
-    "lon": 99.083,
+    "lat": 9.170833,
+    "lon": 99.580556,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Karuturi Global Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:18.494444Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:35:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-1320229.html. Coordinates extracted from the search results for unidentified mines in Surat Thani Province, Thailand"
   },
   "canonical_name": "Karathuri Mines Mine",
   "canonical_slug": "karathuri-mines-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Surat Thani Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:20.000000Z",
+      "operators": [],
+      "owners": [
+        "Karuturi Global Ltd"
+      ],
+      "notes": "Karuturi Global Ltd is mentioned in the context of land and mining operations."
+    }
+  }
 }

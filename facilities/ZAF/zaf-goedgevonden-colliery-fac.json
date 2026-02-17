@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.0987301,
-    "lon": 29.072551,
+    "lat": -26.09972,
+    "lon": 29.07316,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "ARM Coal Proprietary Ltd",
+    "African Rainbow Minerals Ltd",
+    "Glencore Operations South Africa Proprietary Ltd",
+    "Glencore plc",
+    "Goedgevonden Coal Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-05T14:59:22.284743",
-    "checked_by": "import_pipeline",
-    "notes": "Forward geocoded via Nominatim: Goedgevonden Colliery, South Africa"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:01:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Forward geocoded via Nominatim: Goedgevonden Colliery, South Africa. Web search geocoded. Source: https://www.gem.wiki/Goedgevonden_Coal_Mine. The Goedgevonden Coal Mine is a surface mine located near Ogies in the Emalahleni municipality"
   },
   "canonical_name": "Goedgevonden Colliery Mine",
   "canonical_slug": "goedgevonden-colliery-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:01:36.000000Z",
+      "operators": [
+        "Goedgevonden Coal Ltd",
+        "Glencore Operations South Africa Proprietary Ltd",
+        "ARM Coal Proprietary Ltd"
+      ],
+      "owners": [
+        "Glencore plc",
+        "African Rainbow Minerals Ltd"
+      ],
+      "notes": "The mine is operated as a joint venture between Glencore and African Rainbow Minerals."
+    }
+  }
 }

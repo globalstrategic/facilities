@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.46,
-    "lon": -114.767,
+    "lat": 43.23628252690782,
+    "lon": -117.0551332,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Integra Resources Corp.",
+    "Integra Resources Corporation",
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.876069Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:56:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Jordan Valley, Oregon (https://en.wikipedia.org/wiki/DeLamar_Mine). The DeLamar Mine is located in Owyhee County, Idaho, about one mile from the ghost town of De Lamar"
   },
   "canonical_name": "Delamar Mine",
   "canonical_slug": "delamar-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Idaho",
+  "town": "Jordan Valley, Oregon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:56:45.000000Z",
+      "operators": [
+        "Integra Resources Corporation"
+      ],
+      "owners": [
+        "Integra Resources Corp.",
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Integra Resources acquired the project from Kinross Gold Corporation in 2017."
+    }
+  }
 }

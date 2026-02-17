@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 35.341,
-    "lon": -80.827,
+    "lat": 35.372868,
+    "lon": -80.784764,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau Long Steel North America",
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.905365Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:39:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/EPD-Gerdau-Rebar-Charlotte-NC.pdf. Coordinates extracted from job postings related to the facility"
   },
   "canonical_name": "Gerdau Charlotte Smelter",
   "canonical_slug": "gerdau-charlotte-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Carolina",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:39:54.000000Z",
+      "operators": [
+        "Gerdau Long Steel North America"
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau S.A. is a publicly traded company with significant family ownership."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "FRA",
   "location": {
-    "lat": 51.038,
-    "lon": 2.299,
+    "lat": 51.041274,
+    "lon": 2.292948,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Atlantique et Lorraine SAS"
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.675808Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:36:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Dunkerque_steel_plant. The facility is a steel plant operated by ArcelorMittal, utilizing various steel production technologies"
   },
   "canonical_name": "Dunkirk Steel Smelter",
   "canonical_slug": "dunkirk-steel-smelter",
@@ -69,5 +71,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hauts-de-France",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:36:24.000000Z",
+      "operators": [
+        "ArcelorMittal Atlantique et Lorraine SAS"
+      ],
+      "owners": [
+        "ArcelorMittal Atlantique et Lorraine SAS"
+      ],
+      "notes": "ArcelorMittal is both the operator and owner of the facility."
+    }
+  }
 }

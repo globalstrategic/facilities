@@ -9,8 +9,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.435,
-    "lon": 87.252,
+    "lat": 53.39819195601938,
+    "lon": 87.1358494,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coeclerici Group",
+    "Kuznetskinveststroy JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.613132Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:38:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Novokuznetsk (https://www.gem.wiki/Korchakolsky_Coal_Mine). Korchakolsky Coal Mine is located in Kaltan, approximately 40 km south of Novokuznetsk"
   },
   "canonical_name": "Korchakolsky Coal Mine",
   "canonical_slug": "korchakolsky-coal-mine",
@@ -52,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Region",
+  "town": "Novokuznetsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:38:58.000000Z",
+      "operators": [
+        "Kuznetskinveststroy JSC"
+      ],
+      "owners": [
+        "Coeclerici Group"
+      ],
+      "notes": "Kuznetskinveststroy JSC is fully owned by Coeclerici Group, which is based in Italy."
+    }
+  }
 }

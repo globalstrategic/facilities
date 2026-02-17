@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 38.392,
-    "lon": 106.542,
+    "lat": 38.392215,
+    "lon": 106.542109,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ningxia Hongdunzi Coal Industry Company",
+    "Ningxia State-Owned Capital Operation Group Company",
+    "SPIC Aluminum & Power Investment Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.873894Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:43:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%AE%81%E5%A4%8F%E7%BA%A2%E5%A2%A9%E5%AD%90%E7%85%A4%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%BA%A2%E4%B8%80%E7%85%A4%E7%9F%BF. The Hongdunzi No. 1 Coal Mine is an underground coal mine with a construction scale of 2.4 million tons per year"
   },
   "canonical_name": "Hongdunzi No 1 Coal Mine",
   "canonical_slug": "hongdunzi-no-1-coal-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ningxia Hui Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:43:55.000000Z",
+      "operators": [
+        "Ningxia Hongdunzi Coal Industry Company"
+      ],
+      "owners": [
+        "SPIC Aluminum & Power Investment Company",
+        "Ningxia State-Owned Capital Operation Group Company"
+      ],
+      "notes": "Ningxia Hongdunzi Coal Industry Company is fully owned by SPIC Aluminum & Power Investment Company (76%) and Ningxia State-Owned Capital Operation Group Company (24%)."
+    }
+  }
 }

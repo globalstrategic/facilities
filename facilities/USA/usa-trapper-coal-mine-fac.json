@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.428,
-    "lon": -107.533,
+    "lat": 40.452222,
+    "lon": -107.631111,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PacifiCorp",
+    "Platte River Power Authority",
+    "Salt River Project",
+    "Trapper Mining Inc",
+    "Tri-State Generation and Transmission Association"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.774405Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:48:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.coalage.com/features/a-landslide-victory/. The Trapper Mine is a surface coal mine located in the Yampa coal field, producing nearly two million tons of coal annually"
   },
   "canonical_name": "Trapper Coal Mine",
   "canonical_slug": "trapper-coal-mine",
@@ -50,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:48:33.000000Z",
+      "operators": [
+        "Trapper Mining Inc"
+      ],
+      "owners": [
+        "Salt River Project",
+        "Tri-State Generation and Transmission Association",
+        "PacifiCorp",
+        "Platte River Power Authority"
+      ],
+      "notes": "Trapper Mining Inc. is the operator, while ownership is shared among several companies."
+    }
+  }
 }

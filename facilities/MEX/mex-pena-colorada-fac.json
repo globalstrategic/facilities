@@ -9,8 +9,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 19.377,
-    "lon": -104.097,
+    "lat": 19.379191,
+    "lon": -104.366,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal SA",
+    "Consorcio Minero Benito Juárez Peña Colorada S.A. de C.V.",
+    "Ternium S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.965178Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:41:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Pena_Colorada_Mine. Peña Colorada is a significant iron ore mine in Mexico, producing a large portion of the country's iron ore"
   },
   "canonical_name": "Pena Colorada Mine",
   "canonical_slug": "pena-colorada-mine",
@@ -53,5 +57,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:41:37.000000Z",
+      "operators": [
+        "Consorcio Minero Benito Juárez Peña Colorada S.A. de C.V."
+      ],
+      "owners": [
+        "ArcelorMittal SA",
+        "Ternium S.A."
+      ],
+      "notes": "The mine is a joint venture between ArcelorMittal and Ternium, each holding a 50% stake."
+    }
+  }
 }

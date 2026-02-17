@@ -1,0 +1,73 @@
+{
+  "facility_id": "usa-tres-amigos-mine-fac",
+  "name": "Tres Amigos Mine",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 31.8333,
+    "lon": -110.75,
+    "precision": "approximate"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    }
+  ],
+  "status": "closed",
+  "company_mentions": [
+    "B. & B. Mining Company",
+    "Legend Group Ltd.",
+    "Noon & Dale"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CRI 2025-10-27",
+      "date": "2025-10-27T14:16:47.669893"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:00:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10161873/. The Tres Amigos Mine is a copper and silver mine located in Pima County, Arizona. CORRECTED: Originally miscategorized as Costa Rica."
+  },
+  "canonical_name": "Tres Amigos Mine",
+  "canonical_slug": "tres-amigos-mine",
+  "display_name": "Tres Amigos",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:00:23.000000Z",
+      "operators": [
+        "B. & B. Mining Company",
+        "Noon & Dale"
+      ],
+      "owners": [
+        "Legend Group Ltd."
+      ],
+      "notes": "The mine has had various operators and owners over the years."
+    }
+  }
+}

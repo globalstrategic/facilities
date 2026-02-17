@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.768,
-    "lon": 73.926,
+    "lat": 15.768197,
+    "lon": 73.925961,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minerals & Metals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.088561Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:48:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MM_Kalane_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "MM Kalane Mine",
   "canonical_slug": "mm-kalane-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:48:50.000000Z",
+      "operators": [
+        "Minerals & Metals Ltd"
+      ],
+      "owners": [
+        "Minerals & Metals Ltd"
+      ],
+      "notes": "Minerals & Metals Ltd owns 100% of the mine."
+    }
+  }
 }

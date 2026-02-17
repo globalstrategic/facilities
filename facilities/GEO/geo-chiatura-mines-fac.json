@@ -1,11 +1,11 @@
 {
   "facility_id": "geo-chiatura-mines-fac",
-  "name": "**Chiatura Mines**",
+  "name": "Chiatura Mines",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 42.25,
+    "lon": 43.283,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Georgian Manganese LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.158396",
-      "evidence": "Extracted from operator column: Georgian Manganese LLC (GAA)"
-    }
+    "Chiatura Management Company",
+    "Chiatura Management Company LLC",
+    "Georgian American Alloys, Inc. (GAA)",
+    "Georgian American Eloise",
+    "Georgian Manganese LLC",
+    "Georgian Minerals Mining LLC"
   ],
   "products": [],
   "sources": [
@@ -37,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.723361Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:50:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Chiatura_manganese_deposit. The Chiatura manganese deposit is a significant mining site in Georgia, known for its manganese production"
   },
   "canonical_name": "Chiatura Mines Mine",
   "canonical_slug": "chiatura-mines-mine",
@@ -58,11 +56,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Chiatura Mines** Mine",
+      "name": "Chiatura Mines Mine",
       "from": "2025-10-28T21:01:00.158400",
       "to": "2025-11-04T19:19:01.723357Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Imereti",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:50:48.000000Z",
+      "operators": [
+        "Georgian Manganese LLC",
+        "Chiatura Management Company LLC"
+      ],
+      "owners": [
+        "Georgian American Alloys, Inc. (GAA)",
+        "Georgian Minerals Mining LLC"
+      ],
+      "notes": "Georgian Manganese LLC is the largest mining and ferroalloy manufacturing company in Georgia, and it operates the mines in Chiatura."
+    }
+  }
 }

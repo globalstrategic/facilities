@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "CRI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.85,
+    "lon": -84.65,
+    "precision": "approximate"
   },
   "types": [
     "development"
@@ -21,7 +21,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    "Infinito Gold"
+    "Infinito Gold",
+    "Infinito Gold Ltd"
   ],
   "products": [],
   "sources": [
@@ -32,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.959257Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Crucitas Project, Cutris, San Carlos, Alajuela"
   },
   "canonical_name": "Crucitas Facility",
   "canonical_slug": "crucitas-facility",
@@ -60,15 +61,17 @@
     }
   ],
   "display_name_source": "auto",
-  "province": "Costa Rica",
+  "province": "Alajuela",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:00:01.000000Z",
-      "operators": [],
-      "owners": [
-        "Infinito Gold"
+      "timestamp": "2025-12-02T10:17:42.000000Z",
+      "operators": [
+        "Infinito Gold Ltd"
       ],
-      "notes": "The facility is owned by Infinito Gold."
+      "owners": [
+        "Infinito Gold Ltd"
+      ],
+      "notes": "Infinito Gold Ltd has faced multiple legal challenges and environmental opposition regarding the operation of the mine."
     }
   }
 }

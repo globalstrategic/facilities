@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.995,
-    "lon": -106.979,
+    "lat": 39.470152288081614,
+    "lon": -100.457645,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Navajo Nation",
+    "Navajo Transitional Energy Company LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.877769Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:58:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sheridan (https://www.gem.wiki/Youngs_Creek_Coal_Mine). The Youngs Creek Coal Mine is a proposed coal mine located near Sheridan, Wyoming"
   },
   "canonical_name": "Youngs Creek Coal Mine",
   "canonical_slug": "youngs-creek-coal-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "town": "Sheridan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:58:29.000000Z",
+      "operators": [
+        "Navajo Transitional Energy Company LLC"
+      ],
+      "owners": [
+        "Navajo Transitional Energy Company LLC",
+        "Navajo Nation"
+      ],
+      "notes": "The mine is owned by Navajo Transitional Energy Company, which acquired it from Cloud Peak Energy."
+    }
+  }
 }

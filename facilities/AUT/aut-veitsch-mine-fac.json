@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 47.5783,
+    "lon": 15.4946,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -33,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.395869Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historic and significant magnesite operation for the refractory industry. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Historic and significant magnesite operation for the refractory industry. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Historic magnesite mine, Styria"
   },
   "canonical_name": "Veitsch Mine",
   "canonical_slug": "veitsch-mine",
@@ -56,15 +56,14 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:33:02.000000Z",
+      "timestamp": "2025-12-02T11:13:32.000000Z",
       "operators": [
-        "Veitsch-Radex GmbH & Co. OG",
-        "RHI Magnesita AG"
+        "Veitsch-Radex GmbH & Co. OG"
       ],
       "owners": [
         "RHI Magnesita AG"
       ],
-      "notes": "RHI Magnesita AG is the parent company of Veitsch-Radex."
+      "notes": "Veitsch-Radex is a subsidiary of RHI Magnesita AG, which is the parent company."
     }
   }
 }

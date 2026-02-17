@@ -10,8 +10,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 17.206,
-    "lon": 80.8,
+    "lat": 17.20352062,
+    "lon": 80.79833151,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "The Singareni Collieries Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.134480Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:58:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/JVR_I_%26_II_Coal_Mine. JVR II Coal Mine is part of the JVR I & II Coal Mine complex, which is currently operating"
   },
   "canonical_name": "JVR II Coal Mine",
   "canonical_slug": "jvr-ii-coal-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Telangana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:58:37.000000Z",
+      "operators": [
+        "The Singareni Collieries Co Ltd"
+      ],
+      "owners": [
+        "The Singareni Collieries Co Ltd"
+      ],
+      "notes": "The Singareni Collieries Co Ltd owns and operates the JVR II Coal Mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.585,
-    "lon": -83.213,
+    "lat": 34.48777559529033,
+    "lon": -83.9845723,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Calhoun Mining Company",
+    "John C. Calhoun"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.981525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:47:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dahlonega (https://en.wikipedia.org/wiki/Calhoun_Mine). The Calhoun Mine is located about 3 miles south of Dahlonega, Georgia, off State Route 60"
   },
   "canonical_name": "S 12 Calhoun Mine",
   "canonical_slug": "s-12-calhoun-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Georgia",
+  "town": "Dahlonega",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:47:44.000000Z",
+      "operators": [
+        "Calhoun Mining Company"
+      ],
+      "owners": [
+        "John C. Calhoun"
+      ],
+      "notes": "The mine was historically owned by John C. Calhoun, but current operational status and ownership details are unclear."
+    }
+  }
 }

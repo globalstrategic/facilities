@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.837,
-    "lon": 82.815,
+    "lat": 22.83795,
+    "lon": 82.81401,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Adani Mining",
+    "Rajasthan Rajya Vidyut Utpadan Nigam Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.100798Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:59:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Parsa_East_And_Kanta_Basan_Coal_Mine. The mine is located in the Hasdeo-Arand coalfield"
   },
   "canonical_name": "Parsa East And Kanta Basan Coal Mine",
   "canonical_slug": "parsa-east-and-kanta-basan-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:59:55.000000Z",
+      "operators": [
+        "Adani Mining"
+      ],
+      "owners": [
+        "Rajasthan Rajya Vidyut Utpadan Nigam Ltd"
+      ],
+      "notes": "Adani Mining operates the mine on behalf of the state-run Rajasthan Rajya Vidyut Utpadan Nigam Ltd."
+    }
+  }
 }

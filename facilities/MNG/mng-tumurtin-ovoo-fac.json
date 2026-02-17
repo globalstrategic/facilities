@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 46.788,
-    "lon": 113.322,
+    "lat": 46.7825,
+    "lon": 113.32639,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Nonferrous Metal Industry's Foreign Engineering and Construction Co., Ltd. (NFC)",
+    "Metalimpex Company",
+    "Tsairt Mineral Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.463340Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:24:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nfc.cnmc.com.cn/jsen/gsyw/gzbk/2024/1/I1192430644785840128.html. The Tumurtin-Ovoo Zinc Mine is located under the Ovoo Mountain, 16 km north of Baruun-Urt"
   },
   "canonical_name": "Tumurtin Ovoo Mine",
   "canonical_slug": "tumurtin-ovoo-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sukhbaatar Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:24:01.000000Z",
+      "operators": [
+        "China Nonferrous Metal Industry's Foreign Engineering and Construction Co., Ltd. (NFC)",
+        "Tsairt Mineral Co. Ltd."
+      ],
+      "owners": [
+        "China Nonferrous Metal Industry's Foreign Engineering and Construction Co., Ltd. (NFC)",
+        "Metalimpex Company"
+      ],
+      "notes": "NFC is the investor and general contractor of the Ovoo Zinc Mine, and Tsairt Mineral Co. Ltd. is a joint venture between NFC and Metalimpex."
+    }
+  }
 }

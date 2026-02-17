@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 2.086,
-    "lon": 117.319,
+    "lat": 2.086082,
+    "lon": 117.318843,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Admire Corporation",
+    "Kaltim Jaya Bara"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.197525Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:10:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kaltim_Jaya_Bara_Coal_Mine. Kaltim Jaya Bara Coal Mine is an operating coal mine located in Labanan Jaya, Berau, East Kalimantan, Indonesia"
   },
   "canonical_name": "Kaltim Jaya Bara Coal Mine",
   "canonical_slug": "kaltim-jaya-bara-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:10:22.000000Z",
+      "operators": [
+        "Kaltim Jaya Bara"
+      ],
+      "owners": [
+        "Kaltim Jaya Bara",
+        "Admire Corporation"
+      ],
+      "notes": "Kaltim Jaya Bara is fully owned by Admire Corporation."
+    }
+  }
 }

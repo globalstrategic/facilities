@@ -11,8 +11,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 55.594,
-    "lon": 86.239,
+    "lat": 55.60126086,
+    "lon": 86.24492846,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Severny Kuzbass Coal Company JSC",
+    "Stanislav Lupiy",
+    "TalTEK"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.588206Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:17:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Berezovskaya_Coal_Mine. Berezovskaya coal mine is an operating underground mine"
   },
   "canonical_name": "Berezovskaya Mine",
   "canonical_slug": "berezovskaya-mine",
@@ -54,5 +58,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:17:43.000000Z",
+      "operators": [
+        "Severny Kuzbass Coal Company JSC"
+      ],
+      "owners": [
+        "TalTEK",
+        "Stanislav Lupiy"
+      ],
+      "notes": "TalTEK acquired Severny Kuzbass in 2019 and is in the process of selling it to Stanislav Lupiy."
+    }
+  }
 }

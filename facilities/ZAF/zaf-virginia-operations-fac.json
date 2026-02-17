@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -28.097,
-    "lon": 26.885,
+    "lat": -27.0,
+    "lon": 26.0,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Harmony Gold Mining Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.768567Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:56:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.har.co.za/09/virginia.htm. Virginia Operations include multiple shafts and are part of Harmony Gold's mining activities in the Free State"
   },
   "canonical_name": "Virginia Mine",
   "canonical_slug": "virginia-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Free State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:56:50.000000Z",
+      "operators": [
+        "Harmony Gold Mining Company Limited"
+      ],
+      "owners": [
+        "Harmony Gold Mining Company Limited"
+      ],
+      "notes": "Harmony Gold owns and operates the Virginia Operations."
+    }
+  }
 }

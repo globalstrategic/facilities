@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-zestafoni-ferroalloys-plant-fac",
-  "name": "**Zestafoni Ferroalloys Plant**",
+  "name": "Zestafoni Ferroalloys Plant",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.10556,
+    "lon": 43.03583,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -24,14 +24,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Georgian Manganese LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.174577",
-      "evidence": "Extracted from operator column: Georgian Manganese LLC (GAA)"
-    }
+    "Georgian American Alloys, Inc.",
+    "Georgian Manganese LLC"
   ],
   "products": [],
   "sources": [
@@ -42,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.722232Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Major ferroalloy plant, operating since 1933"
   },
   "canonical_name": "Zestafoni Ferroalloys Processing Plant",
   "canonical_slug": "zestafoni-ferroalloys-processing-plant",
@@ -63,11 +57,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Zestafoni Ferroalloys ** Processing Plant",
+      "name": "Zestafoni Ferroalloys  Processing Plant",
       "from": "2025-10-28T21:01:00.174581",
       "to": "2025-11-04T19:19:01.722228Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Imereti Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:50:04.000000Z",
+      "operators": [
+        "Georgian Manganese LLC"
+      ],
+      "owners": [
+        "Georgian American Alloys, Inc."
+      ],
+      "notes": "Georgian Manganese LLC owns the Zestafoni Ferroalloy Plant through JSC Ferro."
+    }
+  }
 }

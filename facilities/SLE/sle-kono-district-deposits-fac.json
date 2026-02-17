@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SLE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.75,
+    "lon": -11.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -22,7 +22,15 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Emmanuel Momoh",
+    "Koidu Limited",
+    "Meya Mining",
+    "Octea Ltd.",
+    "Pan Africa Rare Mining Company Sierra Leone Limited",
+    "Seawright",
+    "Trustco Resources"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:59.578160Z",
-    "checked_by": "import_pipeline",
-    "notes": "Primary source of coltan in Sierra Leone. Undergoing a transition towards more formalized, industrial processing. 47 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Primary source of coltan in Sierra Leone. Undergoing a transition towards more formalized, industrial processing. 47 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Kono District coltan/tantalum deposits, widespread across district."
   },
   "canonical_name": "Kono Deposits Mine",
   "canonical_slug": "kono-deposits-mine",
@@ -51,5 +59,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Eastern Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:35:28.000000Z",
+      "operators": [
+        "Pan Africa Rare Mining Company Sierra Leone Limited"
+      ],
+      "owners": [
+        "Emmanuel Momoh",
+        "Koidu Limited"
+      ],
+      "notes": "Koidu Limited is mentioned as the only international diamond mining company operating in Kono."
+    }
+  }
 }

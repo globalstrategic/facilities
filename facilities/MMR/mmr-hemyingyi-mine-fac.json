@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": 14.517,
-    "lon": 98.467,
+    "lat": 14.46667,
+    "lon": 98.03333,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Burma Government",
+    "Number 2 Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.873827Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:09:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10207345. Location is approximate, part of the Tenasserim project area"
   },
   "canonical_name": "Hemyingyi Mine",
   "canonical_slug": "hemyingyi-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mon State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:09:52.000000Z",
+      "operators": [
+        "Burma Government",
+        "Number 2 Mining Corporation"
+      ],
+      "owners": [
+        "Burma Government",
+        "Number 2 Mining Corporation"
+      ],
+      "notes": "Ownership is attributed to the government and a mining corporation."
+    }
+  }
 }

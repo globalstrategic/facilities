@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.448,
-    "lon": -110.298,
+    "lat": 36.52667,
+    "lon": -110.43111,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Energy",
+    "Peabody Western Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.964837Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:29:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kayenta_Mine. The Kayenta Mine was a surface coal mine located on the Navajo Nation in northern Arizona"
   },
   "canonical_name": "Kayenta Mine",
   "canonical_slug": "kayenta-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:29:03.000000Z",
+      "operators": [
+        "Peabody Western Coal Company"
+      ],
+      "owners": [
+        "Peabody Energy"
+      ],
+      "notes": "Peabody Western Coal Company is a subsidiary of Peabody Energy."
+    }
+  }
 }

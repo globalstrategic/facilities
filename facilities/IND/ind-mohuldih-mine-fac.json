@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.74425,
-    "lon": 86.14367,
+    "lat": 22.655464288936432,
+    "lon": 86.1164464549838,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,10 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Department of Atomic Energy, Government of India",
+    "Uranium Corporation of India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -24,10 +27,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-20T16:58:41.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:34:27.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Feeds Turamdih Mill | Canonical name+slug generated. Web search geocoded. Source: https://explorenuclear.com/maps/map-of-indian-nuclear-sites/. Coordinates extracted from a reliable source indicating the location of Mohuldih Mine"
+    "notes": "Feeds Turamdih Mill | Canonical name+slug generated. Web search geocoded. Source: https://explorenuclear.com/maps/map-of-indian-nuclear-sites/. Coordinates extracted from a reliable source indicating the location of Mohuldih Mine. Web search geocoded. Source: Calculated from Jaduguda (https://www.wise-uranium.org/uoin.html). Mohuldih Mine is located in the Gamharia block of Seraikella-Kharsawan district, near Jaduguda"
   },
   "canonical_name": "Mohuldih Mine",
   "canonical_slug": "mohuldih-mine",
@@ -43,5 +46,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Jharkhand"
+  "province": "Jharkhand",
+  "town": "Jaduguda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:34:27.000000Z",
+      "operators": [
+        "Uranium Corporation of India Limited"
+      ],
+      "owners": [
+        "Department of Atomic Energy, Government of India"
+      ],
+      "notes": "Uranium Corporation of India Limited operates the mine, which is fully owned by the Department of Atomic Energy."
+    }
+  }
 }

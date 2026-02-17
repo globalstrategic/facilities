@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.602,
-    "lon": -87.14,
+    "lat": 33.602222,
+    "lon": -87.140556,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alaco",
+    "Prospect Mining & Development"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.875649Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:56:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Maxine-Pratt_Coal_Mine. The Maxine-Pratt Coal Mine is an operating coal mine located in Jefferson County, Alabama"
   },
   "canonical_name": "Maxine Pratt Coal Mine",
   "canonical_slug": "maxine-pratt-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:56:14.000000Z",
+      "operators": [
+        "Prospect Mining & Development",
+        "Alaco"
+      ],
+      "owners": [
+        "Alaco"
+      ],
+      "notes": "Prospect Mining & Development operates the mine, while Alaco is both the owner and parent company."
+    }
+  }
 }

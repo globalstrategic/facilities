@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.228,
-    "lon": 117.116,
+    "lat": -0.228293,
+    "lon": 117.11568,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kemilau Rindang Abadi"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.210274Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:21:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KRA_Coal_Mine. KRA Coal Mine is an operating coal mine located in East Kalimantan, Indonesia"
   },
   "canonical_name": "KRA Coal Mine",
   "canonical_slug": "kra-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:21:02.000000Z",
+      "operators": [
+        "Kemilau Rindang Abadi"
+      ],
+      "owners": [
+        "Kemilau Rindang Abadi"
+      ],
+      "notes": "Kemilau Rindang Abadi owns and operates the KRA Coal Mine."
+    }
+  }
 }

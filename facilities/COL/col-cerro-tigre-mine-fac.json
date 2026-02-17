@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 2.4667,
+    "lon": -69.75,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -21,22 +21,12 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "FARC Dissidents",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.196457",
-      "evidence": "Extracted from operator column: FARC Dissidents / Illegal Operators"
-    },
-    {
-      "name": "Illegal Operators",
-      "role": "operator",
-      "source": "Research Import COL 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:39.196464",
-      "evidence": "Extracted from operator column: FARC Dissidents / Illegal Operators"
-    }
+    "BHP Group",
+    "Cerro Matoso S.A.",
+    "FARC",
+    "FARC Dissidents",
+    "Illegal Operators",
+    "South32"
   ],
   "products": [],
   "sources": [
@@ -47,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.741028Z",
-    "checked_by": "import_pipeline",
-    "notes": "**Illegal Operation.** Identified as a major source of conflict-financed tungsten. 43 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Illegal Operation. Identified as a major source of conflict-financed tungsten. 43 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Cerro Tigre (Tiger Hill) illegal tungsten mine in Guainía department, operated by FARC."
   },
   "canonical_name": "Cerro Tigre Facility",
   "canonical_slug": "cerro-tigre-facility",
@@ -74,5 +64,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:19:25.000000Z",
+      "operators": [
+        "FARC"
+      ],
+      "owners": [],
+      "notes": "The mine is associated with illegal operations and not formally recognized."
+    }
+  },
+  "province": "unknown"
 }

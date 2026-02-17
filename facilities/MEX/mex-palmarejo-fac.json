@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.387,
-    "lon": -108.41,
+    "lat": 27.389691845575314,
+    "lon": -108.2603098,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coeur Mexicana, S.A. de C.V.",
+    "Coeur Mining, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.950088Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:28:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Temoris (https://www.nsenergybusiness.com/projects/palmarejo-operations-chihuahua-state-northern-mexico/). The Palmarejo mine is located 15km from the Temoris municipality in Chihuahua"
   },
   "canonical_name": "Palmarejo Mine",
   "canonical_slug": "palmarejo-mine",
@@ -55,5 +58,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "town": "Temoris",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:28:54.000000Z",
+      "operators": [
+        "Coeur Mining, Inc.",
+        "Coeur Mexicana, S.A. de C.V."
+      ],
+      "owners": [
+        "Coeur Mining, Inc."
+      ],
+      "notes": "Coeur Mining operates the Palmarejo complex through its subsidiary Coeur Mexicana."
+    }
+  }
 }

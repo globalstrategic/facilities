@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.415,
-    "lon": -87.835,
+    "lat": 38.41,
+    "lon": -87.83,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Responsible Energy Operations",
+    "Vigo Coal Operating Company",
+    "White Stallion Energy"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.751971Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:28:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-1103064&iframe=yes. The Friendsville Coal Mine is currently active and has been operated by various companies over the years"
   },
   "canonical_name": "Friendsville Coal Mine",
   "canonical_slug": "friendsville-coal-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Illinois",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:28:05.000000Z",
+      "operators": [
+        "Vigo Coal Operating Company",
+        "Responsible Energy Operations"
+      ],
+      "owners": [
+        "White Stallion Energy",
+        "Vigo Coal Operating Company"
+      ],
+      "notes": "The mine has changed operators and owners over time, with the current operator being Responsible Energy Operations."
+    }
+  }
 }

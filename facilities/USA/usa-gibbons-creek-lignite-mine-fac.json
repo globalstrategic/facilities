@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 30.59,
-    "lon": -96.085,
+    "lat": 30.61796036863757,
+    "lon": -96.00977223789944,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "3S Real Estate Investments",
+    "Charah Solutions",
+    "Gibbons Creek Environmental Redevelopment Group",
+    "Texas Municipal Power Agency"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.908309Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:42:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from College Station (https://theeagle.com/article_28002cd4-e685-11eb-84aa-3763907dc6c1.html). The Gibbons Creek Lignite Mine is located in Grimes County, Texas, and was operational from 1982 to 1996. It is currently undergoing decommissioning and remediation"
   },
   "canonical_name": "Gibbons Creek Lignite Mine",
   "canonical_slug": "gibbons-creek-lignite-mine",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "town": "College Station",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:42:29.000000Z",
+      "operators": [
+        "Texas Municipal Power Agency"
+      ],
+      "owners": [
+        "3S Real Estate Investments",
+        "Charah Solutions",
+        "Gibbons Creek Environmental Redevelopment Group"
+      ],
+      "notes": "The mine was previously owned and operated by the Texas Municipal Power Agency (TMPA) and is now in the process of being transferred to 3S Real Estate Investments."
+    }
+  }
 }

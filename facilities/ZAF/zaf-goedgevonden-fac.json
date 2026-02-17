@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.098,
-    "lon": 29.074,
+    "lat": -26.10241,
+    "lon": 29.0801,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Ltd",
+    "Glencore Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.723729Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:16:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Goedgevonden_mine. Goedgevonden Coal Mine is a significant coal producer in South Africa with substantial reserves"
   },
   "canonical_name": "Goedgevonden Mine",
   "canonical_slug": "goedgevonden-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:16:02.000000Z",
+      "operators": [
+        "African Rainbow Minerals Ltd",
+        "Glencore Plc"
+      ],
+      "owners": [
+        "African Rainbow Minerals Ltd",
+        "Glencore Plc"
+      ],
+      "notes": "The mine is a joint venture between African Rainbow Minerals and Glencore."
+    }
+  }
 }

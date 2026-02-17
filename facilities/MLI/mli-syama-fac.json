@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MLI",
   "location": {
-    "lat": 10.79,
-    "lon": -6.071,
+    "lat": 10.79306,
+    "lon": -6.06,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Mali",
+    "Resolute Mining Ltd.",
+    "Société des Mines de Syama S.A. (SOMISY)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:03.878966Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:01:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Syama_Hybrid_Power_Station. Coordinates extracted from the Syama Hybrid Power Station, which is associated with the Syama Gold Mine"
   },
   "canonical_name": "Syama Mine",
   "canonical_slug": "syama-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sikasso Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:01:00.000000Z",
+      "operators": [
+        "Resolute Mining Ltd."
+      ],
+      "owners": [
+        "Société des Mines de Syama S.A. (SOMISY)",
+        "Government of Mali"
+      ],
+      "notes": "Resolute Mining holds an 80% interest in SOMISY, while the Government of Mali holds the remaining 20%."
+    }
+  }
 }

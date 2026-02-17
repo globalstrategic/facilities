@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NCL",
   "location": {
-    "lat": -23.488,
-    "lon": 120.271,
+    "lat": -21.008,
+    "lon": 164.73,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore",
+    "Koniambo Nickel SAS (KNS)",
+    "Société Minière du Sud Pacifique (SMSP)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.372917Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:34:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Koniambo_mine. The Koniambo mine is located in the North Province of New Caledonia and has faced operational challenges"
   },
   "canonical_name": "Coobina Mine",
   "canonical_slug": "coobina-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:10.000000Z",
+      "operators": [
+        "Koniambo Nickel SAS (KNS)"
+      ],
+      "owners": [
+        "Société Minière du Sud Pacifique (SMSP)",
+        "Glencore"
+      ],
+      "notes": "KNS is a joint venture between SMSP and Glencore, with SMSP holding a 51% stake."
+    }
+  }
 }

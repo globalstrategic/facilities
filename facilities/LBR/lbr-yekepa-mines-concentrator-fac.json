@@ -1,11 +1,11 @@
 {
   "facility_id": "lbr-yekepa-mines-concentrator-fac",
-  "name": "**Yekepa Mines & Concentrator**",
+  "name": "Yekepa Mines & Concentrator",
   "aliases": [],
   "country_iso3": "LBR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.508302613431518,
+    "lon": -8.566497990426296,
     "precision": "unknown"
   },
   "types": [
@@ -26,22 +26,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%",
-      "role": "operator",
-      "source": "Research Import LBR 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T13:09:06.566263",
-      "evidence": "Extracted from operator column: ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%; Govt. of Liberia, 15%)"
-    },
-    {
-      "name": "Govt. of Liberia, 15%)",
-      "role": "operator",
-      "source": "Research Import LBR 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T13:09:06.566274",
-      "evidence": "Extracted from operator column: ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%; Govt. of Liberia, 15%)"
-    }
+    "ArcelorMittal",
+    "ArcelorMittal Liberia",
+    "ArcelorMittal Liberia Ltd. (ArcelorMittal, 85%",
+    "Govt. of Liberia, 15%)"
   ],
   "products": [],
   "sources": [
@@ -52,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:17.724429Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:08:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sanniquellie (https://frontpageafricaonline.com/news/liberia-government-retains-arcelormittal-liberia-as-operator-of-yekepa-buchanan-railway-after-months-of-negotiations/). Yekepa Mines & Concentrator is part of ArcelorMittal Liberia's operations, which includes a significant expansion project"
   },
   "canonical_name": "Yekepa Mines & Processing Plant",
   "canonical_slug": "yekepa-mines-processing-plant",
@@ -73,11 +61,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Yekepa Mines & ** Processing Plant",
+      "name": "Yekepa Mines &  Processing Plant",
       "from": "2025-10-29T13:09:06.566279",
       "to": "2025-11-04T19:19:17.724426Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nimba County",
+  "town": "Sanniquellie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:08:05.000000Z",
+      "operators": [
+        "ArcelorMittal Liberia"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal is the largest private investor in Liberia and is actively operating the Yekepa facility."
+    }
+  }
 }

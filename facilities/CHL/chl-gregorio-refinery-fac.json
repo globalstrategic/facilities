@@ -1,0 +1,90 @@
+{
+  "facility_id": "chl-gregorio-refinery-fac",
+  "name": "Gregorio Refinery",
+  "aliases": [
+    "Refineria Gregorio",
+    "ENAP Gregorio"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -52.57,
+    "lon": -70.07,
+    "precision": "district"
+  },
+  "types": [
+    "refinery"
+  ],
+  "commodities": [
+    {
+      "metal": "Crude Oil",
+      "primary": true
+    },
+    {
+      "metal": "Natural Gas",
+      "primary": false
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "ENAP",
+    "Empresa Nacional del Petróleo"
+  ],
+  "products": [
+    "refined petroleum products",
+    "natural gas"
+  ],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:21.781316"
+    },
+    {
+      "type": "manual_correction",
+      "id": "data_quality_fix",
+      "date": "2025-12-18T00:00:00.000000Z"
+    }
+  ],
+  "verification": {
+    "status": "manually_verified",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T00:00:00.000000Z",
+    "checked_by": "manual_review",
+    "notes": "Corrected from conflated record. Original 'Gregoria' was misspelling of Gregorio Refinery. Removed incorrect aliases (Faride, El Bronce) which are separate facilities. ENAP operates Gregorio Refinery for crude oil processing in Magallanes region."
+  },
+  "canonical_name": "Gregorio Refinery",
+  "canonical_slug": "gregorio-refinery",
+  "display_name": "Gregorio Refinery",
+  "primary_type": "refinery",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.85,
+    "flags": {
+      "town_missing": false,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "manual",
+  "province": "Magallanes y de la Antartica Chilena",
+  "town": "San Gregorio",
+  "enrichment_notes": {
+    "correction_notes": {
+      "timestamp": "2025-12-18T00:00:00.000000Z",
+      "original_name": "Gregoria",
+      "original_aliases": ["Gregoria", "Faride", "El Bronce"],
+      "issue": "Record conflated oil refinery with two unrelated gold mines",
+      "resolution": "Corrected to Gregorio Refinery (ENAP oil facility). Faride mine created as separate facility. El Bronce already exists as chl-el-bronce-mine-fac.json"
+    },
+    "web_search_companies": {
+      "timestamp": "2025-12-18T00:00:00.000000Z",
+      "operators": [
+        "ENAP"
+      ],
+      "owners": [
+        "Empresa Nacional del Petróleo"
+      ],
+      "notes": "ENAP (Empresa Nacional del Petróleo) is Chile's state-owned oil company. Gregorio Refinery is one of three ENAP refineries along with Aconcagua and Bío Bío."
+    }
+  }
+}

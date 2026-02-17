@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 49.579,
-    "lon": 107.224,
+    "lat": 49.579129,
+    "lon": 107.224148,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdes Group LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.453329Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:17:10.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Erdes_Tumurtei_Gol_Mine. Coordinates are approximate for the Erdes Tumurtei Gol Mine"
   },
   "canonical_name": "Erdes Tumurtei Gol Mine",
   "canonical_slug": "erdes-tumurtei-gol-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Selenge",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:17:10.000000Z",
+      "operators": [
+        "Erdes Group LLC"
+      ],
+      "owners": [
+        "Erdes Group LLC"
+      ],
+      "notes": "Erdes Group LLC owns 100% of the mine."
+    }
+  }
 }

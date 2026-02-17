@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.773,
-    "lon": -79.938,
+    "lat": 39.89987786133917,
+    "lon": -79.9559437,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Consol Energy Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.935421Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:03:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Morgantown (https://en.wikipedia.org/wiki/Consol_Energy). The facility is associated with Consol Energy, which has faced environmental issues related to its operations in the Dunkard area"
   },
   "canonical_name": "Dunkard Strip Mine",
   "canonical_slug": "dunkard-strip-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Morgantown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:03:47.000000Z",
+      "operators": [
+        "Consol Energy Inc."
+      ],
+      "owners": [
+        "Consol Energy Inc."
+      ],
+      "notes": "Consol Energy is a subsidiary focused on coal mining and natural gas production."
+    }
+  }
 }

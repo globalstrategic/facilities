@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 43.848,
-    "lon": 142.098,
+    "lat": 43.221,
+    "lon": 141.909,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hokkaido Colliery and Railway Company (Hokutan)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.031343Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:28:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Hokutan_Horonai_coal_mine. The Horonai coal mine is the oldest mine of the Ishikari coalfield in the Sorachi region of Hokkaido, Japan"
   },
   "canonical_name": "Horonari Mine",
   "canonical_slug": "horonari-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hokkaido",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:28:45.000000Z",
+      "operators": [
+        "Hokkaido Colliery and Railway Company (Hokutan)"
+      ],
+      "owners": [],
+      "notes": "The mine was managed by Hokutan until its closure in 1989."
+    }
+  }
 }

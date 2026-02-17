@@ -9,8 +9,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 21.022,
-    "lon": -101.189,
+    "lat": 21.015857609890165,
+    "lon": -101.15664861103558,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Guanajuato Silver Company, Ltd.",
+    "Obras Mineras El Pinguico S.A. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.961119Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:37:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guanajuato city (https://miningdataonline.com/property/509/El-Cubo-Mine.aspx). The El Cubo Mine is located approximately 10km east of Guanajuato city"
   },
   "canonical_name": "Peregrina El Cubo Mine",
   "canonical_slug": "peregrina-el-cubo-mine",
@@ -60,5 +63,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guanajuato",
+  "town": "Guanajuato city",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:37:27.000000Z",
+      "operators": [
+        "Obras Mineras El Pinguico S.A. de C.V."
+      ],
+      "owners": [
+        "Guanajuato Silver Company, Ltd."
+      ],
+      "notes": "Guanajuato Silver Company owns 100% of the El Cubo mine through its subsidiary, Obras Mineras El Pinguico."
+    }
+  }
 }

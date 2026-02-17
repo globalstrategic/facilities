@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 36.3445,
+    "lon": 58.67875,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Khorasan Steel Complex",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.754053",
-      "evidence": "Extracted from operator column: Khorasan Steel Complex"
-    }
+    "Khorasan Steel Complex",
+    "Khorasan Steel Complex Co",
+    "Khorasan Steel Complex Company",
+    "Ministry of Industries & Mines (Iran)"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.450042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:02:11Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:02:11Z] Geocoded via web search. Coords: (36.3445, 58.67875). Confidence: 0.90. Notes: Coordinates were extracted directly from the mining facility's location details."
   },
   "canonical_name": "Khorasan Steel Mine",
   "canonical_slug": "khorasan-steel-mine",
@@ -51,5 +47,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Razavi Khorasan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:25:28.000000Z",
+      "operators": [
+        "Khorasan Steel Complex Company"
+      ],
+      "owners": [
+        "Ministry of Industries & Mines (Iran)"
+      ],
+      "notes": "The company is publicly traded and is the third largest steel producer in Iran."
+    }
+  }
 }

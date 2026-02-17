@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MRT",
   "location": {
-    "lat": 22.945,
-    "lon": -12.047,
+    "lat": 22.939207,
+    "lon": -12.043887,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arab Mining Co",
+    "Government of Mauritania",
+    "Kia Corp",
+    "Société Nationale Industrielle et Minière (SNIM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.922498Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:29:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SNIM_M%27Haoudat_Mine. The SNIM M'Haoudat Mine is an iron ore mine located in the Tiris Zemmour region of Mauritania"
   },
   "canonical_name": "Snim M'haoudat Mine",
   "canonical_slug": "snim-m-haoudat-mine",
@@ -59,5 +64,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tiris Zemmour",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:29:50.000000Z",
+      "operators": [
+        "Société Nationale Industrielle et Minière (SNIM)"
+      ],
+      "owners": [
+        "Government of Mauritania",
+        "Kia Corp",
+        "Arab Mining Co"
+      ],
+      "notes": "SNIM is the primary operator and owner of the mine, with the government holding a majority stake."
+    }
+  }
 }

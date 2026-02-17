@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NAM",
   "location": {
-    "lat": -22.948,
-    "lon": 17.084,
+    "lat": -23.03378997736691,
+    "lon": 17.0857421,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Oamites Mining Company Pty. Ltd.",
+    "Otis Trading Enterprises of Namibia",
+    "Sinco Investments Ninety-Eight (Pty) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:14.551909Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:46:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Windhoek (https://www.robertson-geo.com/blog/2024/07/08/copper-mining-in-namibia/). The Oamites Copper Project is located 50 km south of Windhoek and is in the development phase"
   },
   "canonical_name": "Oamites Mine",
   "canonical_slug": "oamites-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Khomas",
+  "town": "Windhoek",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:46:58.000000Z",
+      "operators": [
+        "Otis Trading Enterprises of Namibia"
+      ],
+      "owners": [
+        "Sinco Investments Ninety-Eight (Pty) Ltd",
+        "Oamites Mining Company Pty. Ltd."
+      ],
+      "notes": "Otis Trading Enterprises was contracted for geophysical testing by Sinco Investments."
+    }
+  }
 }

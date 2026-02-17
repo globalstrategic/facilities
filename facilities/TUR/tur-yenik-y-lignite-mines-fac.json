@@ -7,8 +7,8 @@
   ],
   "country_iso3": "TUR",
   "location": {
-    "lat": 37.163,
-    "lon": 27.889,
+    "lat": 37.141,
+    "lon": 27.87275,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "IC Holding",
+    "Limak Holding",
+    "Yenikoy Kemerkoy Elektrik Uretim Ve Ticaret AŞ"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.311074Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:27:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Yenik%C3%B6y_power_station. The Yeniköy Lignite Mines are associated with the Yeniköy power station, which is operational and burns locally mined lignite"
   },
   "canonical_name": "Yenikã Y Lignite Mines Mine",
   "canonical_slug": "yenikay-lignite-mines-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Muğla",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:27:54.000000Z",
+      "operators": [
+        "Yenikoy Kemerkoy Elektrik Uretim Ve Ticaret AŞ"
+      ],
+      "owners": [
+        "IC Holding",
+        "Limak Holding"
+      ],
+      "notes": "The facility is owned by a joint venture between IC Holding and Limak Holding."
+    }
+  }
 }

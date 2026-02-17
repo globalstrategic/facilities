@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 44.19977,
+    "lon": 110.01874,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Denison Mines Corp.",
+    "Denison Mines Ltd",
+    "Geologorazvedka",
+    "Mon-Atom",
+    "Monatom",
+    "Uranium Industry a.s."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.454221Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Gurvan Saihan uranium JV. Coords: (44.19977, 110.01874)"
   },
   "canonical_name": "Gurvan Saihan JV Deposits Facility",
   "canonical_slug": "gurvan-saihan-jv-deposits-facility",
@@ -55,5 +62,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Gobi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:43:17.000000Z",
+      "operators": [
+        "Denison Mines Corp.",
+        "Uranium Industry a.s."
+      ],
+      "owners": [
+        "Denison Mines Corp.",
+        "Mon-Atom",
+        "Geologorazvedka"
+      ],
+      "notes": "Denison Mines holds a 70% interest in the joint venture, with Mon-Atom and Geologorazvedka holding 15% and 15% respectively."
+    }
+  }
 }

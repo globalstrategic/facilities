@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 72.745,
-    "lon": 82.679,
+    "lat": 72.88121430347356,
+    "lon": 80.5227886,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "AEON Corporation",
+    "Severnaya Zvezda LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.661891Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:16:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dikson (https://www.gem.wiki/Syradasaysky_Coal_Mine). The Syradasaysky Coal Mine is a proposed surface mine located in the Taymyr peninsula of Russia"
   },
   "canonical_name": "Syradasaysky Coal Mine",
   "canonical_slug": "syradasaysky-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Krasnoyarsk Krai",
+  "town": "Dikson",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:16:28.000000Z",
+      "operators": [
+        "Severnaya Zvezda LLC"
+      ],
+      "owners": [
+        "AEON Corporation"
+      ],
+      "notes": "Severnaya Zvezda LLC is a subsidiary of AEON Corporation, owned by businessman Roman Trotsenko."
+    }
+  }
 }

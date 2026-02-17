@@ -12,8 +12,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -16.531,
-    "lon": -71.591,
+    "lat": -16.5,
+    "lon": -71.5,
     "precision": "site"
   },
   "types": [
@@ -34,7 +34,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañia de Minas Buenaventura S.A.A.",
+    "Compañía de Minas Buenaventura",
+    "Freeport-McMoRan",
+    "Freeport-McMoRan Inc.",
+    "SMM Cerro Verde Netherlands",
+    "Sociedad Minera Cerro Verde S.A.A.",
+    "Sumitomo Metal Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.324860Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:14:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/159/Cerro-Verde-Complex.aspx. Cerro Verde is located approximately 30 km from Arequipa, Peru. Web search geocoded. Source: https://www.mining-technology.com/projects/cerro-verde-copper-molybdenum-mine/. Cerro Verde is a copper and molybdenum mining complex located 32km south-west of Arequipa"
   },
   "canonical_name": "Cerro Verde Mine",
   "canonical_slug": "cerro-verde-mine",
@@ -63,5 +71,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arequipa Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:14:16.000000Z",
+      "operators": [
+        "Freeport-McMoRan"
+      ],
+      "owners": [
+        "Freeport-McMoRan",
+        "SMM Cerro Verde Netherlands",
+        "Compañía de Minas Buenaventura"
+      ],
+      "notes": "Freeport-McMoRan owns 53.56%, SMM Cerro Verde Netherlands owns 21%, and Compañía de Minas Buenaventura owns 19.58%."
+    }
+  }
 }

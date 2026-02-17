@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.44,
-    "lon": 115.841,
+    "lat": -0.4401282,
+    "lon": 115.8414864,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Borneo Olah Sarana Sukses Tbk",
+    "PT Pratama Bersama"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.205953Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:17:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Pratama_Bersama_Coal_Mine. Pratama Bersama Coal Mine is an operating coal mine located in Muara Pahu, Kutai Barat, East Kalimantan, Indonesia"
   },
   "canonical_name": "Pratama Bersama Coal Mine",
   "canonical_slug": "pratama-bersama-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:17:09.000000Z",
+      "operators": [
+        "PT Pratama Bersama"
+      ],
+      "owners": [
+        "PT Borneo Olah Sarana Sukses Tbk"
+      ],
+      "notes": "PT Pratama Bersama is the operator and is fully owned by PT Borneo Olah Sarana Sukses Tbk, which holds a 32.8% stake."
+    }
+  }
 }

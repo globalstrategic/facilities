@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 40.268,
-    "lon": 125.18,
+    "lat": 40.268155,
+    "lon": 125.179561,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Suncheon District Coal Mine Association Enterprise"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.352416Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:34:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Cheonseong_Youth_Coal_Mine. Cheonseong Youth Coal Mine is part of the Suncheon Coal mine Complex"
   },
   "canonical_name": "Cheonseong Youth Coal Mine",
   "canonical_slug": "cheonseong-youth-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Pyongan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:34:22.000000Z",
+      "operators": [
+        "Suncheon District Coal Mine Association Enterprise"
+      ],
+      "owners": [
+        "Suncheon District Coal Mine Association Enterprise"
+      ],
+      "notes": "The mine is fully owned by the Suncheon District Coal Mine Association Enterprise."
+    }
+  }
 }

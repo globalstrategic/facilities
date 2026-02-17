@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.12583,
-    "lon": 27.75056,
+    "lat": -26.1,
+    "lon": 27.4,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gencor Group",
+    "General Mining & Finance Corporation Ltd.",
+    "West Rand Consolidated Mines Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +34,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:16:22.000000Z",
+    "last_checked": "2025-12-01T17:36:04.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-26188.html. Coordinates extracted from the location of West Rand Consolidated Mine, which is in close proximity to Krugersdorp"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-26188.html. Coordinates extracted from the location of West Rand Consolidated Mine, which is in close proximity to Krugersdorp. Web search geocoded. Source: https://thediggings.com/mines/21418. West Rand Consolidated Mine is located near Johannesburg, within the Mogale City Local Municipality"
   },
   "canonical_name": "West Rand Consolidated Lease Mine",
   "canonical_slug": "west-rand-consolidated-lease-mine",
@@ -48,5 +52,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gauteng"
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:36:04.000000Z",
+      "operators": [
+        "West Rand Consolidated Mines Ltd."
+      ],
+      "owners": [
+        "Gencor Group",
+        "General Mining & Finance Corporation Ltd.",
+        "West Rand Consolidated Mines Ltd."
+      ],
+      "notes": "Multiple companies have ownership interests in the mine."
+    }
+  }
 }

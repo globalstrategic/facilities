@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-spherical-graphite-plant-fac",
-  "name": "**Spherical Graphite Plant**",
+  "name": "Spherical Graphite Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 35.82,
+    "lon": 127.15,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Carbon New Materials Co.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.523755",
-      "evidence": "Extracted from operator column: Carbon New Materials Co. (tentative)"
-    }
+    "Carbon New Materials Co.",
+    "Posco Future M Co.",
+    "Posco Future M Company",
+    "Posco Holdings Inc",
+    "Posco Holdings Inc."
   ],
   "products": [],
   "sources": [
@@ -32,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.757839Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A strategic project to localize production of spherical graphite, ending reliance on China. 40 | Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:48:37Z",
+    "checked_by": "web_search_manual",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A strategic project to localize production of spherical graphite, ending reliance on China. 40 | Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:05:04Z] No specific geographic coordinates were provided for the Spherical Graphite Plant in the search results. | [NULL-ISLAND-FIX 2025-12-18T00:48:37Z] Geocoded via web search. Coords: (35.82, 127.15). Confidence: 0.50. Source: North Jeolla Province center"
   },
   "canonical_name": "Spherical Graphite Processing Plant",
   "canonical_slug": "spherical-graphite-processing-plant",
@@ -53,11 +50,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Spherical Graphite ** Processing Plant",
+      "name": "Spherical Graphite  Processing Plant",
       "from": "2025-10-29T12:22:53.523758",
       "to": "2025-11-04T19:19:18.757836Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Jeolla Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:03:29.000000Z",
+      "operators": [
+        "Posco Future M Co."
+      ],
+      "owners": [
+        "Posco Holdings Inc."
+      ],
+      "notes": "Posco Future M is a subsidiary of Posco Holdings Inc."
+    }
+  }
 }

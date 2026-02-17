@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.356,
-    "lon": -103.766,
+    "lat": 44.57,
+    "lon": -103.5311,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Goldstake Exploration Co.",
+    "Homestake Mining Co.",
+    "Strawberry Hill Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.887269Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:06:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10226270/. The Whitewood Creek facility is a past producer of gold located in Meade County, South Dakota"
   },
   "canonical_name": "Whitewood Creek Mine",
   "canonical_slug": "whitewood-creek-mine",
@@ -53,5 +57,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Dakota",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:06:29.000000Z",
+      "operators": [
+        "Homestake Mining Co.",
+        "Goldstake Exploration Co."
+      ],
+      "owners": [
+        "Strawberry Hill Mining",
+        "Homestake Mining Co.",
+        "Goldstake Exploration Co."
+      ],
+      "notes": "The facility has multiple owners with varying percentages of ownership, and it was previously operated by Homestake Mining Co."
+    }
+  }
 }

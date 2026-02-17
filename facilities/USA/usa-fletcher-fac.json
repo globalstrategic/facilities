@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.467,
-    "lon": -91.11,
+    "lat": 35.89901278169278,
+    "lon": -94.1885387,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Doe Run Company",
+    "St. Joe Minerals Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.821017Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:13:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from West Fork (https://www.mindat.org/loc-11180.html). The Fletcher Mine is an underground lead-zinc mine located near West Fork, Missouri"
   },
   "canonical_name": "Fletcher Mine",
   "canonical_slug": "fletcher-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Missouri",
+  "town": "West Fork",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:13:18.000000Z",
+      "operators": [
+        "Doe Run Company"
+      ],
+      "owners": [
+        "St. Joe Minerals Corporation",
+        "Doe Run Company"
+      ],
+      "notes": "The mine was once owned by St. Joe Minerals Corporation and later by Doe Run Company."
+    }
+  }
 }

@@ -5,7 +5,7 @@
   "country_iso3": "LUX",
   "location": {
     "lat": 49.529,
-    "lon": null,
+    "lon": 6.1,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,7 @@
   ],
   "commodities": [
     {
-      "metal": "**iron ore**",
+      "metal": "iron ore",
       "primary": true
     },
     {
@@ -23,30 +23,10 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Camille Mines",
-      "role": "operator",
-      "source": "Research Import LUX 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T23:29:48.159096",
-      "evidence": "Extracted from operator column: Camille Mines; MMRA; Soc. Minières Prince-Henri 22"
-    },
-    {
-      "name": "MMRA",
-      "role": "operator",
-      "source": "Research Import LUX 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T23:29:48.159105",
-      "evidence": "Extracted from operator column: Camille Mines; MMRA; Soc. Minières Prince-Henri 22"
-    },
-    {
-      "name": "Soc. Minières Prince-Henri 22",
-      "role": "operator",
-      "source": "Research Import LUX 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T23:29:48.159108",
-      "evidence": "Extracted from operator column: Camille Mines; MMRA; Soc. Minières Prince-Henri 22"
-    }
+    "Camille Mines",
+    "MMRA",
+    "Minett Park Fond-de-Gras Association",
+    "Soc. Minières Prince-Henri 22"
   ],
   "products": [],
   "sources": [
@@ -61,7 +41,7 @@
     "confidence": 0.8,
     "last_checked": "2025-11-04T19:19:20.093208Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=6.1 (was null)"
   },
   "canonical_name": "Minett Park Fond De Gras Facility",
   "canonical_slug": "minett-park-fond-de-gras-facility",
@@ -84,5 +64,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Luxembourg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:59:58.000000Z",
+      "operators": [
+        "Minett Park Fond-de-Gras Association"
+      ],
+      "owners": [],
+      "notes": "The facility is operated by the Minett Park Fond-de-Gras Association, which collaborates with local municipalities."
+    }
+  }
 }

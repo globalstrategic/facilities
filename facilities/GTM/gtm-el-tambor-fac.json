@@ -6,9 +6,9 @@
   ],
   "country_iso3": "GTM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 14.61624,
+    "lon": -91.61466,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -23,14 +23,12 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "Exploraciones Mineras de Guatemala S.A.",
-      "role": "operator",
-      "source": "Research Import GTM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:33.497759",
-      "evidence": "Extracted from operator column: Exploraciones Mineras de Guatemala S.A. (Kappes, Cassiday & Associates)"
-    }
+    "Exmingua",
+    "Exploraciones Mineras de Guatemala S.A.",
+    "Exploraciones Mineras de Guatemala, SA (Exmingua)",
+    "Kappes, Cassiday & Associates",
+    "Kappes, Cassiday & Associates (KCA)",
+    "Radius Gold"
   ],
   "products": [],
   "sources": [
@@ -41,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.706687Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:10:30Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:10:30Z] Geocoded via web search. Coords: (14.61624, -91.61466). Confidence: 0.90. Notes: Coordinates extracted from the El Tambor River entry, which is located in Guatemala."
   },
   "canonical_name": "El Tambor Mine",
   "canonical_slug": "el-tambor-mine",
@@ -60,5 +58,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guatemala",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:44:36.000000Z",
+      "operators": [
+        "Kappes, Cassiday & Associates",
+        "Exploraciones Mineras de Guatemala, SA (Exmingua)"
+      ],
+      "owners": [
+        "Kappes, Cassiday & Associates",
+        "Radius Gold"
+      ],
+      "notes": "KCA is the parent company of Exmingua, which operates the mine. Radius Gold retains a royalty interest."
+    }
+  }
 }

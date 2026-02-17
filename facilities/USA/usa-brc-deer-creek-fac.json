@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.626,
-    "lon": -111.176,
+    "lat": 39.3,
+    "lon": -110.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energy West Mining Co.",
+    "MidAmerican Energy",
+    "PacifiCorp"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.950015Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T23:15:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Deer_Creek_Mine. The Deer Creek Mine is located in Deer Creek Canyon, a canyon leading off Huntington main canyon, to the south, and eleven miles west of Huntington"
   },
   "canonical_name": "BRC Deer Creek Mine",
   "canonical_slug": "brc-deer-creek-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:15:45.000000Z",
+      "operators": [
+        "Energy West Mining Co."
+      ],
+      "owners": [
+        "PacifiCorp",
+        "MidAmerican Energy"
+      ],
+      "notes": "The mine was acquired by PacifiCorp in 1977 and was closed in 2015 due to rising operational costs."
+    }
+  }
 }

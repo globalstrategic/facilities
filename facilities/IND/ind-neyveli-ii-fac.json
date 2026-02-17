@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 11.521,
-    "lon": 79.476,
+    "lat": 11.490786614399054,
+    "lon": 79.4824392,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "NLC India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.067129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:30:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Neyveli (https://www.company-histories.com/Neyveli-Lignite-Corporation-Ltd-Company-History.html). Mine II is located approximately five kilometers south of the original mine in Neyveli"
   },
   "canonical_name": "Neyveli II Mine",
   "canonical_slug": "neyveli-ii-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tamil Nadu",
+  "town": "Neyveli",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:30:26.000000Z",
+      "operators": [
+        "NLC India Limited"
+      ],
+      "owners": [
+        "NLC India Limited"
+      ],
+      "notes": "NLC India Limited is the primary operator and owner of the Neyveli II facility."
+    }
+  }
 }

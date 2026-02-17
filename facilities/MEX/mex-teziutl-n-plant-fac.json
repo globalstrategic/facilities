@@ -5,7 +5,7 @@
   "country_iso3": "MEX",
   "location": {
     "lat": 19.816,
-    "lon": null,
+    "lon": -102.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Autlán"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,7 +34,7 @@
     "confidence": 0.8,
     "last_checked": "2025-11-04T19:19:21.970290Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-102.0 (was null)"
   },
   "canonical_name": "Teziutlán Plant",
   "canonical_slug": "teziutlan-plant",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puebla",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:56:23.000000Z",
+      "operators": [
+        "Autlán"
+      ],
+      "owners": [
+        "Autlán"
+      ],
+      "notes": "Autlán acquired the plant in 1973 and has modernized it since."
+    }
+  }
 }

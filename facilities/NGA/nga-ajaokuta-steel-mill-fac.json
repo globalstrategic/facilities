@@ -6,9 +6,9 @@
   ],
   "country_iso3": "NGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 7.5623,
+    "lon": 6.655,
+    "precision": "town"
   },
   "types": [
     "plant"
@@ -20,7 +20,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ajaokuta Steel Company Limited (ASCL)",
+    "Federal Government of Nigeria",
+    "Global Infrastructure Holdings Limited (GIHL)",
+    "Ispat Steel",
+    "Novostal M",
+    "Proforce Manufacturing Limited",
+    "Tyazhpromexport (TPE)"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.813331Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:04:37Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:04:37Z] Ajaokuta Steel Mill, Kogi State. Coords: (7.5623, 6.655)"
   },
   "canonical_name": "Ajaokuta Steel Smelter",
   "canonical_slug": "ajaokuta-steel-smelter",
@@ -49,5 +57,23 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kogi State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:28:50.000000Z",
+      "operators": [
+        "Global Infrastructure Holdings Limited (GIHL)",
+        "Ispat Steel",
+        "Tyazhpromexport (TPE)",
+        "Novostal M",
+        "Proforce Manufacturing Limited"
+      ],
+      "owners": [
+        "Ajaokuta Steel Company Limited (ASCL)",
+        "Federal Government of Nigeria"
+      ],
+      "notes": "The facility has undergone multiple ownership changes and concession agreements, with the Federal Government retaining ownership."
+    }
+  }
 }

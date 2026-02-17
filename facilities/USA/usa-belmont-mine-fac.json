@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.036,
-    "lon": -80.974,
+    "lat": 33.2925,
+    "lon": -111.0951,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Belmont Copper Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.780672Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:53:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/22590. The Belmont Mine is located near the town of Superior in Arizona, within the Pioneer Mining District"
   },
   "canonical_name": "Belmont Mine",
   "canonical_slug": "belmont-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:53:46.000000Z",
+      "operators": [
+        "Belmont Copper Mining Company"
+      ],
+      "owners": [
+        "Belmont Copper Mining Company"
+      ],
+      "notes": "The mine has had various owners and operators throughout its history."
+    }
+  }
 }

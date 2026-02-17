@@ -20,8 +20,8 @@
   ],
   "country_iso3": "ITA",
   "location": {
-    "lat": 39.21,
-    "lon": 8.41,
+    "lat": 39.21167,
+    "lon": 8.40583,
     "precision": "site"
   },
   "types": [
@@ -59,7 +59,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore International A.G.",
+    "Portovesme s.r.l."
+  ],
   "products": [],
   "sources": [
     {
@@ -69,11 +72,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:00.369276Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:13:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Portovesme%20-%20Sardinia.htm. Coordinates extracted from the facility's description"
   },
   "canonical_name": "Porto Vesme Smelter",
   "canonical_slug": "porto-vesme-smelter",
@@ -88,5 +91,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Carbonia-Iglesias",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:13:13.000000Z",
+      "operators": [
+        "Portovesme s.r.l."
+      ],
+      "owners": [
+        "Glencore International A.G."
+      ],
+      "notes": "Portovesme s.r.l. is a wholly owned subsidiary of Glencore International Plc."
+    }
+  }
 }

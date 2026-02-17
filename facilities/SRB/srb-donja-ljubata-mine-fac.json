@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SRB",
   "location": {
-    "lat": 42.4983,
-    "lon": 22.3431,
+    "lat": 42.50273,
+    "lon": 22.34081,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:19.516578Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:06:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Donja_Ljubata_mine. The Donja Ljubata mine is one of the largest graphite mines in Serbia, located in the Pčinja District"
   },
   "canonical_name": "Donja Ljubata Facility",
   "canonical_slug": "donja-ljubata-facility",
@@ -55,5 +55,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pčinja District"
 }

@@ -6,9 +6,9 @@
   ],
   "country_iso3": "HND",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 13.1,
+    "lon": -86.9,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -23,14 +23,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Inception Mining",
-      "role": "operator",
-      "source": "Research Import HND 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:19:40.519829",
-      "evidence": "Extracted from operator column: Inception Mining (divested 2023\\)"
-    }
+    "Clavo Rico Ltd",
+    "Compañía Minera Cerros del Sur, S.A de C.V.",
+    "Compañía Minera Cerros del Sur, S.A. de C.V.",
+    "Inception Mining",
+    "Inception Mining Inc.",
+    "Mother Lode Mining, Inc."
   ],
   "products": [],
   "sources": [
@@ -41,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.236153Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Clavo Rico gold mine. Coords: (13.1, -86.9)"
   },
   "canonical_name": "Clavo Rico Mine",
   "canonical_slug": "clavo-rico-mine",
@@ -60,5 +58,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Choluteca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:42:12.000000Z",
+      "operators": [
+        "Compañía Minera Cerros del Sur, S.A. de C.V.",
+        "Inception Mining Inc."
+      ],
+      "owners": [
+        "Mother Lode Mining, Inc.",
+        "Inception Mining Inc."
+      ],
+      "notes": "Inception Mining Inc. sold its subsidiary that operated the mine to Mother Lode Mining, Inc. in January 2023."
+    }
+  }
 }

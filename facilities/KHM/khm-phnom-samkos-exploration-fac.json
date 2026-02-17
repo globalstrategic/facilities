@@ -1,11 +1,11 @@
 {
   "facility_id": "khm-phnom-samkos-exploration-fac",
-  "name": "**Phnom Samkos Exploration**",
+  "name": "Phnom Samkos Exploration",
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 12.2713,
+    "lon": 102.9767,
     "precision": "unknown"
   },
   "types": [
@@ -32,14 +32,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Southern Mining Company",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.446384",
-      "evidence": "Extracted from operator column: Southern Mining Company"
-    }
+    "Southern Mining Company",
+    "WWF Cambodia"
   ],
   "products": [],
   "sources": [
@@ -50,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.255596Z",
-    "checked_by": "import_pipeline",
-    "notes": "Permit granted in 2007\\. No evidence of progression to mining. **High ESG Risk:** Located in Phnom Samkos Wildlife Sanctuary. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:08:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Permit granted in 2007\\. No evidence of progression to mining. High ESG Risk: Located in Phnom Samkos Wildlife Sanctuary. | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Phnom_Samkos_Wildlife_Sanctuary. Phnom Samkos Wildlife Sanctuary is a protected area in Cambodia, established in 1993, covering 3,307.56 km²"
   },
   "canonical_name": "Phnom Samkos Exploration Exploration",
   "canonical_slug": "phnom-samkos-exploration-exploration",
@@ -71,11 +65,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Phnom Samkos Exploration** Exploration",
+      "name": "Phnom Samkos Exploration Exploration",
       "from": "2025-10-29T12:22:07.446388",
       "to": "2025-11-04T19:18:46.255593Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pursat Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:08:23.000000Z",
+      "operators": [
+        "WWF Cambodia"
+      ],
+      "owners": [],
+      "notes": "WWF Cambodia is involved in community development and conservation efforts in the area."
+    }
+  }
 }

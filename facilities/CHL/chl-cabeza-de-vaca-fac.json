@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": -27.648,
-    "lon": -70.036,
+    "lat": -27.81224011517207,
+    "lon": -69.82992887340653,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alejandro Bohn",
+    "Celeste Copper Corp",
+    "Marcelo Kemeny"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:09.916108Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:56:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Copiapo (https://www.proactiveinvestors.com/companies/news/90310/celeste-copper-to-raise-05-mln-in-non-brokered-financing-35847.html). The facility is associated with the Celeste IV to X claims located southeast of Copiapo"
   },
   "canonical_name": "Cabeza De Vaca Mine",
   "canonical_slug": "cabeza-de-vaca-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atacama Region",
+  "town": "Copiapo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:56:33.000000Z",
+      "operators": [
+        "Celeste Copper Corp"
+      ],
+      "owners": [
+        "Alejandro Bohn",
+        "Marcelo Kemeny"
+      ],
+      "notes": "The owners were found at fault for negligence in a mine collapse incident."
+    }
+  }
 }

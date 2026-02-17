@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.108,
-    "lon": -113.801,
+    "lat": 38.12111,
+    "lon": -113.79417,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Darrel Skougard Parowan",
+    "James M. Hammell"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.757245Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:32:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10252395/. The Skougard Mine is located in Iron County, Utah, at an elevation of 7,359 feet"
   },
   "canonical_name": "Skougard Mine",
   "canonical_slug": "skougard-mine",
@@ -47,5 +50,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Utah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:32:16.000000Z",
+      "operators": [],
+      "owners": [
+        "James M. Hammell",
+        "Darrel Skougard Parowan"
+      ],
+      "notes": "Both owners have equal ownership stakes of 50%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.641,
-    "lon": 28.885,
+    "lat": -26.064816766442497,
+    "lon": 29.202778,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sasol Ltd",
+    "Sasol Mining Pty Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.703609Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:57:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Secunda (https://www.gem.wiki/Impumelelo_Coal_Mine). The Impumelelo coal mine is located about 50km outside of Secunda, Mpumalanga"
   },
   "canonical_name": "Impumelelo Mine",
   "canonical_slug": "impumelelo-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "town": "Secunda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:57:25.000000Z",
+      "operators": [
+        "Sasol Mining Pty Ltd"
+      ],
+      "owners": [
+        "Sasol Ltd"
+      ],
+      "notes": "Sasol Mining operates the mine and is a subsidiary of Sasol Ltd."
+    }
+  }
 }

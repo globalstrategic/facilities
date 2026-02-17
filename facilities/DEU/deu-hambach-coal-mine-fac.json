@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DEU",
   "location": {
-    "lat": 50.892,
-    "lon": 6.573,
+    "lat": 50.91083,
+    "lon": 6.50278,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "RWE AG",
+    "RWE Power AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.636876Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:11:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Hambach_Coal_Mine. The Hambach Coal Mine is the largest open-pit mine in Germany, located in the Rhenish lignite mining area"
   },
   "canonical_name": "Hambach Coal Mine",
   "canonical_slug": "hambach-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Rhine-Westphalia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:11:47.000000Z",
+      "operators": [
+        "RWE Power AG"
+      ],
+      "owners": [
+        "RWE AG"
+      ],
+      "notes": "RWE Power operates the mine, which is fully owned by RWE AG."
+    }
+  }
 }

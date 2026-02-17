@@ -15,8 +15,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.859,
-    "lon": -81.523,
+    "lat": 37.858056,
+    "lon": -81.529167,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alex Energy",
+    "Sundial Mining",
+    "Sundial Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.881726Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:01:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Edwight_Surface_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Edwight Surface Mine",
   "canonical_slug": "edwight-surface-mine",
@@ -58,5 +62,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:01:38.000000Z",
+      "operators": [
+        "Sundial Mining LLC"
+      ],
+      "owners": [
+        "Sundial Mining",
+        "Alex Energy"
+      ],
+      "notes": "Sundial Mining LLC owns 100% of the Edwight Surface Mine, which is operated by Alex Energy, a subsidiary of Massey Energy."
+    }
+  }
 }

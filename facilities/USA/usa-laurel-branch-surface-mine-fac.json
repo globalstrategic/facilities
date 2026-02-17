@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.398,
-    "lon": -82.08,
+    "lat": 37.405833,
+    "lon": -82.054167,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Clintwood JOD",
+    "Clintwood JOD LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.880086Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:00:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Laurel_Branch_Surface_Mine. Laurel Branch Surface Mine is an operating coal mine located in Buchanan County, Virginia"
   },
   "canonical_name": "Laurel Branch Surface Mine",
   "canonical_slug": "laurel-branch-surface-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:00:09.000000Z",
+      "operators": [
+        "Clintwood JOD LLC"
+      ],
+      "owners": [
+        "Clintwood JOD"
+      ],
+      "notes": "Clintwood JOD LLC is the operator and owner of the mine."
+    }
+  }
 }

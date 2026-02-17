@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.835216764270136,
+    "lon": 111.28802899267322,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lithium Century",
+    "Sinomine Resources Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.451089Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:42:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ulaanbaatar (https://news.mn/en/798787/). The Tsagan Chuluut Project is located in the Tsagan Chuluut region of Mongolia, with no exact coordinates provided"
   },
   "canonical_name": "Tsagan Chuluut Exploration",
   "canonical_slug": "tsagan-chuluut-exploration",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Mongolia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:42:59.000000Z",
+      "operators": [
+        "Sinomine Resources Group"
+      ],
+      "owners": [
+        "Lithium Century"
+      ],
+      "notes": "Sinomine Resources Group is acquiring a majority stake in the project from Lithium Century."
+    }
+  },
+  "town": "Ulaanbaatar"
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TKM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 44.746,
+    "lon": 67.65,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kazatomprom",
+    "Rosatom",
+    "Stepnogorsk Mining and Chemical Combine LLP",
+    "Uranium One Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:03.072572Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Budyonovskoye JV at Budenovskoye field, South Kazakhstan"
   },
   "canonical_name": "Budyonovskoye JV Mine",
   "canonical_slug": "budyonovskoye-jv-mine-2",
@@ -47,5 +52,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kazakhstan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:45:51.000000Z",
+      "operators": [
+        "Uranium One Group",
+        "Kazatomprom"
+      ],
+      "owners": [
+        "Rosatom",
+        "Kazatomprom",
+        "Stepnogorsk Mining and Chemical Combine LLP"
+      ],
+      "notes": "Rosatom owns a 49% stake through its subsidiary Uranium One Group, while Kazatomprom holds the remaining 51%."
+    }
+  }
 }

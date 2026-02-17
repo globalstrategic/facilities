@@ -1,0 +1,93 @@
+{
+  "facility_id": "zaf-pgm-other-metals-fac",
+  "name": "PGM / Other Metals",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -24.0,
+    "lon": 27.0,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Platinum",
+      "primary": true,
+      "chemical_formula": "Pt",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "Palladium",
+      "primary": true,
+      "chemical_formula": "Pd",
+      "category": "platinum_group_metal"
+    },
+    {
+      "metal": "etc.",
+      "primary": true
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Hosken Consolidated Investment Ltd.",
+    "Platinum Group Metals Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CAF 2025-10-27",
+      "date": "2025-10-27T10:27:55.496753"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T11:40:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "No geological potential or known occurrences for Platinum Group Metals and other metals on the user list. | Canonical name+slug generated. Web search geocoded. Source: https://s27.q4cdn.com/928713426/files/doc_presentations/2025/Jun/26/Platinum-Group-Metals-Ltd-Corporate-Presentation-June-2025-FINAL2.pdf. The Waterberg PGM Project is located on the North Limb of the Bushveld Complex, which is known for its significant PGM deposits"
+  },
+  "canonical_name": "PGM / Other Metals Facility",
+  "canonical_slug": "pgm-other-metals-facility",
+  "display_name": "PGM / Other Metals",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "PGM / Other Metals",
+      "from": "2025-10-27T10:27:55.496757",
+      "to": "2025-11-04T19:18:48.053442Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T11:40:35.000000Z",
+      "operators": [
+        "Platinum Group Metals Ltd."
+      ],
+      "owners": [
+        "Platinum Group Metals Ltd.",
+        "Hosken Consolidated Investment Ltd."
+      ],
+      "notes": "Platinum Group Metals Ltd. is the majority owner and operator of the Waterberg PGM Project."
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
   "facility_id": "nic-la-india-project-fac",
-  "name": "**La India Project**",
+  "name": "La India Project",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": 12.7467,
-    "lon": null,
+    "lat": 12.771727492416783,
+    "lon": -86.2998357,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "La India Gold S.A.",
+    "Metals Exploration Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.277700Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:15:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Managua (https://royalgold.com/our-portfolio/development-properties/la-india-/default.aspx). The La India Project is located in the western flanks of the Central Highlands in northwestern Nicaragua, specifically in the municipalities of Santa Rosa del Peñon and El Jicaral"
   },
   "canonical_name": "La India Development",
   "canonical_slug": "la-india-development",
@@ -53,11 +56,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**La India ** Development",
+      "name": "La India  Development",
       "from": "2025-10-29T21:57:46.861685",
       "to": "2025-11-04T19:18:55.277697Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Leon",
+  "town": "Managua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:15:09.000000Z",
+      "operators": [
+        "Metals Exploration Plc"
+      ],
+      "owners": [
+        "Metals Exploration Plc",
+        "La India Gold S.A."
+      ],
+      "notes": "Metals Exploration Plc is the 100% owner of the La India Project following the acquisition of Condor Gold."
+    }
+  }
 }

@@ -1,13 +1,13 @@
 {
   "facility_id": "cze-t-ineck-elez-rny-fac",
-  "name": "**Třinecké železárny **",
+  "name": "Třinecké železárny ",
   "aliases": [
     "TŽ"
   ],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 49.69028,
+    "lon": 18.65278,
     "precision": "unknown"
   },
   "types": [
@@ -16,14 +16,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "MORAVIA STEEL a.s.",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.782945",
-      "evidence": "Extracted from operator column: MORAVIA STEEL a.s."
-    }
+    "MORAVIA STEEL a.s.",
+    "Moravia Steel",
+    "Třinecké železárny, a. s."
   ],
   "products": [],
   "sources": [
@@ -34,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.584206Z",
-    "checked_by": "import_pipeline",
-    "notes": "Largest integrated steel producer in Czechia (\\~2.5 Mt/yr). Major consumer of imported iron ore, coking coal, and ferroalloys (FeCr, FeMn, FeMo, FeV). 17 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:08:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Largest integrated steel producer in Czechia (\\~2.5 Mt/yr). Major consumer of imported iron ore, coking coal, and ferroalloys (FeCr, FeMn, FeMo, FeV). 17 | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/T%C5%99inec_Iron_and_Steel_Works. Třinecké železárny is the largest steel producer in the Czech Republic, producing over a third of the country's steel"
   },
   "canonical_name": "Třinecké Železárny Processing Plant",
   "canonical_slug": "trinecke-zelezarny-processing-plant",
@@ -55,11 +50,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Třinecké železárny ** Processing Plant",
+      "name": "Třinecké železárny  Processing Plant",
       "from": "2025-10-27T15:23:26.782949",
       "to": "2025-11-04T19:19:10.584203Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Moravian-Silesian Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:08:06.000000Z",
+      "operators": [
+        "Třinecké železárny, a. s."
+      ],
+      "owners": [
+        "Moravia Steel"
+      ],
+      "notes": "Moravia Steel is the major shareholder of Třinecké železárny."
+    }
+  }
 }

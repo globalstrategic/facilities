@@ -6,9 +6,9 @@
   ],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 18.75,
+    "lon": 7.4,
+    "precision": "site"
   },
   "types": [
     "plant",
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Orano",
+    "SOPAMIN",
+    "Société des Mines de l’Aïr"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.829943Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:48:56Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:48:56Z] Geocoded via web search. Coords: (18.75, 7.4). Confidence: 0.90. Notes: Coordinates determined based on the proximity of the Somaïr facility to the town of Arlit, which is mentioned in the context of uranium transport."
   },
   "canonical_name": "Somaïr Mine",
   "canonical_slug": "somair-mine",
@@ -58,5 +62,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:32:00.000000Z",
+      "operators": [
+        "Orano",
+        "Société des Mines de l’Aïr"
+      ],
+      "owners": [
+        "Orano",
+        "SOPAMIN"
+      ],
+      "notes": "Orano holds a 63.4% stake, while SOPAMIN holds 36.6%."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.847,
-    "lon": 114.78,
+    "lat": -3.846812,
+    "lon": 114.7800878,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Citra Bara Prima"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.294982Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:10:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Citra_Bara_Prima_Coal_Mine. Citra Bara Prima Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Citra Bara Prima Coal Mine",
   "canonical_slug": "citra-bara-prima-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:10:02.000000Z",
+      "operators": [
+        "PT Citra Bara Prima"
+      ],
+      "owners": [
+        "PT Citra Bara Prima"
+      ],
+      "notes": "PT Citra Bara Prima is both the owner and operator of the facility."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.743,
-    "lon": 73.679,
+    "lat": 15.740309,
+    "lon": 73.677879,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gogte Minerals Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.090885Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:50:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Gogte_Minerals_Redi_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Gogte Minerals Redi Mine",
   "canonical_slug": "gogte-minerals-redi-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:50:47.000000Z",
+      "operators": [
+        "Gogte Minerals Pvt Ltd"
+      ],
+      "owners": [
+        "Gogte Minerals Pvt Ltd"
+      ],
+      "notes": "Gogte Minerals Pvt Ltd owns 100% of the operation."
+    }
+  }
 }

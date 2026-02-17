@@ -1,11 +1,11 @@
 {
   "facility_id": "idn-sorowako-mine-smelter-fac",
-  "name": "**Sorowako Mine & Smelter**",
+  "name": "Sorowako Mine & Smelter",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -2.57361,
+    "lon": 121.37417,
     "precision": "unknown"
   },
   "types": [
@@ -22,14 +22,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Vale Indonesia Tbk",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.560221",
-      "evidence": "Extracted from operator column: PT Vale Indonesia Tbk"
-    }
+    "Mining Industri Indonesia (MIND ID)",
+    "PT Vale Indonesia Tbk",
+    "Sumitomo Metal Mining",
+    "Vale Canada Limited",
+    "Vale S.A."
   ],
   "products": [],
   "sources": [
@@ -40,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.238737Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:34:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sorowako_mine. The Sorowako Mine is a significant nickel mining facility in Indonesia, with a history of operation since 1978"
   },
   "canonical_name": "Sorowako & Mine",
   "canonical_slug": "sorowako-mine-2",
@@ -61,11 +58,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sorowako & ** Mine",
+      "name": "Sorowako &  Mine",
       "from": "2025-10-29T10:37:55.560226",
       "to": "2025-11-04T19:19:10.238734Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:34:31.000000Z",
+      "operators": [
+        "PT Vale Indonesia Tbk",
+        "Mining Industri Indonesia (MIND ID)"
+      ],
+      "owners": [
+        "Vale Canada Limited",
+        "Sumitomo Metal Mining"
+      ],
+      "notes": "PT Vale Indonesia Tbk is a subsidiary of Vale S.A. and operates the mine in partnership with MIND ID and other stakeholders."
+    }
+  }
 }

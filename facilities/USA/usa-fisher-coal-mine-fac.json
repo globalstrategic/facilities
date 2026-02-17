@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.46,
-    "lon": -77.344,
+    "lat": 41.465476,
+    "lon": -77.352489,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Fisher Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.817797Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:12:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-3602703&iframe=yes. Fisher Coal Mine is an operating coal mine in Lycoming County, Pennsylvania"
   },
   "canonical_name": "Fisher Coal Mine",
   "canonical_slug": "fisher-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:12:48.000000Z",
+      "operators": [
+        "Fisher Mining Company"
+      ],
+      "owners": [
+        "Fisher Mining Company"
+      ],
+      "notes": "Fisher Mining Company operates and owns the facility."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "DEU",
   "location": {
-    "lat": 51.628,
-    "lon": 7.331,
+    "lat": 51.6325,
+    "lon": 7.34083,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ResInvest Group",
+    "Uniper SE"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:56.639490Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:13:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Datteln_Power_Station. Datteln 4 is the last coal-fired power project developed in Germany"
   },
   "canonical_name": "Datteln Refinery",
   "canonical_slug": "datteln-refinery",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Rhine-Westphalia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:13:46.000000Z",
+      "operators": [
+        "Uniper SE"
+      ],
+      "owners": [
+        "Uniper SE",
+        "ResInvest Group"
+      ],
+      "notes": "Uniper is in the process of selling Datteln 4 to ResInvest Group as part of EU state aid conditions."
+    }
+  }
 }

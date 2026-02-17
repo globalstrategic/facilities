@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.919,
-    "lon": 26.838,
+    "lat": -26.906,
+    "lon": 26.806,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Simmer & Jack Mines",
+    "Village Main Reef"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.732805Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:24:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Buffelsfontein_mine. Buffelsfontein mine was one of the largest gold mines in South Africa and is located in the North West Province"
   },
   "canonical_name": "Buffelsfontein Mine",
   "canonical_slug": "buffelsfontein-mine",
@@ -54,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:24:33.000000Z",
+      "operators": [
+        "Simmer & Jack Mines",
+        "Village Main Reef"
+      ],
+      "owners": [
+        "Simmer & Jack Mines",
+        "Village Main Reef"
+      ],
+      "notes": "The mine was acquired by Village Main Reef in 2011 as part of a takeover."
+    }
+  }
 }

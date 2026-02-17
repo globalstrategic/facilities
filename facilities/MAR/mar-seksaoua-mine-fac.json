@@ -1,11 +1,11 @@
 {
   "facility_id": "mar-seksaoua-mine-fac",
-  "name": "**Seksaoua Mine**",
+  "name": "Seksaoua Mine",
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 30.946,
-    "lon": null,
+    "lat": 30.27287297540466,
+    "lon": -7.9891608,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,7 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Compagnie Minière de Seksaoua",
-      "role": "operator",
-      "source": "Morocco Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T16:17:07.471869",
-      "evidence": "Extracted from operator column: Compagnie Minière de Seksaoua"
-    }
+    "Compagnie Minière de Seksaoua"
   ],
   "products": [],
   "sources": [
@@ -39,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:48.330788Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historical polymetallic mine. Status unclear following a planned modernization in 2013\\. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:13:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Historical polymetallic mine. Status unclear following a planned modernization in 2013\\. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakech (https://www.gtai.de/resource/blob/51184/22f6d6d11cde7d409d63a328ee6fda19/20141127-eu-seminar-energiesektor-praesentation6-data.pdf). The Seksaoua Mine is located approximately 150 km south of Marrakech"
   },
   "canonical_name": "Seksaoua Mine",
   "canonical_slug": "seksaoua-mine-2",
@@ -60,11 +53,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Seksaoua ** Mine",
+      "name": "Seksaoua  Mine",
       "from": "2025-10-29T16:17:07.471874",
       "to": "2025-11-04T19:18:48.330785Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi",
+  "town": "Marrakech",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:13:25.000000Z",
+      "operators": [
+        "Compagnie Minière de Seksaoua"
+      ],
+      "owners": [
+        "Compagnie Minière de Seksaoua"
+      ],
+      "notes": "Compagnie Minière de Seksaoua is an independent medium-sized mining company operating in Morocco."
+    }
+  }
 }

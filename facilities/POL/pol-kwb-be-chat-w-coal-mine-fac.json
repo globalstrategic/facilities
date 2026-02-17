@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 51.241,
-    "lon": 19.286,
+    "lat": 51.23361,
+    "lon": 19.31278,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PGE Górnictwo i Energetyka Konwencjonalna SA",
+    "Polska Grupa Energetyczna SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.940101Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:52:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/KWB_Be%C5%82chat%C3%B3w_Coal_Mine. The KWB Bełchatów Coal Mine is the largest coal mine in Poland and is set to operate until 2040"
   },
   "canonical_name": "KWB Beå Chatã³w Coal Mine",
   "canonical_slug": "kwb-beachata3w-coal-mine",
@@ -58,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Łódź Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:52:11.000000Z",
+      "operators": [
+        "PGE Górnictwo i Energetyka Konwencjonalna SA"
+      ],
+      "owners": [
+        "Polska Grupa Energetyczna SA"
+      ],
+      "notes": "The mine is owned by Polska Grupa Energetyczna (PGE) and operated by its subsidiary."
+    }
+  }
 }

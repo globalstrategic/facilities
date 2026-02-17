@@ -1,0 +1,81 @@
+{
+  "facility_id": "guf-montagne-d-or-project-fac",
+  "name": "Montagne d'Or Project",
+  "aliases": [],
+  "country_iso3": "GUF",
+  "location": {
+    "lat": 4.7155,
+    "lon": -53.9398,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    }
+  ],
+  "status": "suspended",
+  "company_mentions": [
+    "Columbus Gold",
+    "Nordgold",
+    "Nordgold SE",
+    "Orea Mining Corp.",
+    "Orea Mining Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-29",
+      "date": "2025-10-29T08:01:48.996876"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:32:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Montagne_d%27Or_mine. Montagne d'Or is a significant gold mining project in French Guiana, an overseas region of France"
+  },
+  "canonical_name": "Montagne D'or Mine",
+  "canonical_slug": "montagne-d-or-mine",
+  "display_name": "Montagne D'or",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Montagne d'Or Mine",
+      "from": "2025-10-29T08:01:48.996878",
+      "to": "2025-11-04T19:18:51.670913Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "French Guiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:32:44.000000Z",
+      "operators": [
+        "Nordgold"
+      ],
+      "owners": [
+        "Orea Mining Corporation",
+        "Columbus Gold"
+      ],
+      "notes": "Orea Mining Corporation is in the process of acquiring full ownership of the project."
+    }
+  }
+}

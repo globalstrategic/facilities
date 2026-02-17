@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.583,
-    "lon": -123.651,
+    "lat": 41.58333,
+    "lon": -123.65,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.704007Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:57:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10072342/. The Dillon Creek-Klamath River-Siskon is a silver mine located in Siskiyou County, California. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10072342/. The mine is located in Siskiyou County, California, and is primarily a silver mine"
   },
   "canonical_name": "Dillon Creek Klamath River Siskon Mine",
   "canonical_slug": "dillon-creek-klamath-river-siskon-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California"
 }

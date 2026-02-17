@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.711,
-    "lon": 27.29,
+    "lat": -25.665407270901532,
+    "lon": 27.5103734970865,
     "precision": "site"
   },
   "types": [
@@ -42,7 +42,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barlow Rand Ltd.",
+    "Millsell Chrome Mines Pty. Ltd.",
+    "Rand Mines Ltd.",
+    "Samancor Chrome",
+    "Sylvania Platinum Limited",
+    "Transvaal Consolidated Land & Exploration Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -57,11 +64,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.734697Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-millsell-chrome-mine-sylvania-dump-operations-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:26:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-millsell-chrome-mine-sylvania-dump-operations-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Rustenburg (https://www.mindat.org/loc-27406.html). The Millsell chrome mine is part of the Western Chrome mines operated by Samancor"
   },
   "canonical_name": "Millsell Mine",
   "canonical_slug": "millsell-mine",
@@ -76,5 +83,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North West",
+  "town": "Rustenburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:26:42.000000Z",
+      "operators": [
+        "Samancor Chrome",
+        "Sylvania Platinum Limited"
+      ],
+      "owners": [
+        "Barlow Rand Ltd.",
+        "Millsell Chrome Mines Pty. Ltd.",
+        "Rand Mines Ltd.",
+        "Transvaal Consolidated Land & Exploration Company"
+      ],
+      "notes": "Samancor operates the mine, while multiple companies are listed as owners."
+    }
+  }
 }

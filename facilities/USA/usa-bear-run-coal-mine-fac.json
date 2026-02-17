@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.995,
-    "lon": -87.314,
+    "lat": 38.995173,
+    "lon": -87.313929,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Bear Run Mining LLC",
+    "Peabody Energy Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.701753Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:45:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Bear_Run_Coal_Mine. Bear Run Coal Mine is a surface coal mine operated by Peabody Energy, located in Sullivan County, Indiana"
   },
   "canonical_name": "Bear Run Coal Mine",
   "canonical_slug": "bear-run-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:45:26.000000Z",
+      "operators": [
+        "Peabody Bear Run Mining LLC"
+      ],
+      "owners": [
+        "Peabody Energy Corp"
+      ],
+      "notes": "Peabody Bear Run Mining LLC is a subsidiary of Peabody Energy Corp."
+    }
+  }
 }

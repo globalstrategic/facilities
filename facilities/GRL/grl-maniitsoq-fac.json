@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-maniitsoq-fac",
-  "name": "**Maniitsoq**",
+  "name": "Maniitsoq",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 65.41667,
+    "lon": -52.9,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "North American Nickel",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.188734",
-      "evidence": "Extracted from operator column: North American Nickel"
-    }
+    "North American Nickel",
+    "North American Nickel Inc."
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.632338Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:39:19Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:39:19Z] Geocoded via web search. Coords: (65.41667, -52.9). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia page for Maniitsoq."
   },
   "canonical_name": "Maniitsoq Mine",
   "canonical_slug": "maniitsoq-mine",
@@ -60,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Maniitsoq** Mine",
+      "name": "Maniitsoq Mine",
       "from": "2025-10-29T08:01:20.188738",
       "to": "2025-11-04T19:19:00.632334Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Qeqqata",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:46:31.000000Z",
+      "operators": [
+        "North American Nickel Inc."
+      ],
+      "owners": [
+        "North American Nickel Inc."
+      ],
+      "notes": "North American Nickel Inc. owns 100% of the Maniitsoq property."
+    }
+  }
 }

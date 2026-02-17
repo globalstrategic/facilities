@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.5,
+    "lon": 24.95,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -29,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.770140Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T13:14:02Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:14:02Z] Lead-zinc mine in southern Madan ore field, Smolyan Province"
   },
   "canonical_name": "Varba Batantsi Mine",
   "canonical_slug": "varba-batantsi-mine",
@@ -60,16 +60,16 @@
   "province": "Smolyan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:38:42.000000Z",
+      "timestamp": "2025-12-02T11:08:09.000000Z",
       "operators": [
         "KCM 2000",
         "Minstroy Holding"
       ],
       "owners": [
         "KCM 2000",
-        "Minstroy Holding"
+        "Rumen Tsonev"
       ],
-      "notes": "KCM 2000 fully controls the Varba-Batantsi mine after acquiring shares from Minstroy Holding."
+      "notes": "KCM 2000 holds 75% of the shares in Varba-Batantsi, with Rumen Tsonev owning the remaining 25%."
     }
   }
 }

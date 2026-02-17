@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -29.418913,
-    "lon": 31.157693,
+    "lat": -29.0,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Avon Peaking Power (RF) Pty Ltd",
+    "ENGIE",
+    "Legend Power Solutions (Pty) Ltd",
+    "Mitsui & Co., Ltd.",
+    "The Peaker Trust"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +35,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:14:25.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:31:37.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Avon_power_station. Coordinates extracted directly from the source, indicating the exact location of the Avon Peaking Power Plant"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Avon_power_station. Coordinates extracted directly from the source, indicating the exact location of the Avon Peaking Power Plant. Web search geocoded. Source: https://www.powermag.com/press-releases/avon-peaking-power-south-africas-largest-ipp-reaches-commercial-operation-adding-670-mw-to-the-national-grid/. The Avon Peaking Power Plant is located in the KwaZulu-Natal province and is part of South Africa's gas-to-power development plans"
   },
   "canonical_name": "Avon Peaking Power Mine",
   "canonical_slug": "avon-peaking-power-mine",
@@ -48,5 +54,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "KwaZulu-Natal"
+  "province": "KwaZulu-Natal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:31:37.000000Z",
+      "operators": [
+        "Avon Peaking Power (RF) Pty Ltd"
+      ],
+      "owners": [
+        "ENGIE",
+        "Legend Power Solutions (Pty) Ltd",
+        "Mitsui & Co., Ltd.",
+        "The Peaker Trust"
+      ],
+      "notes": "The plant is owned by a consortium with ENGIE holding 38%, Legend Power Solutions 27%, Mitsui 25%, and The Peaker Trust 10%."
+    }
+  }
 }

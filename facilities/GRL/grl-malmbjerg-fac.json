@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-malmbjerg-fac",
-  "name": "**Malmbjerg**",
+  "name": "Malmbjerg",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 71.96667,
+    "lon": -24.16667,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Greenland Resources",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.117515",
-      "evidence": "Extracted from operator column: Greenland Resources"
-    }
+    "Greenland Resources",
+    "Greenland Resources Inc."
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.630773Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:38:34Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:38:34Z] Geocoded via web search. Coords: (71.96667, -24.16667). Confidence: 0.90. Notes: Coordinates extracted from the technical report indicating the latitude and longitude bounds of the Malmbjerg project."
   },
   "canonical_name": "Malmbjerg Mine",
   "canonical_slug": "malmbjerg-mine",
@@ -53,11 +47,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Malmbjerg** Mine",
+      "name": "Malmbjerg Mine",
       "from": "2025-10-29T08:01:20.117519",
       "to": "2025-11-04T19:19:00.630770Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:45:05.000000Z",
+      "operators": [
+        "Greenland Resources Inc."
+      ],
+      "owners": [
+        "Greenland Resources Inc."
+      ],
+      "notes": "Greenland Resources Inc. is the sole owner and operator of the Malmbjerg project."
+    }
+  }
 }

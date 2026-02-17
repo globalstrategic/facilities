@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": 0.1,
-    "lon": 114.379,
+    "lat": 0.099752,
+    "lon": 114.378722,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kirkham International Pte Ltd",
+    "PT Borneo Prima Coal Indonesia"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.211995Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:22:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Borneo_Prima_Coal_Mine. The mine is located in the heart of the rainforest in Borneo and produces over two million tonnes of coal per year"
   },
   "canonical_name": "Borneo Prima Coal Mine",
   "canonical_slug": "borneo-prima-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:22:07.000000Z",
+      "operators": [
+        "PT Borneo Prima Coal Indonesia"
+      ],
+      "owners": [
+        "Kirkham International Pte Ltd"
+      ],
+      "notes": "PT Borneo Prima operates the mine and is owned by Kirkham International Pte Ltd."
+    }
+  }
 }

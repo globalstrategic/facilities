@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.205,
-    "lon": -118.171,
+    "lat": 40.26596885294969,
+    "lon": -118.2031940621413,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Americas Gold and Silver Corporation",
+    "Gold Acquisition Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.697175Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:41:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lovelock (https://royalgold.com/our-portfolio/development-properties/relief-canyon/default.aspx). Relief Canyon is located at the southwestern flank of the Humboldt Range in Pershing County, Nevada"
   },
   "canonical_name": "Relief Canyon Mine",
   "canonical_slug": "relief-canyon-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Lovelock",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:41:43.000000Z",
+      "operators": [
+        "Americas Gold and Silver Corporation"
+      ],
+      "owners": [
+        "Americas Gold and Silver Corporation",
+        "Gold Acquisition Corp."
+      ],
+      "notes": "Americas Gold and Silver Corporation is the operator and owner through its subsidiary Gold Acquisition Corp."
+    }
+  }
 }

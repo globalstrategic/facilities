@@ -9,7 +9,7 @@
   "country_iso3": "USA",
   "location": {
     "lat": 64.45,
-    "lon": -144.9,
+    "lon": -144.91222,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northern Star (Pogo) LLC",
+    "Northern Star Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.924884Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:54:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pogo_mine. Pogo Gold Mine is an underground gold mine located in Alaska, operational since 2006"
   },
   "canonical_name": "Pogo Mine",
   "canonical_slug": "pogo-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alaska",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:54:54.000000Z",
+      "operators": [
+        "Northern Star (Pogo) LLC"
+      ],
+      "owners": [
+        "Northern Star Resources Ltd."
+      ],
+      "notes": "Northern Star Resources acquired full ownership of the Pogo mine in 2018."
+    }
+  }
 }

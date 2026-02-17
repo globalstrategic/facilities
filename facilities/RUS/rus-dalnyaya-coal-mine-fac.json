@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 48.089,
-    "lon": 40.381,
+    "lat": 48.040979792857485,
+    "lon": 39.9372070727206,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Donskoy Anthracite JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:15.599235Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:26:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Zverevo (http://www.donugol.ru/en/geography/). The Dalnyaya Coal Mine is located near Zverevo, with the minefield bordering on other minefields and infrastructure mentioned"
   },
   "canonical_name": "Dalnyaya Coal Mine",
   "canonical_slug": "dalnyaya-coal-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rostov Oblast",
+  "town": "Zverevo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:26:18.000000Z",
+      "operators": [
+        "Donskoy Anthracite JSC"
+      ],
+      "owners": [],
+      "notes": "Donskoy Anthracite JSC operates the Dalnyaya Coal Mine."
+    }
+  }
 }

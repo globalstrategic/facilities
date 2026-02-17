@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.66331,
-    "lon": 28.59016,
+    "lat": -26.5,
+    "lon": 27.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sibanye-Stillwater"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +32,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:29:56.000000Z",
+    "last_checked": "2025-12-01T18:01:46.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/balfour. Coordinates extracted from multiple sources confirm the location of Balfour in Mpumalanga, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/balfour. Coordinates extracted from multiple sources confirm the location of Balfour in Mpumalanga, South Africa. Web search geocoded. Source: https://www.mindat.org/loc-411105.html. The Burnstone Mine is located 8 km east of Balfour and is operated by Sibanye-Stillwater"
   },
   "canonical_name": "Balfour Mine",
   "canonical_slug": "balfour-mine",
@@ -48,5 +50,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:01:46.000000Z",
+      "operators": [
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Sibanye-Stillwater"
+      ],
+      "notes": "Sibanye-Stillwater acquired the mine in 2014 and development started in 2016."
+    }
+  }
 }

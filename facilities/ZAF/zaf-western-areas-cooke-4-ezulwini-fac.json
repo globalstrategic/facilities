@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.367,
-    "lon": 27.712,
+    "lat": -26.4,
+    "lon": 27.7,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sibanye Gold Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:35:07.712234Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:05:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/newssibanye-gold-to-close-cooke-4-mine-and-ezulwini-processing-plant-4947212/. The Cooke 4 mine and Ezulwini processing plant are located in the West Rand District Municipality, near Westonaria"
   },
   "canonical_name": "Western Areas Cooke 4 Ezulwini Mine",
   "canonical_slug": "western-areas-cooke-4-ezulwini-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:05:57.000000Z",
+      "operators": [
+        "Sibanye Gold Ltd"
+      ],
+      "owners": [
+        "Sibanye Gold Ltd"
+      ],
+      "notes": "Sibanye Gold is planning to close the facility due to operational underperformance and financial losses."
+    }
+  }
 }

@@ -11,8 +11,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.708,
-    "lon": -117.087,
+    "lat": 38.90182159930845,
+    "lon": -117.2250609,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kinross Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.844683Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:29:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tonopah (https://en.wikipedia.org/wiki/Round_Mountain_Gold_Mine). The mine is located 55 miles north of Tonopah, Nevada"
   },
   "canonical_name": "Round Mountain Gold Mine",
   "canonical_slug": "round-mountain-gold-mine",
@@ -58,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Tonopah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:29:02.000000Z",
+      "operators": [
+        "Kinross Gold Corporation"
+      ],
+      "owners": [
+        "Kinross Gold Corporation"
+      ],
+      "notes": "Kinross Gold operates and owns the Round Mountain Gold Mine."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 24.6551,
-    "lon": null,
+    "lat": 24.328722860728984,
+    "lon": -104.56210906754026,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera Peñasquito S.A. de C.V.",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.956395Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:33:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Mexico City (https://operations.newmont.com/latin-america/penasquito-mexico). The Peñasquito Mine is located in the northeastern corner of Zacatecas State, approximately 780 km northwest of Mexico City"
   },
   "canonical_name": "Peñasquito Mine",
   "canonical_slug": "penasquito-mine",
@@ -59,5 +62,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zacatecas",
+  "town": "Mexico City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:33:40.000000Z",
+      "operators": [
+        "Minera Peñasquito S.A. de C.V.",
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Newmont Corporation"
+      ],
+      "notes": "Newmont acquired Goldcorp in 2019, obtaining full ownership interest in Peñasquito."
+    }
+  }
 }

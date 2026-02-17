@@ -7,8 +7,8 @@
   ],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 50.047,
-    "lon": 79.756,
+    "lat": 50.05583041448554,
+    "lon": 79.707208631575,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nord Gold plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.743299Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:43:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Semey (https://www.metso.com/insights/case-studies/mining-and-metals/improving-overall-gold-recovery-at-nordgolds-suzdal-mine-kazakhstan/). The Suzdal mine is located 55 km southwest of Semey in Kazakhstan and is known for its advanced gold processing technology"
   },
   "canonical_name": "Suzdal Mine",
   "canonical_slug": "suzdal-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Abai Region",
+  "town": "Semey",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:43:36.000000Z",
+      "operators": [
+        "Nord Gold plc"
+      ],
+      "owners": [
+        "Nord Gold plc"
+      ],
+      "notes": "Nord Gold is the sole operator and owner of the Suzdal mine."
+    }
+  }
 }

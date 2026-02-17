@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -4.036,
-    "lon": 137.331,
+    "lat": -4.5,
+    "lon": 137.1,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport Indonesia (PTFI)",
+    "Freeport-McMoRan Copper & Gold Inc.",
+    "Government of Indonesia",
+    "PT Indonesia Papua Metal & Mineral",
+    "PT Mineral Industri Indonesia (Persero)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:10.248370Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:49:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-27261.html. The Gunung Bijih Mine is part of the Grasberg minerals district, which is known for its significant copper and gold deposits"
   },
   "canonical_name": "Gunung Bijih Mine",
   "canonical_slug": "gunung-bijih-mine",
@@ -47,5 +53,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:49:04.000000Z",
+      "operators": [
+        "Freeport Indonesia (PTFI)",
+        "Freeport-McMoRan Copper & Gold Inc."
+      ],
+      "owners": [
+        "Government of Indonesia",
+        "PT Mineral Industri Indonesia (Persero)",
+        "PT Indonesia Papua Metal & Mineral"
+      ],
+      "notes": "Freeport Indonesia operates the mine, with ownership shared between Freeport-McMoRan and the Indonesian government."
+    }
+  }
 }

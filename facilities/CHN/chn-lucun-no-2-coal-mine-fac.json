@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.908,
-    "lon": 109.082,
+    "lat": 35.907601,
+    "lon": 109.081962,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "中国华电集团 (China Huadian Group)",
+    "富县矿业开发有限公司 (Fu County Mining Development Co., Ltd.)",
+    "延安能源化工集团 (Yan’an Energy & Chemical Group)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.657562Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:11:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%AF%8C%E5%8E%BF%E7%9F%BF%E4%B8%9A%E5%BC%80%E5%8F%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%8A%A6%E6%9D%91%E4%BA%8C%E5%8F%B7%E7%85%A4%E7%9F%BF. The Lucun No.2 Coal Mine is an underground coal mine located in Fu County, Shaanxi Province, China"
   },
   "canonical_name": "Lucun No 2 Coal Mine",
   "canonical_slug": "lucun-no-2-coal-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "陕西省 (Shaanxi Province)",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:11:42.000000Z",
+      "operators": [
+        "富县矿业开发有限公司 (Fu County Mining Development Co., Ltd.)"
+      ],
+      "owners": [
+        "延安能源化工集团 (Yan’an Energy & Chemical Group)",
+        "中国华电集团 (China Huadian Group)"
+      ],
+      "notes": "The mine is operated by Fu County Mining Development Co., Ltd., which is owned by Yan’an Energy & Chemical Group (51%) and China Huadian Group (49%)."
+    }
+  }
 }

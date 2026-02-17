@@ -1,0 +1,70 @@
+{
+  "facility_id": "dom-35eblo-viejo-fac",
+  "name": "35eblo Viejo",
+  "aliases": [],
+  "country_iso3": "DOM",
+  "location": {
+    "lat": 18.9396,
+    "lon": -70.1753,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Tungsten",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation",
+    "Pueblo Viejo Dominicana Jersey 2 Limited"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:21.384975"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T09:52:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Pueblo_Viejo_mine. The Pueblo Viejo mine is one of the largest gold and silver mines in the world, located in the Dominican Republic"
+  },
+  "canonical_name": "35eblo Viejo Mine",
+  "canonical_slug": "35eblo-viejo-mine",
+  "display_name": "35eblo Viejo",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Sánchez Ramírez",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T09:52:26.000000Z",
+      "operators": [
+        "Barrick Gold Corporation",
+        "Pueblo Viejo Dominicana Jersey 2 Limited"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "notes": "Barrick operates the mine with a 60% interest, while Newmont holds a 40% interest."
+    }
+  }
+}

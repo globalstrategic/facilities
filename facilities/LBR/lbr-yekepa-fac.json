@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LBR",
   "location": {
-    "lat": 7.547,
-    "lon": -8.635,
+    "lat": 7.508302613431518,
+    "lon": -8.566497990426296,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal",
+    "ArcelorMittal Liberia"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.724910Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:08:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sanniquellie (https://frontpageafricaonline.com/news/liberia-government-retains-arcelormittal-liberia-as-operator-of-yekepa-buchanan-railway-after-months-of-negotiations/). Yekepa is known for its iron ore mining operations, particularly by ArcelorMittal"
   },
   "canonical_name": "Yekepa Mine",
   "canonical_slug": "yekepa-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nimba County",
+  "town": "Sanniquellie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:08:33.000000Z",
+      "operators": [
+        "ArcelorMittal Liberia"
+      ],
+      "owners": [
+        "ArcelorMittal"
+      ],
+      "notes": "ArcelorMittal is the primary operator and owner of the Yekepa facility."
+    }
+  }
 }

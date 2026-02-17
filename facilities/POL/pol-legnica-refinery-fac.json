@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 51.2,
-    "lon": 16.2,
+    "lat": 51.207007,
+    "lon": 16.155323,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KGHM Polska Miedz S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.930749Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:45:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/KGHM%20Polska%20-%20Legnica.htm. Coordinates are approximate based on the Legnica Power Station"
   },
   "canonical_name": "Legnica Smelter",
   "canonical_slug": "legnica-smelter",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dolnośląskie",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:45:36.000000Z",
+      "operators": [
+        "KGHM Polska Miedz S.A."
+      ],
+      "owners": [
+        "KGHM Polska Miedz S.A."
+      ],
+      "notes": "KGHM Polska Miedz S.A. is both the operator and owner of the facility."
+    }
+  }
 }

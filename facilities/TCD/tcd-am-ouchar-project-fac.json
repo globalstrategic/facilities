@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TCD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 13.4333,
+    "lon": 20.3667,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,22 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Ricca Resources Ltd. (via acquisition from Tekton",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.444083",
-      "evidence": "Extracted from operator column: Ricca Resources Ltd. (via acquisition from Tekton/IronRidge)"
-    },
-    {
-      "name": "IronRidge)",
-      "role": "operator",
-      "source": "Research Import TCD 2025-11-04",
-      "confidence": 0.7,
-      "first_seen": "2025-11-04T13:00:18.444085",
-      "evidence": "Extracted from operator column: Ricca Resources Ltd. (via acquisition from Tekton/IronRidge)"
-    }
+    "IronRidge Resources Ltd",
+    "IronRidge)",
+    "Ricca Resources Ltd. (via acquisition from Tekton",
+    "Tekton"
   ],
   "products": [],
   "sources": [
@@ -40,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T14:52:40.253187",
-    "checked_by": "import_pipeline",
-    "notes": null
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:10:25Z",
+    "checked_by": "manual_geocoding",
+    "notes": "None | [NULL-ISLAND-FIX 2025-12-18T02:10:25Z] Am Ouchar gold project, Sila Region. Coords: (13.4333, 20.3667)"
   },
   "primary_type": "mine",
   "type_confidence": 0.95,
@@ -59,5 +47,18 @@
       "canonical_name_incomplete": false
     },
     "canonicalization_confidence": 0.6
+  },
+  "province": "Sila Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:39:21.000000Z",
+      "operators": [
+        "Tekton"
+      ],
+      "owners": [
+        "IronRidge Resources Ltd"
+      ],
+      "notes": "Tekton is focused on the Am Ouchar licenses, while IronRidge Resources holds the overall licenses."
+    }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -0.503,
-    "lon": 117.046,
+    "lat": -0.503249,
+    "lon": 117.046164,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CV Wijaya Mulia",
+    "Jatenergy Limited",
+    "Karya Putra Bersama",
+    "Mercator Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.290621Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:06:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jongkang_I_Coal_Mine. The Jongkang I Coal Mine is located in Kutai Kartanegara, East Kalimantan, Indonesia, approximately 25 km from the major coal shipping hub of Samarinda"
   },
   "canonical_name": "Jongkang I Coal Mine",
   "canonical_slug": "jongkang-i-coal-mine",
@@ -47,5 +52,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:06:49.000000Z",
+      "operators": [
+        "Jatenergy Limited",
+        "CV Wijaya Mulia"
+      ],
+      "owners": [
+        "Karya Putra Bersama",
+        "Mercator Ltd"
+      ],
+      "notes": "Jatenergy Limited operates the mine in a joint venture with CV Wijaya Mulia, with Karya Putra Bersama as the owner."
+    }
+  }
 }

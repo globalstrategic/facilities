@@ -7,7 +7,7 @@
   "country_iso3": "GTM",
   "location": {
     "lat": 15.52,
-    "lon": null,
+    "lon": -90.5,
     "precision": "unknown"
   },
   "types": [
@@ -23,14 +23,11 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "ProNiCo",
-      "role": "operator",
-      "source": "Research Import GTM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:33.486908",
-      "evidence": "Extracted from operator column: ProNiCo (Solway Investment Group)"
-    }
+    "Compañía Guatemalteca de Níquel (CGN)",
+    "Compañía Procesadora de Níquel de Izabal (Pronico)",
+    "ProNiCo",
+    "Procesadora de Níquel de Izabal (Pronico)",
+    "Solway Investment Group"
   ],
   "products": [],
   "sources": [
@@ -45,7 +42,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:19:16.705989Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-90.5 (was null)"
   },
   "canonical_name": "Pronico Smelter",
   "canonical_slug": "pronico-smelter",
@@ -68,5 +65,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Izabal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:44:07.000000Z",
+      "operators": [
+        "Compañía Procesadora de Níquel de Izabal (Pronico)",
+        "Compañía Guatemalteca de Níquel (CGN)"
+      ],
+      "owners": [
+        "Solway Investment Group"
+      ],
+      "notes": "Pronico operates the processing plant while CGN operates the mine. Both companies are subsidiaries of Solway Investment Group."
+    }
+  }
 }

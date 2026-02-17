@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.187,
-    "lon": -77.45,
+    "lat": 37.23186,
+    "lon": -77.404736,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerdau Long Steel North America",
+    "Gerdau S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.962927Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:27:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/SCS-EPD-07508_Gerdau_Structural_PETERSBURG_031122.pdf. Coordinates extracted from job listing related to Gerdau Petersburg facility"
   },
   "canonical_name": "Gerdau Petersburg Smelter",
   "canonical_slug": "gerdau-petersburg-smelter",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:27:16.000000Z",
+      "operators": [
+        "Gerdau Long Steel North America"
+      ],
+      "owners": [
+        "Gerdau S.A."
+      ],
+      "notes": "Gerdau Long Steel North America operates the facility, which is owned by Gerdau S.A."
+    }
+  }
 }

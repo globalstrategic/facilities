@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.947,
-    "lon": -115.451,
+    "lat": 40.696334432165706,
+    "lon": -115.05562625974412,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "KG Mining (Bald Mountain) Inc.",
+    "Placer Dome"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.926251Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:56:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Elko (https://ndep.nv.gov/uploads/documents/20250117km_0090020_Casino-Winrock_FactSheet_NOD_Rev00.pdf). The Casino-Winrock Mine is located approximately 10 miles south of the Ruby Lake National Wildlife Refuge and 60 miles south-southeast of Elko"
   },
   "canonical_name": "Winrock Mine",
   "canonical_slug": "winrock-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Elko",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:56:20.000000Z",
+      "operators": [
+        "KG Mining (Bald Mountain) Inc.",
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Placer Dome"
+      ],
+      "notes": "The mine was operated by USMX until August 1993 when it was purchased by Placer Dome, which later merged with Barrick Gold Corporation."
+    }
+  }
 }

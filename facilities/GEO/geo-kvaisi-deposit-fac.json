@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-kvaisi-deposit-fac",
-  "name": "**Kvaisi Deposit**",
+  "name": "Kvaisi Deposit",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.516666666666666,
+    "lon": 43.63333333333333,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -27,22 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.152966",
-      "evidence": "Extracted from operator column: N/A"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.152968",
-      "evidence": "Extracted from operator column: N/A"
-    }
+    "A",
+    "GeoProMining Ltd.",
+    "N"
   ],
   "products": [],
   "sources": [
@@ -53,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.725439Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:57:43Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:57:43Z] Geocoded via web search. Coords: (42.516666666666666, 43.63333333333333). Confidence: 0.90. Notes: Coordinates extracted directly from the mining report for the Kvaisi deposit."
   },
   "canonical_name": "Kvaisi Mine",
   "canonical_slug": "kvaisi-mine",
@@ -74,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kvaisi ** Mine",
+      "name": "Kvaisi  Mine",
       "from": "2025-10-28T21:01:00.152971",
       "to": "2025-11-04T19:19:01.725436Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tqibuli region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:51:38.000000Z",
+      "operators": [
+        "GeoProMining Ltd."
+      ],
+      "owners": [
+        "GeoProMining Ltd."
+      ],
+      "notes": "GeoProMining Ltd. holds a significant stake in the Kvaisi deposit."
+    }
+  }
 }

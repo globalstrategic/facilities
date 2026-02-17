@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRT",
   "location": {
-    "lat": 41.549,
-    "lon": -8.458,
+    "lat": 41.5,
+    "lon": -8.5,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Allied Critical Metals Inc.",
+    "Minerália-Minas, Geotecnia E Construcoes Limitada",
+    "PanMetals"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:53.662824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:27:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://alliedcritical.com/wp-content/uploads/2024/10/Technical-Report-on-the-Borralha-Property.pdf. The Borralha property is located approximately 3 km south of the Venda Nova Dam and 40 km east of Braga"
   },
   "canonical_name": "Borralha Mine",
   "canonical_slug": "borralha-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Minho",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:27:39.000000Z",
+      "operators": [
+        "Allied Critical Metals Inc."
+      ],
+      "owners": [
+        "PanMetals",
+        "Minerália-Minas, Geotecnia E Construcoes Limitada"
+      ],
+      "notes": "PanMetals holds beneficial title to the Borralha Property, which is licensed in the name of Minerália beneficially in trust for PanMetals."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-du-kou-project-fac",
-  "name": "**DuÃ©kouÃ© Project**",
+  "name": "DuÃ©kouÃ© Project",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.7472,
+    "lon": -7.3496,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.463950Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:10:25Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:10:25Z] Duekoue copper project. Coords: (6.7472, -7.3496)"
   },
   "canonical_name": "DuÃ©kouÃ© Exploration",
   "canonical_slug": "duekoue-exploration",
@@ -61,23 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**DuÃ©kouÃ© ** Exploration",
+      "name": "DuÃ©kouÃ©  Exploration",
       "from": "2025-10-27T13:21:36.087690",
       "to": "2025-11-04T19:19:04.463947Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Western Ivory Coast",
+  "province": "District des Montagnes",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:22:21.000000Z",
+      "timestamp": "2025-12-02T10:25:58.000000Z",
       "operators": [
-        "La Miniere de L'Elephant SARL",
-        "Oscillate Plc"
+        "Oscillate PLC"
       ],
-      "owners": [],
-      "notes": "The Duékoué Project is part of a joint venture partnership and earn-in agreement with La Miniere de L'Elephant SARL."
+      "owners": [
+        "La Miniere de L'Elephant SARL"
+      ],
+      "notes": "The project is under a joint venture partnership between Oscillate PLC and La Miniere de L'Elephant SARL."
     }
   }
 }

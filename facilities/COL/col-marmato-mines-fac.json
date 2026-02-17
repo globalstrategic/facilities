@@ -11,8 +11,8 @@
   ],
   "country_iso3": "COL",
   "location": {
-    "lat": 5.474,
-    "lon": -75.608,
+    "lat": 5.501099717469104,
+    "lon": -75.6025597,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aris Mining Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.740543Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:57:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Medellin (https://aris-mining.com/operation/marmato-mine/). Marmato is a historic mining area with ongoing operations and expansions planned"
   },
   "canonical_name": "Marmato Mines Mine",
   "canonical_slug": "marmato-mines-mine",
@@ -58,5 +60,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Caldas",
+  "town": "Medellin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:57:18.000000Z",
+      "operators": [
+        "Aris Mining Corporation"
+      ],
+      "owners": [
+        "Aris Mining Corporation"
+      ],
+      "notes": "Aris Mining operates the Marmato Complex, which includes the Upper and Lower Mines."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.902,
-    "lon": -81.582,
+    "lat": 37.905556,
+    "lon": -81.585278,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lexington Coal Company, LLC",
+    "Lexington Coal Holdings"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.882102Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:01:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Twilight_Mtr_Surface_Mine. Twilight Mtr Surface Mine is an operating coal mine in Boone County, West Virginia"
   },
   "canonical_name": "Twilight Mtr Surface Mine",
   "canonical_slug": "twilight-mtr-surface-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:01:55.000000Z",
+      "operators": [
+        "Lexington Coal Company, LLC"
+      ],
+      "owners": [
+        "Lexington Coal Company, LLC",
+        "Lexington Coal Holdings"
+      ],
+      "notes": "Lexington Coal is owned by the Hoops family."
+    }
+  }
 }

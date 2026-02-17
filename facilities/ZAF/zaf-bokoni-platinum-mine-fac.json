@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.293,
-    "lon": 29.886,
+    "lat": -24.4155474558215,
+    "lon": 30.01913513651079,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "African Rainbow Minerals Limited",
+    "Anglo American Platinum Limited",
+    "Atlatsa Resources Corporation",
+    "Bokoni Platinum Holdings Proprietary Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +61,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.766468Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:55:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Polokwane (https://www.atlatsa.com/about-us/corporate-profile). Bokoni Platinum Mine is located in the Sekhukhune District of Limpopo, approximately 80 km southeast of Polokwane"
   },
   "canonical_name": "Bokoni Platinum Mine",
   "canonical_slug": "bokoni-platinum-mine",
@@ -75,5 +80,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "town": "Polokwane",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:55:02.000000Z",
+      "operators": [
+        "African Rainbow Minerals Limited",
+        "Atlatsa Resources Corporation"
+      ],
+      "owners": [
+        "Bokoni Platinum Holdings Proprietary Limited",
+        "Anglo American Platinum Limited"
+      ],
+      "notes": "Bokoni Platinum Mine is a joint venture between Atlatsa Resources (51%) and Anglo American Platinum (49%). The mine has been under care and maintenance since 2017."
+    }
+  }
 }

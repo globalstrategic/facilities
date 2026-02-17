@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 45.55,
-    "lon": 95.642,
+    "lat": 45.550068,
+    "lon": 95.642324,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altain Khuder LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.458796Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:20:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tayan_Nuur_mine. The Tayan Nuur mine is an open-pit iron ore mining project located in the Govi-Altai Province of Mongolia"
   },
   "canonical_name": "Altain Khuder Tayan Nuur Mine",
   "canonical_slug": "altain-khuder-tayan-nuur-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Govi-Altai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:20:39.000000Z",
+      "operators": [
+        "Altain Khuder LLC"
+      ],
+      "owners": [
+        "Altain Khuder LLC"
+      ],
+      "notes": "Altain Khuder LLC is a Mongolian-registered mining and mineral exploration company that has been developing the Tayan Nuur mine since its discovery in 2006."
+    }
+  }
 }

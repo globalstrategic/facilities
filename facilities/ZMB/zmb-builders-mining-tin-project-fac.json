@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -16.5,
+    "lon": 28.7,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Builders Mining Corporation Ltd",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.849572",
-      "evidence": "Extracted from operator column: Builders Mining Corporation Ltd"
-    }
+    "Builders Mining Corporation Limited",
+    "Builders Mining Corporation Ltd"
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.689266Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:30:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:30:28Z] Builders Mining tin project near Siavonga area, Southern Province."
   },
   "canonical_name": "Builders Mining Tin Exploration",
   "canonical_slug": "builders-mining-tin-exploration",
@@ -56,5 +50,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:51:03.000000Z",
+      "operators": [
+        "Builders Mining Corporation Limited"
+      ],
+      "owners": [
+        "Builders Mining Corporation Limited"
+      ],
+      "notes": "The company holds the mining rights over the project."
+    }
+  }
 }

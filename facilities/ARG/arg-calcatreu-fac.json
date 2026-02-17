@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ARG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -45.0,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -14,6 +14,7 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
+    "Black River Mine Inc.",
     "Minera Calcatreu SAU",
     "Pan American Silver",
     "Patagonia Gold Canada Inc.",
@@ -28,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.183752Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T15:22:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://m-mtoday.com/news/patagonia-gold-secures-40m-boost-for-calcatreu-mine-in-argentina/. Calcatreu is located approximately 85 km south of Ing Jacobacci, a reference town"
   },
   "canonical_name": "Calcatreu Mine",
   "canonical_slug": "calcatreu-mine",
@@ -48,18 +49,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Rio Negro",
+  "province": "Río Negro",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:31:08.000000Z",
+      "timestamp": "2025-12-01T15:22:09.000000Z",
       "operators": [
-        "Patagonia Gold Canada Inc.",
-        "Minera Calcatreu SAU"
-      ],
-      "owners": [
         "Patagonia Gold Corp."
       ],
-      "notes": "Patagonia Gold Corp. is focused on the development of the Calcatreu project."
+      "owners": [
+        "Patagonia Gold Corp.",
+        "Black River Mine Inc."
+      ],
+      "notes": "Patagonia Gold is advancing the project with an investment from Black River Mine."
     }
   }
 }

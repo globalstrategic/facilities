@@ -14,7 +14,7 @@
   "country_iso3": "USA",
   "location": {
     "lat": 34.75,
-    "lon": -112.116,
+    "lon": -112.1222,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Phelps Dodge Corporation",
+    "Verde Central Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.945454Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:11:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/6143. The Verde Central Mine is located near Jerome, Arizona, within the Coconino National Forest"
   },
   "canonical_name": "Verde Central Mine",
   "canonical_slug": "verde-central-mine",
@@ -64,5 +67,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:11:19.000000Z",
+      "operators": [
+        "Verde Central Mining Company"
+      ],
+      "owners": [
+        "Phelps Dodge Corporation",
+        "Verde Central Mining Company"
+      ],
+      "notes": "Phelps Dodge Corporation is mentioned as an owner."
+    }
+  }
 }

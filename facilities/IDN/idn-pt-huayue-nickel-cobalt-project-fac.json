@@ -1,14 +1,14 @@
 {
   "facility_id": "idn-pt-huayue-nickel-cobalt-project-fac",
-  "name": "**PT Huayue Nickel Cobalt Project**",
+  "name": "PT Huayue Nickel Cobalt Project",
   "aliases": [
     "HNC"
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.8256,
+    "lon": 122.1554,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -23,14 +23,12 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Huayue Nickel Cobalt",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.607962",
-      "evidence": "Extracted from operator column: PT Huayue Nickel Cobalt"
-    }
+    "China Molybdenum",
+    "Huayou Cobalt",
+    "Nickel Industries",
+    "Nickel Industries Limited",
+    "Ningbo Lygend Mining",
+    "PT Huayue Nickel Cobalt"
   ],
   "products": [],
   "sources": [
@@ -41,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.233024Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Located at Indonesia Morowali Industrial Park (IMIP), Bahodopi, Central Sulawesi"
   },
   "canonical_name": "PT Huayue Nickel Cobalt Plant",
   "canonical_slug": "pt-huayue-nickel-cobalt-plant",
@@ -62,11 +60,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT Huayue Nickel Cobalt ** Plant",
+      "name": "PT Huayue Nickel Cobalt  Plant",
       "from": "2025-10-29T10:37:55.607966",
       "to": "2025-11-04T19:19:10.233022Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:33:34.000000Z",
+      "operators": [
+        "Huayou Cobalt"
+      ],
+      "owners": [
+        "Huayou Cobalt",
+        "Nickel Industries",
+        "China Molybdenum"
+      ],
+      "notes": "Huayou Cobalt is the primary operator and owner, with Nickel Industries holding a 10% stake."
+    }
+  }
 }

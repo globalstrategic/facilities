@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.886,
-    "lon": 81.019,
+    "lat": 24.885889,
+    "lon": 81.019142,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shiv Kumar Agarwal Birsinghpur Mine"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.090598Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:50:30.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shiv_Kumar_Agarwal_Birsinghpur_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Shiv Kumar Agarwal Birsinghpur Mine",
   "canonical_slug": "shiv-kumar-agarwal-birsinghpur-mine",
@@ -48,5 +50,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:50:30.000000Z",
+      "operators": [
+        "Shiv Kumar Agarwal Birsinghpur Mine"
+      ],
+      "owners": [],
+      "notes": "The mine is part of the Global Iron Ore Mines Tracker."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -18.434,
-    "lon": 26.531,
+    "lat": -18.44373765,
+    "lon": 26.53250076,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Makomo Resources (PVT) Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.946593Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:24:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Entuba_Colliery. Entuba Colliery is a surface and underground mine producing thermal and coking coal"
   },
   "canonical_name": "Entuba Colliery Mine",
   "canonical_slug": "entuba-colliery-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland North",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:24:52.000000Z",
+      "operators": [
+        "Makomo Resources (PVT) Ltd"
+      ],
+      "owners": [
+        "Makomo Resources (PVT) Ltd"
+      ],
+      "notes": "Makomo Resources owns and operates the mine, which began operating in 2010."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 31.3667,
+    "lon": -105.575,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Texas Mineral Resources Corp.",
+    "USA Rare Earth LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.761703Z",
-    "checked_by": "import_pipeline",
-    "notes": "HREE-leaning with Nd/Pr; co-development | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:36:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "HREE-leaning with Nd/Pr; co-development | Canonical name+slug generated. Web search geocoded. Source: https://tmrcorp.com/news/press_releases/2021/index.php?content_id=240. The Round Top Project is located approximately 10 miles northwest of Sierra Blanca in Hudspeth County, Texas"
   },
   "canonical_name": "Round Top Mine",
   "canonical_slug": "round-top-mine",
@@ -53,5 +56,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:36:56.000000Z",
+      "operators": [
+        "USA Rare Earth LLC"
+      ],
+      "owners": [
+        "Texas Mineral Resources Corp.",
+        "USA Rare Earth LLC"
+      ],
+      "notes": "USA Rare Earth LLC operates the facility and holds an 80% interest, while Texas Mineral Resources Corp. holds a 19.323% indirect stake."
+    }
+  }
 }

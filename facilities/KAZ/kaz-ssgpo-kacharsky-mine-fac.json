@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": 53.377,
-    "lon": 62.936,
+    "lat": 53.376667,
+    "lon": 62.935556,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eurasian Resources Group",
+    "JSC Sokolov-Sarbai Mining Production Association (SSGPO)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.746765Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:46:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SSGPO_Kacharsky_Mine. The Kacharsky Mine is a significant iron ore mining facility in Kazakhstan, producing a substantial portion of the iron ore for the SSGPO"
   },
   "canonical_name": "Ssgpo Kacharsky Mine",
   "canonical_slug": "ssgpo-kacharsky-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kostanay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:46:46.000000Z",
+      "operators": [
+        "JSC Sokolov-Sarbai Mining Production Association (SSGPO)"
+      ],
+      "owners": [
+        "Eurasian Resources Group"
+      ],
+      "notes": "SSGPO is a subsidiary of Eurasian Resources Group, which is a leading diversified natural resources group."
+    }
+  }
 }

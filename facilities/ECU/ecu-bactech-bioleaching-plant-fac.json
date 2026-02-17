@@ -4,16 +4,20 @@
   "aliases": [],
   "country_iso3": "ECU",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -3.0,
+    "lon": -79.5,
+    "precision": "region"
   },
   "types": [
     "mine"
   ],
   "commodities": [],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "BacTech Environmental",
+    "BacTech Environmental Corp",
+    "BacTech Environmental Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.546936Z",
-    "checked_by": "import_pipeline",
-    "notes": "Projected 125,000 oz Au/y equivalent | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Projected 125,000 oz Au/y equivalent | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] BacTech bioleaching plant (planned) in Azuay province, near Tenguel/Ponce Enriquez area."
   },
   "canonical_name": "Bactech Bioleaching Mine",
   "canonical_slug": "bactech-bioleaching-mine",
@@ -50,5 +54,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Azuay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:06:38.000000Z",
+      "operators": [
+        "BacTech Environmental Corp"
+      ],
+      "owners": [
+        "BacTech Environmental Corp"
+      ],
+      "notes": "BacTech is the sole operator and owner of the planned facility."
+    }
+  }
 }

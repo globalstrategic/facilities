@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown",
+    "lat": 19.83222,
+    "lon": 92.60306,
+    "precision": "site",
     "description": "Magway Region"
   },
   "types": [
@@ -19,7 +19,18 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "GAIL (India)",
+    "GAIL (India) Limited",
+    "Korea Gas",
+    "Korea Gas Corporation",
+    "Myanma Oil and Gas Enterprise",
+    "ONGC Videsh",
+    "Oil and Natural Gas",
+    "POSCO DAEWOO Corporation",
+    "Posco International",
+    "Posco International Corp"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.875753Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Refineries and Petrochemical Facilities: Myanmar has limited domestic refining capacity, leading to a high dependency on imported refined fuels. The existing state-owned facilities are aging and inclu | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:51:39Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Refineries and Petrochemical Facilities: Myanmar has limited domestic refining capacity, leading to a high dependency on imported refined fuels. The existing state-owned facilities are aging and inclu | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:51:39Z] Geocoded via web search. Coords: (19.83222, 92.60306). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for the Shwe gas field, which is approximately 60 km offshore from Kyaukphyu."
   },
   "canonical_name": "Shwe Facility",
   "canonical_slug": "shwe-facility",
@@ -56,5 +67,22 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rakhine",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:50:29.000000Z",
+      "operators": [
+        "POSCO DAEWOO Corporation"
+      ],
+      "owners": [
+        "POSCO DAEWOO Corporation",
+        "Myanma Oil and Gas Enterprise",
+        "ONGC Videsh",
+        "GAIL (India) Limited",
+        "Korea Gas Corporation"
+      ],
+      "notes": "The project is a joint venture with multiple stakeholders, with POSCO DAEWOO Corporation as the operator."
+    }
+  }
 }

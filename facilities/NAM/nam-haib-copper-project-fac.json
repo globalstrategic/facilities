@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -28.697,
+    "lon": 17.887,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Koryx Copper",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.740587",
-      "evidence": "Extracted from operator column: Koryx Copper (Haib Minerals)"
-    }
+    "Deep-South Resources Inc.",
+    "Koryx Copper",
+    "Koryx Copper Inc."
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:14.554820Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:51:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Haib_mine. The Haib Copper Project is a large, advanced copper/molybdenum porphyry deposit with a long history of exploration"
   },
   "canonical_name": "Haib Copper Development",
   "canonical_slug": "haib-copper-development",
@@ -64,5 +59,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "ǁKaras Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:51:31.000000Z",
+      "operators": [
+        "Koryx Copper Inc.",
+        "Deep-South Resources Inc."
+      ],
+      "owners": [
+        "Deep-South Resources Inc."
+      ],
+      "notes": "Koryx Copper Inc. is focused on advancing the Haib Copper Project, which is 100% owned by them."
+    }
+  }
 }

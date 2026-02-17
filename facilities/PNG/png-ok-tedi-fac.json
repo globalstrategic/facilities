@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PNG",
   "location": {
-    "lat": -5.206,
-    "lon": 141.137,
+    "lat": -5.5,
+    "lon": 141.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Inmet Mining Corporation",
+    "Kumul Minerals Holdings Limited",
+    "Ok Tedi Mining Limited (OTML)",
+    "PNG Sustainable Development Program Limited",
+    "State of Papua New Guinea"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.312378Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:53:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ok_Tedi_Mine. Coordinates are approximate based on the location of the Ok Tedi Mine at Mt Fubilan"
   },
   "canonical_name": "Ok Tedi Mine",
   "canonical_slug": "ok-tedi-mine",
@@ -54,5 +60,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:53:53.000000Z",
+      "operators": [
+        "Ok Tedi Mining Limited (OTML)"
+      ],
+      "owners": [
+        "Kumul Minerals Holdings Limited",
+        "PNG Sustainable Development Program Limited",
+        "State of Papua New Guinea",
+        "Inmet Mining Corporation"
+      ],
+      "notes": "OTML is a 100% PNG owned company, with Kumul Minerals Holdings Limited holding 67% of OTML’s shares."
+    }
+  }
 }

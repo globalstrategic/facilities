@@ -6,9 +6,9 @@
   ],
   "country_iso3": "NGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.4966,
+    "lon": 4.5421,
+    "precision": "region"
   },
   "types": [
     "development"
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "C&C Minerals Limited",
+    "Chariot Corporation",
+    "Continental Critical Minerals, Inc.",
+    "Continental Lithium Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.811344Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Continental Lithium Kwara-Oyo project, regional coordinates for Kwara State (Ilorin)"
   },
   "canonical_name": "Continental Lithium Facility",
   "canonical_slug": "continental-lithium-facility",
@@ -57,5 +62,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lagos State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:27:56.000000Z",
+      "operators": [
+        "Continental Lithium Limited",
+        "Chariot Corporation"
+      ],
+      "owners": [
+        "Continental Critical Minerals, Inc.",
+        "C&C Minerals Limited"
+      ],
+      "notes": "Continental Lithium is a subsidiary of Continental Critical Minerals, Inc. and is involved in a joint venture with Chariot Corporation."
+    }
+  }
 }

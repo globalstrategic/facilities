@@ -1,12 +1,12 @@
 {
   "facility_id": "cze-diamo-remediation-sites-fac",
-  "name": "**DIAMO Remediation Sites**",
+  "name": "DIAMO Remediation Sites",
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.68,
+    "lon": 14.87,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "DIAMO, s.p.",
-      "role": "operator",
-      "source": "Research Import CZE 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T15:23:26.784535",
-      "evidence": "Extracted from operator column: DIAMO, s.p. (State Enterprise)"
-    }
+    "DIAMO, s.p.",
+    "DIAMO, state enterprise"
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.585061Z",
-    "checked_by": "import_pipeline",
-    "notes": "Manages all former uranium mines. Uranium is actively extracted as a by-product of treating contaminated mine water from sites like Příbram and Rožná. 13 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:06:27Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Manages all former uranium mines. Uranium is actively extracted as a by-product of treating contaminated mine water from sites like Příbram and Rožná. 13 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:06:27Z] DIAMO uranium remediation sites headquarters at Stráž pod Ralskem, Liberec"
   },
   "canonical_name": "Diamo Remediation Sites Facility",
   "canonical_slug": "diamo-remediation-sites-facility",
@@ -53,11 +47,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**DIAMO Remediation Sites**",
+      "name": "DIAMO Remediation Sites",
       "from": "2025-10-27T15:23:26.784538",
       "to": "2025-11-04T19:19:10.585055Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Liberec",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:13:07.000000Z",
+      "operators": [
+        "DIAMO, state enterprise"
+      ],
+      "owners": [],
+      "notes": "DIAMO is a state enterprise responsible for remediation of mining activities."
+    }
+  }
 }

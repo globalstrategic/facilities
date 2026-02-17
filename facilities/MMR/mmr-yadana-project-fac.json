@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown",
+    "lat": 15.1865,
+    "lon": 94.6377,
+    "precision": "site",
     "description": ""
   },
   "types": [
@@ -19,7 +19,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chevron Corporation",
+    "Myanma Oil and Gas Enterprise (MOGE)",
+    "PTT Exploration and Production Public Company Limited (PTTEP)",
+    "TotalEnergies"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.867238Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:50:17Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:50:17Z] Geocoded via web search. Coords: (15.1865, 94.6377). Confidence: 0.90. Notes: Coordinates were extracted directly from the Global Energy Monitor source, which provides exact coordinates for the Yadana Gas Field."
   },
   "canonical_name": "Yadana Facility",
   "canonical_slug": "yadana-facility",
@@ -56,5 +61,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mon State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:48:25.000000Z",
+      "operators": [
+        "PTT Exploration and Production Public Company Limited (PTTEP)"
+      ],
+      "owners": [
+        "TotalEnergies",
+        "Chevron Corporation",
+        "Myanma Oil and Gas Enterprise (MOGE)"
+      ],
+      "notes": "PTTEP is the current operator following TotalEnergies' withdrawal in 2022."
+    }
+  }
 }

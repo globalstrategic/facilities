@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -29.048,
-    "lon": 25.221,
+    "lat": -29.604748605352395,
+    "lon": 17.8831039,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SHiP Copper Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:35:07.700548Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:54:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Springbok (https://www.mindat.org/loc-53596.html). The Carolusberg Mine is located in the Okiep Copper District, which is part of the Namakwa District Municipality"
   },
   "canonical_name": "Carolusberg Mine",
   "canonical_slug": "carolusberg-mine",
@@ -51,5 +53,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "town": "Springbok",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:54:07.000000Z",
+      "operators": [
+        "SHiP Copper Company"
+      ],
+      "owners": [],
+      "notes": "SHiP Copper Company is mentioned in relation to the development of the mine."
+    }
+  }
 }

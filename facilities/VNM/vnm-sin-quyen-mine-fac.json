@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-sin-quyen-mine-fac",
-  "name": "**Sin Quyen Mine**",
+  "name": "Sin Quyen Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 22.35,
+    "lon": 103.85,
+    "precision": "district"
   },
   "types": [
     "mine"
@@ -27,6 +27,9 @@
     "PetroVietnam",
     "Sin Quyen Copper Co.",
     "VINACOMIN \\- Minerals Holding Corp.",
+    "Vietnam National Coal - Mineral Industries Holding Corporation Ltd",
+    "Vietnam National Minerals Corporation",
+    "Vimico",
     "Vinacomin",
     "Vinacomin's subsidiary Sin Quyen Copper Co."
   ],
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.269885Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Vietnam's largest copper mine (IOCG), Bat Xat District, Lao Cai"
   },
   "canonical_name": "Sin Quyen Mine",
   "canonical_slug": "sin-quyen-mine",
@@ -60,28 +63,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sin Quyen ** Mine",
+      "name": "Sin Quyen  Mine",
       "from": "2025-10-21T13:04:38.080752",
       "to": "2025-11-04T19:19:02.269878Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Lao Cai",
+  "province": "Lao Cai Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:47:57.000000Z",
+      "timestamp": "2025-12-02T09:30:06.000000Z",
       "operators": [
-        "Sin Quyen Copper Co."
+        "Vietnam National Coal - Mineral Industries Holding Corporation Ltd",
+        "Vimico"
       ],
       "owners": [
-        "Vinacomin",
-        "Idemitsu Kosan Co. Ltd.",
-        "Kuwait Petroleum International",
-        "PetroVietnam",
-        "Mitsui Chemicals Inc."
+        "Vietnam National Coal - Mineral Industries Holding Corporation Ltd"
       ],
-      "notes": "Vinacomin operates the mine through its subsidiary, Sin Quyen Copper Co. Ownership includes several international partners."
+      "notes": "Vimico is the operator of the Sin Quyen Mine, which is owned by Vietnam National Coal - Mineral Industries Holding Corporation Ltd."
     }
   }
 }

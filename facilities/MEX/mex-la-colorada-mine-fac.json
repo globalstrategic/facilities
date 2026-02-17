@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 23.489,
-    "lon": -103.891,
+    "lat": 24.09705862652491,
+    "lon": -104.03357637825184,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heliostar Metals Limited",
+    "Minera Pitalla, S.A. de C.V.",
+    "Pan American Silver Corp.",
+    "Plata Panamericana S.A. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.959088Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:35:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Durango (https://www.mining-technology.com/projects/la-colorada-property-mexico/). The La Colorada Mine is located in Zacatecas state, Mexico, approximately 115 km southeast of Durango"
   },
   "canonical_name": "La Colorada Mine",
   "canonical_slug": "la-colorada-mine-2",
@@ -50,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zacatecas",
+  "town": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:42.000000Z",
+      "operators": [
+        "Plata Panamericana S.A. de C.V.",
+        "Minera Pitalla, S.A. de C.V."
+      ],
+      "owners": [
+        "Pan American Silver Corp.",
+        "Heliostar Metals Limited"
+      ],
+      "notes": "Pan American Silver is the owner of the project, while Heliostar Metals has recently acquired the mine and plans to restart operations."
+    }
+  }
 }

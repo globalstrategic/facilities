@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-biankouma-project-fac",
-  "name": "**Biankouma Project**",
+  "name": "Biankouma Project",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 7.5,
+    "lon": -7.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,7 +19,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "NOCI",
     "Parnassa Invest SAS",
+    "SODEMI",
+    "Societe pour le Developpement Minier (SODEMI)",
     "Société pour le Développement Minier (SODEMI)",
     "Xstrata"
   ],
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.463021Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:04:57Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:04:57Z] Geocoded via web search. Coords: (7.5, -7.5). Confidence: 0.70. Notes: Coordinates are estimated based on the proximity to Biankouma, which is mentioned as being 40 km east of the facility."
   },
   "canonical_name": "Biankouma Exploration",
   "canonical_slug": "biankouma-exploration",
@@ -53,24 +56,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Biankouma ** Exploration",
+      "name": "Biankouma  Exploration",
       "from": "2025-10-27T13:21:36.064506",
       "to": "2025-11-04T19:19:04.463018Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Savanes",
+  "province": "Côte d'Ivoire",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T07:21:32.000000Z",
+      "timestamp": "2025-12-02T10:25:32.000000Z",
       "operators": [
         "Xstrata"
       ],
       "owners": [
-        "Société pour le Développement Minier (SODEMI)"
+        "Societe pour le Developpement Minier (SODEMI)"
       ],
-      "notes": "Xstrata is the operator of the Biankouma Project, having absorbed Falconbridge, which initially explored the area."
+      "notes": "Xstrata holds 85% of the shares in the project, with SODEMI holding the remaining 15%."
     }
   }
 }

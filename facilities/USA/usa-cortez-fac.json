@@ -17,8 +17,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.249,
-    "lon": -116.722,
+    "lat": 40.24583,
+    "lon": -116.71111,
     "precision": "site"
   },
   "types": [
@@ -43,7 +43,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Newmont Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -53,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.939329Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:06:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Cortez_Gold_Mine. Cortez Gold Mine is a large gold mining and processing facility located in Lander and Eureka County, Nevada"
   },
   "canonical_name": "Cortez Mine",
   "canonical_slug": "cortez-mine",
@@ -72,5 +75,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:06:56.000000Z",
+      "operators": [
+        "Barrick Gold Corporation"
+      ],
+      "owners": [
+        "Barrick Gold Corporation",
+        "Newmont Corporation"
+      ],
+      "notes": "Cortez is a joint venture between Barrick Gold (61.5%) and Newmont Corporation (38.5%)."
+    }
+  }
 }

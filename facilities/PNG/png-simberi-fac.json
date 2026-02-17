@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PNG",
   "location": {
-    "lat": -2.627,
-    "lon": 152.0,
+    "lat": -1.293921547276857,
+    "lon": 147.1907162,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Simberi Gold Company Limited",
+    "St Barbara Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.312824Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T07:54:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Port Moresby (https://pngcore.org/wp-content/uploads/2023/12/1212_1315_PNGRE_GBR_S702_Randy_McMahon.pdf). Simberi operations are located on the northernmost island in the Tabar group of islands"
   },
   "canonical_name": "Simberi Mine",
   "canonical_slug": "simberi-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Ireland",
+  "town": "Port Moresby",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:54:24.000000Z",
+      "operators": [
+        "Simberi Gold Company Limited",
+        "St Barbara Limited"
+      ],
+      "owners": [
+        "St Barbara Limited"
+      ],
+      "notes": "Simberi Gold Company Limited is a subsidiary of St Barbara Limited."
+    }
+  }
 }

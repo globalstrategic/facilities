@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.618,
-    "lon": -81.281,
+    "lat": 37.618937,
+    "lon": -81.275715,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pocahontas Coal Company",
+    "United Coal Company LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.758891Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:34:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Pocahontas_Hwm_52_Coal_Mine. The Pocahontas Hwm 52 Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Pocahontas Hwm 52 Coal Mine",
   "canonical_slug": "pocahontas-hwm-52-coal-mine",
@@ -51,5 +54,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:34:03.000000Z",
+      "operators": [],
+      "owners": [
+        "Pocahontas Coal Company",
+        "United Coal Company LLC"
+      ],
+      "notes": "Pocahontas Coal Company is the owner, and United Coal Company LLC is the parent company."
+    }
+  }
 }

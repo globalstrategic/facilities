@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.00706,
-    "lon": 30.81323,
+    "lat": -27.022301,
+    "lon": 30.414471,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kangra Coal (Pty) Ltd",
+    "Menar"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:12:53.000000Z",
+    "last_checked": "2025-12-01T17:29:05.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/piet-retief. Coordinates extracted directly from multiple sources confirming the location of Piet Retief, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latlong.info/south-africa/mpumalanga/piet-retief. Coordinates extracted directly from multiple sources confirming the location of Piet Retief, South Africa. Web search geocoded. Source: https://www.gem.wiki/Kangra_Coal_Mine. The Kangra Coal Mine is an operating coal mine located in Piet Retief, Mpumalanga, South Africa"
   },
   "canonical_name": "Piet Retief Coal Mine",
   "canonical_slug": "piet-retief-coal-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:29:05.000000Z",
+      "operators": [
+        "Kangra Coal (Pty) Ltd"
+      ],
+      "owners": [
+        "Menar"
+      ],
+      "notes": "Kangra Coal is a subsidiary of Menar, which owns 100% of the operation."
+    }
+  }
 }

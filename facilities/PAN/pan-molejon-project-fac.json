@@ -1,11 +1,11 @@
 {
   "facility_id": "pan-molejon-project-fac",
-  "name": "**Molejon Project**",
+  "name": "Molejon Project",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
-    "lat": 8.8,
-    "lon": null,
+    "lat": 9.03935905061101,
+    "lon": -80.59983383399285,
     "precision": "unknown"
   },
   "types": [
@@ -13,20 +13,13 @@
   ],
   "commodities": [
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": true
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Petaquilla Minerals Ltd.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.899284",
-      "evidence": "Extracted from operator column: Petaquilla Minerals Ltd."
-    }
+    "Petaquilla Minerals Ltd."
   ],
   "products": [],
   "sources": [
@@ -37,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:21.424749Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:41:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Panama City (https://www.mining-technology.com/projects/molejon-gold/). The Molejon Gold Project is located approximately 120 km west of Panama City"
   },
   "canonical_name": "Molejon Mine",
   "canonical_slug": "molejon-mine",
@@ -58,11 +51,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Molejon ** Mine",
+      "name": "Molejon  Mine",
       "from": "2025-10-28T21:58:20.899336",
       "to": "2025-11-04T19:19:21.424738Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Panamá",
+  "town": "Panama City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:41:25.000000Z",
+      "operators": [
+        "Petaquilla Minerals Ltd."
+      ],
+      "owners": [
+        "Petaquilla Minerals Ltd."
+      ],
+      "notes": "Petaquilla Minerals Ltd. is the sole owner and operator of the Molejon Gold Project."
+    }
+  }
 }

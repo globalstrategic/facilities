@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 33.304778,
+    "lon": -111.054889,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,22 +21,13 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Rio Tinto",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.228200",
-      "evidence": "Extracted from operator column: Rio Tinto / BHP"
-    },
-    {
-      "name": "BHP",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:34.228209",
-      "evidence": "Extracted from operator column: Rio Tinto / BHP"
-    }
+    "BHP",
+    "BHP Copper Inc.",
+    "BHP Copper Inc. (a BHP Billiton PLC subsidiary)",
+    "Resolution Copper Company",
+    "Resolution Copper Company (a Rio Tinto PLC subsidiary)",
+    "Resolution Copper Mining",
+    "Rio Tinto"
   ],
   "products": [],
   "sources": [
@@ -47,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.727771Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:27:54Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:27:54Z] Geocoded via web search. Coords: (33.304778, -111.054889). Confidence: 0.90. Notes: Coordinates were directly extracted from the search results for the Resolution Copper facility."
   },
   "canonical_name": "Resolution Copper Mine",
   "canonical_slug": "resolution-copper-mine",
@@ -66,5 +57,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:00:49.000000Z",
+      "operators": [
+        "Resolution Copper Mining"
+      ],
+      "owners": [
+        "Resolution Copper Company",
+        "BHP Copper Inc."
+      ],
+      "notes": "Resolution Copper Mining is a joint venture owned 55% by Resolution Copper Company (a Rio Tinto PLC subsidiary) and 45% by BHP Copper Inc. (a BHP Billiton PLC subsidiary)."
+    }
+  }
 }

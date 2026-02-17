@@ -1,12 +1,12 @@
 {
   "facility_id": "fin-harjavalta-smelter-refinery-fac",
-  "name": "**Harjavalta Smelter & Refinery**",
+  "name": "Harjavalta Smelter & Refinery",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 61.3122,
+    "lon": 22.134,
+    "precision": "site"
   },
   "types": [
     "smelter",
@@ -15,14 +15,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Boliden Harjavalta Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.778478",
-      "evidence": "Extracted from operator column: Boliden Harjavalta Oy"
-    }
+    "Boliden AB",
+    "Boliden Harjavalta Oy",
+    "Norilsk Nickel"
   ],
   "products": [],
   "sources": [
@@ -33,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.191809Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Boliden Harjavalta Smelter & Refinery"
   },
   "canonical_name": "Harjavalta & Smelter",
   "canonical_slug": "harjavalta-smelter-2",
@@ -54,11 +49,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Harjavalta & ** Smelter",
+      "name": "Harjavalta &  Smelter",
       "from": "2025-10-28T17:16:23.778481",
       "to": "2025-11-04T19:18:54.191804Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Satakunta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:58:53.000000Z",
+      "operators": [
+        "Boliden AB"
+      ],
+      "owners": [
+        "Boliden AB",
+        "Norilsk Nickel"
+      ],
+      "notes": "Boliden operates the facility, while Norilsk Nickel is also mentioned in relation to the refinery."
+    }
+  }
 }

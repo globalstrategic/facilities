@@ -7,8 +7,8 @@
   ],
   "country_iso3": "DEU",
   "location": {
-    "lat": 51.595,
-    "lon": 14.266,
+    "lat": 51.599444,
+    "lon": 14.278889,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Energetický a průmyslový holding AS",
+    "Lausitz Energie Bergbau AG",
+    "PPF Investments Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:56.640090Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:14:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Welzow-S%C3%BCd_Coal_Mine. Welzow-Süd Coal Mine is an operating coal mine in Welzow, Brandenburg, Germany"
   },
   "canonical_name": "Welzow Sã¼d Coal Mine",
   "canonical_slug": "welzow-sa14d-coal-mine",
@@ -58,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Brandenburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:14:12.000000Z",
+      "operators": [
+        "Lausitz Energie Bergbau AG"
+      ],
+      "owners": [
+        "Energetický a průmyslový holding AS",
+        "PPF Investments Ltd"
+      ],
+      "notes": "Lausitz Energie Bergbau AG is a subsidiary of EPH, which is a Czech company."
+    }
+  }
 }

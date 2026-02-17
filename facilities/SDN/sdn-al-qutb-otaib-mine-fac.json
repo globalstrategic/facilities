@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 19.61669370992459,
+    "lon": 36.25839750706194,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ariab Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.165024Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:33:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Port Sudan (https://www.middleeastmonitor.com/20171118-sudan-has-worlds-largest-copper-reserve/). Al-Qutb Mine is noted for having the largest copper reserve in the world and also contains significant amounts of gold, zinc, and silver"
   },
   "canonical_name": "Al Qutb / Otaib Facility",
   "canonical_slug": "al-qutb-otaib-facility",
@@ -67,5 +69,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Red Sea State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:33:42.000000Z",
+      "operators": [
+        "Ariab Mining Company"
+      ],
+      "owners": [],
+      "notes": "Ariab Mining Company is actively seeking financing for production projects at Al-Qutb Mine."
+    }
+  },
+  "town": "Port Sudan"
 }

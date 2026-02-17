@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.7512414,
+    "lon": 38.7603778,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -39,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "unlocatable",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.297924Z",
-    "checked_by": "import_pipeline",
-    "notes": "Sandstone-hosted hematite/goethite deposit; unexploited.82 | Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:46:56Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Sandstone-hosted hematite/goethite deposit; unexploited.82 | Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:59:47Z] No geographic coordinates found for Mekaneselam Deposit in the search results. | [GEOCODED 2025-12-18T00:46:56Z] Coordinates found via web search (manual research). Lat: 10.7512414, Lon: 38.7603778"
   },
   "canonical_name": "Mekaneselam Mine",
   "canonical_slug": "mekaneselam-mine",
@@ -58,5 +58,6 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "town": "Mekane Selam"
 }

@@ -1,32 +1,26 @@
 {
   "facility_id": "pan-aceros-industriales-de-panam-fac",
-  "name": "**Aceros Industriales de Panamá**",
+  "name": "Aceros Industriales de Panamá",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.9933,
+    "lon": -79.5202,
+    "precision": "site"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**steel**",
+      "metal": "steel",
       "primary": true
     }
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Aceros Industriales de Panamá, S.A.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.946202",
-      "evidence": "Extracted from operator column: Aceros Industriales de Panamá, S.A."
-    }
+    "ACEROS INDUSTRIALES DE PANAMA, S.A.",
+    "Aceros Industriales de Panamá, S.A."
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:21.425082Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:01:52Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:01:52Z] Geocoded via web search. Coords: (8.9933, -79.5202). Confidence: 0.90. Notes: Coordinates derived from the address 'Calle 2da, Llano Bonito, Juan Díaz, República de Panamá'."
   },
   "canonical_name": "Aceros Industriales De Panamá Processing Plant",
   "canonical_slug": "aceros-industriales-de-panama-processing-plant",
@@ -58,11 +52,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Aceros Industriales de Panamá** Processing Plant",
+      "name": "Aceros Industriales de Panamá Processing Plant",
       "from": "2025-10-28T21:58:20.946231",
       "to": "2025-11-04T19:19:21.425078Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Panamá",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:18:36.000000Z",
+      "operators": [
+        "ACEROS INDUSTRIALES DE PANAMA, S.A."
+      ],
+      "owners": [],
+      "notes": "The company was formed in 2012 and is located in Provincia Panamá."
+    }
+  }
 }

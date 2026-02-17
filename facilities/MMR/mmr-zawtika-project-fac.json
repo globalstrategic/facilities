@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 16.5,
+    "lon": 97.5,
     "precision": "unknown",
     "description": ""
   },
@@ -19,7 +19,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Myanma Oil and Gas Enterprise (20%)",
+    "Myanma Oil and Gas Enterprise (MOGE) (20%)",
+    "PTT Exploration and Production International (PTTEP International)",
+    "PTT Exploration and Production International (PTTEP) (80%)",
+    "PTT Exploration and Production International Limited (80%)",
+    "PTT Exploration and Production International Limited (PTTEP International)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.860303Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:46:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.oilandgasadvancement.com/projects/zawtika-project-gulf-of-martaban-myanmar/. The Zawtika Project is located in the Gulf of Martaban, approximately 300 km south of Yangon"
   },
   "canonical_name": "Zawtika Facility",
   "canonical_slug": "zawtika-facility",
@@ -56,5 +63,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yangon Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:46:39.000000Z",
+      "operators": [
+        "PTT Exploration and Production International (PTTEP International)"
+      ],
+      "owners": [
+        "PTT Exploration and Production International (PTTEP) (80%)",
+        "Myanma Oil and Gas Enterprise (MOGE) (20%)"
+      ],
+      "notes": "PTTEP is the operator and majority owner of the project."
+    }
+  },
+  "notes": "[AUTO-FIX 2025-12-17T20:06:05Z] Fixed wrong_hemisphere: Changed lat from -16.5 to 16.5"
 }

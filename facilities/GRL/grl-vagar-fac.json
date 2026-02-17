@@ -1,17 +1,24 @@
 {
   "facility_id": "grl-vagar-fac",
-  "name": "**Vagar**",
+  "name": "Vagar",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 60.45,
+    "lon": -44.70,
+    "precision": "approximate",
+    "address": "Vagar Ridge, ~25km from Nalunaq, South Greenland"
   },
   "types": [
     "mine"
   ],
   "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true,
+      "chemical_formula": "Au",
+      "category": "precious_metal"
+    },
     {
       "metal": "Copper",
       "primary": false,
@@ -39,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.633449Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "manually_corrected",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T00:00:00Z",
+    "checked_by": "manual_review",
+    "notes": "Fixed coords from Iceland (63.77, -20.20) to South Greenland. Vagar Ridge is ~25km from Nalunaq gold mine. High-grade gold prospect with up to 2,533 g/t Au surface grades."
   },
   "canonical_name": "Vagar Mine",
   "canonical_slug": "vagar-mine",
@@ -60,11 +67,12 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Vagar** Mine",
+      "name": "Vagar Mine",
       "from": "2025-10-29T08:01:20.194219",
       "to": "2025-11-04T19:19:00.633446Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kujalleq"
 }

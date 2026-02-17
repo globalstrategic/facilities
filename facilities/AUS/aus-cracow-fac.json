@@ -1,0 +1,85 @@
+{
+  "facility_id": "aus-cracow-fac",
+  "name": "Cracow",
+  "aliases": [
+    "Cracow",
+    "Cracow",
+    "EMPIRE",
+    "CRACOW",
+    "ROSES PRIDE",
+    "KILKENNY NORTH",
+    "SOVEREIGN",
+    "PHOENIX",
+    "Cracow",
+    "Cracow",
+    "Cracow",
+    "Cracow Plant"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -25.285,
+    "lon": 150.273,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Eramet",
+    "Société Le Nickel (SLN)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:53.151608"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:56.366089Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Cracow Mine",
+  "canonical_slug": "cracow-mine",
+  "display_name": "Cracow",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:55:43.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)",
+        "Eramet"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "Eramet is a major stakeholder in New Caledonia's nickel industry and owns SLN."
+    }
+  }
+}

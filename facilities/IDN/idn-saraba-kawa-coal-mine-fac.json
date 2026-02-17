@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.396,
-    "lon": 115.632,
+    "lat": -3.395898,
+    "lon": 115.632299,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Saraba Kawa"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.196885Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:10:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Saraba_Kawa_Coal_Mine. The Saraba Kawa Coal Mine is an operating coal mine located in South Kalimantan, Indonesia"
   },
   "canonical_name": "Saraba Kawa Coal Mine",
   "canonical_slug": "saraba-kawa-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:10:01.000000Z",
+      "operators": [
+        "Saraba Kawa"
+      ],
+      "owners": [
+        "Saraba Kawa"
+      ],
+      "notes": "Saraba Kawa Coal Mine is 100% owned by Saraba Kawa."
+    }
+  }
 }

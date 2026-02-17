@@ -12,8 +12,8 @@
   ],
   "country_iso3": "VNM",
   "location": {
-    "lat": 21.039,
-    "lon": 107.24,
+    "lat": 21.052803,
+    "lon": 107.232761,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duong Huy Coal Company",
+    "Vietnam National Coal and Mineral Industries Holding Corp Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.283015Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:28:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_at_Duong_Huy. Coordinates extracted from the Global Energy Monitor article"
   },
   "canonical_name": "At Duong Huy Mine",
   "canonical_slug": "at-duong-huy-mine",
@@ -63,5 +66,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Quang Ninh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:28:29.000000Z",
+      "operators": [
+        "Duong Huy Coal Company"
+      ],
+      "owners": [
+        "Vietnam National Coal and Mineral Industries Holding Corp Ltd"
+      ],
+      "notes": "Duong Huy Coal Company is a subsidiary of Vietnam National Coal (Vinacomin)."
+    }
+  }
 }

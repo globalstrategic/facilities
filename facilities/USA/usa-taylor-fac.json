@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.082,
-    "lon": -114.685,
+    "lat": 31.711317163891295,
+    "lon": -110.37806177633149,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "South32 Hermosa Inc.",
+    "South32 Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.824758Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:13:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tucson (https://www.south32.net/what-we-do/our-locations/americas/hermosa/about-hermosa). The Taylor project is part of the Hermosa Project located in the Patagonia Mountains"
   },
   "canonical_name": "Taylor Mine",
   "canonical_slug": "taylor-mine",
@@ -60,5 +63,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "town": "Tucson",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:13:35.000000Z",
+      "operators": [
+        "South32 Hermosa Inc."
+      ],
+      "owners": [
+        "South32 Ltd."
+      ],
+      "notes": "South32 Hermosa Inc. is a wholly owned subsidiary of South32 Limited."
+    }
+  }
 }

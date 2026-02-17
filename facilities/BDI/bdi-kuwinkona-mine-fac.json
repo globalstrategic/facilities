@@ -1,12 +1,12 @@
 {
   "facility_id": "bdi-kuwinkona-mine-fac",
-  "name": "**Kuwinkona Mine**",
+  "name": "Kuwinkona Mine",
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.85,
+    "lon": 30.34,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -40,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.897508Z",
-    "checked_by": "import_pipeline",
-    "notes": "An ASM site focused on the production of wolframite. 21 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "An ASM site focused on the production of wolframite. 21 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Artisanal tungsten mine in Muyinga Province"
   },
   "canonical_name": "Kuwinkona Mine",
   "canonical_slug": "kuwinkona-mine",
@@ -61,7 +61,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kuwinkona ** Mine",
+      "name": "Kuwinkona  Mine",
       "from": "2025-10-27T10:36:55.242893",
       "to": "2025-11-04T19:19:00.897505Z",
       "reason": "data_correction"
@@ -71,14 +71,12 @@
   "province": "Muyinga Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:36:28.000000Z",
+      "timestamp": "2025-12-02T11:09:12.000000Z",
       "operators": [
         "Minerais du Burundi"
       ],
-      "owners": [
-        "Rainbow Rare Earths Ltd"
-      ],
-      "notes": "Rainbow Rare Earths Ltd is mentioned in relation to the mine's operations."
+      "owners": [],
+      "notes": "The mine is associated with cooperatives and artisanal miners."
     }
   }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 53.076,
-    "lon": 131.703,
+    "lat": 52.37154608233174,
+    "lon": 49.05050665820984,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Petropavlovsk Plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.652425Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:07:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Pokrovskiy (https://petropavlovskplc.com/operation/malomir/). Malomir is one of Russia's largest gold mines and is accessed by an all-year road"
   },
   "canonical_name": "Malomir Mine",
   "canonical_slug": "malomir-mine",
@@ -50,5 +52,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Amur Region",
+  "town": "Pokrovskiy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:07:33.000000Z",
+      "operators": [
+        "Petropavlovsk Plc"
+      ],
+      "owners": [
+        "Petropavlovsk Plc"
+      ],
+      "notes": "Petropavlovsk Plc operates and owns the Malomir mine."
+    }
+  }
 }

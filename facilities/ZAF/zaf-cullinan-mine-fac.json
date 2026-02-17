@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.66667,
-    "lon": 28.5,
+    "lat": -25.7,
+    "lon": 28.4,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Petra Diamonds Employee Share Trust (12%)",
+    "Petra Diamonds Ltd.",
+    "Petra Diamonds Ltd. (74%)",
+    "Thembinkosi Mining Investments (14%)"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +35,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:08:34.000000Z",
+    "last_checked": "2025-12-01T17:20:06.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.resolutionmineeis.us/sites/default/files/references/kliche-swca-2017.pdf. Coordinates extracted from the document indicate the location of the Cullinan Diamond Mine in Gauteng Province, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.resolutionmineeis.us/sites/default/files/references/kliche-swca-2017.pdf. Coordinates extracted from the document indicate the location of the Cullinan Diamond Mine in Gauteng Province, South Africa. Web search geocoded. Source: https://www.mining-technology.com/projects/cullinan-diamond-mine-gauteng/. The Cullinan Mine is located in the Gauteng province of South Africa, approximately 40km east of Pretoria"
   },
   "canonical_name": "Cullinan Mine",
   "canonical_slug": "cullinan-mine",
@@ -48,5 +53,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gauteng"
+  "province": "Gauteng",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:20:06.000000Z",
+      "operators": [
+        "Petra Diamonds Ltd."
+      ],
+      "owners": [
+        "Petra Diamonds Ltd. (74%)",
+        "Thembinkosi Mining Investments (14%)",
+        "Petra Diamonds Employee Share Trust (12%)"
+      ],
+      "notes": "Petra Diamonds is the primary operator and majority owner of the Cullinan Mine."
+    }
+  }
 }

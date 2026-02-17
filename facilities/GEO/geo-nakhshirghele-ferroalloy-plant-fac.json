@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-nakhshirghele-ferroalloy-plant-fac",
-  "name": "**Nakhshirghele Ferroalloy Plant**",
+  "name": "Nakhshirghele Ferroalloy Plant",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.22003,
+    "lon": 42.82485,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -24,14 +24,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Chiaturmanganum Georgia LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.185476",
-      "evidence": "Extracted from operator column: Chiaturmanganum Georgia LLC"
-    }
+    "Chiaturmanganum Georgia LLC",
+    "Georgian Industrial Group"
   ],
   "products": [],
   "sources": [
@@ -42,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.727719Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Ferroalloy plant in Terjola district, Imereti"
   },
   "canonical_name": "Nakhshirghele Ferroalloy Processing Plant",
   "canonical_slug": "nakhshirghele-ferroalloy-processing-plant",
@@ -63,11 +57,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nakhshirghele Ferroalloy ** Processing Plant",
+      "name": "Nakhshirghele Ferroalloy  Processing Plant",
       "from": "2025-10-28T21:01:00.185479",
       "to": "2025-11-04T19:19:01.727711Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Imereti",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:52:44.000000Z",
+      "operators": [
+        "Chiaturmanganum Georgia LLC"
+      ],
+      "owners": [
+        "Chiaturmanganum Georgia LLC"
+      ],
+      "notes": "Chiaturmanganum Georgia LLC was founded in 2008 and has been involved in the production and export of ferroalloys."
+    }
+  }
 }

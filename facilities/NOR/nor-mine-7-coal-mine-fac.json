@@ -7,8 +7,8 @@
   ],
   "country_iso3": "NOR",
   "location": {
-    "lat": 78.157,
-    "lon": 16.025,
+    "lat": 78.1568,
+    "lon": 16.0231,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Store Norske Spitsbergen Kulkompani"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.722059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:20:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mine_7_Coal_Mine. Mine 7 Coal Mine (Gruve 7) is the only Norwegian coal mine still in operation until its planned closure in June 2025"
   },
   "canonical_name": "7 Coal Mine",
   "canonical_slug": "7-coal-mine",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Svalbard",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:20:08.000000Z",
+      "operators": [
+        "Store Norske Spitsbergen Kulkompani"
+      ],
+      "owners": [
+        "Store Norske Spitsbergen Kulkompani"
+      ],
+      "notes": "Store Norske is a state-owned company."
+    }
+  }
 }

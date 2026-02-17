@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 0.417,
-    "lon": 117.351,
+    "lat": 0.417108,
+    "lon": 117.350616,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Transisi Energy Satunama"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.213612Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:23:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TES_coal_mine. TES Coal Mine is an operating coal mine in East Kalimantan, Indonesia"
   },
   "canonical_name": "TES Coal Mine",
   "canonical_slug": "tes-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:23:19.000000Z",
+      "operators": [
+        "Transisi Energy Satunama"
+      ],
+      "owners": [
+        "Transisi Energy Satunama"
+      ],
+      "notes": "Transisi Energy Satunama is the sole owner and operator of the TES Coal Mine."
+    }
+  }
 }

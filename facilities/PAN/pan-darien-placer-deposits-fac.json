@@ -1,23 +1,23 @@
 {
   "facility_id": "pan-darien-placer-deposits-fac",
-  "name": "**Darien Placer Deposits**",
+  "name": "Darien Placer Deposits",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.15,
+    "lon": -77.77,
+    "precision": "region"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**platinum**",
+      "metal": "platinum",
       "primary": true
     },
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": false
     }
   ],
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:21.425273Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:53:56Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:53:56Z] Geocoded via web search. Coords: (8.15, -77.77). Source: Rio Chucunaque area, Darien Province"
   },
   "canonical_name": "Darien Placer Deposits Facility",
   "canonical_slug": "darien-placer-deposits-facility",
@@ -53,7 +53,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Darien Placer Deposits**",
+      "name": "Darien Placer Deposits",
       "from": "2025-10-28T21:58:21.016386",
       "to": "2025-11-04T19:19:21.425270Z",
       "reason": "data_correction"

@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.592,
-    "lon": -76.453,
+    "lat": 33.81767290031719,
+    "lon": -87.1536118,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mays Mining, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.874559Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:55:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dovertown (https://blackwarriorriver.org/no-5-mine/). The No. 5 Mine is proposed near the Mulberry Fork of the Black Warrior River, with significant opposition due to environmental concerns"
   },
   "canonical_name": "No 5 Vein Coal Mine",
   "canonical_slug": "no-5-vein-coal-mine",
@@ -60,5 +62,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "town": "Dovertown",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:55:16.000000Z",
+      "operators": [
+        "Mays Mining, Inc."
+      ],
+      "owners": [],
+      "notes": "The mine is proposed and facing opposition from local authorities and environmental groups."
+    }
+  }
 }

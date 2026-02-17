@@ -1,11 +1,11 @@
 {
   "facility_id": "per-la-oroya-complex-fac",
-  "name": "**La Oroya Complex**",
+  "name": "La Oroya Complex",
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -12.04129754398455,
+    "lon": -75.41421312468292,
     "precision": "unknown"
   },
   "types": [
@@ -23,7 +23,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Doe Run Peru",
+    "Renco Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.298087Z",
-    "checked_by": "import_pipeline",
-    "notes": "Moderate. *Only* source for Bi, In. Status is unreliable. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:51:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Moderate. *Only* source for Bi, In. Status is unreliable. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/Doe%20Run%20Peru%20-%20La%20Oroya.htm). La Oroya is recognized as one of the most polluted places on the planet due to historical operations"
   },
   "canonical_name": "La Oroya Smelter",
   "canonical_slug": "la-oroya-smelter",
@@ -54,11 +57,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**La Oroya ** Smelter",
+      "name": "La Oroya  Smelter",
       "from": "2025-10-28T21:54:37.773851",
       "to": "2025-11-04T19:19:08.298084Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Junín",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:51:37.000000Z",
+      "operators": [
+        "Doe Run Peru"
+      ],
+      "owners": [
+        "Renco Group"
+      ],
+      "notes": "Doe Run Peru operated the facility from 1997 until its closure in 2009 due to bankruptcy."
+    }
+  }
 }

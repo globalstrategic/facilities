@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 53.04056,
+    "lon": 63.065,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -19,7 +19,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eurasian Resources Group",
+    "JSC Sokolov-Sarbai Mining Production Association (SSGPO)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.741839Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:19:57Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:19:57Z] Geocoded via web search. Coords: (53.04056, 63.065). Confidence: 0.90. Notes: Coordinates extracted from Result 3, which provides exact coordinates in decimal format."
   },
   "canonical_name": "Sarbaisky Iron Ore Mine",
   "canonical_slug": "sarbaisky-iron-ore-mine",
@@ -48,5 +51,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kostanay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:11:45.000000Z",
+      "operators": [
+        "JSC Sokolov-Sarbai Mining Production Association (SSGPO)"
+      ],
+      "owners": [
+        "Eurasian Resources Group"
+      ],
+      "notes": "The Sarbaisky Iron Ore Mine is part of the SSGPO, which is owned by Eurasian Resources Group."
+    }
+  }
 }

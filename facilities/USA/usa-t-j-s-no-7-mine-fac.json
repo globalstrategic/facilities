@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.775,
-    "lon": -79.49,
+    "lat": 33.324094,
+    "lon": -87.241388,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Warrior Met Coal Inc.",
+    "Warrior Met Coal Mining, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.714870Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:55:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/No._7_Coal_Mine. No. 7 Coal Mine is an operating coal mine located in Brookwood, Alabama"
   },
   "canonical_name": "T J S No 7 Mine",
   "canonical_slug": "t-j-s-no-7-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:55:42.000000Z",
+      "operators": [
+        "Warrior Met Coal Mining, LLC"
+      ],
+      "owners": [
+        "Warrior Met Coal Inc."
+      ],
+      "notes": "Warrior Met Coal Inc. owns 100% of the mine indirectly, while Warrior Met Coal Mining, LLC operates it directly."
+    }
+  }
 }

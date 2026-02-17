@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -14.45,
+    "lon": 28.45,
+    "precision": "region"
   },
   "types": [
     "smelter"
@@ -20,14 +20,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Hu-Cheng Mining LTD",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.858971",
-      "evidence": "Extracted from operator column: Hu-Cheng Mining LTD"
-    }
+    "Hu-Cheng Mining LTD"
   ],
   "products": [],
   "sources": [
@@ -38,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.681687Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T22:16:36Z] No geographic coordinates found in the search results for Hu-Cheng Manganese Smelter. | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Chinese manganese smelter, Copperbelt Province"
   },
   "canonical_name": "Hu Cheng Manganese Smelter",
   "canonical_slug": "hu-cheng-manganese-smelter",
@@ -65,5 +58,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:39:59.000000Z",
+      "operators": [
+        "Hu-Cheng Mining LTD"
+      ],
+      "owners": [],
+      "notes": "Hu-Cheng Mining LTD is a Chinese company responsible for the construction and operation of the smelter."
+    }
+  }
 }

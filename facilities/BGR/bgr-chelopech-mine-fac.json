@@ -1,12 +1,12 @@
 {
   "facility_id": "bgr-chelopech-mine-fac",
-  "name": "**Chelopech Mine**",
+  "name": "Chelopech Mine",
   "aliases": [],
   "country_iso3": "BGR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.70012,
+    "lon": 24.08504,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -17,7 +17,10 @@
     "Chelopech Mining EAD",
     "Dundee Corporation",
     "Dundee Precious Metals",
-    "Dundee Precious Metals Chelopech EAD"
+    "Dundee Precious Metals Chelopech EAD",
+    "Dundee Precious Metals Inc",
+    "Dundee Precious Metals Inc.",
+    "Dundee Precious Metals, Dundee Corporation"
   ],
   "products": [],
   "sources": [
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:58.768444Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T12:23:28Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T12:23:28Z] Dundee Precious Metals underground copper-gold mine, 70km east of Sofia"
   },
   "canonical_name": "Chelopech Mine",
   "canonical_slug": "chelopech-mine-2",
@@ -49,7 +52,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Chelopech ** Mine",
+      "name": "Chelopech  Mine",
       "from": "2025-10-27T10:22:19.391018",
       "to": "2025-11-04T19:18:58.768441Z",
       "reason": "data_correction"
@@ -59,14 +62,13 @@
   "province": "Sofia Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:38:32.000000Z",
+      "timestamp": "2025-12-02T11:07:57.000000Z",
       "operators": [
         "Chelopech Mining EAD",
-        "Dundee Precious Metals"
+        "Dundee Precious Metals Inc."
       ],
       "owners": [
-        "Dundee Precious Metals",
-        "Dundee Corporation"
+        "Dundee Precious Metals, Dundee Corporation"
       ],
       "notes": "Chelopech Mining EAD is a wholly owned subsidiary of Dundee Precious Metals."
     }

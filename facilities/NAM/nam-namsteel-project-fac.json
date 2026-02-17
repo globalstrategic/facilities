@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -21.4333,
+    "lon": 15.9333,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -19,14 +19,9 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "NAMSTEEL",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.766012",
-      "evidence": "Extracted from operator column: NAMSTEEL"
-    }
+    "NAMSTEEL",
+    "NAMSTEEL (PTY) Ltd",
+    "Tom Ortmanns Investments PTY Ltd"
   ],
   "products": [],
   "sources": [
@@ -37,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:14.555357Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] NAMSTEEL Project, Omaruru, Erongo"
   },
   "canonical_name": "Namsteel Processing Plant",
   "canonical_slug": "namsteel-processing-plant",
@@ -64,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:49.000000Z",
+      "operators": [
+        "NAMSTEEL (PTY) Ltd"
+      ],
+      "owners": [
+        "Tom Ortmanns Investments PTY Ltd"
+      ],
+      "notes": "NAMSTEEL (PTY) Ltd is the main company involved in the project, with Tom Ortmanns Investments as a partner."
+    }
+  }
 }

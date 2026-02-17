@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 27.8,
+    "lon": 66.62,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -38,7 +38,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bolan Mining Enterprises (BME)",
+    "Government of Balochistan",
+    "Pakistan Petroleum Limited (PPL)"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +52,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:03.341749Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located 11km SE of Khuzdar, Balochistan. Lead-zinc-barite deposit."
   },
   "canonical_name": "Gunga Khuzdar Mine",
   "canonical_slug": "gunga-khuzdar-mine",
@@ -75,5 +79,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Balochistan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:21:00.000000Z",
+      "operators": [
+        "Bolan Mining Enterprises (BME)",
+        "Pakistan Petroleum Limited (PPL)"
+      ],
+      "owners": [
+        "Pakistan Petroleum Limited (PPL)",
+        "Government of Balochistan"
+      ],
+      "notes": "BME is a joint venture between PPL and the Government of Balochistan, each holding a 50% interest."
+    }
+  }
 }

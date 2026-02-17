@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.173,
-    "lon": 86.254,
+    "lat": 24.15,
+    "lon": 86.3,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Coalfields Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.095276Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:54:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Giridih_Coalfield. Coordinates are for the Giridih Coalfield, which includes the Giridih Coal Mine"
   },
   "canonical_name": "Giridih Coal Mine",
   "canonical_slug": "giridih-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:54:29.000000Z",
+      "operators": [
+        "Central Coalfields Limited"
+      ],
+      "owners": [
+        "Central Coalfields Limited"
+      ],
+      "notes": "Central Coalfields Limited has been involved in the ownership and operation of the coalfield since its nationalization."
+    }
+  }
 }

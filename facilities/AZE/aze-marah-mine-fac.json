@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 40.6786,
+    "lon": 45.8274,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -20,6 +20,7 @@
   "status": "operating",
   "company_mentions": [
     "Anglo Asian Mining PLC",
+    "AzerGold CJSC",
     "RV Investment Group Services LLC"
   ],
   "products": [],
@@ -31,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.540755Z",
-    "checked_by": "import_pipeline",
-    "notes": "Small satellite deposit. Launched in July 2021. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Small satellite deposit. Launched in July 2021. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Gold mine north of Chovdar deposit in Dashkasan district"
   },
   "canonical_name": "Marah Mine",
   "canonical_slug": "marah-mine",
@@ -51,17 +52,15 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Azerbaijan",
+  "province": "Dashkasan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:01:49.000000Z",
+      "timestamp": "2025-12-02T11:13:04.000000Z",
       "operators": [
-        "Anglo Asian Mining PLC"
+        "AzerGold CJSC"
       ],
-      "owners": [
-        "RV Investment Group Services LLC"
-      ],
-      "notes": "Anglo Asian Mining PLC operates the mine, while RV Investment Group Services LLC is a subsidiary."
+      "owners": [],
+      "notes": "AzerGold CJSC discovered the mine and is currently operating it."
     }
   }
 }

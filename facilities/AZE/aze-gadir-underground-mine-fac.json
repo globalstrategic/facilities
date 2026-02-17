@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 40.57,
+    "lon": 45.82,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -31,7 +31,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "Anglo Asian Mining PLC"
+    "Anglo Asian Mining PLC",
+    "Anglo Asian Mining Plc"
   ],
   "products": [],
   "sources": [
@@ -42,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.537576Z",
-    "checked_by": "import_pipeline",
-    "notes": "Connected to Gedabek underground mine. Commenced production in 2015. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Connected to Gedabek underground mine. Commenced production in 2015. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Gold mine 500m from Gedabek open pit"
   },
   "canonical_name": "Gadir Mine",
   "canonical_slug": "gadir-mine",
@@ -62,17 +63,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Gadabey District",
+  "province": "Azerbaijan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:35:03.000000Z",
+      "timestamp": "2025-12-02T11:12:20.000000Z",
       "operators": [
         "Anglo Asian Mining PLC"
       ],
       "owners": [
         "Anglo Asian Mining PLC"
       ],
-      "notes": "Anglo Asian Mining PLC operates and owns the Gadir Underground Mine."
+      "notes": "Anglo Asian Mining PLC is the sole operator and owner of the Gadir Underground Mine."
     }
   }
 }

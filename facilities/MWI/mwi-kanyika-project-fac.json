@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -12.697868,
+    "lon": 33.669577,
     "precision": "unknown"
   },
   "types": [
@@ -31,14 +31,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Globe Metals & Mining Ltd.",
-      "role": "operator",
-      "source": "Research Import MWI 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:13:11.247359",
-      "evidence": "Extracted from operator column: Globe Metals & Mining Ltd."
-    }
+    "Globe Metals & Mining Ltd.",
+    "Globe Metals and Mining Africa Limited",
+    "Globe Metals and Mining Limited"
   ],
   "products": [],
   "sources": [
@@ -49,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.844288Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:34:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kanyika_mine. The Kanyika mine is an open pit mine extracting niobium ore, located in the Northern Region of Malawi"
   },
   "canonical_name": "Kanyika Development",
   "canonical_slug": "kanyika-development",
@@ -68,5 +63,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mzimba District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:34:04.000000Z",
+      "operators": [
+        "Globe Metals & Mining Ltd."
+      ],
+      "owners": [
+        "Globe Metals and Mining Limited",
+        "Globe Metals and Mining Africa Limited"
+      ],
+      "notes": "The project is owned by Globe Metals and Mining Limited through its subsidiary."
+    }
+  }
 }

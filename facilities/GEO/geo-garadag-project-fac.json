@@ -1,0 +1,69 @@
+{
+  "facility_id": "geo-garadag-project-fac",
+  "name": "Garadag Project",
+  "aliases": [],
+  "country_iso3": "GEO",
+  "location": {
+    "lat": 41.175069520792384,
+    "lon": 46.3597178,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Anglo Asian Mining",
+    "Anglo Asian Mining PLC",
+    "Anglo Asian Mining Plc"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Deep Research 2025",
+      "date": "2025-10-21T09:23:43.106391"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:39:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Large copper deposit. Non-JORC estimate of 324,000 tonnes Cu. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Ganja (https://www.mining.com/anglo-asian-releases-mineral-resource-estimate-for-garadag-copper-project-in-azerbaijan/). The Garadag Project is associated with Anglo Asian Mining's copper concessions in Azerbaijan"
+  },
+  "canonical_name": "Garadag Mine",
+  "canonical_slug": "garadag-mine",
+  "display_name": "Garadag",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Ganja",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:11.000000Z",
+      "operators": [
+        "Anglo Asian Mining Plc"
+      ],
+      "owners": [
+        "Anglo Asian Mining Plc"
+      ],
+      "notes": "Anglo Asian Mining is expanding its copper footprint in Azerbaijan and has been awarded new concessions including Garadag."
+    }
+  },
+  "town": "Ganja"
+}

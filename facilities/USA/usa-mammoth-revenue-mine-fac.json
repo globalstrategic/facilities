@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.349,
-    "lon": -106.534,
+    "lat": 37.5,
+    "lon": -106.5,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Union Mines Incorporated"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.877135Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:57:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10014101/. The Mammoth-Revenue Mine is located in Conejos County, Colorado, near South Fork. It operates primarily underground and is part of the Ute-Platoro Mining District"
   },
   "canonical_name": "Mammoth Revenue Mine",
   "canonical_slug": "mammoth-revenue-mine",
@@ -54,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:57:49.000000Z",
+      "operators": [
+        "Union Mines Incorporated"
+      ],
+      "owners": [
+        "Union Mines Incorporated"
+      ],
+      "notes": "Union Mines has been operating the mine since 1983."
+    }
+  }
 }

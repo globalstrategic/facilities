@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.839,
-    "lon": -81.633,
+    "lat": 37.842411,
+    "lon": -81.630669,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rockwell Mining LLC",
+    "Sev.en Energy AG"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.764077Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:39:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4606618&iframe=yes. The Gateway Eagle Coal Mine is an active underground coal mine located in Boone County, West Virginia"
   },
   "canonical_name": "Gateway Eagle Coal Mine",
   "canonical_slug": "gateway-eagle-coal-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:39:16.000000Z",
+      "operators": [
+        "Rockwell Mining LLC"
+      ],
+      "owners": [
+        "Sev.en Energy AG"
+      ],
+      "notes": "Rockwell Mining LLC operates the mine, which is owned by Sev.en Energy AG."
+    }
+  }
 }

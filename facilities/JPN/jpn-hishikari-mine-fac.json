@@ -8,8 +8,8 @@
   ],
   "country_iso3": "JPN",
   "location": {
-    "lat": 32.007,
-    "lon": 130.689,
+    "lat": 32.0125,
+    "lon": 130.6939,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sumitomo Metal Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.028983Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:26:43.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Hishikari_mine. The Hishikari Mine is the largest gold mine in Japan and has been in operation since 1985"
   },
   "canonical_name": "Hishikari Mine",
   "canonical_slug": "hishikari-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kagoshima Prefecture",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:26:43.000000Z",
+      "operators": [
+        "Sumitomo Metal Mining Co., Ltd."
+      ],
+      "owners": [
+        "Sumitomo Metal Mining Co., Ltd."
+      ],
+      "notes": "The mine is 100% owned and operated by Sumitomo Metal Mining."
+    }
+  }
 }

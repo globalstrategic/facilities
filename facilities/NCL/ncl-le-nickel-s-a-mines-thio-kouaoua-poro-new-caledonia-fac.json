@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": -20.997,
-    "lon": 164.999,
+    "lat": -20.5,
+    "lon": 164.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eramet S.A.",
+    "Nisshin Steel Co.",
+    "Société Le Nickel (SLN)",
+    "Société Territoriale Calédonienne de Participation Industrielle (STCPI)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:56.374328Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T07:03:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.rnz.co.nz/international/pacific-news/530779/new-caledonia-sln-mining-site-put-into-standby-mode. Société Le Nickel (SLN) is putting its historic mining site in Thio into stand-by mode"
   },
   "canonical_name": "Le Nickel S A Mines Thio, Kouaoua, Poro, New Caledonia Mine",
   "canonical_slug": "le-nickel-s-a-mines-thio-kouaoua-poro-new-caledonia-mine",
@@ -55,5 +60,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Province Sud",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:03:24.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)",
+        "Eramet S.A."
+      ],
+      "owners": [
+        "Eramet S.A.",
+        "Société Territoriale Calédonienne de Participation Industrielle (STCPI)",
+        "Nisshin Steel Co."
+      ],
+      "notes": "SLN is a subsidiary of Eramet, with joint ownership involving STCPI and Nisshin Steel."
+    }
+  }
 }

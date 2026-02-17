@@ -8,8 +8,8 @@
   ],
   "country_iso3": "VNM",
   "location": {
-    "lat": 21.59,
-    "lon": 105.962,
+    "lat": 21.587814,
+    "lon": 105.966297,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Thai Hung Trading JSC",
+    "Thai Nguyen Iron And Steel JSC",
+    "Viet Nam Steel Corp",
+    "small shareholder(s)"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:02.279800Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:26:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TISCO_Trai_Cau_Mine. The TISCO Trai Cau Mine is an iron ore mine located in Dong Hy, Thai Nguyen Province, Vietnam"
   },
   "canonical_name": "Tisco Trai Cau Mine",
   "canonical_slug": "tisco-trai-cau-mine",
@@ -60,5 +65,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Thai Nguyen Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:26:58.000000Z",
+      "operators": [
+        "Thai Nguyen Iron And Steel JSC"
+      ],
+      "owners": [
+        "Viet Nam Steel Corp",
+        "Thai Hung Trading JSC",
+        "small shareholder(s)"
+      ],
+      "notes": "Viet Nam Steel Corp holds a 65% stake, Thai Hung Trading JSC holds 20%, and small shareholders hold 15%."
+    }
+  }
 }

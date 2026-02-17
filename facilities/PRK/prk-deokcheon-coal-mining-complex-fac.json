@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 39.763,
-    "lon": 126.29,
+    "lat": 39.76266168787727,
+    "lon": 126.28956027574804,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duckcheon Coal Mining Enterprise",
+    "Government of North Korea"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.349518Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:32:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Deokcheon_Coal_Mining_Complex. The Deokcheon Coal Mining Complex is a significant coal mining facility in North Korea, comprising multiple coal mines"
   },
   "canonical_name": "Deokcheon Coal Mining Mine",
   "canonical_slug": "deokcheon-coal-mining-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Pyongan Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:32:48.000000Z",
+      "operators": [
+        "Duckcheon Coal Mining Enterprise"
+      ],
+      "owners": [
+        "Government of North Korea"
+      ],
+      "notes": "The facility is owned and operated by the government."
+    }
+  }
 }

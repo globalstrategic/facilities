@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.03703063110786,
+    "lon": 115.2177155,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Areva Mines",
+    "China National Nuclear Corporation (CNNC)",
+    "Emeelt Mines LLC",
+    "Mitsubishi Corporation",
+    "Western Prospector Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.460270Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:21:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dornod (https://world-nuclear-news.org/Articles/Uranium-company-announces-Chinese-takeover). The Gurvanbulag deposit is located approximately 40 kilometers from the Dornod Uranium Property"
   },
   "canonical_name": "Gurvanbulag Mine",
   "canonical_slug": "gurvanbulag-mine",
@@ -47,5 +53,22 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dornod",
+  "town": "Dornod",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:21:35.000000Z",
+      "operators": [
+        "Western Prospector Group",
+        "Emeelt Mines LLC"
+      ],
+      "owners": [
+        "China National Nuclear Corporation (CNNC)",
+        "Areva Mines",
+        "Mitsubishi Corporation"
+      ],
+      "notes": "Western Prospector Group owns 100% of the Gurvanbulag uranium deposit. CNNC has a significant stake through joint ventures."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.005,
-    "lon": -82.551,
+    "lat": 37.51026061064865,
+    "lon": -83.1933893,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nally & Hamilton Enterprises Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.843849Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:28:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hazard (https://eec.ky.gov/Natural-Resources/Mining/Mine-Safety/safety-inspections-and-licensing/Annual%20Reports/2006%20Annual%20Report.pdf). Turkey Branch Strip 1 Mine is mentioned in the context of coal mining operations in Kentucky"
   },
   "canonical_name": "Turkey Branch Strip 1 Mine",
   "canonical_slug": "turkey-branch-strip-1-mine",
@@ -50,5 +52,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Hazard",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:28:19.000000Z",
+      "operators": [
+        "Nally & Hamilton Enterprises Inc"
+      ],
+      "owners": [],
+      "notes": "Nally & Hamilton Enterprises Inc is listed as the operator for Turkey Branch Strip 1 Mine."
+    }
+  }
 }

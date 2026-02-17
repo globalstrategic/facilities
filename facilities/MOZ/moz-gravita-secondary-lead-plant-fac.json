@@ -1,13 +1,14 @@
 {
   "facility_id": "moz-gravita-secondary-lead-plant-fac",
-  "name": "**Gravita Secondary Lead Plant**",
+  "name": "Gravita Secondary Lead Plant",
   "aliases": [],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -25.85474,
+    "lon": 32.42750,
+    "precision": "neighborhood"
   },
+  "town": "Matola",
   "types": [
     "plant"
   ],
@@ -17,8 +18,10 @@
       "primary": true
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "operating",
+  "company_mentions": [
+    "Gravita India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "unlocatable",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:02.807042Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:03:00Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:52:50Z] No geographic coordinates found in the search results for the Gravita Secondary Lead Plant. | [NULL-ISLAND-CHECK 2025-12-17T22:03:00Z] No geographic coordinates found in the search results for the Gravita Secondary Lead Plant."
   },
   "canonical_name": "Gravita Secondary Lead Refinery",
   "canonical_slug": "gravita-secondary-lead-refinery",
@@ -49,11 +52,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Gravita Secondary Lead ** Refinery",
+      "name": "Gravita Secondary Lead  Refinery",
       "from": "2025-10-29T22:19:16.002620",
       "to": "2025-11-04T19:19:02.807040Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:40:58.000000Z",
+      "operators": [
+        "Gravita India Limited"
+      ],
+      "owners": [
+        "Gravita India Limited"
+      ],
+      "notes": "Gravita India Limited is the primary company associated with the facility."
+    }
+  }
 }

@@ -16,8 +16,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 24.957,
-    "lon": 74.124,
+    "lat": 25.03010681098236,
+    "lon": 73.6862571,
     "precision": "site"
   },
   "types": [
@@ -43,7 +43,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindustan Zinc Ltd",
+    "Vedanta Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -53,11 +56,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.121328Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:47:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Udaipur (https://www.globaldata.com/company-profile/hindustan-zinc-ltd/). The Dariba Smelting Complex is part of Hindustan Zinc's operations in Rajasthan, specifically in Rajsamand district"
   },
   "canonical_name": "Dariba Smelter",
   "canonical_slug": "dariba-smelter",
@@ -72,5 +75,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rajasthan",
+  "town": "Udaipur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:47:26.000000Z",
+      "operators": [
+        "Hindustan Zinc Ltd"
+      ],
+      "owners": [
+        "Vedanta Limited"
+      ],
+      "notes": "Hindustan Zinc Ltd is a subsidiary of Vedanta Limited."
+    }
+  }
 }

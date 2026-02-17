@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PNG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -8.5733,
+    "lon": 147.1419,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,10 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lole Mining Ltd",
+    "Tolu Minerals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.311113Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Tolukuma Gold Mine, Central Province"
   },
   "canonical_name": "Tolukuma Gold Mine",
   "canonical_slug": "tolukuma-gold-mine",
@@ -51,5 +54,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:18:58.000000Z",
+      "operators": [
+        "Lole Mining Ltd",
+        "Tolu Minerals Ltd"
+      ],
+      "owners": [
+        "Lole Mining Ltd",
+        "Tolu Minerals Ltd"
+      ],
+      "notes": "Lole Mining Ltd is currently in the process of acquiring the mine, while Tolu Minerals has previously secured ownership and permits."
+    }
+  }
 }

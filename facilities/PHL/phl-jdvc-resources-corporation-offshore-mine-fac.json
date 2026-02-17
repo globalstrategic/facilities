@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PHL",
   "location": {
-    "lat": 18.344,
-    "lon": 122.042,
+    "lat": 18.344084,
+    "lon": 122.042252,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Apollo Global Capital Inc.",
+    "JDVC Resources Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:04.750594Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:01:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/JDVC_Resources_Corporation_Offshore_Mine. JDVC Resources Corporation is operating the first large-scale offshore iron ore mining project in the Philippines"
   },
   "canonical_name": "Jdvc Resources Corporation Offshore Mine",
   "canonical_slug": "jdvc-resources-corporation-offshore-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cagayan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:01:54.000000Z",
+      "operators": [
+        "JDVC Resources Corporation"
+      ],
+      "owners": [
+        "Apollo Global Capital Inc."
+      ],
+      "notes": "JDVC is a subsidiary of Apollo Global Capital Inc."
+    }
+  }
 }

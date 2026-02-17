@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -25.0,
+    "lon": 46.0,
     "precision": "unknown"
   },
   "types": [
@@ -44,7 +44,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of Madagascar",
+    "QIT Madagascar Minerals (QMM)",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -54,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.109541Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T02:21:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://ejatlas.org/print/rio-tinto-qmm-ilmenite-mine-madagascar. The QMM Mineral Sands Project is located near Taolagnaro in the Anosy region of Madagascar"
   },
   "canonical_name": "QMM Mineral Sands Mine",
   "canonical_slug": "qmm-mineral-sands-mine",
@@ -73,5 +77,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Anosy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:21:27.000000Z",
+      "operators": [
+        "QIT Madagascar Minerals (QMM)"
+      ],
+      "owners": [
+        "Rio Tinto",
+        "Government of Madagascar"
+      ],
+      "notes": "QMM is 80% owned by Rio Tinto and 20% owned by the Government of Madagascar."
+    }
+  }
 }

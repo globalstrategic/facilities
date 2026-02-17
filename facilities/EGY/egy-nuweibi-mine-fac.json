@@ -1,14 +1,14 @@
 {
   "facility_id": "egy-nuweibi-mine-fac",
-  "name": "**Nuweibi Mine**",
+  "name": "Nuweibi Mine",
   "aliases": [
     "El Nuweiba"
   ],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 25.0,
+    "lon": 34.5,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -23,22 +23,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "N",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.164465",
-      "evidence": "Extracted from operator column: N/A"
-    },
-    {
-      "name": "A",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.164470",
-      "evidence": "Extracted from operator column: N/A"
-    }
+    "A",
+    "Gippsland Ltd",
+    "N",
+    "Tantalum Egypt JSC"
   ],
   "products": [],
   "sources": [
@@ -49,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.179330Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Tantalum-niobium deposit ~30km NW of Marsa Alam, Red Sea"
   },
   "canonical_name": "Nuweibi Mine",
   "canonical_slug": "nuweibi-mine-2",
@@ -70,11 +58,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nuweibi ** Mine",
+      "name": "Nuweibi  Mine",
       "from": "2025-10-28T16:22:57.164474",
       "to": "2025-11-04T19:19:07.179327Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Egypt",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:04:49.000000Z",
+      "operators": [
+        "Tantalum Egypt JSC",
+        "Gippsland Ltd"
+      ],
+      "owners": [],
+      "notes": "Gippsland Ltd prepared the presentation on behalf of Tantalum Egypt JSC."
+    }
+  }
 }

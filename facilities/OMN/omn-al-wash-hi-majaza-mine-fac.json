@@ -1,48 +1,36 @@
 {
   "facility_id": "omn-al-wash-hi-majaza-mine-fac",
-  "name": "**Al Wash-hi Majaza Mine**",
+  "name": "Al Wash-hi Majaza Mine",
   "aliases": [],
   "country_iso3": "OMN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 22.57,
+    "lon": 58.12,
+    "precision": "region"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**copper**",
+      "metal": "copper",
       "primary": true
     },
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": false
     },
     {
-      "metal": "**silver**",
+      "metal": "silver",
       "primary": false
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Al Hadeetha Resources",
-      "role": "operator",
-      "source": "Research Import OMN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T22:09:19.391707",
-      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
-    },
-    {
-      "name": "Alara Resources, Al Hadeetha Investments, Al Tasnim",
-      "role": "operator",
-      "source": "Research Import OMN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T22:09:19.391751",
-      "evidence": "Extracted from operator column: Al Hadeetha Resources (AHR) / Alara Resources (51%), Al Hadeetha Investments (30%), Al Tasnim (19%)"
-    }
+    "Al Hadeetha Resources",
+    "Al Hadeetha Resources LLC",
+    "Alara Resources Limited",
+    "Alara Resources, Al Hadeetha Investments, Al Tasnim"
   ],
   "products": [],
   "sources": [
@@ -53,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.870717Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:50:34Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T00:50:34Z] Geocoded via web search. Coords: (22.57, 58.12). Source: Near Mudhaibi, North Sharqiyah, 160km SW of Muscat. Regional estimate"
   },
   "canonical_name": "Al Wash Hi Majaza Processing Plant",
   "canonical_slug": "al-wash-hi-majaza-processing-plant",
@@ -74,11 +62,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Al Wash-hi Majaza ** Processing Plant",
+      "name": "Al Wash-hi Majaza  Processing Plant",
       "from": "2025-10-28T22:09:19.391766",
       "to": "2025-11-04T19:18:48.870713Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Al Sharqiyah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:21:17.000000Z",
+      "operators": [
+        "Al Hadeetha Resources LLC"
+      ],
+      "owners": [
+        "Alara Resources Limited",
+        "Al Hadeetha Resources LLC"
+      ],
+      "notes": "Alara Resources holds a 51% interest in the joint venture company Al Hadeetha Resources, which operates the mine."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -7.978,
-    "lon": -78.076,
+    "lat": -11.1611,
+    "lon": -75.4259,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alupar Investimento",
+    "La Virgen S.A.C.",
+    "Peruana De Energia",
+    "Peruana de Energía SAA"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.323927Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:13:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/La_Virgen_hydroelectric_plant. Coordinates for the La Virgen hydroelectric plant are provided directly. Web search geocoded. Source: https://www.gem.wiki/La_Virgen_hydroelectric_plant. Coordinates for the La Virgen hydroelectric plant are provided directly"
   },
   "canonical_name": "La Virgen Mine",
   "canonical_slug": "la-virgen-mine",
@@ -54,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Junín",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:13:14.000000Z",
+      "operators": [
+        "Peruana de Energía SAA"
+      ],
+      "owners": [
+        "La Virgen S.A.C.",
+        "Alupar Investimento",
+        "Peruana De Energia"
+      ],
+      "notes": "La Virgen S.A.C. is the operator of the hydroelectric project, while Alupar Investimento and Peruana De Energia hold ownership stakes."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "DZA",
   "location": {
-    "lat": 36.616,
-    "lon": 3.477,
+    "lat": 36.650833,
+    "lon": 3.416361,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hidrotehnika"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.575592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:16:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mdpi.com/2073-4441/16/9/1291. The Keddara Dam is primarily for water supply and is located on the Boudouaou River"
   },
   "canonical_name": "Keddara Mine",
   "canonical_slug": "keddara-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Boumerdès Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:16:11.000000Z",
+      "operators": [
+        "Hidrotehnika"
+      ],
+      "owners": [],
+      "notes": "Hidrotehnika is a Yugoslav company that constructed the dam."
+    }
+  }
 }

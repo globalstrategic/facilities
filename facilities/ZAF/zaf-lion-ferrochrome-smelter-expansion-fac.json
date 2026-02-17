@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.822222,
-    "lon": 30.116667,
+    "lat": -24.5,
+    "lon": 30.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Operations South Africa Proprietary Ltd",
+    "Glencore plc",
+    "Merafe Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +33,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:02:10.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:07:20.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com/.rest/api/v1/documents/87e0072b8a33219fd7d1fb7ba90963d7/GISTM+disclosure+2025+Lion+Smelter+TSF.pdf. Coordinates extracted from the Lion Smelter Tailings Storage Facility document, which is part of the Lion Chrome Smelter Complex located near Steelpoort"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com/.rest/api/v1/documents/87e0072b8a33219fd7d1fb7ba90963d7/GISTM+disclosure+2025+Lion+Smelter+TSF.pdf. Coordinates extracted from the Lion Smelter Tailings Storage Facility document, which is part of the Lion Chrome Smelter Complex located near Steelpoort. Web search geocoded. Source: https://www.argusmedia.com/en/news-and-insights/latest-market-news/2727516-glencore-weighs-halving-lion-fecr-output-in-s-africa. The Lion Ferrochrome Smelter is part of a joint venture between Glencore and Merafe Resources, located in Limpopo province"
   },
   "canonical_name": "Lion Ferrochrome Expansion Mine",
   "canonical_slug": "lion-ferrochrome-expansion-mine",
@@ -48,5 +52,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:07:20.000000Z",
+      "operators": [
+        "Glencore Operations South Africa Proprietary Ltd",
+        "Merafe Resources Ltd"
+      ],
+      "owners": [
+        "Glencore plc",
+        "Merafe Resources Ltd"
+      ],
+      "notes": "Glencore holds a 79.5% stake in the joint venture with Merafe Resources."
+    }
+  }
 }

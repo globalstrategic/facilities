@@ -1,13 +1,13 @@
 {
   "facility_id": "nic-la-libertad-complex-fac",
-  "name": "**La Libertad Complex**",
+  "name": "La Libertad Complex",
   "aliases": [
     "incl. Jabali Mine"
   ],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 12.13712058718031,
+    "lon": -85.28924330019268,
     "precision": "unknown"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Calibre Mining Corp.",
+    "Desarrollo Minero de Nicaragua, S. A. (Desminic)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.279124Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:26:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Managua (https://s204.q4cdn.com/793454556/files/doc_financials/2022/AIF22.pdf). La Libertad mine is located approximately 110 km due east of Managua"
   },
   "canonical_name": "La Libertad Mine",
   "canonical_slug": "la-libertad-mine",
@@ -55,11 +58,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**La Libertad ** Mine",
+      "name": "La Libertad  Mine",
       "from": "2025-10-29T21:57:46.743287",
       "to": "2025-11-04T19:18:55.279122Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chontales",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:26:38.000000Z",
+      "operators": [
+        "Desarrollo Minero de Nicaragua, S. A. (Desminic)"
+      ],
+      "owners": [
+        "Calibre Mining Corp."
+      ],
+      "notes": "Calibre Mining Corp. operates the La Libertad mine through its subsidiary Desminic."
+    }
+  },
+  "town": "Managua"
 }

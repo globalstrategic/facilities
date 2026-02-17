@@ -1,12 +1,12 @@
 {
   "facility_id": "mne-bio-ki-stan-mine-fac",
-  "name": "**Biočki Stan Mine**",
+  "name": "Biočki Stan Mine",
   "aliases": [],
   "country_iso3": "MNE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.77,
+    "lon": 18.94,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bumech",
+    "Uniprom Metali"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.391574Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Biočki Stan underground bauxite mine, Nikšić area, Uniprom Metali."
   },
   "canonical_name": "Biočki Stan Mine",
   "canonical_slug": "biocki-stan-mine",
@@ -57,11 +60,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Biočki Stan ** Mine",
+      "name": "Biočki Stan  Mine",
       "from": "2025-10-29T22:24:19.805298",
       "to": "2025-11-04T19:18:49.391569Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nikšić",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:44:48.000000Z",
+      "operators": [
+        "Uniprom Metali"
+      ],
+      "owners": [
+        "Uniprom Metali"
+      ],
+      "notes": "Uniprom Metali acquired the mine and has invested significantly in its rehabilitation."
+    }
+  }
 }

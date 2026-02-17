@@ -27,8 +27,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.943,
-    "lon": -81.518,
+    "lat": 37.791223178549075,
+    "lon": -86.87138,
     "precision": "site"
   },
   "types": [
@@ -41,7 +41,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Marfork Coal Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +53,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.774981Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:48:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Whitesville (https://minesafety.wv.gov/PDFs/Annual%20Reports/2022%20Spreadsheets/74%20DANNDIR_2022.pdf). Brushy Eagle Coal Mine is operated by Marfork Coal Company, LLC"
   },
   "canonical_name": "Brushy Eagle Coal Mine",
   "canonical_slug": "brushy-eagle-coal-mine",
@@ -70,5 +72,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Whitesville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:48:51.000000Z",
+      "operators": [
+        "Marfork Coal Company, LLC"
+      ],
+      "owners": [],
+      "notes": "Marfork Coal Company, LLC is the operator mentioned in the context of the Brushy Eagle Coal Mine."
+    }
+  }
 }

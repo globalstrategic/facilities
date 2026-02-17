@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 13.059,
-    "lon": 76.425,
+    "lat": 13.055,
+    "lon": 76.4255,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mysore Minerals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.124909Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:51:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10255997. Coordinates extracted from the mining report for Tagadur"
   },
   "canonical_name": "Tagadur Mine",
   "canonical_slug": "tagadur-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:51:07.000000Z",
+      "operators": [
+        "Mysore Minerals Ltd."
+      ],
+      "owners": [
+        "Mysore Minerals Ltd."
+      ],
+      "notes": "Mysore Minerals Ltd. is the owner-operator with majority stake."
+    }
+  }
 }

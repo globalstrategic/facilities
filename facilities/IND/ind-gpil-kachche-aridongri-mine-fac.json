@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 20.405,
-    "lon": 81.065,
+    "lat": 20.408833,
+    "lon": 81.063648,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Godawari Power and Ispat Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.064698Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:28:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/GPIL_Kachche_Aridongri_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Gpil Kachche Aridongri Mine",
   "canonical_slug": "gpil-kachche-aridongri-mine",
@@ -60,5 +62,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chhattisgarh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:28:20.000000Z",
+      "operators": [
+        "Godawari Power and Ispat Ltd"
+      ],
+      "owners": [
+        "Godawari Power and Ispat Ltd"
+      ],
+      "notes": "The mine is a captive operation of Godawari Power and Ispat Ltd."
+    }
+  }
 }

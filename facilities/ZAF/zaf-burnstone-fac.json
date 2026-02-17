@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.654,
-    "lon": 28.665,
+    "lat": -26.5,
+    "lon": 28.5,
     "precision": "site"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Barrick Gold Corporation",
+    "Great Basin Gold",
+    "Sibanye-Stillwater",
+    "Witwatersrand Consolidated Gold Resources Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.744373Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-burnstone-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:35:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-burnstone-gold-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.e-mj.com/leading-developments/wits-gold-acquires-burnstone-mine/. Burnstone is located in the South Rand area of South Africa’s Witwatersrand goldfields, approximately 80 km southeast of Johannesburg"
   },
   "canonical_name": "Burnstone Mine",
   "canonical_slug": "burnstone-mine",
@@ -54,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:35:03.000000Z",
+      "operators": [
+        "Sibanye-Stillwater"
+      ],
+      "owners": [
+        "Great Basin Gold",
+        "Witwatersrand Consolidated Gold Resources Ltd.",
+        "Barrick Gold Corporation"
+      ],
+      "notes": "Sibanye-Stillwater acquired the Burnstone project from Wits Gold in 2015. The mine has been in care and maintenance and is expected to restart operations."
+    }
+  }
 }

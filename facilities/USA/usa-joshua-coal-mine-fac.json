@@ -5,7 +5,7 @@
   "country_iso3": "USA",
   "location": {
     "lat": 35.5,
-    "lon": -95.936,
+    "lon": -95.936111,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Joshua Coal Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.944413Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:10:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Joshua_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Joshua Coal Mine",
   "canonical_slug": "joshua-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oklahoma",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:10:17.000000Z",
+      "operators": [
+        "Joshua Coal Co"
+      ],
+      "owners": [
+        "Joshua Coal Co"
+      ],
+      "notes": "Joshua Coal Co owns and operates the facility."
+    }
+  }
 }

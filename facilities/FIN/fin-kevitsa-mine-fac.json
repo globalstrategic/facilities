@@ -1,11 +1,11 @@
 {
   "facility_id": "fin-kevitsa-mine-fac",
-  "name": "**Kevitsa Mine**",
+  "name": "Kevitsa Mine",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 67.693992,
+    "lon": 26.928048,
     "precision": "unknown"
   },
   "types": [
@@ -15,14 +15,8 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Boliden Kevitsa Mining Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.776418",
-      "evidence": "Extracted from operator column: Boliden Kevitsa Mining Oy"
-    }
+    "Boliden AB",
+    "Boliden Kevitsa Mining Oy"
   ],
   "products": [],
   "sources": [
@@ -33,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.189529Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:16:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kevitsa_mine. The Kevitsa mine is a large nickel-copper mine located in Northern Finland"
   },
   "canonical_name": "Kevitsa Mine",
   "canonical_slug": "kevitsa-mine-2",
@@ -54,11 +48,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Kevitsa ** Mine",
+      "name": "Kevitsa  Mine",
       "from": "2025-10-28T17:16:23.776428",
       "to": "2025-11-04T19:18:54.189526Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lapland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:16:39.000000Z",
+      "operators": [
+        "Boliden Kevitsa Mining Oy"
+      ],
+      "owners": [
+        "Boliden AB"
+      ],
+      "notes": "Boliden acquired the mine from First Quantum Minerals in 2016."
+    }
+  }
 }

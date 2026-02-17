@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-sabi-star-mine-fac",
-  "name": "**Sabi Star Mine**",
+  "name": "Sabi Star Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.50651874507949,
+    "lon": 31.17411308186539,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,13 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chengxin Lithium Group",
+    "Max Mind Investments",
+    "Max Minds Investments",
+    "Power China",
+    "Shenzhen Chengxin Lithium Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.955691Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:42:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Buhera (https://www.business-humanrights.org/en/latest-news/zimbabwe-chinese-owned-sabi-star-lithium-mine-linked-to-education-disruption-displacement-unfulfilled-compensation-agreements/). The Sabi Star Mine is linked to various social and environmental issues, including displacement of families and disruption of education"
   },
   "canonical_name": "Sabi Star Mine",
   "canonical_slug": "sabi-star-mine",
@@ -44,11 +50,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sabi Star ** Mine",
+      "name": "Sabi Star  Mine",
       "from": "2025-10-21T13:04:39.404775",
       "to": "2025-11-04T19:18:51.955689Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Manicaland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:42:12.000000Z",
+      "operators": [
+        "Max Mind Investments",
+        "Power China"
+      ],
+      "owners": [
+        "Chengxin Lithium Group"
+      ],
+      "notes": "Max Mind Investments is a subsidiary of Chengxin Lithium Group, which is a major player in the lithium market."
+    }
+  },
+  "town": "Buhera"
 }

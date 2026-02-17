@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.607,
-    "lon": -81.655,
+    "lat": 37.60731,
+    "lon": -81.655345,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Maben Coal LLC",
+    "Ramaco Resources Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.963768Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:27:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609637. Maben Surface is an operating coal mine located in Wyoming County, West Virginia"
   },
   "canonical_name": "Maben Surface Mine",
   "canonical_slug": "maben-surface-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:27:58.000000Z",
+      "operators": [
+        "Ramaco Resources Inc"
+      ],
+      "owners": [
+        "Maben Coal LLC",
+        "Ramaco Resources Inc"
+      ],
+      "notes": "Maben Coal LLC is a wholly owned subsidiary of Ramaco Resources Inc."
+    }
+  }
 }

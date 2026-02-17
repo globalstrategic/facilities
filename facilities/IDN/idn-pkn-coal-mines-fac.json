@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": 2.904,
-    "lon": 116.985,
+    "lat": 2.9037,
+    "lon": 116.9853,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lanna Resources Public Co., Ltd.",
+    "PT Pesona Khatulistiwa Nusantara"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.240988Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:42:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/PKN_Coal_Mines. PKN Coal Mines is an operating coal mine located in Bulungan, North Kalimantan, Indonesia"
   },
   "canonical_name": "PKN Coal Mines Mine",
   "canonical_slug": "pkn-coal-mines-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:42:52.000000Z",
+      "operators": [
+        "PT Pesona Khatulistiwa Nusantara"
+      ],
+      "owners": [
+        "Lanna Resources Public Co., Ltd."
+      ],
+      "notes": "Lanna Resources holds a 10% stake in PT Pesona Khatulistiwa Nusantara."
+    }
+  }
 }

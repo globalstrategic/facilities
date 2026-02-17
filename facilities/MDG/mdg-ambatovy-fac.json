@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MDG",
   "location": {
-    "lat": -18.86,
-    "lon": 48.303,
+    "lat": -18.845,
+    "lon": 48.307,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ambatovy Minerals S.A.",
+    "Dynatec Madagascar S.A.",
+    "Korea Mine Rehabilitation and Mineral Resources Corporation",
+    "Sherritt International Corporation",
+    "Sumitomo Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.110090Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:22:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Ambatovy_mine. Ambatovy is a major industrial operation mining and refining nickel and cobalt in Madagascar"
   },
   "canonical_name": "Ambatovy Mine",
   "canonical_slug": "ambatovy-mine",
@@ -53,5 +59,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Atsinanana and Alaotra Mangoro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:22:00.000000Z",
+      "operators": [
+        "Sherritt International Corporation",
+        "Ambatovy Minerals S.A.",
+        "Dynatec Madagascar S.A."
+      ],
+      "owners": [
+        "Sumitomo Corporation",
+        "Korea Mine Rehabilitation and Mineral Resources Corporation"
+      ],
+      "notes": "Ambatovy is a joint venture between Sherritt International, Sumitomo Corporation, and Korea Resources Corporation."
+    }
+  }
 }

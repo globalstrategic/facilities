@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.206,
-    "lon": -75.116,
+    "lat": -15.0,
+    "lon": -75.0,
     "precision": "site"
   },
   "types": [
@@ -27,7 +27,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shougang Hierro Perú S.A.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.310946Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:02:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Shougang_Marcona_Mine. Shougang Marcona Mine is one of Latin America's major iron ore operations"
   },
   "canonical_name": "Shougang Marcona Mine",
   "canonical_slug": "shougang-marcona-mine",
@@ -56,5 +58,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:02:47.000000Z",
+      "operators": [
+        "Shougang Hierro Perú S.A.A."
+      ],
+      "owners": [
+        "Shougang Hierro Perú S.A.A."
+      ],
+      "notes": "Shougang Hierro Perú S.A.A. is a subsidiary of Shougang Group."
+    }
+  }
 }

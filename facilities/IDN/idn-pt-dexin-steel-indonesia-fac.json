@@ -1,11 +1,11 @@
 {
   "facility_id": "idn-pt-dexin-steel-indonesia-fac",
-  "name": "**PT Dexin Steel Indonesia**",
+  "name": "PT Dexin Steel Indonesia",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -2.8153,
+    "lon": 122.1631,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,13 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Dexin Steel Indonesia",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.694948",
-      "evidence": "Extracted from operator column: PT Dexin Steel Indonesia"
-    }
+    "Delong Steel Ltd",
+    "Delong Steel Singapore Projects Pte Ltd",
+    "Hanwa Group",
+    "Indonesia Morowali Industrial Park PT",
+    "PT Dexin Steel Indonesia",
+    "Shanghai Decent Investment Group Co Ltd",
+    "Tsingshan Group"
   ],
   "products": [],
   "sources": [
@@ -39,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.217285Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:26:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.linkedin.com/company/pt-dexin-steel-indonesia. Coordinates extracted from the IMIP location details"
   },
   "canonical_name": "PT Dexin Steel Indonesia Steel Plant",
   "canonical_slug": "pt-dexin-steel-indonesia-steel-plant",
@@ -60,11 +59,29 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT Dexin Steel Indonesia** Steel Plant",
+      "name": "PT Dexin Steel Indonesia Steel Plant",
       "from": "2025-10-29T10:37:55.694956",
       "to": "2025-11-04T19:19:10.217282Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:26:34.000000Z",
+      "operators": [
+        "PT Dexin Steel Indonesia",
+        "Delong Steel Singapore Projects Pte Ltd",
+        "Shanghai Decent Investment Group Co Ltd",
+        "Indonesia Morowali Industrial Park PT"
+      ],
+      "owners": [
+        "Delong Steel Ltd",
+        "Tsingshan Group",
+        "Hanwa Group"
+      ],
+      "notes": "PT Dexin Steel Indonesia is a joint venture involving multiple companies."
+    }
+  }
 }

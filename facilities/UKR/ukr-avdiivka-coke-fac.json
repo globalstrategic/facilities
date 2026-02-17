@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.167,
-    "lon": 37.707,
+    "lat": 48.169444,
+    "lon": 37.702778,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Metinvest Group",
+    "System Capital Management (SCM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:54.736769Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:06:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://euromaidanpress.com/2023/12/18/metinvest-avdiivka-coking-plant-beyond-repair-due-to-russian-attacks/. The Avdiivka Coke Plant has been severely damaged and is considered beyond repair due to ongoing conflict"
   },
   "canonical_name": "Avdiivka Coke Mine",
   "canonical_slug": "avdiivka-coke-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Donetsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:06:50.000000Z",
+      "operators": [
+        "Metinvest Group"
+      ],
+      "owners": [
+        "Metinvest Group",
+        "System Capital Management (SCM)"
+      ],
+      "notes": "Metinvest Group is the primary operator and owner, part of the SCM Group."
+    }
+  }
 }

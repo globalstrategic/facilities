@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.0,
-    "lon": 76.596,
+    "lat": 14.990704,
+    "lon": 76.593219,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sandur Manganese and Iron Ores Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.120837Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:46:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/SMIORE_Deogiri_Mine. The SMIORE Deogiri Mine is an iron ore mine located in Sandur, Karnataka, India"
   },
   "canonical_name": "Smiore Deogiri Mine",
   "canonical_slug": "smiore-deogiri-mine",
@@ -59,5 +61,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:46:56.000000Z",
+      "operators": [
+        "Sandur Manganese and Iron Ores Ltd"
+      ],
+      "owners": [
+        "Sandur Manganese and Iron Ores Ltd"
+      ],
+      "notes": "The mine is fully owned and operated by Sandur Manganese and Iron Ores Ltd."
+    }
+  }
 }

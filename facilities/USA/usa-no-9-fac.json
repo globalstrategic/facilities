@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.085,
-    "lon": -82.222,
+    "lat": 39.4861,
+    "lon": -80.2084,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jamison Coal and Coke Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.685561Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:33:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Farmington_Mine_disaster. The Farmington No. 9 Mine was operated by the Jamison Coal and Coke Company and is historically significant due to the 1968 disaster"
   },
   "canonical_name": "No 9 Mine",
   "canonical_slug": "no-9-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:33:31.000000Z",
+      "operators": [
+        "Jamison Coal and Coke Company"
+      ],
+      "owners": [],
+      "notes": "The mine is no longer operational following the disaster."
+    }
+  }
 }

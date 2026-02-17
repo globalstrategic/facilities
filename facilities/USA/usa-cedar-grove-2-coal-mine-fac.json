@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.785,
-    "lon": -82.086,
+    "lat": 37.80423,
+    "lon": -82.084989,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Aracoma Coal Company",
+    "Aracoma Coal Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.792690Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:04:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Cedar_Grove_2_Coal_Mine. Cedar Grove #2 Coal Mine is an underground mine located in Holden, Logan County, West Virginia. It was idled in 2023 and remains inactive"
   },
   "canonical_name": "Cedar Grove 2 Coal Mine",
   "canonical_slug": "cedar-grove-2-coal-mine",
@@ -61,5 +65,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:04:20.000000Z",
+      "operators": [
+        "Aracoma Coal Company, LLC"
+      ],
+      "owners": [
+        "Aracoma Coal Company",
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Aracoma Coal Company operates the mine, which is owned by Alpha Metallurgical Resources."
+    }
+  }
 }

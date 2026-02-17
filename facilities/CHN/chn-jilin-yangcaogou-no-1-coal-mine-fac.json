@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 43.959,
-    "lon": 125.598,
+    "lat": 44.01215494729539,
+    "lon": 125.64474434066612,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Yankuang Energy Group Company Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.771283Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:26:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Jiutai City (https://www.mdpi.com/2227-9717/12/4/668). The Yangcaogou Coal Mine is located southwest of the Yingcheng Coal Mine, which is situated between Jilin City and Changchun City"
   },
   "canonical_name": "Jilin Yangcaogou No 1 Coal Mine",
   "canonical_slug": "jilin-yangcaogou-no-1-coal-mine",
@@ -58,5 +60,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jilin",
+  "town": "Jiutai City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:26:20.000000Z",
+      "operators": [
+        "Yankuang Energy Group Company Limited"
+      ],
+      "owners": [
+        "Yankuang Energy Group Company Limited"
+      ],
+      "notes": "Yankuang Energy Group is a major player in coal mining in China."
+    }
+  }
 }

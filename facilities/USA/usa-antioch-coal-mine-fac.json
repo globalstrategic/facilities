@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.695,
-    "lon": -87.085,
+    "lat": 38.705278,
+    "lon": -87.0875,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Responsible Energy Operations"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.781760Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:54:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Antioch_Coal_Mine. The Antioch Coal Mine is an operating coal mine located in Daviess County, Indiana"
   },
   "canonical_name": "Antioch Coal Mine",
   "canonical_slug": "antioch-coal-mine",
@@ -53,5 +55,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:54:41.000000Z",
+      "operators": [
+        "Responsible Energy Operations"
+      ],
+      "owners": [
+        "Responsible Energy Operations"
+      ],
+      "notes": "Responsible Energy Operations owns and operates the Antioch Coal Mine."
+    }
+  }
 }

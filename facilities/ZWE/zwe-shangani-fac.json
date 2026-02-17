@@ -6,8 +6,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -19.688,
-    "lon": 29.227,
+    "lat": -19.6636,
+    "lon": 29.2513,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bindura Nickel Corporation",
+    "Johannesburg Consolidated Investment Company (J. C. I.)",
+    "Shangani Mining Corporation Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.959678Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:43:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10024511. The Shangani Nickel Mine is located in the Matabeleland South region of Zimbabwe, approximately 90 km northwest of Bulawayo"
   },
   "canonical_name": "Shangani Mine",
   "canonical_slug": "shangani-mine",
@@ -53,5 +57,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland South",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:43:28.000000Z",
+      "operators": [
+        "Shangani Mining Corporation Ltd.",
+        "Bindura Nickel Corporation"
+      ],
+      "owners": [
+        "Johannesburg Consolidated Investment Company (J. C. I.)",
+        "Shangani Mining Corporation Ltd."
+      ],
+      "notes": "Bindura Nickel Corporation operates the mine and holds a significant interest in it."
+    }
+  }
 }

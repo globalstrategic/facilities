@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 30.036,
-    "lon": -90.694,
+    "lat": 30.0583,
+    "lon": -90.6775,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Atalco Gramercy LLC",
+    "Concord Resources LTD",
+    "DADA Holdings LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.785861Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:57:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.msha.gov/sites/default/files/Data_Reports/Fatals/Enforcement/2024/August%204%2C%202024%20-%20Final%20Report%20-%20Gramercy.pdf. The facility is located in Gramercy, Louisiana, which is confirmed in multiple sources"
   },
   "canonical_name": "Gramercy Refinery",
   "canonical_slug": "gramercy-refinery",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Louisiana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:57:29.000000Z",
+      "operators": [
+        "Atalco Gramercy LLC"
+      ],
+      "owners": [
+        "DADA Holdings LLC",
+        "Concord Resources LTD"
+      ],
+      "notes": "Atalco Gramercy LLC operates the facility, which is owned by DADA Holdings LLC and Concord Resources LTD."
+    }
+  }
 }

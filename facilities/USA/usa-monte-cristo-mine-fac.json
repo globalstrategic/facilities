@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.077,
-    "lon": -112.594,
+    "lat": 39.81642893961373,
+    "lon": -87.82707070989402,
     "precision": "site"
   },
   "types": [
@@ -35,7 +35,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arizona Copper Co., Ltd.",
+    "Peter B. Scotland",
+    "Phelps Dodge Corp., Morenci Branch",
+    "Stevens Copper Co."
+  ],
   "products": [],
   "sources": [
     {
@@ -45,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.784287Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:08:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10285739/. The Monte Cristo Mine is located in Mono County, California, at an elevation of 9,199 feet. Web search geocoded. Source: Calculated from Metcalf (https://www.mindat.org/loc-131389.html). The Monte Cristo Mine is a former underground copper mine located on patented claims. It is situated on private land and has a historical significance dating back to its discovery in 1875"
   },
   "canonical_name": "Monte Cristo Mine",
   "canonical_slug": "monte-cristo-mine",
@@ -64,5 +69,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "town": "Metcalf",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:08:27.000000Z",
+      "operators": [
+        "Phelps Dodge Corp., Morenci Branch",
+        "Peter B. Scotland",
+        "Stevens Copper Co.",
+        "Arizona Copper Co., Ltd."
+      ],
+      "owners": [],
+      "notes": "The mine has had various operators over the years, with Phelps Dodge Corp. being the most notable in recent history."
+    }
+  }
 }

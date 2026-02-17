@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.09335,
-    "lon": 26.96958,
+    "lat": -25.282069113687744,
+    "lon": 26.820212532240138,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chrometco Limited",
+    "International Ferro Metals"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T17:00:31.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:36:28.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-259533.html. Coordinates are for the Pilanesberg platinum mines, which are located across the Rooderand Project area"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-259533.html. Coordinates are for the Pilanesberg platinum mines, which are located across the Rooderand Project area. Web search geocoded. Source: Calculated from Rustenburg (https://www.chrometco.co.za/sites/default/files/Chrometco%20Fact%20Sheet%202012.pdf). The Rooderand Project is located on the Western Limb of the Bushveld Igneous Complex, approximately 60 km northwest of Rustenburg"
   },
   "canonical_name": "Rooderand Mine",
   "canonical_slug": "rooderand-mine",
@@ -48,5 +51,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "North West"
+  "province": "North West",
+  "town": "Rustenburg",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:36:28.000000Z",
+      "operators": [
+        "International Ferro Metals",
+        "Chrometco Limited"
+      ],
+      "owners": [
+        "Chrometco Limited"
+      ],
+      "notes": "Chrometco Limited is focused on chrome exploration and mining, and has entered into an agreement with International Ferro Metals for mining operations."
+    }
+  }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 46.42,
-    "lon": -112.302,
+    "lat": 35.52944,
+    "lon": -118.43278,
     "precision": "site"
   },
   "types": [
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tom Smith"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.940402Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:07:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10048693/. The Josephine Mine is a gold mine located in Kern County, California"
   },
   "canonical_name": "Josephine Mine",
   "canonical_slug": "josephine-mine",
@@ -59,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:07:45.000000Z",
+      "operators": [
+        "Tom Smith"
+      ],
+      "owners": [
+        "Tom Smith"
+      ],
+      "notes": "The mine has been owned and operated by Tom Smith since 1949."
+    }
+  }
 }

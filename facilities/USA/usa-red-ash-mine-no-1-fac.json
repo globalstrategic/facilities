@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.443,
-    "lon": -81.787,
+    "lat": 37.443333,
+    "lon": -81.786667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rayco LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.889056Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:08:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Red_Ash_Mine_No._1. Red Ash Mine No. 1 is an operating coal mine"
   },
   "canonical_name": "Red Ash No 1 Mine",
   "canonical_slug": "red-ash-no-1-mine",
@@ -55,5 +57,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:08:21.000000Z",
+      "operators": [
+        "Rayco LLC"
+      ],
+      "owners": [
+        "Rayco LLC"
+      ],
+      "notes": "Rayco LLC is both the owner and operator of the mine."
+    }
+  }
 }

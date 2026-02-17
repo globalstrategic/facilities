@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": -4.056,
-    "lon": 137.114,
+    "lat": -4.5,
+    "lon": 137.1,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan",
+    "PT Freeport Indonesia",
+    "PT Indonesia Asahan Aluminium"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:10.237159Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:39:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Grasberg_mine. Grasberg mine is one of the largest reserves of gold and copper in the world"
   },
   "canonical_name": "Grasberg Mine",
   "canonical_slug": "grasberg-mine",
@@ -55,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Papua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:39:44.000000Z",
+      "operators": [
+        "PT Freeport Indonesia"
+      ],
+      "owners": [
+        "PT Freeport Indonesia",
+        "PT Indonesia Asahan Aluminium",
+        "Freeport-McMoRan"
+      ],
+      "notes": "PT Freeport Indonesia operates the mine, with ownership split between Indonesian state-owned companies and Freeport-McMoRan."
+    }
+  }
 }

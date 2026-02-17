@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.482,
-    "lon": -80.869,
+    "lat": 33.79115689697987,
+    "lon": -86.8024326,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Consolidated Natural Resources (ACNR)"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.826397Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:14:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Birmingham (https://alabamareflector.com/2024/08/20/late-coal-magnates-son-says-hes-running-jefferson-county-mine-linked-to-home-explosion/). The facility is linked to a recent ownership change, but specific coordinates were not provided"
   },
   "canonical_name": "Jefferson Pits Mine",
   "canonical_slug": "jefferson-pits-mine",
@@ -50,5 +52,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "town": "Birmingham",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:14:55.000000Z",
+      "operators": [
+        "American Consolidated Natural Resources (ACNR)"
+      ],
+      "owners": [],
+      "notes": "The prior owner ACNR no longer lists the facility, and the current owner is not disclosed."
+    }
+  }
 }

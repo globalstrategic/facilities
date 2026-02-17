@@ -7,8 +7,8 @@
   ],
   "country_iso3": "POL",
   "location": {
-    "lat": 51.326,
-    "lon": 23.005,
+    "lat": 51.32889,
+    "lon": 23.00472,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Enea Group",
+    "Lubelski Węgiel Bogdanka S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:49.937146Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:50:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bogdanka_Coal_Mine. The Bogdanka coal mine is a major Polish thermal coal mine located near Lublin"
   },
   "canonical_name": "LW Bogdanka Coal Mine",
   "canonical_slug": "lw-bogdanka-coal-mine",
@@ -50,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lublin Voivodeship",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:50:14.000000Z",
+      "operators": [
+        "Lubelski Węgiel Bogdanka S.A."
+      ],
+      "owners": [
+        "Lubelski Węgiel Bogdanka S.A.",
+        "Enea Group"
+      ],
+      "notes": "Lubelski Węgiel Bogdanka S.A. is the operator and majority owned by Enea Group."
+    }
+  }
 }

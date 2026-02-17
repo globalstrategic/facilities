@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -8.116,
-    "lon": -77.412,
+    "lat": -8.101335612073438,
+    "lon": -76.12535690615907,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera Poderosa S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.309729Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:01:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Trujillo (https://www.poderosa.com.pe/Content/descargas/memorias/reporte-sostenibilidad-eng-2022.pdf). The facility is located in the Pataz district and province, approximately 320 km east of Trujillo"
   },
   "canonical_name": "La Estrella De Pataz N 4 Mine",
   "canonical_slug": "la-estrella-de-pataz-n-4-mine",
@@ -55,5 +57,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "La Libertad",
+  "town": "Trujillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:01:41.000000Z",
+      "operators": [
+        "Compañía Minera Poderosa S.A."
+      ],
+      "owners": [
+        "Compañía Minera Poderosa S.A."
+      ],
+      "notes": "Compañía Minera Poderosa S.A. is engaged in mineral exploitation, extraction, processing, and trading."
+    }
+  }
 }

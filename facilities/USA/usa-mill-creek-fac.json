@@ -24,8 +24,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.24,
-    "lon": -82.774,
+    "lat": 35.2,
+    "lon": -95.0,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "U.S. Silica Holdings, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.829028Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:16:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1139/Mill-Creek-Mine.aspx. The Mill Creek operation consists of the Mill Creek Frac Sand mine and two silica sand processing plants"
   },
   "canonical_name": "Creek Mine",
   "canonical_slug": "creek-mine",
@@ -67,5 +69,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oklahoma",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:16:48.000000Z",
+      "operators": [
+        "U.S. Silica Holdings, Inc."
+      ],
+      "owners": [
+        "U.S. Silica Holdings, Inc."
+      ],
+      "notes": "U.S. Silica Holdings, Inc. was taken private as of July 31, 2024."
+    }
+  }
 }

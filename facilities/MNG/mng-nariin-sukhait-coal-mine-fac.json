@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 43.002,
-    "lon": 101.26,
+    "lat": 43.00222,
+    "lon": 101.26056,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mongolian-Chinese JV 'Qinhua-MAK-Nariin Sukhait' LLC",
+    "Mongolyn Alt Corporation LLC",
+    "South Gobi Energy Resources Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.463000Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:23:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Nariin_Sukhait_Coal_Mine. The Nariin Sukhait Coal Mine is a significant coal mining facility in Mongolia, operated by Mongolyn Alt Corporation"
   },
   "canonical_name": "Nariin Sukhait Coal Mine",
   "canonical_slug": "nariin-sukhait-coal-mine",
@@ -51,5 +55,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ömnögovi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:23:48.000000Z",
+      "operators": [
+        "Mongolyn Alt Corporation LLC",
+        "Mongolian-Chinese JV 'Qinhua-MAK-Nariin Sukhait' LLC",
+        "South Gobi Energy Resources Inc"
+      ],
+      "owners": [
+        "Mongolyn Alt Corporation LLC"
+      ],
+      "notes": "The mine is operated by multiple companies, with Mongolyn Alt Corporation being the primary owner."
+    }
+  }
 }

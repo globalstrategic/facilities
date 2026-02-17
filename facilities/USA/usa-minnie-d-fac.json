@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.87,
-    "lon": -106.965,
+    "lat": 40.0,
+    "lon": -106.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dean Macari",
+    "Frieda Hardie",
+    "Katheryn Macari",
+    "Michael Miller"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.773898Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:48:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10288959/. The Minnie D. is a silver mine located in Routt County, Colorado"
   },
   "canonical_name": "Minnie D Mine",
   "canonical_slug": "minnie-d-mine",
@@ -55,5 +60,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:06:39.000000Z",
+      "operators": [
+        "Michael Miller"
+      ],
+      "owners": [
+        "Dean Macari",
+        "Katheryn Macari",
+        "Frieda Hardie"
+      ],
+      "notes": "The claims are unpatented and the owners had authorized timber removal for road construction."
+    }
+  }
 }

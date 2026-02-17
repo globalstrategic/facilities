@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-choco-10-mine-fac",
-  "name": "**Choco 10 Mine**",
+  "name": "Choco 10 Mine",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 7.301,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rusoro Mining Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,7 +36,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.656007Z",
     "checked_by": "import_pipeline",
-    "notes": "A significant open-pit gold mine near El Callao, formerly operated by Rusoro Mining before expropriation.51 | Canonical name+slug generated"
+    "notes": "A significant open-pit gold mine near El Callao, formerly operated by Rusoro Mining before expropriation.51 | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "Choco 10 Mine",
   "canonical_slug": "choco-10-mine",
@@ -51,11 +53,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Choco 10 ** Mine",
+      "name": "Choco 10  Mine",
       "from": "2025-10-21T11:38:45.343945",
       "to": "2025-11-04T19:18:49.656005Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolívar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:28:43.000000Z",
+      "operators": [
+        "Rusoro Mining Ltd"
+      ],
+      "owners": [
+        "Rusoro Mining Ltd"
+      ],
+      "notes": "Rusoro Mining holds a 95% ownership stake in the Choco 10 mine."
+    }
+  }
 }

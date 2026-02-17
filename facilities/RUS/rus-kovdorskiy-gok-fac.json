@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 67.56,
-    "lon": 30.434,
+    "lat": 67.559159,
+    "lon": 30.428905,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "EuroChem Group AG",
+    "Kovdorsky GOK JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.647436Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:02:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kovdorsky_GOK_Kovdorskoye_Mine. Kovdorskiy GOK is located in the Kovdorskiy District of Murmansk Oblast, Russia"
   },
   "canonical_name": "Kovdorskiy GOK Mine",
   "canonical_slug": "kovdorskiy-gok-mine",
@@ -53,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Murmansk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:02:36.000000Z",
+      "operators": [
+        "EuroChem Group AG"
+      ],
+      "owners": [
+        "Kovdorsky GOK JSC",
+        "EuroChem Group AG"
+      ],
+      "notes": "EuroChem Group AG owns 100% of Kovdorsky GOK JSC."
+    }
+  }
 }

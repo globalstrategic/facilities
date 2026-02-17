@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.772,
-    "lon": -81.931,
+    "lat": 37.771729,
+    "lon": -81.931004,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Aracoma Coal Company, LLC",
+    "Lynn Branch Coal Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.755512Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:30:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609575&iframe=yes. The Lynn Branch No. 2 Coal Mine is an underground mine located in Logan County, West Virginia"
   },
   "canonical_name": "Lynn Branch No 2 Coal Mine",
   "canonical_slug": "lynn-branch-no-2-coal-mine",
@@ -55,5 +59,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:30:52.000000Z",
+      "operators": [
+        "Aracoma Coal Company, LLC"
+      ],
+      "owners": [
+        "Lynn Branch Coal Co",
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Lynn Branch Coal Co is a subsidiary of Alpha Metallurgical Resources Inc."
+    }
+  }
 }

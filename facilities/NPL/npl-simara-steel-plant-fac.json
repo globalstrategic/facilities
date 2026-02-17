@@ -1,38 +1,49 @@
 {
   "facility_id": "npl-simara-steel-plant-fac",
-  "name": "**Simara Steel Plant**",
-  "aliases": [],
+  "name": "Simara Steel Plant",
+  "aliases": ["Saakha Steel Industries"],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 27.14902,
+    "lon": 84.96686,
+    "precision": "facility"
   },
   "types": [
     "plant"
   ],
   "commodities": [
     {
-      "metal": "**steel**",
-      "primary": true
+      "metal": "Steel",
+      "primary": true,
+      "chemical_formula": "Fe",
+      "category": "ferrous"
     }
   ],
-  "status": "unknown",
-  "company_mentions": [],
+  "status": "operating",
+  "company_mentions": [
+    "Jagdamba Steels Limited",
+    "Saakha Steel Industries"
+  ],
   "products": [],
   "sources": [
     {
       "type": "csv_import",
       "id": "Research Import NPL 2025-10-29",
       "date": "2025-10-29T21:51:42.655563"
+    },
+    {
+      "type": "web_research",
+      "id": "Manual verification 2025-12-17",
+      "date": "2025-12-17",
+      "url": "https://worldplaces.com.np"
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.484231Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "verified",
+    "confidence": 0.85,
+    "last_checked": "2025-12-17T22:00:00Z",
+    "checked_by": "manual_research",
+    "notes": "Coordinates from Saakha Steel Industries in Simara, Bara. Jagdamba Steels is the largest steel manufacturer in Nepal."
   },
   "canonical_name": "Simara Steel Smelter",
   "canonical_slug": "simara-steel-smelter",
@@ -40,20 +51,36 @@
   "primary_type": "smelter",
   "type_confidence": 1.0,
   "data_quality": {
-    "canonicalization_confidence": 0.615,
+    "canonicalization_confidence": 0.85,
     "flags": {
-      "town_missing": true,
+      "town_missing": false,
       "operator_unresolved": false,
       "canonical_name_incomplete": false
     }
   },
   "canonical_name_history": [
     {
-      "name": "**Simara Steel ** Smelter",
+      "name": "Simara Steel  Smelter",
       "from": "2025-10-29T21:51:42.655593",
       "to": "2025-11-04T19:19:22.484227Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:21:59.000000Z",
+      "operators": [
+        "Jagdamba Steels Limited"
+      ],
+      "owners": [],
+      "notes": "Jagdamba Steels is noted as the largest steel manufacturer in Nepal."
+    },
+    "geocoding": {
+      "timestamp": "2025-12-17T22:00:00Z",
+      "source": "WorldPlaces Nepal",
+      "anchor": "Saakha Steel Industries (Simara, Bara)"
+    }
+  }
 }

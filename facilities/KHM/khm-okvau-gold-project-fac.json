@@ -1,11 +1,11 @@
 {
   "facility_id": "khm-okvau-gold-project-fac",
-  "name": "**Okvau Gold Project**",
+  "name": "Okvau Gold Project",
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 13.30806471871088,
+    "lon": 106.71383771647398,
     "precision": "unknown"
   },
   "types": [
@@ -27,14 +27,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Renaissance Minerals Ltd.",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.356690",
-      "evidence": "Extracted from operator column: Renaissance Minerals (Cambodia) Ltd. (Emerald Resources NL)"
-    }
+    "Emerald Resources NL",
+    "Renaissance Minerals (Cambodia)",
+    "Renaissance Minerals Ltd."
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.253822Z",
-    "checked_by": "import_pipeline",
-    "notes": "Cambodia's only large-scale industrial metal mine. Produces doré bars for export. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:54:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Cambodia's only large-scale industrial metal mine. Produces doré bars for export. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Phnom Penh (https://www.mining-technology.com/projects/okvau-gold-project/). The Okvau Gold Project is located approximately 275km northeast of Phnom Penh in Mondulkiri province"
   },
   "canonical_name": "Okvau Gold Mine",
   "canonical_slug": "okvau-gold-mine",
@@ -66,11 +61,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Okvau Gold ** Mine",
+      "name": "Okvau Gold  Mine",
       "from": "2025-10-29T12:22:07.356705",
       "to": "2025-11-04T19:18:46.253820Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mondulkiri",
+  "town": "Phnom Penh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:54:37.000000Z",
+      "operators": [
+        "Renaissance Minerals (Cambodia)",
+        "Emerald Resources NL"
+      ],
+      "owners": [
+        "Renaissance Minerals (Cambodia)",
+        "Emerald Resources NL"
+      ],
+      "notes": "Renaissance Minerals is a subsidiary of Emerald Resources NL."
+    }
+  }
 }

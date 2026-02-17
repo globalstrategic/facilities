@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-cho-dien-mine-fac",
-  "name": "**Cho Dien Mine**",
+  "name": "Cho Dien Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 22.21,
+    "lon": 105.33,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Bac Kan Nonferrous Metal One Member LLC",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.115995",
-      "evidence": "Extracted from operator column: Bac Kan Nonferrous Metal One Member LLC"
-    }
+    "Bac Kan Nonferrous Metal One Member LLC",
+    "Thai Nguyen Nonferrous Metal JSC",
+    "Vietnam National Minerals Corp. (Vimico)"
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.282848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:35:37Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:35:37Z] Geocoded via web search. Coords: (22.21, 105.33). Confidence: 0.90. Notes: Coordinates extracted from the latitude and longitude range provided in the search results."
   },
   "canonical_name": "Cho Dien Mine",
   "canonical_slug": "cho-dien-mine",
@@ -60,11 +55,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cho Dien ** Mine",
+      "name": "Cho Dien  Mine",
       "from": "2025-10-21T13:04:38.116006",
       "to": "2025-11-04T19:19:02.282845Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tuyên Quang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:34:07.000000Z",
+      "operators": [
+        "Vietnam National Minerals Corp. (Vimico)"
+      ],
+      "owners": [
+        "Vietnam National Minerals Corp. (Vimico)"
+      ],
+      "notes": "Vimico is a state-owned enterprise involved in mining operations at the Cho Dien Mine."
+    }
+  }
 }

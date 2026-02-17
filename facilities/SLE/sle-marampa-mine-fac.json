@@ -7,8 +7,8 @@
   ],
   "country_iso3": "SLE",
   "location": {
-    "lat": 8.685,
-    "lon": -12.498,
+    "lat": 8.678657,
+    "lon": -12.500283,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Gerald Group",
+    "Government of Sierra Leone",
+    "Marampa Mines Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.577296Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:07:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/MML_Marampa_Mine. Marampa Mine is focused on iron ore extraction and has recently undergone expansion"
   },
   "canonical_name": "Marampa Mine",
   "canonical_slug": "marampa-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Port Loko",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:07:57.000000Z",
+      "operators": [
+        "Marampa Mines Ltd"
+      ],
+      "owners": [
+        "Gerald Group",
+        "Government of Sierra Leone"
+      ],
+      "notes": "Gerald Group holds a 90% stake in Marampa Mines Ltd, with the Government of Sierra Leone owning 10%."
+    }
+  }
 }

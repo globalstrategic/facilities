@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 47.30736810446279,
+    "lon": 15.6221694,
     "precision": "unknown"
   },
   "types": [
@@ -32,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.396677Z",
-    "checked_by": "import_pipeline",
-    "notes": "Processes crude talc ore from the Rabenwald mine. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T11:13:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Processes crude talc ore from the Rabenwald mine. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Weiz (https://min-pan.krakow.pl/wp-content/uploads/sites/4/2017/12/doerfler-wurm.pdf). The Oberfeistritz Plant processes talc and is part of Naintsch Mineralwerke GmbH's operations"
   },
   "canonical_name": "Oberfeistritz Processing Plant",
   "canonical_slug": "oberfeistritz-processing-plant",
@@ -55,14 +55,15 @@
   "province": "Styria",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:33:10.000000Z",
+      "timestamp": "2025-12-02T11:13:44.000000Z",
       "operators": [
         "Naintsch Mineralwerke GmbH"
       ],
       "owners": [
-        "Imerys Talc Austria GmbH"
+        "Naintsch Mineralwerke GmbH"
       ],
-      "notes": "Naintsch operates the processing plant and is part of Imerys."
+      "notes": "Naintsch operates multiple sites in Austria, including the Oberfeistritz Plant."
     }
-  }
+  },
+  "town": "Weiz"
 }

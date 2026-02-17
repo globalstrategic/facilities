@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 31.847,
-    "lon": -109.94,
+    "lat": 36.852449740555905,
+    "lon": -121.4352406588966,
     "precision": "site"
   },
   "types": [
@@ -39,7 +39,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Blackrock Gold Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -49,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.914323Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:47:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hollister (https://blackrocksilver.com/silver-cloud/). The Silver Cloud project is located 20 km south of the Midas mine and 3 km west of the Hollister mine"
   },
   "canonical_name": "Silver Cloud Mine",
   "canonical_slug": "silver-cloud-mine",
@@ -68,5 +70,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Hollister",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:47:04.000000Z",
+      "operators": [
+        "Blackrock Gold Corporation"
+      ],
+      "owners": [
+        "Blackrock Gold Corporation"
+      ],
+      "notes": "Blackrock Gold Corporation is actively developing the Silver Cloud project."
+    }
+  }
 }

@@ -1,11 +1,11 @@
 {
   "facility_id": "moz-marropino-mine-fac",
-  "name": "**Marropino Mine**",
+  "name": "Marropino Mine",
   "aliases": [],
   "country_iso3": "MOZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -16.5092,
+    "lon": 37.9052,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Highland African Mining Company",
+    "Noventa Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:02.808078Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:28:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Marropino_mine. The Marropino mine is known for its tantalum reserves and is located in Zambezia Province, Mozambique"
   },
   "canonical_name": "Marropino Facility",
   "canonical_slug": "marropino-facility",
@@ -49,11 +52,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Marropino **",
+      "name": "Marropino ",
       "from": "2025-10-29T22:19:16.116241",
       "to": "2025-11-04T19:19:02.808075Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Zambezia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:28:37.000000Z",
+      "operators": [
+        "Highland African Mining Company"
+      ],
+      "owners": [
+        "Noventa Group"
+      ],
+      "notes": "The mine was previously operated by Highland African Mining Company and is owned by Noventa Group."
+    }
+  }
 }

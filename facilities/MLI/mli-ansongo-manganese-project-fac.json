@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MLI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.673,
+    "lon": 0.505,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -18,7 +18,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ansongo Limited",
+    "Callabonna Resources",
+    "Mali Manganese SA",
+    "Sahara Manganese Limited",
+    "Transatlantic Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.45,
-    "last_checked": "2025-11-04T19:19:03.870453Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Ansongo town in Gao Region. Historic manganese occurrence discovered 1907."
   },
   "canonical_name": "Ansongo Manganese Facility",
   "canonical_slug": "ansongo-manganese-facility",
@@ -55,5 +61,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mali",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:50:40.000000Z",
+      "operators": [
+        "Ansongo Limited",
+        "Callabonna Resources"
+      ],
+      "owners": [
+        "Ansongo Limited",
+        "Sahara Manganese Limited",
+        "Mali Manganese SA"
+      ],
+      "notes": "Ansongo Limited is the primary owner and operator, with Callabonna Resources acquiring a stake through project-related expenditures."
+    }
+  }
 }

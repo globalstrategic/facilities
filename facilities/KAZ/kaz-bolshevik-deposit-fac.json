@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 50.62858986405613,
+    "lon": 82.10409513736789,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Altynalmas Gold",
+    "Polymetal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.740940Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:38:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Astana (https://www.mining-technology.com/projects/kyzyl-gold-project/). The Bolshevik Deposit is part of the Kyzyl Gold Project, which includes two gold deposits in north-eastern Kazakhstan"
   },
   "canonical_name": "Bolshevik Mine",
   "canonical_slug": "bolshevik-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kazakhstan",
+  "town": "Astana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:38:22.000000Z",
+      "operators": [
+        "Polymetal"
+      ],
+      "owners": [
+        "Altynalmas Gold"
+      ],
+      "notes": "Polymetal acquired Altynalmas Gold, which holds the Kyzyl Gold Project."
+    }
+  }
 }

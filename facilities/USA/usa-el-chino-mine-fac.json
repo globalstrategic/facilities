@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 32.7917425,
+    "lon": -108.0672635,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,9 @@
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.929130Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:59:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Chino_mine. The Chino Mine is an open-pit porphyry copper mine located near Santa Rita, NM, and is one of the first low-grade, open-pit copper mines in the world"
   },
   "canonical_name": "El Chino Mine",
   "canonical_slug": "el-chino-mine",
@@ -42,5 +44,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Mexico",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:59:14.000000Z",
+      "operators": [
+        "Freeport-McMoRan Inc."
+      ],
+      "owners": [
+        "Freeport-McMoRan Inc."
+      ],
+      "notes": "Freeport-McMoRan Inc. is the current owner and operator of the Chino Mine."
+    }
+  }
 }

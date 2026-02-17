@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": 3.577,
-    "lon": 117.787,
+    "lat": 3.57734043,
+    "lon": 117.7868244,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PT Garda Tujuh Buana",
+    "PT Garda Tujuh Buana Tbk"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.285666Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:03:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/GTB_Coal_Mine. The GTB Coal Mine is located on Bunyu Island, which is unpopulated"
   },
   "canonical_name": "GTB Coal Mine",
   "canonical_slug": "gtb-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:03:11.000000Z",
+      "operators": [
+        "PT Garda Tujuh Buana"
+      ],
+      "owners": [
+        "PT Garda Tujuh Buana Tbk"
+      ],
+      "notes": "PT Garda Tujuh Buana is a subsidiary of PT Garda Tujuh Buana Tbk."
+    }
+  }
 }

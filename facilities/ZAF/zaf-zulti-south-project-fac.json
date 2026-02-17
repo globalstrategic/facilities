@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -28.7853,
+    "lon": 32.0404,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Richards Bay Minerals",
+    "Rio Tinto"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.717546Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:10:25Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:10:25Z] Richards Bay Minerals ilmenite. Coords: (-28.7853, 32.0404)"
   },
   "canonical_name": "Zulti South Mine",
   "canonical_slug": "zulti-south-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "KwaZulu-Natal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:35:37.000000Z",
+      "operators": [
+        "Richards Bay Minerals"
+      ],
+      "owners": [
+        "Rio Tinto"
+      ],
+      "notes": "Rio Tinto owns a 74% stake in Richards Bay Minerals."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 19.839,
-    "lon": 78.804,
+    "lat": 19.83938305,
+    "lon": 78.80448632,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "B.S. Ispat Limited",
+    "B.S. Ispat Ltd",
+    "Topworth Urja and Metals Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.081985Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:43:05.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Marki_Mangli_I_Coal_Mine. The Marki Mangli I Coal Mine is an operating coal mine"
   },
   "canonical_name": "Marki Mangli Coal Mines Mine",
   "canonical_slug": "marki-mangli-coal-mines-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Maharashtra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:43:05.000000Z",
+      "operators": [
+        "B.S. Ispat Ltd",
+        "Topworth Urja and Metals Ltd"
+      ],
+      "owners": [
+        "B.S. Ispat Limited",
+        "Topworth Urja and Metals Ltd"
+      ],
+      "notes": "Both companies own 50% each of the mine."
+    }
+  }
 }

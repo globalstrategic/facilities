@@ -1,0 +1,79 @@
+{
+  "facility_id": "arg-escobal-fac",
+  "name": "Escobal",
+  "aliases": [
+    "Escobal",
+    "Escobal"
+  ],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -34.83569856261296,
+    "lon": -58.1214709270169,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Pan American Silver Corp.",
+    "Pan American Silver Guatemala S.A."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:24.484400"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:02:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guatemala City (https://www.mining.com/indigenous-group-says-no-to-pan-americans-escobal-mine-in-guatemala/). The Escobal mine is located approximately 40 km east-southeast of Guatemala City. The mine has been suspended since 2017 due to legal and community opposition"
+  },
+  "canonical_name": "Escobal Mine",
+  "canonical_slug": "escobal-mine",
+  "display_name": "Escobal",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Santa Rosa",
+  "town": "Guatemala City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:02:12.000000Z",
+      "operators": [
+        "Pan American Silver Guatemala S.A."
+      ],
+      "owners": [
+        "Pan American Silver Corp."
+      ],
+      "notes": "Pan American Silver acquired the Escobal mine from Tahoe Resources in 2018."
+    }
+  }
+}

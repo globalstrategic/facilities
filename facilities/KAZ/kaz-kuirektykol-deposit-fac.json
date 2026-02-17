@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 49.17152285571367,
+    "lon": 74.37698424425197,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Samruk-Kazyna",
+    "Tau-Ken Samruk"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.749216Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T01:49:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Astana (https://timesca.com/kuirektykol-deposit-may-elevate-kazakhstan-to-global-leader-in-rare-earth-reserves/). The Kuirektykol deposit is located in the Karaganda region, approximately 300 km southeast of Astana"
   },
   "canonical_name": "Kuirektykol Mine",
   "canonical_slug": "kuirektykol-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda",
+  "town": "Astana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:49:09.000000Z",
+      "operators": [
+        "Tau-Ken Samruk"
+      ],
+      "owners": [
+        "Samruk-Kazyna"
+      ],
+      "notes": "Tau-Ken Samruk is the national mining company of Kazakhstan and a subsidiary of the sovereign wealth fund Samruk-Kazyna."
+    }
+  }
 }

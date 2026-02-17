@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.983,
-    "lon": 26.083,
+    "lat": -26.5,
+    "lon": 27.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "BEE Company",
+    "IGE Resources",
+    "Innovage Resources",
+    "Pangea Diamonds South Africa"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +34,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:37:23.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:16:45.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bakerville. The Bakerville Project is located approximately 20 km north of Lichtenburg in the North West province of South Africa, with exact coordinates provided"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Bakerville. The Bakerville Project is located approximately 20 km north of Lichtenburg in the North West province of South Africa, with exact coordinates provided. Web search geocoded. Source: https://www.mining-technology.com/projects/bakerville-diamond/. The Bakerville Diamond project is located about 20km north of Lichtenburg town in South Africa"
   },
   "canonical_name": "Bakerville Mine",
   "canonical_slug": "bakerville-mine",
@@ -48,5 +53,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "North West"
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:16:45.000000Z",
+      "operators": [
+        "IGE Resources"
+      ],
+      "owners": [
+        "Innovage Resources",
+        "Pangea Diamonds South Africa",
+        "BEE Company"
+      ],
+      "notes": "Innovage Resources holds a 74% stake, with the remaining 26% owned by a Black Economic Empowerment company."
+    }
+  }
 }

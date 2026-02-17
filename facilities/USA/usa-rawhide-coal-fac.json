@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 44.406,
-    "lon": -105.459,
+    "lat": 44.151037,
+    "lon": -105.394855,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Peabody Caballo Mining, LLC",
+    "Peabody Energy, Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.904121Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:38:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rawhide_Coal_Mine. The Rawhide Mine is located 10 miles north of Gillette, Wyoming"
   },
   "canonical_name": "Rawhide Coal Mine",
   "canonical_slug": "rawhide-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wyoming",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:38:53.000000Z",
+      "operators": [
+        "Peabody Caballo Mining, LLC"
+      ],
+      "owners": [
+        "Peabody Energy, Inc.",
+        "Peabody Caballo Mining, LLC"
+      ],
+      "notes": "Peabody Energy, Inc. owns 100% of the mine indirectly through Peabody Caballo Mining, LLC."
+    }
+  }
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 11.0,
+    "lon": 33.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Al Junaid Company",
+    "Sudanese Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.166753Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.58,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Chromite mine in Ingessana Hills area (Blue Nile State)"
   },
   "canonical_name": "Jebel Gam Mine",
   "canonical_slug": "jebel-gam-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Darfur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:27.000000Z",
+      "operators": [
+        "Al Junaid Company"
+      ],
+      "owners": [
+        "Sudanese Government"
+      ],
+      "notes": "The mines are operated in cooperation with the Sudanese government."
+    }
+  }
 }

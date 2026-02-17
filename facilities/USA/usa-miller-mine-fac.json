@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.545,
-    "lon": -116.732,
+    "lat": 39.69171090256417,
+    "lon": -75.30686986090234,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Transatlantic Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.842233Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:26:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Townsend (https://www.juniorminingnetwork.com/junior-miner-news/press-releases/2053-tsx-venture/tco/180902-transatlantic-mining-enters-2nd-lease-renewal-term-at-miller-gold-mine-montana-drill-rig-mobilized.html). The Miller Mine is located approximately 29 miles northeast of Townsend, Montana"
   },
   "canonical_name": "Miller Mine",
   "canonical_slug": "miller-mine",
@@ -54,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Townsend",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:26:56.000000Z",
+      "operators": [
+        "Transatlantic Mining Corp."
+      ],
+      "owners": [
+        "Transatlantic Mining Corp."
+      ],
+      "notes": "Transatlantic Mining Corp. has acquired 100% of the Miller Mine."
+    }
+  }
 }

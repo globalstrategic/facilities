@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.95951018642286,
-    "lon": -7.9891608,
+    "lat": 31.62523020190542,
+    "lon": -7.599175080418663,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Al Mada",
+    "Glencore",
+    "Managem"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,9 +42,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.63,
-    "last_checked": "2025-11-25T08:40:53.000000Z",
+    "last_checked": "2025-12-02T02:16:44.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakech (https://www.glencore.com/media-and-insights/news/glencore-and-managem-set-up-partnership). The facility is located at Guemssa, approximately 37 km north of Marrakech"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakech (https://www.glencore.com/media-and-insights/news/glencore-and-managem-set-up-partnership). The facility is located at Guemssa, approximately 37 km north of Marrakech. Web search geocoded. Source: Calculated from Marrakech (https://www.glencore.com/media-and-insights/news/glencore-and-managem-set-up-partnership). The facility is located at Managem’s CTT Hydrometallurgical Refinery in Guemssa, which is approximately 37 km east of Marrakech"
   },
   "canonical_name": "Managem Glencore Recycling Refinery",
   "canonical_slug": "managem-glencore-recycling-refinery",
@@ -65,5 +69,19 @@
   ],
   "display_name_source": "auto",
   "province": "Marrakech-Safi",
-  "town": "Marrakech"
+  "town": "Marrakech",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:16:44.000000Z",
+      "operators": [
+        "Managem",
+        "Glencore"
+      ],
+      "owners": [
+        "Managem",
+        "Al Mada"
+      ],
+      "notes": "Managem is majority-owned by Morocco’s Royal Family and Al Mada, a pan African private equity fund."
+    }
+  }
 }

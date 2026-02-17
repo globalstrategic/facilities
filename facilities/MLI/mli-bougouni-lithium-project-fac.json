@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MLI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 11.418,
+    "lon": -7.471,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -18,7 +18,15 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hainan Mining Co. Ltd",
+    "Hainan Mining Co., Ltd.",
+    "Kodal Minerals",
+    "Kodal Mining (UK) Ltd",
+    "Les Mines de Lithium de Bougouni SA",
+    "Les Mines de Lithium de Bougouni SA (LMLB)",
+    "Malian Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:03.879133Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Bougouni region. Kodal Minerals lithium project, 350-500 km² area, ~180km south of Bamako."
   },
   "canonical_name": "Bougouni Lithium Mine",
   "canonical_slug": "bougouni-lithium-mine",
@@ -47,5 +55,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mali",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:51:47.000000Z",
+      "operators": [
+        "Les Mines de Lithium de Bougouni SA",
+        "Kodal Mining (UK) Ltd"
+      ],
+      "owners": [
+        "Kodal Minerals",
+        "Hainan Mining Co. Ltd",
+        "Malian Government"
+      ],
+      "notes": "Kodal Minerals holds a 49% interest in the project, while Hainan Mining holds 51%. The Malian government has a 35% stake in the joint venture."
+    }
+  }
 }

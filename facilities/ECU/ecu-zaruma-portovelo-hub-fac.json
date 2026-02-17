@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ECU",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.5,
+    "lon": -79.2,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Core Gold Inc.",
+    "Pelorus Minerals Limited",
+    "Titan Minerals Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.548778Z",
-    "checked_by": "import_pipeline",
-    "notes": "85+ plants, highly decentralized | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:07:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "85+ plants, highly decentralized | Canonical name+slug generated. Web search geocoded. Source: https://www.metallaroyalty.com/royalties/development/zaruma/. The Zaruma Gold Mine is located in the Zaruma-Portovelo Mining District, approximately 3 km north of the town of Zaruma"
   },
   "canonical_name": "Zaruma Portovelo Hub Mine",
   "canonical_slug": "zaruma-portovelo-hub-mine",
@@ -50,5 +54,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "El Oro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:07:08.000000Z",
+      "operators": [
+        "Titan Minerals Limited",
+        "Pelorus Minerals Limited"
+      ],
+      "owners": [
+        "Titan Minerals Limited",
+        "Pelorus Minerals Limited"
+      ],
+      "notes": "Titan Minerals sold the Zaruma mine and Portovelo Process Plant to Pelorus Minerals."
+    }
+  }
 }

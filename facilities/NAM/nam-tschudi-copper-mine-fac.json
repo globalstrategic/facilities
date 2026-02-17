@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.262,
+    "lon": 17.514,
     "precision": "unknown"
   },
   "types": [
@@ -32,14 +32,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Consolidated Copper Corporation",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.640895",
-      "evidence": "Extracted from operator column: Consolidated Copper Corporation (CCC)"
-    }
+    "Consolidated Copper Corp",
+    "Consolidated Copper Corporation",
+    "Weatherly International plc"
   ],
   "products": [],
   "sources": [
@@ -50,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.551437Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:46:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tschudi_mine. The Tschudi Copper Mine is a significant copper mining facility located in the Oshikoto Region of Namibia"
   },
   "canonical_name": "Tschudi Copper Mine",
   "canonical_slug": "tschudi-copper-mine",
@@ -69,5 +64,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oshikoto Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:46:25.000000Z",
+      "operators": [
+        "Consolidated Copper Corp"
+      ],
+      "owners": [
+        "Weatherly International plc"
+      ],
+      "notes": "The mine was previously operated by Weatherly International and is currently under the management of Consolidated Copper Corp."
+    }
+  }
 }

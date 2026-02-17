@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NZL",
   "location": {
-    "lat": -46.592,
-    "lon": 168.376,
+    "lat": -46.6,
+    "lon": 168.3,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "New Zealand Aluminium Smelters (NZAS)",
+    "Rio Tinto Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:22.227107Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:29:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/news/rio-tinto-completes-acquisition/. Tiwai Point Aluminium Smelter is located near Bluff, Southland, New Zealand"
   },
   "canonical_name": "Tiwai Point Smelter",
   "canonical_slug": "tiwai-point-smelter",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Southland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:29:39.000000Z",
+      "operators": [
+        "New Zealand Aluminium Smelters (NZAS)"
+      ],
+      "owners": [
+        "Rio Tinto Group"
+      ],
+      "notes": "Rio Tinto has recently acquired full ownership of the smelter."
+    }
+  }
 }

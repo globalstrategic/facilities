@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-west-africa-metallurgy-foundry-fac",
-  "name": "**West Africa Metallurgy Foundry**",
+  "name": "West Africa Metallurgy Foundry",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 5.2739,
+    "lon": -3.9797,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,6 +21,7 @@
   "company_mentions": [
     "AIS Group Africa",
     "Metal WARF",
+    "WEST AFRICA FOUNDRY AND METALURGY (WAF Metal)",
     "West Africa Foundry and Metallurgy",
     "West Africa Foundry and Metallurgy (WAF Metal)"
   ],
@@ -33,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.462847Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:10:25Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:10:25Z] WAF Metal foundry, Abidjan. Coords: (5.2739, -3.9797)"
   },
   "canonical_name": "West Africa Metallurgy Foundry Processing Plant",
   "canonical_slug": "west-africa-metallurgy-foundry-processing-plant",
@@ -54,7 +55,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**West Africa Metallurgy Foundry** Processing Plant",
+      "name": "West Africa Metallurgy Foundry Processing Plant",
       "from": "2025-10-27T13:21:36.123769",
       "to": "2025-11-04T19:19:04.462844Z",
       "reason": "data_correction"
@@ -64,13 +65,13 @@
   "province": "Ivory Coast",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:53:22.000000Z",
+      "timestamp": "2025-12-02T10:25:17.000000Z",
       "operators": [
         "AIS Group Africa",
-        "West Africa Foundry and Metallurgy"
+        "WEST AFRICA FOUNDRY AND METALURGY (WAF Metal)"
       ],
       "owners": [],
-      "notes": "AIS Group Africa is involved in various industrial services including metallurgy."
+      "notes": "AIS Group Africa is the parent company that operates the foundry."
     }
   }
 }

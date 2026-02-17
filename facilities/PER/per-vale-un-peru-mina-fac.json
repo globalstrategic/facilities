@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -8.998,
-    "lon": -78.033,
+    "lat": -14.0,
+    "lon": -75.0,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,14 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Empresas Copec",
+    "Empresas Copec S.A.",
+    "Marcobre",
+    "Marcobre S.A.C.",
+    "Minsur",
+    "Minsur S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.322766Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:12:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.nsenergybusiness.com/projects/mina-justa-copper-project/. Mina Justa is a significant copper project located near Marcona, Peru"
   },
   "canonical_name": "Vale Un Peru, Mina Mine",
   "canonical_slug": "vale-un-peru-mina-mine",
@@ -47,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:12:09.000000Z",
+      "operators": [
+        "Marcobre S.A.C."
+      ],
+      "owners": [
+        "Minsur S.A.",
+        "Empresas Copec S.A."
+      ],
+      "notes": "Mina Justa is majority-owned by Minsur (60%) and Empresas Copec (40%)."
+    }
+  }
 }

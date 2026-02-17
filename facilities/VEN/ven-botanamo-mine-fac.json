@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-botanamo-mine-fac",
-  "name": "**Botanamo Mine**",
+  "name": "Botanamo Mine",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 7.038,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Company (historical)",
+    "Venezuelan Company (current)"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,7 +37,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.654018Z",
     "checked_by": "import_pipeline",
-    "notes": "A known historical mining area for both gold and tungsten.57 | Canonical name+slug generated"
+    "notes": "A known historical mining area for both gold and tungsten.57 | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "Botanamo Mine",
   "canonical_slug": "botanamo-mine",
@@ -51,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Botanamo ** Mine",
+      "name": "Botanamo  Mine",
       "from": "2025-10-21T11:38:45.377280",
       "to": "2025-11-04T19:18:49.654016Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolivar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:27:56.000000Z",
+      "operators": [
+        "American Company (historical)"
+      ],
+      "owners": [
+        "Venezuelan Company (current)"
+      ],
+      "notes": "The mine was operated by an American company in the past, and currently has a Venezuelan company associated with it."
+    }
+  }
 }

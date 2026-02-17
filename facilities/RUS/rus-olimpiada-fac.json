@@ -7,8 +7,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 59.868,
-    "lon": 92.914,
+    "lat": 59.865,
+    "lon": 92.9156,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "PJSC Polyus",
+    "Polyus Gold International Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.606075Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:31:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mining-technology.com/projects/olimpiada-gold-mine-russia/. Olimpiada is the largest gold mine in Russia and among the largest globally"
   },
   "canonical_name": "Olimpiada Mine",
   "canonical_slug": "olimpiada-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Krasnoyarsk Krai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:31:27.000000Z",
+      "operators": [
+        "PJSC Polyus"
+      ],
+      "owners": [
+        "Polyus Gold International Ltd"
+      ],
+      "notes": "Polyus is the largest gold producer in Russia and operates the Olimpiada mine."
+    }
+  }
 }

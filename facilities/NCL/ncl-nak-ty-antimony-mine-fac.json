@@ -1,11 +1,11 @@
 {
   "facility_id": "ncl-nak-ty-antimony-mine-fac",
-  "name": "**Nakéty Antimony Mine**",
+  "name": "Nakéty Antimony Mine",
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -21.538333,
+    "lon": 166.078333,
     "precision": "unknown"
   },
   "types": [
@@ -13,11 +13,11 @@
   ],
   "commodities": [
     {
-      "metal": "**antimony**",
+      "metal": "antimony",
       "primary": true
     },
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": false
     },
     {
@@ -27,14 +27,9 @@
   ],
   "status": "closed",
   "company_mentions": [
-    {
-      "name": "Historical operators",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.564398",
-      "evidence": "Extracted from operator column: Historical operators"
-    }
+    "Eramet",
+    "Historical operators",
+    "Société le Nickel (SLN)"
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.370925Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:59:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://portergeo.com.au/database/mineinfo.php?mineid=mn161. Coordinates extracted from the relative location of Nakéty Antimony Mine to Thio"
   },
   "canonical_name": "Nakéty Antimony Mine",
   "canonical_slug": "nakety-antimony-mine",
@@ -66,11 +61,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nakéty Antimony ** Mine",
+      "name": "Nakéty Antimony  Mine",
       "from": "2025-10-29T22:07:19.564448",
       "to": "2025-11-04T19:18:56.370922Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:59:54.000000Z",
+      "operators": [],
+      "owners": [
+        "Société le Nickel (SLN)",
+        "Eramet"
+      ],
+      "notes": "Société le Nickel is a subsidiary of Eramet, which is a major stakeholder in New Caledonia's nickel industry."
+    }
+  }
 }

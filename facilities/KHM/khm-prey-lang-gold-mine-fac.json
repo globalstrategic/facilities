@@ -1,12 +1,12 @@
 {
   "facility_id": "khm-prey-lang-gold-mine-fac",
-  "name": "**Prey Lang Gold Mine**",
+  "name": "Prey Lang Gold Mine",
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 13.15,
+    "lon": 105.68,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -26,14 +26,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Late Cheng Mining Development Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.404665",
-      "evidence": "Extracted from operator column: Late Cheng Mining Development Co. Ltd."
-    }
+    "Late Cheng Mining Development Co Ltd",
+    "Late Cheng Mining Development Co. Ltd.",
+    "Late Cheng Mining Development Company"
   ],
   "products": [],
   "sources": [
@@ -44,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.254882Z",
-    "checked_by": "import_pipeline",
-    "notes": "**High ESG Risk:** Located within the Prey Lang Wildlife Sanctuary. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.62,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "High ESG Risk: Located within the Prey Lang Wildlife Sanctuary. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Chinese-operated gold mine in Prey Lang Wildlife Sanctuary, Kampong Thom province"
   },
   "canonical_name": "Prey Lang Gold Mine",
   "canonical_slug": "prey-lang-gold-mine",
@@ -65,11 +60,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Prey Lang Gold ** Mine",
+      "name": "Prey Lang Gold  Mine",
       "from": "2025-10-29T12:22:07.404671",
       "to": "2025-11-04T19:18:46.254879Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kampong Thom",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:07:35.000000Z",
+      "operators": [
+        "Late Cheng Mining Development Co Ltd"
+      ],
+      "owners": [
+        "Late Cheng Mining Development Co Ltd"
+      ],
+      "notes": "The mine is owned and operated by Late Cheng Mining Development Co Ltd, a Chinese company."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "nic-la-francia-norte-i-concession-fac",
-  "name": "**La Francia Norte I Concession**",
+  "name": "La Francia Norte I Concession",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 11.2,
+    "lon": -85.033,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chinese companies"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:55.277083Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:46:15Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:46:15Z] Geocoded via web search. Coords: (11.2, -85.033). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for Solentiname Islands, which is located in Nicaragua."
   },
   "canonical_name": "La Francia Norte I Concession Exploration",
   "canonical_slug": "la-francia-norte-i-concession-exploration",
@@ -53,11 +55,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**La Francia Norte I Concession** Exploration",
+      "name": "La Francia Norte I Concession Exploration",
       "from": "2025-10-29T21:57:47.170799",
       "to": "2025-11-04T19:18:55.277081Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Río San Juan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:25:24.000000Z",
+      "operators": [
+        "Chinese companies"
+      ],
+      "owners": [],
+      "notes": "The concession was granted to Chinese companies for mineral extraction and exploration."
+    }
+  }
 }

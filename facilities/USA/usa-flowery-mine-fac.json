@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.321,
-    "lon": -119.593,
+    "lat": 39.31066363608585,
+    "lon": -119.4628422271403,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Eagle Resources, Inc.",
+    "Flowery Mines Co.",
+    "Miramar Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.867081Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T21:49:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Virginia City (https://westernmininghistory.com/mine-detail/10310359/). The Flowery Mine is located in Storey County, Nevada, about 10 miles east of Virginia City"
   },
   "canonical_name": "Flowery Mine",
   "canonical_slug": "flowery-mine",
@@ -51,5 +55,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Virginia City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:49:13.000000Z",
+      "operators": [
+        "Miramar Mining Corp."
+      ],
+      "owners": [
+        "Flowery Mines Co.",
+        "American Eagle Resources, Inc.",
+        "Miramar Mining Corp."
+      ],
+      "notes": "Miramar Mining Corp. aims to reopen the mine, which has had various ownerships and operational history."
+    }
+  }
 }

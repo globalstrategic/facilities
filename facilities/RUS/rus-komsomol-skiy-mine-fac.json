@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 64.998,
-    "lon": 109.999,
+    "lat": 54.64103071,
+    "lon": 86.20165903,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "SUEK Kuzbass JSC",
+    "Siberian Coal Energy Company (SUEK)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:15.614828Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:40:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Komsomolets_Coal_Mine. Komsomolets Coal Mine is the only mine of SUEK that uses skip lifting for coal transportation"
   },
   "canonical_name": "Komsomol'skiy Mine",
   "canonical_slug": "komsomol-skiy-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:40:23.000000Z",
+      "operators": [
+        "SUEK Kuzbass JSC"
+      ],
+      "owners": [
+        "Siberian Coal Energy Company (SUEK)"
+      ],
+      "notes": "SUEK Kuzbass JSC is a subsidiary of Siberian Coal Energy Company (SUEK)."
+    }
+  }
 }

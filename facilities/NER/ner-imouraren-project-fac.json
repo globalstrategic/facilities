@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.01630552858597,
+    "lon": 7.393331,
     "precision": "unknown"
   },
   "types": [
@@ -25,7 +25,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Imouraren SA",
+    "Orano Expansion",
+    "Sopamin",
+    "State of Niger"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.830450Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:07:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Arlit (https://www.world-nuclear-news.org/articles/niger-revokes-mining-permit-for-imouraren-project). Imouraren is located about 80 km south of Arlit, a known reference point"
   },
   "canonical_name": "Imouraren Facility",
   "canonical_slug": "imouraren-facility",
@@ -62,5 +67,21 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez Region",
+  "town": "Arlit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:07:42.000000Z",
+      "operators": [
+        "Imouraren SA"
+      ],
+      "owners": [
+        "Orano Expansion",
+        "Sopamin",
+        "State of Niger"
+      ],
+      "notes": "Imouraren SA is 66.65% owned by Orano Expansion and 33.35% by Sopamin and the State of Niger."
+    }
+  }
 }

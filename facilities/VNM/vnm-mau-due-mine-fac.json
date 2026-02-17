@@ -1,11 +1,11 @@
 {
   "facility_id": "vnm-mau-due-mine-fac",
-  "name": "**Mau Due Mine**",
+  "name": "Mau Due Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 23.07889,
+    "lon": 105.24778,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "HGM \\- Ha Giang Mineral Mechanics JLC",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.045633",
-      "evidence": "Extracted from operator column: HGM \\- Ha Giang Mineral Mechanics JLC"
-    }
+    "HGM - Ha Giang Mineral Mechanics JLC",
+    "HGM \\- Ha Giang Mineral Mechanics JLC"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.277445Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:33:12.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-259133.html. The Mau Due mine is an open pit antimony mine located in a mountainous region in northern Vietnam, close to the Chinese border"
   },
   "canonical_name": "Mau Due Mine",
   "canonical_slug": "mau-due-mine",
@@ -60,11 +54,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mau Due ** Mine",
+      "name": "Mau Due  Mine",
       "from": "2025-10-21T13:04:38.045639",
       "to": "2025-11-04T19:19:02.277441Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hà Giang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:33:12.000000Z",
+      "operators": [
+        "HGM - Ha Giang Mineral Mechanics JLC"
+      ],
+      "owners": [
+        "HGM - Ha Giang Mineral Mechanics JLC"
+      ],
+      "notes": "HGM is the leading antimony producer in Vietnam."
+    }
+  }
 }

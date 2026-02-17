@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-blanket-mine-fac",
-  "name": "**Blanket Mine**",
+  "name": "Blanket Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -20.845598406721358,
+    "lon": 28.901774388118344,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,12 @@
   ],
   "commodities": [],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Caledonia Mining Corporation",
+    "Management and Employee Trust",
+    "National Indigenisation and Economic Empowerment Fund",
+    "identified indigenous Zimbabweans"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.949053Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T16:12:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Gwanda (https://www.sec.gov/Archives/edgar/data/766011/000117184317007779/exh_991.htm). The Blanket Mine is located approximately 15 km northwest of Gwanda, the provincial capital of Matabeleland"
   },
   "canonical_name": "Blanket Mine",
   "canonical_slug": "blanket-mine-2",
@@ -44,11 +49,28 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Blanket ** Mine",
+      "name": "Blanket  Mine",
       "from": "2025-10-21T13:04:39.387002",
       "to": "2025-11-04T19:18:51.949051Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland",
+  "town": "Gwanda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:12:19.000000Z",
+      "operators": [
+        "Caledonia Mining Corporation"
+      ],
+      "owners": [
+        "Caledonia Mining Corporation",
+        "National Indigenisation and Economic Empowerment Fund",
+        "Management and Employee Trust",
+        "identified indigenous Zimbabweans"
+      ],
+      "notes": "Caledonia Mining Corporation owns 64% of the mine, with the remaining 36% owned by local Zimbabwean shareholders."
+    }
+  }
 }

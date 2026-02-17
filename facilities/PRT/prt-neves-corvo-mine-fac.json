@@ -5,7 +5,7 @@
   "country_iso3": "PRT",
   "location": {
     "lat": 37.57306,
-    "lon": null,
+    "lon": -7.97083,
     "precision": "unknown"
   },
   "types": [
@@ -34,7 +34,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Boliden AB",
+    "Lundin Mining",
+    "Sociedade Mineira de Neves-Corvo S.A. (Somincor)"
+  ],
   "products": [],
   "sources": [
     {
@@ -44,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:53.664690Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:29:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Neves-Corvo_mine. The Neves-Corvo mine is a significant copper and zinc mining operation in Portugal"
   },
   "canonical_name": "Neves Corvo Mine",
   "canonical_slug": "neves-corvo-mine-2",
@@ -71,5 +75,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Beja",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:29:42.000000Z",
+      "operators": [
+        "Sociedade Mineira de Neves-Corvo S.A. (Somincor)"
+      ],
+      "owners": [
+        "Lundin Mining",
+        "Boliden AB"
+      ],
+      "notes": "Somincor is a subsidiary of Lundin Mining, which owns the mine."
+    }
+  }
 }

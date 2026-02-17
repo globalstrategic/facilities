@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-mborgu-n-fac",
-  "name": "**MborguÃ©nÃ©**",
+  "name": "MborguÃ©nÃ©",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 5.7,
+    "lon": 14.2,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -25,11 +25,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.019098Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:06:27Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:40:57Z] No geographic coordinates found for the facility Mborguénéné in the search results. | [NULL-ISLAND-FIX 2025-12-18T14:06:27Z] Gold mine in Bétaré-Oya and Garoua Boulaï districts, East Region"
   },
   "canonical_name": "MborguÃ©nÃ© Mine",
   "canonical_slug": "mborguene-mine",
@@ -46,7 +46,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**MborguÃ©nÃ©** Mine",
+      "name": "MborguÃ©nÃ© Mine",
       "from": "2025-10-27T14:11:30.495012",
       "to": "2025-11-04T19:19:08.019095Z",
       "reason": "data_correction"
@@ -56,12 +56,14 @@
   "province": "East Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:54:14.000000Z",
+      "timestamp": "2025-12-01T17:49:09.000000Z",
       "operators": [
         "CAMINCO S.A."
       ],
-      "owners": [],
-      "notes": "CAMINCO S.A. has been authorized to operate the Mborguéné gold mine."
+      "owners": [
+        "CAMINCO S.A."
+      ],
+      "notes": "CAMINCO S.A. has been authorized to operate the mine."
     }
   }
 }

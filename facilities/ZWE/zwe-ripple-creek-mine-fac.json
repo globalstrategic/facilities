@@ -1,11 +1,11 @@
 {
   "facility_id": "zwe-ripple-creek-mine-fac",
-  "name": "**Ripple Creek Mine**",
+  "name": "Ripple Creek Mine",
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -19.025395,
+    "lon": 29.753581,
     "precision": "unknown"
   },
   "types": [
@@ -13,7 +13,11 @@
   ],
   "commodities": [],
   "status": "closed",
-  "company_mentions": [],
+  "company_mentions": [
+    "Essar Africa Holdings Ltd",
+    "Government of Zimbabwe",
+    "NewZim Minerals Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.947832Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:36:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/NewZim_Ripple_Creek_Kwekwe_Mine. The Ripple Creek Mine is located near Kwekwe, Zimbabwe, and is associated with iron ore mining"
   },
   "canonical_name": "Ripple Creek Mine",
   "canonical_slug": "ripple-creek-mine",
@@ -44,11 +48,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ripple Creek ** Mine",
+      "name": "Ripple Creek  Mine",
       "from": "2025-10-21T13:04:39.402871",
       "to": "2025-11-04T19:18:51.947829Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:36:06.000000Z",
+      "operators": [
+        "NewZim Minerals Pvt Ltd"
+      ],
+      "owners": [
+        "Essar Africa Holdings Ltd",
+        "Government of Zimbabwe"
+      ],
+      "notes": "Essar Africa Holdings Ltd holds an 80% stake, while the Government of Zimbabwe owns 20%."
+    }
+  }
 }

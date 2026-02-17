@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.532,
-    "lon": 83.906,
+    "lat": 21.529762,
+    "lon": 83.908647,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindalco Industries Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.063564Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:27:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Hirakud_Captive_Power_Plant. Hirakud Power Plant is a coal-based captive thermal power plant supplying power to the aluminum operations of Hindalco Industries"
   },
   "canonical_name": "Hirakud Smelter",
   "canonical_slug": "hirakud-smelter",
@@ -50,5 +52,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:27:26.000000Z",
+      "operators": [
+        "Hindalco Industries Ltd"
+      ],
+      "owners": [
+        "Hindalco Industries Ltd"
+      ],
+      "notes": "Hindalco Industries Ltd is the metals flagship company of the Aditya Birla Group."
+    }
+  }
 }

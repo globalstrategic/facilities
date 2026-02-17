@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": 13.358,
-    "lon": 105.115,
+    "lat": 13.166884,
+    "lon": 105.016313,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "KenerTec Resources Co Ltd",
+    "Kenertec Co Ltd",
+    "Ratanak Stone Cambodia Development Co Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.255410Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T01:56:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Rovieng_Project_Mine. The Rovieng Project Mine is an iron ore mine located in Rovieng District, Preah Vihear, Cambodia"
   },
   "canonical_name": "Rovieng Mine",
   "canonical_slug": "rovieng-mine",
@@ -48,5 +52,22 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Preah Vihear",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:56:16.000000Z",
+      "operators": [
+        "Kenertec Co Ltd",
+        "KenerTec Resources Co Ltd",
+        "Ratanak Stone Cambodia Development Co Ltd"
+      ],
+      "owners": [
+        "Kenertec Co Ltd",
+        "KenerTec Resources Co Ltd",
+        "Ratanak Stone Cambodia Development Co Ltd"
+      ],
+      "notes": "Ownership details indicate Kenertec Co Ltd as the parent company with KenerTec Resources Co Ltd and Ratanak Stone Cambodia Development Co Ltd as the main operators."
+    }
+  }
 }

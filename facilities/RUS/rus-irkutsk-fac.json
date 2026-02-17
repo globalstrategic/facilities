@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "RUS",
   "location": {
-    "lat": 52.185,
-    "lon": 104.639,
+    "lat": 57.262038,
+    "lon": 103.686055,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Korshynov Mining Plant PJSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.649592Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:04:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mechel_Rudnogorsky_Mine. The Mechel Rudnogorsky Mine is an iron ore mine operating in Rudnogorsk, Irkutsk, Russia"
   },
   "canonical_name": "Irkutsk Smelter",
   "canonical_slug": "irkutsk-smelter",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Irkutsk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:04:49.000000Z",
+      "operators": [
+        "Korshynov Mining Plant PJSC"
+      ],
+      "owners": [
+        "Korshynov Mining Plant PJSC"
+      ],
+      "notes": "Korshynov Mining Plant PJSC is the sole operator and owner of the mine."
+    }
+  }
 }

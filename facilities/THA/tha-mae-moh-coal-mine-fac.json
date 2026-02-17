@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": 18.315,
-    "lon": 99.72,
+    "lat": 18.31471,
+    "lon": 99.71994,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Electricity Generating Authority of Thailand"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:18.494297Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:35:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mae_Moh_Coal_Mine. The Mae Moh Coal Mine is an operating lignite mine owned and operated by the Electricity Generating Authority of Thailand (EGAT)"
   },
   "canonical_name": "Mae Moh Coal Mine",
   "canonical_slug": "mae-moh-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lampang",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:35:11.000000Z",
+      "operators": [
+        "Electricity Generating Authority of Thailand"
+      ],
+      "owners": [
+        "Electricity Generating Authority of Thailand"
+      ],
+      "notes": "EGAT is a government-owned entity responsible for electricity generation in Thailand."
+    }
+  }
 }

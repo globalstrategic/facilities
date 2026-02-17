@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ZMB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -11.717222,
+    "lon": 24.428889,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -24,6 +24,7 @@
     "Chibwika Development",
     "Chibwika Development Trust",
     "Kamushinshi Mineral Resources Ltd",
+    "ZCCM Investments Holdings Plc",
     "Zambia Gold Company Limited",
     "Zambia Gold Company Ltd"
   ],
@@ -36,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.680582Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:16:18Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:16:18Z] Geocoded via web search. Coords: (-11.717222, 24.428889). Confidence: 0.90. Notes: Coordinates were extracted from the geographical information of Mwinilunga, which is the nearest town to Kasenseli Gold Mine."
   },
   "canonical_name": "Kasenseli Gold Mine",
   "canonical_slug": "kasenseli-gold-mine",
@@ -56,18 +57,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northwestern Province",
+  "province": "North-Western Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T17:46:19.000000Z",
+      "timestamp": "2025-12-02T09:39:37.000000Z",
       "operators": [
         "Kamushinshi Mineral Resources Ltd"
       ],
       "owners": [
         "Zambia Gold Company Ltd",
-        "Chibwika Development Trust"
+        "ZCCM Investments Holdings Plc"
       ],
-      "notes": "The mine is operated by a joint venture between Zambia Gold Company Ltd and Chibwika Development Trust."
+      "notes": "ZCCM-IH holds a significant stake in the mine, and the operation is a joint venture with Kamushinshi Mineral Resources Ltd."
     }
   }
 }

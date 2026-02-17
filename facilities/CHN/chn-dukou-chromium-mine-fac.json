@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 26.543,
-    "lon": 101.74,
+    "lat": 26.549,
+    "lon": 101.7497,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chinese Government"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.614538Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:28:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Panzhihua (https://thediggings.com/mines/usgs10305008). The Dukou Chromium Mine is located near Panzhihua, Sichuan, China. Web search geocoded. Source: https://thediggings.com/mines/usgs10159144. The Dukou Chromium Mine is located in close proximity to the city of Panzhihua in China"
   },
   "canonical_name": "Dukou Chromium Mine",
   "canonical_slug": "dukou-chromium-mine",
@@ -50,5 +52,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sichuan",
+  "town": "Panzhihua",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:28:01.000000Z",
+      "operators": [],
+      "owners": [
+        "Chinese Government"
+      ],
+      "notes": "The mine is owned by the Chinese Government."
+    }
+  }
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AUT",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.799821,
+    "lon": 13.713498,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,6 +21,7 @@
   "company_mentions": [
     "RHI Magnesita AG",
     "RHI Magnesita GmbH",
+    "RHI Magnesita NV",
     "Veitsch-Radex GmbH & Co. OG"
   ],
   "products": [],
@@ -32,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:53.403041Z",
-    "checked_by": "import_pipeline",
-    "notes": "Key magnesite operation in southern Austria. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Key magnesite operation in southern Austria. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] RHI Magnesita magnesite mine in Radenthein, Carinthia"
   },
   "canonical_name": "Radenthein Mine",
   "canonical_slug": "radenthein-mine",
@@ -55,15 +56,14 @@
   "province": "Carinthia",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:07:51.000000Z",
+      "timestamp": "2025-12-02T11:14:53.000000Z",
       "operators": [
-        "Veitsch-Radex GmbH & Co. OG",
-        "RHI Magnesita AG"
+        "RHI Magnesita NV"
       ],
       "owners": [
-        "RHI Magnesita GmbH"
+        "RHI Magnesita AG"
       ],
-      "notes": "Veitsch-Radex GmbH & Co. is a subsidiary of RHI Magnesita GmbH, which operates the Radenthein Mine."
+      "notes": "RHI Magnesita is a leading global supplier of refractory products and has been mining magnesite in Austria since 1881."
     }
   }
 }

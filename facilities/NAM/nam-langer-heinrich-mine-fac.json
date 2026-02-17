@@ -6,8 +6,8 @@
   ],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.814699833,
+    "lon": 15.3338,
     "precision": "unknown"
   },
   "types": [
@@ -29,14 +29,10 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Paladin Energy, CNNC",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.623848",
-      "evidence": "Extracted from operator column: Paladin Energy (75%), CNNC (25%)"
-    }
+    "CNNC Overseas Uranium Holding Ltd",
+    "Langer Heinrich Uranium (Pty) Ltd",
+    "Paladin Energy Ltd",
+    "Paladin Energy, CNNC"
   ],
   "products": [],
   "sources": [
@@ -47,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.552909Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:47:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Langer_Heinrich_Mine. The Langer Heinrich Mine is a significant uranium mine located in Namibia's Erongo Region"
   },
   "canonical_name": "Langer Heinrich Mine",
   "canonical_slug": "langer-heinrich-mine",
@@ -66,5 +62,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:47:49.000000Z",
+      "operators": [
+        "Langer Heinrich Uranium (Pty) Ltd"
+      ],
+      "owners": [
+        "Paladin Energy Ltd",
+        "CNNC Overseas Uranium Holding Ltd"
+      ],
+      "notes": "Paladin Energy Ltd owns 75% and CNNC Overseas Uranium Holding Ltd owns 25%."
+    }
+  }
 }

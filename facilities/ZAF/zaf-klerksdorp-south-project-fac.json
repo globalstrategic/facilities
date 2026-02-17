@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.85213,
-    "lon": 26.66672,
+    "lat": -26.895,
+    "lon": 26.69167,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Harmony Gold Mining Company Limited",
+    "White Rivers Exploration"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +33,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T13:26:28.000000Z",
+    "last_checked": "2025-12-02T09:34:25.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/za/klerksdorp/. Coordinates extracted directly from multiple sources confirming the location of Klerksdorp, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://latitudelongitude.org/za/klerksdorp/. Coordinates extracted directly from multiple sources confirming the location of Klerksdorp, South Africa. Web search geocoded. Source: https://lexingtongold.co.uk/operations/witwatersrand-gold-fields-south-africa-white-rivers-exploration-projects/. The Klerksdorp South Project is part of the Witwatersrand gold fields"
   },
   "canonical_name": "Klerksdorp South Mine",
   "canonical_slug": "klerksdorp-south-mine",
@@ -48,5 +51,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "North West"
+  "province": "North West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:34:25.000000Z",
+      "operators": [
+        "White Rivers Exploration"
+      ],
+      "owners": [
+        "Harmony Gold Mining Company Limited"
+      ],
+      "notes": "The project is associated with a joint venture involving Harmony Gold."
+    }
+  }
 }

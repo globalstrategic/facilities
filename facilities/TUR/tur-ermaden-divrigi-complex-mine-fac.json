@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TUR",
   "location": {
-    "lat": 39.409,
-    "lon": 38.103,
+    "lat": 39.45102,
+    "lon": 38.108481,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdemir Madencilik Sanayi ve Ticaret A.Ş.",
+    "Eregli Demir ve Celik Fabrikalari AŞ"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.300129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:19:40.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ermaden_Divrigi_Complex_Mine. The Ermaden Divrigi Complex Mine is an iron ore mine located in Divriği, Sivas, Türkiye"
   },
   "canonical_name": "Ermaden Divrigi Mine",
   "canonical_slug": "ermaden-divrigi-mine",
@@ -48,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sivas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:19:40.000000Z",
+      "operators": [
+        "Erdemir Madencilik Sanayi ve Ticaret A.Ş."
+      ],
+      "owners": [
+        "Eregli Demir ve Celik Fabrikalari AŞ",
+        "Erdemir Madencilik Sanayi ve Ticaret A.Ş."
+      ],
+      "notes": "Erdemir Madencilik Sanayi ve Ticaret A.Ş. is a subsidiary of Eregli Demir ve Celik Fabrikalari AŞ."
+    }
+  }
 }

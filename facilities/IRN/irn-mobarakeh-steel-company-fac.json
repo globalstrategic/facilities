@@ -6,9 +6,9 @@
   ],
   "country_iso3": "IRN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 32.5,
+    "lon": 51.5,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -16,14 +16,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Mobarakeh Steel Company",
-      "role": "operator",
-      "source": "Research Import IRN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:52:18.751484",
-      "evidence": "Extracted from operator column: Mobarakeh Steel Company"
-    }
+    "Mines and Mineral Industries Development and Renovation Organization",
+    "Mobarakeh Steel Company",
+    "quasi-state banks",
+    "various private and public joint stock companies"
   ],
   "products": [],
   "sources": [
@@ -34,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.451192Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:02:25Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:02:25Z] Geocoded via web search. Coords: (32.5, 51.5). Confidence: 0.70. Notes: Coordinates are derived from the description of the facility's location, which is stated to be 75 km southwest of Isfahan."
   },
   "canonical_name": "Mobarakeh Steel Company Mine",
   "canonical_slug": "mobarakeh-steel-company-mine",
@@ -53,5 +49,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Isfahan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:25:49.000000Z",
+      "operators": [
+        "Mobarakeh Steel Company"
+      ],
+      "owners": [
+        "Mines and Mineral Industries Development and Renovation Organization",
+        "various private and public joint stock companies",
+        "quasi-state banks"
+      ],
+      "notes": "Mobarakeh Steel is a quasi-governmental company with most shares owned by state-affiliated entities."
+    }
+  }
 }

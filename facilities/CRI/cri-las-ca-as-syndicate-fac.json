@@ -6,9 +6,9 @@
   ],
   "country_iso3": "CRI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.2833,
+    "lon": -84.9167,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -37,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.957420Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Las Cañas Syndicate, Abangares/Sierra mining region"
   },
   "canonical_name": "Las Cañas Syndicate Mine",
   "canonical_slug": "las-canas-syndicate-mine",
@@ -60,16 +60,16 @@
   "province": "Guanacaste",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:59:15.000000Z",
+      "timestamp": "2025-12-02T10:17:17.000000Z",
       "operators": [
         "R.A. Crespi & Co."
       ],
       "owners": [
-        "Abangarez Gold Fields, Limited",
         "Las Cañas Syndicate",
-        "Guanacaste Syndicate"
+        "Guanacaste Syndicate",
+        "Abangarez Gold Fields, Limited"
       ],
-      "notes": "The Las Cañas Syndicate owns 27 properties, including the Esperanza vein."
+      "notes": "The facility is under development with no machinery erected yet."
     }
   }
 }

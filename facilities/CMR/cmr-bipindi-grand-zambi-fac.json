@@ -1,12 +1,12 @@
 {
   "facility_id": "cmr-bipindi-grand-zambi-fac",
-  "name": "**Bipindi-Grand Zambi**",
+  "name": "Bipindi-Grand Zambi",
   "aliases": [],
   "country_iso3": "CMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 3.05,
+    "lon": 10.15,
+    "precision": "city"
   },
   "types": [
     "mine"
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-<<<<<<< HEAD
     "G-Stones Resources S.A.",
     "G-Stones Resources SA",
     "Groupe BOCOM"
-=======
-    "G-Stone Resources SA",
-    "G-Stones Resources S.A."
->>>>>>> 607014802c5cd44630a889ec8413e9aa4f2ad898
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.018276Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] G-Stones Resources 150M tonne iron ore, Akom II and Bipindi districts"
   },
   "canonical_name": "Bipindi Grand Zambi Mine",
   "canonical_slug": "bipindi-grand-zambi-mine",
@@ -53,7 +48,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Bipindi-Grand Zambi** Mine",
+      "name": "Bipindi-Grand Zambi Mine",
       "from": "2025-10-27T14:11:30.493908",
       "to": "2025-11-04T19:19:08.018272Z",
       "reason": "data_correction"
@@ -63,7 +58,6 @@
   "province": "South Region",
   "enrichment_notes": {
     "web_search_companies": {
-<<<<<<< HEAD
       "timestamp": "2025-11-26T18:02:26.000000Z",
       "operators": [
         "G-Stones Resources SA"
@@ -72,14 +66,6 @@
         "Groupe BOCOM"
       ],
       "notes": "G-Stones Resources SA is the operator of the mine, while Groupe BOCOM is the parent company."
-=======
-      "timestamp": "2025-12-01T07:38:15.000000Z",
-      "operators": [
-        "G-Stone Resources SA"
-      ],
-      "owners": [],
-      "notes": "G-Stone Resources SA is the operator of the Bipindi-Grand Zambi iron ore mining project."
->>>>>>> 607014802c5cd44630a889ec8413e9aa4f2ad898
     }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 29.827,
-    "lon": -95.118,
+    "lat": 29.7865,
+    "lon": -95.2275,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "InControl Technologies LLC",
+    "Southwest Oilfield Products"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.764563Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:39:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.houstonpublicworks.org/sites/g/files/nwywnm456/files/doc/application_2021_156_sop.pdf. The facility is located at 10340 Wallisville Road, Houston, Texas"
   },
   "canonical_name": "Wallisvill Road Barite Plant",
   "canonical_slug": "wallisvill-road-barite-plant",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Texas",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:39:41.000000Z",
+      "operators": [
+        "InControl Technologies LLC",
+        "Southwest Oilfield Products"
+      ],
+      "owners": [
+        "Southwest Oilfield Products"
+      ],
+      "notes": "InControl Technologies LLC provides environmental consulting services for the facility."
+    }
+  }
 }

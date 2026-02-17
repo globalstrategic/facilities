@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "HND",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.5,
+    "lon": -88.02,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -19,14 +19,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Promasa",
-      "role": "operator",
-      "source": "Research Import HND 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T09:19:40.553793",
-      "evidence": "Extracted from operator column: Promasa"
-    }
+    "Grupo Promasa",
+    "Primor Alimentos, C.A.",
+    "Proalca Productos Alimenticios, C.A.",
+    "Productos de Maiz S.A. (PROMASA)",
+    "Promasa"
   ],
   "products": [],
   "sources": [
@@ -37,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.235141Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:10:57Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:10:57Z] Geocoded via web search. Coords: (15.5, -88.02). Confidence: 0.90. Notes: Coordinates determined based on the headquarters location of Grupo Promasa in San Pedro Sula, Cortes, Honduras."
   },
   "canonical_name": "Promasa Plant",
   "canonical_slug": "promasa-plant",
@@ -56,5 +53,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cortes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:41:44.000000Z",
+      "operators": [
+        "Proalca Productos Alimenticios, C.A.",
+        "Primor Alimentos, C.A."
+      ],
+      "owners": [
+        "Productos de Maiz S.A. (PROMASA)"
+      ],
+      "notes": "Promasa is part of a larger industrial conglomerate and has undergone management changes over the years."
+    }
+  }
 }

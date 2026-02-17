@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 36.215,
-    "lon": 113.016,
+    "lat": 35.458355,
+    "lon": 116.67218,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Shandong Energy Group Co., Ltd.",
+    "Zibo Mining Group Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.828057Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:37:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Xuchang_Coal_Mine. The Xiaochang Coal Mine is likely confused with the Xuchang Coal Mine in the search results"
   },
   "canonical_name": "Xiaochang Coal Mine",
   "canonical_slug": "xiaochang-coal-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shandong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:37:17.000000Z",
+      "operators": [
+        "Zibo Mining Group Co., Ltd."
+      ],
+      "owners": [
+        "Shandong Energy Group Co., Ltd."
+      ],
+      "notes": "The mine was operated by Zibo Mining Group and owned by Shandong Energy Group."
+    }
+  }
 }

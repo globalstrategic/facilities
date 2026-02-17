@@ -7,8 +7,8 @@
   ],
   "country_iso3": "PNG",
   "location": {
-    "lat": -6.11,
-    "lon": 145.886,
+    "lat": -6.116151896952899,
+    "lon": 145.49150291173416,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "K92 Mining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:05.312685Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:54:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lae (http://www.k92mining.com/). The Kainantu Gold Mine is located approximately 180 km west-northwest of Lae, but exact coordinates were not provided"
   },
   "canonical_name": "Kainantu Mine",
   "canonical_slug": "kainantu-mine",
@@ -54,5 +56,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Eastern Highlands",
+  "town": "Lae",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:54:13.000000Z",
+      "operators": [
+        "K92 Mining Inc."
+      ],
+      "owners": [
+        "K92 Mining Inc."
+      ],
+      "notes": "K92 Mining Inc. owns and operates the Kainantu Gold Mine."
+    }
+  }
 }

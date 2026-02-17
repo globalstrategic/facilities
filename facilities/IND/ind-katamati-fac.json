@@ -18,8 +18,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.118,
-    "lon": 85.465,
+    "lat": 22.119436,
+    "lon": 85.486642,
     "precision": "site"
   },
   "types": [
@@ -33,7 +33,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tata Steel Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -43,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.095564Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:54:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tata_Steel_Katamati_Mine. The Katamati Iron Ore Mine is operated by Tata Steel Limited and is located in the Joda area of Odisha"
   },
   "canonical_name": "Katamati Mine",
   "canonical_slug": "katamati-mine",
@@ -62,5 +64,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:54:47.000000Z",
+      "operators": [
+        "Tata Steel Limited"
+      ],
+      "owners": [
+        "Tata Steel Limited"
+      ],
+      "notes": "Tata Steel Ltd holds 100% ownership of the Katamati Iron Ore Mine."
+    }
+  }
 }

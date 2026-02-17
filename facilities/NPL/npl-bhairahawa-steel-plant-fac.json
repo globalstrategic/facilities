@@ -1,11 +1,11 @@
 {
   "facility_id": "npl-bhairahawa-steel-plant-fac",
-  "name": "**Bhairahawa Steel Plant**",
+  "name": "Bhairahawa Steel Plant",
   "aliases": [],
   "country_iso3": "NPL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 27.509638,
+    "lon": 83.347294,
     "precision": "unknown"
   },
   "types": [
@@ -13,12 +13,15 @@
   ],
   "commodities": [
     {
-      "metal": "**steel**",
+      "metal": "steel",
       "primary": true
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Reliance Cement Pvt Ltd",
+    "Reliance Group Nepal"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:22.484046Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:26:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Reliance_Cement_Bhairahawa_Cement_Plant. Coordinates are exact for the Reliance Cement Bhairahawa Cement Plant"
   },
   "canonical_name": "Bhairahawa Steel Smelter",
   "canonical_slug": "bhairahawa-steel-smelter",
@@ -49,11 +52,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Bhairahawa Steel ** Smelter",
+      "name": "Bhairahawa Steel  Smelter",
       "from": "2025-10-29T21:51:42.561020",
       "to": "2025-11-04T19:19:22.484043Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lumbini",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:26:03.000000Z",
+      "operators": [
+        "Reliance Cement Pvt Ltd"
+      ],
+      "owners": [
+        "Reliance Group Nepal"
+      ],
+      "notes": "Reliance Cement Pvt Ltd is fully owned by Reliance Group Nepal."
+    }
+  }
 }

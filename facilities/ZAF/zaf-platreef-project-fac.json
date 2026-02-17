@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -23.9,
-    "lon": 28.87,
+    "lat": -24.2,
+    "lon": 28.3,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "construction",
-  "company_mentions": [],
+  "company_mentions": [
+    "ITOCHU Corporation",
+    "Ivanhoe Mines",
+    "Ivanplats (Pty) Ltd",
+    "Japan Gas Corporation",
+    "Japan Oil, Gas and Metals National Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +35,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T13:17:10.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:53:36.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1028277/000119312511020420/dex991.htm. Coordinates extracted directly from the technical report for the Platreef Project"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1028277/000119312511020420/dex991.htm. Coordinates extracted directly from the technical report for the Platreef Project. Web search geocoded. Source: https://www.wheatonpm.com/portfolio/development-projects/platreef/default.aspx. The Platreef Project is located approximately 280 km northeast of Johannesburg and 8 km from Mokopane"
   },
   "canonical_name": "Platreef Mine",
   "canonical_slug": "platreef-mine-zaf",
@@ -48,5 +54,21 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:53:36.000000Z",
+      "operators": [
+        "Ivanhoe Mines",
+        "Ivanplats (Pty) Ltd"
+      ],
+      "owners": [
+        "Ivanhoe Mines",
+        "ITOCHU Corporation",
+        "Japan Oil, Gas and Metals National Corporation",
+        "Japan Gas Corporation"
+      ],
+      "notes": "Ivanhoe Mines holds a 64% interest through its subsidiary Ivanplats, with a 10% stake held by a Japanese consortium and 26% allocated to local B-BBEE partners."
+    }
+  }
 }

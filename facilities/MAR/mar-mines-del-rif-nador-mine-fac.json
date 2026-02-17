@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 35.209,
-    "lon": -3.008,
+    "lat": 35.209099,
+    "lon": -3.007824,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Amer Group Ltd",
+    "Le Brillant Nador"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:48.327587Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:11:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Mines_Del_Rif_Nador_Mine. The Mines Del Rif Nador Mine is an iron ore mine located in Nador, Rif, Morocco"
   },
   "canonical_name": "Mines Del Rif Nador Mine",
   "canonical_slug": "mines-del-rif-nador-mine",
@@ -48,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rif",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:11:37.000000Z",
+      "operators": [
+        "Amer Group Ltd",
+        "Le Brillant Nador"
+      ],
+      "owners": [
+        "Amer Group Ltd",
+        "Le Brillant Nador"
+      ],
+      "notes": "The mine is operated by Amer Group Ltd and Le Brillant Nador."
+    }
+  }
 }

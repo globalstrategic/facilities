@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": 42.231944,
-    "lon": 129.269167,
+    "lat": 42.23194,
+    "lon": 129.26917,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Central Government of North Korea",
+    "Musan Mining Company",
+    "North Korea’s Ministry of Mines"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:11.350936Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:33:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Musan_mine. The Musan Mining Complex is one of the largest iron ore reserves in North Korea"
   },
   "canonical_name": "Musan Mining Mine",
   "canonical_slug": "musan-mining-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hamgyeongbuk-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:33:16.000000Z",
+      "operators": [
+        "Musan Mining Company",
+        "North Korea’s Ministry of Mines"
+      ],
+      "owners": [
+        "Central Government of North Korea"
+      ],
+      "notes": "The Musan Mining Company holds the mining rights granted by the central government."
+    }
+  }
 }

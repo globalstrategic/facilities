@@ -1,0 +1,69 @@
+{
+  "facility_id": "zaf-palabora-copper-fac",
+  "name": "Palabora Copper",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -23.95,
+    "lon": 31.12,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "HBIS Group",
+    "Industrial Development Corporation of South Africa Ltd",
+    "Palabora Copper (Pty) Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:10.296265"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:12:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.africanmining.co.za/2025/06/01/exploring-pmc-so-much-more-than-a-mine-part-1/. Palabora Copper is located in the northeastern part of Limpopo province, adjacent to Kruger National Park"
+  },
+  "canonical_name": "Palabora Copper Mine",
+  "canonical_slug": "palabora-copper-mine",
+  "display_name": "Palabora Copper",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Limpopo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:12:24.000000Z",
+      "operators": [
+        "Palabora Copper (Pty) Ltd"
+      ],
+      "owners": [
+        "HBIS Group",
+        "Industrial Development Corporation of South Africa Ltd"
+      ],
+      "notes": "Palabora Copper is a subsidiary of the Palabora Mining Company, which has undergone ownership changes over the years."
+    }
+  }
+}

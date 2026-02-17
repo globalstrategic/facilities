@@ -8,8 +8,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -11.223,
-    "lon": -76.456,
+    "lat": -11.196838490305602,
+    "lon": -74.67688161416649,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Volcan Compania Minera S.A.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.308716Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:00:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Santa Bárbara de Carhuacayán (https://www.volcan.com.pe/operations/). The Alpamarca Operational Unit is located in the district of Santa Bárbara de Carhuacayán, Yauli Province, Junín Region, 182 kilometers east of Lima"
   },
   "canonical_name": "Alpamarca Mine",
   "canonical_slug": "alpamarca-mine",
@@ -67,5 +69,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Yauli Province",
+  "town": "Santa Bárbara de Carhuacayán",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:00:53.000000Z",
+      "operators": [
+        "Volcan Compania Minera S.A.A."
+      ],
+      "owners": [
+        "Volcan Compania Minera S.A.A."
+      ],
+      "notes": "Volcan Compania Minera S.A.A. operates the Alpamarca mine."
+    }
+  }
 }

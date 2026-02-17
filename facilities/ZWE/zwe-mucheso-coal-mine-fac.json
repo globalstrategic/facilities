@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.852,
-    "lon": 27.594,
+    "lat": -17.85150759,
+    "lon": 27.59406075,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Contango Holdings Plc",
+    "Huo Investments Ltd",
+    "Monaf Investments (Private) Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.951460Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:14:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Muchesu_Coal_Mine. Muchesu Coal Mine is located in the Hwange mining district, part of the Karroo Mid Zambezi coal basin"
   },
   "canonical_name": "Mucheso Coal Mine",
   "canonical_slug": "mucheso-coal-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland North",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:14:50.000000Z",
+      "operators": [
+        "Contango Holdings Plc"
+      ],
+      "owners": [
+        "Contango Holdings Plc",
+        "Huo Investments Ltd",
+        "Monaf Investments (Private) Limited"
+      ],
+      "notes": "Contango Holdings owns 24% and Huo Investments holds 51% of the Muchesu project."
+    }
+  }
 }

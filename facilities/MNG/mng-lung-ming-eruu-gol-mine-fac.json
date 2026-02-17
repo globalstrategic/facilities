@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 49.583,
-    "lon": 107.806,
+    "lat": 49.69251283196829,
+    "lon": 107.04251957994174,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China Investment Corporation",
+    "Lung Ming Mining Co. Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.460419Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T06:21:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Sukhbaatar (https://www.gem.wiki/Lung_Ming_Eruu_Gol_Mine). The mine is located in Eruu Gol, Selenge, Mongolia, approximately 85 km southeast of Sukhbaatar"
   },
   "canonical_name": "Lung Ming Eruu Gol Mine",
   "canonical_slug": "lung-ming-eruu-gol-mine",
@@ -48,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Selenge",
+  "town": "Sukhbaatar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:21:46.000000Z",
+      "operators": [
+        "Lung Ming Mining Co. Ltd."
+      ],
+      "owners": [
+        "Lung Ming Mining Co. Ltd.",
+        "China Investment Corporation"
+      ],
+      "notes": "Lung Ming Mining Co. Ltd. holds a 66.7% stake, while China Investment Corporation owns 33.3%."
+    }
+  }
 }

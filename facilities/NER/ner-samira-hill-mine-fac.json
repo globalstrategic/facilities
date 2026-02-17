@@ -1,11 +1,11 @@
 {
   "facility_id": "ner-samira-hill-mine-fac",
-  "name": "**Samira Hill Mine**",
+  "name": "Samira Hill Mine",
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 13.41175,
+    "lon": 1.2285028,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,12 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "BCM Investments Limited",
+    "Nguvu Mining Limited",
+    "Société de Patrimoine des Mines du Niger S.A. (SOPAMIN)",
+    "Société des Mines du Liptako"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.829129Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:06:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Samira_Hill_Gold_Mine. The Samira Hill Gold Mine is the first industrial scale gold mine in Niger, opened in 2004"
   },
   "canonical_name": "Samira Hill Mine",
   "canonical_slug": "samira-hill-mine",
@@ -57,11 +62,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Samira Hill ** Mine",
+      "name": "Samira Hill  Mine",
       "from": "2025-10-27T11:12:10.076579",
       "to": "2025-11-04T19:18:55.829123Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tillabéri Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:06:32.000000Z",
+      "operators": [
+        "Société des Mines du Liptako"
+      ],
+      "owners": [
+        "Société de Patrimoine des Mines du Niger S.A. (SOPAMIN)",
+        "Nguvu Mining Limited",
+        "BCM Investments Limited"
+      ],
+      "notes": "The mine has changed ownership several times, with the government of Niger holding a 20% stake."
+    }
+  }
 }

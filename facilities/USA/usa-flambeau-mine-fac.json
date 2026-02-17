@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 45.514,
-    "lon": -91.14,
-    "precision": "site"
+    "lat": 45.4350586,
+    "lon": -91.1335664,
+    "precision": "locality"
   },
   "types": [
     "mine"
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Flambeau Mining Company",
+    "Kennecott Minerals Company",
+    "Rio Tinto plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.693604Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:38:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Flambeau_Mine. The Flambeau Mine was an open pit mine located near the Flambeau River, south of Ladysmith, Wisconsin"
   },
   "canonical_name": "Flambeau Mine",
   "canonical_slug": "flambeau-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Wisconsin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:38:59.000000Z",
+      "operators": [
+        "Flambeau Mining Company"
+      ],
+      "owners": [
+        "Kennecott Minerals Company",
+        "Rio Tinto plc"
+      ],
+      "notes": "Flambeau Mining Company is a wholly owned subsidiary of Kennecott Minerals, which is in turn a subsidiary of Rio Tinto."
+    }
+  }
 }

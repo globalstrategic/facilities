@@ -1,0 +1,76 @@
+{
+  "facility_id": "bfa-immsa-manganese-mine-fac",
+  "name": "IMMSA Manganese Mine",
+  "aliases": [],
+  "country_iso3": "BFA",
+  "location": {
+    "lat": 12.101490056862916,
+    "lon": -4.016107,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "manganese",
+      "primary": true
+    }
+  ],
+  "status": "operating",
+  "company_mentions": [
+    "Ivorian Manganese Mines Sa",
+    "Ivorian Manganese Mines Sa (IMMSA)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import CIV 2025-10-27",
+      "date": "2025-10-27T13:21:36.008227"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T07:22:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Abidjan (https://navodaya.ae/imssa). The IMMSA Manganese Mine is located approximately 750 km north of Abidjan in the Odiene region"
+  },
+  "canonical_name": "Immsa Manganese Mine",
+  "canonical_slug": "immsa-manganese-mine",
+  "display_name": "Immsa Manganese",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "IMMSA Manganese  Mine",
+      "from": "2025-10-27T13:21:36.008228",
+      "to": "2025-11-04T19:19:04.461432Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Odiene region",
+  "town": "Abidjan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T07:22:56.000000Z",
+      "operators": [
+        "Ivorian Manganese Mines Sa (IMMSA)"
+      ],
+      "owners": [
+        "Ivorian Manganese Mines Sa (IMMSA)"
+      ],
+      "notes": "IMMSA is both the operator and owner of the manganese mine."
+    }
+  }
+}

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -17.013,
-    "lon": -71.769,
+    "lat": -17.0131,
+    "lon": -71.7713,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo Mexico",
+    "Southern Copper Corporation",
+    "Southern Peru Copper Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.320443Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:10:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tia_Maria_mine. The Tia Maria mine has faced significant delays due to community opposition and environmental concerns, but development has resumed. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tia_Maria_mine. The Tia Maria mine is a large copper deposit located in the south of Peru in the province of Islay, Arequipa Region. The project has faced significant delays due to local opposition and environmental concerns"
   },
   "canonical_name": "Tia Maria Mine",
   "canonical_slug": "tia-maria-mine",
@@ -47,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Islay",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:10:27.000000Z",
+      "operators": [
+        "Southern Peru Copper Corporation"
+      ],
+      "owners": [
+        "Southern Copper Corporation"
+      ],
+      "notes": "Southern Copper Corporation is a subsidiary of Grupo Mexico."
+    }
+  }
 }

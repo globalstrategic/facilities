@@ -8,8 +8,8 @@
   ],
   "country_iso3": "RUS",
   "location": {
-    "lat": 55.802,
-    "lon": 86.12,
+    "lat": 55.802222,
+    "lon": 86.117835,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anzherskaya-Yuzhnaya Coal Company LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:15.604424Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:29:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Anzherskaya-Yuzhnaya_Coal_Mine. The Anzherskaya-Yuzhnaya Coal Mine is an operating underground coal mine"
   },
   "canonical_name": "Anzherskaya Yuzhnaya Coal Mine",
   "canonical_slug": "anzherskaya-yuzhnaya-coal-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kemerovo Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:29:49.000000Z",
+      "operators": [
+        "Anzherskaya-Yuzhnaya Coal Company LLC"
+      ],
+      "owners": [
+        "Anzherskaya-Yuzhnaya Coal Company LLC"
+      ],
+      "notes": "The company is owned by private individuals and acquired the mine in a bankruptcy auction."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.282,
-    "lon": -113.662,
+    "lat": 33.75,
+    "lon": -113.5,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "American Bonanza Gold Corp.",
+    "Bonanza Mining Co.",
+    "Harquahala Gold Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.843378Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T21:27:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/loc-3402.html. The Bonanza Mine is located on the NW base of Martin Peak, about 9 road miles from Salome"
   },
   "canonical_name": "Bonanza Mine",
   "canonical_slug": "bonanza-mine",
@@ -50,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:27:52.000000Z",
+      "operators": [
+        "Bonanza Mining Co.",
+        "Harquahala Gold Mining Co., Ltd."
+      ],
+      "owners": [
+        "American Bonanza Gold Corp."
+      ],
+      "notes": "The mine has had various operators and ownerships over the years, with the current owner being American Bonanza Gold Corp."
+    }
+  }
 }

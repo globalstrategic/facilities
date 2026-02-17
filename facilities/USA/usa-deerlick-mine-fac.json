@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 33.314,
-    "lon": -87.432,
+    "lat": 33.2725,
+    "lon": -87.458056,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cahaba Resources",
+    "Cahaba Resources, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.779009Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:52:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-0103535. The Deerlick West Mine is a proposed surface coal mine located in Tuscaloosa County, Alabama"
   },
   "canonical_name": "Deerlick Mine",
   "canonical_slug": "deerlick-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Alabama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:52:32.000000Z",
+      "operators": [
+        "Cahaba Resources, LLC"
+      ],
+      "owners": [
+        "Cahaba Resources"
+      ],
+      "notes": "Cahaba Resources, LLC is both the operator and owner of the Deerlick West Mine."
+    }
+  }
 }

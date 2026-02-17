@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 47.15,
-    "lon": -109.229,
+    "lat": 47.53034863049452,
+    "lon": -115.9583164,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Continental Minerals Corporation",
+    "Grantham Mines",
+    "Johns Manville",
+    "National Park Service"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.946502Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:22:28.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10107704/. The Warm Springs mine is located in Fergus County, Montana, and is known for gold and silver production. Web search geocoded. Source: Calculated from Shoshone (https://www.mindat.org/loc-220649.html). The Warm Springs facility is part of the Warm Spring Canyon mine complex, which consists of multiple mining claims"
   },
   "canonical_name": "Warm Springs Mine",
   "canonical_slug": "warm-springs-mine",
@@ -51,5 +56,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "town": "Shoshone",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:22:28.000000Z",
+      "operators": [
+        "Grantham Mines",
+        "Johns Manville"
+      ],
+      "owners": [
+        "Continental Minerals Corporation",
+        "National Park Service"
+      ],
+      "notes": "The mine was operated by Grantham Mines and later by Johns Manville before being donated to the National Park Service."
+    }
+  }
 }

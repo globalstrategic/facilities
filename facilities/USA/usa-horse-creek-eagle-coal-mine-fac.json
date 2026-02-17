@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.892,
-    "lon": -81.301,
+    "lat": 37.891517,
+    "lon": -81.301483,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Marfork Coal Company, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.710276Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:51:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Horse_Creek_Eagle_Coal_Mine. The Horse Creek Eagle Coal Mine is located 3.7 miles south of Dorothy, West Virginia"
   },
   "canonical_name": "Horse Creek Eagle Coal Mine",
   "canonical_slug": "horse-creek-eagle-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:51:24.000000Z",
+      "operators": [
+        "Marfork Coal Company, LLC"
+      ],
+      "owners": [
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Marfork Coal Company is a subsidiary of Alpha Metallurgical Resources Inc."
+    }
+  }
 }

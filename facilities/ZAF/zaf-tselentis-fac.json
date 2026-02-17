@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.266,
-    "lon": 30.03,
+    "lat": -26.26781,
+    "lon": 30.0316,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Great Force Investments 178 (GFI)",
+    "Iron Light"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.738917Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-tselentis-coal-mine-spitzkop-coal-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:30:38.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-tselentis-coal-mine-spitzkop-coal-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://globalenergyobservatory.org/geoid/39270. The Tselentis coal mine is located in Mpumalanga, South Africa, and has unclear operating status"
   },
   "canonical_name": "Tselentis Mine",
   "canonical_slug": "tselentis-mine",
@@ -56,5 +59,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:30:38.000000Z",
+      "operators": [
+        "Great Force Investments 178 (GFI)",
+        "Iron Light"
+      ],
+      "owners": [
+        "Great Force Investments 178 (GFI)",
+        "Iron Light"
+      ],
+      "notes": "The mine was previously owned by Imbawula Mining and Xstrata Coal."
+    }
+  }
 }

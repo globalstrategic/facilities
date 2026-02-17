@@ -8,8 +8,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -16.886,
-    "lon": 30.16,
+    "lat": -17.5,
+    "lon": 30.0,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MTD (Mangula) Ltd.",
+    "Messina Transvaal Development Co. Ltd.",
+    "Mhangura Copper Mines Ltd.",
+    "Zimbabwe Mining Development Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.952379Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-01T16:36:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10255844. Mangula Copper Mine is located in the Mhangura area, which is a former mining community"
   },
   "canonical_name": "Mangula Refinery",
   "canonical_slug": "mangula-refinery",
@@ -55,5 +60,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:36:41.000000Z",
+      "operators": [
+        "Mhangura Copper Mines Ltd.",
+        "Zimbabwe Mining Development Corporation"
+      ],
+      "owners": [
+        "MTD (Mangula) Ltd.",
+        "Messina Transvaal Development Co. Ltd."
+      ],
+      "notes": "The mine was previously operated by Mhangura Copper Mines Ltd., a subsidiary of Zimbabwe Mining Development Corporation."
+    }
+  }
 }

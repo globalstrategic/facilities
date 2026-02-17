@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -1.961,
-    "lon": 115.868,
+    "lat": -1.961112,
+    "lon": 115.868493,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kendilo Coal Indonesia"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.272897Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:54:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Kendilo_Coal_Indonesia_Coal_Mine. Kendilo Coal Indonesia Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Kendilo Coal Indonesia Coal Mine",
   "canonical_slug": "kendilo-coal-indonesia-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Kalimantan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:54:21.000000Z",
+      "operators": [
+        "Kendilo Coal Indonesia"
+      ],
+      "owners": [
+        "Kendilo Coal Indonesia"
+      ],
+      "notes": "The mine is fully owned by Kendilo Coal Indonesia."
+    }
+  }
 }

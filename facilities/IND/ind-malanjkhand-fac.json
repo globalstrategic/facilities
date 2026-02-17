@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.5,
-    "lon": 80.717,
+    "lat": 22.04177904577616,
+    "lon": 80.3237105,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindustan Copper Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.063214Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:27:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Balaghat (https://www.industrialinfo.com/news/article/indias-hindustan-copper-on-expansion-spree--160553). Malanjkhand is located in Madhya Pradesh, approximately 20 km from Balaghat"
   },
   "canonical_name": "Malanjkhand Mine",
   "canonical_slug": "malanjkhand-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "town": "Balaghat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:27:18.000000Z",
+      "operators": [
+        "Hindustan Copper Limited"
+      ],
+      "owners": [
+        "Hindustan Copper Limited"
+      ],
+      "notes": "Hindustan Copper Limited is the sole operator and owner of the Malanjkhand mine."
+    }
+  }
 }

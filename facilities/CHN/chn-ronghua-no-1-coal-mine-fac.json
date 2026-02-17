@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 45.189,
-    "lon": 131.178,
+    "lat": 45.18943,
+    "lon": 131.178054,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heilongjiang Longmay Mining Holding Group Co., Ltd.",
+    "Heilongjiang Longmei Jixi Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.882916Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:44:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ronghua_No.1_Mine. Ronghua No.1 Coal Mine is an underground coal mine located in Yonghe Township, Jidong County, Heilongjiang Province, China"
   },
   "canonical_name": "Ronghua No 1 Coal Mine",
   "canonical_slug": "ronghua-no-1-coal-mine",
@@ -55,5 +58,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Heilongjiang Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:44:47.000000Z",
+      "operators": [
+        "Heilongjiang Longmei Jixi Mining Co., Ltd."
+      ],
+      "owners": [
+        "Heilongjiang Longmay Mining Holding Group Co., Ltd."
+      ],
+      "notes": "The mine is operated by Heilongjiang Longmei Jixi Mining Co., Ltd. and owned by Heilongjiang Longmay Mining Holding Group Co., Ltd."
+    }
+  }
 }

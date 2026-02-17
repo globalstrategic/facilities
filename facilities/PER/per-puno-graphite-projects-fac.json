@@ -1,12 +1,12 @@
 {
   "facility_id": "per-puno-graphite-projects-fac",
-  "name": "**Puno Graphite Projects**",
+  "name": "Puno Graphite Projects",
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -15.84,
+    "lon": -70.02,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -19,14 +19,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Various",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.830828",
-      "evidence": "Extracted from operator column: Various (e.g., Imperial Mining)"
-    }
+    "Forte Minerals Corp.",
+    "Minera Puno Gold, S.A.C.",
+    "Miramont Resources Corp.",
+    "Puno Gold Corporation",
+    "Various"
   ],
   "products": [],
   "sources": [
@@ -37,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.319188Z",
-    "checked_by": "import_pipeline",
-    "notes": "Moderate. Emerging exploration-stage graphite belt. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Moderate. Emerging exploration-stage graphite belt. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Puno graphite exploration projects in Puno region"
   },
   "canonical_name": "Puno Graphite Projects Exploration",
   "canonical_slug": "puno-graphite-projects-exploration",
@@ -58,11 +55,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Puno Graphite Projects** Exploration",
+      "name": "Puno Graphite Projects Exploration",
       "from": "2025-10-28T21:54:37.830891",
       "to": "2025-11-04T19:19:08.319185Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:09:47.000000Z",
+      "operators": [
+        "Miramont Resources Corp.",
+        "Minera Puno Gold, S.A.C."
+      ],
+      "owners": [
+        "Puno Gold Corporation"
+      ],
+      "notes": "Minera Puno is a wholly owned subsidiary of Puno Gold Corporation."
+    }
+  }
 }

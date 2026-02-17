@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -28.3762133428693,
+    "lon": 23.453682,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "BHP Billiton",
+    "BHP Billiton Ltd",
+    "Rockwell Diamonds Inc",
+    "Seven Falls",
+    "Tawana Resources NL"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:35:07.759721Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:37:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: Calculated from Finsch Diamond Mine (https://www.newswire.ca/news-releases/rockwell-focuses-on-operational-turnaround-following-recent-management-changes-594476401.html). The Daniel Alluvial Project is associated with the Finsch diamond mine and is located in the Northern Cape Province"
   },
   "canonical_name": "Daniel Alluvial Mine",
   "canonical_slug": "daniel-alluvial-mine",
@@ -47,5 +53,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:37:17.000000Z",
+      "operators": [
+        "Rockwell Diamonds Inc"
+      ],
+      "owners": [
+        "BHP Billiton Ltd",
+        "Tawana Resources NL"
+      ],
+      "notes": "Rockwell has been granted a prospecting right over the Daniel alluvial deposit."
+    }
+  },
+  "town": "Finsch Diamond Mine"
 }

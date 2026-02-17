@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "EGY",
   "location": {
-    "lat": 26.067,
-    "lon": 32.217,
+    "lat": 26.1536,
+    "lon": 32.1473,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Egyptian Electricity Holding Co"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.178877Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:12:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Naga_Hammadi_hydroelectric_plant. Naga Hammadi hydroelectric plant is an operating hydroelectric power plant located on the Nile River"
   },
   "canonical_name": "Nag Hammadi Smelter",
   "canonical_slug": "nag-hammadi-smelter",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Qena",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:12:34.000000Z",
+      "operators": [
+        "Egyptian Electricity Holding Co"
+      ],
+      "owners": [
+        "Egyptian Electricity Holding Co"
+      ],
+      "notes": "The plant is developed and operated by the Egyptian Electricity Holding Company."
+    }
+  }
 }

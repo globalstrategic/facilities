@@ -6,9 +6,9 @@
   ],
   "country_iso3": "GTM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 14.88333,
+    "lon": -89.58333,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -23,14 +23,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Cia. Minas de Oriente SA",
-      "role": "operator",
-      "source": "Research Import GTM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:33.509062",
-      "evidence": "Extracted from operator column: Cia. Minas de Oriente SA"
-    }
+    "Cia. Minas de Oriente SA",
+    "Minera Peñasquito S.A. de C.V.",
+    "Newmont Corporation"
   ],
   "products": [],
   "sources": [
@@ -41,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:16.706142Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:10:17Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:10:17Z] Geocoded via web search. Coords: (14.88333, -89.58333). Confidence: 0.90. Notes: Coordinates extracted from the Penasco Mine located in Chiquimula Department, Guatemala."
   },
   "canonical_name": "Penasco Mine",
   "canonical_slug": "penasco-mine",
@@ -60,5 +55,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chiquimula Department",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:44:16.000000Z",
+      "operators": [
+        "Minera Peñasquito S.A. de C.V.",
+        "Newmont Corporation"
+      ],
+      "owners": [
+        "Newmont Corporation"
+      ],
+      "notes": "Newmont Corporation owns the mine through its subsidiary Minera Peñasquito S.A. de C.V."
+    }
+  }
 }

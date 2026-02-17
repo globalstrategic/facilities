@@ -1,11 +1,11 @@
 {
   "facility_id": "bwa-mupane-gold-mine-fac",
-  "name": "**Mupane Gold Mine**",
+  "name": "Mupane Gold Mine",
   "aliases": [],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -21.1667,
+    "lon": 27.5,
     "precision": "unknown"
   },
   "types": [
@@ -22,8 +22,11 @@
   "status": "unknown",
   "company_mentions": [
     "Galane Gold",
+    "Galane Gold Ltd",
+    "Hawks Mining Company",
     "Hawks Mining Company Proprietary",
     "Hawks Mining Company Proprietary Limited",
+    "IAMGOLD Corporation",
     "In Liquidation"
   ],
   "products": [],
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.634938Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:53:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.miningweekly.com/article/botswanas-only-gold-mine-changes-hands-2022-05-27. Mupane Gold Mine is the only gold mine currently in operation in Botswana"
   },
   "canonical_name": "Mupane Gold Mine",
   "canonical_slug": "mupane-gold-mine",
@@ -56,24 +59,27 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mupane Gold ** Mine",
+      "name": "Mupane Gold  Mine",
       "from": "2025-10-27T11:57:05.570486",
       "to": "2025-11-04T19:19:06.634928Z",
       "reason": "data_correction"
     }
   ],
   "display_name_source": "auto",
-  "province": "Northeast District",
+  "province": "Francistown",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:45:39.000000Z",
+      "timestamp": "2025-12-01T16:53:29.000000Z",
       "operators": [
-        "Hawks Mining Company Proprietary Limited"
+        "Hawks Mining Company",
+        "Galane Gold Ltd"
       ],
       "owners": [
-        "Hawks Mining Company Proprietary Limited"
+        "Hawks Mining Company",
+        "Galane Gold Ltd",
+        "IAMGOLD Corporation"
       ],
-      "notes": "Mupane Gold Mine was acquired by Hawks Mining Company in May 2022 and has been under provisional liquidation since November 2024."
+      "notes": "The mine was sold from IAMGOLD to Galane Gold and then to Hawks Mining Company."
     }
   }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -2.748,
-    "lon": 108.083,
+    "lat": -4.70334544167641,
+    "lon": 103.29233000206209,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "P. T. Broken Hill Pty. Indonesia",
+    "PT. Broken Hill Property Indonesia",
+    "Pt Preussag Kelapa Kampit"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:10.218363Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:27:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tanjung Pandan (https://thediggings.com/mines/5042). Kelapa Kampit is known for its tin mining activities and has historical significance due to its flooding during World War II"
   },
   "canonical_name": "Kelapa Kampit Mine",
   "canonical_slug": "kelapa-kampit-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bangka-Belitung",
+  "town": "Tanjung Pandan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:27:13.000000Z",
+      "operators": [
+        "PT. Broken Hill Property Indonesia"
+      ],
+      "owners": [
+        "P. T. Broken Hill Pty. Indonesia",
+        "Pt Preussag Kelapa Kampit"
+      ],
+      "notes": "PT. Broken Hill Property Indonesia was recently taken over by an Australian firm for administration and exploration."
+    }
+  }
 }

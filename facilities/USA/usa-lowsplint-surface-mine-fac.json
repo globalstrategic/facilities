@@ -12,8 +12,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 36.603,
-    "lon": -83.877,
+    "lat": 37.080790891001556,
+    "lon": -83.8888138,
     "precision": "site"
   },
   "types": [
@@ -26,7 +26,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Double Mountain Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.861441Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:44:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Barbourville (https://www.ag.ky.gov/pdf_news/20190829_KRS-337-200_FINAL-REPORT-WITH-EXHIBITS.pdf). The facility is associated with Double Mountain Mining LLC"
   },
   "canonical_name": "Lowsplint Surface Mine",
   "canonical_slug": "lowsplint-surface-mine",
@@ -55,5 +57,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Barbourville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:44:13.000000Z",
+      "operators": [
+        "Double Mountain Mining LLC"
+      ],
+      "owners": [],
+      "notes": "Double Mountain Mining LLC is listed as the operator for the Lowsplint Surface Mine."
+    }
+  }
 }

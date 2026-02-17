@@ -1,14 +1,14 @@
 {
   "facility_id": "nic-eastern-borosi-project-fac",
-  "name": "**Eastern Borosi Project**",
+  "name": "Eastern Borosi Project",
   "aliases": [
     "incl. Blag, La Luna, Riscos de Oro"
   ],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.5,
+    "lon": -84.5,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -24,7 +24,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Calibre Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.279602Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:47:16Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:47:16Z] Geocoded via web search. Coords: (15.5, -84.5). Confidence: 0.90. Notes: Coordinates extracted from UTM coordinates provided in the technical report, converted to approximate latitude and longitude."
   },
   "canonical_name": "Eastern Borosi Development",
   "canonical_slug": "eastern-borosi-development",
@@ -55,11 +57,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Eastern Borosi ** Development",
+      "name": "Eastern Borosi  Development",
       "from": "2025-10-29T21:57:46.889287",
       "to": "2025-11-04T19:18:55.279600Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:26:55.000000Z",
+      "operators": [
+        "Calibre Mining Corp."
+      ],
+      "owners": [
+        "Calibre Mining Corp."
+      ],
+      "notes": "Calibre Mining Corp. owns 100% of the Eastern Borosi Project."
+    }
+  },
+  "province": "RAAN"
 }

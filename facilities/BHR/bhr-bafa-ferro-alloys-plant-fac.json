@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "BHR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 26.22,
+    "lon": 50.65,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -24,7 +24,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    "ETA Star Holdings LLC"
+    "Bahrain Ferro Alloy",
+    "ETA Star Holdings LLC",
+    "TUF Commodities DMCC"
   ],
   "products": [],
   "sources": [
@@ -35,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:15.074848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Ferroalloy plant in Hidd Industrial Area"
   },
   "canonical_name": "Bafa Ferro Alloys Plant",
   "canonical_slug": "bafa-ferro-alloys-plant",
@@ -65,14 +67,15 @@
   "display_name_source": "auto",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:41:43.000000Z",
+      "timestamp": "2025-12-02T11:07:29.000000Z",
       "operators": [
-        "ETA Star Holdings LLC"
+        "TUF Commodities DMCC"
       ],
       "owners": [
-        "ETA Star Holdings LLC"
+        "Bahrain Ferro Alloy"
       ],
-      "notes": "ETA Star Holdings LLC is a UAE-based conglomerate that acquired BAFA in 2008."
+      "notes": "TUF Commodities managed the operations from 2012 to 2016."
     }
-  }
+  },
+  "province": "Hidd"
 }

@@ -1,0 +1,52 @@
+{
+  "facility_id": "zaf-pentouyz-area-fac",
+  "name": "Pentouyz Area",
+  "aliases": [],
+  "country_iso3": "ZAF",
+  "location": {
+    "lat": -26.5,
+    "lon": 27.3,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:16.602509"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T11:54:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10135028. The Pentouyz Area is located near Hlatikulu in Swaziland and is currently not in operation"
+  },
+  "canonical_name": "Pentouyz Area Mine",
+  "canonical_slug": "pentouyz-area-mine",
+  "display_name": "Pentouyz Area",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Hhohho"
+}

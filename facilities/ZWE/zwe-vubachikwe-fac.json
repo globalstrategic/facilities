@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -20.847,
-    "lon": 28.907,
+    "lat": -20.849,
+    "lon": 28.9041,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Duration Gold Zimbabwe",
+    "Forbes & Thompson (Bulawayo) (Private) Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.954815Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:39:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10232008. Vubachikwe Gold Mine is located near Gwanda and primarily operates as a surface mining operation"
   },
   "canonical_name": "Vubachikwe Mine",
   "canonical_slug": "vubachikwe-mine",
@@ -58,5 +61,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Matabeleland South",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:39:33.000000Z",
+      "operators": [
+        "Forbes & Thompson (Bulawayo) (Private) Limited"
+      ],
+      "owners": [
+        "Duration Gold Zimbabwe"
+      ],
+      "notes": "Vubachikwe is owned by Duration Gold through its subsidiary Forbes & Thompson."
+    }
+  }
 }

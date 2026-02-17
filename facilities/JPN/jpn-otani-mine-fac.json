@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 35.032,
-    "lon": 135.749,
+    "lat": 35.033,
+    "lon": 135.517,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.028565Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:19:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_mines_in_Japan. The Otani Mine is a tungsten mine located in Kameoka, Kyoto. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_mines_in_Japan. Coordinates extracted from a Wikipedia entry for the Otani mine"
   },
   "canonical_name": "Otani Mine",
   "canonical_slug": "otani-mine",
@@ -47,5 +47,6 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kyoto"
 }

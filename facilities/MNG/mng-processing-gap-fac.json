@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 45.91096166831545,
+    "lon": 109.742975273443,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdenet Mining Corporation",
+    "Government of Mongolia (100%)",
+    "Mongolrostsvetmet LLC",
+    "State of Mongolia"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.459619Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:43:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ulaanbaatar (https://pubs.usgs.gov/myb/vol3/2022/myb3-2022-mongolia.pdf). Processing Gap is a processing plant at Bor-Undur Mine, located 310 km southeast of Ulaanbaatar"
   },
   "canonical_name": "Processing Gap Facility",
   "canonical_slug": "processing-gap-facility",
@@ -57,5 +62,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hentiy",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:43:51.000000Z",
+      "operators": [
+        "Mongolrostsvetmet LLC"
+      ],
+      "owners": [
+        "Government of Mongolia (100%)"
+      ],
+      "notes": "Mongolrostsvetmet LLC is a government-owned company operating the processing plant."
+    }
+  },
+  "town": "Ulaanbaatar"
 }

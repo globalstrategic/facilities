@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.354,
-    "lon": -81.426,
+    "lat": 37.354286,
+    "lon": -81.425743,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Onyx Energy",
+    "Onyx Energy LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.851437Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:35:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Apollo_Surface_Mine. Apollo Surface Mine is a mothballed coal mine"
   },
   "canonical_name": "Apollo Surface Mine",
   "canonical_slug": "apollo-surface-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:35:04.000000Z",
+      "operators": [
+        "Onyx Energy LLC"
+      ],
+      "owners": [
+        "Onyx Energy"
+      ],
+      "notes": "Onyx Energy LLC owns 100% of the facility."
+    }
+  }
 }

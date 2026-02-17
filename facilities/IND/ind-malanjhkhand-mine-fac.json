@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.021,
-    "lon": 80.717,
+    "lat": 22.04177904577616,
+    "lon": 80.3237105,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hindustan Copper Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.104941Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:03:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Balaghat (https://www.tribuneindia.com/news/business/hindustan-copper-shifts-to-underground-mining-plans-to-double-output-amid-surge-in-infra-demand/). Hindustan Copper Limited has transitioned the Malanjkhand mine to underground operations and is planning significant expansions"
   },
   "canonical_name": "Malanjhkhand Mine",
   "canonical_slug": "malanjhkhand-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Madhya Pradesh",
+  "town": "Balaghat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:03:26.000000Z",
+      "operators": [
+        "Hindustan Copper Limited"
+      ],
+      "owners": [
+        "Hindustan Copper Limited"
+      ],
+      "notes": "Hindustan Copper Limited is a Government of India enterprise."
+    }
+  }
 }

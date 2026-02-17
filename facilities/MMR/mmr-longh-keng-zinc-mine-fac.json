@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown",
+    "lat": 20.4,
+    "lon": 97.1,
+    "precision": "region",
     "description": "Kalaw: Operated by a joint venture between the state"
   },
   "types": [
@@ -36,14 +36,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Myanmar Smelting & Refining Co.",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.6,
-      "first_seen": "2025-10-21T09:24:04.664622",
-      "evidence": "Extracted from text"
-    }
+    "Cornerstone Resources (Myanmar) Ltd.",
+    "East Asia Power (Mining) Co. Ltd.",
+    "Myanmar Smelting & Refining Co."
   ],
   "products": [],
   "sources": [
@@ -54,11 +49,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.862192Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Mine in Kalaw: Operated by a joint venture between the state's No. 1 Mining Enterprise and GPS Joint Venture Co. Ltd.. In addition to mining, Myanmar has dedicated processing facilities. The Lashio zi | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Mine in Kalaw: Operated by a joint venture between the state's No. 1 Mining Enterprise and GPS Joint Venture Co. Ltd.. In addition to mining, Myanmar has dedicated processing facilities. The Lashio zi | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Longh Keng zinc mine, Shan. Coords: (20.4, 97.1)"
   },
   "canonical_name": "Longh Keng Zinc Mine",
   "canonical_slug": "longh-keng-zinc-mine",
@@ -73,5 +68,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shan State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:47:01.000000Z",
+      "operators": [
+        "East Asia Power (Mining) Co. Ltd."
+      ],
+      "owners": [
+        "Cornerstone Resources (Myanmar) Ltd."
+      ],
+      "notes": "Top End Minerals Ltd has acquired an option to purchase a 60% interest in the mine."
+    }
+  }
 }

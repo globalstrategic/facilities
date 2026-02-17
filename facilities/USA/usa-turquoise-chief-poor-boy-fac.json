@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.291,
-    "lon": -106.385,
+    "lat": 48.3164,
+    "lon": -121.7273,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bull Trout Jade LLC",
+    "Hayden Yakobian",
+    "Nathaniel C Cook",
+    "Timothy Kester"
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.964384Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T09:24:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Leadville (https://www.mindat.org/locentry-226329.html). The Turquoise Chief and Poor Boy mines are located in the Sugarloaf District of Lake County, Colorado. Web search geocoded. Source: https://thediggings.com/mines/ormc176249. The Poor Boy claim is an active mining claim located in Skagit County, Washington"
   },
   "canonical_name": "Turquoise Chief, Poor Boy Mine",
   "canonical_slug": "turquoise-chief-poor-boy-mine",
@@ -58,5 +63,24 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Washington",
+  "town": "Leadville",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:24:06.000000Z",
+      "operators": [
+        "Timothy Kester",
+        "Nathaniel C Cook",
+        "Hayden Yakobian"
+      ],
+      "owners": [
+        "Timothy Kester",
+        "Nathaniel C Cook",
+        "Hayden Yakobian",
+        "Bull Trout Jade LLC"
+      ],
+      "notes": "Ownership and use of this claim is overseen by the Bureau of Land Management."
+    }
+  }
 }

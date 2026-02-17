@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZWE",
   "location": {
-    "lat": -17.08,
-    "lon": 30.718,
+    "lat": -17.797,
+    "lon": 30.7513,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rhodall Ltd.",
+    "Rhodesian Alloys Ltd.",
+    "Rhodesian Vanadium Corporation Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:51.957433Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:41:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10024321. The Vanad Chromium Mine is located near Harare, Zimbabwe, with geological significance dating back to the Archean eon"
   },
   "canonical_name": "Vanad Mine",
   "canonical_slug": "vanad-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mashonaland West",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:41:36.000000Z",
+      "operators": [
+        "Rhodesian Vanadium Corporation Ltd."
+      ],
+      "owners": [
+        "Rhodall Ltd.",
+        "Rhodesian Alloys Ltd."
+      ],
+      "notes": "Rhodall Ltd. and Rhodesian Alloys Ltd. are majority owner-operators of the facility."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -26.583,
-    "lon": 31.183,
+    "lat": -26.474977981312808,
+    "lon": 29.9862195,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ichor Coal NV",
+    "Vunene Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:08:14.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T17:19:46.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.tageo.com/index-e-wz-v-00-d-m1923158.htm. Coordinates extracted from a source listing Usutu Mission, which is associated with the Usutu Colliery"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.tageo.com/index-e-wz-v-00-d-m1923158.htm. Coordinates extracted from a source listing Usutu Mission, which is associated with the Usutu Colliery. Web search geocoded. Source: Calculated from Ermelo (https://www.gem.wiki/Vunene_Coal_Mine). Usutu Colliery is located near Camden Power Station, approximately 5 km away"
   },
   "canonical_name": "Usutu Colliery Mine",
   "canonical_slug": "usutu-colliery-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Mpumalanga"
+  "province": "Mpumalanga",
+  "town": "Ermelo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:19:46.000000Z",
+      "operators": [
+        "Vunene Coal"
+      ],
+      "owners": [
+        "Ichor Coal NV"
+      ],
+      "notes": "Ichor Coal owns 100% of Vunene Coal, which operates the Usutu Colliery."
+    }
+  }
 }

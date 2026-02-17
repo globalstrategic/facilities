@@ -1,12 +1,12 @@
 {
   "facility_id": "nic-r-o-coco-ii-concession-fac",
-  "name": "**Río Coco II Concession**",
+  "name": "Río Coco II Concession",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 15.0,
+    "lon": -83.133,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chinese companies"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:55.275675Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:45:20Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:45:20Z] Geocoded via web search. Coords: (15.0, -83.133). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for the Coco River, which is located in Nicaragua."
   },
   "canonical_name": "Río Coco II Concession Exploration",
   "canonical_slug": "rio-coco-ii-concession-exploration",
@@ -53,11 +55,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Río Coco II Concession** Exploration",
+      "name": "Río Coco II Concession Exploration",
       "from": "2025-10-29T21:57:47.141606",
       "to": "2025-11-04T19:18:55.275660Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nueva Segovia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:24:08.000000Z",
+      "operators": [],
+      "owners": [
+        "Chinese companies"
+      ],
+      "notes": "The concessions were granted to Chinese-owned companies, but specific operators are not mentioned."
+    }
+  }
 }

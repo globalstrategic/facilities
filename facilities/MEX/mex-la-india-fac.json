@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 28.704,
-    "lon": -108.887,
+    "lat": 29.07909235044225,
+    "lon": -108.91498237119833,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Agnico-Eagle Mines Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.946487Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T02:25:50.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hermosillo (https://www.prnewswire.com/news-releases/agnico-eagle-approves-development-of-la-india-mine-in-mexico-commercial-production-expected-in-2014-168527546.html). La India is an open pit mine located approximately 200 km east of Hermosillo in Sonora, Mexico"
   },
   "canonical_name": "La India Mine",
   "canonical_slug": "la-india-mine",
@@ -51,5 +53,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "town": "Hermosillo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:25:50.000000Z",
+      "operators": [
+        "Agnico-Eagle Mines Limited"
+      ],
+      "owners": [
+        "Agnico-Eagle Mines Limited"
+      ],
+      "notes": "Agnico-Eagle acquired La India as part of a transaction with Grayd Resource Corporation."
+    }
+  }
 }

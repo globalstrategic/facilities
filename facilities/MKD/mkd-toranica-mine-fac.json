@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.1668,
+    "lon": 22.4849,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -30,7 +30,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bulmak 2016 DOOEL",
+    "Bulmak 2016 DOOEL Probištip",
+    "Indo Minerals",
+    "Minstroj",
+    "Minstroy"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:06.911161Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:07:48Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:07:48Z] Geocoded via web search. Coords: (42.1668, 22.4849). Confidence: 0.90. Notes: Coordinates extracted from the Diggings website, which lists the Toranica Zinc Mine near Kyustendil, Bulgaria."
   },
   "canonical_name": "Toranica Mine",
   "canonical_slug": "toranica-mine",
@@ -59,5 +65,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kyustendil",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:54:12.000000Z",
+      "operators": [
+        "Bulmak 2016 DOOEL Probištip",
+        "Minstroj"
+      ],
+      "owners": [
+        "Bulmak 2016 DOOEL Probištip",
+        "Indo Minerals",
+        "Minstroy"
+      ],
+      "notes": "Bulmak 2016 is the current operator, while Minstroy has recently acquired a majority stake."
+    }
+  }
 }

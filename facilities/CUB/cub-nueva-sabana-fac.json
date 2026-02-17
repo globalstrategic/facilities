@@ -1,12 +1,12 @@
 {
   "facility_id": "cub-nueva-sabana-fac",
-  "name": "**Nueva Sabana**",
+  "name": "Nueva Sabana",
   "aliases": [],
   "country_iso3": "CUB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.56667,
+    "lon": -78.05,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "construction",
   "company_mentions": [
-    {
-      "name": "Minera La Victoria SA",
-      "role": "operator",
-      "source": "Research Import CUB 2025-10-27",
-      "confidence": 0.7,
-      "first_seen": "2025-10-27T14:21:07.008011",
-      "evidence": "Extracted from operator column: Minera La Victoria SA"
-    }
+    "Antilles Gold Limited",
+    "GeoMinera SA",
+    "Minera La Victoria",
+    "Minera La Victoria SA"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.454987Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:44:59Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:44:59Z] Geocoded via web search. Coords: (21.56667, -78.05). Confidence: 0.90. Notes: Coordinates extracted from GeoNames for Sabana Nueva, which is identified as a locality in the Municipality of Camagüey, near Ciego de Ávila."
   },
   "canonical_name": "Nueva Sabana Mine",
   "canonical_slug": "nueva-sabana-mine",
@@ -53,11 +49,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nueva Sabana** Mine",
+      "name": "Nueva Sabana Mine",
       "from": "2025-10-27T14:21:07.008014",
       "to": "2025-11-04T19:18:54.454984Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Camagüey",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:16:35.000000Z",
+      "operators": [
+        "Antilles Gold Limited",
+        "Minera La Victoria"
+      ],
+      "owners": [
+        "Antilles Gold Limited",
+        "GeoMinera SA"
+      ],
+      "notes": "Antilles Gold and GeoMinera each hold a 50% stake in the joint venture Minera La Victoria."
+    }
+  }
 }

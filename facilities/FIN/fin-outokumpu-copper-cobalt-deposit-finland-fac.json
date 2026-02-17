@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": 62.748,
-    "lon": 29.003,
+    "lat": 62.7151,
+    "lon": 28.973,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Outokumpu Oy",
+    "Suomen Nikkeli Oy (Finn Nickel Oy)",
+    "Vulcan Hautalampi Oy (FinnCobalt)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:54.192124Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:33:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://eurobatteryminerals.com/wp-content/uploads/2019/04/Hautalampi-Mineral-Resource-Estimate-2nd-July-2021.pdf. The Hautalampi project is located in the Outokumpu municipality, which is part of the historic Outokumpu Mining Camp"
   },
   "canonical_name": "Outokumpu Copper Cobalt Finland Mine",
   "canonical_slug": "outokumpu-copper-cobalt-finland-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Karelia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:33:02.000000Z",
+      "operators": [
+        "Vulcan Hautalampi Oy (FinnCobalt)"
+      ],
+      "owners": [
+        "Suomen Nikkeli Oy (Finn Nickel Oy)",
+        "Outokumpu Oy"
+      ],
+      "notes": "The Hautalampi project was previously developed by Outokumpu Oy and is currently owned by Vulcan Hautalampi Oy."
+    }
+  }
 }

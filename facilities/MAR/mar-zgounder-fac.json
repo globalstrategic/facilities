@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MAR",
   "location": {
-    "lat": 30.763,
-    "lon": -7.743,
+    "lat": 30.39247962465917,
+    "lon": -6.87820292144886,
     "precision": "site"
   },
   "types": [
@@ -38,7 +38,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Aya Gold & Silver Inc.",
+    "Office National des Hydrocarbures et des Mines (ONHYM)"
+  ],
   "products": [],
   "sources": [
     {
@@ -48,11 +51,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:48.333478Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:14:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Agadir (https://ayagoldsilver.com/overview/). Zgounder is located approximately 260 km east of Agadir in the central region of the Anti-Atlas Mountains"
   },
   "canonical_name": "Zgounder Mine",
   "canonical_slug": "zgounder-mine",
@@ -67,5 +70,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Taroudant",
+  "town": "Agadir",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:14:59.000000Z",
+      "operators": [
+        "Aya Gold & Silver Inc."
+      ],
+      "owners": [
+        "Aya Gold & Silver Inc.",
+        "Office National des Hydrocarbures et des Mines (ONHYM)"
+      ],
+      "notes": "Aya Gold & Silver owns 100% of the Zgounder Silver Mine after acquiring ONHYM's 15% interest."
+    }
+  }
 }

@@ -1,12 +1,12 @@
 {
   "facility_id": "ven-brisas-project-fac",
-  "name": "**Brisas Project**",
+  "name": "Brisas Project",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 6.16667,
+    "lon": -61.46667,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -27,7 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "CVG Minerven",
     "Compañía Aurífera Brisas del Cuyuní, C.A.",
+    "Gold Reserve Corporation",
     "Gold Reserve Inc.",
     "Gold Reserve de Venezuela"
   ],
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:49.651894Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large gold deposit adjacent to Las Cristinas, also part of the Siembra Minera JV.28 Coordinates are approximate based on proximity. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Large gold deposit adjacent to Las Cristinas, also part of the Siembra Minera JV.28 Coordinates are approximate based on proximity. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] Brisas Project at 6°10'N 61°28'W, Km 88 mining district, Bolivar state"
   },
   "canonical_name": "Brisas Development",
   "canonical_slug": "brisas-development",
@@ -61,7 +63,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Brisas ** Development",
+      "name": "Brisas  Development",
       "from": "2025-10-21T11:38:45.175051",
       "to": "2025-11-04T19:18:49.651880Z",
       "reason": "data_correction"
@@ -71,15 +73,15 @@
   "province": "Bolivar",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:43:12.000000Z",
+      "timestamp": "2025-12-02T09:26:54.000000Z",
       "operators": [
-        "Compañía Aurífera Brisas del Cuyuní, C.A."
+        "Gold Reserve Inc."
       ],
       "owners": [
-        "Gold Reserve Inc.",
-        "Gold Reserve de Venezuela"
+        "Gold Reserve Corporation",
+        "CVG Minerven"
       ],
-      "notes": "Gold Reserve Inc. is the parent company based in Canada, and Compañía Aurífera Brisas del Cuyuní, C.A. is its Venezuelan subsidiary operating the Brisas Project."
+      "notes": "Gold Reserve Inc. is the parent company, while CVG Minerven is a state-owned mining company involved in the dispute."
     }
   }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 24.788,
-    "lon": -104.601,
+    "lat": 25.736046178582594,
+    "lon": -104.833333,
     "precision": "site"
   },
   "types": [
@@ -29,7 +29,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Heliostar Metals Ltd.",
+    "Minera Real del Oro S.A. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -39,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.967407Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T05:52:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Durango (https://www.heliostarmetals.com/news-articles/heliostar-to-restart-mining-operations-and-invest-in-growth-at-its-san-agustin-mine-durango). The San Agustin Mine is located approximately 100 km north of Durango, Mexico. Heliostar Metals Ltd. is set to restart operations"
   },
   "canonical_name": "San Agustin Mine",
   "canonical_slug": "san-agustin-mine-2",
@@ -58,5 +61,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Durango",
+  "town": "Durango",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T05:52:46.000000Z",
+      "operators": [
+        "Heliostar Metals Ltd.",
+        "Minera Real del Oro S.A. de C.V."
+      ],
+      "owners": [
+        "Heliostar Metals Ltd.",
+        "Minera Real del Oro S.A. de C.V."
+      ],
+      "notes": "Heliostar Metals Ltd. acquired the mine from Argonaut Gold Inc. in November 2024."
+    }
+  }
 }

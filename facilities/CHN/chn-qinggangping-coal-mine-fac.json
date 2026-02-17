@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 35.053,
-    "lon": 108.552,
+    "lat": 35.38035546059834,
+    "lon": 108.72692150616787,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "China National Coal Group Co., Ltd.",
+    "Chinese central government"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.751648Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T10:35:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Xunyi County (https://www.mdpi.com/2075-163X/12/12/1605). The Qinggangping Coal Mine is located approximately 30 km northeast of Xunyi County in Shaanxi Province. Web search geocoded. Source: Calculated from Xunyi County (https://www.mdpi.com/2075-163X/12/12/1605). The Qinggangping Coal Mine is located approximately 30 km northeast of Xunyi County in Shaanxi Province"
   },
   "canonical_name": "Qinggangping Coal Mine",
   "canonical_slug": "qinggangping-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Shaanxi Province",
+  "town": "Xunyi County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:35:58.000000Z",
+      "operators": [
+        "China National Coal Group Co., Ltd."
+      ],
+      "owners": [
+        "Chinese central government"
+      ],
+      "notes": "China National Coal Group is a state-owned enterprise responsible for coal production and trade."
+    }
+  }
 }

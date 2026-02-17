@@ -4,16 +4,20 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 46.0202,
+    "lon": -112.5272,
+    "precision": "site"
   },
   "types": [
     "mine"
   ],
   "commodities": [],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Montana Resources LLP",
+    "Montana Resources, LLC",
+    "The Washington Companies"
+  ],
   "products": [],
   "sources": [
     {
@@ -23,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:45.786926Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:28:02Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:28:02Z] Geocoded via web search. Coords: (46.0202, -112.5272). Confidence: 0.90. Notes: Coordinates extracted directly from the mining report for the Continental Open Pit Molybdenum Mine."
   },
   "canonical_name": "Continental Mine",
   "canonical_slug": "continental-mine",
@@ -42,5 +46,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:08:45.000000Z",
+      "operators": [
+        "Montana Resources LLP"
+      ],
+      "owners": [
+        "Montana Resources, LLC",
+        "The Washington Companies"
+      ],
+      "notes": "Montana Resources LLP is a subsidiary of The Washington Companies, owned by businessman Dennis Washington."
+    }
+  }
 }

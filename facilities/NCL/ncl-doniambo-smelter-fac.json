@@ -1,11 +1,11 @@
 {
   "facility_id": "ncl-doniambo-smelter-fac",
-  "name": "**Doniambo Smelter**",
+  "name": "Doniambo Smelter",
   "aliases": [],
   "country_iso3": "NCL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -22.2763,
+    "lon": 166.4404,
     "precision": "unknown"
   },
   "types": [
@@ -13,15 +13,15 @@
   ],
   "commodities": [
     {
-      "metal": "**nickel**",
+      "metal": "nickel",
       "primary": true
     },
     {
-      "metal": "**iron ore** (as ore component)",
+      "metal": "iron ore (as ore component)",
       "primary": false
     },
     {
-      "metal": "**ferronickel** (feni) 4",
+      "metal": "ferronickel (feni) 4",
       "primary": false
     },
     {
@@ -31,14 +31,9 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "**Société Le Nickel** 4",
-      "role": "operator",
-      "source": "Research Import NCL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:07:19.464016",
-      "evidence": "Extracted from operator column: **Société Le Nickel (SLN)** (Eramet 56%) 4"
-    }
+    "Société Le Nickel 4",
+    "Eramet",
+    "Société Le Nickel (SLN)"
   ],
   "products": [],
   "sources": [
@@ -49,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:56.366437Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:56:04.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.rnz.co.nz/news/pacific/542433/top-leadership-changes-in-new-caledonia-s-nickel-stakeholder. The Doniambo Smelter is located in Nouméa, the capital of New Caledonia"
   },
   "canonical_name": "Doniambo Smelter",
   "canonical_slug": "doniambo-smelter",
@@ -70,11 +65,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Doniambo ** Smelter",
+      "name": "Doniambo  Smelter",
       "from": "2025-10-29T22:07:19.464069",
       "to": "2025-11-04T19:18:56.366434Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "New Caledonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:56:04.000000Z",
+      "operators": [
+        "Société Le Nickel (SLN)"
+      ],
+      "owners": [
+        "Eramet"
+      ],
+      "notes": "SLN is a subsidiary of Eramet, which is a major stakeholder in New Caledonia's nickel industry."
+    }
+  }
 }

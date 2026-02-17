@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 32.763,
-    "lon": -109.254,
+    "lat": 32.5,
+    "lon": -109.3,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,13 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Arizona Flux Mines Incorporated",
+    "Ash Peak Mines Incorporated",
+    "Howard Mottier",
+    "Turney",
+    "Veta Mines Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.762591Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T20:37:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10234979/. The Ash Peak Mines are located in Greenlee County, Arizona, near Sheldon"
   },
   "canonical_name": "Ash Peak Mines Mine",
   "canonical_slug": "ash-peak-mines-mine",
@@ -60,5 +66,23 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Arizona",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:37:54.000000Z",
+      "operators": [
+        "Howard Mottier",
+        "Turney",
+        "Veta Mines Company"
+      ],
+      "owners": [
+        "Arizona Flux Mines Incorporated",
+        "Ash Peak Mines Incorporated",
+        "Howard Mottier",
+        "Veta Mines Company"
+      ],
+      "notes": "Multiple owners and operators have been associated with the Ash Peak Mines over the years."
+    }
+  }
 }

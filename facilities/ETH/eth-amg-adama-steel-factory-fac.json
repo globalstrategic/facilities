@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ETH",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 8.535,
+    "lon": 39.259,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,14 +21,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "AMG Steel Factory",
-      "role": "operator",
-      "source": "Research Import ETH 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:04:41.389982",
-      "evidence": "Extracted from operator column: AMG Steel Factory"
-    }
+    "AMG Holdings",
+    "AMG Steel Factory"
   ],
   "products": [],
   "sources": [
@@ -39,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:14.298770Z",
-    "checked_by": "import_pipeline",
-    "notes": "Produces galvanized sheets, rebars, wire rods from imported feedstock.13 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:00:10Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Produces galvanized sheets, rebars, wire rods from imported feedstock.13 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:00:10Z] Geocoded via web search. Coords: (8.535, 39.259). Confidence: 0.90. Notes: Coordinates determined based on the location of the Adama Steel Factory mentioned in the search results."
   },
   "canonical_name": "AMG / Adama Steel Factory Processing Plant",
   "canonical_slug": "amg-adama-steel-factory-processing-plant",
@@ -58,5 +52,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Oromia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:01:37.000000Z",
+      "operators": [
+        "AMG Holdings"
+      ],
+      "owners": [
+        "AMG Holdings"
+      ],
+      "notes": "AMG Holdings is the parent company overseeing the Adama Steel Factory."
+    }
+  }
 }

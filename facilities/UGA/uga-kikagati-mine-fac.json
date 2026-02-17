@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.045,
+    "lon": 30.669,
+    "precision": "city"
   },
   "types": [
     "mine"
@@ -26,7 +26,9 @@
   "status": "operating",
   "company_mentions": [
     "African Panther Resources",
+    "African Panther Resources Uganda Limited",
     "Carnavale Resources Limited",
+    "NIITPA",
     "Uga Mining Kikagati",
     "Woodcross Resources"
   ],
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:12.124147Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Tin mine near Kikagati town, Isingiro District, SW Uganda"
   },
   "canonical_name": "Kikagati Mine",
   "canonical_slug": "kikagati-mine",
@@ -59,18 +61,17 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Ntungamo District",
+  "province": "Isingiro District",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:46:33.000000Z",
+      "timestamp": "2025-12-02T08:52:05.000000Z",
       "operators": [
-        "Uga Mining Kikagati",
-        "Carnavale Resources Limited"
+        "African Panther Resources Uganda Limited"
       ],
       "owners": [
         "African Panther Resources"
       ],
-      "notes": "Uga Mining Kikagati is a subsidiary of NIITPA, and Carnavale Resources Limited had previously been involved in the project."
+      "notes": "Carnavale Resources Limited previously had an agreement to acquire a stake in the Kikagati tin project."
     }
   }
 }

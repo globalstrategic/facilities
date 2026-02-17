@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-ta-khoa-nickel-project-fac",
-  "name": "**Ta Khoa Nickel Project**",
+  "name": "Ta Khoa Nickel Project",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 21.19,
+    "lon": 104.33,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,22 +21,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Blackstone Minerals",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.092349",
-      "evidence": "Extracted from operator column: Blackstone Minerals / Xuan Loc Tho JV"
-    },
-    {
-      "name": "Xuan Loc Tho JV",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.092352",
-      "evidence": "Extracted from operator column: Blackstone Minerals / Xuan Loc Tho JV"
-    }
+    "Blackstone Minerals",
+    "Blackstone Minerals Limited",
+    "Xuan Loc Tho",
+    "Xuan Loc Tho Co. Ltd.",
+    "Xuan Loc Tho JV"
   ],
   "products": [],
   "sources": [
@@ -47,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.271956Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:33:36Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:33:36Z] Geocoded via web search. Coords: (21.19, 104.33). Confidence: 0.90. Notes: Coordinates were directly extracted from the property description in the mining report."
   },
   "canonical_name": "Ta Khoa Nickel Mine",
   "canonical_slug": "ta-khoa-nickel-mine",
@@ -68,11 +57,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ta Khoa Nickel ** Mine",
+      "name": "Ta Khoa Nickel  Mine",
       "from": "2025-10-21T13:04:38.092355",
       "to": "2025-11-04T19:19:02.271952Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Son La Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:30:48.000000Z",
+      "operators": [
+        "Blackstone Minerals Limited"
+      ],
+      "owners": [
+        "Blackstone Minerals Limited",
+        "Xuan Loc Tho"
+      ],
+      "notes": "Blackstone Minerals holds a 35% interest in Ban Phuc Nickel Mines, with Xuan Loc Tho as a majority joint venture partner."
+    }
+  }
 }

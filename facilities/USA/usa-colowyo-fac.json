@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 40.241,
-    "lon": -107.831,
+    "lat": 40.34948166033452,
+    "lon": -107.76285516617112,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Colowyo Coal Company L.P.",
+    "Elk Ridge Mining and Reclamation, LLC",
+    "Tri-State Generation and Transmission Association Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.746127Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:22:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Craig, CO (https://www.gem.wiki/Colowyo_Coal_Mine). The Colowyo Mine is located approximately 26 miles southwest of Craig, CO"
   },
   "canonical_name": "Colowyo Mine",
   "canonical_slug": "colowyo-mine",
@@ -52,5 +56,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "town": "Craig, CO",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:22:58.000000Z",
+      "operators": [
+        "Colowyo Coal Company L.P.",
+        "Elk Ridge Mining and Reclamation, LLC"
+      ],
+      "owners": [
+        "Tri-State Generation and Transmission Association Inc."
+      ],
+      "notes": "Colowyo Coal Company is a subsidiary of Tri-State Generation and Transmission Association."
+    }
+  }
 }

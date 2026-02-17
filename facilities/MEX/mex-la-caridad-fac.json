@@ -8,8 +8,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 30.319,
-    "lon": -109.558,
+    "lat": 30.32111,
+    "lon": -109.55639,
     "precision": "site"
   },
   "types": [
@@ -48,7 +48,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Grupo México",
+    "Mexicana de Cobre, S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -58,11 +61,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.959413Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:36:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/La_Caridad_Mine. La Caridad Mine is a large open-pit copper mine located east of Nacozari de Garcia"
   },
   "canonical_name": "La Caridad Mine",
   "canonical_slug": "la-caridad-mine",
@@ -77,5 +80,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sonora",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:01.000000Z",
+      "operators": [
+        "Mexicana de Cobre, S.A.",
+        "Grupo México"
+      ],
+      "owners": [
+        "Grupo México"
+      ],
+      "notes": "Grupo México is the largest copper producer in Mexico and operates the mine."
+    }
+  }
 }

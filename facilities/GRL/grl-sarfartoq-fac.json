@@ -1,12 +1,12 @@
 {
   "facility_id": "grl-sarfartoq-fac",
-  "name": "**Sarfartoq**",
+  "name": "Sarfartoq",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 66.49526,
+    "lon": -52.03571,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -27,14 +27,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Hudson Resources",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.215941",
-      "evidence": "Extracted from operator column: Hudson Resources"
-    }
+    "Hudson Resources",
+    "Hudson Resources Inc.",
+    "Neo Performance Materials Inc."
   ],
   "products": [],
   "sources": [
@@ -45,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.629968Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:38:19Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:38:19Z] Geocoded via web search. Coords: (66.49526, -52.03571). Confidence: 0.90. Notes: Coordinates extracted directly from the mining facility's listing."
   },
   "canonical_name": "Sarfartoq Mine",
   "canonical_slug": "sarfartoq-mine",
@@ -66,11 +61,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sarfartoq** Mine",
+      "name": "Sarfartoq Mine",
       "from": "2025-10-29T08:01:20.215947",
       "to": "2025-11-04T19:19:00.629964Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:44:48.000000Z",
+      "operators": [
+        "Neo Performance Materials Inc."
+      ],
+      "owners": [
+        "Hudson Resources Inc."
+      ],
+      "notes": "Hudson Resources sold the exploration license to Neo Performance Materials in 2023."
+    }
+  },
+  "province": "Qeqqata"
 }

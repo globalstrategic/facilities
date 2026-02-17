@@ -11,8 +11,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.096,
-    "lon": 38.592,
+    "lat": 48.08099465,
+    "lon": 38.60120899,
     "precision": "site"
   },
   "types": [
@@ -25,7 +25,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ministry of Energy of the Donetsk People's Republic",
+    "Torezanthracite"
+  ],
   "products": [],
   "sources": [
     {
@@ -35,11 +38,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.722124Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:01:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Progress_Coal_Mine. The Progress coal mine is an underground coal mine in Donetsk Oblast, Ukraine, and is one of the few mines producing in the Donetsk People's Republic"
   },
   "canonical_name": "Progress Coal Mine",
   "canonical_slug": "progress-coal-mine",
@@ -54,5 +57,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Donetsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:01:33.000000Z",
+      "operators": [
+        "Torezanthracite"
+      ],
+      "owners": [
+        "Ministry of Energy of the Donetsk People's Republic"
+      ],
+      "notes": "Torezanthracite is owned by the Ministry of Energy of the unrecognized Donetsk People's Republic."
+    }
+  }
 }

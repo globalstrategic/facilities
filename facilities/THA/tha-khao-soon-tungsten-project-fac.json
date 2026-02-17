@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "THA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 7.872151969433532,
+    "lon": 99.7450670978197,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Pan Asia Metals Ltd",
+    "Thai Goldfields NL"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:18.493018Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:41:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Phuket City (https://thewest.com.au/business/public-companies/pan-asia-delivers-tungsten-rich-drill-intercepts-in-thailand-c-2717612). The Khao Soon Tungsten Project is located around 150 km east of Phuket City in Nakhon Si Thammarat province"
   },
   "canonical_name": "Khao Soon Tungsten Exploration",
   "canonical_slug": "khao-soon-tungsten-exploration",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nakhon Si Thammarat",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:41:56.000000Z",
+      "operators": [
+        "Pan Asia Metals Ltd"
+      ],
+      "owners": [
+        "Thai Goldfields NL",
+        "Pan Asia Metals Ltd"
+      ],
+      "notes": "Pan Asia Metals is currently the operator and has rights to the project, previously held by Thai Goldfields NL."
+    }
+  },
+  "town": "Phuket City"
 }

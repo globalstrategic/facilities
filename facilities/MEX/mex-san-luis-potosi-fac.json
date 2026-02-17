@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 22.234,
-    "lon": -100.934,
+    "lat": 22.1667,
+    "lon": -100.9736,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minera San Xavier",
+    "New Gold Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.956242Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:33:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Minera_San_Xavier. Minera San Xavier is located near Cerro de San Pedro, which is historically significant for gold mining"
   },
   "canonical_name": "San Luis Potosi Smelter",
   "canonical_slug": "san-luis-potosi-smelter-2",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "San Luis Potosí",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:33:27.000000Z",
+      "operators": [
+        "Minera San Xavier"
+      ],
+      "owners": [
+        "New Gold Inc."
+      ],
+      "notes": "Minera San Xavier is a subsidiary of New Gold Inc."
+    }
+  }
 }

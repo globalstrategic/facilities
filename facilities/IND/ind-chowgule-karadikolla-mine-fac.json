@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 15.159,
-    "lon": 76.511,
+    "lat": 15.158579,
+    "lon": 76.510773,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Chowgule and Company Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.127666Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:53:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Chowgule_Karadikolla_Mine. Chowgule Karadikolla Mine is an iron ore mine operating in Karadikolla, Karnataka, India"
   },
   "canonical_name": "Chowgule Karadikolla Mine",
   "canonical_slug": "chowgule-karadikolla-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karnataka",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:53:47.000000Z",
+      "operators": [
+        "Chowgule and Company Pvt Ltd"
+      ],
+      "owners": [
+        "Chowgule and Company Pvt Ltd"
+      ],
+      "notes": "Chowgule and Company Pvt Ltd owns 100% of the mine."
+    }
+  }
 }

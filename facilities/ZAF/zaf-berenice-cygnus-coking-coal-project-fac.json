@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -22.9028678,
-    "lon": 29.4318658,
+    "lat": -22.918841060203004,
+    "lon": 29.40649360036416,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,12 @@
     }
   ],
   "status": "planned",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bono Lithihi Investments Group",
+    "TerraCom",
+    "TerraCom Resources",
+    "Universal Coal"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +34,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:10:48.000000Z",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T17:23:46.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Berenice-Cygnus_Coal_Mine. Coordinates are approximate for the Berenice-Cygnus Coking Coal Project located near Waterpoort, Limpopo, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Berenice-Cygnus_Coal_Mine. Coordinates are approximate for the Berenice-Cygnus Coking Coal Project located near Waterpoort, Limpopo, South Africa. Web search geocoded. Source: Calculated from Musina (https://www.gem.wiki/Berenice-Cygnus_Coal_Mine). The Berenice/Cygnus project is located in the Soutpansberg Coalfield, 90km southwest of Musina"
   },
   "canonical_name": "Berenice / Cygnus Coking Coal Mine",
   "canonical_slug": "berenice-cygnus-coking-coal-mine",
@@ -48,5 +53,21 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "town": "Musina",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:23:46.000000Z",
+      "operators": [
+        "TerraCom Resources",
+        "Universal Coal"
+      ],
+      "owners": [
+        "TerraCom",
+        "Bono Lithihi Investments Group",
+        "Universal Coal"
+      ],
+      "notes": "The project is a joint venture of TerraCom Resources and various private mining companies."
+    }
+  }
 }

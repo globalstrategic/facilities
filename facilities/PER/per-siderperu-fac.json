@@ -1,11 +1,11 @@
 {
   "facility_id": "per-siderperu-fac",
-  "name": "**Siderperu**",
+  "name": "Siderperu",
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -9.1,
+    "lon": -78.6,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Gerdau",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.691072",
-      "evidence": "Extracted from operator column: Gerdau"
-    }
+    "Empresa Siderúrgica del Perú S.A.A.",
+    "Gerdau"
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.293583Z",
-    "checked_by": "import_pipeline",
-    "notes": "High. Verified asset per. EAF-based steelmaker. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:48:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "High. Verified asset per. EAF-based steelmaker. | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/SIDERPERU. Siderperu is located in Chimbote, Peru, which is known for its steel production"
   },
   "canonical_name": "Siderperu Steel Plant",
   "canonical_slug": "siderperu-steel-plant",
@@ -58,11 +52,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Siderperu** Steel Plant",
+      "name": "Siderperu Steel Plant",
       "from": "2025-10-28T21:54:37.691112",
       "to": "2025-11-04T19:19:08.293579Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Santa",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:48:02.000000Z",
+      "operators": [
+        "Empresa Siderúrgica del Perú S.A.A."
+      ],
+      "owners": [
+        "Gerdau"
+      ],
+      "notes": "Siderperu is a subsidiary of Gerdau, a Brazilian steelmaker."
+    }
+  }
 }

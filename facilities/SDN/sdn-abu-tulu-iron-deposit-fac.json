@@ -4,7 +4,7 @@
   "aliases": [],
   "country_iso3": "SDN",
   "location": {
-    "lat": 11.23333,
+    "lat": 11.233333,
     "lon": 28.0,
     "precision": "site"
   },
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ministry of Minerals, Sudan"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.161843Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:09:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/locentry-1571650.html. The Abu Tulu Iron Deposit is located east of Rig El Fala railway station in West Kordofan State, Sudan"
   },
   "canonical_name": "Abu Tulu Iron Facility",
   "canonical_slug": "abu-tulu-iron-facility",
@@ -55,5 +57,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Kordofan State",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:09:41.000000Z",
+      "operators": [],
+      "owners": [
+        "Ministry of Minerals, Sudan"
+      ],
+      "notes": "The facility is under preliminary stages of investigation by the Geological Research Authority of the Sudan."
+    }
+  }
 }

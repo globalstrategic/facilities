@@ -1,14 +1,14 @@
 {
   "facility_id": "bwa-mowana-copper-mine-fac",
-  "name": "**Mowana Copper Mine **",
+  "name": "Mowana Copper Mine ",
   "aliases": [
     "Kopano Mine"
   ],
   "country_iso3": "BWA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -20.51259,
+    "lon": 26.59895,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -30,8 +30,10 @@
     "Gregory Elias",
     "In Judicial Management",
     "Leboam Holdings (Pty) Ltd",
+    "Max Power Limited",
     "Messina Copper Botswana (Pty) Ltd",
-    "PemMin Botswana"
+    "PemMin Botswana",
+    "ZCI Ltd."
   ],
   "products": [],
   "sources": [
@@ -42,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.632036Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Copper mine at Dukwi, Central District, commissioned 2008, reopened 2017"
   },
   "canonical_name": "Mowana Copper Mine",
   "canonical_slug": "mowana-copper-mine",
@@ -63,7 +65,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Mowana Copper ** Mine",
+      "name": "Mowana Copper  Mine",
       "from": "2025-10-27T11:57:05.582797",
       "to": "2025-11-04T19:19:06.632031Z",
       "reason": "data_correction"
@@ -73,17 +75,16 @@
   "province": "North-East",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:45:19.000000Z",
+      "timestamp": "2025-12-02T10:58:05.000000Z",
       "operators": [
-        "Cupric Canyon Capital",
         "Leboam Holdings (Pty) Ltd"
       ],
       "owners": [
-        "Cupric Canyon Capital",
-        "Leboam Holdings (Pty) Ltd",
-        "Gregory Elias"
+        "Cradle Arc Plc",
+        "ZCI Ltd.",
+        "Max Power Limited"
       ],
-      "notes": "The mine has been in various states of operation and ownership, with recent activity indicating a potential restart of operations."
+      "notes": "Leboam Holdings (Pty) Ltd operates the mine, while Cradle Arc Plc is the parent company. The mine has undergone several ownership changes and has been suspended multiple times."
     }
   }
 }

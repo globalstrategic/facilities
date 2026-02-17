@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.893,
-    "lon": -77.058,
+    "lat": -9.9666944037315,
+    "lon": -77.0305912,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nexa Resources S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.327836Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:16:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (https://www.sec.gov/Archives/edgar/data/1713930/000110465920029757/a20-11584_1ex99d1.htm). The Sirena Encantadora Mine is mentioned in the context of Nexa's operations in Peru, but specific coordinates are not provided. Web search geocoded. Source: Calculated from Lima (https://www.sec.gov/Archives/edgar/data/1713930/000110465920029757/a20-11584_1ex99d1.htm). The Sirena Encantadora Mine is mentioned in the context of Nexa's operations in Peru, but specific coordinates are not provided"
   },
   "canonical_name": "Sirena Encantadora Mine",
   "canonical_slug": "sirena-encantadora-mine",
@@ -47,5 +49,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ancash",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:16:23.000000Z",
+      "operators": [
+        "Nexa Resources S.A."
+      ],
+      "owners": [
+        "Nexa Resources S.A."
+      ],
+      "notes": "Nexa operates multiple mines in Peru, including the Sirena Encantadora Mine."
+    }
+  }
 }

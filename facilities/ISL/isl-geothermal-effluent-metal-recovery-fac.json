@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "ISL",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 63.8251,
+    "lon": -22.6848,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -14,14 +14,11 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Iceland Resources",
-      "role": "operator",
-      "source": "Research Import ISL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:51:44.788218",
-      "evidence": "Extracted from operator column: Iceland Resources (St-Georges Eco-Mining Corp.)"
-    }
+    "Iceland Resources",
+    "Iceland Resources EHF",
+    "Iceland Resources ehf.",
+    "St-Georges Eco-Mining",
+    "St-Georges Eco-Mining Corp."
   ],
   "products": [],
   "sources": [
@@ -32,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:12.905076Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T13:11:53Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:11:53Z] St-Georges Eco-Mining at Reykjanes geothermal plant, SW Iceland"
   },
   "canonical_name": "Geothermal Effluent Metal Recovery Facility",
   "canonical_slug": "geothermal-effluent-metal-recovery-facility",
@@ -59,5 +56,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Reykjanes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:22:30.000000Z",
+      "operators": [
+        "St-Georges Eco-Mining Corp.",
+        "Iceland Resources EHF"
+      ],
+      "owners": [
+        "St-Georges Eco-Mining Corp."
+      ],
+      "notes": "Iceland Resources EHF is a wholly owned subsidiary of St-Georges Eco-Mining Corp."
+    }
+  }
 }

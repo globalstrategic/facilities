@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.0,
+    "lon": 63.0,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -19,7 +19,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Eurasian Resources Group"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.744549Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:20:13Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:20:13Z] Geocoded via web search. Coords: (50.0, 63.0). Confidence: 0.70. Notes: Coordinates are estimated based on the location of Kostanay, where the Korzhinkolskoye Mine is situated."
   },
   "canonical_name": "Korzhinkolskoye Mine",
   "canonical_slug": "korzhinkolskoye-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kostanay Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:45:08.000000Z",
+      "operators": [
+        "Eurasian Resources Group"
+      ],
+      "owners": [
+        "Eurasian Resources Group"
+      ],
+      "notes": "Eurasian Resources Group owns and operates the Korzhinkolskoye Mine."
+    }
+  }
 }

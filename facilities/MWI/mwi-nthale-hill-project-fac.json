@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -15.65,
+    "lon": 35.0,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Britannia Mining",
-      "role": "operator",
-      "source": "Research Import MWI 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:13:11.275894",
-      "evidence": "Extracted from operator column: Britannia Mining"
-    }
+    "Bastillion Resources",
+    "Britannia Mining"
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:59.843037Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located in Blantyre area, southern Malawi. Iron ore project."
   },
   "canonical_name": "Nthale Hill Exploration",
   "canonical_slug": "nthale-hill-exploration",
@@ -56,5 +50,17 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:37:15.000000Z",
+      "operators": [
+        "Bastillion Resources"
+      ],
+      "owners": [
+        "Britannia Mining"
+      ],
+      "notes": "Bastillion Resources is a geologist firm associated with the project, while Britannia Mining is mentioned in the context of the project."
+    }
+  }
 }

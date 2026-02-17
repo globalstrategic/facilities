@@ -7,8 +7,8 @@
   ],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -25.096,
-    "lon": 30.11,
+    "lat": -24.5,
+    "lon": 30.5,
     "precision": "site"
   },
   "types": [
@@ -49,7 +49,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Northam Platinum"
+  ],
   "products": [],
   "sources": [
     {
@@ -64,11 +66,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:35:07.776804Z",
-    "checked_by": "import_pipeline",
-    "notes": "Merged from: zaf-booysendal-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T18:04:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Merged from: zaf-booysendal-platinum-mine-fac | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://newsletter.mw.creamermedia.com/article/booysendal-south-platinum-mine-project-south-africa-update-2024-09-06. Booysendal is located about 35 km west of Mashishing, straddling the border of Limpopo and Mpumalanga"
   },
   "canonical_name": "Booysendal Mine",
   "canonical_slug": "booysendal-mine",
@@ -83,5 +85,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Mpumalanga",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:04:22.000000Z",
+      "operators": [
+        "Northam Platinum"
+      ],
+      "owners": [
+        "Northam Platinum"
+      ],
+      "notes": "Northam Platinum is the sole owner and operator of the Booysendal project."
+    }
+  }
 }

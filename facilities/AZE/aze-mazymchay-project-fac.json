@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "AZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.803,
+    "lon": 46.339,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -19,6 +19,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
+    "Anglo Asian Mining PLC",
     "AzerGold CJSC"
   ],
   "products": [],
@@ -30,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.540483Z",
-    "checked_by": "import_pipeline",
-    "notes": "Located near Filizchay. Planned commissioning in 2027. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Located near Filizchay. Planned commissioning in 2027. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Polymetallic deposit in Balakan region, 2-3km from Filizchay"
   },
   "canonical_name": "Mazymchay Mine",
   "canonical_slug": "mazymchay-mine",
@@ -50,17 +51,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Balakan District",
+  "province": "Balakan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-25T11:02:00.000000Z",
+      "timestamp": "2025-12-02T11:12:57.000000Z",
       "operators": [
-        "AzerGold CJSC"
+        "AzerGold CJSC",
+        "Anglo Asian Mining PLC"
       ],
       "owners": [
-        "AzerGold CJSC"
+        "AzerGold CJSC",
+        "Anglo Asian Mining PLC"
       ],
-      "notes": "AzerGold CJSC is a national mining company founded by the President of Azerbaijan."
+      "notes": "AzerGold CJSC is a national mining company established in 2016."
     }
   }
 }

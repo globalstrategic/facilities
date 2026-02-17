@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": -3.802,
-    "lon": 103.603,
+    "lat": -3.801805,
+    "lon": 103.602764,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Batubara Lahat"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:10.270973Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:53:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Batubara_Lahat_Coal_Mine. The Batubara Lahat Coal Mine is an operating coal mine located in South Sumatra, Indonesia"
   },
   "canonical_name": "Batubara Lahat Coal Mine",
   "canonical_slug": "batubara-lahat-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Sumatra",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:53:26.000000Z",
+      "operators": [
+        "Batubara Lahat"
+      ],
+      "owners": [
+        "Batubara Lahat"
+      ],
+      "notes": "The mine is fully owned by Batubara Lahat."
+    }
+  }
 }

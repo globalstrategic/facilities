@@ -1,11 +1,11 @@
 {
   "facility_id": "ven-fmo-las-pailas-mine-san-joaquin-fac",
-  "name": "**FMO Las Pailas Mine; San Joaquin**",
+  "name": "FMO Las Pailas Mine; San Joaquin",
   "aliases": [],
   "country_iso3": "VEN",
   "location": {
     "lat": 7.411,
-    "lon": null,
+    "lon": -66.0,
     "precision": "unknown"
   },
   "types": [
@@ -20,7 +20,9 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Freeport-McMoRan"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,7 +36,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:18:49.652221Z",
     "checked_by": "import_pipeline",
-    "notes": "Part of the FMO iron ore complex. Coordinates from initial list. | Canonical name+slug generated"
+    "notes": "Part of the FMO iron ore complex. Coordinates from initial list. | Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-66.0 (was null)"
   },
   "canonical_name": "FMO Las Pailas San Joaquin Mine",
   "canonical_slug": "fmo-las-pailas-san-joaquin-mine",
@@ -51,11 +53,22 @@
   },
   "canonical_name_history": [
     {
-      "name": "**FMO Las Pailas ; San Joaquin** Mine",
+      "name": "FMO Las Pailas ; San Joaquin Mine",
       "from": "2025-10-21T11:38:44.954168",
       "to": "2025-11-04T19:18:49.652217Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bolivar",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:28:48.000000Z",
+      "operators": [
+        "Freeport-McMoRan"
+      ],
+      "owners": [],
+      "notes": "Freeport-McMoRan is mentioned in relation to mining operations in the area."
+    }
+  }
 }

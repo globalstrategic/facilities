@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.058,
-    "lon": -78.892,
+    "lat": 41.058333,
+    "lon": -78.891667,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Original Fuels",
+    "Original Fuels Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.878973Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:59:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Yenzi_Strip_3_Coal_Mine. Yenzi Strip 3 Coal Mine is a mothballed coal mine"
   },
   "canonical_name": "Yenzi Strip 3 Coal Mine",
   "canonical_slug": "yenzi-strip-3-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pennsylvania",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:59:25.000000Z",
+      "operators": [
+        "Original Fuels Inc"
+      ],
+      "owners": [
+        "Original Fuels"
+      ],
+      "notes": "Original Fuels Inc owns 100% of the mine."
+    }
+  }
 }

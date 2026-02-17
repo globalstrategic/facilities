@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -6.34,
+    "lon": 31.07,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -27,14 +27,8 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Katavi Mining Company Limited",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.583256",
-      "evidence": "Extracted from operator column: Katavi Mining Company Limited"
-    }
+    "Al Hooqani International Group",
+    "Katavi Mining Company Limited"
   ],
   "products": [],
   "sources": [
@@ -45,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.977044Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Katavi Mines, Mpanda area. Coords: (-6.34, 31.07)"
   },
   "canonical_name": "Katavi Mines Mine",
   "canonical_slug": "katavi-mines-mine",
@@ -64,5 +58,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Katavi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:50:07.000000Z",
+      "operators": [
+        "Katavi Mining Company Limited"
+      ],
+      "owners": [
+        "Al Hooqani International Group"
+      ],
+      "notes": "Katavi Mining Company Limited is a subsidiary of Al Hooqani International Group."
+    }
+  }
 }

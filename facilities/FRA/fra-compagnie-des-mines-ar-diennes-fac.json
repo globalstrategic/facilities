@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-compagnie-des-mines-ar-diennes-fac",
-  "name": "**Compagnie des Mines Arédiennes**",
+  "name": "Compagnie des Mines Arédiennes",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 49.0,
+    "lon": 1.0,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Aquitaine Metals Corp.",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.770454",
-      "evidence": "Extracted from operator column: Aquitaine Metals Corp."
-    }
+    "Aquitaine Metals Corp.",
+    "Compagnie des Mines Arédiennes"
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.671087Z",
-    "checked_by": "import_pipeline",
-    "notes": "Holds three exploration permits over historical mining districts; broad-spectrum metal targets. 2 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:31:16Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Holds three exploration permits over historical mining districts; broad-spectrum metal targets. 2 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:31:16Z] Geocoded via web search. Coords: (49.0, 1.0). Confidence: 0.70. Notes: Coordinates are estimated based on the facility's location in the Limousin Mining District, approximately 40 km south of Limoges."
   },
   "canonical_name": "Compagnie Des Mines Arédiennes Mine",
   "canonical_slug": "compagnie-des-mines-arediennes-mine",
@@ -58,11 +52,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Compagnie des Mines Arédiennes** Mine",
+      "name": "Compagnie des Mines Arédiennes Mine",
       "from": "2025-10-28T17:18:38.770462",
       "to": "2025-11-04T19:18:51.671084Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nouvelle-Aquitaine",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:55:54.000000Z",
+      "operators": [
+        "Compagnie des Mines Arédiennes"
+      ],
+      "owners": [
+        "Aquitaine Metals Corp."
+      ],
+      "notes": "Compagnie des Mines Arédiennes is a subsidiary of Aquitaine Metals Corp."
+    }
+  }
 }

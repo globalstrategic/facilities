@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -3.95,
+    "lon": 34.25,
     "precision": "unknown"
   },
   "types": [
@@ -25,7 +25,8 @@
     "Saturn Resources Ltd.",
     "Shanta Gold",
     "Shanta Gold Limited",
-    "Shanta Mining Co. Ltd."
+    "Shanta Mining Co. Ltd.",
+    "Shanta Mining Company Limited"
   ],
   "products": [],
   "sources": [
@@ -36,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.976411Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:49:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.shantagold.com/_resources/Shanta%20Declares%20Commercial%20Production%20at%20Singida%20Gold%20Mine%20RNS.pdf. Coordinates extracted from the Sekenke Gold Mine entry, which is located in the Singida region"
   },
   "canonical_name": "Singida Mine",
   "canonical_slug": "singida-mine",
@@ -59,16 +60,14 @@
   "province": "Singida Region",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:48:09.000000Z",
+      "timestamp": "2025-12-02T08:49:56.000000Z",
       "operators": [
-        "Shanta Gold Limited",
-        "Shanta Mining Co. Ltd."
+        "Shanta Gold Limited"
       ],
       "owners": [
-        "ETC Holdings Ltd.",
-        "Saturn Resources Ltd."
+        "Shanta Gold Limited"
       ],
-      "notes": "Shanta Gold Limited operates the mine, while ownership has transitioned to ETC Holdings Ltd. through its subsidiary Saturn Resources Ltd."
+      "notes": "Shanta Gold is both the operator and owner of the Singida Gold Mine."
     }
   }
 }

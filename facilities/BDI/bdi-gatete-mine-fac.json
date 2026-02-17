@@ -1,12 +1,12 @@
 {
   "facility_id": "bdi-gatete-mine-fac",
-  "name": "**Gatete Mine**",
+  "name": "Gatete Mine",
   "aliases": [],
   "country_iso3": "BDI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.58,
+    "lon": 30.17,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -50,11 +50,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.898537Z",
-    "checked_by": "import_pipeline",
-    "notes": "An active site producing both coltan (tantalum/niobium ore) and cassiterite (tin ore) under the iTSCi program. 21 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.68,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "An active site producing both coltan (tantalum/niobium ore) and cassiterite (tin ore) under the iTSCi program. 21 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] iTSCI-certified artisanal coltan and cassiterite mine in Kirundo Province"
   },
   "canonical_name": "Gatete Mine",
   "canonical_slug": "gatete-mine",
@@ -71,7 +71,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Gatete ** Mine",
+      "name": "Gatete  Mine",
       "from": "2025-10-27T10:36:55.176622",
       "to": "2025-11-04T19:19:00.898535Z",
       "reason": "data_correction"
@@ -81,12 +81,13 @@
   "province": "Kirundo Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:37:18.000000Z",
+      "timestamp": "2025-12-02T11:10:05.000000Z",
       "operators": [
-        "Kirundo Province Tantalum Mining Co. (TAMINCO)"
+        "Kirundo Province Tantalum Mining Co. (TAMINCO)",
+        "GATETE DUSHIREHAMWE"
       ],
       "owners": [],
-      "notes": "The mine is operated by TAMINCO, but no ownership details are provided."
+      "notes": "TAMINCO is specifically mentioned as operating in the area."
     }
   }
 }

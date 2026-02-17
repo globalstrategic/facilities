@@ -1,11 +1,11 @@
 {
   "facility_id": "kor-sangdong-mine-fac",
-  "name": "**Sangdong Mine**",
+  "name": "Sangdong Mine",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 37.15,
+    "lon": 128.7,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,9 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Almonty Korea Tungsten Corp.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.517283",
-      "evidence": "Extracted from operator column: Almonty Korea Tungsten Corp."
-    }
+    "Almonty Industries Inc.",
+    "Almonty Korea Tungsten Corp.",
+    "Almonty Korea Tungsten Corporation (AKTC)"
   ],
   "products": [],
   "sources": [
@@ -32,11 +27,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.758636Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A strategically vital mine set to be a major non-Chinese source of tungsten and molybdenum. 4 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:03:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] A strategically vital mine set to be a major non-Chinese source of tungsten and molybdenum. 4 | Canonical name+slug generated. Web search geocoded. Source: Calculated from Yeongwol (https://www.mining.com/almonty-advances-sangdong-tungsten-mine-in-south-korea/). The Sangdong Mine is set to resume operations this year after being closed since the early 1990s | [COORD-FIX 2025-12-17T20:16:44Z] Changed from (35.982792926456604, 129.92815641846036) to (37.15, 128.7). Source: Sangdong mine, Gangwon Province, South Korea | [COORD-FIX 2025-12-17T20:24:33Z] Changed from (37.15, 128.7) to (37.15, 128.7). Source: Sangdong mine, Gangwon Province, South Korea | [COORD-FIX 2025-12-17T20:26:38Z] Changed from (37.15, 128.7) to (37.15, 128.7). Source: Sangdong mine, Gangwon Province, South Korea"
   },
   "canonical_name": "Sangdong Processing Plant",
   "canonical_slug": "sangdong-processing-plant",
@@ -53,11 +48,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Sangdong ** Processing Plant",
+      "name": "Sangdong  Processing Plant",
       "from": "2025-10-29T12:22:53.517285",
       "to": "2025-11-04T19:19:18.758630Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gangwon Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:03:45.000000Z",
+      "operators": [
+        "Almonty Korea Tungsten Corporation (AKTC)"
+      ],
+      "owners": [
+        "Almonty Industries Inc."
+      ],
+      "notes": "Almonty Industries acquired the mine in 2015 and established AKTC to manage operations."
+    }
+  },
+  "town": "Yeongwol"
 }

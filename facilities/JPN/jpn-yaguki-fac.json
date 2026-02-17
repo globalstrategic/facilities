@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nittetsu Mining Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:05.021990Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:20:07.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/List_of_mines_in_Japan. The Yaguki mine is noted for its historical production of tungsten and copper"
   },
   "canonical_name": "Yaguki Mine",
   "canonical_slug": "yaguki-mine",
@@ -49,5 +51,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Fukushima Prefecture",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:20:07.000000Z",
+      "operators": [
+        "Nittetsu Mining Co., Ltd."
+      ],
+      "owners": [
+        "Nittetsu Mining Co., Ltd."
+      ],
+      "notes": "Nittetsu Mining Co., Ltd. was involved in the establishment and operation of the Yaguki mine."
+    }
+  }
 }

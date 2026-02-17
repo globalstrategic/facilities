@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -34.2,
+    "lon": -70.6,
     "precision": "unknown"
   },
   "types": [
@@ -15,6 +15,7 @@
   "status": "unknown",
   "company_mentions": [
     "Amerigo Resources",
+    "Amerigo Resources Ltd.",
     "Anglo American",
     "Antofagasta Minerals",
     "BHP",
@@ -33,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.904093Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T16:55:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://investingnews.com/amerigo-s-mvc-resumes-fresh-tailings-processing/. Minera Valle Central (MVC) is located near Rancagua, Chile, and processes tailings from Codelco's El Teniente operation"
   },
   "canonical_name": "Tailings Reprocessing Initiative Mine",
   "canonical_slug": "tailings-reprocessing-initiative-mine",
@@ -53,26 +54,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Coquimbo",
+  "province": "Libertador General Bernardo O'Higgins",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:49:21.000000Z",
+      "timestamp": "2025-12-01T16:55:54.000000Z",
       "operators": [
-        "Amerigo Resources",
-        "BHP",
-        "Rio Tinto",
-        "Codelco",
-        "Antofagasta Minerals",
-        "Anglo American"
+        "Amerigo Resources Ltd."
       ],
       "owners": [
         "Codelco",
-        "Antofagasta Minerals",
-        "BHP",
-        "Rio Tinto",
-        "Anglo American"
+        "Amerigo Resources Ltd."
       ],
-      "notes": "The initiative involves collaboration among various companies and government agencies for tailings management and reprocessing."
+      "notes": "Amerigo Resources operates MVC, which processes tailings from Codelco's El Teniente mine."
     }
   }
 }

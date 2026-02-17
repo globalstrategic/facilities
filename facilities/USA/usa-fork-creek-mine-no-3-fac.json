@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.224,
-    "lon": -81.779,
+    "lat": 41.16647899215637,
+    "lon": -103.72841170348899,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal River Mining LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.860089Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T09:14:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kimball (http://www.msha.gov/data-reports/statistics/mines/wv/fork-creek-mine-no-3). The exact coordinates were not provided in the search results. Web search geocoded. Source: Calculated from Kimball (http://www.msha.gov/data-reports/statistics/mines/wv/fork-creek-mine-no-3). Exact coordinates not provided, but the mine is located 2.1 miles SW of Kimball"
   },
   "canonical_name": "Fork Creek No 3 Mine",
   "canonical_slug": "fork-creek-no-3-mine",
@@ -52,5 +54,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Kimball",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:14:57.000000Z",
+      "operators": [
+        "Coal River Mining LLC"
+      ],
+      "owners": [],
+      "notes": "No specific ownership details provided."
+    }
+  }
 }

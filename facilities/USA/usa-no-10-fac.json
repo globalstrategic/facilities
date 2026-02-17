@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.018,
-    "lon": -82.251,
+    "lat": 35.61211133552308,
+    "lon": -115.65119087622676,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "MP Materials"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.713823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:54:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Primm (https://www.mining.com/top-ten-us-miners/). The Mountain Pass facility is the only integrated rare earth mining and processing facility in North America"
   },
   "canonical_name": "No 10 Mine",
   "canonical_slug": "no-10-mine",
@@ -59,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "town": "Primm",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:54:42.000000Z",
+      "operators": [
+        "MP Materials"
+      ],
+      "owners": [
+        "MP Materials"
+      ],
+      "notes": "MP Materials acquired the Mountain Pass mine out of bankruptcy in 2017."
+    }
+  }
 }

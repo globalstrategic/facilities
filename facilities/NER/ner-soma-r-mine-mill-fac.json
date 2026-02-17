@@ -1,12 +1,12 @@
 {
   "facility_id": "ner-soma-r-mine-mill-fac",
-  "name": "**SOMAÏR Mine & Mill**",
+  "name": "SOMAÏR Mine & Mill",
   "aliases": [],
   "country_iso3": "NER",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 18.76034,
+    "lon": 7.330275,
+    "precision": "site"
   },
   "types": [
     "plant",
@@ -27,7 +27,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Orano",
+    "SOPAMIN"
+  ],
   "products": [],
   "sources": [
     {
@@ -37,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:55.801944Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:04:37Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:04:37Z] SOMAIR uranium mine near Arlit. Coords: (18.76034, 7.330275)"
   },
   "canonical_name": "Somaïr & Mine",
   "canonical_slug": "somair-mine-2",
@@ -58,11 +61,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**SOMAÏR & ** Mine",
+      "name": "SOMAÏR &  Mine",
       "from": "2025-10-27T11:12:10.009903",
       "to": "2025-11-04T19:18:55.801941Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agadez Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:30:32.000000Z",
+      "operators": [
+        "Orano"
+      ],
+      "owners": [
+        "Orano",
+        "SOPAMIN"
+      ],
+      "notes": "Orano holds a 63.4% stake in SOMAÏR, while SOPAMIN owns 36.6%. The operational control has been taken over by the Nigerien authorities."
+    }
+  }
 }

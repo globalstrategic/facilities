@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.249,
-    "lon": -87.382,
+    "lat": 39.24962904217349,
+    "lon": -87.4139119,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Black Beauty Coal Company",
+    "Peabody Energy",
+    "Peabody Indiana Services LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.744294Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T20:21:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Terre Haute (https://www.gem.wiki/Farmersburg_Mine). The Farmersburg Mine is located approximately 15 miles south of Terre Haute, Indiana"
   },
   "canonical_name": "Farmersburg Mine",
   "canonical_slug": "farmersburg-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Indiana",
+  "town": "Terre Haute",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:21:37.000000Z",
+      "operators": [
+        "Peabody Energy",
+        "Peabody Indiana Services LLC"
+      ],
+      "owners": [
+        "Black Beauty Coal Company"
+      ],
+      "notes": "Black Beauty Coal is a subsidiary of Peabody Energy."
+    }
+  }
 }

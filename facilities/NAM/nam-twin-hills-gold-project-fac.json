@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "NAM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -21.9367,
+    "lon": 15.8613,
+    "precision": "approximate"
   },
   "types": [
     "plant"
@@ -19,14 +19,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Osino Resources",
-      "role": "operator",
-      "source": "Research Import NAM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:09:29.685195",
-      "evidence": "Extracted from operator column: Osino Resources (Shanjin International Gold Co., Ltd.)"
-    }
+    "Dundee Precious Metals",
+    "Osino Resources",
+    "Osino Resources Corp.",
+    "Shanjin International Gold Co. Ltd"
   ],
   "products": [],
   "sources": [
@@ -37,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:14.552267Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Twin Hills Gold Project near Karibib, Erongo"
   },
   "canonical_name": "Twin Hills Gold Facility",
   "canonical_slug": "twin-hills-gold-facility",
@@ -64,5 +60,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Erongo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:34:34.000000Z",
+      "operators": [
+        "Osino Resources Corp.",
+        "Shanjin International Gold Co. Ltd"
+      ],
+      "owners": [
+        "Osino Resources Corp.",
+        "Shanjin International Gold Co. Ltd"
+      ],
+      "notes": "Osino Resources is in the process of being acquired by Yintai Gold Co., Ltd."
+    }
+  }
 }

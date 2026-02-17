@@ -7,8 +7,8 @@
   ],
   "country_iso3": "EGY",
   "location": {
-    "lat": 25.337,
-    "lon": 34.547,
+    "lat": 25.3366,
+    "lon": 34.6868,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Egyptian Company for Mineral Resources",
+    "Gippsland Ltd",
+    "Tantalum Egypt JSC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.178345Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T15:12:16.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Abu_Dabab_mine. Coordinates extracted from Wikipedia entry for Abu Dabbab mine"
   },
   "canonical_name": "Abu Dabbab Mine",
   "canonical_slug": "abu-dabbab-mine",
@@ -50,5 +54,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Red Sea Governorate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T15:12:16.000000Z",
+      "operators": [
+        "Tantalum Egypt JSC",
+        "Gippsland Ltd"
+      ],
+      "owners": [
+        "Egyptian Company for Mineral Resources",
+        "Gippsland Ltd"
+      ],
+      "notes": "Gippsland Ltd had a joint venture with the Egyptian state-owned company for the development of the mine."
+    }
+  }
 }

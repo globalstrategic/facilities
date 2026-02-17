@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TZA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -9.58,
+    "lon": 38.42,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -21,14 +21,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Walkabout Resources",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:30.185443",
-      "evidence": "Extracted from operator column: Walkabout Resources"
-    }
+    "Lindi Jumbo Ltd.",
+    "Walkabout Resources",
+    "Walkabout Resources Ltd",
+    "Walkabout Resources Ltd."
   ],
   "products": [],
   "sources": [
@@ -39,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:17.978126Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Walkabout Resources graphite project, Lindi Region"
   },
   "canonical_name": "Lindi Jumbo Development",
   "canonical_slug": "lindi-jumbo-development",
@@ -58,5 +54,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Lindi Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:50:26.000000Z",
+      "operators": [
+        "Walkabout Resources Ltd"
+      ],
+      "owners": [
+        "Walkabout Resources Ltd"
+      ],
+      "notes": "Walkabout Resources holds a 100% stake in the Lindi Jumbo project."
+    }
+  }
 }

@@ -1,14 +1,14 @@
 {
   "facility_id": "idn-pt-indonesia-tsingshan-stainless-steel-fac",
-  "name": "**PT Indonesia Tsingshan Stainless Steel **",
+  "name": "PT Indonesia Tsingshan Stainless Steel ",
   "aliases": [
     "ITSS"
   ],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -2.8295432,
+    "lon": 122.1551372,
+    "precision": "site"
   },
   "types": [
     "smelter",
@@ -25,14 +25,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT ITSS",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.679673",
-      "evidence": "Extracted from operator column: PT ITSS"
-    }
+    "Eternal Tsingshan Group Ltd",
+    "PT ITSS",
+    "PT Indonesia Tsingshan Stainless Steel",
+    "PT Jiu Long Metal Industry",
+    "Tsingshan Holding Group"
   ],
   "products": [],
   "sources": [
@@ -43,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.219360Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:46:27Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:46:27Z] Geocoded via web search. Coords: (-2.8295432, 122.1551372). Confidence: 0.90. Notes: Coordinates were directly extracted from the project site description in the search results."
   },
   "canonical_name": "PT Indonesia Tsingshan Stainless Steel Smelter",
   "canonical_slug": "pt-indonesia-tsingshan-stainless-steel-smelter",
@@ -64,11 +61,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT Indonesia Tsingshan Stainless Steel ** Smelter",
+      "name": "PT Indonesia Tsingshan Stainless Steel  Smelter",
       "from": "2025-10-29T10:37:55.679684",
       "to": "2025-11-04T19:19:10.219358Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Central Sulawesi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:31:17.000000Z",
+      "operators": [
+        "PT Indonesia Tsingshan Stainless Steel",
+        "PT Jiu Long Metal Industry"
+      ],
+      "owners": [
+        "Tsingshan Holding Group",
+        "Eternal Tsingshan Group Ltd"
+      ],
+      "notes": "Tsingshan Holding Group is the parent company, and PT Indonesia Tsingshan Stainless Steel is a subsidiary."
+    }
+  }
 }

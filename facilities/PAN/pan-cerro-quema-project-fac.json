@@ -1,11 +1,11 @@
 {
   "facility_id": "pan-cerro-quema-project-fac",
-  "name": "**Cerro Quema Project**",
+  "name": "Cerro Quema Project",
   "aliases": [],
   "country_iso3": "PAN",
   "location": {
-    "lat": 7.55389,
-    "lon": null,
+    "lat": 7.805042669320375,
+    "lon": -80.7456270571578,
     "precision": "unknown"
   },
   "types": [
@@ -13,28 +13,22 @@
   ],
   "commodities": [
     {
-      "metal": "**gold**",
+      "metal": "gold",
       "primary": true
     },
     {
-      "metal": "**silver**",
+      "metal": "silver",
       "primary": false
     },
     {
-      "metal": "**copper**",
+      "metal": "copper",
       "primary": false
     }
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Minera Cerro Quema, S.A.",
-      "role": "operator",
-      "source": "Research Import PAN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:58:20.832201",
-      "evidence": "Extracted from operator column: Minera Cerro Quema, S.A. (Subsidiary of Orla Mining Ltd.)"
-    }
+    "Minera Cerro Quema, S.A.",
+    "Orla Mining Ltd."
   ],
   "products": [],
   "sources": [
@@ -45,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:21.425616Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:42:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Panama City (https://resourceworld.com/orla-mining-eyes-expansion-potential-at-cerro-quema/). Cerro Quema Project is a pre-feasibility-stage heap leach gold project with exploration potential"
   },
   "canonical_name": "Cerro Quema Development",
   "canonical_slug": "cerro-quema-development",
@@ -66,11 +60,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Cerro Quema ** Development",
+      "name": "Cerro Quema  Development",
       "from": "2025-10-28T21:58:20.832237",
       "to": "2025-11-04T19:19:21.425613Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Los Santos",
+  "town": "Panama City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:42:13.000000Z",
+      "operators": [
+        "Minera Cerro Quema, S.A."
+      ],
+      "owners": [
+        "Orla Mining Ltd."
+      ],
+      "notes": "Orla Mining owns 100% of the Cerro Quema Project."
+    }
+  }
 }

@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "TKM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 45.647,
+    "lon": 68.402,
+    "precision": "region"
   },
   "types": [
     "mine"
@@ -19,7 +19,9 @@
   ],
   "status": "operating",
   "company_mentions": [
+    "JSC NAC Kazatomprom",
     "JV SMCC LLP",
+    "Joint Venture Southern Mining and Chemical Company LLP",
     "KazAtomProm",
     "Uranium One Group JSC"
   ],
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:03.071658Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:18:06Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:18:06Z] SMCC LLP at Akdala deposit and Inkai site #4, Turkestan region, Kazakhstan"
   },
   "canonical_name": "Smcc LLP JV Mine",
   "canonical_slug": "smcc-llp-jv-mine-2",
@@ -63,15 +65,15 @@
   "province": "Turkistan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-26T11:51:15.000000Z",
+      "timestamp": "2025-12-02T08:45:03.000000Z",
       "operators": [
-        "JV SMCC LLP"
+        "Joint Venture Southern Mining and Chemical Company LLP"
       ],
       "owners": [
-        "Uranium One Group JSC",
-        "KazAtomProm"
+        "JSC NAC Kazatomprom",
+        "Uranium One Group JSC"
       ],
-      "notes": "Uranium One Group JSC owns 99.99% of the shares in SMCC, with a small share of 0.01% going to JSC Logistics Center NFC."
+      "notes": "The ownership interest is 30% for Kazatomprom and 70% for Uranium One."
     }
   }
 }

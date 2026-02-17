@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -1.56667,
+    "lon": 13.2,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -27,14 +27,14 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Compagnie Minière de l'Ogooué",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.124801",
-      "evidence": "Extracted from operator column: Compagnie Minière de l'Ogooué (COMILOG)"
-    }
+    "Comilog S.A.",
+    "Compagnie Minière de l'Ogooué",
+    "Compagnie Minière de l'Ogooué (Comilog)",
+    "Compagnie Minière de l’Ogooué S.A. (Comilog)",
+    "Eramet Group",
+    "Eramet International S.A.",
+    "Government of Gabon",
+    "Société Équatoriale des Mines (SEM)"
   ],
   "products": [],
   "sources": [
@@ -45,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.388526Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:46:02Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:46:02Z] Geocoded via web search. Coords: (-1.56667, 13.2). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia page for Moanda, Gabon."
   },
   "canonical_name": "Moanda Mine",
   "canonical_slug": "moanda-mine",
@@ -64,5 +64,20 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Haut-Ogooué Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:53:33.000000Z",
+      "operators": [
+        "Comilog S.A."
+      ],
+      "owners": [
+        "Eramet Group",
+        "Société Équatoriale des Mines (SEM)",
+        "Compagnie Minière de l’Ogooué S.A. (Comilog)"
+      ],
+      "notes": "Eramet Group holds a majority stake in Comilog, which operates the Moanda Mine."
+    }
+  }
 }

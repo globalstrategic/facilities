@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "UGA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -1.15,
+    "lon": 29.8,
     "precision": "unknown"
   },
   "types": [
@@ -33,14 +33,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "KI3R Minerals Ltd.",
-      "role": "operator",
-      "source": "Uganda Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T12:59:38.621863",
-      "evidence": "Extracted from operator column: KI3R Minerals Ltd."
-    }
+    "KI3R Minerals Ltd",
+    "KI3R Minerals Ltd.",
+    "Kerilee Investments",
+    "Krone Uganda Ltd"
   ],
   "products": [],
   "sources": [
@@ -51,11 +47,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:12.126266Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:52:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Nyamuliro_mine. The Nyamuliro mine is one of the largest tungsten reserves in Uganda"
   },
   "canonical_name": "Nyamuliro Mine",
   "canonical_slug": "nyamuliro-mine",
@@ -70,5 +66,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Western Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:52:45.000000Z",
+      "operators": [
+        "KI3R Minerals Ltd",
+        "Krone Uganda Ltd"
+      ],
+      "owners": [
+        "Kerilee Investments"
+      ],
+      "notes": "KI3R Minerals Ltd took over from Krone Uganda Ltd in 2016."
+    }
+  }
 }

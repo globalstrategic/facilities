@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.0,
-    "lon": 29.0,
+    "lat": -24.31394534847152,
+    "lon": 29.0623958498853,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "Caledonia Mining Corporation",
+    "Eersteling Gold Mining Company Limited (EGMC)"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.7,
-    "last_checked": "2025-11-17T17:03:26.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:12:17.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://wp-caledoniamining-2020.s3.eu-west-2.amazonaws.com/media/2019/02/CALPres051209.pdf. The Rooipoort Platinum Project is located to the south of Mokopane in the Limpopo Province, South Africa"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://wp-caledoniamining-2020.s3.eu-west-2.amazonaws.com/media/2019/02/CALPres051209.pdf. The Rooipoort Platinum Project is located to the south of Mokopane in the Limpopo Province, South Africa. Web search geocoded. Source: Calculated from Eersteling Gold Mine (https://www.proactiveinvestors.com/companies/news/26081/kentor-gold-to-progress-geothermal-energy-opportunity-in-the-solomon-islands-26081.html). The Rooipoort Platinum Project is located approximately 30 km southwest of the Eersteling Gold Mine"
   },
   "canonical_name": "Rooipoort Platinum Mine",
   "canonical_slug": "rooipoort-platinum-mine",
@@ -48,5 +51,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "town": "Eersteling Gold Mine",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:12:17.000000Z",
+      "operators": [
+        "Eersteling Gold Mining Company Limited (EGMC)",
+        "Caledonia Mining Corporation"
+      ],
+      "owners": [
+        "Caledonia Mining Corporation"
+      ],
+      "notes": "EGMC is a 100% owned subsidiary of Caledonia Mining Corporation, which holds the prospecting rights for the Rooipoort project."
+    }
+  }
 }

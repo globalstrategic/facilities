@@ -1,12 +1,12 @@
 {
   "facility_id": "geo-tsana-deposit-fac",
-  "name": "**Tsana Deposit**",
+  "name": "Tsana Deposit",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 42.8809,
+    "lon": 43.1455,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -45,11 +45,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.726754Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Historic arsenic mine in Lentekhi District"
   },
   "canonical_name": "Tsana Mine",
   "canonical_slug": "tsana-mine",
@@ -66,7 +66,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Tsana ** Mine",
+      "name": "Tsana  Mine",
       "from": "2025-10-28T21:01:00.241215",
       "to": "2025-11-04T19:19:01.726748Z",
       "reason": "data_correction"

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "LBR",
   "location": {
-    "lat": 7.445,
-    "lon": -8.641,
+    "lat": 7.445486,
+    "lon": -8.640608,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Liberia Ltd",
+    "ArcelorMittal SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:17.724258Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:07:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Liberia_Western_Range_Complex_Mine. The mine is an iron ore facility located in Zolowee, Nimba County, Liberia"
   },
   "canonical_name": "Arcelormittal Liberia Western Range Mine",
   "canonical_slug": "arcelormittal-liberia-western-range-mine",
@@ -56,5 +59,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nimba County",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:07:52.000000Z",
+      "operators": [
+        "ArcelorMittal Liberia Ltd"
+      ],
+      "owners": [
+        "ArcelorMittal SA"
+      ],
+      "notes": "ArcelorMittal SA owns 85% of the facility, while ArcelorMittal Liberia Ltd operates it."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "UKR",
   "location": {
-    "lat": 48.055,
-    "lon": 39.689,
+    "lat": 48.0145201,
+    "lon": 39.7236443,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "DTEK Energy B.V.",
+    "DTEK Sverdlovanthracite LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:54.739152Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:08:58.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Dovzhanska-Kapitalna_Coal_Mine. The mine was seized by pro-Russian separatists in 2017 and DTEK Sverdlovanthracite LLC was declared bankrupt in 2020"
   },
   "canonical_name": "Dtek Sverdlovanthracite Mine",
   "canonical_slug": "dtek-sverdlovanthracite-mine",
@@ -58,5 +61,17 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Luhansk",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:08:58.000000Z",
+      "operators": [],
+      "owners": [
+        "DTEK Sverdlovanthracite LLC",
+        "DTEK Energy B.V."
+      ],
+      "notes": "DTEK Sverdlovanthracite LLC was a subsidiary of DTEK Energy B.V."
+    }
+  }
 }

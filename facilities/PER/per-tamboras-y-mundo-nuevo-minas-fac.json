@@ -7,9 +7,9 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -8.051,
-    "lon": -77.97,
-    "precision": "site"
+    "lat": -8.2672086,
+    "lon": -77.8536168,
+    "precision": "locality"
   },
   "types": [
     "mine"
@@ -41,7 +41,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compañía Minera - Milpo S.A.A.",
+    "VM Holding S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -51,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.321761Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:11:29.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (https://minedocs.com/21/Magistral-PEA-08022017.pdf). The facility is part of the Magistral Project, which consists of 34 concessions covering an area of approximately 14,340.29 ha"
   },
   "canonical_name": "Tamboras Y Mundo Nuevo, Minas Mine",
   "canonical_slug": "tamboras-y-mundo-nuevo-minas-mine",
@@ -70,5 +73,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ancash",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:11:29.000000Z",
+      "operators": [
+        "Compañía Minera - Milpo S.A.A."
+      ],
+      "owners": [
+        "VM Holding S.A."
+      ],
+      "notes": "Milpo operates several mines in Peru and is listed on the Lima Stock Exchange."
+    }
+  }
 }

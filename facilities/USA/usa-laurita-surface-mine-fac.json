@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.552,
-    "lon": -80.065,
+    "lat": 39.517222,
+    "lon": -80.179444,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "James L Laurita Jr",
+    "LP Mineral, LLC",
+    "Thomas A Laurita"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.834167Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:20:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2022/index.php?record_id=COAL-4609050. The Laurita Surface Mine is associated with the Barrackville Refuse Pile, which is currently active"
   },
   "canonical_name": "Laurita Surface Mine",
   "canonical_slug": "laurita-surface-mine",
@@ -47,5 +51,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:20:34.000000Z",
+      "operators": [
+        "LP Mineral, LLC"
+      ],
+      "owners": [
+        "Thomas A Laurita",
+        "James L Laurita Jr"
+      ],
+      "notes": "The mine is operated by LP Mineral, LLC, and controlled by the Laurita family."
+    }
+  }
 }

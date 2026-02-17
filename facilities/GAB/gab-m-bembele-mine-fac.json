@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -0.5,
+    "lon": 9.5,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -24,14 +24,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Cie. Industrielle et Commerciale des Mines de Huazhou",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.170176",
-      "evidence": "Extracted from operator column: Cie. Industrielle et Commerciale des Mines de Huazhou (CICMHZ)"
-    }
+    "CITIC Dameng Holdings Ltd.",
+    "Cie. Industrielle et Commerciale des Mines de Huazhou",
+    "Compagnie Industrielle et Commerciale des Mines de Huazhou (CICMHZ)",
+    "Guangxi Jinmeng",
+    "Ningbo Huazhou Mining Investment Co. Ltd."
   ],
   "products": [],
   "sources": [
@@ -42,11 +39,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.390456Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:46:37Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:46:37Z] Geocoded via web search. Coords: (-0.5, 9.5). Confidence: 0.90. Notes: Coordinates are estimated based on the mention of the M'Bembele Mine being located near the town of Ndjole."
   },
   "canonical_name": "M'bembele Mine",
   "canonical_slug": "m-bembele-mine",
@@ -69,5 +66,20 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Moyen-Ogooué",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:54:02.000000Z",
+      "operators": [
+        "Guangxi Jinmeng",
+        "Compagnie Industrielle et Commerciale des Mines de Huazhou (CICMHZ)"
+      ],
+      "owners": [
+        "CITIC Dameng Holdings Ltd.",
+        "Ningbo Huazhou Mining Investment Co. Ltd."
+      ],
+      "notes": "The mine is a joint venture between CITIC Dameng Holdings Ltd. (51%) and Ningbo Huazhou Mining Investment Co. Ltd. (49%)."
+    }
+  }
 }

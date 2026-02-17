@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-binh-thuan-mine-fac",
-  "name": "**Binh Thuan Mine**",
+  "name": "Binh Thuan Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 10.933,
+    "lon": 108.1,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Not Specified",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.098142",
-      "evidence": "Extracted from operator column: Not Specified"
-    }
+    "Binh Dinh New Zealand Gold Company",
+    "Not Specified",
+    "Olympus Pacific Minerals Inc."
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.276676Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:34:58Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:34:58Z] Geocoded via web search. Coords: (10.933, 108.1). Confidence: 0.90. Notes: Coordinates extracted directly from the content of the search results."
   },
   "canonical_name": "Binh Thuan Mine",
   "canonical_slug": "binh-thuan-mine",
@@ -60,11 +55,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Binh Thuan ** Mine",
+      "name": "Binh Thuan  Mine",
       "from": "2025-10-21T13:04:38.098149",
       "to": "2025-11-04T19:19:02.276672Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bình Thuận",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:33:01.000000Z",
+      "operators": [
+        "Olympus Pacific Minerals Inc.",
+        "Binh Dinh New Zealand Gold Company"
+      ],
+      "owners": [
+        "Olympus Pacific Minerals Inc."
+      ],
+      "notes": "Olympus may earn 75 percent equity in the Tien Thuan Project through funding exploration."
+    }
+  }
 }

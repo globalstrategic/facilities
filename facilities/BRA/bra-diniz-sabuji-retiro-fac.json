@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "BRA",
   "location": {
-    "lat": -6.448,
-    "lon": -37.332,
+    "lat": -6.255996324861454,
+    "lon": -37.0971911,
     "precision": "site"
   },
   "types": [
@@ -28,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:47.203441Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T10:58:59.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Caico (https://thediggings.com/mines/usgs10062090). The facility is listed as a tungsten mine in the search results. Web search geocoded. Source: Calculated from Caico (https://thediggings.com/mines/usgs10062090). The facility is located near Caico, Brazil, but exact coordinates are not provided"
   },
   "canonical_name": "Diniz, Sabuji, Retiro Mine",
   "canonical_slug": "diniz-sabuji-retiro-mine",
@@ -47,5 +47,7 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rio Grande Do Norte",
+  "town": "Caico"
 }

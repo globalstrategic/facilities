@@ -18,7 +18,13 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Anglo American plc",
+    "Hotazel Manganese Mines Pty Ltd",
+    "Samancor Manganese",
+    "South32 Group Operations Pty. Ltd.",
+    "South32 Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,9 +36,9 @@
   "verification": {
     "status": "web_search_geocoded",
     "confidence": 0.9,
-    "last_checked": "2025-11-17T15:18:18.000000Z",
+    "last_checked": "2025-12-01T17:41:40.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Wessels_mine. Coordinates extracted directly from the Wikipedia page for Wessels Mine"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Wessels_mine. Coordinates extracted directly from the Wikipedia page for Wessels Mine. Web search geocoded. Source: https://en.wikipedia.org/wiki/Wessels_mine. Wessels mine is one of the largest manganese reserves in South Africa"
   },
   "canonical_name": "Wessels Mine",
   "canonical_slug": "wessels-mine",
@@ -48,5 +54,20 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:41:40.000000Z",
+      "operators": [
+        "South32 Group Operations Pty. Ltd.",
+        "Hotazel Manganese Mines Pty Ltd"
+      ],
+      "owners": [
+        "Samancor Manganese",
+        "South32 Ltd",
+        "Anglo American plc"
+      ],
+      "notes": "Samancor Manganese is a joint venture with South32 holding 60% and Anglo American plc holding 40%."
+    }
+  }
 }

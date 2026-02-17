@@ -9,8 +9,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 41.344,
-    "lon": -118.054,
+    "lat": 41.27924157515393,
+    "lon": -118.14246001077241,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Jumbo Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.730965Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:10:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Winnemucca (https://wiki.blackrockdesert.org/wiki/Jumbo_Mine). The Jumbo Mine is a former gold mine located in the Slumbering Hills region, 30 miles northwest of Winnemucca"
   },
   "canonical_name": "Jumbo Mine",
   "canonical_slug": "jumbo-mine",
@@ -52,5 +54,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Winnemucca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:10:03.000000Z",
+      "operators": [],
+      "owners": [
+        "Jumbo Mining Company"
+      ],
+      "notes": "The Jumbo Mine was previously owned by George Austin and later had various ownership changes."
+    }
+  }
 }

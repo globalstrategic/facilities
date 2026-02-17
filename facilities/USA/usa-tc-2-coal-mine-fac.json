@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.421,
-    "lon": -82.531,
+    "lat": 37.416944,
+    "lon": -82.518889,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Rapid FM Coal, LLC",
+    "Rapid NRG USA, Inc",
+    "Tackett Creek Mining"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.840615Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:25:27.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://grconnect.com/coal100/ry2021/index.php?record_id=COAL-1519903. Coordinates extracted directly from the mining report"
   },
   "canonical_name": "TC 2 Coal Mine",
   "canonical_slug": "tc-2-coal-mine",
@@ -51,5 +55,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:25:27.000000Z",
+      "operators": [
+        "Rapid FM Coal, LLC"
+      ],
+      "owners": [
+        "Rapid NRG USA, Inc",
+        "Tackett Creek Mining"
+      ],
+      "notes": "Tackett Creek Mining is the operator, while Rapid NRG USA, Inc is the owner."
+    }
+  }
 }

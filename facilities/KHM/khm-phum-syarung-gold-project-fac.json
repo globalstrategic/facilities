@@ -1,12 +1,12 @@
 {
   "facility_id": "khm-phum-syarung-gold-project-fac",
-  "name": "**Phum Syarung Gold Project**",
+  "name": "Phum Syarung Gold Project",
   "aliases": [],
   "country_iso3": "KHM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 13.4,
+    "lon": 106.2,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -33,14 +33,11 @@
   ],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "Mesco Gold Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import KHM 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:07.372888",
-      "evidence": "Extracted from operator column: Mesco Gold (Cambodia) Co. Ltd."
-    }
+    "Angkor Gold Corp.",
+    "Mesco Gold (Cambodia) Co. Ltd.",
+    "Mesco Gold Co. Ltd.",
+    "Mesco Gold Ltd.",
+    "Mesco Steel Ltd."
   ],
   "products": [],
   "sources": [
@@ -51,11 +48,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.255247Z",
-    "checked_by": "import_pipeline",
-    "notes": "Plant construction halted at \\~20% in 2020\\. Company has faced environmental penalties. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Plant construction halted at \\~20% in 2020\\. Company has faced environmental penalties. | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] Underground gold mine in O'Yadav district, Ratanakiri Province"
   },
   "canonical_name": "Phum Syarung Gold Mine",
   "canonical_slug": "phum-syarung-gold-mine",
@@ -72,11 +69,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Phum Syarung Gold ** Mine",
+      "name": "Phum Syarung Gold  Mine",
       "from": "2025-10-29T12:22:07.372896",
       "to": "2025-11-04T19:18:46.255245Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ratanakiri Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:08:04.000000Z",
+      "operators": [
+        "Mesco Gold (Cambodia) Co. Ltd."
+      ],
+      "owners": [
+        "Mesco Steel Ltd."
+      ],
+      "notes": "Mesco Gold is a subsidiary of Mesco Steel Ltd. of India. The project was previously owned by Angkor Gold Corp."
+    }
+  }
 }

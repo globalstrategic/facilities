@@ -1,12 +1,12 @@
 {
   "facility_id": "fin-umicore-cobalt-refinery-fac",
-  "name": "**Umicore Cobalt Refinery**",
+  "name": "Umicore Cobalt Refinery",
   "aliases": [],
   "country_iso3": "FIN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 63.8385,
+    "lon": 23.1307,
+    "precision": "site"
   },
   "types": [
     "refinery",
@@ -15,14 +15,10 @@
   "commodities": [],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Umicore Finland Oy",
-      "role": "operator",
-      "source": "Research Import FIN 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:16:23.779693",
-      "evidence": "Extracted from operator column: Umicore Finland Oy"
-    }
+    "Freeport-McMoRan",
+    "Freeport-McMoRan Inc.",
+    "Umicore",
+    "Umicore Finland Oy"
   ],
   "products": [],
   "sources": [
@@ -33,11 +29,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:54.191360Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Umicore Cobalt Refinery, Kokkola Industrial Park"
   },
   "canonical_name": "Umicore Cobalt Refinery",
   "canonical_slug": "umicore-cobalt-refinery",
@@ -54,11 +50,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Umicore Cobalt ** Refinery",
+      "name": "Umicore Cobalt  Refinery",
       "from": "2025-10-28T17:16:23.779697",
       "to": "2025-11-04T19:18:54.191357Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Finland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:58:35.000000Z",
+      "operators": [
+        "Umicore"
+      ],
+      "owners": [
+        "Umicore",
+        "Freeport-McMoRan"
+      ],
+      "notes": "Umicore acquired the refinery from Freeport-McMoRan in 2019."
+    }
+  }
 }

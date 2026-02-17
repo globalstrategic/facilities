@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "KAZ",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 48.277487568425855,
+    "lon": 74.1811272,
     "precision": "unknown"
   },
   "types": [
@@ -26,7 +26,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Cove Capital",
+    "Cove Capital LLC",
+    "Cove Kaz Capital Group LLC",
+    "Tau-Ken Samruk"
+  ],
   "products": [],
   "sources": [
     {
@@ -36,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.750363Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T09:14:52.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Karaganda (https://www.webull.com/news/13812085225284608). The North Katpar Deposit is part of the Northern Katpar and Upper Kairakty projects located in the Karaganda mining district"
   },
   "canonical_name": "North Katpar Mine",
   "canonical_slug": "north-katpar-mine",
@@ -55,5 +60,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Karaganda",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:14:52.000000Z",
+      "operators": [
+        "Cove Kaz Capital Group LLC",
+        "Tau-Ken Samruk"
+      ],
+      "owners": [
+        "Cove Capital LLC",
+        "Tau-Ken Samruk"
+      ],
+      "notes": "Cove Kaz Capital Group LLC owns 70% and Tau-Ken Samruk retains 30% ownership."
+    }
+  },
+  "town": "Karaganda"
 }

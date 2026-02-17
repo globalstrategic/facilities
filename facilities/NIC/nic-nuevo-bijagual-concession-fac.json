@@ -1,12 +1,12 @@
 {
   "facility_id": "nic-nuevo-bijagual-concession-fac",
-  "name": "**Nuevo Bijagual Concession**",
+  "name": "Nuevo Bijagual Concession",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 13.740528,
+    "lon": -84.781162,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -26,7 +26,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nicaragua Xinxin Linze Mining Group",
+    "Zhong Fu Development, S. A."
+  ],
   "products": [],
   "sources": [
     {
@@ -38,9 +41,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.45,
-    "last_checked": "2025-11-04T19:18:55.278424Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:50:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [GEOCODED 2025-12-18T00:50:57Z] Coordinates found via web search (using regional/city coords). Lat: 13.740528, Lon: -84.781162"
   },
   "canonical_name": "Nuevo Bijagual Concession Exploration",
   "canonical_slug": "nuevo-bijagual-concession-exploration",
@@ -57,11 +60,23 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Nuevo Bijagual Concession** Exploration",
+      "name": "Nuevo Bijagual Concession Exploration",
       "from": "2025-10-29T21:57:47.083807",
       "to": "2025-11-04T19:18:55.278421Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Caribbean",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:26:02.000000Z",
+      "operators": [
+        "Nicaragua Xinxin Linze Mining Group"
+      ],
+      "owners": [],
+      "notes": "The concession was awarded to Nicaragua Xinxin Linze Mining Group for the exploitation of metallic and non-metallic minerals."
+    }
+  },
+  "town": "Siuna/Mulukuku"
 }

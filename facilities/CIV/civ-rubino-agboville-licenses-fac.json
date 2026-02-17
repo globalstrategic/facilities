@@ -1,12 +1,12 @@
 {
   "facility_id": "civ-rubino-agboville-licenses-fac",
-  "name": "**Rubino/Agboville Licenses**",
+  "name": "Rubino/Agboville Licenses",
   "aliases": [],
   "country_iso3": "CIV",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 5.935,
+    "lon": -4.223,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -23,6 +23,8 @@
   "company_mentions": [
     "Atlantic Lithium",
     "Atlantic Lithium Limited",
+    "Atlantic Lithium Ltd",
+    "Atlantic Lithium Ltd.",
     "Khaleesi Resources SARL"
   ],
   "products": [],
@@ -34,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:04.460626Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:04:26Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:04:26Z] Geocoded via web search. Coords: (5.935, -4.223). Confidence: 0.90. Notes: Coordinates extracted directly from the Wikipedia entry for Agboville."
   },
   "canonical_name": "Rubino/agboville Licenses Exploration",
   "canonical_slug": "rubino-agboville-licenses-exploration",
@@ -55,7 +57,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Rubino/Agboville Licenses** Exploration",
+      "name": "Rubino/Agboville Licenses Exploration",
       "from": "2025-10-27T13:21:36.052706",
       "to": "2025-11-04T19:19:04.460624Z",
       "reason": "data_correction"
@@ -65,12 +67,15 @@
   "province": "Agnéby-Tiassa",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T14:52:31.000000Z",
+      "timestamp": "2025-12-02T10:24:55.000000Z",
       "operators": [
-        "Atlantic Lithium"
+        "Atlantic Lithium Ltd.",
+        "Khaleesi Resources SARL"
       ],
-      "owners": [],
-      "notes": "Atlantic Lithium is focused on the development of the Rubino and Agboville licenses."
+      "owners": [
+        "Atlantic Lithium Ltd."
+      ],
+      "notes": "Atlantic Lithium Ltd. owns the licenses through its subsidiary Khaleesi Resources SARL."
     }
   }
 }

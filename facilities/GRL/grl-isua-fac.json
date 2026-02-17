@@ -1,11 +1,11 @@
 {
   "facility_id": "grl-isua-fac",
-  "name": "**Isua**",
+  "name": "Isua",
   "aliases": [],
   "country_iso3": "GRL",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 64.5,
+    "lon": -50.0,
     "precision": "unknown"
   },
   "types": [
@@ -14,14 +14,8 @@
   "commodities": [],
   "status": "suspended",
   "company_mentions": [
-    {
-      "name": "General Nice",
-      "role": "operator",
-      "source": "Research Import GRL 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T08:01:20.216928",
-      "evidence": "Extracted from operator column: General Nice (former)"
-    }
+    "General Nice",
+    "General Nice Resources (Hong Kong) Ltd"
   ],
   "products": [],
   "sources": [
@@ -32,11 +26,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:00.630431Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:57:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Isua_Iron_Ore_Project_Mine. The Isua iron mine is located approximately 100 km from Nuuk, near Nuup Kangerlua (Godthåbsfjord)"
   },
   "canonical_name": "Isua Mine",
   "canonical_slug": "isua-mine",
@@ -53,11 +47,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Isua** Mine",
+      "name": "Isua Mine",
       "from": "2025-10-29T08:01:20.216931",
       "to": "2025-11-04T19:19:00.630426Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Greenland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:57:51.000000Z",
+      "operators": [
+        "General Nice Resources (Hong Kong) Ltd"
+      ],
+      "owners": [
+        "General Nice Resources (Hong Kong) Ltd"
+      ],
+      "notes": "General Nice acquired the Isua mine from London Mining, which went bankrupt."
+    }
+  }
 }

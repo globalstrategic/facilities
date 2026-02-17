@@ -10,8 +10,8 @@
   ],
   "country_iso3": "PER",
   "location": {
-    "lat": -6.977,
-    "lon": -78.511,
+    "lat": -7.5,
+    "lon": -78.5,
     "precision": "site"
   },
   "types": [
@@ -28,7 +28,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Compania de Minas Buenaventura S.A.A.",
+    "Newmont Corporation",
+    "Newmont Mining Corporation",
+    "Sumitomo Corporation"
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +43,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.327108Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:15:37.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://operations.newmont.com/latin-america/yanacocha-peru. Yanacocha is the largest gold mine in Latin America, located in the Cajamarca region of Peru. Web search geocoded. Source: https://operations.newmont.com/latin-america/yanacocha-peru. Yanacocha is the largest gold mine in South America, located in the Cajamarca region"
   },
   "canonical_name": "Yanacocha Mine",
   "canonical_slug": "yanacocha-mine",
@@ -57,5 +62,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Cajamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:15:37.000000Z",
+      "operators": [
+        "Newmont Mining Corporation"
+      ],
+      "owners": [
+        "Newmont Mining Corporation",
+        "Compania de Minas Buenaventura S.A.A.",
+        "Sumitomo Corporation"
+      ],
+      "notes": "Newmont is the sole owner and operator as of 2022 after acquiring all noncontrolling interests."
+    }
+  }
 }

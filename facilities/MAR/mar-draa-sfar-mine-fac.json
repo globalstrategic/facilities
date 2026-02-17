@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MAR",
   "location": {
-    "lat": 31.71125,
-    "lon": -8.13536,
+    "lat": 31.70869206544481,
+    "lon": -8.086136436773922,
     "precision": "unknown"
   },
   "types": [
@@ -30,7 +30,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "CMG (Compagnie Minière de Guemassa)",
+    "Managem Group SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,10 +44,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-25T08:39:02.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:14:40.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.geoscienceworld.org/cim/emg/article/11/1-4/99/60974/Resource-Estimation-for-the-Draa-Sfar-South. Coordinates extracted from a technical document specifying the exact location of the Draa Sfar mine"
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.geoscienceworld.org/cim/emg/article/11/1-4/99/60974/Resource-Estimation-for-the-Draa-Sfar-South. Coordinates extracted from a technical document specifying the exact location of the Draa Sfar mine. Web search geocoded. Source: Calculated from Marrakech (http://www.managemgroup.com/en/taxonomy/term/57). Draa Sfar Mine is located in the Moroccan Meseta VMS Province, 13 km NW of Marrakech"
   },
   "canonical_name": "Draa Sfar Mine",
   "canonical_slug": "draa-sfar-mine-2",
@@ -60,5 +63,19 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Marrakech-Safi"
+  "province": "Marrakech-Safi",
+  "town": "Marrakech",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:14:40.000000Z",
+      "operators": [
+        "CMG (Compagnie Minière de Guemassa)",
+        "Managem Group SA"
+      ],
+      "owners": [
+        "Managem Group SA"
+      ],
+      "notes": "The mine is operated by CMG, a subsidiary of Managem Group."
+    }
+  }
 }

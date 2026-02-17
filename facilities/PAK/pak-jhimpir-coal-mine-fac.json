@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PAK",
   "location": {
-    "lat": 25.024,
-    "lon": 68.006,
+    "lat": 25.0239198,
+    "lon": 68.0058109,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sindh Lakhra Coal Mining Co",
+    "Sindh Lakhra Coal Mining Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:03.341602Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:40:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Jhimpir_Coal_Mine. Jhimpir Coal Mine is a mothballed coal mine with significant coal reserves"
   },
   "canonical_name": "Jhimpir Coal Mine",
   "canonical_slug": "jhimpir-coal-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sindh",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:40:35.000000Z",
+      "operators": [
+        "Sindh Lakhra Coal Mining Company"
+      ],
+      "owners": [
+        "Sindh Lakhra Coal Mining Co"
+      ],
+      "notes": "The mine is owned and operated by the Sindh Lakhra Coal Mining Company."
+    }
+  }
 }

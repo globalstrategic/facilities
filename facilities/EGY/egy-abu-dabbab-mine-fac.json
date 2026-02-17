@@ -1,11 +1,11 @@
 {
   "facility_id": "egy-abu-dabbab-mine-fac",
-  "name": "**Abu Dabbab Mine**",
+  "name": "Abu Dabbab Mine",
   "aliases": [],
   "country_iso3": "EGY",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 25.3402,
+    "lon": 34.543,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Tantalum International Ltd.",
-      "role": "operator",
-      "source": "Research Import EGY 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T16:22:57.158709",
-      "evidence": "Extracted from operator column: Tantalum International Ltd. (Dispute Settled)"
-    }
+    "Egyptian Company for Mineral Resources",
+    "Gippsland Ltd",
+    "Tantalum International Ltd."
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:07.180565Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:21:48.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://thediggings.com/mines/usgs10158883. Abu Dabbab Mine is one of the largest tantalum reserves in Egypt"
   },
   "canonical_name": "Abu Dabbab Mine",
   "canonical_slug": "abu-dabbab-mine-2",
@@ -60,11 +55,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Abu Dabbab ** Mine",
+      "name": "Abu Dabbab  Mine",
       "from": "2025-10-28T16:22:57.158716",
       "to": "2025-11-04T19:19:07.180561Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Red Sea Governorate",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:21:48.000000Z",
+      "operators": [
+        "Gippsland Ltd",
+        "Tantalum International Ltd."
+      ],
+      "owners": [
+        "Egyptian Company for Mineral Resources"
+      ],
+      "notes": "The project was halted in 2015 and the exploration license was revoked."
+    }
+  }
 }

@@ -1,11 +1,11 @@
 {
   "facility_id": "per-falchani-project-fac",
-  "name": "**Falchani Project**",
+  "name": "Falchani Project",
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -14.236047079562631,
+    "lon": -71.46712154585042,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,8 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "American Lithium Corp.",
-      "role": "operator",
-      "source": "Research Import PER 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:54:37.803791",
-      "evidence": "Extracted from operator column: American Lithium Corp."
-    }
+    "American Lithium Corp.",
+    "Macusani Yellowcake S.A.C."
   ],
   "products": [],
   "sources": [
@@ -37,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:08.318154Z",
-    "checked_by": "import_pipeline",
-    "notes": "High. Key strategic project for Li-U. Not in production. | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-02T08:09:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "High. Key strategic project for Li-U. Not in production. | Canonical name+slug generated. Web search geocoded. Source: Calculated from Lima (https://www.nsenergybusiness.com/projects/falchani-lithium-project-peru/). The Falchani Project is located in the Carabaya Province, Puno District of south-eastern Peru. Web search geocoded. Source: Calculated from Lima (https://www.nsenergybusiness.com/projects/falchani-lithium-project-peru/). The Falchani Project is located in the Carabaya Province, Puno District of south-eastern Peru"
   },
   "canonical_name": "Falchani Development",
   "canonical_slug": "falchani-development",
@@ -58,11 +52,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Falchani ** Development",
+      "name": "Falchani  Development",
       "from": "2025-10-28T21:54:37.803868",
       "to": "2025-11-04T19:19:08.318151Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno",
+  "town": "Lima",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:09:01.000000Z",
+      "operators": [
+        "Macusani Yellowcake S.A.C."
+      ],
+      "owners": [
+        "American Lithium Corp.",
+        "Macusani Yellowcake S.A.C."
+      ],
+      "notes": "American Lithium owns 99.5% of Macusani Yellowcake, which operates the project."
+    }
+  }
 }

@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.829,
-    "lon": -85.661,
+    "lat": 37.8290753,
+    "lon": -85.6611244,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tackett Mining Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.883626Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:03:08.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Underground_Mine_1_(KY). Underground Mine #1 is an operating coal mine in Pike County, Kentucky"
   },
   "canonical_name": "1 Mine",
   "canonical_slug": "1-mine-3",
@@ -58,5 +60,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:03:08.000000Z",
+      "operators": [
+        "Tackett Mining Inc"
+      ],
+      "owners": [
+        "Tackett Mining Inc"
+      ],
+      "notes": "Tackett Mining Inc is the sole owner and operator of the facility."
+    }
+  }
 }

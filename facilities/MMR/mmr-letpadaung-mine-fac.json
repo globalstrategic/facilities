@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MMR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown",
+    "lat": 22.083,
+    "lon": 95.091,
+    "precision": "site",
     "description": "Myanmar include the Bawdwin Mine in Shan State"
   },
   "types": [
@@ -36,14 +36,14 @@
   ],
   "status": "planned",
   "company_mentions": [
-    {
-      "name": "Myanmar Yang Tse Copper Ltd.",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.6,
-      "first_seen": "2025-10-21T09:24:04.637527",
-      "evidence": "Extracted from text"
-    }
+    "China North Industries Group Corp. (Norinco)",
+    "Myanmar Wanbao Mining Copper Limited",
+    "Myanmar Yang Tse Copper Ltd.",
+    "Myanmar government",
+    "Union of Myanmar Economic Holdings Limited",
+    "Union of Myanmar Economic Holdings Ltd (UMEHL)",
+    "Wanbao Mining Co Ltd",
+    "Wanbao Mining Ltd."
   ],
   "products": [],
   "sources": [
@@ -54,11 +54,11 @@
     }
   ],
   "verification": {
-    "status": "llm_suggested",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:08.866254Z",
-    "checked_by": "import_pipeline_text_extraction",
-    "notes": "Sabetaung & Kyisintaung (S&K) Mines: These are older mines within the complex, previously operated by a Canadian firm, Ivanhoe Mines, before its divestment. They are now operated by Myanmar Yang Tse C | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T02:11:19Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Sabetaung & Kyisintaung (S&K) Mines: These are older mines within the complex, previously operated by a Canadian firm, Ivanhoe Mines, before its divestment. They are now operated by Myanmar Yang Tse C | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:11:19Z] Letpadaung copper mine, Monywa. Coords: (22.083, 95.091)"
   },
   "canonical_name": "Letpadaung Mine",
   "canonical_slug": "letpadaung-mine",
@@ -73,5 +73,21 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Sagaing Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:47:51.000000Z",
+      "operators": [
+        "Myanmar Wanbao Mining Copper Limited",
+        "Wanbao Mining Ltd."
+      ],
+      "owners": [
+        "Wanbao Mining Co Ltd",
+        "Union of Myanmar Economic Holdings Limited",
+        "Myanmar government"
+      ],
+      "notes": "The mine is operated by a subsidiary of Wanbao Mining, which is a joint venture with military-owned MEHL."
+    }
+  }
 }

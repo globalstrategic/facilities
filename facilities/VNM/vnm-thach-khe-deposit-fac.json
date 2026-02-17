@@ -1,11 +1,11 @@
 {
   "facility_id": "vnm-thach-khe-deposit-fac",
-  "name": "**Thach Khe Deposit**",
+  "name": "Thach Khe Deposit",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 18.408665,
+    "lon": 105.959388,
     "precision": "unknown"
   },
   "types": [
@@ -21,14 +21,9 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Not Specified",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.145588",
-      "evidence": "Extracted from operator column: Not Specified"
-    }
+    "Not Specified",
+    "Thach Khe Iron Ore Joint Stock Company (TIC)",
+    "Thachkhe Iron Ore JSC"
   ],
   "products": [],
   "sources": [
@@ -39,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.280938Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T18:28:03.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/TIC_Thach_Khe_Mine. The Thach Khe Deposit is located in Thạch Hà District, Hà Tĩnh Province, Vietnam"
   },
   "canonical_name": "Thach Khe Mine",
   "canonical_slug": "thach-khe-mine",
@@ -60,11 +55,24 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Thach Khe ** Mine",
+      "name": "Thach Khe  Mine",
       "from": "2025-10-21T13:04:38.145596",
       "to": "2025-11-04T19:19:02.280936Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hà Tĩnh Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:28:03.000000Z",
+      "operators": [
+        "Thach Khe Iron Ore Joint Stock Company (TIC)"
+      ],
+      "owners": [
+        "Thachkhe Iron Ore JSC"
+      ],
+      "notes": "The mine has been suspended since 2011 due to financial challenges."
+    }
+  }
 }

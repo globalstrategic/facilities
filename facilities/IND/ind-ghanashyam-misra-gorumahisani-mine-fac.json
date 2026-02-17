@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.313,
-    "lon": 86.277,
+    "lat": 22.312576,
+    "lon": 86.276566,
     "precision": "site"
   },
   "types": [
@@ -19,7 +19,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ghanashyam Misra & Sons Pvt Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.127959Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:54:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Ghanashyam_Misra_Gorumahisani_Mine. The Ghanashyam Misra Gorumahisani Mine is an iron ore mine located in Gorumahisani, Odisha, India"
   },
   "canonical_name": "Ghanashyam Misra Gorumahisani Mine",
   "canonical_slug": "ghanashyam-misra-gorumahisani-mine",
@@ -48,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:54:06.000000Z",
+      "operators": [
+        "Ghanashyam Misra & Sons Pvt Ltd"
+      ],
+      "owners": [
+        "Ghanashyam Misra & Sons Pvt Ltd"
+      ],
+      "notes": "Ghanashyam Misra & Sons Pvt Ltd is both the operator and owner of the mine."
+    }
+  }
 }

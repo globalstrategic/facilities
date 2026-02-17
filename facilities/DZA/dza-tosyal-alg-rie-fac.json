@@ -6,8 +6,8 @@
   ],
   "country_iso3": "DZA",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 35.634,
+    "lon": -0.634,
     "precision": "unknown"
   },
   "types": [
@@ -17,6 +17,7 @@
   "status": "operating",
   "company_mentions": [
     "Tosyali Holding",
+    "Tosyali Industrie du Fer et de l’Acier Algérie",
     "Tosyali Iron Steel Industry Algerie A.Ş.",
     "Tosyalı Holding"
   ],
@@ -29,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:05.573823Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:07:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/myb/vol3/2017-18/myb3-2017-18-algeria.pdf. Tosyali Algérie is located in the industrial zone of Bethioua, which is approximately 40 km east of Oran"
   },
   "canonical_name": "Tosyalı Algérie Mine",
   "canonical_slug": "tosyal-algerie-mine",
@@ -52,14 +53,14 @@
   "province": "Oran Province",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:07:44.000000Z",
+      "timestamp": "2025-12-02T10:07:31.000000Z",
       "operators": [
-        "Tosyali Iron Steel Industry Algerie A.Ş."
+        "Tosyali Industrie du Fer et de l’Acier Algérie"
       ],
       "owners": [
         "Tosyali Holding"
       ],
-      "notes": "Tosyali Algérie is a subsidiary of Tosyali Holding, which is based in Turkey."
+      "notes": "Tosyali Algérie is a subsidiary of Tosyali Holding, a Turkish company."
     }
   }
 }

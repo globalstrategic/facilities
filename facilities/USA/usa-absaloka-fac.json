@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 45.805,
-    "lon": -107.083,
+    "lat": 30.3040008328112,
+    "lon": -93.90177556111345,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Crow Tribe",
+    "Westmoreland Absaloka Mining LLC",
+    "Westmoreland Resources Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.866579Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T21:48:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Hardin (https://www.coalage.com/features/back-from-the-brink/). The Absaloka mine is located approximately 30 miles east of Hardin, Montana, on the Crow Indian Reservation"
   },
   "canonical_name": "Absaloka Mine",
   "canonical_slug": "absaloka-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Montana",
+  "town": "Hardin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:48:46.000000Z",
+      "operators": [
+        "Westmoreland Absaloka Mining LLC"
+      ],
+      "owners": [
+        "Westmoreland Resources Inc.",
+        "Crow Tribe"
+      ],
+      "notes": "The mine is owned by the Crow Tribe, with Westmoreland Absaloka Mining LLC operating it."
+    }
+  }
 }

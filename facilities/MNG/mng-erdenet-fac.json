@@ -9,8 +9,8 @@
   ],
   "country_iso3": "MNG",
   "location": {
-    "lat": 49.026,
-    "lon": 104.133,
+    "lat": 49.02778,
+    "lon": 104.04444,
     "precision": "site"
   },
   "types": [
@@ -31,7 +31,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Erdenet Mining Corporation",
+    "Government of Mongolia"
+  ],
   "products": [],
   "sources": [
     {
@@ -41,11 +44,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.457059Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:19:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Erdenet_Mining_Corporation. Erdenet Mining Corporation is one of the largest copper mines in the world and is state-owned"
   },
   "canonical_name": "Erdenet Mine",
   "canonical_slug": "erdenet-mine",
@@ -60,5 +63,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Orkhon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:19:19.000000Z",
+      "operators": [
+        "Erdenet Mining Corporation"
+      ],
+      "owners": [
+        "Government of Mongolia"
+      ],
+      "notes": "The mine is fully owned by the Government of Mongolia."
+    }
+  }
 }

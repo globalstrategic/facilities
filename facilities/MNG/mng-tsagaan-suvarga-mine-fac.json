@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 43.86111,
+    "lon": 108.33611,
     "precision": "unknown"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Mongolyn Alt Corporation",
+    "Mongolyn Alt MAK LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:07.450470Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:15:26.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Tsagaan_Suvarga_mine. The Tsagaan Suvarga mine is a copper ore deposit and mine in development located in the Mandakh sum of Dornogovi aimag in Mongolia"
   },
   "canonical_name": "Tsagaan Suvarga Mine",
   "canonical_slug": "tsagaan-suvarga-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Dornogovi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:15:26.000000Z",
+      "operators": [
+        "Mongolyn Alt Corporation",
+        "Mongolyn Alt MAK LLC"
+      ],
+      "owners": [
+        "Mongolyn Alt Corporation"
+      ],
+      "notes": "Mongolyn Alt Corporation is the primary owner and operator of the mine."
+    }
+  }
 }

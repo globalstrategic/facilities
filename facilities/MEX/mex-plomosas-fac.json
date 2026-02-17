@@ -6,8 +6,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 29.079,
-    "lon": -105.244,
+    "lat": 29.71952096975765,
+    "lon": -106.076745,
     "precision": "site"
   },
   "types": [
@@ -32,7 +32,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Consolidated Zinc Limited",
+    "Impact Silver Corp.",
+    "Minera Latin America Zinc S.A.P.I de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -42,11 +46,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:21.964739Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:41:18.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Chihuahua City (https://www.mexicominingcenter.com/czl-completes-100-acquisition-of-plomosas-mine/). Plomosas is a high-grade zinc-lead-silver mine with a history of production and recent acquisition by Impact Silver"
   },
   "canonical_name": "Plomosas Mine",
   "canonical_slug": "plomosas-mine",
@@ -61,5 +65,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Chihuahua",
+  "town": "Chihuahua City",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:41:18.000000Z",
+      "operators": [
+        "Impact Silver Corp.",
+        "Minera Latin America Zinc S.A.P.I de C.V."
+      ],
+      "owners": [
+        "Consolidated Zinc Limited",
+        "Impact Silver Corp."
+      ],
+      "notes": "Impact Silver acquired the mine from Consolidated Zinc, which previously held a 100% interest."
+    }
+  }
 }

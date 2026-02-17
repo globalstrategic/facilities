@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MNG",
   "location": {
-    "lat": 43.232,
-    "lon": 101.047,
+    "lat": 43.23171212,
+    "lon": 101.0473018,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Usukh Zoos LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:07.460576Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:21:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Khuren_Shand_Coal_Mine. Khuren Shand Coal Mine is an operating coal mine in Mongolia"
   },
   "canonical_name": "Khuren Shand Coal Mine",
   "canonical_slug": "khuren-shand-coal-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Umnugobi Aimag",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:21:55.000000Z",
+      "operators": [
+        "Usukh Zoos LLC"
+      ],
+      "owners": [
+        "Usukh Zoos LLC"
+      ],
+      "notes": "Usukh Zoos LLC is the sole owner and operator of the Khuren Shand Coal Mine."
+    }
+  }
 }

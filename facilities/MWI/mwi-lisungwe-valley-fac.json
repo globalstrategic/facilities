@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -15.5,
+    "lon": 34.5,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -37,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.845115Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T22:06:38Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T22:06:38Z] Geocoded via web search. Coords: (-15.5, 34.5). Confidence: 0.70. Notes: Coordinates derived from the description of the Lisungwe Valley area and its proximity to the Lisungwe river."
   },
   "canonical_name": "Lisungwe Valley Facility",
   "canonical_slug": "lisungwe-valley-facility",
@@ -64,5 +64,6 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ntcheu"
 }

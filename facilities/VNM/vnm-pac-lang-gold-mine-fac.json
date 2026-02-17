@@ -1,12 +1,12 @@
 {
   "facility_id": "vnm-pac-lang-gold-mine-fac",
-  "name": "**Pac Lang Gold Mine**",
+  "name": "Pac Lang Gold Mine",
   "aliases": [],
   "country_iso3": "VNM",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 22.4,
+    "lon": 105.85,
+    "precision": "district"
   },
   "types": [
     "mine"
@@ -21,14 +21,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Previously JV including ARV and VIMICO",
-      "role": "operator",
-      "source": "Deep Research 2025",
-      "confidence": 0.7,
-      "first_seen": "2025-10-21T13:04:38.133645",
-      "evidence": "Extracted from operator column: Previously JV including ARV (UK) and VIMICO"
-    }
+    "ARV Company (UK)",
+    "Bac Kan Minerals Joint Stock Company",
+    "Phuoc Son Gold Company Limited",
+    "Previously JV including ARV and VIMICO",
+    "Vietnam Minerals Corporation"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:02.276322Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Gold deposit in Ngan Son District, Bac Kan Province"
   },
   "canonical_name": "Pac Lang Gold Mine",
   "canonical_slug": "pac-lang-gold-mine",
@@ -60,11 +57,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Pac Lang Gold ** Mine",
+      "name": "Pac Lang Gold  Mine",
       "from": "2025-10-21T13:04:38.133656",
       "to": "2025-11-04T19:19:02.276319Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Bac Kan",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:32:44.000000Z",
+      "operators": [
+        "Phuoc Son Gold Company Limited"
+      ],
+      "owners": [
+        "ARV Company (UK)",
+        "Vietnam Minerals Corporation",
+        "Bac Kan Minerals Joint Stock Company"
+      ],
+      "notes": "Phuoc Son Gold Company Limited is currently licensed to exploit gold in the area."
+    }
+  }
 }

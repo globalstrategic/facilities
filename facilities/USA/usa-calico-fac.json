@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 34.967,
-    "lon": -116.868,
+    "lat": 40.91543855125435,
+    "lon": -109.65193940867535,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Apollo Silver Corp.",
+    "LAC Exploration LLC",
+    "Stronghold Silver USA Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.741630Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:19:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Daggett (https://apollosilver.com/apollo-silver-expands-calico-project-land-package-by-over-285/). The Calico Project is associated with Apollo Silver Corp. and is located near Daggett, California"
   },
   "canonical_name": "Calico Mine",
   "canonical_slug": "calico-mine",
@@ -47,5 +51,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "California",
+  "town": "Daggett",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:19:21.000000Z",
+      "operators": [
+        "Stronghold Silver USA Corp.",
+        "Apollo Silver Corp."
+      ],
+      "owners": [
+        "Apollo Silver Corp.",
+        "LAC Exploration LLC"
+      ],
+      "notes": "Apollo Silver Corp. is actively developing the Calico Project, having recently expanded its land package."
+    }
+  }
 }

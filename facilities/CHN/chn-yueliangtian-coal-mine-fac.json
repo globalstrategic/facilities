@@ -7,8 +7,8 @@
   ],
   "country_iso3": "CHN",
   "location": {
-    "lat": 25.922,
-    "lon": 104.5,
+    "lat": 25.9561,
+    "lon": 104.51,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Panjiang Coal and Electricity Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +33,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:46.788045Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T10:38:01.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mdpi.com/2075-163X/6/2/29. Coordinates extracted from the description of the Yueliangtian Coal Mine's location"
   },
   "canonical_name": "Yueliangtian Coal Mine",
   "canonical_slug": "yueliangtian-coal-mine",
@@ -50,5 +52,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guizhou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:38:01.000000Z",
+      "operators": [
+        "Panjiang Coal and Electricity Company"
+      ],
+      "owners": [],
+      "notes": "Only the operator is mentioned in the search results."
+    }
+  }
 }

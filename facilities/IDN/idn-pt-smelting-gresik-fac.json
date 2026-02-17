@@ -1,11 +1,11 @@
 {
   "facility_id": "idn-pt-smelting-gresik-fac",
-  "name": "**PT Smelting Gresik**",
+  "name": "PT Smelting Gresik",
   "aliases": [],
   "country_iso3": "IDN",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -6.975014506397237,
+    "lon": 112.7377674,
     "precision": "unknown"
   },
   "types": [
@@ -22,14 +22,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "PT Smelting",
-      "role": "operator",
-      "source": "Research Import IDN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T10:37:55.546664",
-      "evidence": "Extracted from operator column: PT Smelting"
-    }
+    "Mitsubishi Corporation",
+    "Mitsubishi Materials",
+    "Nippon Mining and Metals Co. Ltd.",
+    "PT Freeport Indonesia",
+    "PT Smelting"
   ],
   "products": [],
   "sources": [
@@ -40,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.273629Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:54:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Surabaya (http://www.sulphuric-acid.com/sulphuric-acid-on-the-web/acid%20plants/PT%20Smelting%20-%20Gresik.htm). The facility is located 30 kilometers north of Surabaya, but exact coordinates are not provided"
   },
   "canonical_name": "PT Smelting Gresik Smelter",
   "canonical_slug": "pt-smelting-gresik-smelter",
@@ -61,11 +58,28 @@
   },
   "canonical_name_history": [
     {
-      "name": "**PT Smelting Gresik** Smelter",
+      "name": "PT Smelting Gresik Smelter",
       "from": "2025-10-29T10:37:55.546678",
       "to": "2025-11-04T19:19:10.273626Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "East Java",
+  "town": "Surabaya",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:54:53.000000Z",
+      "operators": [
+        "PT Smelting"
+      ],
+      "owners": [
+        "Mitsubishi Materials",
+        "PT Freeport Indonesia",
+        "Mitsubishi Corporation",
+        "Nippon Mining and Metals Co. Ltd."
+      ],
+      "notes": "Mitsubishi Materials owns 60.5% of PT Smelting, with PT Freeport Indonesia holding a 25% stake."
+    }
+  }
 }

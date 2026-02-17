@@ -6,7 +6,7 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 27.369,
+    "lat": 27.368,
     "lon": -112.297,
     "precision": "site"
   },
@@ -28,7 +28,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Camrova Resources Inc.",
+    "Korea Mine Rehabilitation and Mineral Resources Corp. (KOMIR)",
+    "Minera y Metalúrgica del Boleo, S.A. P.I. de C.V."
+  ],
   "products": [],
   "sources": [
     {
@@ -38,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.963559Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:40:06.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.linkedin.com/company/mmboleo. The Boleo project is located on the east coast of the Baja California Peninsula, near Santa Rosalía"
   },
   "canonical_name": "Boleo Mine",
   "canonical_slug": "boleo-mine",
@@ -57,5 +61,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Baja California Sur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:40:06.000000Z",
+      "operators": [
+        "Minera y Metalúrgica del Boleo, S.A. P.I. de C.V."
+      ],
+      "owners": [
+        "Korea Mine Rehabilitation and Mineral Resources Corp. (KOMIR)",
+        "Camrova Resources Inc."
+      ],
+      "notes": "KOMIR holds an 88.06% stake, while Camrova Resources Inc. holds a 6.71% stake."
+    }
+  }
 }

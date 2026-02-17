@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MEX",
   "location": {
-    "lat": 21.684,
-    "lon": -103.784,
+    "lat": 21.064319138234875,
+    "lon": -101.08164747977523,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Endeavour Silver Corp.",
+    "Guanajuato Silver Company Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:21.948537Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:27:47.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Guanajuato (https://finance.yahoo.com/news/guanajuato-silver-acquire-bolanitos-gold-115000865.html). The Bolanitos mine is located near Guanajuato, Mexico, and is being acquired by Guanajuato Silver Company Ltd. from Endeavour Silver Corp"
   },
   "canonical_name": "Bolanos Mine",
   "canonical_slug": "bolanos-mine",
@@ -47,5 +50,21 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Guanajuato",
+  "town": "Guanajuato",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:27:47.000000Z",
+      "operators": [
+        "Guanajuato Silver Company Ltd.",
+        "Endeavour Silver Corp."
+      ],
+      "owners": [
+        "Guanajuato Silver Company Ltd.",
+        "Endeavour Silver Corp."
+      ],
+      "notes": "Guanajuato Silver is in the process of acquiring the mine from Endeavour Silver."
+    }
+  }
 }

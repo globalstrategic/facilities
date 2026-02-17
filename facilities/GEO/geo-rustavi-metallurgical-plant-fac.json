@@ -1,11 +1,11 @@
 {
   "facility_id": "geo-rustavi-metallurgical-plant-fac",
-  "name": "**Rustavi Metallurgical Plant**",
+  "name": "Rustavi Metallurgical Plant",
   "aliases": [],
   "country_iso3": "GEO",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": 41.46260446514086,
+    "lon": 44.7883066,
     "precision": "unknown"
   },
   "types": [
@@ -29,14 +29,7 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Rustavi Steel LLC",
-      "role": "operator",
-      "source": "Research Import GEO 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T21:01:00.212255",
-      "evidence": "Extracted from operator column: Rustavi Steel LLC"
-    }
+    "Rustavi Steel LLC"
   ],
   "products": [],
   "sources": [
@@ -47,11 +40,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:01.721939Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:46:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tbilisi (https://www.hunnewellpartners.com/rustavi/). The Rustavi Metallurgical Plant is located 30 km south of Tbilisi, the capital of Georgia"
   },
   "canonical_name": "Rustavi Metallurgical Plant",
   "canonical_slug": "rustavi-metallurgical-plant",
@@ -68,11 +61,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Rustavi Metallurgical ** Plant",
+      "name": "Rustavi Metallurgical  Plant",
       "from": "2025-10-28T21:01:00.212261",
       "to": "2025-11-04T19:19:01.721929Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kvemo Kartli",
+  "town": "Tbilisi",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:46:00.000000Z",
+      "operators": [
+        "Rustavi Steel LLC"
+      ],
+      "owners": [
+        "Rustavi Steel LLC"
+      ],
+      "notes": "Rustavi Steel LLC was established in 2011 to acquire the assets of the Rustavi Metallurgical Plant."
+    }
+  }
 }

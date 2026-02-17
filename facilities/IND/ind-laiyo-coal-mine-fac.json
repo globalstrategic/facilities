@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "IND",
   "location": {
-    "lat": 23.79,
-    "lon": 85.625,
+    "lat": 23.7814,
+    "lon": 85.6064,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Coal India Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.115899Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:14:41.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://wikimapia.org/14512896/LAIYO-COLWARY-EDIT-BY-SAHENDRA-MUNDA. The Laiyo Coal Mine is located near the Bokaro River and is surrounded by notable geographical features"
   },
   "canonical_name": "Laiyo Coal Mine",
   "canonical_slug": "laiyo-coal-mine",
@@ -47,5 +49,16 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:28:33.000000Z",
+      "operators": [],
+      "owners": [
+        "Coal India Limited"
+      ],
+      "notes": "Coal India Limited is the primary owner mentioned in the context of coal mining in India."
+    }
+  }
 }

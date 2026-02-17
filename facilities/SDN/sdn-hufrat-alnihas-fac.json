@@ -6,9 +6,9 @@
   ],
   "country_iso3": "SDN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 9.75,
+    "lon": 24.3167,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -20,7 +20,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Ariab Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -30,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:57.163413Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T11:41:46Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T11:41:46Z] Historic copper mine 'Copper Pit' in South Darfur"
   },
   "canonical_name": "Hufrat Alnihas Facility",
   "canonical_slug": "hufrat-alnihas-facility",
@@ -57,5 +59,16 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "South Darfur",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:32:28.000000Z",
+      "operators": [
+        "Ariab Company"
+      ],
+      "owners": [],
+      "notes": "Ariab Company is in contact with international banks and funding firms to begin exploitation of the copper reserve."
+    }
+  }
 }

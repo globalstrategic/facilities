@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
-Advanced multi-source geocoding system for mining facilities.
+Unified geocoding system for mining facilities.
+
+Consolidates:
+- Advanced multi-source geocoding (Overpass, Wikidata, Mindat, Nominatim)
+- Geohash encoding utilities
+- Persistent geocoding cache
 
 Architecture:
     Source Priority (cheap → robust):
@@ -23,13 +28,13 @@ Architecture:
     - Precision labels: site-level, city-level, region-level
 
 Usage:
-    from scripts.utils.geocoding_v2 import AdvancedGeocoder
+    from scripts.utils.geocoding import AdvancedGeocoder, encode_geohash, GeocodeCache
 
+    # Geocoding
     geocoder = AdvancedGeocoder(
         use_overpass=True,
         use_wikidata=True,
-        use_mindat=True,
-        use_web_search=False,  # Requires API keys
+        use_nominatim=True,
         cache_results=True
     )
 
@@ -40,14 +45,21 @@ Usage:
         aliases=["JV Inkai", "Blocks 1-3"]
     )
 
-    print(f"Coords: {result.lat}, {result.lon}")
-    print(f"Precision: {result.precision}")
-    print(f"Source: {result.source}")
-    print(f"Confidence: {result.confidence}")
+    # Geohash encoding
+    geohash = encode_geohash(-25.7479, 28.2293, precision=7)  # 'ke7w8v5'
+
+    # Caching
+    with GeocodeCache() as cache:
+        cached = cache.get(lat, lon)
+        if not cached:
+            cache.set(lat, lon, address_dict)
 """
 
+import io
 import re
 import time
+import shutil
+import tempfile
 import os
 import requests
 from datetime import datetime, timezone
@@ -59,6 +71,329 @@ import json
 from functools import lru_cache
 
 logger = logging.getLogger(__name__)
+
+# Optional pandas import for caching
+try:
+    import pandas as pd
+except ImportError:
+    pd = None
+
+
+# =============================================================================
+# Geohash Encoding (from geo.py)
+# =============================================================================
+
+_GEOHASH_BASE32 = "0123456789bcdefghjkmnpqrstuvwxyz"
+
+
+def encode_geohash(lat: float, lon: float, precision: int = 7) -> str:
+    """
+    Encode coordinates as geohash (standard algorithm, no external deps).
+
+    Args:
+        lat: Latitude (-90 to 90)
+        lon: Longitude (-180 to 180)
+        precision: Number of geohash characters (default: 7)
+
+    Returns:
+        Geohash string (e.g., "dr5regw" for Statue of Liberty)
+
+    Examples:
+        >>> encode_geohash(40.6892, -74.0445, precision=7)
+        'dr5regw'
+        >>> encode_geohash(-25.7479, 28.2293, precision=7)  # Pretoria
+        'ke7w8v5'
+    """
+    lat_interval = [-90.0, 90.0]
+    lon_interval = [-180.0, 180.0]
+    bits = [16, 8, 4, 2, 1]
+    ch = 0
+    bit = 0
+    even = True
+    geohash = []
+
+    while len(geohash) < precision:
+        if even:
+            mid = sum(lon_interval) / 2
+            if lon > mid:
+                ch |= bits[bit]
+                lon_interval[0] = mid
+            else:
+                lon_interval[1] = mid
+        else:
+            mid = sum(lat_interval) / 2
+            if lat > mid:
+                ch |= bits[bit]
+                lat_interval[0] = mid
+            else:
+                lat_interval[1] = mid
+        even = not even
+        if bit < 4:
+            bit += 1
+        else:
+            geohash.append(_GEOHASH_BASE32[ch])
+            bit = 0
+            ch = 0
+    return "".join(geohash)
+
+
+# =============================================================================
+# Geocode Cache (from geocode_cache.py)
+# =============================================================================
+
+GEOCODE_CACHE_DEFAULT_PATH = os.path.join("data", "geocode_cache.parquet")
+
+
+@dataclass
+class _CacheStats:
+    hits: int = 0
+    misses: int = 0
+    loads: int = 0
+    saves: int = 0
+    pruned: int = 0
+
+
+class GeocodeCache:
+    """
+    Persistent cache for Nominatim reverse geocoding.
+
+    Keyed by (lat_r, lon_r, zoom), where lat/lon are rounded to `precision` decimals (~11m at precision=4).
+    Values are dicts with:
+      - 'address' (full Nominatim address dict)
+      - 'town','city','municipality','village','hamlet' (flattened for convenience)
+      - 'ts' ISO timestamp
+
+    Usage:
+        with GeocodeCache() as cache:
+            cached = cache.get(lat, lon)
+            if not cached:
+                address = reverse_geocode_via_nominatim(lat, lon)
+                cache.set(lat, lon, address)
+    """
+
+    def __init__(
+        self,
+        path: str = GEOCODE_CACHE_DEFAULT_PATH,
+        ttl_days: int = 365,
+        precision: int = 4,
+        default_zoom: int = 10,
+        prefer_parquet: bool = True
+    ):
+        from datetime import timedelta
+        self.path = path
+        self.ttl = timedelta(days=ttl_days)
+        self.precision = precision
+        self.zoom = default_zoom
+        self.prefer_parquet = prefer_parquet
+        self._df = None
+        self._stats = _CacheStats()
+        os.makedirs(os.path.dirname(self.path) if os.path.dirname(self.path) else '.', exist_ok=True)
+
+    def __enter__(self):
+        self._load()
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self._prune()
+        self._save()
+
+    def get(self, lat: float, lon: float, zoom: Optional[int] = None) -> Optional[Dict[str, Any]]:
+        """Return address dict if present and not expired; else None."""
+        key = self._key(lat, lon, zoom)
+        row = self._lookup_row(key)
+        if row is None:
+            self._stats.misses += 1
+            return None
+
+        if self._expired(row["ts"]):
+            self._stats.misses += 1
+            return None
+
+        self._stats.hits += 1
+        return row["address"]
+
+    def set(self, lat: float, lon: float, address: Dict[str, Any], zoom: Optional[int] = None) -> None:
+        """Insert/update cache entry for (lat, lon, zoom)."""
+        now_iso = datetime.utcnow().isoformat() + "Z"
+        key = self._key(lat, lon, zoom)
+        flat = self._flatten_address(address)
+        record = {
+            "lat_r": key[0],
+            "lon_r": key[1],
+            "zoom": key[2],
+            "town": flat.get("town"),
+            "city": flat.get("city"),
+            "municipality": flat.get("municipality"),
+            "village": flat.get("village"),
+            "hamlet": flat.get("hamlet"),
+            "address": address,
+            "ts": now_iso,
+        }
+        if pd is not None:
+            if self._df is None:
+                self._df = pd.DataFrame([record])
+            else:
+                mask = (
+                    (self._df["lat_r"] == record["lat_r"]) &
+                    (self._df["lon_r"] == record["lon_r"]) &
+                    (self._df["zoom"] == record["zoom"])
+                )
+                if mask.any():
+                    self._df.loc[mask, list(record.keys())] = record
+                else:
+                    self._df.loc[len(self._df)] = record
+        else:
+            if self._df is None:
+                self._df = []
+            self._df.append(record)
+
+    def _key(self, lat: float, lon: float, zoom: Optional[int]) -> Tuple[float, float, int]:
+        return (round(float(lat), self.precision), round(float(lon), self.precision), int(zoom or self.zoom))
+
+    def _flatten_address(self, addr: Dict[str, Any]) -> Dict[str, Optional[str]]:
+        get = addr.get
+        return {
+            "town": get("town"),
+            "city": get("city"),
+            "municipality": get("municipality"),
+            "village": get("village"),
+            "hamlet": get("hamlet"),
+        }
+
+    def _expired(self, ts_iso: str) -> bool:
+        try:
+            ts = datetime.fromisoformat(ts_iso.replace("Z", "+00:00"))
+            if ts.tzinfo is not None:
+                ts = ts.replace(tzinfo=None)
+        except Exception:
+            return True
+        return (datetime.utcnow() - ts) > self.ttl
+
+    def _lookup_row(self, key: Tuple[float, float, int]) -> Optional[Dict[str, Any]]:
+        if self._df is None:
+            return None
+        lat_r, lon_r, zoom = key
+        if pd is not None:
+            mask = (
+                (self._df["lat_r"] == lat_r) &
+                (self._df["lon_r"] == lon_r) &
+                (self._df["zoom"] == zoom)
+            )
+            if not mask.any():
+                return None
+            row = self._df[mask].iloc[-1].to_dict()
+            return row
+        else:
+            for row in reversed(self._df):
+                if row["lat_r"] == lat_r and row["lon_r"] == lon_r and row["zoom"] == zoom:
+                    return row
+            return None
+
+    def _prune(self):
+        """Drop expired rows; update stats."""
+        if self._df is None:
+            return
+        if pd is not None:
+            before = len(self._df)
+            self._df = self._df[~self._df["ts"].map(self._expired)]
+            self._stats.pruned += (before - len(self._df))
+        else:
+            before = len(self._df)
+            self._df = [r for r in self._df if not self._expired(r["ts"])]
+            self._stats.pruned += (before - len(self._df))
+
+    def stats(self) -> Dict[str, Any]:
+        size = 0 if self._df is None else (len(self._df) if pd is None else int(self._df.shape[0]))
+        return {
+            "size": size,
+            "hits": self._stats.hits,
+            "misses": self._stats.misses,
+            "loads": self._stats.loads,
+            "saves": self._stats.saves,
+            "pruned": self._stats.pruned,
+            "path": self.path,
+            "ttl_days": int(self.ttl.total_seconds() // 86400),
+            "precision": self.precision,
+            "zoom": self.zoom,
+            "backend": "parquet" if (pd is not None and self.prefer_parquet) else "jsonl",
+        }
+
+    def _load(self):
+        """Load existing cache from disk if present."""
+        if not os.path.exists(self.path):
+            alt = self.path.rsplit(".", 1)[0] + ".jsonl"
+            if os.path.exists(alt):
+                self._load_jsonl(alt)
+            else:
+                self._df = (pd.DataFrame(columns=[
+                    "lat_r", "lon_r", "zoom", "town", "city", "municipality", "village", "hamlet", "address", "ts"
+                ]) if pd is not None else [])
+            return
+
+        try:
+            if pd is not None and self.prefer_parquet:
+                self._df = pd.read_parquet(self.path)
+            else:
+                self._load_jsonl(self.path.rsplit(".", 1)[0] + ".jsonl")
+            self._stats.loads += 1
+        except Exception:
+            self._df = (pd.DataFrame(columns=[
+                "lat_r", "lon_r", "zoom", "town", "city", "municipality", "village", "hamlet", "address", "ts"
+            ]) if pd is not None else [])
+
+    def _save(self):
+        """Persist cache to disk (atomic write)."""
+        if self._df is None:
+            return
+        tmpdir = tempfile.mkdtemp(prefix="geocache_")
+        try:
+            if pd is not None and self.prefer_parquet:
+                tmp_path = os.path.join(tmpdir, "cache.parquet")
+                df = self._df.copy()
+                if not df.empty:
+                    df["address"] = df["address"].map(lambda x: json.dumps(x) if isinstance(x, dict) else (x or ""))
+                    df["address"] = df["address"].map(json.loads)
+                df.to_parquet(tmp_path, index=False)
+                self._replace_file(tmp_path, self.path)
+            else:
+                jsonl_path = self.path.rsplit(".", 1)[0] + ".jsonl"
+                tmp_path = os.path.join(tmpdir, "cache.jsonl")
+                with io.open(tmp_path, "w", encoding="utf-8") as f:
+                    rows = self._df.to_dict("records") if pd is not None else self._df
+                    for r in rows:
+                        f.write(json.dumps(r, ensure_ascii=False) + "\n")
+                self._replace_file(tmp_path, jsonl_path)
+            self._stats.saves += 1
+        finally:
+            shutil.rmtree(tmpdir, ignore_errors=True)
+
+    def _load_jsonl(self, path: str):
+        rows = []
+        try:
+            with io.open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        rows.append(json.loads(line))
+        except Exception:
+            rows = []
+        if pd is not None:
+            self._df = pd.DataFrame(rows, columns=[
+                "lat_r", "lon_r", "zoom", "town", "city", "municipality", "village", "hamlet", "address", "ts"
+            ])
+        else:
+            self._df = rows
+
+    def _replace_file(self, tmp_path: str, dest_path: str):
+        os.makedirs(os.path.dirname(dest_path) if os.path.dirname(dest_path) else '.', exist_ok=True)
+        if os.path.exists(dest_path):
+            os.replace(tmp_path, dest_path)
+        else:
+            shutil.move(tmp_path, dest_path)
+
+
+# =============================================================================
+# Country/Coordinate Utilities
+# =============================================================================
 
 # ISO3 to ISO2 mapping (for Nominatim countrycodes parameter)
 ISO3_TO_ISO2 = {
@@ -79,19 +414,22 @@ ISO3_TO_ISO2 = {
 # Country bounding boxes for validation (lat_min, lat_max, lon_min, lon_max)
 # Prevents out-of-country garbage coordinates from being written
 COUNTRY_BBOX = {
-    "TCD": {"lat_min": 7.0, "lat_max": 24.0, "lon_min": 13.0, "lon_max": 24.5},
-    "USA": {"lat_min": 24.0, "lat_max": 72.0, "lon_min": -180.0, "lon_max": -66.0},
-    "CHN": {"lat_min": 18.0, "lat_max": 54.0, "lon_min": 73.0, "lon_max": 135.0},
+    "ARM": {"lat_min": 38.8, "lat_max": 41.3, "lon_min": 43.4, "lon_max": 46.6},
     "AUS": {"lat_min": -44.0, "lat_max": -10.0, "lon_min": 113.0, "lon_max": 154.0},
-    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},
-    "IND": {"lat_min": 6.0, "lat_max": 36.0, "lon_min": 68.0, "lon_max": 98.0},
-    "IDN": {"lat_min": -11.0, "lat_max": 6.0, "lon_min": 95.0, "lon_max": 141.0},
+    "BEL": {"lat_min": 49.5, "lat_max": 51.5, "lon_min": 2.5, "lon_max": 6.4},
+    "BFA": {"lat_min": 9.4, "lat_max": 15.1, "lon_min": -5.5, "lon_max": 2.4},
     "BRA": {"lat_min": -34.0, "lat_max": 6.0, "lon_min": -74.0, "lon_max": -34.0},
     "CAN": {"lat_min": 41.0, "lat_max": 84.0, "lon_min": -141.0, "lon_max": -52.0},
-    "RUS": {"lat_min": 41.0, "lat_max": 82.0, "lon_min": 19.0, "lon_max": -169.0},
+    "CHL": {"lat_min": -56.0, "lat_max": -17.0, "lon_min": -110.0, "lon_max": -66.0},
+    "CHN": {"lat_min": 18.0, "lat_max": 54.0, "lon_min": 73.0, "lon_max": 135.0},
+    "IDN": {"lat_min": -11.0, "lat_max": 6.0, "lon_min": 95.0, "lon_max": 141.0},
+    "IND": {"lat_min": 6.0, "lat_max": 36.0, "lon_min": 68.0, "lon_max": 98.0},
     "MEX": {"lat_min": 14.0, "lat_max": 33.0, "lon_min": -118.0, "lon_max": -86.0},
     "PER": {"lat_min": -19.0, "lat_max": -0.0, "lon_min": -82.0, "lon_max": -68.0},
-    "CHL": {"lat_min": -56.0, "lat_max": -17.0, "lon_min": -110.0, "lon_max": -66.0},
+    "RUS": {"lat_min": 41.0, "lat_max": 82.0, "lon_min": 19.0, "lon_max": -169.0},
+    "TCD": {"lat_min": 7.0, "lat_max": 24.0, "lon_min": 13.0, "lon_max": 24.5},
+    "USA": {"lat_min": 24.0, "lat_max": 72.0, "lon_min": -180.0, "lon_max": -66.0},
+    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},
     "ZMB": {"lat_min": -18.0, "lat_max": -8.0, "lon_min": 22.0, "lon_max": 34.0},
 }
 
@@ -907,34 +1245,6 @@ class AdvancedGeocoder:
 
 NOMINATIM_URL = os.getenv("NOMINATIM_BASE_URL", "https://nominatim.openstreetmap.org/search")
 NOMINATIM_REVERSE_URL = os.getenv("NOMINATIM_REVERSE_URL", "https://nominatim.openstreetmap.org/reverse")
-
-COUNTRY_BBOX = {
-    # Coarse, defensible bounding boxes. Expand with proper gazetteer later.
-    "TCD": {"lat_min": 7.0, "lat_max": 24.2, "lon_min": 13.0, "lon_max": 24.2},  # Chad
-    "ARM": {"lat_min": 38.8, "lat_max": 41.3, "lon_min": 43.4, "lon_max": 46.6},  # Armenia
-    "BEL": {"lat_min": 49.5, "lat_max": 51.5, "lon_min": 2.5, "lon_max": 6.4},   # Belgium
-    "BFA": {"lat_min": 9.4, "lat_max": 15.1, "lon_min": -5.5, "lon_max": 2.4},   # Burkina Faso
-    "ZAF": {"lat_min": -35.0, "lat_max": -22.0, "lon_min": 16.0, "lon_max": 33.0},  # South Africa
-    # Add others as needed
-}
-
-
-def in_country_bbox(lat: float, lon: float, iso3: str) -> bool:
-    """
-    Check if coordinates are within expected country bounding box.
-
-    Args:
-        lat: Latitude
-        lon: Longitude
-        iso3: ISO3 country code
-
-    Returns:
-        True if in bbox or bbox unknown, False if definitely out of country
-    """
-    b = COUNTRY_BBOX.get(iso3)
-    if not b or lat is None or lon is None:
-        return True  # Don't block if unknown bbox
-    return (b["lat_min"] <= lat <= b["lat_max"]) and (b["lon_min"] <= lon <= b["lon_max"])
 
 
 def _nominatim_headers():

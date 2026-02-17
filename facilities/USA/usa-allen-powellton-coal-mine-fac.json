@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.905,
-    "lon": -81.43,
+    "lat": 37.845946488466474,
+    "lon": -81.4600151948938,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Alpha Metallurgical Resources Inc",
+    "Marfork Coal Company"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.782064Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T20:54:51.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Naoma (https://www.gem.wiki/Allen_Powellton_Coal_Mine). The mine is described as mothballed, indicating it is not currently operational"
   },
   "canonical_name": "Allen Powellton Coal Mine",
   "canonical_slug": "allen-powellton-coal-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "town": "Naoma",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:54:51.000000Z",
+      "operators": [
+        "Marfork Coal Company"
+      ],
+      "owners": [
+        "Alpha Metallurgical Resources Inc"
+      ],
+      "notes": "Marfork Coal Company is a subsidiary of Alpha Metallurgical Resources Inc."
+    }
+  }
 }

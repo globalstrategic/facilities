@@ -7,8 +7,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.569,
-    "lon": -82.078,
+    "lat": 37.565901,
+    "lon": -82.08515,
     "precision": "site"
   },
   "types": [
@@ -21,7 +21,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Appalachian Resource Co",
+    "Appalachian Resource West Virginia, LLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -31,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.840289Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T21:25:14.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Grapevine_South_Surface_Mine. The Grapevine South Surface Mine is an operating coal mine located in Mingo County, West Virginia"
   },
   "canonical_name": "Grapevine South Surface Mine",
   "canonical_slug": "grapevine-south-surface-mine",
@@ -50,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T21:25:14.000000Z",
+      "operators": [
+        "Appalachian Resource West Virginia, LLC"
+      ],
+      "owners": [
+        "Appalachian Resource Co"
+      ],
+      "notes": "Appalachian Resource West Virginia, LLC is a subsidiary of Appalachian Resource Co."
+    }
+  }
 }

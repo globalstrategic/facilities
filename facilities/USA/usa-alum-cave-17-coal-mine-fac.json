@@ -8,7 +8,7 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.251,
+    "lat": 37.251111,
     "lon": -82.945,
     "precision": "site"
   },
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "B & W Resources Inc",
+    "Lipari Coal Holdings Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.958195Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:23:22.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Alum_Cave_17_Coal_Mine. Exact coordinates provided in the source"
   },
   "canonical_name": "Alum Cave 17 Coal Mine",
   "canonical_slug": "alum-cave-17-coal-mine",
@@ -51,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:23:22.000000Z",
+      "operators": [
+        "B & W Resources Inc"
+      ],
+      "owners": [
+        "Lipari Coal Holdings Inc"
+      ],
+      "notes": "B & W Resources Inc owns 100% of the mine, which is operated under Lipari Coal Holdings Inc."
+    }
+  }
 }

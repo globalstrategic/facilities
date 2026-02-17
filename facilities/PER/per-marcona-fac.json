@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -15.272,
-    "lon": -75.209,
+    "lat": -14.5,
+    "lon": -75.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Baiyin Nonferrous Group Co. Ltd.",
+    "Minera Shouxin Perú S.A.",
+    "Shougang Hierro Perú S.A.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +32,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:08.312677Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-02T08:05:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://pubs.usgs.gov/myb/vol3/2017-18/myb3-2017-18-peru.pdf. Marcona is known as Peru's first and only producer of iron ore, with significant mining activity in the area"
   },
   "canonical_name": "Marcona Mine",
   "canonical_slug": "marcona-mine",
@@ -47,5 +51,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Ica",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:05:55.000000Z",
+      "operators": [
+        "Minera Shouxin Perú S.A.",
+        "Shougang Hierro Perú S.A.A."
+      ],
+      "owners": [
+        "Baiyin Nonferrous Group Co. Ltd.",
+        "Shougang Hierro Perú S.A.A."
+      ],
+      "notes": "Minera Shouxin is a joint venture between Baiyin Nonferrous Group Co. (51%) and Shougang Hierro Perú (49%)."
+    }
+  }
 }

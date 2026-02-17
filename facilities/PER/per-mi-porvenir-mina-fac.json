@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -9.648,
-    "lon": -77.166,
+    "lat": -9.5,
+    "lon": -75.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Nexa Resources El Porvenir S.A.C.",
+    "Nexa Resources S.A."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.321596Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:11:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/1932/El-Porvenir-Mine.aspx. The El Porvenir mine is located in the Central Andes mountain region of Peru. Web search geocoded. Source: https://miningdataonline.com/property/1932/El-Porvenir-Mine.aspx. The El Porvenir mine is located in the Central Andes mountain region of Peru"
   },
   "canonical_name": "Mi Porvenir, Mina Mine",
   "canonical_slug": "mi-porvenir-mina-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:11:17.000000Z",
+      "operators": [
+        "Nexa Resources El Porvenir S.A.C."
+      ],
+      "owners": [
+        "Nexa Resources S.A."
+      ],
+      "notes": "Nexa Resources El Porvenir S.A.C. is a subsidiary of Nexa Peru, which is 83.55% owned by Nexa Resources."
+    }
+  }
 }

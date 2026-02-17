@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "PRK",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.785,
+    "lon": 129.775,
+    "precision": "site"
   },
   "types": [
     "plant"
@@ -22,7 +22,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Government of North Korea",
+    "Jince Iron and Steel Co. Ltd.",
+    "Kim Chaek Iron and Steel Works"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:11.350743Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:23:03Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:23:03Z] Geocoded via web search. Coords: (41.785, 129.775). Confidence: 0.90. Notes: Coordinates were determined from the exact location of the Kim Chaek Iron and Steel Complex in Chongjin, North Hamgyong Province."
   },
   "canonical_name": "Kimch'aek Iron And Steel Steel Plant",
   "canonical_slug": "kimch-aek-iron-and-steel-steel-plant",
@@ -59,5 +63,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Hamgyong Province",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:19:47.000000Z",
+      "operators": [
+        "Kim Chaek Iron and Steel Works",
+        "Jince Iron and Steel Co. Ltd."
+      ],
+      "owners": [
+        "Government of North Korea"
+      ],
+      "notes": "The facility is state-owned and operated."
+    }
+  }
 }

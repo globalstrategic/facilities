@@ -9,8 +9,8 @@
   ],
   "country_iso3": "MEX",
   "location": {
-    "lat": 18.06,
-    "lon": -102.361,
+    "lat": 18.060364,
+    "lon": -102.360564,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "ArcelorMittal Mexico S.A. de C.V.",
+    "ArcelorMittal SA"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:19:21.960220Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T02:36:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/ArcelorMittal_Las_Truchas_Complex_Mine. Las Truchas is a small surface mine owned and operated by ArcelorMittal, supplying products to the nearby Lázaro Cárdenas steel mill"
   },
   "canonical_name": "Las Truchas Mine",
   "canonical_slug": "las-truchas-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Michoacán",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:36:42.000000Z",
+      "operators": [
+        "ArcelorMittal Mexico S.A. de C.V."
+      ],
+      "owners": [
+        "ArcelorMittal SA"
+      ],
+      "notes": "ArcelorMittal owns 100% of the mine and is actively investing in its expansion."
+    }
+  }
 }

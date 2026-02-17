@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -10.031,
-    "lon": -77.333,
+    "lat": -14.2327,
+    "lon": -70.3207,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Minsur"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.316209Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T08:07:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/San_Rafael_mine. San Rafael mine is the largest tin producer in Peru and South America. Web search geocoded. Source: https://en.wikipedia.org/wiki/San_Rafael_mine. San Rafael mine is the largest tin producer in Peru and South America"
   },
   "canonical_name": "Jhon Rafael, Mina Mine",
   "canonical_slug": "jhon-rafael-mina-mine",
@@ -47,5 +49,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Puno Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:07:57.000000Z",
+      "operators": [
+        "Minsur"
+      ],
+      "owners": [
+        "Minsur"
+      ],
+      "notes": "Minsur is a major tin producer and operates the San Rafael mine."
+    }
+  }
 }

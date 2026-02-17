@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.898,
-    "lon": -79.74,
+    "lat": 38.8,
+    "lon": -105.2,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Lafleur Minerals Inc.",
+    "Monarch Mining Corp."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:45.757881Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T20:32:54.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://westernmininghistory.com/mine-detail/10143364/. The Beacon Mine is located in Teller County, Colorado, and is a past-producing gold mine"
   },
   "canonical_name": "Beason Mine",
   "canonical_slug": "beason-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Colorado",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T20:32:54.000000Z",
+      "operators": [
+        "Lafleur Minerals Inc."
+      ],
+      "owners": [
+        "Monarch Mining Corp."
+      ],
+      "notes": "The mine was closed in 1989 and is currently not in operation."
+    }
+  }
 }

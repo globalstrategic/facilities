@@ -1,12 +1,12 @@
 {
   "facility_id": "kor-ferronickel-plant-fac",
-  "name": "**Ferronickel Plant**",
+  "name": "Ferronickel Plant",
   "aliases": [],
   "country_iso3": "KOR",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 34.95,
+    "lon": 126.92,
+    "precision": "approximate"
   },
   "types": [
     "smelter"
@@ -14,14 +14,10 @@
   "commodities": [],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "SNNC Co. Ltd.",
-      "role": "operator",
-      "source": "Research Import ATF 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T12:22:53.517016",
-      "evidence": "Extracted from operator column: SNNC Co. Ltd."
-    }
+    "POSCO",
+    "SNNC Co. Ltd.",
+    "Société Minière du Sud Pacifique (SMSP)",
+    "Société du Nickel de Nouvelle-Calédonie et Corée (SNNC)"
   ],
   "products": [],
   "sources": [
@@ -32,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:18.756677Z",
-    "checked_by": "import_pipeline",
-    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Major producer of ferronickel for stainless steel, using ore from New Caledonia. 1 | Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:48:37Z",
+    "checked_by": "web_search_manual",
+    "notes": "[2025-11-04: Moved from ATF to KOR - data entry error fix] Major producer of ferronickel for stainless steel, using ore from New Caledonia. 1 | Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:04:29Z] No specific geographic coordinates were provided for the Ferronickel Plant in the search results. | [NULL-ISLAND-FIX 2025-12-18T00:48:37Z] Geocoded via web search. Coords: (34.95, 126.92). Confidence: 0.50. Source: Jeollanam-do (South Jeolla) center"
   },
   "canonical_name": "Ferronickel Smelter",
   "canonical_slug": "ferronickel-smelter",
@@ -53,11 +49,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Ferronickel ** Smelter",
+      "name": "Ferronickel  Smelter",
       "from": "2025-10-29T12:22:53.517019",
       "to": "2025-11-04T19:19:18.756675Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Jeollanam-do",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:02:49.000000Z",
+      "operators": [
+        "Société du Nickel de Nouvelle-Calédonie et Corée (SNNC)",
+        "POSCO"
+      ],
+      "owners": [
+        "POSCO",
+        "Société Minière du Sud Pacifique (SMSP)"
+      ],
+      "notes": "SNNC is co-owned by POSCO and SMSP, with production entirely sold to POSCO's stainless steel plants."
+    }
+  }
 }

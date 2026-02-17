@@ -7,8 +7,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 21.626,
-    "lon": 85.508,
+    "lat": 21.633018,
+    "lon": 85.505024,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Odisha Mining Corporation Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:51.105730Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:04:09.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/OMC_Gandhamardan_A_Mine. Coordinates extracted from the Global Energy Monitor article"
   },
   "canonical_name": "OMC Gandhamardan A Mine",
   "canonical_slug": "omc-gandhamardan-a-mine",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:04:09.000000Z",
+      "operators": [
+        "Odisha Mining Corporation Ltd"
+      ],
+      "owners": [
+        "Odisha Mining Corporation Ltd"
+      ],
+      "notes": "OMC is a wholly owned corporation of the Government of Odisha."
+    }
+  }
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": 37.232,
-    "lon": 114.418,
+    "lat": 37.232056,
+    "lon": 114.417578,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "冀中能源股份有限公司东庞矿 (Jizhong Energy Co., Ltd. Dongpang Mine)",
+    "冀中能源集团有限责任公司 (Jizhong Energy Group Co., Ltd.)"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:18:46.690918Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T17:15:46.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/%E5%86%80%E4%B8%AD%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%9C%E5%BA%9E%E7%9F%BF%E5%8C%97%E4%BA%95. The Dongpang Coal Mine North Well is an underground coal mine located in Wu Village, Xingtai City, Hebei Province"
   },
   "canonical_name": "Dongpang Coal North Well Mine",
   "canonical_slug": "dongpang-coal-north-well-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Hebei",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:15:46.000000Z",
+      "operators": [
+        "冀中能源股份有限公司东庞矿 (Jizhong Energy Co., Ltd. Dongpang Mine)"
+      ],
+      "owners": [
+        "冀中能源集团有限责任公司 (Jizhong Energy Group Co., Ltd.)"
+      ],
+      "notes": "The mine has been in operation since 2007 with a designed capacity of 450,000 tons/year and an approved production capacity of 900,000 tons/year."
+    }
+  }
 }

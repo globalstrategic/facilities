@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "PER",
   "location": {
-    "lat": -10.483,
-    "lon": -76.515,
+    "lat": -10.416557616326847,
+    "lon": -76.5266418,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Sentient Group",
+    "Tinka Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:08.320718Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T08:10:39.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Colquipucro (https://tinkaresources.com/colquipucro-silver/). Colquipucro is a silver deposit owned by Tinka Resources"
   },
   "canonical_name": "Colquipucro, Mina Mine",
   "canonical_slug": "colquipucro-mina-mine",
@@ -47,5 +50,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Pasco",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:10:39.000000Z",
+      "operators": [
+        "Tinka Resources Limited"
+      ],
+      "owners": [
+        "Tinka Resources Limited"
+      ],
+      "notes": "Tinka Resources is actively developing the Colquipucro silver deposit."
+    }
+  },
+  "town": "Colquipucro"
 }

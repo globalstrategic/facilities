@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NOR",
   "location": {
-    "lat": 58.139,
-    "lon": 7.971,
+    "lat": 58.139167,
+    "lon": 7.971111,
     "precision": "site"
   },
   "types": [
@@ -46,7 +46,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Glencore Nikkelverk AS",
+    "Glencore plc"
+  ],
   "products": [],
   "sources": [
     {
@@ -56,11 +59,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.725995Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:23:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.glencore.com/.rest/api/v1/documents/static/51d9a58f-6979-45d8-8936-c8e411dea4d1/2024+Nikkelverk+Public+Responsible+Supply+Chain+Due+Diligence+Report.pdf. Nikkelverk is located on the South Coast of Norway in the town of Kristiansand"
   },
   "canonical_name": "Nikkelverk Refinery",
   "canonical_slug": "nikkelverk-refinery",
@@ -75,5 +78,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Agder",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:23:42.000000Z",
+      "operators": [
+        "Glencore Nikkelverk AS"
+      ],
+      "owners": [
+        "Glencore plc"
+      ],
+      "notes": "Glencore Nikkelverk AS is a wholly-owned subsidiary of Glencore plc."
+    }
+  }
 }

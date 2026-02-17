@@ -8,8 +8,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 37.469,
-    "lon": -87.255,
+    "lat": 37.5039197470113,
+    "lon": -87.1133304,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Hartshorne Mining Group LLC",
+    "Paringa Resources Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.886817Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:06:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Owensboro (https://www.gem.wiki/Poplar_Grove_Mine). The Poplar Grove Coal Mine is located in McLean County, Kentucky, part of the Illinois Basin. It was previously operated by Hartshorne Mining, which filed for bankruptcy and ceased operations in 2021"
   },
   "canonical_name": "Poplar Grove Coal Mine",
   "canonical_slug": "poplar-grove-coal-mine",
@@ -51,5 +54,19 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Kentucky",
+  "town": "Owensboro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:06:00.000000Z",
+      "operators": [
+        "Hartshorne Mining Group LLC"
+      ],
+      "owners": [
+        "Paringa Resources Limited"
+      ],
+      "notes": "Paringa Resources acquired the mine in 2013. Hartshorne Mining was a subsidiary of Paringa Resources."
+    }
+  }
 }

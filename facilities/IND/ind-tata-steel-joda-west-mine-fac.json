@@ -8,8 +8,8 @@
   ],
   "country_iso3": "IND",
   "location": {
-    "lat": 22.03,
-    "lon": 85.398,
+    "lat": 22.028505,
+    "lon": 85.397262,
     "precision": "site"
   },
   "types": [
@@ -23,7 +23,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Tata Steel Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -33,11 +35,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:51.123628Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:49:42.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/Tata_Steel_Joda_West_Mine. Coordinates extracted directly from the source"
   },
   "canonical_name": "Tata Steel Joda West Mine",
   "canonical_slug": "tata-steel-joda-west-mine",
@@ -52,5 +54,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Odisha",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:49:42.000000Z",
+      "operators": [
+        "Tata Steel Ltd"
+      ],
+      "owners": [
+        "Tata Steel Ltd"
+      ],
+      "notes": "Tata Steel Ltd is both the operator and owner of the facility."
+    }
+  }
 }

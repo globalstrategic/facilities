@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "MKD",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 41.437,
+    "lon": 22.643,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -30,7 +30,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Euromax Resources Ltd"
+  ],
   "products": [],
   "sources": [
     {
@@ -40,11 +42,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.65,
-    "last_checked": "2025-11-04T19:19:06.909615Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Euromax Resources copper-gold porphyry project in Bosilovo, 15km NE of Strumica."
   },
   "canonical_name": "Ilovica Shtuka Development",
   "canonical_slug": "ilovica-shtuka-development",
@@ -67,5 +69,18 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Macedonia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:53:14.000000Z",
+      "operators": [
+        "Euromax Resources Ltd"
+      ],
+      "owners": [
+        "Euromax Resources Ltd"
+      ],
+      "notes": "Euromax Resources is focused on developing the Ilovica-Shtuka Project, which is the largest mining project in North Macedonia."
+    }
+  }
 }

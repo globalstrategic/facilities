@@ -1,0 +1,82 @@
+{
+  "facility_id": "dza-cominak-fac",
+  "name": "COMINAK",
+  "aliases": [
+    "Akouta Mine"
+  ],
+  "country_iso3": "DZA",
+  "location": {
+    "lat": 26.195934939746905,
+    "lon": -1.0768416312798603,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "uranium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Enusa",
+    "Orano",
+    "SOPAMIN"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NER 2025-10-29",
+      "date": "2025-10-29T22:03:08.427088"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T07:04:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Arlit (https://www.neimagazine.com/news/orano-closes-cominak-uranium-mine-in-niger-8649987/). Cominak (Compagnie Minière d’Akouta) has ceased operations as of March 31, 2021, after 47 years of production"
+  },
+  "canonical_name": "Cominak Mine",
+  "canonical_slug": "cominak-mine",
+  "display_name": "Cominak",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "COMINAK Mine",
+      "from": "2025-10-29T22:03:08.427124",
+      "to": "2025-11-04T19:18:55.801635Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Agadez",
+  "town": "Arlit",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:04:21.000000Z",
+      "operators": [
+        "Orano"
+      ],
+      "owners": [
+        "Orano",
+        "SOPAMIN",
+        "Enusa"
+      ],
+      "notes": "Orano holds a 59% stake, SOPAMIN holds 31%, and Enusa holds 10%."
+    }
+  }
+}

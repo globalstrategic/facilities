@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -27.0,
-    "lon": 18.0,
+    "lat": -26.5,
+    "lon": 23.0,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "operating",
-  "company_mentions": [],
+  "company_mentions": [
+    "Kumba Iron Ore Limited",
+    "Sishen Iron Ore Company Proprietary Limited"
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +32,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T16:58:04.000000Z",
+    "confidence": 0.7,
+    "last_checked": "2025-12-01T17:01:55.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sishen%E2%80%93Saldanha_railway_line. Coordinates are approximate for the Sishen terminus of the railway line"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sishen%E2%80%93Saldanha_railway_line. Coordinates are approximate for the Sishen terminus of the railway line. Web search geocoded. Source: https://miningdigital.com/smart-mining/kumba-becomes-sole-owner-sishen-mine. Sishen mine is one of the largest iron ore producing open pit mines in the world"
   },
   "canonical_name": "Sishen To Saldanha Railway Link Mine",
   "canonical_slug": "sishen-to-saldanha-railway-link-mine",
@@ -48,5 +51,18 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Northern Cape"
+  "province": "Northern Cape",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:01:55.000000Z",
+      "operators": [
+        "Kumba Iron Ore Limited"
+      ],
+      "owners": [
+        "Kumba Iron Ore Limited",
+        "Sishen Iron Ore Company Proprietary Limited"
+      ],
+      "notes": "Kumba Iron Ore is a subsidiary of Anglo American."
+    }
+  }
 }

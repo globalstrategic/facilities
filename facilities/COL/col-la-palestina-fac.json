@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "COL",
   "location": {
-    "lat": 3.419,
-    "lon": -75.478,
+    "lat": 5.943532344348708,
+    "lon": -75.9282515969816,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bellhaven Copper & Gold Inc.",
+    "GoldMining Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:22.740410Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T10:19:11.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.mindat.org/feature-3678292.html. Coordinates extracted from the location of La Palestina in Cundinamarca, Colombia. Web search geocoded. Source: Calculated from Medellín (https://www.goldmining.com/projects/colombia/la-mina-project/). The La Mina project is located approximately 51 km southwest of Medellín, Antioquia, Colombia"
   },
   "canonical_name": "La Palestina Mine",
   "canonical_slug": "la-palestina-mine",
@@ -47,5 +50,20 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Antioquia",
+  "town": "Medellín",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T10:19:11.000000Z",
+      "operators": [
+        "GoldMining Inc.",
+        "Bellhaven Copper & Gold Inc."
+      ],
+      "owners": [
+        "GoldMining Inc."
+      ],
+      "notes": "GoldMining Inc. owns the property through its wholly owned subsidiary, Bellhaven Copper & Gold Inc."
+    }
+  }
 }

@@ -1,0 +1,76 @@
+{
+  "facility_id": "guf-per-kourou-fac",
+  "name": "PER Kourou",
+  "aliases": [],
+  "country_iso3": "GUF",
+  "location": {
+    "lat": 5.0620610197761,
+    "lon": -52.73807166527222,
+    "precision": "unknown"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Niobium",
+      "primary": true,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": true,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "SUDMINE SAS",
+    "SudMine SAS"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import FRA 2025-10-29",
+      "date": "2025-10-29T08:01:49.033546"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T19:36:57.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Kourou (https://en.sudmine.fr/french-guiana). The PER Kourou is located 15 km south-west of Kourou and has potential for colombo-tantalite mineralisation"
+  },
+  "canonical_name": "PER Kourou Mine",
+  "canonical_slug": "per-kourou-mine",
+  "display_name": "PER Kourou",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "French Guiana",
+  "town": "Kourou",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:36:57.000000Z",
+      "operators": [
+        "SUDMINE SAS"
+      ],
+      "owners": [
+        "SUDMINE SAS"
+      ],
+      "notes": "SUDMINE SAS is the owner and operator of the PER Kourou."
+    }
+  }
+}

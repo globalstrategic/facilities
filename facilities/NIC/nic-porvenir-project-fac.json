@@ -1,12 +1,12 @@
 {
   "facility_id": "nic-porvenir-project-fac",
-  "name": "**Porvenir Project**",
+  "name": "Porvenir Project",
   "aliases": [],
   "country_iso3": "NIC",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 14.02885,
+    "lon": -84.59103,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -34,7 +34,12 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Green Rock Resources S.A.",
+    "HEMCO Mineros Nicaragua S.A.",
+    "Mineros S.A.",
+    "SolGold PLC"
+  ],
   "products": [],
   "sources": [
     {
@@ -46,9 +51,9 @@
   "verification": {
     "status": "csv_imported",
     "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:55.276215Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "last_checked": "2025-12-18T00:50:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [GEOCODED 2025-12-18T00:50:57Z] Coordinates found via web search (using regional/city coords). Lat: 14.02885, Lon: -84.59103"
   },
   "canonical_name": "Porvenir Development",
   "canonical_slug": "porvenir-development",
@@ -65,11 +70,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Porvenir ** Development",
+      "name": "Porvenir  Development",
       "from": "2025-10-29T21:57:46.830389",
       "to": "2025-11-04T19:18:55.276209Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "North Caribbean Coast Autonomous Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:24:18.000000Z",
+      "operators": [
+        "HEMCO Mineros Nicaragua S.A.",
+        "Mineros S.A."
+      ],
+      "owners": [
+        "Mineros S.A."
+      ],
+      "notes": "HEMCO Mineros Nicaragua S.A. is a wholly owned subsidiary of Mineros S.A."
+    }
+  },
+  "town": "Bonanza"
 }

@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "USA",
   "location": {
-    "lat": 39.998,
-    "lon": -115.498,
+    "lat": 47.5826191801217,
+    "lon": -92.32724110354553,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "White Pine Metals"
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +30,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:18:45.956603Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.45,
+    "last_checked": "2025-12-01T23:21:56.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Ely (https://whitepinemetals.com/). The White Pine Gold Mine is associated with White Pine Metals, which is involved in mineral exploration"
   },
   "canonical_name": "White Pine Gold Mine",
   "canonical_slug": "white-pine-gold-mine",
@@ -47,5 +49,17 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Ely",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:21:56.000000Z",
+      "operators": [
+        "White Pine Metals"
+      ],
+      "owners": [],
+      "notes": "White Pine Metals is a private mineral explorer."
+    }
+  }
 }

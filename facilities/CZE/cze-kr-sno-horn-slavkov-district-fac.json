@@ -1,12 +1,12 @@
 {
   "facility_id": "cze-kr-sno-horn-slavkov-district-fac",
-  "name": "**Krásno / Horní Slavkov District**",
+  "name": "Krásno / Horní Slavkov District",
   "aliases": [],
   "country_iso3": "CZE",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 50.13,
+    "lon": 12.8,
+    "precision": "city"
   },
   "types": [
     "plant"
@@ -16,6 +16,7 @@
   "company_mentions": [
     "A",
     "Chcmapetrol Pentar s.r.o.",
+    "Kašpar Pluh of Rabštejn",
     "N"
   ],
   "products": [],
@@ -27,11 +28,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:10.578747Z",
-    "checked_by": "import_pipeline",
-    "notes": "Historically one of the most important Sn-W mining areas in Europe. The user-provided \"Stannum Krasno\" mine is part of this district. 4 | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Historically one of the most important Sn-W mining areas in Europe. The user-provided \"Stannum Krasno\" mine is part of this district. 4 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Historic tin-tungsten mining district (1916-1991), Karlovy Vary Region"
   },
   "canonical_name": "Krásno / Horní Slavkov Mine",
   "canonical_slug": "krasno-horni-slavkov-mine",
@@ -48,7 +49,7 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Krásno / Horní Slavkov ** Mine",
+      "name": "Krásno / Horní Slavkov  Mine",
       "from": "2025-10-27T15:23:26.787447",
       "to": "2025-11-04T19:19:10.578741Z",
       "reason": "data_correction"
@@ -58,12 +59,12 @@
   "province": "Karlovy Vary",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-12-01T15:03:44.000000Z",
+      "timestamp": "2025-12-02T10:11:38.000000Z",
       "operators": [
         "Chcmapetrol Pentar s.r.o."
       ],
       "owners": [],
-      "notes": "Chcmapetrol Pentar s.r.o. is mentioned in relation to the mining activities in the area."
+      "notes": "Chcmapetrol Pentar s.r.o. is mentioned in relation to the historical mining activities."
     }
   }
 }

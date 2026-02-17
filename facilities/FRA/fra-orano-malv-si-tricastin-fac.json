@@ -1,12 +1,12 @@
 {
   "facility_id": "fra-orano-malv-si-tricastin-fac",
-  "name": "**Orano Malvési/Tricastin**",
+  "name": "Orano Malvési/Tricastin",
   "aliases": [],
   "country_iso3": "FRA",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 44.32972,
+    "lon": 4.73222,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -21,14 +21,11 @@
   ],
   "status": "operating",
   "company_mentions": [
-    {
-      "name": "Orano Group",
-      "role": "operator",
-      "source": "Research Import FRA 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:18:38.743652",
-      "evidence": "Extracted from operator column: Orano Group"
-    }
+    "Government of France (90%)",
+    "Japan Nuclear Fuel Limited (JNFL)",
+    "Mitsubishi Heavy Industries (MHI)",
+    "Orano Group",
+    "Orano SA"
   ],
   "products": [],
   "sources": [
@@ -39,11 +36,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
+    "status": "web_search_geocoded",
     "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:51.671919Z",
-    "checked_by": "import_pipeline",
-    "notes": "Key sites in the front-end of the nuclear fuel cycle. Tricastin also enriches Tellurium isotopes. 31 | Canonical name+slug generated"
+    "last_checked": "2025-12-17T21:31:40Z",
+    "checked_by": "geocode_null_island",
+    "notes": "Key sites in the front-end of the nuclear fuel cycle. Tricastin also enriches Tellurium isotopes. 31 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-17T21:31:40Z] Geocoded via web search. Coords: (44.32972, 4.73222). Confidence: 0.90. Notes: Coordinates extracted from the Wikipedia entry for the Tricastin Nuclear Power Plant, which is part of the Orano Tricastin facility."
   },
   "canonical_name": "Orano Malvési/tricastin Mine",
   "canonical_slug": "orano-malvesi-tricastin-mine",
@@ -60,11 +57,26 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Orano Malvési/Tricastin** Mine",
+      "name": "Orano Malvési/Tricastin Mine",
       "from": "2025-10-28T17:18:38.743666",
       "to": "2025-11-04T19:18:51.671916Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Drôme and Vaucluse",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:56:13.000000Z",
+      "operators": [
+        "Orano SA"
+      ],
+      "owners": [
+        "Government of France (90%)",
+        "Japan Nuclear Fuel Limited (JNFL)",
+        "Mitsubishi Heavy Industries (MHI)"
+      ],
+      "notes": "Orano SA is majority owned by the French state, with significant stakes held by JNFL and MHI."
+    }
+  }
 }

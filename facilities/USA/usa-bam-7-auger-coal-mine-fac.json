@@ -10,8 +10,8 @@
   ],
   "country_iso3": "USA",
   "location": {
-    "lat": 38.394,
-    "lon": -80.736,
+    "lat": 38.391667,
+    "lon": -80.733889,
     "precision": "site"
   },
   "types": [
@@ -24,7 +24,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Bundy Auger Mining",
+    "Bundy Auger Mining Inc"
+  ],
   "products": [],
   "sources": [
     {
@@ -34,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:45.897481Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T22:13:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.gem.wiki/BAM_7_Auger_Coal_Mine. Exact coordinates provided in the search results"
   },
   "canonical_name": "BAM 7 Auger Coal Mine",
   "canonical_slug": "bam-7-auger-coal-mine",
@@ -53,5 +56,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "West Virginia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:13:44.000000Z",
+      "operators": [
+        "Bundy Auger Mining Inc"
+      ],
+      "owners": [
+        "Bundy Auger Mining"
+      ],
+      "notes": "Bundy Auger Mining is both the owner and operator of the facility."
+    }
+  }
 }

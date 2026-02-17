@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "CHN",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": 28.4478,
+    "lon": 101.9789,
+    "precision": "site"
   },
   "types": [
     "mine"
@@ -25,8 +25,10 @@
   ],
   "status": "operating",
   "company_mentions": [
+    "China Rare Earth Group",
     "China Rare Earth Group Company Limited",
     "Mianning County Investment And Development Company Limited",
+    "Sichuan Jiangxi Copper Rare Earth Co., Ltd.",
     "Sichuan Shuyu Mining Investment Company Limited",
     "Zhongxi (Liangshan) Rare Earth Co., Ltd."
   ],
@@ -39,11 +41,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:18:46.621887Z",
-    "checked_by": "import_pipeline",
-    "notes": "Large LREE (Nd/Pr) producer; part of Mianning-Dechang belt | Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.85,
+    "last_checked": "2025-12-18T02:13:49Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Large LREE (Nd/Pr) producer; part of Mianning-Dechang belt | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T02:13:49Z] Maoniuping REE mine, Mianning County, Sichuan"
   },
   "canonical_name": "Maoniuping Mine",
   "canonical_slug": "maoniuping-mine",
@@ -62,16 +64,17 @@
   "province": "Sichuan",
   "enrichment_notes": {
     "web_search_companies": {
-      "timestamp": "2025-11-30T19:37:23.000000Z",
+      "timestamp": "2025-12-02T10:28:24.000000Z",
       "operators": [
-        "Zhongxi (Liangshan) Rare Earth Co., Ltd."
+        "Zhongxi (Liangshan) Rare Earth Co., Ltd.",
+        "Sichuan Jiangxi Copper Rare Earth Co., Ltd."
       ],
       "owners": [
         "China Rare Earth Group Company Limited",
         "Sichuan Shuyu Mining Investment Company Limited",
         "Mianning County Investment And Development Company Limited"
       ],
-      "notes": "Zhongxi (Liangshan) Rare Earth is a subsidiary of China Rare Earth Group, which holds significant ownership stakes in the mine."
+      "notes": "Zhongxi (Liangshan) Rare Earth is a subsidiary of China Rare Earth Group and holds the mining rights for the Maoniuping mine."
     }
   }
 }

@@ -8,8 +8,8 @@
   ],
   "country_iso3": "NOR",
   "location": {
-    "lat": 59.314,
-    "lon": 5.309,
+    "lat": 59.313521,
+    "lon": 5.285961,
     "precision": "site"
   },
   "types": [
@@ -22,7 +22,9 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Norsk Hydro ASA"
+  ],
   "products": [],
   "sources": [
     {
@@ -32,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:57.725848Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T07:23:34.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.regjeringen.no/contentassets/87ff30e2185c4a69a44bbc3a94c12630/us_norway_critical_mineralsnmpp_jan-14-final.pdf. The Karmøy facility is part of Norsk Hydro's aluminum production operations"
   },
   "canonical_name": "Karmoy Smelter",
   "canonical_slug": "karmoy-smelter",
@@ -51,5 +53,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Rogaland",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:23:34.000000Z",
+      "operators": [
+        "Norsk Hydro ASA"
+      ],
+      "owners": [
+        "Norsk Hydro ASA"
+      ],
+      "notes": "Norsk Hydro ASA is the primary operator and owner of the Karmøy facility."
+    }
+  }
 }

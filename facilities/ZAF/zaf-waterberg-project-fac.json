@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "ZAF",
   "location": {
-    "lat": -24.7,
-    "lon": 28.4,
+    "lat": -23.415875686378385,
+    "lon": 29.016667,
     "precision": "unknown"
   },
   "types": [
@@ -18,7 +18,13 @@
     }
   ],
   "status": "suspended",
-  "company_mentions": [],
+  "company_mentions": [
+    "HJ Platinum Metals Company",
+    "Impala Platinum Holdings Ltd. (Implats)",
+    "Japan Oil, Gas and Metals National Corporation (JOGMEC)",
+    "Mnombo Wethu Consultants (Pty) Ltd.",
+    "Platinum Group Metals Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -29,10 +35,10 @@
   ],
   "verification": {
     "status": "web_search_geocoded",
-    "confidence": 0.9,
-    "last_checked": "2025-11-17T15:31:15.000000Z",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T18:04:14.000000Z",
     "checked_by": "web_search_llm",
-    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1095052/000106299318004741/exhibit99-1.htm. Coordinates correspond to the Waterberg District Municipality, which encompasses the Waterberg Project area"
+    "notes": "Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated | Canonical name+slug generated. Web search geocoded. Source: https://www.sec.gov/Archives/edgar/data/1095052/000106299318004741/exhibit99-1.htm. Coordinates correspond to the Waterberg District Municipality, which encompasses the Waterberg Project area. Web search geocoded. Source: Calculated from Mokopane (https://www.mining-technology.com/projects/waterberg-pgm-project/). The Waterberg Project is located in the Bushveld Igneous Complex, approximately 85km north of Mokopane town"
   },
   "canonical_name": "Waterberg Mine",
   "canonical_slug": "waterberg-mine",
@@ -48,5 +54,22 @@
     }
   },
   "display_name_source": "auto",
-  "province": "Limpopo"
+  "province": "Limpopo",
+  "town": "Mokopane",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:04:14.000000Z",
+      "operators": [
+        "Platinum Group Metals Ltd."
+      ],
+      "owners": [
+        "Platinum Group Metals Ltd.",
+        "Japan Oil, Gas and Metals National Corporation (JOGMEC)",
+        "Impala Platinum Holdings Ltd. (Implats)",
+        "Mnombo Wethu Consultants (Pty) Ltd.",
+        "HJ Platinum Metals Company"
+      ],
+      "notes": "Platinum Group Metals Ltd. is the operator and majority owner of the Waterberg Project, which is a joint venture with several other companies."
+    }
+  }
 }

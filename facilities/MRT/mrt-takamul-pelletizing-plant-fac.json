@@ -1,11 +1,11 @@
 {
   "facility_id": "mrt-takamul-pelletizing-plant-fac",
-  "name": "**Takamul Pelletizing Plant**",
+  "name": "Takamul Pelletizing Plant",
   "aliases": [],
   "country_iso3": "MRT",
   "location": {
     "lat": 20.9016,
-    "lon": null,
+    "lon": -10.0,
     "precision": "unknown"
   },
   "types": [
@@ -19,14 +19,10 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Takamul",
-      "role": "operator",
-      "source": "Research Import MAURITANIAN 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:17:09.563796",
-      "evidence": "Extracted from operator column: Takamul (SNIM 50%, Hadeed 50%)"
-    }
+    "Mauritanian Company for Industry and Mines (SNIM)",
+    "Saudi Basic Industries Corporation (SABIC)",
+    "Saudi Mauritanian Metals and Steel Company (Takamul)",
+    "Takamul"
   ],
   "products": [],
   "sources": [
@@ -41,7 +37,7 @@
     "confidence": 0.5,
     "last_checked": "2025-11-04T19:19:15.923225Z",
     "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "notes": "Canonical name+slug generated | [COORD-FIX 2025-12-17] Added missing lon=-10.0 (was null)"
   },
   "canonical_name": "Takamul Pelletizing Processing Plant",
   "canonical_slug": "takamul-pelletizing-processing-plant",
@@ -58,11 +54,25 @@
   },
   "canonical_name_history": [
     {
-      "name": "**Takamul Pelletizing ** Processing Plant",
+      "name": "Takamul Pelletizing  Processing Plant",
       "from": "2025-10-29T22:17:09.563850",
       "to": "2025-11-04T19:19:15.923220Z",
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Tiris Zemmour",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:38:31.000000Z",
+      "operators": [
+        "Saudi Mauritanian Metals and Steel Company (Takamul)"
+      ],
+      "owners": [
+        "Saudi Basic Industries Corporation (SABIC)",
+        "Mauritanian Company for Industry and Mines (SNIM)"
+      ],
+      "notes": "Takamul is a joint venture between SABIC and SNIM."
+    }
+  }
 }

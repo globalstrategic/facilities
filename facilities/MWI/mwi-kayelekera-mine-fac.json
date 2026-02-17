@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "MWI",
   "location": {
-    "lat": null,
-    "lon": null,
+    "lat": -9.9928,
+    "lon": 33.6981,
     "precision": "unknown"
   },
   "types": [
@@ -19,22 +19,11 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Lotus Resources Ltd.",
-      "role": "operator",
-      "source": "Research Import MWI 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:13:11.241346",
-      "evidence": "Extracted from operator column: Lotus Resources Ltd. (85%); Government of Malawi (15%)"
-    },
-    {
-      "name": "Government of Malawi",
-      "role": "operator",
-      "source": "Research Import MWI 2025-10-29",
-      "confidence": 0.7,
-      "first_seen": "2025-10-29T22:13:11.241392",
-      "evidence": "Extracted from operator column: Lotus Resources Ltd. (85%); Government of Malawi (15%)"
-    }
+    "Government of Malawi",
+    "Government of Malawi (15%)",
+    "Lotus Resources Limited",
+    "Lotus Resources Limited (85%)",
+    "Lotus Resources Ltd."
   ],
   "products": [],
   "sources": [
@@ -45,11 +34,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.8,
-    "last_checked": "2025-11-04T19:18:59.844125Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:33:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kayelekera_mine. Kayelekera mine is a significant uranium mining facility in Malawi"
   },
   "canonical_name": "Kayelekera Facility",
   "canonical_slug": "kayelekera-facility",
@@ -72,5 +61,19 @@
       "reason": "data_correction"
     }
   ],
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Northern Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:33:55.000000Z",
+      "operators": [
+        "Lotus Resources Limited"
+      ],
+      "owners": [
+        "Lotus Resources Limited (85%)",
+        "Government of Malawi (15%)"
+      ],
+      "notes": "Lotus Resources has taken operational control of the mine."
+    }
+  }
 }

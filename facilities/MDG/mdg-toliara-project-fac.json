@@ -6,9 +6,9 @@
   ],
   "country_iso3": "MDG",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -23.35,
+    "lon": 43.6667,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -44,7 +44,11 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Base Resources",
+    "Base Resources Ltd",
+    "Energy Fuels Inc."
+  ],
   "products": [],
   "sources": [
     {
@@ -54,11 +58,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:06.108264Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located 45km north of Toliara at Ranobe deposit, southwestern Madagascar."
   },
   "canonical_name": "Toliara Development",
   "canonical_slug": "toliara-development",
@@ -73,5 +77,19 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Toliara",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:57:37.000000Z",
+      "operators": [
+        "Energy Fuels Inc."
+      ],
+      "owners": [
+        "Energy Fuels Inc.",
+        "Base Resources Ltd"
+      ],
+      "notes": "Energy Fuels acquired Base Resources, which previously owned the Toliara Project."
+    }
+  }
 }

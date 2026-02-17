@@ -4,9 +4,9 @@
   "aliases": [],
   "country_iso3": "GAB",
   "location": {
-    "lat": null,
-    "lon": null,
-    "precision": "unknown"
+    "lat": -0.7001,
+    "lon": 10.2406,
+    "precision": "region"
   },
   "types": [
     "plant"
@@ -26,14 +26,7 @@
   ],
   "status": "unknown",
   "company_mentions": [
-    {
-      "name": "Apollo Minerals Limited",
-      "role": "operator",
-      "source": "Research Import GAB 2025-10-28",
-      "confidence": 0.7,
-      "first_seen": "2025-10-28T17:40:54.216637",
-      "evidence": "Extracted from operator column: Apollo Minerals Limited"
-    }
+    "Apollo Minerals Limited"
   ],
   "products": [],
   "sources": [
@@ -44,11 +37,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.5,
-    "last_checked": "2025-11-04T19:19:09.391131Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.55,
+    "last_checked": "2025-12-18T14:09:45Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:09:45Z] Salanie Gold Project, 16 km from Lambarene, Moyen-Ogooué Province."
   },
   "canonical_name": "Salanie Gold Exploration",
   "canonical_slug": "salanie-gold-exploration",
@@ -63,5 +56,18 @@
       "canonical_name_incomplete": false
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Gabon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T09:54:31.000000Z",
+      "operators": [
+        "Apollo Minerals Limited"
+      ],
+      "owners": [
+        "Apollo Minerals Limited"
+      ],
+      "notes": "Apollo Minerals Limited owns 100% of the Keri Permit where the project is located."
+    }
+  }
 }

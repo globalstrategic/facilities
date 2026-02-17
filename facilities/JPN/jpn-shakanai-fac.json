@@ -4,8 +4,8 @@
   "aliases": [],
   "country_iso3": "JPN",
   "location": {
-    "lat": 40.179,
-    "lon": 140.319,
+    "lat": 40.3172,
+    "lon": 140.5727,
     "precision": "site"
   },
   "types": [
@@ -18,7 +18,10 @@
     }
   ],
   "status": "unknown",
-  "company_mentions": [],
+  "company_mentions": [
+    "Dowa Holdings",
+    "Shakanai Mines Co., Ltd."
+  ],
   "products": [],
   "sources": [
     {
@@ -28,11 +31,11 @@
     }
   ],
   "verification": {
-    "status": "csv_imported",
-    "confidence": 0.3,
-    "last_checked": "2025-11-04T19:19:05.027834Z",
-    "checked_by": "import_pipeline",
-    "notes": "Canonical name+slug generated"
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T23:25:23.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Shakanai_mine. The Shakanai mine is one of the largest lead and zinc mines in Japan, located in Akita Prefecture"
   },
   "canonical_name": "Shakanai Mine",
   "canonical_slug": "shakanai-mine",
@@ -47,5 +50,18 @@
       "canonical_name_incomplete": true
     }
   },
-  "display_name_source": "auto"
+  "display_name_source": "auto",
+  "province": "Akita Prefecture",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:25:23.000000Z",
+      "operators": [
+        "Shakanai Mines Co., Ltd."
+      ],
+      "owners": [
+        "Dowa Holdings"
+      ],
+      "notes": "Dowa Holdings is mentioned as the owner of the Shakanai mine."
+    }
+  }
 }
