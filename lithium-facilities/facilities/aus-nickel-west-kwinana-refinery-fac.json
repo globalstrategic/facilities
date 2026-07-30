@@ -1,0 +1,81 @@
+{
+  "facility_id": "aus-nickel-west-kwinana-refinery-fac",
+  "name": "Nickel West Kwinana refinery",
+  "aliases": [
+    "Nickel West Kwinana refinery",
+    "Kwinana Refinery",
+    "Kwinana Refinery",
+    "Kwinana Plant"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -32.2,
+    "lon": 115.8,
+    "precision": "site"
+  },
+  "types": [
+    "refinery",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Nickel",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "BHP Billiton Ltd",
+    "BHP Nickel West Pty Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:33.413061"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:44:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Kwinana_Nickel_Refinery. The Kwinana Nickel Refinery is located in East Rockingham and Kwinana Beach, Western Australia"
+  },
+  "canonical_name": "Nickel West Kwinana Refinery",
+  "canonical_slug": "nickel-west-kwinana-refinery",
+  "display_name": "Nickel West Kwinana",
+  "primary_type": "refinery",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:44:21.000000Z",
+      "operators": [
+        "BHP Nickel West Pty Ltd"
+      ],
+      "owners": [
+        "BHP Billiton Ltd"
+      ],
+      "notes": "The refinery was originally built by WMC Resources, which was acquired by BHP in 2005."
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "facility_id": "aus-white-dam-olary-fac",
+  "name": "White Dam Olary",
+  "aliases": [
+    "White Dam Olary",
+    "White Dam"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.0,
+    "lon": 140.0,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Iron Ore",
+      "primary": false,
+      "chemical_formula": "Fe2O3/Fe3O4"
+    },
+    {
+      "metal": "Lanthanum",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "Uranium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "GBM Resources Ltd",
+    "Olary Gold Mines",
+    "Pacgold Limited"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:55.540326"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T14:18:02.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.energymining.sa.gov.au/industry/minerals-and-mining/mining/major-projects-and-mining-activities/major-operating-and-approved-mines/White-Dam-Gold-Project. The facility is approximately 30 km northeast of Olary"
+  },
+  "canonical_name": "White Dam Olary Mine",
+  "canonical_slug": "white-dam-olary-mine",
+  "display_name": "White Dam Olary",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "South Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T14:18:02.000000Z",
+      "operators": [
+        "GBM Resources Ltd",
+        "Pacgold Limited"
+      ],
+      "owners": [
+        "GBM Resources Ltd",
+        "Olary Gold Mines"
+      ],
+      "notes": "GBM Resources is the current operator, while Pacgold is in the process of acquiring the operation."
+    }
+  }
+}

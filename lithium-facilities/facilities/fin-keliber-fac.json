@@ -1,0 +1,76 @@
+{
+  "facility_id": "fin-keliber-fac",
+  "name": "Keliber",
+  "aliases": [
+    "Keliber"
+  ],
+  "country_iso3": "FIN",
+  "location": {
+    "lat": 63.563,
+    "lon": 23.789,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Finnish Minerals Group",
+    "Keliber Oy",
+    "Sibanye-Stillwater Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.951300"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:54.190893Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Keliber Mine",
+  "canonical_slug": "keliber-mine",
+  "display_name": "Keliber",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Central Ostrobothnia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T18:31:41.000000Z",
+      "operators": [
+        "Keliber Oy"
+      ],
+      "owners": [
+        "Sibanye-Stillwater Ltd.",
+        "Finnish Minerals Group"
+      ],
+      "notes": "Sibanye-Stillwater is the majority owner with 79.82% stake, while Finnish Minerals Group holds 20%."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "facility_id": "mli-goulamina-fac",
+  "name": "Goulamina",
+  "aliases": [
+    "Goulamina",
+    "Goulamina"
+  ],
+  "country_iso3": "MLI",
+  "location": {
+    "lat": 11.346,
+    "lon": -7.96,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Ganfeng Lithium",
+    "Malian Government"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:33.618745"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:03.878301Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Goulamina Mine",
+  "canonical_slug": "goulamina-mine",
+  "display_name": "Goulamina",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Mali",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:00:20.000000Z",
+      "operators": [
+        "Ganfeng Lithium"
+      ],
+      "owners": [
+        "Ganfeng Lithium",
+        "Malian Government"
+      ],
+      "notes": "Ganfeng Lithium operates the mine and has a 100% ownership after acquiring Leo Lithium's stake."
+    }
+  }
+}

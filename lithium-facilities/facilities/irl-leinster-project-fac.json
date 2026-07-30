@@ -1,0 +1,68 @@
+{
+  "facility_id": "irl-leinster-project-fac",
+  "name": "Leinster Project",
+  "aliases": [],
+  "country_iso3": "IRL",
+  "location": {
+    "lat": 53.212568889534076,
+    "lon": -6.534773496949776,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [],
+  "status": "operating",
+  "company_mentions": [
+    "European Lithium",
+    "European Lithium Limited",
+    "Global Battery Metals Ltd",
+    "LRH Resources Limited",
+    "Technology Minerals Plc"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import IRL 2025-10-29",
+      "date": "2025-10-29T10:38:14.047145"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T22:59:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Dublin (https://resourceworld.com/global-battery-metals-drilling-leinster-lithium-project-ireland/). The Leinster Project is located in the counties of Wicklow and South Carlow, in the Republic of Ireland, south of Dublin"
+  },
+  "canonical_name": "Leinster Exploration",
+  "canonical_slug": "leinster-exploration",
+  "display_name": "Leinster",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Leinster",
+  "town": "Dublin",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:59:45.000000Z",
+      "operators": [
+        "Technology Minerals Plc",
+        "Global Battery Metals Ltd"
+      ],
+      "owners": [
+        "European Lithium Limited",
+        "LRH Resources Limited"
+      ],
+      "notes": "European Lithium Limited has acquired the rights to the Leinster Lithium Project from Technology Minerals Plc."
+    }
+  }
+}

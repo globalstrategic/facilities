@@ -1,0 +1,75 @@
+{
+  "facility_id": "ner-comirex-sa-lithium-project-fac",
+  "name": "Comirex SA Lithium Project",
+  "aliases": [],
+  "country_iso3": "NER",
+  "location": {
+    "lat": 19.5,
+    "lon": 9.5,
+    "precision": "region"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Compagnie Minière de Recherche et d’Exploitation (Comirex SA)",
+    "Nigerien government (40% stake)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import NER 2025-10-29",
+      "date": "2025-10-29T22:03:08.768661"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.6,
+    "last_checked": "2025-12-18T13:33:23Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:33:23Z] 300 tonnes/year lithium production in Dannet, Agadez Region"
+  },
+  "canonical_name": "Comirex SA Lithium Facility",
+  "canonical_slug": "comirex-sa-lithium-facility",
+  "display_name": "Comirex SA Lithium",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Comirex SA Lithium",
+      "from": "2025-10-29T22:03:08.768683",
+      "to": "2025-11-04T19:18:55.826684Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Agadez",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:31:00.000000Z",
+      "operators": [
+        "Compagnie Minière de Recherche et d’Exploitation (Comirex SA)"
+      ],
+      "owners": [
+        "Nigerien government (40% stake)"
+      ],
+      "notes": "The Nigerien government holds a 40% stake in Comirex SA, while the remaining shares are owned by Nigerien nationals."
+    }
+  }
+}

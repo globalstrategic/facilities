@@ -1,0 +1,78 @@
+{
+  "facility_id": "aus-bellevue-fac",
+  "name": "Bellevue",
+  "aliases": [
+    "Bellevue",
+    "Lawlers Tailings Project",
+    "Bellevue"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -28.5,
+    "lon": 120.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bellevue Gold Limited"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:53.615162"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T11:21:20.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://nz.finance.yahoo.com/quote/BGL.AX/profile/. The Bellevue gold project is located to the north-west of Leinster in the Goldfields region of Western Australia"
+  },
+  "canonical_name": "Bellevue Mine",
+  "canonical_slug": "bellevue-mine",
+  "display_name": "Bellevue",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:21:20.000000Z",
+      "operators": [
+        "Bellevue Gold Limited"
+      ],
+      "owners": [
+        "Bellevue Gold Limited"
+      ],
+      "notes": "Bellevue Gold Limited is the primary company involved in the exploration, development, and mining of the Bellevue gold project."
+    }
+  }
+}

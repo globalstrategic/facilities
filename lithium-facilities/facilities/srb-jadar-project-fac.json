@@ -1,0 +1,74 @@
+{
+  "facility_id": "srb-jadar-project-fac",
+  "name": "Jadar Project",
+  "aliases": [],
+  "country_iso3": "SRB",
+  "location": {
+    "lat": 44.533056,
+    "lon": 19.3,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Rio Tinto Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SERBIAN 2025-10-21",
+      "date": "2025-10-21T17:52:17.126421"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:19:19.512645Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Jadar Facility",
+  "canonical_slug": "jadar-facility",
+  "display_name": "Jadar",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Jadar",
+      "from": "2025-10-21T17:52:17.126429",
+      "to": "2025-11-04T19:19:19.512642Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Western Serbia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:02:49.000000Z",
+      "operators": [
+        "Rio Tinto Ltd"
+      ],
+      "owners": [
+        "Rio Tinto Ltd"
+      ],
+      "notes": "Rio Tinto is the sole operator and owner of the Jadar Project."
+    }
+  }
+}

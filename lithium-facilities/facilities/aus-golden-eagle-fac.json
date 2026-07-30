@@ -1,0 +1,76 @@
+{
+  "facility_id": "aus-golden-eagle-fac",
+  "name": "Golden Eagle",
+  "aliases": [
+    "Golden Eagle",
+    "Golden Eagle UG",
+    "Davyhurst",
+    "Davyhurst Plant"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.044,
+    "lon": 120.659,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "AIM Mining Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:00.037856"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:52.245453Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Golden Eagle Mine",
+  "canonical_slug": "golden-eagle-mine",
+  "display_name": "Golden Eagle",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:08:24.000000Z",
+      "operators": [
+        "AIM Mining Corporation"
+      ],
+      "owners": [
+        "AIM Mining Corporation"
+      ],
+      "notes": "The Golden Eagle processing facility is part of the Nullagine Gold Project."
+    }
+  }
+}

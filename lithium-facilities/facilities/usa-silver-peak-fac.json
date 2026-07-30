@@ -1,0 +1,71 @@
+{
+  "facility_id": "usa-silver-peak-fac",
+  "name": "Silver Peak",
+  "aliases": [
+    "Silver Peak",
+    "Silver Peak"
+  ],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 37.78084635066731,
+    "lon": -117.62640024011237,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Albemarle Corporation",
+    "Albemarle U.S., Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:32.955583"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-01T23:25:35.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Tonopah (https://www.cnbc.com/2022/10/14/lithium-for-tesla-evs-batteries-touring-silver-peak-nevada-.html). The Silver Peak lithium mine is the only active lithium production site in the U.S. and has been operational since the 1960s"
+  },
+  "canonical_name": "Silver Peak Mine",
+  "canonical_slug": "silver-peak-mine",
+  "display_name": "Silver Peak",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Nevada",
+  "town": "Tonopah",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:25:35.000000Z",
+      "operators": [
+        "Albemarle U.S., Inc."
+      ],
+      "owners": [
+        "Albemarle Corporation"
+      ],
+      "notes": "Albemarle has owned the site since 2015 and is looking to expand operations."
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "facility_id": "aus-greenbushes-mine-fac",
+  "name": "Greenbushes Mine",
+  "aliases": [
+    "Greenbushes Mine",
+    "Greenbushes",
+    "Greenbushes C3",
+    "Greenbushes C1",
+    "Greenbushes",
+    "Greenbushes",
+    "Greenbushes",
+    "Greenbushes Li"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -33.7,
+    "lon": 116.1,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "kaolin",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Albemarle Corporation",
+    "IGO Ltd.",
+    "Talison Lithium Australia Pty Ltd",
+    "Tianqi Lithium Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:56.022531"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:11:25.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/829/Greenbushes-Mine.aspx. The Greenbushes lithium mine is located directly south and adjacent to the town of Greenbushes"
+  },
+  "canonical_name": "Greenbushes Mine",
+  "canonical_slug": "greenbushes-mine",
+  "display_name": "Greenbushes",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:11:25.000000Z",
+      "operators": [
+        "Talison Lithium Australia Pty Ltd"
+      ],
+      "owners": [
+        "Tianqi Lithium Corporation",
+        "Albemarle Corporation",
+        "IGO Ltd."
+      ],
+      "notes": "Talison Lithium Australia is 51% owned by Tianqi Lithium Energy Australia Pty Ltd, which is a joint venture with IGO (49%) and Albemarle Corp. (49%)."
+    }
+  }
+}

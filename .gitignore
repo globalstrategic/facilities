@@ -155,6 +155,9 @@ output/
 # Allow specific JSON config files
 !config/*.json
 
+# Allow published data exports in docs/
+!docs/*.csv
+
 # Phase 2 Company Resolution
 review_pack_*.csv
 tables/**/*.parquet

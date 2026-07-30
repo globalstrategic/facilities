@@ -1,0 +1,90 @@
+{
+  "facility_id": "mar-cobco-battery-materials-plant-fac",
+  "name": "COBCO Battery Materials Plant",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": 32.46742388108932,
+    "lon": -7.6200284,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "cobalt sulfate",
+      "primary": true
+    },
+    {
+      "metal": "nickel sulfate",
+      "primary": true
+    },
+    {
+      "metal": "lithium (lfp planned)",
+      "primary": false
+    },
+    {
+      "metal": "n/a",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Al Mada",
+    "CNGR Advanced Materials",
+    "COBCO"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MAR 2025-10-29",
+      "date": "2025-10-29T23:26:51.735847"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:15:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Casablanca (https://www.electrive.com/2025/06/26/cobco-starts-ev-battery-material-production-in-morocco/). The COBCO Battery Materials Plant is located approximately 125 kilometers south of Casablanca, in Jorf Lasfar. Web search geocoded. Source: Calculated from Casablanca (https://www.zawya.com/en/business/investment/sino-moroccan-cobco-begins-producing-ev-battery-materials-m2x4utmk). The facility is located in Jorf Lasfar, which is approximately 125 km south of Casablanca"
+  },
+  "canonical_name": "Cobco Battery Materials Refinery",
+  "canonical_slug": "cobco-battery-materials-refinery",
+  "display_name": "Cobco Battery Materials",
+  "primary_type": "refinery",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "COBCO Battery Materials Refinery",
+      "from": "2025-10-29T23:26:51.735875",
+      "to": "2025-11-04T19:18:48.334184Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "El Jadida",
+  "town": "Casablanca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:15:49.000000Z",
+      "operators": [
+        "COBCO"
+      ],
+      "owners": [
+        "Al Mada",
+        "CNGR Advanced Materials"
+      ],
+      "notes": "COBCO is a joint venture between Moroccan investment fund Al Mada and Chinese manufacturer CNGR Advanced Materials."
+    }
+  }
+}

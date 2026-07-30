@@ -1,0 +1,74 @@
+{
+  "facility_id": "aus-british-king-fac",
+  "name": "British King",
+  "aliases": [
+    "British King",
+    "British King"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -28.5,
+    "lon": 121.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Central Iron Ore",
+    "Red 5 Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:00.661924"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:27:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.voxroyalty.com/british-king. The British King Mine is located approximately 320km north of Kalgoorlie in Western Australia"
+  },
+  "canonical_name": "British King Mine",
+  "canonical_slug": "british-king-mine",
+  "display_name": "British King",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:27:31.000000Z",
+      "operators": [
+        "Red 5 Ltd"
+      ],
+      "owners": [
+        "Central Iron Ore"
+      ],
+      "notes": "Red 5 owns 30% of tenement M37/681 in a joint venture with Central Iron Ore."
+    }
+  }
+}

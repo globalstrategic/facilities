@@ -1,0 +1,103 @@
+{
+  "facility_id": "aus-mt-cattlin-fac",
+  "name": "Mt Cattlin",
+  "aliases": [
+    "Dowling Pit",
+    "Dowling SW",
+    "Mt Cattlin",
+    "Mt Cattlin",
+    "Mt Cattlin"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -33.562528,
+    "lon": 120.035194,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "manganese",
+      "primary": false
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "silica",
+      "primary": false
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Arcadium Lithium",
+    "Galaxy Lithium Pty Ltd",
+    "Rio Tinto plc"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:58.653867"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:37:45.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Mt_Cattlin_mine. The Mt Cattlin mine is an open-pit spodumene mining operation located near Ravensthorpe, Western Australia"
+  },
+  "canonical_name": "Mt Cattlin Mine",
+  "canonical_slug": "mt-cattlin-mine",
+  "display_name": "Mt Cattlin",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:37:45.000000Z",
+      "operators": [
+        "Arcadium Lithium"
+      ],
+      "owners": [
+        "Galaxy Lithium Pty Ltd",
+        "Rio Tinto plc"
+      ],
+      "notes": "The mine was previously operated by Galaxy Resources before being acquired by Arcadium Lithium, which is now a subsidiary of Rio Tinto."
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "facility_id": "uga-ntungamo-project-fac",
+  "name": "Ntungamo Project",
+  "aliases": [],
+  "country_iso3": "UGA",
+  "location": {
+    "lat": -0.88,
+    "lon": 30.26,
+    "precision": "city"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "beryllium",
+      "primary": false
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Blaze Minerals Limited",
+    "Gecko Minerals Uganda",
+    "Javelin Minerals"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:38.855550"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Project in Ntungamo District, Western Uganda"
+  },
+  "canonical_name": "Ntungamo Exploration",
+  "canonical_slug": "ntungamo-exploration",
+  "display_name": "Ntungamo",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Ntungamo District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:53:07.000000Z",
+      "operators": [
+        "Blaze Minerals Limited"
+      ],
+      "owners": [
+        "Gecko Minerals Uganda"
+      ],
+      "notes": "Blaze Minerals has acquired a 60% stake in Gecko Minerals Uganda, the beneficial owner of the Ntungamo Project."
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "facility_id": "arg-pastos-grandes-fac",
+  "name": "Pastos Grandes",
+  "aliases": [],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -24.573,
+    "lon": -66.701,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Ganfeng Lithium Co. Ltd.",
+    "Lithium Argentina (Argentina) Corp."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:39.265581"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:01.180610Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Pastos Grandes Mine",
+  "canonical_slug": "pastos-grandes-mine",
+  "display_name": "Pastos Grandes",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Salta",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:36:00.000000Z",
+      "operators": [
+        "Lithium Argentina (Argentina) Corp.",
+        "Ganfeng Lithium Co. Ltd."
+      ],
+      "owners": [
+        "Lithium Argentina (Argentina) Corp.",
+        "Ganfeng Lithium Co. Ltd."
+      ],
+      "notes": "Lithium Argentina acquired the project through the purchase of Millennial Lithium in early 2022."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "facility_id": "ukr-shevchenkivske-lithium-deposit-fac",
+  "name": "Shevchenkivske Lithium Deposit",
+  "aliases": [],
+  "country_iso3": "UKR",
+  "location": {
+    "lat": 47.909,
+    "lon": 36.713,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "European Lithium",
+    "Millstone & Co.",
+    "Petro Consulting LLC"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import UKR 2025-10-21",
+      "date": "2025-10-21T12:44:23.431471"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:54.718695Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Shevchenkivske Lithium Mine",
+  "canonical_slug": "shevchenkivske-lithium-mine",
+  "display_name": "Shevchenkivske Lithium",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Donetsk Oblast",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T01:58:07.000000Z",
+      "operators": [
+        "European Lithium"
+      ],
+      "owners": [
+        "Millstone & Co.",
+        "Petro Consulting LLC"
+      ],
+      "notes": "European Lithium is in the process of acquiring Petro Consulting, which holds a stake in the Shevchenkivske project."
+    }
+  }
+}

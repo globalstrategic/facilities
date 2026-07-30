@@ -1,0 +1,68 @@
+{
+  "facility_id": "bol-salar-de-coipasa-fac",
+  "name": "Salar De Coipasa",
+  "aliases": [],
+  "country_iso3": "BOL",
+  "location": {
+    "lat": -19.364,
+    "lon": -68.133,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Xinjiang TBEA Group-Baocheng",
+    "Yacimientos de Litio Bolivianos (YLB)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:20.242327"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:57.450754Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Salar De Coipasa Mine",
+  "canonical_slug": "salar-de-coipasa-mine",
+  "display_name": "Salar De Coipasa",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Oruro",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:10:06.000000Z",
+      "operators": [
+        "Yacimientos de Litio Bolivianos (YLB)",
+        "Xinjiang TBEA Group-Baocheng"
+      ],
+      "owners": [
+        "Yacimientos de Litio Bolivianos (YLB)"
+      ],
+      "notes": "YLB is a state-owned company that holds a majority share in the lithium projects in the region."
+    }
+  }
+}

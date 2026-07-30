@@ -1,0 +1,73 @@
+{
+  "facility_id": "bra-cachoeira-fac",
+  "name": "Cachoeira",
+  "aliases": [
+    "Cachoeira",
+    "Cachoeira"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -2.8568327613871882,
+    "lon": -47.069206723910455,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Brazil Resources Inc.",
+    "Luna Gold Corp."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:30.639549"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:26:13.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Belém (https://miningrecord.com/brazil-resources-to-acquire-cachoeira-project/). The Cachoeira Project is located on the Gurupi Gold Belt, approximately 220 kilometers southeast of the Pará State capital of Belém"
+  },
+  "canonical_name": "Cachoeira Mine",
+  "canonical_slug": "cachoeira-mine",
+  "display_name": "Cachoeira",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Pará",
+  "town": "Belém",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:26:13.000000Z",
+      "operators": [
+        "Brazil Resources Inc.",
+        "Luna Gold Corp."
+      ],
+      "owners": [
+        "Brazil Resources Inc.",
+        "Luna Gold Corp."
+      ],
+      "notes": "Brazil Resources Inc. acquired a 100% interest in the Cachoeira Project from Luna Gold Corp."
+    }
+  }
+}

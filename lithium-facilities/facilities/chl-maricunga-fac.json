@@ -1,0 +1,69 @@
+{
+  "facility_id": "chl-maricunga-fac",
+  "name": "Maricunga",
+  "aliases": [],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -26.748,
+    "lon": -69.075,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Codelco",
+    "Rio Tinto"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:37.337470"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:19:09.910192Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Maricunga Mine",
+  "canonical_slug": "maricunga-mine",
+  "display_name": "Maricunga",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Atacama",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:40:05.000000Z",
+      "operators": [
+        "Codelco",
+        "Rio Tinto"
+      ],
+      "owners": [
+        "Codelco",
+        "Rio Tinto"
+      ],
+      "notes": "Codelco is the state-owned copper mining company of Chile, and Rio Tinto is a global mining giant. They are forming a joint venture for the lithium project."
+    }
+  }
+}

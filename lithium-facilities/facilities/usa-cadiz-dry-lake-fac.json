@@ -1,0 +1,73 @@
+{
+  "facility_id": "usa-cadiz-dry-lake-fac",
+  "name": "Cadiz Dry Lake",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 34.287,
+    "lon": -115.388,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Delta Chemical Co.",
+    "Hill Brothers Chemical Co.",
+    "Lee Chemical Co.",
+    "Standard Lithium Ltd.",
+    "Tetra Technologies, Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:30.415653"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:45.887833Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Cadiz Dry Lake Mine",
+  "canonical_slug": "cadiz-dry-lake-mine",
+  "display_name": "Cadiz Dry Lake",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:07:09.000000Z",
+      "operators": [
+        "Tetra Technologies, Inc.",
+        "Standard Lithium Ltd."
+      ],
+      "owners": [
+        "Lee Chemical Co.",
+        "Delta Chemical Co.",
+        "Hill Brothers Chemical Co."
+      ],
+      "notes": "Tetra Technologies operates in the area, and Standard Lithium has a Memorandum of Understanding related to the Cadiz Dry Lake."
+    }
+  }
+}

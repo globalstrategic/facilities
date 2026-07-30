@@ -1,0 +1,67 @@
+{
+  "facility_id": "usa-buckhorn-mica-mine-fac",
+  "name": "Buckhorn Mica Mine",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 48.7492,
+    "lon": -119.4931,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Crown Resources-Kettle River Operations",
+    "Kinross Gold Corp"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:36.976815"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:41:31.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: http://www.msha.gov/data-reports/fatality-reports/2016/fatality-17-december-21-2016/final-report. The Buckhorn Mine is located in Okanogan County, Washington, near Oroville"
+  },
+  "canonical_name": "Buckhorn Mica Mine",
+  "canonical_slug": "buckhorn-mica-mine",
+  "display_name": "Buckhorn Mica",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Washington",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:41:31.000000Z",
+      "operators": [
+        "Crown Resources-Kettle River Operations"
+      ],
+      "owners": [
+        "Kinross Gold Corp"
+      ],
+      "notes": "Crown Resources is a subsidiary of Kinross Gold Corp."
+    }
+  }
+}

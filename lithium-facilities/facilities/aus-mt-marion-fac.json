@@ -1,0 +1,90 @@
+{
+  "facility_id": "aus-mt-marion-fac",
+  "name": "Mt Marion",
+  "aliases": [
+    "Blair",
+    "MMN 1",
+    "Mt Marion Pit C01",
+    "MMN 1Stage 6",
+    "MMN04",
+    "MMN 2",
+    "Mount Marion",
+    "Mt Marion",
+    "Mount Marion"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -28.8,
+    "lon": 121.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "magnesium",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Ganfeng Lithium Group Co., Ltd.",
+    "Mineral Resources Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:54.770974"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:39:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://miningdataonline.com/property/3359/Mt-Marion-Mine.aspx. The Mt Marion lithium operation is located 40km south-west of Kalgoorlie"
+  },
+  "canonical_name": "Mt Marion Mine",
+  "canonical_slug": "mt-marion-mine",
+  "display_name": "Mt Marion",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:39:36.000000Z",
+      "operators": [
+        "Mineral Resources Ltd."
+      ],
+      "owners": [
+        "Mineral Resources Ltd.",
+        "Ganfeng Lithium Group Co., Ltd."
+      ],
+      "notes": "The facility is jointly owned by Mineral Resources Ltd. and Ganfeng Lithium Group Co., Ltd., each holding a 50% interest."
+    }
+  }
+}

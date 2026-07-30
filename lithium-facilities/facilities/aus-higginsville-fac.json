@@ -1,0 +1,102 @@
+{
+  "facility_id": "aus-higginsville-fac",
+  "name": "Higginsville",
+  "aliases": [
+    "Higginsville",
+    "Poseidon S",
+    "Fairplay",
+    "RSD",
+    "Fairplay N NE",
+    "Trident",
+    "Higginsville Gold Operations",
+    "Higginsville"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -33.5,
+    "lon": 121.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Palladium",
+      "primary": false
+    },
+    {
+      "metal": "Platinum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Karora Resources Inc.",
+    "Westgold Resources Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:55.382911"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:15:19.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Higginsville_Gold_Mine. The Higginsville Gold Mine is located near Higginsville, approximately 45 km north of Norseman"
+  },
+  "canonical_name": "Higginsville Mine",
+  "canonical_slug": "higginsville-mine",
+  "display_name": "Higginsville",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:15:19.000000Z",
+      "operators": [
+        "Westgold Resources Ltd",
+        "Karora Resources Inc."
+      ],
+      "owners": [
+        "Westgold Resources Ltd",
+        "Karora Resources Inc."
+      ],
+      "notes": "Westgold operates the mine and has merged with Karora Resources, which also owns a stake in the facility."
+    }
+  }
+}

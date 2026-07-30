@@ -1,0 +1,79 @@
+{
+  "facility_id": "arg-sal-de-vida-fac",
+  "name": "Sal de Vida",
+  "aliases": [
+    "Sal de Vida"
+  ],
+  "country_iso3": "ARG",
+  "location": {
+    "lat": -25.40936,
+    "lon": -66.91242,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Allkem Ltd.",
+    "Galaxy Lithium (Sal de Vida) S.A.",
+    "Galaxy Resources Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:40.530013"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T09:30:00.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://s203.q4cdn.com/709125885/files/doc_downloads/TechnicalRep/New/Sal-de-Vida-Lithium-Brine-Project-Argentina.pdf. The Sal de Vida lithium project is located in the Salar del Hombre Muerto, approximately 200 km south of Olaroz in the high-altitude Puna ecoregion"
+  },
+  "canonical_name": "Sal De Vida Mine",
+  "canonical_slug": "sal-de-vida-mine",
+  "display_name": "Sal De Vida",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Sal de Vida Mine",
+      "from": "2025-10-20T15:29:40.530019",
+      "to": "2025-11-04T19:19:01.173757Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Catamarca",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T09:30:00.000000Z",
+      "operators": [
+        "Galaxy Lithium (Sal de Vida) S.A."
+      ],
+      "owners": [
+        "Galaxy Resources Ltd.",
+        "Allkem Ltd."
+      ],
+      "notes": "Galaxy Lithium (Sal de Vida) S.A. is a wholly owned subsidiary of Galaxy Resources Ltd., which is 100% owned by Allkem Ltd. since August 2021."
+    }
+  }
+}

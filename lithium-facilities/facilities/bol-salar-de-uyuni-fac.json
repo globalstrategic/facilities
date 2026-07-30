@@ -1,0 +1,67 @@
+{
+  "facility_id": "bol-salar-de-uyuni-fac",
+  "name": "Salar De Uyuni",
+  "aliases": [],
+  "country_iso3": "BOL",
+  "location": {
+    "lat": -20.1333,
+    "lon": -66.8333,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Corporación Minera de Bolivia (COMIBOL)",
+    "Yacimientos de Litio Bolivianos (YLB)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:20.737329"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T10:10:15.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Salar_de_Uyuni. Salar de Uyuni is the largest salt flat in the world, located in southwestern Bolivia. It is known for its lithium resources"
+  },
+  "canonical_name": "Salar De Uyuni Mine",
+  "canonical_slug": "salar-de-uyuni-mine",
+  "display_name": "Salar De Uyuni",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Potosí Department",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:10:15.000000Z",
+      "operators": [
+        "Yacimientos de Litio Bolivianos (YLB)"
+      ],
+      "owners": [
+        "Corporación Minera de Bolivia (COMIBOL)"
+      ],
+      "notes": "YLB is a state-owned company responsible for lithium extraction, while COMIBOL manages Bolivia's mining operations."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "facility_id": "bra-grota-do-cirilo-fac",
+  "name": "Grota do Cirilo",
+  "aliases": [
+    "Grota do Cirilo",
+    "Grota do Cirilo"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -16.736,
+    "lon": -41.905,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Sigma Lithium Corp",
+    "Sigma Lithium Resources Corp",
+    "Sigma Mineração S.A."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:33.784507"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:47.227610Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Grota Do Cirilo Mine",
+  "canonical_slug": "grota-do-cirilo-mine",
+  "display_name": "Grota Do Cirilo",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Grota do Cirilo Mine",
+      "from": "2025-10-20T15:29:33.784512",
+      "to": "2025-11-04T19:18:47.227608Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:36:28.000000Z",
+      "operators": [
+        "Sigma Lithium Corp"
+      ],
+      "owners": [
+        "Sigma Lithium Resources Corp",
+        "Sigma Mineração S.A."
+      ],
+      "notes": "Sigma Lithium is the operator and 100% owner of the Grota do Cirilo facility."
+    }
+  }
+}

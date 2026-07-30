@@ -1,0 +1,87 @@
+{
+  "facility_id": "mar-managem-glencore-recycling-refinery-fac",
+  "name": "Managem-Glencore Recycling Refinery",
+  "aliases": [],
+  "country_iso3": "MAR",
+  "location": {
+    "lat": 31.62523020190542,
+    "lon": -7.599175080418663,
+    "precision": "unknown"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "cobalt (recycled)",
+      "primary": true
+    },
+    {
+      "metal": "nickel (recycled)",
+      "primary": false
+    },
+    {
+      "metal": "lithium carbonate (recycled)",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Al Mada",
+    "Glencore",
+    "Managem"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MAR 2025-10-29",
+      "date": "2025-10-29T23:26:51.741123"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-12-02T02:16:44.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Marrakech (https://www.glencore.com/media-and-insights/news/glencore-and-managem-set-up-partnership). The facility is located at Guemssa, approximately 37 km north of Marrakech. Web search geocoded. Source: Calculated from Marrakech (https://www.glencore.com/media-and-insights/news/glencore-and-managem-set-up-partnership). The facility is located at Managem’s CTT Hydrometallurgical Refinery in Guemssa, which is approximately 37 km east of Marrakech"
+  },
+  "canonical_name": "Managem Glencore Recycling Refinery",
+  "canonical_slug": "managem-glencore-recycling-refinery",
+  "display_name": "Managem Glencore Recycling",
+  "primary_type": "refinery",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Managem-Glencore Recycling Refinery",
+      "from": "2025-10-29T23:26:51.741142",
+      "to": "2025-11-04T19:18:48.335415Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Marrakech-Safi",
+  "town": "Marrakech",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T02:16:44.000000Z",
+      "operators": [
+        "Managem",
+        "Glencore"
+      ],
+      "owners": [
+        "Managem",
+        "Al Mada"
+      ],
+      "notes": "Managem is majority-owned by Morocco’s Royal Family and Al Mada, a pan African private equity fund."
+    }
+  }
+}

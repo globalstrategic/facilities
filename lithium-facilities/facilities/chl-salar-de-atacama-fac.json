@@ -1,0 +1,89 @@
+{
+  "facility_id": "chl-salar-de-atacama-fac",
+  "name": "Salar de Atacama",
+  "aliases": [
+    "Salar de Atacama",
+    "Nx Uno",
+    "Salar De Atacama K2o",
+    "Atacama Brine"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -23.5,
+    "lon": -67.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine",
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "potash",
+      "primary": false
+    },
+    {
+      "metal": "magnesium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Sociedad Quimica y Minera de Chile S.A.",
+    "Sociedad Quimica y Minera de Chile S.A. (SQM)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:46.235843"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-26T12:45:36.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://responsiblemining.net/wp-content/uploads/2023/09/Packet-SQM-Salar-de-Atacama-audit-en.pdf. Salar de Atacama is known for its significant lithium deposits and is operated by SQM"
+  },
+  "canonical_name": "Salar De Atacama Mine",
+  "canonical_slug": "salar-de-atacama-mine",
+  "display_name": "Salar De Atacama",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Salar de Atacama Mine",
+      "from": "2025-10-20T15:29:46.235851",
+      "to": "2025-11-04T19:19:09.906680Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:45:36.000000Z",
+      "operators": [
+        "Sociedad Quimica y Minera de Chile S.A. (SQM)"
+      ],
+      "owners": [
+        "Sociedad Quimica y Minera de Chile S.A."
+      ],
+      "notes": "SQM holds executive rights granted by the Chilean government through Corfo."
+    }
+  }
+}
