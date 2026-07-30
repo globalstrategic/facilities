@@ -1,0 +1,74 @@
+{
+  "facility_id": "aus-kathleen-valley-fac",
+  "name": "Kathleen Valley",
+  "aliases": [
+    "Kathleen Valley",
+    "Kathleen Valley",
+    "Kathleen Valley"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -26.5,
+    "lon": 120.5,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Gold",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Liontown Resources Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:35.900328"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-11-25T12:21:17.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ltresources.com.au/project/kathleen-valley/. Kathleen Valley is located in an established mining region about 60 kilometres north of Leinster and 680 kilometres north-east of Perth"
+  },
+  "canonical_name": "Kathleen Valley Mine",
+  "canonical_slug": "kathleen-valley-mine",
+  "display_name": "Kathleen Valley",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T12:21:17.000000Z",
+      "operators": [
+        "Liontown Resources Ltd"
+      ],
+      "owners": [
+        "Liontown Resources Ltd"
+      ],
+      "notes": "Liontown Resources is the primary operator and owner of the Kathleen Valley lithium project."
+    }
+  }
+}

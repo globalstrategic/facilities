@@ -1,0 +1,75 @@
+{
+  "facility_id": "chn-dongtai-jinaier-fac",
+  "name": "Dongtai Jinaier",
+  "aliases": [],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 37.442,
+    "lon": 94.08,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Qinghai CITIC Guoan Technology Development (2.16%)",
+    "Qinghai Dongtai Jinai’er Lithium Resources",
+    "Qinghai Lianyu Potash (20.34%)",
+    "Qinghai State-owned Assets Investment Management (1%)",
+    "Qinghai Taifeng Xianxing Lithium Energy Technology (49.5%)",
+    "Western Mining (27%)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:32.149867"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:46.817333Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Dongtai Jinaier Mine",
+  "canonical_slug": "dongtai-jinaier-mine",
+  "display_name": "Dongtai Jinaier",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Qinghai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T17:35:48.000000Z",
+      "operators": [
+        "Qinghai Dongtai Jinai’er Lithium Resources"
+      ],
+      "owners": [
+        "Qinghai Taifeng Xianxing Lithium Energy Technology (49.5%)",
+        "Western Mining (27%)",
+        "Qinghai Lianyu Potash (20.34%)",
+        "Qinghai CITIC Guoan Technology Development (2.16%)",
+        "Qinghai State-owned Assets Investment Management (1%)"
+      ],
+      "notes": "Qinghai Dongtai Jinai’er Lithium Resources is the exclusive developer of mineral resources in Qinghai Dongtai Jinai’er Salt Lake."
+    }
+  }
+}

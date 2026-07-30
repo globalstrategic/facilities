@@ -1,0 +1,67 @@
+{
+  "facility_id": "usa-taylor-ledge-lithia-mine-fac",
+  "name": "Taylor Ledge Lithia Mine",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 42.469,
+    "lon": -72.826,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "H.W. Eichemeyer",
+    "Ray Whiting"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:38.550252"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:45.932167Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Taylor Ledge Lithia Mine",
+  "canonical_slug": "taylor-ledge-lithia-mine",
+  "display_name": "Taylor Ledge Lithia",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Oregon",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:01:23.000000Z",
+      "operators": [
+        "Ray Whiting"
+      ],
+      "owners": [
+        "H.W. Eichemeyer"
+      ],
+      "notes": "The facility was active on a small scale in 1940."
+    }
+  }
+}

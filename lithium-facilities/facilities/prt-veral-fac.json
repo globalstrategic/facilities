@@ -1,0 +1,84 @@
+{
+  "facility_id": "prt-veral-fac",
+  "name": "Veral",
+  "aliases": [
+    "C-193"
+  ],
+  "country_iso3": "PRT",
+  "location": {
+    "lat": 40.45,
+    "lon": -7.3,
+    "precision": "region"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "quartz",
+      "primary": false
+    },
+    {
+      "metal": "feldspar",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Grupo Mota"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PRT 2025-10-23",
+      "date": "2025-10-23T15:08:50.177196"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T14:03:52Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-CHECK 2025-12-17T21:54:08Z] No geographic coordinates were found in the provided search results for the Veral mining facility. | [NULL-ISLAND-FIX 2025-12-18T14:03:52Z] One of large mineralized lithium dykes near Guarda, Serra da Estrela region"
+  },
+  "canonical_name": "Veral Facility",
+  "canonical_slug": "veral-facility",
+  "display_name": "Veral",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Veral",
+      "from": "2025-10-23T15:08:50.177210",
+      "to": "2025-11-04T19:18:53.666679Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Portugal",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:23:31.000000Z",
+      "operators": [
+        "Grupo Mota"
+      ],
+      "owners": [
+        "Grupo Mota"
+      ],
+      "notes": "Grupo Mota produces nearly 20,000t per annum of lithium minerals mainly lepidolite from this property."
+    }
+  }
+}

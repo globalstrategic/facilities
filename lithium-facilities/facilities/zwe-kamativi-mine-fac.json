@@ -1,0 +1,77 @@
+{
+  "facility_id": "zwe-kamativi-mine-fac",
+  "name": "Kamativi Mine",
+  "aliases": [
+    "Kamativi Mine",
+    "Kamativi Mine",
+    "Kamativi"
+  ],
+  "country_iso3": "ZWE",
+  "location": {
+    "lat": -18.329,
+    "lon": 27.063,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Kamativi Mining Company",
+    "Sichuan PD Technology Group",
+    "Yahua Group",
+    "Zimbabwe Lithium",
+    "Zimbabwe Mining Development Corporation"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:12.587972"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:51.956725Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Kamativi Mine",
+  "canonical_slug": "kamativi-mine-2",
+  "display_name": "Kamativi",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Matabeleland North",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:40:58.000000Z",
+      "operators": [
+        "Kamativi Mining Company",
+        "Sichuan PD Technology Group"
+      ],
+      "owners": [
+        "Yahua Group",
+        "Zimbabwe Lithium",
+        "Zimbabwe Mining Development Corporation"
+      ],
+      "notes": "Kamativi Mining Company is a joint venture with Sichuan PD Technology Group, and is a subsidiary of Yahua Group."
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "facility_id": "gha-ewoyaa-fac",
+  "name": "Ewoyaa",
+  "aliases": [],
+  "country_iso3": "GHA",
+  "location": {
+    "lat": 5.24,
+    "lon": -1.053,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Atlantic Lithium",
+    "Government of Ghana",
+    "Minerals Income Investment Fund",
+    "Piedmont Lithium"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:32.853204"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:48.607196Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Ewoyaa Mine",
+  "canonical_slug": "ewoyaa-mine",
+  "display_name": "Ewoyaa",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Central Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:50:54.000000Z",
+      "operators": [
+        "Atlantic Lithium"
+      ],
+      "owners": [
+        "Atlantic Lithium",
+        "Piedmont Lithium",
+        "Minerals Income Investment Fund",
+        "Government of Ghana"
+      ],
+      "notes": "Atlantic Lithium is the primary operator and owner, with Piedmont Lithium and others holding stakes."
+    }
+  }
+}

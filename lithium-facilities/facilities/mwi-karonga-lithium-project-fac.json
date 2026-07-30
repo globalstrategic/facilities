@@ -1,0 +1,75 @@
+{
+  "facility_id": "mwi-karonga-lithium-project-fac",
+  "name": "Karonga Lithium Project",
+  "aliases": [],
+  "country_iso3": "MWI",
+  "location": {
+    "lat": -9.9333,
+    "lon": 33.9333,
+    "precision": "region"
+  },
+  "types": [
+    "exploration"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "copper",
+      "primary": false
+    },
+    {
+      "metal": "rare earths",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "DY6 Metals Ltd",
+    "DY6 Metals Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import MWI 2025-10-29",
+      "date": "2025-10-29T22:13:11.270057"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-12-18T14:23:57Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:23:57Z] Located in Karonga area, northern Malawi. 36.2 km² licence area."
+  },
+  "canonical_name": "Karonga Lithium Exploration",
+  "canonical_slug": "karonga-lithium-exploration",
+  "display_name": "Karonga Lithium",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Northern Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:37:33.000000Z",
+      "operators": [
+        "DY6 Metals Ltd"
+      ],
+      "owners": [
+        "DY6 Metals Ltd"
+      ],
+      "notes": "DY6 Metals Ltd has entered into an exclusive option to acquire an 80% interest in the project."
+    }
+  }
+}

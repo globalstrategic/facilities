@@ -1,0 +1,84 @@
+{
+  "facility_id": "aus-bald-hill-central-fac",
+  "name": "Bald Hill Central (South)",
+  "aliases": [
+    "Bald Hill Central (South)",
+    "Bald Hill Central Pit",
+    "Bald Hill"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -30.0,
+    "lon": 121.0,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Alita Resources Ltd",
+    "Alliance Mineral Assets Ltd",
+    "Mineral Resources Ltd",
+    "Tawana Resources NL"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:59.323365"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-25T11:19:49.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.ga.gov.au/scientific-topics/minerals/mineral-resources-and-advice/australian-resource-reviews/lithium. The Bald Hill Lithium and Tantalum Mine is located approximately 105 km southeast of Kalgoorlie"
+  },
+  "canonical_name": "Bald Hill Central Mine",
+  "canonical_slug": "bald-hill-central-mine",
+  "display_name": "Bald Hill Central",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:19:49.000000Z",
+      "operators": [
+        "Mineral Resources Ltd"
+      ],
+      "owners": [
+        "Mineral Resources Ltd",
+        "Alita Resources Ltd",
+        "Alliance Mineral Assets Ltd",
+        "Tawana Resources NL"
+      ],
+      "notes": "The mine has changed ownership multiple times, with the latest acquisition by Mineral Resources in November 2023."
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "facility_id": "chn-xitai-jinaier-fac",
+  "name": "Xitai Jinaier",
+  "aliases": [
+    "Xitai Jinaier",
+    "West Taijinair"
+  ],
+  "country_iso3": "CHN",
+  "location": {
+    "lat": 37.689,
+    "lon": 93.527,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Qinghai Dongtai Jinaier lithium resources Co., Ltd.",
+    "Western Mining Group Co., Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:43.364879"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.8,
+    "last_checked": "2025-11-04T19:18:46.802761Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Xitai Jinaier Mine",
+  "canonical_slug": "xitai-jinaier-mine",
+  "display_name": "Xitai Jinaier",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Qinghai",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-30T21:18:05.000000Z",
+      "operators": [
+        "Qinghai Dongtai Jinaier lithium resources Co., Ltd."
+      ],
+      "owners": [
+        "Western Mining Group Co., Ltd."
+      ],
+      "notes": "Western Mining Group Co., Ltd. is the controlling shareholder of Qinghai Dongtai Jinaier."
+    }
+  }
+}

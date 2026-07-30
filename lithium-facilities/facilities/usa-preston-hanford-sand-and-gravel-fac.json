@@ -1,0 +1,74 @@
+{
+  "facility_id": "usa-preston-hanford-sand-and-gravel-fac",
+  "name": "Preston Hanford Sand and Gravel",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 38.4082,
+    "lon": -121.3712,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Hanford Sand & Gravel, Inc."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:34.080055"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T19:54:24.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://www.bizprofile.net/ca/elk-grove/hanford-sand-gravel-inc. The facility is located at 9800 Kent St, Elk Grove, CA 95624"
+  },
+  "canonical_name": "Preston Hanford Sand And Gravel Mine",
+  "canonical_slug": "preston-hanford-sand-and-gravel-mine",
+  "display_name": "Preston Hanford Sand And Gravel",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Preston Hanford Sand and Gravel Mine",
+      "from": "2025-10-20T15:26:34.080059",
+      "to": "2025-11-04T19:18:45.713511Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:54:24.000000Z",
+      "operators": [
+        "Hanford Sand & Gravel, Inc."
+      ],
+      "owners": [
+        "Hanford Sand & Gravel, Inc."
+      ],
+      "notes": "The company has been in operation since 1974 and is family-owned."
+    }
+  }
+}

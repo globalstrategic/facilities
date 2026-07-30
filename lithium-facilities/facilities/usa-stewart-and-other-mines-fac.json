@@ -1,0 +1,81 @@
+{
+  "facility_id": "usa-stewart-and-other-mines-fac",
+  "name": "Stewart and Other Mines",
+  "aliases": [],
+  "country_iso3": "USA",
+  "location": {
+    "lat": 33.367,
+    "lon": -117.068,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "A. E. Almind",
+    "F. H. Stewart",
+    "Jack Koterske",
+    "Pala Gem Mining Company",
+    "W. A. T. Agard"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:29.580804"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:45.960270Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Stewart And Other Mines Mine",
+  "canonical_slug": "stewart-and-other-mines-mine",
+  "display_name": "Stewart And Other Mines",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Stewart and Other Mines Mine",
+      "from": "2025-10-20T15:26:29.580809",
+      "to": "2025-11-04T19:18:45.960267Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "California",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T23:24:58.000000Z",
+      "operators": [
+        "Pala Gem Mining Company"
+      ],
+      "owners": [
+        "Jack Koterske",
+        "F. H. Stewart",
+        "W. A. T. Agard",
+        "A. E. Almind"
+      ],
+      "notes": "Ownership has changed over the years, with various individuals and companies involved."
+    }
+  }
+}

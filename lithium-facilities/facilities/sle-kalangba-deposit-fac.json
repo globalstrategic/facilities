@@ -1,0 +1,64 @@
+{
+  "facility_id": "sle-kalangba-deposit-fac",
+  "name": "Kalangba Deposit",
+  "aliases": [],
+  "country_iso3": "SLE",
+  "location": {
+    "lat": 9.0872,
+    "lon": -12.6954,
+    "precision": "city"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Leone Afric Metals Limited"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import SLE 2025-10-21",
+      "date": "2025-10-21T17:59:20.732980"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.8,
+    "last_checked": "2025-12-18T13:11:53Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Resource estimate of 25 million tonnes at 1% Li. Key asset in Sierra Leone's emerging battery metals sector. 41 | Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:11:53Z] Lithium deposit near Kalangba town, Bombali District, Northern Province"
+  },
+  "canonical_name": "Kalangba Exploration",
+  "canonical_slug": "kalangba-exploration",
+  "display_name": "Kalangba",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Bombali District",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:35:18.000000Z",
+      "operators": [
+        "Leone Afric Metals Limited"
+      ],
+      "owners": [],
+      "notes": "Leone Afric Metals Limited is managing the Kalangba Lithium Ore Deposit."
+    }
+  }
+}

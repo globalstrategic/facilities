@@ -1,0 +1,79 @@
+{
+  "facility_id": "bra-mibra-fac",
+  "name": "Mibra",
+  "aliases": [
+    "Volta Grande",
+    "Mibra",
+    "Mibra"
+  ],
+  "country_iso3": "BRA",
+  "location": {
+    "lat": -20.750846797021037,
+    "lon": -44.82774708738857,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "AMG Brazil"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:21.188362"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.63,
+    "last_checked": "2025-11-26T10:41:33.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: Calculated from Belo Horizonte (https://amglithium.com/company/value-chain). The Mibra Mine is located in the federal district of Minas Gerais, Brazil, approximately 130 km southwest of Belo Horizonte"
+  },
+  "canonical_name": "Mibra Mine",
+  "canonical_slug": "mibra-mine",
+  "display_name": "Mibra",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Minas Gerais",
+  "town": "Belo Horizonte",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T10:41:33.000000Z",
+      "operators": [
+        "AMG Brazil"
+      ],
+      "owners": [
+        "AMG Brazil"
+      ],
+      "notes": "AMG Brazil is the 100% owner and operator of the Mibra Mine."
+    }
+  }
+}

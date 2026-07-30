@@ -1,0 +1,88 @@
+{
+  "facility_id": "prt-mina-do-romano-fac",
+  "name": "Mina do Romano",
+  "aliases": [
+    "Montalegre Project"
+  ],
+  "country_iso3": "PRT",
+  "location": {
+    "lat": 41.8,
+    "lon": -7.8,
+    "precision": "municipality"
+  },
+  "types": [
+    "development"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "tin",
+      "primary": false
+    },
+    {
+      "metal": "niobium",
+      "primary": false
+    },
+    {
+      "metal": "tantalum",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Lusorecursos Portugal Lithium, S.A."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import PRT 2025-10-23",
+      "date": "2025-10-23T15:08:50.165499"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.75,
+    "last_checked": "2025-12-18T14:01:03Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T14:01:03Z] Lusorecursos lithium mine and refinery project, Montalegre"
+  },
+  "canonical_name": "Mina Do Romano Facility",
+  "canonical_slug": "mina-do-romano-facility",
+  "display_name": "Mina Do Romano",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": false
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Mina do Romano",
+      "from": "2025-10-23T15:08:50.165512",
+      "to": "2025-11-04T19:18:53.663305Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Trás-os-Montes",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:22:27.000000Z",
+      "operators": [
+        "Lusorecursos Portugal Lithium, S.A."
+      ],
+      "owners": [
+        "Lusorecursos Portugal Lithium, S.A."
+      ],
+      "notes": "Lusorecursos is the concessionaire for operating the Romano Mine."
+    }
+  }
+}

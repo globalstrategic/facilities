@@ -1,0 +1,114 @@
+{
+  "facility_id": "aus-comet-vale-fac",
+  "name": "Comet Vale",
+  "aliases": [
+    "Sand Prince W",
+    "Princess Grace",
+    "Comet Vale"
+  ],
+  "country_iso3": "AUS",
+  "location": {
+    "lat": -29.96,
+    "lon": 121.13,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Gold",
+      "primary": true
+    },
+    {
+      "metal": "Cobalt",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Bismuth",
+      "primary": false
+    },
+    {
+      "metal": "Lanthanum",
+      "primary": false
+    },
+    {
+      "metal": "Lead",
+      "primary": false
+    },
+    {
+      "metal": "Lithium",
+      "primary": false
+    },
+    {
+      "metal": "Nickel",
+      "primary": false
+    },
+    {
+      "metal": "Silver",
+      "primary": false
+    },
+    {
+      "metal": "caesium",
+      "primary": false
+    },
+    {
+      "metal": "Tungsten",
+      "primary": false
+    },
+    {
+      "metal": "Zinc",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Gorilla Gold Mines Ltd"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:59.544429"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.65,
+    "last_checked": "2025-11-04T19:18:52.315852Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Comet Vale Mine",
+  "canonical_slug": "comet-vale-mine",
+  "display_name": "Comet Vale",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Western Australia",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-25T11:36:27.000000Z",
+      "operators": [
+        "Gorilla Gold Mines Ltd"
+      ],
+      "owners": [
+        "Gorilla Gold Mines Ltd"
+      ],
+      "notes": "Gorilla Gold Mines has full ownership of the Comet Vale project."
+    }
+  }
+}

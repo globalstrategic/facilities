@@ -1,0 +1,66 @@
+{
+  "facility_id": "fra-massif-central-fac",
+  "name": "Massif Central (Echassieres)",
+  "aliases": [],
+  "country_iso3": "FRA",
+  "location": {
+    "lat": 46.232,
+    "lon": 2.702,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Imerys"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:26:46.076022"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:51.672760Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Massif Central Mine",
+  "canonical_slug": "massif-central-mine",
+  "display_name": "Massif Central",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Allier",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T19:34:06.000000Z",
+      "operators": [
+        "Imerys"
+      ],
+      "owners": [
+        "Imerys"
+      ],
+      "notes": "Imerys is the sole operator and owner mentioned in the context of this project."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "facility_id": "ind-govindpal-area-fac",
+  "name": "Govindpal Area",
+  "aliases": [],
+  "country_iso3": "IND",
+  "location": {
+    "lat": 18.7,
+    "lon": 81.9,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bharat Coking Coal Ltd.",
+    "Coal India Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:07.000615"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:18:51.121157Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Govindpal Area Mine",
+  "canonical_slug": "govindpal-area-mine",
+  "display_name": "Govindpal Area",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Jharkhand",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T22:47:15.000000Z",
+      "operators": [
+        "Bharat Coking Coal Ltd."
+      ],
+      "owners": [
+        "Coal India Ltd.",
+        "Bharat Coking Coal Ltd."
+      ],
+      "notes": "Coal India Ltd. has a 100% indirect ownership stake."
+    }
+  }
+}

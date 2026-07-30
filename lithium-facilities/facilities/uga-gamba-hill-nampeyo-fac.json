@@ -1,0 +1,80 @@
+{
+  "facility_id": "uga-gamba-hill-nampeyo-fac",
+  "name": "Gamba Hill Nampeyo",
+  "aliases": [],
+  "country_iso3": "UGA",
+  "location": {
+    "lat": 0.585,
+    "lon": 32.918,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false,
+      "chemical_formula": "Ta",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Niobium",
+      "primary": false,
+      "chemical_formula": "Nb",
+      "category": "specialty_metal"
+    },
+    {
+      "metal": "Bismuth",
+      "primary": false,
+      "chemical_formula": "Bi",
+      "category": "specialty_metal"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    {
+      "name": "Unclear",
+      "role": "operator",
+      "source": "Uganda Deep Research 2025",
+      "confidence": 0.7,
+      "first_seen": "2025-10-21T12:59:38.967011",
+      "evidence": "Extracted from operator column: Unclear"
+    }
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:38.967020"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.3,
+    "last_checked": "2025-11-04T19:19:12.126728Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Gamba Hill Nampeyo Exploration",
+  "canonical_slug": "gamba-hill-nampeyo-exploration",
+  "display_name": "Gamba Hill Nampeyo",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto"
+}

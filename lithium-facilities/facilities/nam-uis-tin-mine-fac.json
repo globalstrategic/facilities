@@ -1,0 +1,97 @@
+{
+  "facility_id": "nam-uis-tin-mine-fac",
+  "name": "Uis Tin Mine",
+  "aliases": [
+    "Uis Tin Mine",
+    "Uis"
+  ],
+  "country_iso3": "NAM",
+  "location": {
+    "lat": -21.21667,
+    "lon": 14.88111,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "tin",
+      "primary": true
+    },
+    {
+      "metal": "Niobium",
+      "primary": false
+    },
+    {
+      "metal": "rubidium",
+      "primary": false
+    },
+    {
+      "metal": "spodumene",
+      "primary": false
+    },
+    {
+      "metal": "Tantalum",
+      "primary": false
+    },
+    {
+      "metal": "Copper",
+      "primary": false
+    },
+    {
+      "metal": "Tungsten",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "AfriTin Mining Ltd",
+    "Andrada Mining Ltd",
+    "The Small Miners of Uis (SMU)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:13.538170"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-02T06:51:21.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Uis_mine. The Uis Tin Mine is one of the largest tin reserves in Namibia"
+  },
+  "canonical_name": "Uis Tin Mine",
+  "canonical_slug": "uis-tin-mine",
+  "display_name": "Uis Tin",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Erongo Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T06:51:21.000000Z",
+      "operators": [
+        "AfriTin Mining Ltd",
+        "Andrada Mining Ltd"
+      ],
+      "owners": [
+        "Andrada Mining Ltd",
+        "The Small Miners of Uis (SMU)"
+      ],
+      "notes": "AfriTin Mining Ltd rebranded to Andrada Mining Ltd in January 2023."
+    }
+  }
+}

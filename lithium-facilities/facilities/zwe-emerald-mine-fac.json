@@ -1,0 +1,70 @@
+{
+  "facility_id": "zwe-emerald-mine-fac",
+  "name": "Emerald Mine",
+  "aliases": [],
+  "country_iso3": "ZWE",
+  "location": {
+    "lat": -20.91667,
+    "lon": 29.93306,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Copper",
+      "primary": true
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Kuvimba Mining House",
+    "Rio Tinto Zinc",
+    "Sandawana Mines Ltd."
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:12.302747"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.9,
+    "last_checked": "2025-12-01T16:11:32.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sandawana_mines. Sandawana Mines is a mining complex known for emeralds and lithium"
+  },
+  "canonical_name": "Emerald Mine",
+  "canonical_slug": "emerald-mine",
+  "display_name": "Emerald",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Midlands",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:11:32.000000Z",
+      "operators": [
+        "Kuvimba Mining House"
+      ],
+      "owners": [
+        "Kuvimba Mining House",
+        "Sandawana Mines Ltd.",
+        "Rio Tinto Zinc"
+      ],
+      "notes": "Kuvimba Mining House took over the asset in 2019."
+    }
+  }
+}

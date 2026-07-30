@@ -1,0 +1,5481 @@
+{
+  "title": "Lithium facilities",
+  "description": "Every facility in the parent database that produces, refines, recycles or is being explored for lithium, with location and co-product metals.",
+  "generated": "2026-07-30",
+  "source": "facilities/{ISO3}/*.json",
+  "source_record_count": 10444,
+  "facility_count": 159,
+  "country_count": 53,
+  "facilities_with_coproducts": 63,
+  "selection_criteria": {
+    "terms": [
+      "lithium",
+      "spodumene",
+      "petalite",
+      "lepidolite",
+      "amblygonite",
+      "zinnwaldite",
+      "eucryptite",
+      "hectorite",
+      "jadarite",
+      "li2o",
+      "lce"
+    ],
+    "tiers": {
+      "A": "lithium listed in the facility's commodities[]",
+      "B": "lithium in the facility name or aliases (commodities incomplete)",
+      "C": "lithium documented only in research/verification notes (vetted)"
+    },
+    "tier_counts": {
+      "A": 137,
+      "C": 16,
+      "B": 6
+    },
+    "excluded": "matches where the commodity name appeared only inside a company name; see excluded_review"
+  },
+  "counts_by_country": {
+    "Australia": 24,
+    "United States": 19,
+    "Argentina": 10,
+    "Portugal": 9,
+    "Zimbabwe": 8,
+    "Uganda": 6,
+    "Canada": 5,
+    "Chile": 5,
+    "Brazil": 4,
+    "Ukraine": 4,
+    "China": 3,
+    "Cote d'Ivoire": 3,
+    "DR Congo": 3,
+    "France": 3,
+    "Mali": 3,
+    "Mongolia": 3,
+    "Morocco": 3,
+    "Nigeria": 3,
+    "Bolivia": 2,
+    "Finland": 2,
+    "Ireland": 2,
+    "Namibia": 2,
+    "Niger": 2,
+    "Pakistan": 2,
+    "Austria": 1,
+    "Cameroon": 1,
+    "Czechia": 1,
+    "Ethiopia": 1,
+    "Ghana": 1,
+    "India": 1,
+    "Indonesia": 1,
+    "Luxembourg": 1,
+    "Madagascar": 1,
+    "Malawi": 1,
+    "Malaysia": 1,
+    "Mexico": 1,
+    "Montenegro": 1,
+    "Mozambique": 1,
+    "Nepal": 1,
+    "Netherlands": 1,
+    "New Zealand": 1,
+    "Peru": 1,
+    "Russia": 1,
+    "Saudi Arabia": 1,
+    "Serbia": 1,
+    "Sierra Leone": 1,
+    "South Korea": 1,
+    "Tanzania": 1,
+    "Thailand": 1,
+    "Turkmenistan": 1,
+    "Uzbekistan": 1,
+    "Vietnam": 1,
+    "Zambia": 1
+  },
+  "counts_by_type": {
+    "mine": 99,
+    "plant": 50,
+    "development": 4,
+    "refinery": 2,
+    "exploration": 2,
+    "project-exploration": 1,
+    "battery_recycling": 1
+  },
+  "counts_by_status": {
+    "unknown": 146,
+    "operating": 9,
+    "planned": 1,
+    "suspended": 1,
+    "closed": 1,
+    "development": 1
+  },
+  "coproduct_frequency": {
+    "Tantalum": 22,
+    "Gold": 15,
+    "Niobium": 15,
+    "Tin": 13,
+    "Nickel": 13,
+    "Copper": 11,
+    "Cobalt": 7,
+    "Silver": 6,
+    "Neodymium-praseodymium (NdPr)": 6,
+    "Feldspar": 5,
+    "Quartz": 5,
+    "Iron ore": 4,
+    "Bismuth": 4,
+    "Caesium": 4,
+    "Rare earths": 4,
+    "Lanthanum": 3,
+    "Tungsten": 3,
+    "Palladium": 3,
+    "Platinum": 3,
+    "Lead": 2,
+    "Zinc": 2,
+    "Rubidium": 2,
+    "Magnesium": 2,
+    "Antimony": 2,
+    "Potash": 2,
+    "Graphite": 2,
+    "Kaolin": 1,
+    "Manganese": 1,
+    "Silica": 1,
+    "Uranium": 1,
+    "Nickel (as MHP/sulfate)": 1,
+    "Aluminium (from bauxite)": 1,
+    "Cerium": 1,
+    "Dysprosium": 1,
+    "Erbium": 1,
+    "Europium": 1,
+    "Gadolinium": 1,
+    "Gallium": 1,
+    "Neodymium": 1,
+    "Praseodymium": 1,
+    "Samarium": 1,
+    "Terbium": 1,
+    "Vanadium": 1,
+    "Yttrium": 1,
+    "Cobalt sulfate": 1,
+    "Nickel sulfate": 1,
+    "Cobalt (recycled)": 1,
+    "Nickel (recycled)": 1,
+    "Niobium (columbite)": 1,
+    "Cobalt (as hydroxide)": 1,
+    "Beryllium": 1
+  },
+  "excluded_review": [
+    {
+      "facility_id": "alb-reps-fac",
+      "name": "Reps Mine",
+      "country": "Albania",
+      "location": "Nevada, Albania",
+      "coords": "41.8820, 20.0690",
+      "commodities": [
+        "Copper"
+      ],
+      "reason": "Copper mine in Albania; note describes Albemarle's Silver Peak (Nevada) lithium site and the province field says 'Nevada' - record looks corrupted.",
+      "path": "facilities/ALB/alb-reps-fac.json"
+    },
+    {
+      "facility_id": "aus-galaxy-fac",
+      "name": "Galaxy Mine",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "coords": "-33.0000, 121.0000",
+      "commodities": [
+        "Gold"
+      ],
+      "reason": "Listed as Gold, but owners (Galaxy Resources / Orocobre) and coordinates near Ravensthorpe WA point to the Mt Cattlin lithium mine.",
+      "path": "facilities/AUS/aus-galaxy-fac.json"
+    },
+    {
+      "facility_id": "aus-pertha-may-fac",
+      "name": "Pertha May Mine",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "coords": "-31.9505, 115.8605",
+      "commodities": [
+        "Gold"
+      ],
+      "reason": "Listed as Gold at Perth CBD coordinates, but companies are the Greenbushes owner set (Talison/Tianqi/Albemarle/IGO). Probable junk record.",
+      "path": "facilities/AUS/aus-pertha-may-fac.json"
+    },
+    {
+      "facility_id": "can-becancour-fac",
+      "name": "Becancour Smelter",
+      "country": "Canada",
+      "location": "Montreal, Quebec, Canada",
+      "coords": "46.5117, -72.0956",
+      "commodities": [
+        "aluminum"
+      ],
+      "reason": "Aluminium/silicon smelter complex. Nemaska Lithium is one of nine companies listed; Becancour does host a separate Nemaska lithium plant.",
+      "path": "facilities/CAN/can-becancour-fac.json"
+    },
+    {
+      "facility_id": "chl-el-rincon-fac",
+      "name": "El Rincon Mine",
+      "country": "Chile",
+      "location": "Antofagasta Region, Chile",
+      "coords": "-26.1680, -70.2450",
+      "commodities": [
+        "Copper"
+      ],
+      "reason": "Listed as Copper in Antofagasta. Rio Tinto's Rincon lithium project is in Salta, Argentina - probable conflation.",
+      "path": "facilities/CHL/chl-el-rincon-fac.json"
+    },
+    {
+      "facility_id": "chn-huichun-smelter-fac",
+      "name": "Huichun Smelter",
+      "country": "China",
+      "location": "Heilongjiang, China",
+      "coords": "42.8210, 130.4150",
+      "commodities": [
+        "Copper"
+      ],
+      "reason": "Copper smelter; note only says companies are 'involved in lithium mining' generically.",
+      "path": "facilities/CHN/chn-huichun-smelter-fac.json"
+    },
+    {
+      "facility_id": "chn-xiangyuan-jinxing-coal-mine-fac",
+      "name": "Xiangyuan Jinxing Coal Mine",
+      "country": "China",
+      "location": "Hunan Province, China",
+      "coords": "36.5520, 113.0240",
+      "commodities": [
+        "metallurgical coal"
+      ],
+      "reason": "Note says Zijin's 'Xiangyuan Hard-Rock Lithium-containing Polymetallic Mine', but commodities say met coal, province says Hunan and coordinates are in Shanxi.",
+      "path": "facilities/CHN/chn-xiangyuan-jinxing-coal-mine-fac.json"
+    },
+    {
+      "facility_id": "mli-morila-fac",
+      "name": "Morila Mine",
+      "country": "Mali",
+      "location": "Sikasso Region, Mali",
+      "coords": "11.6810, -6.8470",
+      "commodities": [
+        "Gold"
+      ],
+      "reason": "Gold mine. 'Mali Lithium' is a former corporate name of Firefinch, not a commodity.",
+      "path": "facilities/MLI/mli-morila-fac.json"
+    },
+    {
+      "facility_id": "moz-corridor-sands-projects-fac",
+      "name": "Corridor Sands Projects Development",
+      "country": "Mozambique",
+      "location": "Gaza, Mozambique",
+      "coords": "-23.8000, 35.0000",
+      "commodities": [
+        "titanium (heavy mineral sands)",
+        "zirconium (heavy mineral sands)",
+        "hafnium (from zircon)"
+      ],
+      "reason": "Heavy mineral sands (Ti/Zr/Hf). 'Sinowin Lithium' is a company name only.",
+      "path": "facilities/MOZ/moz-corridor-sands-projects-fac.json"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_id": "arg-cauchari-olaroz-fac",
+      "name": "Cauchari Olaroz Mine",
+      "display_name": "Cauchari Olaroz",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Jujuy, Argentina",
+      "province": "Jujuy",
+      "town": null,
+      "lat": -23.427,
+      "lon": -66.647,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Ganfeng Lithium Co. Ltd.",
+        "Jujuy Energía y Minería Sociedad del Estado (JEMSE)",
+        "Lithium Argentina AG",
+        "Minera Exar S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/ARG/arg-cauchari-olaroz-fac.json",
+      "file": "facilities/arg-cauchari-olaroz-fac.json"
+    },
+    {
+      "facility_id": "arg-centenario-ratones-fac",
+      "name": "Centenario Ratones Mine",
+      "display_name": "Centenario Ratones",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Salta, Argentina",
+      "province": "Salta",
+      "town": null,
+      "lat": -24.0,
+      "lon": -66.0,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Eramet",
+        "Eramine Sudamerica",
+        "Eramine Sudamérica SA",
+        "Tsingshan Holding Group"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/ARG/arg-centenario-ratones-fac.json",
+      "file": "facilities/arg-centenario-ratones-fac.json"
+    },
+    {
+      "facility_id": "arg-f-nix-project-fac",
+      "name": "Fénix Mine",
+      "display_name": "Fénix",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Catamarca, Argentina",
+      "province": "Catamarca",
+      "town": null,
+      "lat": -25.5,
+      "lon": -66.5,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Arcadium Lithium plc",
+        "Minera del Altiplano S.A.",
+        "Rio Tinto plc"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ARG/arg-f-nix-project-fac.json",
+      "file": "facilities/arg-f-nix-project-fac.json"
+    },
+    {
+      "facility_id": "arg-mariana-fac",
+      "name": "Mariana Mine",
+      "display_name": "Mariana",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Salta, Argentina",
+      "province": "Salta",
+      "town": null,
+      "lat": -23.5,
+      "lon": -66.5,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Ganfeng Lithium Group Co., Ltd.",
+        "Litio Minera Argentina S.A."
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/ARG/arg-mariana-fac.json",
+      "file": "facilities/arg-mariana-fac.json"
+    },
+    {
+      "facility_id": "arg-muerto-north-fac",
+      "name": "Muerto North Mine",
+      "display_name": "Muerto North",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Salta, Argentina",
+      "province": "Salta",
+      "town": null,
+      "lat": -25.442,
+      "lon": -67.102,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Lithium South",
+        "Lithium South Development Corporation",
+        "NRG Metals"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/ARG/arg-muerto-north-fac.json",
+      "file": "facilities/arg-muerto-north-fac.json"
+    },
+    {
+      "facility_id": "arg-pastos-grandes-fac",
+      "name": "Pastos Grandes Mine",
+      "display_name": "Pastos Grandes",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Salta, Argentina",
+      "province": "Salta",
+      "town": null,
+      "lat": -24.573,
+      "lon": -66.701,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Ganfeng Lithium Co. Ltd.",
+        "Lithium Argentina (Argentina) Corp."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/ARG/arg-pastos-grandes-fac.json",
+      "file": "facilities/arg-pastos-grandes-fac.json"
+    },
+    {
+      "facility_id": "arg-reflejos-del-mar-mine-fac",
+      "name": "Reflejos Del Mar Mine",
+      "display_name": "Reflejos Del Mar",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Catamarca, Argentina",
+      "province": "Catamarca",
+      "town": null,
+      "lat": -28.435,
+      "lon": -65.434,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Latin Resources Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/ARG/arg-reflejos-del-mar-mine-fac.json",
+      "file": "facilities/arg-reflejos-del-mar-mine-fac.json"
+    },
+    {
+      "facility_id": "arg-sal-de-vida-fac",
+      "name": "Sal De Vida Mine",
+      "display_name": "Sal De Vida",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Catamarca, Argentina",
+      "province": "Catamarca",
+      "town": null,
+      "lat": -25.40936,
+      "lon": -66.91242,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Allkem Ltd.",
+        "Galaxy Lithium (Sal de Vida) S.A.",
+        "Galaxy Resources Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ARG/arg-sal-de-vida-fac.json",
+      "file": "facilities/arg-sal-de-vida-fac.json"
+    },
+    {
+      "facility_id": "arg-salar-de-olaroz-fac",
+      "name": "Salar De Olaroz Mine",
+      "display_name": "Salar De Olaroz",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Jujuy, Argentina",
+      "province": "Jujuy",
+      "town": null,
+      "lat": -23.46238,
+      "lon": -66.70249,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Allkem Limited",
+        "Jujuy Energía y Minería Sociedad del Estado",
+        "Sales de Jujuy S.A.",
+        "Toyota Tsusho Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ARG/arg-salar-de-olaroz-fac.json",
+      "file": "facilities/arg-salar-de-olaroz-fac.json"
+    },
+    {
+      "facility_id": "arg-salar-ratones-fac",
+      "name": "Salar Ratones Mine",
+      "display_name": "Salar Ratones",
+      "country_iso3": "ARG",
+      "country": "Argentina",
+      "location": "Salta, Argentina",
+      "province": "Salta",
+      "town": null,
+      "lat": -25.164,
+      "lon": -66.75,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Eramet",
+        "Eramine"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/ARG/arg-salar-ratones-fac.json",
+      "file": "facilities/arg-salar-ratones-fac.json"
+    },
+    {
+      "facility_id": "aus-altura-fac",
+      "name": "Altura Mine",
+      "display_name": "Altura",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -20.5,
+      "lon": 118.9,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Copper",
+        "Gold",
+        "Iron ore",
+        "Silver",
+        "Tin"
+      ],
+      "companies": [
+        "Altura Lithium Operations Pty Ltd",
+        "Altura Mining Limited",
+        "Pilbara Minerals Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-altura-fac.json",
+      "file": "facilities/aus-altura-fac.json"
+    },
+    {
+      "facility_id": "aus-bald-hill-central-fac",
+      "name": "Bald Hill Central Mine",
+      "display_name": "Bald Hill Central",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -30.0,
+      "lon": 121.0,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tin"
+      ],
+      "companies": [
+        "Alita Resources Ltd",
+        "Alliance Mineral Assets Ltd",
+        "Mineral Resources Ltd",
+        "Tawana Resources NL"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/AUS/aus-bald-hill-central-fac.json",
+      "file": "facilities/aus-bald-hill-central-fac.json"
+    },
+    {
+      "facility_id": "aus-bellevue-fac",
+      "name": "Bellevue Mine",
+      "display_name": "Bellevue",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -28.5,
+      "lon": 120.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold",
+        "Nickel"
+      ],
+      "companies": [
+        "Bellevue Gold Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-bellevue-fac.json",
+      "file": "facilities/aus-bellevue-fac.json"
+    },
+    {
+      "facility_id": "aus-british-king-fac",
+      "name": "British King Mine",
+      "display_name": "British King",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -28.5,
+      "lon": 121.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold"
+      ],
+      "companies": [
+        "Central Iron Ore",
+        "Red 5 Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/AUS/aus-british-king-fac.json",
+      "file": "facilities/aus-british-king-fac.json"
+    },
+    {
+      "facility_id": "aus-central-norseman-mine-fac",
+      "name": "Central Norseman Mine",
+      "display_name": "Central Norseman",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -32.196,
+      "lon": 121.796,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Gold",
+        "Nickel",
+        "Silver",
+        "Tantalum"
+      ],
+      "companies": [
+        "Pantoro Limited",
+        "Tulla Resources"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/AUS/aus-central-norseman-mine-fac.json",
+      "file": "facilities/aus-central-norseman-mine-fac.json"
+    },
+    {
+      "facility_id": "aus-comet-vale-fac",
+      "name": "Comet Vale Mine",
+      "display_name": "Comet Vale",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -29.96,
+      "lon": 121.13,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Bismuth",
+        "Caesium",
+        "Cobalt",
+        "Copper",
+        "Gold",
+        "Lanthanum",
+        "Lead",
+        "Nickel",
+        "Silver",
+        "Tungsten",
+        "Zinc"
+      ],
+      "companies": [
+        "Gorilla Gold Mines Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/AUS/aus-comet-vale-fac.json",
+      "file": "facilities/aus-comet-vale-fac.json"
+    },
+    {
+      "facility_id": "aus-finniss-fac",
+      "name": "Finniss Mine",
+      "display_name": "Finniss",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Northern Territory, Australia",
+      "province": "Northern Territory",
+      "town": null,
+      "lat": -12.713,
+      "lon": 130.789,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tin"
+      ],
+      "companies": [
+        "Core Lithium Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-finniss-fac.json",
+      "file": "facilities/aus-finniss-fac.json"
+    },
+    {
+      "facility_id": "aus-forrestania-nickel-fac",
+      "name": "Forrestania Nickel Mine",
+      "display_name": "Forrestania Nickel",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -32.581,
+      "lon": 119.737,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Nickel"
+      ],
+      "companies": [
+        "IGO Limited",
+        "Outokumpu Mining Australia Pty Ltd",
+        "Western Areas"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/AUS/aus-forrestania-nickel-fac.json",
+      "file": "facilities/aus-forrestania-nickel-fac.json"
+    },
+    {
+      "facility_id": "aus-golden-eagle-fac",
+      "name": "Golden Eagle Mine",
+      "display_name": "Golden Eagle",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -30.044,
+      "lon": 120.659,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold"
+      ],
+      "companies": [
+        "AIM Mining Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/AUS/aus-golden-eagle-fac.json",
+      "file": "facilities/aus-golden-eagle-fac.json"
+    },
+    {
+      "facility_id": "aus-golden-eagle-nullagine-fac",
+      "name": "Golden Eagle Nullagine Mine",
+      "display_name": "Golden Eagle Nullagine",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -21.965,
+      "lon": 120.124,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold",
+        "Tantalum"
+      ],
+      "companies": [
+        "AIM Mining Corporation",
+        "Calidus Resources",
+        "Millennium Minerals",
+        "Novo Resources"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/AUS/aus-golden-eagle-nullagine-fac.json",
+      "file": "facilities/aus-golden-eagle-nullagine-fac.json"
+    },
+    {
+      "facility_id": "aus-greenbushes-mine-fac",
+      "name": "Greenbushes Mine",
+      "display_name": "Greenbushes",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -33.7,
+      "lon": 116.1,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Kaolin",
+        "Tin"
+      ],
+      "companies": [
+        "Albemarle Corporation",
+        "IGO Ltd.",
+        "Talison Lithium Australia Pty Ltd",
+        "Tianqi Lithium Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-greenbushes-mine-fac.json",
+      "file": "facilities/aus-greenbushes-mine-fac.json"
+    },
+    {
+      "facility_id": "aus-higginsville-fac",
+      "name": "Higginsville Mine",
+      "display_name": "Higginsville",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -33.5,
+      "lon": 121.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Copper",
+        "Gold",
+        "Nickel",
+        "Palladium",
+        "Platinum"
+      ],
+      "companies": [
+        "Karora Resources Inc.",
+        "Westgold Resources Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-higginsville-fac.json",
+      "file": "facilities/aus-higginsville-fac.json"
+    },
+    {
+      "facility_id": "aus-kalgoorlie-gold-ops-fac",
+      "name": "Kalgoorlie Gold Ops Mine",
+      "display_name": "Kalgoorlie Gold Ops",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -28.7,
+      "lon": 121.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold",
+        "Nickel",
+        "Niobium",
+        "Rubidium",
+        "Silver",
+        "Tantalum",
+        "Tin"
+      ],
+      "companies": [
+        "Barrick Gold",
+        "Newmont Goldcorp",
+        "Northern Star Resources"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-kalgoorlie-gold-ops-fac.json",
+      "file": "facilities/aus-kalgoorlie-gold-ops-fac.json"
+    },
+    {
+      "facility_id": "aus-kathleen-valley-fac",
+      "name": "Kathleen Valley Mine",
+      "display_name": "Kathleen Valley",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -26.5,
+      "lon": 120.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold"
+      ],
+      "companies": [
+        "Liontown Resources Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-kathleen-valley-fac.json",
+      "file": "facilities/aus-kathleen-valley-fac.json"
+    },
+    {
+      "facility_id": "aus-mount-edwards-fac",
+      "name": "Mount Edwards Mine",
+      "display_name": "Mount Edwards",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -31.463,
+      "lon": 121.532,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [
+        "Nickel"
+      ],
+      "companies": [
+        "Consolidated Minerals",
+        "Estrella Resources",
+        "Neometals",
+        "Salt Lake Mining"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/AUS/aus-mount-edwards-fac.json",
+      "file": "facilities/aus-mount-edwards-fac.json"
+    },
+    {
+      "facility_id": "aus-mt-cattlin-fac",
+      "name": "Mt Cattlin Mine",
+      "display_name": "Mt Cattlin",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -33.562528,
+      "lon": 120.035194,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Copper",
+        "Gold",
+        "Lead",
+        "Manganese",
+        "Niobium",
+        "Silica",
+        "Zinc"
+      ],
+      "companies": [
+        "Arcadium Lithium",
+        "Galaxy Lithium Pty Ltd",
+        "Rio Tinto plc"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-mt-cattlin-fac.json",
+      "file": "facilities/aus-mt-cattlin-fac.json"
+    },
+    {
+      "facility_id": "aus-mt-holland-fac",
+      "name": "Mt Holland Mine",
+      "display_name": "Mt Holland",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -32.093,
+      "lon": 119.742,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium",
+        "Spodumene"
+      ],
+      "coproducts_byproducts": [
+        "Tantalum"
+      ],
+      "companies": [
+        "Covalent Lithium Pty Ltd",
+        "Kidman Resources Ltd",
+        "Sociedad Quimica y Minera de Chile (SQM)",
+        "Wesfarmers"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/AUS/aus-mt-holland-fac.json",
+      "file": "facilities/aus-mt-holland-fac.json"
+    },
+    {
+      "facility_id": "aus-mt-marion-fac",
+      "name": "Mt Marion Mine",
+      "display_name": "Mt Marion",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -28.8,
+      "lon": 121.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Magnesium",
+        "Nickel",
+        "Tantalum"
+      ],
+      "companies": [
+        "Ganfeng Lithium Group Co., Ltd.",
+        "Mineral Resources Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-mt-marion-fac.json",
+      "file": "facilities/aus-mt-marion-fac.json"
+    },
+    {
+      "facility_id": "aus-nickel-west-kwinana-refinery-fac",
+      "name": "Nickel West Kwinana Refinery",
+      "display_name": "Nickel West Kwinana",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -32.2,
+      "lon": 115.8,
+      "coordinate_precision": "site",
+      "types": [
+        "refinery",
+        "plant"
+      ],
+      "primary_type": "refinery",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Gold",
+        "Nickel"
+      ],
+      "companies": [
+        "BHP Billiton Ltd",
+        "BHP Nickel West Pty Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-nickel-west-kwinana-refinery-fac.json",
+      "file": "facilities/aus-nickel-west-kwinana-refinery-fac.json"
+    },
+    {
+      "facility_id": "aus-pilgangoora-fac",
+      "name": "Pilgangoora Mine",
+      "display_name": "Pilgangoora",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -21.064,
+      "lon": 118.905,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "operating",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Tantalum"
+      ],
+      "companies": [
+        "Pilbara Minerals Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/AUS/aus-pilgangoora-fac.json",
+      "file": "facilities/aus-pilgangoora-fac.json"
+    },
+    {
+      "facility_id": "aus-the-mount-fac",
+      "name": "The Mount Mine",
+      "display_name": "The Mount",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Queensland, Australia",
+      "province": "Queensland",
+      "town": null,
+      "lat": -20.7333,
+      "lon": 140.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Caesium",
+        "Gold",
+        "Tantalum"
+      ],
+      "companies": [
+        "Glencore Mount Isa Mines",
+        "Glencore Xstrata plc",
+        "MIM Holdings Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-the-mount-fac.json",
+      "file": "facilities/aus-the-mount-fac.json"
+    },
+    {
+      "facility_id": "aus-white-dam-olary-fac",
+      "name": "White Dam Olary Mine",
+      "display_name": "White Dam Olary",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "South Australia, Australia",
+      "province": "South Australia",
+      "town": null,
+      "lat": -30.0,
+      "lon": 140.0,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Copper",
+        "Iron ore",
+        "Lanthanum",
+        "Nickel",
+        "Niobium",
+        "Palladium",
+        "Platinum",
+        "Silver",
+        "Tantalum",
+        "Tin",
+        "Uranium"
+      ],
+      "companies": [
+        "GBM Resources Ltd",
+        "Olary Gold Mines",
+        "Pacgold Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/AUS/aus-white-dam-olary-fac.json",
+      "file": "facilities/aus-white-dam-olary-fac.json"
+    },
+    {
+      "facility_id": "aus-wiluna-s-fac",
+      "name": "Wiluna S Mine",
+      "display_name": "Wiluna S",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -26.5,
+      "lon": 120.2,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Antimony",
+        "Copper",
+        "Gold",
+        "Nickel",
+        "Palladium",
+        "Platinum",
+        "Silver"
+      ],
+      "companies": [
+        "Wiluna Mining Corporation Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-wiluna-s-fac.json",
+      "file": "facilities/aus-wiluna-s-fac.json"
+    },
+    {
+      "facility_id": "aus-wodgina-fac",
+      "name": "Wodgina Mine",
+      "display_name": "Wodgina",
+      "country_iso3": "AUS",
+      "country": "Australia",
+      "location": "Western Australia, Australia",
+      "province": "Western Australia",
+      "town": null,
+      "lat": -20.5,
+      "lon": 118.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Iron ore",
+        "Tin"
+      ],
+      "companies": [
+        "Albemarle Corporation",
+        "Mineral Resources Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/AUS/aus-wodgina-fac.json",
+      "file": "facilities/aus-wodgina-fac.json"
+    },
+    {
+      "facility_id": "aut-wolfsberg-lithium-project-fac",
+      "name": "Wolfsberg Lithium Mine",
+      "display_name": "Wolfsberg Lithium",
+      "country_iso3": "AUT",
+      "country": "Austria",
+      "location": "Wolfsberg, Carinthia, Austria",
+      "province": "Carinthia",
+      "town": "Wolfsberg",
+      "lat": 46.838758052126906,
+      "lon": 15.107383031326895,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Feldspar",
+        "Quartz"
+      ],
+      "companies": [
+        "Critical Metals Corp",
+        "Critical Metals Corp.",
+        "ECM Lithium AT GmbH",
+        "European Lithium",
+        "European Lithium Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/AUT/aut-wolfsberg-lithium-project-fac.json",
+      "file": "facilities/aut-wolfsberg-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "bol-salar-de-coipasa-fac",
+      "name": "Salar De Coipasa Mine",
+      "display_name": "Salar De Coipasa",
+      "country_iso3": "BOL",
+      "country": "Bolivia",
+      "location": "Oruro, Bolivia",
+      "province": "Oruro",
+      "town": null,
+      "lat": -19.364,
+      "lon": -68.133,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Xinjiang TBEA Group-Baocheng",
+        "Yacimientos de Litio Bolivianos (YLB)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/BOL/bol-salar-de-coipasa-fac.json",
+      "file": "facilities/bol-salar-de-coipasa-fac.json"
+    },
+    {
+      "facility_id": "bol-salar-de-uyuni-fac",
+      "name": "Salar De Uyuni Mine",
+      "display_name": "Salar De Uyuni",
+      "country_iso3": "BOL",
+      "country": "Bolivia",
+      "location": "Potosí Department, Bolivia",
+      "province": "Potosí Department",
+      "town": null,
+      "lat": -20.1333,
+      "lon": -66.8333,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Corporación Minera de Bolivia (COMIBOL)",
+        "Yacimientos de Litio Bolivianos (YLB)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/BOL/bol-salar-de-uyuni-fac.json",
+      "file": "facilities/bol-salar-de-uyuni-fac.json"
+    },
+    {
+      "facility_id": "bra-cachoeira-fac",
+      "name": "Cachoeira Mine",
+      "display_name": "Cachoeira",
+      "country_iso3": "BRA",
+      "country": "Brazil",
+      "location": "Belém, Pará, Brazil",
+      "province": "Pará",
+      "town": "Belém",
+      "lat": -2.8568327613871882,
+      "lon": -47.069206723910455,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Brazil Resources Inc.",
+        "Luna Gold Corp."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/BRA/bra-cachoeira-fac.json",
+      "file": "facilities/bra-cachoeira-fac.json"
+    },
+    {
+      "facility_id": "bra-grota-do-cirilo-fac",
+      "name": "Grota Do Cirilo Mine",
+      "display_name": "Grota Do Cirilo",
+      "country_iso3": "BRA",
+      "country": "Brazil",
+      "location": "Minas Gerais, Brazil",
+      "province": "Minas Gerais",
+      "town": null,
+      "lat": -16.736,
+      "lon": -41.905,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Sigma Lithium Corp",
+        "Sigma Lithium Resources Corp",
+        "Sigma Mineração S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/BRA/bra-grota-do-cirilo-fac.json",
+      "file": "facilities/bra-grota-do-cirilo-fac.json"
+    },
+    {
+      "facility_id": "bra-mibra-fac",
+      "name": "Mibra Mine",
+      "display_name": "Mibra",
+      "country_iso3": "BRA",
+      "country": "Brazil",
+      "location": "Belo Horizonte, Minas Gerais, Brazil",
+      "province": "Minas Gerais",
+      "town": "Belo Horizonte",
+      "lat": -20.750846797021037,
+      "lon": -44.82774708738857,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tin"
+      ],
+      "companies": [
+        "AMG Brazil"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/BRA/bra-mibra-fac.json",
+      "file": "facilities/bra-mibra-fac.json"
+    },
+    {
+      "facility_id": "bra-quixeramobim-fac",
+      "name": "Quixeramobim Mine",
+      "display_name": "Quixeramobim",
+      "country_iso3": "BRA",
+      "country": "Brazil",
+      "location": "Ceará, Brazil",
+      "province": "Ceará",
+      "town": null,
+      "lat": -5.2,
+      "lon": -39.3,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "MMX Mineração"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/BRA/bra-quixeramobim-fac.json",
+      "file": "facilities/bra-quixeramobim-fac.json"
+    },
+    {
+      "facility_id": "cmr-ndom-licence-area-fac",
+      "name": "Ndom Licence Area Mine",
+      "display_name": "Ndom Licence Area",
+      "country_iso3": "CMR",
+      "country": "Cameroon",
+      "location": "Adamaoua, Cameroon",
+      "province": "Adamaoua",
+      "town": null,
+      "lat": 6.3,
+      "lon": 13.8,
+      "coordinate_precision": "region",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Oriole Resources PLC"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/CMR/cmr-ndom-licence-area-fac.json",
+      "file": "facilities/cmr-ndom-licence-area-fac.json"
+    },
+    {
+      "facility_id": "can-b-cancour-lithium-hydroxide-plant-fac",
+      "name": "BÃ©cancour Lithium Hydroxide Refinery",
+      "display_name": "BÃ©cancour Lithium Hydroxide",
+      "country_iso3": "CAN",
+      "country": "Canada",
+      "location": "Quebec, Canada",
+      "province": "Quebec",
+      "town": null,
+      "lat": 46.3674,
+      "lon": -72.404,
+      "coordinate_precision": "site",
+      "types": [
+        "refinery"
+      ],
+      "primary_type": "refinery",
+      "status": "planned",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Investissement Quebec",
+        "Investissement Québec",
+        "Livent Corp",
+        "Livent Corp.",
+        "Nemaska Lithium",
+        "Nemaska Lithium Inc",
+        "Nemaska Lithium Inc.",
+        "Orion Mine Finance",
+        "Pallinghurst Group"
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.85,
+      "source_file": "facilities/CAN/can-b-cancour-lithium-hydroxide-plant-fac.json",
+      "file": "facilities/can-b-cancour-lithium-hydroxide-plant-fac.json"
+    },
+    {
+      "facility_id": "can-clearwater-lithium-project-fac",
+      "name": "Clearwater Lithium Refinery",
+      "display_name": "Clearwater Lithium",
+      "country_iso3": "CAN",
+      "country": "Canada",
+      "location": "Calgary, Alberta, Canada",
+      "province": "Alberta",
+      "town": "Calgary",
+      "lat": 51.77365632950755,
+      "lon": -114.057541,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "refinery",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "1975293 Alberta Ltd.",
+        "E3 Lithium Ltd."
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/CAN/can-clearwater-lithium-project-fac.json",
+      "file": "facilities/can-clearwater-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "can-james-bay-fac",
+      "name": "James Bay Mine",
+      "display_name": "James Bay",
+      "country_iso3": "CAN",
+      "country": "Canada",
+      "location": "Matagami, Quebec, Canada",
+      "province": "Quebec",
+      "town": "Matagami",
+      "lat": 51.10605613843878,
+      "lon": -77.6300251,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Allkem Ltd.",
+        "Rio Tinto Group"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/CAN/can-james-bay-fac.json",
+      "file": "facilities/can-james-bay-fac.json"
+    },
+    {
+      "facility_id": "can-north-american-lithium-fac",
+      "name": "North American Lithium Mine",
+      "display_name": "North American Lithium",
+      "country_iso3": "CAN",
+      "country": "Canada",
+      "location": "Val d’Or, Quebec, Canada",
+      "province": "Quebec",
+      "town": "Val d’Or",
+      "lat": 48.64191580635075,
+      "lon": -77.7875715,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Piedmont Lithium",
+        "Sayona Mining",
+        "Sayona Québec"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/CAN/can-north-american-lithium-fac.json",
+      "file": "facilities/can-north-american-lithium-fac.json"
+    },
+    {
+      "facility_id": "can-whabouchi-fac",
+      "name": "Whabouchi Mine",
+      "display_name": "Whabouchi",
+      "country_iso3": "CAN",
+      "country": "Canada",
+      "location": "Nemaska, Quebec, Canada",
+      "province": "Quebec",
+      "town": "Nemaska",
+      "lat": 51.70418238462296,
+      "lon": -75.92638996998141,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Investissement Quebec Inc.",
+        "Nemaska Lithium Inc.",
+        "Rio Tinto plc"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/CAN/can-whabouchi-fac.json",
+      "file": "facilities/can-whabouchi-fac.json"
+    },
+    {
+      "facility_id": "chl-la-negra-plant-fac",
+      "name": "La Negra Mine",
+      "display_name": "La Negra",
+      "country_iso3": "CHL",
+      "country": "Chile",
+      "location": "Antofagasta Region, Chile",
+      "province": "Antofagasta Region",
+      "town": null,
+      "lat": -23.5,
+      "lon": -70.4,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Albemarle Corporation"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/CHL/chl-la-negra-plant-fac.json",
+      "file": "facilities/chl-la-negra-plant-fac.json"
+    },
+    {
+      "facility_id": "chl-maricunga-fac",
+      "name": "Maricunga Mine",
+      "display_name": "Maricunga",
+      "country_iso3": "CHL",
+      "country": "Chile",
+      "location": "Atacama, Chile",
+      "province": "Atacama",
+      "town": null,
+      "lat": -26.748,
+      "lon": -69.075,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Codelco",
+        "Rio Tinto"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/CHL/chl-maricunga-fac.json",
+      "file": "facilities/chl-maricunga-fac.json"
+    },
+    {
+      "facility_id": "chl-salar-de-atacama-fac",
+      "name": "Salar De Atacama Mine",
+      "display_name": "Salar De Atacama",
+      "country_iso3": "CHL",
+      "country": "Chile",
+      "location": "Antofagasta Region, Chile",
+      "province": "Antofagasta Region",
+      "town": null,
+      "lat": -23.5,
+      "lon": -67.5,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Magnesium",
+        "Potash"
+      ],
+      "companies": [
+        "Sociedad Quimica y Minera de Chile S.A.",
+        "Sociedad Quimica y Minera de Chile S.A. (SQM)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/CHL/chl-salar-de-atacama-fac.json",
+      "file": "facilities/chl-salar-de-atacama-fac.json"
+    },
+    {
+      "facility_id": "chl-salar-del-carmen-fac",
+      "name": "Salar Del Carmen Mine",
+      "display_name": "Salar Del Carmen",
+      "country_iso3": "CHL",
+      "country": "Chile",
+      "location": "Antofagasta, Antofagasta Region, Chile",
+      "province": "Antofagasta Region",
+      "town": "Antofagasta",
+      "lat": -23.62,
+      "lon": -70.35,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Corporación de Fomento de la Producción (CORFO)",
+        "Sociedad Química y Minera de Chile (SQM)",
+        "Sociedad Química y Minera de Chile S.A. (SQM)"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/CHL/chl-salar-del-carmen-fac.json",
+      "file": "facilities/chl-salar-del-carmen-fac.json"
+    },
+    {
+      "facility_id": "chl-salar-del-carmen-salar-de-atacama-fac",
+      "name": "Salar Del Carmen/salar De Atacama Plant",
+      "display_name": "Salar Del Carmen/salar De Atacama",
+      "country_iso3": "CHL",
+      "country": "Chile",
+      "location": "Antofagasta Region, Chile",
+      "province": "Antofagasta Region",
+      "town": null,
+      "lat": -23.5,
+      "lon": -67.5,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Bismuth",
+        "Potash"
+      ],
+      "companies": [
+        "Sociedad Química y Minera de Chile (SQM)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/CHL/chl-salar-del-carmen-salar-de-atacama-fac.json",
+      "file": "facilities/chl-salar-del-carmen-salar-de-atacama-fac.json"
+    },
+    {
+      "facility_id": "chn-dongtai-jinaier-fac",
+      "name": "Dongtai Jinaier Mine",
+      "display_name": "Dongtai Jinaier",
+      "country_iso3": "CHN",
+      "country": "China",
+      "location": "Qinghai, China",
+      "province": "Qinghai",
+      "town": null,
+      "lat": 37.442,
+      "lon": 94.08,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Qinghai CITIC Guoan Technology Development (2.16%)",
+        "Qinghai Dongtai Jinai’er Lithium Resources",
+        "Qinghai Lianyu Potash (20.34%)",
+        "Qinghai State-owned Assets Investment Management (1%)",
+        "Qinghai Taifeng Xianxing Lithium Energy Technology (49.5%)",
+        "Western Mining (27%)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/CHN/chn-dongtai-jinaier-fac.json",
+      "file": "facilities/chn-dongtai-jinaier-fac.json"
+    },
+    {
+      "facility_id": "chn-qinghai-misc-brines-fac",
+      "name": "Qinghai Misc Brines Mine",
+      "display_name": "Qinghai Misc Brines",
+      "country_iso3": "CHN",
+      "country": "China",
+      "location": "Qinghai, China",
+      "province": "Qinghai",
+      "town": null,
+      "lat": 31.38,
+      "lon": 83.978,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "China Minmetals Corporation",
+        "China Salt Lake Industry Group Co., Ltd.",
+        "Qinghai province"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/CHN/chn-qinghai-misc-brines-fac.json",
+      "file": "facilities/chn-qinghai-misc-brines-fac.json"
+    },
+    {
+      "facility_id": "chn-xitai-jinaier-fac",
+      "name": "Xitai Jinaier Mine",
+      "display_name": "Xitai Jinaier",
+      "country_iso3": "CHN",
+      "country": "China",
+      "location": "Qinghai, China",
+      "province": "Qinghai",
+      "town": null,
+      "lat": 37.689,
+      "lon": 93.527,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Qinghai Dongtai Jinaier lithium resources Co., Ltd.",
+        "Western Mining Group Co., Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/CHN/chn-xitai-jinaier-fac.json",
+      "file": "facilities/chn-xitai-jinaier-fac.json"
+    },
+    {
+      "facility_id": "civ-agboville-adzop-project-fac",
+      "name": "Agboville/adzopÃ© Exploration",
+      "display_name": "Agboville/adzopÃ©",
+      "country_iso3": "CIV",
+      "country": "Cote d'Ivoire",
+      "location": "Lagunes, Cote d'Ivoire",
+      "province": "Lagunes",
+      "town": null,
+      "lat": 5.928,
+      "lon": -4.2132,
+      "coordinate_precision": "region",
+      "types": [
+        "project-exploration"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Desert Metals Limited",
+        "Khaleesi Resources SARL"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/CIV/civ-agboville-adzop-project-fac.json",
+      "file": "facilities/civ-agboville-adzop-project-fac.json"
+    },
+    {
+      "facility_id": "civ-atex-lithium-coltan-project-fac",
+      "name": "Atex Lithium Coltan Exploration",
+      "display_name": "Atex Lithium Coltan",
+      "country_iso3": "CIV",
+      "country": "Cote d'Ivoire",
+      "location": "Boundiali, Côte d'Ivoire, Cote d'Ivoire",
+      "province": "Côte d'Ivoire",
+      "town": "Boundiali",
+      "lat": 9.884873676713816,
+      "lon": -6.4820197,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Tantalum"
+      ],
+      "companies": [
+        "Alliance Minerals Corporation Sarl",
+        "Atex Mining Resources",
+        "Firering Holdings Limited",
+        "Firering PLC",
+        "Firering Strategic Minerals Plc"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/CIV/civ-atex-lithium-coltan-project-fac.json",
+      "file": "facilities/civ-atex-lithium-coltan-project-fac.json"
+    },
+    {
+      "facility_id": "civ-rubino-agboville-licenses-fac",
+      "name": "Rubino/agboville Licenses Exploration",
+      "display_name": "Rubino/agboville Licenses",
+      "country_iso3": "CIV",
+      "country": "Cote d'Ivoire",
+      "location": "Agnéby-Tiassa, Cote d'Ivoire",
+      "province": "Agnéby-Tiassa",
+      "town": null,
+      "lat": 5.935,
+      "lon": -4.223,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Atlantic Lithium",
+        "Atlantic Lithium Limited",
+        "Atlantic Lithium Ltd",
+        "Atlantic Lithium Ltd.",
+        "Khaleesi Resources SARL"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/CIV/civ-rubino-agboville-licenses-fac.json",
+      "file": "facilities/civ-rubino-agboville-licenses-fac.json"
+    },
+    {
+      "facility_id": "cze-c-novec-project-fac",
+      "name": "Cínovec Development",
+      "display_name": "Cínovec",
+      "country_iso3": "CZE",
+      "country": "Czechia",
+      "location": "Ústí nad Labem, Czechia",
+      "province": "Ústí nad Labem",
+      "town": null,
+      "lat": 50.73,
+      "lon": 13.76,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "development",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "CEZ a.s.",
+        "European Metals Holdings Limited",
+        "European Metals Holdings Ltd.",
+        "European Metals Holdings)",
+        "GEOMET s.r.o. (ČEZ Group",
+        "Geomet a.s.",
+        "Geomet s.r.o.",
+        "ČEZ a.s."
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/CZE/cze-c-novec-project-fac.json",
+      "file": "facilities/cze-c-novec-project-fac.json"
+    },
+    {
+      "facility_id": "cod-kitotolo-fac",
+      "name": "Kitotolo Mine",
+      "display_name": "Kitotolo",
+      "country_iso3": "COD",
+      "country": "DR Congo",
+      "location": "Tanganyika, DR Congo",
+      "province": "Tanganyika",
+      "town": null,
+      "lat": -7.323,
+      "lon": 27.385,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "AVZ Minerals",
+        "Cominière",
+        "Force Commodities Ltd",
+        "Manono Lithium SAS",
+        "Tantalex Resources Corporation",
+        "Zijin Mining"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/COD/cod-kitotolo-fac.json",
+      "file": "facilities/cod-kitotolo-fac.json"
+    },
+    {
+      "facility_id": "cod-manono-kitolo-project-fac",
+      "name": "Manono Kitolo Mine",
+      "display_name": "Manono Kitolo",
+      "country_iso3": "COD",
+      "country": "DR Congo",
+      "location": "Tanganyika Province, DR Congo",
+      "province": "Tanganyika Province",
+      "town": null,
+      "lat": -7.288056,
+      "lon": 27.393888,
+      "coordinate_precision": "region",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "AVZ Minerals Ltd.",
+        "La Congolaise d’Exploitation Minière SA",
+        "Manono Lithium SAS",
+        "Zijin Mining"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.85,
+      "source_file": "facilities/COD/cod-manono-kitolo-project-fac.json",
+      "file": "facilities/cod-manono-kitolo-project-fac.json"
+    },
+    {
+      "facility_id": "cod-manono-fac",
+      "name": "Manono Mine",
+      "display_name": "Manono",
+      "country_iso3": "COD",
+      "country": "DR Congo",
+      "location": "Tanganyika Province, DR Congo",
+      "province": "Tanganyika Province",
+      "town": null,
+      "lat": -7.277,
+      "lon": 27.451,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "AVZ Minerals Limited",
+        "Jinxiang Lithium Limited",
+        "La Congolaise d’Exploitation Minière SA",
+        "Zijin Mining"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/COD/cod-manono-fac.json",
+      "file": "facilities/cod-manono-fac.json"
+    },
+    {
+      "facility_id": "eth-kenticha-mine-fac",
+      "name": "Kenticha Mine",
+      "display_name": "Kenticha",
+      "country_iso3": "ETH",
+      "country": "Ethiopia",
+      "location": "Ethiopia",
+      "province": null,
+      "town": null,
+      "lat": 5.5167,
+      "lon": 39.0333,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "suspended",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Caesium",
+        "Niobium",
+        "Rare earths",
+        "Tantalum"
+      ],
+      "companies": [
+        "Kenticha Mining Plc (OMSC (operator)",
+        "AML) (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/ETH/eth-kenticha-mine-fac.json",
+      "file": "facilities/eth-kenticha-mine-fac.json"
+    },
+    {
+      "facility_id": "fin-keliber-lithium-project-fac",
+      "name": "Keliber Lithium Mine",
+      "display_name": "Keliber Lithium",
+      "country_iso3": "FIN",
+      "country": "Finland",
+      "location": "Central Ostrobothnia, Finland",
+      "province": "Central Ostrobothnia",
+      "town": null,
+      "lat": 63.4716,
+      "lon": 24.2295,
+      "coordinate_precision": "region",
+      "types": [
+        "mine",
+        "concentrator",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Finnish Minerals Group",
+        "Keliber Oy",
+        "Sibanye-Stillwater Ltd",
+        "Sibanye-Stillwater Ltd."
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/FIN/fin-keliber-lithium-project-fac.json",
+      "file": "facilities/fin-keliber-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "fin-keliber-fac",
+      "name": "Keliber Mine",
+      "display_name": "Keliber",
+      "country_iso3": "FIN",
+      "country": "Finland",
+      "location": "Central Ostrobothnia, Finland",
+      "province": "Central Ostrobothnia",
+      "town": null,
+      "lat": 63.563,
+      "lon": 23.789,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Tantalum"
+      ],
+      "companies": [
+        "Finnish Minerals Group",
+        "Keliber Oy",
+        "Sibanye-Stillwater Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/FIN/fin-keliber-fac.json",
+      "file": "facilities/fin-keliber-fac.json"
+    },
+    {
+      "facility_id": "fra-echassi-res-district-fac",
+      "name": "Echassières Mine",
+      "display_name": "Echassières",
+      "country_iso3": "FRA",
+      "country": "France",
+      "location": "Auvergne-Rhône-Alpes, France",
+      "province": "Auvergne-Rhône-Alpes",
+      "town": null,
+      "lat": 46.179,
+      "lon": 2.955,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "closed",
+      "commodity_forms": [],
+      "coproducts_byproducts": [
+        "Tungsten"
+      ],
+      "companies": [
+        "Imerys"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/FRA/fra-echassi-res-district-fac.json",
+      "file": "facilities/fra-echassi-res-district-fac.json"
+    },
+    {
+      "facility_id": "fra-emili-project-fac",
+      "name": "Emili Mine",
+      "display_name": "Emili",
+      "country_iso3": "FRA",
+      "country": "France",
+      "location": "Allier, France",
+      "province": "Allier",
+      "town": null,
+      "lat": 46.0,
+      "lon": 2.6,
+      "coordinate_precision": "region",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Imerys",
+        "Imerys S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/FRA/fra-emili-project-fac.json",
+      "file": "facilities/fra-emili-project-fac.json"
+    },
+    {
+      "facility_id": "fra-massif-central-fac",
+      "name": "Massif Central Mine",
+      "display_name": "Massif Central",
+      "country_iso3": "FRA",
+      "country": "France",
+      "location": "Allier, France",
+      "province": "Allier",
+      "town": null,
+      "lat": 46.232,
+      "lon": 2.702,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Imerys"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/FRA/fra-massif-central-fac.json",
+      "file": "facilities/fra-massif-central-fac.json"
+    },
+    {
+      "facility_id": "gha-ewoyaa-fac",
+      "name": "Ewoyaa Mine",
+      "display_name": "Ewoyaa",
+      "country_iso3": "GHA",
+      "country": "Ghana",
+      "location": "Central Region, Ghana",
+      "province": "Central Region",
+      "town": null,
+      "lat": 5.24,
+      "lon": -1.053,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Atlantic Lithium",
+        "Government of Ghana",
+        "Minerals Income Investment Fund",
+        "Piedmont Lithium"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/GHA/gha-ewoyaa-fac.json",
+      "file": "facilities/gha-ewoyaa-fac.json"
+    },
+    {
+      "facility_id": "ind-govindpal-area-fac",
+      "name": "Govindpal Area Mine",
+      "display_name": "Govindpal Area",
+      "country_iso3": "IND",
+      "country": "India",
+      "location": "Jharkhand, India",
+      "province": "Jharkhand",
+      "town": null,
+      "lat": 18.7,
+      "lon": 81.9,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Bharat Coking Coal Ltd.",
+        "Coal India Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/IND/ind-govindpal-area-fac.json",
+      "file": "facilities/ind-govindpal-area-fac.json"
+    },
+    {
+      "facility_id": "idn-pt-chengtok-lithium-indonesia-plant-fac",
+      "name": "PT Chengtok Lithium Indonesia Refinery",
+      "display_name": "PT Chengtok Lithium Indonesia",
+      "country_iso3": "IDN",
+      "country": "Indonesia",
+      "location": "Central Sulawesi, Indonesia",
+      "province": "Central Sulawesi",
+      "town": null,
+      "lat": -2.8256,
+      "lon": 122.1554,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "refinery",
+      "status": "operating",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Chengxin Lithium Group",
+        "PT ChengTok Lithium Indonesia",
+        "PT. ChengTok Lithium Indonesia",
+        "Shenzhen Chengxin Lithium Group Co Ltd",
+        "Stellar Investment Pte",
+        "Tsingshan Holding Group"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/IDN/idn-pt-chengtok-lithium-indonesia-plant-fac.json",
+      "file": "facilities/idn-pt-chengtok-lithium-indonesia-plant-fac.json"
+    },
+    {
+      "facility_id": "irl-avalonia-project-fac",
+      "name": "Avalonia Exploration",
+      "display_name": "Avalonia",
+      "country_iso3": "IRL",
+      "country": "Ireland",
+      "location": "Wicklow and Carlow, Ireland",
+      "province": "Wicklow and Carlow",
+      "town": null,
+      "lat": 52.7478,
+      "lon": -6.6233,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "operating",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Blackstairs Lithium (Ganfeng",
+        "GFL International Co., Limited",
+        "Ganfeng Lithium Co., Ltd.",
+        "Ganfeng Lithium Group Co., Ltd.",
+        "ILC JV)",
+        "International Lithium Corp."
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/IRL/irl-avalonia-project-fac.json",
+      "file": "facilities/irl-avalonia-project-fac.json"
+    },
+    {
+      "facility_id": "irl-leinster-project-fac",
+      "name": "Leinster Exploration",
+      "display_name": "Leinster",
+      "country_iso3": "IRL",
+      "country": "Ireland",
+      "location": "Dublin, Leinster, Ireland",
+      "province": "Leinster",
+      "town": "Dublin",
+      "lat": 53.212568889534076,
+      "lon": -6.534773496949776,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "operating",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "European Lithium",
+        "European Lithium Limited",
+        "Global Battery Metals Ltd",
+        "LRH Resources Limited",
+        "Technology Minerals Plc"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/IRL/irl-leinster-project-fac.json",
+      "file": "facilities/irl-leinster-project-fac.json"
+    },
+    {
+      "facility_id": "lux-circu-li-ion-battery-upcycling-facility-fac",
+      "name": "Circu Li Ion Battery Upcycling Facility Battery Recycling",
+      "display_name": "Circu Li Ion Battery Upcycling Facility",
+      "country_iso3": "LUX",
+      "country": "Luxembourg",
+      "location": "Luxembourg",
+      "province": null,
+      "town": null,
+      "lat": 49.4727587,
+      "lon": 5.9898207,
+      "coordinate_precision": "region",
+      "types": [
+        "battery_recycling"
+      ],
+      "primary_type": "battery_recycling",
+      "status": "operating",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Graphite",
+        "Nickel"
+      ],
+      "companies": [
+        "Circu Li-ion S.A. (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/LUX/lux-circu-li-ion-battery-upcycling-facility-fac.json",
+      "file": "facilities/lux-circu-li-ion-battery-upcycling-facility-fac.json"
+    },
+    {
+      "facility_id": "mdg-millie-s-reward-project-fac",
+      "name": "Millie's Reward Development",
+      "display_name": "Millie's Reward",
+      "country_iso3": "MDG",
+      "country": "Madagascar",
+      "location": "Madagascar",
+      "province": null,
+      "town": null,
+      "lat": -19.5,
+      "lon": 47.0,
+      "coordinate_precision": "region",
+      "types": [
+        "development"
+      ],
+      "primary_type": "development",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [
+        "Copper",
+        "Gold"
+      ],
+      "companies": [
+        "Bass Metals Limited",
+        "Bass Metals Ltd",
+        "Greenwing Resources Ltd"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.6,
+      "source_file": "facilities/MDG/mdg-millie-s-reward-project-fac.json",
+      "file": "facilities/mdg-millie-s-reward-project-fac.json"
+    },
+    {
+      "facility_id": "mwi-karonga-lithium-project-fac",
+      "name": "Karonga Lithium Exploration",
+      "display_name": "Karonga Lithium",
+      "country_iso3": "MWI",
+      "country": "Malawi",
+      "location": "Northern Region, Malawi",
+      "province": "Northern Region",
+      "town": null,
+      "lat": -9.9333,
+      "lon": 33.9333,
+      "coordinate_precision": "region",
+      "types": [
+        "exploration"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Copper",
+        "Rare earths"
+      ],
+      "companies": [
+        "DY6 Metals Ltd",
+        "DY6 Metals Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/MWI/mwi-karonga-lithium-project-fac.json",
+      "file": "facilities/mwi-karonga-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "mys-econili-battery-recycling-plants-fac",
+      "name": "Econili Battery Recycling Plants Battery Recycling",
+      "display_name": "Econili Battery Recycling Plants",
+      "country_iso3": "MYS",
+      "country": "Malaysia",
+      "location": "Malaysia",
+      "province": null,
+      "town": null,
+      "lat": 4.65,
+      "lon": 101.11,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "battery_recycling",
+      "status": "operating",
+      "commodity_forms": [
+        "Lithium (as lithium carbonate)"
+      ],
+      "coproducts_byproducts": [
+        "Nickel (as MHP/sulfate)"
+      ],
+      "companies": [
+        "EcoNiLi Battery New Energy Sdn Bhd (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/MYS/mys-econili-battery-recycling-plants-fac.json",
+      "file": "facilities/mys-econili-battery-recycling-plants-fac.json"
+    },
+    {
+      "facility_id": "mli-bougouni-lithium-project-fac",
+      "name": "Bougouni Lithium Mine",
+      "display_name": "Bougouni Lithium",
+      "country_iso3": "MLI",
+      "country": "Mali",
+      "location": "Mali",
+      "province": "Mali",
+      "town": null,
+      "lat": 11.418,
+      "lon": -7.471,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Hainan Mining Co. Ltd",
+        "Hainan Mining Co., Ltd.",
+        "Kodal Minerals",
+        "Kodal Mining (UK) Ltd",
+        "Les Mines de Lithium de Bougouni SA",
+        "Les Mines de Lithium de Bougouni SA (LMLB)",
+        "Malian Government"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.55,
+      "source_file": "facilities/MLI/mli-bougouni-lithium-project-fac.json",
+      "file": "facilities/mli-bougouni-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "mli-faraba-gouna-projects-fac",
+      "name": "Faraba & Gouna Projects Exploration",
+      "display_name": "Faraba & Gouna Projects",
+      "country_iso3": "MLI",
+      "country": "Mali",
+      "location": "Kayes, Mali",
+      "province": "Kayes",
+      "town": null,
+      "lat": 14.083,
+      "lon": -11.75,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Intermin",
+        "Intermin Resources Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/MLI/mli-faraba-gouna-projects-fac.json",
+      "file": "facilities/mli-faraba-gouna-projects-fac.json"
+    },
+    {
+      "facility_id": "mli-goulamina-fac",
+      "name": "Goulamina Mine",
+      "display_name": "Goulamina",
+      "country_iso3": "MLI",
+      "country": "Mali",
+      "location": "Mali",
+      "province": "Mali",
+      "town": null,
+      "lat": 11.346,
+      "lon": -7.96,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Ganfeng Lithium",
+        "Malian Government"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/MLI/mli-goulamina-fac.json",
+      "file": "facilities/mli-goulamina-fac.json"
+    },
+    {
+      "facility_id": "mex-sonora-lithium-project-fac",
+      "name": "Sonora Lithium Facility",
+      "display_name": "Sonora Lithium",
+      "country_iso3": "MEX",
+      "country": "Mexico",
+      "location": "Bacadehuachi, Sonora, Mexico",
+      "province": "Sonora",
+      "town": "Bacadehuachi",
+      "lat": 29.882025435477512,
+      "lon": -109.1260464,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium",
+        "Lithium carbonate (planned)",
+        "Lithium hydroxide (planned)"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Bacanora Lithium Plc",
+        "Cadence Minerals Plc",
+        "Ganfeng Lithium",
+        "Ganfeng Lithium Group Co., Ltd.",
+        "Ganfeng Lithium Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/MEX/mex-sonora-lithium-project-fac.json",
+      "file": "facilities/mex-sonora-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "mng-baavhai-uul-project-fac",
+      "name": "Baavhai Uul Exploration",
+      "display_name": "Baavhai Uul",
+      "country_iso3": "MNG",
+      "country": "Mongolia",
+      "location": "Sükhbaatar, Sükhbaatar Province, Mongolia",
+      "province": "Sükhbaatar Province",
+      "town": "Sükhbaatar",
+      "lat": 46.42525152630746,
+      "lon": 113.5077196,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Aranjin Resources Ltd.",
+        "ION Energy Ltd."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/MNG/mng-baavhai-uul-project-fac.json",
+      "file": "facilities/mng-baavhai-uul-project-fac.json"
+    },
+    {
+      "facility_id": "mng-tsagan-chuluut-project-fac",
+      "name": "Tsagan Chuluut Exploration",
+      "display_name": "Tsagan Chuluut",
+      "country_iso3": "MNG",
+      "country": "Mongolia",
+      "location": "Ulaanbaatar, Central Mongolia, Mongolia",
+      "province": "Central Mongolia",
+      "town": "Ulaanbaatar",
+      "lat": 47.835216764270136,
+      "lon": 111.28802899267322,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Lithium Century",
+        "Sinomine Resources Group"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/MNG/mng-tsagan-chuluut-project-fac.json",
+      "file": "facilities/mng-tsagan-chuluut-project-fac.json"
+    },
+    {
+      "facility_id": "mng-urgakh-naran-project-fac",
+      "name": "Urgakh Naran Exploration",
+      "display_name": "Urgakh Naran",
+      "country_iso3": "MNG",
+      "country": "Mongolia",
+      "location": "Dorngovi, Mongolia",
+      "province": "Dorngovi",
+      "town": null,
+      "lat": 44.5,
+      "lon": 109.5,
+      "coordinate_precision": "approximate",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "ION Energy Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/MNG/mng-urgakh-naran-project-fac.json",
+      "file": "facilities/mng-urgakh-naran-project-fac.json"
+    },
+    {
+      "facility_id": "mne-nik-i-bauxite-mines-fac",
+      "name": "Nikšić Bauxite Mines Facility",
+      "display_name": "Nikšić Bauxite Mines",
+      "country_iso3": "MNE",
+      "country": "Montenegro",
+      "location": "Montenegro",
+      "province": "Montenegro",
+      "town": null,
+      "lat": 42.762,
+      "lon": 19.082,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Aluminium (from bauxite)",
+        "Cerium",
+        "Dysprosium",
+        "Erbium",
+        "Europium",
+        "Gadolinium",
+        "Gallium",
+        "Iron ore",
+        "Lanthanum",
+        "Neodymium",
+        "Niobium",
+        "Praseodymium",
+        "Samarium",
+        "Terbium",
+        "Vanadium",
+        "Yttrium"
+      ],
+      "companies": [
+        "Central European Aluminum Company (CEAC)",
+        "Government of Montenegro",
+        "Uniprom Metal d.o.o."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/MNE/mne-nik-i-bauxite-mines-fac.json",
+      "file": "facilities/mne-nik-i-bauxite-mines-fac.json"
+    },
+    {
+      "facility_id": "mar-cobco-battery-materials-plant-fac",
+      "name": "Cobco Battery Materials Refinery",
+      "display_name": "Cobco Battery Materials",
+      "country_iso3": "MAR",
+      "country": "Morocco",
+      "location": "Casablanca, El Jadida, Morocco",
+      "province": "El Jadida",
+      "town": "Casablanca",
+      "lat": 32.46742388108932,
+      "lon": -7.6200284,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "refinery",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium (lfp planned)"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt sulfate",
+        "Nickel sulfate"
+      ],
+      "companies": [
+        "Al Mada",
+        "CNGR Advanced Materials",
+        "COBCO"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/MAR/mar-cobco-battery-materials-plant-fac.json",
+      "file": "facilities/mar-cobco-battery-materials-plant-fac.json"
+    },
+    {
+      "facility_id": "mar-managem-glencore-recycling-refinery-fac",
+      "name": "Managem Glencore Recycling Refinery",
+      "display_name": "Managem Glencore Recycling",
+      "country_iso3": "MAR",
+      "country": "Morocco",
+      "location": "Marrakech, Marrakech-Safi, Morocco",
+      "province": "Marrakech-Safi",
+      "town": "Marrakech",
+      "lat": 31.62523020190542,
+      "lon": -7.599175080418663,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "refinery",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium carbonate (recycled)"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt (recycled)",
+        "Nickel (recycled)"
+      ],
+      "companies": [
+        "Al Mada",
+        "Glencore",
+        "Managem"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/MAR/mar-managem-glencore-recycling-refinery-fac.json",
+      "file": "facilities/mar-managem-glencore-recycling-refinery-fac.json"
+    },
+    {
+      "facility_id": "mar-zen-lithium-project-fac",
+      "name": "ZEN Lithium Exploration",
+      "display_name": "ZEN Lithium",
+      "country_iso3": "MAR",
+      "country": "Morocco",
+      "location": "Ouarzazate, Morocco",
+      "province": "Ouarzazate",
+      "town": null,
+      "lat": 30.9167,
+      "lon": -6.9167,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Atlas Mining"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/MAR/mar-zen-lithium-project-fac.json",
+      "file": "facilities/mar-zen-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "moz-zambezia-pegmatite-project-fac",
+      "name": "Zambezia Pegmatite Mine",
+      "display_name": "Zambezia Pegmatite",
+      "country_iso3": "MOZ",
+      "country": "Mozambique",
+      "location": "Zambezia, Mozambique",
+      "province": "Zambezia",
+      "town": null,
+      "lat": -17.0,
+      "lon": 37.0,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium (columbite)",
+        "Tantalum"
+      ],
+      "companies": [
+        "Altona Rare Earths Plc",
+        "Highland African Mining Company",
+        "Noventa Group"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/MOZ/moz-zambezia-pegmatite-project-fac.json",
+      "file": "facilities/moz-zambezia-pegmatite-project-fac.json"
+    },
+    {
+      "facility_id": "nam-karibib-fac",
+      "name": "Karibib Mine",
+      "display_name": "Karibib",
+      "country_iso3": "NAM",
+      "country": "Namibia",
+      "location": "Erongo, Namibia",
+      "province": "Erongo",
+      "town": null,
+      "lat": -21.97222,
+      "lon": 15.77333,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "QKR",
+        "QKR Namibia (Pty) Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/NAM/nam-karibib-fac.json",
+      "file": "facilities/nam-karibib-fac.json"
+    },
+    {
+      "facility_id": "nam-uis-tin-mine-fac",
+      "name": "Uis Tin Mine",
+      "display_name": "Uis Tin",
+      "country_iso3": "NAM",
+      "country": "Namibia",
+      "location": "Erongo Region, Namibia",
+      "province": "Erongo Region",
+      "town": null,
+      "lat": -21.21667,
+      "lon": 14.88111,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Spodumene"
+      ],
+      "coproducts_byproducts": [
+        "Copper",
+        "Niobium",
+        "Rubidium",
+        "Tantalum",
+        "Tin",
+        "Tungsten"
+      ],
+      "companies": [
+        "AfriTin Mining Ltd",
+        "Andrada Mining Ltd",
+        "The Small Miners of Uis (SMU)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/NAM/nam-uis-tin-mine-fac.json",
+      "file": "facilities/nam-uis-tin-mine-fac.json"
+    },
+    {
+      "facility_id": "npl-hyakule-phakuwa-pegmatites-fac",
+      "name": "Hyakule Phakuwa Pegmatites Mine",
+      "display_name": "Hyakule Phakuwa Pegmatites",
+      "country_iso3": "NPL",
+      "country": "Nepal",
+      "location": "Nepal",
+      "province": null,
+      "town": null,
+      "lat": 27.5,
+      "lon": 87.3,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium (petalite",
+        "Spodumene)"
+      ],
+      "coproducts_byproducts": [
+        "Antimony",
+        "Bismuth",
+        "Niobium",
+        "Tantalum"
+      ],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/NPL/npl-hyakule-phakuwa-pegmatites-fac.json",
+      "file": "facilities/npl-hyakule-phakuwa-pegmatites-fac.json"
+    },
+    {
+      "facility_id": "nld-sk-tes-rotterdam-fac",
+      "name": "SK Tes Rotterdam Battery Recycling",
+      "display_name": "SK Tes Rotterdam",
+      "country_iso3": "NLD",
+      "country": "Netherlands",
+      "location": "Netherlands",
+      "province": null,
+      "town": null,
+      "lat": 51.905,
+      "lon": 4.148,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "battery_recycling",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium (as carbonate)"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt (as hydroxide)",
+        "Copper",
+        "Graphite",
+        "Nickel"
+      ],
+      "companies": [
+        "SK Tes (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/NLD/nld-sk-tes-rotterdam-fac.json",
+      "file": "facilities/nld-sk-tes-rotterdam-fac.json"
+    },
+    {
+      "facility_id": "nzl-ohaaki-geothermal-lithium-fac",
+      "name": "Ohaaki Geothermal Lithium Plant",
+      "display_name": "Ohaaki Geothermal Lithium",
+      "country_iso3": "NZL",
+      "country": "New Zealand",
+      "location": "Waikato, New Zealand",
+      "province": "Waikato",
+      "town": null,
+      "lat": -38.5279,
+      "lon": 176.2937,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "processing_plant",
+      "status": "development",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Geo40 Limited",
+        "Contact Energy"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.85,
+      "source_file": "facilities/NZL/nzl-ohaaki-geothermal-lithium-fac.json",
+      "file": "facilities/nzl-ohaaki-geothermal-lithium-fac.json"
+    },
+    {
+      "facility_id": "ner-comirex-sa-lithium-project-fac",
+      "name": "Comirex SA Lithium Facility",
+      "display_name": "Comirex SA Lithium",
+      "country_iso3": "NER",
+      "country": "Niger",
+      "location": "Agadez, Niger",
+      "province": "Agadez",
+      "town": null,
+      "lat": 19.5,
+      "lon": 9.5,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Compagnie Minière de Recherche et d’Exploitation (Comirex SA)",
+        "Nigerien government (40% stake)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.6,
+      "source_file": "facilities/NER/ner-comirex-sa-lithium-project-fac.json",
+      "file": "facilities/ner-comirex-sa-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "ner-tarouadji-project-fac",
+      "name": "Tarouadji Exploration",
+      "display_name": "Tarouadji",
+      "country_iso3": "NER",
+      "country": "Niger",
+      "location": "Agadez, Niger",
+      "province": "Agadez",
+      "town": null,
+      "lat": 17.34583,
+      "lon": 8.41886,
+      "coordinate_precision": "region",
+      "types": [
+        "exploration"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Tin"
+      ],
+      "companies": [
+        "ENRG Elements Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/NER/ner-tarouadji-project-fac.json",
+      "file": "facilities/ner-tarouadji-project-fac.json"
+    },
+    {
+      "facility_id": "nga-continental-lithium-fac",
+      "name": "Continental Lithium Facility",
+      "display_name": "Continental Lithium",
+      "country_iso3": "NGA",
+      "country": "Nigeria",
+      "location": "Lagos State, Nigeria",
+      "province": "Lagos State",
+      "town": null,
+      "lat": 8.4966,
+      "lon": 4.5421,
+      "coordinate_precision": "region",
+      "types": [
+        "development"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "C&C Minerals Limited",
+        "Chariot Corporation",
+        "Continental Critical Minerals, Inc.",
+        "Continental Lithium Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.55,
+      "source_file": "facilities/NGA/nga-continental-lithium-fac.json",
+      "file": "facilities/nga-continental-lithium-fac.json"
+    },
+    {
+      "facility_id": "nga-jiuling-canmax-three-crown-plant-1-fac",
+      "name": "Jiuling/canmax/three Crown 1 Processing Plant",
+      "display_name": "Jiuling/canmax/three Crown 1",
+      "country_iso3": "NGA",
+      "country": "Nigeria",
+      "location": "Kebbi State, Nigeria",
+      "province": "Kebbi State",
+      "town": null,
+      "lat": 10.4071,
+      "lon": 4.7178,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "processing_plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Canmax Technologies",
+        "Canmax Technologies Co. Ltd.",
+        "Jiuling Lithium Mining Company",
+        "Three Crown Mines",
+        "Three Crown Mines Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.85,
+      "source_file": "facilities/NGA/nga-jiuling-canmax-three-crown-plant-1-fac.json",
+      "file": "facilities/nga-jiuling-canmax-three-crown-plant-1-fac.json"
+    },
+    {
+      "facility_id": "nga-jupiter-project-fac",
+      "name": "Jupiter Mine",
+      "display_name": "Jupiter",
+      "country_iso3": "NGA",
+      "country": "Nigeria",
+      "location": "Kaduna State, Nigeria",
+      "province": "Kaduna State",
+      "town": null,
+      "lat": 10.0,
+      "lon": 7.0,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Basin Mining Limited",
+        "Jupiter Lithium Limited",
+        "KD Prospect",
+        "Pegasus Resources Inc.",
+        "Range Mining Limited",
+        "ReElement Technologies Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/NGA/nga-jupiter-project-fac.json",
+      "file": "facilities/nga-jupiter-project-fac.json"
+    },
+    {
+      "facility_id": "pak-hubco-lithium-project-fac",
+      "name": "Hubco Lithium Exploration",
+      "display_name": "Hubco Lithium",
+      "country_iso3": "PAK",
+      "country": "Pakistan",
+      "location": "Baluchistan, Pakistan",
+      "province": "Baluchistan",
+      "town": null,
+      "lat": 28.0,
+      "lon": 65.0,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Hub Power Company Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.35,
+      "source_file": "facilities/PAK/pak-hubco-lithium-project-fac.json",
+      "file": "facilities/pak-hubco-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "pak-neelum-valley-exploration-fac",
+      "name": "Neelum Valley Exploration Exploration",
+      "display_name": "Neelum Valley Exploration",
+      "country_iso3": "PAK",
+      "country": "Pakistan",
+      "location": "Azad Kashmir, Pakistan",
+      "province": "Azad Kashmir",
+      "town": null,
+      "lat": 34.8401,
+      "lon": 74.2451,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Rare earths"
+      ],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/PAK/pak-neelum-valley-exploration-fac.json",
+      "file": "facilities/pak-neelum-valley-exploration-fac.json"
+    },
+    {
+      "facility_id": "per-falchani-project-fac",
+      "name": "Falchani Development",
+      "display_name": "Falchani",
+      "country_iso3": "PER",
+      "country": "Peru",
+      "location": "Lima, Puno, Peru",
+      "province": "Puno",
+      "town": "Lima",
+      "lat": -14.236047079562631,
+      "lon": -71.46712154585042,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "development",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "American Lithium Corp.",
+        "Macusani Yellowcake S.A.C."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.45,
+      "source_file": "facilities/PER/per-falchani-project-fac.json",
+      "file": "facilities/per-falchani-project-fac.json"
+    },
+    {
+      "facility_id": "prt-adag-i-fac",
+      "name": "Adagói Facility",
+      "display_name": "Adagói",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Douro, Portugal",
+      "province": "Douro",
+      "town": null,
+      "lat": 41.2333,
+      "lon": -7.1833,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Feldspar",
+        "Quartz"
+      ],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/PRT/prt-adag-i-fac.json",
+      "file": "facilities/prt-adag-i-fac.json"
+    },
+    {
+      "facility_id": "prt-alvarr-es-lepidolite-mine-fac",
+      "name": "Alvarrões Lepidolite Mine",
+      "display_name": "Alvarrões Lepidolite",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Guarda, Portugal",
+      "province": "Guarda",
+      "town": "Guarda",
+      "lat": 40.61455491068991,
+      "lon": -7.1951392,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Felmica Minerais Industrias SA",
+        "Grupo Mota"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/PRT/prt-alvarr-es-lepidolite-mine-fac.json",
+      "file": "facilities/prt-alvarr-es-lepidolite-mine-fac.json"
+    },
+    {
+      "facility_id": "prt-argemela-mine-fac",
+      "name": "Argemela Facility",
+      "display_name": "Argemela",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Castelo Branco, Portugal",
+      "province": "Castelo Branco",
+      "town": null,
+      "lat": 40.1933,
+      "lon": -7.49,
+      "coordinate_precision": "site",
+      "types": [
+        "development"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Grupo Almina",
+        "Lusorecursos Portugal Lithium, S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/PRT/prt-argemela-mine-fac.json",
+      "file": "facilities/prt-argemela-mine-fac.json"
+    },
+    {
+      "facility_id": "prt-canedo-covas-fac",
+      "name": "Canedo Covas Facility",
+      "display_name": "Canedo Covas",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Northern Portugal, Portugal",
+      "province": "Northern Portugal",
+      "town": null,
+      "lat": 41.7,
+      "lon": -7.7,
+      "coordinate_precision": "municipality",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Feldspar",
+        "Quartz"
+      ],
+      "companies": [
+        "Savannah Resources"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/PRT/prt-canedo-covas-fac.json",
+      "file": "facilities/prt-canedo-covas-fac.json"
+    },
+    {
+      "facility_id": "prt-gondiaes-mine-fac",
+      "name": "Gondiaes Mine",
+      "display_name": "Gondiaes",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Guarda, Portugal",
+      "province": "Guarda",
+      "town": null,
+      "lat": 41.4875,
+      "lon": -7.87,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Felmica - Minerais Industriais S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/PRT/prt-gondiaes-mine-fac.json",
+      "file": "facilities/prt-gondiaes-mine-fac.json"
+    },
+    {
+      "facility_id": "prt-lousas-fac",
+      "name": "Lousas Facility",
+      "display_name": "Lousas",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Beja, Portugal",
+      "province": "Beja",
+      "town": null,
+      "lat": 41.7,
+      "lon": -7.67,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Feldspar",
+        "Quartz"
+      ],
+      "companies": [
+        "Felmica"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/PRT/prt-lousas-fac.json",
+      "file": "facilities/prt-lousas-fac.json"
+    },
+    {
+      "facility_id": "prt-mina-do-barroso-fac",
+      "name": "Mina Do Barroso Mine",
+      "display_name": "Mina Do Barroso",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Northern Portugal, Portugal",
+      "province": "Northern Portugal",
+      "town": null,
+      "lat": 41.627,
+      "lon": -7.804,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Savannah Resources Plc",
+        "Savannah Resources Plc (75%)",
+        "Slipstream Resources (25%)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/PRT/prt-mina-do-barroso-fac.json",
+      "file": "facilities/prt-mina-do-barroso-fac.json"
+    },
+    {
+      "facility_id": "prt-mina-do-romano-fac",
+      "name": "Mina Do Romano Facility",
+      "display_name": "Mina Do Romano",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Trás-os-Montes, Portugal",
+      "province": "Trás-os-Montes",
+      "town": null,
+      "lat": 41.8,
+      "lon": -7.8,
+      "coordinate_precision": "municipality",
+      "types": [
+        "development"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tantalum",
+        "Tin"
+      ],
+      "companies": [
+        "Lusorecursos Portugal Lithium, S.A."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/PRT/prt-mina-do-romano-fac.json",
+      "file": "facilities/prt-mina-do-romano-fac.json"
+    },
+    {
+      "facility_id": "prt-veral-fac",
+      "name": "Veral Facility",
+      "display_name": "Veral",
+      "country_iso3": "PRT",
+      "country": "Portugal",
+      "location": "Portugal",
+      "province": "Portugal",
+      "town": null,
+      "lat": 40.45,
+      "lon": -7.3,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Feldspar",
+        "Quartz"
+      ],
+      "companies": [
+        "Grupo Mota"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/PRT/prt-veral-fac.json",
+      "file": "facilities/prt-veral-fac.json"
+    },
+    {
+      "facility_id": "rus-kolmozerskoye-deposit-fac",
+      "name": "Kolmozerskoye Facility",
+      "display_name": "Kolmozerskoye",
+      "country_iso3": "RUS",
+      "country": "Russia",
+      "location": "Murmansk Region, Russia",
+      "province": "Murmansk Region",
+      "town": null,
+      "lat": 67.8,
+      "lon": 34.6,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tantalum"
+      ],
+      "companies": [
+        "Nornickel",
+        "Polar Lithium",
+        "Rosatom"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/RUS/rus-kolmozerskoye-deposit-fac.json",
+      "file": "facilities/rus-kolmozerskoye-deposit-fac.json"
+    },
+    {
+      "facility_id": "sau-lithium-chemicals-plant-fac",
+      "name": "Lithium Chemicals Processing Plant",
+      "display_name": "Lithium Chemicals",
+      "country_iso3": "SAU",
+      "country": "Saudi Arabia",
+      "location": "Saudi Arabia",
+      "province": null,
+      "town": null,
+      "lat": 24.021,
+      "lon": 38.12,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "processing_plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium carbonate",
+        "Lithium hydroxide"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "EV Metals Group (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/SAU/sau-lithium-chemicals-plant-fac.json",
+      "file": "facilities/sau-lithium-chemicals-plant-fac.json"
+    },
+    {
+      "facility_id": "srb-jadar-project-fac",
+      "name": "Jadar Facility",
+      "display_name": "Jadar",
+      "country_iso3": "SRB",
+      "country": "Serbia",
+      "location": "Western Serbia, Serbia",
+      "province": "Western Serbia",
+      "town": null,
+      "lat": 44.533056,
+      "lon": 19.3,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Rio Tinto Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/SRB/srb-jadar-project-fac.json",
+      "file": "facilities/srb-jadar-project-fac.json"
+    },
+    {
+      "facility_id": "sle-kalangba-deposit-fac",
+      "name": "Kalangba Exploration",
+      "display_name": "Kalangba",
+      "country_iso3": "SLE",
+      "country": "Sierra Leone",
+      "location": "Bombali District, Sierra Leone",
+      "province": "Bombali District",
+      "town": null,
+      "lat": 9.0872,
+      "lon": -12.6954,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Leone Afric Metals Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/SLE/sle-kalangba-deposit-fac.json",
+      "file": "facilities/sle-kalangba-deposit-fac.json"
+    },
+    {
+      "facility_id": "kor-lithium-hydroxide-plant-fac",
+      "name": "Lithium Hydroxide Plant",
+      "display_name": "Lithium Hydroxide",
+      "country_iso3": "KOR",
+      "country": "South Korea",
+      "location": "South Jeolla Province, South Korea",
+      "province": "South Jeolla Province",
+      "town": null,
+      "lat": 34.95,
+      "lon": 126.92,
+      "coordinate_precision": "approximate",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "POSCO",
+        "POSCO Pilbara Lithium Solution",
+        "POSCO Pilbara Lithium Solution Company (PPLS)",
+        "Pilbara Minerals",
+        "Posco Holdings",
+        "Posco Pilbara Lithium Solutions"
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/KOR/kor-lithium-hydroxide-plant-fac.json",
+      "file": "facilities/kor-lithium-hydroxide-plant-fac.json"
+    },
+    {
+      "facility_id": "tza-hombolo-li-area-fac",
+      "name": "Hombolo Li Area Mine",
+      "display_name": "Hombolo Li Area",
+      "country_iso3": "TZA",
+      "country": "Tanzania",
+      "location": "Tanzania",
+      "province": null,
+      "town": null,
+      "lat": -5.918,
+      "lon": 35.891,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/TZA/tza-hombolo-li-area-fac.json",
+      "file": "facilities/tza-hombolo-li-area-fac.json"
+    },
+    {
+      "facility_id": "tha-reung-kiet-lithium-prospect-fac",
+      "name": "Reung Kiet Lithium Prospect Exploration",
+      "display_name": "Reung Kiet Lithium Prospect",
+      "country_iso3": "THA",
+      "country": "Thailand",
+      "location": "Phang Nga Province, Thailand",
+      "province": "Phang Nga Province",
+      "town": null,
+      "lat": 8.4,
+      "lon": 98.5,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Pan Asia Metals Limited"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/THA/tha-reung-kiet-lithium-prospect-fac.json",
+      "file": "facilities/tha-reung-kiet-lithium-prospect-fac.json"
+    },
+    {
+      "facility_id": "tkm-karabogazgol-bay-lithium-fac",
+      "name": "Karabogazgol Bay Lithium Brines Facility",
+      "display_name": "Karabogazgol Bay Lithium Brines",
+      "country_iso3": "TKM",
+      "country": "Turkmenistan",
+      "location": "Balkan Province, Turkmenistan",
+      "province": "Balkan Province",
+      "town": null,
+      "lat": 41.35194,
+      "lon": 53.59528,
+      "coordinate_precision": "approximate",
+      "types": [
+        "plant",
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/TKM/tkm-karabogazgol-bay-lithium-fac.json",
+      "file": "facilities/tkm-karabogazgol-bay-lithium-fac.json"
+    },
+    {
+      "facility_id": "uga-gamba-hill-nampeyo-fac",
+      "name": "Gamba Hill Nampeyo Exploration",
+      "display_name": "Gamba Hill Nampeyo",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "Uganda",
+      "province": null,
+      "town": null,
+      "lat": 0.585,
+      "lon": 32.918,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Bismuth",
+        "Niobium",
+        "Tantalum"
+      ],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/UGA/uga-gamba-hill-nampeyo-fac.json",
+      "file": "facilities/uga-gamba-hill-nampeyo-fac.json"
+    },
+    {
+      "facility_id": "uga-mityana-project-fac",
+      "name": "Mityana Exploration",
+      "display_name": "Mityana",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "Central Uganda, Uganda",
+      "province": "Central Uganda",
+      "town": null,
+      "lat": 0.42,
+      "lon": 32.07,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Neodymium-praseodymium (NdPr)",
+        "Tantalum"
+      ],
+      "companies": [
+        "Blaze Minerals Limited",
+        "Gecko Minerals Uganda",
+        "Javelin Minerals"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/UGA/uga-mityana-project-fac.json",
+      "file": "facilities/uga-mityana-project-fac.json"
+    },
+    {
+      "facility_id": "uga-mutaka-fac",
+      "name": "Mutaka Exploration",
+      "display_name": "Mutaka",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "Uganda",
+      "province": null,
+      "town": null,
+      "lat": -0.85,
+      "lon": 30.05,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Neodymium-praseodymium (NdPr)"
+      ],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/UGA/uga-mutaka-fac.json",
+      "file": "facilities/uga-mutaka-fac.json"
+    },
+    {
+      "facility_id": "uga-ntungamo-project-fac",
+      "name": "Ntungamo Exploration",
+      "display_name": "Ntungamo",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "Ntungamo District, Uganda",
+      "province": "Ntungamo District",
+      "town": null,
+      "lat": -0.88,
+      "lon": 30.26,
+      "coordinate_precision": "city",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Beryllium",
+        "Neodymium-praseodymium (NdPr)",
+        "Tantalum"
+      ],
+      "companies": [
+        "Blaze Minerals Limited",
+        "Gecko Minerals Uganda",
+        "Javelin Minerals"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.75,
+      "source_file": "facilities/UGA/uga-ntungamo-project-fac.json",
+      "file": "facilities/uga-ntungamo-project-fac.json"
+    },
+    {
+      "facility_id": "uga-rwemeriro-fac",
+      "name": "Rwemeriro Exploration",
+      "display_name": "Rwemeriro",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "UGA, Uganda",
+      "province": "UGA",
+      "town": null,
+      "lat": -0.85,
+      "lon": 30.35,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Neodymium-praseodymium (NdPr)"
+      ],
+      "companies": [
+        "GoldQuest Mining Corp.",
+        "Unclear"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/UGA/uga-rwemeriro-fac.json",
+      "file": "facilities/uga-rwemeriro-fac.json"
+    },
+    {
+      "facility_id": "uga-wampero-mine-fac",
+      "name": "Wampero Mine",
+      "display_name": "Wampero",
+      "country_iso3": "UGA",
+      "country": "Uganda",
+      "location": "Uganda",
+      "province": null,
+      "town": null,
+      "lat": 0.5,
+      "lon": 32.1667,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "operating",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tantalum",
+        "Tin"
+      ],
+      "companies": [
+        "3T Mining Ltd. (operator)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/UGA/uga-wampero-mine-fac.json",
+      "file": "facilities/uga-wampero-mine-fac.json"
+    },
+    {
+      "facility_id": "ukr-dobra-lithium-deposit-fac",
+      "name": "Dobra Lithium Mine",
+      "display_name": "Dobra Lithium",
+      "country_iso3": "UKR",
+      "country": "Ukraine",
+      "location": "Kirovohrad, Ukraine",
+      "province": "Kirovohrad",
+      "town": null,
+      "lat": 48.35,
+      "lon": 31.053,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "European Lithium",
+        "TechMet",
+        "UkrLithiumMining"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/UKR/ukr-dobra-lithium-deposit-fac.json",
+      "file": "facilities/ukr-dobra-lithium-deposit-fac.json"
+    },
+    {
+      "facility_id": "ukr-kruta-balka-lithium-deposit-fac",
+      "name": "Kruta Balka Lithium Mine",
+      "display_name": "Kruta Balka Lithium",
+      "country_iso3": "UKR",
+      "country": "Ukraine",
+      "location": "Zaporizhzhia Oblast, Ukraine",
+      "province": "Zaporizhzhia Oblast",
+      "town": null,
+      "lat": 46.972,
+      "lon": 36.808,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "European Lithium"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/UKR/ukr-kruta-balka-lithium-deposit-fac.json",
+      "file": "facilities/ukr-kruta-balka-lithium-deposit-fac.json"
+    },
+    {
+      "facility_id": "ukr-polokhivske-lithium-deposit-fac",
+      "name": "Polokhivske Lithium Mine",
+      "display_name": "Polokhivske Lithium",
+      "country_iso3": "UKR",
+      "country": "Ukraine",
+      "location": "Kirovohrad, Ukraine",
+      "province": "Kirovohrad",
+      "town": null,
+      "lat": 48.6,
+      "lon": 31.8,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "UkrLithiumMining LLC (ULM)"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/UKR/ukr-polokhivske-lithium-deposit-fac.json",
+      "file": "facilities/ukr-polokhivske-lithium-deposit-fac.json"
+    },
+    {
+      "facility_id": "ukr-shevchenkivske-lithium-deposit-fac",
+      "name": "Shevchenkivske Lithium Mine",
+      "display_name": "Shevchenkivske Lithium",
+      "country_iso3": "UKR",
+      "country": "Ukraine",
+      "location": "Donetsk Oblast, Ukraine",
+      "province": "Donetsk Oblast",
+      "town": null,
+      "lat": 47.909,
+      "lon": 36.713,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "European Lithium",
+        "Millstone & Co.",
+        "Petro Consulting LLC"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/UKR/ukr-shevchenkivske-lithium-deposit-fac.json",
+      "file": "facilities/ukr-shevchenkivske-lithium-deposit-fac.json"
+    },
+    {
+      "facility_id": "usa-buckhorn-mica-mine-fac",
+      "name": "Buckhorn Mica Mine",
+      "display_name": "Buckhorn Mica",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Washington, United States",
+      "province": "Washington",
+      "town": null,
+      "lat": 48.7492,
+      "lon": -119.4931,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Crown Resources-Kettle River Operations",
+        "Kinross Gold Corp"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/USA/usa-buckhorn-mica-mine-fac.json",
+      "file": "facilities/usa-buckhorn-mica-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-cadiz-dry-lake-fac",
+      "name": "Cadiz Dry Lake Mine",
+      "display_name": "Cadiz Dry Lake",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "California, United States",
+      "province": "California",
+      "town": null,
+      "lat": 34.287,
+      "lon": -115.388,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Delta Chemical Co.",
+        "Hill Brothers Chemical Co.",
+        "Lee Chemical Co.",
+        "Standard Lithium Ltd.",
+        "Tetra Technologies, Inc."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-cadiz-dry-lake-fac.json",
+      "file": "facilities/usa-cadiz-dry-lake-fac.json"
+    },
+    {
+      "facility_id": "usa-carolina-fac",
+      "name": "Carolina Mine",
+      "display_name": "Carolina",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "South Carolina, United States",
+      "province": "South Carolina",
+      "town": null,
+      "lat": 35.39,
+      "lon": -81.298,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "OceanaGold Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/USA/usa-carolina-fac.json",
+      "file": "facilities/usa-carolina-fac.json"
+    },
+    {
+      "facility_id": "usa-cojade-mine-fac",
+      "name": "Cojade Mine",
+      "display_name": "Cojade",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "United States",
+      "province": null,
+      "town": null,
+      "lat": 40.355,
+      "lon": -105.293,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-cojade-mine-fac.json",
+      "file": "facilities/usa-cojade-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-foote-lithium-brine-operation-fac",
+      "name": "Foote Lithium Brine Mine",
+      "display_name": "Foote Lithium Brine",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Nevada, United States",
+      "province": "Nevada",
+      "town": null,
+      "lat": 37.767,
+      "lon": -117.585,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Albemarle Corporation",
+        "Foote Mineral Company"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/USA/usa-foote-lithium-brine-operation-fac.json",
+      "file": "facilities/usa-foote-lithium-brine-operation-fac.json"
+    },
+    {
+      "facility_id": "usa-foote-mineral-reclamation-mill-fac",
+      "name": "Foote Mineral Reclamation Mine",
+      "display_name": "Foote Mineral Reclamation",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "North Carolina, United States",
+      "province": "North Carolina",
+      "town": null,
+      "lat": 35.217,
+      "lon": -81.353,
+      "coordinate_precision": "site",
+      "types": [
+        "mine",
+        "plant"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Berry Brothers Incorporated"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/USA/usa-foote-mineral-reclamation-mill-fac.json",
+      "file": "facilities/usa-foote-mineral-reclamation-mill-fac.json"
+    },
+    {
+      "facility_id": "usa-hallman-beam-mine-fac",
+      "name": "Hallman Beam Mine",
+      "display_name": "Hallman Beam",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Mount Holly, North Carolina, United States",
+      "province": "North Carolina",
+      "town": "Mount Holly",
+      "lat": 39.93885228668206,
+      "lon": -74.7876624,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "FMC Corporation",
+        "Lithium Corporation of America"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/USA/usa-hallman-beam-mine-fac.json",
+      "file": "facilities/usa-hallman-beam-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-huffman-bean-mine-fac",
+      "name": "Huffman Bean Mine",
+      "display_name": "Huffman Bean",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "United States",
+      "province": null,
+      "town": null,
+      "lat": 35.339,
+      "lon": -81.316,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-huffman-bean-mine-fac.json",
+      "file": "facilities/usa-huffman-bean-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-morabisi-project-fac",
+      "name": "Morabisi Exploration",
+      "display_name": "Morabisi",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Georgetown, Guyana, United States",
+      "province": "Guyana",
+      "town": "Georgetown",
+      "lat": 39.02146018240011,
+      "lon": -88.85965449354423,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Tantalum"
+      ],
+      "companies": [
+        "Greenpower Energy",
+        "Greenpower Energy Ltd",
+        "Guyana Strategic Metals Inc."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/USA/usa-morabisi-project-fac.json",
+      "file": "facilities/usa-morabisi-project-fac.json"
+    },
+    {
+      "facility_id": "usa-north-morning-star-mine-fac",
+      "name": "North Morning Star Mine",
+      "display_name": "North Morning Star",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "United States",
+      "province": null,
+      "town": null,
+      "lat": 33.956,
+      "lon": -112.572,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-north-morning-star-mine-fac.json",
+      "file": "facilities/usa-north-morning-star-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-norwich-lithia-mine-fac",
+      "name": "Norwich Lithia Mine",
+      "display_name": "Norwich Lithia",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "United States",
+      "province": null,
+      "town": null,
+      "lat": 42.319,
+      "lon": -72.862,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-norwich-lithia-mine-fac.json",
+      "file": "facilities/usa-norwich-lithia-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-preston-hanford-sand-and-gravel-fac",
+      "name": "Preston Hanford Sand And Gravel Mine",
+      "display_name": "Preston Hanford Sand And Gravel",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "California, United States",
+      "province": "California",
+      "town": null,
+      "lat": 38.4082,
+      "lon": -121.3712,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Hanford Sand & Gravel, Inc."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/USA/usa-preston-hanford-sand-and-gravel-fac.json",
+      "file": "facilities/usa-preston-hanford-sand-and-gravel-fac.json"
+    },
+    {
+      "facility_id": "usa-ree-lithium-cobalt-fac",
+      "name": "REE / Lithium / Cobalt Facility",
+      "display_name": "REE / Lithium / Cobalt",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Idaho, United States",
+      "province": "Idaho",
+      "town": null,
+      "lat": 45.13917,
+      "lon": -114.35194,
+      "coordinate_precision": "unknown",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "plant",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Cobalt",
+        "Neodymium-praseodymium (NdPr)",
+        "Rare earths"
+      ],
+      "companies": [
+        "Ecobalt Solutions",
+        "Jervois Global"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/USA/usa-ree-lithium-cobalt-fac.json",
+      "file": "facilities/usa-ree-lithium-cobalt-fac.json"
+    },
+    {
+      "facility_id": "usa-searles-lake-fac",
+      "name": "Searles Lake Mine",
+      "display_name": "Searles Lake",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "California, United States",
+      "province": "California",
+      "town": null,
+      "lat": 35.767,
+      "lon": -117.401,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "HOOKER CHEMICAL CO.",
+        "Kerr-McGee Chemical Corporation",
+        "NORTH AMERICAN CHEMICAL CO.",
+        "STAUFFER CHEMICAL CO.",
+        "Searles Valley Minerals Operations, Inc."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-searles-lake-fac.json",
+      "file": "facilities/usa-searles-lake-fac.json"
+    },
+    {
+      "facility_id": "usa-silver-peak-fac",
+      "name": "Silver Peak Mine",
+      "display_name": "Silver Peak",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Tonopah, Nevada, United States",
+      "province": "Nevada",
+      "town": "Tonopah",
+      "lat": 37.78084635066731,
+      "lon": -117.62640024011237,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Albemarle Corporation",
+        "Albemarle U.S., Inc."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/USA/usa-silver-peak-fac.json",
+      "file": "facilities/usa-silver-peak-fac.json"
+    },
+    {
+      "facility_id": "usa-stewart-and-other-mines-fac",
+      "name": "Stewart And Other Mines Mine",
+      "display_name": "Stewart And Other Mines",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "California, United States",
+      "province": "California",
+      "town": null,
+      "lat": 33.367,
+      "lon": -117.068,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "A. E. Almind",
+        "F. H. Stewart",
+        "Jack Koterske",
+        "Pala Gem Mining Company",
+        "W. A. T. Agard"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-stewart-and-other-mines-fac.json",
+      "file": "facilities/usa-stewart-and-other-mines-fac.json"
+    },
+    {
+      "facility_id": "usa-taylor-ledge-lithia-mine-fac",
+      "name": "Taylor Ledge Lithia Mine",
+      "display_name": "Taylor Ledge Lithia",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Oregon, United States",
+      "province": "Oregon",
+      "town": null,
+      "lat": 42.469,
+      "lon": -72.826,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "H.W. Eichemeyer",
+        "Ray Whiting"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-taylor-ledge-lithia-mine-fac.json",
+      "file": "facilities/usa-taylor-ledge-lithia-mine-fac.json"
+    },
+    {
+      "facility_id": "usa-thacker-pass-fac",
+      "name": "Thacker Pass Mine",
+      "display_name": "Thacker Pass",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "Nevada, United States",
+      "province": "Nevada",
+      "town": null,
+      "lat": 41.703,
+      "lon": -118.07,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "General Motors Holdings LLC",
+        "Lithium Americas Corp."
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/USA/usa-thacker-pass-fac.json",
+      "file": "facilities/usa-thacker-pass-fac.json"
+    },
+    {
+      "facility_id": "usa-west-chesterfield-lithia-mine-fac",
+      "name": "West Chesterfield Lithia Mine",
+      "display_name": "West Chesterfield Lithia",
+      "country_iso3": "USA",
+      "country": "United States",
+      "location": "United States",
+      "province": null,
+      "town": null,
+      "lat": 42.413,
+      "lon": -72.872,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.3,
+      "source_file": "facilities/USA/usa-west-chesterfield-lithia-mine-fac.json",
+      "file": "facilities/usa-west-chesterfield-lithia-mine-fac.json"
+    },
+    {
+      "facility_id": "uzb-nurlikon-fac",
+      "name": "Nurlikon Exploration",
+      "display_name": "Nurlikon",
+      "country_iso3": "UZB",
+      "country": "Uzbekistan",
+      "location": "Kyzylkum, Uzbekistan",
+      "province": "Kyzylkum",
+      "town": null,
+      "lat": 40.919,
+      "lon": 69.633,
+      "coordinate_precision": "site",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Neodymium-praseodymium (NdPr)"
+      ],
+      "companies": [
+        "Navoiy Uran",
+        "Nurlikum Mining LLC",
+        "Orano"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.8,
+      "source_file": "facilities/UZB/uzb-nurlikon-fac.json",
+      "file": "facilities/uzb-nurlikon-fac.json"
+    },
+    {
+      "facility_id": "vnm-la-vi-lithium-deposit-fac",
+      "name": "La Vi Lithium Mine",
+      "display_name": "La Vi Lithium",
+      "country_iso3": "VNM",
+      "country": "Vietnam",
+      "location": "Vietnam",
+      "province": null,
+      "town": null,
+      "lat": 15.0,
+      "lon": 108.5,
+      "coordinate_precision": "district",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.7,
+      "source_file": "facilities/VNM/vnm-la-vi-lithium-deposit-fac.json",
+      "file": "facilities/vnm-la-vi-lithium-deposit-fac.json"
+    },
+    {
+      "facility_id": "zmb-misika-project-fac",
+      "name": "Misika Exploration",
+      "display_name": "Misika",
+      "country_iso3": "ZMB",
+      "country": "Zambia",
+      "location": "Southern Province, Zambia",
+      "province": "Southern Province",
+      "town": null,
+      "lat": -17.75,
+      "lon": 25.95,
+      "coordinate_precision": "region",
+      "types": [
+        "plant"
+      ],
+      "primary_type": "exploration",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [
+        "Niobium",
+        "Tantalum",
+        "Tin"
+      ],
+      "companies": [
+        "First Africa Metals",
+        "First Africa Metals Ltd"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.6,
+      "source_file": "facilities/ZMB/zmb-misika-project-fac.json",
+      "file": "facilities/zmb-misika-project-fac.json"
+    },
+    {
+      "facility_id": "zwe-arcadia-lithium-fac",
+      "name": "Arcadia Lithium Mine",
+      "display_name": "Arcadia Lithium",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Harare, Zimbabwe",
+      "province": "Harare",
+      "town": null,
+      "lat": -17.8,
+      "lon": 31.05,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium",
+        "Spodumene"
+      ],
+      "coproducts_byproducts": [
+        "Caesium"
+      ],
+      "companies": [
+        "Prospect Lithium Zimbabwe",
+        "Prospect Resources",
+        "Zhejiang Huayou Cobalt"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ZWE/zwe-arcadia-lithium-fac.json",
+      "file": "facilities/zwe-arcadia-lithium-fac.json"
+    },
+    {
+      "facility_id": "zwe-arcadia-lithium-project-fac",
+      "name": "Arcadia Lithium Mine",
+      "display_name": "Arcadia Lithium",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Mashonaland East, Zimbabwe",
+      "province": "Mashonaland East",
+      "town": null,
+      "lat": -17.774,
+      "lon": 31.409,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "operating",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Prospect Lithium Zimbabwe (pvt) ltd",
+        "Prospect Resources Limited",
+        "Zhejiang Huayou Cobalt"
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ZWE/zwe-arcadia-lithium-project-fac.json",
+      "file": "facilities/zwe-arcadia-lithium-project-fac.json"
+    },
+    {
+      "facility_id": "zwe-bikita-fac",
+      "name": "Bikita Mine",
+      "display_name": "Bikita",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Masvingo, Zimbabwe",
+      "province": "Masvingo",
+      "town": null,
+      "lat": -20.0,
+      "lon": 30.0,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium",
+        "Petalite"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Bikita Minerals (Private) Limited",
+        "Sinomine Resource Group"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.5,
+      "source_file": "facilities/ZWE/zwe-bikita-fac.json",
+      "file": "facilities/zwe-bikita-fac.json"
+    },
+    {
+      "facility_id": "zwe-emerald-mine-fac",
+      "name": "Emerald Mine",
+      "display_name": "Emerald",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Midlands, Zimbabwe",
+      "province": "Midlands",
+      "town": null,
+      "lat": -20.91667,
+      "lon": 29.93306,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [
+        "Copper"
+      ],
+      "companies": [
+        "Kuvimba Mining House",
+        "Rio Tinto Zinc",
+        "Sandawana Mines Ltd."
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ZWE/zwe-emerald-mine-fac.json",
+      "file": "facilities/zwe-emerald-mine-fac.json"
+    },
+    {
+      "facility_id": "zwe-kamativi-mine-fac",
+      "name": "Kamativi Mine",
+      "display_name": "Kamativi",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Matabeleland North, Zimbabwe",
+      "province": "Matabeleland North",
+      "town": null,
+      "lat": -18.329,
+      "lon": 27.063,
+      "coordinate_precision": "site",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [
+        "Lithium"
+      ],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Kamativi Mining Company",
+        "Sichuan PD Technology Group",
+        "Yahua Group",
+        "Zimbabwe Lithium",
+        "Zimbabwe Mining Development Corporation"
+      ],
+      "evidence_tier": "A",
+      "evidence": "lithium listed in commodities",
+      "verification_confidence": 0.65,
+      "source_file": "facilities/ZWE/zwe-kamativi-mine-fac.json",
+      "file": "facilities/zwe-kamativi-mine-fac.json"
+    },
+    {
+      "facility_id": "zwe-sabi-star-mine-fac",
+      "name": "Sabi Star Mine",
+      "display_name": "Sabi Star",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Buhera, Manicaland, Zimbabwe",
+      "province": "Manicaland",
+      "town": "Buhera",
+      "lat": -19.50651874507949,
+      "lon": 31.17411308186539,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "operating",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Chengxin Lithium Group",
+        "Max Mind Investments",
+        "Max Minds Investments",
+        "Power China",
+        "Shenzhen Chengxin Lithium Group"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/ZWE/zwe-sabi-star-mine-fac.json",
+      "file": "facilities/zwe-sabi-star-mine-fac.json"
+    },
+    {
+      "facility_id": "zwe-sandawana-mine-fac",
+      "name": "Sandawana Mine",
+      "display_name": "Sandawana",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Midlands, Zimbabwe",
+      "province": "Midlands",
+      "town": null,
+      "lat": -20.91667,
+      "lon": 29.93306,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Kuvimba Mining House (Private) Limited"
+      ],
+      "evidence_tier": "C",
+      "evidence": "lithium documented in verification/research notes",
+      "verification_confidence": 0.9,
+      "source_file": "facilities/ZWE/zwe-sandawana-mine-fac.json",
+      "file": "facilities/zwe-sandawana-mine-fac.json"
+    },
+    {
+      "facility_id": "zwe-zulu-lithium-project-fac",
+      "name": "Zulu Lithium Mine",
+      "display_name": "Zulu Lithium",
+      "country_iso3": "ZWE",
+      "country": "Zimbabwe",
+      "location": "Bulawayo, Matabeleland South, Zimbabwe",
+      "province": "Matabeleland South",
+      "town": "Bulawayo",
+      "lat": -19.382728233012603,
+      "lon": 28.5426856,
+      "coordinate_precision": "unknown",
+      "types": [
+        "mine"
+      ],
+      "primary_type": "mine",
+      "status": "unknown",
+      "commodity_forms": [],
+      "coproducts_byproducts": [],
+      "companies": [
+        "Premafrimin",
+        "Premier African Minerals Limited"
+      ],
+      "evidence_tier": "B",
+      "evidence": "lithium in facility name/aliases",
+      "verification_confidence": 0.63,
+      "source_file": "facilities/ZWE/zwe-zulu-lithium-project-fac.json",
+      "file": "facilities/zwe-zulu-lithium-project-fac.json"
+    }
+  ]
+}

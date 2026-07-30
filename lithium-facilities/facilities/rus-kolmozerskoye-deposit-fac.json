@@ -1,0 +1,85 @@
+{
+  "facility_id": "rus-kolmozerskoye-deposit-fac",
+  "name": "Kolmozerskoye Deposit",
+  "aliases": [],
+  "country_iso3": "RUS",
+  "location": {
+    "lat": 67.8,
+    "lon": 34.6,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "lithium",
+      "primary": true
+    },
+    {
+      "metal": "tantalum",
+      "primary": false
+    },
+    {
+      "metal": "niobium",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Nornickel",
+    "Polar Lithium",
+    "Rosatom"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Research Import RUS 2025-10-23",
+      "date": "2025-10-23T14:49:52.781433"
+    }
+  ],
+  "verification": {
+    "status": "csv_imported",
+    "confidence": 0.5,
+    "last_checked": "2025-11-04T19:19:15.662522Z",
+    "checked_by": "import_pipeline",
+    "notes": "Canonical name+slug generated"
+  },
+  "canonical_name": "Kolmozerskoye Facility",
+  "canonical_slug": "kolmozerskoye-facility",
+  "display_name": "Kolmozerskoye",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.615,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Kolmozerskoye",
+      "from": "2025-10-23T14:49:52.781443",
+      "to": "2025-11-04T19:19:15.662519Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Murmansk Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T07:17:04.000000Z",
+      "operators": [
+        "Polar Lithium"
+      ],
+      "owners": [
+        "Nornickel",
+        "Rosatom"
+      ],
+      "notes": "Polar Lithium is a joint venture between Nornickel and Rosatom's mining division."
+    }
+  }
+}

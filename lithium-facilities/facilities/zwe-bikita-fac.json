@@ -1,0 +1,75 @@
+{
+  "facility_id": "zwe-bikita-fac",
+  "name": "Bikita",
+  "aliases": [
+    "Bikita",
+    "Bikita"
+  ],
+  "country_iso3": "ZWE",
+  "location": {
+    "lat": -20.0,
+    "lon": 30.0,
+    "precision": "site"
+  },
+  "types": [
+    "mine"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "petalite",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Bikita Minerals (Private) Limited",
+    "Sinomine Resource Group"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:27:13.242859"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.5,
+    "last_checked": "2025-12-01T16:41:53.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.sinomine.cn/25/93.html. The Bikita Mine is located about 80 km northeast of Masvingo"
+  },
+  "canonical_name": "Bikita Mine",
+  "canonical_slug": "bikita-mine",
+  "display_name": "Bikita",
+  "primary_type": "mine",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "display_name_source": "auto",
+  "province": "Masvingo",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-01T16:41:53.000000Z",
+      "operators": [
+        "Bikita Minerals (Private) Limited",
+        "Sinomine Resource Group"
+      ],
+      "owners": [
+        "Sinomine Resource Group"
+      ],
+      "notes": "Bikita Minerals was acquired by Sinomine Resource Group in early 2022."
+    }
+  }
+}

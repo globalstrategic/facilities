@@ -1,0 +1,75 @@
+{
+  "facility_id": "uga-rwemeriro-fac",
+  "name": "Rwemeriro",
+  "aliases": [],
+  "country_iso3": "UGA",
+  "location": {
+    "lat": -0.85,
+    "lon": 30.35,
+    "precision": "region"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true,
+      "chemical_formula": "Li",
+      "category": "battery_material"
+    },
+    {
+      "metal": "Neodymium-Praseodymium",
+      "primary": false,
+      "chemical_formula": "(Nd,Pr)2O3",
+      "category": "rare_earth_element"
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "GoldQuest Mining Corp.",
+    "Unclear"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Uganda Deep Research 2025",
+      "date": "2025-10-21T12:59:38.926947"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.65,
+    "last_checked": "2025-12-18T13:37:54Z",
+    "checked_by": "manual_geocoding",
+    "notes": "Canonical name+slug generated | [NULL-ISLAND-FIX 2025-12-18T13:37:54Z] Facility in Western Region, Uganda"
+  },
+  "canonical_name": "Rwemeriro Exploration",
+  "canonical_slug": "rwemeriro-exploration",
+  "display_name": "Rwemeriro",
+  "primary_type": "exploration",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": true,
+      "canonical_name_incomplete": false
+    }
+  },
+  "display_name_source": "auto",
+  "province": "UGA",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-12-02T08:52:56.000000Z",
+      "operators": [
+        "GoldQuest Mining Corp."
+      ],
+      "owners": [
+        "GoldQuest Mining Corp."
+      ],
+      "notes": "GoldQuest is actively working on the Romero Project."
+    }
+  }
+}

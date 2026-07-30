@@ -1,0 +1,85 @@
+{
+  "facility_id": "chl-salar-del-carmen-salar-de-atacama-fac",
+  "name": "Salar del Carmen/Salar de Atacama",
+  "aliases": [
+    "Salar del Carmen/Salar de Atacama",
+    "Salar del Carmen Plant"
+  ],
+  "country_iso3": "CHL",
+  "location": {
+    "lat": -23.5,
+    "lon": -67.5,
+    "precision": "site"
+  },
+  "types": [
+    "plant"
+  ],
+  "commodities": [
+    {
+      "metal": "Lithium",
+      "primary": true
+    },
+    {
+      "metal": "potash",
+      "primary": false
+    },
+    {
+      "metal": "Bismuth",
+      "primary": false
+    }
+  ],
+  "status": "unknown",
+  "company_mentions": [
+    "Sociedad Química y Minera de Chile (SQM)"
+  ],
+  "products": [],
+  "sources": [
+    {
+      "type": "csv_import",
+      "id": "Mines.csv Run 1",
+      "date": "2025-10-20T15:29:40.583020"
+    }
+  ],
+  "verification": {
+    "status": "web_search_geocoded",
+    "confidence": 0.7,
+    "last_checked": "2025-11-26T12:45:55.000000Z",
+    "checked_by": "web_search_llm",
+    "notes": "Canonical name+slug generated. Web search geocoded. Source: https://en.wikipedia.org/wiki/Sociedad_Qu%C3%ADmica_y_Minera. Salar del Carmen is part of the larger Salar de Atacama region, known for its lithium production"
+  },
+  "canonical_name": "Salar Del Carmen/salar De Atacama Plant",
+  "canonical_slug": "salar-del-carmen-salar-de-atacama-plant",
+  "display_name": "Salar Del Carmen/salar De Atacama",
+  "primary_type": "plant",
+  "type_confidence": 1.0,
+  "data_quality": {
+    "canonicalization_confidence": 0.51,
+    "flags": {
+      "town_missing": true,
+      "operator_unresolved": false,
+      "canonical_name_incomplete": true
+    }
+  },
+  "canonical_name_history": [
+    {
+      "name": "Salar del Carmen/Salar de Atacama Plant",
+      "from": "2025-10-20T15:29:40.583025",
+      "to": "2025-11-04T19:19:09.908612Z",
+      "reason": "data_correction"
+    }
+  ],
+  "display_name_source": "auto",
+  "province": "Antofagasta Region",
+  "enrichment_notes": {
+    "web_search_companies": {
+      "timestamp": "2025-11-26T12:45:55.000000Z",
+      "operators": [
+        "Sociedad Química y Minera de Chile (SQM)"
+      ],
+      "owners": [
+        "Sociedad Química y Minera de Chile (SQM)"
+      ],
+      "notes": "SQM is the primary operator and owner of the lithium production facilities in Salar del Carmen."
+    }
+  }
+}
